@@ -1,0 +1,17 @@
+{
+  "arm": "cmdistill_corrected",
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/llvip_seed0_b32_e200/weights/last.pt",
+  "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+  "dataset": "llvip",
+  "evaluation_role": "dev",
+  "metrics": {
+    "AP50": 0.7366138310586897,
+    "AP75": 0.25034281296964894,
+    "mAP50_95": 0.3406027394793398
+  },
+  "modality": "visible",
+  "schema": "rgbt-detector-metrics-record-v1",
+  "seed": 0,
+  "split": "val",
+  "walltime_seconds": 9.51300361705944
+}

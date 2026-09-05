@@ -1,0 +1,17 @@
+{
+  "arm": "h2",
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_hnewa_cmkd_mse_inspired_v1/h2_shuffled/llvip_visible_seed123_b32_e200/weights/last.pt",
+  "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+  "dataset": "llvip",
+  "evaluation_role": "dev",
+  "metrics": {
+    "AP50": 0.7182307284174909,
+    "AP75": 0.24990250416989374,
+    "mAP50_95": 0.33440757569579693
+  },
+  "modality": "visible",
+  "schema": "rgbt-detector-metrics-record-v1",
+  "seed": 123,
+  "split": "val",
+  "walltime_seconds": 50.37583937984891
+}

@@ -1,0 +1,17 @@
+{
+  "arm": "h1_paired",
+  "checkpoint": "/tmp/best_probe/last.pt",
+  "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+  "dataset": "llvip",
+  "evaluation_role": "dev",
+  "metrics": {
+    "AP50": 0.7451292601585136,
+    "AP75": 0.24287916988199065,
+    "mAP50_95": 0.33764199250495536
+  },
+  "modality": "visible",
+  "schema": "rgbt-detector-metrics-record-v1",
+  "seed": 42,
+  "split": "val",
+  "walltime_seconds": 63.55457711103372
+}

@@ -1,0 +1,528 @@
+{
+  "units": "percentage_points; AP values multiplied by 100",
+  "evidence_grade": "read_only_descriptive_reanalysis_not_accepted_analyzer",
+  "arms": [
+    {
+      "dataset": "dronevehicle",
+      "arm": "cmdistill_corrected",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "mAP50_95": {
+        "n": 3,
+        "mean": 53.60476473636578,
+        "sample_sd": 0.3324351369754621
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 75.8831300812129,
+        "sample_sd": 0.6224634999846108
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 76.2351108296042,
+          "mAP50_95": 53.90028570727691
+        },
+        {
+          "seed": 42,
+          "AP50": 75.16442157263761,
+          "mAP50_95": 53.24484007601327
+        },
+        {
+          "seed": 123,
+          "AP50": 76.24985784139689,
+          "mAP50_95": 53.669168425807165
+        }
+      ]
+    },
+    {
+      "dataset": "dronevehicle",
+      "arm": "h1_paired",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "mAP50_95": {
+        "n": 3,
+        "mean": 54.13589669201704,
+        "sample_sd": 0.23170027351935682
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 76.50858500740168,
+        "sample_sd": 0.26943087050792086
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 76.72981488673406,
+          "mAP50_95": 54.375690869336864
+        },
+        {
+          "seed": 42,
+          "AP50": 76.2085340644241,
+          "mAP50_95": 53.91324221363952
+        },
+        {
+          "seed": 123,
+          "AP50": 76.58740607104686,
+          "mAP50_95": 54.11875699307473
+        }
+      ]
+    },
+    {
+      "dataset": "dronevehicle",
+      "arm": "h2_shuffled",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "mAP50_95": {
+        "n": 3,
+        "mean": 53.799854088383974,
+        "sample_sd": 0.10736258945035013
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 76.19427280198192,
+        "sample_sd": 0.1365272932162988
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 76.35191965123887,
+          "mAP50_95": 53.809451799528155
+        },
+        {
+          "seed": 42,
+          "AP50": 76.11489712515949,
+          "mAP50_95": 53.90209559234547
+        },
+        {
+          "seed": 123,
+          "AP50": 76.1160016295474,
+          "mAP50_95": 53.6880148732783
+        }
+      ]
+    },
+    {
+      "dataset": "dronevehicle",
+      "arm": "h3_same_modal",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "mAP50_95": {
+        "n": 3,
+        "mean": 53.929131324138474,
+        "sample_sd": 0.33370040936615875
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 76.1285786030443,
+        "sample_sd": 0.6652711521600428
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 76.01930084273681,
+          "mAP50_95": 53.84255786548692
+        },
+        {
+          "seed": 42,
+          "AP50": 75.52471199026502,
+          "mAP50_95": 53.64724926590313
+        },
+        {
+          "seed": 123,
+          "AP50": 76.8417229761311,
+          "mAP50_95": 54.29758684102538
+        }
+      ]
+    },
+    {
+      "dataset": "dronevehicle",
+      "arm": "native",
+      "seeds": [
+        0,
+        123
+      ],
+      "mAP50_95": {
+        "n": 2,
+        "mean": 54.021579809461144,
+        "sample_sd": 0.4829137258847224
+      },
+      "AP50": {
+        "n": 2,
+        "mean": 76.23798705378633,
+        "sample_sd": 0.7131974864625963
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 76.74229383278923,
+          "mAP50_95": 54.3630513797623
+        },
+        {
+          "seed": 123,
+          "AP50": 75.73368027478342,
+          "mAP50_95": 53.68010823916
+        }
+      ]
+    },
+    {
+      "dataset": "llvip",
+      "arm": "cmdistill_corrected",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "mAP50_95": {
+        "n": 3,
+        "mean": 33.607036718604,
+        "sample_sd": 0.39762932096966785
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 73.20354332260527,
+        "sample_sd": 0.4177339291282811
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 73.66138310586898,
+          "mAP50_95": 34.06027394793398
+        },
+        {
+          "seed": 42,
+          "AP50": 72.84313698607991,
+          "mAP50_95": 33.44398765133997
+        },
+        {
+          "seed": 123,
+          "AP50": 73.10610987586692,
+          "mAP50_95": 33.316848556538055
+        }
+      ]
+    },
+    {
+      "dataset": "llvip",
+      "arm": "h1_paired",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "mAP50_95": {
+        "n": 3,
+        "mean": 34.678613742058424,
+        "sample_sd": 0.800351423052737
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 75.64073901803594,
+        "sample_sd": 1.050117918471015
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 76.59107638070168,
+          "mAP50_95": 35.22802225836285
+        },
+        {
+          "seed": 42,
+          "AP50": 74.51334965661462,
+          "mAP50_95": 33.760345103256014
+        },
+        {
+          "seed": 123,
+          "AP50": 75.81779101679155,
+          "mAP50_95": 35.0474738645564
+        }
+      ]
+    },
+    {
+      "dataset": "llvip",
+      "arm": "h2_shuffled",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "mAP50_95": {
+        "n": 3,
+        "mean": 34.328706866382596,
+        "sample_sd": 0.7854227044995679
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 73.6396519142669,
+        "sample_sd": 1.5821567909928809
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 74.71602020067772,
+          "mAP50_95": 34.932520056675045
+        },
+        {
+          "seed": 42,
+          "AP50": 74.37986270037392,
+          "mAP50_95": 34.61284297289305
+        },
+        {
+          "seed": 123,
+          "AP50": 71.8230728417491,
+          "mAP50_95": 33.440757569579695
+        }
+      ]
+    },
+    {
+      "dataset": "llvip",
+      "arm": "h3_same_modal",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "mAP50_95": {
+        "n": 3,
+        "mean": 34.58773811399531,
+        "sample_sd": 0.3451182520618131
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 74.85938190029277,
+        "sample_sd": 1.0006337671398817
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 75.5432400518052,
+          "mAP50_95": 34.9784904689589
+        },
+        {
+          "seed": 42,
+          "AP50": 73.71090372039097,
+          "mAP50_95": 34.32460460684355
+        },
+        {
+          "seed": 123,
+          "AP50": 75.32400192868216,
+          "mAP50_95": 34.46011926618346
+        }
+      ]
+    },
+    {
+      "dataset": "llvip",
+      "arm": "native",
+      "seeds": [
+        0,
+        123
+      ],
+      "mAP50_95": {
+        "n": 2,
+        "mean": 34.857547044860745,
+        "sample_sd": 0.12252157791002666
+      },
+      "AP50": {
+        "n": 2,
+        "mean": 75.86023803738213,
+        "sample_sd": 0.3085839485896956
+      },
+      "per_seed": [
+        {
+          "seed": 0,
+          "AP50": 75.64203623476904,
+          "mAP50_95": 34.77091120627889
+        },
+        {
+          "seed": 123,
+          "AP50": 76.07843983999523,
+          "mAP50_95": 34.9441828834426
+        }
+      ]
+    }
+  ],
+  "paired_deltas": [
+    {
+      "dataset": "dronevehicle",
+      "contrast": "h1_paired - h2_shuffled",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "per_seed_mAP50_95_pp": [
+        0.5662390698087094,
+        0.01114662129405275,
+        0.4307421197964345
+      ],
+      "positive_count": 3,
+      "n": 3,
+      "mean": 0.33604260363306554,
+      "sample_sd": 0.2894095806477065
+    },
+    {
+      "dataset": "dronevehicle",
+      "contrast": "h1_paired - h3_same_modal",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "per_seed_mAP50_95_pp": [
+        0.5331330038499473,
+        0.26599294773639315,
+        -0.17882984795064516
+      ],
+      "positive_count": 2,
+      "n": 3,
+      "mean": 0.20676536787856512,
+      "sample_sd": 0.35965776127850996
+    },
+    {
+      "dataset": "dronevehicle",
+      "contrast": "h1_paired - native",
+      "seeds": [
+        0,
+        123
+      ],
+      "per_seed_mAP50_95_pp": [
+        0.01263948957456762,
+        0.4386487539147339
+      ],
+      "positive_count": 2,
+      "n": 2,
+      "mean": 0.22564412174465076,
+      "sample_sd": 0.30123403966322404
+    },
+    {
+      "dataset": "llvip",
+      "contrast": "h1_paired - h2_shuffled",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "per_seed_mAP50_95_pp": [
+        0.2955022016878033,
+        -0.852497869637034,
+        1.6067162949767066
+      ],
+      "positive_count": 2,
+      "n": 3,
+      "mean": 0.3499068756758253,
+      "sample_sd": 1.230509438514399
+    },
+    {
+      "dataset": "llvip",
+      "contrast": "h1_paired - h3_same_modal",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "per_seed_mAP50_95_pp": [
+        0.24953178940394594,
+        -0.564259503587536,
+        0.58735459837294
+      ],
+      "positive_count": 2,
+      "n": 3,
+      "mean": 0.09087562806311666,
+      "sample_sd": 0.5919734733137236
+    },
+    {
+      "dataset": "llvip",
+      "contrast": "h1_paired - native",
+      "seeds": [
+        0,
+        123
+      ],
+      "per_seed_mAP50_95_pp": [
+        0.45711105208395963,
+        0.1032909811138012
+      ],
+      "positive_count": 2,
+      "n": 2,
+      "mean": 0.2802010165988804,
+      "sample_sd": 0.2501885715029045
+    }
+  ],
+  "p3_core_terminal_csv": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/core_seed42/dronevehicle/rgb_seed42_p3_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 53.50899999999999
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/core_seed42/dronevehicle/rgb_seed42_p3_random_dose_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 54.367
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/core_seed42/dronevehicle/rgb_seed42_p3_same_modal_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 54.095000000000006
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/core_seed42/dronevehicle/rgb_seed42_p3_shuffled_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 53.93599999999999
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/core_seed42/llvip/visible_seed42_p3_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 33.532000000000004
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/core_seed42/llvip/visible_seed42_p3_random_dose_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 33.308
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/core_seed42/llvip/visible_seed42_p3_same_modal_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 35.209
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/core_seed42/llvip/visible_seed42_p3_shuffled_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 35.398
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 59.65899999999999
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 53.798
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 48.833
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/results.csv",
+      "epoch": "200",
+      "mAP50_95": 32.867000000000004
+    }
+  ],
+  "notes": [
+    "Native seed42 *_best eval uses /tmp/best_probe/last.pt and is excluded from paired multiseed comparison.",
+    "Hnewa native comparisons use only shared seeds0/123; h1/h2/h3 comparisons use0/42/123.",
+    "Pairing null may be harmful; paired>shuffled alone does not establish net KD usefulness.",
+    "CMD adapted_v2 has external metrics_record; zero/malformed CSV metric fields must not be treated as zero detector performance."
+  ]
+}

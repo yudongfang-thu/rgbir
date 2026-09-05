@@ -1,0 +1,17 @@
+{
+  "arm": "h1_paired",
+  "checkpoint": "/tmp/best_probe/last.pt",
+  "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+  "dataset": "dronevehicle",
+  "evaluation_role": "val",
+  "metrics": {
+    "AP50": 0.762075482550841,
+    "AP75": 0.6330561317361069,
+    "mAP50_95": 0.5389534797762182
+  },
+  "modality": "rgb",
+  "schema": "rgbt-detector-metrics-record-v1",
+  "seed": 42,
+  "split": "val",
+  "walltime_seconds": 71.88625860703178
+}
