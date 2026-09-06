@@ -1,0 +1,648 @@
+{
+  "reason": "User-directed prioritization of OEv1 and comparator evidence; not an efficacy-based success/failure decision",
+  "utc_start": "2026-09-06T15:12:17.838398+00:00",
+  "workers_before": {
+    "3894177": {
+      "pid": 3894177,
+      "cmd": [
+        "bash",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/worker3.sh",
+        "0",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/jobs2_gpu0.txt"
+      ],
+      "state": "S",
+      "ppid": 3894173,
+      "start_ticks": 183404002
+    },
+    "3894186": {
+      "pid": 3894186,
+      "cmd": [
+        "bash",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/worker3.sh",
+        "2",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/jobs2_gpu2.txt"
+      ],
+      "state": "S",
+      "ppid": 3894183,
+      "start_ticks": 183404002
+    }
+  },
+  "trainer_before": {
+    "pid": 878988,
+    "cmd": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+      "--device",
+      "0",
+      "--seed",
+      "0"
+    ],
+    "state": "S",
+    "ppid": 878944,
+    "start_ticks": 188878157
+  },
+  "guard_before": {
+    "pid": 878944,
+    "cmd": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py",
+      "run",
+      "--job-id",
+      "osssl-ir-sar_only-s0",
+      "--kind",
+      "train",
+      "--candidate-gpu",
+      "2",
+      "--gpu-count",
+      "1",
+      "--expected-vram-mib",
+      "10000",
+      "--expected-rss-mib",
+      "32768",
+      "--cuda-processes-per-gpu",
+      "1",
+      "--formal-train",
+      "--free-safety-mib",
+      "2048",
+      "--",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+      "--device",
+      "0",
+      "--seed",
+      "0"
+    ],
+    "state": "S",
+    "ppid": 3894186,
+    "start_ticks": 188878062
+  },
+  "training_descendants": {
+    "878988": {
+      "pid": 878988,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "R",
+      "ppid": 878944,
+      "start_ticks": 188878157
+    },
+    "880314": {
+      "pid": 880314,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878824
+    },
+    "880316": {
+      "pid": 880316,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878827
+    },
+    "880317": {
+      "pid": 880317,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878829
+    },
+    "880319": {
+      "pid": 880319,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878831
+    },
+    "880321": {
+      "pid": 880321,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878834
+    },
+    "880322": {
+      "pid": 880322,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878836
+    },
+    "880324": {
+      "pid": 880324,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "R",
+      "ppid": 878988,
+      "start_ticks": 188878839
+    },
+    "880325": {
+      "pid": 880325,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878841
+    },
+    "880337": {
+      "pid": 880337,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878849
+    },
+    "880338": {
+      "pid": 880338,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878851
+    },
+    "880339": {
+      "pid": 880339,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878854
+    },
+    "880340": {
+      "pid": 880340,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878856
+    },
+    "880341": {
+      "pid": 880341,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878859
+    },
+    "880342": {
+      "pid": 880342,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878862
+    },
+    "880361": {
+      "pid": 880361,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878872
+    },
+    "880362": {
+      "pid": 880362,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878875
+    },
+    "880364": {
+      "pid": 880364,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878877
+    },
+    "880365": {
+      "pid": 880365,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878880
+    },
+    "880367": {
+      "pid": 880367,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878883
+    },
+    "880368": {
+      "pid": 880368,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878886
+    },
+    "880369": {
+      "pid": 880369,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878889
+    },
+    "880371": {
+      "pid": 880371,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878891
+    },
+    "880400": {
+      "pid": 880400,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878894
+    },
+    "880504": {
+      "pid": 880504,
+      "cmd": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+        "--device",
+        "0",
+        "--seed",
+        "0"
+      ],
+      "state": "S",
+      "ppid": 878988,
+      "start_ticks": 188878897
+    }
+  },
+  "completed_epoch_before": 6,
+  "checkpoint_before": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200/weights/last.pt",
+    "bytes": 10748307,
+    "mtime_ns": 1788707527166043225
+  },
+  "actions": [
+    [
+      3894177,
+      "SIGSTOP_scheduler"
+    ],
+    [
+      3894186,
+      "SIGSTOP_scheduler"
+    ],
+    [
+      878988,
+      "SIGTERM_training"
+    ],
+    [
+      880316,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880317,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880319,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880321,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880322,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880324,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880325,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880337,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880338,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880339,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880340,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880341,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880342,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880361,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880362,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880364,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880365,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      880504,
+      "SIGTERM_verified_training_descendant"
+    ],
+    [
+      3894177,
+      "SIGTERM_then_SIGCONT_scheduler"
+    ],
+    [
+      3894186,
+      "SIGTERM_then_SIGCONT_scheduler"
+    ]
+  ],
+  "remaining_target_pids": [],
+  "checkpoint_after": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200/weights/last.pt",
+    "bytes": 10748307,
+    "mtime_ns": 1788707527166043225
+  },
+  "checkpoint_zip_crc_error": null,
+  "official_training_completion_absent": true,
+  "utc_finished": "2026-09-06T15:12:22.080638+00:00"
+}

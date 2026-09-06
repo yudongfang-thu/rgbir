@@ -1,0 +1,27 @@
+{
+  "method_id": "RGBIR-OEV1-PLUS-LOC-v1",
+  "arm": "c_same_modal",
+  "seed": 42,
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v7/train_task_conditional.py",
+    "--config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/configs_c_controls_v1/c_same_modal_canary.yaml",
+    "--arm",
+    "c_same_modal",
+    "--seed",
+    "42",
+    "--max-steps",
+    "24",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1"
+  ],
+  "gpu": [
+    4
+  ],
+  "canary_max_updates": 24,
+  "test_accessed": false,
+  "teacher_labels_used_by_kd": false,
+  "geometry_contract": null,
+  "formal_localization": false
+}

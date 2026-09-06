@@ -1,0 +1,86 @@
+{
+  "command": {
+    "argv": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s42_attempt1",
+      "--arm",
+      "paired_random",
+      "--seed",
+      "42",
+      "--max-steps",
+      "24"
+    ]
+  },
+  "created_at_utc": "2026-09-06T15:22:38.657701+00:00",
+  "data_role": "development_train",
+  "dataset": "dronevehicle",
+  "environment": {
+    "platform": "Linux-5.15.0-187-generic-x86_64-with-glibc2.35",
+    "python": "3.10.20",
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115"
+  },
+  "inputs": {
+    "arm": "paired_random",
+    "canary": true,
+    "initial_weights": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+    "reference_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+    "student_native_gt_only": true,
+    "teacher_labels_used_by_kd": true,
+    "teacher_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt"
+  },
+  "job_id": "oev1_random_canary_s42",
+  "method_identity": "PROTOCOL-ADAPTED",
+  "metric_snapshots": [
+    "metric_snapshot/01_completion_receipt.json"
+  ],
+  "resources": {
+    "cuda_pid_counts": {
+      "2": 1
+    },
+    "gpu_ids": [
+      2
+    ],
+    "lease_id": "oev1_random_canary_s42-c71577e9185a",
+    "peak_rss_mib": 28774,
+    "per_gpu_peak_vram_mib": {
+      "2": 6304
+    }
+  },
+  "run_kind": "train",
+  "schema": "jstars-run-receipt-v1",
+  "seed": 42,
+  "source_snapshots": {
+    "config": [
+      "source_snapshot/config/01_config_drone.yaml",
+      "source_snapshot/config/02_rgb.data.yaml",
+      "source_snapshot/config/03_infrared.data.yaml"
+    ],
+    "loss": [
+      "source_snapshot/loss/01_train_object_evidence.py",
+      "source_snapshot/loss/02_loss.py",
+      "source_snapshot/loss/03_object_evidence_loss.py"
+    ],
+    "split_roster": [
+      "source_snapshot/split_roster/01_rgb_to_infrared_train.json"
+    ],
+    "trainer": [
+      "source_snapshot/trainer/01_train_object_evidence.py",
+      "source_snapshot/trainer/02_paired_rgbir_data.py",
+      "source_snapshot/trainer/03_train.py"
+    ]
+  },
+  "terminal_status": "COMPLETED",
+  "test_exposure": {
+    "confirmatory": false,
+    "dataset": "dronevehicle",
+    "note": "Official test remains a candidate until its exposure history is audited.",
+    "role": "SEALED_CANDIDATE",
+    "test_status": "UNVERIFIED_SEALED"
+  }
+}

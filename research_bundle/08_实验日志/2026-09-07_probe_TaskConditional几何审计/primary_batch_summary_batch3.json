@@ -1,0 +1,38 @@
+{
+  "protocol": "tc_geometry_primary_visual_batch3_v1",
+  "frozen_pairs": 300,
+  "viewed_pairs": 1,
+  "primary_point_pairs": 1,
+  "accepted_pairs": 0,
+  "pending_unviewed_pairs": 299,
+  "geometry_verified": false,
+  "scientific_scope": "Approximate primary visual marks only; numerical residuals are pending independent validation.",
+  "observations": [
+    {
+      "audit_id": "llvip_050001",
+      "dataset": "llvip",
+      "group": "05",
+      "status": "candidate_static_points_needs_independent_review",
+      "independent_review_required": false,
+      "review_status": "pending",
+      "point_count": 7,
+      "formal_geometry_verified": false,
+      "rgb_quadrants": 3,
+      "ir_quadrants": 3,
+      "p95_error_raw_px": 4.650979042154145,
+      "max_error_raw_px": 5.0990195135927845,
+      "uncertainty_raw_px": 3.0,
+      "point_errors_raw_px": [
+        3.605551275463989,
+        1.0,
+        1.0,
+        2.8284271247461903,
+        1.0,
+        3.1622776601683795,
+        5.0990195135927845
+      ],
+      "p95_at_unaugmented_640_input_px": 2.3254895210770723,
+      "max_at_unaugmented_640_input_px": 2.5495097567963922
+    }
+  ]
+}

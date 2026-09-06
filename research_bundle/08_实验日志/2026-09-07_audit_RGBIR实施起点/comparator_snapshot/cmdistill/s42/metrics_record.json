@@ -1,0 +1,17 @@
+{
+  "arm": "cmdistill_corrected",
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/dronevehicle_seed42_b32_e200/weights/last.pt",
+  "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+  "dataset": "dronevehicle",
+  "evaluation_role": "val",
+  "metrics": {
+    "AP50": 0.7516442157263761,
+    "AP75": 0.6249358429506559,
+    "mAP50_95": 0.5324484007601327
+  },
+  "modality": "rgb",
+  "schema": "rgbt-detector-metrics-record-v1",
+  "seed": 42,
+  "split": "val",
+  "walltime_seconds": 29.311959337908775
+}

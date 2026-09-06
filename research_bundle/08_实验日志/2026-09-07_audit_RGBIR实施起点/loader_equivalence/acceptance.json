@@ -1,0 +1,18 @@
+{
+  "status": "PASSED_CPU_LOADER_EQUIVALENCE",
+  "implementation_release": "release_v4",
+  "independent_of_tracked_loader_implementation": true,
+  "datasets": ["dronevehicle", "llvip"],
+  "samples_per_dataset": 3,
+  "all_original_sample_and_collate_fields_equal": true,
+  "python_numpy_torch_cpu_rng_continuation_equal": true,
+  "rgb_ir_augmented_matrices_equal": true,
+  "output_gt_boxes_verified": 80,
+  "max_coordinate_error_pixels": 0.0000705718994140625,
+  "coordinate_tolerance_pixels": 0.001,
+  "gpu_used": false,
+  "optimizer_updates": 0,
+  "replaces_training_canary": false,
+  "source": "attempt2/result.json",
+  "analyzer_review_note": "Analyzer tests passed, but this agent authored the analyzer; independent acceptance is left to root."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASSED",
+  "scope": "actual TaskCriterion with synthetic CPU native/frozen interfaces",
+  "torch_version": "1.8.0+cu111",
+  "cuda_visible_devices": "",
+  "real_model_canary": false,
+  "cases": [
+    {
+      "arm": "c_shuffled",
+      "exact_composed_loss": true,
+      "exact_content_stats": true,
+      "nonzero_C_gradient": true,
+      "lambda_L": 0.0,
+      "teacher_forward_calls": 2
+    },
+    {
+      "arm": "c_same_modal",
+      "exact_composed_loss": true,
+      "exact_content_stats": true,
+      "nonzero_C_gradient": true,
+      "lambda_L": 0.0,
+      "teacher_forward_calls": 1
+    }
+  ]
+}

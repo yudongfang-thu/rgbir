@@ -1,0 +1,10 @@
+{"cuda_processes_per_gpu": 1, "expected_rss_mib": 32768, "expected_vram_mib": 14000, "gpu_ids": [2], "lease_id": "cclkd_partial_s42_canary_attempt1-a64451214b61", "pid": 951334, "status": "LAUNCHED"}
+Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)
+YOLO11n summary (fused): 101 layers, 2,583,127 parameters, 0 gradients, 6.4 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3234.0±627.3 MB/s, size: 115.1 KB)
+[K[34m[1mval: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val... 64 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 64/64 2.0Kit/s 0.0s
+[34m[1mval: [0mNew cache created: /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val.cache
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 50% ━━━━━━────── 1/2 1.5it/s 0.2s<0.7s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 2/2 6.8it/s 0.3s
+                   all         64       4340      0.754       0.57      0.614      0.351
+Speed: 0.4ms preprocess, 1.4ms inference, 0.0ms loss, 0.8ms postprocess per image
+{"status": "canary_completed", "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL", "arm": "cclkd_partial", "seed": 42, "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt", "endpoint": "fixed_budget_last_ema", "split": "val", "evaluated_images": 64, "official_test_accessed": false, "metric_units": "fraction_0_to_1", "canary": true, "AP50": 0.6139050377887882, "AP75": 0.33978480536385575, "mAP50_95": 0.3506645611918499, "precision": 0.7540289372294147, "recall": 0.5701789909125884, "allocated_peak_mib": 711.77783203125, "reserved_peak_mib": 884.0, "seconds": 2.1122848987579346, "resources": {"gpu_ids": [2], "cuda_pid_counts": {"2": 1}, "per_gpu_peak_vram_mib": {"2": 1370}, "peak_rss_mib": 2639}}

@@ -1,0 +1,207 @@
+{
+  "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "endpoint": "fixed_budget_last_ema",
+  "split": "val",
+  "evaluated_images_each": 1469,
+  "all_three_ordered_val_rosters_equal": true,
+  "paired_rows": [
+    {
+      "seed": 0,
+      "cclkd_partial_pct": {
+        "mAP50_95": 54.06600564966325,
+        "AP50": 76.48561806758856,
+        "AP75": 63.28183429745453
+      },
+      "historical_native_pct": {
+        "mAP50_95": 54.35764829135778,
+        "AP50": 76.74840182306127,
+        "AP75": 63.84139279470794
+      },
+      "delta_pp": {
+        "mAP50_95": -0.2916426416945339,
+        "AP50": -0.2627837554727175,
+        "AP75": -0.5595584972534096
+      },
+      "evaluation_file": "eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s0_full_attempt1\\evaluation_val.json",
+      "native_file": "historical_native\\native_rgb_s0_e200\\metrics_record.json"
+    },
+    {
+      "seed": 42,
+      "cclkd_partial_pct": {
+        "mAP50_95": 54.49329450152567,
+        "AP50": 77.00321800542203,
+        "AP75": 63.54910732782623
+      },
+      "historical_native_pct": {
+        "mAP50_95": 53.81555614141787,
+        "AP50": 76.00113764015525,
+        "AP75": 62.5664619204642
+      },
+      "delta_pp": {
+        "mAP50_95": 0.6777383601077935,
+        "AP50": 1.0020803652667776,
+        "AP75": 0.9826454073620261
+      },
+      "evaluation_file": "eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s42_full_attempt1\\evaluation_val.json",
+      "native_file": "historical_native\\native_rgb_s42_e200\\metrics_record.json"
+    },
+    {
+      "seed": 123,
+      "cclkd_partial_pct": {
+        "mAP50_95": 54.3325955606628,
+        "AP50": 76.31210499190813,
+        "AP75": 63.79373998696685
+      },
+      "historical_native_pct": {
+        "mAP50_95": 53.687432654876964,
+        "AP50": 75.73014259256995,
+        "AP75": 63.306324355490304
+      },
+      "delta_pp": {
+        "mAP50_95": 0.6451629057858344,
+        "AP50": 0.5819623993381762,
+        "AP75": 0.4874156314765399
+      },
+      "evaluation_file": "eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s123_full_attempt1\\evaluation_val.json",
+      "native_file": "historical_native\\native_rgb_s123_e200\\metrics_record.json"
+    }
+  ],
+  "audits": [
+    {
+      "seed": 0,
+      "status": "PASS",
+      "eval_receipt": "eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s0_full_attempt1\\eval_evidence\\run_receipt.json",
+      "evaluated_images": 1469,
+      "split": "val",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed0_b32_e200/weights/last.pt",
+      "sources_describe_eval_not_historical_training": true,
+      "resource_lease_id": "cclkd_partial_s0_full_attempt1-6db5a5ab0f60",
+      "resources": {
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "gpu_ids": [
+          2
+        ],
+        "lease_id": "cclkd_partial_s0_full_attempt1-6db5a5ab0f60",
+        "peak_rss_mib": 3838,
+        "per_gpu_peak_vram_mib": {
+          "2": 1370
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "status": "PASS",
+      "eval_receipt": "eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s42_full_attempt1\\eval_evidence\\run_receipt.json",
+      "evaluated_images": 1469,
+      "split": "val",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt",
+      "sources_describe_eval_not_historical_training": true,
+      "resource_lease_id": "cclkd_partial_s42_full_attempt1-878793226ba4",
+      "resources": {
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "gpu_ids": [
+          2
+        ],
+        "lease_id": "cclkd_partial_s42_full_attempt1-878793226ba4",
+        "peak_rss_mib": 3829,
+        "per_gpu_peak_vram_mib": {
+          "2": 1370
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "status": "PASS",
+      "eval_receipt": "eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s123_full_attempt1\\eval_evidence\\run_receipt.json",
+      "evaluated_images": 1469,
+      "split": "val",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed123_b32_e200/weights/last.pt",
+      "sources_describe_eval_not_historical_training": true,
+      "resource_lease_id": "cclkd_partial_s123_full_attempt1-0697ac04e00f",
+      "resources": {
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "gpu_ids": [
+          2
+        ],
+        "lease_id": "cclkd_partial_s123_full_attempt1-0697ac04e00f",
+        "peak_rss_mib": 3941,
+        "per_gpu_peak_vram_mib": {
+          "2": 1370
+        }
+      }
+    }
+  ],
+  "cclkd_partial_pct": {
+    "mAP50_95": {
+      "mean": 54.297298570617244,
+      "sample_sd_ddof1": 0.21582017714102267,
+      "n": 3
+    },
+    "AP50": {
+      "mean": 76.60031368830624,
+      "sample_sd_ddof1": 0.3595491808096992,
+      "n": 3
+    },
+    "AP75": {
+      "mean": 63.54156053741587,
+      "sample_sd_ddof1": 0.25603627530663275,
+      "n": 3
+    }
+  },
+  "historical_native_pct": {
+    "mAP50_95": {
+      "mean": 53.95354569588421,
+      "sample_sd_ddof1": 0.35577814393552964,
+      "n": 3
+    },
+    "AP50": {
+      "mean": 76.1598940185955,
+      "sample_sd_ddof1": 0.5273667186046077,
+      "n": 3
+    },
+    "AP75": {
+      "mean": 63.238059690220815,
+      "sample_sd_ddof1": 0.6402009308945478,
+      "n": 3
+    }
+  },
+  "descriptive_delta_pp": {
+    "mAP50_95": {
+      "mean": 0.34375287473303134,
+      "sample_sd_ddof1": 0.5505096609309048,
+      "n": 3,
+      "positive_seeds": 2
+    },
+    "AP50": {
+      "mean": 0.4404196697107454,
+      "sample_sd_ddof1": 0.644201885449206,
+      "n": 3,
+      "positive_seeds": 2
+    },
+    "AP75": {
+      "mean": 0.30350084719505216,
+      "sample_sd_ddof1": 0.7873796458892963,
+      "n": 3,
+      "positive_seeds": 2
+    }
+  },
+  "limitations": [
+    "Partial LLD+CCL implementation, not complete CCLKD",
+    "Historical training source snapshot is incomplete; new sources bind evaluation only",
+    "Historical native comparator; not a newly matched CCLKD weight0 run",
+    "No three-seed shuffled/same-modal attribution controls for this CCLKD variant",
+    "OEv1 directly uses IR labels during KD whereas this CCLKD variant does not",
+    "All are development-val results, not confirmatory test results"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "captured_at": "2026-09-07T02:23:37.461405+08:00",
+  "rows": [
+    {
+      "label": "N0",
+      "completed_epochs": 200,
+      "current_progress_epoch": 200,
+      "training_complete": true,
+      "independent_endpoint": true,
+      "estimated_remaining_train_hours": 0,
+      "recent_median_epoch_seconds": 216.70000000000073
+    },
+    {
+      "label": "C0",
+      "completed_epochs": 104,
+      "current_progress_epoch": 105,
+      "training_complete": false,
+      "independent_endpoint": false,
+      "estimated_remaining_train_hours": 5.7639999999999905,
+      "recent_median_epoch_seconds": 216.14999999999964
+    },
+    {
+      "label": "R0",
+      "completed_epochs": 34,
+      "current_progress_epoch": 35,
+      "training_complete": false,
+      "independent_endpoint": false,
+      "estimated_remaining_train_hours": 11.58149722222222,
+      "recent_median_epoch_seconds": 251.16499999999996
+    },
+    {
+      "label": "N42",
+      "completed_epochs": 200,
+      "current_progress_epoch": 200,
+      "training_complete": true,
+      "independent_endpoint": true,
+      "estimated_remaining_train_hours": 0,
+      "recent_median_epoch_seconds": 200.89999999999782
+    },
+    {
+      "label": "C42",
+      "completed_epochs": 200,
+      "current_progress_epoch": 200,
+      "training_complete": true,
+      "independent_endpoint": true,
+      "estimated_remaining_train_hours": 0,
+      "recent_median_epoch_seconds": 201.0
+    },
+    {
+      "label": "R42",
+      "completed_epochs": 44,
+      "current_progress_epoch": 45,
+      "training_complete": false,
+      "independent_endpoint": false,
+      "estimated_remaining_train_hours": 10.918266666666709,
+      "recent_median_epoch_seconds": 251.96000000000095
+    },
+    {
+      "label": "N123",
+      "completed_epochs": 98,
+      "current_progress_epoch": 99,
+      "training_complete": false,
+      "independent_endpoint": false,
+      "estimated_remaining_train_hours": 6.01375,
+      "recent_median_epoch_seconds": 212.25
+    },
+    {
+      "label": "C123",
+      "completed_epochs": 200,
+      "current_progress_epoch": 200,
+      "training_complete": true,
+      "independent_endpoint": true,
+      "estimated_remaining_train_hours": 0,
+      "recent_median_epoch_seconds": 220.25
+    },
+    {
+      "label": "R123",
+      "completed_epochs": 16,
+      "current_progress_epoch": 17,
+      "training_complete": false,
+      "independent_endpoint": false,
+      "estimated_remaining_train_hours": 10.226311111111107,
+      "recent_median_epoch_seconds": 200.07999999999993
+    }
+  ],
+  "assumptions": "Recent throughput unchanged. Excludes resource queue and evaluation. progress.epoch is in-progress; CSV epoch is completed. Completion receipt overrides irregular last CSV row."
+}

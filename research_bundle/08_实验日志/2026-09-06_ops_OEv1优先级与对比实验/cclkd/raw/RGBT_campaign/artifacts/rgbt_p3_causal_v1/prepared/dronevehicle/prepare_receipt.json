@@ -1,0 +1,91 @@
+{
+  "data_root": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1",
+  "dataset": "dronevehicle",
+  "directions": {
+    "infrared_to_rgb": {
+      "group_metadata_missing_stems": 0,
+      "group_metadata_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared_train_source_groups.tsv",
+      "paired_mapping": {
+        "mtime_ns": 1788115543702113302,
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/infrared_to_rgb_train.json",
+        "size_bytes": 4335593
+      },
+      "paired_train_pairs": 17990,
+      "privileged": "rgb",
+      "shuffled_fallback_pairs": 0,
+      "shuffled_group_constrained_pairs": 17990,
+      "shuffled_mapping": {
+        "mtime_ns": 1788115544514124933,
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/infrared_to_rgb_shuffled_train.json",
+        "size_bytes": 4335593
+      },
+      "shuffled_train_pairs": 17990,
+      "student": "infrared",
+      "student_native_gt_only": true,
+      "teacher_labels_used_by_kd": false
+    },
+    "rgb_to_infrared": {
+      "group_metadata_missing_stems": 0,
+      "group_metadata_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb_train_source_groups.tsv",
+      "paired_mapping": {
+        "mtime_ns": 1788115541350079617,
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/rgb_to_infrared_train.json",
+        "size_bytes": 4335593
+      },
+      "paired_train_pairs": 17990,
+      "privileged": "infrared",
+      "shuffled_fallback_pairs": 0,
+      "shuffled_group_constrained_pairs": 17990,
+      "shuffled_mapping": {
+        "mtime_ns": 1788115542570097089,
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/rgb_to_infrared_shuffled_train.json",
+        "size_bytes": 4335593
+      },
+      "shuffled_train_pairs": 17990,
+      "student": "rgb",
+      "student_native_gt_only": true,
+      "teacher_labels_used_by_kd": false
+    }
+  },
+  "evaluation_role": "val",
+  "expected_nc": 5,
+  "generated_at": "2026-08-30T18:45:44.580815+00:00",
+  "modalities": {
+    "infrared": {
+      "data_yaml": {
+        "mtime_ns": 1788115540094061632,
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml",
+        "size_bytes": 200
+      },
+      "root": {
+        "mtime_ns": 1788114231426487800,
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared",
+        "size_bytes": 4096
+      },
+      "train_images": 17990,
+      "val_images": 1469
+    },
+    "rgb": {
+      "data_yaml": {
+        "mtime_ns": 1788115538846043763,
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "size_bytes": 195
+      },
+      "root": {
+        "mtime_ns": 1788114208598345182,
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb",
+        "size_bytes": 4096
+      },
+      "train_images": 17990,
+      "val_images": 1469
+    }
+  },
+  "output_root": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle",
+  "receipt_id": "rgbt-prepare-dronevehicle-v1",
+  "schema": "rgbt-experiment-prepare-v1",
+  "source_splits": {
+    "train": "train",
+    "val": "val"
+  },
+  "test_accessed": false
+}

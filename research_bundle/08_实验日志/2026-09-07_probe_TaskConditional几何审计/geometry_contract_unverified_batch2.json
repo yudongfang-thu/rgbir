@@ -1,0 +1,77 @@
+{
+  "protocol": "tc_geometry_exact_image_v1",
+  "mode": "verified_identity_grid",
+  "verified": false,
+  "scope": "exact_images_and_convex_hull_intersection_only",
+  "entries": [
+    {
+      "status": "pending_independent_review",
+      "audit_id": "llvip_050001",
+      "source": "independent_physical_correspondences",
+      "annotator": "Codex implement_geometry; actual original-resolution tool image inspection",
+      "image_paths": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/050001.jpg"
+      ],
+      "original_shape": [
+        1024,
+        1280
+      ],
+      "rgb_points": [
+        [
+          305,
+          171
+        ],
+        [
+          854,
+          470
+        ],
+        [
+          1093,
+          636
+        ],
+        [
+          138,
+          152
+        ],
+        [
+          387,
+          188
+        ],
+        [
+          625,
+          204
+        ]
+      ],
+      "ir_points": [
+        [
+          308,
+          169
+        ],
+        [
+          855,
+          470
+        ],
+        [
+          1092,
+          636
+        ],
+        [
+          136,
+          150
+        ],
+        [
+          387,
+          187
+        ],
+        [
+          628,
+          205
+        ]
+      ],
+      "uncertainty_raw_px": 3,
+      "independent_review_required": false,
+      "review_status": "pending"
+    }
+  ],
+  "note": "Pending approximate marks do not admit any object to formal DFL KD."
+}

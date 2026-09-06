@@ -1,0 +1,50 @@
+{
+  "protocol": "tc_geometry_primary_visual_batch4_v1",
+  "annotator": "Codex implement_geometry; original-resolution RGB and IR images actually viewed",
+  "coordinate_basis": "Original 1280x1024 images; coordinates in raw pixels. RGB brightness x2.5 display was used only to inspect dark static features, without resampling geometry. Static crop panels carry raw coordinate grids. Candidate status is not acceptance.",
+  "formal_geometry_verified": false,
+  "observations": [
+    {
+      "audit_id": "llvip_030237",
+      "status": "insufficient_trusted_points_and_spatial_coverage",
+      "original_shape": [1024, 1280],
+      "panel_to_raw_scale": 2,
+      "uncertainty_raw_px": 3,
+      "points": [
+        {"id": "a", "feature": "center of upper-middle road manhole ellipse", "rgb": [414, 499], "ir": [414, 500]},
+        {"id": "b", "feature": "center of lower-left road manhole ellipse", "rgb": [162, 708], "ir": [165, 709]}
+      ],
+      "unconfirmed_candidates": ["lower-right manhole obscured by foreground branch and weak IR rim", "upper-left bollard obscured by cyclist", "crosswalk paint intersections lack independently visible IR boundaries", "foreground branch bifurcations have difficult depth/occlusion correspondence"],
+      "interpretation": "Attempted to find six static distributed points but established only two approximate centers. No accepted mask or group propagation."
+    },
+    {
+      "audit_id": "llvip_030474",
+      "status": "insufficient_trusted_points_and_spatial_coverage",
+      "original_shape": [1024, 1280],
+      "panel_to_raw_scale": 2,
+      "uncertainty_raw_px": 3,
+      "points": [
+        {"id": "a", "feature": "center of upper-middle road manhole ellipse", "rgb": [414, 500], "ir": [414, 501]},
+        {"id": "b", "feature": "center of lower-left road manhole ellipse", "rgb": [163, 710], "ir": [166, 710]}
+      ],
+      "unconfirmed_candidates": ["lower-right manhole lies behind branch and IR rim not separable", "left bollard top too dark/soft in IR for confident physical surface center", "road paint corners are visible only in RGB", "far pole boundary has perspective and occlusion ambiguity"],
+      "interpretation": "Brighter RGB does not restore independently visible IR road markings. No accepted mask or group propagation."
+    },
+    {
+      "audit_id": "llvip_060258",
+      "status": "six_static_candidates_needs_independent_review",
+      "original_shape": [1024, 1280],
+      "panel_to_raw_scale": 2,
+      "uncertainty_raw_px": 4,
+      "points": [
+        {"id": "a", "feature": "center of left low-wall square pier upper face; RGB texture and IR rounded silhouette differ", "rgb": [150, 409], "ir": [152, 402], "confidence": "candidate_ambiguous_surface_center"},
+        {"id": "b", "feature": "upper outer corner of tall rear fence post; IR contour identification uncertain", "rgb": [969, 155], "ir": [961, 154], "confidence": "candidate_ambiguous_corner"},
+        {"id": "c", "feature": "center of signal-pole ground contact; wider IR bright base than RGB stem", "rgb": [610, 863], "ir": [612, 869], "confidence": "candidate_ambiguous_contact_center"},
+        {"id": "d", "feature": "center of sidewalk manhole ellipse", "rgb": [884, 841], "ir": [886, 842], "confidence": "clearer_static_center"},
+        {"id": "e", "feature": "top-surface center of nearer lower-right bollard", "rgb": [961, 855], "ir": [963, 859], "confidence": "candidate_surface_center"},
+        {"id": "f", "feature": "top-surface center of far-right bollard", "rgb": [1200, 877], "ir": [1200, 879], "confidence": "candidate_surface_center"}
+      ],
+      "interpretation": "Six distributed static candidates can be proposed, but this is not six accepted physical correspondences: fence/pier/pole contours are less certain than the manhole. A conservative 4 raw-pixel primary uncertainty is recorded. Require independent review and unchanged P3/P4 gates; do not take low residuals as proof or discard a point merely to pass the gate."
+    }
+  ]
+}

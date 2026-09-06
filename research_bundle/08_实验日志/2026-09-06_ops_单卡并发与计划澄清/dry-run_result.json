@@ -1,0 +1,82 @@
+{
+  "status": "DRY_RUN_PASSED",
+  "changes": [
+    {
+      "identity": {
+        "lease_id": "oev1_random_full_s42-66b55165489e",
+        "job_id": "oev1_random_full_s42",
+        "guard_pid": 975933,
+        "cuda_pid": 975949,
+        "gpu": 2,
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+        "arm": "paired_random",
+        "seed": 42
+      },
+      "before": {
+        "expected_vram_mib": 10000,
+        "expected_rss_mib": 49152
+      },
+      "after": {
+        "expected_vram_mib": 8300,
+        "expected_rss_mib": 32768
+      },
+      "observed_peak_vram_mib": 7632,
+      "observed_peak_rss_mib": 28825,
+      "current_tree_rss_mib": 28779,
+      "full_progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 10,
+        "epochs": 200,
+        "optimizer_updates": 3053,
+        "update_attempts": 3060,
+        "amp_skips": 7,
+        "batches": 5275,
+        "selected_objects": 641408,
+        "seconds": 1933.0449130535126,
+        "last_kd": 0.2531850337982178
+      },
+      "vram_margin_mib": 668,
+      "rss_margin_mib": 3943
+    },
+    {
+      "identity": {
+        "lease_id": "rgbir_oev1_expand_full_paired_s0_attempt1-7f1297f1b60b",
+        "job_id": "rgbir_oev1_expand_full_paired_s0_attempt1",
+        "guard_pid": 3743513,
+        "cuda_pid": 3743565,
+        "gpu": 5,
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+        "arm": "paired",
+        "seed": 0
+      },
+      "before": {
+        "expected_vram_mib": 10000,
+        "expected_rss_mib": 49152
+      },
+      "after": {
+        "expected_vram_mib": 8300,
+        "expected_rss_mib": 32768
+      },
+      "observed_peak_vram_mib": 7632,
+      "observed_peak_rss_mib": 28810,
+      "current_tree_rss_mib": 28778,
+      "full_progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 64,
+        "epochs": 200,
+        "optimizer_updates": 18319,
+        "update_attempts": 18330,
+        "amp_skips": 11,
+        "batches": 35815,
+        "selected_objects": 4354601,
+        "seconds": 14897.75153684616,
+        "last_kd": 0.18464431166648865
+      },
+      "vram_margin_mib": 668,
+      "rss_margin_mib": 3958
+    }
+  ],
+  "note": "No file or lease changed; revalidate under lock on --apply."
+}

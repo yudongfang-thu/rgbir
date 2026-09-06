@@ -1,0 +1,45 @@
+{
+  "phase": "d2_memory_canary",
+  "jobs": [
+    {
+      "id": "tckd_d2_drone_8_a1",
+      "kind": "feature",
+      "vram_mib": 5000,
+      "rss_mib": 8192,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v4/diagnose_opportunities.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v4/configs/drone_draft.yaml",
+        "--split",
+        "train",
+        "--max-images",
+        "8",
+        "--batch",
+        "8",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_8_attempt1"
+      ]
+    },
+    {
+      "id": "tckd_d2_llvip_8_a1",
+      "kind": "feature",
+      "vram_mib": 5000,
+      "rss_mib": 8192,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v4/diagnose_opportunities.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v4/configs/llvip_draft.yaml",
+        "--split",
+        "train",
+        "--max-images",
+        "8",
+        "--batch",
+        "8",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_8_attempt1"
+      ]
+    }
+  ]
+}

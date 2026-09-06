@@ -1,0 +1,290 @@
+{
+  "status": "ACCEPTED",
+  "protocol": "tc_legacy_criterion_exact_equivalence_v1",
+  "legacy_C_N_equivalence": true,
+  "batch_count": 1,
+  "batch_size": 32,
+  "seed": 42,
+  "amp": true,
+  "optimizer_updates": 0,
+  "test_accessed": false,
+  "dataset": "dronevehicle",
+  "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+  "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+  "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+  "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v7/configs/drone_draft.yaml",
+  "legacy_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v7/legacy_oev1/train_object_evidence.py",
+  "new_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v7/task_criterion.py",
+  "records": [
+    {
+      "protocol": "tc_legacy_criterion_exact_equivalence_v1",
+      "actual_batch": 32,
+      "same_prediction_object": true,
+      "same_native_criterion_instance": true,
+      "teacher_labels_present": true,
+      "optimizer_updates": 0,
+      "pairs": [
+        {
+          "old_arm": "weight0",
+          "new_arm": "n",
+          "loss": {
+            "exact": true,
+            "max_abs_error": 0.0,
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          "native_items": {
+            "exact": true,
+            "kind": "dict",
+            "missing_keys": [],
+            "extra_keys": [],
+            "children": {
+              "box_loss": {
+                "exact": true,
+                "kind": "tensor",
+                "shape": [],
+                "dtype": "torch.float32",
+                "max_abs_error": 0.0
+              },
+              "cls_loss": {
+                "exact": true,
+                "kind": "tensor",
+                "shape": [],
+                "dtype": "torch.float32",
+                "max_abs_error": 0.0
+              },
+              "dfl_loss": {
+                "exact": true,
+                "kind": "tensor",
+                "shape": [],
+                "dtype": "torch.float32",
+                "max_abs_error": 0.0
+              }
+            }
+          },
+          "raw_gradients": {
+            "scores": {
+              "exact": true,
+              "max_abs_error": 0.0,
+              "shape": [
+                32,
+                5,
+                8400
+              ],
+              "dtype": "torch.float16"
+            },
+            "dfl_logits": {
+              "exact": true,
+              "max_abs_error": 0.0,
+              "shape": [
+                32,
+                64,
+                8400
+              ],
+              "dtype": "torch.float16"
+            }
+          },
+          "rng_effect_equal": true,
+          "old_calls": 1,
+          "new_calls": 1,
+          "old_selected_C": 119,
+          "new_selected_C": 119,
+          "old_loss": 248.09765625,
+          "new_loss": 248.09765625,
+          "exact": true,
+          "native_scalar_loss_exact": true,
+          "native_raw_gradients": {
+            "scores": {
+              "exact": true,
+              "max_abs_error": 0.0,
+              "shape": [
+                32,
+                5,
+                8400
+              ],
+              "dtype": "torch.float16"
+            },
+            "dfl_logits": {
+              "exact": true,
+              "max_abs_error": 0.0,
+              "shape": [
+                32,
+                64,
+                8400
+              ],
+              "dtype": "torch.float16"
+            }
+          }
+        },
+        {
+          "old_arm": "paired",
+          "new_arm": "c",
+          "loss": {
+            "exact": true,
+            "max_abs_error": 0.0,
+            "shape": [],
+            "dtype": "torch.float32"
+          },
+          "native_items": {
+            "exact": true,
+            "kind": "dict",
+            "missing_keys": [],
+            "extra_keys": [],
+            "children": {
+              "box_loss": {
+                "exact": true,
+                "kind": "tensor",
+                "shape": [],
+                "dtype": "torch.float32",
+                "max_abs_error": 0.0
+              },
+              "cls_loss": {
+                "exact": true,
+                "kind": "tensor",
+                "shape": [],
+                "dtype": "torch.float32",
+                "max_abs_error": 0.0
+              },
+              "dfl_loss": {
+                "exact": true,
+                "kind": "tensor",
+                "shape": [],
+                "dtype": "torch.float32",
+                "max_abs_error": 0.0
+              }
+            }
+          },
+          "raw_gradients": {
+            "scores": {
+              "exact": true,
+              "max_abs_error": 0.0,
+              "shape": [
+                32,
+                5,
+                8400
+              ],
+              "dtype": "torch.float16"
+            },
+            "dfl_logits": {
+              "exact": true,
+              "max_abs_error": 0.0,
+              "shape": [
+                32,
+                64,
+                8400
+              ],
+              "dtype": "torch.float16"
+            }
+          },
+          "rng_effect_equal": true,
+          "old_calls": 1,
+          "new_calls": 1,
+          "old_selected_C": 119,
+          "new_selected_C": 119,
+          "old_loss": 250.38404846191406,
+          "new_loss": 250.38404846191406,
+          "exact": true,
+          "C_contribution_raw_gradient_l2": {
+            "scores": 0.011701914481818676,
+            "dfl_logits": 0.0
+          },
+          "C_active": true
+        }
+      ],
+      "native_repeat": {
+        "loss": {
+          "exact": true,
+          "max_abs_error": 0.0,
+          "shape": [
+            3
+          ],
+          "dtype": "torch.float32"
+        },
+        "items": {
+          "exact": true,
+          "kind": "dict",
+          "missing_keys": [],
+          "extra_keys": [],
+          "children": {
+            "box_loss": {
+              "exact": true,
+              "kind": "tensor",
+              "shape": [],
+              "dtype": "torch.float32",
+              "max_abs_error": 0.0
+            },
+            "cls_loss": {
+              "exact": true,
+              "kind": "tensor",
+              "shape": [],
+              "dtype": "torch.float32",
+              "max_abs_error": 0.0
+            },
+            "dfl_loss": {
+              "exact": true,
+              "kind": "tensor",
+              "shape": [],
+              "dtype": "torch.float32",
+              "max_abs_error": 0.0
+            }
+          }
+        },
+        "gradients": {
+          "scores": {
+            "exact": true,
+            "max_abs_error": 0.0,
+            "shape": [
+              32,
+              5,
+              8400
+            ],
+            "dtype": "torch.float16"
+          },
+          "dfl_logits": {
+            "exact": true,
+            "max_abs_error": 0.0,
+            "shape": [
+              32,
+              64,
+              8400
+            ],
+            "dtype": "torch.float16"
+          }
+        },
+        "rng_effect_equal": true
+      },
+      "changed_state_keys": [],
+      "frozen_auxiliaries_no_grad": true,
+      "arithmetic_and_gradient_exact": true,
+      "active_C_exercised": true,
+      "status": "PASSED",
+      "criterion_scope_only": true,
+      "not_proven_here": [
+        "historical-vs-new loader sample-stream equality",
+        "24 successful optimizer updates",
+        "formal geometry coverage",
+        "scientific benefit"
+      ]
+    }
+  ],
+  "criterion_scope_only": true,
+  "seconds": 19.013598203659058,
+  "gpu_allocated_peak_mib": 4798.1171875,
+  "gpu_reserved_peak_mib": 5226.0,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 5722
+    },
+    "peak_rss_mib": 27864
+  },
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115"
+  }
+}

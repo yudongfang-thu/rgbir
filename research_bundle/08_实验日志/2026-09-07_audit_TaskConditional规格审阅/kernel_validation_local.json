@@ -1,0 +1,98 @@
+{
+  "python": "D:\\Anaconda\\envs\\KGJ_proj\\python.exe",
+  "python_version": "3.8.0",
+  "torch": "1.8.0+cu111",
+  "cuda_visible_devices": "",
+  "torch_threads": 1,
+  "scope": "CPU synthetic tensors only; no model/checkpoint/data/GPU loaded",
+  "checks": [
+    {
+      "name": "independent_scalar_KL_layout_oracle",
+      "status": "passed",
+      "actual": 0.9959834218025208,
+      "expected": 0.995983375456811
+    },
+    {
+      "name": "analytic_student_gradient_and_teacher_gate_detach",
+      "status": "passed",
+      "max_error": 3.725290298461914e-09
+    },
+    {
+      "name": "zero_gate_differentiable_zero",
+      "status": "passed"
+    },
+    {
+      "name": "same_distribution_near_zero",
+      "status": "passed",
+      "actual": 1.7322843604006266e-08
+    },
+    {
+      "name": "fixed_denominator_half_gate_half_dose",
+      "status": "passed"
+    },
+    {
+      "name": "replicated_anchor_object_balance",
+      "status": "passed"
+    },
+    {
+      "name": "per_side_logit_offset_invariance",
+      "status": "passed"
+    },
+    {
+      "name": "two_KD_scalars_added_once_native_not_rescaled",
+      "status": "passed",
+      "total": 10.0
+    },
+    {
+      "name": "fp16_input_fp32_kernel_finite_gradient",
+      "status": "passed",
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "CPU_bfloat16_autocast_keeps_kernel_FP32",
+      "status": "not_available_on_this_torch"
+    },
+    {
+      "name": "reject_negative_gate",
+      "status": "passed"
+    },
+    {
+      "name": "reject_NaN_even_zero_gate",
+      "status": "passed"
+    },
+    {
+      "name": "reject_mismatched_shape",
+      "status": "passed"
+    },
+    {
+      "name": "counterexample_better_expectation_not_guaranteed_GT_DFL_gradient",
+      "status": "passed",
+      "teacher_mean": 3.996000289916992,
+      "reference_mean": 4.189000129699707,
+      "GT_distance": 4,
+      "native_gradient_dot_KD_gradient": -0.031001558527350426,
+      "native_CE_before": 0.2231435477733612,
+      "native_CE_after_KD_step": 0.22345373034477234,
+      "interpretation": "Method hypothesis limitation, NOT a kernel bug or measured AP result"
+    },
+    {
+      "name": "GT_DFL_temperature_changes_native_target_if_q_not_softened",
+      "status": "passed",
+      "GT_two_bin_probabilities": [
+        0.30000001192092896,
+        0.699999988079071
+      ],
+      "native_optimum_when_T2_target_left_unmodified": [
+        0.1551724225282669,
+        0.8448275923728943
+      ],
+      "native_optimum_when_target_softened_consistently": [
+        0.29999998211860657,
+        0.6999999284744263
+      ],
+      "interpolation_expected_distance": 4.7,
+      "native_optimum_distance_when_T2_target_left_unmodified": 4.844827592372894,
+      "interpretation": "Section12.4 needs a frozen convention; NOT an Appendix A bug"
+    }
+  ]
+}

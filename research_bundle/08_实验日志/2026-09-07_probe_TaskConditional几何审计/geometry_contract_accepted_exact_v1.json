@@ -1,0 +1,79 @@
+{
+  "protocol": "tc_geometry_exact_image_v1",
+  "mode": "verified_identity_grid",
+  "verified": true,
+  "scope": "exact_images_and_convex_hull_intersection_only",
+  "evidence_type": "empirical_correspondence_bound_not_pixelwise_calibration",
+  "entries": [
+    {
+      "status": "accepted",
+      "audit_id": "llvip_050001",
+      "source": "independent_physical_correspondences",
+      "annotator": "Codex implement_geometry; actual original-resolution tool image inspection",
+      "reviewer": "Codex root independent image review",
+      "review_status": "accepted",
+      "review_artifact": "E:\\SHARE\\\u5149sar\\08_\u5b9e\u9a8c\u65e5\u5fd7\\2026-09-07_probe_TaskConditional\u51e0\u4f55\u5ba1\u8ba1\\INDEPENDENT_REVIEW_BATCH2.md",
+      "independent_review_required": false,
+      "image_paths": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/050001.jpg"
+      ],
+      "original_shape": [
+        1024,
+        1280
+      ],
+      "rgb_points": [
+        [
+          305,
+          171
+        ],
+        [
+          854,
+          470
+        ],
+        [
+          1093,
+          636
+        ],
+        [
+          138,
+          152
+        ],
+        [
+          387,
+          188
+        ],
+        [
+          625,
+          204
+        ]
+      ],
+      "ir_points": [
+        [
+          308,
+          169
+        ],
+        [
+          855,
+          470
+        ],
+        [
+          1092,
+          636
+        ],
+        [
+          136,
+          150
+        ],
+        [
+          387,
+          187
+        ],
+        [
+          628,
+          205
+        ]
+      ],
+      "uncertainty_raw_px": 3
+    }
+  ]
+}

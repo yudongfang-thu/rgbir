@@ -1,0 +1,149 @@
+{"cuda_processes_per_gpu": 1, "expected_rss_mib": 32768, "expected_vram_mib": 8300, "gpu_ids": [4], "lease_id": "oev1_content_c_shuffled_s42_a1-e3290598b3bd", "pid": 2265745, "status": "LAUNCHED"}
+Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)
+[34m[1mengine/trainer: [0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=32, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=False, classes=None, close_mosaic=0, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=200, erasing=0.0, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.0, hsv_s=0.0, hsv_v=0.0, imgsz=640, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt, momentum=0.937, mosaic=0.0, multi_scale=False, name=full_c_shuffled_s42_attempt1, nbs=64, nms=False, opset=None, optimize=False, optimizer=SGD, overlap_mask=True, patience=0, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=False, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=4, workspace=None
+Overriding model.yaml nc=80 with nc=5
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      6640  ultralytics.nn.modules.block.C3k2            [32, 64, 1, False, 0.25]      
+  3                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+  4                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  5                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  6                  -1  1     87040  ultralytics.nn.modules.block.C3k2            [128, 128, 1, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]                 
+ 10                  -1  1    249728  ultralytics.nn.modules.block.C2PSA           [256, 256, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    111296  ultralytics.nn.modules.block.C3k2            [384, 128, 1, False]          
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1     32096  ultralytics.nn.modules.block.C3k2            [256, 64, 1, False]           
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1     86720  ultralytics.nn.modules.block.C3k2            [192, 128, 1, False]          
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1    378880  ultralytics.nn.modules.block.C3k2            [384, 256, 1, True]           
+ 23        [16, 19, 22]  1    431647  ultralytics.nn.modules.head.Detect           [5, 16, None, [64, 128, 256]] 
+YOLO11n summary: 182 layers, 2,590,815 parameters, 2,590,799 gradients, 6.5 GFLOPs
+
+Remapped 3/5 cls head rows from pretrained weights by class name
+Transferred 451/499 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3278.9±980.5 MB/s, size: 129.0 KB)
+
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train.cache... 17990 images, 512 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 17990/17990 3.1Git/s 0.0s
+[34m[1mtrain: [0m/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00941.jpg: 1 duplicate labels removed
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3264.0±773.4 MB/s, size: 121.4 KB)
+
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train.cache... 17990 images, 33 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 17990/17990 4.2Git/s 0.0s
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3289.7±1376.9 MB/s, size: 135.7 KB)
+
+[K[34m[1mval: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val.cache... 1469 images, 27 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1469/1469 84.4Mit/s 0.0s
+[34m[1moptimizer:[0m SGD(lr=0.01, momentum=0.937) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1m/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1[0m
+Starting training for 200 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+[K      1/200      5.01G       1.65      4.716      1.387        476        640: 0% ──────────── 0/563  8.6s
+[K      1/200      5.36G      1.606      4.747      1.365        525        640: 0% ──────────── 1/563 5.7s/it 10.3s<52:60
+[K      1/200      5.62G       1.68       4.76      1.403        506        640: 0% ──────────── 2/563 3.3s/it 12.0s<31:08
+[K      1/200      5.73G      1.691       4.76      1.416        557        640: 0% ──────────── 3/563 2.7s/it 13.9s<24:57
+[K      1/200      5.73G      1.677      4.752        1.4        494        640: 0% ──────────── 4/563 2.2s/it 15.5s<20:52
+[K      1/200      5.83G      1.684      4.754      1.401        524        640: 0% ──────────── 5/563 2.1s/it 17.4s<19:41
+[K      1/200      5.83G      1.674      4.746      1.405        526        640: 1% ──────────── 6/563 2.1s/it 19.3s<19:06
+[K      1/200      5.83G      1.682      4.745      1.399        432        640: 1% ──────────── 7/563 1.9s/it 20.8s<17:14
+[K      1/200      5.83G      1.673      4.743      1.398        376        640: 1% ──────────── 8/563 1.7s/it 22.3s<15:47
+[K      1/200      5.83G      1.672      4.733      1.401        420        640: 1% ──────────── 9/563 1.6s/it 23.8s<15:09
+[K      1/200      5.85G      1.682       4.72      1.411        570        640: 1% ──────────── 10/563 1.8s/it 25.8s<16:09
+[K      1/200      5.85G      1.671       4.72      1.397        507        640: 1% ──────────── 11/563 1.8s/it 27.7s<16:21
+[K      1/200      5.85G       1.66      4.711       1.39        377        640: 2% ──────────── 12/563 1.6s/it 29.1s<15:09
+[K      1/200      5.85G      1.654      4.698      1.382        370        640: 2% ──────────── 13/563 1.6s/it 30.5s<14:27
+[K      1/200      5.85G      1.648      4.685      1.374        463        640: 2% ──────────── 14/563 1.6s/it 32.2s<14:42
+[K      1/200      5.98G      1.651      4.672      1.375        562        640: 2% ──────────── 15/563 1.7s/it 34.3s<15:48
+[K      1/200      5.98G      1.648      4.656      1.369        521        640: 2% ──────────── 16/563 1.7s/it 35.9s<15:21
+[K      1/200      5.98G       1.65      4.649       1.37        414        640: 3% ──────────── 17/563 1.6s/it 37.3s<14:31
+[K      1/200      5.98G      1.641      4.639      1.365        458        640: 3% ──────────── 18/563 1.6s/it 39.0s<14:46
+[K      1/200      5.98G      1.634      4.622      1.363        401        640: 3% ──────────── 19/563 1.5s/it 40.3s<13:48
+[K      1/200      5.98G      1.632      4.615      1.364        484        640: 3% ──────────── 20/563 1.6s/it 42.1s<14:14
+[K      1/200      5.98G       1.63      4.598      1.367        483        640: 3% ──────────── 21/563 1.6s/it 43.7s<14:18
+[K      1/200      5.98G      1.626      4.579      1.364        521        640: 3% ──────────── 22/563 1.6s/it 45.4s<14:47
+[K      1/200      5.98G      1.625      4.564      1.363        512        640: 4% ──────────── 23/563 1.7s/it 47.1s<14:52
+[K      1/200      5.98G      1.616      4.544      1.365        401        640: 4% ╸─────────── 24/563 1.6s/it 48.5s<14:07
+[K      1/200      5.98G       1.62      4.531      1.368        497        640: 4% ╸─────────── 25/563 1.6s/it 50.3s<14:38
+[K      1/200      5.98G      1.621      4.513      1.372        510        640: 4% ╸─────────── 26/563 1.7s/it 52.1s<14:54
+[K      1/200      5.98G      1.618      4.491      1.371        446        640: 4% ╸─────────── 27/563 1.7s/it 53.7s<14:45
+[K      1/200      5.98G      1.614      4.473       1.37        449        640: 4% ╸─────────── 28/563 1.6s/it 55.2s<14:11
+[K      1/200      5.98G      1.612      4.445      1.371        587        640: 5% ╸─────────── 29/563 1.8s/it 57.5s<15:39
+[K      1/200      5.98G      1.607      4.417       1.37        544        640: 5% ╸─────────── 30/563 1.8s/it 59.5s<16:11
+[K      1/200      5.98G      1.605      4.386      1.371        444        640: 5% ╸─────────── 31/563 1.8s/it 1:01<15:40
+[K      1/200      5.98G        1.6      4.356      1.369        368        640: 5% ╸─────────── 32/563 1.6s/it 1:03<14:29
+[K      1/200      5.98G      1.597      4.333      1.369        398        640: 5% ╸─────────── 33/563 1.6s/it 1:04<14:07
+[K      1/200      5.98G      1.602      4.306      1.373        478        640: 6% ╸─────────── 34/563 1.6s/it 1:06<14:15
+[K      1/200      5.98G      1.593       4.28       1.37        513        640: 6% ╸─────────── 35/563 1.7s/it 1:07<14:33
+[K      1/200      5.98G      1.592      4.246      1.371        408        640: 6% ╸─────────── 36/563 1.6s/it 1:09<13:44
+[K      1/200      5.98G      1.595       4.22      1.373        401        640: 6% ╸─────────── 37/563 1.5s/it 1:10<13:20
+[K      1/200      5.98G      1.594      4.185      1.372        552        640: 6% ╸─────────── 38/563 1.6s/it 1:12<13:55
+[K      1/200      5.98G      1.594      4.154      1.373        442        640: 6% ╸─────────── 39/563 1.5s/it 1:13<13:27
+[K      1/200      5.98G      1.596      4.119      1.375        488        640: 7% ╸─────────── 40/563 1.6s/it 1:15<13:34
+[K      1/200      5.98G      1.597      4.085      1.376        554        640: 7% ╸─────────── 41/563 1.6s/it 1:17<13:48
+[K      1/200      5.98G      1.592       4.05      1.375        324        640: 7% ╸─────────── 42/563 1.4s/it 1:18<12:31
+[K      1/200      5.98G      1.591      4.021      1.374        534        640: 7% ╸─────────── 43/563 1.5s/it 1:20<13:02
+[K      1/200      5.98G      1.593      3.991      1.377        414        640: 7% ╸─────────── 44/563 1.5s/it 1:21<12:55
+[K      1/200      5.98G      1.591      3.957      1.377        443        640: 7% ╸─────────── 45/563 1.5s/it 1:23<13:09
+[K      1/200      5.98G      1.591      3.922      1.378        505        640: 8% ╸─────────── 46/563 1.6s/it 1:24<13:38
+[K      1/200      5.98G      1.596      3.892      1.382        442        640: 8% ━─────────── 47/563 1.6s/it 1:26<13:43
+[K      1/200      5.98G      1.596      3.869      1.383        511        640: 8% ━─────────── 48/563 1.6s/it 1:28<13:52
+[K      1/200      5.98G      1.592      3.843      1.382        350        640: 8% ━─────────── 49/563 1.5s/it 1:29<13:09
+[K      1/200      5.98G      1.589      3.809       1.38        600        640: 8% ━─────────── 50/563 1.6s/it 1:31<14:02
+[K      1/200      5.98G      1.587      3.777      1.379        486        640: 9% ━─────────── 51/563 1.7s/it 1:33<14:10
+[K      1/200      5.98G      1.586      3.745      1.379        338        640: 9% ━─────────── 52/563 1.5s/it 1:34<13:07
+[K      1/200      5.98G      1.585      3.718      1.378        437        640: 9% ━─────────── 53/563 1.5s/it 1:36<13:10
+[K      1/200      5.98G      1.583      3.694      1.376        459        640: 9% ━─────────── 54/563 1.5s/it 1:37<13:09
+[K      1/200      5.98G      1.581      3.675      1.375        435        640: 9% ━─────────── 55/563 1.5s/it 1:39<12:52
+[K      1/200      5.98G      1.579      3.658      1.373        476        640: 9% ━─────────── 56/563 1.6s/it 1:40<13:15
+[K      1/200      5.98G      1.577      3.628      1.371        538        640: 10% ━─────────── 57/563 1.6s/it 1:42<13:40
+[K      1/200      5.98G      1.581      3.603      1.374        490        640: 10% ━─────────── 58/563 1.7s/it 1:44<14:11
+[K      1/200      5.98G      1.583      3.579      1.377        403        640: 10% ━─────────── 59/563 1.7s/it 1:46<13:58
+[K      1/200      5.98G      1.581      3.552      1.376        391        640: 10% ━─────────── 60/563 1.6s/it 1:47<13:12
+[K      1/200      5.98G      1.582      3.534      1.377        480        640: 10% ━─────────── 61/563 1.6s/it 1:49<13:23
+[K      1/200      5.98G      1.584      3.518      1.378        453        640: 11% ━─────────── 62/563 1.6s/it 1:50<13:29
+[K      1/200      5.98G      1.584        3.5      1.378        355        640: 11% ━─────────── 63/563 1.5s/it 1:52<12:43
+[K      1/200      5.98G      1.583      3.476      1.378        585        640: 11% ━─────────── 64/563 1.6s/it 1:53<13:09
+[K      1/200      5.98G      1.585      3.456      1.379        523        640: 11% ━─────────── 65/563 1.6s/it 1:55<13:29
+[K      1/200      5.98G      1.582       3.44      1.378        484        640: 11% ━─────────── 66/563 1.7s/it 1:57<14:02
+[K      1/200      5.98G      1.583      3.418      1.378        393        640: 11% ━─────────── 67/563 1.6s/it 1:58<13:09
+[K      1/200      5.98G      1.581        3.4      1.377        480        640: 12% ━─────────── 68/563 1.6s/it 2:00<13:17
+[K      1/200      5.98G      1.584      3.383      1.378        498        640: 12% ━─────────── 69/563 1.6s/it 2:02<13:30
+[K      1/200      5.98G      1.581      3.358      1.377        578        640: 12% ━─────────── 70/563 1.7s/it 2:04<14:03
+[K      1/200      5.98G       1.58      3.341      1.376        429        640: 12% ━╸────────── 71/563 1.7s/it 2:05<13:39
+[K      1/200      5.98G      1.579      3.329      1.377        284        640: 12% ━╸────────── 72/563 1.5s/it 2:06<11:52
+[K      1/200      5.98G      1.578      3.311      1.376        366        640: 12% ━╸────────── 73/563 1.4s/it 2:08<11:41
+[K      1/200      5.99G      1.579      3.293      1.377        691        640: 13% ━╸────────── 74/563 1.6s/it 2:10<13:08
+[K      1/200      5.99G      1.578      3.278      1.376        528        640: 13% ━╸────────── 75/563 1.7s/it 2:12<13:30
+[K      1/200      5.99G      1.579      3.263      1.376        497        640: 13% ━╸────────── 76/563 1.7s/it 2:13<13:26
+[K      1/200      5.99G      1.577      3.241      1.375        616        640: 13% ━╸────────── 77/563 1.7s/it 2:15<14:06
+[K      1/200      5.99G      1.576      3.227      1.375        428        640: 13% ━╸────────── 78/563 1.7s/it 2:17<13:46
+[K      1/200      5.99G      1.576      3.212      1.374        452        640: 14% ━╸────────── 79/563 1.7s/it 2:19<13:41
+[K      1/200      5.99G      1.573      3.194      1.373        523        640: 14% ━╸────────── 80/563 1.7s/it 2:20<13:42
+[K      1/200         6G      1.573      3.186      1.373        715        640: 14% ━╸────────── 81/563 1.9s/it 2:23<14:59
+[K      1/200         6G      1.572      3.169      1.372        506        640: 14% ━╸────────── 82/563 1.9s/it 2:25<14:52
+[K      1/200         6G       1.57      3.151      1.371        478        640: 14% ━╸────────── 83/563 1.8s/it 2:26<14:38
+[K      1/200         6G      1.568      3.134       1.37        651        640: 14% ━╸────────── 84/563 1.9s/it 2:28<15:04
+[K      1/200         6G      1.568       3.12      1.371        614        640: 15% ━╸────────── 85/563 2.0s/it 2:31<15:49
+[K      1/200         6G      1.567      3.104       1.37        436        640: 15% ━╸────────── 86/563 1.8s/it 2:32<14:39
+[K      1/200         6G      1.564      3.086      1.368        519        640: 15% ━╸────────── 87/563 1.8s/it 2:34<14:11
+[K      1/200         6G      1.561      3.069      1.368        558        640: 15% ━╸────────── 88/563 1.8s/it 2:36<14:33
+[K      1/200         6G       1.56      3.059      1.368        446        640: 15% ━╸────────── 89/563 1.8s/it 2:38<14:11
+[K      1/200         6G      1.557       3.04      1.366        536        640: 15% ━╸────────── 90/563 1.8s/it 2:39<14:11
+[K      1/200         6G      1.554      3.031      1.364        431        640: 16% ━╸────────── 91/563 1.7s/it 2:41<12:59
+[K      1/200         6G      1.552      3.017      1.362        482        640: 16% ━╸────────── 92/563 1.6s/it 2:42<12:44
+[K      1/200         6G      1.549      3.002      1.362        424        640: 16% ━╸────────── 93/563 1.5s/it 2:44<11:49

@@ -1,0 +1,11 @@
+{
+  "seed": 123,
+  "gpu": 4,
+  "pid": 1149862,
+  "old_worker_retains_seed42": true,
+  "canary": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s123_attempt1",
+  "full": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1",
+  "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1",
+  "method_changed": false,
+  "expected_old_queue_exit": "After seed42 training AND evaluation, pre-existing canonical seed0 canary prevents old serial queue from duplicating transferred seeds."
+}

@@ -1,0 +1,1812 @@
+{
+  "protocol": "rgbir_d1_pre_nms_class_agnostic_d2_frozen_anchor_v1",
+  "dataset": "dronevehicle",
+  "split": "val",
+  "population_images": 1469,
+  "sampling": "proportional_source_groups_uniform_frame_ranks",
+  "source_roster": null,
+  "count": 200,
+  "roster": [
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00001.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00001.jpg",
+      "stem": "00001",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00001.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00001.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00008.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00008.jpg",
+      "stem": "00008",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00008.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00008.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00015.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00015.jpg",
+      "stem": "00015",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00015.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00015.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00023.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00023.jpg",
+      "stem": "00023",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00023.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00023.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00030.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00030.jpg",
+      "stem": "00030",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00030.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00030.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00037.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00037.jpg",
+      "stem": "00037",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00037.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00037.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00045.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00045.jpg",
+      "stem": "00045",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00045.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00045.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00052.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00052.jpg",
+      "stem": "00052",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00052.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00052.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00060.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00060.jpg",
+      "stem": "00060",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00060.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00060.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00067.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00067.jpg",
+      "stem": "00067",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00067.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00067.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00074.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00074.jpg",
+      "stem": "00074",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00074.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00074.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00082.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00082.jpg",
+      "stem": "00082",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00082.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00082.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00089.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00089.jpg",
+      "stem": "00089",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00089.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00089.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00096.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00096.jpg",
+      "stem": "00096",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00096.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00096.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00104.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00104.jpg",
+      "stem": "00104",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00104.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00104.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00111.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00111.jpg",
+      "stem": "00111",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00111.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00111.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00119.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00119.jpg",
+      "stem": "00119",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00119.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00119.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00126.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00126.jpg",
+      "stem": "00126",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00126.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00126.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00133.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00133.jpg",
+      "stem": "00133",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00133.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00133.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00141.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00141.jpg",
+      "stem": "00141",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00141.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00141.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00148.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00148.jpg",
+      "stem": "00148",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00148.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00148.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00155.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00155.jpg",
+      "stem": "00155",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00155.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00155.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00163.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00163.jpg",
+      "stem": "00163",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00163.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00163.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00170.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00170.jpg",
+      "stem": "00170",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00170.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00170.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00178.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00178.jpg",
+      "stem": "00178",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00178.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00178.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00185.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00185.jpg",
+      "stem": "00185",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00185.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00185.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00192.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00192.jpg",
+      "stem": "00192",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00192.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00192.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00200.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00200.jpg",
+      "stem": "00200",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00200.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00200.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00207.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00207.jpg",
+      "stem": "00207",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00207.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00207.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00214.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00214.jpg",
+      "stem": "00214",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00214.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00214.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00222.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00222.jpg",
+      "stem": "00222",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00222.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00222.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00229.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00229.jpg",
+      "stem": "00229",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00229.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00229.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00237.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00237.jpg",
+      "stem": "00237",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00237.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00237.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00244.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00244.jpg",
+      "stem": "00244",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00244.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00244.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00251.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00251.jpg",
+      "stem": "00251",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00251.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00251.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00259.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00259.jpg",
+      "stem": "00259",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00259.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00259.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00266.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00266.jpg",
+      "stem": "00266",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00266.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00266.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00273.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00273.jpg",
+      "stem": "00273",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00273.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00273.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00281.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00281.jpg",
+      "stem": "00281",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00281.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00281.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00288.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00288.jpg",
+      "stem": "00288",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00288.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00288.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00296.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00296.jpg",
+      "stem": "00296",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00296.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00296.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00303.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00303.jpg",
+      "stem": "00303",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00303.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00303.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00310.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00310.jpg",
+      "stem": "00310",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00310.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00310.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00318.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00318.jpg",
+      "stem": "00318",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00318.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00318.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00325.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00325.jpg",
+      "stem": "00325",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00325.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00325.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00332.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00332.jpg",
+      "stem": "00332",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00332.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00332.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00340.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00340.jpg",
+      "stem": "00340",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00340.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00340.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00347.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00347.jpg",
+      "stem": "00347",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00347.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00347.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00355.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00355.jpg",
+      "stem": "00355",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00355.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00355.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00362.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00362.jpg",
+      "stem": "00362",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00362.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00362.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00369.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00369.jpg",
+      "stem": "00369",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00369.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00369.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00377.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00377.jpg",
+      "stem": "00377",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00377.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00377.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00384.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00384.jpg",
+      "stem": "00384",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00384.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00384.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00391.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00391.jpg",
+      "stem": "00391",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00391.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00391.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00399.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00399.jpg",
+      "stem": "00399",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00399.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00399.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00406.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00406.jpg",
+      "stem": "00406",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00406.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00406.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00414.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00414.jpg",
+      "stem": "00414",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00414.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00414.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00421.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00421.jpg",
+      "stem": "00421",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00421.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00421.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00428.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00428.jpg",
+      "stem": "00428",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00428.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00428.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00436.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00436.jpg",
+      "stem": "00436",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00436.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00436.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00443.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00443.jpg",
+      "stem": "00443",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00443.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00443.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00450.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00450.jpg",
+      "stem": "00450",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00450.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00450.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00458.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00458.jpg",
+      "stem": "00458",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00458.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00458.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00465.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00465.jpg",
+      "stem": "00465",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00465.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00465.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00473.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00473.jpg",
+      "stem": "00473",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00473.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00473.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00480.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00480.jpg",
+      "stem": "00480",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00480.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00480.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00487.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00487.jpg",
+      "stem": "00487",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00487.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00487.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00495.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00495.jpg",
+      "stem": "00495",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00495.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00495.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00502.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00502.jpg",
+      "stem": "00502",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00502.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00502.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00510.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00510.jpg",
+      "stem": "00510",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00510.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00510.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00517.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00517.jpg",
+      "stem": "00517",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00517.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00517.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00524.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00524.jpg",
+      "stem": "00524",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00524.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00524.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00532.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00532.jpg",
+      "stem": "00532",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00532.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00532.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00539.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00539.jpg",
+      "stem": "00539",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00539.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00539.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00546.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00546.jpg",
+      "stem": "00546",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00546.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00546.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00554.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00554.jpg",
+      "stem": "00554",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00554.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00554.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00561.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00561.jpg",
+      "stem": "00561",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00561.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00561.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00569.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00569.jpg",
+      "stem": "00569",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00569.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00569.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00576.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00576.jpg",
+      "stem": "00576",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00576.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00576.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00583.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00583.jpg",
+      "stem": "00583",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00583.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00583.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00591.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00591.jpg",
+      "stem": "00591",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00591.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00591.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00598.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00598.jpg",
+      "stem": "00598",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00598.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00598.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00605.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00605.jpg",
+      "stem": "00605",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00605.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00605.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00613.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00613.jpg",
+      "stem": "00613",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00613.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00613.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00620.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00620.jpg",
+      "stem": "00620",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00620.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00620.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00628.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00628.jpg",
+      "stem": "00628",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00628.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00628.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00635.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00635.jpg",
+      "stem": "00635",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00635.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00635.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00642.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00642.jpg",
+      "stem": "00642",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00642.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00642.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00650.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00650.jpg",
+      "stem": "00650",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00650.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00650.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00657.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00657.jpg",
+      "stem": "00657",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00657.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00657.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00664.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00664.jpg",
+      "stem": "00664",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00664.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00664.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00672.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00672.jpg",
+      "stem": "00672",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00672.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00672.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00679.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00679.jpg",
+      "stem": "00679",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00679.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00679.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00687.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00687.jpg",
+      "stem": "00687",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00687.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00687.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00694.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00694.jpg",
+      "stem": "00694",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00694.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00694.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00701.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00701.jpg",
+      "stem": "00701",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00701.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00701.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00709.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00709.jpg",
+      "stem": "00709",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00709.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00709.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00716.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00716.jpg",
+      "stem": "00716",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00716.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00716.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00723.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00723.jpg",
+      "stem": "00723",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00723.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00723.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00731.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00731.jpg",
+      "stem": "00731",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00731.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00731.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00738.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00738.jpg",
+      "stem": "00738",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00738.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00738.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00746.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00746.jpg",
+      "stem": "00746",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00746.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00746.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00753.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00753.jpg",
+      "stem": "00753",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00753.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00753.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00760.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00760.jpg",
+      "stem": "00760",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00760.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00760.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00768.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00768.jpg",
+      "stem": "00768",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00768.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00768.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00775.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00775.jpg",
+      "stem": "00775",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00775.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00775.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00782.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00782.jpg",
+      "stem": "00782",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00782.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00782.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00790.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00790.jpg",
+      "stem": "00790",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00790.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00790.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00797.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00797.jpg",
+      "stem": "00797",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00797.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00797.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00805.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00805.jpg",
+      "stem": "00805",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00805.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00805.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00812.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00812.jpg",
+      "stem": "00812",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00812.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00812.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00819.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00819.jpg",
+      "stem": "00819",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00819.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00819.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00827.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00827.jpg",
+      "stem": "00827",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00827.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00827.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00834.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00834.jpg",
+      "stem": "00834",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00834.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00834.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00841.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00841.jpg",
+      "stem": "00841",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00841.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00841.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00849.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00849.jpg",
+      "stem": "00849",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00849.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00849.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00856.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00856.jpg",
+      "stem": "00856",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00856.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00856.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00864.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00864.jpg",
+      "stem": "00864",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00864.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00864.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00871.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00871.jpg",
+      "stem": "00871",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00871.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00871.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00878.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00878.jpg",
+      "stem": "00878",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00878.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00878.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00886.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00886.jpg",
+      "stem": "00886",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00886.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00886.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00893.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00893.jpg",
+      "stem": "00893",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00893.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00893.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00900.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00900.jpg",
+      "stem": "00900",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00900.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00900.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00908.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00908.jpg",
+      "stem": "00908",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00908.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00908.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00915.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00915.jpg",
+      "stem": "00915",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00915.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00915.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00923.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00923.jpg",
+      "stem": "00923",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00923.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00923.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00930.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00930.jpg",
+      "stem": "00930",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00930.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00930.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00937.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00937.jpg",
+      "stem": "00937",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00937.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00937.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00945.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00945.jpg",
+      "stem": "00945",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00945.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00945.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00952.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00952.jpg",
+      "stem": "00952",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00952.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00952.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00959.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00959.jpg",
+      "stem": "00959",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00959.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00959.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00967.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00967.jpg",
+      "stem": "00967",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00967.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00967.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00974.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00974.jpg",
+      "stem": "00974",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00974.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00974.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00982.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00982.jpg",
+      "stem": "00982",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00982.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00982.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00989.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00989.jpg",
+      "stem": "00989",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00989.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00989.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00996.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/00996.jpg",
+      "stem": "00996",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00996.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00996.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01004.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01004.jpg",
+      "stem": "01004",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01004.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01004.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01011.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01011.jpg",
+      "stem": "01011",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01011.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01011.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01019.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01019.jpg",
+      "stem": "01019",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01019.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01019.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01026.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01026.jpg",
+      "stem": "01026",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01026.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01026.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01033.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01033.jpg",
+      "stem": "01033",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01033.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01033.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01041.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01041.jpg",
+      "stem": "01041",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01041.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01041.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01048.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01048.jpg",
+      "stem": "01048",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01048.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01048.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01055.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01055.jpg",
+      "stem": "01055",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01055.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01055.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01063.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01063.jpg",
+      "stem": "01063",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01063.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01063.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01070.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01070.jpg",
+      "stem": "01070",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01070.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01070.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01078.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01078.jpg",
+      "stem": "01078",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01078.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01078.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01085.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01085.jpg",
+      "stem": "01085",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01085.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01085.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01092.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01092.jpg",
+      "stem": "01092",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01092.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01092.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01100.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01100.jpg",
+      "stem": "01100",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01100.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01100.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01107.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01107.jpg",
+      "stem": "01107",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01107.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01107.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01114.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01114.jpg",
+      "stem": "01114",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01114.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01114.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01122.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01122.jpg",
+      "stem": "01122",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01122.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01122.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01129.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01129.jpg",
+      "stem": "01129",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01129.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01129.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01137.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01137.jpg",
+      "stem": "01137",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01137.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01137.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01144.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01144.jpg",
+      "stem": "01144",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01144.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01144.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01151.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01151.jpg",
+      "stem": "01151",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01151.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01151.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01159.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01159.jpg",
+      "stem": "01159",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01159.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01159.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01166.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01166.jpg",
+      "stem": "01166",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01166.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01166.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01173.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01173.jpg",
+      "stem": "01173",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01173.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01173.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01181.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01181.jpg",
+      "stem": "01181",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01181.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01181.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01188.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01188.jpg",
+      "stem": "01188",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01188.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01188.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01196.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01196.jpg",
+      "stem": "01196",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01196.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01196.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01203.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01203.jpg",
+      "stem": "01203",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01203.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01203.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01210.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01210.jpg",
+      "stem": "01210",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01210.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01210.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01218.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01218.jpg",
+      "stem": "01218",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01218.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01218.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01225.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01225.jpg",
+      "stem": "01225",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01225.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01225.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01232.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01232.jpg",
+      "stem": "01232",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01232.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01232.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01240.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01240.jpg",
+      "stem": "01240",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01240.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01240.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01247.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01247.jpg",
+      "stem": "01247",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01247.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01247.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01255.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01255.jpg",
+      "stem": "01255",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01255.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01255.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01262.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01262.jpg",
+      "stem": "01262",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01262.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01262.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01269.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01269.jpg",
+      "stem": "01269",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01269.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01269.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01277.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01277.jpg",
+      "stem": "01277",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01277.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01277.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01284.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01284.jpg",
+      "stem": "01284",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01284.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01284.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01291.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01291.jpg",
+      "stem": "01291",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01291.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01291.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01299.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01299.jpg",
+      "stem": "01299",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01299.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01299.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01306.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01306.jpg",
+      "stem": "01306",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01306.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01306.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01314.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01314.jpg",
+      "stem": "01314",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01314.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01314.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01321.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01321.jpg",
+      "stem": "01321",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01321.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01321.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01328.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01328.jpg",
+      "stem": "01328",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01328.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01328.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01336.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01336.jpg",
+      "stem": "01336",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01336.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01336.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01343.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01343.jpg",
+      "stem": "01343",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01343.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01343.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01350.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01350.jpg",
+      "stem": "01350",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01350.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01350.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01358.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01358.jpg",
+      "stem": "01358",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01358.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01358.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01365.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01365.jpg",
+      "stem": "01365",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01365.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01365.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01373.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01373.jpg",
+      "stem": "01373",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01373.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01373.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01380.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01380.jpg",
+      "stem": "01380",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01380.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01380.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01387.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01387.jpg",
+      "stem": "01387",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01387.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01387.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01395.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01395.jpg",
+      "stem": "01395",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01395.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01395.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01402.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01402.jpg",
+      "stem": "01402",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01402.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01402.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01409.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01409.jpg",
+      "stem": "01409",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01409.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01409.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01417.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01417.jpg",
+      "stem": "01417",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01417.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01417.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01424.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01424.jpg",
+      "stem": "01424",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01424.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01424.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01432.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01432.jpg",
+      "stem": "01432",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01432.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01432.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01439.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01439.jpg",
+      "stem": "01439",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01439.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01439.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01446.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01446.jpg",
+      "stem": "01446",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01446.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01446.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01454.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01454.jpg",
+      "stem": "01454",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01454.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01454.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01461.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01461.jpg",
+      "stem": "01461",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01461.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01461.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01469.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01469.jpg",
+      "stem": "01469",
+      "source_group": "unavailable:val",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01469.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01469.txt"
+    }
+  ],
+  "official_test_accessed": false
+}

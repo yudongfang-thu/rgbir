@@ -1,42 +1,17 @@
 # RGBIR跨模态蒸馏：完整证据与独立审计入口
 
-本仓库用于让外部模型独立诊断一个面向J-STARS的跨模态目标检测项目。研究经历了RGB→SAR历史方法、RGB–IR数据诊断和首版对象判别蒸馏；这里保留正负结果、勘误、源码、协议、图册及可复算的小型证据。
+**最新更新：2026-09-07 03:22。请先读 [阶段状态与证据](TASK_CONDITIONAL_STATUS_20260907.md)，再按 [本轮独立复核请求](TASK_CONDITIONAL_REVIEW_PROMPT.md)检查代码及原始数据。**
 
-**请先读 [LATEST_RESULTS.md](LATEST_RESULTS.md)（2026-09-06 21:46更新），再读 [MODEL_REVIEW_GUIDE.md](MODEL_REVIEW_GUIDE.md)并按 [REVIEW_PROMPT.md](REVIEW_PROMPT.md)独立审计。** 不要把已有分析当作正确答案；请复算指标并核查实现。上传分支为`research/full-evidence-20260906`，旧入口原文保留在[ARCHIVE_README_v1.md](ARCHIVE_README_v1.md)。
+当前主线为未改定义的OEv1判别蒸馏C，以及新实现的条件定位L。C42相对同代码N42的mAP净差仅+0.144554pp，AP75为负，仍缺完整三seed。新D1/D2已覆盖两数据集各2048张训练图和200张开发图；定位信息存在，但当前已接受物理配准覆盖内D2=0，所以CL/CGT尚未开始。
 
-## 最新状态及判断边界
+N/C与两个C内容对照均完成24次成功更新，新旧C/N真实损失和梯度等价通过。按预设C归因分支，C-shuffled42已启动E200，C-same-modal42在统一资源队列等待；原N/C/random三seed继续，OS-SSL、VEDAI暂停。
 
-- **新方法方向是DroneVehicle的IR教师→RGB学生**，训练期使用独立IR标注辅助对象对应/教师质量判断，推理仅RGB。LLVIP也诊断了IR→RGB；VEDAI是RGB→NIR，不能统称热红外。
-- 六个baseline、三个数据集共521对图像的诊断已完成，含逐图/逐目标记录、特征图和配准可视化。配对相似性、教师更强或局部互补都不能直接推出可蒸馏增益。
-- OEv1用对象前景相对局部背景的正确类别证据做选择性蒸馏，方案在运行前冻结。现有paired/weight0×student seed0/42/123正在执行，teacher/reference固定seed42；已测原生数据流固定，seed重复主要覆盖初始化变化。
-- **2026-09-06 21:46 +08:00只读快照**：OEv1的P42/P123/N0已完成E200独立评估，mAP50–95分别为54.658/54.637/54.346；3/6端点、0/3完整同seed配对。N42/P0/N123分别完成135/28/20轮。**还不能报告同代码P−N净收益**；训练CSV占位及最后一轮错位字段不能当作AP。
-- OS-SSL已有3/9微调完成，首次同seed paired123−shuffled123的CSV差为+0.669mAP/+0.495AP50。仍缺独立last评估；旧native检测头初始化混杂和RGB-only SSL对照缺口详见最新分析。
-- 历史协议匹配CMDistill相对新native为−0.349±0.292 mAP百分点（3seed），但不能推广为“所有监督KD都无效”。HNEWA等已有小幅条件差异，需结合配对归因和方差；OS-SSL也有另一条独立证据线，不能用“唯一正例”替代逐协议判断。
+- [冻结计划与执行验收](research_bundle/08_实验日志/2026-09-07_train_TaskConditional首轮/README.md)
+- [独立模块源码、测试和运行入口](research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_task_conditional_v1)
+- [D1/D2完整结果、图表、gzip原件和复算脚本](research_bundle/08_实验日志/2026-09-07_probe_TaskConditional机会诊断)
+- [几何标点、独立复核、拒绝案例及适用范围](research_bundle/08_实验日志/2026-09-07_probe_TaskConditional几何审计)
+- [实验日志总索引](research_bundle/08_实验日志/README.md)
+- [历史全项目审计入口](ARCHIVE_README_20260906_2146.md) · [通用模型复核指南](MODEL_REVIEW_GUIDE.md)
+- [本次导出清单](TASK_CONDITIONAL_BUNDLE_MANIFEST_20260907.json) · [之前的完整包清单](BUNDLE_MANIFEST.json)
 
-最新运行来源见[21:46审计](research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/README.md)和[17:30审计](research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/README.md)。[08:53补采](research_bundle/remote_snapshot_20260906/README.md)继续保留。各文件是带时间戳的快照，不是实时仪表盘。
-
-## 从结论到证据
-
-| 想审查的问题 | 优先入口 |
-|---|---|
-| 为什么从SAR转向RGBIR、有哪些历史误判 | [全项目复盘](research_bundle/07_研究分析/全项目复盘与研究诊断_20260905.md)；[历史审计原始记录](01_audit_20260905) |
-| 数据配准、教师互补和可迁移知识 | [RGBIR诊断](research_bundle/07_研究分析/RGBIR数据特性与蒸馏方向诊断_20260906.md)；[521对完整产物](research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识) |
-| 直接查看图像和特征 | [特征图册](research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/特征图册.md)；[配准图](research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/README.md) |
-| OEv1具体蒸馏什么、如何筛选 | [冻结方案](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_PLAN.md)；[源码与测试](research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1) |
-| 实现是否生效、有没有三倍KD/标签/EMA问题 | [首轮检查](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/README.md)；[独立代码审查](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_CODE_REVIEW.md) |
-| 多seed与当前证据强度 | [三seed扩展](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/README.md)；[端点收集器说明](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/ENDPOINT_ANALYZER_NOTES.md) |
-| 历史N/L与HNEWA能否独立复算 | [N/L原始指标](02_raw_results_dronevehicle)；[HNEWA多臂记录](04_hnewa_eval_records) |
-| OS-SSL-IR并行路线 | [预注册](research_bundle/07_研究分析/方法预注册_OS-SSL-IR_20260906.md)；[执行记录](research_bundle/08_实验日志/2026-09-06_train_OS-SSL-IR迁移/README.md)；[补采来源](research_bundle/remote_snapshot_20260906/README.md) |
-| 文献背景与待核验的创新性 | [调研笔记](research_bundle/01_文献/RGB-IR_20260905新增)；文献旧判断不等于本次核验结论 |
-
-**历史命名陷阱**：`02_raw_results_dronevehicle/N_llvip_seed{0,42,123}_metrics_record.json`内部dataset/data_yaml实际属于DroneVehicle。文件名保留历史原样，辨认数据集须读取内容，不能把它们误作LLVIP原生对照。
-
-## 包的范围
-
-新增`research_bundle/`镜像相关本地资料，保留原目录便于追溯；`remote_snapshot_20260906/`补实际运行源码、协议、manifest、完整小型结果、部分注明截断的日志、固定依赖版本及Ultralytics源码/原发行LICENSE。大manifest有无损gzip和可读配对TSV；图册、PNG、CSV/JSON与导出NPZ均可检查。
-
-未上传原始数据集、模型权重、凭据、第三方论文全文或环境缓存。源代码/原始数值保持原字节，导出Markdown做相对链接适配。来源见[BUNDLE_MANIFEST.json](BUNDLE_MANIFEST.json)，省略与运行边界见[BUNDLE_SCOPE.md](BUNDLE_SCOPE.md)。完整训练仍需数据、权重、相容环境和路径适配；本包没有宣称可离开94一键复现。
-
-复制的AGENTS仅作为研究规范和当时资源约束的证据，不要求审计模型连接服务器或执行训练。请区分已接受的历史分析、描述性复算、工程检查、待验证假设与尚未完成的正式端点。
-
-发布前的来源保持、数值复算与导航检查见[发布检查记录](publication_checks/README.md)。
+本仓库用于独立检查一个面向J-STARS的研究项目，保留正负结果、失败attempt、勘误和时间戳快照。训练中任务没有AP，单seed不代表稳定增益，未核验几何的诊断不能授权定位长训。仓库不含凭据、大权重或数据集原图全集；服务器路径与模型身份保留供复核。

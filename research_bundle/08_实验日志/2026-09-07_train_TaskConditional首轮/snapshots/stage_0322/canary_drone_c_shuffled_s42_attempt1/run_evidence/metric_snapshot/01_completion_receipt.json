@@ -1,0 +1,44 @@
+{
+  "status": "canary_completed",
+  "method_id": "RGBIR-OEV1-PLUS-LOC-v1",
+  "arm": "c_shuffled",
+  "seed": 42,
+  "epochs_configured": 200,
+  "last_epoch": 1,
+  "optimizer_updates": 24,
+  "optimizer_update_attempts": 30,
+  "amp_skipped_updates": 6,
+  "ema_updates": 30,
+  "batches": 30,
+  "selected_objects": 3767,
+  "selected_localization_objects": 259,
+  "gradient_checks": [
+    {
+      "batch": 1,
+      "kd_score_gradient_l2": 0.0020745997317135334,
+      "kd_box_gradient_l2": 0.003794267773628235,
+      "composition_max_error": 3.814697265625e-06,
+      "weight0_exact_loss_gradient": true,
+      "teacher_has_grad": false,
+      "reference_has_grad": false
+    }
+  ],
+  "gpu_allocated_peak_mib": 5390.32568359375,
+  "gpu_reserved_peak_mib": 6122.0,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 6656
+    },
+    "peak_rss_mib": 29959
+  },
+  "seconds": 84.20550584793091,
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/weights/last.pt",
+  "official_test_accessed": false,
+  "single_seed_exploratory": true
+}

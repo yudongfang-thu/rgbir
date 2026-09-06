@@ -1,0 +1,23 @@
+{
+  "checks": [
+    {
+      "test": "test_localization_loss.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_anchor_specific_geometry_mask (__main__.LocalizationTests) ... ok\ntest_fixed_base_denominator_includes_bad_teacher (__main__.LocalizationTests) ... /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v3/test_localization_loss.py:140: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n  self.assertAlmostEqual(float(two), float(one)/2, places=6)\nok\ntest_gt_control_uses_identical_mask_anchor_denominator (__main__.LocalizationTests) ... ok\ntest_gt_temperature_preserves_native_two_bin_optimum (__main__.LocalizationTests) ... ok\ntest_invalid_layout_nonfinite_and_empty_labels (__main__.LocalizationTests) ... ok\ntest_layout_side_bin_anchor_and_analytic_kl (__main__.LocalizationTests) ... ok\ntest_random_same_k_dose_and_private_rng (__main__.LocalizationTests) ... ok\ntest_selected_anchor_and_teacher_reference_detach (__main__.LocalizationTests) ... ok\ntest_small_unpaired_other_class_gt_blocks_native_competition (__main__.LocalizationTests) ... ok\ntest_strict_pair_filter_follows_half_iou_matching (__main__.LocalizationTests) ... ok\ntest_student_values_never_choose_anchors_or_gates (__main__.LocalizationTests) ... ok\ntest_teacher_must_be_good_at_reference_selected_anchor (__main__.LocalizationTests) ... ok\ntest_tie_break_confidence_then_iou_then_global_anchor (__main__.LocalizationTests) ... ok\ntest_unclamped_support_precedes_reference_candidates (__main__.LocalizationTests) ... ok\ntest_weight_zero_and_equal_distributions (__main__.LocalizationTests) ... ok\ntest_zero_geometry_has_differentiable_zero (__main__.LocalizationTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.258s\n\nOK\n"
+    },
+    {
+      "test": "test_content_controls.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_c_no_common_object_is_exact_differentiable_zero (__main__.ContentControlTests) ... /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v3/test_content_controls.py:100: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n  self.assertEqual(float(loss), 0)\nok\ntest_content_changes_only_target_not_e_k_quality_or_rng (__main__.ContentControlTests) ... ok\ntest_identical_c_content_exact_loss_gradient_and_all_stats (__main__.ContentControlTests) ... ok\ntest_l_content_cannot_regate_or_reassign_even_if_wrong_class (__main__.ContentControlTests) ... ok\ntest_l_content_preserves_zero_and_frozen_temperature (__main__.ContentControlTests) ... ok\ntest_l_identical_content_exact_loss_gradient_and_stats (__main__.ContentControlTests) ... ok\ntest_no_content_labels_or_regions_can_enter_selection (__main__.ContentControlTests) ... ok\ntest_same_modal_reads_rgb_allowlist_and_retains_legacy_signal (__main__.ContentControlTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.285s\n\nOK\n"
+    },
+    {
+      "test": "test_tracked_pair_data.py",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "..E\n======================================================================\nERROR: test_tap_preserves_params_and_rng (__main__.TraceTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v3/test_tracked_pair_data.py\", line 34, in test_tap_preserves_params_and_rng\n    self.assertEqual(recorder['x']['original_shape'], (1024, 1280))\nKeyError: 'x'\n\n----------------------------------------------------------------------\nRan 3 tests in 0.004s\n\nFAILED (errors=1)\n"
+    }
+  ],
+  "passed": false
+}

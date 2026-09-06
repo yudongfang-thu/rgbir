@@ -1,0 +1,185 @@
+{
+  "leases": {
+    "oev1_random_full_s42-66b55165489e": {
+      "admission": {
+        "active_gpus_after": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "per_gpu": {
+          "2": {
+            "project_cuda_processes_after": 1,
+            "project_vram_reserved_after_mib": 10000
+          }
+        },
+        "project_rss_reserved_after_mib": 196608
+      },
+      "bound_at": 1788708272.2022133,
+      "created_at": 1788708271.8867838,
+      "cuda_processes_per_gpu": 1,
+      "expected_rss_mib": 32768,
+      "expected_vram_mib": 8300,
+      "formal_train": true,
+      "free_safety_mib": 2048,
+      "gpus": [
+        2
+      ],
+      "job_id": "oev1_random_full_s42",
+      "job_pid": 975933,
+      "kind": "train",
+      "lease_id": "oev1_random_full_s42-66b55165489e",
+      "observed_cuda_pids": [
+        975949
+      ],
+      "owner_pid": 975933,
+      "peak_cuda_pid_counts": {
+        "2": 1
+      },
+      "peak_rss_mib": 28825,
+      "per_gpu_peak_vram_mib": {
+        "2": 7632
+      },
+      "profiled_second_train": false
+    },
+    "rgbir_oev1_expand_full_paired_s0_attempt1-7f1297f1b60b": {
+      "admission": {
+        "active_gpus_after": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "per_gpu": {
+          "5": {
+            "project_cuda_processes_after": 1,
+            "project_vram_reserved_after_mib": 10000
+          }
+        },
+        "project_rss_reserved_after_mib": 197777
+      },
+      "bound_at": 1788695303.9364011,
+      "created_at": 1788695303.598571,
+      "cuda_processes_per_gpu": 1,
+      "expected_rss_mib": 32768,
+      "expected_vram_mib": 8300,
+      "formal_train": true,
+      "free_safety_mib": 2048,
+      "gpus": [
+        5
+      ],
+      "job_id": "rgbir_oev1_expand_full_paired_s0_attempt1",
+      "job_pid": 3743513,
+      "kind": "train",
+      "lease_id": "rgbir_oev1_expand_full_paired_s0_attempt1-7f1297f1b60b",
+      "observed_cuda_pids": [
+        3743565
+      ],
+      "owner_pid": 3743513,
+      "peak_cuda_pid_counts": {
+        "5": 1
+      },
+      "peak_rss_mib": 28810,
+      "per_gpu_peak_vram_mib": {
+        "5": 7632
+      },
+      "profiled_second_train": false
+    },
+    "rgbir_oev1_expand_full_weight0_s123_attempt1-92f76d31e647": {
+      "admission": {
+        "active_gpus_after": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "per_gpu": {
+          "6": {
+            "project_cuda_processes_after": 1,
+            "project_vram_reserved_after_mib": 10000
+          }
+        },
+        "project_rss_reserved_after_mib": 197816
+      },
+      "bound_at": 1788697520.9293063,
+      "created_at": 1788697520.5640275,
+      "cuda_processes_per_gpu": 1,
+      "expected_rss_mib": 49152,
+      "expected_vram_mib": 10000,
+      "formal_train": true,
+      "free_safety_mib": 2048,
+      "gpus": [
+        6
+      ],
+      "job_id": "rgbir_oev1_expand_full_weight0_s123_attempt1",
+      "job_pid": 3966414,
+      "kind": "train",
+      "lease_id": "rgbir_oev1_expand_full_weight0_s123_attempt1-92f76d31e647",
+      "observed_cuda_pids": [
+        3966512
+      ],
+      "owner_pid": 3966414,
+      "peak_cuda_pid_counts": {
+        "6": 1
+      },
+      "peak_rss_mib": 28800,
+      "per_gpu_peak_vram_mib": {
+        "6": 7632
+      },
+      "profiled_second_train": false
+    },
+    "rgbir_oev1_full_weight0_s42_attempt1-6a1c47384636": {
+      "admission": {
+        "active_gpus_after": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "per_gpu": {
+          "4": {
+            "project_cuda_processes_after": 1,
+            "project_vram_reserved_after_mib": 10000
+          }
+        },
+        "project_rss_reserved_after_mib": 197636
+      },
+      "bound_at": 1788674133.3698487,
+      "created_at": 1788674132.311817,
+      "cuda_processes_per_gpu": 1,
+      "expected_rss_mib": 49152,
+      "expected_vram_mib": 10000,
+      "formal_train": true,
+      "free_safety_mib": 2048,
+      "gpus": [
+        4
+      ],
+      "job_id": "rgbir_oev1_full_weight0_s42_attempt1",
+      "job_pid": 1564095,
+      "kind": "train",
+      "lease_id": "rgbir_oev1_full_weight0_s42_attempt1-6a1c47384636",
+      "observed_cuda_pids": [
+        1564206
+      ],
+      "owner_pid": 1564095,
+      "peak_cuda_pid_counts": {
+        "4": 1
+      },
+      "peak_rss_mib": 28898,
+      "per_gpu_peak_vram_mib": {
+        "4": 7632
+      },
+      "profiled_second_train": false
+    }
+  },
+  "policy": {
+    "formal_trains_per_gpu_default": 1,
+    "host_rss_admission_mib": 245760,
+    "host_rss_hard_mib": 307200,
+    "max_active_gpus": 3,
+    "max_cuda_processes_per_gpu": 2,
+    "project_vram_fraction_lt": 0.7
+  },
+  "schema": "jstars-project-resource-leases-v1"
+}

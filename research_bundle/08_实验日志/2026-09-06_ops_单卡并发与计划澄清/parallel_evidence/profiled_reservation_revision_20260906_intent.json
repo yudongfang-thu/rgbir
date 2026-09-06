@@ -1,0 +1,145 @@
+{
+  "status": "VALIDATED_BEFORE_COMMIT",
+  "captured_at_utc": "2026-09-06T15:57:11.143014+00:00",
+  "changes": [
+    {
+      "identity": {
+        "lease_id": "oev1_random_full_s42-66b55165489e",
+        "job_id": "oev1_random_full_s42",
+        "guard_pid": 975933,
+        "cuda_pid": 975949,
+        "gpu": 2,
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+        "arm": "paired_random",
+        "seed": 42
+      },
+      "before": {
+        "expected_vram_mib": 10000,
+        "expected_rss_mib": 49152
+      },
+      "after": {
+        "expected_vram_mib": 8300,
+        "expected_rss_mib": 32768
+      },
+      "observed_peak_vram_mib": 7632,
+      "observed_peak_rss_mib": 28825,
+      "current_tree_rss_mib": 28705,
+      "full_progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 10,
+        "epochs": 200,
+        "optimizer_updates": 3083,
+        "update_attempts": 3090,
+        "amp_skips": 7,
+        "batches": 5335,
+        "selected_objects": 649173,
+        "seconds": 1954.2189223766327,
+        "last_kd": 0.18279464542865753
+      },
+      "vram_margin_mib": 668,
+      "rss_margin_mib": 3943
+    },
+    {
+      "identity": {
+        "lease_id": "rgbir_oev1_expand_full_paired_s0_attempt1-7f1297f1b60b",
+        "job_id": "rgbir_oev1_expand_full_paired_s0_attempt1",
+        "guard_pid": 3743513,
+        "cuda_pid": 3743565,
+        "gpu": 5,
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+        "arm": "paired",
+        "seed": 0
+      },
+      "before": {
+        "expected_vram_mib": 10000,
+        "expected_rss_mib": 49152
+      },
+      "after": {
+        "expected_vram_mib": 8300,
+        "expected_rss_mib": 32768
+      },
+      "observed_peak_vram_mib": 7632,
+      "observed_peak_rss_mib": 28810,
+      "current_tree_rss_mib": 28691,
+      "full_progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 64,
+        "epochs": 200,
+        "optimizer_updates": 18349,
+        "update_attempts": 18360,
+        "amp_skips": 11,
+        "batches": 35875,
+        "selected_objects": 4361972,
+        "seconds": 14920.803292751312,
+        "last_kd": 0.24618244171142578
+      },
+      "vram_margin_mib": 668,
+      "rss_margin_mib": 3958
+    }
+  ],
+  "reason": "Measured full-training peaks plus a passed completed concurrent GPU2 canary; only reservations revised. No model, optimizer, checkpoint, PID, binding, guard policy or historical admission changed.",
+  "concurrency_summary": {
+    "returncode": 0,
+    "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/oev1_concurrency_20260906/profile_paired_random_s0_attempt1",
+    "existing_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+    "cuda_peak_process_count": 2,
+    "observed_peak_total_used_mib": 13973,
+    "minimum_observed_free_mib": 10111,
+    "samples_with_two_cuda_pids": 30,
+    "canary_check": {
+      "status": "passed",
+      "seed": 0,
+      "physical_gpu": 2,
+      "paired_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1",
+      "random_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/oev1_concurrency_20260906/profile_paired_random_s0_attempt1",
+      "tensor_equality": {
+        "initial_student.pt": true,
+        "first_batch.pt": true
+      },
+      "unchanged_implementation_direct_byte_comparison": {
+        "object_evidence_loss.py": {
+          "direct_byte_equal": true,
+          "bytes": 19364
+        },
+        "paired_rgbir_data.py": {
+          "direct_byte_equal": true,
+          "bytes": 10325
+        }
+      },
+      "trainer_delta_exactly_expected": true,
+      "same_input_weight_paths_and_sizes": true,
+      "common_batches_checked": 30,
+      "batches_with_different_selection": 30,
+      "dose_semantics": "same K and base normalizer; not equal actual loss/gradient magnitude",
+      "optimizer_updates": [
+        24,
+        24
+      ],
+      "amp_skipped_updates": [
+        6,
+        6
+      ],
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 28716
+      },
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5770.0,
+      "official_test_accessed": false
+    },
+    "status": "passed"
+  },
+  "profile_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_concurrency_20260906/concurrency_profile.json",
+  "lease_file": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+  "source_script": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_concurrency_20260906/revise_profiled_reservations.py"
+}

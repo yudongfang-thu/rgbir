@@ -1,0 +1,42 @@
+{
+  "arm": "cclkd_literal",
+  "dataset": "dronevehicle",
+  "epochs_configured": 200,
+  "kd_dose": "batch_mean_x_batch_size",
+  "kd_last_steps": [
+    {
+      "kd_ccl": 0.6931682229042053,
+      "kd_lld": 1.569039341120515e-05
+    },
+    {
+      "kd_ccl": 0.6931644678115845,
+      "kd_lld": 1.4648593605670612e-05
+    },
+    {
+      "kd_ccl": 0.6931650042533875,
+      "kd_lld": 2.386977030255366e-05
+    },
+    {
+      "kd_ccl": 0.6931577324867249,
+      "kd_lld": 1.8681404981180094e-05
+    },
+    {
+      "kd_ccl": 0.693156898021698,
+      "kd_lld": 7.499360071960837e-05
+    }
+  ],
+  "kd_terms_v1": [
+    "LLD",
+    "CCL"
+  ],
+  "lambda_cc": 1.0,
+  "lambda_kd": 1.0,
+  "method_track": "CCLKD-adapted (GIS 2026); not an exact reproduction",
+  "official_test_accessed": false,
+  "optimizer_steps": 56722,
+  "schema": "rgbt-cclkd-adapted-receipt-v1",
+  "seed": 123,
+  "status": "completed",
+  "teacher_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+  "walltime_seconds": 53950.28025555611
+}

@@ -1,0 +1,1812 @@
+{
+  "protocol": "rgbir_d1_pre_nms_class_agnostic_d2_frozen_anchor_v1",
+  "dataset": "llvip",
+  "split": "val",
+  "population_images": 2406,
+  "sampling": "proportional_source_groups_uniform_frame_ranks",
+  "source_roster": null,
+  "count": 200,
+  "roster": [
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010001.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010001.jpg",
+      "stem": "010001",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010001.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010001.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010013.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010013.jpg",
+      "stem": "010013",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010013.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010013.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010025.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010025.jpg",
+      "stem": "010025",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010025.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010025.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010037.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010037.jpg",
+      "stem": "010037",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010037.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010037.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010049.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010049.jpg",
+      "stem": "010049",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010049.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010049.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010061.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010061.jpg",
+      "stem": "010061",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010061.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010061.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010073.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010073.jpg",
+      "stem": "010073",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010073.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010073.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010086.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010086.jpg",
+      "stem": "010086",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010086.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010086.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010098.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010098.jpg",
+      "stem": "010098",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010098.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010098.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010110.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010110.jpg",
+      "stem": "010110",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010110.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010110.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010122.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010122.jpg",
+      "stem": "010122",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010122.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010122.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010134.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010134.jpg",
+      "stem": "010134",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010134.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010134.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010146.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010146.jpg",
+      "stem": "010146",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010146.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010146.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010159.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010159.jpg",
+      "stem": "010159",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010159.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010159.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010171.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010171.jpg",
+      "stem": "010171",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010171.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010171.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010183.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010183.jpg",
+      "stem": "010183",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010183.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010183.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010195.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010195.jpg",
+      "stem": "010195",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010195.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010195.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010207.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010207.jpg",
+      "stem": "010207",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010207.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010207.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010219.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010219.jpg",
+      "stem": "010219",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010219.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010219.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010232.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010232.jpg",
+      "stem": "010232",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010232.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010232.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010244.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010244.jpg",
+      "stem": "010244",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010244.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010244.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010257.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010257.jpg",
+      "stem": "010257",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010257.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010257.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010269.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010269.jpg",
+      "stem": "010269",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010269.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010269.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010281.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010281.jpg",
+      "stem": "010281",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010281.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010281.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010293.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010293.jpg",
+      "stem": "010293",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010293.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010293.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010306.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010306.jpg",
+      "stem": "010306",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010306.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010306.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010318.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010318.jpg",
+      "stem": "010318",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010318.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010318.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010330.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010330.jpg",
+      "stem": "010330",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010330.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010330.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010342.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010342.jpg",
+      "stem": "010342",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010342.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010342.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010354.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010354.jpg",
+      "stem": "010354",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010354.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010354.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010366.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010366.jpg",
+      "stem": "010366",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010366.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010366.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010379.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010379.jpg",
+      "stem": "010379",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010379.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010379.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010391.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010391.jpg",
+      "stem": "010391",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010391.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010391.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010403.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010403.jpg",
+      "stem": "010403",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010403.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010403.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010415.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010415.jpg",
+      "stem": "010415",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010415.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010415.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010427.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010427.jpg",
+      "stem": "010427",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010427.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010427.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010439.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010439.jpg",
+      "stem": "010439",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010439.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010439.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010452.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010452.jpg",
+      "stem": "010452",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010452.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010452.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010464.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010464.jpg",
+      "stem": "010464",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010464.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010464.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010476.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010476.jpg",
+      "stem": "010476",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010476.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010476.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010488.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010488.jpg",
+      "stem": "010488",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010488.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010488.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010500.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010500.jpg",
+      "stem": "010500",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010500.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010500.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010512.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010512.jpg",
+      "stem": "010512",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010512.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010512.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010525.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010525.jpg",
+      "stem": "010525",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010525.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010525.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010537.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010537.jpg",
+      "stem": "010537",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010537.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010537.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010549.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010549.jpg",
+      "stem": "010549",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010549.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010549.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010561.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010561.jpg",
+      "stem": "010561",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010561.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010561.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010573.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010573.jpg",
+      "stem": "010573",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010573.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010573.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010585.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010585.jpg",
+      "stem": "010585",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010585.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010585.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010598.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/010598.jpg",
+      "stem": "010598",
+      "source_group": "01",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/010598.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/010598.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040001.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040001.jpg",
+      "stem": "040001",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040001.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040001.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040013.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040013.jpg",
+      "stem": "040013",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040013.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040013.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040025.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040025.jpg",
+      "stem": "040025",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040025.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040025.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040038.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040038.jpg",
+      "stem": "040038",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040038.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040038.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040051.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040051.jpg",
+      "stem": "040051",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040051.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040051.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040064.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040064.jpg",
+      "stem": "040064",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040064.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040064.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040076.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040076.jpg",
+      "stem": "040076",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040076.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040076.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040088.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040088.jpg",
+      "stem": "040088",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040088.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040088.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040101.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040101.jpg",
+      "stem": "040101",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040101.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040101.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040113.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040113.jpg",
+      "stem": "040113",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040113.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040113.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040126.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040126.jpg",
+      "stem": "040126",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040126.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040126.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040138.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040138.jpg",
+      "stem": "040138",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040138.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040138.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040151.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040151.jpg",
+      "stem": "040151",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040151.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040151.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040163.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040163.jpg",
+      "stem": "040163",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040163.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040163.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040175.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040175.jpg",
+      "stem": "040175",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040175.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040175.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040188.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040188.jpg",
+      "stem": "040188",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040188.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040188.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040200.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040200.jpg",
+      "stem": "040200",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040200.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040200.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040213.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040213.jpg",
+      "stem": "040213",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040213.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040213.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040225.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040225.jpg",
+      "stem": "040225",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040225.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040225.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040238.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040238.jpg",
+      "stem": "040238",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040238.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040238.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040250.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040250.jpg",
+      "stem": "040250",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040250.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040250.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040262.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040262.jpg",
+      "stem": "040262",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040262.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040262.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040275.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040275.jpg",
+      "stem": "040275",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040275.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040275.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040287.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040287.jpg",
+      "stem": "040287",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040287.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040287.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040300.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040300.jpg",
+      "stem": "040300",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040300.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040300.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040312.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040312.jpg",
+      "stem": "040312",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040312.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040312.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040324.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040324.jpg",
+      "stem": "040324",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040324.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040324.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040337.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040337.jpg",
+      "stem": "040337",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040337.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040337.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040349.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040349.jpg",
+      "stem": "040349",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040349.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040349.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040362.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040362.jpg",
+      "stem": "040362",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040362.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040362.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040374.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040374.jpg",
+      "stem": "040374",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040374.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040374.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040387.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040387.jpg",
+      "stem": "040387",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040387.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040387.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040399.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040399.jpg",
+      "stem": "040399",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040399.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040399.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040411.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040411.jpg",
+      "stem": "040411",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040411.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040411.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040424.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040424.jpg",
+      "stem": "040424",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040424.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040424.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040437.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040437.jpg",
+      "stem": "040437",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040437.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040437.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040450.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040450.jpg",
+      "stem": "040450",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040450.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040450.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040462.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040462.jpg",
+      "stem": "040462",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040462.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040462.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040475.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/040475.jpg",
+      "stem": "040475",
+      "source_group": "04",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/040475.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/040475.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070001.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070001.jpg",
+      "stem": "070001",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070001.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070001.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070013.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070013.jpg",
+      "stem": "070013",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070013.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070013.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070025.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070025.jpg",
+      "stem": "070025",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070025.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070025.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070037.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070037.jpg",
+      "stem": "070037",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070037.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070037.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070049.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070049.jpg",
+      "stem": "070049",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070049.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070049.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070061.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070061.jpg",
+      "stem": "070061",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070061.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070061.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070074.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070074.jpg",
+      "stem": "070074",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070074.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070074.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070086.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070086.jpg",
+      "stem": "070086",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070086.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070086.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070098.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070098.jpg",
+      "stem": "070098",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070098.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070098.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070110.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070110.jpg",
+      "stem": "070110",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070110.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070110.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070122.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070122.jpg",
+      "stem": "070122",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070122.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070122.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070135.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070135.jpg",
+      "stem": "070135",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070135.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070135.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070147.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070147.jpg",
+      "stem": "070147",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070147.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070147.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070159.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070159.jpg",
+      "stem": "070159",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070159.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070159.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070171.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070171.jpg",
+      "stem": "070171",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070171.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070171.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070183.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070183.jpg",
+      "stem": "070183",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070183.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070183.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070196.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070196.jpg",
+      "stem": "070196",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070196.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070196.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070208.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070208.jpg",
+      "stem": "070208",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070208.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070208.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070220.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070220.jpg",
+      "stem": "070220",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070220.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070220.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070233.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070233.jpg",
+      "stem": "070233",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070233.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070233.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070245.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070245.jpg",
+      "stem": "070245",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070245.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070245.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070257.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070257.jpg",
+      "stem": "070257",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070257.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070257.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070270.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070270.jpg",
+      "stem": "070270",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070270.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070270.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070282.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070282.jpg",
+      "stem": "070282",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070282.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070282.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070294.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070294.jpg",
+      "stem": "070294",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070294.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070294.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070306.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070306.jpg",
+      "stem": "070306",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070306.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070306.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070319.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070319.jpg",
+      "stem": "070319",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070319.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070319.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070332.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070332.jpg",
+      "stem": "070332",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070332.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070332.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070344.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070344.jpg",
+      "stem": "070344",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070344.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070344.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070356.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070356.jpg",
+      "stem": "070356",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070356.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070356.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070368.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070368.jpg",
+      "stem": "070368",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070368.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070368.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070380.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070380.jpg",
+      "stem": "070380",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070380.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070380.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070393.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070393.jpg",
+      "stem": "070393",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070393.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070393.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070405.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070405.jpg",
+      "stem": "070405",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070405.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070405.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070417.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070417.jpg",
+      "stem": "070417",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070417.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070417.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070429.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070429.jpg",
+      "stem": "070429",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070429.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070429.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070441.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070441.jpg",
+      "stem": "070441",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070441.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070441.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070454.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/070454.jpg",
+      "stem": "070454",
+      "source_group": "07",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/070454.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/070454.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120001.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120001.jpg",
+      "stem": "120001",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120001.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120001.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120013.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120013.jpg",
+      "stem": "120013",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120013.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120013.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120025.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120025.jpg",
+      "stem": "120025",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120025.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120025.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120038.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120038.jpg",
+      "stem": "120038",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120038.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120038.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120050.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120050.jpg",
+      "stem": "120050",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120050.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120050.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120063.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120063.jpg",
+      "stem": "120063",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120063.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120063.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120075.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120075.jpg",
+      "stem": "120075",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120075.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120075.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120088.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120088.jpg",
+      "stem": "120088",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120088.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120088.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120100.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120100.jpg",
+      "stem": "120100",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120100.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120100.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120112.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120112.jpg",
+      "stem": "120112",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120112.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120112.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120125.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120125.jpg",
+      "stem": "120125",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120125.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120125.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120137.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120137.jpg",
+      "stem": "120137",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120137.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120137.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120150.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120150.jpg",
+      "stem": "120150",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120150.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120150.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120162.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120162.jpg",
+      "stem": "120162",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120162.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120162.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120175.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120175.jpg",
+      "stem": "120175",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120175.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120175.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120187.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120187.jpg",
+      "stem": "120187",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120187.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120187.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120199.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120199.jpg",
+      "stem": "120199",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120199.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120199.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120212.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120212.jpg",
+      "stem": "120212",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120212.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120212.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120224.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120224.jpg",
+      "stem": "120224",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120224.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120224.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120237.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120237.jpg",
+      "stem": "120237",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120237.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120237.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120249.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120249.jpg",
+      "stem": "120249",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120249.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120249.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120262.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120262.jpg",
+      "stem": "120262",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120262.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120262.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120274.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120274.jpg",
+      "stem": "120274",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120274.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120274.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120286.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120286.jpg",
+      "stem": "120286",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120286.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120286.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120299.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120299.jpg",
+      "stem": "120299",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120299.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120299.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120311.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120311.jpg",
+      "stem": "120311",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120311.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120311.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120324.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120324.jpg",
+      "stem": "120324",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120324.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120324.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120336.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120336.jpg",
+      "stem": "120336",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120336.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120336.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120349.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120349.jpg",
+      "stem": "120349",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120349.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120349.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120361.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120361.jpg",
+      "stem": "120361",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120361.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120361.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120373.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120373.jpg",
+      "stem": "120373",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120373.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120373.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120386.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120386.jpg",
+      "stem": "120386",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120386.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120386.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120398.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120398.jpg",
+      "stem": "120398",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120398.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120398.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120411.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120411.jpg",
+      "stem": "120411",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120411.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120411.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120423.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120423.jpg",
+      "stem": "120423",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120423.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120423.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120436.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120436.jpg",
+      "stem": "120436",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120436.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120436.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120448.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120448.jpg",
+      "stem": "120448",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120448.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120448.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120461.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120461.jpg",
+      "stem": "120461",
+      "source_group": "12",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120461.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120461.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250001.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250001.jpg",
+      "stem": "250001",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250001.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250001.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250013.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250013.jpg",
+      "stem": "250013",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250013.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250013.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250025.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250025.jpg",
+      "stem": "250025",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250025.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250025.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250038.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250038.jpg",
+      "stem": "250038",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250038.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250038.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250050.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250050.jpg",
+      "stem": "250050",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250050.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250050.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250063.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250063.jpg",
+      "stem": "250063",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250063.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250063.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250075.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250075.jpg",
+      "stem": "250075",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250075.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250075.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250087.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250087.jpg",
+      "stem": "250087",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250087.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250087.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250100.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250100.jpg",
+      "stem": "250100",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250100.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250100.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250112.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250112.jpg",
+      "stem": "250112",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250112.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250112.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250125.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250125.jpg",
+      "stem": "250125",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250125.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250125.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250137.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250137.jpg",
+      "stem": "250137",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250137.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250137.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250149.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250149.jpg",
+      "stem": "250149",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250149.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250149.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250162.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250162.jpg",
+      "stem": "250162",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250162.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250162.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250174.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250174.jpg",
+      "stem": "250174",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250174.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250174.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250187.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250187.jpg",
+      "stem": "250187",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250187.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250187.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250199.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250199.jpg",
+      "stem": "250199",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250199.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250199.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250212.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250212.jpg",
+      "stem": "250212",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250212.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250212.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250224.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250224.jpg",
+      "stem": "250224",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250224.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250224.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250236.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250236.jpg",
+      "stem": "250236",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250236.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250236.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250249.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250249.jpg",
+      "stem": "250249",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250249.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250249.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250261.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250261.jpg",
+      "stem": "250261",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250261.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250261.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250274.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250274.jpg",
+      "stem": "250274",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250274.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250274.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250286.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250286.jpg",
+      "stem": "250286",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250286.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250286.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250298.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250298.jpg",
+      "stem": "250298",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250298.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250298.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250311.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250311.jpg",
+      "stem": "250311",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250311.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250311.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250323.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250323.jpg",
+      "stem": "250323",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250323.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250323.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250336.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250336.jpg",
+      "stem": "250336",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250336.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250336.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250348.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250348.jpg",
+      "stem": "250348",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250348.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250348.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250360.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250360.jpg",
+      "stem": "250360",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250360.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250360.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250373.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250373.jpg",
+      "stem": "250373",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250373.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250373.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250385.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250385.jpg",
+      "stem": "250385",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250385.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250385.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250398.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250398.jpg",
+      "stem": "250398",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250398.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250398.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250410.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250410.jpg",
+      "stem": "250410",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250410.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250410.txt"
+    },
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250423.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/250423.jpg",
+      "stem": "250423",
+      "source_group": "25",
+      "split": "val",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/250423.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/250423.txt"
+    }
+  ],
+  "official_test_accessed": false
+}

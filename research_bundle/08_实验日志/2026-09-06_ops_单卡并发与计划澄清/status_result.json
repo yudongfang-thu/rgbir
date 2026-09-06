@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-09-06T23:58:43.551803+08:00",
+  "0": {
+    "seed": 0,
+    "gpu": 2,
+    "pid": 1149860,
+    "time": 1788710322.0842977,
+    "status": "training",
+    "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1"
+  },
+  "log0": "{\"status\": \"passed\", \"seed\": 0, \"physical_gpu\": 2, \"paired_run\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1\", \"random_run\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s0_attempt1\", \"tensor_equality\": {\"initial_student.pt\": true, \"first_batch.pt\": true}, \"unchanged_implementation_direct_byte_comparison\": {\"object_evidence_loss.py\": {\"direct_byte_equal\": true, \"bytes\": 19364}, \"paired_rgbir_data.py\": {\"direct_byte_equal\": true, \"bytes\": 10325}}, \"trainer_delta_exactly_expected\": true, \"same_input_weight_paths_and_sizes\": true, \"common_batches_checked\": 30, \"batches_with_different_selection\": 30, \"dose_semantics\": \"same K and base normalizer; not equal actual loss/gradient magnitude\", \"optimizer_updates\": [24, 24], \"amp_skipped_updates\": [6, 6], \"resources\": {\"gpu_ids\": [2], \"cuda_pid_counts\": {\"2\": 1}, \"per_gpu_peak_vram_mib\": {\"2\": 6304}, \"peak_rss_mib\": 28738}, \"gpu_allocated_peak_mib\": 5087.68603515625, \"gpu_reserved_peak_mib\": 5770.0, \"official_test_accessed\": false}\n",
+  "123": {
+    "seed": 123,
+    "gpu": 4,
+    "pid": 1149862,
+    "time": 1788710322.4399135,
+    "status": "waiting_primary_N42_evaluation",
+    "primary": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1"
+  },
+  "log123": "{\"status\": \"passed\", \"seed\": 123, \"physical_gpu\": 4, \"paired_run\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1\", \"random_run\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s123_attempt1\", \"tensor_equality\": {\"initial_student.pt\": true, \"first_batch.pt\": true}, \"unchanged_implementation_direct_byte_comparison\": {\"object_evidence_loss.py\": {\"direct_byte_equal\": true, \"bytes\": 19364}, \"paired_rgbir_data.py\": {\"direct_byte_equal\": true, \"bytes\": 10325}}, \"trainer_delta_exactly_expected\": true, \"same_input_weight_paths_and_sizes\": true, \"common_batches_checked\": 30, \"batches_with_different_selection\": 30, \"dose_semantics\": \"same K and base normalizer; not equal actual loss/gradient magnitude\", \"optimizer_updates\": [24, 24], \"amp_skipped_updates\": [6, 6], \"resources\": {\"gpu_ids\": [4], \"cuda_pid_counts\": {\"4\": 1}, \"per_gpu_peak_vram_mib\": {\"4\": 6304}, \"peak_rss_mib\": 28753}, \"gpu_allocated_peak_mib\": 5087.68603515625, \"gpu_reserved_peak_mib\": 5770.0, \"official_test_accessed\": false}\n",
+  "gpus": "0, 19896, 4188, 100\n1, 1, 24082, 0\n2, 7654, 16430, 34\n3, 1, 24082, 0\n4, 7654, 16430, 17\n5, 7654, 16430, 12\n6, 7655, 16429, 20\n7, 1, 24082, 0\n"
+}

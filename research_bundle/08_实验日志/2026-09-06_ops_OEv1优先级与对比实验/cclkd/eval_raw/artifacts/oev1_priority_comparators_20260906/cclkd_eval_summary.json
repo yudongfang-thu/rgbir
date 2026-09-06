@@ -1,0 +1,107 @@
+{
+  "status": "completed",
+  "canary_reserved_peak_mib": 884.0,
+  "formal_vram_reservation_mib": 2560,
+  "gpu": 2,
+  "results": [
+    {
+      "status": "evaluation_completed",
+      "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+      "arm": "cclkd_partial",
+      "seed": 0,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed0_b32_e200/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema",
+      "split": "val",
+      "evaluated_images": 1469,
+      "official_test_accessed": false,
+      "metric_units": "fraction_0_to_1",
+      "canary": false,
+      "AP50": 0.7648561806758856,
+      "AP75": 0.6328183429745453,
+      "mAP50_95": 0.5406600564966325,
+      "precision": 0.772369830252248,
+      "recall": 0.7293214222166514,
+      "allocated_peak_mib": 711.7109375,
+      "reserved_peak_mib": 884.0,
+      "seconds": 6.359093427658081,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 1370
+        },
+        "peak_rss_mib": 3838
+      }
+    },
+    {
+      "status": "evaluation_completed",
+      "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+      "arm": "cclkd_partial",
+      "seed": 42,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema",
+      "split": "val",
+      "evaluated_images": 1469,
+      "official_test_accessed": false,
+      "metric_units": "fraction_0_to_1",
+      "canary": false,
+      "AP50": 0.7700321800542202,
+      "AP75": 0.6354910732782623,
+      "mAP50_95": 0.5449329450152567,
+      "precision": 0.7662954507926171,
+      "recall": 0.7277740476410169,
+      "allocated_peak_mib": 711.70849609375,
+      "reserved_peak_mib": 884.0,
+      "seconds": 5.517301559448242,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 1370
+        },
+        "peak_rss_mib": 3829
+      }
+    },
+    {
+      "status": "evaluation_completed",
+      "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+      "arm": "cclkd_partial",
+      "seed": 123,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed123_b32_e200/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema",
+      "split": "val",
+      "evaluated_images": 1469,
+      "official_test_accessed": false,
+      "metric_units": "fraction_0_to_1",
+      "canary": false,
+      "AP50": 0.7631210499190813,
+      "AP75": 0.6379373998696685,
+      "mAP50_95": 0.543325955606628,
+      "precision": 0.7655184619884082,
+      "recall": 0.730872699151618,
+      "allocated_peak_mib": 711.7080078125,
+      "reserved_peak_mib": 884.0,
+      "seconds": 5.7772204875946045,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 1370
+        },
+        "peak_rss_mib": 3941
+      }
+    }
+  ]
+}

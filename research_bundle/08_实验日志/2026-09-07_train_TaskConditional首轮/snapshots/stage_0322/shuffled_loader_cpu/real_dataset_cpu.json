@@ -1,0 +1,227 @@
+{
+  "status": "PASSED",
+  "cuda_used": false,
+  "datasets": [
+    {
+      "dataset": "dronevehicle",
+      "status": "PASSED",
+      "train_images": 17990,
+      "samples": [
+        {
+          "index": 0,
+          "augmentation_seed": 0,
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info": true
+          },
+          "rng_equal": true,
+          "wrong_matrix_equal": true,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00001.jpg",
+          "paired_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/00001.jpg",
+          "wrong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/06888.jpg",
+          "content_shape": [
+            3,
+            640,
+            640
+          ]
+        },
+        {
+          "index": 8995,
+          "augmentation_seed": 42,
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info": true
+          },
+          "rng_equal": true,
+          "wrong_matrix_equal": true,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/08996.jpg",
+          "paired_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/08996.jpg",
+          "wrong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/12844.jpg",
+          "content_shape": [
+            3,
+            640,
+            640
+          ]
+        },
+        {
+          "index": 17989,
+          "augmentation_seed": 123,
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info": true
+          },
+          "rng_equal": true,
+          "wrong_matrix_equal": true,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17990.jpg",
+          "paired_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/17990.jpg",
+          "wrong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/13177.jpg",
+          "content_shape": [
+            3,
+            640,
+            640
+          ]
+        }
+      ],
+      "collate_original_fields_equal": {
+        "batch_idx": true,
+        "bboxes": true,
+        "cls": true,
+        "im_file": true,
+        "img": true,
+        "ori_shape": true,
+        "ratio_pad": true,
+        "resized_shape": true,
+        "strong_img": true,
+        "strong_cls": true,
+        "strong_bboxes": true,
+        "strong_batch_idx": true,
+        "pair_info": true
+      },
+      "donor_manifest": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/task_conditional_shuffled_loader_cpu_20260907/dronevehicle_derangement.json"
+    },
+    {
+      "dataset": "llvip",
+      "status": "PASSED",
+      "train_images": 9619,
+      "samples": [
+        {
+          "index": 0,
+          "augmentation_seed": 0,
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info": true
+          },
+          "rng_equal": true,
+          "wrong_matrix_equal": true,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020001.jpg",
+          "paired_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/020001.jpg",
+          "wrong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/140016.jpg",
+          "content_shape": [
+            3,
+            640,
+            640
+          ]
+        },
+        {
+          "index": 4809,
+          "augmentation_seed": 42,
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info": true
+          },
+          "rng_equal": true,
+          "wrong_matrix_equal": true,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100118.jpg",
+          "paired_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/100118.jpg",
+          "wrong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/090554.jpg",
+          "content_shape": [
+            3,
+            640,
+            640
+          ]
+        },
+        {
+          "index": 9618,
+          "augmentation_seed": 123,
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info": true
+          },
+          "rng_equal": true,
+          "wrong_matrix_equal": true,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180408.jpg",
+          "paired_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/180408.jpg",
+          "wrong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/081418.jpg",
+          "content_shape": [
+            3,
+            640,
+            640
+          ]
+        }
+      ],
+      "collate_original_fields_equal": {
+        "batch_idx": true,
+        "bboxes": true,
+        "cls": true,
+        "im_file": true,
+        "img": true,
+        "ori_shape": true,
+        "ratio_pad": true,
+        "resized_shape": true,
+        "strong_img": true,
+        "strong_cls": true,
+        "strong_bboxes": true,
+        "strong_batch_idx": true,
+        "pair_info": true
+      },
+      "donor_manifest": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/task_conditional_shuffled_loader_cpu_20260907/llvip_derangement.json"
+    }
+  ],
+  "cuda_initialized": false
+}

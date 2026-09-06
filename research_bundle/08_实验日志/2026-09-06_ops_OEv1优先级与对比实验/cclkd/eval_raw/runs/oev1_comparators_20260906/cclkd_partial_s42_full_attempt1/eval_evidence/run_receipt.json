@@ -1,0 +1,76 @@
+{
+  "command": {
+    "argv": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_priority_comparators_20260906/evaluate_cclkd_partial.py",
+      "--seed",
+      "42",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/oev1_comparators_20260906/cclkd_partial_s42_full_attempt1",
+      "--mode",
+      "full"
+    ]
+  },
+  "created_at_utc": "2026-09-06T15:20:04.805993+00:00",
+  "data_role": "development_val",
+  "dataset": "dronevehicle",
+  "environment": {
+    "platform": "Linux-5.15.0-187-generic-x86_64-with-glibc2.35",
+    "python": "3.10.20",
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115"
+  },
+  "inputs": {
+    "canary": false,
+    "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt",
+    "historical_training_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/completion_receipt.json",
+    "historical_training_source_not_fully_bound": true,
+    "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+    "teacher_labels_used_by_kd": false
+  },
+  "job_id": "cclkd_partial_s42_full_attempt1",
+  "method_identity": "PROTOCOL-ADAPTED",
+  "metric_snapshots": [
+    "metric_snapshot/01_evaluation_val.json"
+  ],
+  "resources": {
+    "cuda_pid_counts": {
+      "2": 1
+    },
+    "gpu_ids": [
+      2
+    ],
+    "lease_id": "cclkd_partial_s42_full_attempt1-878793226ba4",
+    "peak_rss_mib": 3829,
+    "per_gpu_peak_vram_mib": {
+      "2": 1370
+    }
+  },
+  "run_kind": "eval",
+  "schema": "jstars-run-receipt-v1",
+  "seed": 42,
+  "source_snapshots": {
+    "config": [
+      "source_snapshot/config/01_rgb.data.yaml",
+      "source_snapshot/config/02_args.yaml",
+      "source_snapshot/config/03_evaluation_protocol.json"
+    ],
+    "loss": [],
+    "split_roster": [
+      "source_snapshot/split_roster/01_evaluation_roster.txt"
+    ],
+    "trainer": [
+      "source_snapshot/trainer/01_evaluate_cclkd_partial.py",
+      "source_snapshot/trainer/02_val.py",
+      "source_snapshot/trainer/03_model.py"
+    ]
+  },
+  "terminal_status": "COMPLETED",
+  "test_exposure": {
+    "confirmatory": false,
+    "dataset": "dronevehicle",
+    "note": "Official test remains a candidate until its exposure history is audited.",
+    "role": "SEALED_CANDIDATE",
+    "test_status": "UNVERIFIED_SEALED"
+  }
+}

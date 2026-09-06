@@ -1,0 +1,203 @@
+{
+  "utc": "2026-09-06T15:25:22.950812+00:00",
+  "random": {
+    "queue_status.json": {
+      "pid": 975898,
+      "gpu": 2,
+      "time": 1788708270.5548503,
+      "status": "training",
+      "seed": 42,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+      "remaining_seeds": [
+        0,
+        123
+      ]
+    },
+    "canary_comparison_s42_attempt2.json": {
+      "status": "passed",
+      "seed": 42,
+      "physical_gpu": 2,
+      "paired_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1",
+      "random_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s42_attempt1",
+      "tensor_equality": {
+        "initial_student.pt": true,
+        "first_batch.pt": true
+      },
+      "unchanged_implementation_direct_byte_comparison": {
+        "object_evidence_loss.py": {
+          "direct_byte_equal": true,
+          "bytes": 19364
+        },
+        "paired_rgbir_data.py": {
+          "direct_byte_equal": true,
+          "bytes": 10325
+        }
+      },
+      "trainer_delta_exactly_expected": true,
+      "same_input_weight_paths_and_sizes": true,
+      "common_batches_checked": 30,
+      "batches_with_different_selection": 30,
+      "dose_semantics": "same K and base normalizer; not equal actual loss/gradient magnitude",
+      "optimizer_updates": [
+        24,
+        24
+      ],
+      "amp_skipped_updates": [
+        6,
+        6
+      ],
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 28774
+      },
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5770.0,
+      "official_test_accessed": false
+    },
+    "launch_manifest.json": {
+      "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+      "arm": "paired_random",
+      "seed": 42,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+        "--arm",
+        "paired_random",
+        "--seed",
+        "42"
+      ],
+      "gpu": [
+        2
+      ],
+      "inputs": {
+        "model": {
+          "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "bytes": 5613764
+        },
+        "teacher": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5483610
+        },
+        "reference": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5483610
+        }
+      },
+      "canary_max_updates": null,
+      "teacher_labels_used_by_kd": true,
+      "test_accessed": false,
+      "environment": {
+        "torch": "2.10.0+cu128",
+        "ultralytics": "8.4.115"
+      }
+    },
+    "runtime_ready.json": {
+      "status": "ready",
+      "arm": "paired_random",
+      "train_images": 17990,
+      "val_images": 1469,
+      "train_batches": 563,
+      "batch": 32,
+      "workers": 4,
+      "cuda_visible_devices": "2",
+      "student_only_state": true,
+      "frozen_models_outside_optimizer": true,
+      "amp": true,
+      "class_names": {
+        "0": "car",
+        "1": "freight car",
+        "2": "truck",
+        "3": "bus",
+        "4": "van"
+      },
+      "teacher_labels_used_by_kd": true,
+      "student_native_gt_only": true
+    },
+    "progress.json": {
+      "status": "running",
+      "arm": "paired_random",
+      "epoch": 1,
+      "epochs": 200,
+      "optimizer_updates": 74,
+      "update_attempts": 80,
+      "amp_skips": 6,
+      "batches": 80,
+      "selected_objects": 9587,
+      "seconds": 46.82596302032471,
+      "last_kd": 0.6564357280731201
+    },
+    "log_tail": "  640: 12% \u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 68/563 2.8it/s 33.9s<2:56\n\u001b[K      1/200      5.63G      1.585      3.377      1.379        498        640: 12% \u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 69/563 2.8it/s 34.3s<2:58\n\u001b[K      1/200      5.63G      1.582      3.353      1.378        578        640: 12% \u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 70/563 2.8it/s 34.7s<2:58\n\u001b[K      1/200      5.63G      1.581      3.335      1.377        429        640: 12% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 71/563 2.8it/s 35.0s<2:56\n\u001b[K      1/200      5.63G       1.58      3.323      1.378        284        640: 12% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 72/563 2.8it/s 35.4s<2:58\n\u001b[K      1/200      5.63G      1.578      3.306      1.377        366        640: 12% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 73/563 2.8it/s 35.7s<2:58\n\u001b[K      1/200      5.63G       1.58      3.288      1.378        691        640: 13% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 74/563 2.8it/s 36.1s<2:57\n\u001b[K      1/200      5.63G      1.579      3.272      1.377        528        640: 13% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 75/563 2.7it/s 36.5s<2:59\n\u001b[K      1/200      5.63G       1.58      3.257      1.377        497        640: 13% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 76/563 2.7it/s 36.8s<2:58\n\u001b[K      1/200      5.63G      1.578      3.236      1.376        616        640: 13% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 77/563 2.7it/s 37.2s<3:00\n\u001b[K      1/200      5.63G      1.577      3.222      1.375        428        640: 13% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 78/563 2.7it/s 37.6s<3:00\n\u001b[K      1/200      5.63G      1.577      3.207      1.375        452        640: 14% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 79/563 2.7it/s 38.0s<2:57\n\u001b[K      1/200      5.63G      1.574      3.188      1.373        523        640: 14% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 80/563 2.7it/s 38.3s<2:57\n\u001b[K      1/200      5.63G      1.574       3.18      1.374        715        640: 14% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 81/563 2.7it/s 38.7s<2:58\n\u001b[K      1/200      5.63G      1.573      3.163      1.373        506        640: 14% \u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 82/563 2.7it/s 39.1s<2:60\n"
+  },
+  "osssl_remaining": [],
+  "gpu": "0, 1 MiB, 24082 MiB\n1, 1 MiB, 24082 MiB\n2, 6326 MiB, 17758 MiB\n3, 1 MiB, 24082 MiB\n4, 7654 MiB, 16430 MiB\n5, 7654 MiB, 16430 MiB\n6, 7655 MiB, 16429 MiB\n7, 1 MiB, 24082 MiB\n",
+  "oev1_processes": [
+    " 975933  975898 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id oev1_random_full_s42 --kind train --candidate-gpu 2 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 --formal-train -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 975949  975933 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976654  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976660  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976664  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976668  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976679  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976683  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976687  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976692  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976699  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976704  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976709  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    " 976713  975949 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42",
+    "1564095 2654180 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id rgbir_oev1_full_weight0_s42_attempt1 --kind train --candidate-gpu 4 --gpu-count 1 --cuda-processes-per-gpu 1 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1564206 1564095 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565317 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565321 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565327 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565331 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565340 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565345 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565349 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565355 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565360 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565364 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565369 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "1565373 1564206 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0",
+    "3743513 3837448 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id rgbir_oev1_expand_full_paired_s0_attempt1 --kind train --candidate-gpu 5 --gpu-count 1 --cuda-processes-per-gpu 1 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3743565 3743513 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744531 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744536 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744540 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744545 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744555 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744562 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744568 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744572 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744577 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744581 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744585 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3744589 3743565 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0",
+    "3966414 3837450 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id rgbir_oev1_expand_full_weight0_s123_attempt1 --kind train --candidate-gpu 6 --gpu-count 1 --cuda-processes-per-gpu 1 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3966512 3966414 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967394 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967408 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967412 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967416 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967434 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967439 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967443 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967447 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967451 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967455 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967460 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123",
+    "3967465 3966512 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123"
+  ]
+}

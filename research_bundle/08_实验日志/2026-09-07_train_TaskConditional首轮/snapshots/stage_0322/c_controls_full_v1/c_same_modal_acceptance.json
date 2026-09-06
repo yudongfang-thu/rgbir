@@ -1,0 +1,30 @@
+{
+  "status": "ACCEPTED",
+  "arms": [
+    "c_same_modal"
+  ],
+  "minimum_successful_updates": 24,
+  "nonzero_C_gradient": true,
+  "dataset": "dronevehicle",
+  "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+  "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+  "legacy_C_N_equivalence": true,
+  "canary_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/completion_receipt.json",
+  "bound_canary_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/run_receipt.json",
+  "criterion_equivalence_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/completion_receipt.json",
+  "loader_and_initialization_audit": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_initialization_stream_audit_v1.json",
+  "derangement_roster": null,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 6370
+    },
+    "peak_rss_mib": 28476
+  },
+  "scope": "C attribution only; no formal L authorization"
+}

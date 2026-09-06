@@ -1,0 +1,128 @@
+{
+  "captured_at_utc": "2026-09-06T14:28:24.828371+00:00",
+  "runs": {
+    "paired123": {
+      "run": "osssl_ir_20260906/paired_rgb_s123_e200",
+      "metric_record": {
+        "arm": "paired_osssl",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/paired_rgb_s123_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "dataset": "dronevehicle",
+        "evaluation_role": "val",
+        "metrics": {
+          "AP50": 0.7585670222705042,
+          "AP75": 0.6308368035398894,
+          "mAP50_95": 0.5393215189647383
+        },
+        "modality": "rgb",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 123,
+        "split": "val",
+        "walltime_seconds": 9.778852334013209
+      },
+      "metrics_percent": {
+        "AP50": 75.85670222705042,
+        "AP75": 63.08368035398894,
+        "mAP50_95": 53.93215189647383
+      },
+      "completed_csv_epoch": 200,
+      "completion_receipt_arm": "native_weight0",
+      "completion_receipt_config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_paired.yaml",
+      "csv_E200_percent": {
+        "AP50": 75.849,
+        "mAP50_95": 53.942
+      }
+    },
+    "shuffled123": {
+      "run": "osssl_ir_20260906/shuffled_rgb_s123_e200",
+      "metric_record": {
+        "arm": "shuffled_osssl",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "dataset": "dronevehicle",
+        "evaluation_role": "val",
+        "metrics": {
+          "AP50": 0.7532367868103969,
+          "AP75": 0.6274082524570419,
+          "mAP50_95": 0.5322374705200127
+        },
+        "modality": "rgb",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 123,
+        "split": "val",
+        "walltime_seconds": 9.506283817114308
+      },
+      "metrics_percent": {
+        "AP50": 75.32367868103968,
+        "AP75": 62.74082524570419,
+        "mAP50_95": 53.22374705200127
+      },
+      "completed_csv_epoch": 200,
+      "completion_receipt_arm": "native_weight0",
+      "completion_receipt_config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_clean_shuffled.yaml",
+      "csv_E200_percent": {
+        "AP50": 75.354,
+        "mAP50_95": 53.273
+      }
+    },
+    "historical_native123": {
+      "run": "cgkd_w1/native_rgb_s123_e200",
+      "metric_record": {
+        "arm": "native_weight0",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s123_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "dataset": "dronevehicle",
+        "evaluation_role": "val",
+        "metrics": {
+          "AP50": 0.7573014259256995,
+          "AP75": 0.6330632435549031,
+          "mAP50_95": 0.5368743265487697
+        },
+        "modality": "rgb",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 123,
+        "split": "val",
+        "walltime_seconds": 8.32391006196849
+      },
+      "metrics_percent": {
+        "AP50": 75.73014259256995,
+        "AP75": 63.306324355490304,
+        "mAP50_95": 53.687432654876964
+      },
+      "completed_csv_epoch": 200,
+      "completion_receipt_arm": "native_weight0",
+      "completion_receipt_config": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_cmdistill_protocol_drone.yaml",
+      "csv_E200_percent": {
+        "AP50": 75.75800000000001,
+        "mAP50_95": 53.698
+      }
+    }
+  },
+  "contrasts_pp": {
+    "paired123 minus shuffled123": {
+      "AP50": 0.5330235460107389,
+      "AP75": 0.34285510828475196,
+      "mAP50_95": 0.708404844472561
+    },
+    "paired123 minus historical_native123": {
+      "AP50": 0.12655963448047203,
+      "AP75": -0.2226440015013651,
+      "mAP50_95": 0.24471924159686864
+    },
+    "shuffled123 minus historical_native123": {
+      "AP50": -0.40646391153026684,
+      "AP75": -0.5654991097861171,
+      "mAP50_95": -0.4636856028756924
+    }
+  },
+  "current_val_roster_count": 1469,
+  "current_val_roster_unique": 1469,
+  "sar_only42_has_independent_metric": false,
+  "limitations": [
+    "One pretraining realization per arm and one completed same-seed finetuning comparison; no three-seed claim.",
+    "Old native has a known head-initialization mismatch versus clean SSL templates.",
+    "Metric records do not store full eval CLI, image size, batch, workers, or source snapshot; current script is contextual evidence.",
+    "Current validation roster is collected but no execution-time roster receipt exists for these OS-SSL endpoints.",
+    "Remote README records D3: both short GPU2 evaluations bypassed the resource guard."
+  ]
+}

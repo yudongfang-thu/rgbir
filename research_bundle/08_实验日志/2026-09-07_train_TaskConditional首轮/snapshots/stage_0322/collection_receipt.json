@@ -1,0 +1,1733 @@
+{
+  "time": "2026-09-07T03:22:10.529962+08:00",
+  "omitted": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/kd_batches.jsonl",
+      "bytes": 14763773
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/kd_batches.jsonl",
+      "bytes": 11351415
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/kd_batches.jsonl",
+      "bytes": 11351438
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/kd_batches.jsonl",
+      "bytes": 11351705
+    }
+  ],
+  "files": [
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1_screen.log",
+      "bytes": 0
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_manifest_v1.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_manifest_v1.json",
+      "bytes": 994
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2_screen.log",
+      "bytes": 0
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/cpu_release_v4.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\cpu_release_v4.json",
+      "bytes": 197
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_manifest_v1.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_manifest_v1.json",
+      "bytes": 3937
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_manifest_v2.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_manifest_v2.json",
+      "bytes": 1665
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_manifest_v1.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_manifest_v1.json",
+      "bytes": 1814
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_manifest_v2.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_manifest_v2.json",
+      "bytes": 1814
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/cpu_release_v2.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\cpu_release_v2.json",
+      "bytes": 3290
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_verified_dispatch_a1_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_verified_dispatch_a1_screen.log",
+      "bytes": 0
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1_screen.log",
+      "bytes": 0
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_manifest_v1.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_manifest_v1.json",
+      "bytes": 1665
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a1_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a1_screen.log",
+      "bytes": 782
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1_screen.log",
+      "bytes": 0
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_manifest_v1.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_manifest_v1.json",
+      "bytes": 1742
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_verified_manifest_v1.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_verified_manifest_v1.json",
+      "bytes": 1344
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_manifest_v2.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_manifest_v2.json",
+      "bytes": 994
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a2_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a2_screen.log",
+      "bytes": 0
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/cpu_release_v3.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\cpu_release_v3.json",
+      "bytes": 4217
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_initialization_stream_audit_v1.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_initialization_stream_audit_v1.json",
+      "bytes": 1186
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/tckd_c_same_modal_canary_s42_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\tckd_c_same_modal_canary_s42_a1.log",
+      "bytes": 12551
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/tckd_c_shuffled_canary_s42_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\tckd_c_shuffled_canary_s42_a1_resource_profile.json",
+      "bytes": 8419
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/completion.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\completion.json",
+      "bytes": 150
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/tckd_c_shuffled_canary_s42_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\tckd_c_shuffled_canary_s42_a1_status.json",
+      "bytes": 381
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/tckd_c_shuffled_canary_s42_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\tckd_c_shuffled_canary_s42_a1.log",
+      "bytes": 12161
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/tckd_c_same_modal_canary_s42_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\tckd_c_same_modal_canary_s42_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/tckd_c_same_modal_canary_s42_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\tckd_c_same_modal_canary_s42_a1_resource_profile.json",
+      "bytes": 8060
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/tckd_c_same_modal_canary_s42_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\tckd_c_same_modal_canary_s42_a1_status.json",
+      "bytes": 384
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\manifest.json",
+      "bytes": 1815
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/content_canary_dispatch_a1/tckd_c_shuffled_canary_s42_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\content_canary_dispatch_a1\\tckd_c_shuffled_canary_s42_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt1/protocol_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt1\\protocol_config.yaml",
+      "bytes": 2666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt1/failure_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt1\\failure_receipt.json",
+      "bytes": 804
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt1/args.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt1\\args.yaml",
+      "bytes": 2088
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt1/runtime_ready.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt1\\runtime_ready.json",
+      "bytes": 443
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/tckd_d2_drone_8_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\tckd_d2_drone_8_a1_status.json",
+      "bytes": 369
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/tckd_d2_llvip_8_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\tckd_d2_llvip_8_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/tckd_d2_llvip_8_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\tckd_d2_llvip_8_a1.log",
+      "bytes": 243
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/completion.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\completion.json",
+      "bytes": 125
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/tckd_d2_drone_8_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\tckd_d2_drone_8_a1.log",
+      "bytes": 243
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/tckd_d2_llvip_8_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\tckd_d2_llvip_8_a1_resource_profile.json",
+      "bytes": 1725
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/tckd_d2_drone_8_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\tckd_d2_drone_8_a1_resource_profile.json",
+      "bytes": 1723
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/tckd_d2_drone_8_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\tckd_d2_drone_8_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/tckd_d2_llvip_8_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\tckd_d2_llvip_8_a1_status.json",
+      "bytes": 370
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a2/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a2\\manifest.json",
+      "bytes": 1666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/submitted_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\submitted_config.yaml",
+      "bytes": 2681
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/protocol_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\protocol_config.yaml",
+      "bytes": 2681
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/launch_manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\launch_manifest.json",
+      "bytes": 927
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\completion_receipt.json",
+      "bytes": 1207
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/gradient_checks.jsonl",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\gradient_checks.jsonl",
+      "bytes": 243
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/args.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\args.yaml",
+      "bytes": 2096
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/progress.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\progress.json",
+      "bytes": 262
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/runtime_ready.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\runtime_ready.json",
+      "bytes": 536
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/test_criterion_items.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\test_criterion_items.py",
+      "bytes": 2893
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\task_criterion.py",
+      "bytes": 8685
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/test_content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\test_content_controls.py",
+      "bytes": 8778
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/analyze_results.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\analyze_results.py",
+      "bytes": 15021
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/verify_criterion_equivalence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\verify_criterion_equivalence.py",
+      "bytes": 17234
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/test_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\test_tracked_pair_data.py",
+      "bytes": 1588
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/legacy_bridge.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\legacy_bridge.py",
+      "bytes": 561
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/diagnose_opportunities.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\diagnose_opportunities.py",
+      "bytes": 31939
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\train_task_conditional.py",
+      "bytes": 12910
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/test_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\test_localization_loss.py",
+      "bytes": 12159
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/test_geometry_contract.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\test_geometry_contract.py",
+      "bytes": 4532
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\content_controls.py",
+      "bytes": 11382
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/calibrate_gradient_scale.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\calibrate_gradient_scale.py",
+      "bytes": 4791
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/criterion_items.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\criterion_items.py",
+      "bytes": 2192
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/test_analyze_results.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\test_analyze_results.py",
+      "bytes": 11842
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/prepare_configs.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\prepare_configs.py",
+      "bytes": 2601
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/shuffled_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\shuffled_pair_data.py",
+      "bytes": 11424
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/resource_dispatch.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\resource_dispatch.py",
+      "bytes": 7920
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/verify_loader_equivalence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\verify_loader_equivalence.py",
+      "bytes": 10124
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/evaluate_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\evaluate_task_conditional.py",
+      "bytes": 3526
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/test_shuffled_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\test_shuffled_pair_data.py",
+      "bytes": 12592
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/geometry_contract.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\geometry_contract.py",
+      "bytes": 7914
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/geometry_audit_tools.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\geometry_audit_tools.py",
+      "bytes": 8440
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/legacy_oev1/evaluate_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\legacy_oev1\\evaluate_object_evidence.py",
+      "bytes": 3505
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/legacy_oev1/config_drone.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\legacy_oev1\\config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/legacy_oev1/train_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\legacy_oev1\\train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/legacy_oev1/object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\legacy_oev1\\object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/implementation_snapshot/legacy_oev1/paired_rgbir_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\implementation_snapshot\\legacy_oev1\\paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/run_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\run_receipt.json",
+      "bytes": 3245
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\metric_snapshot\\01_completion_receipt.json",
+      "bytes": 1207
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/trainer/02_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\02_tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/trainer/03_shuffled_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\03_shuffled_pair_data.py",
+      "bytes": 11424
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/trainer/01_train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\01_train_task_conditional.py",
+      "bytes": 12910
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/trainer/04_train.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\04_train.py",
+      "bytes": 12056
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_identity_train.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\split_roster\\01_rgb_identity_train.json",
+      "bytes": 4209660
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/loss/05_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\loss\\05_loss.py",
+      "bytes": 70324
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/loss/04_object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\loss\\04_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/loss/01_task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\loss\\01_task_criterion.py",
+      "bytes": 8685
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/loss/03_content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\loss\\03_content_controls.py",
+      "bytes": 11382
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/loss/02_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\loss\\02_localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/config/03_rgb.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\config\\03_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/config/01_protocol_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\config\\01_protocol_config.yaml",
+      "bytes": 2681
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_same_modal_s42_attempt1\\run_evidence\\source_snapshot\\config\\02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/protocol_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\protocol_config.yaml",
+      "bytes": 2666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/launch_manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\launch_manifest.json",
+      "bytes": 882
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\completion_receipt.json",
+      "bytes": 1170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/gradient_checks.jsonl",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\gradient_checks.jsonl",
+      "bytes": 226
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/args.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\args.yaml",
+      "bytes": 2074
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/progress.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\progress.json",
+      "bytes": 250
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/runtime_ready.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\runtime_ready.json",
+      "bytes": 443
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\task_criterion.py",
+      "bytes": 7922
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/test_content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\test_content_controls.py",
+      "bytes": 8778
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/analyze_results.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\analyze_results.py",
+      "bytes": 15021
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/test_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\test_tracked_pair_data.py",
+      "bytes": 1588
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/legacy_bridge.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\legacy_bridge.py",
+      "bytes": 561
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/diagnose_opportunities.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\diagnose_opportunities.py",
+      "bytes": 31939
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\train_task_conditional.py",
+      "bytes": 9661
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/test_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\test_localization_loss.py",
+      "bytes": 12159
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/test_geometry_contract.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\test_geometry_contract.py",
+      "bytes": 4532
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\content_controls.py",
+      "bytes": 11382
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/calibrate_gradient_scale.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\calibrate_gradient_scale.py",
+      "bytes": 4791
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/test_analyze_results.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\test_analyze_results.py",
+      "bytes": 11842
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/prepare_configs.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\prepare_configs.py",
+      "bytes": 2601
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/resource_dispatch.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\resource_dispatch.py",
+      "bytes": 7920
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/verify_loader_equivalence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\verify_loader_equivalence.py",
+      "bytes": 9763
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/evaluate_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\evaluate_task_conditional.py",
+      "bytes": 3526
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/geometry_contract.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\geometry_contract.py",
+      "bytes": 7914
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/geometry_audit_tools.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\geometry_audit_tools.py",
+      "bytes": 8440
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/legacy_oev1/evaluate_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\legacy_oev1\\evaluate_object_evidence.py",
+      "bytes": 3505
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/legacy_oev1/config_drone.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\legacy_oev1\\config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/legacy_oev1/train_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\legacy_oev1\\train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/legacy_oev1/object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\legacy_oev1\\object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/implementation_snapshot/legacy_oev1/paired_rgbir_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\implementation_snapshot\\legacy_oev1\\paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/run_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\run_receipt.json",
+      "bytes": 3094
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\metric_snapshot\\01_completion_receipt.json",
+      "bytes": 1170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/trainer/02_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\02_tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/trainer/01_train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\01_train_task_conditional.py",
+      "bytes": 9661
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\03_train.py",
+      "bytes": 12056
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\split_roster\\01_rgb_to_infrared_train.json",
+      "bytes": 4335593
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/loss/01_task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\loss\\01_task_criterion.py",
+      "bytes": 7922
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/loss/04_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\loss\\04_loss.py",
+      "bytes": 70324
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\loss\\03_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/loss/02_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\loss\\02_localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/config/01_drone_draft.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\config\\01_drone_draft.yaml",
+      "bytes": 2666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\config\\03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_n_s42_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_n_s42_attempt1\\run_evidence\\source_snapshot\\config\\02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_verified_dispatch_a1/completion.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_verified_dispatch_a1\\completion.json",
+      "bytes": 107
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_verified_dispatch_a1/tckd_d2_llvip_verified_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_verified_dispatch_a1\\tckd_d2_llvip_verified_a1_resource_profile.json",
+      "bytes": 1921
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_verified_dispatch_a1/tckd_d2_llvip_verified_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_verified_dispatch_a1\\tckd_d2_llvip_verified_a1.log",
+      "bytes": 249
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_verified_dispatch_a1/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_verified_dispatch_a1\\manifest.json",
+      "bytes": 1345
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_verified_dispatch_a1/tckd_d2_llvip_verified_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_verified_dispatch_a1\\tckd_d2_llvip_verified_a1_status.json",
+      "bytes": 377
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_verified_dispatch_a1/tckd_d2_llvip_verified_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_verified_dispatch_a1\\tckd_d2_llvip_verified_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a1/tckd_criterion_equivalence_s42_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a1\\tckd_criterion_equivalence_s42_a1.log",
+      "bytes": 7990
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a1/tckd_criterion_equivalence_s42_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a1\\tckd_criterion_equivalence_s42_a1_status.json",
+      "bytes": 383
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a1/tckd_criterion_equivalence_s42_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a1\\tckd_criterion_equivalence_s42_a1_resource_profile.json",
+      "bytes": 2501
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a1/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a1\\manifest.json",
+      "bytes": 995
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a1/tckd_criterion_equivalence_s42_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a1\\tckd_criterion_equivalence_s42_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/protocol_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\protocol_config.yaml",
+      "bytes": 2666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/launch_manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\launch_manifest.json",
+      "bytes": 882
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\completion_receipt.json",
+      "bytes": 1185
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/gradient_checks.jsonl",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\gradient_checks.jsonl",
+      "bytes": 241
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/args.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\args.yaml",
+      "bytes": 2074
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/progress.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\progress.json",
+      "bytes": 251
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/runtime_ready.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\runtime_ready.json",
+      "bytes": 443
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\task_criterion.py",
+      "bytes": 7922
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/test_content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\test_content_controls.py",
+      "bytes": 8778
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/analyze_results.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\analyze_results.py",
+      "bytes": 15021
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/test_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\test_tracked_pair_data.py",
+      "bytes": 1588
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/legacy_bridge.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\legacy_bridge.py",
+      "bytes": 561
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/diagnose_opportunities.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\diagnose_opportunities.py",
+      "bytes": 31939
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\train_task_conditional.py",
+      "bytes": 9661
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/test_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\test_localization_loss.py",
+      "bytes": 12159
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/test_geometry_contract.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\test_geometry_contract.py",
+      "bytes": 4532
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\content_controls.py",
+      "bytes": 11382
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/calibrate_gradient_scale.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\calibrate_gradient_scale.py",
+      "bytes": 4791
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/test_analyze_results.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\test_analyze_results.py",
+      "bytes": 11842
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/prepare_configs.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\prepare_configs.py",
+      "bytes": 2601
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/resource_dispatch.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\resource_dispatch.py",
+      "bytes": 7920
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/verify_loader_equivalence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\verify_loader_equivalence.py",
+      "bytes": 9763
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/evaluate_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\evaluate_task_conditional.py",
+      "bytes": 3526
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/geometry_contract.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\geometry_contract.py",
+      "bytes": 7914
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/geometry_audit_tools.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\geometry_audit_tools.py",
+      "bytes": 8440
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/legacy_oev1/evaluate_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\legacy_oev1\\evaluate_object_evidence.py",
+      "bytes": 3505
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/legacy_oev1/config_drone.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\legacy_oev1\\config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/legacy_oev1/train_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\legacy_oev1\\train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/legacy_oev1/object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\legacy_oev1\\object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/implementation_snapshot/legacy_oev1/paired_rgbir_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\implementation_snapshot\\legacy_oev1\\paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/run_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\run_receipt.json",
+      "bytes": 3094
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\metric_snapshot\\01_completion_receipt.json",
+      "bytes": 1185
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/trainer/02_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\02_tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/trainer/01_train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\01_train_task_conditional.py",
+      "bytes": 9661
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\03_train.py",
+      "bytes": 12056
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\split_roster\\01_rgb_to_infrared_train.json",
+      "bytes": 4335593
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/loss/01_task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\loss\\01_task_criterion.py",
+      "bytes": 7922
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/loss/04_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\loss\\04_loss.py",
+      "bytes": 70324
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\loss\\03_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/loss/02_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\loss\\02_localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/config/01_drone_draft.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\config\\01_drone_draft.yaml",
+      "bytes": 2666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\config\\03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_s42_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_s42_attempt1\\run_evidence\\source_snapshot\\config\\02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/protocol_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\protocol_config.yaml",
+      "bytes": 2666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\completion_receipt.json",
+      "bytes": 8296
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/batch_001_sources.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\batch_001_sources.json",
+      "bytes": 116880
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/args.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\args.yaml",
+      "bytes": 2088
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/runtime_ready.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\runtime_ready.json",
+      "bytes": 512
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/run_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\run_receipt.json",
+      "bytes": 3190
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\metric_snapshot\\01_completion_receipt.json",
+      "bytes": 8296
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/trainer/02_criterion_items.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\trainer\\02_criterion_items.py",
+      "bytes": 2192
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/trainer/04_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\trainer\\04_tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/trainer/01_verify_criterion_equivalence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\trainer\\01_verify_criterion_equivalence.py",
+      "bytes": 17234
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/trainer/03_train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\trainer\\03_train_task_conditional.py",
+      "bytes": 12910
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\split_roster\\01_rgb_to_infrared_train.json",
+      "bytes": 4335593
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/loss/05_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\loss\\05_loss.py",
+      "bytes": 70324
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/loss/04_object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\loss\\04_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/loss/01_task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\loss\\01_task_criterion.py",
+      "bytes": 8685
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/loss/02_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\loss\\02_localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/loss/03_train_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\loss\\03_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/config/01_drone_draft.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\config\\01_drone_draft.yaml",
+      "bytes": 2666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\config\\03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\run_evidence\\source_snapshot\\config\\02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/batch_001/equivalence.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\batch_001\\equivalence.json",
+      "bytes": 5707
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/batch_001/old_paired/kd_batches.jsonl",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\batch_001\\old_paired\\kd_batches.jsonl",
+      "bytes": 7762
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/batch_001/old_weight0/kd_batches.jsonl",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\batch_001\\old_weight0\\kd_batches.jsonl",
+      "bytes": 7742
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/batch_001/new_n/kd_batches.jsonl",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\batch_001\\new_n\\kd_batches.jsonl",
+      "bytes": 9317
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_s42_attempt2/batch_001/new_c/kd_batches.jsonl",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_s42_attempt2\\batch_001\\new_c\\kd_batches.jsonl",
+      "bytes": 9323
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/configs_c_controls_v1/c_same_modal_canary.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\configs_c_controls_v1\\c_same_modal_canary.yaml",
+      "bytes": 2681
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/configs_c_controls_v1/rgb_identity_train.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\configs_c_controls_v1\\rgb_identity_train.json",
+      "bytes": 4209660
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/configs_c_controls_v1/c_shuffled_canary.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\configs_c_controls_v1\\c_shuffled_canary.yaml",
+      "bytes": 2848
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/submitted_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\submitted_config.yaml",
+      "bytes": 2848
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/protocol_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\protocol_config.yaml",
+      "bytes": 2848
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/launch_manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\launch_manifest.json",
+      "bytes": 918
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\completion_receipt.json",
+      "bytes": 1204
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/gradient_checks.jsonl",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\gradient_checks.jsonl",
+      "bytes": 242
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/args.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\args.yaml",
+      "bytes": 2092
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/progress.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\progress.json",
+      "bytes": 260
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/runtime_ready.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\runtime_ready.json",
+      "bytes": 530
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/test_criterion_items.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\test_criterion_items.py",
+      "bytes": 2893
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\task_criterion.py",
+      "bytes": 8685
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/test_content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\test_content_controls.py",
+      "bytes": 8778
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/analyze_results.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\analyze_results.py",
+      "bytes": 15021
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/verify_criterion_equivalence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\verify_criterion_equivalence.py",
+      "bytes": 17234
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/test_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\test_tracked_pair_data.py",
+      "bytes": 1588
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/legacy_bridge.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\legacy_bridge.py",
+      "bytes": 561
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/diagnose_opportunities.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\diagnose_opportunities.py",
+      "bytes": 31939
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\train_task_conditional.py",
+      "bytes": 12910
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/test_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\test_localization_loss.py",
+      "bytes": 12159
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/test_geometry_contract.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\test_geometry_contract.py",
+      "bytes": 4532
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\content_controls.py",
+      "bytes": 11382
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/calibrate_gradient_scale.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\calibrate_gradient_scale.py",
+      "bytes": 4791
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/criterion_items.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\criterion_items.py",
+      "bytes": 2192
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/test_analyze_results.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\test_analyze_results.py",
+      "bytes": 11842
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/prepare_configs.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\prepare_configs.py",
+      "bytes": 2601
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/shuffled_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\shuffled_pair_data.py",
+      "bytes": 11424
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/resource_dispatch.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\resource_dispatch.py",
+      "bytes": 7920
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/verify_loader_equivalence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\verify_loader_equivalence.py",
+      "bytes": 10124
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/evaluate_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\evaluate_task_conditional.py",
+      "bytes": 3526
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/test_shuffled_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\test_shuffled_pair_data.py",
+      "bytes": 12592
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/geometry_contract.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\geometry_contract.py",
+      "bytes": 7914
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/geometry_audit_tools.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\geometry_audit_tools.py",
+      "bytes": 8440
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/legacy_oev1/evaluate_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\legacy_oev1\\evaluate_object_evidence.py",
+      "bytes": 3505
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/legacy_oev1/config_drone.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\legacy_oev1\\config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/legacy_oev1/train_object_evidence.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\legacy_oev1\\train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/legacy_oev1/object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\legacy_oev1\\object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/implementation_snapshot/legacy_oev1/paired_rgbir_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\implementation_snapshot\\legacy_oev1\\paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/run_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\run_receipt.json",
+      "bytes": 3322
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\metric_snapshot\\01_completion_receipt.json",
+      "bytes": 1204
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/trainer/02_tracked_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\02_tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/trainer/03_shuffled_pair_data.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\03_shuffled_pair_data.py",
+      "bytes": 11424
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/trainer/01_train_task_conditional.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\01_train_task_conditional.py",
+      "bytes": 12910
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/trainer/04_train.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\trainer\\04_train.py",
+      "bytes": 12056
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/split_roster/02_dronevehicle_derangement.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\split_roster\\02_dronevehicle_derangement.json",
+      "bytes": 8743689
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\split_roster\\01_rgb_to_infrared_train.json",
+      "bytes": 4335593
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/loss/05_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\loss\\05_loss.py",
+      "bytes": 70324
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/loss/04_object_evidence_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\loss\\04_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/loss/01_task_criterion.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\loss\\01_task_criterion.py",
+      "bytes": 8685
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/loss/03_content_controls.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\loss\\03_content_controls.py",
+      "bytes": 11382
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/loss/02_localization_loss.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\loss\\02_localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\config\\03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/config/01_protocol_config.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\config\\01_protocol_config.yaml",
+      "bytes": 2848
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_shuffled_s42_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\canary_drone_c_shuffled_s42_attempt1\\run_evidence\\source_snapshot\\config\\02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_items_cpu_fix_v1/test_criterion_items.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_items_cpu_fix_v1\\test_criterion_items.py",
+      "bytes": 2893
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_items_cpu_fix_v1/cpu_test_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_items_cpu_fix_v1\\cpu_test_receipt.json",
+      "bytes": 388
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_items_cpu_fix_v1/cpu_test_receipt_final.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_items_cpu_fix_v1\\cpu_test_receipt_final.json",
+      "bytes": 388
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_items_cpu_fix_v1/criterion_items.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_items_cpu_fix_v1\\criterion_items.py",
+      "bytes": 2192
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a2/tckd_criterion_equivalence_s42_a2_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a2\\tckd_criterion_equivalence_s42_a2_resource_profile.json",
+      "bytes": 3269
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a2/tckd_criterion_equivalence_s42_a2_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a2\\tckd_criterion_equivalence_s42_a2_status.json",
+      "bytes": 386
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a2/completion.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a2\\completion.json",
+      "bytes": 114
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a2/tckd_criterion_equivalence_s42_a2.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a2\\tckd_criterion_equivalence_s42_a2.log",
+      "bytes": 7525
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a2/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a2\\manifest.json",
+      "bytes": 995
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/criterion_equivalence_dispatch_a2/tckd_criterion_equivalence_s42_a2_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\criterion_equivalence_dispatch_a2\\tckd_criterion_equivalence_s42_a2_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_llvip_train_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_llvip_train_a1.log",
+      "bytes": 17513
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_llvip_val_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_llvip_val_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_llvip_train_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_llvip_train_a1_status.json",
+      "bytes": 374
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_drone_train_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_drone_train_a1.log",
+      "bytes": 17825
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_llvip_val_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_llvip_val_a1_status.json",
+      "bytes": 372
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/completion.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\completion.json",
+      "bytes": 190
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_llvip_val_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_llvip_val_a1_resource_profile.json",
+      "bytes": 2491
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_drone_val_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_drone_val_a1.log",
+      "bytes": 1797
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_llvip_val_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_llvip_val_a1.log",
+      "bytes": 1800
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_drone_val_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_drone_val_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_drone_val_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_drone_val_a1_status.json",
+      "bytes": 372
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\manifest.json",
+      "bytes": 3938
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_llvip_train_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_llvip_train_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_drone_train_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_drone_train_a1_status.json",
+      "bytes": 373
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_drone_train_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_drone_train_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_llvip_train_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_llvip_train_a1_resource_profile.json",
+      "bytes": 10121
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_drone_val_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_drone_val_a1_resource_profile.json",
+      "bytes": 2682
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_full_dispatch_a1/tckd_d2_drone_train_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_full_dispatch_a1\\tckd_d2_drone_train_a1_resource_profile.json",
+      "bytes": 14506
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_same_modal_screen.log",
+      "bytes": 0
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_shuffled_manifest.json",
+      "bytes": 1823
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_shuffled_s42.yaml",
+      "bytes": 2976
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_acceptance.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_shuffled_acceptance.json",
+      "bytes": 1629
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_screen.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_shuffled_screen.log",
+      "bytes": 0
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_same_modal_manifest.json",
+      "bytes": 1839
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_same_modal_s42.yaml",
+      "bytes": 2811
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_acceptance.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_same_modal_acceptance.json",
+      "bytes": 1494
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_dispatch_a1/oev1_content_c_shuffled_s42_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_shuffled_dispatch_a1\\oev1_content_c_shuffled_s42_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_dispatch_a1/oev1_content_c_shuffled_s42_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_shuffled_dispatch_a1\\oev1_content_c_shuffled_s42_a1_status.json",
+      "bytes": 1498
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_dispatch_a1/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_shuffled_dispatch_a1\\manifest.json",
+      "bytes": 1824
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_dispatch_a1/oev1_content_c_shuffled_s42_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_shuffled_dispatch_a1\\oev1_content_c_shuffled_s42_a1.log",
+      "bytes": 21310
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_dispatch_a1/oev1_content_c_same_modal_s42_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_same_modal_dispatch_a1\\oev1_content_c_same_modal_s42_a1.log",
+      "bytes": 666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_dispatch_a1/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_same_modal_dispatch_a1\\manifest.json",
+      "bytes": 1840
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_dispatch_a1/oev1_content_c_same_modal_s42_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\c_controls_full_v1\\c_same_modal_dispatch_a1\\oev1_content_c_same_modal_s42_a1_status.json",
+      "bytes": 1210
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a1/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a1\\manifest.json",
+      "bytes": 1666
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_canary_dispatch_a1/failure_receipt.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\d2_canary_dispatch_a1\\failure_receipt.json",
+      "bytes": 168
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/tckd_drone_n_canary_s42_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\tckd_drone_n_canary_s42_a1.log",
+      "bytes": 12123
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/completion.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\completion.json",
+      "bytes": 142
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/tckd_drone_c_canary_s42_a1.log",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\tckd_drone_c_canary_s42_a1.log",
+      "bytes": 12124
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/tckd_drone_n_canary_s42_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\tckd_drone_n_canary_s42_a1_resource_profile.json",
+      "bytes": 5560
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/tckd_drone_c_canary_s42_a1_resource_profile.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\tckd_drone_c_canary_s42_a1_resource_profile.json",
+      "bytes": 6144
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\manifest.json",
+      "bytes": 1743
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/tckd_drone_n_canary_s42_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\tckd_drone_n_canary_s42_a1_status.json",
+      "bytes": 378
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/tckd_drone_c_canary_s42_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\tckd_drone_c_canary_s42_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/tckd_drone_c_canary_s42_a1_status.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\tckd_drone_c_canary_s42_a1_status.json",
+      "bytes": 379
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/nc_canary_dispatch_a1/tckd_drone_n_canary_s42_a1_admission.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\nc_canary_dispatch_a1\\tckd_drone_n_canary_s42_a1_admission.json",
+      "bytes": 170
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/external_runtime/project_resource_guard.py",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\external_runtime\\project_resource_guard.py",
+      "bytes": 35496
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/shuffled_loader_cpu/llvip_derangement.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\shuffled_loader_cpu\\llvip_derangement.json",
+      "bytes": 3559579
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/shuffled_loader_cpu/dronevehicle_derangement.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\shuffled_loader_cpu\\dronevehicle_derangement.json",
+      "bytes": 8743689
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/shuffled_loader_cpu/real_dataset_cpu.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\shuffled_loader_cpu\\real_dataset_cpu.json",
+      "bytes": 7945
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/formal_runs/full_c_shuffled_s42_attempt1/launch_manifest.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\formal_runs\\full_c_shuffled_s42_attempt1\\launch_manifest.json",
+      "bytes": 893
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/formal_runs/full_c_shuffled_s42_attempt1/progress.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\formal_runs\\full_c_shuffled_s42_attempt1\\progress.json",
+      "bytes": 263
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/formal_runs/full_c_shuffled_s42_attempt1/runtime_ready.json",
+      "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_TaskConditional首轮\\snapshots\\stage_0322\\formal_runs\\full_c_shuffled_s42_attempt1\\runtime_ready.json",
+      "bytes": 530
+    }
+  ]
+}

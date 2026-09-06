@@ -1,0 +1,66 @@
+{
+  "protocol": "tc_geometry_primary_visual_batch1_v1",
+  "annotator": "Codex implement_geometry; actual tool image inspection",
+  "coordinate_basis": "Manually read physical landmarks from 640-pixel-wide per-modality panels; numeric coordinates are approximate, pending independent review.",
+  "formal_geometry_verified": false,
+  "observations": [
+    {
+      "audit_id": "dronevehicle_08323",
+      "status": "insufficient_observable_spatial_coverage",
+      "points": [],
+      "reason": "Road markings and vehicles are visible in the upper half, while most lower-half RGB structure is not reliably observable. Cannot certify six landmarks spanning three quadrants from the inspected raw panel."
+    },
+    {
+      "audit_id": "dronevehicle_01499",
+      "status": "insufficient_observable_spatial_coverage",
+      "points": [],
+      "reason": "The RGB parking scene is very dark. A few top and right structures are recognizable, but the required spatial distribution of precise independent landmarks was not established."
+    },
+    {
+      "audit_id": "dronevehicle_17930",
+      "status": "candidate_points_needs_independent_review",
+      "original_shape": [512, 640],
+      "panel_to_raw_scale": 1,
+      "uncertainty_raw_px": 3,
+      "points": [
+        {"id": "a", "feature": "upper-left streetlight bend", "rgb": [114, 65], "ir": [111, 62]},
+        {"id": "b", "feature": "middle-left streetlight bend near parked row", "rgb": [219, 187], "ir": [222, 187]},
+        {"id": "c", "feature": "lower-center streetlight bend", "rgb": [349, 372], "ir": [350, 371]},
+        {"id": "d", "feature": "near corner of bright van roof in left parked row", "rgb": [252, 288], "ir": [241, 283]},
+        {"id": "e", "feature": "upper small white car lower bumper midpoint", "rgb": [282, 108], "ir": [282, 106]},
+        {"id": "f", "feature": "right-side diagonal white car forward outer contour", "rgb": [462, 312], "ir": [468, 312]},
+        {"id": "g", "feature": "small facade-side car roof corner", "rgb": [366, 179], "ir": [360, 178]}
+      ],
+      "interpretation": "Approximate landmarks, not exact calibration. Several apparent discrepancies exceed two input pixels; measured values require reviewer confirmation."
+    },
+    {
+      "audit_id": "llvip_020001",
+      "status": "candidate_points_needs_independent_review",
+      "original_shape": [1024, 1280],
+      "panel_to_raw_scale": 2,
+      "uncertainty_raw_px": 4,
+      "points": [
+        {"id": "a", "feature": "left upper rear-window corner on white car", "rgb": [492, 64], "ir": [478, 62]},
+        {"id": "b", "feature": "right upper rear-window corner on white car", "rgb": [680, 50], "ir": [658, 48]},
+        {"id": "c", "feature": "left lower rear-window corner", "rgb": [458, 158], "ir": [442, 156]},
+        {"id": "d", "feature": "right lower rear-window corner", "rgb": [612, 172], "ir": [616, 158]},
+        {"id": "e", "feature": "left rear outer lamp/body corner", "rgb": [436, 232], "ir": [434, 238]},
+        {"id": "f", "feature": "lower-left pedestrian forward shoe toe", "rgb": [466, 908], "ir": [472, 900]},
+        {"id": "g", "feature": "scooter lower wheel/contact contour", "rgb": [1018, 580], "ir": [1020, 600]}
+      ],
+      "interpretation": "The sample is visibly paired, but local contours are not exactly co-located. Foreground tree parallax and thermal boundary ambiguity preclude promoting these approximate marks to a verified grid."
+    },
+    {
+      "audit_id": "llvip_101319",
+      "status": "viewed_pending_landmark_annotation",
+      "points": [],
+      "reason": "Several vehicle-wheel correspondences are visible, but foreground tree/pole displacement and upper-half foliage make spatially complete landmark identity uncertain. No precise points were claimed."
+    },
+    {
+      "audit_id": "llvip_180408",
+      "status": "viewed_pending_landmark_annotation",
+      "points": [],
+      "reason": "Vehicles are paired; strong tree occlusion and modality-dependent appearance complicate landmarks. This panel has been viewed but has not passed point annotation."
+    }
+  ]
+}

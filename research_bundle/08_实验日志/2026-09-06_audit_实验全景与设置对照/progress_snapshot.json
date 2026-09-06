@@ -1,0 +1,387 @@
+{
+  "captured_at_utc": "2026-09-06T14:26:10.000181+00:00",
+  "oev1": {
+    "cells": [
+      {
+        "seed": 0,
+        "arm": "paired",
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+        "status": "pending_training",
+        "metrics": null,
+        "errors": [],
+        "evidence_paths": {
+          "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/launch_manifest.json",
+          "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/completion_receipt.json",
+          "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/evaluation_val.json",
+          "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/eval_evidence/run_receipt.json"
+        },
+        "present_files": [
+          "launch_manifest.json"
+        ],
+        "note": "Training terminal receipt absent; CSV metrics are deliberately not read.",
+        "progress": {
+          "status": "running",
+          "arm": "paired",
+          "epoch": 39,
+          "epochs": 200,
+          "optimizer_updates": 11362,
+          "update_attempts": 11370,
+          "amp_skips": 8,
+          "batches": 21895,
+          "selected_objects": 2661222,
+          "seconds": 9458.55373764038,
+          "last_kd": 0.3192436695098877
+        },
+        "completed_csv_epochs": 38
+      },
+      {
+        "seed": 0,
+        "arm": "weight0",
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+        "status": "completed",
+        "metrics": {
+          "mAP50_95": 0.5434618520685575,
+          "AP50": 0.7699251535173484,
+          "AP75": 0.6393291745479234,
+          "precision": 0.7765485331322762,
+          "recall": 0.7358216889941263
+        },
+        "errors": [],
+        "evidence_paths": {
+          "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/launch_manifest.json",
+          "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/completion_receipt.json",
+          "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/evaluation_val.json",
+          "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/eval_evidence/run_receipt.json"
+        },
+        "present_files": [
+          "launch_manifest.json",
+          "completion_receipt.json",
+          "evaluation_val.json",
+          "run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json"
+        ],
+        "single_seed_exploratory": true,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+        "teacher_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+        "reference_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+        "epochs": 200,
+        "split": "val",
+        "endpoint": "fixed_budget_last_ema",
+        "metric_units": "fraction_0_to_1",
+        "progress": {
+          "status": "running",
+          "arm": "weight0",
+          "epoch": 200,
+          "epochs": 200,
+          "optimizer_updates": 56695,
+          "update_attempts": 56720,
+          "amp_skips": 25,
+          "batches": 112595,
+          "selected_objects": 13693433,
+          "seconds": 43621.32675790787,
+          "last_kd": 0.33459073305130005
+        },
+        "completed_csv_epochs": 200
+      },
+      {
+        "seed": 42,
+        "arm": "paired",
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+        "status": "completed",
+        "metrics": {
+          "mAP50_95": 0.5465816217191543,
+          "AP50": 0.770696200439378,
+          "AP75": 0.638393230492208,
+          "precision": 0.7743225301297307,
+          "recall": 0.7243045069089454
+        },
+        "errors": [],
+        "evidence_paths": {
+          "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/launch_manifest.json",
+          "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/completion_receipt.json",
+          "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/evaluation_val.json",
+          "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/eval_evidence/run_receipt.json"
+        },
+        "present_files": [
+          "launch_manifest.json",
+          "completion_receipt.json",
+          "evaluation_val.json",
+          "run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json"
+        ],
+        "single_seed_exploratory": true,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+        "teacher_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+        "reference_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+        "epochs": 200,
+        "split": "val",
+        "endpoint": "fixed_budget_last_ema",
+        "metric_units": "fraction_0_to_1",
+        "progress": {
+          "status": "running",
+          "arm": "paired",
+          "epoch": 200,
+          "epochs": 200,
+          "optimizer_updates": 56693,
+          "update_attempts": 56720,
+          "amp_skips": 27,
+          "batches": 112595,
+          "selected_objects": 13693433,
+          "seconds": 40169.60675621033,
+          "last_kd": 0.1990199089050293
+        },
+        "completed_csv_epochs": 200
+      },
+      {
+        "seed": 42,
+        "arm": "weight0",
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+        "status": "pending_training",
+        "metrics": null,
+        "errors": [],
+        "evidence_paths": {
+          "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/launch_manifest.json",
+          "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/completion_receipt.json",
+          "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/evaluation_val.json",
+          "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/eval_evidence/run_receipt.json"
+        },
+        "present_files": [
+          "launch_manifest.json"
+        ],
+        "note": "Training terminal receipt absent; CSV metrics are deliberately not read.",
+        "progress": {
+          "status": "running",
+          "arm": "weight0",
+          "epoch": 147,
+          "epochs": 200,
+          "optimizer_updates": 41678,
+          "update_attempts": 41700,
+          "amp_skips": 22,
+          "batches": 82555,
+          "selected_objects": 10040163,
+          "seconds": 30629.242365837097,
+          "last_kd": 0.4711393415927887
+        },
+        "completed_csv_epochs": 146
+      },
+      {
+        "seed": 123,
+        "arm": "paired",
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+        "status": "completed",
+        "metrics": {
+          "mAP50_95": 0.5463684720507138,
+          "AP50": 0.7730455672411458,
+          "AP75": 0.6421477409983494,
+          "precision": 0.7787129583514844,
+          "recall": 0.7298865399139216
+        },
+        "errors": [],
+        "evidence_paths": {
+          "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/launch_manifest.json",
+          "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/completion_receipt.json",
+          "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/evaluation_val.json",
+          "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/eval_evidence/run_receipt.json"
+        },
+        "present_files": [
+          "launch_manifest.json",
+          "completion_receipt.json",
+          "evaluation_val.json",
+          "run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json"
+        ],
+        "single_seed_exploratory": true,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt",
+        "teacher_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+        "reference_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+        "epochs": 200,
+        "split": "val",
+        "endpoint": "fixed_budget_last_ema",
+        "metric_units": "fraction_0_to_1",
+        "progress": {
+          "status": "running",
+          "arm": "paired",
+          "epoch": 200,
+          "epochs": 200,
+          "optimizer_updates": 56693,
+          "update_attempts": 56720,
+          "amp_skips": 27,
+          "batches": 112595,
+          "selected_objects": 13693433,
+          "seconds": 45845.933898210526,
+          "last_kd": 0.2129717469215393
+        },
+        "completed_csv_epochs": 200
+      },
+      {
+        "seed": 123,
+        "arm": "weight0",
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+        "status": "pending_training",
+        "metrics": null,
+        "errors": [],
+        "evidence_paths": {
+          "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/launch_manifest.json",
+          "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/completion_receipt.json",
+          "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/evaluation_val.json",
+          "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/run_evidence/run_receipt.json",
+          "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/eval_evidence/run_receipt.json"
+        },
+        "present_files": [
+          "launch_manifest.json"
+        ],
+        "note": "Training terminal receipt absent; CSV metrics are deliberately not read.",
+        "progress": {
+          "status": "running",
+          "arm": "weight0",
+          "epoch": 32,
+          "epochs": 200,
+          "optimizer_updates": 9193,
+          "update_attempts": 9200,
+          "amp_skips": 7,
+          "batches": 17555,
+          "selected_objects": 2134165,
+          "seconds": 7240.27433180809,
+          "last_kd": 0.4828190803527832
+        },
+        "completed_csv_epochs": 31
+      }
+    ],
+    "complete_endpoints": 3,
+    "complete_seed_pairs": 0,
+    "seed_pairs": [
+      {
+        "seed": 0,
+        "status": "pending_pair",
+        "difference_pp": null
+      },
+      {
+        "seed": 42,
+        "status": "pending_pair",
+        "difference_pp": null
+      },
+      {
+        "seed": 123,
+        "status": "pending_pair",
+        "difference_pp": null
+      }
+    ],
+    "three_seed_summary": null,
+    "status": "pending"
+  },
+  "osssl": [
+    {
+      "arm": "paired",
+      "seed": 0,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/paired_rgb_s0_e200",
+      "completed_epochs": 0,
+      "has_completion_receipt": false,
+      "independent_metric_files": [],
+      "last_csv_metrics": null
+    },
+    {
+      "arm": "paired",
+      "seed": 42,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/paired_rgb_s42_e200",
+      "completed_epochs": 0,
+      "has_completion_receipt": false,
+      "independent_metric_files": [],
+      "last_csv_metrics": null
+    },
+    {
+      "arm": "paired",
+      "seed": 123,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/paired_rgb_s123_e200",
+      "completed_epochs": 200,
+      "has_completion_receipt": true,
+      "independent_metric_files": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/paired_rgb_s123_e200/metrics_record.json"
+      ],
+      "last_csv_metrics": {
+        "metrics/mAP50(B)": "0.75849",
+        "metrics/mAP50-95(B)": "0.53942"
+      }
+    },
+    {
+      "arm": "sar_only",
+      "seed": 0,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s0_e200",
+      "completed_epochs": 0,
+      "has_completion_receipt": false,
+      "independent_metric_files": [],
+      "last_csv_metrics": null
+    },
+    {
+      "arm": "sar_only",
+      "seed": 42,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s42_e200",
+      "completed_epochs": 200,
+      "has_completion_receipt": true,
+      "independent_metric_files": [],
+      "last_csv_metrics": {
+        "metrics/mAP50(B)": "0.76822",
+        "metrics/mAP50-95(B)": "0.54623"
+      }
+    },
+    {
+      "arm": "sar_only",
+      "seed": 123,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s123_e200",
+      "completed_epochs": 0,
+      "has_completion_receipt": false,
+      "independent_metric_files": [],
+      "last_csv_metrics": null
+    },
+    {
+      "arm": "shuffled",
+      "seed": 0,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s0_e200",
+      "completed_epochs": 167,
+      "has_completion_receipt": false,
+      "independent_metric_files": [],
+      "last_csv_metrics": {
+        "metrics/mAP50(B)": "0.75146",
+        "metrics/mAP50-95(B)": "0.52976"
+      }
+    },
+    {
+      "arm": "shuffled",
+      "seed": 42,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s42_e200",
+      "completed_epochs": 0,
+      "has_completion_receipt": false,
+      "independent_metric_files": [],
+      "last_csv_metrics": null
+    },
+    {
+      "arm": "shuffled",
+      "seed": 123,
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s123_e200",
+      "completed_epochs": 200,
+      "has_completion_receipt": true,
+      "independent_metric_files": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/metrics_record.json"
+      ],
+      "last_csv_metrics": {
+        "metrics/mAP50(B)": "0.75354",
+        "metrics/mAP50-95(B)": "0.53273"
+      }
+    }
+  ],
+  "gpu": {
+    "exit_code": 0,
+    "stdout": "0, 8645 MiB, 15438 MiB, 23 %\n1, 7798 MiB, 16286 MiB, 50 %\n2, 1 MiB, 24082 MiB, 0 %\n3, 1 MiB, 24082 MiB, 0 %\n4, 7654 MiB, 16430 MiB, 15 %\n5, 7654 MiB, 16430 MiB, 19 %\n6, 7655 MiB, 16429 MiB, 19 %\n7, 1 MiB, 24082 MiB, 0 %\n",
+    "stderr": ""
+  },
+  "cuda_pids": {
+    "exit_code": 0,
+    "stdout": "GPU-f084b507-45a9-1b42-4d6c-abd882060d40, 654207, 8582 MiB, /isaac-sim/kit/python/bin/python3\nGPU-0e6b9fe0-31ff-f6ce-ddf0-652e388d529f, 3575982, 7768 MiB, /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\nGPU-66fe989e-920f-65c8-f838-b5e32bfaadae, 1564206, 7632 MiB, /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\nGPU-167c0c6c-0998-a996-c352-4ae05e355878, 3743565, 7632 MiB, /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\nGPU-1d1bf3db-3d4e-3dba-3792-f29aa92e4e42, 3966512, 7632 MiB, /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\n",
+    "stderr": ""
+  },
+  "scope": "Read-only status refresh. Old completed endpoint proof is stored in 21:46 audit; no new GPU evaluation."
+}

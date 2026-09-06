@@ -1,0 +1,74 @@
+{
+ "thresholds": {
+  "conf": 0.1,
+  "iou_det": 0.5,
+  "iou_good": 0.75
+ },
+ "luminance_threshold": 78.283,
+ "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+ "student": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s42_e200/weights/last.pt",
+ "n_images": 1469,
+ "day": {
+  "total_gt": 10781,
+  "buckets": {
+   "A": [
+    220,
+    2.0
+   ],
+   "B": [
+    9634,
+    89.4
+   ],
+   "C": [
+    435,
+    4.0
+   ],
+   "D": [
+    157,
+    1.5
+   ],
+   "E": [
+    335,
+    3.1
+   ]
+  }
+ },
+ "night": {
+  "total_gt": 11681,
+  "buckets": {
+   "A": [
+    1876,
+    16.1
+   ],
+   "B": [
+    7118,
+    60.9
+   ],
+   "C": [
+    1005,
+    8.6
+   ],
+   "D": [
+    1249,
+    10.7
+   ],
+   "E": [
+    433,
+    3.7
+   ]
+  }
+ },
+ "A_class_detail": {
+  "per_class": {
+   "car": 1930,
+   "freight car": 50,
+   "truck": 66,
+   "bus": 31,
+   "van": 19
+  },
+  "student_iou_mean": 0.68,
+  "teacher_iou_mean": 0.851,
+  "teacher_student_box_iou_mean": 0.728,
+  "n_A_total": 2096
+ }
+}

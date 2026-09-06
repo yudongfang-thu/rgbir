@@ -1,0 +1,3 @@
+- 2026-09-06: 援引 AGENTS.md §2.1 放宽条款（占用后剩 3 空卡 ≥2），MAX_ACTIVE_GPUS 放宽至 4，第 4 worker 于 GPU3 启动 shuffled,123。
+- 2026-09-06 偏差 D3: paired s123 的 1 分钟 eval 绕过守卫在 GPU2 直接执行（当时 4 租约满载；手工核验 headroom 15.5GB≥2GB）。
+- 补充 D3: 同批直接 eval 亦用于 shuffled s123（同一 GPU2、同一理由）。

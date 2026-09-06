@@ -1,0 +1,101 @@
+amp: true
+augmentation:
+  bgr: 0.0
+  copy_paste: 0.0
+  cutmix: 0.0
+  degrees: 0.0
+  erasing: 0.0
+  fliplr: 0.5
+  flipud: 0.0
+  hsv_h: 0.0
+  hsv_s: 0.0
+  hsv_v: 0.0
+  mixup: 0.0
+  mosaic: 0.0
+  perspective: 0.0
+  scale: 0.5
+  shear: 0.0
+  translate: 0.1
+batch: 32
+calibration_receipt: null
+canary_acceptance: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_acceptance.json
+close_mosaic: 0
+cos_lr: false
+d2_receipt: null
+dataset: dronevehicle
+description: Unchanged OEv1 C content attribution; localization disabled
+deterministic: true
+epochs: 200
+evaluation_role: val
+evidence:
+  background_scale: 2.0
+  input_size: 640
+  levels:
+  - 0
+  - 1
+  match_iou: 0.5
+  minimum_background: 4
+  minimum_foreground: 1
+  reference_conf: 0.05
+  reference_iou: 0.1
+  rho: 0.5
+  smooth_l1_beta: 1.0
+  target_clip: 8.0
+  teacher_conf: 0.25
+  teacher_iou: 0.5
+  temperature: 2.0
+expected_nc: 5
+expected_train_images: 17990
+expected_val_images: 1469
+formal_training_authorized: true
+geometry_contract: null
+imgsz: 640
+kd_weight: 0.1
+localization:
+  input_size: 640
+  levels:
+  - 0
+  - 1
+  localization_margin: 0.05
+  match_iou: 0.5
+  native_candidate_epsilon: 1.0e-09
+  pair_iou: 0.8
+  reference_conf: 0.05
+  reference_iou: 0.1
+  reference_iou_max: 0.7
+  reliable_conf: 0.25
+  support_epsilon: 0.01
+  teacher_ir_iou_min: 0.5
+  teacher_rgb_iou_min: 0.6
+  temperature: 2.0
+localization_coefficient: 0.0
+log_every_batches: 100
+lr0: 0.01
+lrf: 0.01
+method_id: RGBIR-OEV1-C-CONTENT-CONTROLS-v1
+method_identity: PROTOCOL-ADAPTED
+model: /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt
+momentum: 0.937
+nbs: 64
+optimizer: SGD
+paths:
+  paired_train_mapping: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/configs_c_controls_v1/rgb_identity_train.json
+  privileged_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml
+  student_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml
+patience: 0
+privileged_modality: rgb
+protocol_status: FROZEN
+reference: /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt
+seed: 42
+source_geometry_scope: not_yet_verified
+student_modality: rgb
+teacher: /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt
+teacher_cache_images: 64
+torch_version: 2.10.0+cu128
+ultralytics_version: 8.4.115
+warmup_bias_lr: 0.1
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+weight_decay: 0.0005
+workers: 4
+control_identity: c_same_modal

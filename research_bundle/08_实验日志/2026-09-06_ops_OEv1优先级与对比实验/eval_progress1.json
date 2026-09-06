@@ -1,0 +1,127 @@
+{
+  "cclkd_eval_summary.json": {
+    "status": "completed",
+    "canary_reserved_peak_mib": 884.0,
+    "formal_vram_reservation_mib": 2560,
+    "gpu": 2,
+    "results": [
+      {
+        "status": "evaluation_completed",
+        "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+        "arm": "cclkd_partial",
+        "seed": 0,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed0_b32_e200/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "evaluated_images": 1469,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "canary": false,
+        "AP50": 0.7648561806758856,
+        "AP75": 0.6328183429745453,
+        "mAP50_95": 0.5406600564966325,
+        "precision": 0.772369830252248,
+        "recall": 0.7293214222166514,
+        "allocated_peak_mib": 711.7109375,
+        "reserved_peak_mib": 884.0,
+        "seconds": 6.359093427658081,
+        "resources": {
+          "gpu_ids": [
+            2
+          ],
+          "cuda_pid_counts": {
+            "2": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "2": 1370
+          },
+          "peak_rss_mib": 3838
+        }
+      },
+      {
+        "status": "evaluation_completed",
+        "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+        "arm": "cclkd_partial",
+        "seed": 42,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "evaluated_images": 1469,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "canary": false,
+        "AP50": 0.7700321800542202,
+        "AP75": 0.6354910732782623,
+        "mAP50_95": 0.5449329450152567,
+        "precision": 0.7662954507926171,
+        "recall": 0.7277740476410169,
+        "allocated_peak_mib": 711.70849609375,
+        "reserved_peak_mib": 884.0,
+        "seconds": 5.517301559448242,
+        "resources": {
+          "gpu_ids": [
+            2
+          ],
+          "cuda_pid_counts": {
+            "2": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "2": 1370
+          },
+          "peak_rss_mib": 3829
+        }
+      },
+      {
+        "status": "evaluation_completed",
+        "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+        "arm": "cclkd_partial",
+        "seed": 123,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed123_b32_e200/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "evaluated_images": 1469,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "canary": false,
+        "AP50": 0.7631210499190813,
+        "AP75": 0.6379373998696685,
+        "mAP50_95": 0.543325955606628,
+        "precision": 0.7655184619884082,
+        "recall": 0.730872699151618,
+        "allocated_peak_mib": 711.7080078125,
+        "reserved_peak_mib": 884.0,
+        "seconds": 5.7772204875946045,
+        "resources": {
+          "gpu_ids": [
+            2
+          ],
+          "cuda_pid_counts": {
+            "2": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "2": 1370
+          },
+          "peak_rss_mib": 3941
+        }
+      }
+    ]
+  },
+  "cclkd_eval_allocation.json": {
+    "gpu": 2,
+    "snapshot": "0, 1, 24082\n1, 1, 24082\n2, 1, 24082\n3, 1, 24082\n4, 7654, 16430\n5, 7654, 16430\n6, 7655, 16429\n7, 1, 24082\n",
+    "empty_before": [
+      0,
+      1,
+      2,
+      3,
+      7
+    ],
+    "policy": "User AGENTS 2.1 four-card exception; guard remains mandatory; at least two empty cards remain"
+  },
+  "cclkd_partial_s0_full_attempt1.log": "es      Box(P          R      mAP50  mAP50-95): 45% \u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500 21/46 13.6it/s 1.7s<1.8s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 50% \u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500 23/46 14.0it/s 1.8s<1.6s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 54% \u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500\u2500 25/46 13.6it/s 2.0s<1.5s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 58% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500 27/46 13.9it/s 2.1s<1.4s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 63% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 29/46 13.2it/s 2.3s<1.3s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 67% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 31/46 13.4it/s 2.4s<1.1s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 71% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500 33/46 13.1it/s 2.6s<1.0s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 76% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500 35/46 13.0it/s 2.7s<0.8s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 80% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500 37/46 12.7it/s 2.9s<0.7s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 82% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500 38/46 11.5it/s 3.0s<0.7s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 86% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500 40/46 11.8it/s 3.2s<0.5s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 91% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500 42/46 11.4it/s 3.4s<0.4s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 95% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500 44/46 11.5it/s 3.5s<0.2s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 46/46 12.3it/s 3.8s\n                   all       1469      22462      0.772      0.729      0.765      0.541\nSpeed: 0.4ms preprocess, 0.5ms inference, 0.0ms loss, 0.4ms postprocess per image\n{\"status\": \"evaluation_completed\", \"method_id\": \"CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL\", \"arm\": \"cclkd_partial\", \"seed\": 0, \"checkpoint\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed0_b32_e200/weights/last.pt\", \"endpoint\": \"fixed_budget_last_ema\", \"split\": \"val\", \"evaluated_images\": 1469, \"official_test_accessed\": false, \"metric_units\": \"fraction_0_to_1\", \"canary\": false, \"AP50\": 0.7648561806758856, \"AP75\": 0.6328183429745453, \"mAP50_95\": 0.5406600564966325, \"precision\": 0.772369830252248, \"recall\": 0.7293214222166514, \"allocated_peak_mib\": 711.7109375, \"reserved_peak_mib\": 884.0, \"seconds\": 6.359093427658081, \"resources\": {\"gpu_ids\": [2], \"cuda_pid_counts\": {\"2\": 1}, \"per_gpu_peak_vram_mib\": {\"2\": 1370}, \"peak_rss_mib\": 3838}}\n",
+  "cclkd_partial_s123_full_attempt1.log": " Box(P          R      mAP50  mAP50-95): 50% \u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500 23/46 13.2it/s 1.9s<1.7s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 54% \u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500\u2500 25/46 12.2it/s 2.1s<1.7s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 58% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500 27/46 12.9it/s 2.2s<1.5s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 60% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500 28/46 11.4it/s 2.3s<1.6s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 63% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 29/46 10.7it/s 2.4s<1.6s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 67% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 31/46 12.0it/s 2.6s<1.3s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 71% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500 33/46 11.5it/s 2.8s<1.1s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 76% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500 35/46 12.6it/s 2.9s<0.9s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 80% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500 37/46 11.9it/s 3.1s<0.8s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 84% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500 39/46 12.0it/s 3.2s<0.6s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 89% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500 41/46 11.5it/s 3.4s<0.4s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 93% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500 43/46 12.1it/s 3.6s<0.2s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 97% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578 45/46 11.9it/s 3.8s<0.1s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 46/46 11.9it/s 3.9s\n                   all       1469      22462      0.766      0.731      0.763      0.543\nSpeed: 0.4ms preprocess, 0.5ms inference, 0.0ms loss, 0.4ms postprocess per image\n{\"status\": \"evaluation_completed\", \"method_id\": \"CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL\", \"arm\": \"cclkd_partial\", \"seed\": 123, \"checkpoint\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed123_b32_e200/weights/last.pt\", \"endpoint\": \"fixed_budget_last_ema\", \"split\": \"val\", \"evaluated_images\": 1469, \"official_test_accessed\": false, \"metric_units\": \"fraction_0_to_1\", \"canary\": false, \"AP50\": 0.7631210499190813, \"AP75\": 0.6379373998696685, \"mAP50_95\": 0.543325955606628, \"precision\": 0.7655184619884082, \"recall\": 0.730872699151618, \"allocated_peak_mib\": 711.7080078125, \"reserved_peak_mib\": 884.0, \"seconds\": 5.7772204875946045, \"resources\": {\"gpu_ids\": [2], \"cuda_pid_counts\": {\"2\": 1}, \"per_gpu_peak_vram_mib\": {\"2\": 1370}, \"peak_rss_mib\": 3941}}\n",
+  "cclkd_partial_s42_canary_attempt1.log": "{\"cuda_processes_per_gpu\": 1, \"expected_rss_mib\": 32768, \"expected_vram_mib\": 14000, \"gpu_ids\": [2], \"lease_id\": \"cclkd_partial_s42_canary_attempt1-a64451214b61\", \"pid\": 951334, \"status\": \"LAUNCHED\"}\nUltralytics 8.4.115 \ud83d\ude80 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)\nYOLO11n summary (fused): 101 layers, 2,583,127 parameters, 0 gradients, 6.4 GFLOPs\n\u001b[34m\u001b[1mval: \u001b[0mFast image access \u2705 (ping: 0.0\u00b10.0 ms, read: 3234.0\u00b1627.3 MB/s, size: 115.1 KB)\n\n\u001b[K\u001b[34m\u001b[1mval: \u001b[0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val... 64 images, 0 backgrounds, 0 corrupt: 100% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 64/64 2.0Kit/s 0.0s\n\u001b[34m\u001b[1mval: \u001b[0mNew cache created: /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val.cache\n\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 50% \u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500 1/2 1.5it/s 0.2s<0.7s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 2/2 6.8it/s 0.3s\n                   all         64       4340      0.754       0.57      0.614      0.351\nSpeed: 0.4ms preprocess, 1.4ms inference, 0.0ms loss, 0.8ms postprocess per image\n{\"status\": \"canary_completed\", \"method_id\": \"CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL\", \"arm\": \"cclkd_partial\", \"seed\": 42, \"checkpoint\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt\", \"endpoint\": \"fixed_budget_last_ema\", \"split\": \"val\", \"evaluated_images\": 64, \"official_test_accessed\": false, \"metric_units\": \"fraction_0_to_1\", \"canary\": true, \"AP50\": 0.6139050377887882, \"AP75\": 0.33978480536385575, \"mAP50_95\": 0.3506645611918499, \"precision\": 0.7540289372294147, \"recall\": 0.5701789909125884, \"allocated_peak_mib\": 711.77783203125, \"reserved_peak_mib\": 884.0, \"seconds\": 2.1122848987579346, \"resources\": {\"gpu_ids\": [2], \"cuda_pid_counts\": {\"2\": 1}, \"per_gpu_peak_vram_mib\": {\"2\": 1370}, \"peak_rss_mib\": 2639}}\n",
+  "cclkd_partial_s42_full_attempt1.log": " Box(P          R      mAP50  mAP50-95): 45% \u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500 21/46 13.3it/s 1.7s<1.9s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 50% \u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500 23/46 13.9it/s 1.8s<1.6s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 54% \u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500\u2500 25/46 13.0it/s 2.0s<1.6s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 58% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500 27/46 13.6it/s 2.1s<1.4s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 63% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 29/46 12.4it/s 2.3s<1.4s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 67% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 31/46 13.2it/s 2.4s<1.1s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 71% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500 33/46 12.9it/s 2.6s<1.0s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 76% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500 35/46 13.6it/s 2.7s<0.8s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 80% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500 37/46 12.8it/s 2.9s<0.7s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 84% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500 39/46 13.4it/s 3.1s<0.5s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 89% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500 41/46 12.4it/s 3.3s<0.4s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 93% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500 43/46 13.2it/s 3.4s<0.2s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 97% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578 45/46 12.4it/s 3.6s<0.1s\n\u001b[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 46/46 12.5it/s 3.7s\n                   all       1469      22462      0.766      0.728       0.77      0.545\nSpeed: 0.4ms preprocess, 0.5ms inference, 0.0ms loss, 0.4ms postprocess per image\n{\"status\": \"evaluation_completed\", \"method_id\": \"CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL\", \"arm\": \"cclkd_partial\", \"seed\": 42, \"checkpoint\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt\", \"endpoint\": \"fixed_budget_last_ema\", \"split\": \"val\", \"evaluated_images\": 1469, \"official_test_accessed\": false, \"metric_units\": \"fraction_0_to_1\", \"canary\": false, \"AP50\": 0.7700321800542202, \"AP75\": 0.6354910732782623, \"mAP50_95\": 0.5449329450152567, \"precision\": 0.7662954507926171, \"recall\": 0.7277740476410169, \"allocated_peak_mib\": 711.70849609375, \"reserved_peak_mib\": 884.0, \"seconds\": 5.517301559448242, \"resources\": {\"gpu_ids\": [2], \"cuda_pid_counts\": {\"2\": 1}, \"per_gpu_peak_vram_mib\": {\"2\": 1370}, \"peak_rss_mib\": 3829}}\n",
+  "worker_log": "oduction/environments/sn6-int8-kd/bin/python\", \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py\", \"run\", \"--job-id\", \"cclkd_partial_s0_full_attempt1\", \"--kind\", \"eval\", \"--candidate-gpu\", \"2\", \"--expected-vram-mib\", \"2560\", \"--expected-rss-mib\", \"32768\", \"--free-safety-mib\", \"2048\", \"--\", \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\", \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_priority_comparators_20260906/evaluate_cclkd_partial.py\", \"--seed\", \"0\", \"--output\", \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/oev1_comparators_20260906/cclkd_partial_s0_full_attempt1\", \"--mode\", \"full\"]}\n{\"finished\": \"cclkd_partial_s0_full_attempt1\", \"metrics\": {\"status\": \"evaluation_completed\", \"method_id\": \"CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL\", \"arm\": \"cclkd_partial\", \"seed\": 0, \"checkpoint\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed0_b32_e200/weights/last.pt\", \"endpoint\": \"fixed_budget_last_ema\", \"split\": \"val\", \"evaluated_images\": 1469, \"official_test_accessed\": false, \"metric_units\": \"fraction_0_to_1\", \"canary\": false, \"AP50\": 0.7648561806758856, \"AP75\": 0.6328183429745453, \"mAP50_95\": 0.5406600564966325, \"precision\": 0.772369830252248, \"recall\": 0.7293214222166514, \"allocated_peak_mib\": 711.7109375, \"reserved_peak_mib\": 884.0, \"seconds\": 6.359093427658081, \"resources\": {\"gpu_ids\": [2], \"cuda_pid_counts\": {\"2\": 1}, \"per_gpu_peak_vram_mib\": {\"2\": 1370}, \"peak_rss_mib\": 3838}}}\n{\"starting\": \"cclkd_partial_s42_full_attempt1\", \"command\": [\"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\", \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py\", \"run\", \"--job-id\", \"cclkd_partial_s42_full_attempt1\", \"--kind\", \"eval\", \"--candidate-gpu\", \"2\", \"--expected-vram-mib\", \"2560\", \"--expected-rss-mib\", \"32768\", \"--free-safety-mib\", \"2048\", \"--\", \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\", \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_priority_comparators_20260906/evaluate_cclkd_partial.py\", \"--seed\", \"42\", \"--output\", \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/oev1_comparators_20260906/cclkd_partial_s42_full_attempt1\", \"--mode\", \"full\"]}\n{\"finished\": \"cclkd_partial_s42_full_attempt1\", \"metrics\": {\"status\": \"evaluation_completed\", \"method_id\": \"CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL\", \"arm\": \"cclkd_partial\", \"seed\": 42, \"checkpoint\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt\", \"endpoint\": \"fixed_budget_last_ema\", \"split\": \"val\", \"evaluated_images\": 1469, \"official_test_accessed\": false, \"metric_units\": \"fraction_0_to_1\", \"canary\": false, \"AP50\": 0.7700321800542202, \"AP75\": 0.6354910732782623, \"mAP50_95\": 0.5449329450152567, \"precision\": 0.7662954507926171, \"recall\": 0.7277740476410169, \"allocated_peak_mib\": 711.70849609375, \"reserved_peak_mib\": 884.0, \"seconds\": 5.517301559448242, \"resources\": {\"gpu_ids\": [2], \"cuda_pid_counts\": {\"2\": 1}, \"per_gpu_peak_vram_mib\": {\"2\": 1370}, \"peak_rss_mib\": 3829}}}\n{\"starting\": \"cclkd_partial_s123_full_attempt1\", \"command\": [\"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\", \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py\", \"run\", \"--job-id\", \"cclkd_partial_s123_full_attempt1\", \"--kind\", \"eval\", \"--candidate-gpu\", \"2\", \"--expected-vram-mib\", \"2560\", \"--expected-rss-mib\", \"32768\", \"--free-safety-mib\", \"2048\", \"--\", \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\", \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_priority_comparators_20260906/evaluate_cclkd_partial.py\", \"--seed\", \"123\", \"--output\", \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/oev1_comparators_20260906/cclkd_partial_s123_full_attempt1\", \"--mode\", \"full\"]}\n{\"finished\": \"cclkd_partial_s123_full_attempt1\", \"metrics\": {\"status\": \"evaluation_completed\", \"method_id\": \"CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL\", \"arm\": \"cclkd_partial\", \"seed\": 123, \"checkpoint\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed123_b32_e200/weights/last.pt\", \"endpoint\": \"fixed_budget_last_ema\", \"split\": \"val\", \"evaluated_images\": 1469, \"official_test_accessed\": false, \"metric_units\": \"fraction_0_to_1\", \"canary\": false, \"AP50\": 0.7631210499190813, \"AP75\": 0.6379373998696685, \"mAP50_95\": 0.543325955606628, \"precision\": 0.7655184619884082, \"recall\": 0.730872699151618, \"allocated_peak_mib\": 711.7080078125, \"reserved_peak_mib\": 884.0, \"seconds\": 5.7772204875946045, \"resources\": {\"gpu_ids\": [2], \"cuda_pid_counts\": {\"2\": 1}, \"per_gpu_peak_vram_mib\": {\"2\": 1370}, \"peak_rss_mib\": 3941}}}\n",
+  "gpu": "0, 1 MiB, 24082 MiB\n1, 1 MiB, 24082 MiB\n2, 1 MiB, 24082 MiB\n3, 1 MiB, 24082 MiB\n4, 7654 MiB, 16430 MiB\n5, 7654 MiB, 16430 MiB\n6, 7655 MiB, 16429 MiB\n7, 1 MiB, 24082 MiB\n"
+}

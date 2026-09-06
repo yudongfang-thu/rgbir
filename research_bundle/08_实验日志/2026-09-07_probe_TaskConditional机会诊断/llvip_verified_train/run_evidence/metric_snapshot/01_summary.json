@@ -1,0 +1,112 @@
+{
+  "protocol": "rgbir_d1_pre_nms_class_agnostic_d2_frozen_anchor_v1",
+  "status": "completed",
+  "dataset": "llvip",
+  "split": "train",
+  "geometry_verified": true,
+  "geometry_status": "empirical_contract_mask",
+  "geometry_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/geometry/review_evidence_v1/geometry_contract_accepted_exact_v1.json",
+  "formal_localization_ready": false,
+  "formal_readiness_scope": "D2 opportunity only; calibration/canary/receipt still required",
+  "images": 1,
+  "d1_totals": {
+    "images": 1,
+    "rgb_gt_count": 2,
+    "ir_gt_count": 2,
+    "paired_gt_count": 2,
+    "reference_confidence_filtered_predictions": 37,
+    "teacher_confidence_filtered_predictions": 29,
+    "well_localized": 2,
+    "unreliable_or_unpaired": 0,
+    "object_level_localization_opportunity": 0
+  },
+  "totals": {
+    "rgb_gt_count": 2,
+    "teacher_gt_count": 2,
+    "common_count": 2,
+    "pair_iou_count": 2,
+    "geometry_count": 0,
+    "inside_count": 0,
+    "support_count": 0,
+    "unique_owner_count": 0,
+    "reference_candidate_count": 0,
+    "base_count": 0,
+    "eligible_count": 0,
+    "reference_reliable_count": 0,
+    "both_reliable_count": 0,
+    "reference_localization_gap_count": 0,
+    "teacher_rgb_quality_count": 0,
+    "teacher_own_quality_count": 0,
+    "selected_count": 0,
+    "selected_quality_count": 0
+  },
+  "d1_groups": {
+    "class:0": {
+      "rgb_gt_count": 2,
+      "well_localized": 2,
+      "object_level_localization_opportunity": 0
+    },
+    "source_group:05": {
+      "rgb_gt_count": 2,
+      "well_localized": 2,
+      "object_level_localization_opportunity": 0
+    },
+    "scale_bin:medium": {
+      "rgb_gt_count": 2,
+      "well_localized": 2,
+      "object_level_localization_opportunity": 0
+    },
+    "luminance_proxy:low": {
+      "rgb_gt_count": 2,
+      "well_localized": 2,
+      "object_level_localization_opportunity": 0
+    },
+    "brightness_proxy_bin:0": {
+      "rgb_gt_count": 2,
+      "well_localized": 2,
+      "object_level_localization_opportunity": 0
+    }
+  },
+  "d2_groups": {},
+  "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+  "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v5/configs/llvip_draft.yaml",
+  "roster": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/frozen_roster.json",
+  "batch_size": 8,
+  "augmentation": "centered_letterbox_scaleup_true_only",
+  "amp": false,
+  "primary_luminance_threshold": 78.283,
+  "primary_luminance_rule": "low < 78.283; high >= 78.283; proxy only",
+  "luminance_measurement": "mean of original PIL Image.convert('L') pixels",
+  "secondary_brightness_edges": [
+    0,
+    64,
+    128,
+    192,
+    256
+  ],
+  "brightness_is_day_night_label": false,
+  "seconds": 0.5865285396575928,
+  "gpu_allocated_peak_mib": 67.84228515625,
+  "gpu_reserved_peak_mib": 88.0,
+  "resources": {
+    "gpu_ids": [
+      6
+    ],
+    "cuda_pid_counts": {
+      "6": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "6": 550
+    },
+    "peak_rss_mib": 1350
+  },
+  "official_test_accessed": false,
+  "d1_prediction_policy": {
+    "pre_nms": true,
+    "confidence_min": 0.05,
+    "spatial_iou_min": 0.1,
+    "assignment": "class_agnostic_max_cardinality_then_total_iou",
+    "prediction_truncation": false
+  }
+}

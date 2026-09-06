@@ -1,0 +1,779 @@
+{
+  "captured_at": "2026-09-07T03:03:41.980962+08:00",
+  "inventory": [
+    {
+      "key": "drone_train",
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1",
+      "completed_with_receipt": true,
+      "files": {
+        "protocol_config.yaml": 2666,
+        "summary.json": 32486,
+        "d1_objects.jsonl": 36488303,
+        "progress.json": 1214,
+        "frozen_roster.json": 1309524,
+        "images.jsonl": 2521167,
+        "d2_anchors.jsonl": 36865405
+      },
+      "summary_totals": {
+        "rgb_gt_count": 31931,
+        "teacher_gt_count": 35407,
+        "common_count": 30765,
+        "pair_iou_count": 24475,
+        "geometry_count": 24475,
+        "inside_count": 24475,
+        "support_count": 24475,
+        "unique_owner_count": 24406,
+        "reference_candidate_count": 23511,
+        "base_count": 23511,
+        "eligible_count": 626,
+        "reference_reliable_count": 22300,
+        "both_reliable_count": 20866,
+        "reference_localization_gap_count": 786,
+        "teacher_rgb_quality_count": 719,
+        "teacher_own_quality_count": 719,
+        "selected_count": 626,
+        "selected_quality_count": 626
+      },
+      "progress": {
+        "images_completed": 2048,
+        "images_total": 2048,
+        "seconds": 179.32968640327454,
+        "d1_totals": {
+          "images": 2048,
+          "rgb_gt_count": 31931,
+          "ir_gt_count": 35407,
+          "paired_gt_count": 30765,
+          "reference_confidence_filtered_predictions": 365212,
+          "teacher_confidence_filtered_predictions": 391111,
+          "well_localized": 27022,
+          "unreliable_or_unpaired": 1166,
+          "object_level_localization_opportunity": 259,
+          "low_confidence": 3606,
+          "class_error": 581,
+          "localization_gap": 452,
+          "no_coarse_candidate": 270
+        },
+        "totals": {
+          "rgb_gt_count": 31931,
+          "teacher_gt_count": 35407,
+          "common_count": 30765,
+          "pair_iou_count": 24475,
+          "geometry_count": 24475,
+          "inside_count": 24475,
+          "support_count": 24475,
+          "unique_owner_count": 24406,
+          "reference_candidate_count": 23511,
+          "base_count": 23511,
+          "eligible_count": 626,
+          "reference_reliable_count": 22300,
+          "both_reliable_count": 20866,
+          "reference_localization_gap_count": 786,
+          "teacher_rgb_quality_count": 719,
+          "teacher_own_quality_count": 719,
+          "selected_count": 626,
+          "selected_quality_count": 626
+        },
+        "geometry_verified": false,
+        "official_test_accessed": false
+      }
+    },
+    {
+      "key": "drone_val",
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1",
+      "completed_with_receipt": true,
+      "files": {
+        "protocol_config.yaml": 2666,
+        "summary.json": 7720,
+        "d1_objects.jsonl": 3532316,
+        "progress.json": 1189,
+        "frozen_roster.json": 128306,
+        "images.jsonl": 245524,
+        "d2_anchors.jsonl": 3423056
+      },
+      "summary_totals": {
+        "rgb_gt_count": 3084,
+        "teacher_gt_count": 3423,
+        "common_count": 2946,
+        "pair_iou_count": 2358,
+        "geometry_count": 2358,
+        "inside_count": 2358,
+        "support_count": 2358,
+        "unique_owner_count": 2348,
+        "reference_candidate_count": 2177,
+        "base_count": 2177,
+        "eligible_count": 112,
+        "reference_reliable_count": 1981,
+        "both_reliable_count": 1787,
+        "reference_localization_gap_count": 175,
+        "teacher_rgb_quality_count": 141,
+        "teacher_own_quality_count": 141,
+        "selected_count": 112,
+        "selected_quality_count": 112
+      },
+      "progress": {
+        "images_completed": 200,
+        "images_total": 200,
+        "seconds": 16.793861865997314,
+        "d1_totals": {
+          "images": 200,
+          "rgb_gt_count": 3084,
+          "ir_gt_count": 3423,
+          "paired_gt_count": 2946,
+          "reference_confidence_filtered_predictions": 34294,
+          "teacher_confidence_filtered_predictions": 37215,
+          "class_error": 133,
+          "unreliable_or_unpaired": 138,
+          "object_level_localization_opportunity": 58,
+          "well_localized": 2321,
+          "low_confidence": 442,
+          "no_coarse_candidate": 82,
+          "localization_gap": 106
+        },
+        "totals": {
+          "rgb_gt_count": 3084,
+          "teacher_gt_count": 3423,
+          "common_count": 2946,
+          "pair_iou_count": 2358,
+          "geometry_count": 2358,
+          "inside_count": 2358,
+          "support_count": 2358,
+          "unique_owner_count": 2348,
+          "reference_candidate_count": 2177,
+          "base_count": 2177,
+          "eligible_count": 112,
+          "reference_reliable_count": 1981,
+          "both_reliable_count": 1787,
+          "reference_localization_gap_count": 175,
+          "teacher_rgb_quality_count": 141,
+          "teacher_own_quality_count": 141,
+          "selected_count": 112,
+          "selected_quality_count": 112
+        },
+        "geometry_verified": false,
+        "official_test_accessed": false
+      }
+    },
+    {
+      "key": "llvip_train",
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1",
+      "completed_with_receipt": true,
+      "files": {
+        "protocol_config.yaml": 2639,
+        "summary.json": 9685,
+        "d1_objects.jsonl": 6359812,
+        "progress.json": 1166,
+        "frozen_roster.json": 1290542,
+        "images.jsonl": 2390686,
+        "d2_anchors.jsonl": 8597369
+      },
+      "summary_totals": {
+        "rgb_gt_count": 5592,
+        "teacher_gt_count": 5592,
+        "common_count": 5592,
+        "pair_iou_count": 5592,
+        "geometry_count": 5592,
+        "inside_count": 5592,
+        "support_count": 5592,
+        "unique_owner_count": 5582,
+        "reference_candidate_count": 5492,
+        "base_count": 5492,
+        "eligible_count": 211,
+        "reference_reliable_count": 5400,
+        "both_reliable_count": 5260,
+        "reference_localization_gap_count": 290,
+        "teacher_rgb_quality_count": 258,
+        "teacher_own_quality_count": 258,
+        "selected_count": 211,
+        "selected_quality_count": 211
+      },
+      "progress": {
+        "images_completed": 2048,
+        "images_total": 2048,
+        "seconds": 101.19001984596252,
+        "d1_totals": {
+          "images": 2048,
+          "rgb_gt_count": 5592,
+          "ir_gt_count": 5592,
+          "paired_gt_count": 5592,
+          "reference_confidence_filtered_predictions": 65422,
+          "teacher_confidence_filtered_predictions": 62996,
+          "well_localized": 4716,
+          "unreliable_or_unpaired": 0,
+          "object_level_localization_opportunity": 75,
+          "low_confidence": 730,
+          "localization_gap": 117,
+          "no_coarse_candidate": 29
+        },
+        "totals": {
+          "rgb_gt_count": 5592,
+          "teacher_gt_count": 5592,
+          "common_count": 5592,
+          "pair_iou_count": 5592,
+          "geometry_count": 5592,
+          "inside_count": 5592,
+          "support_count": 5592,
+          "unique_owner_count": 5582,
+          "reference_candidate_count": 5492,
+          "base_count": 5492,
+          "eligible_count": 211,
+          "reference_reliable_count": 5400,
+          "both_reliable_count": 5260,
+          "reference_localization_gap_count": 290,
+          "teacher_rgb_quality_count": 258,
+          "teacher_own_quality_count": 258,
+          "selected_count": 211,
+          "selected_quality_count": 211
+        },
+        "geometry_verified": false,
+        "official_test_accessed": false
+      }
+    },
+    {
+      "key": "llvip_val",
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_val_attempt1",
+      "completed_with_receipt": false,
+      "files": {
+        "protocol_config.yaml": 2639,
+        "d1_objects.jsonl": 81360,
+        "progress.json": 1113,
+        "frozen_roster.json": 125899,
+        "images.jsonl": 18642,
+        "d2_anchors.jsonl": 104825
+      },
+      "summary_totals": null,
+      "progress": {
+        "images_completed": 16,
+        "images_total": 200,
+        "seconds": 1.500509262084961,
+        "d1_totals": {
+          "images": 16,
+          "rgb_gt_count": 72,
+          "ir_gt_count": 72,
+          "paired_gt_count": 72,
+          "reference_confidence_filtered_predictions": 763,
+          "teacher_confidence_filtered_predictions": 797,
+          "well_localized": 46,
+          "unreliable_or_unpaired": 0,
+          "object_level_localization_opportunity": 6,
+          "localization_gap": 14,
+          "low_confidence": 9,
+          "no_coarse_candidate": 3
+        },
+        "totals": {
+          "rgb_gt_count": 72,
+          "teacher_gt_count": 72,
+          "common_count": 72,
+          "pair_iou_count": 72,
+          "geometry_count": 72,
+          "inside_count": 72,
+          "support_count": 72,
+          "unique_owner_count": 72,
+          "reference_candidate_count": 67,
+          "base_count": 67,
+          "eligible_count": 10,
+          "reference_reliable_count": 65,
+          "both_reliable_count": 64,
+          "reference_localization_gap_count": 18,
+          "teacher_rgb_quality_count": 13,
+          "teacher_own_quality_count": 13,
+          "selected_count": 10,
+          "selected_quality_count": 10
+        },
+        "geometry_verified": false,
+        "official_test_accessed": false
+      }
+    },
+    {
+      "key": "llvip_verified_train",
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1",
+      "completed_with_receipt": true,
+      "files": {
+        "protocol_config.yaml": 2639,
+        "summary.json": 3653,
+        "d1_objects.jsonl": 2257,
+        "progress.json": 1002,
+        "frozen_roster.json": 1055,
+        "images.jsonl": 1167,
+        "d2_anchors.jsonl": 0
+      },
+      "summary_totals": {
+        "rgb_gt_count": 2,
+        "teacher_gt_count": 2,
+        "common_count": 2,
+        "pair_iou_count": 2,
+        "geometry_count": 0,
+        "inside_count": 0,
+        "support_count": 0,
+        "unique_owner_count": 0,
+        "reference_candidate_count": 0,
+        "base_count": 0,
+        "eligible_count": 0,
+        "reference_reliable_count": 0,
+        "both_reliable_count": 0,
+        "reference_localization_gap_count": 0,
+        "teacher_rgb_quality_count": 0,
+        "teacher_own_quality_count": 0,
+        "selected_count": 0,
+        "selected_quality_count": 0
+      },
+      "progress": {
+        "images_completed": 1,
+        "images_total": 1,
+        "seconds": 0.5863275527954102,
+        "d1_totals": {
+          "images": 1,
+          "rgb_gt_count": 2,
+          "ir_gt_count": 2,
+          "paired_gt_count": 2,
+          "reference_confidence_filtered_predictions": 37,
+          "teacher_confidence_filtered_predictions": 29,
+          "well_localized": 2,
+          "unreliable_or_unpaired": 0,
+          "object_level_localization_opportunity": 0
+        },
+        "totals": {
+          "rgb_gt_count": 2,
+          "teacher_gt_count": 2,
+          "common_count": 2,
+          "pair_iou_count": 2,
+          "geometry_count": 0,
+          "inside_count": 0,
+          "support_count": 0,
+          "unique_owner_count": 0,
+          "reference_candidate_count": 0,
+          "base_count": 0,
+          "eligible_count": 0,
+          "reference_reliable_count": 0,
+          "both_reliable_count": 0,
+          "reference_localization_gap_count": 0,
+          "teacher_rgb_quality_count": 0,
+          "teacher_own_quality_count": 0,
+          "selected_count": 0,
+          "selected_quality_count": 0
+        },
+        "geometry_verified": true,
+        "official_test_accessed": false
+      }
+    }
+  ],
+  "manifest": [
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/summary.json",
+      "local": "drone_train/summary.json",
+      "bytes": 32486,
+      "mtime": 1788721238.591734,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/d1_objects.jsonl",
+      "local": "drone_train/d1_objects.jsonl",
+      "bytes": 36488303,
+      "status": "AWAITING_LARGE_FILE_APPROVAL"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/d2_anchors.jsonl",
+      "local": "drone_train/d2_anchors.jsonl",
+      "bytes": 36865405,
+      "status": "AWAITING_LARGE_FILE_APPROVAL"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/images.jsonl",
+      "local": "drone_train/images.jsonl",
+      "bytes": 2521167,
+      "mtime": 1788721236.4757092,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/frozen_roster.json",
+      "local": "drone_train/frozen_roster.json",
+      "bytes": 1309524,
+      "mtime": 1788721056.3697543,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/protocol_config.yaml",
+      "local": "drone_train/protocol_config.yaml",
+      "bytes": 2666,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/run_receipt.json",
+      "local": "drone_train/run_evidence/run_receipt.json",
+      "bytes": 2716,
+      "mtime": 1788721242.3877785,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/metric_snapshot/01_summary.json",
+      "local": "drone_train/run_evidence/metric_snapshot/01_summary.json",
+      "bytes": 32486,
+      "mtime": 1788721238.591734,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py",
+      "local": "drone_train/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py",
+      "bytes": 31939,
+      "mtime": 1788720959.8928602,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/source_snapshot/split_roster/01_frozen_roster.json",
+      "local": "drone_train/run_evidence/source_snapshot/split_roster/01_frozen_roster.json",
+      "bytes": 1309524,
+      "mtime": 1788721056.3697543,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/source_snapshot/loss/02_object_evidence_loss.py",
+      "local": "drone_train/run_evidence/source_snapshot/loss/02_object_evidence_loss.py",
+      "bytes": 19364,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/source_snapshot/loss/01_localization_loss.py",
+      "local": "drone_train/run_evidence/source_snapshot/loss/01_localization_loss.py",
+      "bytes": 20629,
+      "mtime": 1788720959.8928602,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/source_snapshot/config/01_drone_draft.yaml",
+      "local": "drone_train/run_evidence/source_snapshot/config/01_drone_draft.yaml",
+      "bytes": 2666,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "local": "drone_train/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 200,
+      "mtime": 1788115540.0940616,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_train_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "local": "drone_train/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes": 195,
+      "mtime": 1788115538.8460438,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/summary.json",
+      "local": "drone_val/summary.json",
+      "bytes": 7720,
+      "mtime": 1788721279.9002256,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/d1_objects.jsonl",
+      "local": "drone_val/d1_objects.jsonl",
+      "bytes": 3532316,
+      "mtime": 1788721277.8842013,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/d2_anchors.jsonl",
+      "local": "drone_val/d2_anchors.jsonl",
+      "bytes": 3423056,
+      "mtime": 1788721278.0482032,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/images.jsonl",
+      "local": "drone_val/images.jsonl",
+      "bytes": 245524,
+      "mtime": 1788721278.0482032,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/frozen_roster.json",
+      "local": "drone_val/frozen_roster.json",
+      "bytes": 128306,
+      "mtime": 1788721260.3919919,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/protocol_config.yaml",
+      "local": "drone_val/protocol_config.yaml",
+      "bytes": 2666,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/run_receipt.json",
+      "local": "drone_val/run_evidence/run_receipt.json",
+      "bytes": 2705,
+      "mtime": 1788721284.3322792,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/metric_snapshot/01_summary.json",
+      "local": "drone_val/run_evidence/metric_snapshot/01_summary.json",
+      "bytes": 7720,
+      "mtime": 1788721279.9002256,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py",
+      "local": "drone_val/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py",
+      "bytes": 31939,
+      "mtime": 1788720959.8928602,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/source_snapshot/split_roster/01_frozen_roster.json",
+      "local": "drone_val/run_evidence/source_snapshot/split_roster/01_frozen_roster.json",
+      "bytes": 128306,
+      "mtime": 1788721260.3919919,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/source_snapshot/loss/02_object_evidence_loss.py",
+      "local": "drone_val/run_evidence/source_snapshot/loss/02_object_evidence_loss.py",
+      "bytes": 19364,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/source_snapshot/loss/01_localization_loss.py",
+      "local": "drone_val/run_evidence/source_snapshot/loss/01_localization_loss.py",
+      "bytes": 20629,
+      "mtime": 1788720959.8928602,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/source_snapshot/config/01_drone_draft.yaml",
+      "local": "drone_val/run_evidence/source_snapshot/config/01_drone_draft.yaml",
+      "bytes": 2666,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "local": "drone_val/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 200,
+      "mtime": 1788115540.0940616,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_drone_val_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "local": "drone_val/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes": 195,
+      "mtime": 1788115538.8460438,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/summary.json",
+      "local": "llvip_train/summary.json",
+      "bytes": 9685,
+      "mtime": 1788721406.493811,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/d1_objects.jsonl",
+      "local": "llvip_train/d1_objects.jsonl",
+      "bytes": 6359812,
+      "mtime": 1788721405.3377957,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/d2_anchors.jsonl",
+      "local": "llvip_train/d2_anchors.jsonl",
+      "bytes": 8597369,
+      "mtime": 1788721405.3977966,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/images.jsonl",
+      "local": "llvip_train/images.jsonl",
+      "bytes": 2390686,
+      "mtime": 1788721405.3977966,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/frozen_roster.json",
+      "local": "llvip_train/frozen_roster.json",
+      "bytes": 1290542,
+      "mtime": 1788721303.4365118,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/protocol_config.yaml",
+      "local": "llvip_train/protocol_config.yaml",
+      "bytes": 2639,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/run_receipt.json",
+      "local": "llvip_train/run_evidence/run_receipt.json",
+      "bytes": 2696,
+      "mtime": 1788721409.3258474,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/metric_snapshot/01_summary.json",
+      "local": "llvip_train/run_evidence/metric_snapshot/01_summary.json",
+      "bytes": 9685,
+      "mtime": 1788721406.493811,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py",
+      "local": "llvip_train/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py",
+      "bytes": 31939,
+      "mtime": 1788720959.8928602,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/source_snapshot/split_roster/01_frozen_roster.json",
+      "local": "llvip_train/run_evidence/source_snapshot/split_roster/01_frozen_roster.json",
+      "bytes": 1290542,
+      "mtime": 1788721303.4365118,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/source_snapshot/loss/02_object_evidence_loss.py",
+      "local": "llvip_train/run_evidence/source_snapshot/loss/02_object_evidence_loss.py",
+      "bytes": 19364,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/source_snapshot/loss/01_localization_loss.py",
+      "local": "llvip_train/run_evidence/source_snapshot/loss/01_localization_loss.py",
+      "bytes": 20629,
+      "mtime": 1788720959.8928602,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/source_snapshot/config/01_llvip_draft.yaml",
+      "local": "llvip_train/run_evidence/source_snapshot/config/01_llvip_draft.yaml",
+      "bytes": 2639,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/source_snapshot/config/02_visible.data.yaml",
+      "local": "llvip_train/run_evidence/source_snapshot/config/02_visible.data.yaml",
+      "bytes": 151,
+      "mtime": 1788115519.3257647,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "local": "llvip_train/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 152,
+      "mtime": 1788115520.4377804,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/summary.json",
+      "local": "llvip_verified_train/summary.json",
+      "bytes": 3653,
+      "mtime": 1788721181.287076,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/d1_objects.jsonl",
+      "local": "llvip_verified_train/d1_objects.jsonl",
+      "bytes": 2257,
+      "mtime": 1788721178.5590456,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/d2_anchors.jsonl",
+      "local": "llvip_verified_train/d2_anchors.jsonl",
+      "bytes": 0,
+      "mtime": 1788721178.0070393,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/images.jsonl",
+      "local": "llvip_verified_train/images.jsonl",
+      "bytes": 1167,
+      "mtime": 1788721178.5950458,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/frozen_roster.json",
+      "local": "llvip_verified_train/frozen_roster.json",
+      "bytes": 1055,
+      "mtime": 1788721177.2270305,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/protocol_config.yaml",
+      "local": "llvip_verified_train/protocol_config.yaml",
+      "bytes": 2639,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/run_receipt.json",
+      "local": "llvip_verified_train/run_evidence/run_receipt.json",
+      "bytes": 3046,
+      "mtime": 1788721187.0511408,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/metric_snapshot/01_summary.json",
+      "local": "llvip_verified_train/run_evidence/metric_snapshot/01_summary.json",
+      "bytes": 3653,
+      "mtime": 1788721181.287076,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py",
+      "local": "llvip_verified_train/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py",
+      "bytes": 31939,
+      "mtime": 1788720959.8928602,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/source_snapshot/split_roster/01_frozen_roster.json",
+      "local": "llvip_verified_train/run_evidence/source_snapshot/split_roster/01_frozen_roster.json",
+      "bytes": 1055,
+      "mtime": 1788721177.2270305,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/source_snapshot/loss/02_object_evidence_loss.py",
+      "local": "llvip_verified_train/run_evidence/source_snapshot/loss/02_object_evidence_loss.py",
+      "bytes": 19364,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/source_snapshot/loss/01_localization_loss.py",
+      "local": "llvip_verified_train/run_evidence/source_snapshot/loss/01_localization_loss.py",
+      "bytes": 20629,
+      "mtime": 1788720959.8928602,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/source_snapshot/config/01_llvip_draft.yaml",
+      "local": "llvip_verified_train/run_evidence/source_snapshot/config/01_llvip_draft.yaml",
+      "bytes": 2639,
+      "mtime": 1788720959.8968601,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/source_snapshot/config/02_visible.data.yaml",
+      "local": "llvip_verified_train/run_evidence/source_snapshot/config/02_visible.data.yaml",
+      "bytes": 151,
+      "mtime": 1788115519.3257647,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "local": "llvip_verified_train/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 152,
+      "mtime": 1788115520.4377804,
+      "status": "COLLECTED_ORIGINAL_BYTES"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "jobs": [
+    {
+      "id": "tckd_d2_llvip_verified_a1",
+      "kind": "feature",
+      "vram_mib": 2000,
+      "rss_mib": 4096,
+      "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_8_attempt1/summary.json",
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v5/diagnose_opportunities.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v5/configs/llvip_draft.yaml",
+        "--split",
+        "train",
+        "--roster",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/geometry/review_evidence_v1/d2_accepted_exact_v1_roster.json",
+        "--batch",
+        "8",
+        "--geometry-contract",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/geometry/review_evidence_v1/geometry_contract_accepted_exact_v1.json",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_verified_attempt1"
+      ]
+    }
+  ]
+}

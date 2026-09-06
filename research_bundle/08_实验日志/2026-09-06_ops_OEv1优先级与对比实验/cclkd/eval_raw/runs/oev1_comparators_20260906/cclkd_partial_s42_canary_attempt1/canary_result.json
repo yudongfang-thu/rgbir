@@ -1,0 +1,33 @@
+{
+  "status": "canary_completed",
+  "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+  "arm": "cclkd_partial",
+  "seed": 42,
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt",
+  "endpoint": "fixed_budget_last_ema",
+  "split": "val",
+  "evaluated_images": 64,
+  "official_test_accessed": false,
+  "metric_units": "fraction_0_to_1",
+  "canary": true,
+  "AP50": 0.6139050377887882,
+  "AP75": 0.33978480536385575,
+  "mAP50_95": 0.3506645611918499,
+  "precision": 0.7540289372294147,
+  "recall": 0.5701789909125884,
+  "allocated_peak_mib": 711.77783203125,
+  "reserved_peak_mib": 884.0,
+  "seconds": 2.1122848987579346,
+  "resources": {
+    "gpu_ids": [
+      2
+    ],
+    "cuda_pid_counts": {
+      "2": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "2": 1370
+    },
+    "peak_rss_mib": 2639
+  }
+}

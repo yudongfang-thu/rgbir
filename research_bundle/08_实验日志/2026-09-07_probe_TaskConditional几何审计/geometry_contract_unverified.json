@@ -1,0 +1,161 @@
+{
+  "protocol": "tc_geometry_exact_image_v1",
+  "mode": "verified_identity_grid",
+  "verified": false,
+  "scope": "exact_images_and_convex_hull_intersection_only",
+  "entries": [
+    {
+      "status": "pending_independent_review",
+      "audit_id": "dronevehicle_17930",
+      "source": "independent_physical_correspondences",
+      "annotator": "Codex implement_geometry; actual tool image inspection",
+      "image_paths": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17930.jpg"
+      ],
+      "original_shape": [
+        512,
+        640
+      ],
+      "rgb_points": [
+        [
+          114,
+          65
+        ],
+        [
+          219,
+          187
+        ],
+        [
+          349,
+          372
+        ],
+        [
+          252,
+          288
+        ],
+        [
+          282,
+          108
+        ],
+        [
+          462,
+          312
+        ],
+        [
+          366,
+          179
+        ]
+      ],
+      "ir_points": [
+        [
+          111,
+          62
+        ],
+        [
+          222,
+          187
+        ],
+        [
+          350,
+          371
+        ],
+        [
+          241,
+          283
+        ],
+        [
+          282,
+          106
+        ],
+        [
+          468,
+          312
+        ],
+        [
+          360,
+          178
+        ]
+      ],
+      "uncertainty_raw_px": 3,
+      "independent_review_required": false,
+      "review_status": "pending"
+    },
+    {
+      "status": "pending_independent_review",
+      "audit_id": "llvip_020001",
+      "source": "independent_physical_correspondences",
+      "annotator": "Codex implement_geometry; actual tool image inspection",
+      "image_paths": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020001.jpg"
+      ],
+      "original_shape": [
+        1024,
+        1280
+      ],
+      "rgb_points": [
+        [
+          492,
+          64
+        ],
+        [
+          680,
+          50
+        ],
+        [
+          458,
+          158
+        ],
+        [
+          612,
+          172
+        ],
+        [
+          436,
+          232
+        ],
+        [
+          466,
+          908
+        ],
+        [
+          1018,
+          580
+        ]
+      ],
+      "ir_points": [
+        [
+          478,
+          62
+        ],
+        [
+          658,
+          48
+        ],
+        [
+          442,
+          156
+        ],
+        [
+          616,
+          158
+        ],
+        [
+          434,
+          238
+        ],
+        [
+          472,
+          900
+        ],
+        [
+          1020,
+          600
+        ]
+      ],
+      "uncertainty_raw_px": 4,
+      "independent_review_required": true,
+      "review_status": "pending"
+    }
+  ],
+  "note": "Pending approximate marks do not admit any object to formal DFL KD."
+}

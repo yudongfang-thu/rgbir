@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "method": "Independent scalar IoU on original normalized xyxy and CSV-selected prediction indices; all pointwise results agree within 1e-8.",
+  "datasets": {
+    "dronevehicle": {
+      "scalar_rows_verified": 2523,
+      "both_n": 2505,
+      "own_gain_mean": 0.007895826575662243,
+      "direct_gain_mean": -0.04564323245092938,
+      "direct_negative_n": 1613,
+      "direct_gain_ge_01_n": 285,
+      "own_gate_n": 241,
+      "own_gate_direct_negative_n": 30,
+      "own_gate_direct_gain_ge_01_n": 199,
+      "own_gate_and_label_iou_ge05_n": 235,
+      "mapped_gate_n": 200,
+      "mapped_gate_and_label_iou_ge05_n": 200,
+      "note": "Mapped gate is a retrospective RGB-GT oracle diagnostic with identity mapping; not a trained effect, verified registration or chosen training gate."
+    },
+    "llvip": {
+      "scalar_rows_verified": 506,
+      "both_n": 484,
+      "own_gain_mean": 0.041974810426821656,
+      "direct_gain_mean": 0.041974810426821656,
+      "direct_negative_n": 189,
+      "direct_gain_ge_01_n": 142,
+      "own_gate_n": 117,
+      "own_gate_direct_negative_n": 0,
+      "own_gate_direct_gain_ge_01_n": 117,
+      "own_gate_and_label_iou_ge05_n": 117,
+      "mapped_gate_n": 117,
+      "mapped_gate_and_label_iou_ge05_n": 117,
+      "note": "Mapped gate is a retrospective RGB-GT oracle diagnostic with identity mapping; not a trained effect, verified registration or chosen training gate."
+    }
+  }
+}

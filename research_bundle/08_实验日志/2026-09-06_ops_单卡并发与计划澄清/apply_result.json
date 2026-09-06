@@ -1,0 +1,93 @@
+{
+  "status": "COMMITTED",
+  "captured_at_utc": "2026-09-06T15:57:11.143014+00:00",
+  "changes": [
+    {
+      "identity": {
+        "lease_id": "oev1_random_full_s42-66b55165489e",
+        "job_id": "oev1_random_full_s42",
+        "guard_pid": 975933,
+        "cuda_pid": 975949,
+        "gpu": 2,
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+        "arm": "paired_random",
+        "seed": 42
+      },
+      "before": {
+        "expected_vram_mib": 10000,
+        "expected_rss_mib": 49152
+      },
+      "after": {
+        "expected_vram_mib": 8300,
+        "expected_rss_mib": 32768
+      },
+      "observed_peak_vram_mib": 7632,
+      "observed_peak_rss_mib": 28825,
+      "current_tree_rss_mib": 28705,
+      "full_progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 10,
+        "epochs": 200,
+        "optimizer_updates": 3083,
+        "update_attempts": 3090,
+        "amp_skips": 7,
+        "batches": 5335,
+        "selected_objects": 649173,
+        "seconds": 1954.2189223766327,
+        "last_kd": 0.18279464542865753
+      },
+      "vram_margin_mib": 668,
+      "rss_margin_mib": 3943
+    },
+    {
+      "identity": {
+        "lease_id": "rgbir_oev1_expand_full_paired_s0_attempt1-7f1297f1b60b",
+        "job_id": "rgbir_oev1_expand_full_paired_s0_attempt1",
+        "guard_pid": 3743513,
+        "cuda_pid": 3743565,
+        "gpu": 5,
+        "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+        "arm": "paired",
+        "seed": 0
+      },
+      "before": {
+        "expected_vram_mib": 10000,
+        "expected_rss_mib": 49152
+      },
+      "after": {
+        "expected_vram_mib": 8300,
+        "expected_rss_mib": 32768
+      },
+      "observed_peak_vram_mib": 7632,
+      "observed_peak_rss_mib": 28810,
+      "current_tree_rss_mib": 28691,
+      "full_progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 64,
+        "epochs": 200,
+        "optimizer_updates": 18349,
+        "update_attempts": 18360,
+        "amp_skips": 11,
+        "batches": 35875,
+        "selected_objects": 4361972,
+        "seconds": 14920.803292751312,
+        "last_kd": 0.24618244171142578
+      },
+      "vram_margin_mib": 668,
+      "rss_margin_mib": 3958
+    }
+  ],
+  "only_changed_fields": [
+    "expected_vram_mib",
+    "expected_rss_mib"
+  ],
+  "lease_count_unchanged": true,
+  "evidence": {
+    "before": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_concurrency_20260906/profiled_reservation_revision_20260906_before.json",
+    "intent": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_concurrency_20260906/profiled_reservation_revision_20260906_intent.json",
+    "after": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_concurrency_20260906/profiled_reservation_revision_20260906_after.json",
+    "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_concurrency_20260906/profiled_reservation_revision_20260906_receipt.json"
+  }
+}

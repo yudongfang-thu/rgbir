@@ -1,0 +1,37 @@
+{
+  "arm": "cmdistill_corrected",
+  "dataset": "dronevehicle",
+  "epochs_configured": 200,
+  "kd_batches_logged": 112600,
+  "kd_stats_last": {
+    "kd_cls": 0.018779385834932327,
+    "kd_fg_ratio": 0.02261904627084732,
+    "kd_iou": 0.228034108877182,
+    "kd_pccfd": 0.11390923708677292,
+    "kd_slrd": 0.1005859375
+  },
+  "kd_stats_mean": {
+    "kd_cls": 0.00696137576821371,
+    "kd_fg_ratio": 0.016275617069032102,
+    "kd_iou": 0.18759796640033408,
+    "kd_pccfd": 0.10882908956255254,
+    "kd_slrd": 0.09302477387721331
+  },
+  "lambda1": 1.0,
+  "lambda2": 1.0,
+  "lambda3": 1.0,
+  "losses": [
+    "PCCFD",
+    "SLRD",
+    "IBCLD"
+  ],
+  "method_identity": "PROTOCOL-ADAPTED",
+  "method_track": "CMDistill PROTOCOL-ADAPTED (JSTARS 2025)",
+  "official_test_accessed": false,
+  "optimizer_steps": 56722,
+  "schema": "rgbt-cmdistill-adapted-receipt-v1",
+  "seed": 0,
+  "status": "completed",
+  "teacher_weights": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+  "walltime_seconds": 28223.521976470947
+}

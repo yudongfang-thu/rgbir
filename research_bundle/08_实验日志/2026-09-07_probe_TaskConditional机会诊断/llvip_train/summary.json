@@ -1,0 +1,349 @@
+{
+  "protocol": "rgbir_d1_pre_nms_class_agnostic_d2_frozen_anchor_v1",
+  "status": "completed",
+  "dataset": "llvip",
+  "split": "train",
+  "geometry_verified": false,
+  "geometry_status": "UNVERIFIED_DIAGNOSTIC",
+  "geometry_contract": null,
+  "formal_localization_ready": false,
+  "formal_readiness_scope": "D2 opportunity only; calibration/canary/receipt still required",
+  "images": 2048,
+  "d1_totals": {
+    "images": 2048,
+    "rgb_gt_count": 5592,
+    "ir_gt_count": 5592,
+    "paired_gt_count": 5592,
+    "reference_confidence_filtered_predictions": 65422,
+    "teacher_confidence_filtered_predictions": 62996,
+    "well_localized": 4716,
+    "unreliable_or_unpaired": 0,
+    "object_level_localization_opportunity": 75,
+    "low_confidence": 730,
+    "localization_gap": 117,
+    "no_coarse_candidate": 29
+  },
+  "totals": {
+    "rgb_gt_count": 5592,
+    "teacher_gt_count": 5592,
+    "common_count": 5592,
+    "pair_iou_count": 5592,
+    "geometry_count": 5592,
+    "inside_count": 5592,
+    "support_count": 5592,
+    "unique_owner_count": 5582,
+    "reference_candidate_count": 5492,
+    "base_count": 5492,
+    "eligible_count": 211,
+    "reference_reliable_count": 5400,
+    "both_reliable_count": 5260,
+    "reference_localization_gap_count": 290,
+    "teacher_rgb_quality_count": 258,
+    "teacher_own_quality_count": 258,
+    "selected_count": 211,
+    "selected_quality_count": 211
+  },
+  "d1_groups": {
+    "class:0": {
+      "rgb_gt_count": 5592,
+      "well_localized": 4716,
+      "object_level_localization_opportunity": 75,
+      "low_confidence": 730,
+      "localization_gap": 117,
+      "no_coarse_candidate": 29
+    },
+    "source_group:02": {
+      "rgb_gt_count": 260,
+      "well_localized": 237,
+      "object_level_localization_opportunity": 4,
+      "low_confidence": 16,
+      "localization_gap": 7
+    },
+    "scale_bin:medium": {
+      "rgb_gt_count": 5242,
+      "well_localized": 4407,
+      "object_level_localization_opportunity": 70,
+      "low_confidence": 702,
+      "localization_gap": 109,
+      "no_coarse_candidate": 24
+    },
+    "luminance_proxy:low": {
+      "rgb_gt_count": 4949,
+      "well_localized": 4184,
+      "object_level_localization_opportunity": 64,
+      "low_confidence": 636,
+      "localization_gap": 102,
+      "no_coarse_candidate": 27
+    },
+    "brightness_proxy_bin:0": {
+      "rgb_gt_count": 4162,
+      "well_localized": 3506,
+      "object_level_localization_opportunity": 56,
+      "low_confidence": 544,
+      "localization_gap": 88,
+      "no_coarse_candidate": 24
+    },
+    "luminance_proxy:high": {
+      "rgb_gt_count": 643,
+      "well_localized": 532,
+      "object_level_localization_opportunity": 11,
+      "localization_gap": 15,
+      "low_confidence": 94,
+      "no_coarse_candidate": 2
+    },
+    "brightness_proxy_bin:1": {
+      "rgb_gt_count": 1430,
+      "well_localized": 1210,
+      "object_level_localization_opportunity": 19,
+      "localization_gap": 29,
+      "low_confidence": 186,
+      "no_coarse_candidate": 5
+    },
+    "scale_bin:large": {
+      "rgb_gt_count": 322,
+      "well_localized": 302,
+      "object_level_localization_opportunity": 4,
+      "low_confidence": 13,
+      "no_coarse_candidate": 1,
+      "localization_gap": 6
+    },
+    "source_group:03": {
+      "rgb_gt_count": 287,
+      "well_localized": 259,
+      "object_level_localization_opportunity": 0,
+      "low_confidence": 28
+    },
+    "scale_bin:small": {
+      "rgb_gt_count": 28,
+      "well_localized": 7,
+      "object_level_localization_opportunity": 1,
+      "low_confidence": 15,
+      "no_coarse_candidate": 4,
+      "localization_gap": 2
+    },
+    "source_group:05": {
+      "rgb_gt_count": 359,
+      "well_localized": 319,
+      "object_level_localization_opportunity": 7,
+      "low_confidence": 29,
+      "no_coarse_candidate": 2,
+      "localization_gap": 9
+    },
+    "source_group:06": {
+      "rgb_gt_count": 418,
+      "localization_gap": 8,
+      "object_level_localization_opportunity": 7,
+      "well_localized": 365,
+      "low_confidence": 45
+    },
+    "source_group:08": {
+      "rgb_gt_count": 980,
+      "well_localized": 858,
+      "object_level_localization_opportunity": 12,
+      "low_confidence": 97,
+      "no_coarse_candidate": 8,
+      "localization_gap": 17
+    },
+    "source_group:09": {
+      "rgb_gt_count": 827,
+      "well_localized": 676,
+      "object_level_localization_opportunity": 11,
+      "low_confidence": 125,
+      "localization_gap": 22,
+      "no_coarse_candidate": 4
+    },
+    "source_group:10": {
+      "rgb_gt_count": 601,
+      "localization_gap": 20,
+      "object_level_localization_opportunity": 13,
+      "well_localized": 464,
+      "low_confidence": 114,
+      "no_coarse_candidate": 3
+    },
+    "source_group:11": {
+      "rgb_gt_count": 266,
+      "well_localized": 214,
+      "object_level_localization_opportunity": 1,
+      "low_confidence": 48,
+      "localization_gap": 2,
+      "no_coarse_candidate": 2
+    },
+    "source_group:13": {
+      "rgb_gt_count": 354,
+      "well_localized": 267,
+      "object_level_localization_opportunity": 3,
+      "low_confidence": 80,
+      "localization_gap": 5,
+      "no_coarse_candidate": 2
+    },
+    "source_group:14": {
+      "rgb_gt_count": 314,
+      "well_localized": 271,
+      "object_level_localization_opportunity": 1,
+      "low_confidence": 38,
+      "localization_gap": 2,
+      "no_coarse_candidate": 3
+    },
+    "source_group:15": {
+      "rgb_gt_count": 260,
+      "low_confidence": 27,
+      "object_level_localization_opportunity": 5,
+      "well_localized": 221,
+      "localization_gap": 9,
+      "no_coarse_candidate": 3
+    },
+    "source_group:16": {
+      "rgb_gt_count": 240,
+      "well_localized": 206,
+      "object_level_localization_opportunity": 2,
+      "low_confidence": 31,
+      "localization_gap": 3
+    },
+    "source_group:17": {
+      "rgb_gt_count": 225,
+      "well_localized": 181,
+      "object_level_localization_opportunity": 5,
+      "low_confidence": 35,
+      "localization_gap": 7,
+      "no_coarse_candidate": 2
+    },
+    "source_group:18": {
+      "rgb_gt_count": 201,
+      "well_localized": 178,
+      "object_level_localization_opportunity": 4,
+      "low_confidence": 17,
+      "localization_gap": 6
+    }
+  },
+  "d2_groups": {
+    "class:0": {
+      "base_count": 5492,
+      "selected_count": 211
+    },
+    "source_group:02": {
+      "base_count": 253,
+      "selected_count": 4
+    },
+    "scale_bin:medium": {
+      "base_count": 5160,
+      "selected_count": 202
+    },
+    "luminance_proxy:low": {
+      "base_count": 4855,
+      "selected_count": 180
+    },
+    "brightness_proxy_bin:0": {
+      "base_count": 4077,
+      "selected_count": 155
+    },
+    "luminance_proxy:high": {
+      "base_count": 637,
+      "selected_count": 31
+    },
+    "brightness_proxy_bin:1": {
+      "base_count": 1415,
+      "selected_count": 56
+    },
+    "scale_bin:large": {
+      "base_count": 309,
+      "selected_count": 6
+    },
+    "source_group:03": {
+      "base_count": 282,
+      "selected_count": 4
+    },
+    "scale_bin:small": {
+      "base_count": 23,
+      "selected_count": 3
+    },
+    "source_group:05": {
+      "base_count": 352,
+      "selected_count": 9
+    },
+    "source_group:06": {
+      "base_count": 410,
+      "selected_count": 7
+    },
+    "source_group:08": {
+      "base_count": 966,
+      "selected_count": 32
+    },
+    "source_group:09": {
+      "base_count": 819,
+      "selected_count": 41
+    },
+    "source_group:10": {
+      "base_count": 598,
+      "selected_count": 41
+    },
+    "source_group:11": {
+      "base_count": 264,
+      "selected_count": 6
+    },
+    "source_group:13": {
+      "base_count": 351,
+      "selected_count": 26
+    },
+    "source_group:14": {
+      "base_count": 305,
+      "selected_count": 8
+    },
+    "source_group:15": {
+      "base_count": 231,
+      "selected_count": 6
+    },
+    "source_group:16": {
+      "base_count": 239,
+      "selected_count": 6
+    },
+    "source_group:17": {
+      "base_count": 222,
+      "selected_count": 14
+    },
+    "source_group:18": {
+      "base_count": 200,
+      "selected_count": 7
+    }
+  },
+  "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+  "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v5/configs/llvip_draft.yaml",
+  "roster": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/d2_llvip_train_attempt1/frozen_roster.json",
+  "batch_size": 8,
+  "augmentation": "centered_letterbox_scaleup_true_only",
+  "amp": false,
+  "primary_luminance_threshold": 78.283,
+  "primary_luminance_rule": "low < 78.283; high >= 78.283; proxy only",
+  "luminance_measurement": "mean of original PIL Image.convert('L') pixels",
+  "secondary_brightness_edges": [
+    0,
+    64,
+    128,
+    192,
+    256
+  ],
+  "brightness_is_day_night_label": false,
+  "seconds": 101.1902666091919,
+  "gpu_allocated_peak_mib": 383.55029296875,
+  "gpu_reserved_peak_mib": 562.0,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1024
+    },
+    "peak_rss_mib": 1612
+  },
+  "official_test_accessed": false,
+  "d1_prediction_policy": {
+    "pre_nms": true,
+    "confidence_min": 0.05,
+    "spatial_iou_min": 0.1,
+    "assignment": "class_agnostic_max_cardinality_then_total_iou",
+    "prediction_truncation": false
+  }
+}

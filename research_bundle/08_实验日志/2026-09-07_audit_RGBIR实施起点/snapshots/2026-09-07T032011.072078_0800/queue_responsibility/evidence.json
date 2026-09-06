@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-09-07T03:21:13.327603+08:00",
+  "metadata": [
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/random_worker.py",
+      "bytes": 4302,
+      "mtime": 1788708270.5174942
+    },
+    {
+      "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/queue_status.json",
+      "bytes": 265,
+      "mtime": 1788708270.5494928
+    }
+  ],
+  "processes": {
+    "975898": {
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/random_worker.py ",
+      "stat": "975898 (python) S 975897 975898 975898 34820 975898 4194304 1905 20391 0 0 377 119 10 19 20 0 1 0 188996810 16707584 2761 18446744073709551615 93939496067072 93939498173677 140736851901184 0 0 0 0 16781312 2 1 0 0 17 34 0 0 0 0 0 93939499201424 93939499424608 93939825991680 140736851909100 140736851909306 140736851909306 140736851910543 0\n"
+    },
+    "975933": {
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id oev1_random_full_s42 --kind train --candidate-gpu 2 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 --formal-train -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 ",
+      "stat": "975933 (python) S 975898 975898 975898 34820 975898 4194304 5825 82141616 0 298 23485 949 14519 98437 20 0 1 0 188996901 29040640 5732 18446744073709551615 94018475765760 94018477872365 140725546428368 0 0 0 0 16781312 2 1 0 0 17 7 0 0 0 0 0 94018478900112 94018479123296 94018640183296 140725546436410 140725546437270 140725546437270 140725546438543 0\n"
+    },
+    "975949": {
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 ",
+      "stat": "975949 (python) R 975933 975898 975898 34820 975898 4194304 52689397 173 26 0 1392967 118268 0 4 20 0 143 0 188996978 39836102656 2300278 18446744073709551615 94427508162560 94427510269165 140724460710784 0 0 0 0 16781312 65538 0 0 0 17 88 0 0 0 0 0 94427511296912 94427511520096 94427658412032 140724460713910 140724460714407 140724460714407 140724460715919 0\n"
+    }
+  },
+  "remote_mutations": false
+}

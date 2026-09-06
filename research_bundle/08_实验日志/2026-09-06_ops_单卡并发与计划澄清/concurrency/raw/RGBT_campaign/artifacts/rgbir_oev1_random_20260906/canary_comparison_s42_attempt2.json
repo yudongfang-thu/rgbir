@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "seed": 42,
+  "physical_gpu": 2,
+  "paired_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1",
+  "random_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s42_attempt1",
+  "tensor_equality": {
+    "initial_student.pt": true,
+    "first_batch.pt": true
+  },
+  "unchanged_implementation_direct_byte_comparison": {
+    "object_evidence_loss.py": {
+      "direct_byte_equal": true,
+      "bytes": 19364
+    },
+    "paired_rgbir_data.py": {
+      "direct_byte_equal": true,
+      "bytes": 10325
+    }
+  },
+  "trainer_delta_exactly_expected": true,
+  "same_input_weight_paths_and_sizes": true,
+  "common_batches_checked": 30,
+  "batches_with_different_selection": 30,
+  "dose_semantics": "same K and base normalizer; not equal actual loss/gradient magnitude",
+  "optimizer_updates": [
+    24,
+    24
+  ],
+  "amp_skipped_updates": [
+    6,
+    6
+  ],
+  "resources": {
+    "gpu_ids": [
+      2
+    ],
+    "cuda_pid_counts": {
+      "2": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "2": 6304
+    },
+    "peak_rss_mib": 28774
+  },
+  "gpu_allocated_peak_mib": 5087.68603515625,
+  "gpu_reserved_peak_mib": 5770.0,
+  "official_test_accessed": false
+}

@@ -1,0 +1,105 @@
+{
+  "protocol": "tc_geometry_primary_visual_batch3_v1",
+  "annotator": "Codex implement_geometry; actual original-resolution tool image inspection",
+  "coordinate_basis": "Direct visual inspection of both original 1280x1024 images. Static manhole-lid ellipse centers and bollard top centers; no object annotation or model output was opened. Rightmost bollard inspected again using an original-image crop with explicit coordinates, magnified 4x; top-center visibility in IR is less crisp and remains subject to independent review.",
+  "formal_geometry_verified": false,
+  "observations": [
+    {
+      "audit_id": "llvip_050001",
+      "status": "candidate_static_points_needs_independent_review",
+      "original_shape": [
+        1024,
+        1280
+      ],
+      "panel_to_raw_scale": 2,
+      "uncertainty_raw_px": 3,
+      "points": [
+        {
+          "id": "a",
+          "feature": "center of the upper-left sidewalk manhole lid ellipse",
+          "rgb": [
+            305,
+            171
+          ],
+          "ir": [
+            308,
+            169
+          ]
+        },
+        {
+          "id": "b",
+          "feature": "center of the middle-right road manhole lid ellipse",
+          "rgb": [
+            854,
+            470
+          ],
+          "ir": [
+            855,
+            470
+          ]
+        },
+        {
+          "id": "c",
+          "feature": "center of the lower-right road manhole lid ellipse",
+          "rgb": [
+            1093,
+            636
+          ],
+          "ir": [
+            1092,
+            636
+          ]
+        },
+        {
+          "id": "d",
+          "feature": "center of the leftmost short bollard top surface",
+          "rgb": [
+            138,
+            152
+          ],
+          "ir": [
+            136,
+            150
+          ]
+        },
+        {
+          "id": "e",
+          "feature": "center of the second short bollard top surface",
+          "rgb": [
+            387,
+            188
+          ],
+          "ir": [
+            387,
+            187
+          ]
+        },
+        {
+          "id": "f",
+          "feature": "center of the third short bollard top surface",
+          "rgb": [
+            625,
+            204
+          ],
+          "ir": [
+            628,
+            205
+          ]
+        },
+        {
+          "id": "g",
+          "feature": "center of far-right short bollard top surface",
+          "rgb": [
+            1198,
+            174
+          ],
+          "ir": [
+            1197,
+            179
+          ]
+        }
+      ],
+      "interpretation": "Additional static point broadens spatial support. The original six points, uncertainty and thresholds are unchanged. This seventh point and the new hull require independent review before creating accepted contract v2."
+    }
+  ]
+}

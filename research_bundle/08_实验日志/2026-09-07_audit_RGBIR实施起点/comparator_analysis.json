@@ -1,0 +1,283 @@
+{
+  "methods": {
+    "cmdistill": {
+      "rows": [
+        {
+          "seed": 0,
+          "metrics_percent": {
+            "mAP50_95": 53.90028570727691,
+            "AP50": 76.2351108296042,
+            "AP75": 63.15941136446324
+          },
+          "ordered_val_roster_equals_oev1": null,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": "completed",
+          "completion_limitation": null
+        },
+        {
+          "seed": 42,
+          "metrics_percent": {
+            "mAP50_95": 53.24484007601327,
+            "AP50": 75.16442157263761,
+            "AP75": 62.49358429506559
+          },
+          "ordered_val_roster_equals_oev1": null,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": "completed",
+          "completion_limitation": null
+        },
+        {
+          "seed": 123,
+          "metrics_percent": {
+            "mAP50_95": 53.669168425807165,
+            "AP50": 76.24985784139689,
+            "AP75": 63.33093569020699
+          },
+          "ordered_val_roster_equals_oev1": null,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": "completed",
+          "completion_limitation": null
+        }
+      ],
+      "stats_percent": {
+        "mAP50_95": {
+          "mean": 53.60476473636578,
+          "sample_sd": 0.3324351369754621,
+          "ddof": 1
+        },
+        "AP50": {
+          "mean": 75.8831300812129,
+          "sample_sd": 0.6224634999846108,
+          "ddof": 1
+        },
+        "AP75": {
+          "mean": 62.99464378324527,
+          "sample_sd": 0.4423240967906091,
+          "ddof": 1
+        }
+      },
+      "minus_historical_native": {
+        "rows": [
+          {
+            "seed": 0,
+            "delta_pp": -0.45736258408087593
+          },
+          {
+            "seed": 42,
+            "delta_pp": -0.5707160654046035
+          },
+          {
+            "seed": 123,
+            "delta_pp": -0.018264229069799853
+          }
+        ],
+        "stats": {
+          "mean": -0.3487809595184264,
+          "sample_sd": 0.291793136934181,
+          "ddof": 1
+        }
+      }
+    },
+    "historical_native": {
+      "rows": [
+        {
+          "seed": 0,
+          "metrics_percent": {
+            "mAP50_95": 54.35764829135778,
+            "AP50": 76.74840182306127,
+            "AP75": 63.84139279470794
+          },
+          "ordered_val_roster_equals_oev1": null,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": null,
+          "completion_limitation": "legacy native receipt has no terminal status; not admitted by new analyzer"
+        },
+        {
+          "seed": 42,
+          "metrics_percent": {
+            "mAP50_95": 53.81555614141787,
+            "AP50": 76.00113764015525,
+            "AP75": 62.5664619204642
+          },
+          "ordered_val_roster_equals_oev1": null,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": null,
+          "completion_limitation": "legacy native receipt has no terminal status; not admitted by new analyzer"
+        },
+        {
+          "seed": 123,
+          "metrics_percent": {
+            "mAP50_95": 53.687432654876964,
+            "AP50": 75.73014259256995,
+            "AP75": 63.306324355490304
+          },
+          "ordered_val_roster_equals_oev1": null,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": null,
+          "completion_limitation": "legacy native receipt has no terminal status; not admitted by new analyzer"
+        }
+      ],
+      "stats_percent": {
+        "mAP50_95": {
+          "mean": 53.95354569588421,
+          "sample_sd": 0.35577814393552964,
+          "ddof": 1
+        },
+        "AP50": {
+          "mean": 76.1598940185955,
+          "sample_sd": 0.5273667186046077,
+          "ddof": 1
+        },
+        "AP75": {
+          "mean": 63.238059690220815,
+          "sample_sd": 0.6402009308945478,
+          "ddof": 1
+        }
+      }
+    },
+    "cclkd_train": {
+      "rows": [
+        {
+          "seed": 0,
+          "metrics_percent": {
+            "mAP50_95": 54.06600564966325,
+            "AP50": 76.48561806758856,
+            "AP75": 63.28183429745453
+          },
+          "ordered_val_roster_equals_oev1": true,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": "completed",
+          "completion_limitation": null
+        },
+        {
+          "seed": 42,
+          "metrics_percent": {
+            "mAP50_95": 54.49329450152567,
+            "AP50": 77.00321800542203,
+            "AP75": 63.54910732782623
+          },
+          "ordered_val_roster_equals_oev1": true,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": "completed",
+          "completion_limitation": null
+        },
+        {
+          "seed": 123,
+          "metrics_percent": {
+            "mAP50_95": 54.3325955606628,
+            "AP50": 76.31210499190813,
+            "AP75": 63.79373998696685
+          },
+          "ordered_val_roster_equals_oev1": true,
+          "recipe_difference": {
+            "workers": {
+              "oev1": 4,
+              "comparator": 8
+            }
+          },
+          "initial_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "dataset_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "legacy_completion_status": "completed",
+          "completion_limitation": null
+        }
+      ],
+      "stats_percent": {
+        "mAP50_95": {
+          "mean": 54.297298570617244,
+          "sample_sd": 0.21582017714102267,
+          "ddof": 1
+        },
+        "AP50": {
+          "mean": 76.60031368830624,
+          "sample_sd": 0.3595491808096992,
+          "ddof": 1
+        },
+        "AP75": {
+          "mean": 63.54156053741587,
+          "sample_sd": 0.25603627530663275,
+          "ddof": 1
+        }
+      },
+      "minus_historical_native": {
+        "rows": [
+          {
+            "seed": 0,
+            "delta_pp": -0.2916426416945299
+          },
+          {
+            "seed": 42,
+            "delta_pp": 0.6777383601077958
+          },
+          {
+            "seed": 123,
+            "delta_pp": 0.6451629057858383
+          }
+        ],
+        "stats": {
+          "mean": 0.34375287473303473,
+          "sample_sd": 0.5505096609309043,
+          "ddof": 1
+        }
+      }
+    }
+  },
+  "recipe_reference": "same-code OEv1 N42 args.yaml",
+  "protocol_comparison": {},
+  "evidence_level": "descriptive historical comparison; not same-code causal controls"
+}

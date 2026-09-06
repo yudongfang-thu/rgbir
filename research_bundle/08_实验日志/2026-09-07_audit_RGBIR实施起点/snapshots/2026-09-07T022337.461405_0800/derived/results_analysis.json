@@ -1,0 +1,416 @@
+{
+  "schema": "rgbir-task-conditional-results-v1",
+  "seed_order": [
+    0,
+    42,
+    123
+  ],
+  "report_units": "percentage_and_percentage_points",
+  "records": [
+    {
+      "arm": "N",
+      "seed": 0,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\N0",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "complete",
+      "issues": [],
+      "metrics_percent": {
+        "mAP50_95": 54.34618520685574,
+        "AP50": 76.99251535173484,
+        "AP75": 63.93291745479234,
+        "precision": 77.65485331322762,
+        "recall": 73.58216889941262
+      },
+      "endpoint": "fixed_budget_last_ema",
+      "dataset": "dronevehicle",
+      "original_units": "fraction_0_to_1",
+      "source_arm": "weight0",
+      "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+      "roster_count": 1469
+    },
+    {
+      "arm": "C",
+      "seed": 0,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\C0",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "incomplete",
+      "issues": [
+        "Missing completion_receipt.json",
+        "Missing evaluation_val.json",
+        "Missing run_evidence/run_receipt.json",
+        "Missing eval_evidence/run_receipt.json",
+        "Missing evaluation_val_roster.txt"
+      ],
+      "metrics_percent": null
+    },
+    {
+      "arm": "R",
+      "seed": 0,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\R0",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "incomplete",
+      "issues": [
+        "Missing completion_receipt.json",
+        "Missing evaluation_val.json",
+        "Missing run_evidence/run_receipt.json",
+        "Missing eval_evidence/run_receipt.json",
+        "Missing evaluation_val_roster.txt"
+      ],
+      "metrics_percent": null
+    },
+    {
+      "arm": "N",
+      "seed": 42,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\N42",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "complete",
+      "issues": [],
+      "metrics_percent": {
+        "mAP50_95": 54.51360845035178,
+        "AP50": 77.17965366938525,
+        "AP75": 64.16656614678693,
+        "precision": 78.64732611282166,
+        "recall": 72.92365679591741
+      },
+      "endpoint": "fixed_budget_last_ema",
+      "dataset": "dronevehicle",
+      "original_units": "fraction_0_to_1",
+      "source_arm": "weight0",
+      "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+      "roster_count": 1469
+    },
+    {
+      "arm": "C",
+      "seed": 42,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\C42",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "complete",
+      "issues": [],
+      "metrics_percent": {
+        "mAP50_95": 54.65816217191543,
+        "AP50": 77.0696200439378,
+        "AP75": 63.839323049220795,
+        "precision": 77.43225301297308,
+        "recall": 72.43045069089455
+      },
+      "endpoint": "fixed_budget_last_ema",
+      "dataset": "dronevehicle",
+      "original_units": "fraction_0_to_1",
+      "source_arm": "paired",
+      "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+      "roster_count": 1469
+    },
+    {
+      "arm": "R",
+      "seed": 42,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\R42",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "incomplete",
+      "issues": [
+        "Missing completion_receipt.json",
+        "Missing evaluation_val.json",
+        "Missing run_evidence/run_receipt.json",
+        "Missing eval_evidence/run_receipt.json",
+        "Missing evaluation_val_roster.txt"
+      ],
+      "metrics_percent": null
+    },
+    {
+      "arm": "N",
+      "seed": 123,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\N123",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "incomplete",
+      "issues": [
+        "Missing completion_receipt.json",
+        "Missing evaluation_val.json",
+        "Missing run_evidence/run_receipt.json",
+        "Missing eval_evidence/run_receipt.json",
+        "Missing evaluation_val_roster.txt"
+      ],
+      "metrics_percent": null
+    },
+    {
+      "arm": "C",
+      "seed": 123,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\C123",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "complete",
+      "issues": [],
+      "metrics_percent": {
+        "mAP50_95": 54.63684720507138,
+        "AP50": 77.30455672411458,
+        "AP75": 64.21477409983494,
+        "precision": 77.87129583514843,
+        "recall": 72.98865399139216
+      },
+      "endpoint": "fixed_budget_last_ema",
+      "dataset": "dronevehicle",
+      "original_units": "fraction_0_to_1",
+      "source_arm": "paired",
+      "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+      "roster_count": 1469
+    },
+    {
+      "arm": "R",
+      "seed": 123,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T022337.461405_0800\\raw\\R123",
+      "protocol_id": "Drone_OEv1_frozen_E200_b32n64_workers4_lastEMA",
+      "status": "incomplete",
+      "issues": [
+        "Missing completion_receipt.json",
+        "Missing evaluation_val.json",
+        "Missing run_evidence/run_receipt.json",
+        "Missing eval_evidence/run_receipt.json",
+        "Missing evaluation_val_roster.txt"
+      ],
+      "metrics_percent": null
+    }
+  ],
+  "arms": {
+    "C": {
+      "completed_seeds": [
+        42,
+        123
+      ],
+      "metrics_percent": {
+        "mAP50_95": {
+          "n": 2,
+          "mean": 54.647504688493406,
+          "sample_sd": 0.015071957596190715,
+          "ddof": 1
+        },
+        "AP50": {
+          "n": 2,
+          "mean": 77.1870883840262,
+          "sample_sd": 0.16612531970245129,
+          "ddof": 1
+        },
+        "AP75": {
+          "n": 2,
+          "mean": 64.02704857452787,
+          "sample_sd": 0.26548398389287614,
+          "ddof": 1
+        },
+        "precision": {
+          "n": 2,
+          "mean": 77.65177442406076,
+          "sample_sd": 0.3104501567914712,
+          "ddof": 1
+        },
+        "recall": {
+          "n": 2,
+          "mean": 72.70955234114335,
+          "sample_sd": 0.39470933906257194,
+          "ddof": 1
+        }
+      },
+      "complete_three_seeds": false
+    },
+    "N": {
+      "completed_seeds": [
+        0,
+        42
+      ],
+      "metrics_percent": {
+        "mAP50_95": {
+          "n": 2,
+          "mean": 54.42989682860376,
+          "sample_sd": 0.11838611080429555,
+          "ddof": 1
+        },
+        "AP50": {
+          "n": 2,
+          "mean": 77.08608451056004,
+          "sample_sd": 0.13232677343044583,
+          "ddof": 1
+        },
+        "AP75": {
+          "n": 2,
+          "mean": 64.04974180078963,
+          "sample_sd": 0.16521457452474544,
+          "ddof": 1
+        },
+        "precision": {
+          "n": 2,
+          "mean": 78.15108971302465,
+          "sample_sd": 0.7017842467361431,
+          "ddof": 1
+        },
+        "recall": {
+          "n": 2,
+          "mean": 73.25291284766502,
+          "sample_sd": 0.46563837387488227,
+          "ddof": 1
+        }
+      },
+      "complete_three_seeds": false
+    },
+    "R": {
+      "completed_seeds": [],
+      "metrics_percent": {
+        "mAP50_95": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1
+        },
+        "AP50": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1
+        },
+        "AP75": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1
+        },
+        "precision": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1
+        },
+        "recall": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1
+        }
+      },
+      "complete_three_seeds": false
+    }
+  },
+  "comparisons": {
+    "C_minus_N": {
+      "treatment": "C",
+      "control": "N",
+      "pairs": [
+        {
+          "seed": 42,
+          "deltas_pp": {
+            "mAP50_95": 0.14455372156364632,
+            "AP50": -0.11003362544744277,
+            "AP75": -0.32724309756613934,
+            "precision": -1.2150730998485813,
+            "recall": -0.493206105022864
+          }
+        }
+      ],
+      "stats_pp": {
+        "mAP50_95": {
+          "n": 1,
+          "mean": 0.14455372156364632,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 1,
+          "negative_seeds": 0
+        },
+        "AP50": {
+          "n": 1,
+          "mean": -0.11003362544744277,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 1
+        },
+        "AP75": {
+          "n": 1,
+          "mean": -0.32724309756613934,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 1
+        },
+        "precision": {
+          "n": 1,
+          "mean": -1.2150730998485813,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 1
+        },
+        "recall": {
+          "n": 1,
+          "mean": -0.493206105022864,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 1
+        }
+      },
+      "complete_three_seed_pairing": false,
+      "issues": [],
+      "evidence_status": "incomplete_descriptive_only",
+      "claim_supported": "not_automatically_assessed"
+    },
+    "R_minus_C": {
+      "treatment": "R",
+      "control": "C",
+      "pairs": [],
+      "stats_pp": {
+        "mAP50_95": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 0
+        },
+        "AP50": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 0
+        },
+        "AP75": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 0
+        },
+        "precision": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 0
+        },
+        "recall": {
+          "n": 0,
+          "mean": null,
+          "sample_sd": null,
+          "ddof": 1,
+          "positive_seeds": 0,
+          "negative_seeds": 0
+        }
+      },
+      "complete_three_seed_pairing": false,
+      "issues": [],
+      "evidence_status": "incomplete_descriptive_only",
+      "claim_supported": "not_automatically_assessed"
+    }
+  },
+  "pilot": {
+    "seed": 42,
+    "metric": "mAP50_95",
+    "threshold_cl_minus_c_pp": 0.3,
+    "threshold_cl_minus_cgt_pp_strict": 0.0,
+    "cl_minus_c_pp": null,
+    "cl_minus_cgt_pp": null,
+    "endpoints_ready": false,
+    "implementation_checks_passed": false,
+    "auto_expansion_eligible": false,
+    "decision": "await_complete_endpoints",
+    "stop_running_experiments": false,
+    "scientific_claim": "single_seed_budget_decision_only"
+  },
+  "claim_policy": "Development evidence only; three seeds and valid endpoints do not replace independent analyzer review, four-arm attribution, or test exposure audit."
+}

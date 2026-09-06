@@ -1,0 +1,3619 @@
+{
+  "captured_at": "2026-09-06T15:59:40.003290+00:00",
+  "files": {
+    "seed0_status.json": {
+      "seed": 0,
+      "gpu": 2,
+      "pid": 1149860,
+      "time": 1788710322.0842977,
+      "status": "training",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1"
+    },
+    "seed0_ownership.json": {
+      "seed": 0,
+      "gpu": 2,
+      "pid": 1149860,
+      "old_worker_retains_seed42": true,
+      "canary": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s0_attempt1",
+      "full": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1",
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1",
+      "method_changed": false,
+      "expected_old_queue_exit": "After seed42 training AND evaluation, pre-existing canonical seed0 canary prevents old serial queue from duplicating transferred seeds."
+    },
+    "concurrent_canary_s0.json": {
+      "samples": [
+        {
+          "time": 1788710271.822311,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            975949
+          ]
+        },
+        {
+          "time": 1788710273.017474,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            975949
+          ]
+        },
+        {
+          "time": 1788710274.208882,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            975949
+          ]
+        },
+        {
+          "time": 1788710275.4355166,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            975949
+          ]
+        },
+        {
+          "time": 1788710276.7749057,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            975949
+          ]
+        },
+        {
+          "time": 1788710278.0398753,
+          "used_mib": 8045,
+          "free_mib": 16039,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710279.2828012,
+          "used_mib": 8239,
+          "free_mib": 15845,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710280.5325522,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710281.818545,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710283.0790157,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710284.2554576,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710285.5685143,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710286.7839077,
+          "used_mib": 8251,
+          "free_mib": 15833,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710288.0086098,
+          "used_mib": 8257,
+          "free_mib": 15827,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710289.2861624,
+          "used_mib": 8267,
+          "free_mib": 15817,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710290.5090024,
+          "used_mib": 10589,
+          "free_mib": 13495,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710291.7737088,
+          "used_mib": 12035,
+          "free_mib": 12049,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710293.038621,
+          "used_mib": 13111,
+          "free_mib": 10973,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710294.261451,
+          "used_mib": 13115,
+          "free_mib": 10969,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710295.537418,
+          "used_mib": 13115,
+          "free_mib": 10969,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710296.7944129,
+          "used_mib": 13117,
+          "free_mib": 10967,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710298.041887,
+          "used_mib": 13721,
+          "free_mib": 10363,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710299.280052,
+          "used_mib": 13827,
+          "free_mib": 10257,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710300.498174,
+          "used_mib": 13831,
+          "free_mib": 10253,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710301.7291934,
+          "used_mib": 13833,
+          "free_mib": 10251,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710302.9845245,
+          "used_mib": 13833,
+          "free_mib": 10251,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710304.315787,
+          "used_mib": 13967,
+          "free_mib": 10117,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710305.5614846,
+          "used_mib": 13967,
+          "free_mib": 10117,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710306.8088875,
+          "used_mib": 13971,
+          "free_mib": 10113,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710308.107139,
+          "used_mib": 13975,
+          "free_mib": 10109,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710309.2957594,
+          "used_mib": 13975,
+          "free_mib": 10109,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710310.5588748,
+          "used_mib": 13807,
+          "free_mib": 10277,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710311.8654168,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710313.0673707,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710314.3041806,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710315.6134493,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            975949,
+            1150137
+          ]
+        },
+        {
+          "time": 1788710317.1875541,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            975949
+          ]
+        },
+        {
+          "time": 1788710318.3861353,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            975949
+          ]
+        },
+        {
+          "time": 1788710319.6437306,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            975949
+          ]
+        }
+      ],
+      "minimum_free_mib": 10109,
+      "maximum_used_mib": 13975,
+      "dual_samples": 31,
+      "max_cuda_pids": 2
+    },
+    "parallel_canary_comparison_s0.json": {
+      "status": "passed",
+      "seed": 0,
+      "physical_gpu": 2,
+      "paired_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1",
+      "random_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s0_attempt1",
+      "tensor_equality": {
+        "initial_student.pt": true,
+        "first_batch.pt": true
+      },
+      "unchanged_implementation_direct_byte_comparison": {
+        "object_evidence_loss.py": {
+          "direct_byte_equal": true,
+          "bytes": 19364
+        },
+        "paired_rgbir_data.py": {
+          "direct_byte_equal": true,
+          "bytes": 10325
+        }
+      },
+      "trainer_delta_exactly_expected": true,
+      "same_input_weight_paths_and_sizes": true,
+      "common_batches_checked": 30,
+      "batches_with_different_selection": 30,
+      "dose_semantics": "same K and base normalizer; not equal actual loss/gradient magnitude",
+      "optimizer_updates": [
+        24,
+        24
+      ],
+      "amp_skipped_updates": [
+        6,
+        6
+      ],
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 28738
+      },
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5770.0,
+      "official_test_accessed": false
+    },
+    "canary_completion_s0.json": {
+      "status": "canary_completed",
+      "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+      "arm": "paired_random",
+      "seed": 0,
+      "epochs_configured": 200,
+      "last_epoch": 1,
+      "optimizer_updates": 24,
+      "optimizer_update_attempts": 30,
+      "amp_skipped_updates": 6,
+      "ema_updates": 30,
+      "batches": 30,
+      "selected_objects": 3767,
+      "gradient_checks": [
+        {
+          "batch": 1,
+          "native_score_gradient_l2": 0.27613016963005066,
+          "kd_score_gradient_l2": 0.0037815419491380453,
+          "total_gradient_composition_max_error": 7.62939453125e-06,
+          "weight0_exact_loss_gradient": true,
+          "teacher_has_grad": false,
+          "reference_has_grad": false
+        }
+      ],
+      "kd_last": {
+        "arm": "paired_random",
+        "rgb_gt_count": 587,
+        "teacher_gt_count": 635,
+        "common_count": 571,
+        "valid_region_count": 570,
+        "reference_candidate_count": 565,
+        "base_count": 564,
+        "teacher_correct_base_count": 546,
+        "eligible_count": 308,
+        "selected_count": 154,
+        "normalizer": 564,
+        "nominal_dose": 0.2730496453900709,
+        "loss_unweighted": 0.8017449378967285,
+        "selected_object_ids": [
+          [
+            21,
+            309,
+            334
+          ],
+          [
+            30,
+            529,
+            555
+          ],
+          [
+            23,
+            353,
+            378
+          ],
+          [
+            30,
+            524,
+            550
+          ],
+          [
+            30,
+            543,
+            569
+          ],
+          [
+            28,
+            464,
+            490
+          ],
+          [
+            28,
+            450,
+            476
+          ],
+          [
+            30,
+            572,
+            598
+          ],
+          [
+            23,
+            359,
+            384
+          ],
+          [
+            30,
+            509,
+            535
+          ],
+          [
+            15,
+            247,
+            256
+          ],
+          [
+            26,
+            409,
+            435
+          ],
+          [
+            17,
+            266,
+            280
+          ],
+          [
+            28,
+            490,
+            516
+          ],
+          [
+            19,
+            284,
+            302
+          ],
+          [
+            15,
+            250,
+            259
+          ],
+          [
+            11,
+            192,
+            201
+          ],
+          [
+            28,
+            430,
+            456
+          ],
+          [
+            7,
+            91,
+            97
+          ],
+          [
+            13,
+            204,
+            212
+          ],
+          [
+            29,
+            494,
+            520
+          ],
+          [
+            4,
+            16,
+            20
+          ],
+          [
+            30,
+            525,
+            551
+          ],
+          [
+            5,
+            76,
+            82
+          ],
+          [
+            28,
+            438,
+            464
+          ],
+          [
+            15,
+            248,
+            257
+          ],
+          [
+            28,
+            491,
+            517
+          ],
+          [
+            21,
+            316,
+            341
+          ],
+          [
+            30,
+            561,
+            587
+          ],
+          [
+            8,
+            147,
+            153
+          ],
+          [
+            8,
+            155,
+            161
+          ],
+          [
+            3,
+            13,
+            17
+          ],
+          [
+            26,
+            415,
+            441
+          ],
+          [
+            23,
+            346,
+            371
+          ],
+          [
+            7,
+            138,
+            144
+          ],
+          [
+            7,
+            95,
+            101
+          ],
+          [
+            5,
+            83,
+            89
+          ],
+          [
+            7,
+            129,
+            135
+          ],
+          [
+            9,
+            162,
+            168
+          ],
+          [
+            23,
+            369,
+            395
+          ],
+          [
+            11,
+            197,
+            206
+          ],
+          [
+            10,
+            173,
+            180
+          ],
+          [
+            11,
+            186,
+            194
+          ],
+          [
+            4,
+            19,
+            23
+          ],
+          [
+            23,
+            363,
+            388
+          ],
+          [
+            11,
+            194,
+            203
+          ],
+          [
+            30,
+            508,
+            534
+          ],
+          [
+            21,
+            311,
+            336
+          ],
+          [
+            9,
+            161,
+            167
+          ],
+          [
+            15,
+            239,
+            248
+          ],
+          [
+            11,
+            184,
+            192
+          ],
+          [
+            5,
+            51,
+            57
+          ],
+          [
+            30,
+            568,
+            594
+          ],
+          [
+            4,
+            17,
+            21
+          ],
+          [
+            3,
+            6,
+            10
+          ],
+          [
+            19,
+            296,
+            321
+          ],
+          [
+            30,
+            564,
+            590
+          ],
+          [
+            4,
+            26,
+            32
+          ],
+          [
+            7,
+            115,
+            121
+          ],
+          [
+            5,
+            41,
+            47
+          ],
+          [
+            7,
+            132,
+            138
+          ],
+          [
+            17,
+            264,
+            278
+          ],
+          [
+            28,
+            478,
+            504
+          ],
+          [
+            28,
+            444,
+            470
+          ],
+          [
+            27,
+            420,
+            446
+          ],
+          [
+            30,
+            571,
+            597
+          ],
+          [
+            28,
+            480,
+            506
+          ],
+          [
+            15,
+            251,
+            260
+          ],
+          [
+            15,
+            238,
+            247
+          ],
+          [
+            3,
+            9,
+            13
+          ],
+          [
+            30,
+            538,
+            564
+          ],
+          [
+            28,
+            442,
+            468
+          ],
+          [
+            7,
+            114,
+            120
+          ],
+          [
+            5,
+            39,
+            45
+          ],
+          [
+            8,
+            146,
+            152
+          ],
+          [
+            28,
+            472,
+            498
+          ],
+          [
+            15,
+            225,
+            234
+          ],
+          [
+            5,
+            81,
+            87
+          ],
+          [
+            7,
+            93,
+            99
+          ],
+          [
+            30,
+            503,
+            529
+          ],
+          [
+            30,
+            523,
+            549
+          ],
+          [
+            4,
+            22,
+            26
+          ],
+          [
+            5,
+            70,
+            76
+          ],
+          [
+            30,
+            585,
+            611
+          ],
+          [
+            9,
+            159,
+            165
+          ],
+          [
+            16,
+            257,
+            271
+          ],
+          [
+            30,
+            522,
+            548
+          ],
+          [
+            5,
+            42,
+            48
+          ],
+          [
+            21,
+            308,
+            333
+          ],
+          [
+            19,
+            282,
+            300
+          ],
+          [
+            19,
+            298,
+            323
+          ],
+          [
+            30,
+            517,
+            543
+          ],
+          [
+            5,
+            68,
+            74
+          ],
+          [
+            26,
+            413,
+            439
+          ],
+          [
+            7,
+            119,
+            125
+          ],
+          [
+            26,
+            412,
+            438
+          ],
+          [
+            29,
+            496,
+            522
+          ],
+          [
+            7,
+            92,
+            98
+          ],
+          [
+            23,
+            360,
+            385
+          ],
+          [
+            30,
+            504,
+            530
+          ],
+          [
+            30,
+            557,
+            583
+          ],
+          [
+            18,
+            274,
+            291
+          ],
+          [
+            27,
+            421,
+            447
+          ],
+          [
+            30,
+            560,
+            586
+          ],
+          [
+            19,
+            286,
+            304
+          ],
+          [
+            22,
+            330,
+            355
+          ],
+          [
+            3,
+            12,
+            16
+          ],
+          [
+            15,
+            232,
+            241
+          ],
+          [
+            28,
+            477,
+            503
+          ],
+          [
+            27,
+            423,
+            449
+          ],
+          [
+            22,
+            333,
+            358
+          ],
+          [
+            9,
+            166,
+            172
+          ],
+          [
+            5,
+            40,
+            46
+          ],
+          [
+            6,
+            84,
+            90
+          ],
+          [
+            5,
+            52,
+            58
+          ],
+          [
+            30,
+            549,
+            575
+          ],
+          [
+            30,
+            539,
+            565
+          ],
+          [
+            12,
+            203,
+            211
+          ],
+          [
+            21,
+            320,
+            345
+          ],
+          [
+            30,
+            570,
+            596
+          ],
+          [
+            18,
+            278,
+            295
+          ],
+          [
+            28,
+            447,
+            473
+          ],
+          [
+            28,
+            460,
+            486
+          ],
+          [
+            22,
+            341,
+            365
+          ],
+          [
+            30,
+            512,
+            538
+          ],
+          [
+            7,
+            128,
+            134
+          ],
+          [
+            28,
+            431,
+            457
+          ],
+          [
+            5,
+            43,
+            49
+          ],
+          [
+            2,
+            4,
+            8
+          ],
+          [
+            30,
+            578,
+            604
+          ],
+          [
+            11,
+            190,
+            199
+          ],
+          [
+            3,
+            11,
+            15
+          ],
+          [
+            28,
+            487,
+            513
+          ],
+          [
+            28,
+            453,
+            479
+          ],
+          [
+            7,
+            113,
+            119
+          ],
+          [
+            23,
+            375,
+            401
+          ],
+          [
+            30,
+            510,
+            536
+          ],
+          [
+            11,
+            191,
+            200
+          ],
+          [
+            30,
+            546,
+            572
+          ],
+          [
+            21,
+            314,
+            339
+          ],
+          [
+            27,
+            428,
+            454
+          ],
+          [
+            15,
+            236,
+            245
+          ],
+          [
+            28,
+            441,
+            467
+          ],
+          [
+            23,
+            370,
+            396
+          ],
+          [
+            16,
+            256,
+            270
+          ],
+          [
+            27,
+            419,
+            445
+          ],
+          [
+            25,
+            393,
+            419
+          ],
+          [
+            21,
+            312,
+            337
+          ],
+          [
+            7,
+            99,
+            105
+          ],
+          [
+            7,
+            102,
+            108
+          ],
+          [
+            21,
+            327,
+            352
+          ],
+          [
+            21,
+            307,
+            332
+          ],
+          [
+            3,
+            8,
+            12
+          ],
+          [
+            7,
+            100,
+            106
+          ]
+        ],
+        "config": {
+          "input_size": 640,
+          "levels": [
+            0,
+            1
+          ],
+          "temperature": 2.0,
+          "background_scale": 2.0,
+          "minimum_foreground": 1,
+          "minimum_background": 4,
+          "match_iou": 0.5,
+          "reference_conf": 0.05,
+          "reference_iou": 0.1,
+          "teacher_conf": 0.25,
+          "teacher_iou": 0.5,
+          "rho": 0.5,
+          "target_clip": 8.0,
+          "smooth_l1_beta": 1.0
+        },
+        "student_evidence_base_mean": 0.09259192645549774,
+        "student_evidence_base_min": -0.33675217628479004,
+        "student_evidence_base_max": 0.5830888748168945,
+        "student_evidence_base_sd": 0.13164131343364716,
+        "student_evidence_selected_mean": 0.10148219019174576,
+        "student_evidence_selected_sd": 0.13057944178581238,
+        "teacher_evidence_base_mean": 3.533555269241333,
+        "teacher_evidence_base_min": -1.4433832168579102,
+        "teacher_evidence_base_max": 7.389289855957031,
+        "teacher_evidence_base_sd": 1.479191780090332,
+        "teacher_evidence_selected_mean": 3.527883529663086,
+        "teacher_evidence_selected_sd": 1.3802857398986816,
+        "reference_evidence_base_mean": 3.195197343826294,
+        "reference_evidence_base_min": -1.3603625297546387,
+        "reference_evidence_base_max": 8.378501892089844,
+        "reference_evidence_base_sd": 1.4245591163635254,
+        "reference_evidence_selected_mean": 3.2360587120056152,
+        "reference_evidence_selected_sd": 1.3722292184829712,
+        "quality_base_mean": 0.04255427047610283,
+        "quality_base_min": 0.0,
+        "quality_base_max": 0.6169666051864624,
+        "quality_base_sd": 0.0905330553650856,
+        "quality_selected_mean": 0.04015409201383591,
+        "quality_selected_sd": 0.08461204171180725,
+        "target_binary_entropy_selected": 0.18268263339996338,
+        "target_gap_to_positive_selected": 0.06102966144680977,
+        "target_clipped_count": 0,
+        "batch": 30,
+        "epoch": 0,
+        "native_total": 216.99656677246094,
+        "kd_weight": 0.1,
+        "weighted_kd_total": 2.5655838012695313,
+        "total_loss": 219.56214904785156,
+        "optimizer_updates": 23,
+        "time_seconds": 32.341272592544556,
+        "student_files": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/04645.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01851.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01671.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/07817.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12025.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05012.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12431.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03125.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06872.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15817.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/09429.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15702.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/08348.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/11423.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14989.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05996.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/11777.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06653.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10434.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05252.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12030.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00735.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03310.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14706.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06045.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02012.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01196.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00646.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15185.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03325.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12229.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10460.jpg"
+        ]
+      },
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5770.0,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 28738
+      },
+      "seconds": 34.750925064086914,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s0_attempt1/weights/last.pt",
+      "official_test_accessed": false,
+      "single_seed_exploratory": true
+    },
+    "seed123_status.json": {
+      "seed": 123,
+      "gpu": 4,
+      "pid": 1149862,
+      "time": 1788710322.4399135,
+      "status": "waiting_primary_N42_evaluation",
+      "primary": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1"
+    },
+    "seed123_ownership.json": {
+      "seed": 123,
+      "gpu": 4,
+      "pid": 1149862,
+      "old_worker_retains_seed42": true,
+      "canary": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s123_attempt1",
+      "full": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1",
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1",
+      "method_changed": false,
+      "expected_old_queue_exit": "After seed42 training AND evaluation, pre-existing canonical seed0 canary prevents old serial queue from duplicating transferred seeds."
+    },
+    "concurrent_canary_s123.json": {
+      "samples": [
+        {
+          "time": 1788710272.1733978,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            1564206
+          ]
+        },
+        {
+          "time": 1788710273.4150665,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            1564206
+          ]
+        },
+        {
+          "time": 1788710274.7496963,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            1564206
+          ]
+        },
+        {
+          "time": 1788710276.0044749,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            1564206
+          ]
+        },
+        {
+          "time": 1788710277.4108038,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710278.6168208,
+          "used_mib": 8045,
+          "free_mib": 16039,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710279.8458838,
+          "used_mib": 8245,
+          "free_mib": 15839,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710281.0498018,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710282.271342,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710283.531426,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710284.769721,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710286.055286,
+          "used_mib": 8249,
+          "free_mib": 15835,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710287.2773848,
+          "used_mib": 8251,
+          "free_mib": 15833,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710288.4978662,
+          "used_mib": 8257,
+          "free_mib": 15827,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710289.7438505,
+          "used_mib": 8265,
+          "free_mib": 15819,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710290.9763188,
+          "used_mib": 10589,
+          "free_mib": 13495,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710292.251066,
+          "used_mib": 12075,
+          "free_mib": 12009,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710293.4964406,
+          "used_mib": 13115,
+          "free_mib": 10969,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710294.75178,
+          "used_mib": 13115,
+          "free_mib": 10969,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710295.9560757,
+          "used_mib": 13115,
+          "free_mib": 10969,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710297.2075012,
+          "used_mib": 13349,
+          "free_mib": 10735,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710298.446607,
+          "used_mib": 13721,
+          "free_mib": 10363,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710299.6752937,
+          "used_mib": 13827,
+          "free_mib": 10257,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710300.90987,
+          "used_mib": 13829,
+          "free_mib": 10255,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710302.1513278,
+          "used_mib": 13833,
+          "free_mib": 10251,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710303.3863795,
+          "used_mib": 13833,
+          "free_mib": 10251,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710304.6690865,
+          "used_mib": 13967,
+          "free_mib": 10117,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710305.9343388,
+          "used_mib": 13971,
+          "free_mib": 10113,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710307.2173705,
+          "used_mib": 13971,
+          "free_mib": 10113,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710308.4140577,
+          "used_mib": 13975,
+          "free_mib": 10109,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710309.640772,
+          "used_mib": 13975,
+          "free_mib": 10109,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710310.8270323,
+          "used_mib": 13975,
+          "free_mib": 10109,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710312.0826435,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710313.338977,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710314.5150628,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710315.7636647,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710317.1534724,
+          "used_mib": 9071,
+          "free_mib": 15013,
+          "cuda_pids": [
+            1564206,
+            1150149
+          ]
+        },
+        {
+          "time": 1788710318.3876975,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            1564206
+          ]
+        },
+        {
+          "time": 1788710319.569857,
+          "used_mib": 7654,
+          "free_mib": 16430,
+          "cuda_pids": [
+            1564206
+          ]
+        }
+      ],
+      "minimum_free_mib": 10109,
+      "maximum_used_mib": 13975,
+      "dual_samples": 33,
+      "max_cuda_pids": 2
+    },
+    "parallel_canary_comparison_s123.json": {
+      "status": "passed",
+      "seed": 123,
+      "physical_gpu": 4,
+      "paired_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1",
+      "random_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s123_attempt1",
+      "tensor_equality": {
+        "initial_student.pt": true,
+        "first_batch.pt": true
+      },
+      "unchanged_implementation_direct_byte_comparison": {
+        "object_evidence_loss.py": {
+          "direct_byte_equal": true,
+          "bytes": 19364
+        },
+        "paired_rgbir_data.py": {
+          "direct_byte_equal": true,
+          "bytes": 10325
+        }
+      },
+      "trainer_delta_exactly_expected": true,
+      "same_input_weight_paths_and_sizes": true,
+      "common_batches_checked": 30,
+      "batches_with_different_selection": 30,
+      "dose_semantics": "same K and base normalizer; not equal actual loss/gradient magnitude",
+      "optimizer_updates": [
+        24,
+        24
+      ],
+      "amp_skipped_updates": [
+        6,
+        6
+      ],
+      "resources": {
+        "gpu_ids": [
+          4
+        ],
+        "cuda_pid_counts": {
+          "4": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "4": 6304
+        },
+        "peak_rss_mib": 28753
+      },
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5770.0,
+      "official_test_accessed": false
+    },
+    "canary_completion_s123.json": {
+      "status": "canary_completed",
+      "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+      "arm": "paired_random",
+      "seed": 123,
+      "epochs_configured": 200,
+      "last_epoch": 1,
+      "optimizer_updates": 24,
+      "optimizer_update_attempts": 30,
+      "amp_skipped_updates": 6,
+      "ema_updates": 30,
+      "batches": 30,
+      "selected_objects": 3767,
+      "gradient_checks": [
+        {
+          "batch": 1,
+          "native_score_gradient_l2": 0.27700120210647583,
+          "kd_score_gradient_l2": 0.003846521722152829,
+          "total_gradient_composition_max_error": 3.814697265625e-06,
+          "weight0_exact_loss_gradient": true,
+          "teacher_has_grad": false,
+          "reference_has_grad": false
+        }
+      ],
+      "kd_last": {
+        "arm": "paired_random",
+        "rgb_gt_count": 587,
+        "teacher_gt_count": 635,
+        "common_count": 571,
+        "valid_region_count": 570,
+        "reference_candidate_count": 565,
+        "base_count": 564,
+        "teacher_correct_base_count": 546,
+        "eligible_count": 308,
+        "selected_count": 154,
+        "normalizer": 564,
+        "nominal_dose": 0.2730496453900709,
+        "loss_unweighted": 0.8239434957504272,
+        "selected_object_ids": [
+          [
+            19,
+            290,
+            311
+          ],
+          [
+            19,
+            291,
+            316
+          ],
+          [
+            30,
+            561,
+            587
+          ],
+          [
+            11,
+            185,
+            193
+          ],
+          [
+            28,
+            482,
+            508
+          ],
+          [
+            15,
+            230,
+            239
+          ],
+          [
+            15,
+            235,
+            244
+          ],
+          [
+            11,
+            194,
+            203
+          ],
+          [
+            30,
+            533,
+            559
+          ],
+          [
+            23,
+            384,
+            410
+          ],
+          [
+            14,
+            217,
+            225
+          ],
+          [
+            30,
+            530,
+            556
+          ],
+          [
+            30,
+            545,
+            571
+          ],
+          [
+            15,
+            248,
+            257
+          ],
+          [
+            21,
+            310,
+            335
+          ],
+          [
+            23,
+            359,
+            384
+          ],
+          [
+            28,
+            473,
+            499
+          ],
+          [
+            18,
+            271,
+            287
+          ],
+          [
+            30,
+            553,
+            579
+          ],
+          [
+            30,
+            519,
+            545
+          ],
+          [
+            4,
+            26,
+            32
+          ],
+          [
+            9,
+            166,
+            172
+          ],
+          [
+            30,
+            503,
+            529
+          ],
+          [
+            30,
+            541,
+            567
+          ],
+          [
+            30,
+            523,
+            549
+          ],
+          [
+            26,
+            409,
+            435
+          ],
+          [
+            27,
+            424,
+            450
+          ],
+          [
+            5,
+            48,
+            54
+          ],
+          [
+            15,
+            244,
+            253
+          ],
+          [
+            23,
+            373,
+            399
+          ],
+          [
+            15,
+            221,
+            230
+          ],
+          [
+            29,
+            494,
+            520
+          ],
+          [
+            9,
+            169,
+            175
+          ],
+          [
+            9,
+            164,
+            170
+          ],
+          [
+            5,
+            56,
+            62
+          ],
+          [
+            21,
+            323,
+            348
+          ],
+          [
+            7,
+            115,
+            121
+          ],
+          [
+            11,
+            190,
+            199
+          ],
+          [
+            4,
+            28,
+            34
+          ],
+          [
+            7,
+            128,
+            134
+          ],
+          [
+            2,
+            3,
+            7
+          ],
+          [
+            30,
+            554,
+            580
+          ],
+          [
+            16,
+            261,
+            275
+          ],
+          [
+            11,
+            197,
+            206
+          ],
+          [
+            5,
+            47,
+            53
+          ],
+          [
+            5,
+            40,
+            46
+          ],
+          [
+            30,
+            570,
+            596
+          ],
+          [
+            7,
+            110,
+            116
+          ],
+          [
+            8,
+            152,
+            158
+          ],
+          [
+            8,
+            144,
+            150
+          ],
+          [
+            28,
+            485,
+            511
+          ],
+          [
+            2,
+            4,
+            8
+          ],
+          [
+            16,
+            259,
+            273
+          ],
+          [
+            23,
+            381,
+            407
+          ],
+          [
+            15,
+            251,
+            260
+          ],
+          [
+            5,
+            44,
+            50
+          ],
+          [
+            22,
+            331,
+            356
+          ],
+          [
+            5,
+            35,
+            41
+          ],
+          [
+            27,
+            421,
+            447
+          ],
+          [
+            22,
+            336,
+            361
+          ],
+          [
+            18,
+            276,
+            293
+          ],
+          [
+            20,
+            305,
+            330
+          ],
+          [
+            18,
+            273,
+            289
+          ],
+          [
+            5,
+            76,
+            82
+          ],
+          [
+            22,
+            330,
+            355
+          ],
+          [
+            17,
+            269,
+            283
+          ],
+          [
+            18,
+            280,
+            297
+          ],
+          [
+            15,
+            226,
+            235
+          ],
+          [
+            28,
+            468,
+            494
+          ],
+          [
+            30,
+            581,
+            607
+          ],
+          [
+            7,
+            137,
+            143
+          ],
+          [
+            23,
+            353,
+            378
+          ],
+          [
+            19,
+            294,
+            319
+          ],
+          [
+            3,
+            11,
+            15
+          ],
+          [
+            23,
+            380,
+            406
+          ],
+          [
+            27,
+            422,
+            448
+          ],
+          [
+            13,
+            206,
+            214
+          ],
+          [
+            28,
+            453,
+            479
+          ],
+          [
+            7,
+            95,
+            101
+          ],
+          [
+            30,
+            568,
+            594
+          ],
+          [
+            14,
+            220,
+            228
+          ],
+          [
+            11,
+            182,
+            190
+          ],
+          [
+            28,
+            443,
+            469
+          ],
+          [
+            28,
+            477,
+            503
+          ],
+          [
+            18,
+            274,
+            291
+          ],
+          [
+            30,
+            538,
+            564
+          ],
+          [
+            27,
+            428,
+            454
+          ],
+          [
+            5,
+            67,
+            73
+          ],
+          [
+            28,
+            481,
+            507
+          ],
+          [
+            28,
+            470,
+            496
+          ],
+          [
+            30,
+            543,
+            569
+          ],
+          [
+            28,
+            459,
+            485
+          ],
+          [
+            7,
+            109,
+            115
+          ],
+          [
+            15,
+            223,
+            232
+          ],
+          [
+            15,
+            238,
+            247
+          ],
+          [
+            30,
+            567,
+            593
+          ],
+          [
+            8,
+            148,
+            154
+          ],
+          [
+            23,
+            351,
+            376
+          ],
+          [
+            11,
+            186,
+            194
+          ],
+          [
+            28,
+            442,
+            468
+          ],
+          [
+            5,
+            46,
+            52
+          ],
+          [
+            23,
+            372,
+            398
+          ],
+          [
+            19,
+            299,
+            324
+          ],
+          [
+            28,
+            454,
+            480
+          ],
+          [
+            17,
+            263,
+            277
+          ],
+          [
+            28,
+            430,
+            456
+          ],
+          [
+            21,
+            313,
+            338
+          ],
+          [
+            13,
+            208,
+            216
+          ],
+          [
+            19,
+            288,
+            306
+          ],
+          [
+            23,
+            375,
+            401
+          ],
+          [
+            7,
+            141,
+            147
+          ],
+          [
+            30,
+            509,
+            535
+          ],
+          [
+            11,
+            195,
+            204
+          ],
+          [
+            29,
+            499,
+            525
+          ],
+          [
+            19,
+            304,
+            315
+          ],
+          [
+            22,
+            339,
+            364
+          ],
+          [
+            30,
+            540,
+            566
+          ],
+          [
+            19,
+            298,
+            323
+          ],
+          [
+            11,
+            187,
+            195
+          ],
+          [
+            30,
+            532,
+            558
+          ],
+          [
+            11,
+            188,
+            197
+          ],
+          [
+            30,
+            536,
+            562
+          ],
+          [
+            8,
+            156,
+            162
+          ],
+          [
+            5,
+            51,
+            57
+          ],
+          [
+            15,
+            222,
+            231
+          ],
+          [
+            30,
+            556,
+            582
+          ],
+          [
+            28,
+            483,
+            509
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            16,
+            255,
+            269
+          ],
+          [
+            11,
+            192,
+            201
+          ],
+          [
+            7,
+            104,
+            110
+          ],
+          [
+            19,
+            292,
+            317
+          ],
+          [
+            21,
+            322,
+            347
+          ],
+          [
+            23,
+            365,
+            390
+          ],
+          [
+            4,
+            24,
+            28
+          ],
+          [
+            23,
+            366,
+            391
+          ],
+          [
+            25,
+            404,
+            430
+          ],
+          [
+            15,
+            241,
+            250
+          ],
+          [
+            30,
+            565,
+            591
+          ],
+          [
+            11,
+            193,
+            202
+          ],
+          [
+            30,
+            535,
+            561
+          ],
+          [
+            16,
+            262,
+            276
+          ],
+          [
+            5,
+            69,
+            75
+          ],
+          [
+            15,
+            253,
+            262
+          ],
+          [
+            10,
+            177,
+            184
+          ],
+          [
+            15,
+            245,
+            254
+          ],
+          [
+            15,
+            224,
+            233
+          ],
+          [
+            23,
+            377,
+            403
+          ],
+          [
+            27,
+            423,
+            449
+          ],
+          [
+            9,
+            165,
+            171
+          ],
+          [
+            23,
+            358,
+            383
+          ],
+          [
+            29,
+            498,
+            524
+          ],
+          [
+            30,
+            528,
+            554
+          ],
+          [
+            11,
+            196,
+            205
+          ]
+        ],
+        "config": {
+          "input_size": 640,
+          "levels": [
+            0,
+            1
+          ],
+          "temperature": 2.0,
+          "background_scale": 2.0,
+          "minimum_foreground": 1,
+          "minimum_background": 4,
+          "match_iou": 0.5,
+          "reference_conf": 0.05,
+          "reference_iou": 0.1,
+          "teacher_conf": 0.25,
+          "teacher_iou": 0.5,
+          "rho": 0.5,
+          "target_clip": 8.0,
+          "smooth_l1_beta": 1.0
+        },
+        "student_evidence_base_mean": 0.034526340663433075,
+        "student_evidence_base_min": -0.34877467155456543,
+        "student_evidence_base_max": 0.45412886142730713,
+        "student_evidence_base_sd": 0.10442183166742325,
+        "student_evidence_selected_mean": 0.03149440139532089,
+        "student_evidence_selected_sd": 0.09938978403806686,
+        "teacher_evidence_base_mean": 3.533555269241333,
+        "teacher_evidence_base_min": -1.4433832168579102,
+        "teacher_evidence_base_max": 7.389289855957031,
+        "teacher_evidence_base_sd": 1.479191780090332,
+        "teacher_evidence_selected_mean": 3.508401393890381,
+        "teacher_evidence_selected_sd": 1.4273093938827515,
+        "reference_evidence_base_mean": 3.195197343826294,
+        "reference_evidence_base_min": -1.3603625297546387,
+        "reference_evidence_base_max": 8.378501892089844,
+        "reference_evidence_base_sd": 1.4245591163635254,
+        "reference_evidence_selected_mean": 3.161281108856201,
+        "reference_evidence_selected_sd": 1.3753979206085205,
+        "quality_base_mean": 0.04255427047610283,
+        "quality_base_min": 0.0,
+        "quality_base_max": 0.6169666051864624,
+        "quality_base_sd": 0.0905330553650856,
+        "quality_selected_mean": 0.04338867589831352,
+        "quality_selected_sd": 0.0854211151599884,
+        "target_binary_entropy_selected": 0.17806746065616608,
+        "target_gap_to_positive_selected": 0.06557983160018921,
+        "target_clipped_count": 0,
+        "batch": 30,
+        "epoch": 0,
+        "native_total": 221.88894653320312,
+        "kd_weight": 0.1,
+        "weighted_kd_total": 2.6366191864013673,
+        "total_loss": 224.5255584716797,
+        "optimizer_updates": 23,
+        "time_seconds": 32.56810164451599,
+        "student_files": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/04645.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01851.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01671.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/07817.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12025.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05012.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12431.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03125.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06872.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15817.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/09429.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15702.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/08348.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/11423.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14989.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05996.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/11777.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06653.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10434.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05252.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12030.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00735.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03310.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14706.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06045.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02012.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01196.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00646.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15185.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03325.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12229.jpg",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10460.jpg"
+        ]
+      },
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5770.0,
+      "resources": {
+        "gpu_ids": [
+          4
+        ],
+        "cuda_pid_counts": {
+          "4": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "4": 6304
+        },
+        "peak_rss_mib": 28753
+      },
+      "seconds": 35.325910806655884,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/canary_paired_random_s123_attempt1/weights/last.pt",
+      "official_test_accessed": false,
+      "single_seed_exploratory": true
+    }
+  },
+  "state": {
+    "leases": {
+      "oev1_random_full_s42-66b55165489e": {
+        "admission": {
+          "active_gpus_after": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "per_gpu": {
+            "2": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 10000
+            }
+          },
+          "project_rss_reserved_after_mib": 196608
+        },
+        "bound_at": 1788708272.2022133,
+        "created_at": 1788708271.8867838,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8300,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          2
+        ],
+        "job_id": "oev1_random_full_s42",
+        "job_pid": 975933,
+        "kind": "train",
+        "lease_id": "oev1_random_full_s42-66b55165489e",
+        "observed_cuda_pids": [
+          975949
+        ],
+        "owner_pid": 975933,
+        "peak_cuda_pid_counts": {
+          "2": 1
+        },
+        "peak_rss_mib": 28825,
+        "per_gpu_peak_vram_mib": {
+          "2": 7632
+        },
+        "profiled_second_train": false
+      },
+      "oev1_random_parallel_full_s0-51fc745c6caf": {
+        "admission": {
+          "active_gpus_after": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "per_gpu": {
+            "2": {
+              "project_cuda_processes_after": 2,
+              "project_vram_reserved_after_mib": 16600
+            }
+          },
+          "project_rss_reserved_after_mib": 196608
+        },
+        "bound_at": 1788710323.9864252,
+        "created_at": 1788710323.35886,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8300,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          2
+        ],
+        "job_id": "oev1_random_parallel_full_s0",
+        "job_pid": 1154629,
+        "kind": "train",
+        "lease_id": "oev1_random_parallel_full_s0-51fc745c6caf",
+        "observed_cuda_pids": [
+          1154725
+        ],
+        "owner_pid": 1154629,
+        "peak_cuda_pid_counts": {
+          "2": 1
+        },
+        "peak_rss_mib": 28785,
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "profiled_second_train": true
+      },
+      "rgbir_oev1_expand_full_paired_s0_attempt1-7f1297f1b60b": {
+        "admission": {
+          "active_gpus_after": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "per_gpu": {
+            "5": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 10000
+            }
+          },
+          "project_rss_reserved_after_mib": 197777
+        },
+        "bound_at": 1788695303.9364011,
+        "created_at": 1788695303.598571,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8300,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          5
+        ],
+        "job_id": "rgbir_oev1_expand_full_paired_s0_attempt1",
+        "job_pid": 3743513,
+        "kind": "train",
+        "lease_id": "rgbir_oev1_expand_full_paired_s0_attempt1-7f1297f1b60b",
+        "observed_cuda_pids": [
+          3743565
+        ],
+        "owner_pid": 3743513,
+        "peak_cuda_pid_counts": {
+          "5": 1
+        },
+        "peak_rss_mib": 28810,
+        "per_gpu_peak_vram_mib": {
+          "5": 7632
+        },
+        "profiled_second_train": false
+      },
+      "rgbir_oev1_expand_full_weight0_s123_attempt1-92f76d31e647": {
+        "admission": {
+          "active_gpus_after": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "per_gpu": {
+            "6": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 10000
+            }
+          },
+          "project_rss_reserved_after_mib": 197816
+        },
+        "bound_at": 1788697520.9293063,
+        "created_at": 1788697520.5640275,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 49152,
+        "expected_vram_mib": 10000,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          6
+        ],
+        "job_id": "rgbir_oev1_expand_full_weight0_s123_attempt1",
+        "job_pid": 3966414,
+        "kind": "train",
+        "lease_id": "rgbir_oev1_expand_full_weight0_s123_attempt1-92f76d31e647",
+        "observed_cuda_pids": [
+          3966512
+        ],
+        "owner_pid": 3966414,
+        "peak_cuda_pid_counts": {
+          "6": 1
+        },
+        "peak_rss_mib": 28800,
+        "per_gpu_peak_vram_mib": {
+          "6": 7632
+        },
+        "profiled_second_train": false
+      },
+      "rgbir_oev1_full_weight0_s42_attempt1-6a1c47384636": {
+        "admission": {
+          "active_gpus_after": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "per_gpu": {
+            "4": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 10000
+            }
+          },
+          "project_rss_reserved_after_mib": 197636
+        },
+        "bound_at": 1788674133.3698487,
+        "created_at": 1788674132.311817,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 49152,
+        "expected_vram_mib": 10000,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          4
+        ],
+        "job_id": "rgbir_oev1_full_weight0_s42_attempt1",
+        "job_pid": 1564095,
+        "kind": "train",
+        "lease_id": "rgbir_oev1_full_weight0_s42_attempt1-6a1c47384636",
+        "observed_cuda_pids": [
+          1564206
+        ],
+        "owner_pid": 1564095,
+        "peak_cuda_pid_counts": {
+          "4": 1
+        },
+        "peak_rss_mib": 28898,
+        "per_gpu_peak_vram_mib": {
+          "4": 7632
+        },
+        "profiled_second_train": false
+      }
+    },
+    "policy": {
+      "formal_trains_per_gpu_default": 1,
+      "host_rss_admission_mib": 245760,
+      "host_rss_hard_mib": 307200,
+      "max_active_gpus": 3,
+      "max_cuda_processes_per_gpu": 2,
+      "project_vram_fraction_lt": 0.7
+    },
+    "schema": "jstars-project-resource-leases-v1"
+  },
+  "usage": {
+    "active_gpus": [
+      2,
+      4,
+      5,
+      6
+    ],
+    "reserved_vram_mib": {
+      "2": 16600,
+      "5": 8300,
+      "6": 10000,
+      "4": 10000
+    },
+    "reserved_cuda_processes": {
+      "2": 2,
+      "5": 1,
+      "6": 1,
+      "4": 1
+    },
+    "effective_vram_mib": {
+      "2": 16600,
+      "5": 8300,
+      "6": 10000,
+      "4": 10000
+    },
+    "effective_cuda_processes": {
+      "2": 2,
+      "5": 1,
+      "6": 1,
+      "4": 1
+    },
+    "formal_trains": {
+      "2": 2,
+      "5": 1,
+      "6": 1,
+      "4": 1
+    },
+    "actual_vram_mib": {
+      "2": 13936,
+      "4": 7632,
+      "5": 7632,
+      "6": 7632
+    },
+    "actual_cuda_pids": {
+      "2": 2,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "project_rss_mib": 143694,
+    "reserved_rss_mib": 196608,
+    "unmaterialized_rss_mib": 52914,
+    "effective_rss_mib": 196608
+  },
+  "gpus": {
+    "0": {
+      "memory_free_mib": 4188,
+      "memory_used_mib": 19896,
+      "memory_total_mib": 24564
+    },
+    "1": {
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564
+    },
+    "2": {
+      "memory_free_mib": 10109,
+      "memory_used_mib": 13975,
+      "memory_total_mib": 24564
+    },
+    "3": {
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564
+    },
+    "4": {
+      "memory_free_mib": 16430,
+      "memory_used_mib": 7654,
+      "memory_total_mib": 24564
+    },
+    "5": {
+      "memory_free_mib": 16430,
+      "memory_used_mib": 7654,
+      "memory_total_mib": 24564
+    },
+    "6": {
+      "memory_free_mib": 16429,
+      "memory_used_mib": 7655,
+      "memory_total_mib": 24564
+    },
+    "7": {
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564
+    }
+  },
+  "cuda_processes": [
+    {
+      "gpu": 0,
+      "pid": 1070544,
+      "used_mib": 19886
+    },
+    {
+      "gpu": 2,
+      "pid": 975949,
+      "used_mib": 7632
+    },
+    {
+      "gpu": 2,
+      "pid": 1154725,
+      "used_mib": 6304
+    },
+    {
+      "gpu": 4,
+      "pid": 1564206,
+      "used_mib": 7632
+    },
+    {
+      "gpu": 5,
+      "pid": 3743565,
+      "used_mib": 7632
+    },
+    {
+      "gpu": 6,
+      "pid": 3966512,
+      "used_mib": 7632
+    }
+  ],
+  "processes": {
+    "975898": {
+      "ppid": 975897,
+      "rss_mib": 11,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/random_worker.py "
+    },
+    "975933": {
+      "ppid": 975898,
+      "rss_mib": 23,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id oev1_random_full_s42 --kind train --candidate-gpu 2 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 --formal-train -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "975949": {
+      "ppid": 975933,
+      "rss_mib": 9009,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976654": {
+      "ppid": 975949,
+      "rss_mib": 1901,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976660": {
+      "ppid": 975949,
+      "rss_mib": 1912,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976664": {
+      "ppid": 975949,
+      "rss_mib": 1895,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976668": {
+      "ppid": 975949,
+      "rss_mib": 1881,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976679": {
+      "ppid": 975949,
+      "rss_mib": 1511,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976683": {
+      "ppid": 975949,
+      "rss_mib": 1511,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976687": {
+      "ppid": 975949,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976692": {
+      "ppid": 975949,
+      "rss_mib": 1511,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976699": {
+      "ppid": 975949,
+      "rss_mib": 1511,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976704": {
+      "ppid": 975949,
+      "rss_mib": 1511,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976709": {
+      "ppid": 975949,
+      "rss_mib": 1511,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "976713": {
+      "ppid": 975949,
+      "rss_mib": 1511,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1 --arm paired_random --seed 42 "
+    },
+    "1149860": {
+      "ppid": 1149858,
+      "rss_mib": 12,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_concurrency_20260906/parallel_seed_worker.py --seed 0 --gpu 2 "
+    },
+    "1149862": {
+      "ppid": 1149861,
+      "rss_mib": 12,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_concurrency_20260906/parallel_seed_worker.py --seed 123 --gpu 4 "
+    },
+    "1154629": {
+      "ppid": 1149860,
+      "rss_mib": 17,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id oev1_random_parallel_full_s0 --kind train --candidate-gpu 2 --expected-vram-mib 8300 --expected-rss-mib 32768 --free-safety-mib 2048 --formal-train --profiled-second-train -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1154725": {
+      "ppid": 1154629,
+      "rss_mib": 8826,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156719": {
+      "ppid": 1154725,
+      "rss_mib": 1931,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156723": {
+      "ppid": 1154725,
+      "rss_mib": 1988,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156734": {
+      "ppid": 1154725,
+      "rss_mib": 1930,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156742": {
+      "ppid": 1154725,
+      "rss_mib": 1931,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156779": {
+      "ppid": 1154725,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156784": {
+      "ppid": 1154725,
+      "rss_mib": 1513,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156790": {
+      "ppid": 1154725,
+      "rss_mib": 1513,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156797": {
+      "ppid": 1154725,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156803": {
+      "ppid": 1154725,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156808": {
+      "ppid": 1154725,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156813": {
+      "ppid": 1154725,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1156817": {
+      "ppid": 1154725,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_oev1_random_20260906/release_v1/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1 --arm paired_random --seed 0 "
+    },
+    "1564095": {
+      "ppid": 2654180,
+      "rss_mib": 19,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id rgbir_oev1_full_weight0_s42_attempt1 --kind train --candidate-gpu 4 --gpu-count 1 --cuda-processes-per-gpu 1 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1564206": {
+      "ppid": 1564095,
+      "rss_mib": 8979,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565317": {
+      "ppid": 1564206,
+      "rss_mib": 1918,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565321": {
+      "ppid": 1564206,
+      "rss_mib": 1920,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565327": {
+      "ppid": 1564206,
+      "rss_mib": 1917,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565331": {
+      "ppid": 1564206,
+      "rss_mib": 1918,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565340": {
+      "ppid": 1564206,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565345": {
+      "ppid": 1564206,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565349": {
+      "ppid": 1564206,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565355": {
+      "ppid": 1564206,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565360": {
+      "ppid": 1564206,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565364": {
+      "ppid": 1564206,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565369": {
+      "ppid": 1564206,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "1565373": {
+      "ppid": 1564206,
+      "rss_mib": 1514,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1 --arm weight0 "
+    },
+    "3743513": {
+      "ppid": 3837448,
+      "rss_mib": 20,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id rgbir_oev1_expand_full_paired_s0_attempt1 --kind train --candidate-gpu 5 --gpu-count 1 --cuda-processes-per-gpu 1 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3743565": {
+      "ppid": 3743513,
+      "rss_mib": 8961,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744531": {
+      "ppid": 3743565,
+      "rss_mib": 1911,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744536": {
+      "ppid": 3743565,
+      "rss_mib": 1903,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744540": {
+      "ppid": 3743565,
+      "rss_mib": 1908,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744545": {
+      "ppid": 3743565,
+      "rss_mib": 1909,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744555": {
+      "ppid": 3743565,
+      "rss_mib": 1509,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744562": {
+      "ppid": 3743565,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744568": {
+      "ppid": 3743565,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744572": {
+      "ppid": 3743565,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744577": {
+      "ppid": 3743565,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744581": {
+      "ppid": 3743565,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744585": {
+      "ppid": 3743565,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3744589": {
+      "ppid": 3743565,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1 --arm paired --seed 0 "
+    },
+    "3966414": {
+      "ppid": 3837450,
+      "rss_mib": 20,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id rgbir_oev1_expand_full_weight0_s123_attempt1 --kind train --candidate-gpu 6 --gpu-count 1 --cuda-processes-per-gpu 1 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3966512": {
+      "ppid": 3966414,
+      "rss_mib": 8968,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967394": {
+      "ppid": 3966512,
+      "rss_mib": 1905,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967408": {
+      "ppid": 3966512,
+      "rss_mib": 1902,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967412": {
+      "ppid": 3966512,
+      "rss_mib": 1909,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967416": {
+      "ppid": 3966512,
+      "rss_mib": 1999,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967434": {
+      "ppid": 3966512,
+      "rss_mib": 1509,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967439": {
+      "ppid": 3966512,
+      "rss_mib": 1509,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967443": {
+      "ppid": 3966512,
+      "rss_mib": 1508,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967447": {
+      "ppid": 3966512,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967451": {
+      "ppid": 3966512,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967455": {
+      "ppid": 3966512,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967460": {
+      "ppid": 3966512,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    },
+    "3967465": {
+      "ppid": 3966512,
+      "rss_mib": 1510,
+      "cmd": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1 --arm weight0 --seed 123 "
+    }
+  },
+  "runs": {
+    "R0": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 1,
+        "epochs": 200,
+        "optimizer_updates": 64,
+        "update_attempts": 70,
+        "amp_skips": 6,
+        "batches": 70,
+        "selected_objects": 8415,
+        "seconds": 49.416746377944946,
+        "last_kd": 0.8213410377502441
+      },
+      "runtime_ready": {
+        "status": "ready",
+        "arm": "paired_random",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "2",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      },
+      "completion_exists": false,
+      "evaluation_exists": false
+    },
+    "R42": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 11,
+        "epochs": 200,
+        "optimizer_updates": 3273,
+        "update_attempts": 3280,
+        "amp_skips": 7,
+        "batches": 5715,
+        "selected_objects": 694991,
+        "seconds": 2098.3663544654846,
+        "last_kd": 0.20925959944725037
+      },
+      "runtime_ready": {
+        "status": "ready",
+        "arm": "paired_random",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "2",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      },
+      "completion_exists": false,
+      "evaluation_exists": false
+    },
+    "R123": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1",
+      "exists": false,
+      "progress": null,
+      "runtime_ready": null,
+      "completion_exists": false,
+      "evaluation_exists": false
+    },
+    "N42": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 175,
+        "epochs": 200,
+        "optimizer_updates": 49435,
+        "update_attempts": 49460,
+        "amp_skips": 25,
+        "batches": 98075,
+        "selected_objects": 11926844,
+        "seconds": 36236.05905890465,
+        "last_kd": 0.5437690615653992
+      },
+      "runtime_ready": {
+        "status": "ready",
+        "arm": "weight0",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "4",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      },
+      "completion_exists": false,
+      "evaluation_exists": false
+    },
+    "P0": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 65,
+        "epochs": 200,
+        "optimizer_updates": 18539,
+        "update_attempts": 18550,
+        "amp_skips": 11,
+        "batches": 36255,
+        "selected_objects": 4407890,
+        "seconds": 15067.370388031006,
+        "last_kd": 0.1700437366962433
+      },
+      "runtime_ready": {
+        "status": "ready",
+        "arm": "paired",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "5",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      },
+      "completion_exists": false,
+      "evaluation_exists": false
+    },
+    "N123": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 58,
+        "epochs": 200,
+        "optimizer_updates": 16539,
+        "update_attempts": 16550,
+        "amp_skips": 11,
+        "batches": 32255,
+        "selected_objects": 3920565,
+        "seconds": 12853.231899023056,
+        "last_kd": 0.22471760213375092
+      },
+      "runtime_ready": {
+        "status": "ready",
+        "arm": "weight0",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "6",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      },
+      "completion_exists": false,
+      "evaluation_exists": false
+    }
+  }
+}

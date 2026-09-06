@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "arm": "n",
+      "artifact": "initial_student.pt",
+      "exact": true,
+      "rgb_only_strong_excluded": false
+    },
+    {
+      "arm": "n",
+      "artifact": "first_batch.pt",
+      "exact": true,
+      "rgb_only_strong_excluded": false
+    },
+    {
+      "arm": "c_shuffled",
+      "artifact": "initial_student.pt",
+      "exact": true,
+      "rgb_only_strong_excluded": false
+    },
+    {
+      "arm": "c_shuffled",
+      "artifact": "first_batch.pt",
+      "exact": true,
+      "rgb_only_strong_excluded": false
+    },
+    {
+      "arm": "c_shuffled",
+      "artifact": "all_canary_paired_selections",
+      "batches": 30,
+      "exact": true,
+      "fields": [
+        "base_count",
+        "eligible_count",
+        "selected_count",
+        "normalizer",
+        "selected_object_ids",
+        "nominal_dose"
+      ]
+    },
+    {
+      "arm": "c_same_modal",
+      "artifact": "initial_student.pt",
+      "exact": true,
+      "rgb_only_strong_excluded": false
+    },
+    {
+      "arm": "c_same_modal",
+      "artifact": "first_batch.pt",
+      "exact": true,
+      "rgb_only_strong_excluded": true
+    }
+  ],
+  "passed": true,
+  "gpu_used": false
+}

@@ -1,0 +1,23 @@
+{
+  "protocol": "tc_d2_exact_geometry_diagnostic_v1",
+  "purpose": "Single-frame D2 coverage diagnostic; no formal-training coverage claim.",
+  "dataset": "llvip",
+  "split": "fit",
+  "geometry_contract": "geometry_contract_accepted_exact_v1.json",
+  "image_count": 1,
+  "roster": [
+    {
+      "audit_id": "llvip_050001",
+      "stem": "050001",
+      "group": "05",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/050001.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/050001.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/050001.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/050001.jpg",
+      "rgb_labels": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/fit/050001.txt",
+      "ir_labels": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/fit/050001.txt",
+      "geometry_scope": "exact_image_convex_hull_intersection",
+      "independent_point_review": "INDEPENDENT_REVIEW_BATCH2.md"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "protocol": "rgbir_d1_pre_nms_class_agnostic_d2_frozen_anchor_v1",
+  "dataset": "llvip",
+  "split": "train",
+  "population_images": 9619,
+  "sampling": "supplied_frozen_roster",
+  "source_roster": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/geometry/review_evidence_v1/d2_accepted_exact_v1_roster.json",
+  "count": 1,
+  "roster": [
+    {
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/050001.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/050001.jpg",
+      "stem": "050001",
+      "source_group": "05",
+      "split": "train",
+      "rgb_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/fit/050001.txt",
+      "ir_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/fit/050001.txt"
+    }
+  ],
+  "official_test_accessed": false
+}

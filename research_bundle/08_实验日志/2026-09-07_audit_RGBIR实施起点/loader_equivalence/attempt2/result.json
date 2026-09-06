@@ -1,0 +1,1346 @@
+{
+  "status": "PASSED",
+  "started_at": "2026-09-07T02:56:23.082970+08:00",
+  "module_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v4",
+  "gpu_visible": "",
+  "datasets": [
+    {
+      "dataset": "dronevehicle",
+      "train_images": 17990,
+      "samples": [
+        {
+          "dataset_index": 0,
+          "augmentation_seed": 0,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00001.jpg",
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info_original_fields": true
+          },
+          "cpu_rng_continuation_equal": true,
+          "rgb_ir_matrices_equal": true,
+          "pair_info": {
+            "weak_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00001.jpg",
+            "strong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/00001.jpg",
+            "independent_teacher_gt": true,
+            "rgb_matrix": [
+              [
+                -1.0112746953964233,
+                0.0,
+                668.7838745117188
+              ],
+              [
+                0.0,
+                1.0112746953964233,
+                58.11810302734375
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ir_matrix": [
+              [
+                -1.0112746953964233,
+                0.0,
+                668.7838745117188
+              ],
+              [
+                0.0,
+                1.0112746953964233,
+                58.11810302734375
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "original_shape": [
+              512,
+              640
+            ],
+            "output_shape": [
+              640,
+              640
+            ],
+            "geometry_trace": {
+              "rgb": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.0112746953964233,
+                      0.0,
+                      -28.78387451171875
+                    ],
+                    [
+                      0.0,
+                      1.0112746953964233,
+                      58.11810302734375
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ],
+              "ir": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.0112746953964233,
+                      0.0,
+                      -28.78387451171875
+                    ],
+                    [
+                      0.0,
+                      1.0112746953964233,
+                      58.11810302734375
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "raw_gt_geometry": {
+            "rgb": {
+              "raw_gt_count": 9,
+              "output_gt_count": 9,
+              "native_filtered_or_cropped_count": 0,
+              "max_coordinate_error_pixels": 4.550420743498762e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train/00001.txt"
+            },
+            "ir": {
+              "raw_gt_count": 9,
+              "output_gt_count": 9,
+              "native_filtered_or_cropped_count": 0,
+              "max_coordinate_error_pixels": 4.76837158203125e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train/00001.txt"
+            }
+          }
+        },
+        {
+          "dataset_index": 8995,
+          "augmentation_seed": 42,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/08996.jpg",
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info_original_fields": true
+          },
+          "cpu_rng_continuation_equal": true,
+          "rgb_ir_matrices_equal": true,
+          "pair_info": {
+            "weak_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/08996.jpg",
+            "strong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/08996.jpg",
+            "independent_teacher_gt": true,
+            "rgb_matrix": [
+              [
+                -1.236471176147461,
+                0.0,
+                768.5426025390625
+              ],
+              [
+                0.0,
+                1.236471176147461,
+                -6.5306396484375
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ir_matrix": [
+              [
+                -1.236471176147461,
+                0.0,
+                768.5426025390625
+              ],
+              [
+                0.0,
+                1.236471176147461,
+                -6.5306396484375
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "original_shape": [
+              512,
+              640
+            ],
+            "output_shape": [
+              640,
+              640
+            ],
+            "geometry_trace": {
+              "rgb": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.236471176147461,
+                      0.0,
+                      -128.5426025390625
+                    ],
+                    [
+                      0.0,
+                      1.236471176147461,
+                      -6.5306396484375
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ],
+              "ir": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.236471176147461,
+                      0.0,
+                      -128.5426025390625
+                    ],
+                    [
+                      0.0,
+                      1.236471176147461,
+                      -6.5306396484375
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "raw_gt_geometry": {
+            "rgb": {
+              "raw_gt_count": 6,
+              "output_gt_count": 4,
+              "native_filtered_or_cropped_count": 2,
+              "max_coordinate_error_pixels": 1.5497207641601562e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train/08996.txt"
+            },
+            "ir": {
+              "raw_gt_count": 6,
+              "output_gt_count": 4,
+              "native_filtered_or_cropped_count": 2,
+              "max_coordinate_error_pixels": 5.507469177246094e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train/08996.txt"
+            }
+          }
+        },
+        {
+          "dataset_index": 17989,
+          "augmentation_seed": 123,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17990.jpg",
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info_original_fields": true
+          },
+          "cpu_rng_continuation_equal": true,
+          "rgb_ir_matrices_equal": true,
+          "pair_info": {
+            "weak_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17990.jpg",
+            "strong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/17990.jpg",
+            "independent_teacher_gt": true,
+            "rgb_matrix": [
+              [
+                -1.4011988639831543,
+                0.0,
+                789.8623352050781
+              ],
+              [
+                0.0,
+                1.4011988639831543,
+                6.36016845703125
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ir_matrix": [
+              [
+                -1.4011988639831543,
+                0.0,
+                789.8623352050781
+              ],
+              [
+                0.0,
+                1.4011988639831543,
+                6.36016845703125
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "original_shape": [
+              512,
+              640
+            ],
+            "output_shape": [
+              640,
+              640
+            ],
+            "geometry_trace": {
+              "rgb": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.4011988639831543,
+                      0.0,
+                      -149.86233520507812
+                    ],
+                    [
+                      0.0,
+                      1.4011988639831543,
+                      6.36016845703125
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ],
+              "ir": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.4011988639831543,
+                      0.0,
+                      -149.86233520507812
+                    ],
+                    [
+                      0.0,
+                      1.4011988639831543,
+                      6.36016845703125
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "raw_gt_geometry": {
+            "rgb": {
+              "raw_gt_count": 37,
+              "output_gt_count": 23,
+              "native_filtered_or_cropped_count": 14,
+              "max_coordinate_error_pixels": 7.05718994140625e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train/17990.txt"
+            },
+            "ir": {
+              "raw_gt_count": 37,
+              "output_gt_count": 23,
+              "native_filtered_or_cropped_count": 14,
+              "max_coordinate_error_pixels": 7.05718994140625e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train/17990.txt"
+            }
+          }
+        }
+      ],
+      "collate_all_original_fields_equal": {
+        "batch_idx": true,
+        "bboxes": true,
+        "cls": true,
+        "im_file": true,
+        "img": true,
+        "ori_shape": true,
+        "ratio_pad": true,
+        "resized_shape": true,
+        "strong_img": true,
+        "strong_cls": true,
+        "strong_bboxes": true,
+        "strong_batch_idx": true
+      },
+      "status": "PASSED",
+      "cpu_only": true,
+      "test_accessed": false
+    },
+    {
+      "dataset": "llvip",
+      "train_images": 9619,
+      "samples": [
+        {
+          "dataset_index": 0,
+          "augmentation_seed": 0,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020001.jpg",
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info_original_fields": true
+          },
+          "cpu_rng_continuation_equal": true,
+          "rgb_ir_matrices_equal": true,
+          "pair_info": {
+            "weak_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020001.jpg",
+            "strong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/020001.jpg",
+            "independent_teacher_gt": true,
+            "rgb_matrix": [
+              [
+                -0.5056373476982117,
+                0.0,
+                668.7838745117188
+              ],
+              [
+                0.0,
+                0.5056373476982117,
+                58.11810302734375
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ir_matrix": [
+              [
+                -0.5056373476982117,
+                0.0,
+                668.7838745117188
+              ],
+              [
+                0.0,
+                0.5056373476982117,
+                58.11810302734375
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "original_shape": [
+              1024,
+              1280
+            ],
+            "output_shape": [
+              640,
+              640
+            ],
+            "geometry_trace": {
+              "rgb": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.0112746953964233,
+                      0.0,
+                      -28.78387451171875
+                    ],
+                    [
+                      0.0,
+                      1.0112746953964233,
+                      58.11810302734375
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ],
+              "ir": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.0112746953964233,
+                      0.0,
+                      -28.78387451171875
+                    ],
+                    [
+                      0.0,
+                      1.0112746953964233,
+                      58.11810302734375
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "raw_gt_geometry": {
+            "rgb": {
+              "raw_gt_count": 2,
+              "output_gt_count": 2,
+              "native_filtered_or_cropped_count": 0,
+              "max_coordinate_error_pixels": 3.078973787751238e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/fit/020001.txt"
+            },
+            "ir": {
+              "raw_gt_count": 2,
+              "output_gt_count": 2,
+              "native_filtered_or_cropped_count": 0,
+              "max_coordinate_error_pixels": 3.078973787751238e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/fit/020001.txt"
+            }
+          }
+        },
+        {
+          "dataset_index": 4809,
+          "augmentation_seed": 42,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100118.jpg",
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info_original_fields": true
+          },
+          "cpu_rng_continuation_equal": true,
+          "rgb_ir_matrices_equal": true,
+          "pair_info": {
+            "weak_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100118.jpg",
+            "strong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/100118.jpg",
+            "independent_teacher_gt": true,
+            "rgb_matrix": [
+              [
+                -0.6182355880737305,
+                0.0,
+                768.5426025390625
+              ],
+              [
+                0.0,
+                0.6182355880737305,
+                -6.5306396484375
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ir_matrix": [
+              [
+                -0.6182355880737305,
+                0.0,
+                768.5426025390625
+              ],
+              [
+                0.0,
+                0.6182355880737305,
+                -6.5306396484375
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "original_shape": [
+              1024,
+              1280
+            ],
+            "output_shape": [
+              640,
+              640
+            ],
+            "geometry_trace": {
+              "rgb": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.236471176147461,
+                      0.0,
+                      -128.5426025390625
+                    ],
+                    [
+                      0.0,
+                      1.236471176147461,
+                      -6.5306396484375
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ],
+              "ir": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.236471176147461,
+                      0.0,
+                      -128.5426025390625
+                    ],
+                    [
+                      0.0,
+                      1.236471176147461,
+                      -6.5306396484375
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "raw_gt_geometry": {
+            "rgb": {
+              "raw_gt_count": 1,
+              "output_gt_count": 1,
+              "native_filtered_or_cropped_count": 0,
+              "max_coordinate_error_pixels": 2.827540276939544e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/fit/100118.txt"
+            },
+            "ir": {
+              "raw_gt_count": 1,
+              "output_gt_count": 1,
+              "native_filtered_or_cropped_count": 0,
+              "max_coordinate_error_pixels": 2.827540276939544e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/fit/100118.txt"
+            }
+          }
+        },
+        {
+          "dataset_index": 9618,
+          "augmentation_seed": 123,
+          "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180408.jpg",
+          "all_original_fields_equal": {
+            "im_file": true,
+            "ori_shape": true,
+            "resized_shape": true,
+            "ratio_pad": true,
+            "img": true,
+            "cls": true,
+            "bboxes": true,
+            "batch_idx": true,
+            "strong_img": true,
+            "strong_cls": true,
+            "strong_bboxes": true,
+            "strong_batch_idx": true,
+            "pair_info_original_fields": true
+          },
+          "cpu_rng_continuation_equal": true,
+          "rgb_ir_matrices_equal": true,
+          "pair_info": {
+            "weak_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180408.jpg",
+            "strong_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/180408.jpg",
+            "independent_teacher_gt": true,
+            "rgb_matrix": [
+              [
+                -0.7005994319915771,
+                0.0,
+                789.8623352050781
+              ],
+              [
+                0.0,
+                0.7005994319915771,
+                6.36016845703125
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "ir_matrix": [
+              [
+                -0.7005994319915771,
+                0.0,
+                789.8623352050781
+              ],
+              [
+                0.0,
+                0.7005994319915771,
+                6.36016845703125
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "original_shape": [
+              1024,
+              1280
+            ],
+            "output_shape": [
+              640,
+              640
+            ],
+            "geometry_trace": {
+              "rgb": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.4011988639831543,
+                      0.0,
+                      -149.86233520507812
+                    ],
+                    [
+                      0.0,
+                      1.4011988639831543,
+                      6.36016845703125
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ],
+              "ir": [
+                {
+                  "kind": "RandomPerspective",
+                  "matrix": [
+                    [
+                      1.4011988639831543,
+                      0.0,
+                      -149.86233520507812
+                    ],
+                    [
+                      0.0,
+                      1.4011988639831543,
+                      6.36016845703125
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                },
+                {
+                  "kind": "RandomFlip",
+                  "matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      640.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ]
+                }
+              ]
+            }
+          },
+          "raw_gt_geometry": {
+            "rgb": {
+              "raw_gt_count": 2,
+              "output_gt_count": 1,
+              "native_filtered_or_cropped_count": 1,
+              "max_coordinate_error_pixels": 3.600120544433594e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/fit/180408.txt"
+            },
+            "ir": {
+              "raw_gt_count": 2,
+              "output_gt_count": 1,
+              "native_filtered_or_cropped_count": 1,
+              "max_coordinate_error_pixels": 3.600120544433594e-05,
+              "tolerance_pixels": 0.001,
+              "projection_matches_all_output_gt": true,
+              "source_label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/fit/180408.txt"
+            }
+          }
+        }
+      ],
+      "collate_all_original_fields_equal": {
+        "batch_idx": true,
+        "bboxes": true,
+        "cls": true,
+        "im_file": true,
+        "img": true,
+        "ori_shape": true,
+        "ratio_pad": true,
+        "resized_shape": true,
+        "strong_img": true,
+        "strong_cls": true,
+        "strong_bboxes": true,
+        "strong_batch_idx": true
+      },
+      "status": "PASSED",
+      "cpu_only": true,
+      "test_accessed": false
+    }
+  ],
+  "scope": "3 real train samples per dataset plus collate; no optimizer equivalence claim",
+  "finished_at": "2026-09-07T02:56:39.508275+08:00"
+}

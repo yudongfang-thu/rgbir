@@ -1,0 +1,39 @@
+{
+  "branch": "authorized_C_attribution_when_L_not_admissible",
+  "jobs": [
+    {
+      "id": "oev1_content_c_same_modal_s42_a1",
+      "kind": "train",
+      "formal": true,
+      "vram_mib": 8300,
+      "rss_mib": 32768,
+      "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/canary_drone_c_same_modal_s42_attempt1/completion_receipt.json",
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml",
+        "--arm",
+        "c_same_modal",
+        "--seed",
+        "42",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1"
+      ]
+    },
+    {
+      "id": "oev1_content_c_same_modal_eval_s42_a1",
+      "kind": "eval",
+      "vram_mib": 8300,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/evaluate_task_conditional.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml",
+        "--run",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1"
+      ]
+    }
+  ]
+}

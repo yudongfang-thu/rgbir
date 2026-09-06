@@ -1,0 +1,25 @@
+{
+  "mode": "canary",
+  "seed": 42,
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt",
+  "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+  "evaluated_images": 64,
+  "imgsz": 640,
+  "batch": 32,
+  "workers": 4,
+  "split": "val",
+  "endpoint": "fixed_budget_last_ema",
+  "method": "CCLKD-adapted partial LLD+CCL",
+  "teacher_labels_used_by_kd": false,
+  "historical_training_source_not_fully_bound": true,
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/oev1_priority_comparators_20260906/evaluate_cclkd_partial.py",
+    "--seed",
+    "42",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/oev1_comparators_20260906/cclkd_partial_s42_canary_attempt1",
+    "--mode",
+    "canary"
+  ]
+}

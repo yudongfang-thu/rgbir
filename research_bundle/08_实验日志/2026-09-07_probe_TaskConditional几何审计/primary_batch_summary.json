@@ -1,0 +1,104 @@
+{
+  "protocol": "tc_geometry_primary_visual_batch1_v1",
+  "frozen_pairs": 300,
+  "viewed_pairs": 6,
+  "primary_point_pairs": 2,
+  "accepted_pairs": 0,
+  "pending_unviewed_pairs": 294,
+  "geometry_verified": false,
+  "scientific_scope": "Approximate primary visual marks only; numerical residuals are pending independent validation.",
+  "observations": [
+    {
+      "audit_id": "dronevehicle_08323",
+      "dataset": "dronevehicle",
+      "group": "1",
+      "status": "insufficient_observable_spatial_coverage",
+      "independent_review_required": true,
+      "review_status": "pending",
+      "point_count": 0,
+      "formal_geometry_verified": false
+    },
+    {
+      "audit_id": "dronevehicle_01499",
+      "dataset": "dronevehicle",
+      "group": "5-15 (2)",
+      "status": "insufficient_observable_spatial_coverage",
+      "independent_review_required": false,
+      "review_status": "pending",
+      "point_count": 0,
+      "formal_geometry_verified": false
+    },
+    {
+      "audit_id": "dronevehicle_17930",
+      "dataset": "dronevehicle",
+      "group": "zzccvv",
+      "status": "candidate_points_needs_independent_review",
+      "independent_review_required": false,
+      "review_status": "pending",
+      "point_count": 7,
+      "formal_geometry_verified": false,
+      "rgb_quadrants": 4,
+      "ir_quadrants": 4,
+      "p95_error_raw_px": 10.282960940605662,
+      "max_error_raw_px": 12.083045973594572,
+      "uncertainty_raw_px": 3.0,
+      "point_errors_raw_px": [
+        4.242640687119285,
+        3.0,
+        1.4142135623730951,
+        12.083045973594572,
+        2.0,
+        6.0,
+        6.082762530298219
+      ],
+      "p95_at_unaugmented_640_input_px": 10.282960940605662,
+      "max_at_unaugmented_640_input_px": 12.083045973594572
+    },
+    {
+      "audit_id": "llvip_020001",
+      "dataset": "llvip",
+      "group": "02",
+      "status": "candidate_points_needs_independent_review",
+      "independent_review_required": true,
+      "review_status": "pending",
+      "point_count": 7,
+      "formal_geometry_verified": false,
+      "rgb_quadrants": 4,
+      "ir_quadrants": 4,
+      "p95_error_raw_px": 21.4934307967347,
+      "max_error_raw_px": 22.090722034374522,
+      "uncertainty_raw_px": 4.0,
+      "point_errors_raw_px": [
+        14.142135623730951,
+        22.090722034374522,
+        16.1245154965971,
+        14.560219778561036,
+        6.324555320336759,
+        10.0,
+        20.09975124224178
+      ],
+      "p95_at_unaugmented_640_input_px": 10.74671539836735,
+      "max_at_unaugmented_640_input_px": 11.045361017187261
+    },
+    {
+      "audit_id": "llvip_101319",
+      "dataset": "llvip",
+      "group": "10",
+      "status": "viewed_pending_landmark_annotation",
+      "independent_review_required": false,
+      "review_status": "pending",
+      "point_count": 0,
+      "formal_geometry_verified": false
+    },
+    {
+      "audit_id": "llvip_180408",
+      "dataset": "llvip",
+      "group": "18",
+      "status": "viewed_pending_landmark_annotation",
+      "independent_review_required": false,
+      "review_status": "pending",
+      "point_count": 0,
+      "formal_geometry_verified": false
+    }
+  ]
+}
