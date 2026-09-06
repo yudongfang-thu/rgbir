@@ -2,17 +2,18 @@
 
 本仓库用于让外部模型独立诊断一个面向J-STARS的跨模态目标检测项目。研究经历了RGB→SAR历史方法、RGB–IR数据诊断和首版对象判别蒸馏；这里保留正负结果、勘误、源码、协议、图册及可复算的小型证据。
 
-**请先读 [MODEL_REVIEW_GUIDE.md](MODEL_REVIEW_GUIDE.md)，再按 [REVIEW_PROMPT.md](REVIEW_PROMPT.md)独立审计。** 不要把已有分析当作正确答案；请复算指标并核查实现。上传分支为`research/full-evidence-20260906`，旧入口原文保留在[ARCHIVE_README_v1.md](ARCHIVE_README_v1.md)。
+**请先读 [LATEST_RESULTS.md](LATEST_RESULTS.md)（2026-09-06 21:46更新），再读 [MODEL_REVIEW_GUIDE.md](MODEL_REVIEW_GUIDE.md)并按 [REVIEW_PROMPT.md](REVIEW_PROMPT.md)独立审计。** 不要把已有分析当作正确答案；请复算指标并核查实现。上传分支为`research/full-evidence-20260906`，旧入口原文保留在[ARCHIVE_README_v1.md](ARCHIVE_README_v1.md)。
 
 ## 最新状态及判断边界
 
 - **新方法方向是DroneVehicle的IR教师→RGB学生**，训练期使用独立IR标注辅助对象对应/教师质量判断，推理仅RGB。LLVIP也诊断了IR→RGB；VEDAI是RGB→NIR，不能统称热红外。
 - 六个baseline、三个数据集共521对图像的诊断已完成，含逐图/逐目标记录、特征图和配准可视化。配对相似性、教师更强或局部互补都不能直接推出可蒸馏增益。
 - OEv1用对象前景相对局部背景的正确类别证据做选择性蒸馏，方案在运行前冻结。现有paired/weight0×student seed0/42/123正在执行，teacher/reference固定seed42；已测原生数据流固定，seed重复主要覆盖初始化变化。
-- **2026-09-06 08:53:57 +08:00只读快照**：paired42已完成110轮，weight0 0完成21轮，paired123完成20轮；其对应另一臂排队。OS-SSL-IR的shuffled123微调完成50轮。**尚无完整E200终点，不能报告OEv1性能增益**。中间训练CSV的AP=0是禁用验证后的占位。
+- **2026-09-06 21:46 +08:00只读快照**：OEv1的P42/P123/N0已完成E200独立评估，mAP50–95分别为54.658/54.637/54.346；3/6端点、0/3完整同seed配对。N42/P0/N123分别完成135/28/20轮。**还不能报告同代码P−N净收益**；训练CSV占位及最后一轮错位字段不能当作AP。
+- OS-SSL已有3/9微调完成，首次同seed paired123−shuffled123的CSV差为+0.669mAP/+0.495AP50。仍缺独立last评估；旧native检测头初始化混杂和RGB-only SSL对照缺口详见最新分析。
 - 历史协议匹配CMDistill相对新native为−0.349±0.292 mAP百分点（3seed），但不能推广为“所有监督KD都无效”。HNEWA等已有小幅条件差异，需结合配对归因和方差；OS-SSL也有另一条独立证据线，不能用“唯一正例”替代逐协议判断。
 
-最新运行来源见[94只读补采](research_bundle/remote_snapshot_20260906/README.md)。这是带时间戳的审计快照，不是实时仪表盘；旧快照继续保留。
+最新运行来源见[21:46审计](research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/README.md)和[17:30审计](research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/README.md)。[08:53补采](research_bundle/remote_snapshot_20260906/README.md)继续保留。各文件是带时间戳的快照，不是实时仪表盘。
 
 ## 从结论到证据
 

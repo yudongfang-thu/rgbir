@@ -35,10 +35,12 @@ YYYY-MM-DD_<类型>_<短名>/
 
 | 日期 | 条目 | 类型 | 一句话结论 |
 |---|---|---|---|
-| 2026-09-06 | ops_GitHub完整审计包（本包未收录：`2026-09-06_ops_GitHub完整审计包/README.md`） | ops | 整理与上传中：新分支research/full-evidence-20260906，补齐诊断图册、逐目标记录、OEv1代码/协议/三seed运行证据及审计入口 |
-| 2026-09-06 | [train_RGBIR对象判别蒸馏三seed扩展](2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/README.md) | train | 已扩展：GPU4 paired42约89/200；GPU5 weight0 0、GPU6 paired123运行，其配对臂同卡排队；8项调度检查+4canary通过，三seed终点0/6暂无AP |
+| 2026-09-06 | [audit_RGBIR夜间结果与GitHub更新](2026-09-06_audit_RGBIR夜间结果与GitHub更新/README.md) | audit | 21:46：OEv1 P123=54.637/N0=54.346新增，3/6端点但0/3配对；OS-SSL P123−shuffled123 CSV+0.669mAP/+0.495AP50；更新原GitHub分支 |
+| 2026-09-06 | [audit_RGBIR晚间进度与新结果](2026-09-06_audit_RGBIR晚间进度与新结果/README.md) | audit | 17:30：OEv1首个独立端点P42 mAP54.658，历史参照+0.843但0/3完整配对；OS-SSL 2/9完成，证实旧native检测头初始化混杂 |
+| 2026-09-06 | ops_GitHub完整审计包（未收录的来源路径：`2026-09-06_ops_GitHub完整审计包/README.md`） | ops | 已推送并回读核验：research/full-evidence-20260906，803文件/104.1MiB；完整诊断图册、代码/原始结果/94快照及模型审计指南 |
+| 2026-09-06 | [train_RGBIR对象判别蒸馏三seed扩展](2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/README.md) | train | 17:30：P42独立E200 mAP54.658；N42完成61、N0完成162、P123完成151轮；1/6端点、0/3完整配对，详见晚间audit |
 | 2026-09-06 | [train_RGBIR对象判别蒸馏首轮](2026-09-06_train_RGBIR对象判别蒸馏首轮/README.md) | train | 已启动：19项CPU检查+两臂24更新canary通过；94仅GPU4，DroneVehicle paired seed42/E200运行、weight0串行排队；暂无性能结论 |
-| 2026-09-06 | [train_OS-SSL-IR迁移](2026-09-06_train_OS-SSL-IR迁移/README.md) | train | OS-SSL 三臂 SSL 完成（shuffled loss 高 4-8× 后期反超系固定错配可记忆，判读只看下游）；9 微调队列等待并行会话臂完成 |
+| 2026-09-06 | [train_OS-SSL-IR迁移](2026-09-06_train_OS-SSL-IR迁移/README.md) | train | 17:29：2/9微调完成、paired123@103；IR-only42 CSV54.623、shuffled123 CSV53.273；新增native初始化混杂与RGB-only控制缺口，详见晚间audit |
 | 2026-09-06 | [probe_RGBIR数据特性与可迁移知识](2026-09-06_probe_RGBIR数据特性与可迁移知识/README.md) | probe | 已完成：六baseline/521对图；Drone优先前景判别、LLVIP有定位机会、VEDAI为RGB–NIR；12组特征图及3组配准图已落盘 |
 | 2026-09-05 | [audit_跨模态蒸馏全项目复盘](2026-09-05_audit_跨模态蒸馏全项目复盘/README.md) | audit | 完成：FreqMix +9 为错数据集比较（实为 OGSOD 且为负）；HNEWA +12.7pp 系 precision 误作 mAP（真实 paired−shuffled +0.336±0.289）；P2/CGA 依据与实现有误；OS-SSL 有正例，监督 KD 净增益仍弱 |
 | 2026-09-05 | [train_CGKD-W1_native](2026-09-05_train_CGKD-W1_native/README.md) | train | 预注册 CGA-KD 后第一个训练臂：**已完成**：N 53.954±0.356 vs L 53.605±0.332（3 seeds 协议匹配）——现有全量 KD 净负 −0.35，昼夜两桶皆负；门 1 通过 |

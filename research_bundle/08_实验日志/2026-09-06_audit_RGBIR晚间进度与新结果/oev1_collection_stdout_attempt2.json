@@ -1,0 +1,289 @@
+{
+  "started_at_utc": "2026-09-06T09:30:20.449609+00:00",
+  "ended_at_utc": "2026-09-06T09:30:21.421816+00:00",
+  "complete_endpoints": 1,
+  "complete_seed_pairs": 0,
+  "health": [
+    {
+      "seed": 0,
+      "arm": "paired",
+      "endpoint_status": "pending_not_started",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1"
+    },
+    {
+      "seed": 0,
+      "arm": "weight0",
+      "endpoint_status": "pending_training",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 163,
+        "epochs": 200,
+        "optimizer_updates": 46119,
+        "update_attempts": 46140,
+        "amp_skips": 21,
+        "batches": 91435,
+        "selected_objects": 11119735,
+        "seconds": 35363.65658402443,
+        "last_kd": 0.2654171884059906
+      },
+      "ignored_incomplete_csv_rows": 0,
+      "completed_epochs": 162,
+      "first5_train_means": {
+        "train/box_loss": 1.334024,
+        "train/cls_loss": 1.096156,
+        "train/dfl_loss": 1.212284
+      },
+      "last5_train_means": {
+        "train/box_loss": 0.97204,
+        "train/cls_loss": 0.4822,
+        "train/dfl_loss": 1.01613
+      },
+      "csv_all_finite": true,
+      "recent_epoch_seconds": 240.12000000000117,
+      "estimated_remaining_hours_at_recent_rate": 2.5346000000000126,
+      "kd_all": {
+        "native_total": 87.99774477968039,
+        "loss_unweighted": 0.45524033673326997,
+        "weighted_kd_total": 0.0,
+        "total_loss": 87.99774477968039,
+        "selected_count": 120.57251908396947,
+        "quality_selected_mean": 0.1708860082740742,
+        "target_clipped_count": 0.5823336968375137,
+        "teacher_evidence_selected_mean": 3.605898840996795,
+        "student_evidence_selected_mean": 1.5150672052352159,
+        "logged_batches": 917,
+        "selected_fraction_of_base": 0.2722182965952093,
+        "zero_selection_batches": 0,
+        "zero_kd_batches": 0,
+        "numeric_nonfinite": 0
+      },
+      "kd_last5_epochs": {
+        "native_total": 78.91758070320918,
+        "loss_unweighted": 0.37794859039372414,
+        "weighted_kd_total": 0.0,
+        "total_loss": 78.91758070320918,
+        "selected_count": 118.0,
+        "quality_selected_mean": 0.17319091820511326,
+        "target_clipped_count": 0.2413793103448276,
+        "teacher_evidence_selected_mean": 3.5475361018345275,
+        "student_evidence_selected_mean": 1.7218218445777893,
+        "logged_batches": 29,
+        "selected_fraction_of_base": 0.2639821029082774,
+        "zero_selection_batches": 0,
+        "zero_kd_batches": 0,
+        "numeric_nonfinite": 0
+      },
+      "ignored_partial_jsonl_lines": 0
+    },
+    {
+      "seed": 42,
+      "arm": "paired",
+      "endpoint_status": "completed",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56693,
+        "update_attempts": 56720,
+        "amp_skips": 27,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 40169.60675621033,
+        "last_kd": 0.1990199089050293
+      },
+      "ignored_incomplete_csv_rows": 1,
+      "completed_epochs": 199,
+      "first5_train_means": {
+        "train/box_loss": 1.3332600000000001,
+        "train/cls_loss": 1.115328,
+        "train/dfl_loss": 1.173146
+      },
+      "last5_train_means": {
+        "train/box_loss": 0.918732,
+        "train/cls_loss": 0.43441,
+        "train/dfl_loss": 0.963716
+      },
+      "csv_all_finite": true,
+      "recent_epoch_seconds": 201.21999999999971,
+      "estimated_remaining_hours_at_recent_rate": 0.055894444444444365,
+      "kd_all": {
+        "native_total": 84.62780878288329,
+        "loss_unweighted": 0.21534719256118295,
+        "weighted_kd_total": 0.6872232626242591,
+        "total_loss": 85.31503203909834,
+        "selected_count": 120.5748449955713,
+        "quality_selected_mean": 0.17108275652248528,
+        "target_clipped_count": 0.5819309123117803,
+        "teacher_evidence_selected_mean": 3.602091894833993,
+        "student_evidence_selected_mean": 3.01038188699458,
+        "logged_batches": 1129,
+        "selected_fraction_of_base": 0.272087673116629,
+        "zero_selection_batches": 0,
+        "zero_kd_batches": 0,
+        "numeric_nonfinite": 0
+      },
+      "kd_last5_epochs": {
+        "native_total": 74.19868523733956,
+        "loss_unweighted": 0.16720725569341863,
+        "weighted_kd_total": 0.5350632182189397,
+        "total_loss": 74.73374829973493,
+        "selected_count": 131.17857142857142,
+        "quality_selected_mean": 0.16741684744400637,
+        "target_clipped_count": 0.6428571428571429,
+        "teacher_evidence_selected_mean": 3.6339520726885115,
+        "student_evidence_selected_mean": 3.320811246122633,
+        "logged_batches": 28,
+        "selected_fraction_of_base": 0.27844742627549085,
+        "zero_selection_batches": 0,
+        "zero_kd_batches": 0,
+        "numeric_nonfinite": 0
+      },
+      "ignored_partial_jsonl_lines": 0
+    },
+    {
+      "seed": 42,
+      "arm": "weight0",
+      "endpoint_status": "pending_training",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 62,
+        "epochs": 200,
+        "optimizer_updates": 17689,
+        "update_attempts": 17700,
+        "amp_skips": 11,
+        "batches": 34555,
+        "selected_objects": 4200870,
+        "seconds": 12883.128831386566,
+        "last_kd": 0.3778882622718811
+      },
+      "ignored_incomplete_csv_rows": 0,
+      "completed_epochs": 61,
+      "first5_train_means": {
+        "train/box_loss": 1.337066,
+        "train/cls_loss": 1.112974,
+        "train/dfl_loss": 1.214558
+      },
+      "last5_train_means": {
+        "train/box_loss": 1.085866,
+        "train/cls_loss": 0.593574,
+        "train/dfl_loss": 1.071042
+      },
+      "csv_all_finite": true,
+      "recent_epoch_seconds": 224.66000000000022,
+      "estimated_remaining_hours_at_recent_rate": 8.67437222222223,
+      "kd_all": {
+        "native_total": 96.09347146132896,
+        "loss_unweighted": 0.4876810343101107,
+        "weighted_kd_total": 0.0,
+        "total_loss": 96.09347146132896,
+        "selected_count": 121.80459770114942,
+        "quality_selected_mean": 0.17254656238545632,
+        "target_clipped_count": 0.6379310344827587,
+        "teacher_evidence_selected_mean": 3.6031153297972405,
+        "student_evidence_selected_mean": 1.4036306002894523,
+        "logged_batches": 348,
+        "selected_fraction_of_base": 0.27430804972593786,
+        "zero_selection_batches": 0,
+        "zero_kd_batches": 0,
+        "numeric_nonfinite": 0
+      },
+      "kd_last5_epochs": {
+        "native_total": 89.57254791259766,
+        "loss_unweighted": 0.5077453170503888,
+        "weighted_kd_total": 0.0,
+        "total_loss": 89.57254791259766,
+        "selected_count": 119.53571428571429,
+        "quality_selected_mean": 0.18126005519713675,
+        "target_clipped_count": 0.7142857142857143,
+        "teacher_evidence_selected_mean": 3.6854979395866394,
+        "student_evidence_selected_mean": 1.4532719509942191,
+        "logged_batches": 28,
+        "selected_fraction_of_base": 0.28194760340325165,
+        "zero_selection_batches": 0,
+        "zero_kd_batches": 0,
+        "numeric_nonfinite": 0
+      },
+      "ignored_partial_jsonl_lines": 0
+    },
+    {
+      "seed": 123,
+      "arm": "paired",
+      "endpoint_status": "pending_training",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 152,
+        "epochs": 200,
+        "optimizer_updates": 42939,
+        "update_attempts": 42960,
+        "amp_skips": 21,
+        "batches": 85075,
+        "selected_objects": 10347070,
+        "seconds": 35361.92859864235,
+        "last_kd": 0.15516604483127594
+      },
+      "ignored_incomplete_csv_rows": 0,
+      "completed_epochs": 151,
+      "first5_train_means": {
+        "train/box_loss": 1.330436,
+        "train/cls_loss": 1.116988,
+        "train/dfl_loss": 1.162698
+      },
+      "last5_train_means": {
+        "train/box_loss": 0.98632,
+        "train/cls_loss": 0.491558,
+        "train/dfl_loss": 0.988362
+      },
+      "csv_all_finite": true,
+      "recent_epoch_seconds": 296.8,
+      "estimated_remaining_hours_at_recent_rate": 4.039777777777778,
+      "kd_all": {
+        "native_total": 87.12780013984421,
+        "loss_unweighted": 0.22986325675759198,
+        "weighted_kd_total": 0.7344608623914395,
+        "total_loss": 87.86226105214843,
+        "selected_count": 120.5978898007034,
+        "quality_selected_mean": 0.17070088691022445,
+        "target_clipped_count": 0.6025791324736225,
+        "teacher_evidence_selected_mean": 3.60478858623527,
+        "student_evidence_selected_mean": 2.9389895728715163,
+        "logged_batches": 853,
+        "selected_fraction_of_base": 0.27221271066914,
+        "zero_selection_batches": 0,
+        "zero_kd_batches": 0,
+        "numeric_nonfinite": 0
+      },
+      "kd_last5_epochs": {
+        "native_total": 78.50957357472387,
+        "loss_unweighted": 0.18119917141980138,
+        "weighted_kd_total": 0.5798373485433644,
+        "total_loss": 79.08941045300713,
+        "selected_count": 123.17241379310344,
+        "quality_selected_mean": 0.17249576541884193,
+        "target_clipped_count": 0.5517241379310345,
+        "teacher_evidence_selected_mean": 3.5965058967984955,
+        "student_evidence_selected_mean": 3.1527571513735015,
+        "logged_batches": 29,
+        "selected_fraction_of_base": 0.2739053753546507,
+        "zero_selection_batches": 0,
+        "zero_kd_batches": 0,
+        "numeric_nonfinite": 0
+      },
+      "ignored_partial_jsonl_lines": 0
+    },
+    {
+      "seed": 123,
+      "arm": "weight0",
+      "endpoint_status": "pending_not_started",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1"
+    }
+  ],
+  "limits": "Epoch rates are recent-history estimates; fixed E200 endpoints are judged by the unchanged collector, not CSV AP. Full raw KD streams remain at source; local samples are explicitly partial."
+}

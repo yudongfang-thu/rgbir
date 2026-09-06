@@ -1,0 +1,208 @@
+{
+  "timestamp": "2026-09-06T17:31:43.773744+08:00",
+  "device": "cpu",
+  "hashes_generated": false,
+  "training_log_headers": [
+    {
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/w1_native_s42.log",
+      "source_first_bytes": 32768,
+      "selected_lines": [
+        "Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)",
+        "\u001b[34m\u001b[1mengine/trainer: \u001b[0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=32, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=False, classes=None, close_mosaic=0, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml, degrees=0.0, deterministic=True, device=, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=200, erasing=0.0, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.0, hsv_s=0.0, hsv_v=0.0, imgsz=640, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt, momentum=0.937, mosaic=0.0, multi_scale=0.0, name=native_rgb_s42_e200, nbs=64, nms=False, opset=None, optimize=False, optimizer=SGD, overlap_mask=True, patience=0, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s42_e200, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None",
+        "Overriding model.yaml nc=80 with nc=5",
+        "Remapped 3/5 cls head rows from pretrained weights by class name",
+        "Transferred 451/499 items from pretrained weights"
+      ]
+    },
+    {
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/ft_sar_only_s42.log",
+      "source_first_bytes": 32768,
+      "selected_lines": [
+        "TypeError: ERROR ❌️ /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_sar_only.pt references types outside the supported Ultralytics checkpoint format. Use an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'",
+        "Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)",
+        "\u001b[34m\u001b[1mengine/trainer: \u001b[0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=32, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=False, classes=None, close_mosaic=0, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml, degrees=0.0, deterministic=True, device=, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=200, erasing=0.0, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.0, hsv_s=0.0, hsv_v=0.0, imgsz=640, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_sar_only.pt, momentum=0.937, mosaic=0.0, multi_scale=0.0, name=sar_only_rgb_s42_e200, nbs=64, nms=False, opset=None, optimize=False, optimizer=SGD, overlap_mask=True, patience=0, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s42_e200, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None",
+        "Transferred 499/499 items from pretrained weights"
+      ]
+    },
+    {
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/ft_shuffled_s123.log",
+      "source_first_bytes": 32768,
+      "selected_lines": [
+        "TypeError: ERROR ❌️ /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_shuffled.pt references types outside the supported Ultralytics checkpoint format. Use an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'",
+        "Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)",
+        "\u001b[34m\u001b[1mengine/trainer: \u001b[0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=32, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=False, classes=None, close_mosaic=0, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml, degrees=0.0, deterministic=True, device=, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=200, erasing=0.0, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.0, hsv_s=0.0, hsv_v=0.0, imgsz=640, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_shuffled.pt, momentum=0.937, mosaic=0.0, multi_scale=0.0, name=shuffled_rgb_s123_e200, nbs=64, nms=False, opset=None, optimize=False, optimizer=SGD, overlap_mask=True, patience=0, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s123_e200, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=123, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None",
+        "Transferred 499/499 items from pretrained weights"
+      ]
+    }
+  ],
+  "paired": {
+    "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_paired.pt",
+    "checkpoint_keys": [
+      "model",
+      "train_args"
+    ],
+    "nc": 5,
+    "names": {
+      "0": "0",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4"
+    },
+    "model_type": "DetectionModel"
+  },
+  "sar_only": {
+    "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_sar_only.pt",
+    "checkpoint_keys": [
+      "model",
+      "train_args"
+    ],
+    "nc": 5,
+    "names": {
+      "0": "0",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4"
+    },
+    "model_type": "DetectionModel"
+  },
+  "shuffled": {
+    "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_shuffled.pt",
+    "checkpoint_keys": [
+      "model",
+      "train_args"
+    ],
+    "nc": 5,
+    "names": {
+      "0": "0",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4"
+    },
+    "model_type": "DetectionModel"
+  },
+  "nonbackbone_comparisons": {
+    "paired": {
+      "compared_tensors": 259,
+      "different_tensors": []
+    },
+    "sar_only": {
+      "compared_tensors": 259,
+      "different_tensors": []
+    },
+    "shuffled": {
+      "compared_tensors": 259,
+      "different_tensors": []
+    }
+  },
+  "native_pretrain_source": {
+    "source": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "nc": 80,
+    "names": {
+      "0": "person",
+      "1": "bicycle",
+      "2": "car",
+      "3": "motorcycle",
+      "4": "airplane",
+      "5": "bus",
+      "6": "train",
+      "7": "truck",
+      "8": "boat",
+      "9": "traffic light",
+      "10": "fire hydrant",
+      "11": "stop sign",
+      "12": "parking meter",
+      "13": "bench",
+      "14": "bird",
+      "15": "cat",
+      "16": "dog",
+      "17": "horse",
+      "18": "sheep",
+      "19": "cow",
+      "20": "elephant",
+      "21": "bear",
+      "22": "zebra",
+      "23": "giraffe",
+      "24": "backpack",
+      "25": "umbrella",
+      "26": "handbag",
+      "27": "tie",
+      "28": "suitcase",
+      "29": "frisbee",
+      "30": "skis",
+      "31": "snowboard",
+      "32": "sports ball",
+      "33": "kite",
+      "34": "baseball bat",
+      "35": "baseball glove",
+      "36": "skateboard",
+      "37": "surfboard",
+      "38": "tennis racket",
+      "39": "bottle",
+      "40": "wine glass",
+      "41": "cup",
+      "42": "fork",
+      "43": "knife",
+      "44": "spoon",
+      "45": "bowl",
+      "46": "banana",
+      "47": "apple",
+      "48": "sandwich",
+      "49": "orange",
+      "50": "broccoli",
+      "51": "carrot",
+      "52": "hot dog",
+      "53": "pizza",
+      "54": "donut",
+      "55": "cake",
+      "56": "chair",
+      "57": "couch",
+      "58": "potted plant",
+      "59": "bed",
+      "60": "dining table",
+      "61": "toilet",
+      "62": "tv",
+      "63": "laptop",
+      "64": "mouse",
+      "65": "remote",
+      "66": "keyboard",
+      "67": "cell phone",
+      "68": "microwave",
+      "69": "oven",
+      "70": "toaster",
+      "71": "sink",
+      "72": "refrigerator",
+      "73": "book",
+      "74": "clock",
+      "75": "vase",
+      "76": "scissors",
+      "77": "teddy bear",
+      "78": "hair drier",
+      "79": "toothbrush"
+    },
+    "classification_bias_shapes": {
+      "model.23.cv3.0.2.bias": [
+        80
+      ],
+      "model.23.cv3.1.2.bias": [
+        80
+      ],
+      "model.23.cv3.2.2.bias": [
+        80
+      ]
+    }
+  },
+  "clean_paired_bias_shapes": {
+    "model.23.cv3.0.2.bias": [
+      5
+    ],
+    "model.23.cv3.1.2.bias": [
+      5
+    ],
+    "model.23.cv3.2.2.bias": [
+      5
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "stage": "full",
+  "seed": 0,
+  "physical_gpu": 5,
+  "pid": 3837448,
+  "teacher_seed": 42,
+  "reference_seed": 42,
+  "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2",
+  "status": "training",
+  "arm_order": [
+    "weight0",
+    "paired"
+  ],
+  "results": [
+    {
+      "arm": "weight0",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+      "train_exit_code": 0,
+      "status": "completed",
+      "eval_exit_code": 0
+    }
+  ],
+  "updated_at": "2026-09-06T11:48:23.938832+00:00",
+  "active_arm": "paired",
+  "queued_arms": []
+}

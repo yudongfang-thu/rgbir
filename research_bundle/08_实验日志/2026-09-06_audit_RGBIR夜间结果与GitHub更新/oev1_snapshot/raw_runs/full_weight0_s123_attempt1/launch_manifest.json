@@ -1,0 +1,41 @@
+{
+  "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+  "arm": "weight0",
+  "seed": 123,
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py",
+    "--config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+    "--arm",
+    "weight0",
+    "--seed",
+    "123"
+  ],
+  "gpu": [
+    6
+  ],
+  "inputs": {
+    "model": {
+      "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+      "bytes": 5613764
+    },
+    "teacher": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5483610
+    },
+    "reference": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5483610
+    }
+  },
+  "canary_max_updates": null,
+  "teacher_labels_used_by_kd": true,
+  "test_accessed": false,
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115"
+  }
+}

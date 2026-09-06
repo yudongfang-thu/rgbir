@@ -1,0 +1,13 @@
+patched paired
+patched sar_only
+patched shuffled
+{"engineering_status": "ok", "non_backbone_template_sha256": "68a8277acf4e3d7b30172bcfafe87a1035f3af4b5ea2e9c5a0e53dbcb6885df9", "output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_paired.pt", "strict_backbone_tensors": 240}
+{"engineering_status": "ok", "non_backbone_template_sha256": "68a8277acf4e3d7b30172bcfafe87a1035f3af4b5ea2e9c5a0e53dbcb6885df9", "output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_sar_only.pt", "strict_backbone_tensors": 240}
+{"engineering_status": "ok", "non_backbone_template_sha256": "68a8277acf4e3d7b30172bcfafe87a1035f3af4b5ea2e9c5a0e53dbcb6885df9", "output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_shuffled.pt", "strict_backbone_tensors": 240}
+-rw-rw-r-- 1 yudongfang yudongfang 10579937 Sep  6 07:38 /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_paired.pt
+-rw-rw-r-- 1 yudongfang yudongfang 10580947 Sep  6 07:38 /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_sar_only.pt
+-rw-rw-r-- 1 yudongfang yudongfang 10580947 Sep  6 07:38 /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_shuffled.pt
+/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_paired.yaml:model: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_paired.pt
+/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_sar_only.yaml:model: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_sar_only.pt
+/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/protocol_shuffled.yaml:model: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_shuffled.pt
+PIPELINE_W2_PREP_DONE

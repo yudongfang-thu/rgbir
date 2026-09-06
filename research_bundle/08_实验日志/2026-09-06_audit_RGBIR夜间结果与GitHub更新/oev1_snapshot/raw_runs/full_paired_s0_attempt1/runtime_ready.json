@@ -1,0 +1,22 @@
+{
+  "status": "ready",
+  "arm": "paired",
+  "train_images": 17990,
+  "val_images": 1469,
+  "train_batches": 563,
+  "batch": 32,
+  "workers": 4,
+  "cuda_visible_devices": "5",
+  "student_only_state": true,
+  "frozen_models_outside_optimizer": true,
+  "amp": true,
+  "class_names": {
+    "0": "car",
+    "1": "freight car",
+    "2": "truck",
+    "3": "bus",
+    "4": "van"
+  },
+  "teacher_labels_used_by_kd": true,
+  "student_native_gt_only": true
+}
