@@ -1,5 +1,7 @@
 # 提请外部审计员仲裁的七个问题
 
+> 历史问题快照：这些问题保留研究过程，部分立场已被后来诊断修订。当前审计请优先使用[REVIEW_PROMPT.md](REVIEW_PROMPT.md)和[MODEL_REVIEW_GUIDE.md](MODEL_REVIEW_GUIDE.md)。原N_llvip文件名存在历史误名，实际数据集请读取JSON的dataset/data_yaml；这里不把旧立场重新当作结论。
+
 > 这些是我们内部无法自洽、或需要无利益冲突的第二意见的问题。每个问题附了我们目前的立场与相关证据位置，请审查立场是否成立、给出你的独立判断。
 
 ## Q1 · FreqMix 数据集错引结论是否成立

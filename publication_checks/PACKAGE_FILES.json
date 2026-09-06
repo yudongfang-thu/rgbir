@@ -1,0 +1,3215 @@
+{
+  "scope": "All repository files except .git and this inventory itself. File sizes are bytes; original source provenance is recorded separately.",
+  "file_count_excluding_self": 802,
+  "bytes_excluding_self": 109059897,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 107
+    },
+    {
+      "path": "00_project_context/AGENTS.md",
+      "bytes": 6338
+    },
+    {
+      "path": "00_project_context/README.md",
+      "bytes": 7599
+    },
+    {
+      "path": "00_project_context/全项目复盘与研究诊断_20260905.md",
+      "bytes": 31676
+    },
+    {
+      "path": "00_project_context/实验证据对照总表.md",
+      "bytes": 16512
+    },
+    {
+      "path": "00_project_context/方法预注册_CGA-KD_20260905.md",
+      "bytes": 4638
+    },
+    {
+      "path": "00_project_context/配对质量与蒸馏潜力评估_20260905.md",
+      "bytes": 11860
+    },
+    {
+      "path": "01_audit_20260905/analyze_rgbt_snapshot.py",
+      "bytes": 3719
+    },
+    {
+      "path": "01_audit_20260905/audit_manifest.json",
+      "bytes": 5516
+    },
+    {
+      "path": "01_audit_20260905/build_audit_manifest.py",
+      "bytes": 1324
+    },
+    {
+      "path": "01_audit_20260905/canary2_invariant.remote_snapshot.log",
+      "bytes": 10229
+    },
+    {
+      "path": "01_audit_20260905/canonical_notes.md",
+      "bytes": 20220
+    },
+    {
+      "path": "01_audit_20260905/cga_code_review.md",
+      "bytes": 9497
+    },
+    {
+      "path": "01_audit_20260905/collect_rgbt_readonly.py",
+      "bytes": 2436
+    },
+    {
+      "path": "01_audit_20260905/collect_rgbt_records.py",
+      "bytes": 1506
+    },
+    {
+      "path": "01_audit_20260905/history_notes.md",
+      "bytes": 10202
+    },
+    {
+      "path": "01_audit_20260905/README.md",
+      "bytes": 4398
+    },
+    {
+      "path": "01_audit_20260905/replication_notes.md",
+      "bytes": 15239
+    },
+    {
+      "path": "01_audit_20260905/replication_sources.json",
+      "bytes": 191973
+    },
+    {
+      "path": "01_audit_20260905/rgbt_descriptive_analysis.json",
+      "bytes": 13311
+    },
+    {
+      "path": "01_audit_20260905/rgbt_eval_and_code_snapshot.json",
+      "bytes": 96368
+    },
+    {
+      "path": "01_audit_20260905/rgbt_eval_rows.csv",
+      "bytes": 13075
+    },
+    {
+      "path": "01_audit_20260905/rgbt_readonly_snapshot.json",
+      "bytes": 792995
+    },
+    {
+      "path": "01_audit_20260905/rgbt_readonly_snapshot_v2.json",
+      "bytes": 2369726
+    },
+    {
+      "path": "01_audit_20260905/train_cga_kd.remote_snapshot.py",
+      "bytes": 16043
+    },
+    {
+      "path": "01_audit_20260905/ultralytics_trainer.remote_snapshot.py",
+      "bytes": 68580
+    },
+    {
+      "path": "02_raw_results_dronevehicle/L_dronevehicle_seed0_metrics_record.json",
+      "bytes": 637
+    },
+    {
+      "path": "02_raw_results_dronevehicle/L_dronevehicle_seed123_metrics_record.json",
+      "bytes": 641
+    },
+    {
+      "path": "02_raw_results_dronevehicle/L_dronevehicle_seed42_metrics_record.json",
+      "bytes": 641
+    },
+    {
+      "path": "02_raw_results_dronevehicle/L_llvip_seed0_metrics_record.json",
+      "bytes": 625
+    },
+    {
+      "path": "02_raw_results_dronevehicle/L_llvip_seed123_metrics_record.json",
+      "bytes": 630
+    },
+    {
+      "path": "02_raw_results_dronevehicle/L_llvip_seed42_metrics_record.json",
+      "bytes": 627
+    },
+    {
+      "path": "02_raw_results_dronevehicle/N_llvip_seed0_metrics_record.json",
+      "bytes": 606
+    },
+    {
+      "path": "02_raw_results_dronevehicle/N_llvip_seed123_metrics_record.json",
+      "bytes": 609
+    },
+    {
+      "path": "02_raw_results_dronevehicle/N_llvip_seed42_metrics_record.json",
+      "bytes": 607
+    },
+    {
+      "path": "02_raw_results_dronevehicle/native_s42_buckets.json",
+      "bytes": 240
+    },
+    {
+      "path": "02_raw_results_dronevehicle/p2_feature_probe_summary.json",
+      "bytes": 3787
+    },
+    {
+      "path": "02_raw_results_dronevehicle/p3_daynight_summary.json",
+      "bytes": 1106
+    },
+    {
+      "path": "03_freqmix_sources/args_freqmix_gray_s42.yaml",
+      "bytes": 4032
+    },
+    {
+      "path": "03_freqmix_sources/args_freqmix_sar_s42.yaml",
+      "bytes": 4030
+    },
+    {
+      "path": "03_freqmix_sources/args_ogsod_hs_s42.yaml",
+      "bytes": 4023
+    },
+    {
+      "path": "03_freqmix_sources/args_ogsod_native_s42_e400.yaml",
+      "bytes": 1925
+    },
+    {
+      "path": "03_freqmix_sources/chain_freqmix_hs_gp94.sh",
+      "bytes": 489
+    },
+    {
+      "path": "03_freqmix_sources/freqmix_gray_s123_results.csv",
+      "bytes": 78054
+    },
+    {
+      "path": "03_freqmix_sources/freqmix_gray_s42_results.csv",
+      "bytes": 78005
+    },
+    {
+      "path": "03_freqmix_sources/freqmix_sar_s123_results.csv",
+      "bytes": 78047
+    },
+    {
+      "path": "03_freqmix_sources/freqmix_sar_s42_results.csv",
+      "bytes": 78013
+    },
+    {
+      "path": "03_freqmix_sources/freqmix_sign_s123_results.csv",
+      "bytes": 77975
+    },
+    {
+      "path": "03_freqmix_sources/freqmix_sign_s42_results.csv",
+      "bytes": 78041
+    },
+    {
+      "path": "03_freqmix_sources/ogsod_hs_s123_e400_results.csv",
+      "bytes": 78011
+    },
+    {
+      "path": "03_freqmix_sources/ogsod_hs_s42_e400_results.csv",
+      "bytes": 77999
+    },
+    {
+      "path": "03_freqmix_sources/ogsod_native_s123_e400_results.csv",
+      "bytes": 52782
+    },
+    {
+      "path": "03_freqmix_sources/ogsod_native_s42_e400_results.csv",
+      "bytes": 52784
+    },
+    {
+      "path": "03_freqmix_sources/patch_freqmix_hs_arms.py",
+      "bytes": 6641
+    },
+    {
+      "path": "03_freqmix_sources/run_freqmix_hs_gp94.sh",
+      "bytes": 3722
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h1_s0.json",
+      "bytes": 642
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h1_s123.json",
+      "bytes": 646
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h1_s42.json",
+      "bytes": 642
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h1_s42_best.json",
+      "bytes": 530
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h2_s0.json",
+      "bytes": 636
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h2_s123.json",
+      "bytes": 639
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h2_s42.json",
+      "bytes": 639
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h3_s0.json",
+      "bytes": 639
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h3_s123.json",
+      "bytes": 641
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_h3_s42.json",
+      "bytes": 639
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_native_s0.json",
+      "bytes": 638
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_native_s123.json",
+      "bytes": 640
+    },
+    {
+      "path": "04_hnewa_eval_records/drone_native_s42_best.json",
+      "bytes": 527
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h1_s0.json",
+      "bytes": 641
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h1_s123.json",
+      "bytes": 644
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h1_s42.json",
+      "bytes": 642
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h1_s42_best.json",
+      "bytes": 527
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h2_s0.json",
+      "bytes": 636
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h2_s123.json",
+      "bytes": 640
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h2_s42.json",
+      "bytes": 636
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h3_s0.json",
+      "bytes": 637
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h3_s123.json",
+      "bytes": 639
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_h3_s42.json",
+      "bytes": 639
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_native_s0.json",
+      "bytes": 639
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_native_s123.json",
+      "bytes": 642
+    },
+    {
+      "path": "04_hnewa_eval_records/llvip_native_s42_best.json",
+      "bytes": 524
+    },
+    {
+      "path": "05_code/eval_natives.sh",
+      "bytes": 952
+    },
+    {
+      "path": "05_code/eval_rgbt_detector.py",
+      "bytes": 4373
+    },
+    {
+      "path": "05_code/project_resource_guard.py",
+      "bytes": 36204
+    },
+    {
+      "path": "05_code/rgbt_cmdistill_kd.py",
+      "bytes": 11026
+    },
+    {
+      "path": "05_code/rgbt_cmdistill_protocol_drone.yaml",
+      "bytes": 1494
+    },
+    {
+      "path": "05_code/run_cmdistill_adapted_job.sh",
+      "bytes": 2862
+    },
+    {
+      "path": "05_code/train_cga_kd.py",
+      "bytes": 16477
+    },
+    {
+      "path": "05_code/train_native_rgbt.py",
+      "bytes": 2259
+    },
+    {
+      "path": "05_code/train_rgbt_cmdistill.py",
+      "bytes": 11470
+    },
+    {
+      "path": "06_experiment_log/2026-09-05_audit_跨模态蒸馏全项目复盘/README.md",
+      "bytes": 4401
+    },
+    {
+      "path": "06_experiment_log/2026-09-05_P2探针_DroneVehicle特征图/README.md",
+      "bytes": 4385
+    },
+    {
+      "path": "06_experiment_log/2026-09-05_probe_DroneVehicle昼夜分桶/README.md",
+      "bytes": 3430
+    },
+    {
+      "path": "06_experiment_log/2026-09-05_train_CGKD-W1_native/README.md",
+      "bytes": 3479
+    },
+    {
+      "path": "06_experiment_log/2026-09-06_probe_RGBIR数据特性与可迁移知识/README.md",
+      "bytes": 2554
+    },
+    {
+      "path": "06_experiment_log/README.md",
+      "bytes": 3021
+    },
+    {
+      "path": "07_questions_for_auditor.md",
+      "bytes": 4826
+    },
+    {
+      "path": "ARCHIVE_README_v1.md",
+      "bytes": 4221
+    },
+    {
+      "path": "BUNDLE_MANIFEST.json",
+      "bytes": 157322
+    },
+    {
+      "path": "BUNDLE_SCOPE.md",
+      "bytes": 3271
+    },
+    {
+      "path": "MODEL_REVIEW_GUIDE.md",
+      "bytes": 14045
+    },
+    {
+      "path": "publication_checks/independent_recalculation_at_publish.json",
+      "bytes": 5768
+    },
+    {
+      "path": "publication_checks/link_adaptation.json",
+      "bytes": 51841
+    },
+    {
+      "path": "publication_checks/publication_markdown_final.json",
+      "bytes": 422
+    },
+    {
+      "path": "publication_checks/publication_numbers_check.json",
+      "bytes": 5768
+    },
+    {
+      "path": "publication_checks/PUBLICATION_REVIEW.md",
+      "bytes": 4869
+    },
+    {
+      "path": "publication_checks/publication_safety_snapshot3.json",
+      "bytes": 2044
+    },
+    {
+      "path": "publication_checks/publication_tracked_markdown_final.json",
+      "bytes": 1066
+    },
+    {
+      "path": "publication_checks/README.md",
+      "bytes": 1523
+    },
+    {
+      "path": "publication_checks/review_markdown_navigation.py",
+      "bytes": 4674
+    },
+    {
+      "path": "publication_checks/review_publication_numbers.py",
+      "bytes": 3910
+    },
+    {
+      "path": "publication_checks/supplemental_links.json",
+      "bytes": 6137
+    },
+    {
+      "path": "README.md",
+      "bytes": 5783
+    },
+    {
+      "path": "research_bundle/01_文献/RGB-IR_20260905新增/00_方法调研综述.md",
+      "bytes": 7193
+    },
+    {
+      "path": "research_bundle/01_文献/RGB-IR_20260905新增/PAPER_CATALOG.json",
+      "bytes": 12913
+    },
+    {
+      "path": "research_bundle/01_文献/RGB-IR_20260905新增/文献精读笔记_20260905.md",
+      "bytes": 19151
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/EXPERIMENT_AUDIT.md",
+      "bytes": 18981
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/01_PROJECT_PROTOCOL_AND_EVIDENCE.md",
+      "bytes": 7289
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/02_METHODS_AND_IMPLEMENTATION.md",
+      "bytes": 20350
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/03_EXPERIMENT_CATALOG_AND_RESULTS.md",
+      "bytes": 16311
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/04_IDEAS_CLAIMS_AND_DECISIONS.md",
+      "bytes": 10262
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/05_REPRODUCTION_AND_TAKEOVER.md",
+      "bytes": 8389
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/06_EVIDENCE_INDEX.md",
+      "bytes": 6555
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/catalog/remote_results_manifest.csv",
+      "bytes": 52847
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/README.md",
+      "bytes": 4722
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/results/sixiang_anchor_residual_v1_20260722_union_b2_b2e_analysis/sixiang_anchor_residual_union_final.md",
+      "bytes": 4043
+    },
+    {
+      "path": "research_bundle/03_现行工程/ogsod400_clean_protocol/results/sixiang_rgb_attr_v1_20260722_a8_a9_composite/sixiang_rgb_attr_a8_a9_final.md",
+      "bytes": 3513
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/AGENTS.md",
+      "bytes": 5557
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/archive/governance/terminal_analyses/yolo_osssl_v2_spacenet6_full_3seed.json",
+      "bytes": 8051
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/jstars_dataset_exposure_v1.json",
+      "bytes": 1335
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_cclkd_protocol_drone.yaml",
+      "bytes": 1784
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_cclkd_protocol_llvip.yaml",
+      "bytes": 1841
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_cmdistill_protocol_drone.yaml",
+      "bytes": 1446
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_cmdistill_protocol_llvip.yaml",
+      "bytes": 1423
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_cmdistill_vedai_official_fold01.yaml",
+      "bytes": 1905
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_drone_infrared.yaml",
+      "bytes": 1562
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_drone_rgb.yaml",
+      "bytes": 1562
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_llvip_infrared.yaml",
+      "bytes": 1536
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/configs/research/rgbt_llvip_visible.yaml",
+      "bytes": 1536
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/docs/P3_FULL622_LOCKED_RESULTS.md",
+      "bytes": 8434
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/campaign_queue.py",
+      "bytes": 6509
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/evaluate_object_evidence.py",
+      "bytes": 3505
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/expansion_worker.py",
+      "bytes": 11985
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/start_canary.sh",
+      "bytes": 518
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/start_full.sh",
+      "bytes": 514
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/test_object_evidence_loss.py",
+      "bytes": 11050
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/test_paired_rgbir_data.py",
+      "bytes": 7130
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/analyze_rgbt_anchor_gate.py",
+      "bytes": 6401
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/analyze_rgbt_core_gate.py",
+      "bytes": 3878
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/analyze_rgbt_multiseed_gate.py",
+      "bytes": 5589
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/audit_rgbt_datasets.py",
+      "bytes": 32368
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/build_yolo_osssl_manifest.py",
+      "bytes": 2569
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/eval_rgbt_detector.py",
+      "bytes": 6364
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/eval_yolo_detector.py",
+      "bytes": 2198
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/inject_yolo_osssl_backbone.py",
+      "bytes": 3777
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/prepare_rgbt_experiment.py",
+      "bytes": 12911
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py",
+      "bytes": 35401
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/train_rgbt_cclkd.py",
+      "bytes": 11678
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/train_rgbt_cmdistill.py",
+      "bytes": 11193
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/train_rgbt_hnewa_mse.py",
+      "bytes": 20043
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/train_rgbt_kd_detector.py",
+      "bytes": 21348
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/train_rgbt_native_detector.py",
+      "bytes": 6160
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/train_yolo_osssl.py",
+      "bytes": 5844
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/validate_jstars_data_contract.py",
+      "bytes": 18771
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/write_jstars_run_receipt.py",
+      "bytes": 16303
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/__init__.py",
+      "bytes": 434
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/b0_distillation.py",
+      "bytes": 11409
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/cmv_replay.py",
+      "bytes": 5278
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/component_kd.py",
+      "bytes": 39006
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/component_v2.py",
+      "bytes": 14133
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/component_v2_roster.py",
+      "bytes": 924
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/cross_modal_decodability.py",
+      "bytes": 10286
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/data.py",
+      "bytes": 1423
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/data_first_diagnostics.py",
+      "bytes": 19304
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/data_properties.py",
+      "bytes": 16368
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/detection_bootstrap.py",
+      "bytes": 12906
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/ecpt_materializer.py",
+      "bytes": 5567
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/error_complement.py",
+      "bytes": 12379
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/fm_resource_distillation.py",
+      "bytes": 60249
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/foreground_scalar.py",
+      "bytes": 7880
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/fp_method_zoo.py",
+      "bytes": 40327
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/fp_selective_distillation.py",
+      "bytes": 17512
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/injection.py",
+      "bytes": 3748
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/manifest.py",
+      "bytes": 5868
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/model.py",
+      "bytes": 12887
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/p3_ladd.py",
+      "bytes": 7088
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/paired_detection.py",
+      "bytes": 10683
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/quantization.py",
+      "bytes": 22180
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/raw_head_abi.py",
+      "bytes": 8860
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/rgbt_cclkd_kd.py",
+      "bytes": 15153
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/rgbt_cmdistill_kd.py",
+      "bytes": 10768
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/rgbt_hnewa_kd.py",
+      "bytes": 11191
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/rgbt_hnewa_pairing.py",
+      "bytes": 4578
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/stage2.py",
+      "bytes": 18415
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/stage2_checkpoint.py",
+      "bytes": 4477
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/transfer_diagnostic.py",
+      "bytes": 15218
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/transforms.py",
+      "bytes": 7823
+    },
+    {
+      "path": "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/yolo_osssl/yolo.py",
+      "bytes": 7765
+    },
+    {
+      "path": "research_bundle/04_方法演化档案/2026-04~06_LADD主线/LADD_EVOLUTION_AND_EXPERIMENTS.md",
+      "bytes": 18591
+    },
+    {
+      "path": "research_bundle/04_方法演化档案/hub索引文档/DEDUPLICATION_POLICY.md",
+      "bytes": 1888
+    },
+    {
+      "path": "research_bundle/05_实验证据_按服务器/实验证据对照总表.md",
+      "bytes": 16512
+    },
+    {
+      "path": "research_bundle/06_历史工程_只读/LADD_public/docs/experiments/DIRECT400_REGISTERED_SEED_PANEL_FINAL_AUDIT_20260706_CN.md",
+      "bytes": 10777
+    },
+    {
+      "path": "research_bundle/06_历史工程_只读/LADD_public/docs/reports/LADD_PROGRESS_REPORT_POST_RELOAD_20260712_CN.md",
+      "bytes": 24771
+    },
+    {
+      "path": "research_bundle/07_研究分析/RGBIR数据特性与蒸馏方向诊断_20260906.md",
+      "bytes": 24441
+    },
+    {
+      "path": "research_bundle/07_研究分析/全项目复盘与研究诊断_20260905.md",
+      "bytes": 31292
+    },
+    {
+      "path": "research_bundle/07_研究分析/方法预注册_CGA-KD_20260905.md",
+      "bytes": 4638
+    },
+    {
+      "path": "research_bundle/07_研究分析/方法预注册_OS-SSL-IR_20260906.md",
+      "bytes": 2631
+    },
+    {
+      "path": "research_bundle/07_研究分析/配对质量与蒸馏潜力评估_20260905.md",
+      "bytes": 11860
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/analyze_rgbt_snapshot.py",
+      "bytes": 3661
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/audit_manifest.json",
+      "bytes": 5516
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/build_audit_manifest.py",
+      "bytes": 1300
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/canary2_invariant.remote_snapshot.log",
+      "bytes": 10229
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/canonical_notes.md",
+      "bytes": 20220
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/cga_code_review.md",
+      "bytes": 9497
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/collect_rgbt_readonly.py",
+      "bytes": 2381
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/collect_rgbt_records.py",
+      "bytes": 1482
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/history_notes.md",
+      "bytes": 10202
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/README.md",
+      "bytes": 4385
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/replication_notes.md",
+      "bytes": 15239
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/replication_sources.json",
+      "bytes": 188141
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/rgbt_descriptive_analysis.json",
+      "bytes": 13311
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/rgbt_eval_and_code_snapshot.json",
+      "bytes": 96368
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/rgbt_eval_rows.csv",
+      "bytes": 13075
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/rgbt_readonly_snapshot.json",
+      "bytes": 792995
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/rgbt_readonly_snapshot_v2.json",
+      "bytes": 2369726
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/train_cga_kd.remote_snapshot.py",
+      "bytes": 15695
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_audit_跨模态蒸馏全项目复盘/ultralytics_trainer.remote_snapshot.py",
+      "bytes": 67245
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_P2探针_DroneVehicle特征图/p2_feature_probe.py",
+      "bytes": 8567
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_P2探针_DroneVehicle特征图/README.md",
+      "bytes": 4385
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_P2探针_DroneVehicle特征图/summary.json",
+      "bytes": 3606
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_probe_DroneVehicle昼夜分桶/p3_daynight_eval.py",
+      "bytes": 6181
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_probe_DroneVehicle昼夜分桶/README.md",
+      "bytes": 3430
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_probe_DroneVehicle昼夜分桶/summary.json",
+      "bytes": 1047
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_train_CGKD-W1_native/README.md",
+      "bytes": 3479
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-05_train_CGKD-W1_native/train_native_rgbt.py",
+      "bytes": 2202
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/analyze_probe_outputs.py",
+      "bytes": 6483
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/audit_candidate_flags.py",
+      "bytes": 3102
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/build_feature_atlas.py",
+      "bytes": 3744
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/candidate_flag_audit.json",
+      "bytes": 116746
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/collect_dataset_model_inventory.py",
+      "bytes": 6735
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/current_results_notes.md",
+      "bytes": 12691
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/current_results_sources.json",
+      "bytes": 177035
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dataset_model_inventory.json",
+      "bytes": 159532
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dataset_model_inventory.md",
+      "bytes": 9546
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/delivery_verification.json",
+      "bytes": 27297
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/class_names.json",
+      "bytes": 199
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/completion_receipt.json",
+      "bytes": 309
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/diagnostic_overview.pdf",
+      "bytes": 26263
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/diagnostic_overview.png",
+      "bytes": 185078
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/donor_indices.json",
+      "bytes": 8493
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/energy_maps.npz",
+      "bytes": 11389987
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/feature_case_1.png",
+      "bytes": 2595303
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/feature_case_2.png",
+      "bytes": 2550744
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/feature_case_3.png",
+      "bytes": 2855711
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/feature_case_4.png",
+      "bytes": 3170254
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/feature_metrics.csv",
+      "bytes": 239735
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/feature_metrics.json",
+      "bytes": 621770
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/image_metrics.csv",
+      "bytes": 47924
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/image_metrics.json",
+      "bytes": 132280
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/input_manifest.json",
+      "bytes": 11908
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/matched_objects.csv",
+      "bytes": 487827
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/matched_objects.json",
+      "bytes": 1603658
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/prediction_records.json",
+      "bytes": 2089865
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/sample_files.json",
+      "bytes": 202403
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/summary.json",
+      "bytes": 16457
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/evidence_and_method_notes.md",
+      "bytes": 20299
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/class_names.json",
+      "bytes": 57
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/completion_receipt.json",
+      "bytes": 310
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/diagnostic_overview.pdf",
+      "bytes": 26119
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/diagnostic_overview.png",
+      "bytes": 176294
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/donor_indices.json",
+      "bytes": 8493
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/energy_maps.npz",
+      "bytes": 11332300
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/feature_case_1.png",
+      "bytes": 2337129
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/feature_case_2.png",
+      "bytes": 1792139
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/feature_case_3.png",
+      "bytes": 2323558
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/feature_case_4.png",
+      "bytes": 2914833
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/feature_metrics.csv",
+      "bytes": 241499
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/feature_metrics.json",
+      "bytes": 624254
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/image_metrics.csv",
+      "bytes": 49579
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/image_metrics.json",
+      "bytes": 133935
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/input_manifest.json",
+      "bytes": 12038
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/matched_objects.csv",
+      "bytes": 87417
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/matched_objects.json",
+      "bytes": 330466
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/prediction_records.json",
+      "bytes": 506976
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/sample_files.json",
+      "bytes": 202603
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/summary.json",
+      "bytes": 16380
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/make_probe_config.py",
+      "bytes": 798
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/make_registration_panels.py",
+      "bytes": 12776
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/minimal_kd_validation.md",
+      "bytes": 20466
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/observed_feature_diagnosis.md",
+      "bytes": 12371
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/probe_analysis.json",
+      "bytes": 197939
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/probe_config.json",
+      "bytes": 3900
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/probe_review.md",
+      "bytes": 13735
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/probe_rgbir.py",
+      "bytes": 20036
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/PROJECTS_INDEX_RGBIR_PROBE_20260906.md",
+      "bytes": 575
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/PROJECTS_INDEX_RGBIR_PROBE_COMPLETED_20260906.md",
+      "bytes": 1563
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/README.md",
+      "bytes": 7393
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/completion_receipt.json",
+      "bytes": 832
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/dronevehicle_registration.json",
+      "bytes": 3271
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/dronevehicle_registration.pdf",
+      "bytes": 745738
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/dronevehicle_registration.png",
+      "bytes": 2244631
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/llvip_registration.json",
+      "bytes": 3258
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/llvip_registration.pdf",
+      "bytes": 795544
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/llvip_registration.png",
+      "bytes": 2276965
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/local_verification_receipt.json",
+      "bytes": 1502
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/make_registration_panels.py",
+      "bytes": 12776
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/README.md",
+      "bytes": 831
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/vedai_registration.json",
+      "bytes": 3358
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/vedai_registration.pdf",
+      "bytes": 750980
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/vedai_registration.png",
+      "bytes": 1971939
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/class_names.json",
+      "bytes": 199
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/completion_receipt.json",
+      "bytes": 308
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/donor_indices.json",
+      "bytes": 113
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/feature_metrics.csv",
+      "bytes": 2528
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/feature_metrics.json",
+      "bytes": 6227
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/image_metrics.csv",
+      "bytes": 736
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/image_metrics.json",
+      "bytes": 1338
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/input_manifest.json",
+      "bytes": 9331
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/matched_objects.csv",
+      "bytes": 7165
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/matched_objects.json",
+      "bytes": 26136
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/prediction_records.json",
+      "bytes": 32311
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/sample_files.json",
+      "bytes": 2027
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_canary2/summary.json",
+      "bytes": 16147
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/dronevehicle_full.log",
+      "bytes": 11883
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/class_names.json",
+      "bytes": 57
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/completion_receipt.json",
+      "bytes": 307
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/donor_indices.json",
+      "bytes": 113
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/feature_metrics.csv",
+      "bytes": 2470
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/feature_metrics.json",
+      "bytes": 6193
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/image_metrics.csv",
+      "bytes": 747
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/image_metrics.json",
+      "bytes": 1349
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/input_manifest.json",
+      "bytes": 9263
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/matched_objects.csv",
+      "bytes": 594
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/matched_objects.json",
+      "bytes": 1465
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/prediction_records.json",
+      "bytes": 3172
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/sample_files.json",
+      "bytes": 2029
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_canary2/summary.json",
+      "bytes": 16117
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/llvip_full.log",
+      "bytes": 11799
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/probe_rgbir.py",
+      "bytes": 18657
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/probe_rgbir_v2.py",
+      "bytes": 20036
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/run_probe.sh",
+      "bytes": 921
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/run_probe_v2.sh",
+      "bytes": 925
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/class_names.json",
+      "bytes": 305
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/completion_receipt.json",
+      "bytes": 306
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/donor_indices.json",
+      "bytes": 113
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/feature_metrics.csv",
+      "bytes": 2132
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/feature_metrics.json",
+      "bytes": 5927
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/image_metrics.csv",
+      "bytes": 731
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/image_metrics.json",
+      "bytes": 1333
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/input_manifest.json",
+      "bytes": 9612
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/matched_objects.csv",
+      "bytes": 880
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/matched_objects.json",
+      "bytes": 2475
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/prediction_records.json",
+      "bytes": 4084
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/sample_files.json",
+      "bytes": 2257
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_canary2/summary.json",
+      "bytes": 14993
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/remote_execution/vedai_full.log",
+      "bytes": 11588
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/run_probe.sh",
+      "bytes": 925
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/class_names.json",
+      "bytes": 305
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/completion_receipt.json",
+      "bytes": 306
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/diagnostic_overview.pdf",
+      "bytes": 25146
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/diagnostic_overview.png",
+      "bytes": 179572
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/donor_indices.json",
+      "bytes": 4938
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/energy_maps.npz",
+      "bytes": 6789689
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/feature_case_1.png",
+      "bytes": 2129067
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/feature_case_2.png",
+      "bytes": 2262944
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/feature_case_3.png",
+      "bytes": 2219348
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/feature_case_4.png",
+      "bytes": 1633677
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/feature_metrics.csv",
+      "bytes": 122651
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/feature_metrics.json",
+      "bytes": 359066
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/image_metrics.csv",
+      "bytes": 28404
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/image_metrics.json",
+      "bytes": 79343
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/input_manifest.json",
+      "bytes": 11519
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/matched_objects.csv",
+      "bytes": 45353
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/matched_objects.json",
+      "bytes": 176906
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/prediction_records.json",
+      "bytes": 325727
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/sample_files.json",
+      "bytes": 136370
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/summary.json",
+      "bytes": 16215
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/verify_probe_artifacts.py",
+      "bytes": 3403
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/特征图册.md",
+      "bytes": 5866
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_OS-SSL-IR迁移/README.md",
+      "bytes": 2308
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/allocation.json",
+      "bytes": 833
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/analyze_three_seed_endpoints.py",
+      "bytes": 16742
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/audit_running.py",
+      "bytes": 13674
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/canary_comparison_s0_attempt1.json",
+      "bytes": 1311
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/canary_comparison_s123_attempt1.json",
+      "bytes": 1317
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/capture_launch.py",
+      "bytes": 1742
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/code/analyze_three_seed_endpoints.py",
+      "bytes": 16285
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/code/test_three_seed_endpoints.py",
+      "bytes": 7780
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/cross_seed_native_source.txt",
+      "bytes": 3362
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/cross_seed_realization.json",
+      "bytes": 19843
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/cross_seed_realization.md",
+      "bytes": 3202
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/cross_seed_realization.py",
+      "bytes": 5510
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/ENDPOINT_ANALYZER_NOTES.md",
+      "bytes": 2489
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_cpu_tests_attempt1.log",
+      "bytes": 929
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_cpu_tests_attempt2.log",
+      "bytes": 1036
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_snapshot1/code/analyze_three_seed_endpoints.py",
+      "bytes": 16285
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_snapshot1/code/test_three_seed_endpoints.py",
+      "bytes": 7780
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_snapshot1/endpoint_report.md",
+      "bytes": 2037
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_snapshot1/summary.json",
+      "bytes": 4532
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_snapshot2/code/analyze_three_seed_endpoints.py",
+      "bytes": 16742
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_snapshot2/code/test_three_seed_endpoints.py",
+      "bytes": 8188
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_snapshot2/endpoint_report.md",
+      "bytes": 2031
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/endpoint_snapshot2/summary.json",
+      "bytes": 6703
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/EXPANSION_REVIEW.md",
+      "bytes": 8383
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/expansion_worker.py",
+      "bytes": 11985
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/EXPERIMENT_PLAN.md",
+      "bytes": 3220
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/EXPERIMENT_PLAN_20260906_frozen.md",
+      "bytes": 3220
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/EXPERIMENT_TRACKER.md",
+      "bytes": 2177
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/EXPERIMENT_TRACKER_20260906_launched.md",
+      "bytes": 2177
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/health_audit_snapshot1/health_audit.md",
+      "bytes": 3153
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/health_audit_snapshot1/sources/kd_logged_scalar_snapshot.jsonl",
+      "bytes": 898616
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/health_audit_snapshot1/sources/launch_manifest.json",
+      "bytes": 1459
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/health_audit_snapshot1/sources/progress.json",
+      "bytes": 270
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/health_audit_snapshot1/sources/results.csv",
+      "bytes": 6819
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/health_audit_snapshot1/sources/runtime_ready.json",
+      "bytes": 448
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/health_audit_snapshot1/summary.json",
+      "bytes": 32924
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/launch_verification_snapshot1/summary.json",
+      "bytes": 18155
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/launcher_cpu_tests_attempt1.log",
+      "bytes": 819
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/launcher_cpu_tests_attempt2.log",
+      "bytes": 901
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/LAUNCHER_IMPLEMENTATION.md",
+      "bytes": 3367
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/PROJECTS_INDEX_RGBIR_OBJECT_EVIDENCE_EXPAND_20260906.md",
+      "bytes": 1144
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/README.md",
+      "bytes": 4196
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/README_20260906_launched.md",
+      "bytes": 4196
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/start_worker.sh",
+      "bytes": 680
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/test_expansion_worker.py",
+      "bytes": 6605
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/test_three_seed_endpoints.py",
+      "bytes": 8188
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/adapter_cpu_test_attempt1.log",
+      "bytes": 673
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/allocation.json",
+      "bytes": 390
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/canary_comparison.json",
+      "bytes": 698
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/canary_paired_receipt.json",
+      "bytes": 15882
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/canary_summary.json",
+      "bytes": 3922
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/canary_weight0_receipt.json",
+      "bytes": 15854
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/campaign_queue.py",
+      "bytes": 6509
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/evaluate_object_evidence.py",
+      "bytes": 3505
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/start_canary.sh",
+      "bytes": 518
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/start_full.sh",
+      "bytes": 514
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/test_object_evidence_loss.py",
+      "bytes": 11050
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/test_paired_rgbir_data.py",
+      "bytes": 7130
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/code/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/cpu_tests_attempt1.log",
+      "bytes": 2690
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_CODE_REVIEW.md",
+      "bytes": 14826
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_CODE_REVIEW_INITIAL.md",
+      "bytes": 4177
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_PLAN.md",
+      "bytes": 5767
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_PLAN_20260906_frozen.md",
+      "bytes": 5767
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_RESULTS.md",
+      "bytes": 2110
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_RESULTS_20260906_launched.md",
+      "bytes": 2110
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_TRACKER.md",
+      "bytes": 1542
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_TRACKER_20260906_launched.md",
+      "bytes": 1542
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/framework_notes.md",
+      "bytes": 15740
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/launch_status.json",
+      "bytes": 323
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/LAUNCH_VERIFIED.md",
+      "bytes": 1328
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/loss_cpu_tests.log",
+      "bytes": 1098
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/loss_cpu_validation.md",
+      "bytes": 3414
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/paired_progress_at_launch.json",
+      "bytes": 258
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/PROJECTS_INDEX_RGBIR_OBJECT_EVIDENCE_20260906.md",
+      "bytes": 1102
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/README.md",
+      "bytes": 4218
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/README_20260906_launched.md",
+      "bytes": 3950
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/reviewer_canary_readonly.py",
+      "bytes": 3046
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/reviewer_canary_verified.json",
+      "bytes": 56859
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/summarize_canary.py",
+      "bytes": 1723
+    },
+    {
+      "path": "research_bundle/08_实验日志/README.md",
+      "bytes": 4152
+    },
+    {
+      "path": "research_bundle/README.md",
+      "bytes": 1127
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/build_template_and_inject.py",
+      "bytes": 807
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_paired_s0.log",
+      "bytes": 229
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_paired_s123.log",
+      "bytes": 1775
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_paired_s42.log",
+      "bytes": 6451
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_sar_only_s0.log",
+      "bytes": 7999
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_sar_only_s123.log",
+      "bytes": 1779
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_sar_only_s42.log",
+      "bytes": 8000
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_shuffled_s0.log",
+      "bytes": 1777
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_shuffled_s123.log.partial_tail.txt",
+      "bytes": 131072
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ft_shuffled_s42.log",
+      "bytes": 229
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/inject_patched.py",
+      "bytes": 4074
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/jobs2_gpu0.txt",
+      "bytes": 31
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/jobs2_gpu1.txt",
+      "bytes": 34
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/jobs2_gpu2.txt",
+      "bytes": 37
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/jobs_gpu3.txt",
+      "bytes": 13
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/jobs_gpu4.txt",
+      "bytes": 31
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/jobs_gpu5.txt",
+      "bytes": 34
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/jobs_gpu6.txt",
+      "bytes": 37
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/prepare.log",
+      "bytes": 643
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/protocol_clean_paired.yaml",
+      "bytes": 1412
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+      "bytes": 1414
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/protocol_clean_shuffled.yaml",
+      "bytes": 1414
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/protocol_paired.yaml",
+      "bytes": 1415
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/protocol_sar_only.yaml",
+      "bytes": 1417
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/protocol_shuffled.yaml",
+      "bytes": 1417
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/README.md",
+      "bytes": 159
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl/paired/config.json",
+      "bytes": 102
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl/sar_only/config.json",
+      "bytes": 104
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl/shuffled/config.json",
+      "bytes": 104
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/manifest_paired.jsonl.all_rows.tsv",
+      "bytes": 629718
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/manifest_paired.jsonl.gz",
+      "bytes": 1697152
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/manifest_paired.jsonl.readable_metadata.json",
+      "bytes": 3136
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/manifest_shuffled.jsonl.all_rows.tsv",
+      "bytes": 953538
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/manifest_shuffled.jsonl.gz",
+      "bytes": 1879804
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/manifest_shuffled.jsonl.readable_metadata.json",
+      "bytes": 3644
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/ssl_manifest.jsonl.all_rows.tsv",
+      "bytes": 629718
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/ssl_manifest.jsonl.gz",
+      "bytes": 1695939
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/ssl_manifest.jsonl.readable_metadata.json",
+      "bytes": 3130
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_data/summary.json",
+      "bytes": 643
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_paired.log",
+      "bytes": 39704
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_sar_only.log",
+      "bytes": 39756
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/ssl_shuffled.log",
+      "bytes": 39862
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/w2_pipeline.log",
+      "bytes": 1935
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/w2_pipeline.sh",
+      "bytes": 1352
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker.sh",
+      "bytes": 1051
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker2.sh",
+      "bytes": 1040
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker2_gpu0.log",
+      "bytes": 326
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker2_gpu1.log",
+      "bytes": 332
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker2_gpu2.log",
+      "bytes": 338
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker3.sh",
+      "bytes": 1206
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker3_gpu0.log",
+      "bytes": 3769
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker3_gpu1.log",
+      "bytes": 3893
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker3_gpu2.log",
+      "bytes": 3831
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker_gpu3.log",
+      "bytes": 51
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker_gpu4.log",
+      "bytes": 379
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker_gpu5.log",
+      "bytes": 385
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/osssl_ir_20260906/worker_gpu6.log",
+      "bytes": 391
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/analyze_three_seed_endpoints.py",
+      "bytes": 16742
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/audit_running.py",
+      "bytes": 13674
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/canary_comparison_s0_attempt1.json",
+      "bytes": 1311
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/canary_comparison_s123_attempt1.json",
+      "bytes": 1317
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/canary_s0_attempt1.log",
+      "bytes": 24214
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/canary_s123_attempt1.log",
+      "bytes": 24246
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/cross_seed_native_source.txt",
+      "bytes": 3362
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/cross_seed_realization.json",
+      "bytes": 19843
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/cross_seed_realization.md",
+      "bytes": 3202
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/cross_seed_realization.py",
+      "bytes": 5510
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/ENDPOINT_ANALYZER_NOTES.md",
+      "bytes": 2489
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/endpoint_cpu_tests_attempt1.log",
+      "bytes": 929
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/endpoint_cpu_tests_attempt2.log",
+      "bytes": 1036
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/full_s0_attempt1.log.partial_tail.txt",
+      "bytes": 131072
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/full_s123_attempt1.log.partial_tail.txt",
+      "bytes": 131072
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/release_v1/allocation.json",
+      "bytes": 833
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/release_v1/capture_launch.py",
+      "bytes": 1742
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/release_v1/expansion_worker.py",
+      "bytes": 11985
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/release_v1/EXPERIMENT_PLAN.md",
+      "bytes": 3220
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/release_v1/start_worker.sh",
+      "bytes": 680
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/release_v1/test_expansion_worker.py",
+      "bytes": 6605
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/test_three_seed_endpoints.py",
+      "bytes": 8188
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/effective_config.yaml",
+      "bytes": 2075
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/paired_result.json",
+      "bytes": 197
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/paired_seed_override.json",
+      "bytes": 912
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/paired_train.log",
+      "bytes": 12105
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/plan.json",
+      "bytes": 1923
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/status.json",
+      "bytes": 874
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/weight0_result.json",
+      "bytes": 199
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/weight0_seed_override.json",
+      "bytes": 915
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/weight0_train.log",
+      "bytes": 12109
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/effective_config.yaml",
+      "bytes": 2077
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/paired_result.json",
+      "bytes": 199
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/paired_seed_override.json",
+      "bytes": 920
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/paired_train.log",
+      "bytes": 12117
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/plan.json",
+      "bytes": 1935
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/status.json",
+      "bytes": 880
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/weight0_result.json",
+      "bytes": 201
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/weight0_seed_override.json",
+      "bytes": 923
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/weight0_train.log",
+      "bytes": 12129
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s0_attempt1/effective_config.yaml",
+      "bytes": 2075
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s0_attempt1/paired_seed_override.json",
+      "bytes": 879
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s0_attempt1/plan.json",
+      "bytes": 1851
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s0_attempt1/status.json",
+      "bytes": 444
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s0_attempt1/weight0_seed_override.json",
+      "bytes": 882
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s0_attempt1/weight0_train.log.partial_tail.txt",
+      "bytes": 131072
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/effective_config.yaml",
+      "bytes": 2077
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/paired_seed_override.json",
+      "bytes": 887
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/paired_train.log.partial_tail.txt",
+      "bytes": 131072
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/plan.json",
+      "bytes": 1863
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/status.json",
+      "bytes": 446
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/weight0_seed_override.json",
+      "bytes": 890
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/allocation.json",
+      "bytes": 390
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/canary_attempt1.log",
+      "bytes": 72615
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/canary_comparison.json",
+      "bytes": 698
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/canary_queue_status.json",
+      "bytes": 382
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/canary_summary.json",
+      "bytes": 3922
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/cpu_tests_attempt1.log",
+      "bytes": 2690
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/full_attempt1.log.partial_tail.txt",
+      "bytes": 131072
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/full_queue_status.json",
+      "bytes": 323
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/campaign_queue.py",
+      "bytes": 5871
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/evaluate_object_evidence.py",
+      "bytes": 3472
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/start_canary.sh",
+      "bytes": 518
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/test_object_evidence_loss.py",
+      "bytes": 11050
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/test_paired_rgbir_data.py",
+      "bytes": 7130
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v1/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/campaign_queue.py",
+      "bytes": 6509
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/evaluate_object_evidence.py",
+      "bytes": 3505
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/start_full.sh",
+      "bytes": 514
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/summarize_canary.py",
+      "bytes": 1723
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/test_object_evidence_loss.py",
+      "bytes": 11050
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/test_paired_rgbir_data.py",
+      "bytes": 7130
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/distribution_licenses/ultralytics-8.4.115.dist-info__licenses__LICENSE",
+      "bytes": 34523
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/package_versions.json",
+      "bytes": 1651
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/__init__.py",
+      "bytes": 1319
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/data/augment.py",
+      "bytes": 142046
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/data/base.py",
+      "bytes": 21122
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/data/build.py",
+      "bytes": 19146
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/data/dataset.py",
+      "bytes": 56718
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/engine/trainer.py",
+      "bytes": 67245
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/models/yolo/detect/train.py",
+      "bytes": 12056
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/nn/modules/head.py",
+      "bytes": 87491
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/nn/tasks.py",
+      "bytes": 93233
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/utils/loss.py",
+      "bytes": 70324
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/utils/tal.py",
+      "bytes": 24260
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/framework_snapshot/ultralytics/utils/torch_utils.py",
+      "bytes": 49067
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/gpu_usage_snapshot.txt",
+      "bytes": 375
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/local_verification.json",
+      "bytes": 659
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/README.md",
+      "bytes": 3833
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/args.yaml",
+      "bytes": 1984
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/results.csv",
+      "bytes": 6107
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/args.yaml",
+      "bytes": 2065
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/completion_receipt.json",
+      "bytes": 15888
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/gradient_checks.jsonl",
+      "bytes": 262
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/kd_batches.jsonl",
+      "bytes": 235711
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/launch_manifest.json",
+      "bytes": 1513
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/progress.json",
+      "bytes": 256
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/results.csv",
+      "bytes": 144
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes": 15888
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/run_receipt.json",
+      "bytes": 3077
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes": 70324
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes": 12056
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/runtime_ready.json",
+      "bytes": 448
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/args.yaml",
+      "bytes": 2071
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/completion_receipt.json",
+      "bytes": 15892
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/gradient_checks.jsonl",
+      "bytes": 262
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/kd_batches.jsonl",
+      "bytes": 235754
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/launch_manifest.json",
+      "bytes": 1519
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/progress.json",
+      "bytes": 257
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/results.csv",
+      "bytes": 145
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes": 15892
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/run_receipt.json",
+      "bytes": 3087
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes": 70324
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes": 12056
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/runtime_ready.json",
+      "bytes": 448
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/args.yaml",
+      "bytes": 2067
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/completion_receipt.json",
+      "bytes": 15862
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/gradient_checks.jsonl",
+      "bytes": 247
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/kd_batches.jsonl",
+      "bytes": 235277
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/launch_manifest.json",
+      "bytes": 1516
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/progress.json",
+      "bytes": 258
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/results.csv",
+      "bytes": 145
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes": 15862
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/run_receipt.json",
+      "bytes": 3082
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes": 70324
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes": 12056
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/runtime_ready.json",
+      "bytes": 449
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/args.yaml",
+      "bytes": 2073
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/completion_receipt.json",
+      "bytes": 15863
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/gradient_checks.jsonl",
+      "bytes": 247
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/kd_batches.jsonl",
+      "bytes": 235344
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/launch_manifest.json",
+      "bytes": 1522
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/progress.json",
+      "bytes": 258
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/results.csv",
+      "bytes": 145
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes": 15863
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/run_receipt.json",
+      "bytes": 3092
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes": 70324
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes": 12056
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/runtime_ready.json",
+      "bytes": 449
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/args.yaml",
+      "bytes": 2067
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/kd_batches.jsonl",
+      "bytes": 904616
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/launch_manifest.json",
+      "bytes": 1490
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/progress.json",
+      "bytes": 268
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/results.csv",
+      "bytes": 1734
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/runtime_ready.json",
+      "bytes": 448
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/args.yaml",
+      "bytes": 2063
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/kd_batches.jsonl",
+      "bytes": 958777
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/launch_manifest.json",
+      "bytes": 1487
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/progress.json",
+      "bytes": 267
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/results.csv",
+      "bytes": 1809
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/runtime_ready.json",
+      "bytes": 449
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/args.yaml",
+      "bytes": 2060
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/completion_receipt.json",
+      "bytes": 15882
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/gradient_checks.jsonl",
+      "bytes": 261
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/kd_batches.jsonl",
+      "bytes": 235654
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/launch_manifest.json",
+      "bytes": 1488
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/progress.json",
+      "bytes": 257
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/results.csv",
+      "bytes": 145
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes": 15882
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/run_receipt.json",
+      "bytes": 3036
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes": 70324
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json.all_rows.tsv",
+      "bytes": 359823
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json.gz",
+      "bytes": 104210
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json.readable_metadata.json",
+      "bytes": 678
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes": 12056
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/runtime_ready.json",
+      "bytes": 448
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/args.yaml",
+      "bytes": 2062
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/completion_receipt.json",
+      "bytes": 15854
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/gradient_checks.jsonl",
+      "bytes": 246
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/kd_batches.jsonl",
+      "bytes": 235247
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/launch_manifest.json",
+      "bytes": 1491
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/progress.json",
+      "bytes": 257
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/results.csv",
+      "bytes": 145
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes": 15854
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/run_receipt.json",
+      "bytes": 3041
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes": 195
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes": 200
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes": 70324
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes": 12056
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/runtime_ready.json",
+      "bytes": 449
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/args.yaml",
+      "bytes": 2056
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/implementation_snapshot/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/implementation_snapshot/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/implementation_snapshot/train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/kd_batches.jsonl",
+      "bytes": 4831689
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/launch_manifest.json",
+      "bytes": 1459
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/progress.json",
+      "bytes": 273
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/protocol_config.yaml",
+      "bytes": 2069
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/results.csv",
+      "bytes": 8679
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/runtime_ready.json",
+      "bytes": 448
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/screen_sessions_snapshot.txt",
+      "bytes": 1105
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/snapshot_manifest.json",
+      "bytes": 229248
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/snapshot_summary.json",
+      "bytes": 1764
+    },
+    {
+      "path": "research_bundle/remote_snapshot_20260906/status_at_snapshot.json",
+      "bytes": 4727
+    },
+    {
+      "path": "research_bundle/workspace_context/WORKSPACE_AGENTS.md",
+      "bytes": 6536
+    },
+    {
+      "path": "research_bundle/workspace_context/WORKSPACE_README.md",
+      "bytes": 8211
+    },
+    {
+      "path": "REVIEW_PROMPT.md",
+      "bytes": 9271
+    }
+  ]
+}

@@ -1,0 +1,616 @@
+{
+  "timestamp_utc": "2026-09-05T23:42:39.157660+00:00",
+  "source_unchanged": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2",
+  "runs": {
+    "42": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 89,
+        "epochs": 200,
+        "optimizer_updates": 25346,
+        "update_attempts": 25360,
+        "amp_skips": 14,
+        "batches": 49875,
+        "selected_objects": 6066102,
+        "seconds": 17817.64150738716,
+        "last_kd": 0.26289504766464233
+      },
+      "launch": {
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired",
+        "seed": 42,
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml",
+          "--output",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+          "--arm",
+          "paired"
+        ],
+        "gpu": [
+          4
+        ],
+        "inputs": {
+          "model": {
+            "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+            "bytes": 5613764
+          },
+          "teacher": {
+            "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+            "bytes": 5483610
+          },
+          "reference": {
+            "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+            "bytes": 5483610
+          }
+        },
+        "canary_max_updates": null,
+        "teacher_labels_used_by_kd": true,
+        "test_accessed": false,
+        "environment": {
+          "torch": "2.10.0+cu128",
+          "ultralytics": "8.4.115"
+        }
+      },
+      "ready": {
+        "status": "ready",
+        "arm": "paired",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "4",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      }
+    },
+    "0": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 1,
+        "epochs": 200,
+        "optimizer_updates": 234,
+        "update_attempts": 240,
+        "amp_skips": 6,
+        "batches": 240,
+        "selected_objects": 29088,
+        "seconds": 105.92299246788025,
+        "last_kd": 0.5012392401695251
+      },
+      "launch": {
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "weight0",
+        "seed": 0,
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml",
+          "--output",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+          "--arm",
+          "weight0",
+          "--seed",
+          "0"
+        ],
+        "gpu": [
+          5
+        ],
+        "inputs": {
+          "model": {
+            "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+            "bytes": 5613764
+          },
+          "teacher": {
+            "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+            "bytes": 5483610
+          },
+          "reference": {
+            "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+            "bytes": 5483610
+          }
+        },
+        "canary_max_updates": null,
+        "teacher_labels_used_by_kd": true,
+        "test_accessed": false,
+        "environment": {
+          "torch": "2.10.0+cu128",
+          "ultralytics": "8.4.115"
+        }
+      },
+      "ready": {
+        "status": "ready",
+        "arm": "weight0",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "5",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      }
+    },
+    "123": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 1,
+        "epochs": 200,
+        "optimizer_updates": 223,
+        "update_attempts": 230,
+        "amp_skips": 7,
+        "batches": 230,
+        "selected_objects": 28060,
+        "seconds": 106.73058700561523,
+        "last_kd": 0.6534592509269714
+      },
+      "launch": {
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired",
+        "seed": 123,
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml",
+          "--output",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+          "--arm",
+          "paired",
+          "--seed",
+          "123"
+        ],
+        "gpu": [
+          6
+        ],
+        "inputs": {
+          "model": {
+            "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+            "bytes": 5613764
+          },
+          "teacher": {
+            "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+            "bytes": 5483610
+          },
+          "reference": {
+            "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+            "bytes": 5483610
+          }
+        },
+        "canary_max_updates": null,
+        "teacher_labels_used_by_kd": true,
+        "test_accessed": false,
+        "environment": {
+          "torch": "2.10.0+cu128",
+          "ultralytics": "8.4.115"
+        }
+      },
+      "ready": {
+        "status": "ready",
+        "arm": "paired",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "6",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      }
+    }
+  },
+  "workers": {
+    "0": {
+      "stage": "full",
+      "seed": 0,
+      "physical_gpu": 5,
+      "pid": 3837448,
+      "teacher_seed": 42,
+      "reference_seed": 42,
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2",
+      "status": "training",
+      "arm_order": [
+        "weight0",
+        "paired"
+      ],
+      "results": [],
+      "updated_at": "2026-09-05T23:40:49.331824+00:00",
+      "active_arm": "weight0",
+      "queued_arms": [
+        "paired"
+      ]
+    },
+    "123": {
+      "stage": "full",
+      "seed": 123,
+      "physical_gpu": 6,
+      "pid": 3837450,
+      "teacher_seed": 42,
+      "reference_seed": 42,
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2",
+      "status": "training",
+      "arm_order": [
+        "paired",
+        "weight0"
+      ],
+      "results": [],
+      "updated_at": "2026-09-05T23:40:49.332259+00:00",
+      "active_arm": "paired",
+      "queued_arms": [
+        "weight0"
+      ]
+    }
+  },
+  "canaries": {
+    "0": {
+      "status": "passed",
+      "seed": 0,
+      "teacher_seed": 42,
+      "reference_seed": 42,
+      "physical_gpu": 5,
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2",
+      "arms": [
+        "paired",
+        "weight0"
+      ],
+      "cpu_tensor_comparison": true,
+      "receipts": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/completion_receipt.json",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/completion_receipt.json"
+      ],
+      "checks": {
+        "initial_student.pt": true,
+        "first_batch.pt": true
+      },
+      "resource_reservation_checks_passed": true,
+      "gpu_reserved_peak_mib": 5770.0,
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "resources": [
+        {
+          "gpu_ids": [
+            5
+          ],
+          "cuda_pid_counts": {
+            "5": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "5": 6304
+          },
+          "peak_rss_mib": 28716
+        },
+        {
+          "gpu_ids": [
+            5
+          ],
+          "cuda_pid_counts": {
+            "5": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "5": 6304
+          },
+          "peak_rss_mib": 28766
+        }
+      ],
+      "optimizer_updates": [
+        24,
+        24
+      ],
+      "amp_skipped_updates": [
+        6,
+        6
+      ]
+    },
+    "123": {
+      "status": "passed",
+      "seed": 123,
+      "teacher_seed": 42,
+      "reference_seed": 42,
+      "physical_gpu": 6,
+      "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2",
+      "arms": [
+        "paired",
+        "weight0"
+      ],
+      "cpu_tensor_comparison": true,
+      "receipts": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1/completion_receipt.json",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1/completion_receipt.json"
+      ],
+      "checks": {
+        "initial_student.pt": true,
+        "first_batch.pt": true
+      },
+      "resource_reservation_checks_passed": true,
+      "gpu_reserved_peak_mib": 5770.0,
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "resources": [
+        {
+          "gpu_ids": [
+            6
+          ],
+          "cuda_pid_counts": {
+            "6": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "6": 6304
+          },
+          "peak_rss_mib": 28741
+        },
+        {
+          "gpu_ids": [
+            6
+          ],
+          "cuda_pid_counts": {
+            "6": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "6": 6304
+          },
+          "peak_rss_mib": 28741
+        }
+      ],
+      "optimizer_updates": [
+        24,
+        24
+      ],
+      "amp_skipped_updates": [
+        6,
+        6
+      ]
+    }
+  },
+  "resource_guard": {
+    "gpus": {
+      "0": {
+        "memory_free_mib": 24082,
+        "memory_total_mib": 24564
+      },
+      "1": {
+        "memory_free_mib": 24082,
+        "memory_total_mib": 24564
+      },
+      "2": {
+        "memory_free_mib": 24082,
+        "memory_total_mib": 24564
+      },
+      "3": {
+        "memory_free_mib": 24082,
+        "memory_total_mib": 24564
+      },
+      "4": {
+        "memory_free_mib": 16430,
+        "memory_total_mib": 24564
+      },
+      "5": {
+        "memory_free_mib": 16456,
+        "memory_total_mib": 24564
+      },
+      "6": {
+        "memory_free_mib": 16456,
+        "memory_total_mib": 24564
+      },
+      "7": {
+        "memory_free_mib": 15062,
+        "memory_total_mib": 24564
+      }
+    },
+    "leases": [
+      {
+        "admission": {
+          "active_gpus_after": [
+            4,
+            5,
+            6
+          ],
+          "per_gpu": {
+            "6": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 10000
+            }
+          },
+          "project_rss_reserved_after_mib": 147473
+        },
+        "bound_at": 1788651649.3314846,
+        "created_at": 1788651649.3096504,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 49152,
+        "expected_vram_mib": 10000,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          6
+        ],
+        "job_id": "rgbir_oev1_expand_full_paired_s123_attempt1",
+        "job_pid": 3837453,
+        "kind": "train",
+        "lease_id": "rgbir_oev1_expand_full_paired_s123_attempt1-9084a7912efc",
+        "observed_cuda_pids": [
+          3837716
+        ],
+        "owner_pid": 3837453,
+        "peak_cuda_pid_counts": {
+          "6": 1
+        },
+        "peak_rss_mib": 28790,
+        "per_gpu_peak_vram_mib": {
+          "6": 7606
+        },
+        "profiled_second_train": false
+      },
+      {
+        "admission": {
+          "active_gpus_after": [
+            4,
+            5
+          ],
+          "per_gpu": {
+            "5": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 10000
+            }
+          },
+          "project_rss_reserved_after_mib": 98304
+        },
+        "bound_at": 1788651649.3103135,
+        "created_at": 1788651648.9904952,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 49152,
+        "expected_vram_mib": 10000,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          5
+        ],
+        "job_id": "rgbir_oev1_expand_full_weight0_s0_attempt1",
+        "job_pid": 3837452,
+        "kind": "train",
+        "lease_id": "rgbir_oev1_expand_full_weight0_s0_attempt1-d55ac4d76748",
+        "observed_cuda_pids": [
+          3837715
+        ],
+        "owner_pid": 3837452,
+        "peak_cuda_pid_counts": {
+          "5": 1
+        },
+        "peak_rss_mib": 28753,
+        "per_gpu_peak_vram_mib": {
+          "5": 7606
+        },
+        "profiled_second_train": false
+      },
+      {
+        "admission": {
+          "active_gpus_after": [
+            4
+          ],
+          "per_gpu": {
+            "4": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 10000
+            }
+          },
+          "project_rss_reserved_after_mib": 49152
+        },
+        "bound_at": 1788633933.5556705,
+        "created_at": 1788633933.553772,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 49152,
+        "expected_vram_mib": 10000,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          4
+        ],
+        "job_id": "rgbir_oev1_full_paired_s42_attempt1",
+        "job_pid": 2654181,
+        "kind": "train",
+        "lease_id": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+        "observed_cuda_pids": [
+          2654191
+        ],
+        "owner_pid": 2654181,
+        "peak_cuda_pid_counts": {
+          "4": 1
+        },
+        "peak_rss_mib": 28888,
+        "per_gpu_peak_vram_mib": {
+          "4": 7632
+        },
+        "profiled_second_train": false
+      }
+    ],
+    "policy": {
+      "formal_trains_per_gpu_default": 1,
+      "host_rss_admission_mib": 245760,
+      "host_rss_hard_mib": 307200,
+      "max_active_gpus": 3,
+      "max_cuda_processes_per_gpu": 2,
+      "project_vram_fraction_lt": 0.7
+    },
+    "usage": {
+      "active_gpus": [
+        4,
+        5,
+        6
+      ],
+      "actual_cuda_pids": {
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "actual_vram_mib": {
+        "4": 7632,
+        "5": 7606,
+        "6": 7606
+      },
+      "effective_cuda_processes": {
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "effective_rss_mib": 147456,
+      "effective_vram_mib": {
+        "4": 10000,
+        "5": 10000,
+        "6": 10000
+      },
+      "formal_trains": {
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "project_rss_mib": 86088,
+      "reserved_cuda_processes": {
+        "4": 1,
+        "5": 1,
+        "6": 1
+      },
+      "reserved_rss_mib": 147456,
+      "reserved_vram_mib": {
+        "4": 10000,
+        "5": 10000,
+        "6": 10000
+      },
+      "unmaterialized_rss_mib": 61368
+    }
+  }
+}

@@ -1,0 +1,1 @@
+- 2026-09-06: 援引 AGENTS.md §2.1 放宽条款（占用后剩 3 空卡 ≥2），MAX_ACTIVE_GPUS 放宽至 4，第 4 worker 于 GPU3 启动 shuffled,123。

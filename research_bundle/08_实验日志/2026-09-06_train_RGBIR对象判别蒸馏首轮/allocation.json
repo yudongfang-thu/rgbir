@@ -1,0 +1,14 @@
+{
+  "test_accessed": false,
+  "physical_gpu": 4,
+  "selected_at": "2026-09-06",
+  "maximum_campaign_gpus": 1,
+  "ordered_arms": [
+    "paired",
+    "weight0"
+  ],
+  "minimum_free_mib": 2048,
+  "reason": "Fresh nvidia-smi: GPU 4 has no compute PID, 24082 MiB free; prior project SSL tasks finished",
+  "canary_rss_reservation_mib": 16384,
+  "canary_expected_vram_mib": 10000
+}

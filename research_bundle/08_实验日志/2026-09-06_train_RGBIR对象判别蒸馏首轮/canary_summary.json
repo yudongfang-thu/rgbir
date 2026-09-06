@@ -1,0 +1,134 @@
+{
+  "arms": {
+    "paired": {
+      "status": "canary_completed",
+      "optimizer_updates": 24,
+      "optimizer_update_attempts": 30,
+      "amp_skipped_updates": 6,
+      "ema_updates": 30,
+      "batches": 30,
+      "selected_objects": 3767,
+      "gradient_checks": [
+        {
+          "batch": 1,
+          "native_score_gradient_l2": 0.27592557668685913,
+          "kd_score_gradient_l2": 0.003656818065792322,
+          "total_gradient_composition_max_error": 3.814697265625e-06,
+          "weight0_exact_loss_gradient": true,
+          "teacher_has_grad": false,
+          "reference_has_grad": false
+        }
+      ],
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5770.0,
+      "resources": {
+        "gpu_ids": [
+          4
+        ],
+        "cuda_pid_counts": {
+          "4": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "4": 6304
+        },
+        "peak_rss_mib": 28895
+      },
+      "seconds": 51.14817404747009,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/weights/last.pt",
+      "native_total_first_last": [
+        248.09765625,
+        212.1016845703125
+      ],
+      "kd_unweighted_first_last": [
+        0.7144981026649475,
+        0.8097018003463745
+      ],
+      "selected_total_over_base_total": 0.2787273399926008,
+      "steady_last_10_batch_seconds": 0.3639766454696655
+    },
+    "weight0": {
+      "status": "canary_completed",
+      "optimizer_updates": 24,
+      "optimizer_update_attempts": 30,
+      "amp_skipped_updates": 6,
+      "ema_updates": 30,
+      "batches": 30,
+      "selected_objects": 3767,
+      "gradient_checks": [
+        {
+          "batch": 1,
+          "native_score_gradient_l2": 0.27592557668685913,
+          "kd_score_gradient_l2": 0.003656818065792322,
+          "total_gradient_composition_max_error": 0.0,
+          "weight0_exact_loss_gradient": true,
+          "teacher_has_grad": false,
+          "reference_has_grad": false
+        }
+      ],
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5770.0,
+      "resources": {
+        "gpu_ids": [
+          4
+        ],
+        "cuda_pid_counts": {
+          "4": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "4": 6304
+        },
+        "peak_rss_mib": 28690
+      },
+      "seconds": 29.621535539627075,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/weights/last.pt",
+      "native_total_first_last": [
+        248.09765625,
+        211.8856658935547
+      ],
+      "kd_unweighted_first_last": [
+        0.7144981026649475,
+        0.809692919254303
+      ],
+      "selected_total_over_base_total": 0.2787273399926008,
+      "steady_last_10_batch_seconds": 0.3358902931213379
+    }
+  },
+  "comparison": {
+    "status": "passed",
+    "cuda_tensor_comparison": false,
+    "arms": [
+      "paired",
+      "weight0"
+    ],
+    "checks": {
+      "initial_student.pt": true,
+      "first_batch.pt": true
+    },
+    "receipts": [
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/completion_receipt.json",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/completion_receipt.json"
+    ],
+    "gpu_reserved_peak_mib": 5770.0,
+    "gpu_allocated_peak_mib": 5087.68603515625,
+    "optimizer_updates": [
+      24,
+      24
+    ],
+    "batches": [
+      30,
+      30
+    ],
+    "amp_skipped_updates": [
+      6,
+      6
+    ]
+  },
+  "scope": "Engineering validation only; no AP inference",
+  "physical_gpu": 4,
+  "formal_reservation": {
+    "vram_mib": 10000,
+    "rss_mib": 49152,
+    "free_safety_mib": 2048,
+    "reason": "Above observed NVML/RSS peaks; two arms execute serially on one GPU"
+  }
+}

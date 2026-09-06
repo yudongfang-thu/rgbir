@@ -1,0 +1,40 @@
+{
+  "schema": "jstars-dataset-exposure-ledger-v1",
+  "datasets": [
+    {
+      "dataset": "stf",
+      "role": "REPRO_ONLY",
+      "test_status": "REPRODUCTION_TEST",
+      "confirmatory": false,
+      "note": "Hnewa original-paper reproduction only; not a final test for the new JSTARS method."
+    },
+    {
+      "dataset": "llvip",
+      "role": "SEALED_CANDIDATE",
+      "test_status": "UNVERIFIED_SEALED",
+      "confirmatory": false,
+      "note": "Official test remains a candidate until its exposure history is audited."
+    },
+    {
+      "dataset": "dronevehicle",
+      "role": "SEALED_CANDIDATE",
+      "test_status": "UNVERIFIED_SEALED",
+      "confirmatory": false,
+      "note": "Official test remains a candidate until its exposure history is audited."
+    },
+    {
+      "dataset": "vedai",
+      "role": "DEVELOPMENT_ONLY",
+      "test_status": "NO_INDEPENDENT_CONFIRMATORY_TEST",
+      "confirmatory": false,
+      "note": "Use official folds for reproduction and development; do not present them as an untouched final test."
+    },
+    {
+      "dataset": "spacenet6",
+      "role": "NOT_CONFIRMATORY",
+      "test_status": "HISTORICALLY_EXPOSED_TEST",
+      "confirmatory": false,
+      "note": "locked200 was evaluated in the historical P3 full622 campaign and is diagnostic/historical evidence only."
+    }
+  ]
+}

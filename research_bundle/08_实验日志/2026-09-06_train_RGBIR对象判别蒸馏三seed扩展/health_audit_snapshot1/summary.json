@@ -1,0 +1,825 @@
+{
+  "schema": "rgbir-object-evidence-running-health-v1",
+  "captured_at_utc": "2026-09-05T23:34:16.909357+00:00",
+  "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+  "scope": "Read-only descriptive training-health audit; no AP or gain inference",
+  "progress": {
+    "status": "running",
+    "arm": "paired",
+    "epoch": 87,
+    "epochs": 200,
+    "optimizer_updates": 24646,
+    "update_attempts": 24660,
+    "amp_skips": 14,
+    "batches": 48475,
+    "selected_objects": 5895799,
+    "seconds": 17319.48126745224,
+    "last_kd": 0.1696966588497162
+  },
+  "completed_epochs_from_results_csv": 86,
+  "csv_first_epoch": {
+    "epoch": 1.0,
+    "time": 220.154,
+    "train/box_loss": 1.40418,
+    "train/cls_loss": 1.62823,
+    "train/dfl_loss": 1.27239,
+    "metrics/precision(B)": 0.0,
+    "metrics/recall(B)": 0.0,
+    "metrics/mAP50(B)": 0.0,
+    "metrics/mAP50-95(B)": 0.0,
+    "val/box_loss": 0.0,
+    "val/cls_loss": 0.0,
+    "val/dfl_loss": 0.0,
+    "lr/pg0": 0.00332741,
+    "lr/pg1": 0.00332741,
+    "lr/pg2": 0.0700533
+  },
+  "csv_latest_complete_epoch": {
+    "epoch": 86.0,
+    "time": 17289.9,
+    "train/box_loss": 1.05581,
+    "train/cls_loss": 0.55963,
+    "train/dfl_loss": 1.02141,
+    "metrics/precision(B)": 0.0,
+    "metrics/recall(B)": 0.0,
+    "metrics/mAP50(B)": 0.0,
+    "metrics/mAP50-95(B)": 0.0,
+    "val/box_loss": 0.0,
+    "val/cls_loss": 0.0,
+    "val/dfl_loss": 0.0,
+    "lr/pg0": 0.0057925,
+    "lr/pg1": 0.0057925,
+    "lr/pg2": 0.0057925
+  },
+  "native_first_five_complete_epochs": {
+    "train/box_loss": {
+      "count": 5,
+      "nonfinite": 0,
+      "mean": 1.3332600000000001,
+      "min": 1.28391,
+      "max": 1.40418,
+      "sd": 0.04374358753005972
+    },
+    "train/cls_loss": {
+      "count": 5,
+      "nonfinite": 0,
+      "mean": 1.115328,
+      "min": 0.90192,
+      "max": 1.62823,
+      "sd": 0.29209760906245025
+    },
+    "train/dfl_loss": {
+      "count": 5,
+      "nonfinite": 0,
+      "mean": 1.173146,
+      "min": 1.12003,
+      "max": 1.27239,
+      "sd": 0.05949157654660022
+    }
+  },
+  "native_last_five_complete_epochs": {
+    "train/box_loss": {
+      "count": 5,
+      "nonfinite": 0,
+      "mean": 1.059646,
+      "min": 1.05581,
+      "max": 1.06251,
+      "sd": 0.002600438424573853
+    },
+    "train/cls_loss": {
+      "count": 5,
+      "nonfinite": 0,
+      "mean": 0.5619419999999999,
+      "min": 0.55963,
+      "max": 0.56508,
+      "sd": 0.0020615091559340894
+    },
+    "train/dfl_loss": {
+      "count": 5,
+      "nonfinite": 0,
+      "mean": 1.022122,
+      "min": 1.02141,
+      "max": 1.02284,
+      "sd": 0.0006287050182717023
+    }
+  },
+  "csv_all_numeric_finite": true,
+  "logged_kd_numeric_nonfinite_count": 0,
+  "kd_log_count": 487,
+  "ignored_partial_jsonl_lines": 0,
+  "kd_all_logged_batches": {
+    "native_total": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 91.84530791609684,
+      "min": 71.94520568847656,
+      "max": 258.9494934082031,
+      "sd": 15.755107459513043
+    },
+    "loss_unweighted": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 0.2543639037337391,
+      "min": 0.08243703097105026,
+      "max": 0.8913692235946655,
+      "sd": 0.12292008730898599
+    },
+    "weighted_kd_total": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 0.8139644919479653,
+      "min": 0.26379849910736086,
+      "max": 2.85238151550293,
+      "sd": 0.3933442793887552
+    },
+    "total_loss": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 92.65927238386026,
+      "min": 72.21920776367188,
+      "max": 261.4081726074219,
+      "sd": 16.00595280725019
+    },
+    "base_count": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 445.8254620123203,
+      "min": 258.0,
+      "max": 694.0,
+      "sd": 79.72352127307919
+    },
+    "eligible_count": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 242.4065708418891,
+      "min": 113.0,
+      "max": 455.0,
+      "sd": 56.181940974966516
+    },
+    "selected_count": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 121.44558521560575,
+      "min": 57.0,
+      "max": 228.0,
+      "sd": 28.078018437177224
+    },
+    "nominal_dose": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 0.27172092568456885,
+      "min": 0.1775,
+      "max": 0.38578680203045684,
+      "sd": 0.033796481049402874
+    },
+    "student_evidence_selected_mean": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 2.8233176717416093,
+      "min": 0.038373008370399475,
+      "max": 3.7750184535980225,
+      "sd": 0.5352455111919281
+    },
+    "teacher_evidence_selected_mean": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 3.606285131932284,
+      "min": 2.5423083305358887,
+      "max": 4.66696310043335,
+      "sd": 0.30930505121500984
+    },
+    "reference_evidence_selected_mean": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 1.7306379480038825,
+      "min": 0.6867281794548035,
+      "max": 2.4916131496429443,
+      "sd": 0.302300653870523
+    },
+    "quality_selected_mean": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 0.1716029764568047,
+      "min": 0.07824034243822098,
+      "max": 0.38508498668670654,
+      "sd": 0.04905323953181461
+    },
+    "target_clipped_count": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 0.6365503080082136,
+      "min": 0.0,
+      "max": 14.0,
+      "sd": 1.5427177961622094
+    },
+    "logged_batches": 487,
+    "zero_selection_batches": 0,
+    "zero_kd_batches": 0,
+    "selected_sum": 59144,
+    "base_sum": 217117,
+    "selected_fraction_of_base": 0.27240612204479614,
+    "kd_over_native": {
+      "count": 487,
+      "nonfinite": 0,
+      "mean": 0.008699738630039413,
+      "min": 0.0032163737607184256,
+      "max": 0.030672082456120492,
+      "sd": 0.0033224549287119575
+    }
+  },
+  "kd_first_five_complete_epochs": {
+    "native_total": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 127.12180402201992,
+      "min": 93.53901672363281,
+      "max": 258.9494934082031,
+      "sd": 42.85709267695546
+    },
+    "loss_unweighted": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 0.47375544088502086,
+      "min": 0.1877858191728592,
+      "max": 0.8572463393211365,
+      "sd": 0.20251223190700043
+    },
+    "weighted_kd_total": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 1.5160174108320668,
+      "min": 0.6009146213531494,
+      "max": 2.743188285827637,
+      "sd": 0.6480391421024014
+    },
+    "total_loss": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 128.6378213205645,
+      "min": 94.4412612915039,
+      "max": 261.4081726074219,
+      "sd": 43.274683742394465
+    },
+    "base_count": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 426.5806451612903,
+      "min": 294.0,
+      "max": 649.0,
+      "sd": 85.40326855319937
+    },
+    "eligible_count": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 232.61290322580646,
+      "min": 113.0,
+      "max": 378.0,
+      "sd": 64.15900945793705
+    },
+    "selected_count": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 116.54838709677419,
+      "min": 57.0,
+      "max": 189.0,
+      "sd": 31.988371543085695
+    },
+    "nominal_dose": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 0.2700757351754488,
+      "min": 0.18566775244299674,
+      "max": 0.31711409395973156,
+      "sd": 0.03168845403176188
+    },
+    "student_evidence_selected_mean": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 1.6498024508116707,
+      "min": 0.038373008370399475,
+      "max": 3.1022937297821045,
+      "sd": 0.8080954086561227
+    },
+    "teacher_evidence_selected_mean": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 3.6416595212874876,
+      "min": 3.130429267883301,
+      "max": 4.66696310043335,
+      "sd": 0.3549664512358041
+    },
+    "reference_evidence_selected_mean": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 1.734658721954592,
+      "min": 0.9699381589889526,
+      "max": 2.3652751445770264,
+      "sd": 0.32275312023674296
+    },
+    "quality_selected_mean": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 0.1736660217565875,
+      "min": 0.10205572098493576,
+      "max": 0.3404562473297119,
+      "sd": 0.05933992669870058
+    },
+    "target_clipped_count": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 1.0,
+      "min": 0.0,
+      "max": 14.0,
+      "sd": 2.9211869733608857
+    },
+    "logged_batches": 31,
+    "zero_selection_batches": 0,
+    "zero_kd_batches": 0,
+    "selected_sum": 3613,
+    "base_sum": 13224,
+    "selected_fraction_of_base": 0.27321536600120994,
+    "kd_over_native": {
+      "count": 31,
+      "nonfinite": 0,
+      "mean": 0.011957168211357281,
+      "min": 0.005909875171901909,
+      "max": 0.021983970668672026,
+      "sd": 0.004054244120906141
+    }
+  },
+  "kd_last_five_complete_epochs": {
+    "native_total": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 85.36408478873116,
+      "min": 77.2301254272461,
+      "max": 94.03264617919922,
+      "sd": 4.6706187903236644
+    },
+    "loss_unweighted": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 0.21975769528320857,
+      "min": 0.11427178978919983,
+      "max": 0.4847836196422577,
+      "sd": 0.08007246609357575
+    },
+    "weighted_kd_total": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 0.7032246249062675,
+      "min": 0.36566972732543945,
+      "max": 1.5513075828552247,
+      "sd": 0.2562318914994424
+    },
+    "total_loss": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 86.0673097882952,
+      "min": 77.77865600585938,
+      "max": 95.58395385742188,
+      "sd": 4.813153634082113
+    },
+    "base_count": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 421.25,
+      "min": 298.0,
+      "max": 537.0,
+      "sd": 61.61687178759474
+    },
+    "eligible_count": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 224.64285714285714,
+      "min": 151.0,
+      "max": 305.0,
+      "sd": 45.046654239810735
+    },
+    "selected_count": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 112.60714285714286,
+      "min": 76.0,
+      "max": 153.0,
+      "sd": 22.43234979801085
+    },
+    "nominal_dose": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 0.2671652930509184,
+      "min": 0.18138424821002386,
+      "max": 0.3424657534246575,
+      "sd": 0.03322981827326764
+    },
+    "student_evidence_selected_mean": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 2.9170214235782623,
+      "min": 1.8355416059494019,
+      "max": 3.635932207107544,
+      "sd": 0.41893031486078264
+    },
+    "teacher_evidence_selected_mean": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 3.559569682393755,
+      "min": 2.9666404724121094,
+      "max": 4.293631076812744,
+      "sd": 0.2890018904487415
+    },
+    "reference_evidence_selected_mean": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 1.6372398819242204,
+      "min": 1.1778761148452759,
+      "max": 2.1383228302001953,
+      "sd": 0.20384949445767878
+    },
+    "quality_selected_mean": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 0.17842912248202733,
+      "min": 0.12602166831493378,
+      "max": 0.29314255714416504,
+      "sd": 0.03218843192074392
+    },
+    "target_clipped_count": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 0.5714285714285714,
+      "min": 0.0,
+      "max": 5.0,
+      "sd": 1.1031460542154956
+    },
+    "logged_batches": 28,
+    "zero_selection_batches": 0,
+    "zero_kd_batches": 0,
+    "selected_sum": 3153,
+    "base_sum": 11795,
+    "selected_fraction_of_base": 0.26731665960152606,
+    "kd_over_native": {
+      "count": 28,
+      "nonfinite": 0,
+      "mean": 0.00818020737557945,
+      "min": 0.004075342378395247,
+      "max": 0.016497542565152085,
+      "sd": 0.0026696727263178393
+    }
+  },
+  "amp_skip_fraction": 0.0005677210056772101,
+  "updates_reconciled": true,
+  "runtime": {
+    "status": "ready",
+    "arm": "paired",
+    "train_images": 17990,
+    "val_images": 1469,
+    "train_batches": 563,
+    "batch": 32,
+    "workers": 4,
+    "cuda_visible_devices": "4",
+    "student_only_state": true,
+    "frozen_models_outside_optimizer": true,
+    "amp": true,
+    "class_names": {
+      "0": "car",
+      "1": "freight car",
+      "2": "truck",
+      "3": "bus",
+      "4": "van"
+    },
+    "teacher_labels_used_by_kd": true,
+    "student_native_gt_only": true
+  },
+  "launch": {
+    "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+    "arm": "paired",
+    "seed": 42,
+    "command": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+      "--arm",
+      "paired"
+    ],
+    "gpu": [
+      4
+    ],
+    "inputs": {
+      "model": {
+        "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+        "bytes": 5613764
+      },
+      "teacher": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+        "bytes": 5483610
+      },
+      "reference": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+        "bytes": 5483610
+      }
+    },
+    "canary_max_updates": null,
+    "teacher_labels_used_by_kd": true,
+    "test_accessed": false,
+    "environment": {
+      "torch": "2.10.0+cu128",
+      "ultralytics": "8.4.115"
+    }
+  },
+  "queue": {
+    "stage": "full",
+    "status": "running",
+    "active_arm": "paired",
+    "queued_arms": [
+      "weight0"
+    ],
+    "physical_gpu": 4,
+    "pid": 2654180,
+    "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+    "updated_at": "2026-09-05T18:45:33.068483+00:00"
+  },
+  "failure_receipt_exists": false,
+  "completion_receipt_exists": false,
+  "formal_gradient_log_exists": false,
+  "guard_source": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+  "matching_guard_leases": [
+    {
+      "admission": {
+        "active_gpus_after": [
+          4
+        ],
+        "per_gpu": {
+          "4": {
+            "project_cuda_processes_after": 1,
+            "project_vram_reserved_after_mib": 10000
+          }
+        },
+        "project_rss_reserved_after_mib": 49152
+      },
+      "bound_at": 1788633933.5556705,
+      "created_at": 1788633933.553772,
+      "cuda_processes_per_gpu": 1,
+      "expected_rss_mib": 49152,
+      "expected_vram_mib": 10000,
+      "formal_train": true,
+      "free_safety_mib": 2048,
+      "gpus": [
+        4
+      ],
+      "job_id": "rgbir_oev1_full_paired_s42_attempt1",
+      "job_pid": 2654181,
+      "kind": "train",
+      "lease_id": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+      "observed_cuda_pids": [
+        2654191
+      ],
+      "owner_pid": 2654181,
+      "peak_cuda_pid_counts": {
+        "4": 1
+      },
+      "peak_rss_mib": 28886,
+      "per_gpu_peak_vram_mib": {
+        "4": 7632
+      },
+      "profiled_second_train": false
+    }
+  ],
+  "process_snapshot": {
+    "matching_processes": [
+      {
+        "pid": 2654181,
+        "ppid": 2654180,
+        "user": "yudongf+",
+        "rss_kib": 17564,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id rgbir_oev1_full_paired_s42_attempt1 --kind train --candidate-gpu 4 --gpu-count 1 --cuda-processes-per-gpu 1 --expected-vram-mib 10000 --expected-rss-mib 49152 --free-safety-mib 2048 -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {}
+      },
+      {
+        "pid": 2654191,
+        "ppid": 2654181,
+        "user": "yudongf+",
+        "rss_kib": 9211536,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655116,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1963168,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655120,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1955600,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655124,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1962228,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655128,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1959188,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655141,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1548352,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655145,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1548104,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655150,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1547736,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655154,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1548352,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655158,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1548288,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655163,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1548236,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655167,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1548300,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      },
+      {
+        "pid": 2655171,
+        "ppid": 2654191,
+        "user": "yudongf+",
+        "rss_kib": 1548368,
+        "args": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1 --arm paired",
+        "resource_environment": {
+          "CUDA_VISIBLE_DEVICES": "4",
+          "JSTARS_RESOURCE_LEASE_ID": "rgbir_oev1_full_paired_s42_attempt1-c16a98cb7268",
+          "JSTARS_RESOURCE_LEASE_FILE": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+          "JSTARS_RESOURCE_GPU_IDS": "4"
+        }
+      }
+    ],
+    "matching_process_rss_mib_sum": 28764.66796875,
+    "note": "RSS sum includes shared resident pages repeatedly; process descendants include train and prebuilt val loader workers."
+  },
+  "gpu_snapshot": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=index,uuid,memory.total,memory.used,memory.free,utilization.gpu",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "0, GPU-f084b507-45a9-1b42-4d6c-abd882060d40, 24564, 1, 24082, 0\n1, GPU-0e6b9fe0-31ff-f6ce-ddf0-652e388d529f, 24564, 1, 24082, 0\n2, GPU-cbdec596-4a8e-880d-de52-cc4eb270d5a6, 24564, 1, 24082, 0\n3, GPU-495a9ab5-3280-e754-74a2-1b35c2e4bc9a, 24564, 1, 24082, 0\n4, GPU-66fe989e-920f-65c8-f838-b5e32bfaadae, 24564, 7654, 16430, 72\n5, GPU-167c0c6c-0998-a996-c352-4ae05e355878, 24564, 1, 24082, 0\n6, GPU-1d1bf3db-3d4e-3dba-3792-f29aa92e4e42, 24564, 1, 24082, 0\n7, GPU-32b6862c-896e-9702-78a8-c31e0af68ffa, 24564, 9022, 15062, 21",
+    "stderr": ""
+  },
+  "gpu_process_snapshot": {
+    "command": [
+      "nvidia-smi",
+      "--query-compute-apps=gpu_uuid,pid,used_gpu_memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "GPU-66fe989e-920f-65c8-f838-b5e32bfaadae, 2654191, 7632\nGPU-32b6862c-896e-9702-78a8-c31e0af68ffa, 1353812, 8962",
+    "stderr": ""
+  },
+  "source_files": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/progress.json",
+      "bytes": 270
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/results.csv",
+      "bytes": 6819
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/kd_batches.jsonl",
+      "bytes": 3793693
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/launch_manifest.json",
+      "bytes": 1459
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/runtime_ready.json",
+      "bytes": 448
+    }
+  ],
+  "limitations": [
+    "CSV metrics/val fields are zero placeholders because validate/final_eval are overridden; final standardized last/EMA val has not run.",
+    "KD is logged on batches 1/2/3 then every 100; window means are descriptive logged-batch means, not all-batch exact means.",
+    "Nonzero loss and selection do not prove all parameter gradients remain useful or aligned. Formal run has no gradient-norm trace; canary only verified initial nonzero gradient.",
+    "Training-loss decrease cannot establish development AP improvement, causal transfer, or avoidance of negative transfer.",
+    "Seed42 is incomplete and weight0 is queued. Additional seeds do not replace shuffled/same-modal attribution.",
+    "Student/reference/teacher evidence means reflect different models and changing augmented batches; these are not calibrated probabilities or AP.",
+    "All source files are sampled separately while training continues; timestamps and batch counts may differ slightly."
+  ]
+}

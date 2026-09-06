@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "rgb_train_images": 17990,
+    "sar_train_images": 17990,
+    "ssl_pairs": 17990
+  },
+  "group_rule": "identity",
+  "mode": "paired-tree",
+  "outputs": {
+    "ssl_manifest": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/ssl_data/ssl_manifest.jsonl"
+  },
+  "schema_version": "yolo_osssl_dataset_adapter_v1",
+  "source_paths": {
+    "rgb_train_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train",
+    "sar_train_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train"
+  }
+}

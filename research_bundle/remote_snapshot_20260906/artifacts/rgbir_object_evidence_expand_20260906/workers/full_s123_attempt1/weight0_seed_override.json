@@ -1,0 +1,20 @@
+{
+  "arm": "weight0",
+  "student_seed": 123,
+  "source_config_seed": 42,
+  "teacher_seed": 42,
+  "reference_seed": 42,
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/train_object_evidence.py",
+    "--config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+    "--arm",
+    "weight0",
+    "--seed",
+    "123"
+  ],
+  "effective_config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/effective_config.yaml"
+}

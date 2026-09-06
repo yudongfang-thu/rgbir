@@ -1,0 +1,141 @@
+{
+  "snapshot_utc": "2026-09-06T00:53:57.240321+00:00",
+  "runs": [
+    {
+      "source_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+      "run": "full_paired_s42_attempt1",
+      "campaign": "rgbir_object_evidence_v1_20260906",
+      "progress.json": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 111,
+        "epochs": 200,
+        "optimizer_updates": 31373,
+        "update_attempts": 31390,
+        "amp_skips": 17,
+        "batches": 61935,
+        "selected_objects": 7533479,
+        "seconds": 22094.601009607315,
+        "last_kd": 0.14901934564113617
+      },
+      "completed_csv_rows": 110,
+      "last_csv_row": {
+        "epoch": "110",
+        "time": "22083.8",
+        "train/box_loss": "1.03209",
+        "train/cls_loss": "0.53412",
+        "train/dfl_loss": "1.01107",
+        "metrics/precision(B)": "0",
+        "metrics/recall(B)": "0",
+        "metrics/mAP50(B)": "0",
+        "metrics/mAP50-95(B)": "0",
+        "val/box_loss": "0",
+        "val/cls_loss": "0",
+        "val/dfl_loss": "0",
+        "lr/pg0": "0.0046045",
+        "lr/pg1": "0.0046045",
+        "lr/pg2": "0.0046045"
+      },
+      "final_metric_files_present": []
+    },
+    {
+      "source_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+      "run": "full_paired_s123_attempt1",
+      "campaign": "rgbir_object_evidence_expand_20260906",
+      "progress.json": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 21,
+        "epochs": 200,
+        "optimizer_updates": 6143,
+        "update_attempts": 6150,
+        "amp_skips": 7,
+        "batches": 11455,
+        "selected_objects": 1392899,
+        "seconds": 4378.637802124023,
+        "last_kd": 0.22777700424194336
+      },
+      "completed_csv_rows": 20,
+      "last_csv_row": {
+        "epoch": "20",
+        "time": "4292.55",
+        "train/box_loss": "1.15749",
+        "train/cls_loss": "0.68626",
+        "train/dfl_loss": "1.0517",
+        "metrics/precision(B)": "0",
+        "metrics/recall(B)": "0",
+        "metrics/mAP50(B)": "0",
+        "metrics/mAP50-95(B)": "0",
+        "val/box_loss": "0",
+        "val/cls_loss": "0",
+        "val/dfl_loss": "0",
+        "lr/pg0": "0.0090595",
+        "lr/pg1": "0.0090595",
+        "lr/pg2": "0.0090595"
+      },
+      "final_metric_files_present": []
+    },
+    {
+      "source_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+      "run": "full_weight0_s0_attempt1",
+      "campaign": "rgbir_object_evidence_expand_20260906",
+      "progress.json": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 22,
+        "epochs": 200,
+        "optimizer_updates": 6473,
+        "update_attempts": 6480,
+        "amp_skips": 7,
+        "batches": 12115,
+        "selected_objects": 1472869,
+        "seconds": 4384.256668329239,
+        "last_kd": 0.5123825669288635
+      },
+      "completed_csv_rows": 21,
+      "last_csv_row": {
+        "epoch": "21",
+        "time": "4268.91",
+        "train/box_loss": "1.15494",
+        "train/cls_loss": "0.68205",
+        "train/dfl_loss": "1.10802",
+        "metrics/precision(B)": "0",
+        "metrics/recall(B)": "0",
+        "metrics/mAP50(B)": "0",
+        "metrics/mAP50-95(B)": "0",
+        "val/box_loss": "0",
+        "val/cls_loss": "0",
+        "val/dfl_loss": "0",
+        "lr/pg0": "0.00901",
+        "lr/pg1": "0.00901",
+        "lr/pg2": "0.00901"
+      },
+      "final_metric_files_present": []
+    },
+    {
+      "source_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s123_e200",
+      "run": "shuffled_rgb_s123_e200",
+      "campaign": "osssl_ir_20260906",
+      "completed_csv_rows": 50,
+      "last_csv_row": {
+        "epoch": "50",
+        "time": "3473.62",
+        "train/box_loss": "1.13111",
+        "train/cls_loss": "0.68728",
+        "train/dfl_loss": "0.98743",
+        "metrics/precision(B)": "0.72319",
+        "metrics/recall(B)": "0.66083",
+        "metrics/mAP50(B)": "0.70845",
+        "metrics/mAP50-95(B)": "0.49189",
+        "val/box_loss": "1.11755",
+        "val/cls_loss": "0.64665",
+        "val/dfl_loss": "0.99554",
+        "lr/pg0": "0.0075745",
+        "lr/pg1": "0.0075745",
+        "lr/pg2": "0.0075745"
+      },
+      "final_metric_files_present": []
+    }
+  ],
+  "caution": "Live non-atomic snapshot. OEv1 CSV AP zeros are placeholders because intermediate validation is disabled. Epoch/progress is not a performance conclusion. OS-SSL-IR has a separate protocol and execution provenance."
+}

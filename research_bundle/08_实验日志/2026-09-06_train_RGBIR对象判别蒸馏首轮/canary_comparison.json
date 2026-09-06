@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "cuda_tensor_comparison": false,
+  "arms": [
+    "paired",
+    "weight0"
+  ],
+  "checks": {
+    "initial_student.pt": true,
+    "first_batch.pt": true
+  },
+  "receipts": [
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/completion_receipt.json",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1/completion_receipt.json"
+  ],
+  "gpu_reserved_peak_mib": 5770.0,
+  "gpu_allocated_peak_mib": 5087.68603515625,
+  "optimizer_updates": [
+    24,
+    24
+  ],
+  "batches": [
+    30,
+    30
+  ],
+  "amp_skipped_updates": [
+    6,
+    6
+  ]
+}

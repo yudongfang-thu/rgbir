@@ -1,0 +1,82 @@
+{
+  "dataset": "vedai",
+  "sample_id": "00000383",
+  "sample_index": 36,
+  "luminance_quantile": 0.1,
+  "selection_matches": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/vedai_full/feature_case_1.png",
+  "rgb_luminance": 97.7745361328125,
+  "local_roi_normalized_xyxy": [
+    0.1515625,
+    0.37714844,
+    0.3015625,
+    0.5271484399999999
+  ],
+  "local_selection": {
+    "rgb_gt_index": 0,
+    "class_id": 1,
+    "gt_normalized_xyxy": [
+      0.21875,
+      0.4296875,
+      0.234375,
+      0.47460937999999997
+    ],
+    "normalized_area": 0.0007019043749999995,
+    "rank_zero_based": 0,
+    "n_positive_area_rgb_gt": 1
+  },
+  "label_files_byte_identical": true,
+  "gt_counts": [
+    1,
+    1
+  ],
+  "gradient_display": {
+    "rgb_gradient_p98": 0.4783249795436859,
+    "ir_gradient_p98": 0.3383311331272125,
+    "ir_resized_for_common_display_grid": false,
+    "display_grid_hw": [
+      512,
+      512
+    ]
+  },
+  "verified_original_files": {
+    "files": [
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/cmdistill_native/data/processed/VEDAI512_paper8_hbb_official_fold01/images/rgb/val/00000383.png",
+        "sha256": "0ca4e8e44ff8ddf861802f1104c86ec16a4cd9102228396d05675639076c7962"
+      },
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/cmdistill_native/data/processed/VEDAI512_paper8_hbb_official_fold01/images/ir/val/00000383.png",
+        "sha256": "8365bb93f2c234b73bc06c9f8692825e5730ad1684e72075f0c075a30725d6e2"
+      }
+    ],
+    "labels": [
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/cmdistill_native/data/processed/VEDAI512_paper8_hbb_official_fold01/labels/rgb/val/00000383.txt",
+        "sha256": "bbb88ea30f1817efdb206904ac95ebe60cc7c1126a0fe8d86eecc48799c4ef81"
+      },
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/cmdistill_native/data/processed/VEDAI512_paper8_hbb_official_fold01/labels/ir/val/00000383.txt",
+        "sha256": "bbb88ea30f1817efdb206904ac95ebe60cc7c1126a0fe8d86eecc48799c4ef81"
+      }
+    ]
+  },
+  "source_json_sha256": {
+    "input_manifest.json": "5c1869d662b4047420799ee64dde5ce8507ccc411af07b1bc83a01e67806143f",
+    "sample_files.json": "9f54e7c3f781e0de004b12f58f76b32bac13c0c8e0d4f38906dd2267263b1dfe",
+    "image_metrics.json": "5a46307e117db410ecb47ee1f0b2d5e039de7220a34bd50834291887cd202aa0",
+    "prediction_records.json": "bec02f33951d6a99ef74143d7302b0e0ae8e75cf891ee157d8f7a4f68dc82c59",
+    "completion_receipt.json": "53a0859913c8e86a7223036bf3444e5c526c614f0d0760672685c9ba2bdf0f1b"
+  },
+  "input_probe_script_sha256": "df41641e242df727a29cf5e52380ce1ac6f8481920fae9e3c579fd0d584df281",
+  "output_files": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/registration_panels/vedai_registration.png",
+      "sha256": "7a0dcdd929643d0b27095232e72853783880e7276104fa09bc44bc641f5cc8df"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/registration_panels/vedai_registration.pdf",
+      "sha256": "697d1d4b47f7a29bc6a144aaab8a34fec5f6cef467fd0f8ec8831912be9c0868"
+    }
+  ],
+  "interpretation": "Illustration only. No fitted or applied registration correction, no claim of physical visibility or KD gain."
+}

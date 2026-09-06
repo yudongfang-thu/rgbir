@@ -1,0 +1,918 @@
+{
+  "status": "canary_completed",
+  "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+  "arm": "paired",
+  "seed": 42,
+  "epochs_configured": 200,
+  "last_epoch": 1,
+  "optimizer_updates": 24,
+  "optimizer_update_attempts": 30,
+  "amp_skipped_updates": 6,
+  "ema_updates": 30,
+  "batches": 30,
+  "selected_objects": 3767,
+  "gradient_checks": [
+    {
+      "batch": 1,
+      "native_score_gradient_l2": 0.27592557668685913,
+      "kd_score_gradient_l2": 0.003656818065792322,
+      "total_gradient_composition_max_error": 3.814697265625e-06,
+      "weight0_exact_loss_gradient": true,
+      "teacher_has_grad": false,
+      "reference_has_grad": false
+    }
+  ],
+  "kd_last": {
+    "arm": "paired",
+    "rgb_gt_count": 587,
+    "teacher_gt_count": 635,
+    "common_count": 571,
+    "valid_region_count": 570,
+    "reference_candidate_count": 565,
+    "base_count": 564,
+    "teacher_correct_base_count": 546,
+    "eligible_count": 308,
+    "selected_count": 154,
+    "normalizer": 564,
+    "nominal_dose": 0.2730496453900709,
+    "loss_unweighted": 0.8097018003463745,
+    "selected_object_ids": [
+      [
+        30,
+        523,
+        549
+      ],
+      [
+        23,
+        348,
+        373
+      ],
+      [
+        23,
+        369,
+        395
+      ],
+      [
+        23,
+        373,
+        399
+      ],
+      [
+        23,
+        347,
+        372
+      ],
+      [
+        18,
+        275,
+        292
+      ],
+      [
+        22,
+        334,
+        359
+      ],
+      [
+        14,
+        215,
+        223
+      ],
+      [
+        11,
+        180,
+        187
+      ],
+      [
+        16,
+        254,
+        268
+      ],
+      [
+        22,
+        335,
+        360
+      ],
+      [
+        9,
+        169,
+        175
+      ],
+      [
+        7,
+        121,
+        127
+      ],
+      [
+        5,
+        37,
+        43
+      ],
+      [
+        7,
+        130,
+        136
+      ],
+      [
+        23,
+        362,
+        387
+      ],
+      [
+        5,
+        82,
+        88
+      ],
+      [
+        5,
+        36,
+        42
+      ],
+      [
+        11,
+        179,
+        186
+      ],
+      [
+        16,
+        255,
+        269
+      ],
+      [
+        18,
+        274,
+        291
+      ],
+      [
+        7,
+        131,
+        137
+      ],
+      [
+        22,
+        333,
+        358
+      ],
+      [
+        5,
+        75,
+        81
+      ],
+      [
+        14,
+        216,
+        224
+      ],
+      [
+        23,
+        367,
+        392
+      ],
+      [
+        19,
+        290,
+        311
+      ],
+      [
+        11,
+        181,
+        189
+      ],
+      [
+        18,
+        279,
+        296
+      ],
+      [
+        19,
+        285,
+        303
+      ],
+      [
+        5,
+        42,
+        48
+      ],
+      [
+        30,
+        525,
+        551
+      ],
+      [
+        7,
+        132,
+        138
+      ],
+      [
+        16,
+        260,
+        274
+      ],
+      [
+        30,
+        520,
+        546
+      ],
+      [
+        11,
+        189,
+        198
+      ],
+      [
+        30,
+        585,
+        611
+      ],
+      [
+        7,
+        137,
+        143
+      ],
+      [
+        30,
+        519,
+        545
+      ],
+      [
+        23,
+        353,
+        378
+      ],
+      [
+        16,
+        261,
+        275
+      ],
+      [
+        11,
+        190,
+        199
+      ],
+      [
+        30,
+        517,
+        543
+      ],
+      [
+        11,
+        188,
+        197
+      ],
+      [
+        28,
+        472,
+        498
+      ],
+      [
+        19,
+        302,
+        327
+      ],
+      [
+        23,
+        368,
+        393
+      ],
+      [
+        5,
+        40,
+        46
+      ],
+      [
+        30,
+        564,
+        590
+      ],
+      [
+        19,
+        289,
+        307
+      ],
+      [
+        19,
+        284,
+        302
+      ],
+      [
+        19,
+        281,
+        299
+      ],
+      [
+        28,
+        475,
+        501
+      ],
+      [
+        7,
+        94,
+        100
+      ],
+      [
+        5,
+        76,
+        82
+      ],
+      [
+        30,
+        565,
+        591
+      ],
+      [
+        5,
+        44,
+        50
+      ],
+      [
+        18,
+        280,
+        297
+      ],
+      [
+        19,
+        295,
+        320
+      ],
+      [
+        18,
+        276,
+        293
+      ],
+      [
+        30,
+        566,
+        592
+      ],
+      [
+        30,
+        522,
+        548
+      ],
+      [
+        30,
+        567,
+        593
+      ],
+      [
+        7,
+        122,
+        128
+      ],
+      [
+        14,
+        214,
+        222
+      ],
+      [
+        7,
+        142,
+        148
+      ],
+      [
+        28,
+        443,
+        469
+      ],
+      [
+        28,
+        442,
+        468
+      ],
+      [
+        30,
+        529,
+        555
+      ],
+      [
+        7,
+        143,
+        149
+      ],
+      [
+        23,
+        363,
+        388
+      ],
+      [
+        11,
+        196,
+        205
+      ],
+      [
+        30,
+        514,
+        540
+      ],
+      [
+        28,
+        441,
+        467
+      ],
+      [
+        23,
+        359,
+        384
+      ],
+      [
+        22,
+        342,
+        366
+      ],
+      [
+        19,
+        304,
+        315
+      ],
+      [
+        22,
+        331,
+        356
+      ],
+      [
+        30,
+        568,
+        594
+      ],
+      [
+        16,
+        256,
+        270
+      ],
+      [
+        30,
+        559,
+        585
+      ],
+      [
+        18,
+        277,
+        294
+      ],
+      [
+        30,
+        544,
+        570
+      ],
+      [
+        14,
+        213,
+        221
+      ],
+      [
+        19,
+        286,
+        304
+      ],
+      [
+        11,
+        193,
+        202
+      ],
+      [
+        30,
+        543,
+        569
+      ],
+      [
+        28,
+        486,
+        512
+      ],
+      [
+        7,
+        107,
+        113
+      ],
+      [
+        5,
+        35,
+        41
+      ],
+      [
+        30,
+        563,
+        589
+      ],
+      [
+        30,
+        545,
+        571
+      ],
+      [
+        28,
+        478,
+        504
+      ],
+      [
+        15,
+        252,
+        261
+      ],
+      [
+        23,
+        355,
+        380
+      ],
+      [
+        28,
+        454,
+        480
+      ],
+      [
+        23,
+        357,
+        382
+      ],
+      [
+        11,
+        185,
+        193
+      ],
+      [
+        11,
+        195,
+        204
+      ],
+      [
+        9,
+        162,
+        168
+      ],
+      [
+        11,
+        186,
+        194
+      ],
+      [
+        11,
+        183,
+        191
+      ],
+      [
+        7,
+        129,
+        135
+      ],
+      [
+        19,
+        287,
+        305
+      ],
+      [
+        11,
+        184,
+        192
+      ],
+      [
+        19,
+        288,
+        306
+      ],
+      [
+        28,
+        476,
+        502
+      ],
+      [
+        28,
+        473,
+        499
+      ],
+      [
+        5,
+        71,
+        77
+      ],
+      [
+        28,
+        452,
+        478
+      ],
+      [
+        28,
+        463,
+        489
+      ],
+      [
+        5,
+        81,
+        87
+      ],
+      [
+        14,
+        217,
+        225
+      ],
+      [
+        11,
+        182,
+        190
+      ],
+      [
+        5,
+        39,
+        45
+      ],
+      [
+        28,
+        445,
+        471
+      ],
+      [
+        27,
+        421,
+        447
+      ],
+      [
+        5,
+        41,
+        47
+      ],
+      [
+        23,
+        365,
+        390
+      ],
+      [
+        21,
+        324,
+        349
+      ],
+      [
+        30,
+        518,
+        544
+      ],
+      [
+        5,
+        59,
+        65
+      ],
+      [
+        18,
+        271,
+        287
+      ],
+      [
+        23,
+        381,
+        407
+      ],
+      [
+        5,
+        74,
+        80
+      ],
+      [
+        11,
+        191,
+        200
+      ],
+      [
+        30,
+        513,
+        539
+      ],
+      [
+        30,
+        584,
+        610
+      ],
+      [
+        30,
+        557,
+        583
+      ],
+      [
+        23,
+        360,
+        385
+      ],
+      [
+        30,
+        546,
+        572
+      ],
+      [
+        7,
+        125,
+        131
+      ],
+      [
+        30,
+        521,
+        547
+      ],
+      [
+        23,
+        364,
+        389
+      ],
+      [
+        22,
+        336,
+        361
+      ],
+      [
+        30,
+        516,
+        542
+      ],
+      [
+        28,
+        450,
+        476
+      ],
+      [
+        6,
+        84,
+        90
+      ],
+      [
+        3,
+        6,
+        10
+      ],
+      [
+        5,
+        78,
+        84
+      ],
+      [
+        7,
+        128,
+        134
+      ],
+      [
+        9,
+        163,
+        169
+      ],
+      [
+        22,
+        332,
+        357
+      ],
+      [
+        8,
+        151,
+        157
+      ],
+      [
+        27,
+        427,
+        453
+      ],
+      [
+        29,
+        497,
+        523
+      ],
+      [
+        28,
+        448,
+        474
+      ],
+      [
+        30,
+        510,
+        536
+      ],
+      [
+        30,
+        511,
+        537
+      ],
+      [
+        5,
+        46,
+        52
+      ],
+      [
+        30,
+        569,
+        595
+      ],
+      [
+        28,
+        484,
+        510
+      ],
+      [
+        30,
+        505,
+        531
+      ],
+      [
+        30,
+        582,
+        608
+      ]
+    ],
+    "config": {
+      "input_size": 640,
+      "levels": [
+        0,
+        1
+      ],
+      "temperature": 2.0,
+      "background_scale": 2.0,
+      "minimum_foreground": 1,
+      "minimum_background": 4,
+      "match_iou": 0.5,
+      "reference_conf": 0.05,
+      "reference_iou": 0.1,
+      "teacher_conf": 0.25,
+      "teacher_iou": 0.5,
+      "rho": 0.5,
+      "target_clip": 8.0,
+      "smooth_l1_beta": 1.0
+    },
+    "student_evidence_base_mean": 0.1452815681695938,
+    "student_evidence_base_min": -0.3849506378173828,
+    "student_evidence_base_max": 0.8567647933959961,
+    "student_evidence_base_sd": 0.16002754867076874,
+    "student_evidence_selected_mean": 0.10849786549806595,
+    "student_evidence_selected_sd": 0.1422121673822403,
+    "teacher_evidence_base_mean": 3.533555269241333,
+    "teacher_evidence_base_min": -1.4433832168579102,
+    "teacher_evidence_base_max": 7.389289855957031,
+    "teacher_evidence_base_sd": 1.479191780090332,
+    "teacher_evidence_selected_mean": 3.5733847618103027,
+    "teacher_evidence_selected_sd": 1.3189994096755981,
+    "reference_evidence_base_mean": 3.195197343826294,
+    "reference_evidence_base_min": -1.3603625297546387,
+    "reference_evidence_base_max": 8.378501892089844,
+    "reference_evidence_base_sd": 1.4245591163635254,
+    "reference_evidence_selected_mean": 1.8026877641677856,
+    "reference_evidence_selected_sd": 0.8040188550949097,
+    "quality_base_mean": 0.04255427047610283,
+    "quality_base_min": 0.0,
+    "quality_base_max": 0.6169666051864624,
+    "quality_base_sd": 0.0905330553650856,
+    "quality_selected_mean": 0.13841529190540314,
+    "quality_selected_sd": 0.1206791028380394,
+    "target_binary_entropy_selected": 0.17294298112392426,
+    "target_gap_to_positive_selected": 0.05139482021331787,
+    "target_clipped_count": 0,
+    "batch": 30,
+    "epoch": 0,
+    "native_total": 212.1016845703125,
+    "kd_weight": 0.1,
+    "weighted_kd_total": 2.591045761108399,
+    "total_loss": 214.69273376464844,
+    "optimizer_updates": 23,
+    "time_seconds": 50.022687911987305,
+    "student_files": [
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/04645.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01851.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01671.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/07817.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12025.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05012.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12431.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03125.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06872.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15817.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/09429.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15702.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/08348.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/11423.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14989.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05996.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/11777.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06653.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10434.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05252.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12030.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00735.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03310.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14706.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06045.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02012.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01196.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00646.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15185.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03325.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12229.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10460.jpg"
+    ]
+  },
+  "gpu_allocated_peak_mib": 5087.68603515625,
+  "gpu_reserved_peak_mib": 5770.0,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 6304
+    },
+    "peak_rss_mib": 28895
+  },
+  "seconds": 51.14817404747009,
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1/weights/last.pt",
+  "official_test_accessed": false,
+  "single_seed_exploratory": true
+}

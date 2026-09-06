@@ -1,0 +1,15 @@
+test_csv_zero_never_becomes_metric (test_three_seed_endpoints.EndpointTests) ... ok
+test_default_config_42_does_not_override_actual_seed0 (test_three_seed_endpoints.EndpointTests) ... ok
+test_missing_seed_does_not_produce_three_seed_mean (test_three_seed_endpoints.EndpointTests) ... ok
+test_missing_terminal_eval_receipt_stays_pending (test_three_seed_endpoints.EndpointTests) ... ok
+test_snapshot_wont_overwrite_previous_output (test_three_seed_endpoints.EndpointTests) ... ok
+test_three_seed_math_sample_sd_and_exploratory (test_three_seed_endpoints.EndpointTests) ... ok
+test_wrong_actual_seed_fails (test_three_seed_endpoints.EndpointTests) ... ok
+test_wrong_arm_receipt_fails (test_three_seed_endpoints.EndpointTests) ... ok
+test_wrong_endpoint_epoch_and_metric_snapshot_fail (test_three_seed_endpoints.EndpointTests) ... ok
+test_wrong_frozen_teacher_is_rejected_before_aggregation (test_three_seed_endpoints.EndpointTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.048s
+
+OK

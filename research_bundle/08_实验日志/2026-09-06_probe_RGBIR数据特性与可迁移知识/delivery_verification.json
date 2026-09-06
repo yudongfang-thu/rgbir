@@ -1,0 +1,770 @@
+{
+  "status": "verified",
+  "utc": "2026-09-05T18:05:33.936511+00:00",
+  "datasets": [
+    {
+      "dataset": "dronevehicle",
+      "images": 200,
+      "common_objects": 3083,
+      "script_sha256": "df41641e242df727a29cf5e52380ce1ac6f8481920fae9e3c579fd0d584df281",
+      "class_names": {
+        "0": "car",
+        "1": "freight car",
+        "2": "truck",
+        "3": "bus",
+        "4": "van"
+      },
+      "completion_sha256": "7fed9228fbcc28ff85a04e6537447d75366c5148355dfcee0f6f27f0af38b866",
+      "summary_sha256": "78b0e31be2392a2678333c3c1b51d4df5395daf407e6866c5f709f9870a0641c"
+    },
+    {
+      "dataset": "llvip",
+      "images": 200,
+      "common_objects": 672,
+      "script_sha256": "df41641e242df727a29cf5e52380ce1ac6f8481920fae9e3c579fd0d584df281",
+      "class_names": {
+        "0": "person"
+      },
+      "completion_sha256": "8c6ffbbcbf6730ccfa940c4fe0d6005aba28a0b49088e9fbe7e0ed7a0306eebb",
+      "summary_sha256": "eb3b202c34898b30d16ae31e72a3a548297125a703bf8e83b93b411acd423de8"
+    },
+    {
+      "dataset": "vedai",
+      "images": 121,
+      "common_objects": 364,
+      "script_sha256": "df41641e242df727a29cf5e52380ce1ac6f8481920fae9e3c579fd0d584df281",
+      "class_names": {
+        "0": "car",
+        "1": "pickup",
+        "2": "camper",
+        "3": "truck",
+        "4": "other",
+        "5": "tractor",
+        "6": "boat",
+        "7": "van"
+      },
+      "completion_sha256": "53a0859913c8e86a7223036bf3444e5c526c614f0d0760672685c9ba2bdf0f1b",
+      "summary_sha256": "74b455f4efa7bedde5eebc4c32fc70d9409d9e61b676de6dba09e1854d998f1b"
+    }
+  ],
+  "valid_absolute_artifact_links": 37,
+  "png_integrity": "verified",
+  "scope": "Artifact identity and arithmetic integrity; not method efficacy or accepted analyzer.",
+  "files": [
+    {
+      "path": "analyze_probe_outputs.py",
+      "bytes": 6483,
+      "sha256": "4ce56c3c77c1ee46a1a7b151d729a8ad1fdedc7ec5d13131ea3132d73c8dbe04"
+    },
+    {
+      "path": "audit_candidate_flags.py",
+      "bytes": 3102,
+      "sha256": "b7b85af88522ed9998fcc7f9d2ab4f3c72c30e5785bb06c91d21d9dd9afcc56f"
+    },
+    {
+      "path": "build_feature_atlas.py",
+      "bytes": 3744,
+      "sha256": "bf50dc6c9148136012e48195653214bd5a4252571c124218f16739ac3d6a9dbb"
+    },
+    {
+      "path": "candidate_flag_audit.json",
+      "bytes": 116746,
+      "sha256": "1d623c7cbb892907a493a8fa7576d84e1cf64f47927b4b0917682ebdf9a896d9"
+    },
+    {
+      "path": "collect_dataset_model_inventory.py",
+      "bytes": 6735,
+      "sha256": "e7d2103ad2c7177fc10d66c8228775adab35c9e87d10c484c4b40b5678d5dc15"
+    },
+    {
+      "path": "current_results_notes.md",
+      "bytes": 12691,
+      "sha256": "b1de5cfae87b9b94edbcf18749abc7cf5bd5aea66c9f27f4b3bbec39c613c05e"
+    },
+    {
+      "path": "current_results_sources.json",
+      "bytes": 177035,
+      "sha256": "b3a0b2242342e1a31e14c089c3bde4b53963ed90f8599037c7918a987f096721"
+    },
+    {
+      "path": "dataset_model_inventory.json",
+      "bytes": 159532,
+      "sha256": "034eaca76451534a4c3738fff1ff1f5ddabb76b655c45d44b2f4f1f7cbee3971"
+    },
+    {
+      "path": "dataset_model_inventory.md",
+      "bytes": 9546,
+      "sha256": "c1107673eb1445b849e76e22e2d5f987f0b2ed3332d587ffd1654f601f149620"
+    },
+    {
+      "path": "dronevehicle_full/class_names.json",
+      "bytes": 199,
+      "sha256": "5a013f13ac8d87567db4dccace318ebcc5b9183683fc8ff0fd3407de398795b1"
+    },
+    {
+      "path": "dronevehicle_full/completion_receipt.json",
+      "bytes": 309,
+      "sha256": "7fed9228fbcc28ff85a04e6537447d75366c5148355dfcee0f6f27f0af38b866"
+    },
+    {
+      "path": "dronevehicle_full/diagnostic_overview.pdf",
+      "bytes": 26263,
+      "sha256": "8a13aa9ff21561c6269af7f40aa9798856abe96d77e99039d1a49ccc1eb36f08"
+    },
+    {
+      "path": "dronevehicle_full/diagnostic_overview.png",
+      "bytes": 185078,
+      "sha256": "c0fc7ea1c9ed968ad55ddb931dd353fdccf7bc4bcceca339b9b6e48b18b964fd"
+    },
+    {
+      "path": "dronevehicle_full/donor_indices.json",
+      "bytes": 8493,
+      "sha256": "c441bca5783c6d58464db22e7bddb967c198d2c0533b95fe167f13df4e87ac80"
+    },
+    {
+      "path": "dronevehicle_full/energy_maps.npz",
+      "bytes": 11389987,
+      "sha256": "8387f62cd69cc9aa318460d0a8ecf097f82a17877c827e7d77910a2a55a308c2"
+    },
+    {
+      "path": "dronevehicle_full/feature_case_1.png",
+      "bytes": 2595303,
+      "sha256": "28d2bef69f374bd50dc1b7b407b16cd35eb389d127494cdd6238b1ee7fd86341"
+    },
+    {
+      "path": "dronevehicle_full/feature_case_2.png",
+      "bytes": 2550744,
+      "sha256": "d9f9fb6519a6ba0cde04e77c354fb947eb96f56c34aae32f58d43d6901bcd35f"
+    },
+    {
+      "path": "dronevehicle_full/feature_case_3.png",
+      "bytes": 2855711,
+      "sha256": "34cffab85ce6d46f4d38e98a5fb8dedaeea80103c779f1588e920a7202b98c27"
+    },
+    {
+      "path": "dronevehicle_full/feature_case_4.png",
+      "bytes": 3170254,
+      "sha256": "5ea83e79e4982b0a1e730626cff00b907500474beb07349819fd6bbe46c791fc"
+    },
+    {
+      "path": "dronevehicle_full/feature_metrics.csv",
+      "bytes": 239735,
+      "sha256": "134f6d3c79e03b479b28e2b404d8ccee9cd41d857a8248bca7cffd236e7e6f4a"
+    },
+    {
+      "path": "dronevehicle_full/feature_metrics.json",
+      "bytes": 621770,
+      "sha256": "a06106e391a559fa577b3d514994298758bedecb63a0f2711560beec0aa7a5fa"
+    },
+    {
+      "path": "dronevehicle_full/image_metrics.csv",
+      "bytes": 47924,
+      "sha256": "ab995864bfba2219005186577e423316e661bd015a8a92f0809c51a1a573768f"
+    },
+    {
+      "path": "dronevehicle_full/image_metrics.json",
+      "bytes": 132280,
+      "sha256": "ff0e86f2ca178a19de3a141f18234b167daaec4343ad34150f6f7235102a0cf6"
+    },
+    {
+      "path": "dronevehicle_full/input_manifest.json",
+      "bytes": 11908,
+      "sha256": "7ad5afbb0b6fbc907ac6a627b9b600fba1a34bbbd96b95d32a50a25f6a1ad445"
+    },
+    {
+      "path": "dronevehicle_full/matched_objects.csv",
+      "bytes": 487827,
+      "sha256": "4d6fd8072689586cb59936d65ae25e30437d80ec659beb81cfc83b106ee15f87"
+    },
+    {
+      "path": "dronevehicle_full/matched_objects.json",
+      "bytes": 1603658,
+      "sha256": "3a882a00d262271709d0f40f35679d75c9604d49aa04edb50e757f49681a63c8"
+    },
+    {
+      "path": "dronevehicle_full/prediction_records.json",
+      "bytes": 2089865,
+      "sha256": "01a6b10bb7d9c6711d3c89b09011786e7623b518d4a1a67f76e28ae4b3b4ae09"
+    },
+    {
+      "path": "dronevehicle_full/sample_files.json",
+      "bytes": 202403,
+      "sha256": "690835a5b94ba8c531352718680f62637633fc4b77573bd1f67718f2d91badef"
+    },
+    {
+      "path": "dronevehicle_full/summary.json",
+      "bytes": 16457,
+      "sha256": "78b0e31be2392a2678333c3c1b51d4df5395daf407e6866c5f709f9870a0641c"
+    },
+    {
+      "path": "evidence_and_method_notes.md",
+      "bytes": 20299,
+      "sha256": "2a18f6b6c65c4ed74bf6e51faf00222f1476d360f9ba7ddf0f49b5daf4841214"
+    },
+    {
+      "path": "llvip_full/class_names.json",
+      "bytes": 57,
+      "sha256": "9c87887e99ba0bc88d348c5d42681317ca83a59cca77d79b95c780f59e8befbc"
+    },
+    {
+      "path": "llvip_full/completion_receipt.json",
+      "bytes": 310,
+      "sha256": "8c6ffbbcbf6730ccfa940c4fe0d6005aba28a0b49088e9fbe7e0ed7a0306eebb"
+    },
+    {
+      "path": "llvip_full/diagnostic_overview.pdf",
+      "bytes": 26119,
+      "sha256": "663fbdb0cb6da2bcf83b26f1234b7bf9e6a0ccbb37aba4ddc65beb696f8e902b"
+    },
+    {
+      "path": "llvip_full/diagnostic_overview.png",
+      "bytes": 176294,
+      "sha256": "d3a33c6b7d7ee7d03485aa01e3e4929b1dbda9140bb62e52618db6633faea0f4"
+    },
+    {
+      "path": "llvip_full/donor_indices.json",
+      "bytes": 8493,
+      "sha256": "c441bca5783c6d58464db22e7bddb967c198d2c0533b95fe167f13df4e87ac80"
+    },
+    {
+      "path": "llvip_full/energy_maps.npz",
+      "bytes": 11332300,
+      "sha256": "730d016a1111ef18c2e3460388071b580131c1bc4e9a64185f501292e6cad56f"
+    },
+    {
+      "path": "llvip_full/feature_case_1.png",
+      "bytes": 2337129,
+      "sha256": "27fff6cf54276312209f70187da6a01916d420d8d23488829179918a7a6db206"
+    },
+    {
+      "path": "llvip_full/feature_case_2.png",
+      "bytes": 1792139,
+      "sha256": "5417b921fee09f05506378f8da3ca9e72607992b8b400f74c86186023001a6cc"
+    },
+    {
+      "path": "llvip_full/feature_case_3.png",
+      "bytes": 2323558,
+      "sha256": "5229f2f88e2104437228de2d145c24fecc158d36fb0c6fe554cdb0cd2b65fdda"
+    },
+    {
+      "path": "llvip_full/feature_case_4.png",
+      "bytes": 2914833,
+      "sha256": "bde56c666d00cce6b77737c935a7efb1c3752df831ea82b4246782d719810da2"
+    },
+    {
+      "path": "llvip_full/feature_metrics.csv",
+      "bytes": 241499,
+      "sha256": "89c84ed70f72b7f5f710f93334faaf43fdcd9c3004a2ed6ad2d912b10c81f481"
+    },
+    {
+      "path": "llvip_full/feature_metrics.json",
+      "bytes": 624254,
+      "sha256": "3e0d5b138e4bab33a5b0179f88a89393aa08f20e8867091ba87919d71ed8b117"
+    },
+    {
+      "path": "llvip_full/image_metrics.csv",
+      "bytes": 49579,
+      "sha256": "62b0280c1f54e551e35f0835f8fd0da4c1e48dca4a4d3ddddd7512f4359f8458"
+    },
+    {
+      "path": "llvip_full/image_metrics.json",
+      "bytes": 133935,
+      "sha256": "53101ca5f1de6c9281b5fd89a10081488cc7b3747f97c9956344e388e92cec43"
+    },
+    {
+      "path": "llvip_full/input_manifest.json",
+      "bytes": 12038,
+      "sha256": "14279437576dd669602c6be67df88537d912ec849df16540317ef1c92b17fd55"
+    },
+    {
+      "path": "llvip_full/matched_objects.csv",
+      "bytes": 87417,
+      "sha256": "c51c500698715428a2bae0d4ccab4554187d0380e154e0aad28ece93875e3cd5"
+    },
+    {
+      "path": "llvip_full/matched_objects.json",
+      "bytes": 330466,
+      "sha256": "9fbf9ea656595e02c58d15478d7f99eaadbf17851485caebc23935b417d89531"
+    },
+    {
+      "path": "llvip_full/prediction_records.json",
+      "bytes": 506976,
+      "sha256": "7e30305c8e1992db9a3136904a33160584305b3da7929f915c4349fd439fe574"
+    },
+    {
+      "path": "llvip_full/sample_files.json",
+      "bytes": 202603,
+      "sha256": "3e68c7b092b27a30a231b3f60340d596fb34bc68436d3102e5decb286f895d3e"
+    },
+    {
+      "path": "llvip_full/summary.json",
+      "bytes": 16380,
+      "sha256": "eb3b202c34898b30d16ae31e72a3a548297125a703bf8e83b93b411acd423de8"
+    },
+    {
+      "path": "make_probe_config.py",
+      "bytes": 798,
+      "sha256": "70742850e9561207783e05dd417922cf02e2fb52367b1f378ca0cde9faee5c78"
+    },
+    {
+      "path": "make_registration_panels.py",
+      "bytes": 12776,
+      "sha256": "45132018ae972e529e229378359cf36d0494ffc8e50fdc59aa5ceb7f618f75e3"
+    },
+    {
+      "path": "minimal_kd_validation.md",
+      "bytes": 20466,
+      "sha256": "013d6f27837f77fb8c7fe3310c5d8da4adf03b1114badd98afa1d6d7f0340525"
+    },
+    {
+      "path": "observed_feature_diagnosis.md",
+      "bytes": 12371,
+      "sha256": "fe901b45f348994be3218c2bc2cf6ac5413b1c5b8ecd9aa8011a4ac2c70f19b0"
+    },
+    {
+      "path": "probe_analysis.json",
+      "bytes": 197939,
+      "sha256": "4a3de2aefa01ef257c3c9ffce6dc7144f2788928728d10f10956c40ed4622454"
+    },
+    {
+      "path": "probe_config.json",
+      "bytes": 3900,
+      "sha256": "5f136b42c8d81e40d744243b24c4c6c611e3f0830cc9464c102c78e633d9d907"
+    },
+    {
+      "path": "probe_review.md",
+      "bytes": 13735,
+      "sha256": "ccb2ee83c99320d05d5dadaef9aad8082e7144b9f1de60b78aff18d441507d5f"
+    },
+    {
+      "path": "probe_rgbir.py",
+      "bytes": 20036,
+      "sha256": "df41641e242df727a29cf5e52380ce1ac6f8481920fae9e3c579fd0d584df281"
+    },
+    {
+      "path": "PROJECTS_INDEX_RGBIR_PROBE_20260906.md",
+      "bytes": 575,
+      "sha256": "6c3d222b82ceb503321b4761eb82dc09a7300148dbb6987f92c5c35a569dcc21"
+    },
+    {
+      "path": "PROJECTS_INDEX_RGBIR_PROBE_COMPLETED_20260906.md",
+      "bytes": 1563,
+      "sha256": "2b3f975d3cd42a02b6f71f3090a3027336a9c83edb6a762a63c627038527c444"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7573,
+      "sha256": "4ec2cbb28a8eb4d65f5320dc08b411a749c5ebbd05b7543cf23f40416b9dfac0"
+    },
+    {
+      "path": "registration_panels/completion_receipt.json",
+      "bytes": 832,
+      "sha256": "e0d474063e675299e30f80d644e72e29cdb8caa3ebea8501ef7b6363e2eab521"
+    },
+    {
+      "path": "registration_panels/dronevehicle_registration.json",
+      "bytes": 3271,
+      "sha256": "b5b0f8e3c6b172efa4ccb849fbe113c998163e33bf16f4b3234633f927b93c85"
+    },
+    {
+      "path": "registration_panels/dronevehicle_registration.pdf",
+      "bytes": 745738,
+      "sha256": "f1ecaa48ed827c636a9c8d937db781ad15e7be8889e78e5052c41419c253b93b"
+    },
+    {
+      "path": "registration_panels/dronevehicle_registration.png",
+      "bytes": 2244631,
+      "sha256": "aa6e5e290e136680911c2a034a9ecb3bb633249f9f5d162a412b66f74d7e5ba3"
+    },
+    {
+      "path": "registration_panels/llvip_registration.json",
+      "bytes": 3258,
+      "sha256": "60b4a7fc4e69f98acdc889a2231293a1dd8a925c6e1cbbd376f05ba39d38dff3"
+    },
+    {
+      "path": "registration_panels/llvip_registration.pdf",
+      "bytes": 795544,
+      "sha256": "c8aa7627e87c6e08ed720ec03debfbe0afa59e08c3903d761b0cc8a3fa9e1f23"
+    },
+    {
+      "path": "registration_panels/llvip_registration.png",
+      "bytes": 2276965,
+      "sha256": "0cf6f05ed417e97d1ef35cb4d0975c763055f2160becf04299703d32b0e41cbe"
+    },
+    {
+      "path": "registration_panels/local_verification_receipt.json",
+      "bytes": 1502,
+      "sha256": "83d3d7c3a9b08b8affa74715f63db07f928dd027957c73c67cfbbda908031e86"
+    },
+    {
+      "path": "registration_panels/make_registration_panels.py",
+      "bytes": 12776,
+      "sha256": "45132018ae972e529e229378359cf36d0494ffc8e50fdc59aa5ceb7f618f75e3"
+    },
+    {
+      "path": "registration_panels/README.md",
+      "bytes": 831,
+      "sha256": "9cd603c37b0376f3dc0160c94d7e8c94ab8010ff63bbc98a25094ca561951934"
+    },
+    {
+      "path": "registration_panels/vedai_registration.json",
+      "bytes": 3358,
+      "sha256": "67ada2c5366e9444ab025f972fe0e2cc91e133522bfa89ee7dd146f66c66453b"
+    },
+    {
+      "path": "registration_panels/vedai_registration.pdf",
+      "bytes": 750980,
+      "sha256": "697d1d4b47f7a29bc6a144aaab8a34fec5f6cef467fd0f8ec8831912be9c0868"
+    },
+    {
+      "path": "registration_panels/vedai_registration.png",
+      "bytes": 1971939,
+      "sha256": "7a0dcdd929643d0b27095232e72853783880e7276104fa09bc44bc641f5cc8df"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/class_names.json",
+      "bytes": 199,
+      "sha256": "5a013f13ac8d87567db4dccace318ebcc5b9183683fc8ff0fd3407de398795b1"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/completion_receipt.json",
+      "bytes": 308,
+      "sha256": "4eb1f48a1cb09593d5e37320dd944fa21150ac3207fe93e32c1e0a0296c93f80"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/donor_indices.json",
+      "bytes": 113,
+      "sha256": "f3643e491edee148db9a9611307fd1e15f8d42be32c64311109d36e25bb659ad"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/feature_metrics.csv",
+      "bytes": 2528,
+      "sha256": "52e0b3819951f08a1cb18b15bef6276f22242fdecf745d8adecea8857cba4290"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/feature_metrics.json",
+      "bytes": 6227,
+      "sha256": "95338d6f7f1dafa8b9e298ba6254ae28470917bb3fdbe0ed4769ee757270c8f0"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/image_metrics.csv",
+      "bytes": 736,
+      "sha256": "117736e53761767f3b4eb0b27796b16850825048b8855b453329a253defb2e0f"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/image_metrics.json",
+      "bytes": 1338,
+      "sha256": "3e12434310efe69287871341695c303af8288aad26a2440ce22d56e4fd3c5af9"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/input_manifest.json",
+      "bytes": 9331,
+      "sha256": "e1f14eb745614ae7737c738fb3875e393fd1494fcd629da602160b8d04b77db7"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/matched_objects.csv",
+      "bytes": 7165,
+      "sha256": "731fa91dac1a236a15717d636120196a8f729900893b4cb4df249067085a3cf7"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/matched_objects.json",
+      "bytes": 26136,
+      "sha256": "19d33f35dffd82ea3692a9bd77e17caeefc0a6f8f9b5c3e176d0991aa76ec70b"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/prediction_records.json",
+      "bytes": 32311,
+      "sha256": "e0e3f0410c396f976d8fa165d6e519fdf1c7b8b474228e52d6e4ae5d95638177"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/sample_files.json",
+      "bytes": 2027,
+      "sha256": "ef7fc68b45361da91cf259aacf9496b52ea965a2667b743ac5206093d741c3e3"
+    },
+    {
+      "path": "remote_execution/dronevehicle_canary2/summary.json",
+      "bytes": 16147,
+      "sha256": "9159c3d00401baa7d26f01a24fdd03ee72553378793228cd984eca7e13182076"
+    },
+    {
+      "path": "remote_execution/dronevehicle_full.log",
+      "bytes": 11883,
+      "sha256": "ae1fde568524cffe1ddd57315a33179a6180094d3df4ed63110cef3b0a86dfbb"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/class_names.json",
+      "bytes": 57,
+      "sha256": "9c87887e99ba0bc88d348c5d42681317ca83a59cca77d79b95c780f59e8befbc"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/completion_receipt.json",
+      "bytes": 307,
+      "sha256": "e5062b14afcb641137b6bb85a819d680f84f289bcaaa2ed3d5b2cc9120c18057"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/donor_indices.json",
+      "bytes": 113,
+      "sha256": "f3643e491edee148db9a9611307fd1e15f8d42be32c64311109d36e25bb659ad"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/feature_metrics.csv",
+      "bytes": 2470,
+      "sha256": "e6b1b0903ec5c24b967db40f7be749dd70ddae0fa655c6e9714b3f3d6c204802"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/feature_metrics.json",
+      "bytes": 6193,
+      "sha256": "4770cfe48ab872beacd09c0216cd3a5428e2247fd0027793ef9b2d7e814cf9fc"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/image_metrics.csv",
+      "bytes": 747,
+      "sha256": "b3681f7f971f36730039e82749ffcb6d083282932e6857b5cdaea2e5849fd95f"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/image_metrics.json",
+      "bytes": 1349,
+      "sha256": "957ea585b50c4157545f567b8cc0327f1b39c260ac5dfce42247f9d1cc086c8b"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/input_manifest.json",
+      "bytes": 9263,
+      "sha256": "a7dd9b1caa21a1ae3c7273d8b6dcfff7525a6ae7edfa466ca4892bc2e8ce1b9f"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/matched_objects.csv",
+      "bytes": 594,
+      "sha256": "a12fa9653dd95a120635f70d3e9ac01954dcbce4a6f3c81adb86db3495d50845"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/matched_objects.json",
+      "bytes": 1465,
+      "sha256": "c3f15aaeb3d0b1e053500682f07d12c81376f73e9c78fd8b33509e373b38174b"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/prediction_records.json",
+      "bytes": 3172,
+      "sha256": "607e7470d7de8a1a6371c289ae15d84367119413bc22f6174fb0962361139f13"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/sample_files.json",
+      "bytes": 2029,
+      "sha256": "ec212acd237e03b5223f894c80221e0fcb68a349ff4febe51444afc7198fa5ea"
+    },
+    {
+      "path": "remote_execution/llvip_canary2/summary.json",
+      "bytes": 16117,
+      "sha256": "8af399f4044b770641889d53f6a68e10a0914bee07e1e819346865b66c5dfb49"
+    },
+    {
+      "path": "remote_execution/llvip_full.log",
+      "bytes": 11799,
+      "sha256": "b701d009c5095a8289199e16618b6cab5c2c5de585ad31e81729a70ef026e092"
+    },
+    {
+      "path": "remote_execution/probe_rgbir.py",
+      "bytes": 18657,
+      "sha256": "305d98d6546545bbe8016d753da79bd2340aa3e1239aeaab93914d6144b25b85"
+    },
+    {
+      "path": "remote_execution/probe_rgbir_v2.py",
+      "bytes": 20036,
+      "sha256": "df41641e242df727a29cf5e52380ce1ac6f8481920fae9e3c579fd0d584df281"
+    },
+    {
+      "path": "remote_execution/run_probe.sh",
+      "bytes": 921,
+      "sha256": "8ba122f7a9e30b4674cc74a3ea0a659ec72c710e097dc121a232dc365b3e42b3"
+    },
+    {
+      "path": "remote_execution/run_probe_v2.sh",
+      "bytes": 925,
+      "sha256": "11c700c4d693bb5eda4e01427003a0758c1d7dd03e54357548b926e7b195ca72"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/class_names.json",
+      "bytes": 305,
+      "sha256": "db9ce7f3dae0cc19fea3e348f8399c970b4bc34e0cd81e54e8dc356c4eb7edb4"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/completion_receipt.json",
+      "bytes": 306,
+      "sha256": "ce1f3705e214a7520c3f5f49c3192de18a7110b4572c0e5a9a542b57bae8b2bb"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/donor_indices.json",
+      "bytes": 113,
+      "sha256": "f3643e491edee148db9a9611307fd1e15f8d42be32c64311109d36e25bb659ad"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/feature_metrics.csv",
+      "bytes": 2132,
+      "sha256": "46452b3f20c27adb9f6054d29f3990a83de237ca470cebbbe76bf1d5d40d9601"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/feature_metrics.json",
+      "bytes": 5927,
+      "sha256": "2eec5ac24473859ae0f41bdf97a80dc6d560b6b9833f2f51622550a8b9c8cc6f"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/image_metrics.csv",
+      "bytes": 731,
+      "sha256": "55de42529176821563aadb3ddcf71ba304f9ef57b4274b4496a4363268e3885c"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/image_metrics.json",
+      "bytes": 1333,
+      "sha256": "3bd92eb7bad9c2f17c106a7950bbd822f02bfd2262a16797a5bfe0d4acdde87b"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/input_manifest.json",
+      "bytes": 9612,
+      "sha256": "0270499e7586e595af0e83c6fddac2d7b7fecb461bdb7f72fd95ee6cf1dfffdc"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/matched_objects.csv",
+      "bytes": 880,
+      "sha256": "193ed20a664d6a739dccadb1a89fa14474024655f4c9153eb8f4cefa9b0e7bb0"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/matched_objects.json",
+      "bytes": 2475,
+      "sha256": "c660f765634b76db1b7938a44aac5e77571795e5c803a89eaed5837a2d4e25f6"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/prediction_records.json",
+      "bytes": 4084,
+      "sha256": "4d8ac6d56e694fe1bcd542dc30d59f4a38a291b70d9dd061c7f246c263fc6132"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/sample_files.json",
+      "bytes": 2257,
+      "sha256": "391b056fb9d9f27ca832b9d6d065bb62c35e6efa0cbaa805b9d6b35329cfb5af"
+    },
+    {
+      "path": "remote_execution/vedai_canary2/summary.json",
+      "bytes": 14993,
+      "sha256": "cd97cf79587f51fce4830ee19f002c5239e98ac4b45dc915ebf17fb9ad06f94b"
+    },
+    {
+      "path": "remote_execution/vedai_full.log",
+      "bytes": 11588,
+      "sha256": "f839aa5090bb577585cdc5af7306ae2819af462881970cccddeb107fbd398c8a"
+    },
+    {
+      "path": "run_probe.sh",
+      "bytes": 925,
+      "sha256": "11c700c4d693bb5eda4e01427003a0758c1d7dd03e54357548b926e7b195ca72"
+    },
+    {
+      "path": "vedai_full/class_names.json",
+      "bytes": 305,
+      "sha256": "db9ce7f3dae0cc19fea3e348f8399c970b4bc34e0cd81e54e8dc356c4eb7edb4"
+    },
+    {
+      "path": "vedai_full/completion_receipt.json",
+      "bytes": 306,
+      "sha256": "53a0859913c8e86a7223036bf3444e5c526c614f0d0760672685c9ba2bdf0f1b"
+    },
+    {
+      "path": "vedai_full/diagnostic_overview.pdf",
+      "bytes": 25146,
+      "sha256": "abf2a954fcd47a57043bc202d84e19c40ed944c23bbde6efd85df58b886b82c2"
+    },
+    {
+      "path": "vedai_full/diagnostic_overview.png",
+      "bytes": 179572,
+      "sha256": "cb465c67341cd5cc5d799cf7fd3b910c4c3b4d907d285545cc9115415fb2b60a"
+    },
+    {
+      "path": "vedai_full/donor_indices.json",
+      "bytes": 4938,
+      "sha256": "da556e2bee39e408a02c21f7963815ab5d18de2e10f51fecf457a252d97a56b8"
+    },
+    {
+      "path": "vedai_full/energy_maps.npz",
+      "bytes": 6789689,
+      "sha256": "6fda6e36710eed61e89b86ddd042e673cd591c4b1e5056a0a75d3942720e3f6c"
+    },
+    {
+      "path": "vedai_full/feature_case_1.png",
+      "bytes": 2129067,
+      "sha256": "a5cec4236b1b87d5d423bfd8944cac8b76ca8742a756161c18f0cff9493cfbb2"
+    },
+    {
+      "path": "vedai_full/feature_case_2.png",
+      "bytes": 2262944,
+      "sha256": "1541f2f0da2e67360b0cd11c72a70669bae50c967951490e4fdd558e66359275"
+    },
+    {
+      "path": "vedai_full/feature_case_3.png",
+      "bytes": 2219348,
+      "sha256": "6efee5e7603cd2ba30419059a56cf71d35edc1afc9bd9dffe0e482ed6d26037c"
+    },
+    {
+      "path": "vedai_full/feature_case_4.png",
+      "bytes": 1633677,
+      "sha256": "fac7b1c90d13a847362cd3f4e722700402e3b50fd1f5095ccb14720397e85d9a"
+    },
+    {
+      "path": "vedai_full/feature_metrics.csv",
+      "bytes": 122651,
+      "sha256": "87bfbdcc9bb66abb38c94fe447324d6d7e3eabd4622a3685e4e28dcbb261de70"
+    },
+    {
+      "path": "vedai_full/feature_metrics.json",
+      "bytes": 359066,
+      "sha256": "159293ae19eaea22bde0e5bafc6dd1cfc5af93bec1f5ea7ee5c1ef91c76d76fc"
+    },
+    {
+      "path": "vedai_full/image_metrics.csv",
+      "bytes": 28404,
+      "sha256": "4ded1873ee6f96639ed718a5b0653be2e314a2265f3e6535bef7face40023780"
+    },
+    {
+      "path": "vedai_full/image_metrics.json",
+      "bytes": 79343,
+      "sha256": "5a46307e117db410ecb47ee1f0b2d5e039de7220a34bd50834291887cd202aa0"
+    },
+    {
+      "path": "vedai_full/input_manifest.json",
+      "bytes": 11519,
+      "sha256": "5c1869d662b4047420799ee64dde5ce8507ccc411af07b1bc83a01e67806143f"
+    },
+    {
+      "path": "vedai_full/matched_objects.csv",
+      "bytes": 45353,
+      "sha256": "0165ff60897d8116cb4386d59ed42a90f3f482d98bba2adeeffde4f739a6fcde"
+    },
+    {
+      "path": "vedai_full/matched_objects.json",
+      "bytes": 176906,
+      "sha256": "ed8a12588bf57f1c8a2a87d977ff6a940f05cd11cba33878de967d1798648798"
+    },
+    {
+      "path": "vedai_full/prediction_records.json",
+      "bytes": 325727,
+      "sha256": "bec02f33951d6a99ef74143d7302b0e0ae8e75cf891ee157d8f7a4f68dc82c59"
+    },
+    {
+      "path": "vedai_full/sample_files.json",
+      "bytes": 136370,
+      "sha256": "9f54e7c3f781e0de004b12f58f76b32bac13c0c8e0d4f38906dd2267263b1dfe"
+    },
+    {
+      "path": "vedai_full/summary.json",
+      "bytes": 16215,
+      "sha256": "74b455f4efa7bedde5eebc4c32fc70d9409d9e61b676de6dba09e1854d998f1b"
+    },
+    {
+      "path": "verify_probe_artifacts.py",
+      "bytes": 3403,
+      "sha256": "06a728bf38e95ebee40c3534a5ebab602c1ef1ecba9ac0b2581efdda786d5a34"
+    },
+    {
+      "path": "特征图册.md",
+      "bytes": 7689,
+      "sha256": "0ac577307b8d5c6d529917e4ca981b0b85b0f698215d941e50fcc65ce0b81952"
+    }
+  ]
+}

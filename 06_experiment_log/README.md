@@ -1,7 +1,7 @@
 # 08_实验日志 · 索引与规范
 
 > 目的：**每个实验（探针/训练/评估/复现/审计）一个目录，结论落在 md 里**，保证新开对话不丢进度。
-> 新会话启动时先读本 README 与最近条目，再读 [AGENTS.md](../AGENTS.md)。
+> 新会话启动时先读本 README 与最近条目，再读 [AGENTS.md](../research_bundle/workspace_context/WORKSPACE_AGENTS.md)。
 
 ## 目录命名
 
