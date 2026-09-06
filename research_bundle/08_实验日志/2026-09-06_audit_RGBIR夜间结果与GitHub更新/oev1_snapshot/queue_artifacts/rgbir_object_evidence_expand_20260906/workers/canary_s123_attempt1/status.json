@@ -1,0 +1,31 @@
+{
+  "stage": "canary",
+  "seed": 123,
+  "physical_gpu": 6,
+  "pid": 3825445,
+  "teacher_seed": 42,
+  "reference_seed": 42,
+  "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2",
+  "status": "completed",
+  "arm_order": [
+    "paired",
+    "weight0"
+  ],
+  "results": [
+    {
+      "arm": "paired",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1",
+      "train_exit_code": 0,
+      "status": "trained"
+    },
+    {
+      "arm": "weight0",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1",
+      "train_exit_code": 0,
+      "status": "trained"
+    }
+  ],
+  "updated_at": "2026-09-05T23:39:58.232690+00:00",
+  "active_arm": null,
+  "queued_arms": []
+}

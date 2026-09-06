@@ -1,0 +1,42 @@
+{
+  "schema": "osssl-independent-night-numbers-review-v1",
+  "checks": {
+    "paired123_contiguous_e200": true,
+    "paired123_seed_matches": true,
+    "shuffled123_contiguous_e200": true,
+    "shuffled123_seed_matches": true,
+    "sar_only42_contiguous_e200": true,
+    "sar_only42_seed_matches": true,
+    "native123_contiguous_e200": true,
+    "native123_seed_matches": true,
+    "native42_contiguous_e200": true,
+    "native42_seed_matches": true,
+    "paired123_metrics/mAP50(B)_historical_contrast_matches": true,
+    "paired123_metrics/mAP50-95(B)_historical_contrast_matches": true,
+    "sar_only42_metrics/mAP50(B)_historical_contrast_matches": true,
+    "sar_only42_metrics/mAP50-95(B)_historical_contrast_matches": true,
+    "shuffled123_metrics/mAP50(B)_historical_contrast_matches": true,
+    "shuffled123_metrics/mAP50-95(B)_historical_contrast_matches": true,
+    "metrics/mAP50(B)_internal_contrast_matches": true,
+    "metrics/mAP50-95(B)_internal_contrast_matches": true,
+    "internal_args_only_model_and_names_differ": true,
+    "csv_not_independent_final": true,
+    "no_three_seed_claim": true,
+    "initialization_and_rgb_self_control_limits_retained": true,
+    "raw_csv_ap50_difference_below_0p5": true
+  },
+  "paired123_minus_shuffled123_pp_exact_saved_csv": {
+    "metrics/mAP50(B)": "0.49500",
+    "metrics/mAP50-95(B)": "0.66900"
+  },
+  "args_differences": [
+    "model",
+    "name",
+    "save_dir"
+  ],
+  "limitations": [
+    "Decimal arithmetic uses saved, already rounded training CSV values; it does not recover full precision evaluator metrics.",
+    "Single finetuning seed comparison, a single pretrained checkpoint per arm, no independent last evaluation, no three-seed gate decision.",
+    "Shared nonbackbone state is from prior CPU evidence, not reloaded here; native initialization remains confounded and RGB-only SSL absent."
+  ]
+}

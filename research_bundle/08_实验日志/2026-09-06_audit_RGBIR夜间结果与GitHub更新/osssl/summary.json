@@ -1,0 +1,284 @@
+{
+  "timestamp": "2026-09-06T21:46:07.027520+08:00",
+  "finished_at": "2026-09-06T21:46:07.114056+08:00",
+  "metric_identity": "epoch 200 training CSV validation; not independent eval_rgbt_detector last/EMA endpoint",
+  "test_used": false,
+  "hashes_generated": false,
+  "initialization_evidence_reused_from": "2026-09-06T17:31:43.773744+08:00",
+  "initialization_evidence_file": "initialization_inspection_173143_reused.json",
+  "progress": [
+    {
+      "arm": "paired",
+      "seed": 0,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "paired",
+      "seed": 42,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "paired",
+      "seed": 123,
+      "status": "completed",
+      "epoch_completed": 200,
+      "has_independent_metrics_record": false,
+      "csv_rows": 200,
+      "completion_checks": {
+        "exact_200_rows": true,
+        "contiguous_1_to_200": true,
+        "last_epoch_200": true,
+        "receipt_seed_matches": true,
+        "receipt_output_matches": true,
+        "receipt_config_matches": true
+      },
+      "receipt_legacy_identity": {
+        "arm": "native_weight0",
+        "method_identity": "CGA-KD-W1"
+      }
+    },
+    {
+      "arm": "sar_only",
+      "seed": 0,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "sar_only",
+      "seed": 42,
+      "status": "completed",
+      "epoch_completed": 200,
+      "has_independent_metrics_record": false,
+      "csv_rows": 200,
+      "completion_checks": {
+        "exact_200_rows": true,
+        "contiguous_1_to_200": true,
+        "last_epoch_200": true,
+        "receipt_seed_matches": true,
+        "receipt_output_matches": true,
+        "receipt_config_matches": true
+      },
+      "receipt_legacy_identity": {
+        "arm": "native_weight0",
+        "method_identity": "CGA-KD-W1"
+      }
+    },
+    {
+      "arm": "sar_only",
+      "seed": 123,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "shuffled",
+      "seed": 0,
+      "status": "running",
+      "epoch_completed": 131,
+      "has_independent_metrics_record": false,
+      "csv_rows": 131
+    },
+    {
+      "arm": "shuffled",
+      "seed": 42,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "shuffled",
+      "seed": 123,
+      "status": "completed",
+      "epoch_completed": 200,
+      "has_independent_metrics_record": false,
+      "csv_rows": 200,
+      "completion_checks": {
+        "exact_200_rows": true,
+        "contiguous_1_to_200": true,
+        "last_epoch_200": true,
+        "receipt_seed_matches": true,
+        "receipt_output_matches": true,
+        "receipt_config_matches": true
+      },
+      "receipt_legacy_identity": {
+        "arm": "native_weight0",
+        "method_identity": "CGA-KD-W1"
+      }
+    }
+  ],
+  "contrasts_vs_historical_native": [
+    {
+      "arm": "paired",
+      "seed": 123,
+      "epoch": 200,
+      "metrics": {
+        "metrics/mAP50(B)": {
+          "left_pp": 75.849,
+          "right_pp": 75.758,
+          "delta_pp": 0.091
+        },
+        "metrics/mAP50-95(B)": {
+          "left_pp": 53.942,
+          "right_pp": 53.698,
+          "delta_pp": 0.244
+        }
+      },
+      "args_differences": {
+        "model": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_paired.pt",
+          "right": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt"
+        },
+        "name": {
+          "left": "paired_rgb_s123_e200",
+          "right": "native_rgb_s123_e200"
+        },
+        "project": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906",
+          "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1"
+        },
+        "save_dir": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/paired_rgb_s123_e200",
+          "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s123_e200"
+        }
+      },
+      "causal_limit": "SSL backbone and detector initialization are confounded; not a clean SSL benefit estimate"
+    },
+    {
+      "arm": "sar_only",
+      "seed": 42,
+      "epoch": 200,
+      "metrics": {
+        "metrics/mAP50(B)": {
+          "left_pp": 76.822,
+          "right_pp": 75.994,
+          "delta_pp": 0.828
+        },
+        "metrics/mAP50-95(B)": {
+          "left_pp": 54.623,
+          "right_pp": 53.798,
+          "delta_pp": 0.825
+        }
+      },
+      "args_differences": {
+        "model": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_sar_only.pt",
+          "right": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt"
+        },
+        "name": {
+          "left": "sar_only_rgb_s42_e200",
+          "right": "native_rgb_s42_e200"
+        },
+        "project": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906",
+          "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1"
+        },
+        "save_dir": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s42_e200",
+          "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s42_e200"
+        }
+      },
+      "causal_limit": "SSL backbone and detector initialization are confounded; not a clean SSL benefit estimate"
+    },
+    {
+      "arm": "shuffled",
+      "seed": 123,
+      "epoch": 200,
+      "metrics": {
+        "metrics/mAP50(B)": {
+          "left_pp": 75.354,
+          "right_pp": 75.758,
+          "delta_pp": -0.404
+        },
+        "metrics/mAP50-95(B)": {
+          "left_pp": 53.273,
+          "right_pp": 53.698,
+          "delta_pp": -0.425
+        }
+      },
+      "args_differences": {
+        "model": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_shuffled.pt",
+          "right": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt"
+        },
+        "name": {
+          "left": "shuffled_rgb_s123_e200",
+          "right": "native_rgb_s123_e200"
+        },
+        "project": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906",
+          "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1"
+        },
+        "save_dir": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s123_e200",
+          "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s123_e200"
+        }
+      },
+      "causal_limit": "SSL backbone and detector initialization are confounded; not a clean SSL benefit estimate"
+    }
+  ],
+  "internal_ssl_contrasts": [
+    {
+      "left_arm": "paired",
+      "right_arm": "shuffled",
+      "seed": 123,
+      "metric_identity": "epoch 200 training CSV validation; not independent eval_rgbt_detector last/EMA endpoint",
+      "metrics": {
+        "metrics/mAP50(B)": {
+          "left_pp": 75.849,
+          "right_pp": 75.354,
+          "delta_pp": 0.495
+        },
+        "metrics/mAP50-95(B)": {
+          "left_pp": 53.942,
+          "right_pp": 53.273,
+          "delta_pp": 0.669
+        }
+      },
+      "args_differences": {
+        "model": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_paired.pt",
+          "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_shuffled.pt"
+        },
+        "name": {
+          "left": "paired_rgb_s123_e200",
+          "right": "shuffled_rgb_s123_e200"
+        },
+        "save_dir": {
+          "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/paired_rgb_s123_e200",
+          "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s123_e200"
+        }
+      },
+      "shared_nonbackbone_tensor_count": 259,
+      "independent_last_endpoint": false,
+      "three_seed_gate_evaluable": false
+    }
+  ],
+  "collection_integrity": {
+    "source_files": 73,
+    "changed_during_read": 0,
+    "partial_tail_files": 6,
+    "snapshot_atomic": false
+  },
+  "completed_finetunes": 3,
+  "running_finetunes": 1,
+  "queued_finetunes": 5,
+  "independent_osssl_metrics_records": 0,
+  "conclusions": {
+    "positive_ssl_claim_supported": false,
+    "paired_attribution_supported": false,
+    "new_observation": "First complete same-seed paired-versus-shuffled CSV comparison is positive for seed123, without satisfying final evaluation or three-seed requirements",
+    "ssl_vs_native_initialization_confounded": true,
+    "ssl_internal_nonbackbone_template_shared": true,
+    "target_rgb_only_ssl_control_missing": true,
+    "primary_gate_ap50_pp": 1.0,
+    "attribution_gate_ap50_pp": 0.5,
+    "pretraining_seed_repetitions": 1,
+    "threshold_warning": "paired123 minus shuffled123 AP50 is 0.495 pp in saved CSV, not rounded to a passing 0.5; no final gate decision from this single CSV contrast",
+    "action_this_audit": "Read-only collection and local analysis; no GPU, inference, queue edits or threshold changes"
+  }
+}

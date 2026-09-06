@@ -1,0 +1,216 @@
+{
+  "timestamp": "2026-09-06T17:29:25.877770+08:00",
+  "metric_identity": "training CSV last row; per-epoch validation, not independent eval_rgbt_detector last.pt endpoint",
+  "test_used": false,
+  "contrasts": [
+    {
+      "arm": "sar_only",
+      "seed": 42,
+      "epoch": 200,
+      "metrics": {
+        "metrics/mAP50(B)": {
+          "arm_pp": 76.822,
+          "native_pp": 75.994,
+          "delta_pp": 0.8280000000000065
+        },
+        "metrics/mAP50-95(B)": {
+          "arm_pp": 54.623,
+          "native_pp": 53.798,
+          "delta_pp": 0.824999999999998
+        }
+      },
+      "args_differences": {
+        "model": {
+          "arm": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_sar_only.pt",
+          "native": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt"
+        },
+        "name": {
+          "arm": "sar_only_rgb_s42_e200",
+          "native": "native_rgb_s42_e200"
+        },
+        "project": {
+          "arm": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906",
+          "native": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1"
+        },
+        "save_dir": {
+          "arm": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/sar_only_rgb_s42_e200",
+          "native": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s42_e200"
+        }
+      },
+      "caution": "native and SSL detector initialization differ; cannot attribute this contrast exclusively to SSL"
+    },
+    {
+      "arm": "shuffled",
+      "seed": 123,
+      "epoch": 200,
+      "metrics": {
+        "metrics/mAP50(B)": {
+          "arm_pp": 75.354,
+          "native_pp": 75.75800000000001,
+          "delta_pp": -0.40400000000000436
+        },
+        "metrics/mAP50-95(B)": {
+          "arm_pp": 53.273,
+          "native_pp": 53.698,
+          "delta_pp": -0.4249999999999976
+        }
+      },
+      "args_differences": {
+        "model": {
+          "arm": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/clean_shuffled.pt",
+          "native": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt"
+        },
+        "name": {
+          "arm": "shuffled_rgb_s123_e200",
+          "native": "native_rgb_s123_e200"
+        },
+        "project": {
+          "arm": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906",
+          "native": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1"
+        },
+        "save_dir": {
+          "arm": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/osssl_ir_20260906/shuffled_rgb_s123_e200",
+          "native": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s123_e200"
+        }
+      },
+      "caution": "native and SSL detector initialization differ; cannot attribute this contrast exclusively to SSL"
+    }
+  ],
+  "progress": [
+    {
+      "arm": "paired",
+      "seed": 0,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "paired",
+      "seed": 42,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "paired",
+      "seed": 123,
+      "status": "running",
+      "epoch_completed": 103,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "sar_only",
+      "seed": 0,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "sar_only",
+      "seed": 42,
+      "status": "completed",
+      "epoch_completed": 200,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "sar_only",
+      "seed": 123,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "shuffled",
+      "seed": 0,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "shuffled",
+      "seed": 42,
+      "status": "queued",
+      "epoch_completed": 0,
+      "has_independent_metrics_record": false
+    },
+    {
+      "arm": "shuffled",
+      "seed": 123,
+      "status": "completed",
+      "epoch_completed": 200,
+      "has_independent_metrics_record": false
+    }
+  ],
+  "native_independent_metrics": [
+    {
+      "arm": "native_weight0",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s0_e200/weights/last.pt",
+      "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "dataset": "dronevehicle",
+      "evaluation_role": "val",
+      "metrics": {
+        "AP50": 0.7674840182306127,
+        "AP75": 0.6384139279470794,
+        "mAP50_95": 0.5435764829135779
+      },
+      "modality": "rgb",
+      "schema": "rgbt-detector-metrics-record-v1",
+      "seed": 0,
+      "split": "val",
+      "walltime_seconds": 7.790147027000785
+    },
+    {
+      "arm": "native_weight0",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s123_e200/weights/last.pt",
+      "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "dataset": "dronevehicle",
+      "evaluation_role": "val",
+      "metrics": {
+        "AP50": 0.7573014259256995,
+        "AP75": 0.6330632435549031,
+        "mAP50_95": 0.5368743265487697
+      },
+      "modality": "rgb",
+      "schema": "rgbt-detector-metrics-record-v1",
+      "seed": 123,
+      "split": "val",
+      "walltime_seconds": 8.32391006196849
+    },
+    {
+      "arm": "native_weight0",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s42_e200/weights/last.pt",
+      "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "dataset": "dronevehicle",
+      "evaluation_role": "val",
+      "metrics": {
+        "AP50": 0.7600113764015525,
+        "AP75": 0.625664619204642,
+        "mAP50_95": 0.5381555614141788
+      },
+      "modality": "rgb",
+      "schema": "rgbt-detector-metrics-record-v1",
+      "seed": 42,
+      "split": "val",
+      "walltime_seconds": 7.954606367973611
+    }
+  ],
+  "completed_finetunes": 2,
+  "remaining_finetunes": 7,
+  "conclusions": {
+    "positive_ssl_claim_supported": false,
+    "paired_attribution_supported": false,
+    "ssl_vs_native_initialization_confounded": true,
+    "ssl_internal_nonbackbone_template_shared": true,
+    "target_rgb_only_ssl_control_missing": true,
+    "primary_gate_ap50_pp": 1.0,
+    "attribution_gates_ap50_pp": 0.5,
+    "pretraining_seed_repetitions": 1,
+    "next_actions": [
+      "Finish existing frozen arms",
+      "Run fixed last/EMA val evaluator for all endpoints",
+      "Add same nc5/non-backbone-template native with zero SSL steps",
+      "Add RGB-only SSL target-modal control",
+      "Keep route-specific recipes and evaluation identities separate; do not rank OEv1 independent last endpoint against OS-SSL CSV"
+    ]
+  }
+}

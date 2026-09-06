@@ -1,0 +1,148 @@
+{
+  "schema": "oev1-independent-night-endpoint-review-v1",
+  "snapshot_captured_at_utc": "2026-09-06T13:46:12.510719+00:00",
+  "checks": {
+    "complete_count_matches": true,
+    "same_seed_pair_count_matches": true,
+    "only_complete_three_pairs_aggregate": true,
+    "completed_rosters_identical": true,
+    "all_endpoint_checks_pass": true
+  },
+  "endpoints": [
+    {
+      "seed": 0,
+      "arm": "weight0",
+      "checks": {
+        "identities_equal": true,
+        "fixed_last_val_endpoint": true,
+        "complete_e200": true,
+        "same_checkpoint": true,
+        "fraction_finite_metrics": true,
+        "collector_metrics_exact": true,
+        "no_test_or_confirmatory_upgrade": true,
+        "train_receipt_identity_complete": true,
+        "train_metric_snapshot_equal": true,
+        "train_references_exist": true,
+        "eval_receipt_identity_complete": true,
+        "eval_metric_snapshot_equal": true,
+        "eval_references_exist": true,
+        "val_roster_1469_unique": true,
+        "historical_reference_identity": true
+      },
+      "metrics_percent": {
+        "mAP50_95": 54.34618520685574,
+        "AP50": 76.99251535173484,
+        "AP75": 63.93291745479234,
+        "precision": 77.65485331322762,
+        "recall": 73.58216889941262
+      },
+      "historical_native_difference_pp_descriptive_only": {
+        "AP50": 0.24411352867356184,
+        "AP75": 0.09152466008439664,
+        "mAP50_95": -0.011463084502039145
+      },
+      "csv_format": {
+        "header_columns": 15,
+        "last_columns": 8,
+        "last_epoch": "200"
+      },
+      "optimizer_updates": {
+        "optimizer_updates": 56697,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 25,
+        "ema_updates": 56722
+      }
+    },
+    {
+      "seed": 42,
+      "arm": "paired",
+      "checks": {
+        "identities_equal": true,
+        "fixed_last_val_endpoint": true,
+        "complete_e200": true,
+        "same_checkpoint": true,
+        "fraction_finite_metrics": true,
+        "collector_metrics_exact": true,
+        "no_test_or_confirmatory_upgrade": true,
+        "train_receipt_identity_complete": true,
+        "train_metric_snapshot_equal": true,
+        "train_references_exist": true,
+        "eval_receipt_identity_complete": true,
+        "eval_metric_snapshot_equal": true,
+        "eval_references_exist": true,
+        "val_roster_1469_unique": true,
+        "historical_reference_identity": true
+      },
+      "metrics_percent": {
+        "mAP50_95": 54.65816217191543,
+        "AP50": 77.0696200439378,
+        "AP75": 63.839323049220795,
+        "precision": 77.43225301297308,
+        "recall": 72.43045069089455
+      },
+      "historical_native_difference_pp_descriptive_only": {
+        "AP50": 1.0684824037825558,
+        "AP75": 1.2728611287565972,
+        "mAP50_95": 0.8426060304975502
+      },
+      "csv_format": {
+        "header_columns": 15,
+        "last_columns": 8,
+        "last_epoch": "200"
+      },
+      "optimizer_updates": {
+        "optimizer_updates": 56695,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 27,
+        "ema_updates": 56722
+      }
+    },
+    {
+      "seed": 123,
+      "arm": "paired",
+      "checks": {
+        "identities_equal": true,
+        "fixed_last_val_endpoint": true,
+        "complete_e200": true,
+        "same_checkpoint": true,
+        "fraction_finite_metrics": true,
+        "collector_metrics_exact": true,
+        "no_test_or_confirmatory_upgrade": true,
+        "train_receipt_identity_complete": true,
+        "train_metric_snapshot_equal": true,
+        "train_references_exist": true,
+        "eval_receipt_identity_complete": true,
+        "eval_metric_snapshot_equal": true,
+        "eval_references_exist": true,
+        "val_roster_1469_unique": true,
+        "historical_reference_identity": true
+      },
+      "metrics_percent": {
+        "mAP50_95": 54.63684720507138,
+        "AP50": 77.30455672411458,
+        "AP75": 64.21477409983494,
+        "precision": 77.87129583514843,
+        "recall": 72.98865399139216
+      },
+      "historical_native_difference_pp_descriptive_only": {
+        "AP50": 1.5744141315446325,
+        "AP75": 0.9084497443446304,
+        "mAP50_95": 0.9494145501944162
+      },
+      "csv_format": {
+        "header_columns": 15,
+        "last_columns": 8,
+        "last_epoch": "200"
+      },
+      "optimizer_updates": {
+        "optimizer_updates": 56695,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 27,
+        "ema_updates": 56722
+      }
+    }
+  ],
+  "same_seed_comparisons": [],
+  "interpretation": "Historical native differences are background only. No cross-seed P-minus-N estimand is computed. Only complete fixed last/EMA endpoints count; CSV is inspected for format only. No accepted/confirmatory or cross-modal-specific claim follows.",
+  "scope": "Copied local receipt and source evidence, source roster contents, raw metrics and arithmetic. Server checkpoint file existence is established by original collector, not rechecked here; no weights loaded, no new hashes generated."
+}

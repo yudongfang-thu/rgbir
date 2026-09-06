@@ -1,0 +1,29 @@
+test_additive_logit_offset_invariance (test_object_evidence_loss.EvidenceTests) ... /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+ok
+test_background_excludes_other_classes_and_unmatched_gt (test_object_evidence_loss.EvidenceTests) ... ok
+test_fixed_base_normalizer_before_quality_filter (test_object_evidence_loss.EvidenceTests) ... ok
+test_gradient_sign_and_detached_teacher_reference (test_object_evidence_loss.EvidenceTests) ... /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v1/test_object_evidence_loss.py:63: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  self.assertGreater(float(loss), 0)
+ok
+test_independent_teacher_geometry (test_object_evidence_loss.EvidenceTests) ... ok
+test_invalid_regions_give_finite_zero (test_object_evidence_loss.EvidenceTests) ... ok
+test_random_selection_equal_count_dose_and_private_rng (test_object_evidence_loss.EvidenceTests) ... ok
+test_same_modal_never_reads_ir_gt (test_object_evidence_loss.EvidenceTests) ... ok
+test_teacher_top_class_is_required (test_object_evidence_loss.EvidenceTests) ... ok
+test_threshold_aware_matching_maximizes_cardinality (test_object_evidence_loss.EvidenceTests) ... ok
+test_unfrozen_controls_fail_fast (test_object_evidence_loss.EvidenceTests) ... ok
+test_weight_zero_preserves_native_gradient (test_object_evidence_loss.EvidenceTests) ... ok
+test_zero_eligible_is_differentiable_and_finite (test_object_evidence_loss.EvidenceTests) ... ok
+test_collate_preserves_separate_counts_and_batch_ids (test_paired_rgbir_data.PairedContracts) ... ok
+test_independent_crop_drop_keeps_correct_teacher_class (test_paired_rgbir_data.PairedContracts) ... ok
+test_native_student_and_rng_equivalence_independent_labels (test_paired_rgbir_data.PairedContracts) ... ok
+test_same_modal_uses_exact_student_view_and_gt (test_paired_rgbir_data.PairedContracts) ... ok
+test_teacher_cache_is_bounded_lru (test_paired_rgbir_data.PairedContracts) ... ok
+test_teacher_failure_restores_student_rng (test_paired_rgbir_data.PairedContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.372s
+
+OK

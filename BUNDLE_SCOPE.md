@@ -1,5 +1,7 @@
 # 收录范围、版本和复现边界
 
+2026-09-06 21:46增量：已追加17:30与21:46两次审计、完整OEv1已完成端点的receipt/source/metric链、OS-SSL CSV与初始化检查。最新入口为[LATEST_RESULTS.md](LATEST_RESULTS.md)，新增来源映射见[增量manifest](publication_checks/update_20260906_2146/source_manifest.json)。旧快照按原时点保留。
+
 这是用于外部模型独立审查的资料包。复制的AGENTS/工作区规范是历史或运行环境证据；它们不要求审计模型连接服务器、申请凭据、启动训练或修改队列。审计任务以根目录REVIEW_PROMPT.md为准。
 
 ## 包含

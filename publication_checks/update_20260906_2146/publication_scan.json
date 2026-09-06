@@ -1,0 +1,1551 @@
+{
+  "captured_at": "2026-09-06T21:57:07.498973+08:00",
+  "scope": "Changed/new files against existing branch HEAD; bounded credential rules reused without displaying values. Existing raw research changes are flagged for manual classification. No new hashes or credential access.",
+  "changed_or_new_files": 400,
+  "changed_paths": [
+    "BUNDLE_MANIFEST.json",
+    "BUNDLE_SCOPE.md",
+    "MODEL_REVIEW_GUIDE.md",
+    "README.md",
+    "REVIEW_PROMPT.md",
+    "research_bundle/08_实验日志/2026-09-06_train_OS-SSL-IR迁移/README.md",
+    "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/README.md",
+    "research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/README.md",
+    "research_bundle/08_实验日志/README.md",
+    "research_bundle/workspace_context/WORKSPACE_README.md"
+  ],
+  "untracked_count": 390,
+  "candidate_findings": [],
+  "markdown_link_findings": [
+    {
+      "path": "publication_checks/update_20260906_2146/README.md",
+      "line": 7,
+      "rule": "missing_relative_target",
+      "target": "publication_review.md"
+    },
+    {
+      "path": "publication_checks/update_20260906_2146/README.md",
+      "line": 8,
+      "rule": "missing_relative_target",
+      "target": "publication_scan.json"
+    },
+    {
+      "path": "publication_checks/update_20260906_2146/README.md",
+      "line": 8,
+      "rule": "missing_relative_target",
+      "target": "markdown_navigation.json"
+    }
+  ],
+  "missing_paths": [],
+  "changed_existing_non_markdown_candidates": [],
+  "copied_source_byte_checks": [
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/collect_oev1_snapshot.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_collection_stderr.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_collection_stdout.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/analyze_three_seed_endpoints.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/health_summary.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/oev1_endpoints/summary.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_artifacts/rgbir_object_evidence_expand_20260906/workers/full_s0_attempt1/status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_artifacts/rgbir_object_evidence_v1_20260906/canary_queue_status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_artifacts/rgbir_object_evidence_v1_20260906/full_queue_status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/canary_s0_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/canary_s123_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/endpoint_cpu_tests_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/endpoint_cpu_tests_attempt2.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/full_s0_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/full_s123_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/paired_eval.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/paired_train.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/weight0_eval.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/weight0_train.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_v1_20260906/canary_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_v1_20260906/cpu_tests_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/queue_logs/rgbir_object_evidence_v1_20260906/full_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s0_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s0_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s0_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s0_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s0_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s0_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s0_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/eval_evidence/metric_snapshot/01_evaluation_val.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/eval_evidence/run_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/eval_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/eval_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/eval_evidence/source_snapshot/split_roster/01_evaluation_val_roster.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/eval_evidence/source_snapshot/trainer/01_evaluate_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/evaluation_val.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/evaluation_val_roster.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/run_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s123_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/metric_snapshot/01_evaluation_val.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/run_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/source_snapshot/split_roster/01_evaluation_val_roster.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/source_snapshot/trainer/01_evaluate_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/evaluation_val.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/evaluation_val_roster.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/run_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_paired_s42_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/eval_evidence/metric_snapshot/01_evaluation_val.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/eval_evidence/run_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/eval_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/eval_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/eval_evidence/source_snapshot/split_roster/01_evaluation_val_roster.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/eval_evidence/source_snapshot/trainer/01_evaluate_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/evaluation_val.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/evaluation_val_roster.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/run_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s123_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s123_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s123_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s123_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s123_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s123_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s123_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/resource_leases.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/source_inventory.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/oev1_snapshot/system_snapshot.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/analyze_snapshot.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/collect_snapshot.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/initialization_inspection_173143_reused.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/inspect_initialization_173143_source.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/cgkd_20260905/eval_natives.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/cgkd_20260905/eval_natives.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/cgkd_20260905/train_native_rgbt.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/build_template_and_inject.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_paired_s0.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_paired_s123.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_paired_s42.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_sar_only_s0.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_sar_only_s123.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_sar_only_s42.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_shuffled_s0.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_shuffled_s123.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ft_shuffled_s42.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/inject_patched.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/jobs2_gpu0.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/jobs2_gpu1.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/jobs2_gpu2.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/jobs_gpu3.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/jobs_gpu4.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/jobs_gpu5.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/jobs_gpu6.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/prepare.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/protocol_clean_paired.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/protocol_clean_shuffled.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/protocol_paired.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/protocol_sar_only.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/protocol_shuffled.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ssl/paired/config.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ssl/sar_only/config.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ssl/shuffled/config.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ssl_paired.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ssl_sar_only.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/ssl_shuffled.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/w2_pipeline.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/w2_pipeline.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker2.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker2_gpu0.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker2_gpu1.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker2_gpu2.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker3.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker3_gpu0.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker3_gpu1.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker3_gpu2.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker_gpu3.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker_gpu4.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker_gpu5.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/artifacts/osssl_ir_20260906/worker_gpu6.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s0_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s0_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s0_e200/metrics_record.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s0_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s123_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s123_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s123_e200/metrics_record.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s123_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s42_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s42_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s42_e200/metrics_record.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/cgkd_w1/native_rgb_s42_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/paired_rgb_s123_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/paired_rgb_s123_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/paired_rgb_s123_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/sar_only_rgb_s42_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/sar_only_rgb_s42_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/sar_only_rgb_s42_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/shuffled_rgb_s0_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/shuffled_rgb_s0_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/raw/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/snapshot.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/osssl/summary.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/package_update.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/receipt_supplement_sources.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/review_incremental_publication.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/review_oev1_endpoints.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/review_oev1_endpoints.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/review_oev1_endpoints_complete.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/review_osssl_numbers.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR夜间结果与GitHub更新/review_osssl_numbers.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/collect_oev1_snapshot.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/collect_oev1_snapshot_attempt1.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_collection_stderr.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_collection_stderr_attempt1.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_collection_stderr_attempt2.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_collection_stdout.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_collection_stdout_attempt2.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_first_endpoint_context_check.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/analyze_three_seed_endpoints.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/health_summary.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/oev1_endpoints/summary.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s0_attempt1/status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_artifacts/rgbir_object_evidence_expand_20260906/workers/canary_s123_attempt1/status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_artifacts/rgbir_object_evidence_expand_20260906/workers/full_s0_attempt1/status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_artifacts/rgbir_object_evidence_expand_20260906/workers/full_s123_attempt1/status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_artifacts/rgbir_object_evidence_v1_20260906/canary_queue_status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_artifacts/rgbir_object_evidence_v1_20260906/full_queue_status.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/canary_s0_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/canary_s123_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/endpoint_cpu_tests_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/endpoint_cpu_tests_attempt2.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/full_s0_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/full_s123_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/paired_train.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_expand_20260906/weight0_train.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_v1_20260906/canary_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_v1_20260906/cpu_tests_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/queue_logs/rgbir_object_evidence_v1_20260906/full_attempt1.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s123_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s123_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s123_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s123_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s123_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s123_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s123_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/metric_snapshot/01_evaluation_val.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/run_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/source_snapshot/split_roster/01_evaluation_val_roster.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/eval_evidence/source_snapshot/trainer/01_evaluate_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/evaluation_val.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/evaluation_val_roster.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/run_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_paired_s42_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s0_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/kd_first30_last30.partial.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/launch_manifest.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/progress.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/protocol_config.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/raw_runs/full_weight0_s42_attempt1/runtime_ready.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/resource_leases.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/source_inventory.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/oev1_snapshot/system_snapshot.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/analyze_snapshot.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/collect_snapshot.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/initialization_inspection.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/inspect_initialization.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/cgkd_20260905/eval_natives.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/cgkd_20260905/eval_natives.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/cgkd_20260905/train_native_rgbt.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/build_template_and_inject.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_paired_s0.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_paired_s123.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_paired_s42.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_sar_only_s0.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_sar_only_s123.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_sar_only_s42.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_shuffled_s0.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_shuffled_s123.log.partial_tail.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ft_shuffled_s42.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/inject_patched.py",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/jobs2_gpu0.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/jobs2_gpu1.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/jobs2_gpu2.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/jobs_gpu3.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/jobs_gpu4.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/jobs_gpu5.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/jobs_gpu6.txt",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/prepare.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/protocol_clean_paired.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/protocol_clean_sar_only.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/protocol_clean_shuffled.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/protocol_paired.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/protocol_sar_only.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/protocol_shuffled.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ssl/paired/config.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ssl/sar_only/config.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ssl/shuffled/config.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ssl_paired.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ssl_sar_only.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/ssl_shuffled.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/w2_pipeline.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/w2_pipeline.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker2.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker2_gpu0.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker2_gpu1.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker2_gpu2.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker3.sh",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker3_gpu0.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker3_gpu1.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker3_gpu2.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker_gpu3.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker_gpu4.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker_gpu5.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/artifacts/osssl_ir_20260906/worker_gpu6.log",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s0_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s0_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s0_e200/metrics_record.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s0_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s123_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s123_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s123_e200/metrics_record.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s123_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s42_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s42_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s42_e200/metrics_record.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/cgkd_w1/native_rgb_s42_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/osssl_ir_20260906/paired_rgb_s123_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/osssl_ir_20260906/paired_rgb_s123_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/osssl_ir_20260906/sar_only_rgb_s42_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/osssl_ir_20260906/sar_only_rgb_s42_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/osssl_ir_20260906/sar_only_rgb_s42_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/args.yaml",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/completion_receipt.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/raw/runs/osssl_ir_20260906/shuffled_rgb_s123_e200/results.csv",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/snapshot.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/osssl/summary.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/progress_interpretation.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "research_bundle/08_实验日志/2026-09-06_audit_RGBIR晚间进度与新结果/recalculate_oev1_context.py",
+      "bytes_equal": true
+    }
+  ],
+  "copied_source_bytes_all_equal": true,
+  "total_repo_files": 1193,
+  "total_repo_bytes": 140534165,
+  "large_files_20MiB": []
+}

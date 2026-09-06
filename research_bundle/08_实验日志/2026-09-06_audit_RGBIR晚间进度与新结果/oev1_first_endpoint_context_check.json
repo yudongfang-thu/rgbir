@@ -1,0 +1,92 @@
+{
+  "schema": "oev1-first-endpoint-context-review-v1",
+  "captured_at_utc": "2026-09-06T09:30:20.496241+00:00",
+  "raw_checks": {
+    "evaluation_identity": true,
+    "fixed_endpoint": true,
+    "completion_e200": true,
+    "same_checkpoint": true,
+    "eval_completed": true,
+    "train_completed": true,
+    "eval_metric_copy_equal": true,
+    "eval_referenced_source_files_exist": true,
+    "train_metric_copy_equal": true,
+    "train_referenced_source_files_exist": true,
+    "val_roster_1469_unique": true,
+    "collector_endpoint_matches": true
+  },
+  "complete_endpoints": 1,
+  "complete_seed_pairs": 0,
+  "three_seed_summary": null,
+  "new_endpoint_percent": {
+    "mAP50_95": 54.65816217191543,
+    "AP50": 77.0696200439378,
+    "AP75": 63.839323049220795,
+    "precision": 77.43225301297308,
+    "recall": 72.43045069089455
+  },
+  "comparisons": {
+    "historical_native": {
+      "source": "E:\\SHARE\\光sar\\09_外部审计_rgbir\\02_raw_results_dronevehicle\\N_llvip_seed42_metrics_record.json",
+      "record_identity": {
+        "dataset": "dronevehicle",
+        "seed": 42,
+        "arm": "native_weight0",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s42_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "split": "val"
+      },
+      "historical_metrics_pct": {
+        "AP50": 76.00113764015525,
+        "AP75": 62.5664619204642,
+        "mAP50_95": 53.81555614141787
+      },
+      "oev1_minus_historical_pp": {
+        "AP50": 1.0684824037825558,
+        "AP75": 1.2728611287565972,
+        "mAP50_95": 0.8426060304975502
+      },
+      "interpretation": "Descriptive historical context only; not same-code paired-minus-weight0 estimand."
+    },
+    "historical_cmdistill": {
+      "source": "E:\\SHARE\\光sar\\09_外部审计_rgbir\\02_raw_results_dronevehicle\\L_dronevehicle_seed42_metrics_record.json",
+      "record_identity": {
+        "dataset": "dronevehicle",
+        "seed": 42,
+        "arm": "cmdistill_corrected",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/dronevehicle_seed42_b32_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "split": "val"
+      },
+      "historical_metrics_pct": {
+        "AP50": 75.16442157263761,
+        "AP75": 62.49358429506559,
+        "mAP50_95": 53.24484007601327
+      },
+      "oev1_minus_historical_pp": {
+        "AP50": 1.9051984713001957,
+        "AP75": 1.3457387541552124,
+        "mAP50_95": 1.4133220959021586
+      },
+      "interpretation": "Descriptive historical context only; not same-code paired-minus-weight0 estimand."
+    }
+  },
+  "csv_format": {
+    "header_columns": 15,
+    "penultimate_columns": 15,
+    "last_columns": 8,
+    "last_epoch": "200",
+    "interpretation": "Final-epoch validate() returns empty metrics; dynamic writer omits seven placeholders. Independent endpoint JSON is unaffected."
+  },
+  "optimizer_updates": {
+    "optimizer_updates": 56695,
+    "optimizer_update_attempts": 56722,
+    "amp_skipped_updates": 27,
+    "ema_updates": 56722
+  },
+  "limitations": [
+    "Single seed development endpoint.",
+    "Same-code weight0 seed42 endpoint pending.",
+    "No four-arm attribution or accepted analyzer claim."
+  ]
+}

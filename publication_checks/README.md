@@ -1,5 +1,7 @@
 # 发布检查与复算
 
+> 本页及PACKAGE_FILES.json记录09月06日上午发布范围。21:46增量检查见[更新报告](update_20260906_2146/README.md)，当前完整文件清单见[PACKAGE_INVENTORY.json](../PACKAGE_INVENTORY.json)。
+
 [独立发布审查](PUBLICATION_REVIEW.md)记录来源保持性、指标口径、内容检查和文档检查结果。本目录的检查只覆盖证据包，不重新认证训练或授予方法收益结论。
 
 在仓库根目录用 Python 标准库复算五组历史比较与 521 对探针摘要：

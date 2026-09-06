@@ -1,0 +1,35 @@
+{"cuda_processes_per_gpu": 1, "expected_rss_mib": 49152, "expected_vram_mib": 10000, "gpu_ids": [6], "lease_id": "rgbir_oev1_expand_eval_paired_s123_attempt1-31c6c44cdd16", "pid": 3965261, "status": "LAUNCHED"}
+Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)
+YOLO11n summary (fused): 101 layers, 2,583,127 parameters, 0 gradients, 6.4 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 2867.0±225.6 MB/s, size: 132.6 KB)
+
+[K[34m[1mval: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val.cache... 1469 images, 27 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1469/1469 267.9Mit/s 0.0s
+
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 2% ──────────── 1/46 1.6it/s 0.2s<27.5s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 6% ╸─────────── 3/46 5.0it/s 0.3s<8.6s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 10% ━─────────── 5/46 7.9it/s 0.5s<5.2s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 15% ━╸────────── 7/46 9.0it/s 0.6s<4.3s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 19% ━━────────── 9/46 9.3it/s 0.8s<4.0s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 23% ━━╸───────── 11/46 10.8it/s 1.0s<3.2s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 28% ━━━───────── 13/46 11.2it/s 1.2s<2.9s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 32% ━━━╸──────── 15/46 12.2it/s 1.3s<2.6s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 36% ━━━━──────── 17/46 12.0it/s 1.5s<2.4s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 41% ━━━━╸─────── 19/46 12.4it/s 1.6s<2.2s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 45% ━━━━━─────── 21/46 11.8it/s 1.8s<2.1s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 50% ━━━━━━────── 23/46 12.4it/s 1.9s<1.9s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 54% ━━━━━━╸───── 25/46 12.0it/s 2.1s<1.7s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 56% ━━━━━━╸───── 26/46 11.2it/s 2.2s<1.8s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 60% ━━━━━━━───── 28/46 11.4it/s 2.4s<1.6s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 65% ━━━━━━━╸──── 30/46 11.5it/s 2.6s<1.4s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 69% ━━━━━━━━──── 32/46 11.9it/s 2.7s<1.2s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 73% ━━━━━━━━╸─── 34/46 11.8it/s 2.9s<1.0s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 78% ━━━━━━━━━─── 36/46 12.1it/s 3.1s<0.8s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 82% ━━━━━━━━━╸── 38/46 11.9it/s 3.2s<0.7s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 86% ━━━━━━━━━━── 40/46 11.9it/s 3.4s<0.5s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 89% ━━━━━━━━━━╸─ 41/46 11.3it/s 3.5s<0.4s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 93% ━━━━━━━━━━━─ 43/46 11.9it/s 3.7s<0.3s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 97% ━━━━━━━━━━━╸ 45/46 11.7it/s 3.8s<0.1s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 46/46 11.6it/s 4.0s
+                   all       1469      22462      0.779       0.73      0.773      0.546
+Speed: 0.4ms preprocess, 0.5ms inference, 0.0ms loss, 0.5ms postprocess per image
+{"AP50": 0.7730455672411458, "AP75": 0.6421477409983494, "mAP50_95": 0.5463684720507138, "precision": 0.7787129583514844, "recall": 0.7298865399139216, "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt", "endpoint": "fixed_budget_last_ema", "split": "val", "arm": "paired", "seed": 123, "single_seed_exploratory": true, "official_test_accessed": false, "metric_units": "fraction_0_to_1", "method_id": "RGBIR-OBJECT-EVIDENCE-v1"}
