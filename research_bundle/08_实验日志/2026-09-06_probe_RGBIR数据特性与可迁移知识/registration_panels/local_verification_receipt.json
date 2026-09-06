@@ -1,0 +1,42 @@
+{
+  "status": "verified",
+  "source": "94 CPU-generated registration panels",
+  "figures_visually_inspected": [
+    "dronevehicle_registration.png",
+    "llvip_registration.png",
+    "vedai_registration.png"
+  ],
+  "visual_check": "All six-panel figures render with readable legends and caveats; selected sample IDs and ROI boxes are visible. No clipping of titles or disclaimers was observed. Axes use a normalized image display for paired comparison.",
+  "output_hash_checks": [
+    {
+      "file": "dronevehicle_registration.png",
+      "sha256": "aa6e5e290e136680911c2a034a9ecb3bb633249f9f5d162a412b66f74d7e5ba3",
+      "verified": true
+    },
+    {
+      "file": "dronevehicle_registration.pdf",
+      "sha256": "f1ecaa48ed827c636a9c8d937db781ad15e7be8889e78e5052c41419c253b93b",
+      "verified": true
+    },
+    {
+      "file": "llvip_registration.png",
+      "sha256": "0cf6f05ed417e97d1ef35cb4d0975c763055f2160becf04299703d32b0e41cbe",
+      "verified": true
+    },
+    {
+      "file": "llvip_registration.pdf",
+      "sha256": "c8aa7627e87c6e08ed720ec03debfbe0afa59e08c3903d761b0cc8a3fa9e1f23",
+      "verified": true
+    },
+    {
+      "file": "vedai_registration.png",
+      "sha256": "7a0dcdd929643d0b27095232e72853783880e7276104fa09bc44bc641f5cc8df",
+      "verified": true
+    },
+    {
+      "file": "vedai_registration.pdf",
+      "sha256": "697d1d4b47f7a29bc6a144aaab8a34fec5f6cef467fd0f8ec8831912be9c0868",
+      "verified": true
+    }
+  ]
+}

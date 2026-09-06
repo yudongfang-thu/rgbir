@@ -1,0 +1,67 @@
+{
+  "source_records": 320,
+  "omitted_records": 34,
+  "snapshot_files": 327,
+  "uncompressed_snapshot_bytes_before_summary": 20061833,
+  "snapshot_started_utc": "2026-09-06T00:53:54.784608+00:00",
+  "snapshot_ended_utc": "2026-09-06T00:53:57.397172+00:00",
+  "lossless_gzip_unique_sources": 4,
+  "actual_runs": [
+    {
+      "run": "full_paired_s42_attempt1",
+      "completed_csv_rows": 110,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 111,
+        "epochs": 200,
+        "optimizer_updates": 31373,
+        "update_attempts": 31390,
+        "amp_skips": 17,
+        "batches": 61935,
+        "selected_objects": 7533479,
+        "seconds": 22094.601009607315,
+        "last_kd": 0.14901934564113617
+      }
+    },
+    {
+      "run": "full_paired_s123_attempt1",
+      "completed_csv_rows": 20,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 21,
+        "epochs": 200,
+        "optimizer_updates": 6143,
+        "update_attempts": 6150,
+        "amp_skips": 7,
+        "batches": 11455,
+        "selected_objects": 1392899,
+        "seconds": 4378.637802124023,
+        "last_kd": 0.22777700424194336
+      }
+    },
+    {
+      "run": "full_weight0_s0_attempt1",
+      "completed_csv_rows": 21,
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 22,
+        "epochs": 200,
+        "optimizer_updates": 6473,
+        "update_attempts": 6480,
+        "amp_skips": 7,
+        "batches": 12115,
+        "selected_objects": 1472869,
+        "seconds": 4384.256668329239,
+        "last_kd": 0.5123825669288635
+      }
+    },
+    {
+      "run": "shuffled_rgb_s123_e200",
+      "completed_csv_rows": 50,
+      "progress": null
+    }
+  ]
+}

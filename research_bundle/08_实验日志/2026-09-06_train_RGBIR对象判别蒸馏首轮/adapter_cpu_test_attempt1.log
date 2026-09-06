@@ -1,0 +1,12 @@
+test_collate_preserves_separate_counts_and_batch_ids (__main__.PairedContracts) ... ok
+test_independent_crop_drop_keeps_correct_teacher_class (__main__.PairedContracts) ... ok
+test_native_student_and_rng_equivalence_independent_labels (__main__.PairedContracts) ... ok
+test_same_modal_uses_exact_student_view_and_gt (__main__.PairedContracts) ... ok
+test_teacher_cache_is_bounded_lru (__main__.PairedContracts) ... ok
+test_teacher_failure_restores_student_rng (__main__.PairedContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.181s
+
+OK
+{"status": "passed", "tests": 6, "failures": 0, "errors": 0, "cuda_used": false}

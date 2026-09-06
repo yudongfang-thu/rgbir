@@ -1,0 +1,182 @@
+{
+ "dataset": "dronevehicle",
+ "n_images": 294,
+ "imgsz": 640,
+ "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/best.pt",
+ "levels": {
+  "P3": {
+   "S_native": {
+    "paired": {
+     "cka_mean": 0.98919,
+     "cka_sd": 0.00225,
+     "corr_mean": 0.26166,
+     "corr_sd": 0.09975,
+     "n": 294
+    },
+    "shuffled": {
+     "cka_mean": 0.98784,
+     "cka_sd": 0.00288,
+     "corr_mean": 0.13345,
+     "corr_sd": 0.05528,
+     "n": 294
+    },
+    "same_input": {
+     "cka_mean": 0.99058,
+     "cka_sd": 0.00244,
+     "corr_mean": 0.37046,
+     "corr_sd": 0.11036,
+     "n": 294
+    },
+    "fft_high_over_low": {
+     "mean": 0.64471,
+     "sd": 0.10547
+    }
+   },
+   "S_dist": {
+    "paired": {
+     "cka_mean": 0.99742,
+     "cka_sd": 0.0009,
+     "corr_mean": 0.71627,
+     "corr_sd": 0.08096,
+     "n": 294
+    },
+    "shuffled": {
+     "cka_mean": 0.99482,
+     "cka_sd": 0.00165,
+     "corr_mean": 0.33811,
+     "corr_sd": 0.09755,
+     "n": 294
+    },
+    "same_input": {
+     "cka_mean": 0.99817,
+     "cka_sd": 0.00066,
+     "corr_mean": 0.78068,
+     "corr_sd": 0.06566,
+     "n": 294
+    },
+    "fft_high_over_low": {
+     "mean": 0.52995,
+     "sd": 0.17668
+    }
+   },
+   "distill_pull_paired": 0.00823,
+   "distill_pull_same_input": 0.00759
+  },
+  "P4": {
+   "S_native": {
+    "paired": {
+     "cka_mean": 0.91534,
+     "cka_sd": 0.01932,
+     "corr_mean": 0.35897,
+     "corr_sd": 0.113,
+     "n": 294
+    },
+    "shuffled": {
+     "cka_mean": 0.90371,
+     "cka_sd": 0.0249,
+     "corr_mean": 0.20669,
+     "corr_sd": 0.0812,
+     "n": 294
+    },
+    "same_input": {
+     "cka_mean": 0.93077,
+     "cka_sd": 0.02064,
+     "corr_mean": 0.50691,
+     "corr_sd": 0.15021,
+     "n": 294
+    },
+    "fft_high_over_low": {
+     "mean": 0.87008,
+     "sd": 0.12709
+    }
+   },
+   "S_dist": {
+    "paired": {
+     "cka_mean": 0.97637,
+     "cka_sd": 0.01069,
+     "corr_mean": 0.70367,
+     "corr_sd": 0.10673,
+     "n": 294
+    },
+    "shuffled": {
+     "cka_mean": 0.95483,
+     "cka_sd": 0.01883,
+     "corr_mean": 0.25166,
+     "corr_sd": 0.09902,
+     "n": 294
+    },
+    "same_input": {
+     "cka_mean": 0.98439,
+     "cka_sd": 0.00779,
+     "corr_mean": 0.76267,
+     "corr_sd": 0.0887,
+     "n": 294
+    },
+    "fft_high_over_low": {
+     "mean": 0.93641,
+     "sd": 0.2265
+    }
+   },
+   "distill_pull_paired": 0.06103,
+   "distill_pull_same_input": 0.05362
+  },
+  "P5": {
+   "S_native": {
+    "paired": {
+     "cka_mean": 0.56011,
+     "cka_sd": 0.07659,
+     "corr_mean": 0.29742,
+     "corr_sd": 0.10865,
+     "n": 294
+    },
+    "shuffled": {
+     "cka_mean": 0.55335,
+     "cka_sd": 0.0863,
+     "corr_mean": 0.28633,
+     "corr_sd": 0.10353,
+     "n": 294
+    },
+    "same_input": {
+     "cka_mean": 0.58132,
+     "cka_sd": 0.08701,
+     "corr_mean": 0.35513,
+     "corr_sd": 0.12214,
+     "n": 294
+    },
+    "fft_high_over_low": {
+     "mean": 0.78386,
+     "sd": 0.08222
+    }
+   },
+   "S_dist": {
+    "paired": {
+     "cka_mean": 0.88335,
+     "cka_sd": 0.04874,
+     "corr_mean": 0.72123,
+     "corr_sd": 0.10281,
+     "n": 294
+    },
+    "shuffled": {
+     "cka_mean": 0.72883,
+     "cka_sd": 0.07444,
+     "corr_mean": 0.34289,
+     "corr_sd": 0.10769,
+     "n": 294
+    },
+    "same_input": {
+     "cka_mean": 0.86848,
+     "cka_sd": 0.04711,
+     "corr_mean": 0.69131,
+     "corr_sd": 0.09141,
+     "n": 294
+    },
+    "fft_high_over_low": {
+     "mean": 1.02502,
+     "sd": 0.17307
+    }
+   },
+   "distill_pull_paired": 0.32324,
+   "distill_pull_same_input": 0.28716
+  }
+ }
+}

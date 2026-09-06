@@ -1,0 +1,367 @@
+{"cuda_processes_per_gpu": 1, "expected_rss_mib": 16384, "expected_vram_mib": 10000, "gpu_ids": [4], "lease_id": "rgbir_oev1_canary_paired_s42_attempt1-e58d7d9d8fde", "pid": 2641102, "status": "LAUNCHED"}
+Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)
+[34m[1mengine/trainer: [0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=32, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=False, classes=None, close_mosaic=0, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=200, erasing=0.0, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.0, hsv_s=0.0, hsv_v=0.0, imgsz=640, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt, momentum=0.937, mosaic=0.0, multi_scale=False, name=canary_paired_s42_attempt1, nbs=64, nms=False, opset=None, optimize=False, optimizer=SGD, overlap_mask=True, patience=0, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=False, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=4, workspace=None
+Overriding model.yaml nc=80 with nc=5
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      6640  ultralytics.nn.modules.block.C3k2            [32, 64, 1, False, 0.25]      
+  3                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+  4                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  5                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  6                  -1  1     87040  ultralytics.nn.modules.block.C3k2            [128, 128, 1, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]                 
+ 10                  -1  1    249728  ultralytics.nn.modules.block.C2PSA           [256, 256, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    111296  ultralytics.nn.modules.block.C3k2            [384, 128, 1, False]          
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1     32096  ultralytics.nn.modules.block.C3k2            [256, 64, 1, False]           
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1     86720  ultralytics.nn.modules.block.C3k2            [192, 128, 1, False]          
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1    378880  ultralytics.nn.modules.block.C3k2            [384, 256, 1, True]           
+ 23        [16, 19, 22]  1    431647  ultralytics.nn.modules.head.Detect           [5, 16, None, [64, 128, 256]] 
+YOLO11n summary: 182 layers, 2,590,815 parameters, 2,590,799 gradients, 6.5 GFLOPs
+
+Remapped 3/5 cls head rows from pretrained weights by class name
+Transferred 451/499 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3196.1±1091.4 MB/s, size: 129.0 KB)
+
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train.cache... 17990 images, 512 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 17990/17990 3.8Git/s 0.0s
+[34m[1mtrain: [0m/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00941.jpg: 1 duplicate labels removed
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3189.9±794.8 MB/s, size: 121.4 KB)
+
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1 images, 0 backgrounds, 0 corrupt: 0% ──────────── 1/17990 1.9it/s 0.2s<2:37:31
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 97 images, 0 backgrounds, 0 corrupt: 0% ──────────── 97/17990 277.3it/s 0.3s<1:05
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 167 images, 0 backgrounds, 0 corrupt: 0% ──────────── 167/17990 398.0it/s 0.4s<44.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 348 images, 0 backgrounds, 0 corrupt: 1% ──────────── 348/17990 810.0it/s 0.5s<21.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 465 images, 0 backgrounds, 0 corrupt: 2% ──────────── 465/17990 897.9it/s 0.6s<19.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 567 images, 0 backgrounds, 0 corrupt: 3% ──────────── 567/17990 928.9it/s 0.7s<18.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 682 images, 0 backgrounds, 0 corrupt: 3% ──────────── 682/17990 993.5it/s 0.8s<17.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 783 images, 0 backgrounds, 0 corrupt: 4% ╸─────────── 783/17990 979.7it/s 0.9s<17.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 854 images, 1 backgrounds, 0 corrupt: 4% ╸─────────── 854/17990 893.2it/s 1.0s<19.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 969 images, 1 backgrounds, 0 corrupt: 5% ╸─────────── 969/17990 955.1it/s 1.1s<17.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1132 images, 1 backgrounds, 0 corrupt: 6% ╸─────────── 1132/17990 1.1Kit/s 1.2s<14.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1179 images, 1 backgrounds, 0 corrupt: 6% ╸─────────── 1179/17990 939.9it/s 1.3s<17.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1337 images, 1 backgrounds, 0 corrupt: 7% ╸─────────── 1337/17990 1.1Kit/s 1.4s<14.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1480 images, 1 backgrounds, 0 corrupt: 8% ╸─────────── 1480/17990 1.2Kit/s 1.5s<14.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1562 images, 1 backgrounds, 0 corrupt: 8% ━─────────── 1562/17990 1.1Kit/s 1.6s<15.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1675 images, 1 backgrounds, 0 corrupt: 9% ━─────────── 1675/17990 1.1Kit/s 1.7s<15.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1764 images, 1 backgrounds, 0 corrupt: 9% ━─────────── 1764/17990 998.5it/s 1.8s<16.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 1892 images, 1 backgrounds, 0 corrupt: 10% ━─────────── 1892/17990 1.1Kit/s 1.9s<15.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2038 images, 1 backgrounds, 0 corrupt: 11% ━─────────── 2038/17990 1.2Kit/s 2.0s<13.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2146 images, 1 backgrounds, 0 corrupt: 11% ━─────────── 2146/17990 1.1Kit/s 2.1s<14.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2236 images, 1 backgrounds, 0 corrupt: 12% ━─────────── 2236/17990 1.0Kit/s 2.2s<15.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2324 images, 1 backgrounds, 0 corrupt: 12% ━╸────────── 2324/17990 979.5it/s 2.4s<16.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2409 images, 1 backgrounds, 0 corrupt: 13% ━╸────────── 2409/17990 905.4it/s 2.5s<17.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2515 images, 1 backgrounds, 0 corrupt: 13% ━╸────────── 2515/17990 947.6it/s 2.6s<16.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2592 images, 1 backgrounds, 0 corrupt: 14% ━╸────────── 2592/17990 887.0it/s 2.7s<17.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2687 images, 1 backgrounds, 0 corrupt: 14% ━╸────────── 2687/17990 853.1it/s 2.8s<17.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2778 images, 1 backgrounds, 0 corrupt: 15% ━╸────────── 2778/17990 865.3it/s 2.9s<17.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2872 images, 1 backgrounds, 0 corrupt: 15% ━╸────────── 2872/17990 887.2it/s 3.0s<17.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 2950 images, 1 backgrounds, 0 corrupt: 16% ━╸────────── 2950/17990 845.8it/s 3.1s<17.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3063 images, 1 backgrounds, 0 corrupt: 17% ━━────────── 3063/17990 930.1it/s 3.2s<16.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3172 images, 1 backgrounds, 0 corrupt: 17% ━━────────── 3172/17990 956.7it/s 3.3s<15.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3255 images, 1 backgrounds, 0 corrupt: 18% ━━────────── 3255/17990 914.7it/s 3.4s<16.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3345 images, 1 backgrounds, 0 corrupt: 18% ━━────────── 3345/17990 905.8it/s 3.5s<16.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3405 images, 1 backgrounds, 0 corrupt: 18% ━━────────── 3405/17990 796.8it/s 3.6s<18.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3496 images, 1 backgrounds, 0 corrupt: 19% ━━────────── 3496/17990 811.5it/s 3.7s<17.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3576 images, 1 backgrounds, 0 corrupt: 19% ━━────────── 3576/17990 805.3it/s 3.8s<17.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3673 images, 1 backgrounds, 0 corrupt: 20% ━━────────── 3673/17990 850.8it/s 3.9s<16.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3763 images, 1 backgrounds, 0 corrupt: 20% ━━╸───────── 3763/17990 813.2it/s 4.1s<17.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3838 images, 1 backgrounds, 0 corrupt: 21% ━━╸───────── 3838/17990 789.2it/s 4.2s<17.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3903 images, 1 backgrounds, 0 corrupt: 21% ━━╸───────── 3903/17990 738.3it/s 4.3s<19.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 3973 images, 1 backgrounds, 0 corrupt: 22% ━━╸───────── 3973/17990 723.8it/s 4.4s<19.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4055 images, 1 backgrounds, 0 corrupt: 22% ━━╸───────── 4055/17990 750.0it/s 4.5s<18.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4129 images, 1 backgrounds, 0 corrupt: 22% ━━╸───────── 4129/17990 740.9it/s 4.6s<18.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4226 images, 1 backgrounds, 0 corrupt: 23% ━━╸───────── 4226/17990 806.0it/s 4.7s<17.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4313 images, 1 backgrounds, 0 corrupt: 23% ━━╸───────── 4313/17990 817.9it/s 4.8s<16.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4402 images, 1 backgrounds, 0 corrupt: 24% ━━╸───────── 4402/17990 835.6it/s 4.9s<16.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4489 images, 1 backgrounds, 0 corrupt: 24% ━━╸───────── 4489/17990 829.4it/s 5.0s<16.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4562 images, 1 backgrounds, 0 corrupt: 25% ━━━───────── 4562/17990 790.9it/s 5.1s<17.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4650 images, 1 backgrounds, 0 corrupt: 25% ━━━───────── 4650/17990 815.8it/s 5.2s<16.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4779 images, 1 backgrounds, 0 corrupt: 26% ━━━───────── 4779/17990 816.3it/s 5.3s<16.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4953 images, 1 backgrounds, 0 corrupt: 27% ━━━───────── 4953/17990 1.1Kit/s 5.4s<12.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5067 images, 1 backgrounds, 0 corrupt: 28% ━━━───────── 5067/17990 1.1Kit/s 5.6s<12.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5143 images, 1 backgrounds, 0 corrupt: 28% ━━━───────── 5143/17990 980.3it/s 5.7s<13.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5218 images, 1 backgrounds, 0 corrupt: 29% ━━━───────── 5218/17990 892.1it/s 5.8s<14.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5308 images, 1 backgrounds, 0 corrupt: 29% ━━━╸──────── 5308/17990 889.3it/s 5.9s<14.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5411 images, 1 backgrounds, 0 corrupt: 30% ━━━╸──────── 5411/17990 913.9it/s 6.0s<13.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5446 images, 1 backgrounds, 0 corrupt: 30% ━━━╸──────── 5446/17990 728.5it/s 6.1s<17.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5582 images, 1 backgrounds, 0 corrupt: 31% ━━━╸──────── 5582/17990 887.3it/s 6.2s<14.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5654 images, 1 backgrounds, 0 corrupt: 31% ━━━╸──────── 5654/17990 837.0it/s 6.3s<14.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5728 images, 1 backgrounds, 0 corrupt: 31% ━━━╸──────── 5728/17990 797.3it/s 6.4s<15.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5832 images, 2 backgrounds, 0 corrupt: 32% ━━━╸──────── 5832/17990 860.3it/s 6.5s<14.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5927 images, 2 backgrounds, 0 corrupt: 32% ━━━╸──────── 5927/17990 855.7it/s 6.6s<14.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 5997 images, 2 backgrounds, 0 corrupt: 33% ━━━━──────── 5997/17990 808.1it/s 6.7s<14.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6107 images, 2 backgrounds, 0 corrupt: 33% ━━━━──────── 6107/17990 885.7it/s 6.8s<13.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6228 images, 2 backgrounds, 0 corrupt: 34% ━━━━──────── 6228/17990 900.1it/s 6.9s<13.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6322 images, 2 backgrounds, 0 corrupt: 35% ━━━━──────── 6322/17990 906.6it/s 7.1s<12.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6410 images, 2 backgrounds, 0 corrupt: 35% ━━━━──────── 6410/17990 897.8it/s 7.2s<12.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6498 images, 2 backgrounds, 0 corrupt: 36% ━━━━──────── 6498/17990 889.2it/s 7.3s<12.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6580 images, 2 backgrounds, 0 corrupt: 36% ━━━━──────── 6580/17990 866.1it/s 7.4s<13.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6687 images, 2 backgrounds, 0 corrupt: 37% ━━━━──────── 6687/17990 924.9it/s 7.5s<12.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6767 images, 2 backgrounds, 0 corrupt: 37% ━━━━╸─────── 6767/17990 863.2it/s 7.6s<13.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6844 images, 2 backgrounds, 0 corrupt: 38% ━━━━╸─────── 6844/17990 825.6it/s 7.7s<13.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 6924 images, 2 backgrounds, 0 corrupt: 38% ━━━━╸─────── 6924/17990 814.4it/s 7.8s<13.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7003 images, 2 backgrounds, 0 corrupt: 38% ━━━━╸─────── 7003/17990 804.1it/s 7.9s<13.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7082 images, 2 backgrounds, 0 corrupt: 39% ━━━━╸─────── 7082/17990 791.0it/s 8.0s<13.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7170 images, 2 backgrounds, 0 corrupt: 39% ━━━━╸─────── 7170/17990 815.5it/s 8.1s<13.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7258 images, 2 backgrounds, 0 corrupt: 40% ━━━━╸─────── 7258/17990 820.7it/s 8.2s<13.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7333 images, 2 backgrounds, 0 corrupt: 40% ━━━━╸─────── 7333/17990 796.1it/s 8.3s<13.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7430 images, 2 backgrounds, 0 corrupt: 41% ━━━━╸─────── 7430/17990 842.4it/s 8.4s<12.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7499 images, 2 backgrounds, 0 corrupt: 41% ━━━━━─────── 7499/17990 794.2it/s 8.5s<13.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7584 images, 2 backgrounds, 0 corrupt: 42% ━━━━━─────── 7584/17990 795.9it/s 8.6s<13.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7666 images, 2 backgrounds, 0 corrupt: 42% ━━━━━─────── 7666/17990 800.1it/s 8.7s<12.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7756 images, 2 backgrounds, 0 corrupt: 43% ━━━━━─────── 7756/17990 830.1it/s 8.8s<12.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7833 images, 2 backgrounds, 0 corrupt: 43% ━━━━━─────── 7833/17990 802.5it/s 8.9s<12.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 7913 images, 2 backgrounds, 0 corrupt: 43% ━━━━━─────── 7913/17990 799.7it/s 9.0s<12.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8035 images, 2 backgrounds, 0 corrupt: 44% ━━━━━─────── 8035/17990 923.9it/s 9.1s<10.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8140 images, 3 backgrounds, 0 corrupt: 45% ━━━━━─────── 8140/17990 961.4it/s 9.2s<10.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8206 images, 3 backgrounds, 0 corrupt: 45% ━━━━━─────── 8206/17990 863.4it/s 9.3s<11.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8289 images, 4 backgrounds, 0 corrupt: 46% ━━━━━╸────── 8289/17990 820.0it/s 9.4s<11.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8413 images, 4 backgrounds, 0 corrupt: 46% ━━━━━╸────── 8413/17990 944.1it/s 9.5s<10.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8514 images, 4 backgrounds, 0 corrupt: 47% ━━━━━╸────── 8514/17990 961.4it/s 9.6s<9.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8584 images, 4 backgrounds, 0 corrupt: 47% ━━━━━╸────── 8584/17990 872.0it/s 9.7s<10.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8705 images, 5 backgrounds, 0 corrupt: 48% ━━━━━╸────── 8705/17990 973.2it/s 9.8s<9.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8801 images, 5 backgrounds, 0 corrupt: 48% ━━━━━╸────── 8801/17990 959.9it/s 9.9s<9.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8917 images, 5 backgrounds, 0 corrupt: 49% ━━━━━╸────── 8917/17990 1.0Kit/s 10.0s<9.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 8996 images, 5 backgrounds, 0 corrupt: 50% ━━━━━━────── 8996/17990 939.0it/s 10.1s<9.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9081 images, 5 backgrounds, 0 corrupt: 50% ━━━━━━────── 9081/17990 907.4it/s 10.2s<9.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9161 images, 5 backgrounds, 0 corrupt: 50% ━━━━━━────── 9161/17990 871.4it/s 10.3s<10.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9251 images, 5 backgrounds, 0 corrupt: 51% ━━━━━━────── 9251/17990 873.7it/s 10.4s<10.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9346 images, 5 backgrounds, 0 corrupt: 51% ━━━━━━────── 9346/17990 893.9it/s 10.5s<9.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9440 images, 5 backgrounds, 0 corrupt: 52% ━━━━━━────── 9440/17990 903.7it/s 10.6s<9.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9538 images, 5 backgrounds, 0 corrupt: 53% ━━━━━━────── 9538/17990 913.6it/s 10.7s<9.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9622 images, 5 backgrounds, 0 corrupt: 53% ━━━━━━────── 9622/17990 881.4it/s 10.9s<9.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9708 images, 6 backgrounds, 0 corrupt: 53% ━━━━━━────── 9708/17990 846.6it/s 11.0s<9.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9808 images, 6 backgrounds, 0 corrupt: 54% ━━━━━━╸───── 9808/17990 889.0it/s 11.1s<9.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 9909 images, 7 backgrounds, 0 corrupt: 55% ━━━━━━╸───── 9909/17990 923.2it/s 11.2s<8.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 10100 images, 8 backgrounds, 0 corrupt: 56% ━━━━━━╸───── 10100/17990 1.2Kit/s 11.3s<6.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 10215 images, 8 backgrounds, 0 corrupt: 56% ━━━━━━╸───── 10215/17990 1.2Kit/s 11.4s<6.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 10331 images, 8 backgrounds, 0 corrupt: 57% ━━━━━━╸───── 10331/17990 1.1Kit/s 11.5s<6.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 10464 images, 8 backgrounds, 0 corrupt: 58% ━━━━━━╸───── 10464/17990 1.2Kit/s 11.6s<6.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 10609 images, 8 backgrounds, 0 corrupt: 58% ━━━━━━━───── 10609/17990 1.3Kit/s 11.7s<5.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 10719 images, 9 backgrounds, 0 corrupt: 59% ━━━━━━━───── 10719/17990 1.2Kit/s 11.8s<6.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 10853 images, 10 backgrounds, 0 corrupt: 60% ━━━━━━━───── 10853/17990 1.2Kit/s 11.9s<5.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 10996 images, 10 backgrounds, 0 corrupt: 61% ━━━━━━━───── 10996/17990 1.3Kit/s 12.0s<5.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11119 images, 10 backgrounds, 0 corrupt: 61% ━━━━━━━───── 11119/17990 1.2Kit/s 12.1s<5.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11256 images, 10 backgrounds, 0 corrupt: 62% ━━━━━━━╸──── 11256/17990 1.2Kit/s 12.2s<5.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11346 images, 10 backgrounds, 0 corrupt: 63% ━━━━━━━╸──── 11346/17990 1.1Kit/s 12.3s<5.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11453 images, 10 backgrounds, 0 corrupt: 63% ━━━━━━━╸──── 11453/17990 1.1Kit/s 12.4s<6.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11511 images, 11 backgrounds, 0 corrupt: 63% ━━━━━━━╸──── 11511/17990 927.1it/s 12.5s<7.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11638 images, 11 backgrounds, 0 corrupt: 64% ━━━━━━━╸──── 11638/17990 1.0Kit/s 12.6s<6.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11754 images, 11 backgrounds, 0 corrupt: 65% ━━━━━━━╸──── 11754/17990 1.0Kit/s 12.7s<6.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11858 images, 11 backgrounds, 0 corrupt: 65% ━━━━━━━╸──── 11858/17990 1.0Kit/s 12.8s<5.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 11965 images, 12 backgrounds, 0 corrupt: 66% ━━━━━━━╸──── 11965/17990 1.0Kit/s 12.9s<5.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12054 images, 12 backgrounds, 0 corrupt: 67% ━━━━━━━━──── 12054/17990 994.8it/s 13.0s<6.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12143 images, 13 backgrounds, 0 corrupt: 67% ━━━━━━━━──── 12143/17990 945.8it/s 13.2s<6.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12239 images, 13 backgrounds, 0 corrupt: 68% ━━━━━━━━──── 12239/17990 943.4it/s 13.3s<6.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12323 images, 13 backgrounds, 0 corrupt: 68% ━━━━━━━━──── 12323/17990 909.5it/s 13.4s<6.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12407 images, 13 backgrounds, 0 corrupt: 68% ━━━━━━━━──── 12407/17990 860.0it/s 13.5s<6.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12480 images, 13 backgrounds, 0 corrupt: 69% ━━━━━━━━──── 12480/17990 796.9it/s 13.6s<6.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12558 images, 14 backgrounds, 0 corrupt: 69% ━━━━━━━━──── 12558/17990 782.6it/s 13.7s<6.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12623 images, 14 backgrounds, 0 corrupt: 70% ━━━━━━━━──── 12623/17990 729.3it/s 13.8s<7.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12708 images, 14 backgrounds, 0 corrupt: 70% ━━━━━━━━──── 12708/17990 748.2it/s 13.9s<7.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12760 images, 14 backgrounds, 0 corrupt: 70% ━━━━━━━━╸─── 12760/17990 669.6it/s 14.0s<7.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12838 images, 15 backgrounds, 0 corrupt: 71% ━━━━━━━━╸─── 12838/17990 660.7it/s 14.1s<7.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 12952 images, 16 backgrounds, 0 corrupt: 71% ━━━━━━━━╸─── 12952/17990 786.4it/s 14.2s<6.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13031 images, 16 backgrounds, 0 corrupt: 72% ━━━━━━━━╸─── 13031/17990 785.0it/s 14.3s<6.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13084 images, 16 backgrounds, 0 corrupt: 72% ━━━━━━━━╸─── 13084/17990 705.0it/s 14.4s<7.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13200 images, 16 backgrounds, 0 corrupt: 73% ━━━━━━━━╸─── 13200/17990 825.9it/s 14.5s<5.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13252 images, 16 backgrounds, 0 corrupt: 73% ━━━━━━━━╸─── 13252/17990 699.7it/s 14.7s<6.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13375 images, 16 backgrounds, 0 corrupt: 74% ━━━━━━━━╸─── 13375/17990 852.4it/s 14.8s<5.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13468 images, 16 backgrounds, 0 corrupt: 74% ━━━━━━━━╸─── 13468/17990 869.2it/s 14.9s<5.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13559 images, 17 backgrounds, 0 corrupt: 75% ━━━━━━━━━─── 13559/17990 869.4it/s 15.0s<5.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13673 images, 17 backgrounds, 0 corrupt: 76% ━━━━━━━━━─── 13673/17990 934.8it/s 15.1s<4.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13744 images, 17 backgrounds, 0 corrupt: 76% ━━━━━━━━━─── 13744/17990 856.0it/s 15.2s<5.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13825 images, 17 backgrounds, 0 corrupt: 76% ━━━━━━━━━─── 13825/17990 808.5it/s 15.3s<5.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 13915 images, 17 backgrounds, 0 corrupt: 77% ━━━━━━━━━─── 13915/17990 826.4it/s 15.4s<4.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14014 images, 17 backgrounds, 0 corrupt: 77% ━━━━━━━━━─── 14014/17990 855.0it/s 15.5s<4.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14113 images, 17 backgrounds, 0 corrupt: 78% ━━━━━━━━━─── 14113/17990 882.5it/s 15.6s<4.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14183 images, 18 backgrounds, 0 corrupt: 78% ━━━━━━━━━─── 14183/17990 826.8it/s 15.7s<4.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14271 images, 18 backgrounds, 0 corrupt: 79% ━━━━━━━━━╸── 14271/17990 841.1it/s 15.8s<4.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14365 images, 18 backgrounds, 0 corrupt: 79% ━━━━━━━━━╸── 14365/17990 861.2it/s 15.9s<4.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14455 images, 18 backgrounds, 0 corrupt: 80% ━━━━━━━━━╸── 14455/17990 863.0it/s 16.0s<4.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14558 images, 19 backgrounds, 0 corrupt: 80% ━━━━━━━━━╸── 14558/17990 906.6it/s 16.1s<3.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14625 images, 19 backgrounds, 0 corrupt: 81% ━━━━━━━━━╸── 14625/17990 829.2it/s 16.2s<4.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14727 images, 19 backgrounds, 0 corrupt: 81% ━━━━━━━━━╸── 14727/17990 882.3it/s 16.3s<3.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14782 images, 19 backgrounds, 0 corrupt: 82% ━━━━━━━━━╸── 14782/17990 770.1it/s 16.4s<4.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14886 images, 20 backgrounds, 0 corrupt: 82% ━━━━━━━━━╸── 14886/17990 843.4it/s 16.6s<3.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 14960 images, 21 backgrounds, 0 corrupt: 83% ━━━━━━━━━╸── 14960/17990 779.5it/s 16.7s<3.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15066 images, 21 backgrounds, 0 corrupt: 83% ━━━━━━━━━━── 15066/17990 831.9it/s 16.8s<3.5s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15114 images, 22 backgrounds, 0 corrupt: 84% ━━━━━━━━━━── 15114/17990 725.4it/s 16.9s<4.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15147 images, 22 backgrounds, 0 corrupt: 84% ━━━━━━━━━━── 15147/17990 600.6it/s 17.0s<4.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15238 images, 23 backgrounds, 0 corrupt: 84% ━━━━━━━━━━── 15238/17990 682.6it/s 17.1s<4.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15354 images, 24 backgrounds, 0 corrupt: 85% ━━━━━━━━━━── 15354/17990 820.9it/s 17.2s<3.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15442 images, 24 backgrounds, 0 corrupt: 85% ━━━━━━━━━━── 15442/17990 828.9it/s 17.3s<3.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15548 images, 25 backgrounds, 0 corrupt: 86% ━━━━━━━━━━── 15548/17990 866.9it/s 17.4s<2.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15610 images, 25 backgrounds, 0 corrupt: 86% ━━━━━━━━━━── 15610/17990 750.0it/s 17.5s<3.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15727 images, 25 backgrounds, 0 corrupt: 87% ━━━━━━━━━━── 15727/17990 863.2it/s 17.6s<2.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15824 images, 26 backgrounds, 0 corrupt: 87% ━━━━━━━━━━╸─ 15824/17990 893.1it/s 17.7s<2.4s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 15915 images, 26 backgrounds, 0 corrupt: 88% ━━━━━━━━━━╸─ 15915/17990 893.7it/s 17.8s<2.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16004 images, 27 backgrounds, 0 corrupt: 88% ━━━━━━━━━━╸─ 16004/17990 887.0it/s 17.9s<2.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16146 images, 28 backgrounds, 0 corrupt: 89% ━━━━━━━━━━╸─ 16146/17990 1.0Kit/s 18.1s<1.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16221 images, 28 backgrounds, 0 corrupt: 90% ━━━━━━━━━━╸─ 16221/17990 920.8it/s 18.2s<1.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16340 images, 28 backgrounds, 0 corrupt: 90% ━━━━━━━━━━╸─ 16340/17990 954.3it/s 18.3s<1.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16449 images, 28 backgrounds, 0 corrupt: 91% ━━━━━━━━━━╸─ 16449/17990 870.9it/s 18.4s<1.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16621 images, 29 backgrounds, 0 corrupt: 92% ━━━━━━━━━━━─ 16621/17990 1.1Kit/s 18.5s<1.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16732 images, 29 backgrounds, 0 corrupt: 93% ━━━━━━━━━━━─ 16732/17990 1.1Kit/s 18.6s<1.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16831 images, 29 backgrounds, 0 corrupt: 93% ━━━━━━━━━━━─ 16831/17990 1.0Kit/s 18.8s<1.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 16938 images, 30 backgrounds, 0 corrupt: 94% ━━━━━━━━━━━─ 16938/17990 1.0Kit/s 18.9s<1.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17052 images, 30 backgrounds, 0 corrupt: 94% ━━━━━━━━━━━─ 17052/17990 1.1Kit/s 19.0s<0.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17121 images, 30 backgrounds, 0 corrupt: 95% ━━━━━━━━━━━─ 17121/17990 949.3it/s 19.1s<0.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17201 images, 30 backgrounds, 0 corrupt: 95% ━━━━━━━━━━━─ 17201/17990 864.9it/s 19.2s<0.9s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17305 images, 30 backgrounds, 0 corrupt: 96% ━━━━━━━━━━━╸ 17305/17990 909.7it/s 19.3s<0.8s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17404 images, 31 backgrounds, 0 corrupt: 96% ━━━━━━━━━━━╸ 17404/17990 913.1it/s 19.4s<0.6s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17499 images, 31 backgrounds, 0 corrupt: 97% ━━━━━━━━━━━╸ 17499/17990 750.7it/s 19.7s<0.7s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17678 images, 32 backgrounds, 0 corrupt: 98% ━━━━━━━━━━━╸ 17678/17990 1.1Kit/s 19.8s<0.3s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17776 images, 33 backgrounds, 0 corrupt: 98% ━━━━━━━━━━━╸ 17776/17990 1.0Kit/s 19.9s<0.2s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17873 images, 33 backgrounds, 0 corrupt: 99% ━━━━━━━━━━━╸ 17873/17990 1.0Kit/s 20.0s<0.1s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17956 images, 33 backgrounds, 0 corrupt: 99% ━━━━━━━━━━━╸ 17956/17990 943.9it/s 20.1s<0.0s
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 17990 images, 33 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 17990/17990 895.6it/s 20.1s
+[34m[1mtrain: [0mNew cache created: /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train.cache
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 2319.8±1176.0 MB/s, size: 135.7 KB)
+
+[K[34m[1mval: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val.cache... 1469 images, 27 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1469/1469 79.0Mit/s 0.0s
+[34m[1moptimizer:[0m SGD(lr=0.01, momentum=0.937) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1m/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1[0m
+Starting training for 200 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+[K      1/200      4.83G       1.65      4.716      1.387        476        640: 0% ──────────── 0/563  6.8s
+[K      1/200      5.02G      1.606      4.747      1.365        525        640: 0% ──────────── 1/563 1.1s/it 7.2s<10:38
+[K      1/200      5.29G       1.68       4.76      1.403        506        640: 0% ──────────── 2/563 1.5it/s 7.5s<6:22
+[K      1/200      5.39G      1.691       4.76      1.416        557        640: 0% ──────────── 3/563 1.9it/s 7.9s<4:57
+[K      1/200      5.39G      1.677      4.752        1.4        494        640: 0% ──────────── 4/563 2.2it/s 8.2s<4:18
+[K      1/200      5.49G      1.684      4.754      1.401        524        640: 0% ──────────── 5/563 2.4it/s 8.6s<3:57
+[K      1/200      5.49G      1.674      4.746      1.405        526        640: 1% ──────────── 6/563 2.4it/s 9.0s<3:47
+[K      1/200      5.49G      1.682      4.745      1.399        432        640: 1% ──────────── 7/563 2.5it/s 9.3s<3:39
+[K      1/200      5.49G      1.673      4.743      1.398        376        640: 1% ──────────── 8/563 2.6it/s 9.7s<3:32
+[K      1/200      5.49G      1.672      4.733      1.401        420        640: 1% ──────────── 9/563 2.7it/s 10.0s<3:24
+[K      1/200       5.5G      1.682       4.72      1.411        570        640: 1% ──────────── 10/563 2.7it/s 10.4s<3:23
+[K      1/200       5.5G      1.671       4.72      1.397        507        640: 1% ──────────── 11/563 2.8it/s 10.7s<3:20
+[K      1/200       5.5G       1.66       4.71       1.39        377        640: 2% ──────────── 12/563 2.8it/s 11.1s<3:18
+[K      1/200       5.5G      1.653      4.698      1.382        370        640: 2% ──────────── 13/563 2.8it/s 11.4s<3:15
+[K      1/200       5.5G      1.648      4.684      1.374        463        640: 2% ──────────── 14/563 2.9it/s 11.8s<3:11
+[K      1/200      5.63G       1.65      4.671      1.375        562        640: 2% ──────────── 15/563 2.9it/s 12.1s<3:11
+[K      1/200      5.63G      1.647      4.656      1.369        521        640: 2% ──────────── 16/563 2.9it/s 12.5s<3:12
+[K      1/200      5.63G      1.649      4.648       1.37        414        640: 3% ──────────── 17/563 2.8it/s 12.8s<3:13
+[K      1/200      5.63G      1.641      4.638      1.365        458        640: 3% ──────────── 18/563 2.8it/s 13.2s<3:15
+[K      1/200      5.63G      1.634      4.621      1.363        401        640: 3% ──────────── 19/563 2.8it/s 13.6s<3:14
+[K      1/200      5.63G      1.632      4.614      1.364        484        640: 3% ──────────── 20/563 2.8it/s 13.9s<3:12
+[K      1/200      5.63G       1.63      4.597      1.366        483        640: 3% ──────────── 21/563 2.8it/s 14.3s<3:13
+[K      1/200      5.63G      1.625      4.578      1.364        521        640: 3% ──────────── 22/563 2.8it/s 14.6s<3:16
+[K      1/200      5.63G      1.624      4.563      1.363        512        640: 4% ──────────── 23/563 2.8it/s 15.0s<3:15
+[K      1/200      5.63G      1.615      4.543      1.364        401        640: 4% ╸─────────── 24/563 2.8it/s 15.4s<3:15
+[K      1/200      5.63G       1.62       4.53      1.367        497        640: 4% ╸─────────── 25/563 2.7it/s 15.7s<3:16
+[K      1/200      5.63G       1.62      4.512      1.371        510        640: 4% ╸─────────── 26/563 2.7it/s 16.1s<3:20
+[K      1/200      5.63G      1.617       4.49      1.371        446        640: 4% ╸─────────── 27/563 2.7it/s 16.5s<3:17
+[K      1/200      5.63G      1.613      4.471       1.37        449        640: 4% ╸─────────── 28/563 2.7it/s 16.8s<3:15
+[K      1/200      5.63G      1.612      4.444       1.37        587        640: 5% ╸─────────── 29/563 2.8it/s 17.2s<3:14
+[K      1/200      5.63G      1.612      4.444       1.37        587        640: 5% ╸─────────── 29/563 2.8it/s 17.2s<3:14
+
+1 epochs completed in 0.005 hours.
+{"status": "canary_completed", "output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_paired_s42_attempt1", "updates": 24}
+{"cuda_processes_per_gpu": 1, "expected_rss_mib": 16384, "expected_vram_mib": 10000, "gpu_ids": [4], "lease_id": "rgbir_oev1_canary_weight0_s42_attempt1-cf1ba0115fd3", "pid": 2645084, "status": "LAUNCHED"}
+Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)
+[34m[1mengine/trainer: [0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=32, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=False, classes=None, close_mosaic=0, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=200, erasing=0.0, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.0, hsv_s=0.0, hsv_v=0.0, imgsz=640, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt, momentum=0.937, mosaic=0.0, multi_scale=False, name=canary_weight0_s42_attempt1, nbs=64, nms=False, opset=None, optimize=False, optimizer=SGD, overlap_mask=True, patience=0, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=False, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=4, workspace=None
+Overriding model.yaml nc=80 with nc=5
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      6640  ultralytics.nn.modules.block.C3k2            [32, 64, 1, False, 0.25]      
+  3                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+  4                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  5                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  6                  -1  1     87040  ultralytics.nn.modules.block.C3k2            [128, 128, 1, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]                 
+ 10                  -1  1    249728  ultralytics.nn.modules.block.C2PSA           [256, 256, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    111296  ultralytics.nn.modules.block.C3k2            [384, 128, 1, False]          
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1     32096  ultralytics.nn.modules.block.C3k2            [256, 64, 1, False]           
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1     86720  ultralytics.nn.modules.block.C3k2            [192, 128, 1, False]          
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1    378880  ultralytics.nn.modules.block.C3k2            [384, 256, 1, True]           
+ 23        [16, 19, 22]  1    431647  ultralytics.nn.modules.head.Detect           [5, 16, None, [64, 128, 256]] 
+YOLO11n summary: 182 layers, 2,590,815 parameters, 2,590,799 gradients, 6.5 GFLOPs
+
+Remapped 3/5 cls head rows from pretrained weights by class name
+Transferred 451/499 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 2997.3±843.7 MB/s, size: 129.0 KB)
+
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train.cache... 17990 images, 512 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 17990/17990 2.4Git/s 0.0s
+[34m[1mtrain: [0m/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00941.jpg: 1 duplicate labels removed
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3166.9±769.0 MB/s, size: 121.4 KB)
+
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train.cache... 17990 images, 33 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 17990/17990 3.8Git/s 0.0s
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3369.1±1471.5 MB/s, size: 135.7 KB)
+
+[K[34m[1mval: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val.cache... 1469 images, 27 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1469/1469 106.2Mit/s 0.0s
+[34m[1moptimizer:[0m SGD(lr=0.01, momentum=0.937) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1m/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1[0m
+Starting training for 200 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+[K      1/200      4.83G       1.65      4.716      1.387        476        640: 0% ──────────── 0/563  7.5s
+[K      1/200      5.02G      1.606      4.747      1.365        525        640: 0% ──────────── 1/563 1.1s/it 7.8s<9:57
+[K      1/200      5.29G       1.68       4.76      1.403        506        640: 0% ──────────── 2/563 1.5it/s 8.2s<6:12
+[K      1/200      5.39G      1.691       4.76      1.416        557        640: 0% ──────────── 3/563 2.0it/s 8.5s<4:46
+[K      1/200      5.39G      1.677      4.752        1.4        494        640: 0% ──────────── 4/563 2.3it/s 8.9s<4:07
+[K      1/200      5.49G      1.684      4.754      1.401        524        640: 0% ──────────── 5/563 2.5it/s 9.2s<3:46
+[K      1/200      5.49G      1.674      4.746      1.405        526        640: 1% ──────────── 6/563 2.6it/s 9.6s<3:37
+[K      1/200      5.49G      1.682      4.745      1.399        432        640: 1% ──────────── 7/563 2.7it/s 9.9s<3:29
+[K      1/200      5.49G      1.673      4.743      1.398        376        640: 1% ──────────── 8/563 2.8it/s 10.2s<3:21
+[K      1/200      5.49G      1.672      4.733      1.401        420        640: 1% ──────────── 9/563 2.9it/s 10.6s<3:13
+[K      1/200       5.5G      1.682       4.72      1.411        570        640: 1% ──────────── 10/563 2.9it/s 10.9s<3:12
+[K      1/200       5.5G      1.671      4.719      1.397        507        640: 1% ──────────── 11/563 2.9it/s 11.2s<3:10
+[K      1/200       5.5G       1.66       4.71       1.39        377        640: 2% ──────────── 12/563 2.9it/s 11.6s<3:09
+[K      1/200       5.5G      1.653      4.698      1.382        370        640: 2% ──────────── 13/563 3.0it/s 11.9s<3:06
+[K      1/200       5.5G      1.648      4.684      1.374        463        640: 2% ──────────── 14/563 3.0it/s 12.2s<3:03
+[K      1/200      5.63G       1.65      4.671      1.375        562        640: 2% ──────────── 15/563 3.0it/s 12.6s<3:05
+[K      1/200      5.63G      1.648      4.656      1.369        521        640: 2% ──────────── 16/563 3.0it/s 12.9s<3:05
+[K      1/200      5.63G       1.65      4.649       1.37        414        640: 3% ──────────── 17/563 2.9it/s 13.3s<3:06
+[K      1/200      5.63G      1.641      4.638      1.365        458        640: 3% ──────────── 18/563 3.0it/s 13.6s<3:04
+[K      1/200      5.63G      1.634      4.621      1.363        401        640: 3% ──────────── 19/563 3.0it/s 13.9s<3:04
+[K      1/200      5.63G      1.632      4.614      1.364        484        640: 3% ──────────── 20/563 3.0it/s 14.3s<3:02
+[K      1/200      5.63G       1.63      4.597      1.367        483        640: 3% ──────────── 21/563 3.0it/s 14.6s<3:03
+[K      1/200      5.63G      1.626      4.579      1.364        521        640: 3% ──────────── 22/563 3.0it/s 14.9s<3:02
+[K      1/200      5.63G      1.625      4.563      1.363        512        640: 4% ──────────── 23/563 3.0it/s 15.3s<3:02
+[K      1/200      5.63G      1.616      4.543      1.365        401        640: 4% ╸─────────── 24/563 3.0it/s 15.6s<3:01
+[K      1/200      5.63G       1.62       4.53      1.368        497        640: 4% ╸─────────── 25/563 3.0it/s 16.0s<3:02
+[K      1/200      5.63G       1.62      4.512      1.371        510        640: 4% ╸─────────── 26/563 3.0it/s 16.3s<3:02
+[K      1/200      5.63G      1.617      4.491      1.371        446        640: 4% ╸─────────── 27/563 3.0it/s 16.6s<3:01
+[K      1/200      5.63G      1.614      4.472       1.37        449        640: 4% ╸─────────── 28/563 3.0it/s 17.0s<3:01
+[K      1/200      5.63G      1.612      4.445      1.371        587        640: 5% ╸─────────── 29/563 3.0it/s 17.3s<2:58
+[K      1/200      5.63G      1.612      4.445      1.371        587        640: 5% ╸─────────── 29/563 3.0it/s 17.3s<2:58
+
+1 epochs completed in 0.005 hours.
+{"status": "canary_completed", "output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/canary_weight0_s42_attempt1", "updates": 24}

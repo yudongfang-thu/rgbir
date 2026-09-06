@@ -1,0 +1,82 @@
+{
+  "dataset": "llvip",
+  "sample_id": "120234",
+  "sample_index": 146,
+  "luminance_quantile": 0.1,
+  "selection_matches": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/llvip_full/feature_case_1.png",
+  "rgb_luminance": 20.555421829223633,
+  "local_roi_normalized_xyxy": [
+    0.4249999950000001,
+    0.56054687,
+    0.6148437449999999,
+    1.0
+  ],
+  "local_selection": {
+    "rgb_gt_index": 1,
+    "class_id": 0,
+    "gt_normalized_xyxy": [
+      0.48828124500000003,
+      0.72363281,
+      0.551562495,
+      0.88671875
+    ],
+    "normalized_area": 0.010320282140624993,
+    "rank_zero_based": 2,
+    "n_positive_area_rgb_gt": 5
+  },
+  "label_files_byte_identical": true,
+  "gt_counts": [
+    5,
+    5
+  ],
+  "gradient_display": {
+    "rgb_gradient_p98": 0.8988317847251892,
+    "ir_gradient_p98": 0.8715143203735352,
+    "ir_resized_for_common_display_grid": false,
+    "display_grid_hw": [
+      1024,
+      1280
+    ]
+  },
+  "verified_original_files": {
+    "files": [
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120234.jpg",
+        "sha256": "cfe8ae28f93e089573d9cb47ba5e2f2c2ea13966ba9c4f80025ecfb97db74744"
+      },
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev/120234.jpg",
+        "sha256": "291c4435c32dc2fded00adcb1a5d7675153aea431268a4cfa70f824cbcfdd711"
+      }
+    ],
+    "labels": [
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev/120234.txt",
+        "sha256": "27ab7533da805b91911e03c0963c70e21fa1d0c53c7a30167cb1bd1033358e85"
+      },
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev/120234.txt",
+        "sha256": "27ab7533da805b91911e03c0963c70e21fa1d0c53c7a30167cb1bd1033358e85"
+      }
+    ]
+  },
+  "source_json_sha256": {
+    "input_manifest.json": "14279437576dd669602c6be67df88537d912ec849df16540317ef1c92b17fd55",
+    "sample_files.json": "3e68c7b092b27a30a231b3f60340d596fb34bc68436d3102e5decb286f895d3e",
+    "image_metrics.json": "53101ca5f1de6c9281b5fd89a10081488cc7b3747f97c9956344e388e92cec43",
+    "prediction_records.json": "7e30305c8e1992db9a3136904a33160584305b3da7929f915c4349fd439fe574",
+    "completion_receipt.json": "8c6ffbbcbf6730ccfa940c4fe0d6005aba28a0b49088e9fbe7e0ed7a0306eebb"
+  },
+  "input_probe_script_sha256": "df41641e242df727a29cf5e52380ce1ac6f8481920fae9e3c579fd0d584df281",
+  "output_files": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/registration_panels/llvip_registration.png",
+      "sha256": "0cf6f05ed417e97d1ef35cb4d0975c763055f2160becf04299703d32b0e41cbe"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/registration_panels/llvip_registration.pdf",
+      "sha256": "c8aa7627e87c6e08ed720ec03debfbe0afa59e08c3903d761b0cc8a3fa9e1f23"
+    }
+  ],
+  "interpretation": "Illustration only. No fitted or applied registration correction, no claim of physical visibility or KD gain."
+}

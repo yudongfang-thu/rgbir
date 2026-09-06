@@ -1,0 +1,17 @@
+test_admission_code2_only_retries_before_launched (test_expansion_worker.QueueTests) ... {"status": "QUEUED"}
+{"status": "LAUNCHED"}
+ok
+test_child_code2_never_retried (test_expansion_worker.QueueTests) ... {"status": "LAUNCHED"}
+{"status": "QUEUED"}
+{"status": "LAUNCHED"}
+ok
+test_eval_failure_does_not_stop_other_training (test_expansion_worker.QueueTests) ... ok
+test_existing_attempt_never_reused_and_other_arm_runs (test_expansion_worker.QueueTests) ... ok
+test_full_requires_seed_specific_accepted_canary (test_expansion_worker.QueueTests) ... ok
+test_seed_and_stage_command_names (test_expansion_worker.QueueTests) ... ok
+test_training_failure_preserved_and_other_arm_runs (test_expansion_worker.QueueTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.026s
+
+OK

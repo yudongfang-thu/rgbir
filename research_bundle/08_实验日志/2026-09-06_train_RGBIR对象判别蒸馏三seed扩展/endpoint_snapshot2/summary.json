@@ -1,0 +1,127 @@
+{
+  "schema": "rgbir-oev1-three-seed-endpoints-v1",
+  "captured_at_utc": "2026-09-05T23:42:24.242632+00:00",
+  "base": "/mnt/dataset/yudongfang/projects/RGBT_campaign",
+  "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+  "student_seeds": [
+    0,
+    42,
+    123
+  ],
+  "teacher_seed": 42,
+  "reference_seed": 42,
+  "primary_estimand": "100 * (paired.mAP50_95 - weight0.mAP50_95), per matched student seed",
+  "aggregation": "All three complete pairs only; sample SD with ddof=1; no p-value",
+  "cells": [
+    {
+      "seed": 0,
+      "arm": "paired",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+      "status": "pending_not_started",
+      "metrics": null,
+      "errors": []
+    },
+    {
+      "seed": 0,
+      "arm": "weight0",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+      "status": "pending_training",
+      "metrics": null,
+      "errors": [],
+      "evidence_paths": {
+        "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/launch_manifest.json",
+        "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/completion_receipt.json",
+        "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/evaluation_val.json",
+        "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/run_evidence/run_receipt.json",
+        "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/eval_evidence/run_receipt.json"
+      },
+      "present_files": [
+        "launch_manifest.json"
+      ],
+      "note": "Training terminal receipt absent; CSV metrics are deliberately not read."
+    },
+    {
+      "seed": 42,
+      "arm": "paired",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+      "status": "pending_training",
+      "metrics": null,
+      "errors": [],
+      "evidence_paths": {
+        "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/launch_manifest.json",
+        "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/completion_receipt.json",
+        "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/evaluation_val.json",
+        "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/run_evidence/run_receipt.json",
+        "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/eval_evidence/run_receipt.json"
+      },
+      "present_files": [
+        "launch_manifest.json"
+      ],
+      "note": "Training terminal receipt absent; CSV metrics are deliberately not read."
+    },
+    {
+      "seed": 42,
+      "arm": "weight0",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+      "status": "pending_not_started",
+      "metrics": null,
+      "errors": []
+    },
+    {
+      "seed": 123,
+      "arm": "paired",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+      "status": "pending_training",
+      "metrics": null,
+      "errors": [],
+      "evidence_paths": {
+        "launch_manifest.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/launch_manifest.json",
+        "completion_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/completion_receipt.json",
+        "evaluation_val.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/evaluation_val.json",
+        "run_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/run_evidence/run_receipt.json",
+        "eval_evidence/run_receipt.json": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/eval_evidence/run_receipt.json"
+      },
+      "present_files": [
+        "launch_manifest.json"
+      ],
+      "note": "Training terminal receipt absent; CSV metrics are deliberately not read."
+    },
+    {
+      "seed": 123,
+      "arm": "weight0",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+      "status": "pending_not_started",
+      "metrics": null,
+      "errors": []
+    }
+  ],
+  "limitations": [
+    "Three student seeds share the same frozen seed42 IR teacher and RGB reference; uncertainty does not cover teacher/reference training variation.",
+    "Paired minus weight0 estimates the whole intervention effect. Missing shuffled/same-modal controls prevent a cross-modal-specific knowledge or negative-transfer-avoidance claim.",
+    "Development val only, fixed E200 last/EMA endpoint. Single-run exploratory flags remain preserved; aggregate reporting does not turn these into confirmatory test results.",
+    "No p-value is computed from three seeds; report individual directions and sample SD, without treating images/batches as independent training replicates.",
+    "No accepted analyzer or four-arm evidence upgrade is implied by this descriptive collector.",
+    "Original files are read separately while queues may progress. Incomplete evidence remains pending; rerun into a fresh snapshot directory to collect later endpoints."
+  ],
+  "complete_endpoints": 0,
+  "complete_seed_pairs": 0,
+  "seed_pairs": [
+    {
+      "seed": 0,
+      "status": "pending_pair",
+      "difference_pp": null
+    },
+    {
+      "seed": 42,
+      "status": "pending_pair",
+      "difference_pp": null
+    },
+    {
+      "seed": 123,
+      "status": "pending_pair",
+      "difference_pp": null
+    }
+  ],
+  "three_seed_summary": null,
+  "status": "pending"
+}

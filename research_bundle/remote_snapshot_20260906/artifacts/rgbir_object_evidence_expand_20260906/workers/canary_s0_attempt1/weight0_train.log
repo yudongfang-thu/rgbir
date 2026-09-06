@@ -1,0 +1,89 @@
+{"cuda_processes_per_gpu": 1, "expected_rss_mib": 49152, "expected_vram_mib": 10000, "gpu_ids": [5], "lease_id": "rgbir_oev1_expand_canary_weight0_s0_attempt1-e4c8b3c9dd6d", "pid": 3825494, "status": "LAUNCHED"}
+Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)
+[34m[1mengine/trainer: [0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=32, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=False, classes=None, close_mosaic=0, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=200, erasing=0.0, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.0, hsv_s=0.0, hsv_v=0.0, imgsz=640, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt, momentum=0.937, mosaic=0.0, multi_scale=False, name=canary_weight0_s0_attempt1, nbs=64, nms=False, opset=None, optimize=False, optimizer=SGD, overlap_mask=True, patience=0, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=0, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=False, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=4, workspace=None
+Overriding model.yaml nc=80 with nc=5
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]                 
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]                
+  2                  -1  1      6640  ultralytics.nn.modules.block.C3k2            [32, 64, 1, False, 0.25]      
+  3                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+  4                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  5                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  6                  -1  1     87040  ultralytics.nn.modules.block.C3k2            [128, 128, 1, True]           
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  8                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]                 
+ 10                  -1  1    249728  ultralytics.nn.modules.block.C2PSA           [256, 256, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    111296  ultralytics.nn.modules.block.C3k2            [384, 128, 1, False]          
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1     32096  ultralytics.nn.modules.block.C3k2            [256, 64, 1, False]           
+ 17                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]                
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1     86720  ultralytics.nn.modules.block.C3k2            [192, 128, 1, False]          
+ 20                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1    378880  ultralytics.nn.modules.block.C3k2            [384, 256, 1, True]           
+ 23        [16, 19, 22]  1    431647  ultralytics.nn.modules.head.Detect           [5, 16, None, [64, 128, 256]] 
+YOLO11n summary: 182 layers, 2,590,815 parameters, 2,590,799 gradients, 6.5 GFLOPs
+
+Remapped 3/5 cls head rows from pretrained weights by class name
+Transferred 451/499 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3800.2±1110.9 MB/s, size: 133.9 KB)
+
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train.cache... 17990 images, 512 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 17990/17990 2.2Git/s 0.0s
+[34m[1mtrain: [0m/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00941.jpg: 1 duplicate labels removed
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3588.8±919.5 MB/s, size: 118.2 KB)
+
+[K[34m[1mtrain: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train.cache... 17990 images, 33 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 17990/17990 3.1Git/s 0.0s
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 2606.9±1585.0 MB/s, size: 130.4 KB)
+
+[K[34m[1mval: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val.cache... 1469 images, 27 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1469/1469 99.4Mit/s 0.0s
+[34m[1moptimizer:[0m SGD(lr=0.01, momentum=0.937) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1m/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1[0m
+Starting training for 200 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+[K      1/200      4.83G      1.657      4.826      1.375        476        640: 0% ──────────── 0/563  7.0s
+[K      1/200      5.02G      1.611      4.838      1.359        525        640: 0% ──────────── 1/563 1.1s/it 7.3s<10:28
+[K      1/200      5.29G      1.687      4.853      1.402        506        640: 0% ──────────── 2/563 1.5it/s 7.7s<6:17
+[K      1/200      5.39G      1.697      4.857      1.415        557        640: 0% ──────────── 3/563 1.9it/s 8.0s<4:58
+[K      1/200      5.39G      1.682      4.849      1.398        494        640: 0% ──────────── 4/563 2.2it/s 8.4s<4:19
+[K      1/200      5.49G      1.688      4.849      1.401        524        640: 0% ──────────── 5/563 2.2it/s 8.8s<4:13
+[K      1/200      5.49G      1.679      4.842      1.406        526        640: 1% ──────────── 6/563 2.3it/s 9.2s<4:01
+[K      1/200      5.49G      1.686      4.834      1.399        432        640: 1% ──────────── 7/563 2.5it/s 9.6s<3:46
+[K      1/200      5.49G      1.677      4.828      1.397        376        640: 1% ──────────── 8/563 2.6it/s 9.9s<3:34
+[K      1/200      5.49G      1.676      4.817        1.4        420        640: 1% ──────────── 9/563 2.7it/s 10.3s<3:26
+[K      1/200       5.5G      1.685      4.809       1.41        570        640: 1% ──────────── 10/563 2.7it/s 10.6s<3:26
+[K      1/200       5.5G      1.673      4.802      1.396        507        640: 1% ──────────── 11/563 2.7it/s 11.0s<3:23
+[K      1/200       5.5G      1.661      4.792      1.389        377        640: 2% ──────────── 12/563 2.8it/s 11.3s<3:20
+[K      1/200       5.5G      1.655      4.779      1.381        370        640: 2% ──────────── 13/563 2.2it/s 12.4s<4:08
+[K      1/200       5.5G      1.648      4.767      1.372        463        640: 2% ──────────── 14/563 2.5it/s 12.7s<3:38
+[K      1/200      5.63G      1.651      4.754      1.374        562        640: 2% ──────────── 15/563 2.6it/s 13.0s<3:30
+[K      1/200      5.63G      1.648      4.739      1.368        521        640: 2% ──────────── 16/563 2.7it/s 13.4s<3:22
+[K      1/200      5.63G       1.65      4.729      1.369        414        640: 3% ──────────── 17/563 2.7it/s 13.7s<3:21
+[K      1/200      5.63G      1.642      4.717      1.364        458        640: 3% ──────────── 18/563 2.7it/s 14.1s<3:21
+[K      1/200      5.63G      1.635      4.699      1.362        401        640: 3% ──────────── 19/563 2.8it/s 14.5s<3:16
+[K      1/200      5.63G      1.633       4.69      1.363        484        640: 3% ──────────── 20/563 2.7it/s 14.8s<3:18
+[K      1/200      5.63G      1.631      4.673      1.365        483        640: 3% ──────────── 21/563 2.7it/s 15.2s<3:20
+[K      1/200      5.63G      1.627      4.654      1.363        521        640: 3% ──────────── 22/563 2.8it/s 15.6s<3:16
+[K      1/200      5.63G      1.626      4.639      1.362        512        640: 4% ──────────── 23/563 2.8it/s 15.9s<3:15
+[K      1/200      5.63G      1.616       4.62      1.363        401        640: 4% ╸─────────── 24/563 2.8it/s 16.3s<3:14
+[K      1/200      5.63G      1.619      4.608      1.365        497        640: 4% ╸─────────── 25/563 2.7it/s 16.7s<3:16
+[K      1/200      5.63G       1.62      4.588      1.369        510        640: 4% ╸─────────── 26/563 2.8it/s 17.0s<3:14
+[K      1/200      5.63G      1.616      4.569      1.369        446        640: 4% ╸─────────── 27/563 2.8it/s 17.3s<3:09
+[K      1/200      5.63G      1.613      4.552      1.367        449        640: 4% ╸─────────── 28/563 2.8it/s 17.7s<3:08
+[K      1/200      5.63G       1.61      4.529      1.368        587        640: 5% ╸─────────── 29/563 2.9it/s 18.0s<3:06
+[K      1/200      5.63G       1.61      4.529      1.368        587        640: 5% ╸─────────── 29/563 2.9it/s 18.0s<3:06
+
+1 epochs completed in 0.005 hours.
+{"status": "canary_completed", "output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1", "updates": 24}

@@ -1,0 +1,40 @@
+{
+  "created_local": "2026-09-06T09:04:58.656733+08:00",
+  "purpose": "Read-only bounded rule review; candidate findings never contain matched values",
+  "repo_file_count": 796,
+  "repo_bytes": 109019860,
+  "inventory_source_scanned": 335,
+  "source_missing": [],
+  "candidate_findings": [],
+  "markdown_link_findings": [],
+  "existing_tracked_count": 97,
+  "changed_existing_paths": [
+    "00_project_context/AGENTS.md",
+    "00_project_context/README.md",
+    "00_project_context/全项目复盘与研究诊断_20260905.md",
+    "01_audit_20260905/README.md",
+    "06_experiment_log/2026-09-05_audit_跨模态蒸馏全项目复盘/README.md",
+    "06_experiment_log/README.md",
+    "07_questions_for_auditor.md",
+    "README.md"
+  ],
+  "missing_existing_paths": [],
+  "large_files_20MiB": [],
+  "pdf_files": [
+    "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dronevehicle_full/diagnostic_overview.pdf",
+    "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/llvip_full/diagnostic_overview.pdf",
+    "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/dronevehicle_registration.pdf",
+    "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/llvip_registration.pdf",
+    "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/vedai_registration.pdf",
+    "research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/vedai_full/diagnostic_overview.pdf"
+  ],
+  "agent_instruction_files": [
+    "00_project_context/AGENTS.md",
+    "research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/AGENTS.md"
+  ],
+  "limitations": [
+    "Pattern scan cannot prove absence of all secrets",
+    "Absolute historical links may intentionally identify remote-only evidence",
+    "No credentials were accessed deliberately and no hashes generated"
+  ]
+}

@@ -1,0 +1,3832 @@
+{
+  "schema": "replication-readonly-source-audit/v1",
+  "collected_at_utc": "2026-09-05 10:55:42 UTC",
+  "remote_host_alias": "94",
+  "scope": "Read-only text/CSV/JSON/YAML and bounded directory inventory; no checkpoint load, GPU work or remote changes.",
+  "limitations": [
+    "Current on-disk source inspected, not a reconstructed training-time binary/source bundle.",
+    "Endpoint CSV values are legacy development metrics; OGSOD YAML val=test.",
+    "Two seeds do not establish a multiseed publishable effect.",
+    "SAR donor arm retains shuffled-gray RMS amplitude and H_S KD; it is not an optical-free no-KD null."
+  ],
+  "derived_ogsod_freqmix": {
+    "native": {
+      "seed42": 0.50226,
+      "seed123": 0.50661,
+      "mean_fraction": 0.504435,
+      "sample_sd_fraction": 0.003075914498161457,
+      "minus_native_pp": 0,
+      "minus_H_S_pp": -0.717000000000001
+    },
+    "H_S": {
+      "seed42": 0.51279,
+      "seed123": 0.51042,
+      "mean_fraction": 0.511605,
+      "sample_sd_fraction": 0.0016758430714121056,
+      "minus_native_pp": 0.717000000000001,
+      "minus_H_S_pp": 0
+    },
+    "gray": {
+      "seed42": 0.47893,
+      "seed123": 0.47752,
+      "mean_fraction": 0.478225,
+      "sample_sd_fraction": 0.0009970205614730477,
+      "minus_native_pp": -2.6209999999999956,
+      "minus_H_S_pp": -3.3379999999999965
+    },
+    "sar": {
+      "seed42": 0.47939,
+      "seed123": 0.47692,
+      "mean_fraction": 0.478155,
+      "sample_sd_fraction": 0.0017465537495307526,
+      "minus_native_pp": -2.627999999999997,
+      "minus_H_S_pp": -3.344999999999998
+    },
+    "sign": {
+      "seed42": 0.36951,
+      "seed123": 0.36915,
+      "mean_fraction": 0.36933,
+      "sample_sd_fraction": 0.00025455844122717616,
+      "minus_native_pp": -13.510499999999997,
+      "minus_H_S_pp": -14.2275
+    }
+  },
+  "endpoint_rows": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/results.csv",
+      "sha256": "67e36a436c2463658f48927e624585864da731d2127396d7f791777709595b83",
+      "epoch": 400,
+      "ap50": 0.73002,
+      "map5095": 0.47752
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/results.csv",
+      "sha256": "78df385ff41bb0b7107fa70f74a5ccb629a18cd149fec2a40d0aad690b4a9a12",
+      "epoch": 400,
+      "ap50": 0.73421,
+      "map5095": 0.47893
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/results.csv",
+      "sha256": "b72f4d0387b6b92866475a474679ac01fe3bea2f08d3ec658007fd392cfff067",
+      "epoch": 400,
+      "ap50": 0.73289,
+      "map5095": 0.47692
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/results.csv",
+      "sha256": "d345e47f9d70d509cf6151009b1c64f43be1d05f7549120f8c9fb15f55315455",
+      "epoch": 400,
+      "ap50": 0.73798,
+      "map5095": 0.47939
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/results.csv",
+      "sha256": "d66e483834d706134d8dbf6ab30ff79fc22222daf3e28666602a09a7104fbd0e",
+      "epoch": 400,
+      "ap50": 0.58197,
+      "map5095": 0.36915
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/results.csv",
+      "sha256": "980e1566beeb7d9ce12759c6fc60cb113735925ca91326b0ff22c090efaf65e8",
+      "epoch": 400,
+      "ap50": 0.57517,
+      "map5095": 0.36951
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s42_e400/results.csv",
+      "sha256": "b3c7a5348ced8327af475c693d2c953ce174b380e54c0c2d44099bd291f4c748",
+      "epoch": 400,
+      "ap50": 0.76402,
+      "map5095": 0.50226
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/results.csv",
+      "sha256": "74ed5764803d06defda9eed3aa5c446dad72ec474592c09d80ac7a12db6c07e0",
+      "epoch": 400,
+      "ap50": 0.76901,
+      "map5095": 0.50661
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/sx_native_only_s42_e300/results.csv",
+      "sha256": "13eb171ad8a40ea24c86ac1ab22b90ea7e7f2d703f075357ced7a47baf6d94f3",
+      "epoch": 300,
+      "ap50": 0.62344,
+      "map5095": 0.39509
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/sx_native_only_s123_e300/results.csv",
+      "sha256": "76531f37572349eeb09379b2ebc985a3e0ab5be888bbaccc0a11ca7fc95fa3d5",
+      "epoch": 300,
+      "ap50": 0.65347,
+      "map5095": 0.40396
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/results.csv",
+      "sha256": "3b66d364df2cf0532e60b8b8d23a6dee0595fc12cfe47f8b7f55e2c1c93bf287",
+      "epoch": 400,
+      "ap50": 0.77583,
+      "map5095": 0.51279
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/results.csv",
+      "sha256": "ba7c5d5f9b6525137b9274be5f8bb2150acbbe870bf82080f17ef5a47b5b65aa",
+      "epoch": 400,
+      "ap50": 0.77615,
+      "map5095": 0.51042
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s42_e300/results.csv",
+      "sha256": "3957b7127e46744bcde0743b7a2218c466467915de87d3be0e412364dad9267c",
+      "epoch": 300,
+      "ap50": 0.19685,
+      "map5095": 0.1057
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_shuffled_s42_e300/results.csv",
+      "sha256": "59d298493c7d3d7a369e3088ecdd5fd26a14f49c01854dd274112c5e276fa59a",
+      "epoch": 300,
+      "ap50": 0.63029,
+      "map5095": 0.39873
+    }
+  ],
+  "args_comparisons": [
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer/train"
+        },
+        {
+          "key": "cmdistill_rma_artifact",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_route",
+          "arm": "zero",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_weight",
+          "arm": "1.0",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_allow_exploratory_r_only",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_status",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_formal_detector_artifact_authorized",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_detector_evidence_label",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_route",
+          "arm": "h_s",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_sar_teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s42_e400_best.pt",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_schema",
+          "arm": "cmdistill.hybrid_teacher/v1",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_run_mode",
+          "arm": "full",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_feature_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_output_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_sar_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_init_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_router_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_loss_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_trainer_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_aug_policy_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_augment_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_dataset_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_pairing",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_schema",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_algorithm",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_scope",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_seed",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_offset",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_modality",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_runtime_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_runtime_bundle_manifest_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_training_tool_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_phase_launcher_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s42_e400_lr0.005_lrf0.01_cos0_best.pt",
+          "reference": null
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer/train"
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_rgb.yaml"
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer/train"
+        },
+        {
+          "key": "cmdistill_rma_artifact",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_route",
+          "arm": "zero",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_weight",
+          "arm": "1.0",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_allow_exploratory_r_only",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_status",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_formal_detector_artifact_authorized",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_detector_evidence_label",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_route",
+          "arm": "h_s",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_sar_teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s42_e400_best.pt",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_schema",
+          "arm": "cmdistill.hybrid_teacher/v1",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_run_mode",
+          "arm": "full",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_feature_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_output_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_sar_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_init_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_router_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_loss_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_trainer_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_aug_policy_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_augment_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_dataset_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_pairing",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_schema",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_algorithm",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_scope",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_seed",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_offset",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_modality",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_runtime_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_runtime_bundle_manifest_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_training_tool_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_phase_launcher_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s42_e400_lr0.005_lrf0.01_cos0_best.pt",
+          "reference": null
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer/train"
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_rgb.yaml"
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer/train"
+        },
+        {
+          "key": "cmdistill_rma_artifact",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_route",
+          "arm": "zero",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_weight",
+          "arm": "1.0",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_allow_exploratory_r_only",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_status",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_formal_detector_artifact_authorized",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_detector_evidence_label",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_route",
+          "arm": "h_s",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_sar_teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s42_e400_best.pt",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_schema",
+          "arm": "cmdistill.hybrid_teacher/v1",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_run_mode",
+          "arm": "full",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_feature_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_output_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_sar_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_init_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_router_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_loss_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_trainer_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_aug_policy_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_augment_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_dataset_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_pairing",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_schema",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_algorithm",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_scope",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_seed",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_offset",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_modality",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_runtime_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_runtime_bundle_manifest_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_training_tool_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_phase_launcher_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s42_e400_lr0.005_lrf0.01_cos0_best.pt",
+          "reference": null
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer/train"
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_rgb.yaml"
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer/train"
+        },
+        {
+          "key": "cmdistill_rma_artifact",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_route",
+          "arm": "zero",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_weight",
+          "arm": "1.0",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_allow_exploratory_r_only",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_status",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_formal_detector_artifact_authorized",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_detector_evidence_label",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_route",
+          "arm": "h_s",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_sar_teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s123_e400_best.pt",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_schema",
+          "arm": "cmdistill.hybrid_teacher/v1",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_run_mode",
+          "arm": "full",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_feature_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_output_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_sar_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_init_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_router_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_loss_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_trainer_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_aug_policy_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_augment_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_dataset_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_pairing",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_schema",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_algorithm",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_scope",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_seed",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_offset",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_modality",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_runtime_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_runtime_bundle_manifest_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_training_tool_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_phase_launcher_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s123_e400_lr0.005_lrf0.01_cos0_best.pt",
+          "reference": null
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer/train"
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_rgb.yaml"
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer/train"
+        },
+        {
+          "key": "cmdistill_rma_artifact",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_route",
+          "arm": "zero",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_weight",
+          "arm": "1.0",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_allow_exploratory_r_only",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_status",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_formal_detector_artifact_authorized",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_detector_evidence_label",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_route",
+          "arm": "h_s",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_sar_teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s123_e400_best.pt",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_schema",
+          "arm": "cmdistill.hybrid_teacher/v1",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_run_mode",
+          "arm": "full",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_feature_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_output_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_sar_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_init_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_router_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_loss_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_trainer_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_aug_policy_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_augment_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_dataset_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_pairing",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_schema",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_algorithm",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_scope",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_seed",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_offset",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_modality",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_runtime_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_runtime_bundle_manifest_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_training_tool_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_phase_launcher_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s123_e400_lr0.005_lrf0.01_cos0_best.pt",
+          "reference": null
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer/train"
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_rgb.yaml"
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer/train"
+        },
+        {
+          "key": "cmdistill_rma_artifact",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_route",
+          "arm": "zero",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_weight",
+          "arm": "1.0",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_allow_exploratory_r_only",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_artifact_status",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_formal_detector_artifact_authorized",
+          "arm": "false",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_detector_evidence_label",
+          "arm": "none",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_rma_teacher_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_route",
+          "arm": "h_s",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_sar_teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s123_e400_best.pt",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_schema",
+          "arm": "cmdistill.hybrid_teacher/v1",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_run_mode",
+          "arm": "full",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_feature_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_output_source",
+          "arm": "sar",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_sar_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_init_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_student_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_rgb_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_router_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_loss_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_trainer_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_aug_policy_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_augment_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_paired_dataset_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_relation_pairing",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_schema",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_algorithm",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_scope",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_seed",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_offset",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_modality",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_teacher_weights_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_source_data_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_shuffle_runtime_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_runtime_bundle_manifest_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_training_tool_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "cmdistill_hybrid_phase_launcher_source_sha256",
+          "arm": "''",
+          "reference": null
+        },
+        {
+          "key": "teacher_weights",
+          "arm": "/home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s123_e400_lr0.005_lrf0.01_cos0_best.pt",
+          "reference": null
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": null
+        }
+      ]
+    },
+    {
+      "arm": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer/train/args.yaml",
+      "reference": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer/train/args.yaml",
+      "differences": [
+        {
+          "key": "data",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml"
+        },
+        {
+          "key": "project",
+          "arm": "/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer"
+        },
+        {
+          "key": "save_dir",
+          "arm": "/mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer/train",
+          "reference": "/mnt/dataset/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer/train"
+        },
+        {
+          "key": "teacher_data",
+          "arm": "/home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml",
+          "reference": "/home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_rgb.yaml"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/patch_freqmix_hs_arms.py",
+      "sha256": "5861716afd62f5ec69f251cb8a0183719aa4ffa6802a6417851753ae9544e525",
+      "size": 6464,
+      "text": "\"\"\"Add M-FM-HS-v1 arms to an isolated pemt_v5 direct code root.\n\nThe student receives an energy-matched mixed image while the canonical H_S\ncriterion keeps the original clean SAR tensor for its frozen SAR teacher.\n\"\"\"\n\nfrom __future__ import annotations\n\nimport pathlib\nimport sys\n\n\nCODE_ROOT = pathlib.Path(sys.argv[1]).resolve()\nCORE = CODE_ROOT / \"src\" / \"ogsod400_core\" / \"pemt_v5_direct.py\"\nRUNNER = CODE_ROOT / \"tools\" / \"run_pemt_v5_direct.py\"\n\nHS_ARMS = (\n    \"h_s_freqmix_gray_shuffled\",\n    \"h_s_freqmix_sar_shuffled\",\n    \"h_s_freqmix_gray_sign_randomized\",\n)\n\n\ndef replace_once(path: pathlib.Path, old: str, new: str) -> None:\n    text = path.read_text(encoding=\"utf-8\")\n    if text.count(old) != 1:\n        raise SystemExit(f\"expected one marker in {path}: {old[:80]!r}\")\n    path.write_text(text.replace(old, new), encoding=\"utf-8\")\n\n\nif HS_ARMS[0] in CORE.read_text(encoding=\"utf-8\"):\n    print(f\"already patched: {CODE_ROOT}\")\n    raise SystemExit(0)\n\nreplace_once(\n    CORE,\n    'FREQMIX_ARMS = frozenset({\"freqmix_paired\", \"freqmix_shuffled\"})\\nFM_KERNEL = 5',\n    '''NATIVE_FREQMIX_ARMS = frozenset({\"freqmix_paired\", \"freqmix_shuffled\"})\nH_S_FREQMIX_ARMS = frozenset(\n    {\n        \"h_s_freqmix_gray_shuffled\",\n        \"h_s_freqmix_sar_shuffled\",\n        \"h_s_freqmix_gray_sign_randomized\",\n    }\n)\nFREQMIX_ARMS = NATIVE_FREQMIX_ARMS | H_S_FREQMIX_ARMS\nFM_KERNEL = 5\nFM_RANDOM_SEED_OFFSET = 20260819\n# Rebuild the route sets after declaring the H_S frequency arms. These arms\n# keep the canonical H_S criterion and add only a mixed student input.\nH_S_ARMS = H_S_ARMS | H_S_FREQMIX_ARMS\nHYBRID_CMD_ARMS = H_S_ARMS | H_F_ARMS''',\n)\n\nreplace_once(\n    CORE,\n    \"NATIVE_ARMS = NATIVE_ARMS | SIDECAR_ARMS | CONTRAST_ARMS | FREQMIX_ARMS | GT_WEIGHT_ARMS\",\n    \"NATIVE_ARMS = NATIVE_ARMS | SIDECAR_ARMS | CONTRAST_ARMS | NATIVE_FREQMIX_ARMS | GT_WEIGHT_ARMS\",\n)\n\ncore_text = CORE.read_text(encoding=\"utf-8\")\nclass_start = core_text.index(\"class _FreqMixer:\")\nclass_end = core_text.index(\"\\ndef _tw_keep\", class_start)\nnew_class = '''class _FreqMixer:\n    \"\"\"Build the frozen native or H_S frequency-mixed student input.\"\"\"\n\n    def __init__(self, platform):\n        self.arm = platform.arm\n        self.torch = platform.torch\n        self.kernel = int(FM_KERNEL)\n        self.seed = int(platform.config.seed)\n        self.random_generator = None\n        self.reported = False\n\n    def _low(self, image):\n        return self.torch.nn.functional.avg_pool2d(\n            image, kernel_size=self.kernel, stride=1, padding=self.kernel // 2\n        )\n\n    @staticmethod\n    def _rms(image):\n        return image.square().mean(dim=(1, 2, 3), keepdim=True).sqrt()\n\n    def _private_generator(self, image):\n        if self.random_generator is None:\n            self.random_generator = self.torch.Generator(device=image.device)\n            self.random_generator.manual_seed(FM_RANDOM_SEED_OFFSET + self.seed)\n        return self.random_generator\n\n    def __call__(self, batch):\n        torch = self.torch\n        image = batch[\"img\"]\n        gray = batch.get(\"teacher_img\")\n        if gray is None:\n            raise PemtV5DirectError(\"freqmix arm is missing the paired gray batch\")\n\n        if self.arm in NATIVE_FREQMIX_ARMS:\n            donor = gray.roll(1, dims=0) if self.arm == \"freqmix_shuffled\" else gray\n            mixed = self._low(image) + (donor - self._low(donor))\n            merged = dict(batch)\n            merged[\"img\"] = mixed.clamp(0.0, 1.0)\n            return merged\n\n        gray_donor = gray.roll(1, dims=0)\n        gray_high = gray_donor - self._low(gray_donor)\n        target_rms = self._rms(gray_high)\n\n        if self.arm == \"h_s_freqmix_gray_shuffled\":\n            donor_high = gray_high\n        elif self.arm == \"h_s_freqmix_sar_shuffled\":\n            sar_donor = image.roll(1, dims=0)\n            sar_high = sar_donor - self._low(sar_donor)\n            donor_high = sar_high * (target_rms / self._rms(sar_high).clamp_min(1e-12))\n        elif self.arm == \"h_s_freqmix_gray_sign_randomized\":\n            signs = torch.where(\n                torch.rand(\n                    (int(image.shape[0]), 1, int(image.shape[2]), int(image.shape[3])),\n                    device=image.device,\n                    generator=self._private_generator(image),\n                )\n                < 0.5,\n                -1.0,\n                1.0,\n            )\n            donor_high = gray_high * signs\n        else:\n            raise PemtV5DirectError(f\"unknown H_S freqmix arm: {self.arm}\")\n\n        pre_clamp = self._low(image) + donor_high\n        if not self.reported:\n            rms_error = float((self._rms(donor_high) - target_rms).abs().max().detach().cpu())\n            clamp_fraction = float(\n                ((pre_clamp < 0.0) | (pre_clamp > 1.0)).float().mean().detach().cpu()\n            )\n            print(\n                f\"[freqmix-hs] arm={self.arm} rms_error={rms_error:.8g} \"\n                f\"clamp_fraction={clamp_fraction:.8g}\"\n            )\n            self.reported = True\n        merged = dict(batch)\n        merged[\"img\"] = pre_clamp.clamp(0.0, 1.0)\n        return merged\n\n'''\nCORE.write_text(core_text[:class_start] + new_class + core_text[class_end + 1 :], encoding=\"utf-8\")\n\nreplace_once(\n    CORE,\n    '''            def loss_with_freqmix(_model, batch, predictions=None):\n                if not bool(_model.training):\n                    return original(batch, predictions)\n                return original(mixer(batch), predictions)''',\n    '''            def loss_with_freqmix(_model, batch, predictions=None):\n                if not bool(_model.training):\n                    return original(batch, predictions)\n                mixed_batch = mixer(batch)\n                if self.arm in H_S_FREQMIX_ARMS:\n                    if predictions is not None:\n                        raise PemtV5DirectError(\n                            \"H_S freqmix production loss expects to own the student forward\"\n                        )\n                    mixed_predictions = _model.predict(mixed_batch[\"img\"])\n                    return original(batch, mixed_predictions)\n                return original(mixed_batch, predictions)''',\n)\n\nreplace_once(\n    RUNNER,\n    '            \"freqmix_shuffled\",',\n    '''            \"freqmix_shuffled\",\n            \"h_s_freqmix_gray_shuffled\",\n            \"h_s_freqmix_sar_shuffled\",\n            \"h_s_freqmix_gray_sign_randomized\",''',\n)\n\nprint(f\"patched {CORE}\")\nprint(f\"patched {RUNNER}\")\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/run_freqmix_hs_gp94.sh",
+      "sha256": "8ef404ff5759e8b33a5d30b24065d594ee98370493c93cdce5a43307ecb92bb4",
+      "size": 3607,
+      "text": "#!/usr/bin/env bash\n# M-FM-HS-v1 single-cell launcher on gp94.\n# Usage: run_freqmix_hs_gp94.sh GPU_ID SEED EPOCHS ARM OUTPUT_ROOT\nset -euo pipefail\n\nGPU_ID=${1:?GPU_ID}\nSEED=${2:?SEED}\nEPOCHS=${3:?EPOCHS}\nARM=${4:?ARM}\nOUTPUT=${5:?OUTPUT_ROOT}\n\nBASE=/home/zyk/projects/ydf\nCAMPAIGN=$BASE/freqmix_hs_gp94_20260819\nCODE=$CAMPAIGN/code_run\nRUNTIME=/home/zyk/data/projects/ydf/projects/LADD_public/comparison/runtime/current_hbb\nSHARED=/home/zyk/data/projects/ydf/projects/LADD_public/shared\nDATA=$BASE/datasets/OGSOD-1.0\nGRAY_DATA=$BASE/datasets/OGSOD-1.0-gray-gp94\nGRAY_YAML=$BASE/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml\nPY=/home/zyk/data/projects/ydf/conda/envs/ladd/bin/python\n\ncase \"$SEED\" in\n  42|123) ;;\n  *) echo \"seed must be 42 or 123\" >&2; exit 2 ;;\nesac\ncase \"$ARM\" in\n  H_S)\n    REFERENCE_ROOT=$DATA/rgb\n    REFERENCE_YAML=$CODE/configs/datasets/ogsod_94_rgb.yaml\n    ;;\n  h_s_freqmix_gray_shuffled|h_s_freqmix_sar_shuffled|h_s_freqmix_gray_sign_randomized)\n    REFERENCE_ROOT=$GRAY_DATA/rgb\n    REFERENCE_YAML=$GRAY_YAML\n    ;;\n  *) echo \"unknown arm: $ARM\" >&2; exit 2 ;;\nesac\n\nRGB_TEACHER=$BASE/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s${SEED}_e400_lr0.005_lrf0.01_cos0_best.pt\nSAR_TEACHER=$BASE/tri_rank_94/anchors/pemt_ogsod_90_native_only_s${SEED}_e400_best.pt\n\nmkdir -p \"$(dirname \"$OUTPUT\")\"\ntest ! -e \"$OUTPUT\"\n\n\"$PY\" \"$CODE/tools/run_pemt_v5_direct.py\" \\\n  --sar-root \"$DATA/sar\" \\\n  --rgb-root \"$REFERENCE_ROOT\" \\\n  --output-root \"$OUTPUT\" \\\n  --runtime-root \"$RUNTIME\" \\\n  --canonical-yolo-root \"$SHARED/yolo\" \\\n  --canonical-shared-root \"$SHARED\" \\\n  --canonical-ladd-shared-root \"$SHARED\" \\\n  --sar-data \"$CODE/configs/datasets/ogsod_94_sar.yaml\" \\\n  --rgb-data \"$REFERENCE_YAML\" \\\n  --model \"$BASE/tri_rank_94/anchors/yolo11n.pt\" \\\n  --rgb-teacher \"$RGB_TEACHER\" \\\n  --sar-teacher \"$SAR_TEACHER\" \\\n  --arm \"$ARM\" \\\n  --seed \"$SEED\" \\\n  --device \"$GPU_ID\" \\\n  --epochs \"$EPOCHS\" \\\n  --imgsz 256 \\\n  --lr0 0.005\n\nPYTHONPATH=\"$RUNTIME/src:$SHARED/yolo:$SHARED\" \"$PY\" -c '\nimport csv\nimport json\nimport math\nimport sys\nfrom pathlib import Path\n\nfrom ultralytics import YOLO\n\noutput = Path(sys.argv[1])\nsar_data = sys.argv[2]\ndevice = int(sys.argv[3])\nstatus = json.loads((output / \"run_status.json\").read_text())\nif status.get(\"status\") != \"COMPLETED\":\n    raise RuntimeError(f\"training did not complete: {status}\")\nwith (output / \"results.csv\").open(newline=\"\", encoding=\"utf-8\") as stream:\n    rows = list(csv.DictReader(stream))\nlosses = {\n    key: float(value)\n    for key, value in rows[-1].items()\n    if \"loss\" in key and value not in (None, \"\")\n}\nif not losses or any(not math.isfinite(value) for value in losses.values()):\n    raise RuntimeError(\"endpoint losses are missing or non-finite\")\nmodel = YOLO(str(output / \"best.pt\"))\nmetrics = model.val(\n    data=sar_data,\n    imgsz=256,\n    batch=64,\n    workers=8,\n    device=device,\n    project=str(output),\n    name=\"sar_only_val\",\n    exist_ok=False,\n    plots=False,\n    verbose=False,\n)\nvalues = {str(key): float(value) for key, value in metrics.results_dict.items()}\nif not values or any(not math.isfinite(value) for value in values.values()):\n    raise RuntimeError(\"clean-SAR validation returned non-finite metrics\")\nevidence = {\n    \"arm\": status[\"arm\"],\n    \"seed\": status[\"seed\"],\n    \"epochs\": len(rows),\n    \"finite_endpoint_losses\": losses,\n    \"sar_only_metrics\": values,\n}\n(output / \"preflight_evidence.json\").write_text(\n    json.dumps(evidence, indent=2, sort_keys=True, allow_nan=False) + \"\\n\",\n    encoding=\"utf-8\",\n)\n' \"$OUTPUT\" \"$CODE/configs/datasets/ogsod_94_sar.yaml\" \"$GPU_ID\"\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/chain_freqmix_hs_gp94.sh",
+      "sha256": "7d4cf5a5f9b5998eef18af77ef131bc3c8d5f986b61d06dbc73c4f2575f633a8",
+      "size": 475,
+      "text": "#!/usr/bin/env bash\n# Run a fresh E1 preflight, then start the frozen E400 cell only if it passes.\n# Usage: chain_freqmix_hs_gp94.sh GPU_ID SEED ARM CAMPAIGN_ROOT\nset -euo pipefail\n\nGPU_ID=${1:?GPU_ID}\nSEED=${2:?SEED}\nARM=${3:?ARM}\nROOT=${4:?CAMPAIGN_ROOT}\nLAUNCHER=/home/zyk/projects/ydf/freqmix_hs_gp94_20260819/run_freqmix_hs_gp94.sh\n\n\"$LAUNCHER\" \"$GPU_ID\" \"$SEED\" 1 \"$ARM\" \"$ROOT/e1_${ARM}_s${SEED}\"\n\"$LAUNCHER\" \"$GPU_ID\" \"$SEED\" 400 \"$ARM\" \"$ROOT/e400_${ARM}_s${SEED}\"\n\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/results.csv",
+      "sha256": "67e36a436c2463658f48927e624585864da731d2127396d7f791777709595b83",
+      "size": 77653,
+      "rows": 400,
+      "header": [
+        "epoch",
+        "time",
+        "train/box_loss",
+        "train/cls_loss",
+        "train/dfl_loss",
+        "train/angle_loss",
+        "train/t_rec_loss",
+        "train/reach_match_loss",
+        "train/reach_rank_loss",
+        "train/task_loss",
+        "train/kd_loss",
+        "train/s_rec_loss",
+        "train/d_pos_mean",
+        "train/d_neg_mean",
+        "train/rank_gap_mean",
+        "train/mask_mean",
+        "train/mask_std",
+        "train/mask_fg_mean",
+        "train/mask_bg_mean",
+        "metrics/precision(B)",
+        "metrics/recall(B)",
+        "metrics/mAP50(B)",
+        "metrics/mAP50-95(B)",
+        "val/box_loss",
+        "val/cls_loss",
+        "val/dfl_loss",
+        "val/angle_loss",
+        "val/t_rec_loss",
+        "val/reach_match_loss",
+        "val/reach_rank_loss",
+        "val/task_loss",
+        "val/kd_loss",
+        "val/s_rec_loss",
+        "val/d_pos_mean",
+        "val/d_neg_mean",
+        "val/rank_gap_mean",
+        "val/mask_mean",
+        "val/mask_std",
+        "val/mask_fg_mean",
+        "val/mask_bg_mean",
+        "phase_stop_fitness",
+        "lr/pg0",
+        "lr/pg1",
+        "lr/pg2"
+      ],
+      "last": {
+        "epoch": "400",
+        "time": "17961",
+        "train/box_loss": "1.12403",
+        "train/cls_loss": "0.58556",
+        "train/dfl_loss": "0.84645",
+        "train/angle_loss": "0",
+        "train/t_rec_loss": "0",
+        "train/reach_match_loss": "0",
+        "train/reach_rank_loss": "0",
+        "train/task_loss": "0",
+        "train/kd_loss": "0.69107",
+        "train/s_rec_loss": "0",
+        "train/d_pos_mean": "0",
+        "train/d_neg_mean": "0",
+        "train/rank_gap_mean": "0",
+        "train/mask_mean": "0",
+        "train/mask_std": "0",
+        "train/mask_fg_mean": "0",
+        "train/mask_bg_mean": "0",
+        "metrics/precision(B)": "0.7698",
+        "metrics/recall(B)": "0.69491",
+        "metrics/mAP50(B)": "0.73002",
+        "metrics/mAP50-95(B)": "0.47752",
+        "val/box_loss": "1.36089",
+        "val/cls_loss": "0.65836",
+        "val/dfl_loss": "0.87641",
+        "val/angle_loss": "0",
+        "val/t_rec_loss": "0",
+        "val/reach_match_loss": "0",
+        "val/reach_rank_loss": "0",
+        "val/task_loss": "0",
+        "val/kd_loss": "0",
+        "val/s_rec_loss": "0",
+        "val/d_pos_mean": "0",
+        "val/d_neg_mean": "0",
+        "val/rank_gap_mean": "0",
+        "val/mask_mean": "0",
+        "val/mask_std": "0",
+        "val/mask_fg_mean": "0",
+        "val/mask_bg_mean": "0",
+        "phase_stop_fitness": "0.47752",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/run_status.json",
+      "sha256": "ec3a78c4b0f7bb7ae9deab20dd04887563d951e79abcfc41cc9bbce69074286f",
+      "size": 226,
+      "text": "{\n  \"arm\": \"h_s_freqmix_gray_shuffled\",\n  \"best\": 0.47852,\n  \"best_epoch\": 386,\n  \"device\": 5,\n  \"elapsed_seconds\": 17995.64886295999,\n  \"endpoint\": 0.47752,\n  \"epochs_completed\": 400,\n  \"seed\": 123,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/preflight_evidence.json",
+      "sha256": "3e6b2728ac8cb42edcb931dcfbea59b242e67d6ac8620ebddff7f18ab2007881",
+      "size": 944,
+      "text": "{\n  \"arm\": \"h_s_freqmix_gray_shuffled\",\n  \"epochs\": 400,\n  \"finite_endpoint_losses\": {\n    \"train/angle_loss\": 0.0,\n    \"train/box_loss\": 1.12403,\n    \"train/cls_loss\": 0.58556,\n    \"train/dfl_loss\": 0.84645,\n    \"train/kd_loss\": 0.69107,\n    \"train/reach_match_loss\": 0.0,\n    \"train/reach_rank_loss\": 0.0,\n    \"train/s_rec_loss\": 0.0,\n    \"train/t_rec_loss\": 0.0,\n    \"train/task_loss\": 0.0,\n    \"val/angle_loss\": 0.0,\n    \"val/box_loss\": 1.36089,\n    \"val/cls_loss\": 0.65836,\n    \"val/dfl_loss\": 0.87641,\n    \"val/kd_loss\": 0.0,\n    \"val/reach_match_loss\": 0.0,\n    \"val/reach_rank_loss\": 0.0,\n    \"val/s_rec_loss\": 0.0,\n    \"val/t_rec_loss\": 0.0,\n    \"val/task_loss\": 0.0\n  },\n  \"sar_only_metrics\": {\n    \"fitness\": 0.4780822952181155,\n    \"metrics/mAP50(B)\": 0.7301151920092247,\n    \"metrics/mAP50-95(B)\": 0.4780822952181155,\n    \"metrics/precision(B)\": 0.7753021969325072,\n    \"metrics/recall(B)\": 0.6941095057232968\n  },\n  \"seed\": 123\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/results.csv",
+      "sha256": "78df385ff41bb0b7107fa70f74a5ccb629a18cd149fec2a40d0aad690b4a9a12",
+      "size": 77604,
+      "rows": 400,
+      "last": {
+        "epoch": "400",
+        "time": "18134.1",
+        "train/box_loss": "1.12208",
+        "train/cls_loss": "0.5866",
+        "train/dfl_loss": "0.84393",
+        "train/angle_loss": "0",
+        "train/t_rec_loss": "0",
+        "train/reach_match_loss": "0",
+        "train/reach_rank_loss": "0",
+        "train/task_loss": "0",
+        "train/kd_loss": "0.67995",
+        "train/s_rec_loss": "0",
+        "train/d_pos_mean": "0",
+        "train/d_neg_mean": "0",
+        "train/rank_gap_mean": "0",
+        "train/mask_mean": "0",
+        "train/mask_std": "0",
+        "train/mask_fg_mean": "0",
+        "train/mask_bg_mean": "0",
+        "metrics/precision(B)": "0.77012",
+        "metrics/recall(B)": "0.69931",
+        "metrics/mAP50(B)": "0.73421",
+        "metrics/mAP50-95(B)": "0.47893",
+        "val/box_loss": "1.34702",
+        "val/cls_loss": "0.65722",
+        "val/dfl_loss": "0.87629",
+        "val/angle_loss": "0",
+        "val/t_rec_loss": "0",
+        "val/reach_match_loss": "0",
+        "val/reach_rank_loss": "0",
+        "val/task_loss": "0",
+        "val/kd_loss": "0",
+        "val/s_rec_loss": "0",
+        "val/d_pos_mean": "0",
+        "val/d_neg_mean": "0",
+        "val/rank_gap_mean": "0",
+        "val/mask_mean": "0",
+        "val/mask_std": "0",
+        "val/mask_fg_mean": "0",
+        "val/mask_bg_mean": "0",
+        "phase_stop_fitness": "0.47893",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/run_status.json",
+      "sha256": "68856e3bc48cd1f4eb8e6881377e791068ef3eb2b4e2bb90e8d48f3d057f0d33",
+      "size": 226,
+      "text": "{\n  \"arm\": \"h_s_freqmix_gray_shuffled\",\n  \"best\": 0.48032,\n  \"best_epoch\": 373,\n  \"device\": 4,\n  \"elapsed_seconds\": 18178.150159448036,\n  \"endpoint\": 0.47893,\n  \"epochs_completed\": 400,\n  \"seed\": 42,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/preflight_evidence.json",
+      "sha256": "3149b6fbe5922f9a8bff2a4b35522f838e8b03dae549d497de0c1a78aafe670f",
+      "size": 940,
+      "text": "{\n  \"arm\": \"h_s_freqmix_gray_shuffled\",\n  \"epochs\": 400,\n  \"finite_endpoint_losses\": {\n    \"train/angle_loss\": 0.0,\n    \"train/box_loss\": 1.12208,\n    \"train/cls_loss\": 0.5866,\n    \"train/dfl_loss\": 0.84393,\n    \"train/kd_loss\": 0.67995,\n    \"train/reach_match_loss\": 0.0,\n    \"train/reach_rank_loss\": 0.0,\n    \"train/s_rec_loss\": 0.0,\n    \"train/t_rec_loss\": 0.0,\n    \"train/task_loss\": 0.0,\n    \"val/angle_loss\": 0.0,\n    \"val/box_loss\": 1.34702,\n    \"val/cls_loss\": 0.65722,\n    \"val/dfl_loss\": 0.87629,\n    \"val/kd_loss\": 0.0,\n    \"val/reach_match_loss\": 0.0,\n    \"val/reach_rank_loss\": 0.0,\n    \"val/s_rec_loss\": 0.0,\n    \"val/t_rec_loss\": 0.0,\n    \"val/task_loss\": 0.0\n  },\n  \"sar_only_metrics\": {\n    \"fitness\": 0.479403162506392,\n    \"metrics/mAP50(B)\": 0.7332348302340957,\n    \"metrics/mAP50-95(B)\": 0.479403162506392,\n    \"metrics/precision(B)\": 0.7661246450681117,\n    \"metrics/recall(B)\": 0.6999941859702367\n  },\n  \"seed\": 42\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/results.csv",
+      "sha256": "b72f4d0387b6b92866475a474679ac01fe3bea2f08d3ec658007fd392cfff067",
+      "size": 77646,
+      "rows": 400,
+      "header": [
+        "epoch",
+        "time",
+        "train/box_loss",
+        "train/cls_loss",
+        "train/dfl_loss",
+        "train/angle_loss",
+        "train/t_rec_loss",
+        "train/reach_match_loss",
+        "train/reach_rank_loss",
+        "train/task_loss",
+        "train/kd_loss",
+        "train/s_rec_loss",
+        "train/d_pos_mean",
+        "train/d_neg_mean",
+        "train/rank_gap_mean",
+        "train/mask_mean",
+        "train/mask_std",
+        "train/mask_fg_mean",
+        "train/mask_bg_mean",
+        "metrics/precision(B)",
+        "metrics/recall(B)",
+        "metrics/mAP50(B)",
+        "metrics/mAP50-95(B)",
+        "val/box_loss",
+        "val/cls_loss",
+        "val/dfl_loss",
+        "val/angle_loss",
+        "val/t_rec_loss",
+        "val/reach_match_loss",
+        "val/reach_rank_loss",
+        "val/task_loss",
+        "val/kd_loss",
+        "val/s_rec_loss",
+        "val/d_pos_mean",
+        "val/d_neg_mean",
+        "val/rank_gap_mean",
+        "val/mask_mean",
+        "val/mask_std",
+        "val/mask_fg_mean",
+        "val/mask_bg_mean",
+        "phase_stop_fitness",
+        "lr/pg0",
+        "lr/pg1",
+        "lr/pg2"
+      ],
+      "last": {
+        "epoch": "400",
+        "time": "20211.2",
+        "train/box_loss": "1.11796",
+        "train/cls_loss": "0.58302",
+        "train/dfl_loss": "0.84544",
+        "train/angle_loss": "0",
+        "train/t_rec_loss": "0",
+        "train/reach_match_loss": "0",
+        "train/reach_rank_loss": "0",
+        "train/task_loss": "0",
+        "train/kd_loss": "0.69472",
+        "train/s_rec_loss": "0",
+        "train/d_pos_mean": "0",
+        "train/d_neg_mean": "0",
+        "train/rank_gap_mean": "0",
+        "train/mask_mean": "0",
+        "train/mask_std": "0",
+        "train/mask_fg_mean": "0",
+        "train/mask_bg_mean": "0",
+        "metrics/precision(B)": "0.76793",
+        "metrics/recall(B)": "0.70105",
+        "metrics/mAP50(B)": "0.73289",
+        "metrics/mAP50-95(B)": "0.47692",
+        "val/box_loss": "1.36761",
+        "val/cls_loss": "0.66215",
+        "val/dfl_loss": "0.88081",
+        "val/angle_loss": "0",
+        "val/t_rec_loss": "0",
+        "val/reach_match_loss": "0",
+        "val/reach_rank_loss": "0",
+        "val/task_loss": "0",
+        "val/kd_loss": "0",
+        "val/s_rec_loss": "0",
+        "val/d_pos_mean": "0",
+        "val/d_neg_mean": "0",
+        "val/rank_gap_mean": "0",
+        "val/mask_mean": "0",
+        "val/mask_std": "0",
+        "val/mask_fg_mean": "0",
+        "val/mask_bg_mean": "0",
+        "phase_stop_fitness": "0.47692",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/run_status.json",
+      "sha256": "8d1d9f5ae9fcca883c8bd2a5507c2918ae4fef20252f75ae8f8d3457a418a24f",
+      "size": 225,
+      "text": "{\n  \"arm\": \"h_s_freqmix_sar_shuffled\",\n  \"best\": 0.47754,\n  \"best_epoch\": 395,\n  \"device\": 7,\n  \"elapsed_seconds\": 20260.08680519997,\n  \"endpoint\": 0.47692,\n  \"epochs_completed\": 400,\n  \"seed\": 123,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/preflight_evidence.json",
+      "sha256": "9b8bbb3101e6935c7a01ff20e2ca1e441e2dbf631f57a4886a325eb1ec2f6d64",
+      "size": 945,
+      "text": "{\n  \"arm\": \"h_s_freqmix_sar_shuffled\",\n  \"epochs\": 400,\n  \"finite_endpoint_losses\": {\n    \"train/angle_loss\": 0.0,\n    \"train/box_loss\": 1.11796,\n    \"train/cls_loss\": 0.58302,\n    \"train/dfl_loss\": 0.84544,\n    \"train/kd_loss\": 0.69472,\n    \"train/reach_match_loss\": 0.0,\n    \"train/reach_rank_loss\": 0.0,\n    \"train/s_rec_loss\": 0.0,\n    \"train/t_rec_loss\": 0.0,\n    \"train/task_loss\": 0.0,\n    \"val/angle_loss\": 0.0,\n    \"val/box_loss\": 1.36761,\n    \"val/cls_loss\": 0.66215,\n    \"val/dfl_loss\": 0.88081,\n    \"val/kd_loss\": 0.0,\n    \"val/reach_match_loss\": 0.0,\n    \"val/reach_rank_loss\": 0.0,\n    \"val/s_rec_loss\": 0.0,\n    \"val/t_rec_loss\": 0.0,\n    \"val/task_loss\": 0.0\n  },\n  \"sar_only_metrics\": {\n    \"fitness\": 0.47684924875104756,\n    \"metrics/mAP50(B)\": 0.7330240612341283,\n    \"metrics/mAP50-95(B)\": 0.47684924875104756,\n    \"metrics/precision(B)\": 0.7667362145151705,\n    \"metrics/recall(B)\": 0.7022869461756246\n  },\n  \"seed\": 123\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/results.csv",
+      "sha256": "d345e47f9d70d509cf6151009b1c64f43be1d05f7549120f8c9fb15f55315455",
+      "size": 77612,
+      "rows": 400,
+      "last": {
+        "epoch": "400",
+        "time": "20177.1",
+        "train/box_loss": "1.12261",
+        "train/cls_loss": "0.58582",
+        "train/dfl_loss": "0.84346",
+        "train/angle_loss": "0",
+        "train/t_rec_loss": "0",
+        "train/reach_match_loss": "0",
+        "train/reach_rank_loss": "0",
+        "train/task_loss": "0",
+        "train/kd_loss": "0.68604",
+        "train/s_rec_loss": "0",
+        "train/d_pos_mean": "0",
+        "train/d_neg_mean": "0",
+        "train/rank_gap_mean": "0",
+        "train/mask_mean": "0",
+        "train/mask_std": "0",
+        "train/mask_fg_mean": "0",
+        "train/mask_bg_mean": "0",
+        "metrics/precision(B)": "0.76652",
+        "metrics/recall(B)": "0.70494",
+        "metrics/mAP50(B)": "0.73798",
+        "metrics/mAP50-95(B)": "0.47939",
+        "val/box_loss": "1.34975",
+        "val/cls_loss": "0.65178",
+        "val/dfl_loss": "0.87532",
+        "val/angle_loss": "0",
+        "val/t_rec_loss": "0",
+        "val/reach_match_loss": "0",
+        "val/reach_rank_loss": "0",
+        "val/task_loss": "0",
+        "val/kd_loss": "0",
+        "val/s_rec_loss": "0",
+        "val/d_pos_mean": "0",
+        "val/d_neg_mean": "0",
+        "val/rank_gap_mean": "0",
+        "val/mask_mean": "0",
+        "val/mask_std": "0",
+        "val/mask_fg_mean": "0",
+        "val/mask_bg_mean": "0",
+        "phase_stop_fitness": "0.47939",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/run_status.json",
+      "sha256": "f9481bcaa9e469e4e9dc10b1a1da25c9dff97e0dc7949d9b326f41dde3788939",
+      "size": 225,
+      "text": "{\n  \"arm\": \"h_s_freqmix_sar_shuffled\",\n  \"best\": 0.47949,\n  \"best_epoch\": 395,\n  \"device\": 6,\n  \"elapsed_seconds\": 20223.756121981016,\n  \"endpoint\": 0.47939,\n  \"epochs_completed\": 400,\n  \"seed\": 42,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/preflight_evidence.json",
+      "sha256": "75a30afe2f1f00a1b3987f6a195c662f5bacb2707d7e5c187b9c1ede55479804",
+      "size": 942,
+      "text": "{\n  \"arm\": \"h_s_freqmix_sar_shuffled\",\n  \"epochs\": 400,\n  \"finite_endpoint_losses\": {\n    \"train/angle_loss\": 0.0,\n    \"train/box_loss\": 1.12261,\n    \"train/cls_loss\": 0.58582,\n    \"train/dfl_loss\": 0.84346,\n    \"train/kd_loss\": 0.68604,\n    \"train/reach_match_loss\": 0.0,\n    \"train/reach_rank_loss\": 0.0,\n    \"train/s_rec_loss\": 0.0,\n    \"train/t_rec_loss\": 0.0,\n    \"train/task_loss\": 0.0,\n    \"val/angle_loss\": 0.0,\n    \"val/box_loss\": 1.34975,\n    \"val/cls_loss\": 0.65178,\n    \"val/dfl_loss\": 0.87532,\n    \"val/kd_loss\": 0.0,\n    \"val/reach_match_loss\": 0.0,\n    \"val/reach_rank_loss\": 0.0,\n    \"val/s_rec_loss\": 0.0,\n    \"val/t_rec_loss\": 0.0,\n    \"val/task_loss\": 0.0\n  },\n  \"sar_only_metrics\": {\n    \"fitness\": 0.4791123328567022,\n    \"metrics/mAP50(B)\": 0.7370393587356071,\n    \"metrics/mAP50-95(B)\": 0.4791123328567022,\n    \"metrics/precision(B)\": 0.7641215818245898,\n    \"metrics/recall(B)\": 0.7043722198948815\n  },\n  \"seed\": 42\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/results.csv",
+      "sha256": "d66e483834d706134d8dbf6ab30ff79fc22222daf3e28666602a09a7104fbd0e",
+      "size": 77574,
+      "rows": 400,
+      "header": [
+        "epoch",
+        "time",
+        "train/box_loss",
+        "train/cls_loss",
+        "train/dfl_loss",
+        "train/angle_loss",
+        "train/t_rec_loss",
+        "train/reach_match_loss",
+        "train/reach_rank_loss",
+        "train/task_loss",
+        "train/kd_loss",
+        "train/s_rec_loss",
+        "train/d_pos_mean",
+        "train/d_neg_mean",
+        "train/rank_gap_mean",
+        "train/mask_mean",
+        "train/mask_std",
+        "train/mask_fg_mean",
+        "train/mask_bg_mean",
+        "metrics/precision(B)",
+        "metrics/recall(B)",
+        "metrics/mAP50(B)",
+        "metrics/mAP50-95(B)",
+        "val/box_loss",
+        "val/cls_loss",
+        "val/dfl_loss",
+        "val/angle_loss",
+        "val/t_rec_loss",
+        "val/reach_match_loss",
+        "val/reach_rank_loss",
+        "val/task_loss",
+        "val/kd_loss",
+        "val/s_rec_loss",
+        "val/d_pos_mean",
+        "val/d_neg_mean",
+        "val/rank_gap_mean",
+        "val/mask_mean",
+        "val/mask_std",
+        "val/mask_fg_mean",
+        "val/mask_bg_mean",
+        "phase_stop_fitness",
+        "lr/pg0",
+        "lr/pg1",
+        "lr/pg2"
+      ],
+      "last": {
+        "epoch": "400",
+        "time": "20275",
+        "train/box_loss": "1.10431",
+        "train/cls_loss": "0.57351",
+        "train/dfl_loss": "0.84346",
+        "train/angle_loss": "0",
+        "train/t_rec_loss": "0",
+        "train/reach_match_loss": "0",
+        "train/reach_rank_loss": "0",
+        "train/task_loss": "0",
+        "train/kd_loss": "0.66435",
+        "train/s_rec_loss": "0",
+        "train/d_pos_mean": "0",
+        "train/d_neg_mean": "0",
+        "train/rank_gap_mean": "0",
+        "train/mask_mean": "0",
+        "train/mask_std": "0",
+        "train/mask_fg_mean": "0",
+        "train/mask_bg_mean": "0",
+        "metrics/precision(B)": "0.69739",
+        "metrics/recall(B)": "0.55159",
+        "metrics/mAP50(B)": "0.58197",
+        "metrics/mAP50-95(B)": "0.36915",
+        "val/box_loss": "1.79442",
+        "val/cls_loss": "0.94154",
+        "val/dfl_loss": "0.9784",
+        "val/angle_loss": "0",
+        "val/t_rec_loss": "0",
+        "val/reach_match_loss": "0",
+        "val/reach_rank_loss": "0",
+        "val/task_loss": "0",
+        "val/kd_loss": "0",
+        "val/s_rec_loss": "0",
+        "val/d_pos_mean": "0",
+        "val/d_neg_mean": "0",
+        "val/rank_gap_mean": "0",
+        "val/mask_mean": "0",
+        "val/mask_std": "0",
+        "val/mask_fg_mean": "0",
+        "val/mask_bg_mean": "0",
+        "phase_stop_fitness": "0.36915",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/run_status.json",
+      "sha256": "881cf2045023efe6062f88a3199119bea506907a79bf6725be464d1f85b032a1",
+      "size": 234,
+      "text": "{\n  \"arm\": \"h_s_freqmix_gray_sign_randomized\",\n  \"best\": 0.37249,\n  \"best_epoch\": 316,\n  \"device\": 7,\n  \"elapsed_seconds\": 20322.076147881977,\n  \"endpoint\": 0.36915,\n  \"epochs_completed\": 400,\n  \"seed\": 123,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/preflight_evidence.json",
+      "sha256": "63d0f1a6611fe401fd28cd57338e0d4edd4299d5dc4b14841e9cd0b179807fb6",
+      "size": 948,
+      "text": "{\n  \"arm\": \"h_s_freqmix_gray_sign_randomized\",\n  \"epochs\": 400,\n  \"finite_endpoint_losses\": {\n    \"train/angle_loss\": 0.0,\n    \"train/box_loss\": 1.10431,\n    \"train/cls_loss\": 0.57351,\n    \"train/dfl_loss\": 0.84346,\n    \"train/kd_loss\": 0.66435,\n    \"train/reach_match_loss\": 0.0,\n    \"train/reach_rank_loss\": 0.0,\n    \"train/s_rec_loss\": 0.0,\n    \"train/t_rec_loss\": 0.0,\n    \"train/task_loss\": 0.0,\n    \"val/angle_loss\": 0.0,\n    \"val/box_loss\": 1.79442,\n    \"val/cls_loss\": 0.94154,\n    \"val/dfl_loss\": 0.9784,\n    \"val/kd_loss\": 0.0,\n    \"val/reach_match_loss\": 0.0,\n    \"val/reach_rank_loss\": 0.0,\n    \"val/s_rec_loss\": 0.0,\n    \"val/t_rec_loss\": 0.0,\n    \"val/task_loss\": 0.0\n  },\n  \"sar_only_metrics\": {\n    \"fitness\": 0.372702933042471,\n    \"metrics/mAP50(B)\": 0.5942099849120908,\n    \"metrics/mAP50-95(B)\": 0.372702933042471,\n    \"metrics/precision(B)\": 0.6794413459826961,\n    \"metrics/recall(B)\": 0.5654423065617261\n  },\n  \"seed\": 123\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/results.csv",
+      "sha256": "980e1566beeb7d9ce12759c6fc60cb113735925ca91326b0ff22c090efaf65e8",
+      "size": 77640,
+      "rows": 400,
+      "header": [
+        "epoch",
+        "time",
+        "train/box_loss",
+        "train/cls_loss",
+        "train/dfl_loss",
+        "train/angle_loss",
+        "train/t_rec_loss",
+        "train/reach_match_loss",
+        "train/reach_rank_loss",
+        "train/task_loss",
+        "train/kd_loss",
+        "train/s_rec_loss",
+        "train/d_pos_mean",
+        "train/d_neg_mean",
+        "train/rank_gap_mean",
+        "train/mask_mean",
+        "train/mask_std",
+        "train/mask_fg_mean",
+        "train/mask_bg_mean",
+        "metrics/precision(B)",
+        "metrics/recall(B)",
+        "metrics/mAP50(B)",
+        "metrics/mAP50-95(B)",
+        "val/box_loss",
+        "val/cls_loss",
+        "val/dfl_loss",
+        "val/angle_loss",
+        "val/t_rec_loss",
+        "val/reach_match_loss",
+        "val/reach_rank_loss",
+        "val/task_loss",
+        "val/kd_loss",
+        "val/s_rec_loss",
+        "val/d_pos_mean",
+        "val/d_neg_mean",
+        "val/rank_gap_mean",
+        "val/mask_mean",
+        "val/mask_std",
+        "val/mask_fg_mean",
+        "val/mask_bg_mean",
+        "phase_stop_fitness",
+        "lr/pg0",
+        "lr/pg1",
+        "lr/pg2"
+      ],
+      "last": {
+        "epoch": "400",
+        "time": "19985.6",
+        "train/box_loss": "1.10537",
+        "train/cls_loss": "0.57576",
+        "train/dfl_loss": "0.84166",
+        "train/angle_loss": "0",
+        "train/t_rec_loss": "0",
+        "train/reach_match_loss": "0",
+        "train/reach_rank_loss": "0",
+        "train/task_loss": "0",
+        "train/kd_loss": "0.6554",
+        "train/s_rec_loss": "0",
+        "train/d_pos_mean": "0",
+        "train/d_neg_mean": "0",
+        "train/rank_gap_mean": "0",
+        "train/mask_mean": "0",
+        "train/mask_std": "0",
+        "train/mask_fg_mean": "0",
+        "train/mask_bg_mean": "0",
+        "metrics/precision(B)": "0.67383",
+        "metrics/recall(B)": "0.54367",
+        "metrics/mAP50(B)": "0.57517",
+        "metrics/mAP50-95(B)": "0.36951",
+        "val/box_loss": "1.7988",
+        "val/cls_loss": "0.97234",
+        "val/dfl_loss": "0.98075",
+        "val/angle_loss": "0",
+        "val/t_rec_loss": "0",
+        "val/reach_match_loss": "0",
+        "val/reach_rank_loss": "0",
+        "val/task_loss": "0",
+        "val/kd_loss": "0",
+        "val/s_rec_loss": "0",
+        "val/d_pos_mean": "0",
+        "val/d_neg_mean": "0",
+        "val/rank_gap_mean": "0",
+        "val/mask_mean": "0",
+        "val/mask_std": "0",
+        "val/mask_fg_mean": "0",
+        "val/mask_bg_mean": "0",
+        "phase_stop_fitness": "0.36951",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/run_status.json",
+      "sha256": "a8b8928bd59a7bbf8b2b88ec698ee5ed64efa19da0006170be7185cedc8cd524",
+      "size": 229,
+      "text": "{\n  \"arm\": \"h_s_freqmix_gray_sign_randomized\",\n  \"best\": 0.37209,\n  \"best_epoch\": 357,\n  \"device\": 6,\n  \"elapsed_seconds\": 20036.28193035,\n  \"endpoint\": 0.36951,\n  \"epochs_completed\": 400,\n  \"seed\": 42,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/preflight_evidence.json",
+      "sha256": "41485bd23ffd0d7d15d49b82621278cd96369fcb349dea1d42013cd259ecfb9b",
+      "size": 948,
+      "text": "{\n  \"arm\": \"h_s_freqmix_gray_sign_randomized\",\n  \"epochs\": 400,\n  \"finite_endpoint_losses\": {\n    \"train/angle_loss\": 0.0,\n    \"train/box_loss\": 1.10537,\n    \"train/cls_loss\": 0.57576,\n    \"train/dfl_loss\": 0.84166,\n    \"train/kd_loss\": 0.6554,\n    \"train/reach_match_loss\": 0.0,\n    \"train/reach_rank_loss\": 0.0,\n    \"train/s_rec_loss\": 0.0,\n    \"train/t_rec_loss\": 0.0,\n    \"train/task_loss\": 0.0,\n    \"val/angle_loss\": 0.0,\n    \"val/box_loss\": 1.7988,\n    \"val/cls_loss\": 0.97234,\n    \"val/dfl_loss\": 0.98075,\n    \"val/kd_loss\": 0.0,\n    \"val/reach_match_loss\": 0.0,\n    \"val/reach_rank_loss\": 0.0,\n    \"val/s_rec_loss\": 0.0,\n    \"val/t_rec_loss\": 0.0,\n    \"val/task_loss\": 0.0\n  },\n  \"sar_only_metrics\": {\n    \"fitness\": 0.3717224358533676,\n    \"metrics/mAP50(B)\": 0.5837860715516109,\n    \"metrics/mAP50-95(B)\": 0.3717224358533676,\n    \"metrics/precision(B)\": 0.6785157683013767,\n    \"metrics/recall(B)\": 0.5490020533789908\n  },\n  \"seed\": 42\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/mech_queue_fm_tw_94.sh",
+      "sha256": "9e1e4df0acb5783a8c13983aaba9e17920e8ab38ef865d0f6dc7d4496f033511",
+      "text": "#!/usr/bin/env bash\n# FM + TW cross-machine replication on gp94 (SiXiang, vs 94-side sx anchors\n# 0.39509/0.40396). fm stream on GPU7, tw stream on GPU5.\n# Usage: mech_queue_fm_tw_94.sh {fm|tw}\nset -u\nCODE=/home/zyk/projects/ydf/tri_rank_94/code\nPY=/home/zyk/data/projects/ydf/conda/envs/ladd/bin/python\nRUNNER=$CODE/tools/run_pemt_v5_direct.py\nRES=/home/zyk/projects/ydf/tri_rank_94/results\nGATE=/home/zyk/projects/ydf/dgc_gate_20260817\nCOMMON=\"--sar-root /home/zyk/projects/ydf/datasets/sixiang_yolo_coarse10_s42_v1/sar \\\n --rgb-root /home/zyk/projects/ydf/datasets/sixiang_gray_s42_v1/rgb \\\n --runtime-root /home/zyk/data/projects/ydf/projects/LADD_public/comparison/runtime/current_hbb_mech \\\n --canonical-yolo-root /home/zyk/data/projects/ydf/projects/LADD_public/shared_mech/yolo \\\n --canonical-shared-root /home/zyk/data/projects/ydf/projects/LADD_public/shared_mech \\\n --canonical-ladd-shared-root /home/zyk/data/projects/ydf/projects/LADD_public/shared_mech \\\n --sar-data $CODE/configs/datasets/sixiang_94_sar.yaml \\\n --rgb-data $CODE/configs/datasets/sixiang_gray_94.yaml \\\n --model /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt \\\n --epochs 300 --imgsz 512 --lr0 0.01\"\n\nteacher_for_seed() {\n  if [ \"$1\" = \"123\" ]; then echo 123; else echo 42; fi\n}\ngtconf_for_seed() {\n  if [ \"$1\" = \"123\" ]; then echo $GATE/gtconf_sixiang_90_s123.csv; else echo $GATE/gtconf_sixiang_90_s42.csv; fi\n}\n\nrun_cell() {  # name arm seed device extra...\n  local name=$1 arm=$2 seed=$3 device=$4\n  shift 4\n  if [ -f \"$RES/mech_sx/${name}/run_status.json\" ]; then\n    status=$(tr -d ' \\n' < \"$RES/mech_sx/${name}/run_status.json\" | grep -o '\"status\":\"[A-Z]*\"' | head -1)\n    if [ \"$status\" = '\"status\":\"COMPLETED\"' ]; then echo \"[skip] $name\"; return 0; fi\n  fi\n  if pgrep -f -- \"output-root $RES/mech_sx/${name}\\$\" >/dev/null 2>&1 || \\\n     pgrep -f -- \"output-root $RES/mech_sx/${name} \" >/dev/null 2>&1; then\n    echo \"[skip] $name already running\"; return 0\n  fi\n  echo \"[run ] $name arm=$arm seed=$seed device=$device\"\n  $PY $RUNNER $COMMON --arm \"$arm\" --seed \"$seed\" --device \"$device\" \\\n    --output-root \"$RES/mech_sx/${name}\" \\\n    --rgb-teacher $RES/gray_native_s$(teacher_for_seed $seed)_e300/_trainer/train/weights/best.pt \"$@\"\n  echo \"[done] $name\"\n}\n\nslot_fm() {\n  run_cell freqmix_paired_s42_e300    freqmix_paired   42 7\n  run_cell freqmix_shuffled_s42_e300  freqmix_shuffled 42 7\n  run_cell freqmix_paired_s123_e300   freqmix_paired  123 7\n  run_cell freqmix_shuffled_s123_e300 freqmix_shuffled 123 7\n}\nslot_tw() {\n  run_cell tcur_w_s42_e300          tcur_w          42 5 --sidecar-csv $(gtconf_for_seed 42)\n  run_cell tcur_w_shuffled_s42_e300 tcur_w_shuffled 42 5 --sidecar-csv $(gtconf_for_seed 42)\n  run_cell tcur_w_s123_e300         tcur_w         123 5 --sidecar-csv $(gtconf_for_seed 123)\n  run_cell tcur_w_shuffled_s123_e300 tcur_w_shuffled 123 5 --sidecar-csv $(gtconf_for_seed 123)\n}\n\ncase \"${1:-}\" in\n  fm) slot_fm ;;\n  tw) slot_tw ;;\n  *) echo \"usage: $0 {fm|tw}\" >&2; exit 2 ;;\nesac\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml",
+      "sha256": "7b20fa2e2bae4f9825856c3cff6fc6783d4e08b753bce4520aedcc3e9db35173",
+      "text": "# LADD90 OGSOD-1.0 SAR split (development evidence; val = legacy test split)\npath: /home/zyk/projects/ydf/datasets/OGSOD-1.0/sar\ntrain: images/train\nval: images/test\ntest: images/test\n\nnc: 3\nnames:\n  0: bridge\n  1: harbor\n  2: storage_tank\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer/train/args.yaml",
+      "sha256": "f337d3c176ac6582605d32362561461a345df279fa23ea97a846f97559c5e97f",
+      "size": 3878,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 42\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s42/_trainer/train\ncmdistill_rma_artifact: ''\ncmdistill_rma_route: zero\ncmdistill_rma_weight: 1.0\ncmdistill_rma_allow_exploratory_r_only: false\ncmdistill_rma_artifact_sha256: ''\ncmdistill_rma_artifact_status: none\ncmdistill_rma_formal_detector_artifact_authorized: false\ncmdistill_rma_detector_evidence_label: none\ncmdistill_rma_teacher_weights_sha256: ''\ncmdistill_rma_student_data_sha256: ''\ncmdistill_rma_teacher_data_sha256: ''\ncmdistill_hybrid_route: h_s\ncmdistill_sar_teacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s42_e400_best.pt\ncmdistill_hybrid_schema: cmdistill.hybrid_teacher/v1\ncmdistill_hybrid_run_mode: full\ncmdistill_hybrid_feature_source: sar\ncmdistill_hybrid_relation_source: sar\ncmdistill_hybrid_output_source: sar\ncmdistill_hybrid_rgb_teacher_weights_sha256: ''\ncmdistill_hybrid_sar_teacher_weights_sha256: ''\ncmdistill_hybrid_student_init_sha256: ''\ncmdistill_hybrid_student_data_sha256: ''\ncmdistill_hybrid_rgb_data_sha256: ''\ncmdistill_hybrid_router_source_sha256: ''\ncmdistill_hybrid_loss_source_sha256: ''\ncmdistill_hybrid_trainer_source_sha256: ''\ncmdistill_hybrid_aug_policy_source_sha256: ''\ncmdistill_hybrid_paired_augment_source_sha256: ''\ncmdistill_hybrid_paired_dataset_source_sha256: ''\ncmdistill_hybrid_relation_pairing: ''\ncmdistill_hybrid_shuffle_schema: ''\ncmdistill_hybrid_shuffle_algorithm: ''\ncmdistill_hybrid_shuffle_scope: ''\ncmdistill_hybrid_shuffle_seed: ''\ncmdistill_hybrid_shuffle_offset: ''\ncmdistill_hybrid_shuffle_source_modality: ''\ncmdistill_hybrid_shuffle_source_teacher_weights_sha256: ''\ncmdistill_hybrid_shuffle_source_data_sha256: ''\ncmdistill_hybrid_shuffle_runtime_source_sha256: ''\ncmdistill_hybrid_runtime_bundle_manifest_sha256: ''\ncmdistill_hybrid_training_tool_source_sha256: ''\ncmdistill_hybrid_phase_launcher_source_sha256: ''\nteacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s42_e400_lr0.005_lrf0.01_cos0_best.pt\nteacher_data: /home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml\n",
+      "mtime_utc": "2026-08-18T20:33:03.239556+00:00"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer/train/args.yaml",
+      "sha256": "85703155d868d029c61979e1587aa6d7b165f9e4bb452a91ccb78e9abe454606",
+      "size": 3876,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 42\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s42/_trainer/train\ncmdistill_rma_artifact: ''\ncmdistill_rma_route: zero\ncmdistill_rma_weight: 1.0\ncmdistill_rma_allow_exploratory_r_only: false\ncmdistill_rma_artifact_sha256: ''\ncmdistill_rma_artifact_status: none\ncmdistill_rma_formal_detector_artifact_authorized: false\ncmdistill_rma_detector_evidence_label: none\ncmdistill_rma_teacher_weights_sha256: ''\ncmdistill_rma_student_data_sha256: ''\ncmdistill_rma_teacher_data_sha256: ''\ncmdistill_hybrid_route: h_s\ncmdistill_sar_teacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s42_e400_best.pt\ncmdistill_hybrid_schema: cmdistill.hybrid_teacher/v1\ncmdistill_hybrid_run_mode: full\ncmdistill_hybrid_feature_source: sar\ncmdistill_hybrid_relation_source: sar\ncmdistill_hybrid_output_source: sar\ncmdistill_hybrid_rgb_teacher_weights_sha256: ''\ncmdistill_hybrid_sar_teacher_weights_sha256: ''\ncmdistill_hybrid_student_init_sha256: ''\ncmdistill_hybrid_student_data_sha256: ''\ncmdistill_hybrid_rgb_data_sha256: ''\ncmdistill_hybrid_router_source_sha256: ''\ncmdistill_hybrid_loss_source_sha256: ''\ncmdistill_hybrid_trainer_source_sha256: ''\ncmdistill_hybrid_aug_policy_source_sha256: ''\ncmdistill_hybrid_paired_augment_source_sha256: ''\ncmdistill_hybrid_paired_dataset_source_sha256: ''\ncmdistill_hybrid_relation_pairing: ''\ncmdistill_hybrid_shuffle_schema: ''\ncmdistill_hybrid_shuffle_algorithm: ''\ncmdistill_hybrid_shuffle_scope: ''\ncmdistill_hybrid_shuffle_seed: ''\ncmdistill_hybrid_shuffle_offset: ''\ncmdistill_hybrid_shuffle_source_modality: ''\ncmdistill_hybrid_shuffle_source_teacher_weights_sha256: ''\ncmdistill_hybrid_shuffle_source_data_sha256: ''\ncmdistill_hybrid_shuffle_runtime_source_sha256: ''\ncmdistill_hybrid_runtime_bundle_manifest_sha256: ''\ncmdistill_hybrid_training_tool_source_sha256: ''\ncmdistill_hybrid_phase_launcher_source_sha256: ''\nteacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s42_e400_lr0.005_lrf0.01_cos0_best.pt\nteacher_data: /home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml\n",
+      "mtime_utc": "2026-08-18T20:33:02.915547+00:00"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer/train/args.yaml",
+      "sha256": "2aef4fb4f26ac150bbb07d68c3f57c8ac6870363ae248a25e1ff78555a342d3c",
+      "size": 1815,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 42\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/native_only_s42_e400/_trainer/train\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s42_e400/results.csv",
+      "sha256": "b3c7a5348ced8327af475c693d2c953ce174b380e54c0c2d44099bd291f4c748",
+      "size": 52383,
+      "rows": 400,
+      "last": {
+        "epoch": "400",
+        "time": "18014.2",
+        "train/box_loss": "1.08145",
+        "train/cls_loss": "0.54968",
+        "train/dfl_loss": "0.83809",
+        "metrics/precision(B)": "0.79959",
+        "metrics/recall(B)": "0.72678",
+        "metrics/mAP50(B)": "0.76402",
+        "metrics/mAP50-95(B)": "0.50226",
+        "val/box_loss": "1.26232",
+        "val/cls_loss": "0.59931",
+        "val/dfl_loss": "0.86498",
+        "phase_stop_fitness": "0.50226",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s42_e400/run_status.json",
+      "sha256": "0fef04be06c3fe82a231cb34a1931a89e5bab37a06001b12e453a91912a90d59",
+      "size": 212,
+      "text": "{\n  \"arm\": \"native_only\",\n  \"best\": 0.50226,\n  \"best_epoch\": 400,\n  \"device\": 4,\n  \"elapsed_seconds\": 18035.830933142002,\n  \"endpoint\": 0.50226,\n  \"epochs_completed\": 400,\n  \"seed\": 42,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer/train/args.yaml",
+      "sha256": "1c8590d3d7b273ce2a5127315be0964c7f9d25b698cbf95b2c518cf09fda6a62",
+      "size": 1824,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 123\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/_trainer/train\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/results.csv",
+      "sha256": "74ed5764803d06defda9eed3aa5c446dad72ec474592c09d80ac7a12db6c07e0",
+      "size": 52381,
+      "rows": 400,
+      "last": {
+        "epoch": "400",
+        "time": "23688.3",
+        "train/box_loss": "1.08611",
+        "train/cls_loss": "0.55088",
+        "train/dfl_loss": "0.83975",
+        "metrics/precision(B)": "0.79623",
+        "metrics/recall(B)": "0.73123",
+        "metrics/mAP50(B)": "0.76901",
+        "metrics/mAP50-95(B)": "0.50661",
+        "val/box_loss": "1.25196",
+        "val/cls_loss": "0.60061",
+        "val/dfl_loss": "0.86542",
+        "phase_stop_fitness": "0.50661",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/native_only_s123_v2_e400/run_status.json",
+      "sha256": "0e1eb281a4717a51ab89eaf13464ed175021c86c342ab0edd6204595ef10bbfe",
+      "size": 213,
+      "text": "{\n  \"arm\": \"native_only\",\n  \"best\": 0.50666,\n  \"best_epoch\": 399,\n  \"device\": 7,\n  \"elapsed_seconds\": 23799.972380224004,\n  \"endpoint\": 0.50661,\n  \"epochs_completed\": 400,\n  \"seed\": 123,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/sx_native_only_s42_e300/_trainer/train/args.yaml",
+      "sha256": "8e9e38209bbbab73e41839ade225bc5a0df001ef25a7be417064ff8c66bd4b3e",
+      "size": 1822,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/sixiang_94_sar.yaml\nepochs: 300\ntime: null\npatience: 300\nbatch: 64\nstrict_batch_size: true\nimgsz: 512\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/sx_native_only_s42_e300/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 42\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.01\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/sx_native_only_s42_e300/_trainer/train\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/sx_native_only_s42_e300/results.csv",
+      "sha256": "13eb171ad8a40ea24c86ac1ab22b90ea7e7f2d703f075357ced7a47baf6d94f3",
+      "size": 37713,
+      "rows": 300,
+      "last": {
+        "epoch": "300",
+        "time": "2127.54",
+        "train/box_loss": "0.436",
+        "train/cls_loss": "0.32731",
+        "train/dfl_loss": "0.82966",
+        "metrics/precision(B)": "0.67736",
+        "metrics/recall(B)": "0.59696",
+        "metrics/mAP50(B)": "0.62344",
+        "metrics/mAP50-95(B)": "0.39509",
+        "val/box_loss": "1.40826",
+        "val/cls_loss": "1.20717",
+        "val/dfl_loss": "1.42",
+        "phase_stop_fitness": "0.39509",
+        "lr/pg0": "0.000133",
+        "lr/pg1": "0.000133",
+        "lr/pg2": "0.000133"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/sx_native_only_s42_e300/run_status.json",
+      "sha256": "ac41a34a52a6f6674450461f8b8f2d9c844e2993731e7afc4d8f57a671f31895",
+      "size": 211,
+      "text": "{\n  \"arm\": \"native_only\",\n  \"best\": 0.39624,\n  \"best_epoch\": 264,\n  \"device\": 5,\n  \"elapsed_seconds\": 2158.328165464998,\n  \"endpoint\": 0.39509,\n  \"epochs_completed\": 300,\n  \"seed\": 42,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/sx_native_only_s123_e300/_trainer/train/args.yaml",
+      "sha256": "f87a08456114b81fcb46abbe333c5505d664ea04d6af45c6f935276582692301",
+      "size": 1825,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/sixiang_94_sar.yaml\nepochs: 300\ntime: null\npatience: 300\nbatch: 64\nstrict_batch_size: true\nimgsz: 512\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/sx_native_only_s123_e300/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 123\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.01\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/sx_native_only_s123_e300/_trainer/train\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/sx_native_only_s123_e300/results.csv",
+      "sha256": "76531f37572349eeb09379b2ebc985a3e0ab5be888bbaccc0a11ca7fc95fa3d5",
+      "size": 37715,
+      "rows": 300,
+      "last": {
+        "epoch": "300",
+        "time": "3057.97",
+        "train/box_loss": "0.41591",
+        "train/cls_loss": "0.31846",
+        "train/dfl_loss": "0.82601",
+        "metrics/precision(B)": "0.7005",
+        "metrics/recall(B)": "0.61184",
+        "metrics/mAP50(B)": "0.65347",
+        "metrics/mAP50-95(B)": "0.40396",
+        "val/box_loss": "1.39456",
+        "val/cls_loss": "1.12509",
+        "val/dfl_loss": "1.32088",
+        "phase_stop_fitness": "0.40396",
+        "lr/pg0": "0.000133",
+        "lr/pg1": "0.000133",
+        "lr/pg2": "0.000133"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/sx_native_only_s123_e300/run_status.json",
+      "sha256": "afe81d9da475dc751c3485033707cf0435798634163c8b0f85adb13b42454ecd",
+      "size": 213,
+      "text": "{\n  \"arm\": \"native_only\",\n  \"best\": 0.40573,\n  \"best_epoch\": 229,\n  \"device\": 5,\n  \"elapsed_seconds\": 3077.1611484889945,\n  \"endpoint\": 0.40396,\n  \"epochs_completed\": 300,\n  \"seed\": 123,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer/train/args.yaml",
+      "sha256": "2fc9a70e440090d1d0d8bc6df91438858204e53152cda76f8443f85654afd92c",
+      "size": 3869,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 42\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/_trainer/train\ncmdistill_rma_artifact: ''\ncmdistill_rma_route: zero\ncmdistill_rma_weight: 1.0\ncmdistill_rma_allow_exploratory_r_only: false\ncmdistill_rma_artifact_sha256: ''\ncmdistill_rma_artifact_status: none\ncmdistill_rma_formal_detector_artifact_authorized: false\ncmdistill_rma_detector_evidence_label: none\ncmdistill_rma_teacher_weights_sha256: ''\ncmdistill_rma_student_data_sha256: ''\ncmdistill_rma_teacher_data_sha256: ''\ncmdistill_hybrid_route: h_s\ncmdistill_sar_teacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s42_e400_best.pt\ncmdistill_hybrid_schema: cmdistill.hybrid_teacher/v1\ncmdistill_hybrid_run_mode: full\ncmdistill_hybrid_feature_source: sar\ncmdistill_hybrid_relation_source: sar\ncmdistill_hybrid_output_source: sar\ncmdistill_hybrid_rgb_teacher_weights_sha256: ''\ncmdistill_hybrid_sar_teacher_weights_sha256: ''\ncmdistill_hybrid_student_init_sha256: ''\ncmdistill_hybrid_student_data_sha256: ''\ncmdistill_hybrid_rgb_data_sha256: ''\ncmdistill_hybrid_router_source_sha256: ''\ncmdistill_hybrid_loss_source_sha256: ''\ncmdistill_hybrid_trainer_source_sha256: ''\ncmdistill_hybrid_aug_policy_source_sha256: ''\ncmdistill_hybrid_paired_augment_source_sha256: ''\ncmdistill_hybrid_paired_dataset_source_sha256: ''\ncmdistill_hybrid_relation_pairing: ''\ncmdistill_hybrid_shuffle_schema: ''\ncmdistill_hybrid_shuffle_algorithm: ''\ncmdistill_hybrid_shuffle_scope: ''\ncmdistill_hybrid_shuffle_seed: ''\ncmdistill_hybrid_shuffle_offset: ''\ncmdistill_hybrid_shuffle_source_modality: ''\ncmdistill_hybrid_shuffle_source_teacher_weights_sha256: ''\ncmdistill_hybrid_shuffle_source_data_sha256: ''\ncmdistill_hybrid_shuffle_runtime_source_sha256: ''\ncmdistill_hybrid_runtime_bundle_manifest_sha256: ''\ncmdistill_hybrid_training_tool_source_sha256: ''\ncmdistill_hybrid_phase_launcher_source_sha256: ''\nteacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s42_e400_lr0.005_lrf0.01_cos0_best.pt\nteacher_data: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_rgb.yaml\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/results.csv",
+      "sha256": "3b66d364df2cf0532e60b8b8d23a6dee0595fc12cfe47f8b7f55e2c1c93bf287",
+      "size": 77598,
+      "rows": 400,
+      "last": {
+        "epoch": "400",
+        "time": "16435",
+        "train/box_loss": "1.04499",
+        "train/cls_loss": "0.54226",
+        "train/dfl_loss": "0.83322",
+        "train/angle_loss": "0",
+        "train/t_rec_loss": "0",
+        "train/reach_match_loss": "0",
+        "train/reach_rank_loss": "0",
+        "train/task_loss": "0",
+        "train/kd_loss": "0.59431",
+        "train/s_rec_loss": "0",
+        "train/d_pos_mean": "0",
+        "train/d_neg_mean": "0",
+        "train/rank_gap_mean": "0",
+        "train/mask_mean": "0",
+        "train/mask_std": "0",
+        "train/mask_fg_mean": "0",
+        "train/mask_bg_mean": "0",
+        "metrics/precision(B)": "0.79046",
+        "metrics/recall(B)": "0.74734",
+        "metrics/mAP50(B)": "0.77583",
+        "metrics/mAP50-95(B)": "0.51279",
+        "val/box_loss": "1.2333",
+        "val/cls_loss": "0.59027",
+        "val/dfl_loss": "0.85877",
+        "val/angle_loss": "0",
+        "val/t_rec_loss": "0",
+        "val/reach_match_loss": "0",
+        "val/reach_rank_loss": "0",
+        "val/task_loss": "0",
+        "val/kd_loss": "0",
+        "val/s_rec_loss": "0",
+        "val/d_pos_mean": "0",
+        "val/d_neg_mean": "0",
+        "val/rank_gap_mean": "0",
+        "val/mask_mean": "0",
+        "val/mask_std": "0",
+        "val/mask_fg_mean": "0",
+        "val/mask_bg_mean": "0",
+        "phase_stop_fitness": "0.51279",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s42/run_status.json",
+      "sha256": "fe59fa8e559951124a9f15e5982a63311dde5e7eea5e5a14be09ec003508a522",
+      "size": 204,
+      "text": "{\n  \"arm\": \"H_S\",\n  \"best\": 0.51313,\n  \"best_epoch\": 386,\n  \"device\": 4,\n  \"elapsed_seconds\": 16458.907663110993,\n  \"endpoint\": 0.51279,\n  \"epochs_completed\": 400,\n  \"seed\": 42,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer/train/args.yaml",
+      "sha256": "598d0aefa1212dc2f4170e5682611ee92ab69e2ea214baa4669b4491de465e47",
+      "size": 3874,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 123\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/_trainer/train\ncmdistill_rma_artifact: ''\ncmdistill_rma_route: zero\ncmdistill_rma_weight: 1.0\ncmdistill_rma_allow_exploratory_r_only: false\ncmdistill_rma_artifact_sha256: ''\ncmdistill_rma_artifact_status: none\ncmdistill_rma_formal_detector_artifact_authorized: false\ncmdistill_rma_detector_evidence_label: none\ncmdistill_rma_teacher_weights_sha256: ''\ncmdistill_rma_student_data_sha256: ''\ncmdistill_rma_teacher_data_sha256: ''\ncmdistill_hybrid_route: h_s\ncmdistill_sar_teacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s123_e400_best.pt\ncmdistill_hybrid_schema: cmdistill.hybrid_teacher/v1\ncmdistill_hybrid_run_mode: full\ncmdistill_hybrid_feature_source: sar\ncmdistill_hybrid_relation_source: sar\ncmdistill_hybrid_output_source: sar\ncmdistill_hybrid_rgb_teacher_weights_sha256: ''\ncmdistill_hybrid_sar_teacher_weights_sha256: ''\ncmdistill_hybrid_student_init_sha256: ''\ncmdistill_hybrid_student_data_sha256: ''\ncmdistill_hybrid_rgb_data_sha256: ''\ncmdistill_hybrid_router_source_sha256: ''\ncmdistill_hybrid_loss_source_sha256: ''\ncmdistill_hybrid_trainer_source_sha256: ''\ncmdistill_hybrid_aug_policy_source_sha256: ''\ncmdistill_hybrid_paired_augment_source_sha256: ''\ncmdistill_hybrid_paired_dataset_source_sha256: ''\ncmdistill_hybrid_relation_pairing: ''\ncmdistill_hybrid_shuffle_schema: ''\ncmdistill_hybrid_shuffle_algorithm: ''\ncmdistill_hybrid_shuffle_scope: ''\ncmdistill_hybrid_shuffle_seed: ''\ncmdistill_hybrid_shuffle_offset: ''\ncmdistill_hybrid_shuffle_source_modality: ''\ncmdistill_hybrid_shuffle_source_teacher_weights_sha256: ''\ncmdistill_hybrid_shuffle_source_data_sha256: ''\ncmdistill_hybrid_shuffle_runtime_source_sha256: ''\ncmdistill_hybrid_runtime_bundle_manifest_sha256: ''\ncmdistill_hybrid_training_tool_source_sha256: ''\ncmdistill_hybrid_phase_launcher_source_sha256: ''\nteacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s123_e400_lr0.005_lrf0.01_cos0_best.pt\nteacher_data: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_rgb.yaml\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/results.csv",
+      "sha256": "ba7c5d5f9b6525137b9274be5f8bb2150acbbe870bf82080f17ef5a47b5b65aa",
+      "size": 77610,
+      "rows": 400,
+      "last": {
+        "epoch": "400",
+        "time": "20302.4",
+        "train/box_loss": "1.04463",
+        "train/cls_loss": "0.54114",
+        "train/dfl_loss": "0.8349",
+        "train/angle_loss": "0",
+        "train/t_rec_loss": "0",
+        "train/reach_match_loss": "0",
+        "train/reach_rank_loss": "0",
+        "train/task_loss": "0",
+        "train/kd_loss": "0.60774",
+        "train/s_rec_loss": "0",
+        "train/d_pos_mean": "0",
+        "train/d_neg_mean": "0",
+        "train/rank_gap_mean": "0",
+        "train/mask_mean": "0",
+        "train/mask_std": "0",
+        "train/mask_fg_mean": "0",
+        "train/mask_bg_mean": "0",
+        "metrics/precision(B)": "0.79727",
+        "metrics/recall(B)": "0.74099",
+        "metrics/mAP50(B)": "0.77615",
+        "metrics/mAP50-95(B)": "0.51042",
+        "val/box_loss": "1.25",
+        "val/cls_loss": "0.59724",
+        "val/dfl_loss": "0.86184",
+        "val/angle_loss": "0",
+        "val/t_rec_loss": "0",
+        "val/reach_match_loss": "0",
+        "val/reach_rank_loss": "0",
+        "val/task_loss": "0",
+        "val/kd_loss": "0",
+        "val/s_rec_loss": "0",
+        "val/d_pos_mean": "0",
+        "val/d_neg_mean": "0",
+        "val/rank_gap_mean": "0",
+        "val/mask_mean": "0",
+        "val/mask_std": "0",
+        "val/mask_fg_mean": "0",
+        "val/mask_bg_mean": "0",
+        "phase_stop_fitness": "0.51042",
+        "lr/pg0": "6.2375e-05",
+        "lr/pg1": "6.2375e-05",
+        "lr/pg2": "6.2375e-05"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/hs_ogsod_gp94_20260818/e400_s123/run_status.json",
+      "sha256": "5f63b4e673764f5290b5ce77030a7e2057ce55939c63d63c49cb5d1dac546dcc",
+      "size": 204,
+      "text": "{\n  \"arm\": \"H_S\",\n  \"best\": 0.51042,\n  \"best_epoch\": 400,\n  \"device\": 5,\n  \"elapsed_seconds\": 20332.84153999199,\n  \"endpoint\": 0.51042,\n  \"epochs_completed\": 400,\n  \"seed\": 123,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s42_e300/_trainer/train/args.yaml",
+      "sha256": "95915f9436567e66655afddd2d371e115d04c85859579bbd0aec7ae92eedd9e7",
+      "size": 1838,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/sixiang_94_sar.yaml\nepochs: 300\ntime: null\npatience: 300\nbatch: 64\nstrict_batch_size: true\nimgsz: 512\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s42_e300/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 42\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.01\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s42_e300/_trainer/train\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s42_e300/results.csv",
+      "sha256": "3957b7127e46744bcde0743b7a2218c466467915de87d3be0e412364dad9267c",
+      "size": 37727,
+      "rows": 300,
+      "last": {
+        "epoch": "300",
+        "time": "2065.34",
+        "train/box_loss": "0.41156",
+        "train/cls_loss": "0.31213",
+        "train/dfl_loss": "0.81989",
+        "metrics/precision(B)": "0.34534",
+        "metrics/recall(B)": "0.18534",
+        "metrics/mAP50(B)": "0.19685",
+        "metrics/mAP50-95(B)": "0.1057",
+        "val/box_loss": "2.12575",
+        "val/cls_loss": "3.86053",
+        "val/dfl_loss": "1.75964",
+        "phase_stop_fitness": "0.1057",
+        "lr/pg0": "0.000133",
+        "lr/pg1": "0.000133",
+        "lr/pg2": "0.000133"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s42_e300/run_status.json",
+      "sha256": "248facb1742593094628dea9a60aeda93d77642046309ee3eb1884c98445066e",
+      "size": 214,
+      "text": "{\n  \"arm\": \"freqmix_paired\",\n  \"best\": 0.11687,\n  \"best_epoch\": 203,\n  \"device\": 7,\n  \"elapsed_seconds\": 2090.9130216570047,\n  \"endpoint\": 0.1057,\n  \"epochs_completed\": 300,\n  \"seed\": 42,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s123_e300/_trainer/train/args.yaml",
+      "sha256": "af73dcec9d734c64dfb7acf2b21abdba217a4cbdc18288ee05a19061aaf6b49a",
+      "size": 1841,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/sixiang_94_sar.yaml\nepochs: 300\ntime: null\npatience: 300\nbatch: 64\nstrict_batch_size: true\nimgsz: 512\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s123_e300/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 123\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.01\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s123_e300/_trainer/train\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_paired_s123_e300/run_status.json",
+      "sha256": "64d0a08ce14b9a83fbb0af68347636e64ebb5211a1b9f12a6a539168d9cffa3a",
+      "size": 83,
+      "text": "{\n  \"arm\": \"freqmix_paired\",\n  \"device\": 7,\n  \"seed\": 123,\n  \"status\": \"RUNNING\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_shuffled_s42_e300/_trainer/train/args.yaml",
+      "sha256": "2a555364990cdbce925124fe7b11267a5033eb50c9acbbb6cd60ce1aace26407",
+      "size": 1842,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/tri_rank_94/code/configs/datasets/sixiang_94_sar.yaml\nepochs: 300\ntime: null\npatience: 300\nbatch: 64\nstrict_batch_size: true\nimgsz: 512\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/tri_rank_94/results/mech_sx/freqmix_shuffled_s42_e300/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 42\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.01\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/tri_rank_94/results/mech_sx/freqmix_shuffled_s42_e300/_trainer/train\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_shuffled_s42_e300/results.csv",
+      "sha256": "59d298493c7d3d7a369e3088ecdd5fd26a14f49c01854dd274112c5e276fa59a",
+      "size": 37729,
+      "rows": 300,
+      "last": {
+        "epoch": "300",
+        "time": "2036.08",
+        "train/box_loss": "0.46877",
+        "train/cls_loss": "0.33442",
+        "train/dfl_loss": "0.83125",
+        "metrics/precision(B)": "0.74801",
+        "metrics/recall(B)": "0.57205",
+        "metrics/mAP50(B)": "0.63029",
+        "metrics/mAP50-95(B)": "0.39873",
+        "val/box_loss": "1.40889",
+        "val/cls_loss": "1.25193",
+        "val/dfl_loss": "1.29496",
+        "phase_stop_fitness": "0.39873",
+        "lr/pg0": "0.000133",
+        "lr/pg1": "0.000133",
+        "lr/pg2": "0.000133"
+      }
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/results/mech_sx/freqmix_shuffled_s42_e300/run_status.json",
+      "sha256": "efa0226943132036e289eb0521761e2d9b07a10028821b3037cc7c6e3b86920c",
+      "size": 217,
+      "text": "{\n  \"arm\": \"freqmix_shuffled\",\n  \"best\": 0.41155,\n  \"best_epoch\": 187,\n  \"device\": 7,\n  \"elapsed_seconds\": 2052.3325230390183,\n  \"endpoint\": 0.39873,\n  \"epochs_completed\": 300,\n  \"seed\": 42,\n  \"status\": \"COMPLETED\"\n}\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/code/configs/datasets/ogsod_94_sar.yaml",
+      "sha256": "7b20fa2e2bae4f9825856c3cff6fc6783d4e08b753bce4520aedcc3e9db35173",
+      "size": 240,
+      "text": "# LADD90 OGSOD-1.0 SAR split (development evidence; val = legacy test split)\npath: /home/zyk/projects/ydf/datasets/OGSOD-1.0/sar\ntrain: images/train\nval: images/test\ntest: images/test\n\nnc: 3\nnames:\n  0: bridge\n  1: harbor\n  2: storage_tank\n"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer/train/args.yaml",
+      "sha256": "d03d99dd803a58e2536347cefe1de7f04214bff73a6593a4d4e298e9dfd276a4",
+      "size": 3883,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 123\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_gray_s123/_trainer/train\ncmdistill_rma_artifact: ''\ncmdistill_rma_route: zero\ncmdistill_rma_weight: 1.0\ncmdistill_rma_allow_exploratory_r_only: false\ncmdistill_rma_artifact_sha256: ''\ncmdistill_rma_artifact_status: none\ncmdistill_rma_formal_detector_artifact_authorized: false\ncmdistill_rma_detector_evidence_label: none\ncmdistill_rma_teacher_weights_sha256: ''\ncmdistill_rma_student_data_sha256: ''\ncmdistill_rma_teacher_data_sha256: ''\ncmdistill_hybrid_route: h_s\ncmdistill_sar_teacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s123_e400_best.pt\ncmdistill_hybrid_schema: cmdistill.hybrid_teacher/v1\ncmdistill_hybrid_run_mode: full\ncmdistill_hybrid_feature_source: sar\ncmdistill_hybrid_relation_source: sar\ncmdistill_hybrid_output_source: sar\ncmdistill_hybrid_rgb_teacher_weights_sha256: ''\ncmdistill_hybrid_sar_teacher_weights_sha256: ''\ncmdistill_hybrid_student_init_sha256: ''\ncmdistill_hybrid_student_data_sha256: ''\ncmdistill_hybrid_rgb_data_sha256: ''\ncmdistill_hybrid_router_source_sha256: ''\ncmdistill_hybrid_loss_source_sha256: ''\ncmdistill_hybrid_trainer_source_sha256: ''\ncmdistill_hybrid_aug_policy_source_sha256: ''\ncmdistill_hybrid_paired_augment_source_sha256: ''\ncmdistill_hybrid_paired_dataset_source_sha256: ''\ncmdistill_hybrid_relation_pairing: ''\ncmdistill_hybrid_shuffle_schema: ''\ncmdistill_hybrid_shuffle_algorithm: ''\ncmdistill_hybrid_shuffle_scope: ''\ncmdistill_hybrid_shuffle_seed: ''\ncmdistill_hybrid_shuffle_offset: ''\ncmdistill_hybrid_shuffle_source_modality: ''\ncmdistill_hybrid_shuffle_source_teacher_weights_sha256: ''\ncmdistill_hybrid_shuffle_source_data_sha256: ''\ncmdistill_hybrid_shuffle_runtime_source_sha256: ''\ncmdistill_hybrid_runtime_bundle_manifest_sha256: ''\ncmdistill_hybrid_training_tool_source_sha256: ''\ncmdistill_hybrid_phase_launcher_source_sha256: ''\nteacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s123_e400_lr0.005_lrf0.01_cos0_best.pt\nteacher_data: /home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml\n",
+      "mtime_utc": "2026-08-18T20:33:02.747543+00:00"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer/train/args.yaml",
+      "sha256": "896f2b7929f23a9afa6c7b7b6c18ff2b12875b43965e78b60692eb9e1ce37749",
+      "size": 3881,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 123\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sar_s123/_trainer/train\ncmdistill_rma_artifact: ''\ncmdistill_rma_route: zero\ncmdistill_rma_weight: 1.0\ncmdistill_rma_allow_exploratory_r_only: false\ncmdistill_rma_artifact_sha256: ''\ncmdistill_rma_artifact_status: none\ncmdistill_rma_formal_detector_artifact_authorized: false\ncmdistill_rma_detector_evidence_label: none\ncmdistill_rma_teacher_weights_sha256: ''\ncmdistill_rma_student_data_sha256: ''\ncmdistill_rma_teacher_data_sha256: ''\ncmdistill_hybrid_route: h_s\ncmdistill_sar_teacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s123_e400_best.pt\ncmdistill_hybrid_schema: cmdistill.hybrid_teacher/v1\ncmdistill_hybrid_run_mode: full\ncmdistill_hybrid_feature_source: sar\ncmdistill_hybrid_relation_source: sar\ncmdistill_hybrid_output_source: sar\ncmdistill_hybrid_rgb_teacher_weights_sha256: ''\ncmdistill_hybrid_sar_teacher_weights_sha256: ''\ncmdistill_hybrid_student_init_sha256: ''\ncmdistill_hybrid_student_data_sha256: ''\ncmdistill_hybrid_rgb_data_sha256: ''\ncmdistill_hybrid_router_source_sha256: ''\ncmdistill_hybrid_loss_source_sha256: ''\ncmdistill_hybrid_trainer_source_sha256: ''\ncmdistill_hybrid_aug_policy_source_sha256: ''\ncmdistill_hybrid_paired_augment_source_sha256: ''\ncmdistill_hybrid_paired_dataset_source_sha256: ''\ncmdistill_hybrid_relation_pairing: ''\ncmdistill_hybrid_shuffle_schema: ''\ncmdistill_hybrid_shuffle_algorithm: ''\ncmdistill_hybrid_shuffle_scope: ''\ncmdistill_hybrid_shuffle_seed: ''\ncmdistill_hybrid_shuffle_offset: ''\ncmdistill_hybrid_shuffle_source_modality: ''\ncmdistill_hybrid_shuffle_source_teacher_weights_sha256: ''\ncmdistill_hybrid_shuffle_source_data_sha256: ''\ncmdistill_hybrid_shuffle_runtime_source_sha256: ''\ncmdistill_hybrid_runtime_bundle_manifest_sha256: ''\ncmdistill_hybrid_training_tool_source_sha256: ''\ncmdistill_hybrid_phase_launcher_source_sha256: ''\nteacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s123_e400_lr0.005_lrf0.01_cos0_best.pt\nteacher_data: /home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml\n",
+      "mtime_utc": "2026-08-18T20:33:02.919547+00:00"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer/train/args.yaml",
+      "sha256": "8d002005cdc9db15d526f1685b7a3dd7d8fdb7724a7c7d2f89d54beb74e08381",
+      "size": 3883,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 123\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s123/_trainer/train\ncmdistill_rma_artifact: ''\ncmdistill_rma_route: zero\ncmdistill_rma_weight: 1.0\ncmdistill_rma_allow_exploratory_r_only: false\ncmdistill_rma_artifact_sha256: ''\ncmdistill_rma_artifact_status: none\ncmdistill_rma_formal_detector_artifact_authorized: false\ncmdistill_rma_detector_evidence_label: none\ncmdistill_rma_teacher_weights_sha256: ''\ncmdistill_rma_student_data_sha256: ''\ncmdistill_rma_teacher_data_sha256: ''\ncmdistill_hybrid_route: h_s\ncmdistill_sar_teacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s123_e400_best.pt\ncmdistill_hybrid_schema: cmdistill.hybrid_teacher/v1\ncmdistill_hybrid_run_mode: full\ncmdistill_hybrid_feature_source: sar\ncmdistill_hybrid_relation_source: sar\ncmdistill_hybrid_output_source: sar\ncmdistill_hybrid_rgb_teacher_weights_sha256: ''\ncmdistill_hybrid_sar_teacher_weights_sha256: ''\ncmdistill_hybrid_student_init_sha256: ''\ncmdistill_hybrid_student_data_sha256: ''\ncmdistill_hybrid_rgb_data_sha256: ''\ncmdistill_hybrid_router_source_sha256: ''\ncmdistill_hybrid_loss_source_sha256: ''\ncmdistill_hybrid_trainer_source_sha256: ''\ncmdistill_hybrid_aug_policy_source_sha256: ''\ncmdistill_hybrid_paired_augment_source_sha256: ''\ncmdistill_hybrid_paired_dataset_source_sha256: ''\ncmdistill_hybrid_relation_pairing: ''\ncmdistill_hybrid_shuffle_schema: ''\ncmdistill_hybrid_shuffle_algorithm: ''\ncmdistill_hybrid_shuffle_scope: ''\ncmdistill_hybrid_shuffle_seed: ''\ncmdistill_hybrid_shuffle_offset: ''\ncmdistill_hybrid_shuffle_source_modality: ''\ncmdistill_hybrid_shuffle_source_teacher_weights_sha256: ''\ncmdistill_hybrid_shuffle_source_data_sha256: ''\ncmdistill_hybrid_shuffle_runtime_source_sha256: ''\ncmdistill_hybrid_runtime_bundle_manifest_sha256: ''\ncmdistill_hybrid_training_tool_source_sha256: ''\ncmdistill_hybrid_phase_launcher_source_sha256: ''\nteacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s123_e400_lr0.005_lrf0.01_cos0_best.pt\nteacher_data: /home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml\n",
+      "mtime_utc": "2026-08-18T20:33:03.195554+00:00"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer/train/args.yaml",
+      "sha256": "c87931750fc389819d9f832289930dd6a9d01e8b5c8d71a75adbdffe6254c3bd",
+      "size": 3878,
+      "text": "task: detect\nmode: train\nmodel: /home/zyk/projects/ydf/tri_rank_94/anchors/yolo11n.pt\ndata: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/code_run/configs/datasets/ogsod_94_sar.yaml\nepochs: 400\ntime: null\npatience: 400\nbatch: 64\nstrict_batch_size: true\nimgsz: 256\nsave: true\nsave_period: 100\ncache: false\ndevice: '0'\nworkers: 8\nproject: /home/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer\nname: train\nexist_ok: false\npretrained: true\noptimizer: SGD\nverbose: true\nseed: 42\ndeterministic: true\nsingle_cls: false\nrect: false\ncos_lr: false\nclose_mosaic: 0\nresume: false\namp: true\nfraction: 1.0\nprofile: false\nfreeze: null\nmulti_scale: 0.0\ncompile: false\noverlap_mask: true\nmask_ratio: 4\ndropout: 0.0\nval: true\nsplit: val\nsave_json: false\nconf: null\niou: 0.7\nmax_det: 300\nhalf: false\ndnn: false\nplots: false\nend2end: null\nsource: null\nvid_stride: 1\nstream_buffer: false\nvisualize: false\naugment: false\nagnostic_nms: false\nclasses: null\nretina_masks: false\nembed: null\nshow: false\nsave_frames: false\nsave_txt: false\nsave_conf: false\nsave_crop: false\nshow_labels: true\nshow_conf: true\nshow_boxes: true\nline_width: null\nformat: torchscript\nkeras: false\noptimize: false\nint8: false\ndynamic: false\nsimplify: true\nopset: null\nworkspace: null\nnms: false\nlr0: 0.005\nlrf: 0.01\nmomentum: 0.937\nweight_decay: 0.0005\nwarmup_epochs: 3.0\nwarmup_momentum: 0.8\nwarmup_bias_lr: 0.1\nbox: 7.5\ncls: 0.5\ndfl: 1.5\npose: 12.0\nkobj: 1.0\nrle: 1.0\nangle: 1.0\nnbs: 64\nhsv_h: 0.0\nhsv_s: 0.0\nhsv_v: 0.0\ndegrees: 0.0\ntranslate: 0.1\nscale: 0.5\nshear: 0.0\nperspective: 0.0\nflipud: 0.0\nfliplr: 0.5\nbgr: 0.0\nmosaic: 0.0\nmixup: 0.0\ncutmix: 0.0\ncopy_paste: 0.0\ncopy_paste_mode: flip\nauto_augment: randaugment\nerasing: 0.0\ncfg: null\ntracker: botsort.yaml\nsave_dir: /mnt/dataset/zyk/projects/ydf/freqmix_hs_gp94_20260819/results/e400_sign_s42/_trainer/train\ncmdistill_rma_artifact: ''\ncmdistill_rma_route: zero\ncmdistill_rma_weight: 1.0\ncmdistill_rma_allow_exploratory_r_only: false\ncmdistill_rma_artifact_sha256: ''\ncmdistill_rma_artifact_status: none\ncmdistill_rma_formal_detector_artifact_authorized: false\ncmdistill_rma_detector_evidence_label: none\ncmdistill_rma_teacher_weights_sha256: ''\ncmdistill_rma_student_data_sha256: ''\ncmdistill_rma_teacher_data_sha256: ''\ncmdistill_hybrid_route: h_s\ncmdistill_sar_teacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/pemt_ogsod_90_native_only_s42_e400_best.pt\ncmdistill_hybrid_schema: cmdistill.hybrid_teacher/v1\ncmdistill_hybrid_run_mode: full\ncmdistill_hybrid_feature_source: sar\ncmdistill_hybrid_relation_source: sar\ncmdistill_hybrid_output_source: sar\ncmdistill_hybrid_rgb_teacher_weights_sha256: ''\ncmdistill_hybrid_sar_teacher_weights_sha256: ''\ncmdistill_hybrid_student_init_sha256: ''\ncmdistill_hybrid_student_data_sha256: ''\ncmdistill_hybrid_rgb_data_sha256: ''\ncmdistill_hybrid_router_source_sha256: ''\ncmdistill_hybrid_loss_source_sha256: ''\ncmdistill_hybrid_trainer_source_sha256: ''\ncmdistill_hybrid_aug_policy_source_sha256: ''\ncmdistill_hybrid_paired_augment_source_sha256: ''\ncmdistill_hybrid_paired_dataset_source_sha256: ''\ncmdistill_hybrid_relation_pairing: ''\ncmdistill_hybrid_shuffle_schema: ''\ncmdistill_hybrid_shuffle_algorithm: ''\ncmdistill_hybrid_shuffle_scope: ''\ncmdistill_hybrid_shuffle_seed: ''\ncmdistill_hybrid_shuffle_offset: ''\ncmdistill_hybrid_shuffle_source_modality: ''\ncmdistill_hybrid_shuffle_source_teacher_weights_sha256: ''\ncmdistill_hybrid_shuffle_source_data_sha256: ''\ncmdistill_hybrid_shuffle_runtime_source_sha256: ''\ncmdistill_hybrid_runtime_bundle_manifest_sha256: ''\ncmdistill_hybrid_training_tool_source_sha256: ''\ncmdistill_hybrid_phase_launcher_source_sha256: ''\nteacher_weights: /home/zyk/projects/ydf/tri_rank_94/anchors/ogsod_lr_diag_90_rgb_yolo11n_rgb_s42_e400_lr0.005_lrf0.01_cos0_best.pt\nteacher_data: /home/zyk/projects/ydf/ogsod_gray_highdim_gp94_20260818/ogsod_gray_gp94.yaml\n",
+      "mtime_utc": "2026-08-18T20:33:03.195554+00:00"
+    }
+  ],
+  "source_snippets": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/freqmix_hs_gp94_20260819/code_run/src/ogsod400_core/pemt_v5_direct.py",
+      "sha256": "082a738f04fff6a0d5d464a3d64d6b4f0ad94a7c884f1b90065d16cbe616a210",
+      "size": 83150,
+      "numbered_lines": [
+        {
+          "line": 161,
+          "text": "# 1.46 vs SAR 1.48; pixel-level corr only 0.065 -> energy-level signal,"
+        },
+        {
+          "line": 162,
+          "text": "# structure not shared; recorded prior moderate-weak)."
+        },
+        {
+          "line": 163,
+          "text": "NATIVE_FREQMIX_ARMS = frozenset({\"freqmix_paired\", \"freqmix_shuffled\"})"
+        },
+        {
+          "line": 164,
+          "text": "H_S_FREQMIX_ARMS = frozenset("
+        },
+        {
+          "line": 165,
+          "text": "    {"
+        },
+        {
+          "line": 166,
+          "text": "        \"h_s_freqmix_gray_shuffled\","
+        },
+        {
+          "line": 167,
+          "text": "        \"h_s_freqmix_sar_shuffled\","
+        },
+        {
+          "line": 168,
+          "text": "        \"h_s_freqmix_gray_sign_randomized\","
+        },
+        {
+          "line": 169,
+          "text": "    }"
+        },
+        {
+          "line": 170,
+          "text": ")"
+        },
+        {
+          "line": 171,
+          "text": "FREQMIX_ARMS = NATIVE_FREQMIX_ARMS | H_S_FREQMIX_ARMS"
+        },
+        {
+          "line": 172,
+          "text": "FM_KERNEL = 5"
+        },
+        {
+          "line": 173,
+          "text": "FM_RANDOM_SEED_OFFSET = 20260819"
+        },
+        {
+          "line": 174,
+          "text": "# Rebuild the route sets after declaring the H_S frequency arms. These arms"
+        },
+        {
+          "line": 175,
+          "text": "# keep the canonical H_S criterion and add only a mixed student input."
+        },
+        {
+          "line": 176,
+          "text": "H_S_ARMS = H_S_ARMS | H_S_FREQMIX_ARMS"
+        },
+        {
+          "line": 177,
+          "text": "HYBRID_CMD_ARMS = H_S_ARMS | H_F_ARMS"
+        },
+        {
+          "line": 178,
+          "text": "# Teacher-confidence GT reweighting: drop GT rows stochastically; keep prob"
+        },
+        {
+          "line": 179,
+          "text": "# = TW_FLOOR + (1 - TW_FLOOR) * gray-teacher matched conf (frozen map)."
+        },
+        {
+          "line": 180,
+          "text": "GT_WEIGHT_ARMS = frozenset({\"tcur_w\", \"tcur_w_shuffled\"})"
+        },
+        {
+          "line": 181,
+          "text": "TW_FLOOR = 0.2"
+        },
+        {
+          "line": 182,
+          "text": "CONTRAST_COEFFICIENT = 0.10"
+        },
+        {
+          "line": 183,
+          "text": "CONTRAST_DILATE = 2"
+        },
+        {
+          "line": 184,
+          "text": "RANK_COEFFICIENT = 0.05"
+        },
+        {
+          "line": 185,
+          "text": "NATIVE_ARMS = frozenset("
+        },
+        {
+          "line": 186,
+          "text": "    {"
+        },
+        {
+          "line": 187,
+          "text": "        \"native_only\","
+        },
+        {
+          "line": 188,
+          "text": "        \"native_pemt\","
+        },
+        {
+          "line": 189,
+          "text": "        *PEMT_SHUFFLED_ARMS,"
+        },
+        {
+          "line": 190,
+          "text": "        *SPLIT_PEMT_ARMS,"
+        },
+        {
+          "line": 191,
+          "text": "        *TARS_ARMS,"
+        },
+        {
+          "line": 192,
+          "text": "        *RANK_ARMS,"
+        },
+        {
+          "line": 193,
+          "text": "        *SPATIAL_ARMS,"
+        },
+        {
+          "line": 194,
+          "text": "        *SPATIAL_LATE_ARMS,"
+        },
+        {
+          "line": 195,
+          "text": "        *TRI_G_ARMS,"
+        },
+        {
+          "line": 196,
+          "text": "    }"
+        },
+        {
+          "line": 197,
+          "text": ")"
+        },
+        {
+          "line": 198,
+          "text": "AUXILIARY_ARMS = PEMT_ARMS | SPLIT_PEMT_ARMS | TARS_ARMS | RANK_ARMS | SPATIAL_ARMS | SPATIAL_LATE_ARMS | TRI_G_ARMS"
+        },
+        {
+          "line": 199,
+          "text": "PRIMARY_METRIC = \"metrics/mAP50-95(B)\""
+        },
+        {
+          "line": 200,
+          "text": "AUXILIARY_COEFFICIENT = 0.10"
+        },
+        {
+          "line": 201,
+          "text": "RGB_REFERENCE_ARMS = RGB_REFERENCE_ARMS | CONTRAST_ARMS | FREQMIX_ARMS"
+        },
+        {
+          "line": 202,
+          "text": "NATIVE_ARMS = NATIVE_ARMS | SIDECAR_ARMS | CONTRAST_ARMS | NATIVE_FREQMIX_ARMS | GT_WEIGHT_ARMS"
+        },
+        {
+          "line": 203,
+          "text": "AUXILIARY_ARMS = AUXILIARY_ARMS | SIDECAR_ARMS | CONTRAST_ARMS | FREQMIX_ARMS | GT_WEIGHT_ARMS"
+        },
+        {
+          "line": 204,
+          "text": ""
+        },
+        {
+          "line": 205,
+          "text": ""
+        },
+        {
+          "line": 206,
+          "text": "class PemtV5DirectError(RuntimeError):"
+        },
+        {
+          "line": 207,
+          "text": "    \"\"\"Raised for an actionable direct-run failure.\"\"\""
+        },
+        {
+          "line": 208,
+          "text": ""
+        },
+        {
+          "line": 209,
+          "text": ""
+        },
+        {
+          "line": 210,
+          "text": "@dataclass(frozen=True)"
+        },
+        {
+          "line": 211,
+          "text": "class _RuntimeBindings:"
+        },
+        {
+          "line": 212,
+          "text": "    torch: Any"
+        },
+        {
+          "line": 213,
+          "text": "    trainer_class: Any"
+        },
+        {
+          "line": 214,
+          "text": "    unwrap_model: Any"
+        },
+        {
+          "line": 215,
+          "text": ""
+        },
+        {
+          "line": 216,
+          "text": ""
+        },
+        {
+          "line": 217,
+          "text": "@dataclass(frozen=True)"
+        },
+        {
+          "line": 218,
+          "text": "class PemtV5DirectConfig:"
+        },
+        {
+          "line": 219,
+          "text": "    sar_root: Path"
+        },
+        {
+          "line": 220,
+          "text": "    rgb_root: Path"
+        },
+        {
+          "line": 221,
+          "text": "    output_root: Path"
+        },
+        {
+          "line": 222,
+          "text": "    runtime_root: Path"
+        },
+        {
+          "line": 223,
+          "text": "    canonical_yolo_root: Path"
+        },
+        {
+          "line": 224,
+          "text": "    canonical_shared_root: Path"
+        },
+        {
+          "line": 225,
+          "text": "    canonical_ladd_shared_root: Path"
+        },
+        {
+          "line": 553,
+          "text": ""
+        },
+        {
+          "line": 554,
+          "text": ""
+        },
+        {
+          "line": 555,
+          "text": "class _FreqMixer:"
+        },
+        {
+          "line": 556,
+          "text": "    \"\"\"Build the frozen native or H_S frequency-mixed student input.\"\"\""
+        },
+        {
+          "line": 557,
+          "text": ""
+        },
+        {
+          "line": 558,
+          "text": "    def __init__(self, platform):"
+        },
+        {
+          "line": 559,
+          "text": "        self.arm = platform.arm"
+        },
+        {
+          "line": 560,
+          "text": "        self.torch = platform.torch"
+        },
+        {
+          "line": 561,
+          "text": "        self.kernel = int(FM_KERNEL)"
+        },
+        {
+          "line": 562,
+          "text": "        self.seed = int(platform.config.seed)"
+        },
+        {
+          "line": 563,
+          "text": "        self.random_generator = None"
+        },
+        {
+          "line": 564,
+          "text": "        self.reported = False"
+        },
+        {
+          "line": 565,
+          "text": ""
+        },
+        {
+          "line": 566,
+          "text": "    def _low(self, image):"
+        },
+        {
+          "line": 567,
+          "text": "        return self.torch.nn.functional.avg_pool2d("
+        },
+        {
+          "line": 568,
+          "text": "            image, kernel_size=self.kernel, stride=1, padding=self.kernel // 2"
+        },
+        {
+          "line": 569,
+          "text": "        )"
+        },
+        {
+          "line": 570,
+          "text": ""
+        },
+        {
+          "line": 571,
+          "text": "    @staticmethod"
+        },
+        {
+          "line": 572,
+          "text": "    def _rms(image):"
+        },
+        {
+          "line": 573,
+          "text": "        return image.square().mean(dim=(1, 2, 3), keepdim=True).sqrt()"
+        },
+        {
+          "line": 574,
+          "text": ""
+        },
+        {
+          "line": 575,
+          "text": "    def _private_generator(self, image):"
+        },
+        {
+          "line": 576,
+          "text": "        if self.random_generator is None:"
+        },
+        {
+          "line": 577,
+          "text": "            self.random_generator = self.torch.Generator(device=image.device)"
+        },
+        {
+          "line": 578,
+          "text": "            self.random_generator.manual_seed(FM_RANDOM_SEED_OFFSET + self.seed)"
+        },
+        {
+          "line": 586,
+          "text": "            raise PemtV5DirectError(\"freqmix arm is missing the paired gray batch\")"
+        },
+        {
+          "line": 587,
+          "text": ""
+        },
+        {
+          "line": 588,
+          "text": "        if self.arm in NATIVE_FREQMIX_ARMS:"
+        },
+        {
+          "line": 589,
+          "text": "            donor = gray.roll(1, dims=0) if self.arm == \"freqmix_shuffled\" else gray"
+        },
+        {
+          "line": 590,
+          "text": "            mixed = self._low(image) + (donor - self._low(donor))"
+        },
+        {
+          "line": 591,
+          "text": "            merged = dict(batch)"
+        },
+        {
+          "line": 592,
+          "text": "            merged[\"img\"] = mixed.clamp(0.0, 1.0)"
+        },
+        {
+          "line": 593,
+          "text": "            return merged"
+        },
+        {
+          "line": 594,
+          "text": ""
+        },
+        {
+          "line": 595,
+          "text": "        gray_donor = gray.roll(1, dims=0)"
+        },
+        {
+          "line": 596,
+          "text": "        gray_high = gray_donor - self._low(gray_donor)"
+        },
+        {
+          "line": 597,
+          "text": "        target_rms = self._rms(gray_high)"
+        },
+        {
+          "line": 598,
+          "text": ""
+        },
+        {
+          "line": 599,
+          "text": "        if self.arm == \"h_s_freqmix_gray_shuffled\":"
+        },
+        {
+          "line": 600,
+          "text": "            donor_high = gray_high"
+        },
+        {
+          "line": 601,
+          "text": "        elif self.arm == \"h_s_freqmix_sar_shuffled\":"
+        },
+        {
+          "line": 602,
+          "text": "            sar_donor = image.roll(1, dims=0)"
+        },
+        {
+          "line": 603,
+          "text": "            sar_high = sar_donor - self._low(sar_donor)"
+        },
+        {
+          "line": 604,
+          "text": "            donor_high = sar_high * (target_rms / self._rms(sar_high).clamp_min(1e-12))"
+        },
+        {
+          "line": 605,
+          "text": "        elif self.arm == \"h_s_freqmix_gray_sign_randomized\":"
+        },
+        {
+          "line": 606,
+          "text": "            signs = torch.where("
+        },
+        {
+          "line": 607,
+          "text": "                torch.rand("
+        },
+        {
+          "line": 608,
+          "text": "                    (int(image.shape[0]), 1, int(image.shape[2]), int(image.shape[3])),"
+        },
+        {
+          "line": 609,
+          "text": "                    device=image.device,"
+        },
+        {
+          "line": 610,
+          "text": "                    generator=self._private_generator(image),"
+        },
+        {
+          "line": 611,
+          "text": "                )"
+        },
+        {
+          "line": 612,
+          "text": "                < 0.5,"
+        },
+        {
+          "line": 613,
+          "text": "                -1.0,"
+        },
+        {
+          "line": 614,
+          "text": "                1.0,"
+        },
+        {
+          "line": 615,
+          "text": "            )"
+        },
+        {
+          "line": 616,
+          "text": "            donor_high = gray_high * signs"
+        },
+        {
+          "line": 617,
+          "text": "        else:"
+        },
+        {
+          "line": 618,
+          "text": "            raise PemtV5DirectError(f\"unknown H_S freqmix arm: {self.arm}\")"
+        },
+        {
+          "line": 619,
+          "text": ""
+        },
+        {
+          "line": 620,
+          "text": "        pre_clamp = self._low(image) + donor_high"
+        },
+        {
+          "line": 621,
+          "text": "        if not self.reported:"
+        },
+        {
+          "line": 622,
+          "text": "            rms_error = float((self._rms(donor_high) - target_rms).abs().max().detach().cpu())"
+        },
+        {
+          "line": 623,
+          "text": "            clamp_fraction = float("
+        },
+        {
+          "line": 624,
+          "text": "                ((pre_clamp < 0.0) | (pre_clamp > 1.0)).float().mean().detach().cpu()"
+        },
+        {
+          "line": 1750,
+          "text": "            original = model.loss"
+        },
+        {
+          "line": 1751,
+          "text": ""
+        },
+        {
+          "line": 1752,
+          "text": "            def loss_with_freqmix(_model, batch, predictions=None):"
+        },
+        {
+          "line": 1753,
+          "text": "                if not bool(_model.training):"
+        },
+        {
+          "line": 1754,
+          "text": "                    return original(batch, predictions)"
+        },
+        {
+          "line": 1755,
+          "text": "                mixed_batch = mixer(batch)"
+        },
+        {
+          "line": 1756,
+          "text": "                if self.arm in H_S_FREQMIX_ARMS:"
+        },
+        {
+          "line": 1757,
+          "text": "                    if predictions is not None:"
+        },
+        {
+          "line": 1758,
+          "text": "                        raise PemtV5DirectError("
+        },
+        {
+          "line": 1759,
+          "text": "                            \"H_S freqmix production loss expects to own the student forward\""
+        },
+        {
+          "line": 1760,
+          "text": "                        )"
+        },
+        {
+          "line": 1761,
+          "text": "                    mixed_predictions = _model.predict(mixed_batch[\"img\"])"
+        },
+        {
+          "line": 1762,
+          "text": "                    return original(batch, mixed_predictions)"
+        },
+        {
+          "line": 1763,
+          "text": "                return original(mixed_batch, predictions)"
+        },
+        {
+          "line": 1764,
+          "text": ""
+        },
+        {
+          "line": 1765,
+          "text": "            model.loss = MethodType(loss_with_freqmix, model)"
+        },
+        {
+          "line": 1766,
+          "text": "            self._loss_installed = True"
+        },
+        {
+          "line": 1767,
+          "text": "            return"
+        },
+        {
+          "line": 1768,
+          "text": "        if self.arm in GT_WEIGHT_ARMS:"
+        },
+        {
+          "line": 1769,
+          "text": "            dropper = _GtWeightDropper(self)"
+        },
+        {
+          "line": 1770,
+          "text": "            import d2ad_obb.paired_dataset as _paired_dataset"
+        },
+        {
+          "line": 1771,
+          "text": ""
+        },
+        {
+          "line": 1772,
+          "text": "            _paired_dataset.install_gt_weight(dropper._keep_for)"
+        },
+        {
+          "line": 1773,
+          "text": "            self._loss_installed = True"
+        },
+        {
+          "line": 1774,
+          "text": "            return"
+        },
+        {
+          "line": 1775,
+          "text": "        if self.arm in SIDECAR_ARMS:"
+        },
+        {
+          "line": 1776,
+          "text": "            injector = _SidecarInjector(self)"
+        },
+        {
+          "line": 1777,
+          "text": "            import d2ad_obb.paired_dataset as _paired_dataset"
+        },
+        {
+          "line": 1778,
+          "text": ""
+        },
+        {
+          "line": 1779,
+          "text": "            _paired_dataset.install_sidecar_rows(injector._rows_for)"
+        }
+      ]
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/ydf/tri_rank_94/code/src/ogsod400_core/pemt_v5_direct.py",
+      "sha256": "b24811e30117b074e33d17b2c4c6b925f443d0cc3e4226aff053886b662acfd7",
+      "size": 80014,
+      "numbered_lines": [
+        {
+          "line": 161,
+          "text": "# 1.46 vs SAR 1.48; pixel-level corr only 0.065 -> energy-level signal,"
+        },
+        {
+          "line": 162,
+          "text": "# structure not shared; recorded prior moderate-weak)."
+        },
+        {
+          "line": 163,
+          "text": "FREQMIX_ARMS = frozenset({\"freqmix_paired\", \"freqmix_shuffled\"})"
+        },
+        {
+          "line": 164,
+          "text": "FM_KERNEL = 5"
+        },
+        {
+          "line": 165,
+          "text": "# Teacher-confidence GT reweighting: drop GT rows stochastically; keep prob"
+        },
+        {
+          "line": 166,
+          "text": "# = TW_FLOOR + (1 - TW_FLOOR) * gray-teacher matched conf (frozen map)."
+        },
+        {
+          "line": 167,
+          "text": "GT_WEIGHT_ARMS = frozenset({\"tcur_w\", \"tcur_w_shuffled\"})"
+        },
+        {
+          "line": 168,
+          "text": "TW_FLOOR = 0.2"
+        },
+        {
+          "line": 169,
+          "text": "CONTRAST_COEFFICIENT = 0.10"
+        },
+        {
+          "line": 170,
+          "text": "CONTRAST_DILATE = 2"
+        },
+        {
+          "line": 171,
+          "text": "RANK_COEFFICIENT = 0.05"
+        },
+        {
+          "line": 172,
+          "text": "NATIVE_ARMS = frozenset("
+        },
+        {
+          "line": 173,
+          "text": "    {"
+        },
+        {
+          "line": 174,
+          "text": "        \"native_only\","
+        },
+        {
+          "line": 175,
+          "text": "        \"native_pemt\","
+        },
+        {
+          "line": 176,
+          "text": "        *PEMT_SHUFFLED_ARMS,"
+        },
+        {
+          "line": 177,
+          "text": "        *SPLIT_PEMT_ARMS,"
+        },
+        {
+          "line": 178,
+          "text": "        *TARS_ARMS,"
+        },
+        {
+          "line": 179,
+          "text": "        *RANK_ARMS,"
+        },
+        {
+          "line": 180,
+          "text": "        *SPATIAL_ARMS,"
+        },
+        {
+          "line": 181,
+          "text": "        *SPATIAL_LATE_ARMS,"
+        },
+        {
+          "line": 182,
+          "text": "        *TRI_G_ARMS,"
+        },
+        {
+          "line": 183,
+          "text": "    }"
+        },
+        {
+          "line": 184,
+          "text": ")"
+        },
+        {
+          "line": 185,
+          "text": "AUXILIARY_ARMS = PEMT_ARMS | SPLIT_PEMT_ARMS | TARS_ARMS | RANK_ARMS | SPATIAL_ARMS | SPATIAL_LATE_ARMS | TRI_G_ARMS"
+        },
+        {
+          "line": 186,
+          "text": "PRIMARY_METRIC = \"metrics/mAP50-95(B)\""
+        },
+        {
+          "line": 187,
+          "text": "AUXILIARY_COEFFICIENT = 0.10"
+        },
+        {
+          "line": 188,
+          "text": "RGB_REFERENCE_ARMS = RGB_REFERENCE_ARMS | CONTRAST_ARMS | FREQMIX_ARMS"
+        },
+        {
+          "line": 189,
+          "text": "NATIVE_ARMS = NATIVE_ARMS | SIDECAR_ARMS | CONTRAST_ARMS | FREQMIX_ARMS | GT_WEIGHT_ARMS"
+        },
+        {
+          "line": 190,
+          "text": "AUXILIARY_ARMS = AUXILIARY_ARMS | SIDECAR_ARMS | CONTRAST_ARMS | FREQMIX_ARMS | GT_WEIGHT_ARMS"
+        },
+        {
+          "line": 191,
+          "text": ""
+        },
+        {
+          "line": 192,
+          "text": ""
+        },
+        {
+          "line": 193,
+          "text": "class PemtV5DirectError(RuntimeError):"
+        },
+        {
+          "line": 194,
+          "text": "    \"\"\"Raised for an actionable direct-run failure.\"\"\""
+        },
+        {
+          "line": 195,
+          "text": ""
+        },
+        {
+          "line": 196,
+          "text": ""
+        },
+        {
+          "line": 197,
+          "text": "@dataclass(frozen=True)"
+        },
+        {
+          "line": 198,
+          "text": "class _RuntimeBindings:"
+        },
+        {
+          "line": 199,
+          "text": "    torch: Any"
+        },
+        {
+          "line": 200,
+          "text": "    trainer_class: Any"
+        },
+        {
+          "line": 201,
+          "text": "    unwrap_model: Any"
+        },
+        {
+          "line": 202,
+          "text": ""
+        },
+        {
+          "line": 203,
+          "text": ""
+        },
+        {
+          "line": 204,
+          "text": "@dataclass(frozen=True)"
+        },
+        {
+          "line": 205,
+          "text": "class PemtV5DirectConfig:"
+        },
+        {
+          "line": 206,
+          "text": "    sar_root: Path"
+        },
+        {
+          "line": 207,
+          "text": "    rgb_root: Path"
+        },
+        {
+          "line": 208,
+          "text": "    output_root: Path"
+        },
+        {
+          "line": 209,
+          "text": "    runtime_root: Path"
+        },
+        {
+          "line": 210,
+          "text": "    canonical_yolo_root: Path"
+        },
+        {
+          "line": 211,
+          "text": "    canonical_shared_root: Path"
+        },
+        {
+          "line": 212,
+          "text": "    canonical_ladd_shared_root: Path"
+        },
+        {
+          "line": 540,
+          "text": ""
+        },
+        {
+          "line": 541,
+          "text": ""
+        },
+        {
+          "line": 542,
+          "text": "class _FreqMixer:"
+        },
+        {
+          "line": 543,
+          "text": "    \"\"\"Band-swap the training batch: SAR low band + gray high band.\"\"\""
+        },
+        {
+          "line": 544,
+          "text": ""
+        },
+        {
+          "line": 545,
+          "text": "    def __init__(self, platform):"
+        },
+        {
+          "line": 546,
+          "text": "        self.arm = platform.arm"
+        },
+        {
+          "line": 547,
+          "text": "        self.torch = platform.torch"
+        },
+        {
+          "line": 548,
+          "text": "        self.kernel = int(FM_KERNEL)"
+        },
+        {
+          "line": 549,
+          "text": ""
+        },
+        {
+          "line": 550,
+          "text": "    def __call__(self, batch):"
+        },
+        {
+          "line": 551,
+          "text": "        torch = self.torch"
+        },
+        {
+          "line": 552,
+          "text": "        image = batch[\"img\"]"
+        },
+        {
+          "line": 553,
+          "text": "        gray = batch.get(\"teacher_img\")"
+        },
+        {
+          "line": 554,
+          "text": "        if gray is None:"
+        },
+        {
+          "line": 555,
+          "text": "            raise PemtV5DirectError(\"freqmix arm is missing the paired gray batch\")"
+        },
+        {
+          "line": 556,
+          "text": "        if self.arm == \"freqmix_shuffled\":"
+        },
+        {
+          "line": 557,
+          "text": "            gray = gray.roll(1, dims=0)"
+        },
+        {
+          "line": 558,
+          "text": ""
+        },
+        {
+          "line": 559,
+          "text": "        def low(x):"
+        },
+        {
+          "line": 560,
+          "text": "            return torch.nn.functional.avg_pool2d("
+        },
+        {
+          "line": 561,
+          "text": "                x, kernel_size=self.kernel, stride=1, padding=self.kernel // 2"
+        },
+        {
+          "line": 562,
+          "text": "            )"
+        },
+        {
+          "line": 563,
+          "text": ""
+        },
+        {
+          "line": 564,
+          "text": "        mixed = low(image) + (gray - low(gray))"
+        },
+        {
+          "line": 565,
+          "text": "        merged = dict(batch)"
+        },
+        {
+          "line": 1685,
+          "text": "            original = model.loss"
+        },
+        {
+          "line": 1686,
+          "text": ""
+        },
+        {
+          "line": 1687,
+          "text": "            def loss_with_freqmix(_model, batch, predictions=None):"
+        },
+        {
+          "line": 1688,
+          "text": "                if not bool(_model.training):"
+        },
+        {
+          "line": 1689,
+          "text": "                    return original(batch, predictions)"
+        },
+        {
+          "line": 1690,
+          "text": "                return original(mixer(batch), predictions)"
+        },
+        {
+          "line": 1691,
+          "text": ""
+        },
+        {
+          "line": 1692,
+          "text": "            model.loss = MethodType(loss_with_freqmix, model)"
+        },
+        {
+          "line": 1693,
+          "text": "            self._loss_installed = True"
+        },
+        {
+          "line": 1694,
+          "text": "            return"
+        },
+        {
+          "line": 1695,
+          "text": "        if self.arm in GT_WEIGHT_ARMS:"
+        },
+        {
+          "line": 1696,
+          "text": "            dropper = _GtWeightDropper(self)"
+        },
+        {
+          "line": 1697,
+          "text": "            import d2ad_obb.paired_dataset as _paired_dataset"
+        },
+        {
+          "line": 1698,
+          "text": ""
+        },
+        {
+          "line": 1699,
+          "text": "            _paired_dataset.install_gt_weight(dropper._keep_for)"
+        },
+        {
+          "line": 1700,
+          "text": "            self._loss_installed = True"
+        },
+        {
+          "line": 1701,
+          "text": "            return"
+        },
+        {
+          "line": 1702,
+          "text": "        if self.arm in SIDECAR_ARMS:"
+        },
+        {
+          "line": 1703,
+          "text": "            injector = _SidecarInjector(self)"
+        },
+        {
+          "line": 1704,
+          "text": "            import d2ad_obb.paired_dataset as _paired_dataset"
+        },
+        {
+          "line": 1705,
+          "text": ""
+        },
+        {
+          "line": 1706,
+          "text": "            _paired_dataset.install_sidecar_rows(injector._rows_for)"
+        },
+        {
+          "line": 1707,
+          "text": "            self._loss_installed = True"
+        },
+        {
+          "line": 1708,
+          "text": "            return"
+        },
+        {
+          "line": 1709,
+          "text": "        original = model.loss"
+        },
+        {
+          "line": 1710,
+          "text": "        auxiliary = _DirectPemtLoss(self)"
+        }
+      ]
+    }
+  ]
+}

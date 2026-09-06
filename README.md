@@ -1,39 +1,41 @@
-# RGB-IR 跨模态蒸馏项目 · 外部审计材料包
+# RGBIR跨模态蒸馏：完整证据与独立审计入口
 
-> 打包日期：2026-09-06。用途：供外部高级模型审计员读取并独立诊断本项目。
-> 审计对象：RGB→IR（及 RGB→SAR 历史）跨模态蒸馏目标检测研究。项目主要运行于局域网服务器（10.103.12.94，简称 94），本仓库收录其中**小体积文本证据**（评估 JSON / results.csv / 配置 / 代码 / 审计报告）。**不含**权重、数据集图像、任何凭据。
+本仓库用于让外部模型独立诊断一个面向J-STARS的跨模态目标检测项目。研究经历了RGB→SAR历史方法、RGB–IR数据诊断和首版对象判别蒸馏；这里保留正负结果、勘误、源码、协议、图册及可复算的小型证据。
 
-## 0. 审计员需要知道的五件事
+**请先读 [MODEL_REVIEW_GUIDE.md](MODEL_REVIEW_GUIDE.md)，再按 [REVIEW_PROMPT.md](REVIEW_PROMPT.md)独立审计。** 不要把已有分析当作正确答案；请复算指标并核查实现。上传分支为`research/full-evidence-20260906`，旧入口原文保留在[ARCHIVE_README_v1.md](ARCHIVE_README_v1.md)。
 
-1. **项目目标**：跨模态蒸馏目标检测，拟投 J-STARS。当前主战场 RGB-IR（DroneVehicle/LLVIP/VEDAI），历史主线为 RGB→SAR。
-2. **最重要的背景文档**（先读）：`00_project_context/全项目复盘与研究诊断_20260905.md`——一次全项目审计，已确认：历史总结中的 FreqMix "+9 AP" 系**跨数据集错引**（实为 OGSOD 且为负结果）；HNEWA "+12.7pp" 系 **precision 误作 mAP**；监督 KD 在协议匹配下从未净胜 no-KD 对照。
-3. **最新鲜的硬结果**（审计后产生）：`02_raw_results_dronevehicle/`——协议匹配 3 seeds 对照：**现有全量 KD（cmdistill_corrected，PCCFD/SLRD/IBCLD）比 no-KD 净负 −0.35 mAP50-95（N 53.954±0.356 vs L 53.605±0.332，逐 seed N≥L 为 3/3）**；昼夜分桶中 L 在 day 与 night 两桶都低于 N（night AP50 −1.75）。
-4. **争议未决的方法方向**：`00_project_context/方法预注册_CGA-KD_20260905.md`（几何锚定/不变分解/条件门控三组件）及其偏差记录 D1——实现与预注册不符（G 未实现分布损失、C 门控因 PCC/cosine 尺度不变性为空操作、I 有优化器与目标冲突缺陷），W2 已冻结。
-5. **已知唯一强正例**：SpaceNet6 OS-SSL 预训练（paired−native +3.3±0.9 AP50，3/3 胜全部对照），但迁移 OGSOD/SiXiang 失败（+0.20/−0.45）。尚未在 RGB-IR 上测试——这是下一步实验。
+## 最新状态及判断边界
 
-## 1. 目录地图
+- **新方法方向是DroneVehicle的IR教师→RGB学生**，训练期使用独立IR标注辅助对象对应/教师质量判断，推理仅RGB。LLVIP也诊断了IR→RGB；VEDAI是RGB→NIR，不能统称热红外。
+- 六个baseline、三个数据集共521对图像的诊断已完成，含逐图/逐目标记录、特征图和配准可视化。配对相似性、教师更强或局部互补都不能直接推出可蒸馏增益。
+- OEv1用对象前景相对局部背景的正确类别证据做选择性蒸馏，方案在运行前冻结。现有paired/weight0×student seed0/42/123正在执行，teacher/reference固定seed42；已测原生数据流固定，seed重复主要覆盖初始化变化。
+- **2026-09-06 08:53:57 +08:00只读快照**：paired42已完成110轮，weight0 0完成21轮，paired123完成20轮；其对应另一臂排队。OS-SSL-IR的shuffled123微调完成50轮。**尚无完整E200终点，不能报告OEv1性能增益**。中间训练CSV的AP=0是禁用验证后的占位。
+- 历史协议匹配CMDistill相对新native为−0.349±0.292 mAP百分点（3seed），但不能推广为“所有监督KD都无效”。HNEWA等已有小幅条件差异，需结合配对归因和方差；OS-SSL也有另一条独立证据线，不能用“唯一正例”替代逐协议判断。
 
-| 目录 | 内容 |
+最新运行来源见[94只读补采](research_bundle/remote_snapshot_20260906/README.md)。这是带时间戳的审计快照，不是实时仪表盘；旧快照继续保留。
+
+## 从结论到证据
+
+| 想审查的问题 | 优先入口 |
 |---|---|
-| `00_project_context/` | 项目入口文档：主 README、AGENTS（服务器使用与研究规范）、证据对照总表、方法预注册（含偏差 D1）、配对/蒸馏潜力评估（含勘误头）、全项目复盘审计 |
-| `01_audit_20260905/` | 全项目复盘审计的完整工作产物：分线笔记（history/canonical/replication/cga_code_review）、RGBT 只读快照与复算脚本、FreqMix 来源 SHA 清单、CGA 代码审查与当时源码快照 |
-| `02_raw_results_dronevehicle/` | 协议匹配 N/L 3-seed 评估 JSON（eval_rgbt_detector 原始输出）、昼夜分桶 summary、P2/P3 探针 summary |
-| `03_freqmix_sources/` | FreqMix 原始 results.csv（6 臂）+ OGSOD native/H_S 对照 results.csv（4 文件）+ 训练 args.yaml（4 文件）+ launch/patch 脚本——用于独立验证"跨数据集错引"结论 |
-| `04_hnewa_eval_records/` | HNEWA 五臂的独立评估 JSON（eval_records，含 DroneVehicle/LLVIP 各臂各 seed）——用于重算 paired/shuffled/same-modal 归因 |
-| `05_code/` | 关键代码：cmdistill 训练器/评估器/启动器/资源守卫、KD 项实现、CGA-KD 训练器（含缺陷版本）、native 训练与评估脚本 |
-| `06_experiment_log/` | 项目实验日志（每个实验一个条目，含勘误链） |
+| 为什么从SAR转向RGBIR、有哪些历史误判 | [全项目复盘](research_bundle/07_研究分析/全项目复盘与研究诊断_20260905.md)；[历史审计原始记录](01_audit_20260905) |
+| 数据配准、教师互补和可迁移知识 | [RGBIR诊断](research_bundle/07_研究分析/RGBIR数据特性与蒸馏方向诊断_20260906.md)；[521对完整产物](research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识) |
+| 直接查看图像和特征 | [特征图册](research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/特征图册.md)；[配准图](research_bundle/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/registration_panels/README.md) |
+| OEv1具体蒸馏什么、如何筛选 | [冻结方案](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_PLAN.md)；[源码与测试](research_bundle/03_现行工程/SpaceNet6_OTD_official_reproduction/experiments/rgbir_object_evidence_v1) |
+| 实现是否生效、有没有三倍KD/标签/EMA问题 | [首轮检查](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/README.md)；[独立代码审查](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏首轮/EXPERIMENT_CODE_REVIEW.md) |
+| 多seed与当前证据强度 | [三seed扩展](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/README.md)；[端点收集器说明](research_bundle/08_实验日志/2026-09-06_train_RGBIR对象判别蒸馏三seed扩展/ENDPOINT_ANALYZER_NOTES.md) |
+| 历史N/L与HNEWA能否独立复算 | [N/L原始指标](02_raw_results_dronevehicle)；[HNEWA多臂记录](04_hnewa_eval_records) |
+| OS-SSL-IR并行路线 | [预注册](research_bundle/07_研究分析/方法预注册_OS-SSL-IR_20260906.md)；[执行记录](research_bundle/08_实验日志/2026-09-06_train_OS-SSL-IR迁移/README.md)；[补采来源](research_bundle/remote_snapshot_20260906/README.md) |
+| 文献背景与待核验的创新性 | [调研笔记](research_bundle/01_文献/RGB-IR_20260905新增)；文献旧判断不等于本次核验结论 |
 
-## 2. 建议阅读顺序
+**历史命名陷阱**：`02_raw_results_dronevehicle/N_llvip_seed{0,42,123}_metrics_record.json`内部dataset/data_yaml实际属于DroneVehicle。文件名保留历史原样，辨认数据集须读取内容，不能把它们误作LLVIP原生对照。
 
-1. `00_project_context/全项目复盘与研究诊断_20260905.md`（§5/§6/§7 最关键）
-2. `00_project_context/方法预注册_CGA-KD_20260905.md` + 偏差 D1
-3. `01_audit_20260905/cga_code_review.md` 与 `05_code/train_cga_kd.py` 对照
-4. `02_raw_results_dronevehicle/` 自行复算 N/L 对比与昼夜分桶
-5. `03_freqmix_sources/` 自行复算 FreqMix 的数据集归属与数值
-6. `07_questions_for_auditor.md`——我们希望你仲裁的问题
+## 包的范围
 
-## 3. 完整性说明
+新增`research_bundle/`镜像相关本地资料，保留原目录便于追溯；`remote_snapshot_20260906/`补实际运行源码、协议、manifest、完整小型结果、部分注明截断的日志、固定依赖版本及Ultralytics源码/原发行LICENSE。大manifest有无损gzip和可读配对TSV；图册、PNG、CSV/JSON与导出NPZ均可检查。
 
-- 所有 results.csv 为完整文件（非截取）；评估 JSON 为工具原始输出（schema: rgbt-detector-metrics-record-v1）。
-- 服务器原始路径已在文件名或审计 manifest 中记录；SHA256 抽样见 `01_audit_20260905/replication_sources.json` 与 `audit_manifest.json`。
-- 勘误纪律：分析文档的更正以勘误头形式追加，不无痕改写；实验日志见 `06_experiment_log/`。
+未上传原始数据集、模型权重、凭据、第三方论文全文或环境缓存。源代码/原始数值保持原字节，导出Markdown做相对链接适配。来源见[BUNDLE_MANIFEST.json](BUNDLE_MANIFEST.json)，省略与运行边界见[BUNDLE_SCOPE.md](BUNDLE_SCOPE.md)。完整训练仍需数据、权重、相容环境和路径适配；本包没有宣称可离开94一键复现。
+
+复制的AGENTS仅作为研究规范和当时资源约束的证据，不要求审计模型连接服务器或执行训练。请区分已接受的历史分析、描述性复算、工程检查、待验证假设与尚未完成的正式端点。
+
+发布前的来源保持、数值复算与导航检查见[发布检查记录](publication_checks/README.md)。

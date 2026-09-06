@@ -31,7 +31,7 @@
 3. 本次描述性重算不升级方法 claim，不替代 accepted analyzer、独立复现或尚未完成的训练。
 
 ## 产物路径
-- [综合报告](E:/SHARE/光sar/07_研究分析/全项目复盘与研究诊断_20260905.md)。
+- [综合报告](../research_bundle/07_研究分析/全项目复盘与研究诊断_20260905.md)。
 - `history_notes.md`、`canonical_notes.md`、`replication_notes.md`、`cga_code_review.md`：四份定向审计，含精确来源。
 - `collect_rgbt_readonly.py`、`collect_rgbt_records.py`：经 `ssh 94 python3 -` 执行的纯只读 CPU 采集脚本。
 - `rgbt_readonly_snapshot_v2.json`：89个CSV及args/receipt，包含原始CSV、路径、SHA256、列宽异常。初版 `rgbt_readonly_snapshot.json` 保留解析错误，已由v2补齐，不能作完整结果表。

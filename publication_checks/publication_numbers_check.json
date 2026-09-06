@@ -1,0 +1,189 @@
+{
+  "scope": "Publication wording numerical crosscheck only; no new evaluation or accepted-analyzer claim",
+  "metric": "mAP50_95",
+  "units": "percentage points",
+  "sample_sd_ddof": 1,
+  "historical_comparisons": [
+    {
+      "dataset": "drone",
+      "comparison": "paired-minus-h2",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "differences_pp": [
+        0.5662390698087161,
+        0.011146621294055858,
+        0.4307421197964345
+      ],
+      "mean_pp": 0.3360426036330688,
+      "sample_sd_pp": 0.2894095806477074,
+      "source_files": [
+        "04_hnewa_eval_records/drone_h1_s0.json",
+        "04_hnewa_eval_records/drone_h2_s0.json",
+        "04_hnewa_eval_records/drone_h1_s42.json",
+        "04_hnewa_eval_records/drone_h2_s42.json",
+        "04_hnewa_eval_records/drone_h1_s123.json",
+        "04_hnewa_eval_records/drone_h2_s123.json"
+      ]
+    },
+    {
+      "dataset": "drone",
+      "comparison": "paired-minus-h3",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "differences_pp": [
+        0.5331330038499504,
+        0.26599294773639315,
+        -0.1788298479506456
+      ],
+      "mean_pp": 0.206765367878566,
+      "sample_sd_pp": 0.3596577612785116,
+      "source_files": [
+        "04_hnewa_eval_records/drone_h1_s0.json",
+        "04_hnewa_eval_records/drone_h3_s0.json",
+        "04_hnewa_eval_records/drone_h1_s42.json",
+        "04_hnewa_eval_records/drone_h3_s42.json",
+        "04_hnewa_eval_records/drone_h1_s123.json",
+        "04_hnewa_eval_records/drone_h3_s123.json"
+      ]
+    },
+    {
+      "dataset": "llvip",
+      "comparison": "paired-minus-h2",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "differences_pp": [
+        0.29550220168780283,
+        -0.8524978696370311,
+        1.6067162949767066
+      ],
+      "mean_pp": 0.3499068756758261,
+      "sample_sd_pp": 1.2305094385143978,
+      "source_files": [
+        "04_hnewa_eval_records/llvip_h1_s0.json",
+        "04_hnewa_eval_records/llvip_h2_s0.json",
+        "04_hnewa_eval_records/llvip_h1_s42.json",
+        "04_hnewa_eval_records/llvip_h2_s42.json",
+        "04_hnewa_eval_records/llvip_h1_s123.json",
+        "04_hnewa_eval_records/llvip_h2_s123.json"
+      ]
+    },
+    {
+      "dataset": "llvip",
+      "comparison": "paired-minus-h3",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "differences_pp": [
+        0.24953178940394505,
+        -0.5642595035875331,
+        0.5873545983729411
+      ],
+      "mean_pp": 0.0908756280631177,
+      "sample_sd_pp": 0.5919734733137223,
+      "source_files": [
+        "04_hnewa_eval_records/llvip_h1_s0.json",
+        "04_hnewa_eval_records/llvip_h3_s0.json",
+        "04_hnewa_eval_records/llvip_h1_s42.json",
+        "04_hnewa_eval_records/llvip_h3_s42.json",
+        "04_hnewa_eval_records/llvip_h1_s123.json",
+        "04_hnewa_eval_records/llvip_h3_s123.json"
+      ]
+    },
+    {
+      "dataset": "dronevehicle",
+      "comparison": "CMDistill-minus-W1-native",
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "differences_pp": [
+        -0.45736258408087815,
+        -0.5707160654046084,
+        -0.018264229069797633
+      ],
+      "mean_pp": -0.3487809595184281,
+      "sample_sd_pp": 0.29179313693418457,
+      "source_files": [
+        "02_raw_results_dronevehicle/L_dronevehicle_seed0_metrics_record.json",
+        "02_raw_results_dronevehicle/N_llvip_seed0_metrics_record.json",
+        "02_raw_results_dronevehicle/L_dronevehicle_seed42_metrics_record.json",
+        "02_raw_results_dronevehicle/N_llvip_seed42_metrics_record.json",
+        "02_raw_results_dronevehicle/L_dronevehicle_seed123_metrics_record.json",
+        "02_raw_results_dronevehicle/N_llvip_seed123_metrics_record.json"
+      ],
+      "filename_caveat": "N_llvip filenames are historical misnames; JSON identifies DroneVehicle."
+    }
+  ],
+  "probe_summary_arithmetic": [
+    {
+      "dataset": "dronevehicle",
+      "teacher": "ir",
+      "student": "rgb",
+      "n_images": 200,
+      "n_common_objects": 3083,
+      "teacher_only": 360,
+      "student_only": 78,
+      "both": 2505,
+      "neither": 140,
+      "both_hit_teacher_minus_student_iou": {
+        "n": 2505,
+        "mean": 0.007895827266437398,
+        "median": -0.001215023093523393,
+        "p10": -0.0988789580988785,
+        "p90": 0.13111964658526168,
+        "fraction_positive": 0.4946107784431138
+      }
+    },
+    {
+      "dataset": "llvip",
+      "teacher": "ir",
+      "student": "rgb",
+      "n_images": 200,
+      "n_common_objects": 672,
+      "teacher_only": 107,
+      "student_only": 22,
+      "both": 484,
+      "neither": 59,
+      "both_hit_teacher_minus_student_iou": {
+        "n": 484,
+        "mean": 0.04197480923566765,
+        "median": 0.03224860372863109,
+        "p10": -0.11402151521949498,
+        "p90": 0.22411155911167882,
+        "fraction_positive": 0.609504132231405
+      }
+    },
+    {
+      "dataset": "vedai",
+      "teacher": "rgb",
+      "student": "ir",
+      "n_images": 121,
+      "n_common_objects": 364,
+      "teacher_only": 41,
+      "student_only": 31,
+      "both": 222,
+      "neither": 70,
+      "both_hit_teacher_minus_student_iou": {
+        "n": 222,
+        "mean": -0.002539105842785213,
+        "median": -0.004611690718425043,
+        "p10": -0.09000765037902032,
+        "p90": 0.08288985612495095,
+        "fraction_positive": 0.45495495495495497
+      }
+    }
+  ],
+  "limitations": "Does not certify full recipe identity, independently rerun detection, infer gain for OEv1, or establish causal attribution."
+}

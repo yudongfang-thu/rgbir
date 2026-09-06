@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "seed": 0,
+  "teacher_seed": 42,
+  "reference_seed": 42,
+  "physical_gpu": 5,
+  "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2",
+  "arms": [
+    "paired",
+    "weight0"
+  ],
+  "cpu_tensor_comparison": true,
+  "receipts": [
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1/completion_receipt.json",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1/completion_receipt.json"
+  ],
+  "checks": {
+    "initial_student.pt": true,
+    "first_batch.pt": true
+  },
+  "resource_reservation_checks_passed": true,
+  "gpu_reserved_peak_mib": 5770.0,
+  "gpu_allocated_peak_mib": 5087.68603515625,
+  "resources": [
+    {
+      "gpu_ids": [
+        5
+      ],
+      "cuda_pid_counts": {
+        "5": 1
+      },
+      "per_gpu_peak_vram_mib": {
+        "5": 6304
+      },
+      "peak_rss_mib": 28716
+    },
+    {
+      "gpu_ids": [
+        5
+      ],
+      "cuda_pid_counts": {
+        "5": 1
+      },
+      "per_gpu_peak_vram_mib": {
+        "5": 6304
+      },
+      "peak_rss_mib": 28766
+    }
+  ],
+  "optimizer_updates": [
+    24,
+    24
+  ],
+  "amp_skipped_updates": [
+    6,
+    6
+  ]
+}

@@ -1,0 +1,48 @@
+method_id: RGBT-P3-CAUSAL-v1
+ultralytics_version: "8.4.115"
+torch_version: "2.10.0+cu128"
+dataset: dronevehicle
+student_modality: infrared
+privileged_modality: rgb
+expected_nc: 5
+evaluation_role: val
+model: /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt
+imgsz: 640
+epochs: 200
+workers: 8
+batch: 32
+nbs: 64
+optimizer: SGD
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+cos_lr: false
+close_mosaic: 0
+patience: 0
+amp: true
+deterministic: true
+allowed_seeds: [0, 42, 123]
+augmentation:
+  mosaic: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  degrees: 0.0
+  perspective: 0.0
+  translate: 0.1
+  scale: 0.5
+  fliplr: 0.5
+  flipud: 0.0
+  hsv_h: 0.0
+  hsv_s: 0.0
+  hsv_v: 0.0
+  erasing: 0.0
+paths:
+  student_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml
+  privileged_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml
+  paired_train_mapping: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/infrared_to_rgb_train.json
+  shuffled_train_mapping: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/infrared_to_rgb_shuffled_train.json
+  preparation_receipt: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/prepare_receipt.json

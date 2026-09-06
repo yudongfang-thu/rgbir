@@ -1,0 +1,77 @@
+{"cuda_processes_per_gpu": 1, "expected_rss_mib": 32768, "expected_vram_mib": 10000, "gpu_ids": [5], "lease_id": "osssl-ir-sar_only-s42-1429676255d4", "pid": 3834016, "status": "LAUNCHED"}
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py", line 57, in <module>
+    main()
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/cgkd_20260905/train_native_rgbt.py", line 25, in main
+    model = YOLO(cfg["model"])
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/models/yolo/model.py", line 80, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/model.py", line 132, in __init__
+    self._load(model, task=task)
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/model.py", line 248, in _load
+    self.model, self.ckpt = load_checkpoint(weights)
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 1901, in load_checkpoint
+    raise TypeError(
+TypeError: ERROR ❌️ /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/injected_sar_only.pt references types outside the supported Ultralytics checkpoint format. Use an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}
+{"reasons": ["selecting the requested GPUs would exceed 3 active physical GPUs"], "status": "QUEUED"}

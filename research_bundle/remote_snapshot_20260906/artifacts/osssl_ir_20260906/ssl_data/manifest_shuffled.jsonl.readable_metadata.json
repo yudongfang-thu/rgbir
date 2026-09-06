@@ -1,0 +1,74 @@
+{
+  "source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/osssl_ir_20260906/ssl_data/manifest_shuffled.jsonl",
+  "row_count": 17990,
+  "table": "artifacts/osssl_ir_20260906/ssl_data/manifest_shuffled.jsonl.all_rows.tsv",
+  "meaning": "All row IDs and source basenames retained. Full paths and pre-existing source digest strings remain in exact gzip snapshot; no digest was computed here.",
+  "first_five_original_rows": [
+    {
+      "pair_id": "00001",
+      "sar_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/00001.jpg",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01220.jpg",
+      "group_id": "00001",
+      "rgb_sha256": "d6264521e235b67e24cc54f0b49ab6718eea00475ab89c1eac12e9ee077249f7",
+      "sar_sha256": "ead15bc17fe04d0e61f865e63c94e6bdfd12110a1cac08bc4fcdcd16e6579f2d",
+      "arm": "shuffled",
+      "donor_pair_id": "01220",
+      "donor_group_id": "01220"
+    },
+    {
+      "pair_id": "00002",
+      "sar_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/00002.jpg",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01575.jpg",
+      "group_id": "00002",
+      "rgb_sha256": "0d0fa52803320d225fd17cda26170acc8be6f0ef8e4cb3342da33c3b87b7becb",
+      "sar_sha256": "f441001dcb15b85e550cdcfd6c07d2f4b04a7eb368eb5e11c319c9176afbd415",
+      "arm": "shuffled",
+      "donor_pair_id": "01575",
+      "donor_group_id": "01575"
+    },
+    {
+      "pair_id": "00003",
+      "sar_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/00003.jpg",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/04535.jpg",
+      "group_id": "00003",
+      "rgb_sha256": "9e267a2dd552f9806a5ae81c91ad1e5909ae2ed45f06e433c60236a6996aaebb",
+      "sar_sha256": "7879407c8c58af8ae4f713bd156ce627d62d0fb038e47420dcaab21cee11fcd3",
+      "arm": "shuffled",
+      "donor_pair_id": "04535",
+      "donor_group_id": "04535"
+    },
+    {
+      "pair_id": "00004",
+      "sar_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/00004.jpg",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13437.jpg",
+      "group_id": "00004",
+      "rgb_sha256": "1cfcf0ca6e2e5183e852c6e2d57f1fb1ae3e42e82dc810c9e51444818ff98e5a",
+      "sar_sha256": "206595bf4bce7e60611ac40a51bf1a81ca58d9c714216d36c3ee4be23d04198c",
+      "arm": "shuffled",
+      "donor_pair_id": "13437",
+      "donor_group_id": "13437"
+    },
+    {
+      "pair_id": "00005",
+      "sar_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/00005.jpg",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14435.jpg",
+      "group_id": "00005",
+      "rgb_sha256": "01bb2bf8b9d4684397ee28b72fe8300d57c403587bff7b0f0c975b217a8b0e05",
+      "sar_sha256": "00d7ac4f8644b04a7493606d94477780a6089d423cf005b6cc558a8ee5bc7f07",
+      "arm": "shuffled",
+      "donor_pair_id": "14435",
+      "donor_group_id": "14435"
+    }
+  ],
+  "all_keys": [
+    "arm",
+    "donor_group_id",
+    "donor_pair_id",
+    "group_id",
+    "pair_id",
+    "rgb_path",
+    "rgb_sha256",
+    "sar_path",
+    "sar_sha256"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "selection_date": "2026-09-06",
+  "authorization": "User authorized continued experiments and additional GPUs under project AGENTS.md; replaces previous campaign-only one-GPU cap for this expansion.",
+  "project_maximum_physical_gpus": 3,
+  "existing": {"seed":42,"physical_gpu":4,"arm_order":["paired","weight0"],"queue_unchanged":true},
+  "new_workers": [
+    {"seed":0,"physical_gpu":5,"arm_order":["weight0","paired"]},
+    {"seed":123,"physical_gpu":6,"arm_order":["paired","weight0"]}
+  ],
+  "expected_vram_mib_per_job": 10000,
+  "expected_rss_mib_per_job": 49152,
+  "minimum_free_safety_mib": 2048,
+  "maximum_concurrent_formal_jobs_per_gpu": 1,
+  "selection_evidence": "94 GPU5/6 have no compute PID and each 24082 MiB free; GPU4 existing paired lease peak7632 MiB and RSS28886 MiB. Recheck immediately before launch."
+}

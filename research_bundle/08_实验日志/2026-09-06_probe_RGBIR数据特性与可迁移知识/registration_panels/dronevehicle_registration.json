@@ -1,0 +1,82 @@
+{
+  "dataset": "dronevehicle",
+  "sample_id": "01250",
+  "sample_index": 162,
+  "luminance_quantile": 0.1,
+  "selection_matches": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/dronevehicle_full/feature_case_1.png",
+  "rgb_luminance": 14.244316101074219,
+  "local_roi_normalized_xyxy": [
+    0.39140625,
+    0.814453125,
+    0.54140625,
+    1.0
+  ],
+  "local_selection": {
+    "rgb_gt_index": 2,
+    "class_id": 0,
+    "gt_normalized_xyxy": [
+      0.44843750000000004,
+      0.904296875,
+      0.484375,
+      0.994140625
+    ],
+    "normalized_area": 0.003228759765624996,
+    "rank_zero_based": 7,
+    "n_positive_area_rgb_gt": 15
+  },
+  "label_files_byte_identical": false,
+  "gt_counts": [
+    15,
+    21
+  ],
+  "gradient_display": {
+    "rgb_gradient_p98": 0.3084944486618042,
+    "ir_gradient_p98": 0.9772446751594543,
+    "ir_resized_for_common_display_grid": false,
+    "display_grid_hw": [
+      512,
+      640
+    ]
+  },
+  "verified_original_files": {
+    "files": [
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01250.jpg",
+        "sha256": "800362dcda97f2c203b6129cb353c06696f7f63e7bc01e4411e63e36e3ca0877"
+      },
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val/01250.jpg",
+        "sha256": "4715c85edfcc2bc736527d8598f67916e6c6e2d1285b8d7355160cd823607833"
+      }
+    ],
+    "labels": [
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01250.txt",
+        "sha256": "d833f9e9e1b64e405734b8216196ff05a2ca49aa8619e644a2ec36a74703d395"
+      },
+      {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01250.txt",
+        "sha256": "e7640143250133cefb5537cb24ac381c8188b7f60ac82afdcafd3b799ef0f029"
+      }
+    ]
+  },
+  "source_json_sha256": {
+    "input_manifest.json": "7ad5afbb0b6fbc907ac6a627b9b600fba1a34bbbd96b95d32a50a25f6a1ad445",
+    "sample_files.json": "690835a5b94ba8c531352718680f62637633fc4b77573bd1f67718f2d91badef",
+    "image_metrics.json": "ff0e86f2ca178a19de3a141f18234b167daaec4343ad34150f6f7235102a0cf6",
+    "prediction_records.json": "01a6b10bb7d9c6711d3c89b09011786e7623b518d4a1a67f76e28ae4b3b4ae09",
+    "completion_receipt.json": "7fed9228fbcc28ff85a04e6537447d75366c5148355dfcee0f6f27f0af38b866"
+  },
+  "input_probe_script_sha256": "df41641e242df727a29cf5e52380ce1ac6f8481920fae9e3c579fd0d584df281",
+  "output_files": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/registration_panels/dronevehicle_registration.png",
+      "sha256": "aa6e5e290e136680911c2a034a9ecb3bb633249f9f5d162a412b66f74d7e5ba3"
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_transfer_diagnosis_20260906/registration_panels/dronevehicle_registration.pdf",
+      "sha256": "f1ecaa48ed827c636a9c8d937db781ad15e7be8889e78e5052c41419c253b93b"
+    }
+  ],
+  "interpretation": "Illustration only. No fitted or applied registration correction, no claim of physical visibility or KD gain."
+}

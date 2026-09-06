@@ -1,0 +1,479 @@
+{
+  "status": "completed",
+  "student_seeds": [
+    0,
+    123
+  ],
+  "teacher_seed": 42,
+  "reference_seed": 42,
+  "torch": "2.10.0+cu128",
+  "ultralytics": "8.4.115",
+  "cuda_used": false,
+  "scope": "canary initialization and first 30 logged batches only",
+  "identity": [
+    {
+      "arm": "paired",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s0_attempt1",
+      "expected_seed": 0,
+      "args_seed": 0,
+      "launch_seed": 0,
+      "completion_seed": 0,
+      "effective_config_seed": 0,
+      "command_seed": 0,
+      "all_match": true
+    },
+    {
+      "arm": "paired",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_paired_s123_attempt1",
+      "expected_seed": 123,
+      "args_seed": 123,
+      "launch_seed": 123,
+      "completion_seed": 123,
+      "effective_config_seed": 123,
+      "command_seed": 123,
+      "all_match": true
+    },
+    {
+      "arm": "weight0",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s0_attempt1",
+      "expected_seed": 0,
+      "args_seed": 0,
+      "launch_seed": 0,
+      "completion_seed": 0,
+      "effective_config_seed": 0,
+      "command_seed": 0,
+      "all_match": true
+    },
+    {
+      "arm": "weight0",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/canary_weight0_s123_attempt1",
+      "expected_seed": 123,
+      "args_seed": 123,
+      "launch_seed": 123,
+      "completion_seed": 123,
+      "effective_config_seed": 123,
+      "command_seed": 123,
+      "all_match": true
+    }
+  ],
+  "cross_seed": {
+    "paired": {
+      "initial_student": {
+        "same_keys": true,
+        "total_keys": 499,
+        "equal_tensor_count": 487,
+        "different_tensor_count": 12,
+        "all_equal": false,
+        "different_keys": [
+          "model.23.cv3.0.0.1.conv.weight",
+          "model.23.cv3.0.1.0.conv.weight",
+          "model.23.cv3.0.1.1.conv.weight",
+          "model.23.cv3.0.2.weight",
+          "model.23.cv3.1.0.1.conv.weight",
+          "model.23.cv3.1.1.0.conv.weight",
+          "model.23.cv3.1.1.1.conv.weight",
+          "model.23.cv3.1.2.weight",
+          "model.23.cv3.2.0.1.conv.weight",
+          "model.23.cv3.2.1.0.conv.weight",
+          "model.23.cv3.2.1.1.conv.weight",
+          "model.23.cv3.2.2.weight"
+        ],
+        "equal_keys": null,
+        "different_tensor_details": {
+          "model.23.cv3.0.0.1.conv.weight": {
+            "shape": [
+              64,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 4096,
+            "max_absolute_difference": 0.24754445254802704
+          },
+          "model.23.cv3.0.1.0.conv.weight": {
+            "shape": [
+              64,
+              1,
+              3,
+              3
+            ],
+            "differing_elements": 576,
+            "max_absolute_difference": 0.63252854347229
+          },
+          "model.23.cv3.0.1.1.conv.weight": {
+            "shape": [
+              64,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 4096,
+            "max_absolute_difference": 0.24752168357372284
+          },
+          "model.23.cv3.0.2.weight": {
+            "shape": [
+              5,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 320,
+            "max_absolute_difference": 0.23070721328258514
+          },
+          "model.23.cv3.1.0.1.conv.weight": {
+            "shape": [
+              64,
+              128,
+              1,
+              1
+            ],
+            "differing_elements": 8192,
+            "max_absolute_difference": 0.17577165365219116
+          },
+          "model.23.cv3.1.1.0.conv.weight": {
+            "shape": [
+              64,
+              1,
+              3,
+              3
+            ],
+            "differing_elements": 576,
+            "max_absolute_difference": 0.6414986848831177
+          },
+          "model.23.cv3.1.1.1.conv.weight": {
+            "shape": [
+              64,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 4096,
+            "max_absolute_difference": 0.24701683223247528
+          },
+          "model.23.cv3.1.2.weight": {
+            "shape": [
+              5,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 320,
+            "max_absolute_difference": 0.2224598228931427
+          },
+          "model.23.cv3.2.0.1.conv.weight": {
+            "shape": [
+              64,
+              256,
+              1,
+              1
+            ],
+            "differing_elements": 16384,
+            "max_absolute_difference": 0.12402035295963287
+          },
+          "model.23.cv3.2.1.0.conv.weight": {
+            "shape": [
+              64,
+              1,
+              3,
+              3
+            ],
+            "differing_elements": 576,
+            "max_absolute_difference": 0.6356004476547241
+          },
+          "model.23.cv3.2.1.1.conv.weight": {
+            "shape": [
+              64,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 4096,
+            "max_absolute_difference": 0.2483457326889038
+          },
+          "model.23.cv3.2.2.weight": {
+            "shape": [
+              5,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 320,
+            "max_absolute_difference": 0.23297008872032166
+          }
+        }
+      },
+      "first_batch": {
+        "same_keys": true,
+        "total_keys": 5,
+        "equal_tensor_count": 5,
+        "different_tensor_count": 0,
+        "all_equal": true,
+        "different_keys": [],
+        "equal_keys": [
+          "batch_idx",
+          "bboxes",
+          "cls",
+          "img",
+          "strong_img"
+        ],
+        "different_tensor_details": {}
+      },
+      "first_batch_sample_paths_equal": true,
+      "first_batch_sample_paths": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06384.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06122.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03967.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15721.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15832.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01228.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15639.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01895.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/07034.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06174.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13467.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/04230.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01818.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00271.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/09003.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14807.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12629.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12510.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00708.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14244.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05856.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02159.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10868.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13253.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05183.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15337.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05818.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/08407.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12070.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/16385.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10341.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17917.jpg"
+      ],
+      "logged_batch_counts": [
+        30,
+        30
+      ],
+      "all_logged_batch_sample_orders_equal": true
+    },
+    "weight0": {
+      "initial_student": {
+        "same_keys": true,
+        "total_keys": 499,
+        "equal_tensor_count": 487,
+        "different_tensor_count": 12,
+        "all_equal": false,
+        "different_keys": [
+          "model.23.cv3.0.0.1.conv.weight",
+          "model.23.cv3.0.1.0.conv.weight",
+          "model.23.cv3.0.1.1.conv.weight",
+          "model.23.cv3.0.2.weight",
+          "model.23.cv3.1.0.1.conv.weight",
+          "model.23.cv3.1.1.0.conv.weight",
+          "model.23.cv3.1.1.1.conv.weight",
+          "model.23.cv3.1.2.weight",
+          "model.23.cv3.2.0.1.conv.weight",
+          "model.23.cv3.2.1.0.conv.weight",
+          "model.23.cv3.2.1.1.conv.weight",
+          "model.23.cv3.2.2.weight"
+        ],
+        "equal_keys": null,
+        "different_tensor_details": {
+          "model.23.cv3.0.0.1.conv.weight": {
+            "shape": [
+              64,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 4096,
+            "max_absolute_difference": 0.24754445254802704
+          },
+          "model.23.cv3.0.1.0.conv.weight": {
+            "shape": [
+              64,
+              1,
+              3,
+              3
+            ],
+            "differing_elements": 576,
+            "max_absolute_difference": 0.63252854347229
+          },
+          "model.23.cv3.0.1.1.conv.weight": {
+            "shape": [
+              64,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 4096,
+            "max_absolute_difference": 0.24752168357372284
+          },
+          "model.23.cv3.0.2.weight": {
+            "shape": [
+              5,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 320,
+            "max_absolute_difference": 0.23070721328258514
+          },
+          "model.23.cv3.1.0.1.conv.weight": {
+            "shape": [
+              64,
+              128,
+              1,
+              1
+            ],
+            "differing_elements": 8192,
+            "max_absolute_difference": 0.17577165365219116
+          },
+          "model.23.cv3.1.1.0.conv.weight": {
+            "shape": [
+              64,
+              1,
+              3,
+              3
+            ],
+            "differing_elements": 576,
+            "max_absolute_difference": 0.6414986848831177
+          },
+          "model.23.cv3.1.1.1.conv.weight": {
+            "shape": [
+              64,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 4096,
+            "max_absolute_difference": 0.24701683223247528
+          },
+          "model.23.cv3.1.2.weight": {
+            "shape": [
+              5,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 320,
+            "max_absolute_difference": 0.2224598228931427
+          },
+          "model.23.cv3.2.0.1.conv.weight": {
+            "shape": [
+              64,
+              256,
+              1,
+              1
+            ],
+            "differing_elements": 16384,
+            "max_absolute_difference": 0.12402035295963287
+          },
+          "model.23.cv3.2.1.0.conv.weight": {
+            "shape": [
+              64,
+              1,
+              3,
+              3
+            ],
+            "differing_elements": 576,
+            "max_absolute_difference": 0.6356004476547241
+          },
+          "model.23.cv3.2.1.1.conv.weight": {
+            "shape": [
+              64,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 4096,
+            "max_absolute_difference": 0.2483457326889038
+          },
+          "model.23.cv3.2.2.weight": {
+            "shape": [
+              5,
+              64,
+              1,
+              1
+            ],
+            "differing_elements": 320,
+            "max_absolute_difference": 0.23297008872032166
+          }
+        }
+      },
+      "first_batch": {
+        "same_keys": true,
+        "total_keys": 5,
+        "equal_tensor_count": 5,
+        "different_tensor_count": 0,
+        "all_equal": true,
+        "different_keys": [],
+        "equal_keys": [
+          "batch_idx",
+          "bboxes",
+          "cls",
+          "img",
+          "strong_img"
+        ],
+        "different_tensor_details": {}
+      },
+      "first_batch_sample_paths_equal": true,
+      "first_batch_sample_paths": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06384.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06122.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03967.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15721.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15832.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01228.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15639.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01895.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/07034.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06174.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13467.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/04230.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01818.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00271.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/09003.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14807.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12629.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12510.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/00708.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14244.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05856.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02159.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10868.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13253.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05183.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/15337.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05818.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/08407.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12070.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/16385.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10341.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17917.jpg"
+      ],
+      "logged_batch_counts": [
+        30,
+        30
+      ],
+      "all_logged_batch_sample_orders_equal": true
+    }
+  },
+  "native_pipeline": {
+    "build_dataloader_path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/build.py",
+    "source_snapshot": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_expand_20260906/cross_seed_native_source.txt",
+    "dataloader_generator_seed_lines": [
+      "generator = torch.Generator()",
+      "generator.manual_seed(6148914691236517205 + RANK)",
+      "worker_init_fn=seed_worker,",
+      "generator=generator,"
+    ],
+    "seed_worker_source": "def seed_worker(worker_id: int) -> None:\n    \"\"\"Set dataloader worker seed for reproducibility across worker processes.\"\"\"\n    worker_seed = torch.initial_seed() % 2**32\n    np.random.seed(worker_seed)\n    random.seed(worker_seed)\n",
+    "base_trainer_seed_lines": [
+      "init_seeds(self.args.seed + 1 + RANK, deterministic=self.args.deterministic)"
+    ]
+  }
+}
