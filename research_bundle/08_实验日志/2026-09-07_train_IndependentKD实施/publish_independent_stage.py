@@ -64,7 +64,8 @@ def main():
                     return ']('+relative+('#'+anchor if sep else '')+')'
                 unresolved.append({'document':dst.relative_to(STAGE).as_posix(),'target':raw})
                 return ']（未导出的工作区路径：'+raw+'）'
-            dst.write_text(re.sub(r'\]\(([^\n)]*)\)',replace,content),encoding='utf-8')
+            # Derived Markdown uses LF; raw code/evidence retains source bytes.
+            dst.write_bytes(re.sub(r'\]\(([^\n)]*)\)',replace,content).encode('utf-8'))
         elif src.read_bytes()!=dst.read_bytes():raise AssertionError('Raw export differs')
         records.append({'source':src.as_posix(),'path':src.relative_to(WORKSPACE).as_posix(),
                         'repository_path':dst.relative_to(STAGE).as_posix(),'bytes':dst.stat().st_size})

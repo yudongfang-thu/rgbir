@@ -35,7 +35,7 @@ YYYY-MM-DD_<类型>_<短名>/
 
 | 日期 | 条目 | 类型 | 一句话结论 |
 |---|---|---|---|
-| 2026-09-07 | [train_IndependentKD实施](2026-09-07_train_IndependentKD实施/README.md) | train | 15:35 C1三seed正式运行，六兼容/64批校准/两canary/双开通过，λ=.09227394；旧N/C0/random九端点齐，C0−N+.267pp、C0−random+.175pp；L几何证据阻塞 |
+| 2026-09-07 | [train_IndependentKD实施](2026-09-07_train_IndependentKD实施/README.md) | train | 16:35 C1三seed进入第4轮；六旧端点补评exact、观察桥接及rect-v2对象诊断完成；C0净正确对象+4/−3/+101、背景误检+3/+5/+46触发专项复核；L几何证据阻塞 |
 | 2026-09-07 | [audit_独立分类定位新规格](2026-09-07_audit_独立分类定位新规格/README.md) | audit | MD/ZIP一致；采用C1/L1独立不融合计划，先C1三seed；修E_C索引/校准状态，L先核自然64批覆盖上界；核心12次与最终四臂预算分开，无新GPU训练 |
 | 2026-09-07 | [audit_native与蒸馏载体](2026-09-07_audit_native与蒸馏载体/README.md) | audit | N−历史native均值+0.469pp但2/3正；CPU证实workers改变第5批起增强，初始化入口重建499张量一致；C是单标量logit证据、L是4×16分布；R<.70明显压缩机会，特征/任务选择文献已核验 |
 | 2026-09-07 | [audit_类别与定位最新进度](2026-09-07_audit_类别与定位最新进度/README.md) | audit | 11:19：N/C三seed独立端点齐，C−N为+0.266655±0.144373pp且3/3正；random到163/172/159轮，shuffled31与same-modal15轮；L仍未几何准入，无CL/CGT长训结果 |

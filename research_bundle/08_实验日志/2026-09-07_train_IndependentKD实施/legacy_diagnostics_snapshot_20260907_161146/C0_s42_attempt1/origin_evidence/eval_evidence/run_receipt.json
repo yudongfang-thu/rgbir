@@ -1,0 +1,70 @@
+{
+  "command": {
+    "argv": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/evaluate_object_evidence.py",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_evidence_v1_20260906/release_v2/config_drone.yaml",
+      "--run",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1"
+    ]
+  },
+  "created_at_utc": "2026-09-06T05:55:27.337438+00:00",
+  "data_role": "development_val",
+  "dataset": "dronevehicle",
+  "environment": {
+    "platform": "Linux-5.15.0-187-generic-x86_64-with-glibc2.35",
+    "python": "3.10.20",
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115"
+  },
+  "inputs": {
+    "arm": "paired",
+    "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+    "endpoint": "fixed_budget_last_ema",
+    "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+    "teacher_labels_used_by_kd": true
+  },
+  "job_id": "rgbir_oev1_eval_paired_s42_attempt1",
+  "method_identity": "PROTOCOL-ADAPTED",
+  "metric_snapshots": [
+    "metric_snapshot/01_evaluation_val.json"
+  ],
+  "resources": {
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "rgbir_oev1_eval_paired_s42_attempt1-76f70f009634",
+    "peak_rss_mib": 3955,
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    }
+  },
+  "run_kind": "eval",
+  "schema": "jstars-run-receipt-v1",
+  "seed": 42,
+  "source_snapshots": {
+    "config": [
+      "source_snapshot/config/01_config_drone.yaml",
+      "source_snapshot/config/02_rgb.data.yaml"
+    ],
+    "loss": [],
+    "split_roster": [
+      "source_snapshot/split_roster/01_evaluation_val_roster.txt"
+    ],
+    "trainer": [
+      "source_snapshot/trainer/01_evaluate_object_evidence.py"
+    ]
+  },
+  "terminal_status": "COMPLETED",
+  "test_exposure": {
+    "confirmatory": false,
+    "dataset": "dronevehicle",
+    "note": "Official test remains a candidate until its exposure history is audited.",
+    "role": "SEALED_CANDIDATE",
+    "test_status": "UNVERIFIED_SEALED"
+  }
+}

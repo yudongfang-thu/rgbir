@@ -1,0 +1,17 @@
+{
+  "status": "DRAFT_AWAITING_INDEPENDENT_REVIEW",
+  "reason": "pinned native rect validation with nominal imgsz640 emitted observed 544x672 padded input; v1 wrongly rejected max(canvas)>640",
+  "old_analyzer_modified": false,
+  "new_training_release_modified": false,
+  "original_metric_contract_objects_modified": false,
+  "matching_thresholds_changed": false,
+  "area_thresholds_changed": false,
+  "boxes_rescaled": false,
+  "label_renames": {
+    "canvas640_small_lt32sq": "input640_small_lt32sq",
+    "canvas640_medium_32sq_to_lt96sq": "input640_medium_32sq_to_lt96sq",
+    "canvas640_large_ge96sq": "input640_large_ge96sq"
+  },
+  "shape_source": "receipt-bound objects; contract supplies actual loader order and nominal evaluation kwargs only",
+  "real_data_analysis_run": false
+}

@@ -1,0 +1,108 @@
+{
+  "schema": "rgbir-object-error-receipt-v1",
+  "status": "COMPLETED",
+  "analyzer_acceptance": "ACCEPTED",
+  "review_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_rect_v2/review_receipt.json",
+  "inputs": [
+    {
+      "role": "baseline",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/evaluation_val.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/baseline/000_evaluation_val.json"
+    },
+    {
+      "role": "baseline",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/predictions/objects.jsonl.gz",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/baseline/001_objects.jsonl.gz"
+    },
+    {
+      "role": "baseline",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/evaluation_contract.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/baseline/002_evaluation_contract.json"
+    },
+    {
+      "role": "baseline",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/eval_evidence/run_receipt.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/baseline/003_run_receipt.json"
+    },
+    {
+      "role": "baseline",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/eval_evidence/source_snapshot/config/01_evaluation_config.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/baseline/004_01_evaluation_config.yaml"
+    },
+    {
+      "role": "baseline",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/eval_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/baseline/005_02_rgb.data.yaml"
+    },
+    {
+      "role": "baseline",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/eval_evidence/source_snapshot/config/03_evaluation_contract.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/baseline/006_03_evaluation_contract.json"
+    },
+    {
+      "role": "baseline",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/eval_evidence/source_snapshot/config/04_origin_manifest.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/baseline/007_04_origin_manifest.json"
+    },
+    {
+      "role": "candidate",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/evaluation_val.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/candidate/000_evaluation_val.json"
+    },
+    {
+      "role": "candidate",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/predictions/objects.jsonl.gz",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/candidate/001_objects.jsonl.gz"
+    },
+    {
+      "role": "candidate",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/evaluation_contract.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/candidate/002_evaluation_contract.json"
+    },
+    {
+      "role": "candidate",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/eval_evidence/run_receipt.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/candidate/003_run_receipt.json"
+    },
+    {
+      "role": "candidate",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/eval_evidence/source_snapshot/config/01_evaluation_config.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/candidate/004_01_evaluation_config.yaml"
+    },
+    {
+      "role": "candidate",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/eval_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/candidate/005_02_rgb.data.yaml"
+    },
+    {
+      "role": "candidate",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/eval_evidence/source_snapshot/config/03_evaluation_contract.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/candidate/006_03_evaluation_contract.json"
+    },
+    {
+      "role": "candidate",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/eval_evidence/source_snapshot/config/04_origin_manifest.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/candidate/007_04_origin_manifest.json"
+    },
+    {
+      "role": "metadata",
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_inputs_v1/frozen_metadata_v1/frozen_metadata.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/input_evidence/metadata_0_frozen_metadata.json"
+    }
+  ],
+  "source_copies": [
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/analysis_source/object_error_analysis.py",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/analysis_source/test_object_error_analysis.py",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed42/analysis_source/OBJECT_ERROR_ANALYSIS_RULES.md"
+  ],
+  "output_files": [
+    "pair_summary.json",
+    "baseline_error_analysis.json",
+    "candidate_error_analysis.json",
+    "objects.jsonl.gz",
+    "images.jsonl.gz"
+  ],
+  "inference_run": false,
+  "official_test_accessed": false,
+  "raw_inputs_overwritten": false
+}

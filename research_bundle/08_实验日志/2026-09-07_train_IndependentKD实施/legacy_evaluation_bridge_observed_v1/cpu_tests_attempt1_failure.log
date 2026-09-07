@@ -1,0 +1,14 @@
+Command: D:/Anaconda/envs/KGJ_proj/python.exe -m unittest test_observed_bridge -v
+Result before removing dependency on the old object analyzer's max640 constraint:
+Ran 9 tests in 0.855s; FAILED (errors=1), 8 passed.
+
+ERROR: test_real_same_checkpoint_observation_has_full_nine_sources_and_population
+  validate_observed -> validate_population -> object_reader.validate_row(row, 5)
+  File object_error_analysis.py, line 69:
+    raise ValueError('Require actual network canvas with maximum dimension 640')
+ValueError: Require actual network canvas with maximum dimension 640
+
+This file records the actual failure's concise output, not a new experiment.
+Root simultaneously identified the same real rect/pad/stride canvas mismatch.
+The bridge now compares actual bound geometry without requiring max(shape)==640;
+NEW and the original object analyzer/evaluation evidence were not modified.

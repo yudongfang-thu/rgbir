@@ -1,0 +1,66 @@
+{
+  "schema": "rgbir-legacy-evaluation-wrapper-review-v1",
+  "status": "ACCEPTED",
+  "reviewer": "/root/review_c1_spec",
+  "author": "/root/review_l1_spec",
+  "date": "2026-09-07",
+  "blocking_issues_remaining": 0,
+  "scope": "Six legacy N/C0 E200 fixed last checkpoints; one full dev1469 evidence evaluation per checkpoint, under the existing measured global lease",
+  "source_files": [
+    {
+      "relative": "legacy_checkpoint_evaluate.py",
+      "accepted_copy": "reviewed_sources/legacy_checkpoint_evaluate.py"
+    },
+    {
+      "relative": "prepare_queue.py",
+      "accepted_copy": "reviewed_sources/prepare_queue.py"
+    },
+    {
+      "relative": "test_legacy_endpoint_eval.py",
+      "accepted_copy": "reviewed_sources/test_legacy_endpoint_eval.py"
+    },
+    {
+      "relative": "README.md",
+      "accepted_copy": "reviewed_sources/README.md"
+    }
+  ],
+  "cpu_tests_passed": 15,
+  "cpu_tests_failed": 0,
+  "cpu_test_log": "cpu_tests.log",
+  "test_command": [
+    "D:\\Anaconda\\envs\\KGJ_proj\\python.exe",
+    "-m",
+    "unittest",
+    "test_legacy_endpoint_eval",
+    "-v"
+  ],
+  "queue_eligible": true,
+  "queue_execution_requirements": [
+    "Deploy these exact reviewed sources and relative reviewed_sources copies",
+    "Retain release_gpu5 actual evaluation profile binding and shared dispatcher admission",
+    "Do not overwrite existing attempts or legacy evidence"
+  ],
+  "normalized_methods": [
+    "N",
+    "C0"
+  ],
+  "seeds": [
+    42,
+    0,
+    123
+  ],
+  "endpoint": "fixed_budget_last_ema",
+  "evaluation_population": 1469,
+  "reservations_mib": {
+    "vram_mib": 1626,
+    "rss_mib": 10356
+  },
+  "resource_evidence_scope": "Existing executed profile, not a new measurement by this review",
+  "new_training_receipts_created": false,
+  "gpu_execution_performed": false,
+  "jobs_started_by_this_review": 0,
+  "whole_analysis_bridge_accepted": false,
+  "historical_library_bytes_reconstructed": false,
+  "object_reader_layout_cpu_verified": true,
+  "review_document": "REVIEW.md"
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/object_error_analysis.py", line 423, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/object_error_analysis.py", line 420, in main
+    args=parser.parse_args();print(json.dumps(run(args),ensure_ascii=False))
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/object_error_analysis.py", line 363, in run
+    a,b=load_evaluation(args.baseline_evaluation),load_evaluation(args.candidate_evaluation)
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/object_error_analysis.py", line 294, in load_evaluation
+    indexed = indexed_rows(rows,nc)
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/object_error_analysis.py", line 91, in indexed_rows
+    validate_row(row, nc)
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/object_error_analysis.py", line 69, in validate_row
+    raise ValueError('Require actual network canvas with maximum dimension 640')
+ValueError: Require actual network canvas with maximum dimension 640

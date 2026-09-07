@@ -1,0 +1,19 @@
+{
+  "status": "CPU_IMPLEMENTED_NOT_RUN_AWAITING_INDEPENDENT_REVIEW",
+  "scope": "six legacy N/C0 fixed last checkpoints, fresh posthoc full-dev class/object evaluation attempts",
+  "production_files": ["legacy_checkpoint_evaluate.py", "prepare_queue.py"],
+  "candidate": "candidate_bundle_v1/queue_candidate.json",
+  "local_tests": {"passed": 15, "failed": 0, "command": "D:/Anaconda/envs/KGJ_proj/python.exe -m unittest test_legacy_endpoint_eval -v"},
+  "initial_fixture_failure": {"tests": 13, "errors": 1, "reason": "local historical download omits remote training mapping JSON", "production_skip_introduced": false},
+  "independent_reviewer": "/root/review_c1_spec",
+  "new_gpu_jobs_started": 0,
+  "new_or_old_training_code_changed": false,
+  "old_results_changed": false,
+  "new_training_receipts_created": false,
+  "official_test_accessed": false,
+  "actual_measured_profile_reused": "admission_queue_attempt5/evaluator_profile_a2_resource_profile.json",
+  "reserved_vram_mib": 1626,
+  "reserved_process_tree_rss_mib": 10356,
+  "resource_placement": "dynamic via original frozen dispatcher and shared global guard",
+  "future_runtime_checks": ["external independent review source bytes", "actual pinned profile/config/data/source binding", "live shared GPU lease", "read-only original fixed last identity", "all1469 actual objects", "five-class inventory", "old/new five aggregate metrics exact", "new complete eval receipt"]
+}

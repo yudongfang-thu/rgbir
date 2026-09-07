@@ -1,0 +1,154 @@
+{
+  "schema": "rgbir-independent-resource-profile-v1",
+  "status": "COMPLETED",
+  "measurement_valid": true,
+  "stage": "evaluation_profile",
+  "profile_key": "drone-eval640-b32-w4",
+  "profile_identity": {
+    "configuration": {
+      "dataset": "dronevehicle",
+      "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+      "expected_nc": 5,
+      "imgsz": 640,
+      "batch": 32,
+      "workers": 4,
+      "torch_version": "2.10.0+cu128",
+      "ultralytics_version": "8.4.115",
+      "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "split": "val",
+      "expected_val_images": 1469
+    },
+    "actual_effective_kwargs": {
+      "imgsz": 640,
+      "batch": 32,
+      "workers": 4,
+      "quantize": null,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "agnostic_nms": false,
+      "single_cls": false,
+      "rect": true,
+      "augment": false,
+      "half": false
+    },
+    "expected_val_images": 1469,
+    "evaluator_sources": [
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluate_independent.py",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluator_profile.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/build.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/dataset.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/utils.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/model.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/validator.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/models/yolo/detect/val.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/nn/autobackend.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/nn/tasks.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/utils/metrics.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/utils/nms.py"
+    ],
+    "binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json"
+  },
+  "execution_binding": null,
+  "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluator_profile_receipt.json",
+  "resources": {
+    "per_gpu_peak_vram_mib": {
+      "2": 1370
+    },
+    "peak_rss_mib": 6260,
+    "cuda_pid_counts": {
+      "2": 1
+    }
+  },
+  "evaluation_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+  "companion_measurement": {
+    "requested": false,
+    "sampled_workload_active_intervals": 0,
+    "all_sampled_active_intervals_had_companion": null,
+    "verified": false
+  },
+  "technical_stage_status": "evaluation_profile_completed",
+  "resource_measurement_only": false,
+  "minimum_free_mib": 18904,
+  "admission": {
+    "active": [
+      4,
+      5
+    ],
+    "empty": [],
+    "reasons": [
+      {
+        "gpu": 0,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 1,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 3,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 4,
+        "reasons": [
+          "first measurement requires no other project task or lease on this GPU",
+          "project reserved VRAM would reach 70%",
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 5,
+        "reasons": [
+          "first measurement requires no other project task or lease on this GPU",
+          "project reserved VRAM would reach 70%",
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 6,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 7,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      }
+    ],
+    "candidate_gpus": [
+      2
+    ],
+    "atomic_shared_lock": true,
+    "selected_gpus": [
+      2
+    ],
+    "active_gpus_after": [
+      2,
+      4,
+      5
+    ],
+    "fully_empty_gpus_after": [],
+    "four_gpu_exception": false,
+    "exception_basis": "AGENTS.md section 2.1; snapshot under shared guard lock",
+    "installed_guard_max_gpus": 4
+  },
+  "reservation": {
+    "bootstrap": true,
+    "measured": false,
+    "vram_mib": 16000,
+    "rss_mib": 32768,
+    "profiled_second_train": false
+  },
+  "lease_id": "evaluator_profile_a2-287bd2825777",
+  "exit_code": 0,
+  "time": 1788764411.1271102
+}

@@ -1,0 +1,18 @@
+{
+  "status": "ACCEPTED_DESCRIPTIVE_TABLE_REVIEW",
+  "reviewer": "/root (independent of table author)",
+  "reviewed_at": "2026-09-07T16:35:13.741765+08:00",
+  "arithmetic_checks": 255,
+  "checks": [
+    "Raw same-seed actual metrics and independently accepted rect-v2 source bytes",
+    "Known arithmetic1/2/3 gives mean2 and sampleSD1",
+    "All5classes x3APmetrics x3seeds direct standard-library mean/SD cross-check",
+    "MacroAP equals mean of5raw classAP; repair/damage denominators and netcounts verified",
+    "Background delta3/5/46 over1469images verified"
+  ],
+  "background_increase_triggers_C0_review": true,
+  "C0_automatic_extension_paused": true,
+  "existing_training_stopped": false,
+  "new_C1_result": false,
+  "formal_posthoc_class_adapter_accepted": false
+}

@@ -155,3 +155,11 @@
 | 2026-09-07 15:42 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/FORMAL_WORKER_VENV_FIX.md | implementation | C1三seed正式启动；六兼容/64批校准/双开；L几何阻塞；详细源码与小产物路径见子清单 |
 | 2026-09-07 15:42 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/formal_live_20260907_153211.json | implementation | C1三seed正式启动；六兼容/64批校准/双开；L几何阻塞；详细源码与小产物路径见子清单 |
 | 2026-09-07 15:42 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/publish_independent_stage.py | implementation | C1三seed正式启动；六兼容/64批校准/双开；L几何阻塞；详细源码与小产物路径见子清单 |
+| 2026-09-07 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/PUBLISH_RECEIPT_1218adf.md | publication | GitHub原分支推送成功；阶段证据5216文件检查通过；后续独立读回超时如实记录 |
+| 2026-09-07 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/publication_review_20260907_155755.json | publication | ACCEPTED；原始字节/缺失/链接/凭据候选均0；保留中间检查记录 |
+| 2026-09-07 16:35 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/STAGE_REPORT_1635.md | analysis | C1三seed第4轮；六旧端点补评exact；C0背景误检三seed同增触发专项复核；L证据阻塞 |
+| 2026-09-07 16:35 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/legacy_diagnostics_snapshot_20260907_161415/source_manifest.json | evidence | 六份真实只读dev补评完成，原checkpoint/结果未修改；详细路径见子清单 |
+| 2026-09-07 16:35 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/legacy_observed_bridge_root_review_v1/review_receipt.json | audit | 九真值测试/313映射/六项正式载入通过；仅同checkpoint五汇总指标观察等价 |
+| 2026-09-07 16:35 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/object_analyzer_rect_independent_review_v2/review_receipt.json | audit | 修正nominal640与实际rect canvas的错误等同；19项测试，原阈值/坐标/失败均保留 |
+| 2026-09-07 16:35 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/old_c0_object_diagnostics_v1/README.md | analysis | 三seed真实对象诊断，净正确+4/−3/+101，背景FP+3/+5/+46；亮度仅原200图子集 |
+| 2026-09-07 16:35 | /experiment-bridge + /run-experiment | 08_实验日志/2026-09-07_train_IndependentKD实施/old_c0_object_diagnostics_v1/tables_attempt2/root_independent_review.json | audit | 255项独立数值/单位/分母/样本SD交叉检查通过；未签正式posthoc逐类适配 |

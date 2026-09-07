@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "schema": "rgbir-legacy-reevaluation-v1",
+  "seed": 123,
+  "arm": "weight0",
+  "normalized_method_arm": "N",
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt",
+  "old_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+  "evaluation_val": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s123_attempt1/evaluation_val.json",
+  "evaluation_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s123_attempt1/eval_evidence/run_receipt.json",
+  "full_dev_images": 1469,
+  "all_class_metrics": 5,
+  "historical_five_metrics_exact": true,
+  "old_results_modified": false,
+  "new_training_receipt_created": false,
+  "official_test_accessed": false,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 4037
+  },
+  "seconds": 28.33682632446289
+}

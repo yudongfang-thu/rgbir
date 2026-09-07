@@ -1,0 +1,65 @@
+{
+  "status": "ACCEPTED",
+  "reviewer": "/root (independent of bridge author /root/review_c1_spec)",
+  "scope": "Six fixed old checkpoints, full dev1469, exact observed equality of five aggregate metrics to the current common evaluator; no historical library-byte claim or posthoc per-class injection.",
+  "reviewed_at": "2026-09-07T16:32:55.874133+08:00",
+  "source_mapping_bytes_checked": 313,
+  "independently_rerun_cpu_tests": 9,
+  "independent_tests_exit_code": 0,
+  "independent_test_command": "python -m unittest test_observed_bridge -v",
+  "code_review": "Root read both halves of the complete generator, all known-truth tests and scope README before signing.",
+  "bridge": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_evaluation_bridge_observed_v1\\prepared_a3\\evaluation_compatibility_accepted_root.json",
+  "integration": [
+    {
+      "arm": "N",
+      "seed": 42,
+      "status": "complete",
+      "issues": [],
+      "evaluation_contract_validation": "passed",
+      "posthoc_per_class_not_injected": true
+    },
+    {
+      "arm": "C0",
+      "seed": 42,
+      "status": "complete",
+      "issues": [],
+      "evaluation_contract_validation": "passed",
+      "posthoc_per_class_not_injected": true
+    },
+    {
+      "arm": "N",
+      "seed": 0,
+      "status": "complete",
+      "issues": [],
+      "evaluation_contract_validation": "passed",
+      "posthoc_per_class_not_injected": true
+    },
+    {
+      "arm": "C0",
+      "seed": 0,
+      "status": "complete",
+      "issues": [],
+      "evaluation_contract_validation": "passed",
+      "posthoc_per_class_not_injected": true
+    },
+    {
+      "arm": "N",
+      "seed": 123,
+      "status": "complete",
+      "issues": [],
+      "evaluation_contract_validation": "passed",
+      "posthoc_per_class_not_injected": true
+    },
+    {
+      "arm": "C0",
+      "seed": 123,
+      "status": "complete",
+      "issues": [],
+      "evaluation_contract_validation": "passed",
+      "posthoc_per_class_not_injected": true
+    }
+  ],
+  "future_C1_actual_evaluator_source_check_still_required": true,
+  "posthoc_per_class_analysis_adapter_still_required": true,
+  "full_method_claim_accepted": false
+}

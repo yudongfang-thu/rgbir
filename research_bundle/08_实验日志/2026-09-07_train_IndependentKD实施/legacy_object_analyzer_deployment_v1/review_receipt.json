@@ -1,0 +1,33 @@
+{
+  "schema": "rgbir-object-error-review-v1",
+  "status": "ACCEPTED",
+  "reviewer": "/root (independent of /root/review_matrix_spec implementation)",
+  "reviewed_at": "2026-09-07T14:53:54.409192+08:00",
+  "scope": "Fixed conf=.25, same-class IoU=.50 diagnostic only; not COCO AP matching or localization admission.",
+  "checks": [
+    "15 known-truth CPU tests independently rerun and passed",
+    "Repair denominator is baseline incorrect GT; damage denominator is baseline correct GT",
+    "Background false positives use max IoU over every GT and all images including empty images",
+    "Exact GT order and canvas are matched; missing source/brightness stays UNKNOWN",
+    "Evaluation raw metric/object/config bytes must be receipt-bound",
+    "Unreviewed output cannot acquire the accepted downstream diagnostic contract"
+  ],
+  "blocking_issues_remaining": 0,
+  "actual_C1_results_analyzed": false,
+  "source_files": [
+    {
+      "relative": "object_error_analysis.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/reviewed_sources/object_error_analysis.py"
+    },
+    {
+      "relative": "test_object_error_analysis.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/reviewed_sources/test_object_error_analysis.py"
+    },
+    {
+      "relative": "OBJECT_ERROR_ANALYSIS_RULES.md",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/reviewed_sources/OBJECT_ERROR_ANALYSIS_RULES.md"
+    }
+  ],
+  "path_mapping_only": true,
+  "original_review_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/original_review_receipt.json"
+}

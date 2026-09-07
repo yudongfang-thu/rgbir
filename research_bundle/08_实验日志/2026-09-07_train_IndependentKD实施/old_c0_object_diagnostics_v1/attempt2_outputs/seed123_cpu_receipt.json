@@ -1,0 +1,24 @@
+{
+  "seed": 123,
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_rect_v2/object_error_analysis.py",
+    "--baseline-evaluation",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s123_attempt1/evaluation_val.json",
+    "--candidate-evaluation",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s123_attempt1/evaluation_val.json",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_attempt2/seed123",
+    "--metadata",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_inputs_v1/frozen_metadata_v1/frozen_metadata.json",
+    "--review-receipt",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_rect_v2/review_receipt.json"
+  ],
+  "exit_code": 0,
+  "seconds": 7.585230588912964,
+  "peak_process_tree_rss_bytes": 156778496,
+  "sampling_seconds": 0.25,
+  "includes_runner_and_analyzer_children": true,
+  "CUDA_VISIBLE_DEVICES": "",
+  "model_inference": false
+}

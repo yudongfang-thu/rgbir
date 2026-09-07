@@ -1,0 +1,50 @@
+{
+  "status": "STARTED",
+  "time": 1788768903.2144845,
+  "inputs": [
+    {
+      "normalized_method_arm": "N",
+      "seed": 0,
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s0_attempt1/reevaluation_receipt.json",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt"
+    },
+    {
+      "normalized_method_arm": "C0",
+      "seed": 0,
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/reevaluation_receipt.json",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt"
+    },
+    {
+      "normalized_method_arm": "N",
+      "seed": 42,
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1/reevaluation_receipt.json",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt"
+    },
+    {
+      "normalized_method_arm": "C0",
+      "seed": 42,
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s42_attempt1/reevaluation_receipt.json",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt"
+    },
+    {
+      "normalized_method_arm": "N",
+      "seed": 123,
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s123_attempt1/reevaluation_receipt.json",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt"
+    },
+    {
+      "normalized_method_arm": "C0",
+      "seed": 123,
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s123_attempt1/reevaluation_receipt.json",
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt"
+    }
+  ],
+  "analyzer": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/object_error_analysis.py",
+  "review_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_v1/review_receipt.json",
+  "metadata": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analysis_inputs_v1/frozen_metadata_v1/frozen_metadata.json",
+  "interpreter": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+  "CUDA_VISIBLE_DEVICES": "",
+  "model_inference": false,
+  "ap_bridge_accepted": false,
+  "scope": "Old C0 versus N fixed-threshold supplementary diagnosis; not C1"
+}

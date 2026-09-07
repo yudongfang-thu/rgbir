@@ -1,6 +1,6 @@
 # Independent KD v2 实施
 
-**状态（2026-09-07 15:35）：C1 三 seed 已正式启动，均已达到至少24次成功更新；λC1=0.09227393550836771。L1 因缺合格物理对应点证据暂不准入。** [完整准入与实际启动证据](FORMAL_LAUNCH_ACCEPTANCE_1535.md)。
+**状态（2026-09-07 16:35）：C1 三 seed 均进入第4轮；旧N/C0六端点补评和三seed对象诊断已完成，背景误检三seed同增触发C0专项复核；L1仍因几何证据不足阻塞。** [最新阶段结果与待办](STAGE_REPORT_1635.md) · [完整准入与启动证据](FORMAL_LAUNCH_ACCEPTANCE_1535.md)。下面保留15:35阶段明细，最新判断以阶段结果为准。
 
 ## 目的与固定范围
 C1 三 seed 优先，C1/C1_y 与 L1/L_GT 独立，旧 C0 对照继续。Drone 定位不准入而 LLVIP 准入时转 LLVIP 并增加 N 三 seed；核心预算12/15，完整两线归因24/27，条件触发，不一次提交。
@@ -15,7 +15,7 @@ C1 三 seed 优先，C1/C1_y 与 L1/L_GT 独立，旧 C0 对照继续。Drone �
 |旧 N/C0/random|九份 E200 last/EMA、完整 dev 独立评估均完成|[三 seed 原值及配对统计](OLD_RESULTS_1407.md)|
 |C0−N|+0.266655±0.144373 pp，三 seed 全正|[分析器原始输出](old_endpoint_analysis_1407.json)|
 |C0−random|+0.174939±0.038853 pp，三 seed 全正；尚缺四臂内容归因|同上|
-|C0 shuffled42/same-modal42|旧队列继续，15:35进入52/36轮；不是新 C1 对照|[只读快照]（未导出的工作区路径：snapshots/2026-09-07T153517.173314_0800/）|
+|C0 shuffled42/same-modal42|旧队列继续，15:35进入52/36轮；不是新 C1 对照|[只读快照](snapshots/2026-09-07T153517.173314_0800)|
 |C1/C1_y|独立 trainer、原选择适配、逐类 Bernoulli KL、梯度观察实现并经交叉代码审阅|[分类梯度独立复核](C1_GRADIENT_INDEPENDENT_CODE_REVIEW.md)|
 |L1/L_GT|严格门控、DFL、GT目标及支持域实现；几何未准入，不运行正式 canary 或 E200|[24 对审核](PRIMARY_GEOMETRY_VISUAL_24.md) · [5 对独立复核](INDEPENDENT_GEOMETRY_VISUAL_5.md)|
 |C1 校准与canary|64/64批有限非零；C1/C1_y各24成功update；同卡双开实測通过|[实际验收](FORMAL_LAUNCH_ACCEPTANCE_1535.md)|
@@ -46,4 +46,4 @@ C1 三 seed 优先，C1/C1_y 与 L1/L_GT 独立，旧 C0 对照继续。Drone �
 94部署及验收：`/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/`。实际正式输出在其 `formal_C1_gpu5_attempt2/runs/C1_seed{42,0,123}/`，位于授权数据盘artifacts下；最初拟定的独立runs根尚未使用。大权重及完整轨迹tensor留服务器，小产物按[最新采集清单](remote_admission_1532/source_manifest.json)保存在本目录。
 
 ## 局限与下一步
-C1三个worker各自承担E200后独立评价，不按首seed AP停止其余seed。当前没有新C1 AP。L阻塞不影响分类。旧/新评价桥接候选仍为DRAFT，旧N/C0六last的逐类与objects须补采，才能完成升级前损伤检查；[最小补采方案](EVALUATION_BRIDGE_PREPARATION.md)。三seed和四臂不足时不升级论文主张。阶段证据发布到 `research/full-evidence-20260906`；发布提交以实际回执为准。
+C1三个worker各自承担E200后独立评价，不按首seed AP停止其余seed。当前没有新C1完整AP。六次旧N/C0补评及实际观察桥接已完成，rect-v2对象诊断已通过；正式posthoc逐类证据接入仍待完成。C0背景误检三seed同增，后续自动扩展暂停待专项复核，已有训练继续。三seed和四臂不足时不升级论文主张。阶段主包已推送到 `research/full-evidence-20260906`，提交 `1218adf`；见[实际发布回执](PUBLISH_RECEIPT_1218adf.md)，补充阶段发布另留回执。

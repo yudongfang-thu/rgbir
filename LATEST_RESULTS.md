@@ -1,9 +1,9 @@
 # 最新结果与执行状态
 
-当前请读 [Independent KD 实施证据](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/README.md) 与 [旧九份端点收口](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/OLD_RESULTS_1407.md)。
+[完整16:35阶段报告](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/STAGE_REPORT_1635.md)。C1三个seed正在E200第4轮，λ=.09227393550836771，尚无新C1完整AP。
 
-N/C0/random 三 seed 完整配对：C0−N **+0.266655±0.144373 pp**，C0−random **+0.174939±0.038853 pp**。C0 汇总 recall 相对 N 三 seed 同降，需固定阈值对象诊断，不声称负迁移已消除。
+旧N/C0/random九端点齐：C0−N +.266655±.144373pp，C0−random +.174939±.038853pp；四臂归因未齐。旧N/C0六次完整dev补评已全部成功，五汇总指标逐项exact；[观察桥接独立接受](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/legacy_observed_bridge_root_review_v1/REVIEW.md)。
 
-C1三seed已正式启动，λ=.09227393550836771；L1因几何证据不足尚未准入。不得将旧C0数字或两批资源探针当作新方法结果。实际状态见[正式启动验收](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/FORMAL_LAUNCH_ACCEPTANCE_1535.md)。
+新对象诊断：修复473/472/517，损伤469/475/416，净+4/−3/+101；背景误检+3/+5/+46。后者触发C0专项损伤复核，暂停其后续自动扩展，已有训练继续。[逐类、尺度和部分亮度结果](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/old_c0_object_diagnostics_v1/README.md)。
 
-[旧 Task-Conditional 状态](TASK_CONDITIONAL_STATUS_20260907.md) 是历史快照，已被当前独立分支排程替代。
+L仍因几何证据不足阻塞。正式分析器对posthoc逐类证据的显式接入仍待完成；不向旧JSON注入新字段。新三seed结果、内容消融和完整四臂尚未完成。

@@ -1,0 +1,26 @@
+{
+  "status": "SCREEN_DISPATCH_STARTED",
+  "time": "2026-09-07T16:06:36.400881+08:00",
+  "session": "ikdv2_legacy_diag_20260907",
+  "argv": [
+    "screen",
+    "-dmS",
+    "ikdv2_legacy_diag_20260907",
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/resource_dispatch.py",
+    "--manifest",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_endpoint_eval_prepare_v1/candidate_bundle_v1/queue_candidate.json",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/dispatch_attempt1",
+    "--repo",
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction"
+  ],
+  "output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/dispatch_attempt1",
+  "nvidia_smi_before": "0, 24564 MiB, 20143 MiB, 3941 MiB\n1, 24564 MiB, 19590 MiB, 4494 MiB\n2, 24564 MiB, 15867 MiB, 8217 MiB\n3, 24564 MiB, 18214 MiB, 5870 MiB\n4, 24564 MiB, 14663 MiB, 9421 MiB\n5, 24564 MiB, 15686 MiB, 8398 MiB\n6, 24564 MiB, 16762 MiB, 7322 MiB\n7, 24564 MiB, 19851 MiB, 4233 MiB\n",
+  "compute_apps_before": "GPU-f084b507-45a9-1b42-4d6c-abd882060d40, 1070544, 20132 MiB\nGPU-0e6b9fe0-31ff-f6ce-ddf0-652e388d529f, 3111771, 19580 MiB\nGPU-cbdec596-4a8e-880d-de52-cc4eb270d5a6, 2753901, 7914 MiB\nGPU-cbdec596-4a8e-880d-de52-cc4eb270d5a6, 2757514, 7914 MiB\nGPU-495a9ab5-3280-e754-74a2-1b35c2e4bc9a, 2086675, 18204 MiB\nGPU-66fe989e-920f-65c8-f838-b5e32bfaadae, 2265745, 8020 MiB\nGPU-66fe989e-920f-65c8-f838-b5e32bfaadae, 2928886, 3789 MiB\nGPU-66fe989e-920f-65c8-f838-b5e32bfaadae, 2983227, 2809 MiB\nGPU-167c0c6c-0998-a996-c352-4ae05e355878, 4148148, 7730 MiB\nGPU-167c0c6c-0998-a996-c352-4ae05e355878, 2760047, 7914 MiB\nGPU-1d1bf3db-3d4e-3dba-3792-f29aa92e4e42, 2927829, 16752 MiB\nGPU-32b6862c-896e-9702-78a8-c31e0af68ffa, 3111772, 19840 MiB\n",
+  "shared_lease_required": true,
+  "physical_gpu_hardcoded": false,
+  "fourth_gpu_exception_invoked": false,
+  "new_training_jobs": 0,
+  "evaluation_jobs": 6
+}

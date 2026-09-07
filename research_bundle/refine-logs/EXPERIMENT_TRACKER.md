@@ -1,6 +1,6 @@
 # RGBIR independent KD v2 实验跟踪表
 
-2026-09-07 15:35：C1三seed已正式启动，六兼容/64批校准/两canary/双开均通过，λ=.09227393550836771。L1/L_GT已实现但几何证据阻塞。最新实施证据见 `../08_实验日志/2026-09-07_train_IndependentKD实施/README.md`，执行主计划见 `EXPERIMENT_PLAN.md`。
+2026-09-07 16:35：C1三seed均进入第4轮；六旧端点补评逐项exact，观察桥接已接受，rect-v2三seed对象分析已完成。C0背景误检+3/+5/+46触发专项复核，暂停其后续自动扩展但不停止已有训练。λ=.09227393550836771和L几何阻塞不变。最新实施证据见 `../08_实验日志/2026-09-07_train_IndependentKD实施/STAGE_REPORT_1635.md`，执行主计划见 `EXPERIMENT_PLAN.md`。
 
 | ID | 阶段 | 实验/交付 | seeds | 优先级 | 当前状态 | 依赖/说明 |
 |---|---|---|---|---|---|---|
@@ -29,10 +29,10 @@
 |L14|长训|L1 vs N|123|CONDITIONAL|NOT_QUEUED|同上|
 |L20|判读|L1独立效用|0/42/123|CONDITIONAL|WAIT_RESULTS|全正mean≥.10pp且定位诊断相容|
 |L21|控制|L_GT补齐|0/123|CONDITIONAL|NOT_QUEUED|L1有效后2次，完成教师内容判断|
-|P00|分析器|新arm/错误分类/配对统计独立验收|—|MUST|CODE_ACCEPTED|真实dev1469评价等价通过；对象分析器15项测试/独立复核通过；旧N/C0逐类/objects待补采，桥接DRAFT|
-|P01|归因|最终类别方法四臂|0/42/123|MUST_IF_CLAIMED|WAIT_WINNER|C0胜出补4次；C1胜出新增6次|
+|P00|分析器|新arm/错误分类/配对统计独立验收|—|MUST|OBSERVED_BRIDGE_ACCEPTED_PARTIAL_ADAPTER_PENDING|六旧端点补评完成；rect-v2十九测试与真实三seed对象分析通过；同六checkpoint观察桥接接受，正式posthoc逐类接入待独立适配|
+|P01|归因|最终类别方法四臂|0/42/123|MUST_IF_CLAIMED|WAIT_WINNER_C0_HARM_REVIEW|C0背景误检三seed同增，其后续自动扩展需专项复核；C1按原门槛，已有控制继续|
 |P02|归因|L1自己的四臂|0/42/123|MUST_IF_CLAIMED|WAIT_L_EVIDENCE|额外6次；L_GT不能替代same-modal|
-|P03|证据|GitHub阶段同步|—|MUST|EXPORT_PREPARED|源码、失败记录、旧三seed、几何24对及新准入小产物已准备；提交以发布回执为准|
+|P03|证据|GitHub阶段同步|—|MUST|PUBLISHED|1218adf已推送原分支；5216文件导出检查通过。后续旧端点补评与C1结果另批同步，见实施日志PUBLISH_RECEIPT_1218adf.md|
 |X01|外部|BCKD/FGD/LD协议适配和历史CMD/CCLKD审计|—|PREPARE_ONLY|PREPARED|BCKD分类partial、FGD、LD公开资产及冻结适配草案齐；旧CMD/CCLKD workers8独立列|
 |X02|数据集|LLVIP独立N/L1/L_GT或类别泛化|—|CONDITIONAL|DIAGNOSIS_FIRST|新数据集N/预算另列；不借Drone端点|
 |D01|延期|旧CL/CGT/dynamic router|—|DEFERRED|DEFERRED_BY_INDEPENDENT_CL_V2|不融合、不以联合结果救单支|

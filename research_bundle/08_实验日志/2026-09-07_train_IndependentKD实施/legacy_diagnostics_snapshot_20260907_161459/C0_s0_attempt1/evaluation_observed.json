@@ -1,0 +1,61 @@
+{
+  "AP50": 0.7698678788788337,
+  "AP75": 0.6416654157547512,
+  "mAP50_95": 0.5477218640082956,
+  "precision": 0.7924371088621379,
+  "recall": 0.709786559338524,
+  "per_class": [
+    {
+      "class_id": 0,
+      "name": "car",
+      "AP50": 0.9525894001818374,
+      "AP75": 0.7615786418914022,
+      "mAP50_95": 0.6555872096758427
+    },
+    {
+      "class_id": 1,
+      "name": "freight car",
+      "AP50": 0.6013871022449662,
+      "AP75": 0.4601264321519223,
+      "mAP50_95": 0.400202978309411
+    },
+    {
+      "class_id": 2,
+      "name": "truck",
+      "AP50": 0.7206748009161179,
+      "AP75": 0.5890867818778551,
+      "mAP50_95": 0.5123803541379235
+    },
+    {
+      "class_id": 3,
+      "name": "bus",
+      "AP50": 0.9483120807011373,
+      "AP75": 0.8882450262016152,
+      "mAP50_95": 0.7332328166654989
+    },
+    {
+      "class_id": 4,
+      "name": "van",
+      "AP50": 0.6263760103501098,
+      "AP75": 0.5092901966509613,
+      "mAP50_95": 0.4372059612528013
+    }
+  ],
+  "status": "evaluated_pending_historical_check",
+  "metric_units": "fraction_0_to_1",
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+  "endpoint": "fixed_budget_last_ema",
+  "split": "val",
+  "arm": "paired",
+  "source": "paired",
+  "seed": 0,
+  "dataset": "dronevehicle",
+  "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+  "normalized_method_arm": "C0",
+  "evaluation_kind": "posthoc_legacy_checkpoint_diagnostics",
+  "evaluation_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/evaluation_contract.json",
+  "objects": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/predictions/objects.jsonl.gz",
+  "training_origin": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_manifest.json",
+  "official_test_accessed": false,
+  "seconds": 17.701255559921265
+}

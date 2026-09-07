@@ -1,0 +1,78 @@
+method_id: RGBIR-OBJECT-EVIDENCE-v1
+method_identity: PROTOCOL-ADAPTED
+description: Original exploratory object-relative class evidence KD; not an external
+  method reproduction
+dataset: dronevehicle
+student_modality: rgb
+privileged_modality: infrared
+expected_nc: 5
+evaluation_role: val
+model: /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt
+teacher: /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt
+reference: /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt
+ultralytics_version: 8.4.115
+torch_version: 2.10.0+cu128
+imgsz: 640
+epochs: 200
+batch: 32
+nbs: 64
+workers: 4
+seed: 123
+optimizer: SGD
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+cos_lr: false
+close_mosaic: 0
+patience: 0
+amp: true
+deterministic: true
+kd_weight: 0.1
+teacher_cache_images: 64
+log_every_batches: 100
+evidence:
+  input_size: 640
+  levels:
+  - 0
+  - 1
+  temperature: 2.0
+  background_scale: 2.0
+  minimum_foreground: 1
+  minimum_background: 4
+  match_iou: 0.5
+  reference_conf: 0.05
+  reference_iou: 0.1
+  teacher_conf: 0.25
+  teacher_iou: 0.5
+  rho: 0.5
+  target_clip: 8.0
+  smooth_l1_beta: 1.0
+augmentation:
+  mosaic: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  copy_paste: 0.0
+  degrees: 0.0
+  shear: 0.0
+  perspective: 0.0
+  translate: 0.1
+  scale: 0.5
+  fliplr: 0.5
+  flipud: 0.0
+  hsv_h: 0.0
+  hsv_s: 0.0
+  hsv_v: 0.0
+  erasing: 0.0
+  bgr: 0.0
+paths:
+  student_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml
+  privileged_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml
+  paired_train_mapping: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/rgb_to_infrared_train.json
+arm: paired
+source: paired
+expected_val_images: 1469
+evaluation_kind: posthoc_legacy_checkpoint_diagnostics

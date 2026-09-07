@@ -1,0 +1,36 @@
+{
+  "schema": "rgbir-object-error-review-v1",
+  "status": "ACCEPTED",
+  "reviewer": "/root (independent of /root/review_matrix_spec implementation)",
+  "reviewed_at": "2026-09-07T16:24:04.837161+08:00",
+  "blocking_issues_remaining": 0,
+  "scope": "Rect padding input adapter correction; fixed confidence/IoU/area thresholds and repair/damage denominators unchanged.",
+  "checks": [
+    "Independently inspected complete v1-to-v2 code diff",
+    "19 known-truth CPU tests rerun, including actual padded-shape binding and immutable boxes",
+    "Nominal640 comes from bound config/effective kwargs; actual canvas/original shape comes from bound objects",
+    "Actual loader order reconstructs batches; each batch shares one observed canvas",
+    "Baseline/candidate original shape, canvas and GT arrays remain exactly compared",
+    "input640 scale labels only rename old labels;32^2/96^2 areas and all matching rules unchanged",
+    "No new geometry truth, box transformation, source grouping or brightness thresholds inferred",
+    "Downstream ERROR_CONTRACT unchanged; output schema records technical v2"
+  ],
+  "actual_C1_results_analyzed": false,
+  "actual_legacy_object_analysis_completed": false,
+  "source_files": [
+    {
+      "relative": "object_error_analysis.py",
+      "accepted_copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\object_analyzer_rect_independent_review_v2\\object_error_analysis.py"
+    },
+    {
+      "relative": "test_object_error_analysis.py",
+      "accepted_copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\object_analyzer_rect_independent_review_v2\\test_object_error_analysis.py"
+    },
+    {
+      "relative": "OBJECT_ERROR_ANALYSIS_RULES.md",
+      "accepted_copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\object_analyzer_rect_independent_review_v2\\OBJECT_ERROR_ANALYSIS_RULES.md"
+    }
+  ],
+  "test_count": 19,
+  "tests_exit_code": 0
+}

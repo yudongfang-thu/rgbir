@@ -1,0 +1,22 @@
+Command: D:\Anaconda\envs\KGJ_proj\python.exe -m unittest test_legacy_endpoint_eval -v
+
+test_absent_or_draft_review_does_not_authorize_execution (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_actual_measured_reservations_and_no_bootstrap_substitution (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_all_five_classes_cannot_be_omitted_or_duplicated (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_changed_old_metric_cannot_bypass_actual_snapshot_binding (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_fixed_last_checkpoint_physical_path_is_checked (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_historical_comparison_exact_mismatch_nonfinite_and_units (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_native_config_change_and_wrong_arm_do_not_pass_legacy_identity (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_new_eval_layout_is_readable_by_existing_object_analyzer (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_new_output_cannot_overwrite_or_be_inside_original (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_origin_manifest_is_readonly_evidence_not_new_training (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_original_evidence_and_checkpoint_change_are_detected (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_review_binds_actual_four_source_bytes_and_rejects_mutation (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_single_metric_difference_retains_observation_but_no_completed_result (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_six_prepared_jobs_dynamic_gpu_new_outputs_and_no_old_random (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+test_six_real_metadata_endpoints_and_actual_seed_not_yaml_default (test_legacy_endpoint_eval.LegacyEndpointEvaluationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.784s
+
+OK

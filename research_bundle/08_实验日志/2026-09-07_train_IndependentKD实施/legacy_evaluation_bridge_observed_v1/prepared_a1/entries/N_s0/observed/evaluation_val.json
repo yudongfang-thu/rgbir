@@ -1,0 +1,62 @@
+{
+  "AP50": 0.7699251535173484,
+  "AP75": 0.6393291745479234,
+  "mAP50_95": 0.5434618520685575,
+  "precision": 0.7765485331322762,
+  "recall": 0.7358216889941263,
+  "per_class": [
+    {
+      "class_id": 0,
+      "name": "car",
+      "AP50": 0.9489151616447663,
+      "AP75": 0.7619935357011389,
+      "mAP50_95": 0.6535530190476433
+    },
+    {
+      "class_id": 1,
+      "name": "freight car",
+      "AP50": 0.599680275514725,
+      "AP75": 0.45196425877913804,
+      "mAP50_95": 0.39202643617082134
+    },
+    {
+      "class_id": 2,
+      "name": "truck",
+      "AP50": 0.7271088151263911,
+      "AP75": 0.5882154459204478,
+      "mAP50_95": 0.5095760963026874
+    },
+    {
+      "class_id": 3,
+      "name": "bus",
+      "AP50": 0.9522893199128418,
+      "AP75": 0.8842329545186189,
+      "mAP50_95": 0.7307002103359262
+    },
+    {
+      "class_id": 4,
+      "name": "van",
+      "AP50": 0.6216321953880173,
+      "AP75": 0.5102396778202729,
+      "mAP50_95": 0.43145349848570885
+    }
+  ],
+  "status": "completed",
+  "metric_units": "fraction_0_to_1",
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+  "endpoint": "fixed_budget_last_ema",
+  "split": "val",
+  "arm": "weight0",
+  "source": "paired",
+  "seed": 0,
+  "dataset": "dronevehicle",
+  "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+  "normalized_method_arm": "N",
+  "evaluation_kind": "posthoc_legacy_checkpoint_diagnostics",
+  "evaluation_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s0_attempt1/evaluation_contract.json",
+  "objects": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s0_attempt1/predictions/objects.jsonl.gz",
+  "training_origin": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s0_attempt1/origin_manifest.json",
+  "official_test_accessed": false,
+  "seconds": 22.866107940673828,
+  "historical_five_metrics_exact": true
+}

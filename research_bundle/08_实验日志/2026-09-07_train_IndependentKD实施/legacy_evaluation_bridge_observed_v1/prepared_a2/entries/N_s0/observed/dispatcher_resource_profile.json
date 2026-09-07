@@ -1,0 +1,110 @@
+{
+  "schema": "rgbir-independent-resource-profile-v1",
+  "status": "COMPLETED",
+  "measurement_valid": true,
+  "stage": "evaluation",
+  "profile_key": "drone-eval640-b32-w4",
+  "profile_identity": null,
+  "execution_binding": null,
+  "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s0_attempt1/reevaluation_receipt.json",
+  "resources": {
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 4112,
+    "cuda_pid_counts": {
+      "4": 1
+    }
+  },
+  "evaluation_profile_binding": null,
+  "companion_measurement": {
+    "requested": false,
+    "sampled_workload_active_intervals": 0,
+    "all_sampled_active_intervals_had_companion": null,
+    "verified": false
+  },
+  "technical_stage_status": "completed",
+  "resource_measurement_only": false,
+  "minimum_free_mib": 8044,
+  "admission": {
+    "active": [
+      2,
+      4,
+      5
+    ],
+    "empty": [],
+    "reasons": [
+      {
+        "gpu": 0,
+        "reasons": [
+          "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+        ]
+      },
+      {
+        "gpu": 1,
+        "reasons": [
+          "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+        ]
+      },
+      {
+        "gpu": 2,
+        "reasons": [
+          "two project CUDA tasks already reserved",
+          "project reserved VRAM would reach 70%"
+        ]
+      },
+      {
+        "gpu": 3,
+        "reasons": [
+          "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+        ]
+      },
+      {
+        "gpu": 5,
+        "reasons": [
+          "two project CUDA tasks already reserved",
+          "project reserved VRAM would reach 70%"
+        ]
+      },
+      {
+        "gpu": 6,
+        "reasons": [
+          "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+        ]
+      },
+      {
+        "gpu": 7,
+        "reasons": [
+          "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+        ]
+      }
+    ],
+    "candidate_gpus": [
+      4
+    ],
+    "atomic_shared_lock": true,
+    "selected_gpus": [
+      4
+    ],
+    "active_gpus_after": [
+      2,
+      4,
+      5
+    ],
+    "fully_empty_gpus_after": [],
+    "four_gpu_exception": false,
+    "exception_basis": "AGENTS.md section 2.1; snapshot under shared guard lock",
+    "installed_guard_max_gpus": 4
+  },
+  "reservation": {
+    "bootstrap": false,
+    "measured": true,
+    "vram_mib": 1626,
+    "rss_mib": 10356,
+    "profiled_second_train": false,
+    "prerequisite": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/admission_queue_attempt5/evaluator_profile_a2_resource_profile.json"
+  },
+  "lease_id": "ikdv2_legacy_diag_N_s0_a1-60a235567a38",
+  "exit_code": 0,
+  "time": 1788768553.9352422
+}

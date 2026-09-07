@@ -1,0 +1,97 @@
+{
+  "command": {
+    "argv": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_endpoint_eval_prepare_v1/legacy_checkpoint_evaluate.py",
+      "--release",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+      "--legacy-run",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_endpoint_eval_prepare_v1/candidate_bundle_v1/configs/N_s42.yaml",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/N_s42_attempt1",
+      "--evaluation-profile",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/admission_queue_attempt5/evaluator_profile_a2_resource_profile.json",
+      "--review-receipt",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_endpoint_eval_prepare_v1/review_receipt.json",
+      "--arm",
+      "N",
+      "--seed",
+      "42"
+    ]
+  },
+  "created_at_utc": "2026-09-07T08:07:18.229269+00:00",
+  "data_role": "development_val",
+  "dataset": "dronevehicle",
+  "environment": {
+    "platform": "Linux-5.15.0-187-generic-x86_64-with-glibc2.35",
+    "python": "3.10.20",
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115"
+  },
+  "inputs": {
+    "arm": "weight0",
+    "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "endpoint": "fixed_budget_last_ema",
+    "evaluation_kind": "posthoc_legacy_checkpoint_diagnostics",
+    "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+    "new_training_receipt_created": false,
+    "original_training_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+    "source": "paired"
+  },
+  "job_id": "ikdv2_legacy_diag_N_s42_a1",
+  "method_identity": "PROTOCOL-ADAPTED",
+  "metric_snapshots": [
+    "metric_snapshot/01_evaluation_val.json",
+    "metric_snapshot/02_objects.jsonl.gz",
+    "metric_snapshot/03_historical_metric_comparison.json"
+  ],
+  "resources": {
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "ikdv2_legacy_diag_N_s42_a1-91c06a84a3a9",
+    "peak_rss_mib": 4039,
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    }
+  },
+  "run_kind": "eval",
+  "schema": "jstars-run-receipt-v1",
+  "seed": 42,
+  "source_snapshots": {
+    "config": [
+      "source_snapshot/config/01_evaluation_config.yaml",
+      "source_snapshot/config/02_rgb.data.yaml",
+      "source_snapshot/config/03_evaluation_contract.json",
+      "source_snapshot/config/04_origin_manifest.json"
+    ],
+    "loss": [],
+    "split_roster": [
+      "source_snapshot/split_roster/01_evaluation_val_roster.txt"
+    ],
+    "trainer": [
+      "source_snapshot/trainer/01_evaluate_independent.py",
+      "source_snapshot/trainer/02_val.py",
+      "source_snapshot/trainer/03_validator.py",
+      "source_snapshot/trainer/04_model.py",
+      "source_snapshot/trainer/05_utils.py",
+      "source_snapshot/trainer/06_metrics.py",
+      "source_snapshot/trainer/07_nms.py",
+      "source_snapshot/trainer/08_evaluator_profile.py",
+      "source_snapshot/trainer/09_legacy_checkpoint_evaluate.py"
+    ]
+  },
+  "terminal_status": "COMPLETED",
+  "test_exposure": {
+    "confirmatory": false,
+    "dataset": "dronevehicle",
+    "note": "Official test remains a candidate until its exposure history is audited.",
+    "role": "SEALED_CANDIDATE",
+    "test_status": "UNVERIFIED_SEALED"
+  }
+}

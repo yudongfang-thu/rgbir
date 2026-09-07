@@ -1,0 +1,38 @@
+{
+  "schema": "rgbir-object-error-review-v1",
+  "status": "ACCEPTED",
+  "reviewer": "/root (independent of /root/review_matrix_spec implementation)",
+  "reviewed_at": "2026-09-07T16:24:04.837161+08:00",
+  "blocking_issues_remaining": 0,
+  "scope": "Rect padding input adapter correction; fixed confidence/IoU/area thresholds and repair/damage denominators unchanged.",
+  "checks": [
+    "Independently inspected complete v1-to-v2 code diff",
+    "19 known-truth CPU tests rerun, including actual padded-shape binding and immutable boxes",
+    "Nominal640 comes from bound config/effective kwargs; actual canvas/original shape comes from bound objects",
+    "Actual loader order reconstructs batches; each batch shares one observed canvas",
+    "Baseline/candidate original shape, canvas and GT arrays remain exactly compared",
+    "input640 scale labels only rename old labels;32^2/96^2 areas and all matching rules unchanged",
+    "No new geometry truth, box transformation, source grouping or brightness thresholds inferred",
+    "Downstream ERROR_CONTRACT unchanged; output schema records technical v2"
+  ],
+  "actual_C1_results_analyzed": false,
+  "actual_legacy_object_analysis_completed": false,
+  "source_files": [
+    {
+      "relative": "object_error_analysis.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_rect_v2/reviewed_sources/object_error_analysis.py"
+    },
+    {
+      "relative": "test_object_error_analysis.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_rect_v2/reviewed_sources/test_object_error_analysis.py"
+    },
+    {
+      "relative": "OBJECT_ERROR_ANALYSIS_RULES.md",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_rect_v2/reviewed_sources/OBJECT_ERROR_ANALYSIS_RULES.md"
+    }
+  ],
+  "test_count": 19,
+  "tests_exit_code": 0,
+  "path_mapping_only": true,
+  "original_review_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_object_analyzer_rect_v2/original_review_receipt.json"
+}

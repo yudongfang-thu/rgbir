@@ -1,0 +1,263 @@
+{
+  "schema": "rgbir-legacy-reevaluation-origin-v1",
+  "original_run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+  "original_checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+  "checkpoint_stat_before": {
+    "size": 10772755,
+    "mtime_ns": 1788739762472425680,
+    "ctime_ns": 1788739762472425680,
+    "device": 2049,
+    "inode": 165841724
+  },
+  "original_arm": "paired",
+  "seed": 0,
+  "input_files": [
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/completion_receipt.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/completion_receipt.json"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/evaluation_val.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/evaluation_val.json"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/evaluation_val_roster.txt",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/evaluation_val_roster.txt"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/run_receipt.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/run_receipt.json"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/config/01_config_drone.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/config/01_config_drone.yaml"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/config/02_rgb.data.yaml"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/config/03_infrared.data.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/config/03_infrared.data.yaml"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/loss/01_train_object_evidence.py",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/loss/01_train_object_evidence.py"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/loss/02_loss.py",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/loss/02_loss.py"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/loss/03_object_evidence_loss.py",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/loss/03_object_evidence_loss.py"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/split_roster/01_rgb_to_infrared_train.json"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/trainer/01_train_object_evidence.py",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/trainer/01_train_object_evidence.py"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/trainer/02_paired_rgbir_data.py"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/source_snapshot/trainer/03_train.py",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/source_snapshot/trainer/03_train.py"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/run_evidence/metric_snapshot/01_completion_receipt.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/run_evidence/metric_snapshot/01_completion_receipt.json"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/eval_evidence/run_receipt.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/eval_evidence/run_receipt.json"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/eval_evidence/source_snapshot/config/01_config_drone.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/eval_evidence/source_snapshot/config/01_config_drone.yaml"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/eval_evidence/source_snapshot/config/02_rgb.data.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/eval_evidence/source_snapshot/config/02_rgb.data.yaml"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/eval_evidence/source_snapshot/split_roster/01_evaluation_val_roster.txt",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/eval_evidence/source_snapshot/split_roster/01_evaluation_val_roster.txt"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/eval_evidence/source_snapshot/trainer/01_evaluate_object_evidence.py",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/eval_evidence/source_snapshot/trainer/01_evaluate_object_evidence.py"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/eval_evidence/metric_snapshot/01_evaluation_val.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/legacy_diagnostics_v1/C0_s0_attempt1/origin_evidence/eval_evidence/metric_snapshot/01_evaluation_val.json"
+    }
+  ],
+  "original_training_config": {
+    "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+    "method_identity": "PROTOCOL-ADAPTED",
+    "description": "Original exploratory object-relative class evidence KD; not an external method reproduction",
+    "dataset": "dronevehicle",
+    "student_modality": "rgb",
+    "privileged_modality": "infrared",
+    "expected_nc": 5,
+    "evaluation_role": "val",
+    "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+    "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+    "ultralytics_version": "8.4.115",
+    "torch_version": "2.10.0+cu128",
+    "imgsz": 640,
+    "epochs": 200,
+    "batch": 32,
+    "nbs": 64,
+    "workers": 4,
+    "seed": 42,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "cos_lr": false,
+    "close_mosaic": 0,
+    "patience": 0,
+    "amp": true,
+    "deterministic": true,
+    "kd_weight": 0.1,
+    "teacher_cache_images": 64,
+    "log_every_batches": 100,
+    "evidence": {
+      "input_size": 640,
+      "levels": [
+        0,
+        1
+      ],
+      "temperature": 2.0,
+      "background_scale": 2.0,
+      "minimum_foreground": 1,
+      "minimum_background": 4,
+      "match_iou": 0.5,
+      "reference_conf": 0.05,
+      "reference_iou": 0.1,
+      "teacher_conf": 0.25,
+      "teacher_iou": 0.5,
+      "rho": 0.5,
+      "target_clip": 8.0,
+      "smooth_l1_beta": 1.0
+    },
+    "augmentation": {
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "degrees": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "translate": 0.1,
+      "scale": 0.5,
+      "fliplr": 0.5,
+      "flipud": 0.0,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "erasing": 0.0,
+      "bgr": 0.0
+    },
+    "paths": {
+      "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml",
+      "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/rgb_to_infrared_train.json"
+    }
+  },
+  "original_evaluation_config": {
+    "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+    "method_identity": "PROTOCOL-ADAPTED",
+    "description": "Original exploratory object-relative class evidence KD; not an external method reproduction",
+    "dataset": "dronevehicle",
+    "student_modality": "rgb",
+    "privileged_modality": "infrared",
+    "expected_nc": 5,
+    "evaluation_role": "val",
+    "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+    "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+    "ultralytics_version": "8.4.115",
+    "torch_version": "2.10.0+cu128",
+    "imgsz": 640,
+    "epochs": 200,
+    "batch": 32,
+    "nbs": 64,
+    "workers": 4,
+    "seed": 42,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "cos_lr": false,
+    "close_mosaic": 0,
+    "patience": 0,
+    "amp": true,
+    "deterministic": true,
+    "kd_weight": 0.1,
+    "teacher_cache_images": 64,
+    "log_every_batches": 100,
+    "evidence": {
+      "input_size": 640,
+      "levels": [
+        0,
+        1
+      ],
+      "temperature": 2.0,
+      "background_scale": 2.0,
+      "minimum_foreground": 1,
+      "minimum_background": 4,
+      "match_iou": 0.5,
+      "reference_conf": 0.05,
+      "reference_iou": 0.1,
+      "teacher_conf": 0.25,
+      "teacher_iou": 0.5,
+      "rho": 0.5,
+      "target_clip": 8.0,
+      "smooth_l1_beta": 1.0
+    },
+    "augmentation": {
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "degrees": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "translate": 0.1,
+      "scale": 0.5,
+      "fliplr": 0.5,
+      "flipud": 0.0,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "erasing": 0.0,
+      "bgr": 0.0
+    },
+    "paths": {
+      "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml",
+      "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/rgb_to_infrared_train.json"
+    }
+  },
+  "new_training_receipt_created": false,
+  "original_results_modified": false,
+  "historical_native_library_bytes": "not present in the original eval receipt; this new evaluation records current sources",
+  "original_evaluation_has_objects": false,
+  "official_test_accessed": false
+}

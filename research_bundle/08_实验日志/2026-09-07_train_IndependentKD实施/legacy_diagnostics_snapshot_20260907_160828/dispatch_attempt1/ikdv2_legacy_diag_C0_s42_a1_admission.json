@@ -1,0 +1,70 @@
+{
+  "active": [
+    2,
+    4,
+    5
+  ],
+  "empty": [],
+  "reasons": [
+    {
+      "gpu": 0,
+      "reasons": [
+        "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+      ]
+    },
+    {
+      "gpu": 1,
+      "reasons": [
+        "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+      ]
+    },
+    {
+      "gpu": 2,
+      "reasons": [
+        "two project CUDA tasks already reserved",
+        "project reserved VRAM would reach 70%"
+      ]
+    },
+    {
+      "gpu": 3,
+      "reasons": [
+        "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+      ]
+    },
+    {
+      "gpu": 5,
+      "reasons": [
+        "two project CUDA tasks already reserved",
+        "project reserved VRAM would reach 70%"
+      ]
+    },
+    {
+      "gpu": 6,
+      "reasons": [
+        "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+      ]
+    },
+    {
+      "gpu": 7,
+      "reasons": [
+        "physical-GPU limit / fourth GPU needs two fully empty GPUs"
+      ]
+    }
+  ],
+  "candidate_gpus": [
+    4
+  ],
+  "atomic_shared_lock": true,
+  "selected_gpus": [
+    4
+  ],
+  "active_gpus_after": [
+    2,
+    4,
+    5
+  ],
+  "fully_empty_gpus_after": [],
+  "four_gpu_exception": false,
+  "exception_basis": "AGENTS.md section 2.1; snapshot under shared guard lock",
+  "installed_guard_max_gpus": 4
+}
