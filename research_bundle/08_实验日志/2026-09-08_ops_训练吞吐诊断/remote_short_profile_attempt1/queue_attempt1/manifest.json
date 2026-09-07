@@ -1,0 +1,61 @@
+{
+  "jobs": [
+    {
+      "id": "short_profile_N",
+      "kind": "train",
+      "formal": false,
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/short_screen_draft/short_profile.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/short_screen_draft/configs/drone_N_s42_E20_DRAFT.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/profile_N"
+      ]
+    },
+    {
+      "id": "short_profile_C0",
+      "kind": "train",
+      "formal": false,
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/short_screen_draft/short_profile.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/short_screen_draft/configs/drone_C0_s42_E20_DRAFT.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/profile_C0"
+      ]
+    },
+    {
+      "id": "short_profile_C1",
+      "kind": "train",
+      "formal": false,
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/short_screen_draft/short_profile.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/short_screen_draft/configs/drone_C1_s42_E20_DRAFT.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/profile_C1",
+        "--candidate-source",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/performance_candidate/selected_only_v1.py"
+      ]
+    }
+  ],
+  "scope": "Sequential N/C0/C1 actual-statistics-cadence throughput only, each 24 updates",
+  "initial_bounded_ceiling_not_formal_measured_reservation": true,
+  "dev_or_ap_computed": false,
+  "existing_training_modified": false
+}

@@ -1,0 +1,77 @@
+{
+  "jobs": [
+    {
+      "id": "c1_real_flow_capture",
+      "kind": "eval",
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/real_probe_attempt1/performance_candidate/capture_real_batch.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+        "--student-checkpoint",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "--coverage-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/coverage_drone_attempt1",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/real_probe_attempt1/capture_attempt1",
+        "--batches",
+        "2"
+      ]
+    },
+    {
+      "id": "c1_real_bundle_0",
+      "kind": "eval",
+      "vram_mib": 4096,
+      "rss_mib": 8192,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/real_probe_attempt1/performance_candidate/benchmark_candidate.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--mode",
+        "bundle",
+        "--device",
+        "cuda",
+        "--bundle",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/real_probe_attempt1/capture_attempt1/raw_batch_00.pt",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/real_probe_attempt1/replay_00_attempt1",
+        "--warmup",
+        "2",
+        "--iterations",
+        "7"
+      ]
+    },
+    {
+      "id": "c1_real_bundle_1",
+      "kind": "eval",
+      "vram_mib": 4096,
+      "rss_mib": 8192,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/real_probe_attempt1/performance_candidate/benchmark_candidate.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--mode",
+        "bundle",
+        "--device",
+        "cuda",
+        "--bundle",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/real_probe_attempt1/capture_attempt1/raw_batch_01.pt",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/real_probe_attempt1/replay_01_attempt1",
+        "--warmup",
+        "2",
+        "--iterations",
+        "7"
+      ]
+    }
+  ],
+  "reservation_semantics": "Initial bounded diagnostic ceilings, not asserted measured peaks",
+  "optimizer_updates": 0,
+  "formal_training_admitted": false
+}

@@ -1,3 +1,5 @@
+> **2026-09-08 性能修复与 E8 快速反馈**：原 block16 的真实训练轨迹失败保留；selected-only 在各 24 次成功更新上实现学习损失、梯度、模型/optimizer/EMA 状态逐位一致。正常日志频率仍需约 2.48 秒/C1批，已按先验预算启动共同 E8 的 N/C0/C1 单 seed 队列，尚无新 AP。请读[性能与失败证据](research_bundle/08_实验日志/2026-09-08_ops_训练吞吐诊断/README.md)、[E8 设置与启动](research_bundle/08_实验日志/2026-09-08_train_分类快速反馈E8/README.md)、[既有数据分析综合报告](research_bundle/07_研究分析/RGBIR数据分析综合报告_20260908.md)。旧 E200 继续，本次不声称 E200 等价或方法增益。
+
 > **2026-09-07 双数据集证据推进**：LLVIP完整2406dev旧RGB/IR baseline mAP32.8784/48.8529，定位优先；Drone全1469dev六端点表明少数类混淆贡献macro分类oracle的94.26%，不能将对象计数概括为全AP瓶颈。请先读[新阶段判断](research_bundle/08_实验日志/2026-09-07_probe_双数据集证据优先推进/STAGE_REPORT.md)与[原始证据/独立审阅入口](research_bundle/08_实验日志/2026-09-07_probe_双数据集证据优先推进/README.md)。已有C1继续，新定位方法尚未准入。
 
 > **2026-09-07 baseline数据重诊断已完成**：两数据集各1024 train＋200 dev，当前Drone N42/IR42/N0与LLVIP baseline。Drone机会以低置信为主、LLVIP定位证据更强；局部IR特征未稳定超过独立RGB，固定ridge欠拟合已单列。请先读[阶段判断](research_bundle/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/STAGE_REPORT.md)及[完整原始复核入口](research_bundle/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/README.md)。这是推理/读出诊断，没有新增KD AP或定位准入。

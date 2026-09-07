@@ -1,0 +1,756 @@
+{
+  "status": "PASS_NUMERIC_EQUIVALENCE_ONLY",
+  "block_size": 16,
+  "atol": 1e-06,
+  "rtol": 1e-05,
+  "mode": "cpu-check",
+  "device": "cpu",
+  "torch": "1.8.0+cu111",
+  "reference_dir": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2",
+  "no_source_mutation": true,
+  "new_hash_computed": false,
+  "optimizer_updates": 0,
+  "scope": "Kernel/raw-score diagnostic; not 24-update or long-training admission",
+  "checks": [
+    {
+      "kind": "pool",
+      "shape": [
+        0,
+        1,
+        31
+      ],
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 31
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "pool",
+      "shape": [
+        1,
+        1,
+        31
+      ],
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 31
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "pool",
+      "shape": [
+        2,
+        5,
+        31
+      ],
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 10
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 155
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 10
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 10
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "pool",
+      "shape": [
+        15,
+        5,
+        97
+      ],
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 75
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 2.384185791015625e-07,
+          "elements": 485
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 75
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 75
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "pool",
+      "shape": [
+        16,
+        1,
+        97
+      ],
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 16
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 5.960464477539063e-08,
+          "elements": 97
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 16
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 16
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "pool",
+      "shape": [
+        17,
+        5,
+        97
+      ],
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 85
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 2.384185791015625e-07,
+          "elements": 485
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 85
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 85
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "pool",
+      "shape": [
+        33,
+        8,
+        97
+      ],
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 264
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 4.76837158203125e-07,
+          "elements": 776
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 264
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 264
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "pool",
+      "shape": [
+        64,
+        5,
+        257
+      ],
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 320
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 9.5367431640625e-07,
+          "elements": 1285
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 320
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 320
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "full_selection",
+      "case": "empty",
+      "pass_numeric": true,
+      "differences": {
+        "student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        }
+      },
+      "exact_identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "selected_count": true
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "full_selection",
+      "case": "single_class",
+      "pass_numeric": true,
+      "differences": {
+        "student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        },
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        }
+      },
+      "exact_identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "selected_count": true
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "full_selection",
+      "case": "mixed_invalid",
+      "pass_numeric": true,
+      "differences": {
+        "student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 20
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 20
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 20
+        },
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        }
+      },
+      "exact_identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "selected_count": true
+      },
+      "rng_unchanged": true
+    },
+    {
+      "kind": "full_selection",
+      "case": "multi_image_empty_middle",
+      "pass_numeric": true,
+      "differences": {
+        "student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 30
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 30
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 30
+        },
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 3
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1260
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        }
+      },
+      "exact_identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "selected_count": true
+      },
+      "rng_unchanged": true
+    }
+  ]
+}

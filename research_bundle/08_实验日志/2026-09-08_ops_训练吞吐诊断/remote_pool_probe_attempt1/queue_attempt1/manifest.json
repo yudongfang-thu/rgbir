@@ -1,0 +1,29 @@
+{
+  "jobs": [
+    {
+      "id": "c1_pool_block16_measurement",
+      "kind": "eval",
+      "vram_mib": 4096,
+      "rss_mib": 8192,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/pool_probe_attempt1/performance_candidate/benchmark_candidate.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--mode",
+        "synthetic",
+        "--device",
+        "cuda",
+        "--warmup",
+        "2",
+        "--iterations",
+        "7",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/pool_probe_attempt1/synthetic_attempt1"
+      ]
+    }
+  ],
+  "reservation_semantics": "Initial bounded canary ceiling, not an asserted measured peak",
+  "optimizer_updates": 0,
+  "formal_training_admitted": false
+}

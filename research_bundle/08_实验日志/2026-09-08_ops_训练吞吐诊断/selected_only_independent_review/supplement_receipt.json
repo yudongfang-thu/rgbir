@@ -1,0 +1,1103 @@
+{
+  "status": "FAIL",
+  "torch": "1.8.0+cu111",
+  "cuda_initialized": false,
+  "new_hash_computed": false,
+  "source_bytes_unchanged": true,
+  "original_selector_binding_unchanged": true,
+  "checks": [
+    {
+      "case": "empty",
+      "eta": 0.0,
+      "full": false,
+      "pass_numeric": true,
+      "full_stats_exact": null,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        }
+      }
+    },
+    {
+      "case": "empty",
+      "eta": 0.0,
+      "full": true,
+      "pass_numeric": true,
+      "full_stats_exact": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        }
+      }
+    },
+    {
+      "case": "empty",
+      "eta": 0.25,
+      "full": false,
+      "pass_numeric": true,
+      "full_stats_exact": null,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        }
+      }
+    },
+    {
+      "case": "empty",
+      "eta": 0.25,
+      "full": true,
+      "pass_numeric": true,
+      "full_stats_exact": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        }
+      }
+    },
+    {
+      "case": "one_class",
+      "eta": 0.0,
+      "full": false,
+      "pass_numeric": true,
+      "full_stats_exact": null,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        }
+      }
+    },
+    {
+      "case": "one_class",
+      "eta": 0.0,
+      "full": true,
+      "pass_numeric": true,
+      "full_stats_exact": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        }
+      }
+    },
+    {
+      "case": "one_class",
+      "eta": 0.25,
+      "full": false,
+      "pass_numeric": true,
+      "full_stats_exact": null,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        }
+      }
+    },
+    {
+      "case": "one_class",
+      "eta": 0.25,
+      "full": true,
+      "pass_numeric": true,
+      "full_stats_exact": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        }
+      }
+    },
+    {
+      "case": "many_objects",
+      "eta": 0.0,
+      "full": false,
+      "pass_numeric": true,
+      "full_stats_exact": null,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "many_objects",
+      "eta": 0.0,
+      "full": true,
+      "pass_numeric": true,
+      "full_stats_exact": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "many_objects",
+      "eta": 0.25,
+      "full": false,
+      "pass_numeric": true,
+      "full_stats_exact": null,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "many_objects",
+      "eta": 0.25,
+      "full": true,
+      "pass_numeric": true,
+      "full_stats_exact": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "unmatched_rgb_gt_in_background_exclusion",
+      "eta": 0.0,
+      "full": false,
+      "pass_numeric": true,
+      "full_stats_exact": null,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "unmatched_rgb_gt_in_background_exclusion",
+      "eta": 0.0,
+      "full": true,
+      "pass_numeric": true,
+      "full_stats_exact": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "unmatched_rgb_gt_in_background_exclusion",
+      "eta": 0.25,
+      "full": false,
+      "pass_numeric": true,
+      "full_stats_exact": null,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "unmatched_rgb_gt_in_background_exclusion",
+      "eta": 0.25,
+      "full": true,
+      "pass_numeric": true,
+      "full_stats_exact": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "nonempty_base_zero_selected",
+      "full": false,
+      "base": 8,
+      "selected": 0,
+      "pass_numeric": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "nonempty_base_zero_selected",
+      "full": true,
+      "base": 8,
+      "selected": 0,
+      "pass_numeric": true,
+      "differences": {
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss_unit": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "off_target_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "target_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "off_unit_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        }
+      }
+    },
+    {
+      "case": "nonfinite_torch.float16_nan",
+      "errors": [
+        {
+          "type": "FloatingPointError",
+          "text": "non-finite raw scores or DFL logits"
+        },
+        {
+          "type": "FloatingPointError",
+          "text": "non-finite raw scores or DFL logits"
+        }
+      ],
+      "pass_numeric": true
+    },
+    {
+      "case": "nonfinite_torch.float16_inf",
+      "errors": [
+        {
+          "type": "FloatingPointError",
+          "text": "non-finite raw scores or DFL logits"
+        },
+        {
+          "type": "FloatingPointError",
+          "text": "non-finite raw scores or DFL logits"
+        }
+      ],
+      "pass_numeric": true
+    },
+    {
+      "case": "nonfinite_torch.float32_nan",
+      "errors": [
+        {
+          "type": "FloatingPointError",
+          "text": "non-finite raw scores or DFL logits"
+        },
+        {
+          "type": "FloatingPointError",
+          "text": "non-finite raw scores or DFL logits"
+        }
+      ],
+      "pass_numeric": true
+    },
+    {
+      "case": "nonfinite_torch.float32_inf",
+      "errors": [
+        {
+          "type": "FloatingPointError",
+          "text": "non-finite raw scores or DFL logits"
+        },
+        {
+          "type": "FloatingPointError",
+          "text": "non-finite raw scores or DFL logits"
+        }
+      ],
+      "pass_numeric": true
+    },
+    {
+      "case": "finite_fp32_pool_overflow_fallback",
+      "errors": [
+        null,
+        {
+          "type": "KeyError",
+          "text": "'missing_diagnostics'"
+        }
+      ],
+      "pass_numeric": false
+    }
+  ]
+}

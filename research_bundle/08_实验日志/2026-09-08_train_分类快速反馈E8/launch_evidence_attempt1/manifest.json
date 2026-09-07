@@ -1,0 +1,217 @@
+{
+  "scope": "SHORT_SCREEN_SINGLE_SEED_E8",
+  "jobs": [
+    {
+      "id": "short_N_s42_E8_train",
+      "arm": "N",
+      "stage": "train",
+      "kind": "train",
+      "formal": false,
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/train_short_screen.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml",
+        "--admission",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/N.json",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N"
+      ],
+      "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/short_training_receipt.json"
+    },
+    {
+      "id": "short_N_s42_E8_eval",
+      "arm": "N",
+      "stage": "eval",
+      "kind": "eval",
+      "vram_mib": 2048,
+      "rss_mib": 8192,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/evaluate_short_screen.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--run",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N",
+        "--admission",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/N.json",
+        "--native-profile-binding",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/evaluations/N"
+      ],
+      "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/evaluations/N/short_evaluation_receipt.json"
+    },
+    {
+      "id": "short_C0_s42_E8_train",
+      "arm": "C0",
+      "stage": "train",
+      "kind": "train",
+      "formal": false,
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/train_short_screen.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_C0_s42_E8.yaml",
+        "--admission",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/C0.json",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C0"
+      ],
+      "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C0/short_training_receipt.json"
+    },
+    {
+      "id": "short_C0_s42_E8_eval",
+      "arm": "C0",
+      "stage": "eval",
+      "kind": "eval",
+      "vram_mib": 2048,
+      "rss_mib": 8192,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/evaluate_short_screen.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--run",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C0",
+        "--admission",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/C0.json",
+        "--native-profile-binding",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/evaluations/C0"
+      ],
+      "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/evaluations/C0/short_evaluation_receipt.json"
+    },
+    {
+      "id": "short_C1_s42_E8_train",
+      "arm": "C1",
+      "stage": "train",
+      "kind": "train",
+      "formal": false,
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/train_short_screen.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_C1_s42_E8.yaml",
+        "--admission",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/C1.json",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C1"
+      ],
+      "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C1/short_training_receipt.json"
+    },
+    {
+      "id": "short_C1_s42_E8_eval",
+      "arm": "C1",
+      "stage": "eval",
+      "kind": "eval",
+      "vram_mib": 2048,
+      "rss_mib": 8192,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/evaluate_short_screen.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--run",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C1",
+        "--admission",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/C1.json",
+        "--native-profile-binding",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/evaluations/C1"
+      ],
+      "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/evaluations/C1/short_evaluation_receipt.json"
+    }
+  ],
+  "configs": [
+    {
+      "arm": "N",
+      "config": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml",
+        "bytes": 4543,
+        "mtime_ns": 1788809431111433571
+      },
+      "admission": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/N.json",
+        "bytes": 1343,
+        "mtime_ns": 1788809458075927823
+      }
+    },
+    {
+      "arm": "C0",
+      "config": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_C0_s42_E8.yaml",
+        "bytes": 4546,
+        "mtime_ns": 1788809431111433571
+      },
+      "admission": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/C0.json",
+        "bytes": 1347,
+        "mtime_ns": 1788809458075927823
+      }
+    },
+    {
+      "arm": "C1",
+      "config": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_C1_s42_E8.yaml",
+        "bytes": 4579,
+        "mtime_ns": 1788809431111433571
+      },
+      "admission": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/C1.json",
+        "bytes": 1706,
+        "mtime_ns": 1788809458079927896
+      }
+    }
+  ],
+  "evaluation_resource_basis": {
+    "source": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evidence_metrics.json",
+      "bytes": 176912,
+      "mtime_ns": 1788764406106073819
+    },
+    "measured_nvml_peak_mib": 1370,
+    "measured_rss_peak_mib": 6260,
+    "reserved_vram_mib": 2048,
+    "reserved_rss_mib": 8192
+  },
+  "training_reservation_basis": "Root-reviewed actual-cadence profiles and reusable historical measured peaks",
+  "independent_lr_horizon": 8,
+  "seed": 42,
+  "sequence": [
+    "N train",
+    "N eval",
+    "C0 train",
+    "C0 eval",
+    "C1 train",
+    "C1 eval"
+  ],
+  "native_profile_binding": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+    "bytes": 180666,
+    "mtime_ns": 1788764406254075490
+  },
+  "dispatcher": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py",
+    "bytes": 7920,
+    "mtime_ns": 1788722284046588537
+  },
+  "new_hash_computed": false,
+  "new_scheduler_created": false,
+  "ap_adaptive": false,
+  "formal_e200_authorized": false
+}

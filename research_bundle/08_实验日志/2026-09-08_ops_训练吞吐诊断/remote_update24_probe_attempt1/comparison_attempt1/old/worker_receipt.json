@@ -1,0 +1,478 @@
+{
+  "status": "COMPLETED_24_UPDATE_DIAGNOSTIC",
+  "worker": "old",
+  "pid": 2995276,
+  "parent_pid": 2995236,
+  "configuration": {
+    "method_id": "RGBIR-INDEPENDENT-KD-v2-C1",
+    "method_identity": "PROTOCOL-ADAPTED",
+    "description": "Independent task-specific KD; empirical selection, no joint branch",
+    "dataset": "dronevehicle",
+    "student_modality": "rgb",
+    "privileged_modality": "infrared",
+    "expected_nc": 5,
+    "evaluation_role": "val",
+    "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+    "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+    "ultralytics_version": "8.4.115",
+    "torch_version": "2.10.0+cu128",
+    "imgsz": 640,
+    "epochs": 200,
+    "batch": 32,
+    "nbs": 64,
+    "workers": 4,
+    "seed": 42,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "cos_lr": false,
+    "close_mosaic": 0,
+    "patience": 0,
+    "amp": true,
+    "deterministic": true,
+    "kd_weight": 0.1,
+    "teacher_cache_images": 64,
+    "log_every_batches": 100,
+    "evidence": {
+      "input_size": 640,
+      "levels": [
+        0,
+        1
+      ],
+      "temperature": 2.0,
+      "background_scale": 2.0,
+      "minimum_foreground": 1,
+      "minimum_background": 4,
+      "match_iou": 0.5,
+      "reference_conf": 0.05,
+      "reference_iou": 0.1,
+      "teacher_conf": 0.25,
+      "teacher_iou": 0.5,
+      "rho": 0.5,
+      "target_clip": 8.0,
+      "smooth_l1_beta": 1.0
+    },
+    "augmentation": {
+      "mosaic": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "copy_paste": 0.0,
+      "degrees": 0.0,
+      "shear": 0.0,
+      "perspective": 0.0,
+      "translate": 0.1,
+      "scale": 0.5,
+      "fliplr": 0.5,
+      "flipud": 0.0,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "erasing": 0.0,
+      "bgr": 0.0
+    },
+    "paths": {
+      "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml",
+      "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/rgb_to_infrared_train.json"
+    },
+    "protocol_status": "FROZEN",
+    "geometry_contract": null,
+    "calibration_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/c1_calibration64_attempt1/calibration_receipt.json",
+    "d2_receipt": null,
+    "canary_acceptance": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/C1_canary_attempt1/completion_receipt.json",
+    "localization_coefficient": 0.0,
+    "localization": {
+      "input_size": 640,
+      "levels": [
+        0,
+        1
+      ],
+      "temperature": 2.0,
+      "match_iou": 0.5,
+      "pair_iou": 0.8,
+      "reference_conf": 0.05,
+      "reference_iou": 0.1,
+      "reliable_conf": 0.25,
+      "reference_iou_max": 0.7,
+      "teacher_rgb_iou_min": 0.6,
+      "teacher_ir_iou_min": 0.5,
+      "localization_margin": 0.05,
+      "support_epsilon": 0.01,
+      "native_candidate_epsilon": 1e-09
+    },
+    "expected_train_images": 17990,
+    "expected_val_images": 1469,
+    "formal_training_authorized": true,
+    "source_geometry_scope": "not_yet_verified",
+    "arm": "C1",
+    "source": "paired",
+    "classification_coefficient": 0.09227393550836771,
+    "readiness_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/readiness.json",
+    "classification": {
+      "temperature": 2.0,
+      "teacher_raw_delta_clip": 16.0,
+      "off_target_weight": 0.25,
+      "levels": [
+        0,
+        1
+      ],
+      "loss": "bernoulli_relative_kl",
+      "normalization": "pre_teacher_base_objects"
+    },
+    "calibration": {
+      "seed": 20260907,
+      "batches": 64,
+      "min_nonzero_batches": 16,
+      "train_mode": true,
+      "reset_parameters_and_buffers_each_batch": true
+    },
+    "evaluation_contract": {
+      "endpoint": "fixed_budget_last_ema",
+      "split": "val",
+      "expected_val_images": 1469
+    }
+  },
+  "result": {
+    "updates": 24,
+    "attempts": 30,
+    "amp_skips": 6,
+    "ema_updates": 30,
+    "batches": 30,
+    "optimizer_calls": 24,
+    "selected_calls": 30,
+    "selected_objects": 3767,
+    "frozen_auxiliaries_unchanged": true
+  },
+  "source_manifest": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/update24_probe_attempt1/comparison_attempt1/old/source_manifest.json",
+  "new_hash_computed": false,
+  "long_training_switch_admitted": false,
+  "official_test_accessed": false,
+  "fresh_interpreter": true,
+  "timing": {
+    "training_span_seconds": 110.7342921209056,
+    "training_audit_copy_save_check_seconds": 10.822610740317032,
+    "training_span_minus_audit_seconds": 99.91168138058856,
+    "all_audit_including_final_check_seconds": 11.148098406149074,
+    "timing_scope": "Synchronized observed batch spans exclude loader fetch. Audit overhead removed; instrumentation still changes overlap. Not production throughput.",
+    "warmup_batches": 6,
+    "post_warmup_batches": 24,
+    "post_warmup_batch_seconds": [
+      2.53897240688093,
+      2.526595417642966,
+      2.0932310165371746,
+      2.2897167063783854,
+      2.837781155947596,
+      2.7837906586937606,
+      2.3016128637827933,
+      1.8696096525527537,
+      2.396041695261374,
+      2.726885551586747,
+      2.4613180267624557,
+      2.3546899929642677,
+      2.4976171306334436,
+      2.31100752344355,
+      2.405052980175242,
+      2.4629608031827956,
+      2.541982422582805,
+      2.6555443764664233,
+      2.360872032819316,
+      2.5750239086337388,
+      2.4421082318294793,
+      2.1995725352317095,
+      2.307145186699927,
+      2.8739731330424547
+    ],
+    "batches": [
+      {
+        "batch": 1,
+        "wall_seconds": 13.0801508189179,
+        "audit_seconds": 0.3169537768699229,
+        "wall_minus_audit_seconds": 12.763197042047977,
+        "warmup": true,
+        "successful_updates": 0,
+        "amp_skips": 1
+      },
+      {
+        "batch": 2,
+        "wall_seconds": 2.9982666310388595,
+        "audit_seconds": 0.25853741890750825,
+        "wall_minus_audit_seconds": 2.7397292121313512,
+        "warmup": true,
+        "successful_updates": 0,
+        "amp_skips": 2
+      },
+      {
+        "batch": 3,
+        "wall_seconds": 2.672088382067159,
+        "audit_seconds": 0.2467536150943488,
+        "wall_minus_audit_seconds": 2.42533476697281,
+        "warmup": true,
+        "successful_updates": 0,
+        "amp_skips": 3
+      },
+      {
+        "batch": 4,
+        "wall_seconds": 2.9820155899506062,
+        "audit_seconds": 0.24352701427415013,
+        "wall_minus_audit_seconds": 2.738488575676456,
+        "warmup": true,
+        "successful_updates": 0,
+        "amp_skips": 4
+      },
+      {
+        "batch": 5,
+        "wall_seconds": 2.8611010629683733,
+        "audit_seconds": 0.24200087087228894,
+        "wall_minus_audit_seconds": 2.6191001920960844,
+        "warmup": true,
+        "successful_updates": 0,
+        "amp_skips": 5
+      },
+      {
+        "batch": 6,
+        "wall_seconds": 2.777757133822888,
+        "audit_seconds": 0.23781411140225828,
+        "wall_minus_audit_seconds": 2.53994302242063,
+        "warmup": true,
+        "successful_updates": 0,
+        "amp_skips": 6
+      },
+      {
+        "batch": 7,
+        "wall_seconds": 2.831298000877723,
+        "audit_seconds": 0.29232559399679303,
+        "wall_minus_audit_seconds": 2.53897240688093,
+        "warmup": false,
+        "successful_updates": 1,
+        "amp_skips": 6
+      },
+      {
+        "batch": 8,
+        "wall_seconds": 2.8450861969031394,
+        "audit_seconds": 0.31849077926017344,
+        "wall_minus_audit_seconds": 2.526595417642966,
+        "warmup": false,
+        "successful_updates": 2,
+        "amp_skips": 6
+      },
+      {
+        "batch": 9,
+        "wall_seconds": 2.4339022689964622,
+        "audit_seconds": 0.34067125245928764,
+        "wall_minus_audit_seconds": 2.0932310165371746,
+        "warmup": false,
+        "successful_updates": 3,
+        "amp_skips": 6
+      },
+      {
+        "batch": 10,
+        "wall_seconds": 2.583225943148136,
+        "audit_seconds": 0.2935092367697507,
+        "wall_minus_audit_seconds": 2.2897167063783854,
+        "warmup": false,
+        "successful_updates": 4,
+        "amp_skips": 6
+      },
+      {
+        "batch": 11,
+        "wall_seconds": 3.1586321210488677,
+        "audit_seconds": 0.32085096510127187,
+        "wall_minus_audit_seconds": 2.837781155947596,
+        "warmup": false,
+        "successful_updates": 5,
+        "amp_skips": 6
+      },
+      {
+        "batch": 12,
+        "wall_seconds": 3.089160813950002,
+        "audit_seconds": 0.30537015525624156,
+        "wall_minus_audit_seconds": 2.7837906586937606,
+        "warmup": false,
+        "successful_updates": 6,
+        "amp_skips": 6
+      },
+      {
+        "batch": 13,
+        "wall_seconds": 2.5889761459548026,
+        "audit_seconds": 0.28736328217200935,
+        "wall_minus_audit_seconds": 2.3016128637827933,
+        "warmup": false,
+        "successful_updates": 7,
+        "amp_skips": 6
+      },
+      {
+        "batch": 14,
+        "wall_seconds": 2.1574698761105537,
+        "audit_seconds": 0.28786022355780005,
+        "wall_minus_audit_seconds": 1.8696096525527537,
+        "warmup": false,
+        "successful_updates": 8,
+        "amp_skips": 6
+      },
+      {
+        "batch": 15,
+        "wall_seconds": 2.6920463889837265,
+        "audit_seconds": 0.2960046937223524,
+        "wall_minus_audit_seconds": 2.396041695261374,
+        "warmup": false,
+        "successful_updates": 9,
+        "amp_skips": 6
+      },
+      {
+        "batch": 16,
+        "wall_seconds": 3.0282497298903763,
+        "audit_seconds": 0.30136417830362916,
+        "wall_minus_audit_seconds": 2.726885551586747,
+        "warmup": false,
+        "successful_updates": 10,
+        "amp_skips": 6
+      },
+      {
+        "batch": 17,
+        "wall_seconds": 2.9531266749836504,
+        "audit_seconds": 0.49180864822119474,
+        "wall_minus_audit_seconds": 2.4613180267624557,
+        "warmup": false,
+        "successful_updates": 11,
+        "amp_skips": 6
+      },
+      {
+        "batch": 18,
+        "wall_seconds": 2.6495747789740562,
+        "audit_seconds": 0.2948847860097885,
+        "wall_minus_audit_seconds": 2.3546899929642677,
+        "warmup": false,
+        "successful_updates": 12,
+        "amp_skips": 6
+      },
+      {
+        "batch": 19,
+        "wall_seconds": 2.805049167945981,
+        "audit_seconds": 0.30743203731253743,
+        "wall_minus_audit_seconds": 2.4976171306334436,
+        "warmup": false,
+        "successful_updates": 13,
+        "amp_skips": 6
+      },
+      {
+        "batch": 20,
+        "wall_seconds": 2.6142478021793067,
+        "audit_seconds": 0.3032402787357569,
+        "wall_minus_audit_seconds": 2.31100752344355,
+        "warmup": false,
+        "successful_updates": 14,
+        "amp_skips": 6
+      },
+      {
+        "batch": 21,
+        "wall_seconds": 2.7073658951558173,
+        "audit_seconds": 0.30231291498057544,
+        "wall_minus_audit_seconds": 2.405052980175242,
+        "warmup": false,
+        "successful_updates": 15,
+        "amp_skips": 6
+      },
+      {
+        "batch": 22,
+        "wall_seconds": 2.8763044639490545,
+        "audit_seconds": 0.41334366076625884,
+        "wall_minus_audit_seconds": 2.4629608031827956,
+        "warmup": false,
+        "successful_updates": 16,
+        "amp_skips": 6
+      },
+      {
+        "batch": 23,
+        "wall_seconds": 2.86554630799219,
+        "audit_seconds": 0.32356388540938497,
+        "wall_minus_audit_seconds": 2.541982422582805,
+        "warmup": false,
+        "successful_updates": 17,
+        "amp_skips": 6
+      },
+      {
+        "batch": 24,
+        "wall_seconds": 3.1563322730362415,
+        "audit_seconds": 0.5007878965698183,
+        "wall_minus_audit_seconds": 2.6555443764664233,
+        "warmup": false,
+        "successful_updates": 18,
+        "amp_skips": 6
+      },
+      {
+        "batch": 25,
+        "wall_seconds": 2.66542359883897,
+        "audit_seconds": 0.3045515660196543,
+        "wall_minus_audit_seconds": 2.360872032819316,
+        "warmup": false,
+        "successful_updates": 19,
+        "amp_skips": 6
+      },
+      {
+        "batch": 26,
+        "wall_seconds": 2.8755853169132024,
+        "audit_seconds": 0.30056140827946365,
+        "wall_minus_audit_seconds": 2.5750239086337388,
+        "warmup": false,
+        "successful_updates": 20,
+        "amp_skips": 6
+      },
+      {
+        "batch": 27,
+        "wall_seconds": 2.7621906138956547,
+        "audit_seconds": 0.32008238206617534,
+        "wall_minus_audit_seconds": 2.4421082318294793,
+        "warmup": false,
+        "successful_updates": 21,
+        "amp_skips": 6
+      },
+      {
+        "batch": 28,
+        "wall_seconds": 2.517295349854976,
+        "audit_seconds": 0.31772281462326646,
+        "wall_minus_audit_seconds": 2.1995725352317095,
+        "warmup": false,
+        "successful_updates": 22,
+        "amp_skips": 6
+      },
+      {
+        "batch": 29,
+        "wall_seconds": 2.6144988290034235,
+        "audit_seconds": 0.3073536423034966,
+        "wall_minus_audit_seconds": 2.307145186699927,
+        "warmup": false,
+        "successful_updates": 23,
+        "amp_skips": 6
+      },
+      {
+        "batch": 30,
+        "wall_seconds": 3.190893613966182,
+        "audit_seconds": 0.31692048092372715,
+        "wall_minus_audit_seconds": 2.8739731330424547,
+        "warmup": false,
+        "successful_updates": 24,
+        "amp_skips": 6
+      }
+    ]
+  },
+  "gpu_allocated_peak_mib": 5087.68603515625,
+  "gpu_reserved_peak_mib": 5976.0,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 6510
+    },
+    "peak_rss_mib": 29401
+  }
+}

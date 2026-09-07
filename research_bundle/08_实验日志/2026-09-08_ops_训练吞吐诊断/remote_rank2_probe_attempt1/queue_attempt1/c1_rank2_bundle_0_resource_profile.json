@@ -1,0 +1,92 @@
+{
+  "status": "FAILED",
+  "exit_code": 2,
+  "time": 1788805510.4180856,
+  "monitor_errors": [],
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 8192,
+    "expected_vram_mib": 4096,
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "c1_rank2_bundle_0-6704f4ddeedc",
+    "pid": 2919895,
+    "status": "LAUNCHED"
+  },
+  "samples": [
+    {
+      "time": 1788805457.0668542,
+      "gpu": 4,
+      "memory_free_mib": 13797,
+      "memory_used_mib": 10286,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144553
+    },
+    {
+      "time": 1788805464.225309,
+      "gpu": 4,
+      "memory_free_mib": 13800,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145264
+    },
+    {
+      "time": 1788805470.296475,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145271
+    },
+    {
+      "time": 1788805477.4985445,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145272
+    },
+    {
+      "time": 1788805484.349665,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145272
+    },
+    {
+      "time": 1788805491.4247754,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145429
+    },
+    {
+      "time": 1788805498.455193,
+      "gpu": 4,
+      "memory_free_mib": 13797,
+      "memory_used_mib": 10287,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 143963
+    },
+    {
+      "time": 1788805504.4836085,
+      "gpu": 4,
+      "memory_free_mib": 13800,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144050
+    },
+    {
+      "time": 1788805510.418029,
+      "gpu": 4,
+      "memory_free_mib": 13800,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 143927
+    }
+  ],
+  "minimum_free_mib": 12472
+}

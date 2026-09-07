@@ -1,0 +1,16 @@
+{
+  "status": "PASS_FOR_SHORT_SCREEN",
+  "arm": "C1",
+  "new_successful_updates": 24,
+  "candidate_source_reviewed": true,
+  "new_update_evidence": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/profile_C1/short_profile_receipt.json",
+  "update_probe_interpretation": "Actual-cadence 24-update execution, not a new trajectory equivalence test",
+  "correctness_evidence": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/selected_update24_probe_attempt1/comparison_attempt1/receipt.json",
+  "correctness_interpretation": "C1 selected-only exact24; N/C0 reuse accepted exact24 with unchanged source and first-epoch schedule",
+  "E8_changes": [
+    "common epochs=8 and LR horizon=8",
+    "separate SHORT_SCREEN endpoint and identity"
+  ],
+  "new_hash_computed": false,
+  "formal_gain_claim": false
+}

@@ -1,0 +1,217 @@
+{
+  "status": "COMPLETED_JSON_READOUT_NOT_PRODUCTION_ADMISSION",
+  "trajectory_bitwise_exact": false,
+  "trajectory_numeric_agreement": false,
+  "initial_flow_selection_control_exact": true,
+  "intermediate_selection_numeric_agreement": false,
+  "categories": {
+    "gradients_scaled": {
+      "records": 30,
+      "bitwise_exact": false,
+      "numeric_agreement": false,
+      "all_finite": false,
+      "max_abs": 12032.0,
+      "finite_outside_tolerance": 63357068,
+      "nonfinite_elements": 2559056
+    },
+    "losses": {
+      "records": 30,
+      "bitwise_exact": false,
+      "numeric_agreement": false,
+      "all_finite": true,
+      "max_abs": 0.41510009765625,
+      "finite_outside_tolerance": 91,
+      "nonfinite_elements": 0
+    },
+    "control": {
+      "records": 60,
+      "bitwise_exact": true,
+      "numeric_agreement": true,
+      "all_finite": true,
+      "max_abs": 0.0,
+      "finite_outside_tolerance": 0,
+      "nonfinite_elements": 0
+    },
+    "student": {
+      "records": 30,
+      "bitwise_exact": false,
+      "numeric_agreement": false,
+      "all_finite": true,
+      "max_abs": 0.007709622383117676,
+      "finite_outside_tolerance": 11740102,
+      "nonfinite_elements": 0
+    },
+    "optimizer": {
+      "records": 30,
+      "bitwise_exact": false,
+      "numeric_agreement": false,
+      "all_finite": true,
+      "max_abs": 0.2775257080793381,
+      "finite_outside_tolerance": 59868581,
+      "nonfinite_elements": 0
+    },
+    "ema": {
+      "records": 30,
+      "bitwise_exact": false,
+      "numeric_agreement": false,
+      "all_finite": true,
+      "max_abs": 0.007703900337219238,
+      "finite_outside_tolerance": 11724268,
+      "nonfinite_elements": 0
+    },
+    "applied_gradients": {
+      "records": 30,
+      "bitwise_exact": false,
+      "numeric_agreement": false,
+      "all_finite": true,
+      "max_abs": 0.20308926701545715,
+      "finite_outside_tolerance": 58902970,
+      "nonfinite_elements": 0
+    },
+    "flow_worker_rng_gt": {
+      "records": 30,
+      "bitwise_exact": true,
+      "numeric_agreement": true,
+      "all_finite": true,
+      "max_abs": 0.0,
+      "finite_outside_tolerance": 0,
+      "nonfinite_elements": 0
+    },
+    "final_control": {
+      "records": 1,
+      "bitwise_exact": true,
+      "numeric_agreement": true,
+      "all_finite": true,
+      "max_abs": 0.0,
+      "finite_outside_tolerance": 0,
+      "nonfinite_elements": 0
+    },
+    "final_gradient_checks": {
+      "records": 1,
+      "bitwise_exact": true,
+      "numeric_agreement": true,
+      "all_finite": true,
+      "max_abs": 0.0,
+      "finite_outside_tolerance": 0,
+      "nonfinite_elements": 0
+    },
+    "first_batch_pixels": {
+      "records": 1,
+      "bitwise_exact": true,
+      "numeric_agreement": true,
+      "all_finite": true,
+      "max_abs": 0.0,
+      "finite_outside_tolerance": 0,
+      "nonfinite_elements": 0
+    },
+    "initial": {
+      "records": 1,
+      "bitwise_exact": true,
+      "numeric_agreement": true,
+      "all_finite": true,
+      "max_abs": 0.0,
+      "finite_outside_tolerance": 0,
+      "nonfinite_elements": 0
+    },
+    "selection_identity": {
+      "records": 30,
+      "bitwise_exact": true,
+      "numeric_agreement": true,
+      "all_finite": true,
+      "max_abs": 0.0,
+      "finite_outside_tolerance": 0,
+      "nonfinite_elements": 0
+    },
+    "selection_floating": {
+      "records": 30,
+      "bitwise_exact": false,
+      "numeric_agreement": false,
+      "all_finite": true,
+      "max_abs": 0.20463132858276367,
+      "finite_outside_tolerance": 95506,
+      "nonfinite_elements": 0
+    }
+  },
+  "timings": {
+    "old": {
+      "batches": 30,
+      "successful_updates": 24,
+      "training_span_seconds": 110.7342921209056,
+      "training_audit_seconds": 10.822610740317032,
+      "training_span_minus_audit_seconds": 99.91168138058856,
+      "training_audit_fraction": 0.09773495213660037,
+      "post_warmup_batches": 24,
+      "post_warmup_batch_median_seconds": 2.4517131292959675,
+      "post_warmup_batch_mean_seconds": 2.450546058738837,
+      "post_warmup_batch_min_seconds": 1.8696096525527537,
+      "post_warmup_batch_max_seconds": 2.8739731330424547,
+      "post_warmup_batch_sum_seconds": 58.81310540973209,
+      "observed_batch_audit_seconds": 9.393963570240885,
+      "warmup_batch_sum_seconds": 25.82579281134531,
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5976.0
+    },
+    "block16": {
+      "batches": 30,
+      "successful_updates": 24,
+      "training_span_seconds": 70.67265433096327,
+      "training_audit_seconds": 10.50620996998623,
+      "training_span_minus_audit_seconds": 60.16644436097704,
+      "training_audit_fraction": 0.1486601864532379,
+      "post_warmup_batches": 24,
+      "post_warmup_batch_median_seconds": 1.163362494087778,
+      "post_warmup_batch_mean_seconds": 1.1561173801019322,
+      "post_warmup_batch_min_seconds": 0.894064758438617,
+      "post_warmup_batch_max_seconds": 1.3191719681490213,
+      "post_warmup_batch_sum_seconds": 27.746817122446373,
+      "observed_batch_audit_seconds": 9.53864943003282,
+      "warmup_batch_sum_seconds": 16.04424966708757,
+      "gpu_allocated_peak_mib": 5087.68603515625,
+      "gpu_reserved_peak_mib": 5856.0
+    }
+  },
+  "observed_post_warmup_median_old_over_block16": 2.107436969779929,
+  "optional_original_c1_scalar_logs": {
+    "status": "COMPARED_FIXED_SCALAR_LOGS",
+    "counts": [
+      30,
+      30
+    ],
+    "batch_identity_exact": true,
+    "fields": {
+      "native_total": {
+        "records": 30,
+        "numeric_agreement": false,
+        "python_scalar_equal": false,
+        "max_abs": 0.4147186279296875,
+        "outside": 22
+      },
+      "loss_unweighted": {
+        "records": 30,
+        "numeric_agreement": false,
+        "python_scalar_equal": false,
+        "max_abs": 0.0006340146064758301,
+        "outside": 22
+      },
+      "weighted_kd_total": {
+        "records": 30,
+        "numeric_agreement": false,
+        "python_scalar_equal": false,
+        "max_abs": 0.001872096733098072,
+        "outside": 22
+      },
+      "total_loss": {
+        "records": 30,
+        "numeric_agreement": false,
+        "python_scalar_equal": false,
+        "max_abs": 0.41510009765625,
+        "outside": 23
+      }
+    }
+  },
+  "comparison_cpu_seconds": 36.58007505116984,
+  "new_hash_computed": false,
+  "long_training_switch_admitted": false,
+  "scope": "CPU recomputation of collected JSON closure. Does not reload multi-GB state .pt or independently reproduce GPU trajectory.",
+  "timing_scope": "Synchronized, audit-subtracted short diagnostic batch spans excluding loader fetch; not production epoch speed."
+}

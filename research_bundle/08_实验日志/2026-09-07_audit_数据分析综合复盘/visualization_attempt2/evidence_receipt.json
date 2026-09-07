@@ -1,0 +1,110 @@
+{
+  "created_at": "2026-09-07T23:52:09.759526+08:00",
+  "scope": "Existing accepted evidence synthesis and arithmetic-only visualization",
+  "source_records": [
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\probe_analysis.json",
+      "copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_数据分析综合复盘\\visualization_attempt2\\source_snapshots\\early_probe_analysis.json",
+      "size": 197939,
+      "mtime_ns": 1788630683285730200,
+      "byte_comparison": true
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\new_probe_analysis\\compact_real_findings.json",
+      "copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_数据分析综合复盘\\visualization_attempt2\\source_snapshots\\baseline_compact_findings.json",
+      "size": 12310,
+      "mtime_ns": 1788782231994119300,
+      "byte_comparison": true
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\class_oracle_v1\\summary.json",
+      "copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_数据分析综合复盘\\visualization_attempt2\\source_snapshots\\class_oracle_summary.json",
+      "size": 35569,
+      "mtime_ns": 1788786441533895800,
+      "byte_comparison": true
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\drone_results_v1\\summary.json",
+      "copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_数据分析综合复盘\\visualization_attempt2\\source_snapshots\\drone_ap_summary.json",
+      "size": 291874,
+      "mtime_ns": 1788786137922886500,
+      "byte_comparison": true
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\llvip_results_v1\\summary.json",
+      "copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_数据分析综合复盘\\visualization_attempt2\\source_snapshots\\llvip_ap_summary.json",
+      "size": 34877,
+      "mtime_ns": 1788787520975898800,
+      "byte_comparison": true
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\completed_readout_attempt2\\summary.json",
+      "copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_数据分析综合复盘\\visualization_attempt2\\source_snapshots\\natural_flow_summary.json",
+      "size": 21080,
+      "mtime_ns": 1788789211170769600,
+      "byte_comparison": true
+    }
+  ],
+  "new_gpu_tasks": 0,
+  "new_hashes": false,
+  "minority_gt_share_pct": 12.225091265247974,
+  "minority_class_oracle_share_pct": 94.2624010973581,
+  "macro_class_oracle_pp": 10.359657742174514,
+  "all_classes": [
+    {
+      "class_name": "car",
+      "gt": 18965,
+      "gt_share_pct": 84.43148428456949,
+      "cls_dap_seed0_pp": 0.5684151680644902,
+      "cls_dap_seed42_pp": 0.5718289634901623,
+      "cls_dap_seed123_pp": 0.5825480305726387,
+      "cls_dap_mean_pp": 0.5742640540424304,
+      "cls_dap_sample_sd_pp": 0.0073743949017438925,
+      "cls_oracle_share_pct": 1.108654490977211
+    },
+    {
+      "class_name": "freight car",
+      "gt": 710,
+      "gt_share_pct": 3.160893954233817,
+      "cls_dap_seed0_pp": 17.89261253285703,
+      "cls_dap_seed42_pp": 16.43962505414453,
+      "cls_dap_seed123_pp": 20.303012652583526,
+      "cls_dap_mean_pp": 18.211750079861694,
+      "cls_dap_sample_sd_pp": 1.9513655511908006,
+      "cls_oracle_share_pct": 35.15898021557421
+    },
+    {
+      "class_name": "truck",
+      "gt": 1336,
+      "gt_share_pct": 5.947822989938563,
+      "cls_dap_seed0_pp": 9.200270640205005,
+      "cls_dap_seed42_pp": 9.300823512378585,
+      "cls_dap_seed123_pp": 8.681461026655924,
+      "cls_dap_mean_pp": 9.060851726413171,
+      "cls_dap_sample_sd_pp": 0.3323863675337925,
+      "cls_oracle_share_pct": 17.492569642578324
+    },
+    {
+      "class_name": "bus",
+      "gt": 751,
+      "gt_share_pct": 3.3434244501825305,
+      "cls_dap_seed0_pp": 2.4941151355108957,
+      "cls_dap_seed42_pp": 2.225703332720485,
+      "cls_dap_seed123_pp": 2.4733235036282935,
+      "cls_dap_mean_pp": 2.3977139906198914,
+      "cls_dap_sample_sd_pp": 0.14932790366279622,
+      "cls_oracle_share_pct": 4.628944411664716
+    },
+    {
+      "class_name": "van",
+      "gt": 700,
+      "gt_share_pct": 3.1163743210755945,
+      "cls_dap_seed0_pp": 22.206936485342325,
+      "cls_dap_seed42_pp": 21.784923450675727,
+      "cls_dap_seed123_pp": 20.66926664378812,
+      "cls_dap_mean_pp": 21.553708859935387,
+      "cls_dap_sample_sd_pp": 0.7944823947922003,
+      "cls_oracle_share_pct": 41.61085123920555
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "status": "PASS_NUMERIC_EQUIVALENCE_ONLY",
+  "block_size": 16,
+  "atol": 1e-06,
+  "rtol": 1e-05,
+  "mode": "synthetic",
+  "device": "cuda",
+  "torch": "2.10.0+cu128",
+  "reference_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+  "no_source_mutation": true,
+  "new_hash_computed": false,
+  "optimizer_updates": 0,
+  "scope": "Kernel/raw-score diagnostic; not 24-update or long-training admission",
+  "checks": [
+    {
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 9.5367431640625e-07,
+          "elements": 160
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 7.152557373046875e-07,
+          "elements": 32000
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 9.5367431640625e-07,
+          "elements": 160
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 1.9073486328125e-06,
+          "elements": 160
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    },
+    {
+      "pass_numeric": true,
+      "differences": {
+        "delta": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 1.9073486328125e-06,
+          "elements": 640
+        },
+        "valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "student_gradient": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 1.430511474609375e-06,
+          "elements": 8000
+        },
+        "teacher_delta": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 9.5367431640625e-07,
+          "elements": 640
+        },
+        "teacher_valid": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 1.9073486328125e-06,
+          "elements": 640
+        },
+        "reference_valid": {
+          "pass_numeric": true,
+          "exact": true
+        }
+      },
+      "rng_unchanged": true
+    }
+  ],
+  "timing_scope": "Pool forward plus raw-score backward; S model/loader excluded",
+  "samples": [
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 0,
+      "seconds": 0.025438773911446333,
+      "allocated_peak_mib": 9.25537109375,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 0,
+      "seconds": 0.0032289500813931227,
+      "allocated_peak_mib": 14.70361328125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 1,
+      "seconds": 0.003975684056058526,
+      "allocated_peak_mib": 14.70361328125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 1,
+      "seconds": 0.029219419928267598,
+      "allocated_peak_mib": 9.25537109375,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 2,
+      "seconds": 0.029704458080232143,
+      "allocated_peak_mib": 9.25537109375,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 2,
+      "seconds": 0.004053737036883831,
+      "allocated_peak_mib": 14.70361328125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 3,
+      "seconds": 0.0034413409885019064,
+      "allocated_peak_mib": 14.70361328125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 3,
+      "seconds": 0.0337543748319149,
+      "allocated_peak_mib": 9.25537109375,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 4,
+      "seconds": 0.036666929023340344,
+      "allocated_peak_mib": 9.25537109375,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 4,
+      "seconds": 0.004842052003368735,
+      "allocated_peak_mib": 14.70361328125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 5,
+      "seconds": 0.004238600144162774,
+      "allocated_peak_mib": 14.70361328125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 5,
+      "seconds": 0.03825100790709257,
+      "allocated_peak_mib": 9.25537109375,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 6,
+      "seconds": 0.02651388617232442,
+      "allocated_peak_mib": 9.25537109375,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 6,
+      "seconds": 0.002887419192120433,
+      "allocated_peak_mib": 14.70361328125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "old",
+      "iteration": 0,
+      "seconds": 0.08623316301964223,
+      "allocated_peak_mib": 9.0517578125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "block16",
+      "iteration": 0,
+      "seconds": 0.007401895942166448,
+      "allocated_peak_mib": 10.13525390625,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "block16",
+      "iteration": 1,
+      "seconds": 0.009226916125044227,
+      "allocated_peak_mib": 10.13525390625,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "old",
+      "iteration": 1,
+      "seconds": 0.09673970006406307,
+      "allocated_peak_mib": 9.0517578125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "old",
+      "iteration": 2,
+      "seconds": 0.08615579199977219,
+      "allocated_peak_mib": 9.0517578125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "block16",
+      "iteration": 2,
+      "seconds": 0.007432553917169571,
+      "allocated_peak_mib": 10.13525390625,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "block16",
+      "iteration": 3,
+      "seconds": 0.008441116893664002,
+      "allocated_peak_mib": 10.13525390625,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "old",
+      "iteration": 3,
+      "seconds": 0.0962853659875691,
+      "allocated_peak_mib": 9.0517578125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "old",
+      "iteration": 4,
+      "seconds": 0.0847885049879551,
+      "allocated_peak_mib": 9.0517578125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "block16",
+      "iteration": 4,
+      "seconds": 0.007331909146159887,
+      "allocated_peak_mib": 10.13525390625,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "block16",
+      "iteration": 5,
+      "seconds": 0.00790816405788064,
+      "allocated_peak_mib": 10.13525390625,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "old",
+      "iteration": 5,
+      "seconds": 0.0970517760142684,
+      "allocated_peak_mib": 9.0517578125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "old",
+      "iteration": 6,
+      "seconds": 0.09217723808251321,
+      "allocated_peak_mib": 9.0517578125,
+      "reserved_peak_mib": 32.0
+    },
+    {
+      "case": 1,
+      "variant": "block16",
+      "iteration": 6,
+      "seconds": 0.0087127098813653,
+      "allocated_peak_mib": 10.13525390625,
+      "reserved_peak_mib": 32.0
+    }
+  ],
+  "median_seconds": {
+    "0": {
+      "old": 0.029704458080232143,
+      "block16": 0.003975684056058526
+    },
+    "1": {
+      "old": 0.09217723808251321,
+      "block16": 0.00790816405788064
+    }
+  },
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 480
+    },
+    "peak_rss_mib": 1138
+  }
+}

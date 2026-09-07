@@ -1,0 +1,1194 @@
+{
+  "status": "FAILED",
+  "candidate": "selected_only_v1_original_pool",
+  "atol": 1e-06,
+  "rtol": 1e-05,
+  "torch": "1.8.0+cu111",
+  "new_hash_computed": false,
+  "optimizer_updates": 0,
+  "long_training_switch_admitted": false,
+  "reference_dir": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2",
+  "checks": [
+    {
+      "case": "empty",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 0,
+        "valid_region_count": 0,
+        "reference_candidate_count": 0,
+        "base_count": 0,
+        "teacher_correct_base_count": 0,
+        "eligible_count": 0,
+        "selected_count": 0,
+        "normalizer": 1,
+        "nominal_dose": 0.0
+      },
+      "fallback_reason": null,
+      "full_diagnostics": false
+    },
+    {
+      "case": "empty",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 0,
+        "valid_region_count": 0,
+        "reference_candidate_count": 0,
+        "base_count": 0,
+        "teacher_correct_base_count": 0,
+        "eligible_count": 0,
+        "selected_count": 0,
+        "normalizer": 1,
+        "nominal_dose": 0.0
+      },
+      "fallback_reason": null,
+      "full_diagnostics": true
+    },
+    {
+      "case": "one_class",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 1,
+        "valid_region_count": 1,
+        "reference_candidate_count": 1,
+        "base_count": 1,
+        "teacher_correct_base_count": 1,
+        "eligible_count": 1,
+        "selected_count": 1,
+        "normalizer": 1,
+        "nominal_dose": 1.0
+      },
+      "fallback_reason": null,
+      "full_diagnostics": false
+    },
+    {
+      "case": "one_class",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 84
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 1,
+        "valid_region_count": 1,
+        "reference_candidate_count": 1,
+        "base_count": 1,
+        "teacher_correct_base_count": 1,
+        "eligible_count": 1,
+        "selected_count": 1,
+        "normalizer": 1,
+        "nominal_dose": 1.0
+      },
+      "fallback_reason": null,
+      "full_diagnostics": true
+    },
+    {
+      "case": "multi_invalid",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 10
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 10
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 3,
+        "valid_region_count": 2,
+        "reference_candidate_count": 2,
+        "base_count": 2,
+        "teacher_correct_base_count": 2,
+        "eligible_count": 2,
+        "selected_count": 1,
+        "normalizer": 2,
+        "nominal_dose": 0.5
+      },
+      "fallback_reason": null,
+      "full_diagnostics": false
+    },
+    {
+      "case": "multi_invalid",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 2
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 10
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 10
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 3,
+        "valid_region_count": 2,
+        "reference_candidate_count": 2,
+        "base_count": 2,
+        "teacher_correct_base_count": 2,
+        "eligible_count": 2,
+        "selected_count": 1,
+        "normalizer": 2,
+        "nominal_dose": 0.5
+      },
+      "fallback_reason": null,
+      "full_diagnostics": true
+    },
+    {
+      "case": "multi_image_empty_middle",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 3
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1260
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 20
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 20
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 3,
+        "valid_region_count": 3,
+        "reference_candidate_count": 3,
+        "base_count": 3,
+        "teacher_correct_base_count": 3,
+        "eligible_count": 3,
+        "selected_count": 2,
+        "normalizer": 3,
+        "nominal_dose": 0.6666666666666666
+      },
+      "fallback_reason": null,
+      "full_diagnostics": false
+    },
+    {
+      "case": "multi_image_empty_middle",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 3
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1260
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 20
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 20
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 3,
+        "valid_region_count": 3,
+        "reference_candidate_count": 3,
+        "base_count": 3,
+        "teacher_correct_base_count": 3,
+        "eligible_count": 3,
+        "selected_count": 2,
+        "normalizer": 3,
+        "nominal_dose": 0.6666666666666666
+      },
+      "fallback_reason": null,
+      "full_diagnostics": true
+    },
+    {
+      "case": "many_objects",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 8
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 12,
+        "valid_region_count": 8,
+        "reference_candidate_count": 12,
+        "base_count": 8,
+        "teacher_correct_base_count": 0,
+        "eligible_count": 0,
+        "selected_count": 0,
+        "normalizer": 8,
+        "nominal_dose": 0.0
+      },
+      "fallback_reason": null,
+      "full_diagnostics": false
+    },
+    {
+      "case": "many_objects",
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 8
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 420
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 0
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 12,
+        "valid_region_count": 8,
+        "reference_candidate_count": 12,
+        "base_count": 8,
+        "teacher_correct_base_count": 0,
+        "eligible_count": 0,
+        "selected_count": 0,
+        "normalizer": 8,
+        "nominal_dose": 0.0
+      },
+      "fallback_reason": null,
+      "full_diagnostics": true
+    }
+  ],
+  "error": "RuntimeError('Only Tensors created explicitly by the user (graph leaves) support the deepcopy protocol at the moment')"
+}

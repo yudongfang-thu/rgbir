@@ -1,0 +1,290 @@
+{
+  "status": "FAIL_EQUIVALENCE",
+  "block_size": 16,
+  "atol": 1e-06,
+  "rtol": 1e-05,
+  "mode": "bundle",
+  "device": "cuda",
+  "torch": "2.10.0+cu128",
+  "candidate_variant": "block16_flat_rank2_reduction",
+  "reference_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+  "no_source_mutation": true,
+  "new_hash_computed": false,
+  "optimizer_updates": 0,
+  "scope": "Kernel/raw-score diagnostic; not 24-update or long-training admission",
+  "bundle_provenance": {
+    "dataset": "dronevehicle",
+    "batch_index": 0,
+    "source_trace_exact": true,
+    "model_files": {
+      "student": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+      "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt"
+    },
+    "model_signatures": {
+      "student": {
+        "bytes": 10772755,
+        "mtime_ns": 1788715564014453204
+      },
+      "teacher": {
+        "bytes": 5483610,
+        "mtime_ns": 1788133393714042412
+      },
+      "reference": {
+        "bytes": 5483610,
+        "mtime_ns": 1788133016384388766
+      }
+    },
+    "input_uint8_normalized_once": true,
+    "student_mode": "train",
+    "teacher_reference_mode": "eval",
+    "amp": true,
+    "seed": 20260907,
+    "optimizer_updates": 0,
+    "feature_values_omitted": true,
+    "feature_role": "Only original logical shape/dtype used by C1 layout; zero-stride placeholder storage",
+    "trace_file": "trace_00.json"
+  },
+  "checks": [
+    {
+      "pass_numeric": false,
+      "differences": {
+        "student_delta": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 1.9073486328125e-06,
+          "elements": 4350
+        },
+        "teacher_delta": {
+          "pass_numeric": false,
+          "exact": false,
+          "max_abs": 1.9073486328125e-06,
+          "elements": 4350
+        },
+        "reference_delta": {
+          "pass_numeric": true,
+          "exact": false,
+          "max_abs": 1.9073486328125e-06,
+          "elements": 4350
+        },
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 435
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1344000
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        }
+      },
+      "exact_identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "selected_count": true
+      },
+      "rng_unchanged": true
+    }
+  ],
+  "timing_scope": "Complete selector plus KD/statistics plus raw-score gradient; model/loader excluded",
+  "samples": [
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 0,
+      "seconds": 1.708316033007577,
+      "allocated_peak_mib": 591.587890625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 0,
+      "seconds": 0.8006566721014678,
+      "allocated_peak_mib": 593.7197265625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 1,
+      "seconds": 0.9556240569800138,
+      "allocated_peak_mib": 594.4521484375,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 1,
+      "seconds": 1.6206637830473483,
+      "allocated_peak_mib": 591.587890625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 2,
+      "seconds": 1.5410772529430687,
+      "allocated_peak_mib": 591.587890625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 2,
+      "seconds": 0.6346829680260271,
+      "allocated_peak_mib": 594.4521484375,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 3,
+      "seconds": 0.7819457349833101,
+      "allocated_peak_mib": 593.7197265625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 3,
+      "seconds": 1.769947008928284,
+      "allocated_peak_mib": 591.5322265625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 4,
+      "seconds": 1.6234624590724707,
+      "allocated_peak_mib": 591.587890625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 4,
+      "seconds": 0.8496410520747304,
+      "allocated_peak_mib": 593.7197265625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 5,
+      "seconds": 0.7713025161065161,
+      "allocated_peak_mib": 594.4521484375,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 5,
+      "seconds": 1.718553049955517,
+      "allocated_peak_mib": 591.587890625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "old",
+      "iteration": 6,
+      "seconds": 1.6187347141094506,
+      "allocated_peak_mib": 591.587890625,
+      "reserved_peak_mib": 872.0
+    },
+    {
+      "case": 0,
+      "variant": "block16",
+      "iteration": 6,
+      "seconds": 0.8796348690520972,
+      "allocated_peak_mib": 594.4521484375,
+      "reserved_peak_mib": 872.0
+    }
+  ],
+  "median_seconds": {
+    "0": {
+      "old": 1.6234624590724707,
+      "block16": 0.8006566721014678
+    }
+  },
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1322
+    },
+    "peak_rss_mib": 1340
+  }
+}

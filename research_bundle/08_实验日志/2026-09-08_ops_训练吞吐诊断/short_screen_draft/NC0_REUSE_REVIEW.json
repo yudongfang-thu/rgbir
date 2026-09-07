@@ -1,0 +1,593 @@
+{
+  "status": "CPU_REUSE_REVIEW",
+  "new_hash_computed": false,
+  "arms": {
+    "N": {
+      "compatibility_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\compatibility_receipt.json",
+      "status": "ACCEPTED",
+      "successful_updates": 24,
+      "loader_batches": 30,
+      "trajectory_exact": true,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 29606
+      },
+      "new_worker_result": {
+        "status": "EXACT",
+        "successful_updates": 24,
+        "update_attempts": 30,
+        "amp_skips": 6,
+        "ema_updates": 30,
+        "batches": 30,
+        "real_optimizer_calls": 24,
+        "selected_objects": 3767,
+        "frozen_auxiliary_parameters_buffers_unchanged": true,
+        "gradient_checks": [
+          {
+            "batch": 1,
+            "native_score_gradient_l2": 0.27592557668685913,
+            "kd_score_gradient_l2": 0.003656818065792322,
+            "total_gradient_composition_max_error": 0.0,
+            "weight0_exact_loss_gradient": true,
+            "teacher_has_grad": false,
+            "reference_has_grad": false
+          }
+        ]
+      },
+      "sources": [
+        {
+          "relative": "train_independent.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\seed42_N\\new\\execution_binding_compatibility\\sources\\train_independent.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\train_independent.py",
+          "bytes_a": 7927,
+          "bytes_b": 7927,
+          "byte_exact": true
+        },
+        {
+          "relative": "runtime.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\seed42_N\\new\\execution_binding_compatibility\\sources\\runtime.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\runtime.py",
+          "bytes_a": 1814,
+          "bytes_b": 1814,
+          "byte_exact": true
+        },
+        {
+          "relative": "independent_criterion.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\seed42_N\\new\\execution_binding_compatibility\\sources\\independent_criterion.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\independent_criterion.py",
+          "bytes_a": 8208,
+          "bytes_b": 8208,
+          "byte_exact": true
+        },
+        {
+          "relative": "protocol.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\seed42_N\\new\\execution_binding_compatibility\\sources\\protocol.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\protocol.py",
+          "bytes_a": 6952,
+          "bytes_b": 6952,
+          "byte_exact": true
+        },
+        {
+          "relative": "task_conditional_reference/tracked_pair_data.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\seed42_N\\new\\execution_binding_compatibility\\sources\\task_conditional_reference\\tracked_pair_data.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\task_conditional_reference\\tracked_pair_data.py",
+          "bytes_a": 3666,
+          "bytes_b": 3666,
+          "byte_exact": true
+        },
+        {
+          "relative": "task_conditional_reference/legacy_oev1/train_object_evidence.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\seed42_N\\new\\execution_binding_compatibility\\sources\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+          "bytes_a": 18948,
+          "bytes_b": 18948,
+          "byte_exact": true
+        },
+        {
+          "relative": "task_conditional_reference/legacy_oev1/paired_rgbir_data.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\seed42_N\\new\\execution_binding_compatibility\\sources\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+          "bytes_a": 10325,
+          "bytes_b": 10325,
+          "byte_exact": true
+        },
+        {
+          "relative": "task_conditional_reference/legacy_oev1/object_evidence_loss.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_N_s42_attempt2\\seed42_N\\new\\execution_binding_compatibility\\sources\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+          "bytes_a": 19364,
+          "bytes_b": 19364,
+          "byte_exact": true
+        }
+      ],
+      "active_config_differences": {},
+      "original_horizon": 200,
+      "short_horizon": 20
+    },
+    "C0": {
+      "compatibility_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\compatibility_receipt.json",
+      "status": "ACCEPTED",
+      "successful_updates": 24,
+      "loader_batches": 30,
+      "trajectory_exact": true,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 29537
+      },
+      "new_worker_result": {
+        "status": "EXACT",
+        "successful_updates": 24,
+        "update_attempts": 30,
+        "amp_skips": 6,
+        "ema_updates": 30,
+        "batches": 30,
+        "real_optimizer_calls": 24,
+        "selected_objects": 3767,
+        "frozen_auxiliary_parameters_buffers_unchanged": true,
+        "gradient_checks": [
+          {
+            "batch": 1,
+            "native_score_gradient_l2": 0.27592557668685913,
+            "kd_score_gradient_l2": 0.003656818065792322,
+            "total_gradient_composition_max_error": 3.814697265625e-06,
+            "weight0_exact_loss_gradient": true,
+            "teacher_has_grad": false,
+            "reference_has_grad": false
+          }
+        ]
+      },
+      "sources": [
+        {
+          "relative": "train_independent.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\seed42_C0\\new\\execution_binding_compatibility\\sources\\train_independent.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\train_independent.py",
+          "bytes_a": 7927,
+          "bytes_b": 7927,
+          "byte_exact": true
+        },
+        {
+          "relative": "runtime.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\seed42_C0\\new\\execution_binding_compatibility\\sources\\runtime.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\runtime.py",
+          "bytes_a": 1814,
+          "bytes_b": 1814,
+          "byte_exact": true
+        },
+        {
+          "relative": "independent_criterion.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\seed42_C0\\new\\execution_binding_compatibility\\sources\\independent_criterion.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\independent_criterion.py",
+          "bytes_a": 8208,
+          "bytes_b": 8208,
+          "byte_exact": true
+        },
+        {
+          "relative": "protocol.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\seed42_C0\\new\\execution_binding_compatibility\\sources\\protocol.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\protocol.py",
+          "bytes_a": 6952,
+          "bytes_b": 6952,
+          "byte_exact": true
+        },
+        {
+          "relative": "task_conditional_reference/tracked_pair_data.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\seed42_C0\\new\\execution_binding_compatibility\\sources\\task_conditional_reference\\tracked_pair_data.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\task_conditional_reference\\tracked_pair_data.py",
+          "bytes_a": 3666,
+          "bytes_b": 3666,
+          "byte_exact": true
+        },
+        {
+          "relative": "task_conditional_reference/legacy_oev1/train_object_evidence.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\seed42_C0\\new\\execution_binding_compatibility\\sources\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+          "bytes_a": 18948,
+          "bytes_b": 18948,
+          "byte_exact": true
+        },
+        {
+          "relative": "task_conditional_reference/legacy_oev1/paired_rgbir_data.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\seed42_C0\\new\\execution_binding_compatibility\\sources\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+          "bytes_a": 10325,
+          "bytes_b": 10325,
+          "byte_exact": true
+        },
+        {
+          "relative": "task_conditional_reference/legacy_oev1/object_evidence_loss.py",
+          "accepted": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s42_attempt1\\seed42_C0\\new\\execution_binding_compatibility\\sources\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+          "current_reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\formal_C1_gpu5_attempt2\\runs\\C1_seed42\\implementation_snapshot\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+          "bytes_a": 19364,
+          "bytes_b": 19364,
+          "byte_exact": true
+        }
+      ],
+      "active_config_differences": {},
+      "original_horizon": 200,
+      "short_horizon": 20
+    }
+  },
+  "lr_prefix": [
+    {
+      "batch": 1,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.0,
+        "lr_bias": 0.1,
+        "momentum": 0.8
+      }
+    },
+    {
+      "batch": 2,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 5.920663114268798e-06,
+        "lr_bias": 0.09994671403197158,
+        "momentum": 0.8000811130846656
+      }
+    },
+    {
+      "batch": 3,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 1.1841326228537596e-05,
+        "lr_bias": 0.09989342806394316,
+        "momentum": 0.800162226169331
+      }
+    },
+    {
+      "batch": 4,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 1.7761989342806394e-05,
+        "lr_bias": 0.09984014209591474,
+        "momentum": 0.8002433392539965
+      }
+    },
+    {
+      "batch": 5,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 2.3682652457075192e-05,
+        "lr_bias": 0.09978685612788633,
+        "momentum": 0.800324452338662
+      }
+    },
+    {
+      "batch": 6,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 2.960331557134399e-05,
+        "lr_bias": 0.09973357015985791,
+        "momentum": 0.8004055654233274
+      }
+    },
+    {
+      "batch": 7,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 3.552397868561279e-05,
+        "lr_bias": 0.09968028419182949,
+        "momentum": 0.8004866785079929
+      }
+    },
+    {
+      "batch": 8,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 4.144464179988158e-05,
+        "lr_bias": 0.09962699822380107,
+        "momentum": 0.8005677915926585
+      }
+    },
+    {
+      "batch": 9,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 4.7365304914150384e-05,
+        "lr_bias": 0.09957371225577265,
+        "momentum": 0.8006489046773239
+      }
+    },
+    {
+      "batch": 10,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 5.3285968028419185e-05,
+        "lr_bias": 0.09952042628774423,
+        "momentum": 0.8007300177619894
+      }
+    },
+    {
+      "batch": 11,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 5.920663114268798e-05,
+        "lr_bias": 0.09946714031971582,
+        "momentum": 0.8008111308466549
+      }
+    },
+    {
+      "batch": 12,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 6.512729425695677e-05,
+        "lr_bias": 0.0994138543516874,
+        "momentum": 0.8008922439313203
+      }
+    },
+    {
+      "batch": 13,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 7.104795737122558e-05,
+        "lr_bias": 0.09936056838365898,
+        "momentum": 0.8009733570159858
+      }
+    },
+    {
+      "batch": 14,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 7.696862048549438e-05,
+        "lr_bias": 0.09930728241563055,
+        "momentum": 0.8010544701006513
+      }
+    },
+    {
+      "batch": 15,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 8.288928359976317e-05,
+        "lr_bias": 0.09925399644760213,
+        "momentum": 0.8011355831853167
+      }
+    },
+    {
+      "batch": 16,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 8.880994671403197e-05,
+        "lr_bias": 0.09920071047957371,
+        "momentum": 0.8012166962699823
+      }
+    },
+    {
+      "batch": 17,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 9.473060982830077e-05,
+        "lr_bias": 0.0991474245115453,
+        "momentum": 0.8012978093546478
+      }
+    },
+    {
+      "batch": 18,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00010065127294256957,
+        "lr_bias": 0.09909413854351688,
+        "momentum": 0.8013789224393133
+      }
+    },
+    {
+      "batch": 19,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00010657193605683837,
+        "lr_bias": 0.09904085257548846,
+        "momentum": 0.8014600355239787
+      }
+    },
+    {
+      "batch": 20,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00011249259917110716,
+        "lr_bias": 0.09898756660746004,
+        "momentum": 0.8015411486086442
+      }
+    },
+    {
+      "batch": 21,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00011841326228537596,
+        "lr_bias": 0.09893428063943162,
+        "momentum": 0.8016222616933097
+      }
+    },
+    {
+      "batch": 22,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00012433392539964476,
+        "lr_bias": 0.0988809946714032,
+        "momentum": 0.8017033747779752
+      }
+    },
+    {
+      "batch": 23,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00013025458851391355,
+        "lr_bias": 0.09882770870337479,
+        "momentum": 0.8017844878626407
+      }
+    },
+    {
+      "batch": 24,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00013617525162818236,
+        "lr_bias": 0.09877442273534637,
+        "momentum": 0.8018656009473062
+      }
+    },
+    {
+      "batch": 25,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00014209591474245115,
+        "lr_bias": 0.09872113676731795,
+        "momentum": 0.8019467140319716
+      }
+    },
+    {
+      "batch": 26,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00014801657785671994,
+        "lr_bias": 0.09866785079928952,
+        "momentum": 0.8020278271166371
+      }
+    },
+    {
+      "batch": 27,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00015393724097098876,
+        "lr_bias": 0.0986145648312611,
+        "momentum": 0.8021089402013026
+      }
+    },
+    {
+      "batch": 28,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00015985790408525754,
+        "lr_bias": 0.09856127886323268,
+        "momentum": 0.802190053285968
+      }
+    },
+    {
+      "batch": 29,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00016577856719952633,
+        "lr_bias": 0.09850799289520427,
+        "momentum": 0.8022711663706336
+      }
+    },
+    {
+      "batch": 30,
+      "equal": true,
+      "state": {
+        "nw": 1689,
+        "lf_epoch0": 1.0,
+        "accumulate": 1,
+        "lr_regular": 0.00017169923031379515,
+        "lr_bias": 0.09845470692717585,
+        "momentum": 0.8023522794552991
+      }
+    }
+  ],
+  "gpu_run": false,
+  "all_active_sources_byte_equal": true,
+  "all_active_config_keys_equal": true,
+  "first_30_batch_lr_accumulate_momentum_exact": true,
+  "scope": "Static source/config and CPU first-epoch LR equality; reuses existing executed 30batch/24update compatibility, does not manufacture an E20 GPU equivalence run."
+}

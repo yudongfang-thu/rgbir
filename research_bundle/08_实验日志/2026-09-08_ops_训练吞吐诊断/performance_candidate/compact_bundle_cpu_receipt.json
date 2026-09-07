@@ -1,0 +1,109 @@
+{
+  "status": "PASS_CPU_ONLY",
+  "feature_values_random_to_zero_changed": true,
+  "all_fields_exact": {
+    "student_delta": {
+      "pass_numeric": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "elements": 4
+    },
+    "teacher_delta": {
+      "pass_numeric": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "elements": 4
+    },
+    "reference_delta": {
+      "pass_numeric": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "elements": 4
+    },
+    "valid_levels": {
+      "pass_numeric": true,
+      "exact": true
+    },
+    "selected": {
+      "pass_numeric": true,
+      "exact": true
+    },
+    "labels": {
+      "pass_numeric": true,
+      "exact": true
+    },
+    "base_to_matched": {
+      "pass_numeric": true,
+      "exact": true
+    },
+    "matched_to_base": {
+      "pass_numeric": true,
+      "exact": true
+    },
+    "selected_matched_indices": {
+      "pass_numeric": true,
+      "exact": true
+    },
+    "quality": {
+      "pass_numeric": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "elements": 1
+    },
+    "eligible": {
+      "pass_numeric": true,
+      "exact": true
+    },
+    "c0_loss": {
+      "pass_numeric": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "elements": 1
+    },
+    "loss": {
+      "pass_numeric": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "elements": 1
+    },
+    "score_gradient": {
+      "pass_numeric": true,
+      "exact": true,
+      "max_abs": 0.0,
+      "elements": 168
+    },
+    "box_gradient": {
+      "pass_numeric": true,
+      "exact": true,
+      "none": true
+    },
+    "teacher_score_gradient": {
+      "pass_numeric": true,
+      "exact": true,
+      "none": true
+    },
+    "teacher_box_gradient": {
+      "pass_numeric": true,
+      "exact": true,
+      "none": true
+    },
+    "reference_score_gradient": {
+      "pass_numeric": true,
+      "exact": true,
+      "none": true
+    },
+    "reference_box_gradient": {
+      "pass_numeric": true,
+      "exact": true,
+      "none": true
+    }
+  },
+  "identities": {
+    "matched_object_ids": true,
+    "base_object_ids": true,
+    "c0_stats": true,
+    "selected_count": true
+  },
+  "cuda_initialized": false,
+  "new_hash_computed": false
+}

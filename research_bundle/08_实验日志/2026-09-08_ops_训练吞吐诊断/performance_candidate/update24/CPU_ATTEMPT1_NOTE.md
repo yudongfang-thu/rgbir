@@ -1,0 +1,1 @@
+首次 CPU helper 检查为14通过、1测试自身错误：缺失文件负例把三位 attempt_024.pt 误写为四位 attempt_0024.pt，删除目标不存在，尚未调用待测拒绝入口。原失败回执 cpu_checks_attempt1.json 与测试源码 test_compare_cpu_attempt1_source.py 保留。修订只纠正测试目标名称，另加入独立审阅建议的首批像素比较和零参数 super 闭包真值；不放宽任何数值容差。

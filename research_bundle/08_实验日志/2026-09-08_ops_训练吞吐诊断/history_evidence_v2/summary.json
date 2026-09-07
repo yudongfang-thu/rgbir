@@ -1,0 +1,759 @@
+{
+  "status": "COMPLETED_HISTORY_ONLY",
+  "date": "2026-09-08",
+  "snapshot": "2026-09-07T165357.033246_0800",
+  "full": [
+    {
+      "endpoint": "N0",
+      "arm": "N",
+      "seed": 0,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 219.014,
+      "median_epoch_2plus_seconds": 217.1999999999989,
+      "mean_epoch_2plus_seconds": 218.05872361809043,
+      "median_first20_excluding_start_seconds": 202.22000000000025,
+      "median_last20_seconds": 214.70000000000073,
+      "csv_total_seconds": 43612.7,
+      "csv_total_hours": 12.114638888888889,
+      "completion_status": "training_completed",
+      "completion_seconds": 43625.271203279495,
+      "gpu_ids": [
+        5
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56697,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N0\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N0\\completion_receipt.json"
+    },
+    {
+      "endpoint": "N42",
+      "arm": "N",
+      "seed": 42,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 219.569,
+      "median_epoch_2plus_seconds": 204.63999999999942,
+      "mean_epoch_2plus_seconds": 207.01070854271356,
+      "median_first20_excluding_start_seconds": 207.46000000000004,
+      "median_last20_seconds": 201.04999999999927,
+      "csv_total_seconds": 41414.7,
+      "csv_total_hours": 11.504083333333332,
+      "completion_status": "training_completed",
+      "completion_seconds": 41428.191229104996,
+      "gpu_ids": [
+        4
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56695,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N42\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N42\\completion_receipt.json"
+    },
+    {
+      "endpoint": "N123",
+      "arm": "N",
+      "seed": 123,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 227.92,
+      "median_epoch_2plus_seconds": 212.0,
+      "mean_epoch_2plus_seconds": 215.2697487437186,
+      "median_first20_excluding_start_seconds": 244.27999999999975,
+      "median_last20_seconds": 212.0,
+      "csv_total_seconds": 43066.6,
+      "csv_total_hours": 11.962944444444444,
+      "completion_status": "training_completed",
+      "completion_seconds": 43078.59835934639,
+      "gpu_ids": [
+        6
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56696,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N123\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N123\\completion_receipt.json"
+    },
+    {
+      "endpoint": "C0",
+      "arm": "C0",
+      "seed": 0,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 275.645,
+      "median_epoch_2plus_seconds": 216.89999999999964,
+      "mean_epoch_2plus_seconds": 221.9444974874372,
+      "median_first20_excluding_start_seconds": 251.57999999999993,
+      "median_last20_seconds": 216.85000000000218,
+      "csv_total_seconds": 44442.6,
+      "csv_total_hours": 12.345166666666666,
+      "completion_status": "training_completed",
+      "completion_seconds": 44457.80159544945,
+      "gpu_ids": [
+        5
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56694,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C0\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C0\\completion_receipt.json"
+    },
+    {
+      "endpoint": "C42",
+      "arm": "C0",
+      "seed": 42,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 220.154,
+      "median_epoch_2plus_seconds": 200.79999999999927,
+      "mean_epoch_2plus_seconds": 200.7148040201005,
+      "median_first20_excluding_start_seconds": 201.15999999999985,
+      "median_last20_seconds": 201.0,
+      "csv_total_seconds": 40162.4,
+      "csv_total_hours": 11.156222222222222,
+      "completion_status": "training_completed",
+      "completion_seconds": 40172.4308719635,
+      "gpu_ids": [
+        4
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56695,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C42\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C42\\completion_receipt.json"
+    },
+    {
+      "endpoint": "C123",
+      "arm": "C0",
+      "seed": 123,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 228.168,
+      "median_epoch_2plus_seconds": 214.79999999999927,
+      "mean_epoch_2plus_seconds": 229.18458291457287,
+      "median_first20_excluding_start_seconds": 213.92000000000007,
+      "median_last20_seconds": 220.0,
+      "csv_total_seconds": 45835.9,
+      "csv_total_hours": 12.732194444444445,
+      "completion_status": "training_completed",
+      "completion_seconds": 45849.00522971153,
+      "gpu_ids": [
+        6
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56695,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C123\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C123\\completion_receipt.json"
+    },
+    {
+      "endpoint": "R0",
+      "arm": "random",
+      "seed": 0,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 265.634,
+      "median_epoch_2plus_seconds": 251.16000000000008,
+      "mean_epoch_2plus_seconds": 249.84254271356787,
+      "median_first20_excluding_start_seconds": 251.5300000000002,
+      "median_last20_seconds": 250.45000000000073,
+      "csv_total_seconds": 49984.3,
+      "csv_total_hours": 13.884527777777778,
+      "completion_status": "training_completed",
+      "completion_seconds": 49998.32588863373,
+      "gpu_ids": [
+        2
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56696,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R0\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R0\\completion_receipt.json"
+    },
+    {
+      "endpoint": "R42",
+      "arm": "random",
+      "seed": 42,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 219.378,
+      "median_epoch_2plus_seconds": 251.8499999999999,
+      "mean_epoch_2plus_seconds": 251.613175879397,
+      "median_first20_excluding_start_seconds": 248.02999999999975,
+      "median_last20_seconds": 259.90000000000146,
+      "csv_total_seconds": 50290.4,
+      "csv_total_hours": 13.969555555555557,
+      "completion_status": "training_completed",
+      "completion_seconds": 50302.34415221214,
+      "gpu_ids": [
+        2
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56697,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R42\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R42\\completion_receipt.json"
+    },
+    {
+      "endpoint": "R123",
+      "arm": "random",
+      "seed": 123,
+      "rows": 200,
+      "last_completed_epoch": 200,
+      "first_epoch_seconds": 214.011,
+      "median_epoch_2plus_seconds": 229.6999999999971,
+      "mean_epoch_2plus_seconds": 226.475824120603,
+      "median_first20_excluding_start_seconds": 201.17999999999984,
+      "median_last20_seconds": 231.79999999999927,
+      "csv_total_seconds": 45282.7,
+      "csv_total_hours": 12.578527777777778,
+      "completion_status": "training_completed",
+      "completion_seconds": 45296.2142226696,
+      "gpu_ids": [
+        4
+      ],
+      "batches": 112600,
+      "optimizer_updates": 56696,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1/weights/last.pt",
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R123\\results.csv",
+      "completion_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R123\\completion_receipt.json"
+    },
+    {
+      "endpoint": "S42",
+      "arm": "shuffled",
+      "seed": 42,
+      "rows": 57,
+      "last_completed_epoch": 57,
+      "first_epoch_seconds": 947.797,
+      "median_epoch_2plus_seconds": 935.5550000000007,
+      "mean_epoch_2plus_seconds": 851.5054107142857,
+      "median_first20_excluding_start_seconds": 937.6899999999996,
+      "median_last20_seconds": 560.8500000000022,
+      "csv_total_seconds": 48632.1,
+      "csv_total_hours": 13.508916666666666,
+      "completion_status": null,
+      "completion_seconds": null,
+      "gpu_ids": null,
+      "batches": null,
+      "optimizer_updates": null,
+      "checkpoint": null,
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\S42\\results.csv",
+      "completion_source": null
+    },
+    {
+      "endpoint": "M42",
+      "arm": "same_modal",
+      "seed": 42,
+      "rows": 40,
+      "last_completed_epoch": 40,
+      "first_epoch_seconds": 635.683,
+      "median_epoch_2plus_seconds": 621.077,
+      "mean_epoch_2plus_seconds": 760.0722307692307,
+      "median_first20_excluding_start_seconds": 620.3200000000002,
+      "median_last20_seconds": 628.2000000000007,
+      "csv_total_seconds": 30278.5,
+      "csv_total_hours": 8.410694444444445,
+      "completion_status": null,
+      "completion_seconds": null,
+      "gpu_ids": null,
+      "batches": null,
+      "optimizer_updates": null,
+      "checkpoint": null,
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\M42\\results.csv",
+      "completion_source": null
+    }
+  ],
+  "canaries": [
+    {
+      "name": "canary_paired_s0_attempt1",
+      "status": "canary_completed",
+      "seed": 0,
+      "arm": "paired",
+      "seconds": 30.881011247634888,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 1.0293670415878295,
+      "seconds_per_successful_update": 1.286708801984787,
+      "gpu_ids": [
+        5
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_expand_20260906\\canary_paired_s0_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "canary_paired_s123_attempt1",
+      "status": "canary_completed",
+      "seed": 123,
+      "arm": "paired",
+      "seconds": 32.86121392250061,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 1.095373797416687,
+      "seconds_per_successful_update": 1.3692172467708588,
+      "gpu_ids": [
+        6
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_expand_20260906\\canary_paired_s123_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "canary_weight0_s0_attempt1",
+      "status": "canary_completed",
+      "seed": 0,
+      "arm": "weight0",
+      "seconds": 32.38817763328552,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 1.0796059211095175,
+      "seconds_per_successful_update": 1.3495074013868968,
+      "gpu_ids": [
+        5
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_expand_20260906\\canary_weight0_s0_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "canary_weight0_s123_attempt1",
+      "status": "canary_completed",
+      "seed": 123,
+      "arm": "weight0",
+      "seconds": 30.448437452316284,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 1.0149479150772094,
+      "seconds_per_successful_update": 1.2686848938465118,
+      "gpu_ids": [
+        6
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_expand_20260906\\canary_weight0_s123_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "canary_paired_s42_attempt1",
+      "status": "canary_completed",
+      "seed": 42,
+      "arm": "paired",
+      "seconds": 51.14817404747009,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 1.7049391349156697,
+      "seconds_per_successful_update": 2.131173918644587,
+      "gpu_ids": [
+        4
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_v1_20260906\\canary_paired_s42_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "canary_weight0_s42_attempt1",
+      "status": "canary_completed",
+      "seed": 42,
+      "arm": "weight0",
+      "seconds": 29.621535539627075,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 0.9873845179875692,
+      "seconds_per_successful_update": 1.2342306474844615,
+      "gpu_ids": [
+        4
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_v1_20260906\\canary_weight0_s42_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "canary_paired_random_s42_attempt1",
+      "status": "canary_completed",
+      "seed": 42,
+      "arm": "paired_random",
+      "seconds": 30.61476755142212,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 1.0204922517140707,
+      "seconds_per_successful_update": 1.2756153146425884,
+      "gpu_ids": [
+        2
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_oev1_random_20260906\\canary_paired_random_s42_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "C1_canary_attempt1",
+      "status": "canary_completed",
+      "seed": 42,
+      "arm": "C1",
+      "seconds": 71.46587681770325,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 2.3821958939234418,
+      "seconds_per_successful_update": 2.977744867404302,
+      "gpu_ids": [
+        2
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\C1_canary_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "C1_companion_canary_attempt1",
+      "status": "canary_completed",
+      "seed": 42,
+      "arm": "C1",
+      "seconds": 75.6263656616211,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 2.52087885538737,
+      "seconds_per_successful_update": 3.1510985692342124,
+      "gpu_ids": [
+        5
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\C1_companion_canary_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "c1_profile2_attempt1",
+      "status": "PROFILED",
+      "seed": 20260907,
+      "arm": null,
+      "seconds": 24.3949077129364,
+      "batches": null,
+      "optimizer_updates": 0,
+      "amp_skips": null,
+      "seconds_per_batch": null,
+      "seconds_per_successful_update": null,
+      "gpu_ids": [
+        2
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\c1_profile2_attempt1\\completion_receipt.json"
+    },
+    {
+      "name": "c1_profile2_attempt2",
+      "status": "PROFILED",
+      "seed": 20260907,
+      "arm": null,
+      "seconds": 23.91903853416443,
+      "batches": null,
+      "optimizer_updates": 0,
+      "amp_skips": null,
+      "seconds_per_batch": null,
+      "seconds_per_successful_update": null,
+      "gpu_ids": [
+        2
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\c1_profile2_attempt2\\completion_receipt.json"
+    },
+    {
+      "name": "C1_y_canary_attempt1",
+      "status": "canary_completed",
+      "seed": 42,
+      "arm": "C1_y",
+      "seconds": 73.29998278617859,
+      "batches": 30,
+      "optimizer_updates": 24,
+      "amp_skips": 6,
+      "seconds_per_batch": 2.4433327595392864,
+      "seconds_per_successful_update": 3.054165949424108,
+      "gpu_ids": [
+        2
+      ],
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\C1_y_canary_attempt1\\completion_receipt.json"
+    }
+  ],
+  "latest_read_at": "2026-09-08T01:12:33.019650+08:00",
+  "latest_leases": [
+    {
+      "job_id": "ikdv2_C1_0_train_a1",
+      "gpu": [
+        2
+      ],
+      "pids": [
+        2757514
+      ],
+      "vram": {
+        "2": 7962
+      },
+      "rss": 28922
+    },
+    {
+      "job_id": "ikdv2_C1_123_train_a1",
+      "gpu": [
+        5
+      ],
+      "pids": [
+        2760047
+      ],
+      "vram": {
+        "5": 7962
+      },
+      "rss": 28952
+    },
+    {
+      "job_id": "ikdv2_C1_42_train_a1",
+      "gpu": [
+        2
+      ],
+      "pids": [
+        2753901
+      ],
+      "vram": {
+        "2": 7962
+      },
+      "rss": 28852
+    },
+    {
+      "job_id": "oev1_content_c_same_modal_s42_a1",
+      "gpu": [
+        5
+      ],
+      "pids": [
+        4148148
+      ],
+      "vram": {
+        "5": 7742
+      },
+      "rss": 28483
+    },
+    {
+      "job_id": "oev1_content_c_shuffled_s42_a1",
+      "gpu": [
+        4
+      ],
+      "pids": [
+        2265745
+      ],
+      "vram": {
+        "4": 8020
+      },
+      "rss": 30312
+    }
+  ],
+  "metric_scope": "Training cumulative time/epoch differences; no AP values loaded into outputs. Snapshots can be stale; not current ETA.",
+  "new_hash_computed": false,
+  "gpu_or_ssh_used": false,
+  "inputs": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N0\\results.csv",
+      "bytes": 15654,
+      "mtime_ns": 1788771239051340700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N0\\completion_receipt.json",
+      "bytes": 7297,
+      "mtime_ns": 1788771239050244400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N42\\results.csv",
+      "bytes": 15672,
+      "mtime_ns": 1788771239078076000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N42\\completion_receipt.json",
+      "bytes": 7293,
+      "mtime_ns": 1788771239077076200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N123\\results.csv",
+      "bytes": 15644,
+      "mtime_ns": 1788771239104779300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\N123\\completion_receipt.json",
+      "bytes": 7296,
+      "mtime_ns": 1788771239103600800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C0\\results.csv",
+      "bytes": 15657,
+      "mtime_ns": 1788771239060313900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C0\\completion_receipt.json",
+      "bytes": 7305,
+      "mtime_ns": 1788771239058789800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C42\\results.csv",
+      "bytes": 15677,
+      "mtime_ns": 1788771239086740700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C42\\completion_receipt.json",
+      "bytes": 7304,
+      "mtime_ns": 1788771239085503400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C123\\results.csv",
+      "bytes": 15643,
+      "mtime_ns": 1788771239112945000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\C123\\completion_receipt.json",
+      "bytes": 7310,
+      "mtime_ns": 1788771239111949400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R0\\results.csv",
+      "bytes": 15640,
+      "mtime_ns": 1788771239068564300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R0\\completion_receipt.json",
+      "bytes": 7354,
+      "mtime_ns": 1788771239067567500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R42\\results.csv",
+      "bytes": 15650,
+      "mtime_ns": 1788771239094830000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R42\\completion_receipt.json",
+      "bytes": 7358,
+      "mtime_ns": 1788771239094242800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R123\\results.csv",
+      "bytes": 15662,
+      "mtime_ns": 1788771239120950300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\R123\\completion_receipt.json",
+      "bytes": 7369,
+      "mtime_ns": 1788771239119949700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\S42\\results.csv",
+      "bytes": 4567,
+      "mtime_ns": 1788771239127420600
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T165357.033246_0800\\raw\\M42\\results.csv",
+      "bytes": 3271,
+      "mtime_ns": 1788771239128421500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_expand_20260906\\canary_paired_s0_attempt1\\completion_receipt.json",
+      "bytes": 15888,
+      "mtime_ns": 1788709563910716000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_expand_20260906\\canary_paired_s123_attempt1\\completion_receipt.json",
+      "bytes": 15892,
+      "mtime_ns": 1788709563913581800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_expand_20260906\\canary_weight0_s0_attempt1\\completion_receipt.json",
+      "bytes": 15862,
+      "mtime_ns": 1788709563913063200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_expand_20260906\\canary_weight0_s123_attempt1\\completion_receipt.json",
+      "bytes": 15863,
+      "mtime_ns": 1788709563911913900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_v1_20260906\\canary_paired_s42_attempt1\\completion_receipt.json",
+      "bytes": 15882,
+      "mtime_ns": 1788709563917334000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_object_evidence_v1_20260906\\canary_weight0_s42_attempt1\\completion_receipt.json",
+      "bytes": 15854,
+      "mtime_ns": 1788709563916327200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_单卡并发与计划澄清\\concurrency\\raw\\RGBT_campaign\\runs\\rgbir_oev1_random_20260906\\canary_paired_random_s42_attempt1\\completion_receipt.json",
+      "bytes": 15875,
+      "mtime_ns": 1788709563908903500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\C1_canary_attempt1\\completion_receipt.json",
+      "bytes": 87664,
+      "mtime_ns": 1788766379385744300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\C1_companion_canary_attempt1\\completion_receipt.json",
+      "bytes": 87684,
+      "mtime_ns": 1788766378642236900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\c1_profile2_attempt1\\completion_receipt.json",
+      "bytes": 4636,
+      "mtime_ns": 1788766378839280600
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\c1_profile2_attempt2\\completion_receipt.json",
+      "bytes": 4637,
+      "mtime_ns": 1788766379865678900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\C1_y_canary_attempt1\\completion_receipt.json",
+      "bytes": 87632,
+      "mtime_ns": 1788766379303185900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_175423.json",
+      "bytes": 19097,
+      "mtime_ns": 1788774863330987000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_185413.json",
+      "bytes": 19107,
+      "mtime_ns": 1788778453202644500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_185855.json",
+      "bytes": 19105,
+      "mtime_ns": 1788778735563550100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_200918.json",
+      "bytes": 19192,
+      "mtime_ns": 1788782958566033400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_205447.json",
+      "bytes": 19192,
+      "mtime_ns": 1788785687071119000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_212910.json",
+      "bytes": 19176,
+      "mtime_ns": 1788787750664554200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_215559.json",
+      "bytes": 19171,
+      "mtime_ns": 1788789359302612300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_220857.json",
+      "bytes": 19191,
+      "mtime_ns": 1788790137381691800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_230933.json",
+      "bytes": 19109,
+      "mtime_ns": 1788793773369000100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_232124.json",
+      "bytes": 19181,
+      "mtime_ns": 1788794484121821300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260908_001227.json",
+      "bytes": 19199,
+      "mtime_ns": 1788797547735949800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260908_011232.json",
+      "bytes": 19178,
+      "mtime_ns": 1788801152869230900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260908_015515.json",
+      "bytes": 19182,
+      "mtime_ns": 1788803715406873000
+    }
+  ]
+}

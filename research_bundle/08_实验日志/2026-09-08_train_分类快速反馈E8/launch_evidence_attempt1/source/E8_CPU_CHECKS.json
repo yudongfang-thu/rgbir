@@ -1,0 +1,32 @@
+{
+  "status": "PASS_E8_RELEASE_CPU_CONTRACTS",
+  "arms": [
+    "N",
+    "C0",
+    "C1"
+  ],
+  "epochs": 8,
+  "endpoint": "SHORT_SCREEN_E8_LAST_EMA",
+  "warmup_epochs": 3,
+  "first30_batch_lr_accumulate_momentum_equal_to_E20": true,
+  "unchanged_training_recipe_fields": true,
+  "python_venv_path_preserved": true,
+  "torch_imported": false,
+  "runtime_imported": false,
+  "new_hash_computed": false,
+  "generated_admission": false,
+  "gpu_run": false,
+  "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_训练吞吐诊断\\short_screen_draft",
+  "files": [
+    "screen_common.py",
+    "train_short_screen.py",
+    "evaluate_short_screen.py",
+    "run_short_screen_queue.py"
+  ],
+  "choice_before_new_AP": true,
+  "config_names": [
+    "configs/drone_N_s42_E8.yaml",
+    "configs/drone_C0_s42_E8.yaml",
+    "configs/drone_C1_s42_E8.yaml"
+  ]
+}

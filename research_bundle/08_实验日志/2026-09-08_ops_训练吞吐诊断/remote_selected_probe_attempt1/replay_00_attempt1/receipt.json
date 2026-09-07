@@ -1,0 +1,402 @@
+{
+  "status": "PASS_NUMERIC_EQUIVALENCE_ONLY",
+  "candidate": "selected_only_v1_original_pool",
+  "atol": 1e-06,
+  "rtol": 1e-05,
+  "torch": "2.10.0+cu128",
+  "new_hash_computed": false,
+  "optimizer_updates": 0,
+  "long_training_switch_admitted": false,
+  "reference_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+  "checks": [
+    {
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 435
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1344000
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1240
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1240
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 451,
+        "valid_region_count": 448,
+        "reference_candidate_count": 438,
+        "base_count": 435,
+        "teacher_correct_base_count": 423,
+        "eligible_count": 248,
+        "selected_count": 124,
+        "normalizer": 435,
+        "nominal_dose": 0.2850574712643678
+      },
+      "fallback_reason": null,
+      "full_diagnostics": false
+    },
+    {
+      "pass_numeric": true,
+      "differences": {
+        "valid_levels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "labels": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "base_to_matched": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "matched_to_base": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "selected_matched_indices": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "quality": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 435
+        },
+        "eligible": {
+          "pass_numeric": true,
+          "exact": true
+        },
+        "c0_loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "loss": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1
+        },
+        "score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1344000
+        },
+        "box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "teacher_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_score_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "reference_box_gradient": {
+          "pass_numeric": true,
+          "exact": true,
+          "none": true
+        },
+        "selected_student_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1240
+        },
+        "selected_teacher_delta": {
+          "pass_numeric": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "elements": 1240
+        }
+      },
+      "identities": {
+        "matched_object_ids": true,
+        "base_object_ids": true,
+        "c0_stats": true,
+        "counts": true,
+        "all_background_masks_and_region_identity_exact": true,
+        "expected_thin_or_fallback": true,
+        "rng_unchanged": true,
+        "reference_diagnostic_missing_not_zero": true
+      },
+      "counts": {
+        "common_count": 451,
+        "valid_region_count": 448,
+        "reference_candidate_count": 438,
+        "base_count": 435,
+        "teacher_correct_base_count": 423,
+        "eligible_count": 248,
+        "selected_count": 124,
+        "normalizer": 435,
+        "nominal_dose": 0.2850574712643678
+      },
+      "fallback_reason": null,
+      "full_diagnostics": true
+    }
+  ],
+  "bundle_provenance": {
+    "dataset": "dronevehicle",
+    "batch_index": 0,
+    "source_trace_exact": true,
+    "model_files": {
+      "student": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+      "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt"
+    },
+    "model_signatures": {
+      "student": {
+        "bytes": 10772755,
+        "mtime_ns": 1788715564014453204
+      },
+      "teacher": {
+        "bytes": 5483610,
+        "mtime_ns": 1788133393714042412
+      },
+      "reference": {
+        "bytes": 5483610,
+        "mtime_ns": 1788133016384388766
+      }
+    },
+    "input_uint8_normalized_once": true,
+    "student_mode": "train",
+    "teacher_reference_mode": "eval",
+    "amp": true,
+    "seed": 20260907,
+    "optimizer_updates": 0,
+    "feature_values_omitted": true,
+    "feature_role": "Only original logical shape/dtype used by C1 layout; zero-stride placeholder storage",
+    "trace_file": "trace_00.json"
+  },
+  "raw_score_dtypes": {
+    "student": "torch.float16",
+    "teacher": "torch.float16",
+    "reference": "torch.float16"
+  },
+  "samples": [
+    {
+      "variant": "old",
+      "iteration": 0,
+      "seconds": 1.5626450339332223,
+      "allocated_peak_mib": 604.9111328125,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "selected_only",
+      "iteration": 0,
+      "seconds": 0.9723837049677968,
+      "allocated_peak_mib": 580.20703125,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "selected_only",
+      "iteration": 1,
+      "seconds": 0.8518669318873435,
+      "allocated_peak_mib": 580.20703125,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "old",
+      "iteration": 1,
+      "seconds": 1.5915169848594815,
+      "allocated_peak_mib": 604.9111328125,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "old",
+      "iteration": 2,
+      "seconds": 1.5819704229943454,
+      "allocated_peak_mib": 604.966796875,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "selected_only",
+      "iteration": 2,
+      "seconds": 1.0386858598794788,
+      "allocated_peak_mib": 580.20703125,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "selected_only",
+      "iteration": 3,
+      "seconds": 0.876623998163268,
+      "allocated_peak_mib": 580.1513671875,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "old",
+      "iteration": 3,
+      "seconds": 1.8584186399821192,
+      "allocated_peak_mib": 604.966796875,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "old",
+      "iteration": 4,
+      "seconds": 1.745688232127577,
+      "allocated_peak_mib": 604.966796875,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "selected_only",
+      "iteration": 4,
+      "seconds": 0.951161134056747,
+      "allocated_peak_mib": 580.1513671875,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "selected_only",
+      "iteration": 5,
+      "seconds": 0.9269087719731033,
+      "allocated_peak_mib": 580.20703125,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "old",
+      "iteration": 5,
+      "seconds": 1.9026726479642093,
+      "allocated_peak_mib": 604.966796875,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "old",
+      "iteration": 6,
+      "seconds": 1.8577504558488727,
+      "allocated_peak_mib": 604.9111328125,
+      "reserved_peak_mib": 886.0
+    },
+    {
+      "variant": "selected_only",
+      "iteration": 6,
+      "seconds": 0.9230773230083287,
+      "allocated_peak_mib": 580.20703125,
+      "reserved_peak_mib": 886.0
+    }
+  ],
+  "median_seconds": {
+    "old": 1.745688232127577,
+    "selected_only": 0.9269087719731033
+  },
+  "timing_scope": "Original complete selection+stats+raw-score backward versus thin selection+minimal stats+raw-score backward; no model/loader/optimizer, no full diagnostics on thin timed path",
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1336
+    },
+    "peak_rss_mib": 1340
+  }
+}

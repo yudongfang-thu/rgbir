@@ -1,0 +1,60 @@
+{
+  "status": "COMPLETED",
+  "exit_code": 0,
+  "time": 1788804289.9893935,
+  "monitor_errors": [],
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 8192,
+    "expected_vram_mib": 4096,
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "c1_pool_block16_measurement-cb062b0a73df",
+    "pid": 2781892,
+    "status": "LAUNCHED"
+  },
+  "samples": [
+    {
+      "time": 1788804267.269126,
+      "gpu": 4,
+      "memory_free_mib": 13799,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144558
+    },
+    {
+      "time": 1788804273.736777,
+      "gpu": 4,
+      "memory_free_mib": 13799,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145068
+    },
+    {
+      "time": 1788804279.4078298,
+      "gpu": 4,
+      "memory_free_mib": 13314,
+      "memory_used_mib": 10770,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 143947
+    },
+    {
+      "time": 1788804285.2238178,
+      "gpu": 4,
+      "memory_free_mib": 13797,
+      "memory_used_mib": 10287,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144058
+    },
+    {
+      "time": 1788804289.9893298,
+      "gpu": 4,
+      "memory_free_mib": 13799,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 143929
+    }
+  ],
+  "minimum_free_mib": 13314
+}

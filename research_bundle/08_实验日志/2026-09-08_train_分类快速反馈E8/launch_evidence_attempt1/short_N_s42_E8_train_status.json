@@ -1,0 +1,47 @@
+{
+  "status": "RUNNING",
+  "time": 1788809492.667735,
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 32768,
+    "expected_vram_mib": 8192,
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "short_N_s42_E8_train-2bd398c13898",
+    "pid": 3395157,
+    "status": "LAUNCHED"
+  },
+  "job": {
+    "id": "short_N_s42_E8_train",
+    "arm": "N",
+    "stage": "train",
+    "kind": "train",
+    "formal": false,
+    "vram_mib": 8192,
+    "rss_mib": 32768,
+    "command": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/train_short_screen.py",
+      "--reference-dir",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml",
+      "--admission",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/N.json",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N"
+    ],
+    "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/short_training_receipt.json"
+  },
+  "admission": {
+    "active_gpus_after": [
+      2,
+      4,
+      5
+    ],
+    "empty_gpus_after": [],
+    "four_gpu_exception": false,
+    "minimum_empty_required": 2
+  }
+}

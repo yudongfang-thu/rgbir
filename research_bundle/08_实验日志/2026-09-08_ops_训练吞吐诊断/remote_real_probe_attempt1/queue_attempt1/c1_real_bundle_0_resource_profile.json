@@ -1,0 +1,84 @@
+{
+  "status": "FAILED",
+  "exit_code": 2,
+  "time": 1788805047.2143483,
+  "monitor_errors": [],
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 8192,
+    "expected_vram_mib": 4096,
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "c1_real_bundle_0-52a414c9488f",
+    "pid": 2864854,
+    "status": "LAUNCHED"
+  },
+  "samples": [
+    {
+      "time": 1788804993.330716,
+      "gpu": 4,
+      "memory_free_mib": 13800,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144686
+    },
+    {
+      "time": 1788804999.8761299,
+      "gpu": 4,
+      "memory_free_mib": 13800,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145206
+    },
+    {
+      "time": 1788805006.128455,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145270
+    },
+    {
+      "time": 1788805012.833752,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145267
+    },
+    {
+      "time": 1788805020.235835,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145261
+    },
+    {
+      "time": 1788805026.1790614,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145263
+    },
+    {
+      "time": 1788805033.6864789,
+      "gpu": 4,
+      "memory_free_mib": 12472,
+      "memory_used_mib": 11612,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 143951
+    },
+    {
+      "time": 1788805041.0228906,
+      "gpu": 4,
+      "memory_free_mib": 13800,
+      "memory_used_mib": 10284,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144055
+    }
+  ],
+  "minimum_free_mib": 12472
+}

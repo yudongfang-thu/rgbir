@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "id": "c1_update24_performance_diagnostic",
+      "kind": "train",
+      "formal": false,
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/update24_probe_attempt1/performance_candidate/update24/compare_24_updates.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+        "--pool-source",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/update24_probe_attempt1/performance_candidate/pool_block16.py",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/update24_probe_attempt1/comparison_attempt1"
+      ]
+    }
+  ],
+  "scope": "Fresh old and block16 C1, 24 successful updates each; diagnostic only",
+  "initial_resource_ceiling_not_measured_training_admission": true,
+  "prior_intermediate_numeric_failure_retained": true,
+  "formal_training_admitted": false,
+  "production_jobs_modified": false
+}

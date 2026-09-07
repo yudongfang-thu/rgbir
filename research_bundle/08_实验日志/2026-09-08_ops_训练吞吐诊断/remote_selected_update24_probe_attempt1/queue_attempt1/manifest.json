@@ -1,0 +1,29 @@
+{
+  "jobs": [
+    {
+      "id": "c1_selected_update24_diagnostic",
+      "kind": "train",
+      "formal": false,
+      "vram_mib": 8192,
+      "rss_mib": 32768,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/selected_update24_probe_attempt1/performance_candidate/update24_selected_only/compare_24_selected_only.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+        "--candidate-source",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/selected_update24_probe_attempt1/performance_candidate/selected_only_v1.py",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/selected_update24_probe_attempt1/comparison_attempt1"
+      ]
+    }
+  ],
+  "scope": "Fresh old/selected-only C1, each 24 updates; all thin learning batches explicitly checked",
+  "two_raw_bundles_numeric_pass": true,
+  "prior_block16_trajectory_failure_retained": true,
+  "initial_bounded_ceiling_not_formal_measured_reservation": true,
+  "formal_training_admitted": false,
+  "existing_training_modified": false
+}

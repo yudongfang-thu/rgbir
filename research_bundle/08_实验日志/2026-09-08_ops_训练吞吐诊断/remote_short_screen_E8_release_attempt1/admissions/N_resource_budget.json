@@ -1,0 +1,25 @@
+{
+  "status": "PASS_FOR_SHORT_SCREEN_RESOURCE_AND_BUDGET",
+  "globallease_required": true,
+  "measured_training_nvml_peak_mib": 6304,
+  "measured_training_rss_peak_mib": 28738,
+  "profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_profile_attempt1/profile_N/short_profile_receipt.json",
+  "reserved_training_nvml_mib": 8192,
+  "reserved_training_rss_mib": 32768,
+  "epoch_batches": 563,
+  "epochs": 8,
+  "pure_three_arm_training_seconds": 19028.863967467874,
+  "training_margin_factor": 1.2,
+  "setup_evaluation_and_scheduling_allowance_seconds": 3600,
+  "estimated_three_arm_seconds_with_margin": 26434.63676096145,
+  "evaluation_measured_nvml_mib": 1370,
+  "evaluation_measured_rss_mib": 6260,
+  "evaluation_basis": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evidence_metrics.json",
+  "limitations": [
+    "24 post-warmup batches are not a completed epoch",
+    "Unknown shared-load changes and admission waits can exceed this planning estimate",
+    "Three warmup epochs are retained: E8 measures early learning, not converged AP"
+  ],
+  "formal_e200_training_admitted": false,
+  "new_hash_computed": false
+}
