@@ -1,0 +1,72 @@
+{
+  "runs": [
+    {
+      "arm": "N",
+      "seed": 42,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T140740.823638_0800\\raw\\N42",
+      "protocol_id": "oev1_frozen_drone_e200",
+      "source": "paired",
+      "source_arm": "weight0",
+      "evaluation_compatibility_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_evaluation_bridge_observed_v1\\prepared_a3\\evaluation_compatibility_accepted_root.json",
+      "posthoc_class_metrics": true,
+      "error_analysis_file": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\old_c0_object_diagnostics_v1\\attempt2_outputs\\seed42\\baseline_error_analysis.json"
+    },
+    {
+      "arm": "C0",
+      "seed": 42,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T140740.823638_0800\\raw\\C42",
+      "protocol_id": "oev1_frozen_drone_e200",
+      "source": "paired",
+      "source_arm": "paired",
+      "evaluation_compatibility_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_evaluation_bridge_observed_v1\\prepared_a3\\evaluation_compatibility_accepted_root.json",
+      "posthoc_class_metrics": true,
+      "error_analysis_file": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\old_c0_object_diagnostics_v1\\attempt2_outputs\\seed42\\candidate_error_analysis.json"
+    },
+    {
+      "arm": "N",
+      "seed": 0,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T140740.823638_0800\\raw\\N0",
+      "protocol_id": "oev1_frozen_drone_e200",
+      "source": "paired",
+      "source_arm": "weight0",
+      "evaluation_compatibility_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_evaluation_bridge_observed_v1\\prepared_a3\\evaluation_compatibility_accepted_root.json",
+      "posthoc_class_metrics": true,
+      "error_analysis_file": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\old_c0_object_diagnostics_v1\\attempt2_outputs\\seed0\\baseline_error_analysis.json"
+    },
+    {
+      "arm": "C0",
+      "seed": 0,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T140740.823638_0800\\raw\\C0",
+      "protocol_id": "oev1_frozen_drone_e200",
+      "source": "paired",
+      "source_arm": "paired",
+      "evaluation_compatibility_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_evaluation_bridge_observed_v1\\prepared_a3\\evaluation_compatibility_accepted_root.json",
+      "posthoc_class_metrics": true,
+      "error_analysis_file": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\old_c0_object_diagnostics_v1\\attempt2_outputs\\seed0\\candidate_error_analysis.json"
+    },
+    {
+      "arm": "N",
+      "seed": 123,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T140740.823638_0800\\raw\\N123",
+      "protocol_id": "oev1_frozen_drone_e200",
+      "source": "paired",
+      "source_arm": "weight0",
+      "evaluation_compatibility_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_evaluation_bridge_observed_v1\\prepared_a3\\evaluation_compatibility_accepted_root.json",
+      "posthoc_class_metrics": true,
+      "error_analysis_file": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\old_c0_object_diagnostics_v1\\attempt2_outputs\\seed123\\baseline_error_analysis.json"
+    },
+    {
+      "arm": "C0",
+      "seed": 123,
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\snapshots\\2026-09-07T140740.823638_0800\\raw\\C123",
+      "protocol_id": "oev1_frozen_drone_e200",
+      "source": "paired",
+      "source_arm": "paired",
+      "evaluation_compatibility_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_evaluation_bridge_observed_v1\\prepared_a3\\evaluation_compatibility_accepted_root.json",
+      "posthoc_class_metrics": true,
+      "error_analysis_file": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\old_c0_object_diagnostics_v1\\attempt2_outputs\\seed123\\candidate_error_analysis.json"
+    }
+  ],
+  "implementation_checks_passed": false,
+  "scope": "Separate post-hoc enrichment; original training and metric JSONs unchanged; no automatic extension authorized."
+}

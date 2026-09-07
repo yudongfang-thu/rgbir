@@ -1,6 +1,6 @@
 # RGBIR independent KD v2 实验跟踪表
 
-2026-09-07 16:35：C1三seed均进入第4轮；六旧端点补评逐项exact，观察桥接已接受，rect-v2三seed对象分析已完成。C0背景误检+3/+5/+46触发专项复核，暂停其后续自动扩展但不停止已有训练。λ=.09227393550836771和L几何阻塞不变。最新实施证据见 `../08_实验日志/2026-09-07_train_IndependentKD实施/STAGE_REPORT_1635.md`，执行主计划见 `EXPERIMENT_PLAN.md`。
+2026-09-07 17:06：显式逐类补评接口获独立接受，六旧端点完整接入；C0 harm为REVIEW_REQUIRED且missing为空。16:53 C1三seed第5轮，旧shuffled42/same-modal42第58/41轮，均继续原训练。λ=.09227393550836771和L几何阻塞不变。最新证据见 `../08_实验日志/2026-09-07_train_IndependentKD实施/heartbeat_20260907_1653/README.md`，执行主计划见 `EXPERIMENT_PLAN.md`。
 
 | ID | 阶段 | 实验/交付 | seeds | 优先级 | 当前状态 | 依赖/说明 |
 |---|---|---|---|---|---|---|
@@ -29,10 +29,10 @@
 |L14|长训|L1 vs N|123|CONDITIONAL|NOT_QUEUED|同上|
 |L20|判读|L1独立效用|0/42/123|CONDITIONAL|WAIT_RESULTS|全正mean≥.10pp且定位诊断相容|
 |L21|控制|L_GT补齐|0/123|CONDITIONAL|NOT_QUEUED|L1有效后2次，完成教师内容判断|
-|P00|分析器|新arm/错误分类/配对统计独立验收|—|MUST|OBSERVED_BRIDGE_ACCEPTED_PARTIAL_ADAPTER_PENDING|六旧端点补评完成；rect-v2十九测试与真实三seed对象分析通过；同六checkpoint观察桥接接受，正式posthoc逐类接入待独立适配|
+|P00|分析器|新arm/错误分类/配对统计独立验收|—|MUST|POSTHOC_CLASS_ADAPTER_ACCEPTED|独立17测试及真实六端点重跑通过，每端点五类；C0 harm无缺失且REVIEW_REQUIRED，30份旧关键文件不变。仅接受接口，CLI保持非自动授权；未来C1实际评价源码仍须核验|
 |P01|归因|最终类别方法四臂|0/42/123|MUST_IF_CLAIMED|WAIT_WINNER_C0_HARM_REVIEW|C0背景误检三seed同增，其后续自动扩展需专项复核；C1按原门槛，已有控制继续|
 |P02|归因|L1自己的四臂|0/42/123|MUST_IF_CLAIMED|WAIT_L_EVIDENCE|额外6次；L_GT不能替代same-modal|
-|P03|证据|GitHub阶段同步|—|MUST|PUBLISHED|1218adf已推送原分支；5216文件导出检查通过。后续旧端点补评与C1结果另批同步，见实施日志PUBLISH_RECEIPT_1218adf.md|
+|P03|证据|GitHub阶段同步|—|MUST|PUBLISHED|c7bbd6d补充提交已推送原分支并核对远端；7423文件检查通过，含六旧端点补评、观察桥接及对象损伤诊断。C1完整端点尚待训练结束；见实施日志PUBLISH_RECEIPT_c7bbd6d.md|
 |X01|外部|BCKD/FGD/LD协议适配和历史CMD/CCLKD审计|—|PREPARE_ONLY|PREPARED|BCKD分类partial、FGD、LD公开资产及冻结适配草案齐；旧CMD/CCLKD workers8独立列|
 |X02|数据集|LLVIP独立N/L1/L_GT或类别泛化|—|CONDITIONAL|DIAGNOSIS_FIRST|新数据集N/预算另列；不借Drone端点|
 |D01|延期|旧CL/CGT/dynamic router|—|DEFERRED|DEFERRED_BY_INDEPENDENT_CL_V2|不融合、不以联合结果救单支|

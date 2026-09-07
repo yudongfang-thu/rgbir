@@ -1,0 +1,240 @@
+{
+  "read_at": "2026-09-07T16:53:19.690516+08:00",
+  "campaign": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2",
+  "state": {
+    "paused": false,
+    "pause_reason": null,
+    "seeds": {
+      "42": {
+        "status": "TRAIN_WAITING",
+        "worker_pid": 2753545
+      },
+      "0": {
+        "status": "TRAIN_WAITING",
+        "worker_pid": 2757252
+      },
+      "123": {
+        "status": "TRAIN_WAITING",
+        "worker_pid": 2759698
+      }
+    }
+  },
+  "seeds": [
+    {
+      "seed": 42,
+      "launched": [
+        {
+          "status": "LAUNCHED",
+          "time": 1788766180.6581776,
+          "pid": 2753901,
+          "lease_id": "ikdv2_C1_42_train_a1-33bc9da45a32",
+          "gpu_ids": [
+            2
+          ]
+        }
+      ],
+      "latest_dispatch_event": {
+        "status": "SAMPLE",
+        "time": 1788771197.994831,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "2": 7920
+          },
+          "peak_rss_mib": 28818,
+          "cuda_pid_counts": {
+            "2": 1
+          }
+        },
+        "whole_gpu": {
+          "2": {
+            "whole_gpu_used_mib": 15879,
+            "whole_gpu_free_mib": 8205,
+            "project_actual_vram_mib": 15840,
+            "project_actual_cuda_tasks": 2
+          }
+        },
+        "whole_gpu_minimum_free_mib": 8205,
+        "project_rss_mib": 144707
+      },
+      "progress.json": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 5,
+        "epochs": 200,
+        "optimizer_updates": 1713,
+        "update_attempts": 1720,
+        "amp_skips": 7,
+        "batches": 2595,
+        "selected_objects": 314623,
+        "seconds": 4981.465810775757,
+        "last_kd": 0.24810592830181122
+      },
+      "runtime_ready.json": {
+        "status": "ready",
+        "arm": "paired",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "2",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      }
+    },
+    {
+      "seed": 0,
+      "launched": [
+        {
+          "status": "LAUNCHED",
+          "time": 1788766210.8927183,
+          "pid": 2757514,
+          "lease_id": "ikdv2_C1_0_train_a1-1299248e223d",
+          "gpu_ids": [
+            2
+          ]
+        }
+      ],
+      "latest_dispatch_event": {
+        "status": "SAMPLE",
+        "time": 1788771199.5649421,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "2": 7920
+          },
+          "peak_rss_mib": 28891,
+          "cuda_pid_counts": {
+            "2": 1
+          }
+        },
+        "whole_gpu": {
+          "2": {
+            "whole_gpu_used_mib": 15879,
+            "whole_gpu_free_mib": 8205,
+            "project_actual_vram_mib": 15840,
+            "project_actual_cuda_tasks": 2
+          }
+        },
+        "whole_gpu_minimum_free_mib": 8205,
+        "project_rss_mib": 144707
+      },
+      "progress.json": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 5,
+        "epochs": 200,
+        "optimizer_updates": 1672,
+        "update_attempts": 1680,
+        "amp_skips": 8,
+        "batches": 2515,
+        "selected_objects": 305191,
+        "seconds": 4963.796622991562,
+        "last_kd": 0.1279161125421524
+      },
+      "runtime_ready.json": {
+        "status": "ready",
+        "arm": "paired",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "2",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      }
+    },
+    {
+      "seed": 123,
+      "launched": [
+        {
+          "status": "LAUNCHED",
+          "time": 1788766242.0209296,
+          "pid": 2760047,
+          "lease_id": "ikdv2_C1_123_train_a1-b0cf02c79e9e",
+          "gpu_ids": [
+            5
+          ]
+        }
+      ],
+      "latest_dispatch_event": {
+        "status": "SAMPLE",
+        "time": 1788771197.0070555,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "5": 7920
+          },
+          "peak_rss_mib": 28918,
+          "cuda_pid_counts": {
+            "5": 1
+          }
+        },
+        "whole_gpu": {
+          "5": {
+            "whole_gpu_used_mib": 15704,
+            "whole_gpu_free_mib": 8380,
+            "project_actual_vram_mib": 15662,
+            "project_actual_cuda_tasks": 2
+          }
+        },
+        "whole_gpu_minimum_free_mib": 8380,
+        "project_rss_mib": 144929
+      },
+      "progress.json": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 5,
+        "epochs": 200,
+        "optimizer_updates": 1693,
+        "update_attempts": 1700,
+        "amp_skips": 7,
+        "batches": 2555,
+        "selected_objects": 309824,
+        "seconds": 4935.075498580933,
+        "last_kd": 0.162948340177536
+      },
+      "runtime_ready.json": {
+        "status": "ready",
+        "arm": "paired",
+        "train_images": 17990,
+        "val_images": 1469,
+        "train_batches": 563,
+        "batch": 32,
+        "workers": 4,
+        "cuda_visible_devices": "5",
+        "student_only_state": true,
+        "frozen_models_outside_optimizer": true,
+        "amp": true,
+        "class_names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "teacher_labels_used_by_kd": true,
+        "student_native_gt_only": true
+      }
+    }
+  ]
+}

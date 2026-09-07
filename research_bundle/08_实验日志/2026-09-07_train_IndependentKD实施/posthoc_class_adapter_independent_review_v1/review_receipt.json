@@ -1,0 +1,80 @@
+{
+  "schema": "rgbir-posthoc-class-adapter-review-v1",
+  "status": "ACCEPTED",
+  "decision": "ACCEPT",
+  "reviewer": "/root/review_c1_spec",
+  "author": "/root",
+  "date": "2026-09-07",
+  "blocking_issues_remaining": 0,
+  "scope": "Explicit in-memory post-hoc per-class AP adapter for the six existing N/C0 fixed last development endpoints and the root-accepted observed bridge; not method effectiveness or automatic expansion",
+  "source_files": [
+    {
+      "relative": "posthoc_class_adapter.py",
+      "accepted_copy": "reviewed_sources/posthoc_class_adapter.py"
+    },
+    {
+      "relative": "test_posthoc_class_adapter.py",
+      "accepted_copy": "reviewed_sources/test_posthoc_class_adapter.py"
+    },
+    {
+      "relative": "prepare_actual_manifest.py",
+      "accepted_copy": "reviewed_sources/prepare_actual_manifest.py"
+    },
+    {
+      "relative": "README.md",
+      "accepted_copy": "reviewed_sources/README.md"
+    },
+    {
+      "relative": "DEVELOPMENT_FAILURES.md",
+      "accepted_copy": "reviewed_sources/DEVELOPMENT_FAILURES.md"
+    }
+  ],
+  "frozen_analyzer_dependencies": [
+    {
+      "relative": "analyze_independent.py",
+      "original": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\analyze_independent.py",
+      "accepted_copy": "frozen_dependencies/analyze_independent.py"
+    },
+    {
+      "relative": "protocol.py",
+      "original": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\protocol.py",
+      "accepted_copy": "frozen_dependencies/protocol.py"
+    },
+    {
+      "relative": "task_conditional_reference/analyze_results.py",
+      "original": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\analyze_results.py",
+      "accepted_copy": "frozen_dependencies/task_conditional_reference/analyze_results.py"
+    }
+  ],
+  "independent_unit_tests": {
+    "passed": 17,
+    "failed": 0,
+    "log": "cpu_tests.log"
+  },
+  "independent_actual_execution": "independent_execution_checks.json",
+  "actual_records": 6,
+  "classes_per_record": 5,
+  "complete_three_seed_pairing": true,
+  "actual_result_equals_submitted_attempt2": true,
+  "metric_units": "Validated actual fraction_0_to_1 values x100 for AP/AP50/AP75; explicit percent units also covered by known-truth fixtures",
+  "original_critical_files_checked": 30,
+  "original_files_modified": false,
+  "caller_owned_record_unchanged": true,
+  "existing_output_overwrite_rejected": true,
+  "cli_output_status_remains": "DRAFT_AWAITING_INDEPENDENT_REVIEW",
+  "automatic_extension_authorized": false,
+  "method_effectiveness_accepted": false,
+  "c0_harm_status": "REVIEW_REQUIRED",
+  "c0_harm_missing": [],
+  "background_fp_increases_by_seed": {
+    "0": 3,
+    "42": 5,
+    "123": 46
+  },
+  "c1_endpoint_claim": "No C1 AP endpoint was supplied or inferred; classification remains AWAIT_C1_ENDPOINTS",
+  "gpu_operations_by_reviewer": 0,
+  "ssh_or_network_operations_by_reviewer": 0,
+  "pinned_cpu_receipt_from_root": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\posthoc_class_adapter_v1\\pinned_cpu_receipt.json",
+  "pinned_execution_scope": "Separate root-provided evidence; not run by this reviewer",
+  "review_document": "REVIEW.md"
+}

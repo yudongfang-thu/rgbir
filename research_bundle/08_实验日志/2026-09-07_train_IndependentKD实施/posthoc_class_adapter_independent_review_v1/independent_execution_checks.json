@@ -1,0 +1,77 @@
+{
+  "status": "INDEPENDENT_CPU_CHECKS_PASSED",
+  "unit_tests": 17,
+  "actual_records": 6,
+  "actual_result_equals_submitted_attempt2": true,
+  "classes_per_record": 5,
+  "metric_conversion": "actual fraction x100 checked for AP/AP50/AP75",
+  "seed_pairs": [
+    0,
+    42,
+    123
+  ],
+  "complete_three_seed_pairing": true,
+  "c0_minus_n_mAP_pp": {
+    "n": 3,
+    "mean": 0.26665521038329604,
+    "sample_sd": 0.14437289989666233,
+    "ddof": 1,
+    "positive_seeds": 3,
+    "negative_seeds": 0
+  },
+  "c0_harm": {
+    "status": "REVIEW_REQUIRED",
+    "triggers": [
+      "Background FP/image rises on all three seeds"
+    ],
+    "missing": [],
+    "per_class_deltas_pp": {
+      "0": [
+        0.20341906281994682,
+        0.16660223840621313,
+        -0.28584461958732277
+      ],
+      "1": [
+        0.8176542138589653,
+        0.02858465340731442,
+        1.807803736970456
+      ],
+      "2": [
+        0.28042578352360437,
+        -0.14747199798824795,
+        -0.7794415917402802
+      ],
+      "3": [
+        0.2532606329572644,
+        -0.26766135874468944,
+        0.43817460430466326
+      ],
+      "4": [
+        0.5752462767092439,
+        0.9427150727375988,
+        -0.03363855188535325
+      ]
+    },
+    "background_deltas_per_image": [
+      0.0020422055820285,
+      0.003403675970047648,
+      0.03131381892443841
+    ],
+    "stop_training": false,
+    "interpretation": "review trigger, not proof of material negative transfer"
+  },
+  "background_fp_increase_by_seed": {
+    "0": 3,
+    "42": 5,
+    "123": 46
+  },
+  "original_file_count_checked": 30,
+  "original_files_unchanged": true,
+  "input_record_unchanged": true,
+  "optout_preserves_original_only": true,
+  "existing_output_rejected": true,
+  "cli_status": "DRAFT_AWAITING_INDEPENDENT_REVIEW",
+  "automatic_extension": false,
+  "gpu_operations": 0,
+  "ssh_or_network_operations": 0
+}

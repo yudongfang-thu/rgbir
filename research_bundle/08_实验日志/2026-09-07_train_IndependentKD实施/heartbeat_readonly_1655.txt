@@ -1,0 +1,265 @@
+{
+  "snapshot_dir": "E:\\SHARE\\\u5149sar\\08_\u5b9e\u9a8c\u65e5\u5fd7\\2026-09-07_train_IndependentKD\u5b9e\u65bd\\snapshots\\2026-09-07T165357.033246_0800",
+  "captured_at": "2026-09-07T16:53:57.033246+08:00",
+  "files": 220,
+  "runs": {
+    "N0": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.7699251535173484,
+        "AP75": 0.6393291745479234,
+        "mAP50_95": 0.5434618520685575,
+        "precision": 0.7765485331322762,
+        "recall": 0.7358216889941263,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 216.70000000000073,
+        "remaining_training_seconds_estimate": 216.70000000000073,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "C0": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.7698678788788337,
+        "AP75": 0.6416654157547512,
+        "mAP50_95": 0.5477218640082956,
+        "precision": 0.7924371088621379,
+        "recall": 0.709786559338524,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 216.95000000000073,
+        "remaining_training_seconds_estimate": 216.95000000000073,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "R0": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.7689641053349323,
+        "AP75": 0.63957860250264,
+        "mAP50_95": 0.5463085656211213,
+        "precision": 0.7715389209362933,
+        "recall": 0.7327546255803248,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 203.04999999999927,
+        "remaining_training_seconds_estimate": 203.04999999999927,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "N42": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.7717965366938525,
+        "AP75": 0.6416656614678693,
+        "mAP50_95": 0.5451360845035178,
+        "precision": 0.7864732611282166,
+        "recall": 0.7292365679591741,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 200.89999999999782,
+        "remaining_training_seconds_estimate": 200.89999999999782,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "C42": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.770696200439378,
+        "AP75": 0.638393230492208,
+        "mAP50_95": 0.5465816217191543,
+        "precision": 0.7743225301297307,
+        "recall": 0.7243045069089454,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 201.0,
+        "remaining_training_seconds_estimate": 201.0,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "R42": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.7647841906336172,
+        "AP75": 0.6376612626327512,
+        "mAP50_95": 0.5449215666305265,
+        "precision": 0.78516933078987,
+        "recall": 0.7207884332189176,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 259.65000000000146,
+        "remaining_training_seconds_estimate": 259.65000000000146,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "N123": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.7692741735562139,
+        "AP75": 0.6368947787552206,
+        "mAP50_95": 0.5440743648945896,
+        "precision": 0.7784148488728724,
+        "recall": 0.7341004085623704,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 211.95000000000437,
+        "remaining_training_seconds_estimate": 211.95000000000437,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "C123": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.7730455672411458,
+        "AP75": 0.6421477409983494,
+        "mAP50_95": 0.5463684720507138,
+        "precision": 0.7787129583514844,
+        "recall": 0.7298865399139216,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 220.25,
+        "remaining_training_seconds_estimate": 220.25,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "R123": {
+      "epoch": 200,
+      "complete": true,
+      "evaluation": {
+        "AP50": 0.7694093121240413,
+        "AP75": 0.6374250867258423,
+        "mAP50_95": 0.5441936700091095,
+        "precision": 0.7883540828667716,
+        "recall": 0.7227335625816458,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 230.20000000000073,
+        "remaining_training_seconds_estimate": 230.20000000000073,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "S42": {
+      "epoch": 58,
+      "complete": false,
+      "evaluation": null,
+      "eta": {
+        "completed_epoch": 57,
+        "recent_median_epoch_seconds": 558.3999999999978,
+        "remaining_training_seconds_estimate": 79851.19999999969,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "M42": {
+      "epoch": 41,
+      "complete": false,
+      "evaluation": null,
+      "eta": {
+        "completed_epoch": 40,
+        "recent_median_epoch_seconds": 766.9500000000007,
+        "remaining_training_seconds_estimate": 122712.00000000012,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    }
+  },
+  "gpus": "0, 24564, 20143, 3941, 0\n1, 24564, 19590, 4494, 100\n2, 24564, 15879, 8205, 99\n3, 24564, 18214, 5870, 0\n4, 24564, 8046, 16037, 23\n5, 24564, 15704, 8380, 99\n6, 24564, 1, 24082, 0\n7, 24564, 19851, 4233, 48\n",
+  "project_rss_gib": 141.37900161743164
+}

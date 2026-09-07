@@ -1,5 +1,8 @@
 # RGB–IR 独立分类与定位蒸馏：证据与复核入口
 
+> **2026-09-07 17:06 follow-up:** The explicit post-hoc class adapter is independently accepted (17 tests and six actual endpoints). Original result files remain unchanged. C0 harm review remains REVIEW_REQUIRED with no missing items. C1 seeds were at epoch 5 as of 16:53; no complete C1 AP is available. [Evidence and review](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/heartbeat_20260907_1653/README.md).
+
+
 **16:35 补充阶段：C1三seed进入第4轮；旧N/C0六次补评均与历史五指标逐项一致，实际观察桥接已接受。旧C0净正确对象+4/−3/+101、背景误检+3/+5/+46，后者触发专项复核。C0后续自动扩展暂停，已有训练继续；L仍缺几何证据。** [最新阶段报告](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/STAGE_REPORT_1635.md) · [真实对象诊断](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/old_c0_object_diagnostics_v1/README.md)。
 
 **最新执行已切换为 C1 分类三 seed 优先、L1 定位条件准入。请先读 [实施状态与实际证据](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/README.md)，再读 [本轮复核请求](INDEPENDENT_KD_REVIEW_PROMPT.md)。**

@@ -1,5 +1,8 @@
 # 请独立复核：RGB–IR 独立分类与定位蒸馏
 
+> **2026-09-07 17:06 follow-up:** The explicit post-hoc class adapter is independently accepted (17 tests and six actual endpoints). Original result files remain unchanged. C0 harm review remains REVIEW_REQUIRED with no missing items. C1 seeds were at epoch 5 as of 16:53; no complete C1 AP is available. [Evidence and review](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/heartbeat_20260907_1653/README.md).
+
+
 先读 [16:35阶段报告](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/STAGE_REPORT_1635.md)，再读 [实施README](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/README.md)、[冻结计划](research_bundle/refine-logs/EXPERIMENT_PLAN.md) 和用户提供的 [Formal Spec](research_bundle/07_研究分析/RGBIR_Independent_Class_Loc_Formal_Spec_20260907.md)。执行身份已从 C+L 联合训练切换为单分支 C1/C1_y/L1/L_GT。C0 为已有 OEv1；历史 native 不是新实验的正式分母。
 
 请优先回答以下问题，并把已证实错误、待验证假设、资源限制分开：
