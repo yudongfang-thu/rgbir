@@ -1,0 +1,96 @@
+{
+  "status": "PASS_RECEIPT_CROSSCHECK_SINGLE_SEED_E8_C0",
+  "checks": {
+    "complete_e8": true,
+    "full_batch_count": true,
+    "counter_closure": true,
+    "frozen_config_and_original_init": true,
+    "actual_c0_learning_coefficient": true,
+    "weighted_kd_and_total_closure": true,
+    "logged_batch_cadence": true,
+    "same_checkpoint_stat": true,
+    "short_identity": true,
+    "canonical_full_roster": true,
+    "actual_native_kwargs": true,
+    "population_counts": true,
+    "classes_units_finite": true,
+    "class_means_close": true,
+    "train_queue_resources": true,
+    "train_source_receipt_byte_identity": true,
+    "eval_queue_resources": true,
+    "eval_source_receipt_byte_identity": true
+  },
+  "metric_means": {
+    "AP50": {
+      "recomputed": 0.6507172615000039,
+      "reported": 0.6507172615000039,
+      "absolute_difference": 0.0
+    },
+    "AP75": {
+      "recomputed": 0.511132611058549,
+      "reported": 0.511132611058549,
+      "absolute_difference": 0.0
+    },
+    "mAP50_95": {
+      "recomputed": 0.43920584261165174,
+      "reported": 0.43920584261165174,
+      "absolute_difference": 0.0
+    }
+  },
+  "metric_percent": {
+    "AP50": 65.07172615000039,
+    "AP75": 51.1132611058549,
+    "mAP50_95": 43.920584261165175
+  },
+  "resources": {
+    "train": {
+      "samples": 484,
+      "minimum_free_mib": 8391,
+      "max_project_rss_mib": 173001,
+      "peak_job_vram_mib": 7630,
+      "peak_job_rss_mib": 28884,
+      "monitor_errors": []
+    },
+    "eval": {
+      "samples": 8,
+      "minimum_free_mib": 14661,
+      "max_project_rss_mib": 147855,
+      "peak_job_vram_mib": 1370,
+      "peak_job_rss_mib": 4027,
+      "monitor_errors": []
+    }
+  },
+  "training_counters": {
+    "batches": 4504,
+    "optimizer_updates": 2667,
+    "attempts": 2674,
+    "amp_skips": 7,
+    "ema_updates": 2674
+  },
+  "checkpoint_stat": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C0/weights/last.pt",
+    "bytes": 10753555,
+    "mtime_ns": 1788814557908049694
+  },
+  "csv_header_columns": 15,
+  "csv_row_columns": [
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    8
+  ],
+  "logged_kd_rows": 48,
+  "weighted_kd_double_maxabs": 0.0,
+  "total_loss_float32_maxabs": 0.0,
+  "project_rss_limit_decimal_bytes": 300000000000,
+  "limitations": [
+    "Training CSV final row is short; do not read AP by its header. Independent evaluation receipt is the AP source.",
+    "Population and checkpoint stat crosscheck, not per-image GT byte audit or checkpoint content equality.",
+    "Counter closure uses executed receipts and sparse logs; no independent replay of all optimizer steps.",
+    "No inference, GPU, weights/state loading, new hashes, or gain judgment."
+  ]
+}
