@@ -1,10 +1,10 @@
-> **2026-09-08 C0 E8 端点**：Drone seed42 的 C0 已完成固定 E8 last/EMA 与完整 dev 独立评价，mAP50–95 原值为 **43.920584**；18 项限定回执复核通过。05:37 时 C1 为第 5/8 轮，保持三臂齐备后统一比较；本次不计算 C0−N 增益、不作 E200 等价或正式方法收益结论。请读[C0 原始端点与复核](08_实验日志/2026-09-08_train_分类快速反馈E8/endpoint_C0_20260908_053913/README.md)。
-
-> **2026-09-08 首个 E8 端点**：Drone seed42 的 N 已完成固定 E8 last/EMA 与完整 dev 独立评价，mAP50–95 为 **43.37654**；17 项限定回执复核通过。这是单独的短程 N 原值，C0/C1 尚未完成匹配比较，不是蒸馏增益或 E200 等价结论。请读[原始端点与复核](08_实验日志/2026-09-08_train_分类快速反馈E8/endpoint_N_20260908_043812/README.md)。训练 CSV 的占位/末行短列不作为 AP 来源。
-
-> **2026-09-08 性能修复与 E8 快速反馈**：原 block16 的真实训练轨迹失败保留；selected-only 在各 24 次成功更新上实现学习损失、梯度、模型/optimizer/EMA 状态逐位一致。正常日志频率仍需约 2.48 秒/C1批，已按先验预算启动共同 E8 的 N/C0/C1 单 seed 队列，尚无新 AP。请读[性能与失败证据](08_实验日志/2026-09-08_ops_训练吞吐诊断/README.md)、[E8 设置与启动](08_实验日志/2026-09-08_train_分类快速反馈E8/README.md)、[既有数据分析综合报告](07_研究分析/RGBIR数据分析综合报告_20260908.md)。旧 E200 继续，本次不声称 E200 等价或方法增益。
-
 # 光sar · 跨模态知识蒸馏工作区
+
+> **快速反馈已完成（2026-09-08 06:36）**：[E8三臂结果与判断](08_实验日志/2026-09-08_train_分类快速反馈E8/three_arm_summary_20260908/README.md)。约2小时40分钟完成N/C0/C1训练及完整dev；mAP43.3765/43.9206/43.4081，C1未显示早期优势。单seed独立短日程，不替代E200结论；旧三seed与两个归因臂继续。
+
+> **独立报告（2026-09-08整理）**：[RGBIR数据分析综合报告](07_研究分析/RGBIR数据分析综合报告_20260908.md)，系统说明历次配对、特征、对象错误、完整AP和训练流分析；证据截至9月7日。
+
+> **数据分析综合复盘（2026-09-07）**：[前后各轮怎么做、结论与修正](08_实验日志/2026-09-07_audit_数据分析综合复盘/README.md)。区分配对/物理几何、对象计数/宏AP、特征可读出/学生可学性；优先LLVIP条件定位与Drone少数类判别，附逐类证据图。
 
 > **双数据集证据推进（2026-09-07）**：[最新阶段判断](08_实验日志/2026-09-07_probe_双数据集证据优先推进/STAGE_REPORT.md)。LLVIP完整dev旧RGB/IR baseline mAP32.8784/48.8529，优先定位；Drone完整AP指向少数类混淆，修正对象数量代表AP瓶颈的解释。C1继续三seed，新的定位训练尚未准入。
 
@@ -39,36 +39,36 @@
 | 目录 | 内容 | 说明 |
 |---|---|---|
 | [01_文献](01_文献) | ~60 篇论文 PDF + 文献分析 | KD 经典（FGD/LD/CrossKD/SFTN）、跨模态/SAR 蒸馏、文献综述 md；旧文件名以硬链接别名保留；**[RGB-IR 调研批次](01_文献/RGB-IR_20260905新增/00_方法调研综述.md)（2026-09-05，34 篇 + 方法综述）**；**[文献精读笔记](01_文献/RGB-IR_20260905新增/文献精读笔记_20260905.md)（5 篇深读 + 全库速读 + 三条设计启示）** |
-| [02_汇报材料]（服务器/本地中间产物：02_汇报材料/） | 5 个 PPT + draw 绘图脚本 | 组会汇报、示意图、LADD 演讲稿 |
+| [02_汇报材料]（服务器/本地保留，未包含于本阶段发布：02_汇报材料/） | 5 个 PPT + draw 绘图脚本 | 组会汇报、示意图、LADD 演讲稿 |
 | [03_现行工程](03_现行工程) | **ogsod400_clean_protocol**（canonical）+ SpaceNet6 复现 | 70 个方法版本目录、实验审计、同事交接包、预注册协议；内部结构不要改动 |
 | [04_方法演化档案](04_方法演化档案) | 按时期归并的方法史与索引文档 | TSKD→LADD→CoRe-LADD→重审→clean protocol 的完整叙事；hub 索引文档（方法目录/归档目录表/去重政策） |
 | [05_实验证据_按服务器](05_实验证据_按服务器) | 大体积运行结果归档 | 90 服务器 formal 实验、3090 迁移快照、autodl checkpoint 备份、本地归档；**⭐ [实验证据对照总表](05_实验证据_按服务器/实验证据对照总表.md)——每个实验的配置/服务器/数据集/结果/分析/路径** |
 | [06_历史工程_只读](06_历史工程_只读) | LADD / LADD_public / CoRe-LADD 完整旧工程 | 含 runs、日志、remote_snapshots、VEDAI 数据集与内部数据视图链接；只读追溯 |
 | [07_研究分析](07_研究分析) | 研究思考与方法评估 | ⭐ [配对质量与蒸馏潜力评估](07_研究分析/配对质量与蒸馏潜力评估_20260905.md)——逐数据集分析 + probe 实验清单 |
 | [08_实验日志](08_实验日志/README.md) | **每个实验一个目录，结论 md 落盘** | 新会话先读这里防丢进度；索引表最新条目在最上（AGENTS.md §0/§5 有强制规范） |
-| [AGENTS.md]（服务器/本地中间产物：AGENTS.md） | 服务器使用原则 + 研究规范 | 94 三卡/三任务/显存留 2G 余量/总内存 300G 上限；复现甄别与四臂归因纪律；实验记录纪律 |
+| [AGENTS.md]（服务器/本地保留，未包含于本阶段发布：AGENTS.md） | 服务器使用原则 + 研究规范 | 94 三卡/三任务/显存留 2G 余量/总内存 300G 上限；复现甄别与四臂归因纪律；实验记录纪律 |
 | [99_整理回执](99_整理回执) | 移动映射、链接重建日志、盘点数据 | 每次结构操作都有回执，可追溯 |
 
 ## 快速上手
 
 - **继续研究**：进入 [03_现行工程/ogsod400_clean_protocol](03_现行工程/ogsod400_clean_protocol)，先读 `EXPERIMENT_AUDIT.md` 与 [交接包](03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/README.md)（一句话结论：已有强基线与完整审计体系，尚无 paper-ready 新方法；SX-APR / MM-ARCS / PSRMD 三条线的最新决策都在交接包里）。
-- **查方法历史**：[04_方法演化档案/2026-04~06_LADD主线/LADD_EVOLUTION_AND_EXPERIMENTS.md](04_方法演化档案/2026-04~06_LADD主线/LADD_EVOLUTION_AND_EXPERIMENTS.md) 是最完整的单篇叙事；51 个方法族的机器可读目录见 [hub索引文档/catalog]（服务器/本地中间产物：04_方法演化档案/hub索引文档/catalog/）。
+- **查方法历史**：[04_方法演化档案/2026-04~06_LADD主线/LADD_EVOLUTION_AND_EXPERIMENTS.md](04_方法演化档案/2026-04~06_LADD主线/LADD_EVOLUTION_AND_EXPERIMENTS.md) 是最完整的单篇叙事；51 个方法族的机器可读目录见 [hub索引文档/catalog]（服务器/本地保留，未包含于本阶段发布：04_方法演化档案/hub索引文档/catalog/）。
 - **查某个服务器的结果**：直接进 [05_实验证据_按服务器](05_实验证据_按服务器) 对应目录；L20 服务器结果只在远端 `/private/results`（本地无副本，清单见交接包 catalog）。
 
 ## 服务器 ↔ 本地证据对照
 
 | 服务器 | 角色 | 本地证据位置 |
 |---|---|---|
-| **94**（10.103.12.94，gpuserver94，8×4090） | **现行主力**：RGB-T 蒸馏（RGBT_campaign）+ SpaceNet6 复现；旧 OGSOD/freqmix 实验在其 `projects/ydf/` | 服务器端为主；SpaceNet6 工程本地副本在 [03/SpaceNet6_OTD_official_reproduction](03_现行工程/SpaceNet6_OTD_official_reproduction)；freqmix 等记录见 [04 方法演化档案]（服务器/本地中间产物：04_方法演化档案/2026-08_服务器环境总结/） |
-| 90（10.103.12.90，8×3090） | 前主力，OGSOD 400ep 协议 | [05/90+3090迁移包_20260704]（服务器/本地中间产物：05_实验证据_按服务器/90+3090迁移包_20260704/） 内 `90/` 子树 |
-| 3090 迁移机 | 2026-07-10 快照 | [05/3090快照_20260710]（服务器/本地中间产物：05_实验证据_按服务器/3090快照_20260710/） |
-| 117 / 5090d | 历史远程训练 | [06/LADD/remote_snapshots]（服务器/本地中间产物：06_历史工程_只读/LADD/remote_snapshots/）、[06/LADD/docs]（服务器/本地中间产物：06_历史工程_只读/LADD/docs/） |
-| autodl（seetacloud） | 早期 checkpoint | [05/autodl备份_20260614]（服务器/本地中间产物：05_实验证据_按服务器/autodl备份_20260614/） |
+| **94**（10.103.12.94，gpuserver94，8×4090） | **现行主力**：RGB-T 蒸馏（RGBT_campaign）+ SpaceNet6 复现；旧 OGSOD/freqmix 实验在其 `projects/ydf/` | 服务器端为主；SpaceNet6 工程本地副本在 [03/SpaceNet6_OTD_official_reproduction](03_现行工程/SpaceNet6_OTD_official_reproduction)；freqmix 等记录见 [04 方法演化档案]（服务器/本地保留，未包含于本阶段发布：04_方法演化档案/2026-08_服务器环境总结/） |
+| 90（10.103.12.90，8×3090） | 前主力，OGSOD 400ep 协议 | [05/90+3090迁移包_20260704]（服务器/本地保留，未包含于本阶段发布：05_实验证据_按服务器/90+3090迁移包_20260704/） 内 `90/` 子树 |
+| 3090 迁移机 | 2026-07-10 快照 | [05/3090快照_20260710]（服务器/本地保留，未包含于本阶段发布：05_实验证据_按服务器/3090快照_20260710/） |
+| 117 / 5090d | 历史远程训练 | [06/LADD/remote_snapshots]（服务器/本地保留，未包含于本阶段发布：06_历史工程_只读/LADD/remote_snapshots/）、[06/LADD/docs]（服务器/本地保留，未包含于本阶段发布：06_历史工程_只读/LADD/docs/） |
+| autodl（seetacloud） | 早期 checkpoint | [05/autodl备份_20260614]（服务器/本地保留，未包含于本阶段发布：05_实验证据_按服务器/autodl备份_20260614/） |
 | L20 | 现行远程结果仓 | 仅远端，本地清单见 [03/.../catalog/remote_results_manifest.csv](03_现行工程/ogsod400_clean_protocol/handoff_packages/ogsod400_colleague_handoff_20260723/catalog/remote_results_manifest.csv) |
 
 ## 数据集位置（本地）
 
-- **VEDAI 512**：[06/LADD_public/comparison/cmdistill/.../data]（服务器/本地中间产物：06_历史工程_只读/LADD_public/comparison/cmdistill/）（raw tar + interim + processed 视图，视图经硬链接零拷贝）
+- **VEDAI 512**：[06/LADD_public/comparison/cmdistill/.../data]（服务器/本地保留，未包含于本阶段发布：06_历史工程_只读/LADD_public/comparison/cmdistill/）（raw tar + interim + processed 视图，视图经硬链接零拷贝）
 - **SpaceNet6 OTD**：[03/SpaceNet6_OTD_official_reproduction](03_现行工程/SpaceNet6_OTD_official_reproduction)
 - **OGSOD / SiXiang**：不在本地（在各训练服务器上）；协议与划分定义见 03 工程内文档
 

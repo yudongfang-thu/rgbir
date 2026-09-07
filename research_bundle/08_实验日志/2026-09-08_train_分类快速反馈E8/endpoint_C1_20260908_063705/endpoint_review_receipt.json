@@ -1,0 +1,242 @@
+{
+  "status": "PASS_RECEIPT_CROSSCHECK_SINGLE_SEED_E8_C1",
+  "checks": {
+    "complete_e8": true,
+    "full_batch_count": true,
+    "counter_closure": true,
+    "frozen_config_and_original_init": true,
+    "actual_c1_learning_coefficient": true,
+    "weighted_kd_and_total_closure": true,
+    "logged_batch_cadence": true,
+    "same_checkpoint_stat": true,
+    "short_identity": true,
+    "canonical_full_roster": true,
+    "actual_native_kwargs": true,
+    "population_counts": true,
+    "classes_units_finite": true,
+    "class_means_close": true,
+    "train_queue_resources": true,
+    "train_source_receipt_byte_identity": true,
+    "eval_queue_resources": true,
+    "eval_source_receipt_byte_identity": true,
+    "candidate_factory_approved_source": true,
+    "logged_cumulative_thin_no_fallback_through_4500": true,
+    "three_arm_config_differences_expected": true,
+    "three_arm_actual_args_match": true,
+    "three_arm_actual_eval_contract_exact": true,
+    "three_arm_endpoint_identity_common": true,
+    "runs_three_arm_source_stat_scope": true,
+    "evaluations_three_arm_source_stat_scope": true
+  },
+  "metric_means": {
+    "AP50": {
+      "recomputed": 0.6471251652140496,
+      "reported": 0.6471251652140496,
+      "absolute_difference": 0.0
+    },
+    "AP75": {
+      "recomputed": 0.5014583933433145,
+      "reported": 0.5014583933433145,
+      "absolute_difference": 0.0
+    },
+    "mAP50_95": {
+      "recomputed": 0.4340810683462918,
+      "reported": 0.43408106834629173,
+      "absolute_difference": 5.551115123125783e-17
+    }
+  },
+  "metric_percent": {
+    "AP50": 64.71251652140496,
+    "AP75": 50.145839334331455,
+    "mAP50_95": 43.40810683462917
+  },
+  "resources": {
+    "train": {
+      "samples": 1261,
+      "minimum_free_mib": 8295,
+      "max_project_rss_mib": 172881,
+      "peak_job_vram_mib": 7726,
+      "peak_job_rss_mib": 28837,
+      "monitor_errors": []
+    },
+    "eval": {
+      "samples": 8,
+      "minimum_free_mib": 14661,
+      "max_project_rss_mib": 147945,
+      "peak_job_vram_mib": 1370,
+      "peak_job_rss_mib": 4036,
+      "monitor_errors": []
+    }
+  },
+  "training_counters": {
+    "batches": 4504,
+    "optimizer_updates": 2667,
+    "attempts": 2674,
+    "amp_skips": 7,
+    "ema_updates": 2674
+  },
+  "checkpoint_stat": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C1/weights/last.pt",
+    "bytes": 10753555,
+    "mtime_ns": 1788819030007123690
+  },
+  "csv_header_columns": 15,
+  "csv_row_columns": [
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    8
+  ],
+  "logged_kd_rows": 48,
+  "weighted_kd_double_maxabs": 0.0,
+  "total_loss_float32_maxabs": 0.0,
+  "project_rss_limit_decimal_bytes": 300000000000,
+  "three_arm_config_differences": {
+    "C0": [
+      {
+        "field": ".arm",
+        "left": "N",
+        "right": "C0"
+      },
+      {
+        "field": ".classification_coefficient",
+        "left": 0.0,
+        "right": 0.1
+      },
+      {
+        "field": ".method_id",
+        "left": "RGBIR-SHORT-SCREEN-E8-S42-N",
+        "right": "RGBIR-SHORT-SCREEN-E8-S42-C0"
+      },
+      {
+        "field": ".short_screen.source_E20_draft",
+        "left": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_训练吞吐诊断\\short_screen_draft\\configs\\drone_N_s42_E20_DRAFT.yaml",
+        "right": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_训练吞吐诊断\\short_screen_draft\\configs\\drone_C0_s42_E20_DRAFT.yaml"
+      }
+    ],
+    "C1": [
+      {
+        "field": ".arm",
+        "left": "N",
+        "right": "C1"
+      },
+      {
+        "field": ".classification_coefficient",
+        "left": 0.0,
+        "right": 0.09227393550836771
+      },
+      {
+        "field": ".method_id",
+        "left": "RGBIR-SHORT-SCREEN-E8-S42-N",
+        "right": "RGBIR-SHORT-SCREEN-E8-S42-C1"
+      },
+      {
+        "field": ".short_screen.accepted_N_C0_compatibility_may_be_reused",
+        "left": true,
+        "right": false
+      },
+      {
+        "field": ".short_screen.candidate.implementation",
+        "left": "original",
+        "right": "selected_only_v1"
+      },
+      {
+        "field": ".short_screen.candidate.kind",
+        "left": "original",
+        "right": "criterion_factory"
+      },
+      {
+        "field": ".short_screen.needs_new_24update_review",
+        "left": false,
+        "right": true
+      },
+      {
+        "field": ".short_screen.source_E20_draft",
+        "left": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_训练吞吐诊断\\short_screen_draft\\configs\\drone_N_s42_E20_DRAFT.yaml",
+        "right": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_训练吞吐诊断\\short_screen_draft\\configs\\drone_C1_s42_E20_DRAFT.yaml"
+      }
+    ]
+  },
+  "three_arm_actual_args_differences": {
+    "C0": [
+      {
+        "field": ".name",
+        "left": "N",
+        "right": "C0"
+      },
+      {
+        "field": ".save_dir",
+        "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N",
+        "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C0"
+      }
+    ],
+    "C1": [
+      {
+        "field": ".name",
+        "left": "N",
+        "right": "C1"
+      },
+      {
+        "field": ".save_dir",
+        "left": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N",
+        "right": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C1"
+      }
+    ]
+  },
+  "three_arm_source_comparison": {
+    "runs": {
+      "common_count": 68,
+      "common_stat_mismatches": [],
+      "noncommon_paths": {
+        "N": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/N.json",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml"
+        ],
+        "C0": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/C0.json",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_C0_s42_E8.yaml"
+        ],
+        "C1": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/admissions/C1.json",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/performance_candidate/selected_only_v1.py",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_C1_s42_E8.yaml"
+        ]
+      },
+      "scope": "Path/bytes/mtime and source-copy byte_identity receipts; not freshly retrieved remote source bytes."
+    },
+    "evaluations": {
+      "common_count": 17,
+      "common_stat_mismatches": [],
+      "noncommon_paths": {
+        "N": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/short_screen_config.yaml"
+        ],
+        "C0": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C0/short_screen_config.yaml"
+        ],
+        "C1": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/C1/short_screen_config.yaml"
+        ]
+      },
+      "scope": "Path/bytes/mtime and source-copy byte_identity receipts; not freshly retrieved remote source bytes."
+    }
+  },
+  "thin_last_logged": {
+    "batch": 4500,
+    "thin_learning_batches": 4500,
+    "full_diagnostics_batches": 48,
+    "fallback_batches": 0
+  },
+  "thin_final_counters_available": false,
+  "limitations": [
+    "Training CSV final row is short; do not read AP by its header. Independent evaluation receipt is the AP source.",
+    "Population and checkpoint stat crosscheck, not per-image GT byte audit or checkpoint content equality.",
+    "Counter closure uses executed receipts and sparse logs; no independent replay of all optimizer steps.",
+    "Final training receipt omits thin/full/fallback counters; cumulative logs verify through batch 4500 only, not the final four batches.",
+    "No inference, GPU, weights/state loading, new hashes, or gain judgment."
+  ]
+}

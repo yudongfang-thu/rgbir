@@ -1,0 +1,44 @@
+{
+  "status": "PASS_FOR_FIXED_E8_DESCRIPTIVE_ANALYZER",
+  "author_known_truth_count": 15,
+  "author_known_truth": {
+    "status": "PASS",
+    "checks": {
+      "fraction_to_percent": true,
+      "signed_pp": true,
+      "no_single_seed_sd_or_expansion": true,
+      "class_id_alignment": true,
+      "missing_arm": true,
+      "wrong_seed": true,
+      "incomplete_receipt": true,
+      "missing_metric": true,
+      "nan_metric": true,
+      "wrong_units": true,
+      "mismatched_population": true,
+      "mismatched_evaluator": true,
+      "class_mean_error": true,
+      "class_identity_error": true,
+      "duplicate_class": true
+    },
+    "known_truth_only": true
+  },
+  "independent_checks": {
+    "nonuniform_macro_percent": true,
+    "nonuniform_signed_pair_pp": true,
+    "per_class_pp_alignment": true,
+    "macro_delta_closes_class_delta": true,
+    "scope_no_sd_no_gain_no_expansion": true,
+    "relative_percent_separate_from_pp": true,
+    "zero_relative_denominator_null": true,
+    "reject_e200_claim": true,
+    "reject_paper_gain_flag": true,
+    "reject_test_access": true,
+    "reject_nonfinite_class": true,
+    "source_bytes_unchanged": true
+  },
+  "source_bytes": 9394,
+  "scope": "Known synthetic fixtures and static review only; main() and actual endpoint analysis NOT executed.",
+  "new_hashes": false,
+  "gpu": false,
+  "formal_outputs_written": false
+}

@@ -1,0 +1,325 @@
+{
+  "status": "COMPLETED_CPU_TIMING_SUMMARY",
+  "arms": {
+    "N": {
+      "training_seconds": 3057.7879603409674,
+      "training_minutes": 50.96313267234946,
+      "evaluation_seconds": 14.542418943019584,
+      "epochs": 8,
+      "batches": 4504,
+      "optimizer_updates": 2667,
+      "amp_skips": 7,
+      "ema_updates": 2674,
+      "csv_header_columns": 15,
+      "csv_row_columns": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        8
+      ],
+      "csv_cumulative_seconds": [
+        530.879,
+        1018.99,
+        1496.32,
+        1936.02,
+        2210.08,
+        2483.08,
+        2753.69,
+        3040.51
+      ],
+      "csv_epoch_seconds": [
+        530.879,
+        488.111,
+        477.33,
+        439.7,
+        274.06,
+        273.0,
+        270.61,
+        286.82
+      ],
+      "csv_epoch_min_seconds": 270.61,
+      "csv_epoch_max_seconds": 530.879,
+      "csv_epoch_median_seconds": 363.26,
+      "csv_total_seconds": 3040.51,
+      "training_receipt_minus_csv_seconds": 17.277960340967184,
+      "whole_training_entry_seconds_per_batch": 0.6789049645517246
+    },
+    "C0": {
+      "training_seconds": 1939.1025699069723,
+      "training_minutes": 32.318376165116206,
+      "evaluation_seconds": 15.685008800122887,
+      "epochs": 8,
+      "batches": 4504,
+      "optimizer_updates": 2667,
+      "amp_skips": 7,
+      "ema_updates": 2674,
+      "csv_header_columns": 15,
+      "csv_row_columns": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        8
+      ],
+      "csv_cumulative_seconds": [
+        255.321,
+        494.322,
+        733.803,
+        970.411,
+        1210.04,
+        1449.67,
+        1688.12,
+        1928.22
+      ],
+      "csv_epoch_seconds": [
+        255.321,
+        239.001,
+        239.481,
+        236.608,
+        239.629,
+        239.63,
+        238.45,
+        240.1
+      ],
+      "csv_epoch_min_seconds": 236.608,
+      "csv_epoch_max_seconds": 255.321,
+      "csv_epoch_median_seconds": 239.555,
+      "csv_total_seconds": 1928.22,
+      "training_receipt_minus_csv_seconds": 10.882569906972321,
+      "whole_training_entry_seconds_per_batch": 0.4305289897662017
+    },
+    "C1": {
+      "training_seconds": 4391.556851219153,
+      "training_minutes": 73.19261418698588,
+      "evaluation_seconds": 14.738947182893753,
+      "epochs": 8,
+      "batches": 4504,
+      "optimizer_updates": 2667,
+      "amp_skips": 7,
+      "ema_updates": 2674,
+      "csv_header_columns": 15,
+      "csv_row_columns": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        8
+      ],
+      "csv_cumulative_seconds": [
+        559.702,
+        1101.67,
+        1644.56,
+        2190.07,
+        2731.01,
+        3276.51,
+        3828.68,
+        4377.99
+      ],
+      "csv_epoch_seconds": [
+        559.702,
+        541.968,
+        542.89,
+        545.51,
+        540.94,
+        545.5,
+        552.17,
+        549.31
+      ],
+      "csv_epoch_min_seconds": 540.94,
+      "csv_epoch_max_seconds": 559.702,
+      "csv_epoch_median_seconds": 545.505,
+      "csv_total_seconds": 4377.99,
+      "training_receipt_minus_csv_seconds": 13.56685121915325,
+      "whole_training_entry_seconds_per_batch": 0.9750348248710375
+    }
+  },
+  "totals": {
+    "training_seconds": 9388.447381467093,
+    "training_hours": 2.607902050407526,
+    "evaluation_seconds": 44.966374926036224,
+    "worker_task_seconds": 9433.413756393129,
+    "worker_task_hours": 2.6203927101092024,
+    "queue_seconds": 9604.803990602493,
+    "queue_hours": 2.6680011085006927,
+    "queue_minus_worker_timers_seconds": 171.39023420936428,
+    "csv_training_seconds": 9346.720000000001,
+    "observed_first_launch_to_last_guard_seconds": 9591.029267549515,
+    "first_launch_running_unix": 1788809492.667735,
+    "last_guard_completed_unix": 1788819083.6970026
+  },
+  "budget": {
+    "frozen_pure_training_hours": 5.285795546518854,
+    "frozen_total_hours_with_margin": 7.342954655822625,
+    "actual_training_fraction_of_training_budget": 0.49337928935315156,
+    "actual_queue_fraction_of_total_budget": 0.36334162929701475,
+    "total_budget_minus_actual_queue_hours": 4.674953547321932
+  },
+  "guard_phases": [
+    {
+      "arm": "N",
+      "stage": "train",
+      "first_monitor_sample_unix": 1788809499.666385,
+      "last_monitor_sample_unix": 1788812569.0164647,
+      "guard_completed_unix": 1788812569.9178753,
+      "monitor_samples": 653
+    },
+    {
+      "arm": "N",
+      "stage": "eval",
+      "first_monitor_sample_unix": 1788812579.818012,
+      "last_monitor_sample_unix": 1788812605.9768057,
+      "guard_completed_unix": 1788812606.747521,
+      "monitor_samples": 7
+    },
+    {
+      "arm": "C0",
+      "stage": "train",
+      "first_monitor_sample_unix": 1788812618.2731566,
+      "last_monitor_sample_unix": 1788814576.828817,
+      "guard_completed_unix": 1788814576.8459554,
+      "monitor_samples": 484
+    },
+    {
+      "arm": "C0",
+      "stage": "eval",
+      "first_monitor_sample_unix": 1788814591.7939281,
+      "last_monitor_sample_unix": 1788814624.468543,
+      "guard_completed_unix": 1788814624.4686298,
+      "monitor_samples": 8
+    },
+    {
+      "arm": "C1",
+      "stage": "train",
+      "first_monitor_sample_unix": 1788814637.086131,
+      "last_monitor_sample_unix": 1788819043.9990277,
+      "guard_completed_unix": 1788819043.9991333,
+      "monitor_samples": 1261
+    },
+    {
+      "arm": "C1",
+      "stage": "eval",
+      "first_monitor_sample_unix": 1788819055.1627505,
+      "last_monitor_sample_unix": 1788819083.6969287,
+      "guard_completed_unix": 1788819083.6970026,
+      "monitor_samples": 8
+    }
+  ],
+  "snapshot_captured_at": "2026-09-08T06:36:54.970176+08:00",
+  "provenance": [
+    {
+      "path": "heartbeat_20260908_063654\\snapshot.json",
+      "bytes": 26496,
+      "mtime_ns": 1788820614678363900
+    },
+    {
+      "path": "three_arm_summary_20260908\\queue_completion.json",
+      "bytes": 1747,
+      "mtime_ns": 1788820841002215400
+    },
+    {
+      "path": "launch_evidence_attempt1\\freeze_receipt.json",
+      "bytes": 326,
+      "mtime_ns": 1788809580431277500
+    },
+    {
+      "path": "launch_evidence_attempt1\\short_N_s42_E8_train_status.json",
+      "bytes": 1741,
+      "mtime_ns": 1788809580001522000
+    },
+    {
+      "path": "endpoint_N_20260908_043812\\runs\\N\\short_training_receipt.json",
+      "bytes": 1961,
+      "mtime_ns": 1788813492732567100
+    },
+    {
+      "path": "endpoint_N_20260908_043812\\evaluations\\N\\short_evaluation_receipt.json",
+      "bytes": 2167,
+      "mtime_ns": 1788813492726231000
+    },
+    {
+      "path": "endpoint_N_20260908_043812\\runs\\N\\results.csv",
+      "bytes": 796,
+      "mtime_ns": 1788813492730749000
+    },
+    {
+      "path": "endpoint_N_20260908_043812\\queue\\short_N_s42_E8_train_resource_profile.json",
+      "bytes": 124948,
+      "mtime_ns": 1788813492729233000
+    },
+    {
+      "path": "endpoint_N_20260908_043812\\queue\\short_N_s42_E8_eval_resource_profile.json",
+      "bytes": 1724,
+      "mtime_ns": 1788813492728231700
+    },
+    {
+      "path": "endpoint_C0_20260908_053913\\runs\\C0\\short_training_receipt.json",
+      "bytes": 1965,
+      "mtime_ns": 1788817153430944700
+    },
+    {
+      "path": "endpoint_C0_20260908_053913\\evaluations\\C0\\short_evaluation_receipt.json",
+      "bytes": 2168,
+      "mtime_ns": 1788817153425946700
+    },
+    {
+      "path": "endpoint_C0_20260908_053913\\runs\\C0\\results.csv",
+      "bytes": 798,
+      "mtime_ns": 1788817153429945900
+    },
+    {
+      "path": "endpoint_C0_20260908_053913\\queue\\short_C0_s42_E8_train_resource_profile.json",
+      "bytes": 92697,
+      "mtime_ns": 1788817153427944700
+    },
+    {
+      "path": "endpoint_C0_20260908_053913\\queue\\short_C0_s42_E8_eval_resource_profile.json",
+      "bytes": 1913,
+      "mtime_ns": 1788817153426946900
+    },
+    {
+      "path": "endpoint_C1_20260908_063705\\runs\\C1\\short_training_receipt.json",
+      "bytes": 2340,
+      "mtime_ns": 1788820625291748000
+    },
+    {
+      "path": "endpoint_C1_20260908_063705\\evaluations\\C1\\short_evaluation_receipt.json",
+      "bytes": 2173,
+      "mtime_ns": 1788820625283752300
+    },
+    {
+      "path": "endpoint_C1_20260908_063705\\runs\\C1\\results.csv",
+      "bytes": 799,
+      "mtime_ns": 1788820625290747400
+    },
+    {
+      "path": "endpoint_C1_20260908_063705\\queue\\short_C1_s42_E8_train_resource_profile.json",
+      "bytes": 240898,
+      "mtime_ns": 1788820625286747700
+    },
+    {
+      "path": "endpoint_C1_20260908_063705\\queue\\short_C1_s42_E8_eval_resource_profile.json",
+      "bytes": 1917,
+      "mtime_ns": 1788820625284749700
+    }
+  ],
+  "queue_timer_definition": "run_short_screen_queue.py lines 103-111: started=time.time() before six jobs; seconds written after all six stages and terminal checks.",
+  "training_timer_definition": "train_short_screen.py lines 77-95: perf_counter before trainer construction through train() and terminal checks; earlier source copying and interpreter startup are outside.",
+  "epoch_timer_definition": "Difference of CSV time column, using only epoch and time; rounded source precision, not an isolated training-kernel timer.",
+  "strict_code_speedup_claim": false,
+  "csv_ap_used": false,
+  "gpu_used": false,
+  "network_used": false,
+  "weights_loaded": false,
+  "new_hash_computed": false,
+  "parent_readme_modified": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": {
+    "fraction_to_percent": true,
+    "signed_pp": true,
+    "no_single_seed_sd_or_expansion": true,
+    "class_id_alignment": true,
+    "missing_arm": true,
+    "wrong_seed": true,
+    "incomplete_receipt": true,
+    "missing_metric": true,
+    "nan_metric": true,
+    "wrong_units": true,
+    "mismatched_population": true,
+    "mismatched_evaluator": true,
+    "class_mean_error": true,
+    "class_identity_error": true,
+    "duplicate_class": true
+  },
+  "known_truth_only": true
+}
