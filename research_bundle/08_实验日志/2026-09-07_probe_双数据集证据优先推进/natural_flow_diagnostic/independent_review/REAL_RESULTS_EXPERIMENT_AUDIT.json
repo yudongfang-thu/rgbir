@@ -1,0 +1,167 @@
+{
+  "date": "2026-09-07",
+  "auditor": "/root/ap_error",
+  "executor": "/root/baseline_feature_analysis",
+  "runtime_executor": "/root",
+  "status": "PASS_FOR_OBSERVED_FIXED_FLOW_DIAGNOSTIC",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "REAL_2_AND_64_BATCHES_BOTH_DATASETS_CPU_RECOMPUTATION_AND_GOVERNANCE_PASS",
+  "tests": [
+    "real_results_v1/result.json",
+    "real_results_v1/governance_and_metadata_review.json"
+  ],
+  "audited_input_hashes": [],
+  "new_hash_computed": false,
+  "hash_omission_reason": "User no-hash instruction; source bytes/stat and root collection byte-identity receipt used.",
+  "training_admitted": false,
+  "calibration_admitted": false,
+  "geometry_verified": false,
+  "all_anchor_predictions_recomputed": false,
+  "datasets": [
+    {
+      "dataset": "llvip",
+      "RGB_GT": 5201,
+      "C_base": 5128,
+      "C_eligible": 4406,
+      "C_selected": 2217,
+      "C_selected_batches": 64,
+      "C_selected_images": 1317,
+      "C_selected_groups": 14,
+      "L_base": 5033,
+      "L_selected": 207,
+      "L_selected_batches": 62,
+      "L_selected_images": 187,
+      "L_selected_groups": 14,
+      "C_classes": {
+        "0": {
+          "base": 5128,
+          "eligible": 4406,
+          "selected": 2217
+        }
+      },
+      "L_classes": {
+        "0": {
+          "base": 5033,
+          "selected": 207
+        }
+      }
+    },
+    {
+      "dataset": "drone",
+      "RGB_GT": 30197,
+      "C_base": 28297,
+      "C_eligible": 15616,
+      "C_selected": 7821,
+      "C_selected_batches": 64,
+      "C_selected_images": 1317,
+      "C_selected_groups": 64,
+      "L_base": 21488,
+      "L_selected": 602,
+      "L_selected_batches": 63,
+      "L_selected_images": 268,
+      "L_selected_groups": 31,
+      "C_classes": {
+        "0": {
+          "base": 24226,
+          "eligible": 13530,
+          "selected": 6935
+        },
+        "1": {
+          "base": 905,
+          "eligible": 370,
+          "selected": 179
+        },
+        "2": {
+          "base": 1270,
+          "eligible": 593,
+          "selected": 320
+        },
+        "3": {
+          "base": 1221,
+          "eligible": 822,
+          "selected": 247
+        },
+        "4": {
+          "base": 675,
+          "eligible": 301,
+          "selected": 140
+        }
+      },
+      "L_classes": {
+        "3": {
+          "base": 964,
+          "selected": 6
+        },
+        "2": {
+          "base": 956,
+          "selected": 21
+        },
+        "0": {
+          "base": 18328,
+          "selected": 561
+        },
+        "1": {
+          "base": 702,
+          "selected": 9
+        },
+        "4": {
+          "base": 538,
+          "selected": 5
+        }
+      }
+    }
+  ],
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Both real 64x32 streams equal old recorded trace exactly; original governance TSV maps all4096 unique full-run image entries; metadata and globalGT/class identities verified.",
+      "evidence": "real_results_v1/governance_and_metadata_review.json"
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "C every-batch stable-q/ceil quota and preteacher-base denominator recomputed. L original whole-batch denominator, perimage/batch/summary counters and postbase gates recomputed.",
+      "evidence": "real_results_v1/result.json"
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "Both datasets have real2+64 successful runs, source bytes match, canary first2 selections exactly equal full first2. Root129-file byte-identical collection receipt checked.",
+      "evidence": "../collection_receipt.json"
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "All132 real batch records visited. GT-only common/pair/geometry/inside/support/owner gates recomputed from trace in CPU source function; actual source/summaries show original calls with replay assertions.",
+      "evidence": "review_real_natural.py"
+    },
+    "scope": {
+      "status": "pass",
+      "details": "Unverified geometry only; no optimizer/backward/calibration/test. Four lease profiles complete without monitor errors; measured freeGPU>=2048MiB/projectRSS<=300GiB. FourGPU exception admission leaves>=2empty.",
+      "evidence": "real_results_v1/result.json:resource_review"
+    },
+    "eval_type": {
+      "status": "pass",
+      "details": "real_gt train-label selection diagnostic. Independent CPU gate reconstruction uses real labels with synthetic no-candidate scores only to isolate GT gates; no fresh model prediction or AP.",
+      "evidence": "REAL_RESULTS_REVIEW_SCOPE.md"
+    }
+  },
+  "claims": [
+    {
+      "id": "fixed_natural_flow_selection_observed",
+      "impact": "supported",
+      "evidence": "real_results_v1",
+      "rationale": "Both actual64batch populations, all labels/source groups and record-derived selection stats verified."
+    },
+    {
+      "id": "full_model_prediction_independent_replay",
+      "impact": "unsupported",
+      "evidence": "No all-anchor raw logits cache",
+      "rationale": "Reference candidate existence/confidence rank and Cq source values remain dependent on original forward artifacts; no independent reinference."
+    },
+    {
+      "id": "geometry_or_learning_or_KD_gain",
+      "impact": "unsupported",
+      "evidence": "UNVERIFIED_GEOMETRY_DIAGNOSTIC",
+      "rationale": "Selected nonzero object/batch counts are not gradients, calibration, new-student learning, or attainable KD gain."
+    }
+  ]
+}

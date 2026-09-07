@@ -1,0 +1,9 @@
+# attempt1 技术失效与修复
+
+**attempt1全部评价INVALID，不是模型AP为0。原始summary/queue完成回执只说明进程执行完，未能证明有效标签评价。**
+
+发现时间2026-09-07 21:09。原dev_roster将processed图像symlink解析到raw路径；新临时评价txt错误使用canonical/raw路径，导致YOLO按图像路径推导的labels不存在。native与capture同时零GT，五个0指标“相等”不能通过真实评价准入。初版遗漏了GT数量及逐类存在性检查，导致两canary及两full均运行完但无有效AP。没有据这些0指标选择方法。
+
+修复保留processed alias供loader推导标签，canonical仅用于名单身份核对；运行前要求每个processed GT文件存在、全部标签类别/格式合法，读取loader实际GT数量必须与预先label清单一致，捕获GT再核对一次，且person逐类指标完整。canary和full同样强制检查，不放宽科学阈值。所有脚本和原回执留在attempt1，新部署使用attempt2重新短测/全量。
+
+原94目录：`/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/`。本地原源码/静态审阅存于attempt1_source，实际失效快照为status_20260907_210935.json。初版独立代码审阅未发现这个symlink语义问题，本修复重新审阅，不复用旧静态接受状态。没有改旧数据GT、权重或正式训练。

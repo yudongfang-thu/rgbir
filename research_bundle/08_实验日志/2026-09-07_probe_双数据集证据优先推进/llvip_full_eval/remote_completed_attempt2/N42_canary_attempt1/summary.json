@@ -1,0 +1,51 @@
+{
+  "status": "completed",
+  "model": "N42",
+  "dataset": "llvip",
+  "images": 64,
+  "full_population": 2406,
+  "canary": true,
+  "native_capture_exact": true,
+  "gt_count": 279,
+  "metric_units": "fraction_0_to_1",
+  "metrics": {
+    "AP50": 0.891928620831865,
+    "AP75": 0.45732083138839275,
+    "mAP50_95": 0.4798602841404647,
+    "precision": 0.9020614049974967,
+    "recall": 0.8387096774193549,
+    "per_class": [
+      {
+        "class_id": 0,
+        "name": "person",
+        "AP50": 0.891928620831865,
+        "AP75": 0.45732083138839275,
+        "mAP50_95": 0.4798602841404647
+      }
+    ]
+  },
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "input_data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+  "historical_training_args": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/args.yaml",
+  "objects": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt2/N42_canary_attempt1/capture/objects.jsonl.gz",
+  "evaluation_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt2/N42_canary_attempt1/capture_contract.json",
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 3786
+  },
+  "gpu_reserved_peak_mib": 884.0,
+  "gpu_allocated_peak_mib": 711.603515625,
+  "seconds": 6.182375431060791,
+  "official_test_accessed": false,
+  "training_modified": false,
+  "new_protocol_N": false,
+  "physical_alignment_verified": false
+}

@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-07",
+  "auditor": "/root/ap_error",
+  "executor": "/root/baseline_feature_analysis",
+  "repair_author": "/root",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "status": "PASS_FOR_REAL_CANARY",
+  "reason_code": "EXPLICIT_RELEASE_CONFIG_IMPORT_AND_19_CPU_TESTS_PASS",
+  "supersedes_execution_clearance_only": "EXPERIMENT_AUDIT.json retained; attempt1 failed before batch0",
+  "tests": [
+    "attempt2_import_test_result_v2.json",
+    "cpu_test_attempt2_result.json"
+  ],
+  "test_count": 19,
+  "source_manifest": "attempt2_source_stat_manifest.json",
+  "audited_input_hashes": [],
+  "new_hash_computed": false,
+  "hash_omission_reason": "Explicit inherited user no-hash instruction; path/size/mtime/byte identity instead.",
+  "cuda_initialized": false,
+  "gpu_or_ssh_used_by_auditor": false,
+  "real_64_batches_accepted": false,
+  "training_admitted": false,
+  "calibration_admitted": false,
+  "geometry_verified": false,
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Original trace and dual-label enforcement unchanged; corruption regression retained."
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "C whole-batch and L primary/replay semantics unchanged; 14 original independent checks repeated."
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "5 collision tests plus 14 selection/summary checks pass; no successful real execution inferred."
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "Executed actual current config-binding AST under original runtime sys.path prefix; wrong prepare_configs module cached and ignored."
+    },
+    "scope": {
+      "status": "pass",
+      "details": "Source delta from retained failure is only importlib.util and explicit generator import; no new config, flow or selection change."
+    },
+    "eval_type": {
+      "status": "pass",
+      "details": "CPU regression and synthetic_proxy fixtures only. Runtime prefix executes actual source; full heavy runtime not imported by collision fixture."
+    }
+  },
+  "claims": [
+    {
+      "id": "import_collision_repaired",
+      "impact": "supported",
+      "evidence": "attempt2_import_test_result_v2.json",
+      "rationale": "Actual wrong file selection and missing llvip_C1/drone_C1 reproduced; new binding returns all12 unchanged independent configs."
+    },
+    {
+      "id": "read_only_canary_clearance",
+      "impact": "supported",
+      "evidence": "19 CPU tests",
+      "rationale": "Proceed to authorized real canary; later failure remains possible."
+    },
+    {
+      "id": "real_stream_or_KD_gain",
+      "impact": "unsupported",
+      "evidence": "No successful real run within review",
+      "rationale": "No geometry, calibration or learning admission."
+    }
+  ]
+}

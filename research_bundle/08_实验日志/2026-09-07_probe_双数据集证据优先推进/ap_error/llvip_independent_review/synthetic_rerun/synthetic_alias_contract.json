@@ -1,0 +1,32 @@
+{
+  "roster": [
+    "/canonical/correct",
+    "/canonical/class",
+    "/canonical/loc",
+    "/canonical/both",
+    "/canonical/duplicate",
+    "/canonical/background",
+    "/canonical/miss_empty_prediction",
+    "/canonical/class1_correct",
+    "/canonical/empty_image"
+  ],
+  "alias_to_canonical": {
+    "correct": "/canonical/correct",
+    "class": "/canonical/class",
+    "loc": "/canonical/loc",
+    "both": "/canonical/both",
+    "duplicate": "/canonical/duplicate",
+    "background": "/canonical/background",
+    "miss_empty_prediction": "/canonical/miss_empty_prediction",
+    "class1_correct": "/canonical/class1_correct",
+    "empty_image": "/canonical/empty_image"
+  },
+  "expected_val_images": 9,
+  "effective_kwargs": {
+    "max_det": 300,
+    "conf": 0.001
+  },
+  "expected_gt": 7,
+  "loader_gt": 7,
+  "captured_gt": 7
+}

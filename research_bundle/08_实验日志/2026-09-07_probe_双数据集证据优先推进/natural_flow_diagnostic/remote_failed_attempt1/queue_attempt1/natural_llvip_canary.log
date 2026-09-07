@@ -1,0 +1,9 @@
+{"cuda_processes_per_gpu": 1, "expected_rss_mib": 24576, "expected_vram_mib": 4096, "gpu_ids": [1], "lease_id": "natural_llvip_canary-dd3e35e687fa", "pid": 949630, "status": "LAUNCHED"}
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/natural_flow_attempt1/diagnose_natural_flow.py", line 334, in <module>
+    main()
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/natural_flow_attempt1/diagnose_natural_flow.py", line 330, in main
+    run(parser.parse_args())
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/natural_flow_attempt1/diagnose_natural_flow.py", line 162, in run
+    canonical = configurations()[prefix + '_C1']
+KeyError: 'llvip_C1'

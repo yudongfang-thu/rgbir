@@ -1,0 +1,2174 @@
+{
+  "input": {
+    "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\dronevehicle_full_attempt1\\objects.jsonl",
+    "bytes": 70960762,
+    "mtime_ns": 1788781753929499600
+  },
+  "source": {
+    "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\new_probe_analysis\\analyze_baseline_probe.py",
+    "bytes": 42833,
+    "mtime_ns": 1788781801690713300
+  },
+  "source_copy_byte_identical": true,
+  "images": 200,
+  "images_with_gt": 194,
+  "images_without_gt": [
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00856.jpg",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00864.jpg",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00915.jpg",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01055.jpg",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01100.jpg",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01432.jpg"
+  ],
+  "settings": {
+    "confidence": 0.25,
+    "IoU": 0.5,
+    "pair_IoU": 0.5,
+    "view": "assigned"
+  },
+  "results": {
+    "all": {
+      "class_name": "all",
+      "gt": 3084,
+      "N_correct": 2386,
+      "N_errors": 698,
+      "N_states": {
+        "no_candidate": 103,
+        "low_confidence": 499,
+        "class_only": 83,
+        "localization_only": 11,
+        "class_and_localization": 2,
+        "correct": 2386
+      },
+      "T": {
+        "all_rgb_gt": 3084,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "T42",
+        "comparison_requires_ir_gt_pair": true,
+        "native_states": {
+          "class_and_localization": {
+            "n": 2,
+            "fraction_all_gt": 0.0006485084306095979
+          },
+          "class_only": {
+            "n": 83,
+            "fraction_all_gt": 0.026913099870298315
+          },
+          "correct": {
+            "n": 2386,
+            "fraction_all_gt": 0.7736705577172504
+          },
+          "localization_only": {
+            "n": 11,
+            "fraction_all_gt": 0.0035667963683527885
+          },
+          "low_confidence": {
+            "n": 499,
+            "fraction_all_gt": 0.1618028534370947
+          },
+          "no_candidate": {
+            "n": 103,
+            "fraction_all_gt": 0.03339818417639429
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 499,
+            "fraction_all_gt": 0.1618028534370947
+          },
+          "class_ok": {
+            "n": 128,
+            "fraction_all_gt": 0.041504539559014265
+          },
+          "localization_ok": {
+            "n": 49,
+            "fraction_all_gt": 0.015888456549935148
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 2946,
+          "fraction_all_gt": 0.9552529182879378
+        },
+        "comparison_eligible_gt": {
+          "n": 2946,
+          "fraction_all_gt": 0.9552529182879378,
+          "rule": "IR paired GT"
+        },
+        "teacher_correct_on_paired": 2550,
+        "repair": {
+          "n": 461,
+          "fraction_all_gt": 0.14948119325551232,
+          "fraction_native_errors": 0.660458452722063
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 193,
+          "fraction_all_gt": 0.0625810635538262,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 268,
+          "fraction_all_gt": 0.08690012970168612
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 351,
+          "no_candidate": 73,
+          "localization_only": 8,
+          "class_only": 28,
+          "class_and_localization": 1
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 142,
+          "class_only": 33,
+          "no_candidate": 5,
+          "localization_only": 13
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 2830,
+          "mean": -0.019415941821286198,
+          "median": -0.018946975469589233,
+          "sd": 0.1445073582553496,
+          "q10": -0.1836799919605255,
+          "q90": 0.13561157584190367
+        },
+        "teacher_iou_better": {
+          "n": 1165,
+          "fraction_all_gt": 0.3777561608300908
+        },
+        "teacher_iou_worse": {
+          "n": 1665,
+          "fraction_all_gt": 0.5398832684824902
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 40,
+            "fraction_all_gt": 0.01297016861219196
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 313,
+            "fraction_all_gt": 0.10149156939040208
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 8,
+            "fraction_all_gt": 0.0025940337224383916
+          }
+        }
+      },
+      "N0": {
+        "all_rgb_gt": 3084,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_and_localization": {
+            "n": 2,
+            "fraction_all_gt": 0.0006485084306095979
+          },
+          "class_only": {
+            "n": 83,
+            "fraction_all_gt": 0.026913099870298315
+          },
+          "correct": {
+            "n": 2386,
+            "fraction_all_gt": 0.7736705577172504
+          },
+          "localization_only": {
+            "n": 11,
+            "fraction_all_gt": 0.0035667963683527885
+          },
+          "low_confidence": {
+            "n": 499,
+            "fraction_all_gt": 0.1618028534370947
+          },
+          "no_candidate": {
+            "n": 103,
+            "fraction_all_gt": 0.03339818417639429
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 499,
+            "fraction_all_gt": 0.1618028534370947
+          },
+          "class_ok": {
+            "n": 128,
+            "fraction_all_gt": 0.041504539559014265
+          },
+          "localization_ok": {
+            "n": 49,
+            "fraction_all_gt": 0.015888456549935148
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 2946,
+          "fraction_all_gt": 0.9552529182879378
+        },
+        "comparison_eligible_gt": {
+          "n": 3084,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 2415,
+        "repair": {
+          "n": 221,
+          "fraction_all_gt": 0.07166018158236057,
+          "fraction_native_errors": 0.3166189111747851
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 192,
+          "fraction_all_gt": 0.0622568093385214,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 29,
+          "fraction_all_gt": 0.00940337224383917
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 200,
+          "class_only": 19,
+          "no_candidate": 2
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 164,
+          "class_only": 26,
+          "no_candidate": 2
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 2955,
+          "mean": -0.0007289862093183191,
+          "median": 0.00022786855697631836,
+          "sd": 0.05166298805371539,
+          "q10": -0.04191858768463134,
+          "q90": 0.04050341844558715
+        },
+        "teacher_iou_better": {
+          "n": 1490,
+          "fraction_all_gt": 0.48313878080415046
+        },
+        "teacher_iou_worse": {
+          "n": 1465,
+          "fraction_all_gt": 0.47503242542153046
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 23,
+            "fraction_all_gt": 0.0074578469520103765
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 195,
+            "fraction_all_gt": 0.0632295719844358
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0_on_T_eligible": {
+        "all_rgb_gt": 2946,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_and_localization": {
+            "n": 1,
+            "fraction_all_gt": 0.00033944331296673454
+          },
+          "class_only": {
+            "n": 79,
+            "fraction_all_gt": 0.02681602172437203
+          },
+          "correct": {
+            "n": 2282,
+            "fraction_all_gt": 0.7746096401900883
+          },
+          "localization_only": {
+            "n": 11,
+            "fraction_all_gt": 0.00373387644263408
+          },
+          "low_confidence": {
+            "n": 473,
+            "fraction_all_gt": 0.16055668703326545
+          },
+          "no_candidate": {
+            "n": 100,
+            "fraction_all_gt": 0.03394433129667346
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 473,
+            "fraction_all_gt": 0.16055668703326545
+          },
+          "class_ok": {
+            "n": 120,
+            "fraction_all_gt": 0.04073319755600815
+          },
+          "localization_ok": {
+            "n": 45,
+            "fraction_all_gt": 0.015274949083503055
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 2946,
+          "fraction_all_gt": 1.0
+        },
+        "comparison_eligible_gt": {
+          "n": 2946,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 2309,
+        "repair": {
+          "n": 209,
+          "fraction_all_gt": 0.07094365241004752,
+          "fraction_native_errors": 0.3147590361445783
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 182,
+          "fraction_all_gt": 0.06177868295994569,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 27,
+          "fraction_all_gt": 0.009164969450101833
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 188,
+          "class_only": 19,
+          "no_candidate": 2
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 156,
+          "class_only": 24,
+          "no_candidate": 2
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 2820,
+          "mean": -0.0007894709415680974,
+          "median": 0.00021848082542419434,
+          "sd": 0.05217948822855839,
+          "q10": -0.04236729741096496,
+          "q90": 0.04039013981819152
+        },
+        "teacher_iou_better": {
+          "n": 1421,
+          "fraction_all_gt": 0.4823489477257298
+        },
+        "teacher_iou_worse": {
+          "n": 1399,
+          "fraction_all_gt": 0.47488119484046165
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 23,
+            "fraction_all_gt": 0.007807196198234894
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 183,
+            "fraction_all_gt": 0.062118126272912425
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "common_eligible": {
+        "gt": 2946,
+        "N_errors": 664,
+        "N_correct": 2282,
+        "both_repair": 175,
+        "T_only_repair": 286,
+        "N0_only_repair": 34
+      },
+      "repairs_by_state": {
+        "T": {
+          "no_candidate": 73,
+          "low_confidence": 351,
+          "class_only": 28,
+          "localization_only": 8,
+          "class_and_localization": 1,
+          "correct": 0
+        },
+        "N0": {
+          "no_candidate": 2,
+          "low_confidence": 200,
+          "class_only": 19,
+          "localization_only": 0,
+          "class_and_localization": 0,
+          "correct": 0
+        }
+      }
+    },
+    "0": {
+      "class_name": "car",
+      "gt": 2662,
+      "N_correct": 2167,
+      "N_errors": 495,
+      "N_states": {
+        "no_candidate": 78,
+        "low_confidence": 392,
+        "class_only": 14,
+        "localization_only": 10,
+        "class_and_localization": 1,
+        "correct": 2167
+      },
+      "T": {
+        "all_rgb_gt": 2662,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "T42",
+        "comparison_requires_ir_gt_pair": true,
+        "native_states": {
+          "class_and_localization": {
+            "n": 1,
+            "fraction_all_gt": 0.0003756574004507889
+          },
+          "class_only": {
+            "n": 14,
+            "fraction_all_gt": 0.005259203606311044
+          },
+          "correct": {
+            "n": 2167,
+            "fraction_all_gt": 0.8140495867768595
+          },
+          "localization_only": {
+            "n": 10,
+            "fraction_all_gt": 0.003756574004507889
+          },
+          "low_confidence": {
+            "n": 392,
+            "fraction_all_gt": 0.14725770097670923
+          },
+          "no_candidate": {
+            "n": 78,
+            "fraction_all_gt": 0.029301277235161533
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 392,
+            "fraction_all_gt": 0.14725770097670923
+          },
+          "class_ok": {
+            "n": 22,
+            "fraction_all_gt": 0.008264462809917356
+          },
+          "localization_ok": {
+            "n": 41,
+            "fraction_all_gt": 0.015401953418482344
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 2540,
+          "fraction_all_gt": 0.9541697971450037
+        },
+        "comparison_eligible_gt": {
+          "n": 2540,
+          "fraction_all_gt": 0.9541697971450037,
+          "rule": "IR paired GT"
+        },
+        "teacher_correct_on_paired": 2307,
+        "repair": {
+          "n": 369,
+          "fraction_all_gt": 0.1386175807663411,
+          "fraction_native_errors": 0.7454545454545455
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 134,
+          "fraction_all_gt": 0.05033809166040571,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 235,
+          "fraction_all_gt": 0.08827948910593539
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 296,
+          "no_candidate": 63,
+          "localization_only": 7,
+          "class_only": 3
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 109,
+          "class_only": 10,
+          "no_candidate": 3,
+          "localization_only": 12
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 2456,
+          "mean": -0.02209372981375611,
+          "median": -0.020321309566497803,
+          "sd": 0.14560410063395052,
+          "q10": -0.19166266918182373,
+          "q90": 0.13516777753829956
+        },
+        "teacher_iou_better": {
+          "n": 987,
+          "fraction_all_gt": 0.37077385424492865
+        },
+        "teacher_iou_worse": {
+          "n": 1469,
+          "fraction_all_gt": 0.5518407212622088
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 6,
+            "fraction_all_gt": 0.002253944402704733
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 268,
+            "fraction_all_gt": 0.10067618332081142
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 7,
+            "fraction_all_gt": 0.002629601803155522
+          }
+        }
+      },
+      "N0": {
+        "all_rgb_gt": 2662,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_and_localization": {
+            "n": 1,
+            "fraction_all_gt": 0.0003756574004507889
+          },
+          "class_only": {
+            "n": 14,
+            "fraction_all_gt": 0.005259203606311044
+          },
+          "correct": {
+            "n": 2167,
+            "fraction_all_gt": 0.8140495867768595
+          },
+          "localization_only": {
+            "n": 10,
+            "fraction_all_gt": 0.003756574004507889
+          },
+          "low_confidence": {
+            "n": 392,
+            "fraction_all_gt": 0.14725770097670923
+          },
+          "no_candidate": {
+            "n": 78,
+            "fraction_all_gt": 0.029301277235161533
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 392,
+            "fraction_all_gt": 0.14725770097670923
+          },
+          "class_ok": {
+            "n": 22,
+            "fraction_all_gt": 0.008264462809917356
+          },
+          "localization_ok": {
+            "n": 41,
+            "fraction_all_gt": 0.015401953418482344
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 2540,
+          "fraction_all_gt": 0.9541697971450037
+        },
+        "comparison_eligible_gt": {
+          "n": 2662,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 2196,
+        "repair": {
+          "n": 173,
+          "fraction_all_gt": 0.06498873027798648,
+          "fraction_native_errors": 0.34949494949494947
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 144,
+          "fraction_all_gt": 0.054094665664913597,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 29,
+          "fraction_all_gt": 0.010894064613072877
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 170,
+          "class_only": 3
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 135,
+          "class_only": 8,
+          "no_candidate": 1
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 2563,
+          "mean": -0.000261267192932111,
+          "median": 0.0002396106719970703,
+          "sd": 0.051340290102523126,
+          "q10": -0.04232193231582642,
+          "q90": 0.040296685695648274
+        },
+        "teacher_iou_better": {
+          "n": 1292,
+          "fraction_all_gt": 0.48534936138241924
+        },
+        "teacher_iou_worse": {
+          "n": 1271,
+          "fraction_all_gt": 0.47746055597295267
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 5,
+            "fraction_all_gt": 0.0018782870022539444
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 167,
+            "fraction_all_gt": 0.06273478587528174
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0_on_T_eligible": {
+        "all_rgb_gt": 2540,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_only": {
+            "n": 13,
+            "fraction_all_gt": 0.005118110236220472
+          },
+          "correct": {
+            "n": 2072,
+            "fraction_all_gt": 0.815748031496063
+          },
+          "localization_only": {
+            "n": 10,
+            "fraction_all_gt": 0.003937007874015748
+          },
+          "low_confidence": {
+            "n": 370,
+            "fraction_all_gt": 0.14566929133858267
+          },
+          "no_candidate": {
+            "n": 75,
+            "fraction_all_gt": 0.02952755905511811
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 370,
+            "fraction_all_gt": 0.14566929133858267
+          },
+          "class_ok": {
+            "n": 19,
+            "fraction_all_gt": 0.007480314960629921
+          },
+          "localization_ok": {
+            "n": 38,
+            "fraction_all_gt": 0.014960629921259842
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 2540,
+          "fraction_all_gt": 1.0
+        },
+        "comparison_eligible_gt": {
+          "n": 2540,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 2098,
+        "repair": {
+          "n": 162,
+          "fraction_all_gt": 0.06377952755905512,
+          "fraction_native_errors": 0.34615384615384615
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 136,
+          "fraction_all_gt": 0.05354330708661417,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 26,
+          "fraction_all_gt": 0.010236220472440945
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 159,
+          "class_only": 3
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 127,
+          "class_only": 8,
+          "no_candidate": 1
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 2444,
+          "mean": -0.00028507140771456905,
+          "median": 0.0002453327178955078,
+          "sd": 0.05178458803476281,
+          "q10": -0.042421406507492064,
+          "q90": 0.039837443828582786
+        },
+        "teacher_iou_better": {
+          "n": 1232,
+          "fraction_all_gt": 0.48503937007874015
+        },
+        "teacher_iou_worse": {
+          "n": 1212,
+          "fraction_all_gt": 0.47716535433070867
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 5,
+            "fraction_all_gt": 0.001968503937007874
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 156,
+            "fraction_all_gt": 0.06141732283464567
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "common_eligible": {
+        "gt": 2540,
+        "N_errors": 468,
+        "N_correct": 2072,
+        "both_repair": 137,
+        "T_only_repair": 232,
+        "N0_only_repair": 25
+      },
+      "repairs_by_state": {
+        "T": {
+          "no_candidate": 63,
+          "low_confidence": 296,
+          "class_only": 3,
+          "localization_only": 7,
+          "class_and_localization": 0,
+          "correct": 0
+        },
+        "N0": {
+          "no_candidate": 0,
+          "low_confidence": 170,
+          "class_only": 3,
+          "localization_only": 0,
+          "class_and_localization": 0,
+          "correct": 0
+        }
+      }
+    },
+    "1": {
+      "class_name": "freight car",
+      "gt": 81,
+      "N_correct": 51,
+      "N_errors": 30,
+      "N_states": {
+        "no_candidate": 2,
+        "low_confidence": 19,
+        "class_only": 9,
+        "localization_only": 0,
+        "class_and_localization": 0,
+        "correct": 51
+      },
+      "T": {
+        "all_rgb_gt": 81,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "T42",
+        "comparison_requires_ir_gt_pair": true,
+        "native_states": {
+          "class_only": {
+            "n": 9,
+            "fraction_all_gt": 0.1111111111111111
+          },
+          "correct": {
+            "n": 51,
+            "fraction_all_gt": 0.6296296296296297
+          },
+          "low_confidence": {
+            "n": 19,
+            "fraction_all_gt": 0.2345679012345679
+          },
+          "no_candidate": {
+            "n": 2,
+            "fraction_all_gt": 0.024691358024691357
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 19,
+            "fraction_all_gt": 0.2345679012345679
+          },
+          "class_ok": {
+            "n": 14,
+            "fraction_all_gt": 0.1728395061728395
+          },
+          "localization_ok": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 75,
+          "fraction_all_gt": 0.9259259259259259
+        },
+        "comparison_eligible_gt": {
+          "n": 75,
+          "fraction_all_gt": 0.9259259259259259,
+          "rule": "IR paired GT"
+        },
+        "teacher_correct_on_paired": 49,
+        "repair": {
+          "n": 15,
+          "fraction_all_gt": 0.18518518518518517,
+          "fraction_native_errors": 0.5
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 13,
+          "fraction_all_gt": 0.16049382716049382,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 2,
+          "fraction_all_gt": 0.024691358024691357
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 12,
+          "class_only": 2,
+          "no_candidate": 1
+        },
+        "harms_by_teacher_state": {
+          "class_only": 7,
+          "no_candidate": 1,
+          "low_confidence": 5
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 70,
+          "mean": -0.01094450056552887,
+          "median": 0.005133897066116333,
+          "sd": 0.13226989844570758,
+          "q10": -0.12804371118545532,
+          "q90": 0.10127404928207398
+        },
+        "teacher_iou_better": {
+          "n": 35,
+          "fraction_all_gt": 0.43209876543209874
+        },
+        "teacher_iou_worse": {
+          "n": 35,
+          "fraction_all_gt": 0.43209876543209874
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 5,
+            "fraction_all_gt": 0.06172839506172839
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 9,
+            "fraction_all_gt": 0.1111111111111111
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0": {
+        "all_rgb_gt": 81,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_only": {
+            "n": 9,
+            "fraction_all_gt": 0.1111111111111111
+          },
+          "correct": {
+            "n": 51,
+            "fraction_all_gt": 0.6296296296296297
+          },
+          "low_confidence": {
+            "n": 19,
+            "fraction_all_gt": 0.2345679012345679
+          },
+          "no_candidate": {
+            "n": 2,
+            "fraction_all_gt": 0.024691358024691357
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 19,
+            "fraction_all_gt": 0.2345679012345679
+          },
+          "class_ok": {
+            "n": 14,
+            "fraction_all_gt": 0.1728395061728395
+          },
+          "localization_ok": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 75,
+          "fraction_all_gt": 0.9259259259259259
+        },
+        "comparison_eligible_gt": {
+          "n": 81,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 51,
+        "repair": {
+          "n": 8,
+          "fraction_all_gt": 0.09876543209876543,
+          "fraction_native_errors": 0.26666666666666666
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 8,
+          "fraction_all_gt": 0.09876543209876543,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 0,
+          "fraction_all_gt": 0.0
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 7,
+          "class_only": 1
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 6,
+          "class_only": 2
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 79,
+          "mean": -0.0004507597488693044,
+          "median": 0.003265857696533203,
+          "sd": 0.03478236816727785,
+          "q10": -0.04132113456726074,
+          "q90": 0.03628717660903931
+        },
+        "teacher_iou_better": {
+          "n": 42,
+          "fraction_all_gt": 0.5185185185185185
+        },
+        "teacher_iou_worse": {
+          "n": 37,
+          "fraction_all_gt": 0.4567901234567901
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 1,
+            "fraction_all_gt": 0.012345679012345678
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 7,
+            "fraction_all_gt": 0.08641975308641975
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0_on_T_eligible": {
+        "all_rgb_gt": 75,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_only": {
+            "n": 8,
+            "fraction_all_gt": 0.10666666666666667
+          },
+          "correct": {
+            "n": 47,
+            "fraction_all_gt": 0.6266666666666667
+          },
+          "low_confidence": {
+            "n": 18,
+            "fraction_all_gt": 0.24
+          },
+          "no_candidate": {
+            "n": 2,
+            "fraction_all_gt": 0.02666666666666667
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 18,
+            "fraction_all_gt": 0.24
+          },
+          "class_ok": {
+            "n": 13,
+            "fraction_all_gt": 0.17333333333333334
+          },
+          "localization_ok": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 75,
+          "fraction_all_gt": 1.0
+        },
+        "comparison_eligible_gt": {
+          "n": 75,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 46,
+        "repair": {
+          "n": 7,
+          "fraction_all_gt": 0.09333333333333334,
+          "fraction_native_errors": 0.25
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 8,
+          "fraction_all_gt": 0.10666666666666667,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": -1,
+          "fraction_all_gt": -0.013333333333333334
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 6,
+          "class_only": 1
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 6,
+          "class_only": 2
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 73,
+          "mean": -0.0005410583051916672,
+          "median": 0.0033788084983825684,
+          "sd": 0.03609990397038465,
+          "q10": -0.043272995948791505,
+          "q90": 0.0374333381652832
+        },
+        "teacher_iou_better": {
+          "n": 39,
+          "fraction_all_gt": 0.52
+        },
+        "teacher_iou_worse": {
+          "n": 34,
+          "fraction_all_gt": 0.4533333333333333
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 1,
+            "fraction_all_gt": 0.013333333333333334
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 6,
+            "fraction_all_gt": 0.08
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "common_eligible": {
+        "gt": 75,
+        "N_errors": 28,
+        "N_correct": 47,
+        "both_repair": 7,
+        "T_only_repair": 8,
+        "N0_only_repair": 0
+      },
+      "repairs_by_state": {
+        "T": {
+          "no_candidate": 1,
+          "low_confidence": 12,
+          "class_only": 2,
+          "localization_only": 0,
+          "class_and_localization": 0,
+          "correct": 0
+        },
+        "N0": {
+          "no_candidate": 0,
+          "low_confidence": 7,
+          "class_only": 1,
+          "localization_only": 0,
+          "class_and_localization": 0,
+          "correct": 0
+        }
+      }
+    },
+    "2": {
+      "class_name": "truck",
+      "gt": 176,
+      "N_correct": 76,
+      "N_errors": 100,
+      "N_states": {
+        "no_candidate": 21,
+        "low_confidence": 46,
+        "class_only": 32,
+        "localization_only": 0,
+        "class_and_localization": 1,
+        "correct": 76
+      },
+      "T": {
+        "all_rgb_gt": 176,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "T42",
+        "comparison_requires_ir_gt_pair": true,
+        "native_states": {
+          "class_and_localization": {
+            "n": 1,
+            "fraction_all_gt": 0.005681818181818182
+          },
+          "class_only": {
+            "n": 32,
+            "fraction_all_gt": 0.18181818181818182
+          },
+          "correct": {
+            "n": 76,
+            "fraction_all_gt": 0.4318181818181818
+          },
+          "low_confidence": {
+            "n": 46,
+            "fraction_all_gt": 0.26136363636363635
+          },
+          "no_candidate": {
+            "n": 21,
+            "fraction_all_gt": 0.11931818181818182
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 46,
+            "fraction_all_gt": 0.26136363636363635
+          },
+          "class_ok": {
+            "n": 48,
+            "fraction_all_gt": 0.2727272727272727
+          },
+          "localization_ok": {
+            "n": 3,
+            "fraction_all_gt": 0.017045454545454544
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 175,
+          "fraction_all_gt": 0.9943181818181818
+        },
+        "comparison_eligible_gt": {
+          "n": 175,
+          "fraction_all_gt": 0.9943181818181818,
+          "rule": "IR paired GT"
+        },
+        "teacher_correct_on_paired": 93,
+        "repair": {
+          "n": 46,
+          "fraction_all_gt": 0.26136363636363635,
+          "fraction_native_errors": 0.46
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 29,
+          "fraction_all_gt": 0.16477272727272727,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 17,
+          "fraction_all_gt": 0.09659090909090909
+        },
+        "repairs_by_native_state": {
+          "class_only": 14,
+          "low_confidence": 23,
+          "class_and_localization": 1,
+          "no_candidate": 8
+        },
+        "harms_by_teacher_state": {
+          "class_only": 9,
+          "no_candidate": 1,
+          "low_confidence": 18,
+          "localization_only": 1
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 150,
+          "mean": 0.009461564322312674,
+          "median": -0.0028417110443115234,
+          "sd": 0.1554403579769315,
+          "q10": -0.08395759463310241,
+          "q90": 0.1459486246109008
+        },
+        "teacher_iou_better": {
+          "n": 73,
+          "fraction_all_gt": 0.4147727272727273
+        },
+        "teacher_iou_worse": {
+          "n": 77,
+          "fraction_all_gt": 0.4375
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 17,
+            "fraction_all_gt": 0.09659090909090909
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 20,
+            "fraction_all_gt": 0.11363636363636363
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0": {
+        "all_rgb_gt": 176,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_and_localization": {
+            "n": 1,
+            "fraction_all_gt": 0.005681818181818182
+          },
+          "class_only": {
+            "n": 32,
+            "fraction_all_gt": 0.18181818181818182
+          },
+          "correct": {
+            "n": 76,
+            "fraction_all_gt": 0.4318181818181818
+          },
+          "low_confidence": {
+            "n": 46,
+            "fraction_all_gt": 0.26136363636363635
+          },
+          "no_candidate": {
+            "n": 21,
+            "fraction_all_gt": 0.11931818181818182
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 46,
+            "fraction_all_gt": 0.26136363636363635
+          },
+          "class_ok": {
+            "n": 48,
+            "fraction_all_gt": 0.2727272727272727
+          },
+          "localization_ok": {
+            "n": 3,
+            "fraction_all_gt": 0.017045454545454544
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 175,
+          "fraction_all_gt": 0.9943181818181818
+        },
+        "comparison_eligible_gt": {
+          "n": 176,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 79,
+        "repair": {
+          "n": 23,
+          "fraction_all_gt": 0.13068181818181818,
+          "fraction_native_errors": 0.23
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 20,
+          "fraction_all_gt": 0.11363636363636363,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 3,
+          "fraction_all_gt": 0.017045454545454544
+        },
+        "repairs_by_native_state": {
+          "class_only": 9,
+          "low_confidence": 13,
+          "no_candidate": 1
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 12,
+          "class_only": 7,
+          "no_candidate": 1
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 152,
+          "mean": -0.0028056726349811804,
+          "median": 0.001866161823272705,
+          "sd": 0.07249868791918819,
+          "q10": -0.034358632564544675,
+          "q90": 0.04696174263954165
+        },
+        "teacher_iou_better": {
+          "n": 81,
+          "fraction_all_gt": 0.4602272727272727
+        },
+        "teacher_iou_worse": {
+          "n": 71,
+          "fraction_all_gt": 0.4034090909090909
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 10,
+            "fraction_all_gt": 0.056818181818181816
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 12,
+            "fraction_all_gt": 0.06818181818181818
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0_on_T_eligible": {
+        "all_rgb_gt": 175,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_and_localization": {
+            "n": 1,
+            "fraction_all_gt": 0.005714285714285714
+          },
+          "class_only": {
+            "n": 32,
+            "fraction_all_gt": 0.18285714285714286
+          },
+          "correct": {
+            "n": 76,
+            "fraction_all_gt": 0.4342857142857143
+          },
+          "low_confidence": {
+            "n": 45,
+            "fraction_all_gt": 0.2571428571428571
+          },
+          "no_candidate": {
+            "n": 21,
+            "fraction_all_gt": 0.12
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 45,
+            "fraction_all_gt": 0.2571428571428571
+          },
+          "class_ok": {
+            "n": 47,
+            "fraction_all_gt": 0.26857142857142857
+          },
+          "localization_ok": {
+            "n": 3,
+            "fraction_all_gt": 0.017142857142857144
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 175,
+          "fraction_all_gt": 1.0
+        },
+        "comparison_eligible_gt": {
+          "n": 175,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 79,
+        "repair": {
+          "n": 23,
+          "fraction_all_gt": 0.13142857142857142,
+          "fraction_native_errors": 0.23232323232323232
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 20,
+          "fraction_all_gt": 0.11428571428571428,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 3,
+          "fraction_all_gt": 0.017142857142857144
+        },
+        "repairs_by_native_state": {
+          "class_only": 9,
+          "low_confidence": 13,
+          "no_candidate": 1
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 12,
+          "class_only": 7,
+          "no_candidate": 1
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 151,
+          "mean": -0.0028659934733087653,
+          "median": 0.0018483996391296387,
+          "sd": 0.0727361216554842,
+          "q10": -0.034366607666015625,
+          "q90": 0.04741561412811279
+        },
+        "teacher_iou_better": {
+          "n": 80,
+          "fraction_all_gt": 0.45714285714285713
+        },
+        "teacher_iou_worse": {
+          "n": 71,
+          "fraction_all_gt": 0.4057142857142857
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 10,
+            "fraction_all_gt": 0.05714285714285714
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 12,
+            "fraction_all_gt": 0.06857142857142857
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "common_eligible": {
+        "gt": 175,
+        "N_errors": 99,
+        "N_correct": 76,
+        "both_repair": 18,
+        "T_only_repair": 28,
+        "N0_only_repair": 5
+      },
+      "repairs_by_state": {
+        "T": {
+          "no_candidate": 8,
+          "low_confidence": 23,
+          "class_only": 14,
+          "localization_only": 0,
+          "class_and_localization": 1,
+          "correct": 0
+        },
+        "N0": {
+          "no_candidate": 1,
+          "low_confidence": 13,
+          "class_only": 9,
+          "localization_only": 0,
+          "class_and_localization": 0,
+          "correct": 0
+        }
+      }
+    },
+    "3": {
+      "class_name": "bus",
+      "gt": 66,
+      "N_correct": 48,
+      "N_errors": 18,
+      "N_states": {
+        "no_candidate": 2,
+        "low_confidence": 16,
+        "class_only": 0,
+        "localization_only": 0,
+        "class_and_localization": 0,
+        "correct": 48
+      },
+      "T": {
+        "all_rgb_gt": 66,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "T42",
+        "comparison_requires_ir_gt_pair": true,
+        "native_states": {
+          "correct": {
+            "n": 48,
+            "fraction_all_gt": 0.7272727272727273
+          },
+          "low_confidence": {
+            "n": 16,
+            "fraction_all_gt": 0.24242424242424243
+          },
+          "no_candidate": {
+            "n": 2,
+            "fraction_all_gt": 0.030303030303030304
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 16,
+            "fraction_all_gt": 0.24242424242424243
+          },
+          "class_ok": {
+            "n": 1,
+            "fraction_all_gt": 0.015151515151515152
+          },
+          "localization_ok": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 66,
+          "fraction_all_gt": 1.0
+        },
+        "comparison_eligible_gt": {
+          "n": 66,
+          "fraction_all_gt": 1.0,
+          "rule": "IR paired GT"
+        },
+        "teacher_correct_on_paired": 54,
+        "repair": {
+          "n": 13,
+          "fraction_all_gt": 0.19696969696969696,
+          "fraction_native_errors": 0.7222222222222222
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 7,
+          "fraction_all_gt": 0.10606060606060606,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 6,
+          "fraction_all_gt": 0.09090909090909091
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 12,
+          "no_candidate": 1
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 7
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 64,
+          "mean": -0.03902707528322935,
+          "median": -0.024246513843536377,
+          "sd": 0.07824060087484355,
+          "q10": -0.11757943630218505,
+          "q90": 0.04209930896759034
+        },
+        "teacher_iou_better": {
+          "n": 22,
+          "fraction_all_gt": 0.3333333333333333
+        },
+        "teacher_iou_worse": {
+          "n": 42,
+          "fraction_all_gt": 0.6363636363636364
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 12,
+            "fraction_all_gt": 0.18181818181818182
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0": {
+        "all_rgb_gt": 66,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "correct": {
+            "n": 48,
+            "fraction_all_gt": 0.7272727272727273
+          },
+          "low_confidence": {
+            "n": 16,
+            "fraction_all_gt": 0.24242424242424243
+          },
+          "no_candidate": {
+            "n": 2,
+            "fraction_all_gt": 0.030303030303030304
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 16,
+            "fraction_all_gt": 0.24242424242424243
+          },
+          "class_ok": {
+            "n": 1,
+            "fraction_all_gt": 0.015151515151515152
+          },
+          "localization_ok": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 66,
+          "fraction_all_gt": 1.0
+        },
+        "comparison_eligible_gt": {
+          "n": 66,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 48,
+        "repair": {
+          "n": 8,
+          "fraction_all_gt": 0.12121212121212122,
+          "fraction_native_errors": 0.4444444444444444
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 8,
+          "fraction_all_gt": 0.12121212121212122,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 0,
+          "fraction_all_gt": 0.0
+        },
+        "repairs_by_native_state": {
+          "no_candidate": 1,
+          "low_confidence": 7
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 8
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 63,
+          "mean": -0.005008539510151696,
+          "median": 4.929304122924805e-05,
+          "sd": 0.03459260677786108,
+          "q10": -0.03244297504425049,
+          "q90": 0.029461109638214127
+        },
+        "teacher_iou_better": {
+          "n": 32,
+          "fraction_all_gt": 0.48484848484848486
+        },
+        "teacher_iou_worse": {
+          "n": 31,
+          "fraction_all_gt": 0.4696969696969697
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 7,
+            "fraction_all_gt": 0.10606060606060606
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0_on_T_eligible": {
+        "all_rgb_gt": 66,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "correct": {
+            "n": 48,
+            "fraction_all_gt": 0.7272727272727273
+          },
+          "low_confidence": {
+            "n": 16,
+            "fraction_all_gt": 0.24242424242424243
+          },
+          "no_candidate": {
+            "n": 2,
+            "fraction_all_gt": 0.030303030303030304
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 16,
+            "fraction_all_gt": 0.24242424242424243
+          },
+          "class_ok": {
+            "n": 1,
+            "fraction_all_gt": 0.015151515151515152
+          },
+          "localization_ok": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 66,
+          "fraction_all_gt": 1.0
+        },
+        "comparison_eligible_gt": {
+          "n": 66,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 48,
+        "repair": {
+          "n": 8,
+          "fraction_all_gt": 0.12121212121212122,
+          "fraction_native_errors": 0.4444444444444444
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 8,
+          "fraction_all_gt": 0.12121212121212122,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 0,
+          "fraction_all_gt": 0.0
+        },
+        "repairs_by_native_state": {
+          "no_candidate": 1,
+          "low_confidence": 7
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 8
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 63,
+          "mean": -0.005008539510151696,
+          "median": 4.929304122924805e-05,
+          "sd": 0.03459260677786108,
+          "q10": -0.03244297504425049,
+          "q90": 0.029461109638214127
+        },
+        "teacher_iou_better": {
+          "n": 32,
+          "fraction_all_gt": 0.48484848484848486
+        },
+        "teacher_iou_worse": {
+          "n": 31,
+          "fraction_all_gt": 0.4696969696969697
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 7,
+            "fraction_all_gt": 0.10606060606060606
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "common_eligible": {
+        "gt": 66,
+        "N_errors": 18,
+        "N_correct": 48,
+        "both_repair": 8,
+        "T_only_repair": 5,
+        "N0_only_repair": 0
+      },
+      "repairs_by_state": {
+        "T": {
+          "no_candidate": 1,
+          "low_confidence": 12,
+          "class_only": 0,
+          "localization_only": 0,
+          "class_and_localization": 0,
+          "correct": 0
+        },
+        "N0": {
+          "no_candidate": 1,
+          "low_confidence": 7,
+          "class_only": 0,
+          "localization_only": 0,
+          "class_and_localization": 0,
+          "correct": 0
+        }
+      }
+    },
+    "4": {
+      "class_name": "van",
+      "gt": 99,
+      "N_correct": 44,
+      "N_errors": 55,
+      "N_states": {
+        "no_candidate": 0,
+        "low_confidence": 26,
+        "class_only": 28,
+        "localization_only": 1,
+        "class_and_localization": 0,
+        "correct": 44
+      },
+      "T": {
+        "all_rgb_gt": 99,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "T42",
+        "comparison_requires_ir_gt_pair": true,
+        "native_states": {
+          "class_only": {
+            "n": 28,
+            "fraction_all_gt": 0.2828282828282828
+          },
+          "correct": {
+            "n": 44,
+            "fraction_all_gt": 0.4444444444444444
+          },
+          "localization_only": {
+            "n": 1,
+            "fraction_all_gt": 0.010101010101010102
+          },
+          "low_confidence": {
+            "n": 26,
+            "fraction_all_gt": 0.26262626262626265
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 26,
+            "fraction_all_gt": 0.26262626262626265
+          },
+          "class_ok": {
+            "n": 43,
+            "fraction_all_gt": 0.43434343434343436
+          },
+          "localization_ok": {
+            "n": 5,
+            "fraction_all_gt": 0.050505050505050504
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 90,
+          "fraction_all_gt": 0.9090909090909091
+        },
+        "comparison_eligible_gt": {
+          "n": 90,
+          "fraction_all_gt": 0.9090909090909091,
+          "rule": "IR paired GT"
+        },
+        "teacher_correct_on_paired": 47,
+        "repair": {
+          "n": 18,
+          "fraction_all_gt": 0.18181818181818182,
+          "fraction_native_errors": 0.32727272727272727
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 10,
+          "fraction_all_gt": 0.10101010101010101,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": 8,
+          "fraction_all_gt": 0.08080808080808081
+        },
+        "repairs_by_native_state": {
+          "low_confidence": 8,
+          "class_only": 9,
+          "localization_only": 1
+        },
+        "harms_by_teacher_state": {
+          "low_confidence": 3,
+          "class_only": 7
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 90,
+          "mean": 0.012885536419020759,
+          "median": 0.004258304834365845,
+          "sd": 0.13280514322448023,
+          "q10": -0.12642928957939148,
+          "q90": 0.17472106516361238
+        },
+        "teacher_iou_better": {
+          "n": 48,
+          "fraction_all_gt": 0.48484848484848486
+        },
+        "teacher_iou_worse": {
+          "n": 42,
+          "fraction_all_gt": 0.42424242424242425
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 12,
+            "fraction_all_gt": 0.12121212121212122
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 4,
+            "fraction_all_gt": 0.04040404040404041
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 1,
+            "fraction_all_gt": 0.010101010101010102
+          }
+        }
+      },
+      "N0": {
+        "all_rgb_gt": 99,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_only": {
+            "n": 28,
+            "fraction_all_gt": 0.2828282828282828
+          },
+          "correct": {
+            "n": 44,
+            "fraction_all_gt": 0.4444444444444444
+          },
+          "localization_only": {
+            "n": 1,
+            "fraction_all_gt": 0.010101010101010102
+          },
+          "low_confidence": {
+            "n": 26,
+            "fraction_all_gt": 0.26262626262626265
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 26,
+            "fraction_all_gt": 0.26262626262626265
+          },
+          "class_ok": {
+            "n": 43,
+            "fraction_all_gt": 0.43434343434343436
+          },
+          "localization_ok": {
+            "n": 5,
+            "fraction_all_gt": 0.050505050505050504
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 90,
+          "fraction_all_gt": 0.9090909090909091
+        },
+        "comparison_eligible_gt": {
+          "n": 99,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 41,
+        "repair": {
+          "n": 9,
+          "fraction_all_gt": 0.09090909090909091,
+          "fraction_native_errors": 0.16363636363636364
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 12,
+          "fraction_all_gt": 0.12121212121212122,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": -3,
+          "fraction_all_gt": -0.030303030303030304
+        },
+        "repairs_by_native_state": {
+          "class_only": 6,
+          "low_confidence": 3
+        },
+        "harms_by_teacher_state": {
+          "class_only": 9,
+          "low_confidence": 3
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 98,
+          "mean": -0.0072134304411557255,
+          "median": -0.0035347342491149902,
+          "sd": 0.04095659097446174,
+          "q10": -0.050552016496658324,
+          "q90": 0.03596891760826108
+        },
+        "teacher_iou_better": {
+          "n": 43,
+          "fraction_all_gt": 0.43434343434343436
+        },
+        "teacher_iou_worse": {
+          "n": 55,
+          "fraction_all_gt": 0.5555555555555556
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 7,
+            "fraction_all_gt": 0.0707070707070707
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 2,
+            "fraction_all_gt": 0.020202020202020204
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "N0_on_T_eligible": {
+        "all_rgb_gt": 90,
+        "view": "same_object_assigned",
+        "reference_model": "N42",
+        "comparison_model": "N0",
+        "comparison_requires_ir_gt_pair": false,
+        "native_states": {
+          "class_only": {
+            "n": 26,
+            "fraction_all_gt": 0.28888888888888886
+          },
+          "correct": {
+            "n": 39,
+            "fraction_all_gt": 0.43333333333333335
+          },
+          "localization_only": {
+            "n": 1,
+            "fraction_all_gt": 0.011111111111111112
+          },
+          "low_confidence": {
+            "n": 24,
+            "fraction_all_gt": 0.26666666666666666
+          }
+        },
+        "native_overlapping_error_flags": {
+          "confidence_ok": {
+            "n": 24,
+            "fraction_all_gt": 0.26666666666666666
+          },
+          "class_ok": {
+            "n": 40,
+            "fraction_all_gt": 0.4444444444444444
+          },
+          "localization_ok": {
+            "n": 4,
+            "fraction_all_gt": 0.044444444444444446
+          }
+        },
+        "native_overlapping_error_flags_semantics": "Each *_ok key names a condition; n counts candidate AND NOT that condition (errors), not successes. Missing candidates are separate.",
+        "paired_gt": {
+          "n": 90,
+          "fraction_all_gt": 1.0
+        },
+        "comparison_eligible_gt": {
+          "n": 90,
+          "fraction_all_gt": 1.0,
+          "rule": "same RGB GT identity; no IR pairing required"
+        },
+        "teacher_correct_on_paired": 38,
+        "repair": {
+          "n": 9,
+          "fraction_all_gt": 0.1,
+          "fraction_native_errors": 0.17647058823529413
+        },
+        "harm_if_teacher_replaces_native": {
+          "n": 10,
+          "fraction_all_gt": 0.1111111111111111,
+          "includes_teacher_absence": true
+        },
+        "net_repair_minus_harm": {
+          "n": -1,
+          "fraction_all_gt": -0.011111111111111112
+        },
+        "repairs_by_native_state": {
+          "class_only": 6,
+          "low_confidence": 3
+        },
+        "harms_by_teacher_state": {
+          "class_only": 7,
+          "low_confidence": 3
+        },
+        "iou_teacher_minus_native_common_candidate": {
+          "n": 89,
+          "mean": -0.008334755897521973,
+          "median": -0.0036041736602783203,
+          "sd": 0.04196361820584753,
+          "q10": -0.051355624198913576,
+          "q90": 0.03496838808059695
+        },
+        "teacher_iou_better": {
+          "n": 38,
+          "fraction_all_gt": 0.4222222222222222
+        },
+        "teacher_iou_worse": {
+          "n": 51,
+          "fraction_all_gt": 0.5666666666666667
+        },
+        "factor_specific_repair": {
+          "class_fix_at_localized_native": {
+            "n": 7,
+            "fraction_all_gt": 0.07777777777777778
+          },
+          "low_confidence_fix_at_correct_class_localization": {
+            "n": 2,
+            "fraction_all_gt": 0.022222222222222223
+          },
+          "localization_fix_at_native_confident_correct_class": {
+            "n": 0,
+            "fraction_all_gt": 0.0
+          }
+        }
+      },
+      "common_eligible": {
+        "gt": 90,
+        "N_errors": 51,
+        "N_correct": 39,
+        "both_repair": 5,
+        "T_only_repair": 13,
+        "N0_only_repair": 4
+      },
+      "repairs_by_state": {
+        "T": {
+          "no_candidate": 0,
+          "low_confidence": 8,
+          "class_only": 9,
+          "localization_only": 1,
+          "class_and_localization": 0,
+          "correct": 0
+        },
+        "N0": {
+          "no_candidate": 0,
+          "low_confidence": 3,
+          "class_only": 6,
+          "localization_only": 0,
+          "class_and_localization": 0,
+          "correct": 0
+        }
+      }
+    }
+  }
+}

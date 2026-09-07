@@ -1,5 +1,7 @@
 # Baseline 分类、定位与特征机会重诊断（2026-09-07）
 
+> **解释范围补充（2026-09-07）**：下文“461中351低置信”仅为200dev对象计数结论。新完整1469dev、三seed AP诊断显示AP50的少数类混淆更突出，freight car/truck/van贡献macro分类oracle的94.26%。不能将旧对象计数解释推广为整个AP瓶颈。原数值保留，见[双数据集新阶段判断](../2026-09-07_probe_双数据集证据优先推进/STAGE_REPORT.md)。
+
 **已完成2448图的统一baseline中间结果导出和分类/定位/局部特征CPU读出。Drone修复机会主要为低置信，LLVIP定位证据更强；尚不支持局部特征比输出蒸馏更有跨模态收益。请先读[阶段判断](STAGE_REPORT.md)。此诊断不产生蒸馏AP增益结论，不修改C1或原L1。**
 
 ## 目的
@@ -21,7 +23,7 @@
 ## 资源与产物
 94输出：`/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/`。所有GPU任务共用原project_resource_guard lease；先2图短测，完整导出按实测峰值预约，GPU动态选择，screen运行，不改变正在运行的训练。
 
-本地保留源码、协议、资源与完成回执、分析小产物。较大中间数组记服务器路径；原始实验产物不移动、不覆盖、不删改。统计解释待真实结果和独立检查完成后更新。
+本地保留源码、协议、资源与完成回执、分析小产物。较大中间数组记服务器路径；原始实验产物不移动、不覆盖、不删改。真实结果、统计解释与独立检查已完成，范围及限制见[阶段判断](STAGE_REPORT.md)。
 
 ## 执行记录
 首次启动因94未使用本地 `repo/experiments` 目录而在import阶段失败，未申请GPU；该attempt原文保留。修复为既有冻结release_v8路径，新增 `attempt2/`。Drone两图canary通过：Detect输入与raw feats一致，NVML峰值586MiB、框架reserved124MiB、进程树RSS1484MiB。完整导出按2048MiB显存/8192MiB主机RSS预约，batch1、无DataLoader，GPU由全局lease选择；较大RSS预留用于最多1224图的ROI数组积累。

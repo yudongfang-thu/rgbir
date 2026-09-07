@@ -1,0 +1,1468 @@
+{
+  "endpoint": {
+    "name": "C0_s0",
+    "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\predictions\\objects.jsonl.gz",
+    "metric_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\evaluation_val.json",
+    "contract_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\evaluation_contract.json",
+    "receipt_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\reevaluation_receipt.json",
+    "class_names": [
+      "car",
+      "freight car",
+      "truck",
+      "bus",
+      "van"
+    ],
+    "arm": "C0",
+    "seed": 0
+  },
+  "input_audit": {
+    "images": 1469,
+    "gt": 22462,
+    "gt_by_class": {
+      "0": 18965,
+      "4": 700,
+      "2": 1336,
+      "1": 710,
+      "3": 751
+    },
+    "predictions": 112513,
+    "empty_prediction_images": [
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00854.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00960.jpg"
+    ],
+    "empty_gt_images": [
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01432.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01421.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00016.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00818.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00864.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00856.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00915.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00906.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00903.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00960.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00935.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01024.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01001.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01055.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01025.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01030.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01031.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01100.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01090.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01138.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01175.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01227.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01322.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01315.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01320.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01371.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01460.jpg"
+    ],
+    "observed_min_score": 0.0010000235633924603,
+    "max_predictions_per_image": 300,
+    "images_at_max_det": 73,
+    "within_class_repeated_score_count": 501,
+    "canvas_shapes": [
+      [
+        544,
+        672
+      ]
+    ],
+    "gt_population_sha256": "9205ad5e080b4149d9af257cb67a36b1efd588d8915c91a566de5d469c1e283d",
+    "effective_kwargs": {
+      "imgsz": 640,
+      "batch": 32,
+      "workers": 4,
+      "quantize": null,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "agnostic_nms": false,
+      "single_cls": false,
+      "rect": true,
+      "augment": false,
+      "half": false
+    },
+    "source_files": {
+      "path": {
+        "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\predictions\\objects.jsonl.gz",
+        "sha256": "3a7326dda5c4cc278d1dbcda4935f14f424755f3af4c054d46ba2903e3ad94f4"
+      },
+      "metric_path": {
+        "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\evaluation_val.json",
+        "sha256": "cdb04d6c8ccba7bc5daf54650b1d641a63a93cc1231c0e25b3a1ae26876a3f8a"
+      },
+      "contract_path": {
+        "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\evaluation_contract.json",
+        "sha256": "ed1dd1a2619f256a071144ed6c6cdeef2490758577ee3044bd6b6caa6c7acf0e"
+      },
+      "receipt_path": {
+        "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\reevaluation_receipt.json",
+        "sha256": "cc22e4a91ea70b8e8f8f5c75c5b464b031c24c4e6f40de98defad44cb6529d21"
+      }
+    }
+  },
+  "pinned_metrics": {
+    "AP50": 0.7698678788788337,
+    "AP75": 0.6416654157547512,
+    "mAP50_95": 0.5477218640082956,
+    "per_class": [
+      {
+        "class_id": 0,
+        "name": "car",
+        "AP50": 0.9525894001818374,
+        "AP75": 0.7615786418914022,
+        "mAP50_95": 0.6555872096758427
+      },
+      {
+        "class_id": 1,
+        "name": "freight car",
+        "AP50": 0.6013871022449662,
+        "AP75": 0.4601264321519223,
+        "mAP50_95": 0.400202978309411
+      },
+      {
+        "class_id": 2,
+        "name": "truck",
+        "AP50": 0.7206748009161179,
+        "AP75": 0.5890867818778551,
+        "mAP50_95": 0.5123803541379235
+      },
+      {
+        "class_id": 3,
+        "name": "bus",
+        "AP50": 0.9483120807011373,
+        "AP75": 0.8882450262016152,
+        "mAP50_95": 0.7332328166654989
+      },
+      {
+        "class_id": 4,
+        "name": "van",
+        "AP50": 0.6263760103501098,
+        "AP75": 0.5092901966509613,
+        "mAP50_95": 0.4372059612528013
+      }
+    ]
+  },
+  "thresholds": {
+    "0.5": {
+      "AP": 76.75357223619653,
+      "main_dAP": {
+        "Cls": 10.498448043818982,
+        "Loc": 1.9363541753318572,
+        "Both": 0.22386834449019943,
+        "Dupe": 0.2595274806369332,
+        "Bkg": 1.364722688819512,
+        "Miss": 1.4866239009364364
+      },
+      "special_dAP": {
+        "FalsePos": 16.513754496476736,
+        "FalseNeg": 4.801157324326283
+      },
+      "error_counts": {
+        "Cls": 16729,
+        "Loc": 28875,
+        "Both": 2296,
+        "Dupe": 6678,
+        "Bkg": 36106,
+        "Miss": 250
+      },
+      "independent_ap": {
+        "AP": 76.75357223619656,
+        "per_class": {
+          "0": {
+            "AP": 94.81748543495611,
+            "gt": 18965,
+            "tp": 18608,
+            "fp": 67103,
+            "fn": 357
+          },
+          "1": {
+            "AP": 60.0520659828491,
+            "gt": 710,
+            "tp": 641,
+            "fp": 7195,
+            "fn": 69
+          },
+          "2": {
+            "AP": 71.86399645436782,
+            "gt": 1336,
+            "tp": 1205,
+            "fp": 7375,
+            "fn": 131
+          },
+          "3": {
+            "AP": 94.3873347228849,
+            "gt": 751,
+            "tp": 732,
+            "fp": 1818,
+            "fn": 19
+          },
+          "4": {
+            "AP": 62.64697858592482,
+            "gt": 700,
+            "tp": 643,
+            "fp": 7193,
+            "fn": 57
+          }
+        }
+      },
+      "score_diagnostic": {
+        "pooled": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 431,
+              "fp": 70060,
+              "error_counts": {
+                "Bkg": 27879,
+                "Dupe": 4428,
+                "Cls": 11985,
+                "Loc": 23993,
+                "TP": 431,
+                "Both": 1775
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 556,
+              "fp": 12221,
+              "error_counts": {
+                "Cls": 2552,
+                "TP": 556,
+                "Bkg": 5227,
+                "Dupe": 1292,
+                "Loc": 2827,
+                "Both": 323
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 1140,
+              "fp": 5815,
+              "error_counts": {
+                "Bkg": 2057,
+                "Cls": 1249,
+                "Loc": 1508,
+                "TP": 1140,
+                "Dupe": 845,
+                "Both": 156
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 1359,
+              "fp": 1491,
+              "error_counts": {
+                "Bkg": 608,
+                "TP": 1359,
+                "Dupe": 103,
+                "Cls": 446,
+                "Loc": 304,
+                "Both": 30
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 18343,
+              "fp": 1097,
+              "error_counts": {
+                "TP": 18343,
+                "Bkg": 335,
+                "Loc": 243,
+                "Cls": 497,
+                "Dupe": 10,
+                "Both": 12
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 21829,
+              "quantiles": [
+                0.0010154717601835728,
+                0.26407381296157845,
+                0.6571266651153564,
+                0.7825974225997925,
+                0.8408668637275696,
+                0.866503095626831,
+                0.9141050577163696
+              ]
+            },
+            "FP": {
+              "count": 90684,
+              "quantiles": [
+                0.0010000235633924603,
+                0.001181295979768038,
+                0.00157080841017887,
+                0.0028723293216899037,
+                0.008537139976397157,
+                0.04436432309448719,
+                0.8752066493034363
+              ]
+            }
+          }
+        },
+        "0": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 258,
+              "fp": 53324,
+              "error_counts": {
+                "Dupe": 4038,
+                "Bkg": 23889,
+                "Loc": 23073,
+                "TP": 258,
+                "Cls": 1345,
+                "Both": 979
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 344,
+              "fp": 8413,
+              "error_counts": {
+                "TP": 344,
+                "Bkg": 4299,
+                "Dupe": 1148,
+                "Loc": 2494,
+                "Cls": 327,
+                "Both": 145
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 725,
+              "fp": 3717,
+              "error_counts": {
+                "Bkg": 1626,
+                "Loc": 1136,
+                "TP": 725,
+                "Dupe": 676,
+                "Cls": 232,
+                "Both": 47
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 1020,
+              "fp": 936,
+              "error_counts": {
+                "TP": 1020,
+                "Bkg": 506,
+                "Dupe": 72,
+                "Cls": 113,
+                "Loc": 237,
+                "Both": 8
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 16261,
+              "fp": 713,
+              "error_counts": {
+                "TP": 16261,
+                "Bkg": 289,
+                "Loc": 192,
+                "Cls": 223,
+                "Dupe": 5,
+                "Both": 4
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 18608,
+              "quantiles": [
+                0.0010154717601835728,
+                0.4062518298625946,
+                0.6882322728633881,
+                0.7904255986213684,
+                0.8456965088844299,
+                0.8680576860904694,
+                0.9012122750282288
+              ]
+            },
+            "FP": {
+              "count": 67103,
+              "quantiles": [
+                0.0010000235633924603,
+                0.0011748813325539232,
+                0.0015401083510369062,
+                0.002721833996474743,
+                0.007384668802842498,
+                0.03510530441999441,
+                0.8752066493034363
+              ]
+            }
+          }
+        },
+        "4": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 61,
+              "fp": 5326,
+              "error_counts": {
+                "Bkg": 1018,
+                "Cls": 3613,
+                "Both": 292,
+                "Dupe": 66,
+                "Loc": 337,
+                "TP": 61
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 67,
+              "fp": 1160,
+              "error_counts": {
+                "Cls": 872,
+                "Bkg": 194,
+                "TP": 67,
+                "Both": 31,
+                "Loc": 55,
+                "Dupe": 8
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 99,
+              "fp": 455,
+              "error_counts": {
+                "Cls": 367,
+                "Bkg": 52,
+                "TP": 99,
+                "Both": 7,
+                "Loc": 26,
+                "Dupe": 3
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 75,
+              "fp": 144,
+              "error_counts": {
+                "Bkg": 13,
+                "TP": 75,
+                "Cls": 120,
+                "Dupe": 2,
+                "Loc": 9
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 341,
+              "fp": 108,
+              "error_counts": {
+                "TP": 341,
+                "Cls": 82,
+                "Loc": 18,
+                "Bkg": 6,
+                "Both": 2
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 643,
+              "quantiles": [
+                0.0010664896108210087,
+                0.011146439611911776,
+                0.09976182878017426,
+                0.5619957447052002,
+                0.7746885120868683,
+                0.8119530320167542,
+                0.9141050577163696
+              ]
+            },
+            "FP": {
+              "count": 7193,
+              "quantiles": [
+                0.0010003977222368121,
+                0.0012207887135446073,
+                0.0016795371193438768,
+                0.0033234101720154285,
+                0.010629644617438316,
+                0.04834142252802851,
+                0.8448628783226013
+              ]
+            }
+          }
+        },
+        "1": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 45,
+              "fp": 4898,
+              "error_counts": {
+                "Cls": 3056,
+                "Bkg": 1336,
+                "Loc": 191,
+                "Both": 215,
+                "Dupe": 100,
+                "TP": 45
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 55,
+              "fp": 1270,
+              "error_counts": {
+                "Cls": 748,
+                "Bkg": 309,
+                "Both": 86,
+                "Loc": 90,
+                "TP": 55,
+                "Dupe": 37
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 99,
+              "fp": 721,
+              "error_counts": {
+                "Bkg": 154,
+                "Cls": 383,
+                "TP": 99,
+                "Loc": 65,
+                "Both": 74,
+                "Dupe": 45
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 91,
+              "fp": 197,
+              "error_counts": {
+                "Cls": 120,
+                "TP": 91,
+                "Bkg": 36,
+                "Loc": 16,
+                "Both": 17,
+                "Dupe": 8
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 351,
+              "fp": 109,
+              "error_counts": {
+                "TP": 351,
+                "Bkg": 6,
+                "Cls": 87,
+                "Loc": 12,
+                "Both": 3,
+                "Dupe": 1
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 641,
+              "quantiles": [
+                0.0010698976693674922,
+                0.01682569645345211,
+                0.15142974257469177,
+                0.5564737319946289,
+                0.74052894115448,
+                0.790050745010376,
+                0.8843587636947632
+              ]
+            },
+            "FP": {
+              "count": 7195,
+              "quantiles": [
+                0.0010003986535593867,
+                0.0012156416894868016,
+                0.0017306377994827926,
+                0.003901050891727209,
+                0.0172130623832345,
+                0.08711548894643795,
+                0.8670667409896851
+              ]
+            }
+          }
+        },
+        "2": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 57,
+              "fp": 5087,
+              "error_counts": {
+                "Bkg": 1298,
+                "Cls": 3058,
+                "Dupe": 168,
+                "Loc": 336,
+                "Both": 227,
+                "TP": 57
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 77,
+              "fp": 1128,
+              "error_counts": {
+                "Cls": 496,
+                "Loc": 170,
+                "Bkg": 328,
+                "Both": 43,
+                "TP": 77,
+                "Dupe": 91
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 189,
+              "fp": 850,
+              "error_counts": {
+                "TP": 189,
+                "Cls": 240,
+                "Bkg": 190,
+                "Loc": 276,
+                "Dupe": 119,
+                "Both": 25
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 145,
+              "fp": 177,
+              "error_counts": {
+                "TP": 145,
+                "Cls": 82,
+                "Bkg": 39,
+                "Both": 4,
+                "Loc": 34,
+                "Dupe": 18
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 737,
+              "fp": 133,
+              "error_counts": {
+                "TP": 737,
+                "Cls": 89,
+                "Loc": 15,
+                "Bkg": 22,
+                "Dupe": 4,
+                "Both": 3
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 1205,
+              "quantiles": [
+                0.0011731900740414858,
+                0.043524593114852905,
+                0.21413327753543854,
+                0.6581536531448364,
+                0.7969973683357239,
+                0.8432547092437744,
+                0.9002840518951416
+              ]
+            },
+            "FP": {
+              "count": 7375,
+              "quantiles": [
+                0.0010006297379732132,
+                0.0012045656330883503,
+                0.0016986863338388503,
+                0.0036922143772244453,
+                0.01759112998843193,
+                0.09050126075744636,
+                0.8739761114120483
+              ]
+            }
+          }
+        },
+        "3": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 10,
+              "fp": 1425,
+              "error_counts": {
+                "Bkg": 338,
+                "Cls": 913,
+                "Both": 62,
+                "Loc": 56,
+                "Dupe": 56,
+                "TP": 10
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 13,
+              "fp": 250,
+              "error_counts": {
+                "Bkg": 97,
+                "Cls": 109,
+                "TP": 13,
+                "Both": 18,
+                "Loc": 18,
+                "Dupe": 8
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 28,
+              "fp": 72,
+              "error_counts": {
+                "TP": 28,
+                "Bkg": 35,
+                "Cls": 27,
+                "Dupe": 2,
+                "Loc": 5,
+                "Both": 3
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 28,
+              "fp": 37,
+              "error_counts": {
+                "Bkg": 14,
+                "Cls": 11,
+                "TP": 28,
+                "Loc": 8,
+                "Dupe": 3,
+                "Both": 1
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 653,
+              "fp": 34,
+              "error_counts": {
+                "TP": 653,
+                "Cls": 16,
+                "Bkg": 12,
+                "Loc": 6
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 732,
+              "quantiles": [
+                0.0013566419947892427,
+                0.44355572164058693,
+                0.7515483796596527,
+                0.8056999742984772,
+                0.8335370123386383,
+                0.8527709722518921,
+                0.9049729704856873
+              ]
+            },
+            "FP": {
+              "count": 1818,
+              "quantiles": [
+                0.0010007075034081936,
+                0.0011439418769441545,
+                0.0014630260411649942,
+                0.002562312758527696,
+                0.0073743280954658985,
+                0.03214393258094787,
+                0.8332023024559021
+              ]
+            }
+          }
+        }
+      }
+    },
+    "0.75": {
+      "AP": 64.05588441945902,
+      "main_dAP": {
+        "Cls": 6.355524892451584,
+        "Loc": 14.56670344056586,
+        "Both": 0.6766445035231499,
+        "Dupe": 0.008096834807659548,
+        "Bkg": 0.9103545881661574,
+        "Miss": 1.9804979025349212
+      },
+      "special_dAP": {
+        "FalsePos": 15.944115580540995,
+        "FalseNeg": 14.807609398226688
+      },
+      "error_counts": {
+        "Cls": 13086,
+        "Loc": 39043,
+        "Both": 5924,
+        "Dupe": 177,
+        "Bkg": 36106,
+        "Miss": 314
+      },
+      "independent_ap": {
+        "AP": 64.05588441945899,
+        "per_class": {
+          "0": {
+            "AP": 75.89911372287953,
+            "gt": 18965,
+            "tp": 15400,
+            "fp": 70311,
+            "fn": 3565
+          },
+          "1": {
+            "AP": 46.055096894193234,
+            "gt": 710,
+            "tp": 529,
+            "fp": 7307,
+            "fn": 181
+          },
+          "2": {
+            "AP": 58.82064045849117,
+            "gt": 1336,
+            "tp": 1019,
+            "fp": 7561,
+            "fn": 317
+          },
+          "3": {
+            "AP": 88.44010160412033,
+            "gt": 751,
+            "tp": 693,
+            "fp": 1857,
+            "fn": 58
+          },
+          "4": {
+            "AP": 51.06446941761072,
+            "gt": 700,
+            "tp": 536,
+            "fp": 7300,
+            "fn": 164
+          }
+        }
+      },
+      "score_diagnostic": {
+        "pooled": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 341,
+              "fp": 70150,
+              "error_counts": {
+                "Bkg": 27879,
+                "Loc": 28421,
+                "Both": 4358,
+                "Cls": 9400,
+                "TP": 341,
+                "Dupe": 92
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 345,
+              "fp": 12432,
+              "error_counts": {
+                "Both": 895,
+                "Loc": 4287,
+                "Bkg": 5227,
+                "TP": 345,
+                "Cls": 1977,
+                "Dupe": 46
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 697,
+              "fp": 6258,
+              "error_counts": {
+                "Bkg": 2057,
+                "Both": 452,
+                "Loc": 2769,
+                "TP": 697,
+                "Cls": 948,
+                "Dupe": 32
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 801,
+              "fp": 2049,
+              "error_counts": {
+                "Bkg": 608,
+                "Loc": 962,
+                "TP": 801,
+                "Cls": 338,
+                "Both": 135,
+                "Dupe": 6
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 15993,
+              "fp": 3447,
+              "error_counts": {
+                "TP": 15993,
+                "Bkg": 335,
+                "Loc": 2604,
+                "Both": 84,
+                "Cls": 423,
+                "Dupe": 1
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 18177,
+              "quantiles": [
+                0.0010477802716195583,
+                0.40666270256042486,
+                0.7150164246559143,
+                0.801149845123291,
+                0.8486537337303162,
+                0.8690830826759338,
+                0.9141050577163696
+              ]
+            },
+            "FP": {
+              "count": 94336,
+              "quantiles": [
+                0.0010000235633924603,
+                0.0011894461931660771,
+                0.0016042660281527787,
+                0.003053072956390679,
+                0.010535934241488576,
+                0.08000090718269348,
+                0.8977094292640686
+              ]
+            }
+          }
+        },
+        "0": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 195,
+              "fp": 53387,
+              "error_counts": {
+                "Loc": 27090,
+                "Bkg": 23889,
+                "TP": 195,
+                "Both": 1260,
+                "Cls": 1064,
+                "Dupe": 84
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 194,
+              "fp": 8563,
+              "error_counts": {
+                "Loc": 3753,
+                "Bkg": 4299,
+                "TP": 194,
+                "Cls": 245,
+                "Both": 227,
+                "Dupe": 39
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 392,
+              "fp": 4050,
+              "error_counts": {
+                "Bkg": 1626,
+                "Loc": 2120,
+                "TP": 392,
+                "Cls": 169,
+                "Both": 110,
+                "Dupe": 25
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 548,
+              "fp": 1408,
+              "error_counts": {
+                "Loc": 778,
+                "Bkg": 506,
+                "TP": 548,
+                "Cls": 74,
+                "Both": 47,
+                "Dupe": 3
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 14071,
+              "fp": 2903,
+              "error_counts": {
+                "TP": 14071,
+                "Bkg": 289,
+                "Loc": 2386,
+                "Both": 51,
+                "Cls": 176,
+                "Dupe": 1
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 15400,
+              "quantiles": [
+                0.0010477802716195583,
+                0.558109050989151,
+                0.737860843539238,
+                0.8090626001358032,
+                0.8530646413564682,
+                0.8703629076480865,
+                0.9012122750282288
+              ]
+            },
+            "FP": {
+              "count": 70311,
+              "quantiles": [
+                0.0010000235633924603,
+                0.0011841654777526855,
+                0.001576606126036495,
+                0.0029100137762725353,
+                0.009320234414190054,
+                0.07588060945272446,
+                0.8884658813476562
+              ]
+            }
+          }
+        },
+        "4": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 44,
+              "fp": 5343,
+              "error_counts": {
+                "Bkg": 1018,
+                "Both": 1215,
+                "Cls": 2690,
+                "Loc": 416,
+                "TP": 44,
+                "Dupe": 4
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 47,
+              "fp": 1180,
+              "error_counts": {
+                "Both": 244,
+                "Cls": 659,
+                "Bkg": 194,
+                "Loc": 82,
+                "TP": 47,
+                "Dupe": 1
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 75,
+              "fp": 479,
+              "error_counts": {
+                "Both": 74,
+                "Bkg": 52,
+                "Cls": 300,
+                "TP": 75,
+                "Loc": 53
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 55,
+              "fp": 164,
+              "error_counts": {
+                "Bkg": 13,
+                "Loc": 31,
+                "Cls": 94,
+                "TP": 55,
+                "Both": 26
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 315,
+              "fp": 134,
+              "error_counts": {
+                "TP": 315,
+                "Cls": 70,
+                "Loc": 44,
+                "Both": 14,
+                "Bkg": 6
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 536,
+              "quantiles": [
+                0.0011251233518123627,
+                0.016494375187903643,
+                0.12971539050340652,
+                0.635861873626709,
+                0.7841358631849289,
+                0.816787451505661,
+                0.9141050577163696
+              ]
+            },
+            "FP": {
+              "count": 7300,
+              "quantiles": [
+                0.0010003977222368121,
+                0.0012246022000908852,
+                0.0016898847243282944,
+                0.0033931893995031714,
+                0.011337499599903822,
+                0.05548501983284966,
+                0.8448628783226013
+              ]
+            }
+          }
+        },
+        "1": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 39,
+              "fp": 4904,
+              "error_counts": {
+                "Both": 847,
+                "Bkg": 1336,
+                "Cls": 2423,
+                "Loc": 297,
+                "TP": 39,
+                "Dupe": 1
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 43,
+              "fp": 1282,
+              "error_counts": {
+                "Both": 234,
+                "Bkg": 309,
+                "Cls": 598,
+                "Loc": 139,
+                "TP": 43,
+                "Dupe": 2
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 74,
+              "fp": 746,
+              "error_counts": {
+                "Bkg": 154,
+                "Cls": 264,
+                "TP": 74,
+                "Both": 190,
+                "Loc": 134,
+                "Dupe": 4
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 69,
+              "fp": 219,
+              "error_counts": {
+                "Cls": 95,
+                "TP": 69,
+                "Both": 40,
+                "Bkg": 36,
+                "Loc": 48
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 304,
+              "fp": 156,
+              "error_counts": {
+                "TP": 304,
+                "Bkg": 6,
+                "Cls": 79,
+                "Both": 11,
+                "Loc": 60
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 529,
+              "quantiles": [
+                0.0012585907243192196,
+                0.01571878828108311,
+                0.16582468152046204,
+                0.6032397747039795,
+                0.7554790377616882,
+                0.8019440293312072,
+                0.8843587636947632
+              ]
+            },
+            "FP": {
+              "count": 7307,
+              "quantiles": [
+                0.0010003986535593867,
+                0.0012191890040412546,
+                0.0017498189117759466,
+                0.004016039427369833,
+                0.018530631437897682,
+                0.10061345398426058,
+                0.8670667409896851
+              ]
+            }
+          }
+        },
+        "2": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 53,
+              "fp": 5091,
+              "error_counts": {
+                "Bkg": 1298,
+                "Both": 848,
+                "Cls": 2436,
+                "Loc": 507,
+                "TP": 53,
+                "Dupe": 2
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 52,
+              "fp": 1153,
+              "error_counts": {
+                "Both": 157,
+                "Cls": 381,
+                "Loc": 285,
+                "Bkg": 328,
+                "TP": 52,
+                "Dupe": 2
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 131,
+              "fp": 908,
+              "error_counts": {
+                "TP": 131,
+                "Cls": 195,
+                "Bkg": 190,
+                "Loc": 452,
+                "Both": 68,
+                "Dupe": 3
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 104,
+              "fp": 218,
+              "error_counts": {
+                "TP": 104,
+                "Both": 18,
+                "Bkg": 39,
+                "Cls": 67,
+                "Loc": 91,
+                "Dupe": 3
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 679,
+              "fp": 191,
+              "error_counts": {
+                "Loc": 79,
+                "TP": 679,
+                "Cls": 84,
+                "Bkg": 22,
+                "Both": 6
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 1019,
+              "quantiles": [
+                0.0011717303423210979,
+                0.04900382682681084,
+                0.31256942451000214,
+                0.7191151976585388,
+                0.8086796998977661,
+                0.8465508222579956,
+                0.9002840518951416
+              ]
+            },
+            "FP": {
+              "count": 7561,
+              "quantiles": [
+                0.0010006297379732132,
+                0.0012103215558454394,
+                0.001719783991575241,
+                0.0038626811001449823,
+                0.021723678335547447,
+                0.11366578936576843,
+                0.8977094292640686
+              ]
+            }
+          }
+        },
+        "3": {
+          "bins": [
+            {
+              "low": 0.001,
+              "high": 0.01,
+              "tp": 10,
+              "fp": 1425,
+              "error_counts": {
+                "Bkg": 338,
+                "Cls": 787,
+                "Both": 188,
+                "Loc": 111,
+                "TP": 10,
+                "Dupe": 1
+              }
+            },
+            {
+              "low": 0.01,
+              "high": 0.05,
+              "tp": 9,
+              "fp": 254,
+              "error_counts": {
+                "Bkg": 97,
+                "Cls": 94,
+                "TP": 9,
+                "Both": 33,
+                "Loc": 28,
+                "Dupe": 2
+              }
+            },
+            {
+              "low": 0.05,
+              "high": 0.25,
+              "tp": 25,
+              "fp": 75,
+              "error_counts": {
+                "TP": 25,
+                "Bkg": 35,
+                "Cls": 20,
+                "Loc": 10,
+                "Both": 10
+              }
+            },
+            {
+              "low": 0.25,
+              "high": 0.5,
+              "tp": 25,
+              "fp": 40,
+              "error_counts": {
+                "Bkg": 14,
+                "Both": 4,
+                "TP": 25,
+                "Loc": 14,
+                "Cls": 8
+              }
+            },
+            {
+              "low": 0.5,
+              "high": 1.0,
+              "tp": 624,
+              "fp": 63,
+              "error_counts": {
+                "TP": 624,
+                "Cls": 14,
+                "Loc": 35,
+                "Bkg": 12,
+                "Both": 2
+              }
+            }
+          ],
+          "score_quantiles": {
+            "TP": {
+              "count": 693,
+              "quantiles": [
+                0.0013566419947892427,
+                0.5100645303726197,
+                0.7587559819221497,
+                0.8088129162788391,
+                0.8351389765739441,
+                0.8533417463302613,
+                0.9049729704856873
+              ]
+            },
+            "FP": {
+              "count": 1857,
+              "quantiles": [
+                0.0010007075034081936,
+                0.001145916013047099,
+                0.0014740846818313003,
+                0.002641504630446434,
+                0.008670876733958721,
+                0.043794895708560946,
+                0.8332023024559021
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "seconds": 9.84171199798584
+}

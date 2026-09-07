@@ -1,0 +1,20 @@
+{
+  "status": "PASSED_CPU_ONLY_NOT_REMOTE_ADMISSION",
+  "tests": {
+    "one_object_primary_and_replay_exact_unverified": true,
+    "multi_image_empty_image_global_gt_ids_and_batch_normalizer": true,
+    "real_selector_is_reference_confidence_first_not_gt_best_iou": true,
+    "whole_batch_C0_adapter_exact_and_student_values_do_not_select": true,
+    "both_prior_real_64x32_trace_contracts_and_augmentation_tamper_rejection": {
+      "llvip": 2048,
+      "drone": 2048
+    },
+    "serialized_int_class_keys_match_and_recipe_drift_rejects": true
+  },
+  "torch_version": "1.8.0+cu111",
+  "pinned_training_runtime": false,
+  "cuda_initialized": false,
+  "new_training": false,
+  "new_hash": false,
+  "new_forward_on_real_data": false
+}

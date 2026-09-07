@@ -1,0 +1,426 @@
+{
+  "new_N_family": {
+    "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "epochs": 200,
+    "batch": 32,
+    "nbs": 64,
+    "imgsz": 640,
+    "workers": 4,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "cos_lr": false,
+    "close_mosaic": 0,
+    "patience": 0,
+    "amp": true,
+    "deterministic": true
+  },
+  "old_models": {
+    "N42": {
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "names": {
+        "0": "person"
+      },
+      "seed": 42,
+      "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+      "comparison": {
+        "model": {
+          "old": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "new": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "equal": true
+        },
+        "epochs": {
+          "old": 200,
+          "new": 200,
+          "equal": true
+        },
+        "batch": {
+          "old": 32,
+          "new": 32,
+          "equal": true
+        },
+        "nbs": {
+          "old": 64,
+          "new": 64,
+          "equal": true
+        },
+        "imgsz": {
+          "old": 640,
+          "new": 640,
+          "equal": true
+        },
+        "workers": {
+          "old": 8,
+          "new": 4,
+          "equal": false
+        },
+        "optimizer": {
+          "old": "SGD",
+          "new": "SGD",
+          "equal": true
+        },
+        "lr0": {
+          "old": 0.01,
+          "new": 0.01,
+          "equal": true
+        },
+        "lrf": {
+          "old": 0.01,
+          "new": 0.01,
+          "equal": true
+        },
+        "momentum": {
+          "old": 0.937,
+          "new": 0.937,
+          "equal": true
+        },
+        "weight_decay": {
+          "old": 0.0005,
+          "new": 0.0005,
+          "equal": true
+        },
+        "warmup_epochs": {
+          "old": 3.0,
+          "new": 3.0,
+          "equal": true
+        },
+        "warmup_momentum": {
+          "old": 0.8,
+          "new": 0.8,
+          "equal": true
+        },
+        "warmup_bias_lr": {
+          "old": 0.1,
+          "new": 0.1,
+          "equal": true
+        },
+        "cos_lr": {
+          "old": false,
+          "new": false,
+          "equal": true
+        },
+        "close_mosaic": {
+          "old": 0,
+          "new": 0,
+          "equal": true
+        },
+        "patience": {
+          "old": 0,
+          "new": 0,
+          "equal": true
+        },
+        "amp": {
+          "old": true,
+          "new": true,
+          "equal": true
+        },
+        "deterministic": {
+          "old": true,
+          "new": true,
+          "equal": true
+        },
+        "mosaic": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "mixup": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "cutmix": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "copy_paste": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "degrees": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "shear": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "perspective": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "translate": {
+          "old": 0.1,
+          "new": 0.1,
+          "equal": true
+        },
+        "scale": {
+          "old": 0.5,
+          "new": 0.5,
+          "equal": true
+        },
+        "fliplr": {
+          "old": 0.5,
+          "new": 0.5,
+          "equal": true
+        },
+        "flipud": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "hsv_h": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "hsv_s": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "hsv_v": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "erasing": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "bgr": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        }
+      },
+      "differences": [
+        "workers"
+      ]
+    },
+    "T42": {
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+      "names": {
+        "0": "person"
+      },
+      "seed": 42,
+      "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml",
+      "comparison": {
+        "model": {
+          "old": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "new": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "equal": true
+        },
+        "epochs": {
+          "old": 200,
+          "new": 200,
+          "equal": true
+        },
+        "batch": {
+          "old": 32,
+          "new": 32,
+          "equal": true
+        },
+        "nbs": {
+          "old": 64,
+          "new": 64,
+          "equal": true
+        },
+        "imgsz": {
+          "old": 640,
+          "new": 640,
+          "equal": true
+        },
+        "workers": {
+          "old": 8,
+          "new": 4,
+          "equal": false
+        },
+        "optimizer": {
+          "old": "SGD",
+          "new": "SGD",
+          "equal": true
+        },
+        "lr0": {
+          "old": 0.01,
+          "new": 0.01,
+          "equal": true
+        },
+        "lrf": {
+          "old": 0.01,
+          "new": 0.01,
+          "equal": true
+        },
+        "momentum": {
+          "old": 0.937,
+          "new": 0.937,
+          "equal": true
+        },
+        "weight_decay": {
+          "old": 0.0005,
+          "new": 0.0005,
+          "equal": true
+        },
+        "warmup_epochs": {
+          "old": 3.0,
+          "new": 3.0,
+          "equal": true
+        },
+        "warmup_momentum": {
+          "old": 0.8,
+          "new": 0.8,
+          "equal": true
+        },
+        "warmup_bias_lr": {
+          "old": 0.1,
+          "new": 0.1,
+          "equal": true
+        },
+        "cos_lr": {
+          "old": false,
+          "new": false,
+          "equal": true
+        },
+        "close_mosaic": {
+          "old": 0,
+          "new": 0,
+          "equal": true
+        },
+        "patience": {
+          "old": 0,
+          "new": 0,
+          "equal": true
+        },
+        "amp": {
+          "old": true,
+          "new": true,
+          "equal": true
+        },
+        "deterministic": {
+          "old": true,
+          "new": true,
+          "equal": true
+        },
+        "mosaic": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "mixup": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "cutmix": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "copy_paste": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "degrees": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "shear": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "perspective": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "translate": {
+          "old": 0.1,
+          "new": 0.1,
+          "equal": true
+        },
+        "scale": {
+          "old": 0.5,
+          "new": 0.5,
+          "equal": true
+        },
+        "fliplr": {
+          "old": 0.5,
+          "new": 0.5,
+          "equal": true
+        },
+        "flipud": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "hsv_h": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "hsv_s": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "hsv_v": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "erasing": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        },
+        "bgr": {
+          "old": 0.0,
+          "new": 0.0,
+          "equal": true
+        }
+      },
+      "differences": [
+        "workers"
+      ]
+    }
+  },
+  "new_dataset_paths": {
+    "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+    "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml",
+    "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/mappings/visible_to_infrared_train.json"
+  },
+  "expected_nc": 1,
+  "new_native_implementation": "legacy ObjectEvidenceTrainer + TrackedDualLabelRGBIRDataset + original weight0 auxiliary path",
+  "all_training_transform_values": {
+    "mosaic": 0.0,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "copy_paste": 0.0,
+    "degrees": 0.0,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "fliplr": 0.5,
+    "flipud": 0.0,
+    "hsv_h": 0.0,
+    "hsv_s": 0.0,
+    "hsv_v": 0.0,
+    "erasing": 0.0,
+    "bgr": 0.0
+  }
+}

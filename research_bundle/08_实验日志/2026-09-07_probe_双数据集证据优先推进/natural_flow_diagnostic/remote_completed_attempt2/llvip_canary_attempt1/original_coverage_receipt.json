@@ -1,0 +1,89 @@
+{
+  "seed": 20260907,
+  "generator_seed": 20260907,
+  "worker_init": "seed_natural_worker",
+  "shuffle": true,
+  "replacement": false,
+  "drop_last": false,
+  "prefetch_factor": 4,
+  "workers": 4,
+  "batch_size": 32,
+  "dataset_size": 9619,
+  "main_rng_isolated_for_workers0": true,
+  "loader_class": "torch.utils.data.DataLoader",
+  "use": "fixed calibration/probe only; formal training retains matched legacy stream",
+  "dataset": "llvip",
+  "yaml_sources": [
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml"
+  ],
+  "paired_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/mappings/visible_to_infrared_train.json",
+  "train_manifests": [
+    {
+      "train": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit",
+      "names": {
+        "0": "person"
+      }
+    },
+    {
+      "train": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit",
+      "names": {
+        "0": "person"
+      }
+    }
+  ],
+  "augmentation": {
+    "mosaic": 0.0,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "copy_paste": 0.0,
+    "degrees": 0.0,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "fliplr": 0.5,
+    "flipud": 0.0,
+    "hsv_h": 0.0,
+    "hsv_s": 0.0,
+    "hsv_v": 0.0,
+    "erasing": 0.0,
+    "bgr": 0.0
+  },
+  "test_accessed": false,
+  "model_loaded": false,
+  "geometry_reference_directory": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/task_conditional_reference",
+  "roster_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/geometry_frozen_roster.json",
+  "roster_row_count": 42,
+  "roster_unique_resolved_paths": 42,
+  "config_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/configs_draft_v1/llvip_C1.yaml",
+  "status": "COMPLETED",
+  "requested_batches": 64,
+  "actual_batches": 64,
+  "unique_source_images": 2048,
+  "unique_roster_source_images": 13,
+  "roster_hit_batch_indices": [
+    0,
+    3,
+    4,
+    6,
+    10,
+    11,
+    15,
+    23,
+    25,
+    33,
+    34
+  ],
+  "roster_hit_batch_upper_bound": 11,
+  "roster_both_gt_batch_upper_bound": 11,
+  "signal_requirement": 16,
+  "coverage_gate": "ROSTER_CANNOT_REACH_16",
+  "upper_bound_only": true,
+  "geometry_verified": false,
+  "actual_L_selected_not_measured": true,
+  "no_oversampling": true,
+  "no_batch_replacement": true,
+  "no_hashes_computed": true,
+  "seconds": 14.460305213928223
+}

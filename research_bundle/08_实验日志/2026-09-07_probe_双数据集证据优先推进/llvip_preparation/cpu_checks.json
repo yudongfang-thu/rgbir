@@ -1,0 +1,20 @@
+{
+  "status": "CPU_CHECKS_PASSED_NOT_ADMITTED",
+  "torch_version": "1.8.0+cu111",
+  "pinned_training_environment": false,
+  "cuda_initialized": false,
+  "tests": {
+    "single_class_C1_equals_C1_y_loss_and_gradient_not_zero": {
+      "loss": 0.4291123151779175,
+      "gradient_l2": 0.2845637798309326,
+      "exact": true
+    },
+    "actual_zero_weight_combiner_native_loss_gradient_exact": "passed",
+    "actual_build_trainer_N_maps_to_weight0_and_tracked_loader": "passed",
+    "empty_geometry_blocks_L1_L_GT_constructor": "L1/L_GT require nonempty independently accepted exact-image geometry",
+    "current_evaluator_profile_rejects_LLVIP_confirmed_blocker": "This fixed baseline probe is Drone full dev1469 only",
+    "nine_drafts_valid_unadmitted_null_evidence_and_uncalibrated_L": "passed"
+  },
+  "formal_training_authorized": false,
+  "scope": "Math and config/dispatch logic only; not real-data compatibility or calibration"
+}

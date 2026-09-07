@@ -1,0 +1,786 @@
+{
+  "status": "PASS",
+  "date": "2026-09-07",
+  "auditor": "/root/ap_error",
+  "runs": [
+    {
+      "status": "PASS",
+      "dataset": "llvip",
+      "batches": 2,
+      "trace_images": 64,
+      "source_checks": [
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\0_diagnose_natural_flow.py",
+          "reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\independent_review\\attempt2_reviewed_sources\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\diagnose_natural_flow.py",
+          "byte_identity": true,
+          "bytes": 23025
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\1_coverage_probe.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\coverage_probe.py",
+          "byte_identity": true,
+          "bytes": 13955
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\2_runtime.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\runtime.py",
+          "byte_identity": true,
+          "bytes": 1814
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\3_selection_adapter.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\selection_adapter.py",
+          "byte_identity": true,
+          "bytes": 18146
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\4_prepare_configs.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\prepare_configs.py",
+          "byte_identity": true,
+          "bytes": 2160
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\5_localization_loss.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\localization_loss.py",
+          "byte_identity": true,
+          "bytes": 20629
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\6_diagnose_opportunities.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\diagnose_opportunities.py",
+          "byte_identity": true,
+          "bytes": 31939
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\7_tracked_pair_data.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\tracked_pair_data.py",
+          "byte_identity": true,
+          "bytes": 3666
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\8_paired_rgbir_data.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+          "byte_identity": true,
+          "bytes": 10325
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\9_object_evidence_loss.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+          "byte_identity": true,
+          "bytes": 19364
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_canary_attempt1\\sources\\10_train_object_evidence.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+          "byte_identity": true,
+          "bytes": 18948
+        }
+      ],
+      "classification_counts": {
+        "rgb_gt_count": 165,
+        "teacher_gt_count": 165,
+        "common_count": 165,
+        "valid_region_count": 165,
+        "reference_candidate_count": 164,
+        "base_count": 164,
+        "teacher_correct_base_count": 160,
+        "eligible_count": 133,
+        "selected_count": 67,
+        "target_clipped_count": 1
+      },
+      "localization_counts": {
+        "rgb_gt_count": 165,
+        "teacher_gt_count": 165,
+        "common_count": 165,
+        "pair_iou_count": 165,
+        "geometry_count": 165,
+        "inside_count": 165,
+        "support_count": 165,
+        "unique_owner_count": 165,
+        "reference_candidate_count": 162,
+        "base_count": 162,
+        "reference_reliable_count": 157,
+        "both_reliable_count": 151,
+        "reference_localization_gap_count": 10,
+        "teacher_rgb_quality_count": 9,
+        "teacher_own_quality_count": 9,
+        "eligible_count": 8,
+        "selected_count": 8,
+        "selected_quality_count": 8
+      },
+      "L_class_counts": {
+        "0": {
+          "base": 162,
+          "selected": 8
+        }
+      },
+      "C_class_counts": {
+        "0": {
+          "base": 164,
+          "eligible": 133,
+          "selected": 67
+        }
+      },
+      "cpu_gt_only_gate_counts": {
+        "rgb_gt_count": 165,
+        "teacher_gt_count": 165,
+        "common_count": 165,
+        "pair_iou_count": 165,
+        "geometry_count": 165,
+        "inside_count": 165,
+        "support_count": 165,
+        "unique_owner_count": 165
+      },
+      "resources": {
+        "gpu_ids": [
+          1
+        ],
+        "cuda_pid_counts": {
+          "1": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "1": 2204
+        },
+        "peak_rss_mib": 5957
+      },
+      "gpu_reserved_peak_mib": 1742.0,
+      "gpu_allocated_peak_mib": 1282.5654296875
+    },
+    {
+      "status": "PASS",
+      "dataset": "llvip",
+      "batches": 64,
+      "trace_images": 2048,
+      "source_checks": [
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\0_diagnose_natural_flow.py",
+          "reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\independent_review\\attempt2_reviewed_sources\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\diagnose_natural_flow.py",
+          "byte_identity": true,
+          "bytes": 23025
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\1_coverage_probe.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\coverage_probe.py",
+          "byte_identity": true,
+          "bytes": 13955
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\2_runtime.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\runtime.py",
+          "byte_identity": true,
+          "bytes": 1814
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\3_selection_adapter.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\selection_adapter.py",
+          "byte_identity": true,
+          "bytes": 18146
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\4_prepare_configs.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\prepare_configs.py",
+          "byte_identity": true,
+          "bytes": 2160
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\5_localization_loss.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\localization_loss.py",
+          "byte_identity": true,
+          "bytes": 20629
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\6_diagnose_opportunities.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\diagnose_opportunities.py",
+          "byte_identity": true,
+          "bytes": 31939
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\7_tracked_pair_data.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\tracked_pair_data.py",
+          "byte_identity": true,
+          "bytes": 3666
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\8_paired_rgbir_data.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+          "byte_identity": true,
+          "bytes": 10325
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\9_object_evidence_loss.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+          "byte_identity": true,
+          "bytes": 19364
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\llvip_full_attempt1\\sources\\10_train_object_evidence.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+          "byte_identity": true,
+          "bytes": 18948
+        }
+      ],
+      "classification_counts": {
+        "rgb_gt_count": 5201,
+        "teacher_gt_count": 5201,
+        "common_count": 5201,
+        "valid_region_count": 5200,
+        "reference_candidate_count": 5129,
+        "base_count": 5128,
+        "teacher_correct_base_count": 5061,
+        "eligible_count": 4406,
+        "selected_count": 2217,
+        "target_clipped_count": 3
+      },
+      "localization_counts": {
+        "rgb_gt_count": 5201,
+        "teacher_gt_count": 5201,
+        "common_count": 5201,
+        "pair_iou_count": 5201,
+        "geometry_count": 5201,
+        "inside_count": 5201,
+        "support_count": 5201,
+        "unique_owner_count": 5191,
+        "reference_candidate_count": 5033,
+        "base_count": 5033,
+        "reference_reliable_count": 4887,
+        "both_reliable_count": 4731,
+        "reference_localization_gap_count": 278,
+        "teacher_rgb_quality_count": 241,
+        "teacher_own_quality_count": 241,
+        "eligible_count": 207,
+        "selected_count": 207,
+        "selected_quality_count": 207
+      },
+      "L_class_counts": {
+        "0": {
+          "base": 5033,
+          "selected": 207
+        }
+      },
+      "C_class_counts": {
+        "0": {
+          "base": 5128,
+          "eligible": 4406,
+          "selected": 2217
+        }
+      },
+      "cpu_gt_only_gate_counts": {
+        "rgb_gt_count": 5201,
+        "teacher_gt_count": 5201,
+        "common_count": 5201,
+        "pair_iou_count": 5201,
+        "geometry_count": 5201,
+        "inside_count": 5201,
+        "support_count": 5201,
+        "unique_owner_count": 5191
+      },
+      "resources": {
+        "gpu_ids": [
+          1
+        ],
+        "cuda_pid_counts": {
+          "1": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "1": 2208
+        },
+        "peak_rss_mib": 6554
+      },
+      "gpu_reserved_peak_mib": 1746.0,
+      "gpu_allocated_peak_mib": 1282.56640625
+    },
+    {
+      "status": "PASS",
+      "dataset": "drone",
+      "batches": 2,
+      "trace_images": 64,
+      "source_checks": [
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\0_diagnose_natural_flow.py",
+          "reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\independent_review\\attempt2_reviewed_sources\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\diagnose_natural_flow.py",
+          "byte_identity": true,
+          "bytes": 23025
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\1_coverage_probe.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\coverage_probe.py",
+          "byte_identity": true,
+          "bytes": 13955
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\2_runtime.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\runtime.py",
+          "byte_identity": true,
+          "bytes": 1814
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\3_selection_adapter.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\selection_adapter.py",
+          "byte_identity": true,
+          "bytes": 18146
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\4_prepare_configs.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\prepare_configs.py",
+          "byte_identity": true,
+          "bytes": 2160
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\5_localization_loss.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\localization_loss.py",
+          "byte_identity": true,
+          "bytes": 20629
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\6_diagnose_opportunities.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\diagnose_opportunities.py",
+          "byte_identity": true,
+          "bytes": 31939
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\7_tracked_pair_data.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\tracked_pair_data.py",
+          "byte_identity": true,
+          "bytes": 3666
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\8_paired_rgbir_data.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+          "byte_identity": true,
+          "bytes": 10325
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\9_object_evidence_loss.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+          "byte_identity": true,
+          "bytes": 19364
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_canary_attempt1\\sources\\10_train_object_evidence.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+          "byte_identity": true,
+          "bytes": 18948
+        }
+      ],
+      "classification_counts": {
+        "rgb_gt_count": 919,
+        "teacher_gt_count": 1018,
+        "common_count": 880,
+        "valid_region_count": 876,
+        "reference_candidate_count": 862,
+        "base_count": 858,
+        "teacher_correct_base_count": 827,
+        "eligible_count": 433,
+        "selected_count": 217,
+        "target_clipped_count": 0
+      },
+      "localization_counts": {
+        "rgb_gt_count": 919,
+        "teacher_gt_count": 1018,
+        "common_count": 880,
+        "pair_iou_count": 724,
+        "geometry_count": 724,
+        "inside_count": 724,
+        "support_count": 724,
+        "unique_owner_count": 719,
+        "reference_candidate_count": 664,
+        "base_count": 664,
+        "reference_reliable_count": 621,
+        "both_reliable_count": 571,
+        "reference_localization_gap_count": 23,
+        "teacher_rgb_quality_count": 20,
+        "teacher_own_quality_count": 20,
+        "eligible_count": 17,
+        "selected_count": 17,
+        "selected_quality_count": 17
+      },
+      "L_class_counts": {
+        "3": {
+          "base": 18,
+          "selected": 0
+        },
+        "2": {
+          "base": 16,
+          "selected": 0
+        },
+        "0": {
+          "base": 588,
+          "selected": 17
+        },
+        "1": {
+          "base": 31,
+          "selected": 0
+        },
+        "4": {
+          "base": 11,
+          "selected": 0
+        }
+      },
+      "C_class_counts": {
+        "0": {
+          "base": 759,
+          "eligible": 383,
+          "selected": 200
+        },
+        "1": {
+          "base": 46,
+          "eligible": 15,
+          "selected": 4
+        },
+        "2": {
+          "base": 17,
+          "eligible": 8,
+          "selected": 1
+        },
+        "3": {
+          "base": 23,
+          "eligible": 21,
+          "selected": 6
+        },
+        "4": {
+          "base": 13,
+          "eligible": 6,
+          "selected": 6
+        }
+      },
+      "cpu_gt_only_gate_counts": {
+        "rgb_gt_count": 919,
+        "teacher_gt_count": 1018,
+        "common_count": 880,
+        "pair_iou_count": 724,
+        "geometry_count": 724,
+        "inside_count": 724,
+        "support_count": 724,
+        "unique_owner_count": 719
+      },
+      "resources": {
+        "gpu_ids": [
+          1
+        ],
+        "cuda_pid_counts": {
+          "1": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "1": 2250
+        },
+        "peak_rss_mib": 6277
+      },
+      "gpu_reserved_peak_mib": 1788.0,
+      "gpu_allocated_peak_mib": 1286.71142578125
+    },
+    {
+      "status": "PASS",
+      "dataset": "drone",
+      "batches": 64,
+      "trace_images": 2048,
+      "source_checks": [
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\0_diagnose_natural_flow.py",
+          "reference": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\independent_review\\attempt2_reviewed_sources\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\diagnose_natural_flow.py",
+          "byte_identity": true,
+          "bytes": 23025
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\1_coverage_probe.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\coverage_probe.py",
+          "byte_identity": true,
+          "bytes": 13955
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\2_runtime.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\runtime.py",
+          "byte_identity": true,
+          "bytes": 1814
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\3_selection_adapter.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\selection_adapter.py",
+          "byte_identity": true,
+          "bytes": 18146
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\4_prepare_configs.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\prepare_configs.py",
+          "byte_identity": true,
+          "bytes": 2160
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\5_localization_loss.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\localization_loss.py",
+          "byte_identity": true,
+          "bytes": 20629
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\6_diagnose_opportunities.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\diagnose_opportunities.py",
+          "byte_identity": true,
+          "bytes": 31939
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\7_tracked_pair_data.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\tracked_pair_data.py",
+          "byte_identity": true,
+          "bytes": 3666
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\8_paired_rgbir_data.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+          "byte_identity": true,
+          "bytes": 10325
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\9_object_evidence_loss.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+          "byte_identity": true,
+          "bytes": 19364
+        },
+        {
+          "snapshot": "08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\remote_completed_attempt2\\drone_full_attempt1\\sources\\10_train_object_evidence.py",
+          "reference": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+          "byte_identity": true,
+          "bytes": 18948
+        }
+      ],
+      "classification_counts": {
+        "rgb_gt_count": 30197,
+        "teacher_gt_count": 33180,
+        "common_count": 28934,
+        "valid_region_count": 28722,
+        "reference_candidate_count": 28491,
+        "base_count": 28297,
+        "teacher_correct_base_count": 27449,
+        "eligible_count": 15616,
+        "selected_count": 7821,
+        "target_clipped_count": 35
+      },
+      "localization_counts": {
+        "rgb_gt_count": 30197,
+        "teacher_gt_count": 33180,
+        "common_count": 28934,
+        "pair_iou_count": 22805,
+        "geometry_count": 22805,
+        "inside_count": 22795,
+        "support_count": 22795,
+        "unique_owner_count": 22705,
+        "reference_candidate_count": 21488,
+        "base_count": 21488,
+        "reference_reliable_count": 19954,
+        "both_reliable_count": 18614,
+        "reference_localization_gap_count": 744,
+        "teacher_rgb_quality_count": 692,
+        "teacher_own_quality_count": 692,
+        "eligible_count": 602,
+        "selected_count": 602,
+        "selected_quality_count": 602
+      },
+      "L_class_counts": {
+        "3": {
+          "base": 964,
+          "selected": 6
+        },
+        "2": {
+          "base": 956,
+          "selected": 21
+        },
+        "0": {
+          "base": 18328,
+          "selected": 561
+        },
+        "1": {
+          "base": 702,
+          "selected": 9
+        },
+        "4": {
+          "base": 538,
+          "selected": 5
+        }
+      },
+      "C_class_counts": {
+        "0": {
+          "base": 24226,
+          "eligible": 13530,
+          "selected": 6935
+        },
+        "1": {
+          "base": 905,
+          "eligible": 370,
+          "selected": 179
+        },
+        "2": {
+          "base": 1270,
+          "eligible": 593,
+          "selected": 320
+        },
+        "3": {
+          "base": 1221,
+          "eligible": 822,
+          "selected": 247
+        },
+        "4": {
+          "base": 675,
+          "eligible": 301,
+          "selected": 140
+        }
+      },
+      "cpu_gt_only_gate_counts": {
+        "rgb_gt_count": 30197,
+        "teacher_gt_count": 33180,
+        "common_count": 28934,
+        "pair_iou_count": 22805,
+        "geometry_count": 22805,
+        "inside_count": 22795,
+        "support_count": 22795,
+        "unique_owner_count": 22705
+      },
+      "resources": {
+        "gpu_ids": [
+          6
+        ],
+        "cuda_pid_counts": {
+          "6": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "6": 2278
+        },
+        "peak_rss_mib": 6848
+      },
+      "gpu_reserved_peak_mib": 1816.0,
+      "gpu_allocated_peak_mib": 1286.71142578125
+    }
+  ],
+  "resource_review": [
+    {
+      "job": "natural_llvip_canary",
+      "admission": {
+        "active_gpus_after": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          6,
+          7
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "min_sampled_free_mib": 21870,
+      "max_sampled_project_rss_mib": 150760,
+      "samples": 7,
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 24576,
+        "expected_vram_mib": 4096,
+        "gpu_ids": [
+          1
+        ],
+        "lease_id": "natural_llvip_canary-ed9d4ee72af2",
+        "pid": 977933,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "job": "natural_llvip_full",
+      "admission": {
+        "active_gpus_after": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          6,
+          7
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "min_sampled_free_mib": 21866,
+      "max_sampled_project_rss_mib": 151404,
+      "samples": 27,
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 24576,
+        "expected_vram_mib": 2716,
+        "gpu_ids": [
+          1
+        ],
+        "lease_id": "natural_llvip_full-6699bde81976",
+        "pid": 981358,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "job": "natural_drone_canary",
+      "admission": {
+        "active_gpus_after": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          6,
+          7
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "min_sampled_free_mib": 21824,
+      "max_sampled_project_rss_mib": 151180,
+      "samples": 9,
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 24576,
+        "expected_vram_mib": 4096,
+        "gpu_ids": [
+          1
+        ],
+        "lease_id": "natural_drone_canary-cc0ac318a58a",
+        "pid": 991924,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "job": "natural_drone_full",
+      "admission": {
+        "active_gpus_after": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "empty_gpus_after": [
+          1,
+          7
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "min_sampled_free_mib": 13269,
+      "max_sampled_project_rss_mib": 151679,
+      "samples": 65,
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 24576,
+        "expected_vram_mib": 2762,
+        "gpu_ids": [
+          6
+        ],
+        "lease_id": "natural_drone_full-663590eaf7c9",
+        "pid": 997237,
+        "status": "LAUNCHED"
+      }
+    }
+  ],
+  "real_forward_independently_recomputed": false,
+  "gt_only_prebase_recomputed": true,
+  "postbase_gates_recomputed": true,
+  "missing_all_anchor_logits_boundary": "Reference-candidate existence/rank and C q values cannot be recomputed from unpersisted logits.",
+  "torch": "1.8.0+cu111",
+  "cuda_initialized": false,
+  "gpu_or_ssh_used": false,
+  "new_hash_computed": false,
+  "seconds": 109.29162406921387
+}

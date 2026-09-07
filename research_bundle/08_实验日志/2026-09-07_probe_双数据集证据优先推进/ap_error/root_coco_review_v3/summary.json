@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "independent_evaluator": "pycocotools 2.0.7 COCOeval",
+  "checks": [
+    {
+      "endpoint": "N_s0",
+      "images": 1469,
+      "gt": 22462,
+      "predictions": 88236,
+      "thresholds": {
+        "0.5": {
+          "coco_AP_with_TIDE_recall_grid": 76.77070078999336,
+          "tide_AP": 76.77070078999334,
+          "difference_pp": 1.4210854715202004e-14,
+          "coco_default_AP": 76.76811144513572,
+          "default_difference_pp": -0.0025893448576255196
+        },
+        "0.75": {
+          "coco_AP_with_TIDE_recall_grid": 63.81923085055705,
+          "tide_AP": 63.81923085055706,
+          "difference_pp": -1.4210854715202004e-14,
+          "coco_default_AP": 63.816409522749574,
+          "default_difference_pp": -0.0028213278074886716
+        }
+      }
+    },
+    {
+      "endpoint": "C0_s0",
+      "images": 1469,
+      "gt": 22462,
+      "predictions": 112513,
+      "thresholds": {
+        "0.5": {
+          "coco_AP_with_TIDE_recall_grid": 76.75357223619655,
+          "tide_AP": 76.75357223619653,
+          "difference_pp": 1.4210854715202004e-14,
+          "coco_default_AP": 76.74979726236026,
+          "default_difference_pp": -0.003774973836272011
+        },
+        "0.75": {
+          "coco_AP_with_TIDE_recall_grid": 64.05588441945899,
+          "tide_AP": 64.05588441945902,
+          "difference_pp": -2.842170943040401e-14,
+          "coco_default_AP": 64.0542494553011,
+          "default_difference_pp": -0.0016349641579154195
+        }
+      }
+    },
+    {
+      "endpoint": "N_s42",
+      "images": 1469,
+      "gt": 22462,
+      "predictions": 86843,
+      "thresholds": {
+        "0.5": {
+          "coco_AP_with_TIDE_recall_grid": 76.96429271176224,
+          "tide_AP": 76.96429271176221,
+          "difference_pp": 2.842170943040401e-14,
+          "coco_default_AP": 76.96024229275511,
+          "default_difference_pp": -0.004050419007100459
+        },
+        "0.75": {
+          "coco_AP_with_TIDE_recall_grid": 64.05739162513187,
+          "tide_AP": 64.05739162513188,
+          "difference_pp": -1.4210854715202004e-14,
+          "coco_default_AP": 64.05357112602543,
+          "default_difference_pp": -0.0038204991064532123
+        }
+      }
+    },
+    {
+      "endpoint": "C0_s42",
+      "images": 1469,
+      "gt": 22462,
+      "predictions": 105783,
+      "thresholds": {
+        "0.5": {
+          "coco_AP_with_TIDE_recall_grid": 76.87446209343072,
+          "tide_AP": 76.87446209343071,
+          "difference_pp": 1.4210854715202004e-14,
+          "coco_default_AP": 76.87149829731817,
+          "default_difference_pp": -0.00296379611253883
+        },
+        "0.75": {
+          "coco_AP_with_TIDE_recall_grid": 63.72526103088758,
+          "tide_AP": 63.72526103088759,
+          "difference_pp": -7.105427357601002e-15,
+          "coco_default_AP": 63.72207105211132,
+          "default_difference_pp": -0.0031899787762696974
+        }
+      }
+    },
+    {
+      "endpoint": "N_s123",
+      "images": 1469,
+      "gt": 22462,
+      "predictions": 86322,
+      "thresholds": {
+        "0.5": {
+          "coco_AP_with_TIDE_recall_grid": 76.72323339009026,
+          "tide_AP": 76.72323339009026,
+          "difference_pp": 0.0,
+          "coco_default_AP": 76.71900020530656,
+          "default_difference_pp": -0.004233184783700494
+        },
+        "0.75": {
+          "coco_AP_with_TIDE_recall_grid": 63.56881293133636,
+          "tide_AP": 63.56881293133633,
+          "difference_pp": 2.842170943040401e-14,
+          "coco_default_AP": 63.5661017827212,
+          "default_difference_pp": -0.002711148615134107
+        }
+      }
+    },
+    {
+      "endpoint": "C0_s123",
+      "images": 1469,
+      "gt": 22462,
+      "predictions": 106929,
+      "thresholds": {
+        "0.5": {
+          "coco_AP_with_TIDE_recall_grid": 77.06771747341294,
+          "tide_AP": 77.06771747341294,
+          "difference_pp": 0.0,
+          "coco_default_AP": 77.06498871449774,
+          "default_difference_pp": -0.0027287589151967495
+        },
+        "0.75": {
+          "coco_AP_with_TIDE_recall_grid": 64.09586327732015,
+          "tide_AP": 64.09586327732016,
+          "difference_pp": -1.4210854715202004e-14,
+          "coco_default_AP": 64.09585995348436,
+          "default_difference_pp": -3.3238357985965195e-06
+        }
+      }
+    }
+  ],
+  "matching_scope": "AP50/AP75 full caches; maxDets300 all area; no ignore/crowd metadata; both default and TIDE recall grids preserved",
+  "oracle_scope": "AP crosscheck does not independently validate causal attainability of TIDE oracle dAP",
+  "source": "E:\\SHARE\\\u5149sar\\08_\u5b9e\u9a8c\u65e5\u5fd7\\2026-09-07_probe_\u53cc\u6570\u636e\u96c6\u8bc1\u636e\u4f18\u5148\u63a8\u8fdb\\ap_error\\root_coco_crosscheck.py",
+  "official_test_accessed": false,
+  "new_gpu_tasks": 0
+}

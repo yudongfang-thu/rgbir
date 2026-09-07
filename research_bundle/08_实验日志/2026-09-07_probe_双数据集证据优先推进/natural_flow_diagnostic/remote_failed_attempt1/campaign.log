@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/natural_flow_attempt1/run_campaign.py", line 49, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/natural_flow_attempt1/run_campaign.py", line 32, in main
+    run_job(dict(id='natural_'+dataset+'_canary',kind='eval',vram_mib=4096,rss_mib=24576,
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py", line 112, in run_job
+    if rc or monitor_errors:raise RuntimeError('Launched stage failed; preserve attempt and inspect: '+job['id'])
+RuntimeError: Launched stage failed; preserve attempt and inspect: natural_llvip_canary

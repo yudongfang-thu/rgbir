@@ -1,0 +1,386 @@
+{
+  "status": "NOT_ADMITTED",
+  "configs": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_N_seed42_NOT_ADMITTED.yaml",
+      "arm": "N",
+      "seed": 42,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": true,
+        "errors": [],
+        "arm": "N",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_N_seed0_NOT_ADMITTED.yaml",
+      "arm": "N",
+      "seed": 0,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": true,
+        "errors": [],
+        "arm": "N",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_N_seed123_NOT_ADMITTED.yaml",
+      "arm": "N",
+      "seed": 123,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": true,
+        "errors": [],
+        "arm": "N",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_L1_seed42_NOT_ADMITTED.yaml",
+      "arm": "L1",
+      "seed": 42,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": false,
+        "errors": [
+          "Formal KD coefficient is not calibrated"
+        ],
+        "arm": "L1",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease",
+          "calibration",
+          "geometry_contract",
+          "verified_d2"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_L1_seed0_NOT_ADMITTED.yaml",
+      "arm": "L1",
+      "seed": 0,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": false,
+        "errors": [
+          "Formal KD coefficient is not calibrated"
+        ],
+        "arm": "L1",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease",
+          "calibration",
+          "geometry_contract",
+          "verified_d2"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_L1_seed123_NOT_ADMITTED.yaml",
+      "arm": "L1",
+      "seed": 123,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": false,
+        "errors": [
+          "Formal KD coefficient is not calibrated"
+        ],
+        "arm": "L1",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease",
+          "calibration",
+          "geometry_contract",
+          "verified_d2"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_L_GT_seed42_NOT_ADMITTED.yaml",
+      "arm": "L_GT",
+      "seed": 42,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": false,
+        "errors": [
+          "Formal KD coefficient is not calibrated"
+        ],
+        "arm": "L_GT",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease",
+          "calibration",
+          "geometry_contract",
+          "verified_d2"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_L_GT_seed0_NOT_ADMITTED.yaml",
+      "arm": "L_GT",
+      "seed": 0,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": false,
+        "errors": [
+          "Formal KD coefficient is not calibrated"
+        ],
+        "arm": "L_GT",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease",
+          "calibration",
+          "geometry_contract",
+          "verified_d2"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\llvip_preparation\\prepared_v1\\llvip_L_GT_seed123_NOT_ADMITTED.yaml",
+      "arm": "L_GT",
+      "seed": 123,
+      "draft_logic_valid": true,
+      "formal_training_admitted": false,
+      "configuration_only_formal_check": {
+        "valid": false,
+        "errors": [
+          "Formal KD coefficient is not calibrated"
+        ],
+        "arm": "L_GT",
+        "source": "paired",
+        "required_receipts": [
+          "baseline_identity",
+          "recipe",
+          "compatibility",
+          "canary",
+          "resource_lease",
+          "calibration",
+          "geometry_contract",
+          "verified_d2"
+        ],
+        "formal_receipts_verified": false,
+        "scope": "configuration logic only; actual receipt and lease verification remains mandatory"
+      }
+    }
+  ],
+  "new_training_started": false,
+  "lambda_invented": false,
+  "readiness_generated": false,
+  "hash_computed": false,
+  "source_module_local": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2",
+  "bound_snapshot_local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot",
+  "bound_release_remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+  "sources": [
+    {
+      "relative": "prepare_configs.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\prepare_configs.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\prepare_configs.py",
+      "current_size": 2160,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "protocol.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\protocol.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\protocol.py",
+      "current_size": 6952,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "train_independent.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\train_independent.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\train_independent.py",
+      "current_size": 7927,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "independent_criterion.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\independent_criterion.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\independent_criterion.py",
+      "current_size": 8208,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "classification_logit.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\classification_logit.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\classification_logit.py",
+      "current_size": 13413,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "localization_adapter.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\localization_adapter.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\localization_adapter.py",
+      "current_size": 3680,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "geometry_support.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\geometry_support.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\geometry_support.py",
+      "current_size": 7910,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "admission.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\admission.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\admission.py",
+      "current_size": 5928,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "calibrate_independent.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\calibrate_independent.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\calibrate_independent.py",
+      "current_size": 11452,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "coverage_probe.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\coverage_probe.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\coverage_probe.py",
+      "current_size": 13955,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "evaluate_independent.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\evaluate_independent.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\evaluate_independent.py",
+      "current_size": 16958,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "evaluator_profile.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\evaluator_profile.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\evaluator_profile.py",
+      "current_size": 15929,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "resource_dispatch.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\resource_dispatch.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\resource_dispatch.py",
+      "current_size": 28120,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "runtime.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\runtime.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\runtime.py",
+      "current_size": 1814,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "task_conditional_reference/configs/llvip_draft.yaml",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\configs\\llvip_draft.yaml",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\task_conditional_reference\\configs\\llvip_draft.yaml",
+      "current_size": 2739,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "task_conditional_reference/legacy_oev1/train_object_evidence.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+      "current_size": 18948,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "task_conditional_reference/legacy_oev1/paired_rgbir_data.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+      "current_size": 10325,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    },
+    {
+      "relative": "task_conditional_reference/tracked_pair_data.py",
+      "current": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\tracked_pair_data.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\compat_C0_s0_attempt1\\implementation_snapshot\\task_conditional_reference\\tracked_pair_data.py",
+      "current_size": 3666,
+      "snapshot_exists": true,
+      "byte_equal_to_bound_snapshot": true
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PASS_LIMITED_EVALUATION_SCOPE",
+  "valid_attempt": 2,
+  "invalid_attempt1_retained": true,
+  "models": {
+    "N42": {
+      "AP50": 0.7161396006544973,
+      "AP75": 0.24282631410771383,
+      "mAP50_95": 0.3287840510939928,
+      "precision": 0.7463069993744104,
+      "recall": 0.7019331948389218,
+      "per_class": [
+        {
+          "class_id": 0,
+          "name": "person",
+          "AP50": 0.7161396006544973,
+          "AP75": 0.24282631410771383,
+          "mAP50_95": 0.3287840510939928
+        }
+      ]
+    },
+    "T42": {
+      "AP50": 0.9261275589578729,
+      "AP75": 0.4407659175760077,
+      "mAP50_95": 0.48852941000209354,
+      "precision": 0.9397881140654458,
+      "recall": 0.8795480857266323,
+      "per_class": [
+        {
+          "class_id": 0,
+          "name": "person",
+          "AP50": 0.9261275589578729,
+          "AP75": 0.4407659175760077,
+          "mAP50_95": 0.48852941000209354
+        }
+      ]
+    }
+  },
+  "delta_teacher_minus_reference_pp": {
+    "AP50": 20.998795830337556,
+    "AP75": 19.793960346829387,
+    "mAP50_95": 15.974535890810076,
+    "precision": 19.348111469103547,
+    "recall": 17.761489088771054
+  },
+  "images": 2406,
+  "gt": 7879,
+  "pair_key_contract": "Exact relative path under registered grouped_v1/{visible,infrared}/images/dev; unique sets and per-image GT/canvas/original shape exact",
+  "native_capture_equivalence": "64 first canonical dev images for each model; full evaluates capture only",
+  "resources": [
+    {
+      "model": "N42",
+      "stage": "canary",
+      "minimum_free_mib": 15514,
+      "max_project_rss_mib": 148474,
+      "nvml_peak": {
+        "4": 1370
+      }
+    },
+    {
+      "model": "N42",
+      "stage": "full",
+      "minimum_free_mib": 14662,
+      "max_project_rss_mib": 149020,
+      "nvml_peak": {
+        "4": 1370
+      }
+    },
+    {
+      "model": "T42",
+      "stage": "canary",
+      "minimum_free_mib": 15514,
+      "max_project_rss_mib": 148490,
+      "nvml_peak": {
+        "4": 1370
+      }
+    },
+    {
+      "model": "T42",
+      "stage": "full",
+      "minimum_free_mib": 14662,
+      "max_project_rss_mib": 148688,
+      "nvml_peak": {
+        "4": 1370
+      }
+    }
+  ],
+  "physical_registration_proved": false,
+  "new_protocol_baseline": false,
+  "kd_gain": false,
+  "scope": "Full old baseline dev evaluation and label/pair consistency only; neither cross-modal physical alignment nor train admission"
+}

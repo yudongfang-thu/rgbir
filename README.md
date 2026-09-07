@@ -1,3 +1,5 @@
+> **2026-09-07 双数据集证据推进**：LLVIP完整2406dev旧RGB/IR baseline mAP32.8784/48.8529，定位优先；Drone全1469dev六端点表明少数类混淆贡献macro分类oracle的94.26%，不能将对象计数概括为全AP瓶颈。请先读[新阶段判断](research_bundle/08_实验日志/2026-09-07_probe_双数据集证据优先推进/STAGE_REPORT.md)与[原始证据/独立审阅入口](research_bundle/08_实验日志/2026-09-07_probe_双数据集证据优先推进/README.md)。已有C1继续，新定位方法尚未准入。
+
 > **2026-09-07 baseline数据重诊断已完成**：两数据集各1024 train＋200 dev，当前Drone N42/IR42/N0与LLVIP baseline。Drone机会以低置信为主、LLVIP定位证据更强；局部IR特征未稳定超过独立RGB，固定ridge欠拟合已单列。请先读[阶段判断](research_bundle/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/STAGE_REPORT.md)及[完整原始复核入口](research_bundle/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/README.md)。这是推理/读出诊断，没有新增KD AP或定位准入。
 
 # RGB–IR 独立分类与定位蒸馏：证据与复核入口

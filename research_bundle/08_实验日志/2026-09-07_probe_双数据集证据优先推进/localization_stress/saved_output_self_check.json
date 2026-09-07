@@ -1,0 +1,45 @@
+{
+  "status": "PASSED_SELF_CHECK_NOT_INDEPENDENT_ACCEPTANCE",
+  "datasets": {
+    "llvip": {
+      "status": "PASSED",
+      "prior_saved_zero_rowwise_max_abs": {
+        "teacher_ce": 0.0,
+        "native_ce": 0.0,
+        "kl_t2_mean4": 0.0,
+        "cosine": 0.0
+      },
+      "all_saved_table_reducer_max_abs": 0.0,
+      "source_size_mtime_unchanged": true,
+      "nonfinite_arrays": {
+        "teacher_ce": 0,
+        "native_ce": 0,
+        "kl_t2_mean4": 0,
+        "cosine": 0
+      },
+      "fixed_masks_and_all_25_conditions_verified": true,
+      "worst_success_and_denominator_counts_from_saved_arrays_exact": true,
+      "all_per_object_arrays_exact_vs_attempt1": true
+    },
+    "dronevehicle": {
+      "status": "PASSED",
+      "prior_saved_zero_rowwise_max_abs": {
+        "teacher_ce": 0.0,
+        "native_ce": 0.0,
+        "kl_t2_mean4": 0.0,
+        "cosine": 0.0
+      },
+      "all_saved_table_reducer_max_abs": 0.0,
+      "source_size_mtime_unchanged": true,
+      "nonfinite_arrays": {
+        "teacher_ce": 0,
+        "native_ce": 0,
+        "kl_t2_mean4": 0,
+        "cosine": 0
+      },
+      "fixed_masks_and_all_25_conditions_verified": true,
+      "worst_success_and_denominator_counts_from_saved_arrays_exact": true,
+      "all_per_object_arrays_exact_vs_attempt1": true
+    }
+  }
+}

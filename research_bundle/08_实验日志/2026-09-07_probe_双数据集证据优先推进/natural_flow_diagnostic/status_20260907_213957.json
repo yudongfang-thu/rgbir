@@ -1,0 +1,43 @@
+{
+  "completion": null,
+  "jobs": {
+    "llvip_canary": {
+      "summary": null,
+      "failure": null,
+      "status": {
+        "status": "FAILED",
+        "exit_code": 1,
+        "time": 1788788391.7119799,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 24576,
+          "expected_vram_mib": 4096,
+          "gpu_ids": [
+            1
+          ],
+          "lease_id": "natural_llvip_canary-dd3e35e687fa",
+          "pid": 949630,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 24082
+      }
+    },
+    "llvip_full": {
+      "summary": null,
+      "failure": null,
+      "status": null
+    },
+    "drone_canary": {
+      "summary": null,
+      "failure": null,
+      "status": null
+    },
+    "drone_full": {
+      "summary": null,
+      "failure": null,
+      "status": null
+    }
+  },
+  "log_tail": "Traceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/natural_flow_attempt1/run_campaign.py\", line 49, in <module>\n    if __name__=='__main__':main()\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/natural_flow_attempt1/run_campaign.py\", line 32, in main\n    run_job(dict(id='natural_'+dataset+'_canary',kind='eval',vram_mib=4096,rss_mib=24576,\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py\", line 112, in run_job\n    if rc or monitor_errors:raise RuntimeError('Launched stage failed; preserve attempt and inspect: '+job['id'])\nRuntimeError: Launched stage failed; preserve attempt and inspect: natural_llvip_canary\n"
+}

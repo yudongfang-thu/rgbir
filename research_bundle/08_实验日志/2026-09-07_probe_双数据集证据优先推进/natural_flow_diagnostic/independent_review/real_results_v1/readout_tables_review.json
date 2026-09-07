@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "date": "2026-09-07",
+  "auditor": "/root/ap_error",
+  "tables": [
+    {
+      "file": "gates.csv",
+      "rows": 32,
+      "cells": 320,
+      "status": "PASS"
+    },
+    {
+      "file": "classes.csv",
+      "rows": 6,
+      "cells": 90,
+      "status": "PASS"
+    },
+    {
+      "file": "levels.csv",
+      "rows": 18,
+      "cells": 198,
+      "status": "PASS"
+    },
+    {
+      "file": "strides.csv",
+      "rows": 8,
+      "cells": 40,
+      "status": "PASS"
+    },
+    {
+      "file": "concentrations.csv",
+      "rows": 20,
+      "cells": 260,
+      "status": "PASS"
+    },
+    {
+      "file": "histograms.csv",
+      "rows": 14974,
+      "cells": 89844,
+      "status": "PASS"
+    },
+    {
+      "file": "overview.csv",
+      "rows": 2,
+      "cells": 28,
+      "status": "PASS"
+    }
+  ],
+  "total_cells": 90780,
+  "source": "Independent loops over original full JSONL; no author summarizer function called",
+  "new_hash_computed": false
+}

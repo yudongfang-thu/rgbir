@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "tests_run": 5,
+  "failures": 1,
+  "errors": 0,
+  "python": "3.8.0 (default, Nov  6 2019, 16:00:02) [MSC v.1916 64 bit (AMD64)]",
+  "runtime_prefix_executed_from_original_ast": true,
+  "full_runtime_imported": false,
+  "actual_source_collision_tested": true,
+  "gpu_or_ssh_used": false,
+  "new_hash_computed": false,
+  "output": "test_01_actual_runtime_prefix_is_collision_order (__main__.ImportRegression) ... ok\ntest_02_old_import_reproduces_actual_missing_C1 (__main__.ImportRegression) ... ok\ntest_03_new_binding_ignores_real_cached_wrong_module (__main__.ImportRegression) ... ok\ntest_04_all_generated_configs_equal_unambiguous_generator (__main__.ImportRegression) ... ok\ntest_05_source_delta_is_only_generator_import_binding (__main__.ImportRegression) ... FAIL\n\n======================================================================\nFAIL: test_05_source_delta_is_only_generator_import_binding (__main__.ImportRegression)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"08_\u5b9e\u9a8c\u65e5\u5fd7/2026-09-07_probe_\u53cc\u6570\u636e\u96c6\u8bc1\u636e\u4f18\u5148\u63a8\u8fdb/natural_flow_diagnostic/independent_review/test_attempt2_import.py\", line 92, in test_05_source_delta_is_only_generator_import_binding\n    self.assertEqual(now, old.replace(previous, replacement))\nAssertionError: '\"\"\"F[224 chars]rtlib.util\\nimport json\\nfrom pathlib import P[23827 chars]()\\n' != '\"\"\"F[224 chars]rtlib\\nimport json\\nfrom pathlib import Path\\n[23822 chars]()\\n'\nDiff is 23747 characters long. Set self.maxDiff to None to see it.\n\n----------------------------------------------------------------------\nRan 5 tests in 0.066s\n\nFAILED (failures=1)\n"
+}

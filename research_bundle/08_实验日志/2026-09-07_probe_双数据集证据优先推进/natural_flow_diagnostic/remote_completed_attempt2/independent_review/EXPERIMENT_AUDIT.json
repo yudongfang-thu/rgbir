@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-07",
+  "auditor": "/root/ap_error",
+  "executor": "/root/baseline_feature_analysis",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "status": "PASS_FOR_REAL_CANARY",
+  "reason_code": "SOURCE_AND_14_INDEPENDENT_CPU_TESTS_PASS",
+  "scope": "Frozen natural-flow read-only selection diagnostic; not training or calibration admission",
+  "tests": "cpu_test_result_v2.json",
+  "test_count": 14,
+  "cuda_initialized": false,
+  "gpu_or_ssh_used_by_auditor": false,
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "hash_omission_reason": "User instruction prohibits new hash/SHA computation; source stat and byte-identical snapshots are used instead.",
+  "real_canary_executed_by_this_review": false,
+  "real_64_batches_accepted": false,
+  "training_admitted": false,
+  "calibration_admitted": false,
+  "geometry_verified": false,
+  "strict_selected_count_upper_bound_claim": false,
+  "checks": {
+    "gt_provenance": {"status": "pass", "details": "Original natural source/augmentation and dual GT trace compared before each real batch; CPU field-corruption cases rejected. Pixel bytes are not claimed exact."},
+    "score_normalization": {"status": "pass", "details": "C selection remains whole-batch; L primary whole-batch normalizer retained. Per-image gate counts, global indices, selected identities, DFL distances and quality masks must be exactly equal."},
+    "result_existence": {"status": "pass", "details": "14 independent CPU checks completed; no claim of real GPU execution. Future canary and full summaries are separately validated."},
+    "dead_code": {"status": "pass", "details": "CLI supports only 2/64 batches. Main loop invokes frozen T/R each once, C selection once per whole batch, original L primary and checked image replay."},
+    "scope": {"status": "pass", "details": "No backward/optimizer/calibration/new student. Geometry=None,false is an unverified diagnostic, not a strict final-selected-count bound. Campaign validates both 2/64 summaries and finite positive resource measurements."},
+    "eval_type": {"status": "pass", "details": "Independent tests are synthetic_proxy. Planned real train-label selection is real_gt diagnostic only, not an AP or training experiment."}
+  },
+  "claims": [
+    {"id": "code_preserves_selection_semantics", "impact": "supported", "evidence": "cpu_test_result_v2.json", "rationale": "Whole-batch C quota counterexample and ragged multi-image L equivalence fixtures pass; corrupted counters, IDs, distances and gates are rejected."},
+    {"id": "canary_and_full_summary_contract", "impact": "supported", "evidence": "cpu_test_result_v2.json", "rationale": "Wrong dataset/seed/batch/scope and NaN/Inf/nonpositive peaks rejected; simulated incomplete full run cannot write campaign completion."},
+    {"id": "real_stream_completed", "impact": "unsupported", "evidence": "No real execution included", "rationale": "Root must execute and audit each real canary/full receipt; this review only supports proceeding to the already-authorized diagnostic."},
+    {"id": "geometry_learning_or_KD_gain", "impact": "unsupported", "evidence": "PROTOCOL.md", "rationale": "No physical geometry, gradient, calibration or student-learning claim is established."}
+  ]
+}

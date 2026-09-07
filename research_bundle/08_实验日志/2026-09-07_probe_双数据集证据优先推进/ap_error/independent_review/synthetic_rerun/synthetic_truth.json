@@ -1,0 +1,294 @@
+[
+  {
+    "image": "correct",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "gt_classes": [
+      0
+    ],
+    "pred_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "pred_classes": [
+      0
+    ],
+    "pred_confidence": [
+      0.9
+    ]
+  },
+  {
+    "image": "class",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "gt_classes": [
+      0
+    ],
+    "pred_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "pred_classes": [
+      1
+    ],
+    "pred_confidence": [
+      0.8
+    ]
+  },
+  {
+    "image": "loc",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "gt_classes": [
+      0
+    ],
+    "pred_boxes": [
+      [
+        6,
+        0,
+        16,
+        10
+      ]
+    ],
+    "pred_classes": [
+      0
+    ],
+    "pred_confidence": [
+      0.7
+    ]
+  },
+  {
+    "image": "both",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "gt_classes": [
+      0
+    ],
+    "pred_boxes": [
+      [
+        6,
+        0,
+        16,
+        10
+      ]
+    ],
+    "pred_classes": [
+      1
+    ],
+    "pred_confidence": [
+      0.6
+    ]
+  },
+  {
+    "image": "duplicate",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "gt_classes": [
+      0
+    ],
+    "pred_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ],
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "pred_classes": [
+      0,
+      0
+    ],
+    "pred_confidence": [
+      0.95,
+      0.65
+    ]
+  },
+  {
+    "image": "background",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [],
+    "gt_classes": [],
+    "pred_boxes": [
+      [
+        50,
+        50,
+        60,
+        60
+      ]
+    ],
+    "pred_classes": [
+      0
+    ],
+    "pred_confidence": [
+      0.5
+    ]
+  },
+  {
+    "image": "miss_empty_prediction",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "gt_classes": [
+      0
+    ],
+    "pred_boxes": [],
+    "pred_classes": [],
+    "pred_confidence": []
+  },
+  {
+    "image": "class1_correct",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "gt_classes": [
+      1
+    ],
+    "pred_boxes": [
+      [
+        0,
+        0,
+        10,
+        10
+      ]
+    ],
+    "pred_classes": [
+      1
+    ],
+    "pred_confidence": [
+      0.99
+    ]
+  },
+  {
+    "image": "empty_image",
+    "canvas_shape": [
+      100,
+      100
+    ],
+    "original_shape": [
+      100,
+      100
+    ],
+    "gt_boxes": [],
+    "gt_classes": [],
+    "pred_boxes": [],
+    "pred_classes": [],
+    "pred_confidence": []
+  }
+]

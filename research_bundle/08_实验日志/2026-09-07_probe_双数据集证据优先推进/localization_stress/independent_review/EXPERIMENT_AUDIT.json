@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-07",
+  "auditor": {"agent": "baseline_feature_analysis", "original_executor": "loc_stress", "independent_agent": true, "separate_model_identity_observable": false},
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "ATTEMPT2_FIXED_COHORT_SYNTHETIC_STRESS_ACCEPTED_WITH_EXPLICIT_SCOPE",
+  "accepted_attempt": "../outputs_attempt2",
+  "historical_defect": {"attempt": "../outputs_attempt1", "affected_field": "worst_case.csv:all_directions_gate_n", "affected_rows": 36, "verdict_for_affected_field": "fail", "raw_per_object_arrays_affected": false, "correction": "Separate boolean success_n and denominator_n; attempt2 raw arrays exact versus attempt1"},
+  "checks": {
+    "gt_provenance": {"status": "pass", "details": "Actual saved RGB/IR dataset annotations and same-anchor model outputs traced by source_row/object_id. Shared LLVIP labels are not independent physical-alignment truth.", "evidence": ["independent_cpu_receipt.json:datasets", "../localization_stress.py:load_data"]},
+    "score_normalization": {"status": "pass", "details": "LTRB signs, direct box shifts, triangular bin-mass transport at T1 and T2 separately, out-of-domain losses, retained-mass conditioning, four-side CE/KL/gradient means independently rebuilt for every object and all 25 conditions. All fixed masks preserved; corrected success/denominator counts exact.", "evidence": ["verify_independent.py", "independent_cpu_receipt.json", "verify_summary_independent.py", "independent_summary_receipt.json"]},
+    "result_existence": {"status": "pass", "details": "Both dataset outputs exist with 3276 and 17840 objects, each having 25 saved perturbations. All per-object arrays exact across attempts; all continuous table statistics recalculated with zero difference.", "evidence": ["../outputs_attempt2/completion_receipt.json", "independent_cpu_receipt.json", "independent_summary_receipt.json"]},
+    "dead_code": {"status": "pass", "details": "Actual raw-cache values independently reconstruct emitted arrays. Reexecuted 11 author truth checks and saved-result verifier with redirected receipt; independent reconstruction imports no author calculation functions.", "evidence": ["author_truth_reexecution.json", "author_verify_saved_reexecution.json", "verify_independent.py"]},
+    "scope": {"status": "warn", "details": "Fixed GT-associated anchor and preselected strata are privileged diagnostics, not original L1 selector. Train 23 objects and dev 61 are different fixed-image subsets, not natural training coverage. One stored model identity per modality, no new seeds, no inference or learning, no actual registration-error sampling. Acceptance does not authorize training.", "evidence": ["EXPERIMENT_AUDIT.md", "../PROTOCOL.md", "independent_cpu_receipt.json:datasets.llvip.contexts"]},
+    "eval_type": {"status": "pass", "value": ["real_gt", "synthetic_proxy"], "details": "GT comparisons use real dataset annotations; teacher probability/box translation is a deterministic synthetic target stress, not perturbation of real input images or a geometric calibration measurement.", "evidence": ["../PROTOCOL.md", "EXPERIMENT_AUDIT.md"]}
+  },
+  "claims": [
+    {"id": "fixed_conditional_llvip_localization_signal", "impact": "supported", "evidence": "../outputs_attempt2/llvip/per_object.npz", "rationale": "Supported only within the stored common-anchor, fixed-stratum, predeclared 25-condition synthetic stress. No dataset-wide or causal cross-dataset interpretation."},
+    {"id": "l1_formal_selection_and_admission", "impact": "unsupported", "evidence": "../PROTOCOL.md", "rationale": "Base/quality gate do not include the full original geometry, owner, pairing and actual training-flow contract. No training admission is provided."},
+    {"id": "physical_registration_robustness", "impact": "unsupported", "evidence": "../PROTOCOL.md", "rationale": "Shared annotations plus synthetic DFL transport do not measure actual sensor alignment error; T1 and T2 transported probabilities need not be one shared-logit family."},
+    {"id": "train_vs_dev_coverage", "impact": "needs_qualifier", "evidence": "independent_cpu_receipt.json:datasets.llvip.contexts", "rationale": "23 train objects/22 images and 61 dev objects/49 images come from different static subsets and source groups; not complete train/dev populations or natural 64-batch KD exposure."},
+    {"id": "ap_or_kd_gain", "impact": "unsupported", "evidence": "../outputs_attempt2/completion_receipt.json", "rationale": "CPU target stress does not execute training or evaluate new detector AP."}
+  ],
+  "declared_inputs": [
+    "../PROTOCOL.md", "../localization_stress.py", "../verify_saved.py", "../write_readout.py", "../README.md",
+    "../attempt1_source_snapshot", "../outputs_attempt1", "../outputs_attempt2",
+    "E:/SHARE/光sar/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/remote_exports/llvip_full_attempt1",
+    "E:/SHARE/光sar/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/remote_exports/dronevehicle_full_attempt1",
+    "E:/SHARE/光sar/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/feature_review/localization_readout_v1/outputs",
+    "E:/SHARE/光sar/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/new_probe_analysis"
+  ],
+  "audited_input_hashes": [],
+  "input_hash_omission_reason": "Explicit parent/user scope forbids new hashes; path, byte size and mtime_ns retained instead, never described as cryptographic verification.",
+  "input_stat_manifest": "input_size_mtime_manifest.json",
+  "recomputation_commands": [
+    "python E:/SHARE/光sar/08_实验日志/2026-09-07_probe_双数据集证据优先推进/localization_stress/independent_review/verify_independent.py",
+    "python E:/SHARE/光sar/08_实验日志/2026-09-07_probe_双数据集证据优先推进/localization_stress/independent_review/verify_summary_independent.py"
+  ],
+  "recomputation_outputs": ["independent_cpu_receipt.json", "independent_summary_receipt.json", "author_truth_reexecution.json", "author_verify_saved_reexecution.json"],
+  "inaccessible_or_unexecuted": ["No new remote access or physical image-registration measurement", "No actual perturbed-image inference", "No new training or GPU execution", "No separately observed cross-model reviewer identity"],
+  "training_admitted": false
+}

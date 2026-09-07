@@ -1,0 +1,52 @@
+{
+  "status": "FAILED",
+  "exit_code": 1,
+  "time": 1788788391.7119799,
+  "monitor_errors": [],
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 24576,
+    "expected_vram_mib": 4096,
+    "gpu_ids": [
+      1
+    ],
+    "lease_id": "natural_llvip_canary-dd3e35e687fa",
+    "pid": 949630,
+    "status": "LAUNCHED"
+  },
+  "samples": [
+    {
+      "time": 1788788383.3433604,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145374
+    },
+    {
+      "time": 1788788386.3875384,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144812
+    },
+    {
+      "time": 1788788389.2290773,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144787
+    },
+    {
+      "time": 1788788391.711879,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144969
+    }
+  ],
+  "minimum_free_mib": 24082
+}

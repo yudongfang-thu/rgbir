@@ -14,3 +14,9 @@
 用户要求从baseline重新比较知识载体后，新增 `08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/` 与94数据盘 `RGBT_campaign/artifacts/rgbir_baseline_information_20260907/`。首次启动在导入阶段失败、未申请CUDA，原文件与日志留存；修复服务器release路径并独立审阅后使用新的 `attempt2/`，不覆盖原attempt。全部新诊断共用既有lease。C1及旧内容控制、原始权重/结果/失败记录均不修改。
 
 补充完成：attempt2因逐对象GPU同步低吞吐按技术原因保留并停止；最终attempt3统一每图CPU后处理，两个数据集2448图已完成，回执与source原样保留。新增本地remote_exports、CPU分类/DFL及定位feature读出、独立复核和GitHub增量；原工程结构与任何历史大产物不变。
+
+20:09例行增量：本地实施日志新增 `heartbeat_20260907_2008_runtime/`（只读快照比较、脚本及小回执）和 `heartbeat_20260907_2008/CONTINUITY_REVIEW.md`（文档连续性复核）。更新状态索引及已完成事项的过期描述；不修改服务器任务、原始产物或冻结科学矩阵，不为无新端点快照重复发布GitHub。
+
+用户授权双数据集继续后，新增 `08_实验日志/2026-09-07_probe_双数据集证据优先推进/`，分为CPU定位压力诊断、AP错误分解、LLVIP配置准备和完整dev评估导出。旧资料只读、训练不改；94仅在实际部署后登记新 `RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/`。执行前冻结协议，失败attempt及原始回执保留。
+
+双数据集阶段完成：94新增有效 llvip_full_eval_attempt2 与 natural_flow_attempt2，均在原rgbir_evidence_priority_20260907根。两个旧attempt1分别因标签路径/配置导入失败，原始产物保留；本地保存完整有效预测、自然流/选择记录、CPU原始统计与独立审阅。仅补充导航/解释，不移动、覆盖、删除旧结果或权重。自然流初次SCP长路径失败通过tar流补齐缺失文件，已有文件逐字节一致；新增governance_group_sources为原TSV只读副本。

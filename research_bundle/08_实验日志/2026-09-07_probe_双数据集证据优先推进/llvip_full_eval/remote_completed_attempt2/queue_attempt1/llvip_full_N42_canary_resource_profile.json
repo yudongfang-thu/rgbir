@@ -1,0 +1,68 @@
+{
+  "status": "COMPLETED",
+  "exit_code": 0,
+  "time": 1788787114.2996488,
+  "monitor_errors": [],
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 12288,
+    "expected_vram_mib": 4096,
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "llvip_full_N42_canary-23dc633acabc",
+    "pid": 824614,
+    "status": "LAUNCHED"
+  },
+  "samples": [
+    {
+      "time": 1788787097.6108723,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145380
+    },
+    {
+      "time": 1788787100.7450538,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145389
+    },
+    {
+      "time": 1788787103.7744358,
+      "gpu": 4,
+      "memory_free_mib": 16006,
+      "memory_used_mib": 8078,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 148474
+    },
+    {
+      "time": 1788787107.1857727,
+      "gpu": 4,
+      "memory_free_mib": 15514,
+      "memory_used_mib": 8570,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 146261
+    },
+    {
+      "time": 1788787110.5021613,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144842
+    },
+    {
+      "time": 1788787113.5648203,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144842
+    }
+  ],
+  "minimum_free_mib": 15514
+}

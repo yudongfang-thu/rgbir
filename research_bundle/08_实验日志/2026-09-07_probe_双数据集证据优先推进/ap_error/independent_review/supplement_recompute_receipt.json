@@ -1,0 +1,548 @@
+{
+  "status": "PASS_SCOPED_SUPPLEMENT_REVIEW",
+  "auditor": "/root/loc_stress",
+  "new_hashes_computed": false,
+  "sources_before_and_after_stat_equal": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\class_oracle_supplement.py",
+      "bytes": 3974,
+      "mtime_ns": 1788786410125983000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\class_oracle_v1\\runner_source.py",
+      "bytes": 3974,
+      "mtime_ns": 1788786412138829200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\class_oracle_v1\\summary.json",
+      "bytes": 35569,
+      "mtime_ns": 1788786441533895800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\bridge_baseline_classes.py",
+      "bytes": 8860,
+      "mtime_ns": 1788786717477656000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\baseline_class_bridge_v2\\runner_source.py",
+      "bytes": 8860,
+      "mtime_ns": 1788786718569640500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\baseline_class_bridge_v2\\summary.json",
+      "bytes": 68466,
+      "mtime_ns": 1788786719698697900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\baseline_class_bridge_v2\\object_state_bridge.jsonl",
+      "bytes": 1344618,
+      "mtime_ns": 1788786719711355400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\baseline_class_bridge_v2\\analyze_baseline_probe_source.py",
+      "bytes": 42833,
+      "mtime_ns": 1788786718570307600
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\new_probe_analysis\\analyze_baseline_probe.py",
+      "bytes": 42833,
+      "mtime_ns": 1788781801690713300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\dronevehicle_full_attempt1\\objects.jsonl",
+      "bytes": 70960762,
+      "mtime_ns": 1788781753929499600
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\BRIDGE_PROTOCOL.md",
+      "bytes": 2224,
+      "mtime_ns": 1788786663214278800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\class_oracle_v1\\README.md",
+      "bytes": 2682,
+      "mtime_ns": 1788786441535232100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\baseline_class_bridge_v2\\README.md",
+      "bytes": 3829,
+      "mtime_ns": 1788786989068483800
+    }
+  ],
+  "source_copies_byte_equal": true,
+  "class_oracle_checks": {
+    "N_s0": {
+      "0.5": {
+        "macro_AP": 76.77070078999334,
+        "macro_Cls_oracle_AP": 87.2431707823893,
+        "macro_Cls_dAP": 10.472469992395949,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      },
+      "0.75": {
+        "macro_AP": 63.81923085055706,
+        "macro_Cls_oracle_AP": 70.14132859798504,
+        "macro_Cls_dAP": 6.3220977474279705,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      }
+    },
+    "C0_s0": {
+      "0.5": {
+        "macro_AP": 76.75357223619653,
+        "macro_Cls_oracle_AP": 87.25202028001551,
+        "macro_Cls_dAP": 10.498448043818984,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      },
+      "0.75": {
+        "macro_AP": 64.05588441945902,
+        "macro_Cls_oracle_AP": 70.4114093119106,
+        "macro_Cls_dAP": 6.3555248924516,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      }
+    },
+    "N_s42": {
+      "0.5": {
+        "macro_AP": 76.96429271176221,
+        "macro_Cls_oracle_AP": 87.02887357444412,
+        "macro_Cls_dAP": 10.064580862681897,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      },
+      "0.75": {
+        "macro_AP": 64.05739162513188,
+        "macro_Cls_oracle_AP": 69.83949348957799,
+        "macro_Cls_dAP": 5.7821018644461,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      }
+    },
+    "C0_s42": {
+      "0.5": {
+        "macro_AP": 76.87446209343071,
+        "macro_Cls_oracle_AP": 87.17631958152705,
+        "macro_Cls_dAP": 10.30185748809635,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      },
+      "0.75": {
+        "macro_AP": 63.72526103088759,
+        "macro_Cls_oracle_AP": 69.90830806785604,
+        "macro_Cls_dAP": 6.183047036968462,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      }
+    },
+    "N_s123": {
+      "0.5": {
+        "macro_AP": 76.72323339009026,
+        "macro_Cls_oracle_AP": 87.26515576153595,
+        "macro_Cls_dAP": 10.5419223714457,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      },
+      "0.75": {
+        "macro_AP": 63.56881293133633,
+        "macro_Cls_oracle_AP": 70.1203972553908,
+        "macro_Cls_dAP": 6.551584324054471,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      }
+    },
+    "C0_s123": {
+      "0.5": {
+        "macro_AP": 77.06771747341294,
+        "macro_Cls_oracle_AP": 87.80458834221346,
+        "macro_Cls_dAP": 10.736870868800537,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      },
+      "0.75": {
+        "macro_AP": 64.09586327732016,
+        "macro_Cls_oracle_AP": 70.69147655140013,
+        "macro_Cls_dAP": 6.595613274079954,
+        "per_class_and_main_closure": true,
+        "matrix_row_and_all_Cls_count_closure": true
+      }
+    }
+  },
+  "class_report_20_rows_means_SD_deltas_exact": true,
+  "minority_class_contribution_fractions": {
+    "0.5_N": {
+      "per_seed_fraction_freight_truck_van": [
+        0.9415127413914943,
+        0.9444083696205667,
+        0.94202439694532
+      ],
+      "ratio_of_three_seed_means": 0.9426240109735807
+    },
+    "0.5_C0": {
+      "per_seed_fraction_freight_truck_van": [
+        0.9339303803407936,
+        0.9464856696234265,
+        0.948415247200318
+      ],
+      "ratio_of_three_seed_means": 0.9429630515702802
+    },
+    "0.75_N": {
+      "per_seed_fraction_freight_truck_van": [
+        0.9378278767470348,
+        0.9331371052831522,
+        0.9297608438168028
+      ],
+      "ratio_of_three_seed_means": 0.933541036526918
+    },
+    "0.75_C0": {
+      "per_seed_fraction_freight_truck_van": [
+        0.9305181403646252,
+        0.933579987908931,
+        0.9435249993324486
+      ],
+      "ratio_of_three_seed_means": 0.9359910548334145
+    }
+  },
+  "bridge_raw_all_3084_rows_exact": true,
+  "bridge_200_images_194_with_GT_6_background_only_verified": true,
+  "bridge_all_five_class_counts_and_common_eligible_closure": {
+    "all": {
+      "gt": 3084,
+      "N_correct": 2386,
+      "N_errors": 698,
+      "common_eligible": {
+        "gt": 2946,
+        "N_errors": 664,
+        "N_correct": 2282,
+        "both_repair": 175,
+        "T_only_repair": 286,
+        "N0_only_repair": 34
+      },
+      "T_repair": 461,
+      "T_harm": 193,
+      "N0_repair": 221,
+      "N0_harm": 192
+    },
+    "0": {
+      "gt": 2662,
+      "N_correct": 2167,
+      "N_errors": 495,
+      "common_eligible": {
+        "gt": 2540,
+        "N_errors": 468,
+        "N_correct": 2072,
+        "both_repair": 137,
+        "T_only_repair": 232,
+        "N0_only_repair": 25
+      },
+      "T_repair": 369,
+      "T_harm": 134,
+      "N0_repair": 173,
+      "N0_harm": 144
+    },
+    "1": {
+      "gt": 81,
+      "N_correct": 51,
+      "N_errors": 30,
+      "common_eligible": {
+        "gt": 75,
+        "N_errors": 28,
+        "N_correct": 47,
+        "both_repair": 7,
+        "T_only_repair": 8,
+        "N0_only_repair": 0
+      },
+      "T_repair": 15,
+      "T_harm": 13,
+      "N0_repair": 8,
+      "N0_harm": 8
+    },
+    "2": {
+      "gt": 176,
+      "N_correct": 76,
+      "N_errors": 100,
+      "common_eligible": {
+        "gt": 175,
+        "N_errors": 99,
+        "N_correct": 76,
+        "both_repair": 18,
+        "T_only_repair": 28,
+        "N0_only_repair": 5
+      },
+      "T_repair": 46,
+      "T_harm": 29,
+      "N0_repair": 23,
+      "N0_harm": 20
+    },
+    "3": {
+      "gt": 66,
+      "N_correct": 48,
+      "N_errors": 18,
+      "common_eligible": {
+        "gt": 66,
+        "N_errors": 18,
+        "N_correct": 48,
+        "both_repair": 8,
+        "T_only_repair": 5,
+        "N0_only_repair": 0
+      },
+      "T_repair": 13,
+      "T_harm": 7,
+      "N0_repair": 8,
+      "N0_harm": 8
+    },
+    "4": {
+      "gt": 99,
+      "N_correct": 44,
+      "N_errors": 55,
+      "common_eligible": {
+        "gt": 90,
+        "N_errors": 51,
+        "N_correct": 39,
+        "both_repair": 5,
+        "T_only_repair": 13,
+        "N0_only_repair": 4
+      },
+      "T_repair": 18,
+      "T_harm": 10,
+      "N0_repair": 9,
+      "N0_harm": 12
+    }
+  },
+  "assigned_box_iou_vs_saved_rgb_iou_max_abs": {
+    "N42": 3.1774262121420094e-07,
+    "T42": 2.5214285670482894e-07,
+    "N0": 2.583183116300347e-07
+  },
+  "assigned_box_vs_saved_iou_threshold_mismatches": 0,
+  "independent_numpy_N_s0_complete_Cls_matrices": {
+    "0.5": {
+      "all": [
+        [
+          0,
+          469,
+          552,
+          391,
+          612
+        ],
+        [
+          2441,
+          0,
+          955,
+          231,
+          499
+        ],
+        [
+          2641,
+          649,
+          0,
+          172,
+          425
+        ],
+        [
+          345,
+          273,
+          265,
+          0,
+          186
+        ],
+        [
+          4514,
+          256,
+          381,
+          90,
+          0
+        ]
+      ],
+      "ge25": [
+        [
+          0,
+          45,
+          63,
+          7,
+          221
+        ],
+        [
+          42,
+          0,
+          119,
+          7,
+          28
+        ],
+        [
+          26,
+          142,
+          0,
+          4,
+          17
+        ],
+        [
+          6,
+          10,
+          6,
+          0,
+          2
+        ],
+        [
+          130,
+          9,
+          48,
+          10,
+          0
+        ]
+      ],
+      "ge50": [
+        [
+          0,
+          31,
+          33,
+          5,
+          140
+        ],
+        [
+          11,
+          0,
+          63,
+          2,
+          17
+        ],
+        [
+          10,
+          84,
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          6,
+          1,
+          0,
+          0
+        ],
+        [
+          62,
+          5,
+          24,
+          6,
+          0
+        ]
+      ]
+    },
+    "0.75": {
+      "all": [
+        [
+          0,
+          361,
+          390,
+          357,
+          433
+        ],
+        [
+          1989,
+          0,
+          700,
+          212,
+          417
+        ],
+        [
+          2078,
+          473,
+          0,
+          153,
+          349
+        ],
+        [
+          289,
+          237,
+          211,
+          0,
+          170
+        ],
+        [
+          3330,
+          221,
+          329,
+          82,
+          0
+        ]
+      ],
+      "ge25": [
+        [
+          0,
+          37,
+          56,
+          2,
+          165
+        ],
+        [
+          37,
+          0,
+          95,
+          6,
+          28
+        ],
+        [
+          21,
+          124,
+          0,
+          4,
+          15
+        ],
+        [
+          5,
+          10,
+          4,
+          0,
+          1
+        ],
+        [
+          105,
+          8,
+          42,
+          10,
+          0
+        ]
+      ],
+      "ge50": [
+        [
+          0,
+          28,
+          32,
+          2,
+          106
+        ],
+        [
+          9,
+          0,
+          51,
+          2,
+          17
+        ],
+        [
+          9,
+          76,
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          6,
+          1,
+          0,
+          0
+        ],
+        [
+          50,
+          5,
+          23,
+          6,
+          0
+        ]
+      ]
+    }
+  },
+  "TIDE_engine_rerun": false,
+  "seconds": 2.5601389408111572
+}

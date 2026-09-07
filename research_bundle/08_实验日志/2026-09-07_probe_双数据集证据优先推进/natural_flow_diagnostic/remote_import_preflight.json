@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "execution": "root via ssh 94, pinned Python stdin; runtime imports followed by explicit-file generator",
+  "models": {
+    "llvip": {"config_equal": true, "nc": 1, "cuda_initialized": false},
+    "drone": {"config_equal": true, "nc": 5, "cuda_initialized": false}
+  },
+  "generator": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/prepare_configs.py",
+  "torch": "2.10.0+cu128",
+  "ultralytics": "8.4.115",
+  "compared_fields": ["teacher", "reference", "paths", "imgsz", "batch", "workers", "nbs", "seed", "evidence", "localization", "augmentation", "teacher_cache_images"],
+  "new_hashes": false,
+  "real_forward": false
+}

@@ -1,0 +1,1055 @@
+{
+  "status": "PASS_ATTEMPT2_RAW_METRICS_AND_CORRECTED_COUNTS",
+  "cpu_only": true,
+  "hash_computed": false,
+  "datasets": {
+    "llvip": {
+      "cohort_n": 3276,
+      "source_row_object_id_gt_split_exact": true,
+      "all_25_raw_mass_metrics_reconstructed": true,
+      "independent_max_abs_errors": {
+        "native_iou": 3.4416913763379853e-15,
+        "native_gt_ce": 0.0,
+        "prior_native_distance": 3.552713678800501e-15,
+        "teacher_rgb_iou": 3.9968028886505635e-15,
+        "teacher_ir_iou": 3.9968028886505635e-15,
+        "iou_advantage": 3.9968028886505635e-15,
+        "native_ce": 0.0,
+        "teacher_ce": 1.7763568394002505e-15,
+        "teacher_minus_native_ce": 1.7763568394002505e-15,
+        "kl_t2_mean4": 1.7763568394002505e-15,
+        "cosine": 3.4139358007223564e-15,
+        "gradient_dot": 8.326672684688674e-17,
+        "kd_gradient_norm": 1.6653345369377348e-16,
+        "gt_gradient_norm": 5.551115123125783e-17,
+        "gradient_norm_ratio": 2.4868995751603507e-14,
+        "lost_mass_t1_mean4": 1.3877787807814457e-17,
+        "lost_mass_t1_max_side": 5.551115123125783e-17,
+        "lost_mass_t2_mean4": 1.3877787807814457e-17,
+        "lost_mass_t2_max_side": 2.7755575615628914e-17,
+        "conditional_vs_exact_box_max_abs_px": 2.2737367544323206e-13,
+        "conditional_box_rgb_iou": 5.440092820663267e-15,
+        "underflow_t1": 5.551115123125783e-17,
+        "overflow_t1": 1.3877787807814457e-17,
+        "underflow_t2": 2.7755575615628914e-17,
+        "overflow_t2": 6.938893903907228e-18
+      },
+      "attempt2_arrays_exact_vs_attempt1": true,
+      "attempt2_fixed_success_and_denominator_counts_exact": true,
+      "attempt1_worst_case_gate_count_defects": [
+        {
+          "split": "train",
+          "stratum": "base",
+          "amplitude": 1,
+          "saved_gate_n": 2728,
+          "actual_gate_success_n": 22,
+          "denominator": 2728
+        },
+        {
+          "split": "train",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 1,
+          "saved_gate_n": 82,
+          "actual_gate_success_n": 22,
+          "denominator": 82
+        },
+        {
+          "split": "train",
+          "stratum": "quality_gate070",
+          "amplitude": 1,
+          "saved_gate_n": 23,
+          "actual_gate_success_n": 22,
+          "denominator": 23
+        },
+        {
+          "split": "val",
+          "stratum": "base",
+          "amplitude": 1,
+          "saved_gate_n": 548,
+          "actual_gate_success_n": 60,
+          "denominator": 548
+        },
+        {
+          "split": "val",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 1,
+          "saved_gate_n": 199,
+          "actual_gate_success_n": 60,
+          "denominator": 199
+        },
+        {
+          "split": "val",
+          "stratum": "quality_gate070",
+          "amplitude": 1,
+          "saved_gate_n": 61,
+          "actual_gate_success_n": 60,
+          "denominator": 61
+        },
+        {
+          "split": "train",
+          "stratum": "base",
+          "amplitude": 2,
+          "saved_gate_n": 2728,
+          "actual_gate_success_n": 18,
+          "denominator": 2728
+        },
+        {
+          "split": "train",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 2,
+          "saved_gate_n": 82,
+          "actual_gate_success_n": 18,
+          "denominator": 82
+        },
+        {
+          "split": "train",
+          "stratum": "quality_gate070",
+          "amplitude": 2,
+          "saved_gate_n": 23,
+          "actual_gate_success_n": 18,
+          "denominator": 23
+        },
+        {
+          "split": "val",
+          "stratum": "base",
+          "amplitude": 2,
+          "saved_gate_n": 548,
+          "actual_gate_success_n": 51,
+          "denominator": 548
+        },
+        {
+          "split": "val",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 2,
+          "saved_gate_n": 199,
+          "actual_gate_success_n": 51,
+          "denominator": 199
+        },
+        {
+          "split": "val",
+          "stratum": "quality_gate070",
+          "amplitude": 2,
+          "saved_gate_n": 61,
+          "actual_gate_success_n": 51,
+          "denominator": 61
+        },
+        {
+          "split": "train",
+          "stratum": "base",
+          "amplitude": 4,
+          "saved_gate_n": 2728,
+          "actual_gate_success_n": 9,
+          "denominator": 2728
+        },
+        {
+          "split": "train",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 4,
+          "saved_gate_n": 82,
+          "actual_gate_success_n": 9,
+          "denominator": 82
+        },
+        {
+          "split": "train",
+          "stratum": "quality_gate070",
+          "amplitude": 4,
+          "saved_gate_n": 23,
+          "actual_gate_success_n": 9,
+          "denominator": 23
+        },
+        {
+          "split": "val",
+          "stratum": "base",
+          "amplitude": 4,
+          "saved_gate_n": 548,
+          "actual_gate_success_n": 34,
+          "denominator": 548
+        },
+        {
+          "split": "val",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 4,
+          "saved_gate_n": 199,
+          "actual_gate_success_n": 34,
+          "denominator": 199
+        },
+        {
+          "split": "val",
+          "stratum": "quality_gate070",
+          "amplitude": 4,
+          "saved_gate_n": 61,
+          "actual_gate_success_n": 34,
+          "denominator": 61
+        }
+      ],
+      "contexts": [
+        {
+          "split": "train",
+          "stratum": "base",
+          "n": 2728,
+          "images": 1024,
+          "groups": [
+            "02",
+            "03",
+            "05",
+            "06",
+            "08",
+            "09",
+            "10",
+            "11",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "stride_counts": {
+            "8.0": 326,
+            "16.0": 2402
+          }
+        },
+        {
+          "split": "train",
+          "stratum": "n_iou_lt_070",
+          "n": 82,
+          "images": 73,
+          "groups": [
+            "02",
+            "05",
+            "06",
+            "08",
+            "09",
+            "10",
+            "11",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "stride_counts": {
+            "8.0": 23,
+            "16.0": 59
+          }
+        },
+        {
+          "split": "train",
+          "stratum": "quality_gate070",
+          "n": 23,
+          "images": 22,
+          "groups": [
+            "02",
+            "05",
+            "06",
+            "08",
+            "09",
+            "10",
+            "13",
+            "15",
+            "16",
+            "17"
+          ],
+          "stride_counts": {
+            "16.0": 23
+          },
+          "gate_survival_all8": {
+            "1": 22,
+            "2": 18,
+            "4": 9
+          }
+        },
+        {
+          "split": "val",
+          "stratum": "base",
+          "n": 548,
+          "images": 196,
+          "groups": [
+            "01",
+            "04",
+            "07",
+            "12",
+            "25"
+          ],
+          "stride_counts": {
+            "8.0": 73,
+            "16.0": 475
+          }
+        },
+        {
+          "split": "val",
+          "stratum": "n_iou_lt_070",
+          "n": 199,
+          "images": 109,
+          "groups": [
+            "01",
+            "04",
+            "07",
+            "12",
+            "25"
+          ],
+          "stride_counts": {
+            "8.0": 33,
+            "16.0": 166
+          }
+        },
+        {
+          "split": "val",
+          "stratum": "quality_gate070",
+          "n": 61,
+          "images": 49,
+          "groups": [
+            "01",
+            "04",
+            "07",
+            "12",
+            "25"
+          ],
+          "stride_counts": {
+            "8.0": 2,
+            "16.0": 59
+          },
+          "gate_survival_all8": {
+            "1": 60,
+            "2": 51,
+            "4": 34
+          }
+        }
+      ],
+      "source_model_paths": {
+        "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+        "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt"
+      }
+    },
+    "dronevehicle": {
+      "cohort_n": 17840,
+      "source_row_object_id_gt_split_exact": true,
+      "all_25_raw_mass_metrics_reconstructed": true,
+      "independent_max_abs_errors": {
+        "native_iou": 4.6629367034256575e-15,
+        "native_gt_ce": 0.0,
+        "prior_native_distance": 3.552713678800501e-15,
+        "teacher_rgb_iou": 5.551115123125783e-15,
+        "teacher_ir_iou": 5.662137425588298e-15,
+        "iou_advantage": 5.551115123125783e-15,
+        "native_ce": 0.0,
+        "teacher_ce": 1.7763568394002505e-15,
+        "teacher_minus_native_ce": 1.7763568394002505e-15,
+        "kl_t2_mean4": 3.552713678800501e-15,
+        "cosine": 3.191891195797325e-15,
+        "gradient_dot": 5.551115123125783e-17,
+        "kd_gradient_norm": 2.220446049250313e-16,
+        "gt_gradient_norm": 5.551115123125783e-17,
+        "gradient_norm_ratio": 5.684341886080802e-14,
+        "lost_mass_t1_mean4": 2.7755575615628914e-17,
+        "lost_mass_t1_max_side": 5.551115123125783e-17,
+        "lost_mass_t2_mean4": 2.7755575615628914e-17,
+        "lost_mass_t2_max_side": 5.551115123125783e-17,
+        "conditional_vs_exact_box_max_abs_px": 2.2737367544323206e-13,
+        "conditional_box_rgb_iou": 9.769962616701378e-15,
+        "underflow_t1": 5.551115123125783e-17,
+        "overflow_t1": 8.673617379884035e-19,
+        "underflow_t2": 5.551115123125783e-17,
+        "overflow_t2": 4.336808689942018e-18
+      },
+      "attempt2_arrays_exact_vs_attempt1": true,
+      "attempt2_fixed_success_and_denominator_counts_exact": true,
+      "attempt1_worst_case_gate_count_defects": [
+        {
+          "split": "train",
+          "stratum": "base",
+          "amplitude": 1,
+          "saved_gate_n": 15019,
+          "actual_gate_success_n": 66,
+          "denominator": 15019
+        },
+        {
+          "split": "train",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 1,
+          "saved_gate_n": 366,
+          "actual_gate_success_n": 66,
+          "denominator": 366
+        },
+        {
+          "split": "train",
+          "stratum": "quality_gate070",
+          "amplitude": 1,
+          "saved_gate_n": 87,
+          "actual_gate_success_n": 66,
+          "denominator": 87
+        },
+        {
+          "split": "val",
+          "stratum": "base",
+          "amplitude": 1,
+          "saved_gate_n": 2821,
+          "actual_gate_success_n": 44,
+          "denominator": 2821
+        },
+        {
+          "split": "val",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 1,
+          "saved_gate_n": 229,
+          "actual_gate_success_n": 44,
+          "denominator": 229
+        },
+        {
+          "split": "val",
+          "stratum": "quality_gate070",
+          "amplitude": 1,
+          "saved_gate_n": 47,
+          "actual_gate_success_n": 44,
+          "denominator": 47
+        },
+        {
+          "split": "train",
+          "stratum": "base",
+          "amplitude": 2,
+          "saved_gate_n": 15019,
+          "actual_gate_success_n": 36,
+          "denominator": 15019
+        },
+        {
+          "split": "train",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 2,
+          "saved_gate_n": 366,
+          "actual_gate_success_n": 36,
+          "denominator": 366
+        },
+        {
+          "split": "train",
+          "stratum": "quality_gate070",
+          "amplitude": 2,
+          "saved_gate_n": 87,
+          "actual_gate_success_n": 36,
+          "denominator": 87
+        },
+        {
+          "split": "val",
+          "stratum": "base",
+          "amplitude": 2,
+          "saved_gate_n": 2821,
+          "actual_gate_success_n": 31,
+          "denominator": 2821
+        },
+        {
+          "split": "val",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 2,
+          "saved_gate_n": 229,
+          "actual_gate_success_n": 31,
+          "denominator": 229
+        },
+        {
+          "split": "val",
+          "stratum": "quality_gate070",
+          "amplitude": 2,
+          "saved_gate_n": 47,
+          "actual_gate_success_n": 31,
+          "denominator": 47
+        },
+        {
+          "split": "train",
+          "stratum": "base",
+          "amplitude": 4,
+          "saved_gate_n": 15019,
+          "actual_gate_success_n": 8,
+          "denominator": 15019
+        },
+        {
+          "split": "train",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 4,
+          "saved_gate_n": 366,
+          "actual_gate_success_n": 8,
+          "denominator": 366
+        },
+        {
+          "split": "train",
+          "stratum": "quality_gate070",
+          "amplitude": 4,
+          "saved_gate_n": 87,
+          "actual_gate_success_n": 8,
+          "denominator": 87
+        },
+        {
+          "split": "val",
+          "stratum": "base",
+          "amplitude": 4,
+          "saved_gate_n": 2821,
+          "actual_gate_success_n": 9,
+          "denominator": 2821
+        },
+        {
+          "split": "val",
+          "stratum": "n_iou_lt_070",
+          "amplitude": 4,
+          "saved_gate_n": 229,
+          "actual_gate_success_n": 9,
+          "denominator": 229
+        },
+        {
+          "split": "val",
+          "stratum": "quality_gate070",
+          "amplitude": 4,
+          "saved_gate_n": 47,
+          "actual_gate_success_n": 9,
+          "denominator": 47
+        }
+      ],
+      "contexts": [
+        {
+          "split": "train",
+          "stratum": "base",
+          "n": 15019,
+          "images": 992,
+          "groups": [
+            "1",
+            "100MEDIA",
+            "101MEDIA",
+            "123",
+            "2",
+            "2356",
+            "310_80m45night1",
+            "313_120m30_1",
+            "313_120m30_3",
+            "316_100_15",
+            "316_100_30",
+            "316_100_45m_2",
+            "319_100_45",
+            "319_120m_30_1",
+            "319_120m_30_2",
+            "319_120m_30_3",
+            "319_80m_30_2",
+            "321_100_15_3",
+            "321_100_30_1",
+            "321_100_30_2",
+            "321_100_30_3",
+            "321_100_30_4",
+            "321_120_15_1",
+            "321_80_15",
+            "321_80_45_2",
+            "322_100_30_1",
+            "322_100_30_4",
+            "322_100_45_2",
+            "322_100_45_3",
+            "322_100_45_4",
+            "322_120_15_1",
+            "322_120_15_2",
+            "322_120_15_3",
+            "322_80_45",
+            "39_120m45_1",
+            "39_120m45_2",
+            "5",
+            "5-11",
+            "5-13",
+            "5-14",
+            "5-14 (2)",
+            "5-15",
+            "5-15 (2)",
+            "5-15 (3)",
+            "5-17",
+            "5-17 (2)",
+            "5-20",
+            "5-20 (2)",
+            "5-28",
+            "5-28 (2)",
+            "5-29",
+            "5-30",
+            "5-30 (2)",
+            "5-8",
+            "6",
+            "6-1 (2)",
+            "6-1(1)",
+            "6-10",
+            "6-10 (2)",
+            "6-3",
+            "6-4",
+            "6-4 (2)",
+            "6-5",
+            "6-5 (2)",
+            "6-5 (3)",
+            "6-5 (4)",
+            "6-6",
+            "6-6 (2)",
+            "6-8",
+            "6-8 (2)",
+            "6-9",
+            "6-9 (2)",
+            "9",
+            "A",
+            "B",
+            "cheliu2-1",
+            "cheliu2-2",
+            "cheliu2-3",
+            "image",
+            "madalA",
+            "modalA",
+            "modelA_1",
+            "shibiao",
+            "shibiao (2)",
+            "tupian",
+            "zzccvv"
+          ],
+          "stride_counts": {
+            "8.0": 13170,
+            "16.0": 1849
+          }
+        },
+        {
+          "split": "train",
+          "stratum": "n_iou_lt_070",
+          "n": 366,
+          "images": 177,
+          "groups": [
+            "310_80m45night1",
+            "319_100_45",
+            "319_120m_30_2",
+            "319_120m_30_3",
+            "321_100_30_2",
+            "321_80_45_2",
+            "322_100_45_4",
+            "322_120_15_1",
+            "322_120_15_3",
+            "39_120m45_1",
+            "39_120m45_2",
+            "5-11",
+            "5-13",
+            "5-14 (2)",
+            "5-17",
+            "5-20",
+            "5-29",
+            "5-30",
+            "5-30 (2)",
+            "6-10",
+            "6-10 (2)",
+            "6-3",
+            "6-4",
+            "6-4 (2)",
+            "6-6",
+            "6-6 (2)",
+            "A",
+            "B",
+            "image",
+            "modalA"
+          ],
+          "stride_counts": {
+            "8.0": 296,
+            "16.0": 70
+          }
+        },
+        {
+          "split": "train",
+          "stratum": "quality_gate070",
+          "n": 87,
+          "images": 70,
+          "groups": [
+            "319_120m_30_2",
+            "321_100_30_2",
+            "321_80_45_2",
+            "322_120_15_1",
+            "39_120m45_1",
+            "39_120m45_2",
+            "5-20",
+            "5-29",
+            "5-30",
+            "6-3",
+            "6-4",
+            "6-6 (2)",
+            "B",
+            "image"
+          ],
+          "stride_counts": {
+            "8.0": 83,
+            "16.0": 4
+          },
+          "gate_survival_all8": {
+            "1": 66,
+            "2": 36,
+            "4": 8
+          }
+        },
+        {
+          "split": "val",
+          "stratum": "base",
+          "n": 2821,
+          "images": 192,
+          "groups": [
+            "unavailable:val"
+          ],
+          "stride_counts": {
+            "8.0": 2482,
+            "16.0": 339
+          }
+        },
+        {
+          "split": "val",
+          "stratum": "n_iou_lt_070",
+          "n": 229,
+          "images": 38,
+          "groups": [
+            "unavailable:val"
+          ],
+          "stride_counts": {
+            "8.0": 184,
+            "16.0": 45
+          }
+        },
+        {
+          "split": "val",
+          "stratum": "quality_gate070",
+          "n": 47,
+          "images": 17,
+          "groups": [
+            "unavailable:val"
+          ],
+          "stride_counts": {
+            "8.0": 43,
+            "16.0": 4
+          },
+          "gate_survival_all8": {
+            "1": 44,
+            "2": 31,
+            "4": 9
+          }
+        }
+      ],
+      "source_model_paths": {
+        "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+        "N0": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt"
+      }
+    }
+  },
+  "reporting_defects": [
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "base",
+      "amplitude": 1,
+      "saved_gate_n": 2728,
+      "actual_gate_success_n": 22,
+      "denominator": 2728
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 1,
+      "saved_gate_n": 82,
+      "actual_gate_success_n": 22,
+      "denominator": 82
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "quality_gate070",
+      "amplitude": 1,
+      "saved_gate_n": 23,
+      "actual_gate_success_n": 22,
+      "denominator": 23
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "base",
+      "amplitude": 1,
+      "saved_gate_n": 548,
+      "actual_gate_success_n": 60,
+      "denominator": 548
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 1,
+      "saved_gate_n": 199,
+      "actual_gate_success_n": 60,
+      "denominator": 199
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "quality_gate070",
+      "amplitude": 1,
+      "saved_gate_n": 61,
+      "actual_gate_success_n": 60,
+      "denominator": 61
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "base",
+      "amplitude": 2,
+      "saved_gate_n": 2728,
+      "actual_gate_success_n": 18,
+      "denominator": 2728
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 2,
+      "saved_gate_n": 82,
+      "actual_gate_success_n": 18,
+      "denominator": 82
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "quality_gate070",
+      "amplitude": 2,
+      "saved_gate_n": 23,
+      "actual_gate_success_n": 18,
+      "denominator": 23
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "base",
+      "amplitude": 2,
+      "saved_gate_n": 548,
+      "actual_gate_success_n": 51,
+      "denominator": 548
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 2,
+      "saved_gate_n": 199,
+      "actual_gate_success_n": 51,
+      "denominator": 199
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "quality_gate070",
+      "amplitude": 2,
+      "saved_gate_n": 61,
+      "actual_gate_success_n": 51,
+      "denominator": 61
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "base",
+      "amplitude": 4,
+      "saved_gate_n": 2728,
+      "actual_gate_success_n": 9,
+      "denominator": 2728
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 4,
+      "saved_gate_n": 82,
+      "actual_gate_success_n": 9,
+      "denominator": 82
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stratum": "quality_gate070",
+      "amplitude": 4,
+      "saved_gate_n": 23,
+      "actual_gate_success_n": 9,
+      "denominator": 23
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "base",
+      "amplitude": 4,
+      "saved_gate_n": 548,
+      "actual_gate_success_n": 34,
+      "denominator": 548
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 4,
+      "saved_gate_n": 199,
+      "actual_gate_success_n": 34,
+      "denominator": 199
+    },
+    {
+      "dataset": "llvip",
+      "split": "val",
+      "stratum": "quality_gate070",
+      "amplitude": 4,
+      "saved_gate_n": 61,
+      "actual_gate_success_n": 34,
+      "denominator": 61
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "base",
+      "amplitude": 1,
+      "saved_gate_n": 15019,
+      "actual_gate_success_n": 66,
+      "denominator": 15019
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 1,
+      "saved_gate_n": 366,
+      "actual_gate_success_n": 66,
+      "denominator": 366
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "quality_gate070",
+      "amplitude": 1,
+      "saved_gate_n": 87,
+      "actual_gate_success_n": 66,
+      "denominator": 87
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "base",
+      "amplitude": 1,
+      "saved_gate_n": 2821,
+      "actual_gate_success_n": 44,
+      "denominator": 2821
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 1,
+      "saved_gate_n": 229,
+      "actual_gate_success_n": 44,
+      "denominator": 229
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "quality_gate070",
+      "amplitude": 1,
+      "saved_gate_n": 47,
+      "actual_gate_success_n": 44,
+      "denominator": 47
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "base",
+      "amplitude": 2,
+      "saved_gate_n": 15019,
+      "actual_gate_success_n": 36,
+      "denominator": 15019
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 2,
+      "saved_gate_n": 366,
+      "actual_gate_success_n": 36,
+      "denominator": 366
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "quality_gate070",
+      "amplitude": 2,
+      "saved_gate_n": 87,
+      "actual_gate_success_n": 36,
+      "denominator": 87
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "base",
+      "amplitude": 2,
+      "saved_gate_n": 2821,
+      "actual_gate_success_n": 31,
+      "denominator": 2821
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 2,
+      "saved_gate_n": 229,
+      "actual_gate_success_n": 31,
+      "denominator": 229
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "quality_gate070",
+      "amplitude": 2,
+      "saved_gate_n": 47,
+      "actual_gate_success_n": 31,
+      "denominator": 47
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "base",
+      "amplitude": 4,
+      "saved_gate_n": 15019,
+      "actual_gate_success_n": 8,
+      "denominator": 15019
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 4,
+      "saved_gate_n": 366,
+      "actual_gate_success_n": 8,
+      "denominator": 366
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stratum": "quality_gate070",
+      "amplitude": 4,
+      "saved_gate_n": 87,
+      "actual_gate_success_n": 8,
+      "denominator": 87
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "base",
+      "amplitude": 4,
+      "saved_gate_n": 2821,
+      "actual_gate_success_n": 9,
+      "denominator": 2821
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "n_iou_lt_070",
+      "amplitude": 4,
+      "saved_gate_n": 229,
+      "actual_gate_success_n": 9,
+      "denominator": 229
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "stratum": "quality_gate070",
+      "amplitude": 4,
+      "saved_gate_n": 47,
+      "actual_gate_success_n": 9,
+      "denominator": 47
+    }
+  ],
+  "watched_original_inputs_changed_during_review": []
+}

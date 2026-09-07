@@ -1,0 +1,779 @@
+{
+  "read_at": "2026-09-07T21:29:10.755903+08:00",
+  "runs": {
+    "C1_s42": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed42",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 20,
+        "epochs": 200,
+        "optimizer_updates": 6003,
+        "update_attempts": 6010,
+        "amp_skips": 7,
+        "batches": 11175,
+        "selected_objects": 1358993,
+        "seconds": 21564.632420301437,
+        "last_kd": 0.13534124195575714
+      },
+      "progress_age_seconds": 2.767542839050293,
+      "completion": null,
+      "failure": null,
+      "evaluation_exists": false,
+      "evaluation_receipt_exists": false,
+      "throughput": {
+        "completed_epochs": 19,
+        "median_recent_epoch_seconds": 1094.5,
+        "remaining_training_hours": 55.02902777777778,
+        "scope": "Recent observed training throughput only; excludes evaluation, queue and future load changes"
+      }
+    },
+    "C1_s0": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed0",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 20,
+        "epochs": 200,
+        "optimizer_updates": 5852,
+        "update_attempts": 5860,
+        "amp_skips": 8,
+        "batches": 10875,
+        "selected_objects": 1322143,
+        "seconds": 21517.488256454468,
+        "last_kd": 0.13268452882766724
+      },
+      "progress_age_seconds": 19.49599814414978,
+      "completion": null,
+      "failure": null,
+      "evaluation_exists": false,
+      "evaluation_receipt_exists": false,
+      "throughput": {
+        "completed_epochs": 19,
+        "median_recent_epoch_seconds": 1114.7000000000007,
+        "remaining_training_hours": 56.044638888888926,
+        "scope": "Recent observed training throughput only; excludes evaluation, queue and future load changes"
+      }
+    },
+    "C1_s123": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed123",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 20,
+        "epochs": 200,
+        "optimizer_updates": 5933,
+        "update_attempts": 5940,
+        "amp_skips": 7,
+        "batches": 11035,
+        "selected_objects": 1341667,
+        "seconds": 21484.843900442123,
+        "last_kd": 0.16525150835514069
+      },
+      "progress_age_seconds": 19.896223783493042,
+      "completion": null,
+      "failure": null,
+      "evaluation_exists": false,
+      "evaluation_receipt_exists": false,
+      "throughput": {
+        "completed_epochs": 19,
+        "median_recent_epoch_seconds": 1102.7999999999993,
+        "remaining_training_hours": 55.4463333333333,
+        "scope": "Recent observed training throughput only; excludes evaluation, queue and future load changes"
+      }
+    },
+    "c_shuffled": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "c_shuffled",
+        "epoch": 66,
+        "epochs": 200,
+        "optimizer_updates": 18929,
+        "update_attempts": 18940,
+        "amp_skips": 11,
+        "batches": 37035,
+        "selected_objects": 4503055,
+        "seconds": 65397.60387611389,
+        "last_kd": 0.20144225656986237
+      },
+      "progress_age_seconds": 7.196301221847534,
+      "completion": null,
+      "failure": null,
+      "evaluation_exists": false,
+      "evaluation_receipt_exists": false,
+      "throughput": {
+        "completed_epochs": 65,
+        "median_recent_epoch_seconds": 2607.399999999994,
+        "remaining_training_hours": 97.77749999999978,
+        "scope": "Recent observed training throughput only; excludes evaluation, queue and future load changes"
+      }
+    },
+    "c_same_modal": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "c_same_modal",
+        "epoch": 58,
+        "epochs": 200,
+        "optimizer_updates": 16470,
+        "update_attempts": 16480,
+        "amp_skips": 10,
+        "batches": 32115,
+        "selected_objects": 2781583,
+        "seconds": 47076.82100343704,
+        "last_kd": 0.0481368713080883
+      },
+      "progress_age_seconds": 11.50881838798523,
+      "completion": null,
+      "failure": null,
+      "evaluation_exists": false,
+      "evaluation_receipt_exists": false,
+      "throughput": {
+        "completed_epochs": 57,
+        "median_recent_epoch_seconds": 987.8000000000029,
+        "remaining_training_hours": 39.23761111111123,
+        "scope": "Recent observed training throughput only; excludes evaluation, queue and future load changes"
+      }
+    }
+  },
+  "gpus": [
+    {
+      "index": 0,
+      "total_mib": 24564,
+      "used_mib": 20143,
+      "free_mib": 3941
+    },
+    {
+      "index": 1,
+      "total_mib": 24564,
+      "used_mib": 1,
+      "free_mib": 24082
+    },
+    {
+      "index": 2,
+      "total_mib": 24564,
+      "used_mib": 15883,
+      "free_mib": 8201
+    },
+    {
+      "index": 3,
+      "total_mib": 24564,
+      "used_mib": 18274,
+      "free_mib": 5810
+    },
+    {
+      "index": 4,
+      "total_mib": 24564,
+      "used_mib": 8047,
+      "free_mib": 16037
+    },
+    {
+      "index": 5,
+      "total_mib": 24564,
+      "used_mib": 15706,
+      "free_mib": 8378
+    },
+    {
+      "index": 6,
+      "total_mib": 24564,
+      "used_mib": 1,
+      "free_mib": 24082
+    },
+    {
+      "index": 7,
+      "total_mib": 24564,
+      "used_mib": 19853,
+      "free_mib": 4231
+    }
+  ],
+  "project_cuda": [
+    {
+      "pid": 2753901,
+      "gpu": 2,
+      "vram_mib": 7922
+    },
+    {
+      "pid": 2757514,
+      "gpu": 2,
+      "vram_mib": 7922
+    },
+    {
+      "pid": 2265745,
+      "gpu": 4,
+      "vram_mib": 8020
+    },
+    {
+      "pid": 4148148,
+      "gpu": 5,
+      "vram_mib": 7742
+    },
+    {
+      "pid": 2760047,
+      "gpu": 5,
+      "vram_mib": 7922
+    }
+  ],
+  "project_processes": {
+    "888570": {
+      "ppid": 2753545,
+      "rss_kib": 24276
+    },
+    "888650": {
+      "ppid": 2265608,
+      "rss_kib": 24148
+    },
+    "888651": {
+      "ppid": 888649,
+      "rss_kib": 12544
+    },
+    "2265509": {
+      "ppid": 1,
+      "rss_kib": 2472
+    },
+    "2265510": {
+      "ppid": 2265509,
+      "rss_kib": 36184
+    },
+    "2265577": {
+      "ppid": 1,
+      "rss_kib": 2428
+    },
+    "2265578": {
+      "ppid": 2265577,
+      "rss_kib": 35056
+    },
+    "2265608": {
+      "ppid": 2265510,
+      "rss_kib": 21824
+    },
+    "2265745": {
+      "ppid": 2265608,
+      "rss_kib": 10295076
+    },
+    "2267111": {
+      "ppid": 2265745,
+      "rss_kib": 2006996
+    },
+    "2267115": {
+      "ppid": 2265745,
+      "rss_kib": 2006916
+    },
+    "2267125": {
+      "ppid": 2265745,
+      "rss_kib": 2015912
+    },
+    "2267131": {
+      "ppid": 2265745,
+      "rss_kib": 2002812
+    },
+    "2267180": {
+      "ppid": 2265745,
+      "rss_kib": 1562708
+    },
+    "2267212": {
+      "ppid": 2265745,
+      "rss_kib": 1562764
+    },
+    "2267218": {
+      "ppid": 2265745,
+      "rss_kib": 1562320
+    },
+    "2267223": {
+      "ppid": 2265745,
+      "rss_kib": 1563004
+    },
+    "2267228": {
+      "ppid": 2265745,
+      "rss_kib": 1562744
+    },
+    "2267232": {
+      "ppid": 2265745,
+      "rss_kib": 1562888
+    },
+    "2267236": {
+      "ppid": 2265745,
+      "rss_kib": 1563492
+    },
+    "2267240": {
+      "ppid": 2265745,
+      "rss_kib": 1563424
+    },
+    "2753537": {
+      "ppid": 1,
+      "rss_kib": 2468
+    },
+    "2753538": {
+      "ppid": 2753537,
+      "rss_kib": 3648
+    },
+    "2753539": {
+      "ppid": 2753538,
+      "rss_kib": 15136
+    },
+    "2753544": {
+      "ppid": 1,
+      "rss_kib": 2468
+    },
+    "2753545": {
+      "ppid": 2753544,
+      "rss_kib": 28752
+    },
+    "2753901": {
+      "ppid": 2753545,
+      "rss_kib": 9173524
+    },
+    "2756045": {
+      "ppid": 2753901,
+      "rss_kib": 1947908
+    },
+    "2756049": {
+      "ppid": 2753901,
+      "rss_kib": 1956292
+    },
+    "2756053": {
+      "ppid": 2753901,
+      "rss_kib": 1951588
+    },
+    "2756057": {
+      "ppid": 2753901,
+      "rss_kib": 1958344
+    },
+    "2756068": {
+      "ppid": 2753901,
+      "rss_kib": 1546228
+    },
+    "2756072": {
+      "ppid": 2753901,
+      "rss_kib": 1546224
+    },
+    "2756077": {
+      "ppid": 2753901,
+      "rss_kib": 1545908
+    },
+    "2756081": {
+      "ppid": 2753901,
+      "rss_kib": 1546236
+    },
+    "2756090": {
+      "ppid": 2753901,
+      "rss_kib": 1546172
+    },
+    "2756095": {
+      "ppid": 2753901,
+      "rss_kib": 1546176
+    },
+    "2756099": {
+      "ppid": 2753901,
+      "rss_kib": 1546224
+    },
+    "2756104": {
+      "ppid": 2753901,
+      "rss_kib": 1546248
+    },
+    "2757251": {
+      "ppid": 1,
+      "rss_kib": 2484
+    },
+    "2757252": {
+      "ppid": 2757251,
+      "rss_kib": 28592
+    },
+    "2757514": {
+      "ppid": 2757252,
+      "rss_kib": 9194288
+    },
+    "2758318": {
+      "ppid": 2757514,
+      "rss_kib": 1966268
+    },
+    "2758322": {
+      "ppid": 2757514,
+      "rss_kib": 1951608
+    },
+    "2758326": {
+      "ppid": 2757514,
+      "rss_kib": 1956368
+    },
+    "2758332": {
+      "ppid": 2757514,
+      "rss_kib": 1963960
+    },
+    "2758348": {
+      "ppid": 2757514,
+      "rss_kib": 1550260
+    },
+    "2758352": {
+      "ppid": 2757514,
+      "rss_kib": 1549732
+    },
+    "2758356": {
+      "ppid": 2757514,
+      "rss_kib": 1549944
+    },
+    "2758361": {
+      "ppid": 2757514,
+      "rss_kib": 1549740
+    },
+    "2758365": {
+      "ppid": 2757514,
+      "rss_kib": 1550268
+    },
+    "2758375": {
+      "ppid": 2757514,
+      "rss_kib": 1550260
+    },
+    "2758381": {
+      "ppid": 2757514,
+      "rss_kib": 1550264
+    },
+    "2758386": {
+      "ppid": 2757514,
+      "rss_kib": 1550236
+    },
+    "2759697": {
+      "ppid": 1,
+      "rss_kib": 2420
+    },
+    "2759698": {
+      "ppid": 2759697,
+      "rss_kib": 28560
+    },
+    "2760047": {
+      "ppid": 2759698,
+      "rss_kib": 9169280
+    },
+    "2762697": {
+      "ppid": 2760047,
+      "rss_kib": 1967912
+    },
+    "2762702": {
+      "ppid": 2760047,
+      "rss_kib": 1959728
+    },
+    "2762706": {
+      "ppid": 2760047,
+      "rss_kib": 1966368
+    },
+    "2762710": {
+      "ppid": 2760047,
+      "rss_kib": 1966268
+    },
+    "2762720": {
+      "ppid": 2760047,
+      "rss_kib": 1553512
+    },
+    "2762724": {
+      "ppid": 2760047,
+      "rss_kib": 1552336
+    },
+    "2762728": {
+      "ppid": 2760047,
+      "rss_kib": 1552196
+    },
+    "2762733": {
+      "ppid": 2760047,
+      "rss_kib": 1553300
+    },
+    "2762737": {
+      "ppid": 2760047,
+      "rss_kib": 1553596
+    },
+    "2762741": {
+      "ppid": 2760047,
+      "rss_kib": 1553312
+    },
+    "2762745": {
+      "ppid": 2760047,
+      "rss_kib": 1553296
+    },
+    "2762749": {
+      "ppid": 2760047,
+      "rss_kib": 1553688
+    },
+    "4148001": {
+      "ppid": 2265578,
+      "rss_kib": 21336
+    },
+    "4148148": {
+      "ppid": 4148001,
+      "rss_kib": 9192416
+    },
+    "4149029": {
+      "ppid": 4148148,
+      "rss_kib": 1876432
+    },
+    "4149033": {
+      "ppid": 4148148,
+      "rss_kib": 1873108
+    },
+    "4149038": {
+      "ppid": 4148148,
+      "rss_kib": 1893484
+    },
+    "4149042": {
+      "ppid": 4148148,
+      "rss_kib": 1870720
+    },
+    "4149054": {
+      "ppid": 4148148,
+      "rss_kib": 1537160
+    },
+    "4149059": {
+      "ppid": 4148148,
+      "rss_kib": 1536036
+    },
+    "4149063": {
+      "ppid": 4148148,
+      "rss_kib": 1536616
+    },
+    "4149068": {
+      "ppid": 4148148,
+      "rss_kib": 1536356
+    },
+    "4149073": {
+      "ppid": 4148148,
+      "rss_kib": 1536696
+    },
+    "4149077": {
+      "ppid": 4148148,
+      "rss_kib": 1536928
+    },
+    "4149081": {
+      "ppid": 4148148,
+      "rss_kib": 1536672
+    },
+    "4149085": {
+      "ppid": 4148148,
+      "rss_kib": 1536936
+    }
+  },
+  "project_rss_gib": 141.49710845947266,
+  "leases": {
+    "leases": {
+      "ikdv2_C1_0_train_a1-1299248e223d": {
+        "admission": {
+          "active_gpus_after": [
+            2,
+            4,
+            5
+          ],
+          "per_gpu": {
+            "2": {
+              "project_cuda_processes_after": 2,
+              "project_vram_reserved_after_mib": 17116
+            }
+          },
+          "project_rss_reserved_after_mib": 131216
+        },
+        "bound_at": 1788766210.8905802,
+        "created_at": 1788766209.26074,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32840,
+        "expected_vram_mib": 8558,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          2
+        ],
+        "job_id": "ikdv2_C1_0_train_a1",
+        "job_pid": 2757252,
+        "kind": "train",
+        "lease_id": "ikdv2_C1_0_train_a1-1299248e223d",
+        "observed_cuda_pids": [
+          2757514
+        ],
+        "owner_pid": 2757252,
+        "peak_cuda_pid_counts": {
+          "2": 1
+        },
+        "peak_rss_mib": 28910,
+        "per_gpu_peak_vram_mib": {
+          "2": 7922
+        },
+        "profiled_second_train": true
+      },
+      "ikdv2_C1_123_train_a1-b0cf02c79e9e": {
+        "admission": {
+          "active_gpus_after": [
+            2,
+            4,
+            5
+          ],
+          "per_gpu": {
+            "5": {
+              "project_cuda_processes_after": 2,
+              "project_vram_reserved_after_mib": 16858
+            }
+          },
+          "project_rss_reserved_after_mib": 164056
+        },
+        "bound_at": 1788766242.0187926,
+        "created_at": 1788766240.140565,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32840,
+        "expected_vram_mib": 8558,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          5
+        ],
+        "job_id": "ikdv2_C1_123_train_a1",
+        "job_pid": 2759698,
+        "kind": "train",
+        "lease_id": "ikdv2_C1_123_train_a1-b0cf02c79e9e",
+        "observed_cuda_pids": [
+          2760047
+        ],
+        "owner_pid": 2759698,
+        "peak_cuda_pid_counts": {
+          "5": 1
+        },
+        "peak_rss_mib": 28943,
+        "per_gpu_peak_vram_mib": {
+          "5": 7922
+        },
+        "profiled_second_train": true
+      },
+      "ikdv2_C1_42_train_a1-33bc9da45a32": {
+        "admission": {
+          "active_gpus_after": [
+            2,
+            4,
+            5
+          ],
+          "per_gpu": {
+            "2": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 8558
+            }
+          },
+          "project_rss_reserved_after_mib": 98376
+        },
+        "bound_at": 1788766180.6562674,
+        "created_at": 1788766179.4084141,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32840,
+        "expected_vram_mib": 8558,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          2
+        ],
+        "job_id": "ikdv2_C1_42_train_a1",
+        "job_pid": 2753545,
+        "kind": "train",
+        "lease_id": "ikdv2_C1_42_train_a1-33bc9da45a32",
+        "observed_cuda_pids": [
+          2753901
+        ],
+        "owner_pid": 2753545,
+        "peak_cuda_pid_counts": {
+          "2": 1
+        },
+        "peak_rss_mib": 28842,
+        "per_gpu_peak_vram_mib": {
+          "2": 7922
+        },
+        "profiled_second_train": true
+      },
+      "oev1_content_c_same_modal_s42_a1-f5889ddfbd81": {
+        "admission": {
+          "active_gpus_after": [
+            2,
+            4,
+            5
+          ],
+          "per_gpu": {
+            "5": {
+              "project_cuda_processes_after": 1,
+              "project_vram_reserved_after_mib": 8300
+            }
+          },
+          "project_rss_reserved_after_mib": 163840
+        },
+        "bound_at": 1788740658.5759034,
+        "created_at": 1788740657.5067103,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8300,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          5
+        ],
+        "job_id": "oev1_content_c_same_modal_s42_a1",
+        "job_pid": 4148001,
+        "kind": "train",
+        "lease_id": "oev1_content_c_same_modal_s42_a1-f5889ddfbd81",
+        "observed_cuda_pids": [
+          4148148
+        ],
+        "owner_pid": 4148001,
+        "peak_cuda_pid_counts": {
+          "5": 1
+        },
+        "peak_rss_mib": 28483,
+        "per_gpu_peak_vram_mib": {
+          "5": 7742
+        },
+        "profiled_second_train": true
+      },
+      "oev1_content_c_shuffled_s42_a1-e3290598b3bd": {
+        "admission": {
+          "active_gpus_after": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "per_gpu": {
+            "4": {
+              "project_cuda_processes_after": 2,
+              "project_vram_reserved_after_mib": 16600
+            }
+          },
+          "project_rss_reserved_after_mib": 212992
+        },
+        "bound_at": 1788722342.1787002,
+        "created_at": 1788722340.6746268,
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8300,
+        "formal_train": true,
+        "free_safety_mib": 2048,
+        "gpus": [
+          4
+        ],
+        "job_id": "oev1_content_c_shuffled_s42_a1",
+        "job_pid": 2265608,
+        "kind": "train",
+        "lease_id": "oev1_content_c_shuffled_s42_a1-e3290598b3bd",
+        "observed_cuda_pids": [
+          2265745
+        ],
+        "owner_pid": 2265608,
+        "peak_cuda_pid_counts": {
+          "4": 1
+        },
+        "peak_rss_mib": 30312,
+        "per_gpu_peak_vram_mib": {
+          "4": 8020
+        },
+        "profiled_second_train": true
+      }
+    },
+    "policy": {
+      "formal_trains_per_gpu_default": 1,
+      "host_rss_admission_mib": 245760,
+      "host_rss_hard_mib": 307200,
+      "max_active_gpus": 3,
+      "max_cuda_processes_per_gpu": 2,
+      "project_vram_fraction_lt": 0.7
+    },
+    "schema": "jstars-project-resource-leases-v1"
+  },
+  "raw_monitor_only": true,
+  "new_gpu_tasks": 0,
+  "remote_mutations": false
+}

@@ -1,0 +1,261 @@
+{
+  "completion": {
+    "status": "COMPLETED",
+    "time": 1788786550.108749
+  },
+  "jobs": {
+    "N42_canary": {
+      "summary": {
+        "status": "completed",
+        "model": "N42",
+        "dataset": "llvip",
+        "images": 64,
+        "full_population": 2406,
+        "canary": true,
+        "native_capture_exact": true,
+        "metric_units": "fraction_0_to_1",
+        "metrics": {
+          "AP50": 0.0,
+          "AP75": 0.0,
+          "mAP50_95": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "per_class": []
+        },
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+        "input_data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+        "historical_training_args": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/args.yaml",
+        "objects": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/N42_canary_attempt1/capture/objects.jsonl.gz",
+        "evaluation_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/N42_canary_attempt1/capture_contract.json",
+        "resources": {
+          "gpu_ids": [
+            4
+          ],
+          "cuda_pid_counts": {
+            "4": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "4": 1370
+          },
+          "peak_rss_mib": 3520
+        },
+        "gpu_reserved_peak_mib": 884.0,
+        "gpu_allocated_peak_mib": 711.59912109375,
+        "seconds": 5.905960321426392,
+        "official_test_accessed": false,
+        "training_modified": false,
+        "new_protocol_N": false,
+        "physical_alignment_verified": false
+      },
+      "failure": null,
+      "status": {
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "time": 1788786460.3133023,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 12288,
+          "expected_vram_mib": 4096,
+          "gpu_ids": [
+            4
+          ],
+          "lease_id": "llvip_full_N42_canary-fc0e4d7272b3",
+          "pid": 759669,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 12052
+      }
+    },
+    "N42_full": {
+      "summary": {
+        "status": "completed",
+        "model": "N42",
+        "dataset": "llvip",
+        "images": 2406,
+        "full_population": 2406,
+        "canary": false,
+        "native_capture_exact": false,
+        "metric_units": "fraction_0_to_1",
+        "metrics": {
+          "AP50": 0.0,
+          "AP75": 0.0,
+          "mAP50_95": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "per_class": []
+        },
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+        "input_data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+        "historical_training_args": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/args.yaml",
+        "objects": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/N42_full_attempt1/capture/objects.jsonl.gz",
+        "evaluation_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/N42_full_attempt1/capture_contract.json",
+        "resources": {
+          "gpu_ids": [
+            3
+          ],
+          "cuda_pid_counts": {
+            "3": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "3": 1370
+          },
+          "peak_rss_mib": 3986
+        },
+        "gpu_reserved_peak_mib": 884.0,
+        "gpu_allocated_peak_mib": 711.61376953125,
+        "seconds": 15.161549091339111,
+        "official_test_accessed": false,
+        "training_modified": false,
+        "new_protocol_N": false,
+        "physical_alignment_verified": false
+      },
+      "failure": null,
+      "status": {
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "time": 1788786492.9088483,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 12288,
+          "expected_vram_mib": 1882,
+          "gpu_ids": [
+            3
+          ],
+          "lease_id": "llvip_full_N42_full-6bd8b4a46c1e",
+          "pid": 761392,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 4435
+      }
+    },
+    "T42_canary": {
+      "summary": {
+        "status": "completed",
+        "model": "T42",
+        "dataset": "llvip",
+        "images": 64,
+        "full_population": 2406,
+        "canary": true,
+        "native_capture_exact": true,
+        "metric_units": "fraction_0_to_1",
+        "metrics": {
+          "AP50": 0.0,
+          "AP75": 0.0,
+          "mAP50_95": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "per_class": []
+        },
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+        "input_data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml",
+        "historical_training_args": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/args.yaml",
+        "objects": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/T42_canary_attempt1/capture/objects.jsonl.gz",
+        "evaluation_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/T42_canary_attempt1/capture_contract.json",
+        "resources": {
+          "gpu_ids": [
+            4
+          ],
+          "cuda_pid_counts": {
+            "4": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "4": 1370
+          },
+          "peak_rss_mib": 3523
+        },
+        "gpu_reserved_peak_mib": 884.0,
+        "gpu_allocated_peak_mib": 711.5986328125,
+        "seconds": 8.983835220336914,
+        "official_test_accessed": false,
+        "training_modified": false,
+        "new_protocol_N": false,
+        "physical_alignment_verified": false
+      },
+      "failure": null,
+      "status": {
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "time": 1788786519.1199756,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 12288,
+          "expected_vram_mib": 4096,
+          "gpu_ids": [
+            4
+          ],
+          "lease_id": "llvip_full_T42_canary-f607591b3477",
+          "pid": 765276,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 11252
+      }
+    },
+    "T42_full": {
+      "summary": {
+        "status": "completed",
+        "model": "T42",
+        "dataset": "llvip",
+        "images": 2406,
+        "full_population": 2406,
+        "canary": false,
+        "native_capture_exact": false,
+        "metric_units": "fraction_0_to_1",
+        "metrics": {
+          "AP50": 0.0,
+          "AP75": 0.0,
+          "mAP50_95": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "per_class": []
+        },
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+        "input_data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml",
+        "historical_training_args": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/args.yaml",
+        "objects": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/T42_full_attempt1/capture/objects.jsonl.gz",
+        "evaluation_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/T42_full_attempt1/capture_contract.json",
+        "resources": {
+          "gpu_ids": [
+            3
+          ],
+          "cuda_pid_counts": {
+            "3": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "3": 1370
+          },
+          "peak_rss_mib": 3973
+        },
+        "gpu_reserved_peak_mib": 884.0,
+        "gpu_allocated_peak_mib": 711.59912109375,
+        "seconds": 15.718056201934814,
+        "official_test_accessed": false,
+        "training_modified": false,
+        "new_protocol_N": false,
+        "physical_alignment_verified": false
+      },
+      "failure": null,
+      "status": {
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "time": 1788786550.1080923,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 12288,
+          "expected_vram_mib": 1882,
+          "gpu_ids": [
+            3
+          ],
+          "lease_id": "llvip_full_T42_full-9eff7e37bee2",
+          "pid": 767396,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 4435
+      }
+    }
+  },
+  "log_tail": ""
+}

@@ -1,0 +1,441 @@
+{
+  "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\dronevehicle_full_attempt1",
+  "models": {
+    "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+    "N0": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt"
+  },
+  "filter_counts": {
+    "train": {
+      "all_exported": 19416,
+      "real_rgb_gt": 15782,
+      "pair_iou_ge_05": 15253,
+      "with_reference_candidate": 15058,
+      "base_cohort": 15019
+    },
+    "val": {
+      "all_exported": 3794,
+      "real_rgb_gt": 3084,
+      "pair_iou_ge_05": 2946,
+      "with_reference_candidate": 2837,
+      "base_cohort": 2821
+    }
+  },
+  "cohort_matches_previous_exact": true,
+  "source_files": {
+    "objects.jsonl": {
+      "bytes": 70960762,
+      "mtime_ns": 1788781753929499600
+    },
+    "logits.npz": {
+      "bytes": 20154305,
+      "mtime_ns": 1788781836666815100
+    },
+    "summary.json": {
+      "bytes": 2064,
+      "mtime_ns": 1788781739625544800
+    },
+    "model_identity.json": {
+      "bytes": 10512,
+      "mtime_ns": 1788781837457799200
+    }
+  },
+  "zero_shift_matches_previous_definitions": {
+    "native_ce_max_abs": 0.0,
+    "teacher_ce_max_abs": 0.0,
+    "kl_max_abs": 0.0,
+    "cosine_max_abs": 0.0
+  },
+  "raw_vs_json_agreement": {
+    "N42_decode_vs_json_max_abs_px": 4.950362722411228e-05,
+    "T42_decode_vs_json_max_abs_px": 5.397672464368952e-05
+  },
+  "stratum_context": [
+    {
+      "split": "train",
+      "fixed_stratum": "base",
+      "n": 15019,
+      "unique_images": 992,
+      "source_groups": {
+        "1": 9,
+        "100MEDIA": 353,
+        "101MEDIA": 24,
+        "123": 24,
+        "2": 3,
+        "2356": 5,
+        "310_80m45night1": 45,
+        "313_120m30_1": 16,
+        "313_120m30_3": 29,
+        "316_100_15": 6,
+        "316_100_30": 11,
+        "316_100_45m_2": 51,
+        "319_100_45": 49,
+        "319_120m_30_1": 27,
+        "319_120m_30_2": 39,
+        "319_120m_30_3": 144,
+        "319_80m_30_2": 29,
+        "321_100_15_3": 56,
+        "321_100_30_1": 2,
+        "321_100_30_2": 71,
+        "321_100_30_3": 20,
+        "321_100_30_4": 59,
+        "321_120_15_1": 8,
+        "321_80_15": 32,
+        "321_80_45_2": 110,
+        "322_100_30_1": 23,
+        "322_100_30_4": 12,
+        "322_100_45_2": 48,
+        "322_100_45_3": 1,
+        "322_100_45_4": 39,
+        "322_120_15_1": 37,
+        "322_120_15_2": 43,
+        "322_120_15_3": 28,
+        "322_80_45": 16,
+        "39_120m45_1": 92,
+        "39_120m45_2": 282,
+        "5": 6,
+        "5-11": 79,
+        "5-13": 123,
+        "5-14": 211,
+        "5-14 (2)": 36,
+        "5-15": 114,
+        "5-15 (2)": 143,
+        "5-15 (3)": 39,
+        "5-17": 229,
+        "5-17 (2)": 13,
+        "5-20": 216,
+        "5-20 (2)": 75,
+        "5-28": 308,
+        "5-28 (2)": 84,
+        "5-29": 128,
+        "5-30": 248,
+        "5-30 (2)": 92,
+        "5-8": 209,
+        "6": 3,
+        "6-1 (2)": 271,
+        "6-1(1)": 240,
+        "6-10": 103,
+        "6-10 (2)": 60,
+        "6-3": 158,
+        "6-4": 191,
+        "6-4 (2)": 100,
+        "6-5": 308,
+        "6-5 (2)": 230,
+        "6-5 (3)": 313,
+        "6-5 (4)": 86,
+        "6-6": 290,
+        "6-6 (2)": 76,
+        "6-8": 109,
+        "6-8 (2)": 112,
+        "6-9": 171,
+        "6-9 (2)": 152,
+        "9": 8,
+        "A": 430,
+        "B": 4548,
+        "cheliu2-1": 14,
+        "cheliu2-2": 13,
+        "cheliu2-3": 20,
+        "image": 1610,
+        "madalA": 9,
+        "modalA": 1053,
+        "modelA_1": 7,
+        "shibiao": 5,
+        "shibiao (2)": 6,
+        "tupian": 98,
+        "zzccvv": 29
+      },
+      "stride_counts": {
+        "8.0": 13170,
+        "16.0": 1849
+      },
+      "pair_iou_ge_08_n": 11915,
+      "ir_gt_support_n": 14906,
+      "native_owner_count_eq1_n": 13462
+    },
+    {
+      "split": "train",
+      "fixed_stratum": "n_iou_lt_070",
+      "n": 366,
+      "unique_images": 177,
+      "source_groups": {
+        "310_80m45night1": 1,
+        "319_100_45": 5,
+        "319_120m_30_2": 4,
+        "319_120m_30_3": 5,
+        "321_100_30_2": 2,
+        "321_80_45_2": 9,
+        "322_100_45_4": 1,
+        "322_120_15_1": 6,
+        "322_120_15_3": 2,
+        "39_120m45_1": 4,
+        "39_120m45_2": 50,
+        "5-11": 1,
+        "5-13": 1,
+        "5-14 (2)": 2,
+        "5-17": 1,
+        "5-20": 5,
+        "5-29": 8,
+        "5-30": 6,
+        "5-30 (2)": 1,
+        "6-10": 1,
+        "6-10 (2)": 1,
+        "6-3": 2,
+        "6-4": 2,
+        "6-4 (2)": 1,
+        "6-6": 1,
+        "6-6 (2)": 1,
+        "A": 3,
+        "B": 203,
+        "image": 34,
+        "modalA": 3
+      },
+      "stride_counts": {
+        "8.0": 296,
+        "16.0": 70
+      },
+      "pair_iou_ge_08_n": 310,
+      "ir_gt_support_n": 365,
+      "native_owner_count_eq1_n": 319
+    },
+    {
+      "split": "train",
+      "fixed_stratum": "quality_gate070",
+      "n": 87,
+      "unique_images": 70,
+      "source_groups": {
+        "319_120m_30_2": 1,
+        "321_100_30_2": 1,
+        "321_80_45_2": 1,
+        "322_120_15_1": 1,
+        "39_120m45_1": 2,
+        "39_120m45_2": 13,
+        "5-20": 1,
+        "5-29": 5,
+        "5-30": 2,
+        "6-3": 2,
+        "6-4": 1,
+        "6-6 (2)": 1,
+        "B": 46,
+        "image": 10
+      },
+      "stride_counts": {
+        "8.0": 83,
+        "16.0": 4
+      },
+      "pair_iou_ge_08_n": 84,
+      "ir_gt_support_n": 87,
+      "native_owner_count_eq1_n": 81
+    },
+    {
+      "split": "val",
+      "fixed_stratum": "base",
+      "n": 2821,
+      "unique_images": 192,
+      "source_groups": {
+        "unavailable:val": 2821
+      },
+      "stride_counts": {
+        "16.0": 339,
+        "8.0": 2482
+      },
+      "pair_iou_ge_08_n": 2237,
+      "ir_gt_support_n": 2804,
+      "native_owner_count_eq1_n": 2488
+    },
+    {
+      "split": "val",
+      "fixed_stratum": "n_iou_lt_070",
+      "n": 229,
+      "unique_images": 38,
+      "source_groups": {
+        "unavailable:val": 229
+      },
+      "stride_counts": {
+        "8.0": 184,
+        "16.0": 45
+      },
+      "pair_iou_ge_08_n": 221,
+      "ir_gt_support_n": 229,
+      "native_owner_count_eq1_n": 173
+    },
+    {
+      "split": "val",
+      "fixed_stratum": "quality_gate070",
+      "n": 47,
+      "unique_images": 17,
+      "source_groups": {
+        "unavailable:val": 47
+      },
+      "stride_counts": {
+        "8.0": 43,
+        "16.0": 4
+      },
+      "pair_iou_ge_08_n": 47,
+      "ir_gt_support_n": 47,
+      "native_owner_count_eq1_n": 34
+    }
+  ],
+  "status": "COMPLETED_PENDING_INDEPENDENT_REVIEW",
+  "dataset": "dronevehicle",
+  "cpu_only": true,
+  "new_network_inference": false,
+  "new_training": false,
+  "test_accessed": false,
+  "l1_admission_changed": false,
+  "ap_or_kd_gain_claim": false,
+  "conditions": [
+    {
+      "dx": 0,
+      "dy": 0,
+      "linf": 0,
+      "l2": 0.0
+    },
+    {
+      "dx": 1,
+      "dy": 0,
+      "linf": 1,
+      "l2": 1.0
+    },
+    {
+      "dx": -1,
+      "dy": 0,
+      "linf": 1,
+      "l2": 1.0
+    },
+    {
+      "dx": 0,
+      "dy": 1,
+      "linf": 1,
+      "l2": 1.0
+    },
+    {
+      "dx": 0,
+      "dy": -1,
+      "linf": 1,
+      "l2": 1.0
+    },
+    {
+      "dx": 1,
+      "dy": 1,
+      "linf": 1,
+      "l2": 1.4142135623730951
+    },
+    {
+      "dx": 1,
+      "dy": -1,
+      "linf": 1,
+      "l2": 1.4142135623730951
+    },
+    {
+      "dx": -1,
+      "dy": 1,
+      "linf": 1,
+      "l2": 1.4142135623730951
+    },
+    {
+      "dx": -1,
+      "dy": -1,
+      "linf": 1,
+      "l2": 1.4142135623730951
+    },
+    {
+      "dx": 2,
+      "dy": 0,
+      "linf": 2,
+      "l2": 2.0
+    },
+    {
+      "dx": -2,
+      "dy": 0,
+      "linf": 2,
+      "l2": 2.0
+    },
+    {
+      "dx": 0,
+      "dy": 2,
+      "linf": 2,
+      "l2": 2.0
+    },
+    {
+      "dx": 0,
+      "dy": -2,
+      "linf": 2,
+      "l2": 2.0
+    },
+    {
+      "dx": 2,
+      "dy": 2,
+      "linf": 2,
+      "l2": 2.8284271247461903
+    },
+    {
+      "dx": 2,
+      "dy": -2,
+      "linf": 2,
+      "l2": 2.8284271247461903
+    },
+    {
+      "dx": -2,
+      "dy": 2,
+      "linf": 2,
+      "l2": 2.8284271247461903
+    },
+    {
+      "dx": -2,
+      "dy": -2,
+      "linf": 2,
+      "l2": 2.8284271247461903
+    },
+    {
+      "dx": 4,
+      "dy": 0,
+      "linf": 4,
+      "l2": 4.0
+    },
+    {
+      "dx": -4,
+      "dy": 0,
+      "linf": 4,
+      "l2": 4.0
+    },
+    {
+      "dx": 0,
+      "dy": 4,
+      "linf": 4,
+      "l2": 4.0
+    },
+    {
+      "dx": 0,
+      "dy": -4,
+      "linf": 4,
+      "l2": 4.0
+    },
+    {
+      "dx": 4,
+      "dy": 4,
+      "linf": 4,
+      "l2": 5.656854249492381
+    },
+    {
+      "dx": 4,
+      "dy": -4,
+      "linf": 4,
+      "l2": 5.656854249492381
+    },
+    {
+      "dx": -4,
+      "dy": 4,
+      "linf": 4,
+      "l2": 5.656854249492381
+    },
+    {
+      "dx": -4,
+      "dy": -4,
+      "linf": 4,
+      "l2": 5.656854249492381
+    }
+  ],
+  "dfl_translation": "linear mass transport at T1/T2 separately; discarded exterior mass recorded; conditional retained distribution for losses",
+  "seconds": 11.470674753189087,
+  "per_object_npz_bytes": 54640814
+}

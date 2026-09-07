@@ -1,0 +1,66 @@
+{
+  "status": "PASSED_FOLLOW_ON_IMPORT_CONFIG_SOURCE_CHECKS",
+  "actual_internal_runtime_import_order_executed": true,
+  "internal_module_bindings": {
+    "coverage_probe": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\coverage_probe.py",
+    "runtime": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\runtime.py",
+    "selection_adapter": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\selection_adapter.py",
+    "localization_loss": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\localization_loss.py",
+    "diagnose_opportunities": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\diagnose_opportunities.py",
+    "train_object_evidence": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+    "tracked_pair_data": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\tracked_pair_data.py",
+    "object_evidence_loss": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+    "paired_rgbir_data": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+    "geometry_contract": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\geometry_contract.py"
+  },
+  "old_ambiguous_generator_reproduced": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\prepare_configs.py",
+  "explicit_generator_bound": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\prepare_configs.py",
+  "configs": {
+    "llvip": {
+      "required_cfg_keys_complete": [],
+      "expected_nc": 1,
+      "expected_train_images": 9619,
+      "old_coverage_recipe_paths_match": true,
+      "LocalizationConfig_constructed": true,
+      "EvidenceConfig_constructed": true
+    },
+    "drone": {
+      "required_cfg_keys_complete": [],
+      "expected_nc": 5,
+      "expected_train_images": 17990,
+      "old_coverage_recipe_paths_match": true,
+      "LocalizationConfig_constructed": true,
+      "EvidenceConfig_constructed": true
+    }
+  },
+  "all_11_source_snapshot_paths_exist": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\diagnose_natural_flow.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\coverage_probe.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\runtime.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\selection_adapter.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\prepare_configs.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\localization_loss.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\diagnose_opportunities.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\tracked_pair_data.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+    "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2\\task_conditional_reference\\legacy_oev1\\train_object_evidence.py"
+  ],
+  "external_stubs": [
+    "ultralytics DetectionTrainer/data APIs",
+    "project_resource_guard",
+    "write_jstars_run_receipt"
+  ],
+  "limitations": [
+    "Not actual pinned Ultralytics/lease runtime",
+    "Remote configs/weights existence not rechecked locally",
+    "No real data loader or model forward"
+  ],
+  "cuda_initialized": false,
+  "entry_unchanged": true,
+  "hash_computed": false,
+  "entry_stat": {
+    "bytes": 23025,
+    "mtime_ns": 1788788521018144000
+  }
+}

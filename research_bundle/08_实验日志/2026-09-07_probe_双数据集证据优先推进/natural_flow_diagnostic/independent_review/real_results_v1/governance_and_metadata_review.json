@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "datasets": [
+    {
+      "dataset": "llvip",
+      "governance_source": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/splits/grouped_v1/fit.tsv",
+        "bytes": 2606799,
+        "mtime_ns": 1788110903658727413,
+        "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\governance_group_sources\\llvip_0.tsv"
+      },
+      "governance_rows": 9619,
+      "exact_mapped_natural_images": 2048,
+      "unique_natural_groups": 14,
+      "canary_full_first_two_selection_exact": true,
+      "all_loader_metadata_exact": true,
+      "concentrations": {
+        "C_image": {
+          "objects": 2217,
+          "unique_units": 1317,
+          "top1_objects": 8,
+          "top5_objects": 36,
+          "top1_fraction": 0.0036084799278304014,
+          "top5_fraction": 0.016238159675236806
+        },
+        "C_group": {
+          "objects": 2217,
+          "unique_units": 14,
+          "top1_objects": 538,
+          "top5_objects": 1346,
+          "top1_fraction": 0.2426702751465945,
+          "top5_fraction": 0.607126747857465
+        },
+        "L_image": {
+          "objects": 207,
+          "unique_units": 187,
+          "top1_objects": 3,
+          "top5_objects": 11,
+          "top1_fraction": 0.014492753623188406,
+          "top5_fraction": 0.05314009661835749
+        },
+        "L_group": {
+          "objects": 207,
+          "unique_units": 14,
+          "top1_objects": 34,
+          "top5_objects": 134,
+          "top1_fraction": 0.1642512077294686,
+          "top5_fraction": 0.6473429951690821
+        }
+      }
+    },
+    {
+      "dataset": "drone",
+      "governance_source": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb_train_source_groups.tsv",
+        "bytes": 200203,
+        "mtime_ns": 1788114682910690046,
+        "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\natural_flow_diagnostic\\governance_group_sources\\drone_0.tsv"
+      },
+      "governance_rows": 17990,
+      "exact_mapped_natural_images": 2048,
+      "unique_natural_groups": 68,
+      "canary_full_first_two_selection_exact": true,
+      "all_loader_metadata_exact": true,
+      "concentrations": {
+        "C_image": {
+          "objects": 7821,
+          "unique_units": 1317,
+          "top1_objects": 75,
+          "top5_objects": 321,
+          "top1_fraction": 0.009589566551591868,
+          "top5_fraction": 0.04104334484081319
+        },
+        "C_group": {
+          "objects": 7821,
+          "unique_units": 64,
+          "top1_objects": 3897,
+          "top5_objects": 5629,
+          "top1_fraction": 0.4982738780207135,
+          "top5_fraction": 0.7197289349188083
+        },
+        "L_image": {
+          "objects": 602,
+          "unique_units": 268,
+          "top1_objects": 19,
+          "top5_objects": 62,
+          "top1_fraction": 0.03156146179401993,
+          "top5_fraction": 0.10299003322259136
+        },
+        "L_group": {
+          "objects": 602,
+          "unique_units": 31,
+          "top1_objects": 364,
+          "top5_objects": 518,
+          "top1_fraction": 0.6046511627906976,
+          "top5_fraction": 0.8604651162790697
+        }
+      }
+    }
+  ],
+  "overviews": [
+    {
+      "dataset": "llvip",
+      "RGB_GT": 5201,
+      "C_base": 5128,
+      "C_eligible": 4406,
+      "C_selected": 2217,
+      "C_selected_batches": 64,
+      "C_selected_images": 1317,
+      "C_selected_groups": 14,
+      "L_base": 5033,
+      "L_selected": 207,
+      "L_selected_batches": 62,
+      "L_selected_images": 187,
+      "L_selected_groups": 14,
+      "C_classes": {
+        "0": {
+          "base": 5128,
+          "eligible": 4406,
+          "selected": 2217
+        }
+      },
+      "L_classes": {
+        "0": {
+          "base": 5033,
+          "selected": 207
+        }
+      }
+    },
+    {
+      "dataset": "drone",
+      "RGB_GT": 30197,
+      "C_base": 28297,
+      "C_eligible": 15616,
+      "C_selected": 7821,
+      "C_selected_batches": 64,
+      "C_selected_images": 1317,
+      "C_selected_groups": 64,
+      "L_base": 21488,
+      "L_selected": 602,
+      "L_selected_batches": 63,
+      "L_selected_images": 268,
+      "L_selected_groups": 31,
+      "C_classes": {
+        "0": {
+          "base": 24226,
+          "eligible": 13530,
+          "selected": 6935
+        },
+        "1": {
+          "base": 905,
+          "eligible": 370,
+          "selected": 179
+        },
+        "2": {
+          "base": 1270,
+          "eligible": 593,
+          "selected": 320
+        },
+        "3": {
+          "base": 1221,
+          "eligible": 822,
+          "selected": 247
+        },
+        "4": {
+          "base": 675,
+          "eligible": 301,
+          "selected": 140
+        }
+      },
+      "L_classes": {
+        "3": {
+          "base": 964,
+          "selected": 6
+        },
+        "2": {
+          "base": 956,
+          "selected": 21
+        },
+        "0": {
+          "base": 18328,
+          "selected": 561
+        },
+        "1": {
+          "base": 702,
+          "selected": 9
+        },
+        "4": {
+          "base": 538,
+          "selected": 5
+        }
+      }
+    }
+  ],
+  "collection_files": 129,
+  "gpu_or_ssh_used": false,
+  "new_hash_computed": false
+}

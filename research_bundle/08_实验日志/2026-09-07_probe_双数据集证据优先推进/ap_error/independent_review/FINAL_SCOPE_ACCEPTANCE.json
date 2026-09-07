@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-07",
+  "auditor": "/root/loc_stress",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "scope": "Existing six-endpoint Drone TIDE descriptive AP/oracle/sorting analysis only",
+  "supersedes_warning_only": "EXPERIMENT_AUDIT.json:largest_error_oracle_headline",
+  "old_audit_preserved": true,
+  "warning_resolution": "Both reports and generation source now limit the maximum claim to six main errors and separately disclose special FP.",
+  "wording_sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\README.md",
+      "bytes": 2962,
+      "mtime_ns": 1788786989067478300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\README_DRONE.md",
+      "bytes": 8148,
+      "mtime_ns": 1788786989067478300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_双数据集证据优先推进\\ap_error\\summarize_drone.py",
+      "bytes": 7313,
+      "mtime_ns": 1788786989068483800
+    }
+  ],
+  "numeric_evidence": "recompute_receipt.json",
+  "additional_truth": "tie_truth_receipt.json",
+  "unchanged_limits": [
+    "No LLVIP inputs accepted here",
+    "Not a claim of default COCOeval bitwise equality",
+    "No teacher/student learnability or causal KD gains",
+    "No L1 or training admission"
+  ],
+  "new_hashes_computed": false
+}

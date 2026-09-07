@@ -1,0 +1,169 @@
+{
+  "completion": {
+    "status": "COMPLETED",
+    "time": 1788789016.7273316
+  },
+  "jobs": {
+    "llvip_canary": {
+      "summary": {
+        "status": "COMPLETED",
+        "dataset": "llvip",
+        "batches": 2,
+        "seconds": 11.119837045669556,
+        "diagnostic_status": "UNVERIFIED_GEOMETRY_DIAGNOSTIC",
+        "resources": {
+          "gpu_ids": [
+            1
+          ],
+          "cuda_pid_counts": {
+            "1": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "1": 2204
+          },
+          "peak_rss_mib": 5957
+        }
+      },
+      "failure": null,
+      "status": {
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "time": 1788788696.640802,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 24576,
+          "expected_vram_mib": 4096,
+          "gpu_ids": [
+            1
+          ],
+          "lease_id": "natural_llvip_canary-ed9d4ee72af2",
+          "pid": 977933,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 21870
+      }
+    },
+    "llvip_full": {
+      "summary": {
+        "status": "COMPLETED",
+        "dataset": "llvip",
+        "batches": 64,
+        "seconds": 66.07200574874878,
+        "diagnostic_status": "UNVERIFIED_GEOMETRY_DIAGNOSTIC",
+        "resources": {
+          "gpu_ids": [
+            1
+          ],
+          "cuda_pid_counts": {
+            "1": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "1": 2208
+          },
+          "peak_rss_mib": 6554
+        }
+      },
+      "failure": null,
+      "status": {
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "time": 1788788779.2668343,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 24576,
+          "expected_vram_mib": 2716,
+          "gpu_ids": [
+            1
+          ],
+          "lease_id": "natural_llvip_full-6699bde81976",
+          "pid": 981358,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 21866
+      }
+    },
+    "drone_canary": {
+      "summary": {
+        "status": "COMPLETED",
+        "dataset": "dronevehicle",
+        "batches": 2,
+        "seconds": 16.258874893188477,
+        "diagnostic_status": "UNVERIFIED_GEOMETRY_DIAGNOSTIC",
+        "resources": {
+          "gpu_ids": [
+            1
+          ],
+          "cuda_pid_counts": {
+            "1": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "1": 2250
+          },
+          "peak_rss_mib": 6277
+        }
+      },
+      "failure": null,
+      "status": {
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "time": 1788788811.3677368,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 24576,
+          "expected_vram_mib": 4096,
+          "gpu_ids": [
+            1
+          ],
+          "lease_id": "natural_drone_canary-cc0ac318a58a",
+          "pid": 991924,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 21824
+      }
+    },
+    "drone_full": {
+      "summary": {
+        "status": "COMPLETED",
+        "dataset": "dronevehicle",
+        "batches": 64,
+        "seconds": 185.12858653068542,
+        "diagnostic_status": "UNVERIFIED_GEOMETRY_DIAGNOSTIC",
+        "resources": {
+          "gpu_ids": [
+            6
+          ],
+          "cuda_pid_counts": {
+            "6": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "6": 2278
+          },
+          "peak_rss_mib": 6848
+        }
+      },
+      "failure": null,
+      "status": {
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "time": 1788789016.690333,
+        "monitor_errors": [],
+        "launch": {
+          "cuda_processes_per_gpu": 1,
+          "expected_rss_mib": 24576,
+          "expected_vram_mib": 2762,
+          "gpu_ids": [
+            6
+          ],
+          "lease_id": "natural_drone_full-663590eaf7c9",
+          "pid": 997237,
+          "status": "LAUNCHED"
+        },
+        "minimum_free_mib": 13269
+      }
+    }
+  },
+  "log_tail": ""
+}

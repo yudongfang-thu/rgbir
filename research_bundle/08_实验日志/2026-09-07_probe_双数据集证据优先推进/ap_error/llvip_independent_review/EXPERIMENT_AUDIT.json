@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-07",
+  "auditor": "/root/loc_stress",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "VALID_ATTEMPT2_COMPLETE_POPULATION_TIDE_AND_COCO_CROSSCHECK_PASS",
+  "eval_type": "real_gt",
+  "declared_input_set": "verification_receipt.json:input_stat_unchanged",
+  "audited_input_hashes": [],
+  "new_hashes_computed": false,
+  "hash_exception_reason": "Explicit instruction prohibits new hashes; source bytes and stat checked, prior attempts retained.",
+  "checks": {
+    "gt_provenance": {"status": "pass", "details": "Processed aliases retain correct YOLO label roots; four actual contracts record original-label/loader per-image cls+boxes exact. All local full capture GT reconstructed; 2406 relative pair keys and per-image GT/canvas/original shape exact. Original server label bytes were not reread.", "evidence": ["verification_receipt.json:actual_population_and_identity", "verification_receipt.json:verified_pair_manifest_exact_to_root", "../../llvip_full_eval/export_full_dev.py:15"]},
+    "score_normalization": {"status": "pass", "details": "Both models AP50/AP75 TIDE direct replay exact; independent COCOeval with default and TIDE recall grids matches within 1.42e-14pp on this cache. Pinned AP is separately reported, not redefined.", "evidence": ["verification_receipt.json:TIDE_direct_CPU_rerun", "verification_receipt.json:independent_COCOeval_AP_crosscheck"]},
+    "result_existence": {"status": "pass", "details": "Actual canary64/GT279 and full2406/GT7879 artifacts exist; full is capture-only; original invalid attempt1 preserved. Two canaries native/capture metric JSON and kwargs/loader order exact.", "evidence": ["verification_receipt.json:actual_population_and_identity", "../../llvip_full_eval/ATTEMPT1_INVALID.md"]},
+    "dead_code": {"status": "pass", "details": "Current/local collected exporter and executed task snapshots byte equal. Actual contracts establish nonzero GT and per-image loader label check execution. Alias-aware synthetic tests replay exact.", "evidence": ["verification_receipt.json:alias_aware_synthetic_tests_exact", "../../llvip_full_eval/export_full_dev.py:123"]},
+    "resource_compliance": {"status": "pass", "details": "Recorded active project GPUs [2,4,5], one new CUDA process on4 per sequential job, NVML peak1370MiB; full reservation1882MiB follows measured canary. Minimum sampled free14662MiB; maximum sampled project RSS149020MiB; all jobs completed without monitor errors. This is receipt-based scoped verification, not continuous observation of every server process.", "evidence": ["verification_receipt.json:resource_receipts", "../../llvip_full_eval/launch_receipt_attempt2.json"]},
+    "scope": {"status": "pass", "details": "Old seed42 E200 workers8 checkpoints with evaluation workers4; loaded model, EMA field absent. No new protocol N, three-seed KD, physical registration or L1 admission. Single-class Cls/Both0 and large Loc oracle are correctly bounded in author report.", "evidence": ["../README_LLVIP.md", "EXPERIMENT_AUDIT.md"]},
+    "eval_type": {"status": "pass", "details": "Saved real RGB/IR dataset annotations; shared labels do not independently establish physical alignment. Synthetic tests only verify implementation.", "evidence": ["verification_receipt.json", "synthetic_rerun/synthetic_validation.json"]}
+  },
+  "claims": [
+    {"id": "old_LLViP_full_dev_AP_and_TIDE_errors", "impact": "supported", "evidence": "verification_receipt.json", "rationale": "Complete valid population and independently reproduced metrics/oracles support this descriptive evaluation."},
+    {"id": "single_class_Cls_zero_means_classification_solved", "impact": "unsupported", "evidence": "EXPERIMENT_AUDIT.md", "rationale": "One foreground class structurally removes inter-class error categories; foreground/background sorting and recall remain."},
+    {"id": "AP75_Loc56pp_is_distillable_gain", "impact": "unsupported", "evidence": "EXPERIMENT_AUDIT.md", "rationale": "Independent counterfactual oracle correction/suppression is neither teacher-target validity nor student learnability nor attainable KD gain."},
+    {"id": "same_labels_prove_physical_registration_or_L1", "impact": "unsupported", "evidence": "verification_receipt.json:physical_registration_or_KD_gain", "rationale": "Exact shared labels and relative-key pairing provide annotation/identity consistency only."}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_BEFORE_FINAL_RECEIPT",
+  "scope": "Local packaging/access failure; completed natural-flow CPU recomputation result remains PASS",
+  "error": "Windows Python3.8 pathlib.stat cannot open a collected review-source path longer than MAX_PATH using ordinary path syntax (WinError3).",
+  "preserved_source": "finalize_initial_source.py",
+  "repair": "Use explicit Windows extended path prefix for collection-record stat only; no input, measurement or audit criterion changes.",
+  "new_hash_computed": false
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-07",
+  "auditor": "/root/loc_stress",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "SUPPLEMENT_SOURCE_RAW_COUNTS_AND_MACRO_CLOSURE_PASS",
+  "declared_input_set": "supplement_recompute_receipt.json:sources_before_and_after_stat_equal",
+  "audited_input_hashes": [],
+  "new_hashes_computed": false,
+  "hash_exception_reason": "Explicit current instruction prohibits new hashes; source stat and byte equality used.",
+  "checks": {
+    "gt_provenance": {"status": "pass", "details": "Class oracle shares original 22462 real RGB GT; bridge has all 3084 non-background val GT in 194 of 200 exported dev images; six background-only image names exact.", "evidence": "supplement_recompute_receipt.json"},
+    "score_normalization": {"status": "pass", "details": "Five class APs average to original macro; class oracle AP differences average to main Cls dAP. All 20 report rows mean/sample SD/paired seeds exact. Bridge uses stated whole-GT and common-eligible denominators separately.", "evidence": "supplement_recompute_receipt.json:class_oracle_checks"},
+    "result_existence": {"status": "pass", "details": "Six class-oracle endpoint JSONs equal summary; all 3084 saved object-state rows independently rebuilt from raw and exact.", "evidence": "supplement_recompute_receipt.json:bridge_raw_all_3084_rows_exact"},
+    "dead_code": {"status": "pass", "details": "Executed source copies byte equal live supplement sources; copied original analyzer byte equal original. No large TIDE replay was needed for this scoped arithmetic/raw-count review.", "evidence": "supplement_recompute_receipt.json:source_copies_byte_equal"},
+    "class_matrix": {"status": "pass", "details": "All six endpoint matrix rows/totals close to main Cls score bins/error counts; N_s0 full raw matrices independently reconstructed by NumPy at both thresholds and all three score ranges exactly.", "evidence": "supplement_recompute_receipt.json:independent_numpy_N_s0_complete_Cls_matrices"},
+    "common_eligible": {"status": "pass", "details": "All five classes and totals close: eligible2946, common repair175, T-only286, N0-only34; T repair461 and paired N0 repair209. Whole-population N0 repair221 uses a larger eligible set and is separately labeled.", "evidence": "supplement_recompute_receipt.json:bridge_all_five_class_counts_and_common_eligible_closure"},
+    "scope": {"status": "pass", "details": "Post-result descriptive supplements only; full post-NMS AP oracle and 200-image GT-associated candidate counts have distinct canvas/matching/population. No causal IR/KD gain, attainable upper bound, student learnability or L1 acceptance.", "evidence": "SUPPLEMENT_AUDIT.md"},
+    "eval_type": {"status": "pass", "details": "real_gt; existing human dataset RGB labels, GT-assisted association is explicitly disclosed.", "evidence": "../BRIDGE_PROTOCOL.md"}
+  },
+  "claims": [
+    {"id": "three_minority_classes_contribute_about_94_3_percent_of_N_AP50_macro_Cls_dAP", "impact": "supported", "evidence": "supplement_recompute_receipt.json:minority_class_contribution_fractions", "rationale": "Ratio of sums of three-seed mean per-class Cls dAP is 0.9426240109735807."},
+    {"id": "bridge_T_only_286_on_common_eligible", "impact": "supported", "evidence": "supplement_recompute_receipt.json:bridge_all_five_class_counts_and_common_eligible_closure", "rationale": "Every raw object state reconstructed and all class totals close."},
+    {"id": "bridge_or_oracle_is_attainable_KD_gain_bound", "impact": "unsupported", "evidence": "SUPPLEMENT_AUDIT.md", "rationale": "The descriptive opportunity/oracle values do not estimate transferable or learnable teacher information and use different populations and matching."}
+  ]
+}

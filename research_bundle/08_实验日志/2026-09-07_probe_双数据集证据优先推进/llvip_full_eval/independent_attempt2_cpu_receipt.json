@@ -1,0 +1,24 @@
+{
+  "status": "PASSED_CPU_SOURCE_LOGIC_ONLY",
+  "checks": {
+    "processed_alias_preserved_no_resolve_call": true,
+    "label_valid_parsed_float32": true,
+    "label_nan_rejected": true,
+    "label_range_rejected": true,
+    "label_zero_width_rejected": true,
+    "label_wrong_class_rejected": true,
+    "label_empty_rejected": true,
+    "actual_callback_accepts_exact_per_image_Gt": true,
+    "same_count_different_box_rejected": true,
+    "zero_loader_gt_rejected": true
+  },
+  "source": "E:\\SHARE\\\u5149sar\\08_\u5b9e\u9a8c\u65e5\u5fd7\\2026-09-07_probe_\u53cc\u6570\u636e\u96c6\u8bc1\u636e\u4f18\u5148\u63a8\u8fdb\\llvip_full_eval\\export_full_dev.py",
+  "source_stat": {
+    "bytes": 12260,
+    "mtime_ns": 1788786899727278700
+  },
+  "scope": "Actual AST blocks; path-only local fixtures and stubbed capture_contract; not actual Linux symlink loader/GPU",
+  "ssh": false,
+  "gpu": false,
+  "hash_computed": false
+}

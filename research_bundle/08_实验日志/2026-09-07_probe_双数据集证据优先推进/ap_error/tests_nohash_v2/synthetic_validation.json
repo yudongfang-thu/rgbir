@@ -1,0 +1,53 @@
+{
+  "0.5": {
+    "AP": 66.83168316831683,
+    "expected_prediction_error_labels": {
+      "class": "Cls",
+      "loc": "Loc",
+      "both": "Both",
+      "duplicate": "Dupe",
+      "background": "Bkg"
+    },
+    "observed_prediction_error_labels": {
+      "class": "Cls",
+      "loc": "Loc",
+      "both": "Both",
+      "duplicate": "Dupe",
+      "background": "Bkg"
+    },
+    "missed": [
+      "both",
+      "miss_empty_prediction"
+    ],
+    "independent_AP": 66.83168316831683,
+    "monotonic_invariance": true
+  },
+  "0.75": {
+    "AP": 66.83168316831683,
+    "expected_prediction_error_labels": {
+      "class": "Cls",
+      "loc": "Loc",
+      "both": "Both",
+      "duplicate": "Dupe",
+      "background": "Bkg"
+    },
+    "observed_prediction_error_labels": {
+      "class": "Cls",
+      "loc": "Loc",
+      "both": "Both",
+      "duplicate": "Dupe",
+      "background": "Bkg"
+    },
+    "missed": [
+      "both",
+      "miss_empty_prediction"
+    ],
+    "independent_AP": 66.83168316831683,
+    "monotonic_invariance": true
+  },
+  "absent_gt_class_and_score_tie": {
+    "AP": 50.0,
+    "independent_AP": 50.0,
+    "expected_AP": 50.0
+  }
+}

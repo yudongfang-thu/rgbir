@@ -1,0 +1,22 @@
+{
+  "status": "PASSED_CPU_READOUT_CONTRACT_ONLY",
+  "checks": {
+    "completed_64_allowed": true,
+    "partial_canary_seed_dataset_training_rejected": [
+      "status",
+      "batches",
+      "canary_only",
+      "seed",
+      "dataset",
+      "training_executed",
+      "new_hash_computed"
+    ],
+    "missing_full_files_rejected": true,
+    "top1_top5_known_object_denominators": true,
+    "empty_fraction_NA": true,
+    "gate_loss_previous_denominator_and_increase_rejected": true
+  },
+  "real_completed_results_read": false,
+  "gpu": false,
+  "hash_computed": false
+}

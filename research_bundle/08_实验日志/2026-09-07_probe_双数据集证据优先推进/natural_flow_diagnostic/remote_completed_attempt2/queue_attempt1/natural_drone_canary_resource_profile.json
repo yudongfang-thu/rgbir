@@ -1,0 +1,92 @@
+{
+  "status": "COMPLETED",
+  "exit_code": 0,
+  "time": 1788788811.3677368,
+  "monitor_errors": [],
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 24576,
+    "expected_vram_mib": 4096,
+    "gpu_ids": [
+      1
+    ],
+    "lease_id": "natural_drone_canary-cc0ac318a58a",
+    "pid": 991924,
+    "status": "LAUNCHED"
+  },
+  "samples": [
+    {
+      "time": 1788788785.742781,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145379
+    },
+    {
+      "time": 1788788788.5518265,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145715
+    },
+    {
+      "time": 1788788792.3501818,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145599
+    },
+    {
+      "time": 1788788795.200343,
+      "gpu": 1,
+      "memory_free_mib": 23648,
+      "memory_used_mib": 436,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145710
+    },
+    {
+      "time": 1788788798.2785642,
+      "gpu": 1,
+      "memory_free_mib": 22286,
+      "memory_used_mib": 1798,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 150901
+    },
+    {
+      "time": 1788788801.419025,
+      "gpu": 1,
+      "memory_free_mib": 21824,
+      "memory_used_mib": 2260,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 151180
+    },
+    {
+      "time": 1788788804.8965044,
+      "gpu": 1,
+      "memory_free_mib": 21824,
+      "memory_used_mib": 2260,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 146457
+    },
+    {
+      "time": 1788788807.9597356,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144826
+    },
+    {
+      "time": 1788788811.3676531,
+      "gpu": 1,
+      "memory_free_mib": 24082,
+      "memory_used_mib": 1,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144809
+    }
+  ],
+  "minimum_free_mib": 21824
+}

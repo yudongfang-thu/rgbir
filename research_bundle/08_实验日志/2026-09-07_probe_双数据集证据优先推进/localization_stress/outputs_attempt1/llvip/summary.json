@@ -1,0 +1,358 @@
+{
+  "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\llvip_full_attempt1",
+  "models": {
+    "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt"
+  },
+  "filter_counts": {
+    "train": {
+      "all_exported": 6846,
+      "real_rgb_gt": 2753,
+      "pair_iou_ge_05": 2753,
+      "with_reference_candidate": 2742,
+      "base_cohort": 2728
+    },
+    "val": {
+      "all_exported": 1442,
+      "real_rgb_gt": 643,
+      "pair_iou_ge_05": 643,
+      "with_reference_candidate": 584,
+      "base_cohort": 548
+    }
+  },
+  "cohort_matches_previous_exact": true,
+  "source_files": {
+    "objects.jsonl": {
+      "bytes": 19192615,
+      "mtime_ns": 1788781961261796100
+    },
+    "logits.npz": {
+      "bytes": 4084131,
+      "mtime_ns": 1788781983021177700
+    },
+    "summary.json": {
+      "bytes": 1712,
+      "mtime_ns": 1788781956639808300
+    },
+    "model_identity.json": {
+      "bytes": 6845,
+      "mtime_ns": 1788781984254687500
+    }
+  },
+  "zero_shift_matches_previous_definitions": {
+    "native_ce_max_abs": 0.0,
+    "teacher_ce_max_abs": 0.0,
+    "kl_max_abs": 0.0,
+    "cosine_max_abs": 0.0
+  },
+  "raw_vs_json_agreement": {
+    "N42_decode_vs_json_max_abs_px": 4.9188852699444396e-05,
+    "T42_decode_vs_json_max_abs_px": 4.8665343683751416e-05
+  },
+  "stratum_context": [
+    {
+      "split": "train",
+      "fixed_stratum": "base",
+      "n": 2728,
+      "unique_images": 1024,
+      "source_groups": {
+        "02": 127,
+        "03": 145,
+        "05": 160,
+        "06": 200,
+        "08": 463,
+        "09": 397,
+        "10": 302,
+        "11": 131,
+        "13": 179,
+        "14": 164,
+        "15": 126,
+        "16": 125,
+        "17": 108,
+        "18": 101
+      },
+      "stride_counts": {
+        "16.0": 2402,
+        "8.0": 326
+      },
+      "pair_iou_ge_08_n": 2728,
+      "ir_gt_support_n": 2728,
+      "native_owner_count_eq1_n": 2560
+    },
+    {
+      "split": "train",
+      "fixed_stratum": "n_iou_lt_070",
+      "n": 82,
+      "unique_images": 73,
+      "source_groups": {
+        "02": 4,
+        "05": 5,
+        "06": 5,
+        "08": 11,
+        "09": 23,
+        "10": 15,
+        "11": 1,
+        "13": 7,
+        "14": 4,
+        "15": 1,
+        "16": 2,
+        "17": 3,
+        "18": 1
+      },
+      "stride_counts": {
+        "16.0": 59,
+        "8.0": 23
+      },
+      "pair_iou_ge_08_n": 82,
+      "ir_gt_support_n": 82,
+      "native_owner_count_eq1_n": 73
+    },
+    {
+      "split": "train",
+      "fixed_stratum": "quality_gate070",
+      "n": 23,
+      "unique_images": 22,
+      "source_groups": {
+        "02": 2,
+        "05": 3,
+        "06": 2,
+        "08": 4,
+        "09": 5,
+        "10": 2,
+        "13": 2,
+        "15": 1,
+        "16": 1,
+        "17": 1
+      },
+      "stride_counts": {
+        "16.0": 23
+      },
+      "pair_iou_ge_08_n": 23,
+      "ir_gt_support_n": 23,
+      "native_owner_count_eq1_n": 19
+    },
+    {
+      "split": "val",
+      "fixed_stratum": "base",
+      "n": 548,
+      "unique_images": 196,
+      "source_groups": {
+        "01": 207,
+        "04": 126,
+        "07": 71,
+        "12": 84,
+        "25": 60
+      },
+      "stride_counts": {
+        "16.0": 475,
+        "8.0": 73
+      },
+      "pair_iou_ge_08_n": 548,
+      "ir_gt_support_n": 548,
+      "native_owner_count_eq1_n": 506
+    },
+    {
+      "split": "val",
+      "fixed_stratum": "n_iou_lt_070",
+      "n": 199,
+      "unique_images": 109,
+      "source_groups": {
+        "01": 48,
+        "04": 52,
+        "07": 29,
+        "12": 45,
+        "25": 25
+      },
+      "stride_counts": {
+        "16.0": 166,
+        "8.0": 33
+      },
+      "pair_iou_ge_08_n": 199,
+      "ir_gt_support_n": 199,
+      "native_owner_count_eq1_n": 176
+    },
+    {
+      "split": "val",
+      "fixed_stratum": "quality_gate070",
+      "n": 61,
+      "unique_images": 49,
+      "source_groups": {
+        "01": 14,
+        "04": 10,
+        "07": 8,
+        "12": 19,
+        "25": 10
+      },
+      "stride_counts": {
+        "16.0": 59,
+        "8.0": 2
+      },
+      "pair_iou_ge_08_n": 61,
+      "ir_gt_support_n": 61,
+      "native_owner_count_eq1_n": 57
+    }
+  ],
+  "status": "COMPLETED_PENDING_INDEPENDENT_REVIEW",
+  "dataset": "llvip",
+  "cpu_only": true,
+  "new_network_inference": false,
+  "new_training": false,
+  "test_accessed": false,
+  "l1_admission_changed": false,
+  "ap_or_kd_gain_claim": false,
+  "conditions": [
+    {
+      "dx": 0,
+      "dy": 0,
+      "linf": 0,
+      "l2": 0.0
+    },
+    {
+      "dx": 1,
+      "dy": 0,
+      "linf": 1,
+      "l2": 1.0
+    },
+    {
+      "dx": -1,
+      "dy": 0,
+      "linf": 1,
+      "l2": 1.0
+    },
+    {
+      "dx": 0,
+      "dy": 1,
+      "linf": 1,
+      "l2": 1.0
+    },
+    {
+      "dx": 0,
+      "dy": -1,
+      "linf": 1,
+      "l2": 1.0
+    },
+    {
+      "dx": 1,
+      "dy": 1,
+      "linf": 1,
+      "l2": 1.4142135623730951
+    },
+    {
+      "dx": 1,
+      "dy": -1,
+      "linf": 1,
+      "l2": 1.4142135623730951
+    },
+    {
+      "dx": -1,
+      "dy": 1,
+      "linf": 1,
+      "l2": 1.4142135623730951
+    },
+    {
+      "dx": -1,
+      "dy": -1,
+      "linf": 1,
+      "l2": 1.4142135623730951
+    },
+    {
+      "dx": 2,
+      "dy": 0,
+      "linf": 2,
+      "l2": 2.0
+    },
+    {
+      "dx": -2,
+      "dy": 0,
+      "linf": 2,
+      "l2": 2.0
+    },
+    {
+      "dx": 0,
+      "dy": 2,
+      "linf": 2,
+      "l2": 2.0
+    },
+    {
+      "dx": 0,
+      "dy": -2,
+      "linf": 2,
+      "l2": 2.0
+    },
+    {
+      "dx": 2,
+      "dy": 2,
+      "linf": 2,
+      "l2": 2.8284271247461903
+    },
+    {
+      "dx": 2,
+      "dy": -2,
+      "linf": 2,
+      "l2": 2.8284271247461903
+    },
+    {
+      "dx": -2,
+      "dy": 2,
+      "linf": 2,
+      "l2": 2.8284271247461903
+    },
+    {
+      "dx": -2,
+      "dy": -2,
+      "linf": 2,
+      "l2": 2.8284271247461903
+    },
+    {
+      "dx": 4,
+      "dy": 0,
+      "linf": 4,
+      "l2": 4.0
+    },
+    {
+      "dx": -4,
+      "dy": 0,
+      "linf": 4,
+      "l2": 4.0
+    },
+    {
+      "dx": 0,
+      "dy": 4,
+      "linf": 4,
+      "l2": 4.0
+    },
+    {
+      "dx": 0,
+      "dy": -4,
+      "linf": 4,
+      "l2": 4.0
+    },
+    {
+      "dx": 4,
+      "dy": 4,
+      "linf": 4,
+      "l2": 5.656854249492381
+    },
+    {
+      "dx": 4,
+      "dy": -4,
+      "linf": 4,
+      "l2": 5.656854249492381
+    },
+    {
+      "dx": -4,
+      "dy": 4,
+      "linf": 4,
+      "l2": 5.656854249492381
+    },
+    {
+      "dx": -4,
+      "dy": -4,
+      "linf": 4,
+      "l2": 5.656854249492381
+    }
+  ],
+  "dfl_translation": "linear mass transport at T1/T2 separately; discarded exterior mass recorded; conditional retained distribution for losses",
+  "seconds": 2.120394468307495,
+  "per_object_npz_bytes": 9856847
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "cuda_initialized": false,
+  "no_model_forward": true,
+  "new_hash_computed": false,
+  "results": [
+    {
+      "dataset": "llvip",
+      "seconds": 0.5298411846160889,
+      "counts": {
+        "rgb_gt_count": 82,
+        "teacher_gt_count": 82,
+        "common_count": 82,
+        "pair_iou_count": 82,
+        "geometry_count": 82,
+        "inside_count": 82,
+        "support_count": 82,
+        "unique_owner_count": 82
+      }
+    },
+    {
+      "dataset": "drone",
+      "seconds": 0.9857010841369629,
+      "counts": {
+        "rgb_gt_count": 478,
+        "teacher_gt_count": 544,
+        "common_count": 451,
+        "pair_iou_count": 374,
+        "geometry_count": 374,
+        "inside_count": 374,
+        "support_count": 374,
+        "unique_owner_count": 369
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "status": "COMPLETED",
+  "exit_code": 0,
+  "time": 1788787174.051162,
+  "monitor_errors": [],
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 12288,
+    "expected_vram_mib": 4096,
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "llvip_full_T42_canary-eb953e94bffc",
+    "pid": 830663,
+    "status": "LAUNCHED"
+  },
+  "samples": [
+    {
+      "time": 1788787155.2934053,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145555
+    },
+    {
+      "time": 1788787158.3672178,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145475
+    },
+    {
+      "time": 1788787161.5525744,
+      "gpu": 4,
+      "memory_free_mib": 15646,
+      "memory_used_mib": 8438,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 148490
+    },
+    {
+      "time": 1788787164.8781753,
+      "gpu": 4,
+      "memory_free_mib": 15514,
+      "memory_used_mib": 8570,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 146296
+    },
+    {
+      "time": 1788787168.136982,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 145050
+    },
+    {
+      "time": 1788787171.4910574,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144784
+    },
+    {
+      "time": 1788787174.0510604,
+      "gpu": 4,
+      "memory_free_mib": 16037,
+      "memory_used_mib": 8047,
+      "memory_total_mib": 24564,
+      "project_rss_mib": 144783
+    }
+  ],
+  "minimum_free_mib": 15514
+}
