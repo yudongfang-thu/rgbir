@@ -1,0 +1,105 @@
+{
+  "status": "NO_ACTIONABLE_CHANGE",
+  "read_at": "2026-09-07T22:08:57.478690+08:00",
+  "previous_read_at": "2026-09-07T21:55:59.385836+08:00",
+  "current_snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_220857.json",
+  "previous_snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260907_215559.json",
+  "progress": {
+    "C1_s42": {
+      "epoch": 22,
+      "successful_update_increase": 180,
+      "amp_skip_increase": 0,
+      "same_run": true,
+      "complete": false,
+      "failed": false,
+      "evaluation_exists": false,
+      "progress_status": "running",
+      "finite_last_kd": true
+    },
+    "C1_s0": {
+      "epoch": 22,
+      "successful_update_increase": 170,
+      "amp_skip_increase": 0,
+      "same_run": true,
+      "complete": false,
+      "failed": false,
+      "evaluation_exists": false,
+      "progress_status": "running",
+      "finite_last_kd": true
+    },
+    "C1_s123": {
+      "epoch": 22,
+      "successful_update_increase": 190,
+      "amp_skip_increase": 0,
+      "same_run": true,
+      "complete": false,
+      "failed": false,
+      "evaluation_exists": false,
+      "progress_status": "running",
+      "finite_last_kd": true
+    },
+    "c_shuffled": {
+      "epoch": 69,
+      "successful_update_increase": 100,
+      "amp_skip_increase": 0,
+      "same_run": true,
+      "complete": false,
+      "failed": false,
+      "evaluation_exists": false,
+      "progress_status": "running",
+      "finite_last_kd": true
+    },
+    "c_same_modal": {
+      "epoch": 60,
+      "successful_update_increase": 210,
+      "amp_skip_increase": 0,
+      "same_run": true,
+      "complete": false,
+      "failed": false,
+      "evaluation_exists": false,
+      "progress_status": "running",
+      "finite_last_kd": true
+    }
+  },
+  "resource_checks": {
+    "three_physical_cards": true,
+    "two_cuda_per_card": true,
+    "project_vram_under_70pct": true,
+    "whole_card_free_over_2gib": true,
+    "rss_under_300gb": true,
+    "recorded_lease_coverage": true
+  },
+  "per_gpu": {
+    "2": {
+      "pids": [
+        2753901,
+        2757514
+      ],
+      "project_vram_mib": 15924,
+      "total_mib": 24564,
+      "whole_card_free_mib": 8121
+    },
+    "4": {
+      "pids": [
+        2265745
+      ],
+      "project_vram_mib": 8020,
+      "total_mib": 24564,
+      "whole_card_free_mib": 3357
+    },
+    "5": {
+      "pids": [
+        4148148,
+        2760047
+      ],
+      "project_vram_mib": 15704,
+      "total_mib": 24564,
+      "whole_card_free_mib": 8338
+    }
+  },
+  "project_rss_gib": 141.48598098754883,
+  "scientific_decisions_changed": false,
+  "training_mutations": 0,
+  "github_sync_needed": false,
+  "scope": "Routine training/lease/resource observation; no new endpoint or AP interpretation"
+}

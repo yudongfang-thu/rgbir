@@ -20,3 +20,5 @@
 用户授权双数据集继续后，新增 `08_实验日志/2026-09-07_probe_双数据集证据优先推进/`，分为CPU定位压力诊断、AP错误分解、LLVIP配置准备和完整dev评估导出。旧资料只读、训练不改；94仅在实际部署后登记新 `RGBT_campaign/artifacts/rgbir_evidence_priority_20260907/llvip_full_eval_attempt1/`。执行前冻结协议，失败attempt及原始回执保留。
 
 双数据集阶段完成：94新增有效 llvip_full_eval_attempt2 与 natural_flow_attempt2，均在原rgbir_evidence_priority_20260907根。两个旧attempt1分别因标签路径/配置导入失败，原始产物保留；本地保存完整有效预测、自然流/选择记录、CPU原始统计与独立审阅。仅补充导航/解释，不移动、覆盖、删除旧结果或权重。自然流初次SCP长路径失败通过tar流补齐缺失文件，已有文件逐字节一致；新增governance_group_sources为原TSV只读副本。
+
+22:08心跳：本地新增实施日志heartbeat_20260907_2208_runtime，保存只读状态、原文before副本和文档连续性修正回执；无服务器目录或原实验产物变更。跟踪表B02–B04恢复原ID语义，新增B05；不改结果、门槛或训练。

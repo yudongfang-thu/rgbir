@@ -1,7 +1,5 @@
 # RGBIR independent KD v2 实验跟踪表
 
-> **例行核对（2026-09-07 22:08）**：五任务持续更新、六项资源/lease检查通过；C1三seed第22轮，旧shuffled/same-modal为69/60轮。无新E200或故障。本次仅修正文档重复B02–B04编号及过期状态，新增B05表示已完成自然流诊断；不变更科学协议或训练任务。
-
 > **本阶段完成（2026-09-07 21:55）**：两组真实64批及全量独立复算通过，LLVIP定位待认证候选207（62批/187图/14来源组），Drone602（63批/268图/31组）。LLVIP优先定位目标认证/学习验证，Drone优先少数类与来源归因；不是L1准入。原C1按42/0/123为22/21/22轮、旧控制69/59轮、3卡5训练、RSS141.51GiB，无新E200端点。
 
 > **最新证据（2026-09-07 21:29）**：LLVIP完整2406dev旧RGB/IR mAP32.8784/48.8529与独立AP审阅完成；Drone六端点AP/逐类/对象桥接和两数据集定位压力均已独立接受。C1三seed第20轮（CSV19），旧控制66/58，项目RSS141.50GiB、3卡5训练。自然64批选择诊断正在执行准备；无新E200或定位准入。
@@ -16,6 +14,9 @@ Baseline信息诊断已完成2448图及独立复核：[阶段判断](../08_实�
 
 | ID | 阶段 | 实验/交付 | seeds | 优先级 | 当前状态 | 依赖/说明 |
 |---|---|---|---|---|---|---|
+|B02|诊断|LLVIP优先、Drone对照定位目标扰动|固定20260907|MUST|RUNNING_CPU|0及1/2/4像素25条件，固定mask/anchor，压力诊断不等于真实配准或L1准入|
+|B03|诊断|完整post-NMS AP错误/排序|Drone N/C0三seed；LLVIP旧N/T42|MUST|RUNNING|Drone复用六完整缓存；LLVIP补全dev导出先canary再共享lease，保持旧baseline身份|
+|B04|准备|LLVIP新协议baseline/定位配置迁移核对|42/0/123|PREPARE|IN_PROGRESS|查单类退化/实际数据流与评估器Drone硬编码，配置未准入不得入队|
 |A00|审阅|MD/ZIP一致性、C/L/矩阵三路审阅|—|MUST|DONE|94最终release工程173项+参考包18项测试通过；独立代码复核完成|
 |A01|基线|N/C0六个独立端点绑定|0/42/123|MUST|BOUND|14:07 N/C0/random九份独立端点全部接受；A03兼容及实际补评桥接已接受|
 |A02|审计|旧native差异/实际worker流/门控敏感性|—|MUST|DONE|已有CPU原始脚本和回执|
@@ -46,10 +47,9 @@ Baseline信息诊断已完成2448图及独立复核：[阶段判断](../08_实�
 |P02|归因|L1自己的四臂|0/42/123|MUST_IF_CLAIMED|WAIT_L_EVIDENCE|额外6次；L_GT不能替代same-modal|
 |P03|证据|GitHub阶段同步|—|MUST|PUBLISHED|本阶段证据提交00bfb59已推送并核对远端：589文件、518份raw在Git blob层字节核对，2个大派生数组仅记录路径；根目录DUAL_DATASET_EVIDENCE_INCREMENT_20260907.json及PUBLICATION_DUAL_EVIDENCE_20260907.json为复核入口。此前6ed99b2为上一baseline诊断阶段，原始证据保留|
 |B01|诊断|当前baseline分类/定位/局部特征中间结果|诊断20260907|USER_REQUEST|COMPLETED|两数据集各1024train+200dev；固定读出、独立RGB/错配及原生head复核完成；不是新KD AP或训练准入|
-|B02|诊断|LLVIP优先、Drone对照定位25条件压力|固定train/dev缓存|USER_REQUEST|ACCEPTED_DESCRIPTIVE|两数据集attempt2独立全量复算通过；保留旧汇总计数错误，非物理配准或L1准入|
-|B03|诊断|完整dev AP与少数类桥接|Drone旧N/C0三seed+LLVIP旧42|USER_REQUEST|ACCEPTED_DESCRIPTIVE|Drone1469dev六端点、LLVIP2406dev两模型；官方TIDE/独立COCO及真值通过，非KD增益|
-|B04|准备|LLVIP新协议baseline/定位配置迁移核对|42/0/123|PREPARE|PREPARED_NOT_ADMITTED|9份草案、单类退化/数据流与评价profile核对完成；新N兼容、profile适配及L几何/校准仍未准入|
-|B05|诊断|真实自然64批C/L选择|20260907|USER_REQUEST|ACCEPTED_UNVERIFIED_GEOMETRY|各2048图、原流exact、L207/602；有候选批62/63不等于非零梯度批；未启动新定位训练|
+|B02|诊断|两数据集完整dev AP与少数类桥接|旧N/C0三seed+LLVIP旧42|USER_REQUEST|ACCEPTED_DESCRIPTIVE|Drone1469dev六端点、LLVIP2406dev两模型；官方TIDE/独立COCO及真值通过，非KD增益|
+|B03|诊断|定位固定25条件压力|固定train/dev缓存|USER_REQUEST|ACCEPTED_DESCRIPTIVE|两数据集attempt2独立全量复算通过；旧汇总计数错误保留，非物理配准证明|
+|B04|诊断|真实自然64批C/L选择|20260907|USER_REQUEST|ACCEPTED_UNVERIFIED_GEOMETRY|各2048图、原流exact、L207/602；有候选批62/63非非零梯度批；未启动新定位训练|
 |X01|外部|BCKD/FGD/LD协议适配和历史CMD/CCLKD审计|—|PREPARE_ONLY|PREPARED|BCKD分类partial、FGD、LD公开资产及冻结适配草案齐；旧CMD/CCLKD workers8独立列|
 |X02|数据集|LLVIP独立N/L1/L_GT或类别泛化|—|CONDITIONAL|INFORMATION_DIAGNOSIS_DONE_ADMISSION_BLOCKED|baseline定位信息诊断完成；L1几何/64批校准/canary未通过，新协议N矩阵未启动；v2.2已有条件授权，不能以probe替代准入|
 |D01|延期|旧CL/CGT/dynamic router|—|DEFERRED|DEFERRED_BY_INDEPENDENT_CL_V2|不融合、不以联合结果救单支|
