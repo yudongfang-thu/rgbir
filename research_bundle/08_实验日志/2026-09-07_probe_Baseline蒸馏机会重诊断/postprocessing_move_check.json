@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "objects": 29,
+  "object_and_anchor_ids_equal": true,
+  "absolute_max_differences": {
+    "features.npz": {
+      "N42_P3": 4.76837158203125e-07,
+      "N42_anchor_P3": 0.0,
+      "N42_P4": 2.384185791015625e-07,
+      "N42_anchor_P4": 0.0,
+      "T42_P3": 4.76837158203125e-07,
+      "T42_anchor_P3": 0.0,
+      "T42_P4": 3.5762786865234375e-07,
+      "T42_anchor_P4": 0.0,
+      "N0_P3": 4.76837158203125e-07,
+      "N0_anchor_P3": 0.0,
+      "N0_P4": 3.5762786865234375e-07,
+      "N0_anchor_P4": 0.0
+    },
+    "logits.npz": {
+      "N42_cls": 0.0,
+      "N42_dfl": 0.0,
+      "N42_region_cls": 1.9073486328125e-06,
+      "T42_cls": 0.0,
+      "T42_dfl": 0.0,
+      "T42_region_cls": 1.9073486328125e-06,
+      "N0_cls": 0.0,
+      "N0_dfl": 0.0,
+      "N0_region_cls": 1.9073486328125e-06
+    }
+  },
+  "scope": "2 image canary CPU vs GPU float32 postprocessing; no claim of full-run bitwise equality"
+}

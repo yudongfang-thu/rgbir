@@ -1,7 +1,7 @@
 # 08_实验日志 · 索引与规范
 
 > 目的：**每个实验（探针/训练/评估/复现/审计）一个目录，结论落在 md 里**，保证新开对话不丢进度。
-> 新会话启动时先读本 README 与最近条目，再读 [AGENTS.md]（未导出的工作区路径：../AGENTS.md）。
+> 新会话启动时先读本 README 与最近条目，再读 [AGENTS.md]（服务器/本地中间产物：../AGENTS.md）。
 
 ## 目录命名
 
@@ -35,7 +35,9 @@ YYYY-MM-DD_<类型>_<短名>/
 
 | 日期 | 条目 | 类型 | 一句话结论 |
 |---|---|---|---|
-| 2026-09-07 | [train_IndependentKD实施](2026-09-07_train_IndependentKD实施/README.md) | train | 17:06逐类补评适配独立接受，六端点完整接入；C0 harm仍REVIEW_REQUIRED、missing为空；16:53 C1三seed第5轮，旧控制58/41轮；L几何证据阻塞 |
+| 2026-09-07 | [probe_Baseline蒸馏机会重诊断](2026-09-07_probe_Baseline蒸馏机会重诊断/README.md) | probe | 已完成2448图：Drone可修复461个中351低置信；LLVIP同anchor教师DFL更好61.13%，Drone39.06%；IR特征未稳定胜独立RGB，且ridge欠拟合已揭示；不改变C1/L1 |
+| 2026-09-07 | [audit_定位补救与准入修订](2026-09-07_audit_定位补救与准入修订/README.md) | audit | 原L1为几何证据与覆盖阻塞，尚无定位长训负结果；建议先诊断raw目标稳健性，再另立L2对象身份与目标质量合同，保留DFL、0.70门和GT控制；本次未修改或启动训练 |
+| 2026-09-07 | [train_IndependentKD实施](2026-09-07_train_IndependentKD实施/README.md) | train | 18:58：C1三seed均epoch12，旧控制61/48，资源合规、无新完整端点；17:06逐类适配已独立接受，C0专项复核和L几何证据阻塞保持 |
 | 2026-09-07 | [audit_独立分类定位新规格](2026-09-07_audit_独立分类定位新规格/README.md) | audit | MD/ZIP一致；采用C1/L1独立不融合计划，先C1三seed；修E_C索引/校准状态，L先核自然64批覆盖上界；核心12次与最终四臂预算分开，无新GPU训练 |
 | 2026-09-07 | [audit_native与蒸馏载体](2026-09-07_audit_native与蒸馏载体/README.md) | audit | N−历史native均值+0.469pp但2/3正；CPU证实workers改变第5批起增强，初始化入口重建499张量一致；C是单标量logit证据、L是4×16分布；R<.70明显压缩机会，特征/任务选择文献已核验 |
 | 2026-09-07 | [audit_类别与定位最新进度](2026-09-07_audit_类别与定位最新进度/README.md) | audit | 11:19：N/C三seed独立端点齐，C−N为+0.266655±0.144373pp且3/3正；random到163/172/159轮，shuffled31与same-modal15轮；L仍未几何准入，无CL/CGT长训结果 |

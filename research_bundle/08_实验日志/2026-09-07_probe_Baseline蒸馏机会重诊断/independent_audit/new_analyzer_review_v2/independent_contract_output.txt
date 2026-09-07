@@ -1,0 +1,41 @@
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\shutil.py", line 627, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\independent_audit\\new_analyzer_review_v2\\tmpjg_3a907\\base\\probe_predictions.npz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\tempfile.py", line 805, in onerror
+    _os.unlink(path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\independent_audit\\new_analyzer_review_v2\\tmpjg_3a907\\base\\probe_predictions.npz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\SHARE\光sar\08_实验日志\2026-09-07_probe_Baseline蒸馏机会重诊断\independent_audit\independent_contract_checks.py", line 63, in <module>
+    checks.append('Arbitrary held-out feature shift leaves fitted training transforms and training predictions unchanged')
+  File "D:\Anaconda\lib\tempfile.py", line 830, in __exit__
+    self.cleanup()
+  File "D:\Anaconda\lib\tempfile.py", line 834, in cleanup
+    self._rmtree(self.name)
+  File "D:\Anaconda\lib\tempfile.py", line 816, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\Anaconda\lib\shutil.py", line 759, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Anaconda\lib\shutil.py", line 624, in _rmtree_unsafe
+    _rmtree_unsafe(fullname, onerror)
+  File "D:\Anaconda\lib\shutil.py", line 629, in _rmtree_unsafe
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "D:\Anaconda\lib\tempfile.py", line 808, in onerror
+    cls._rmtree(path)
+  File "D:\Anaconda\lib\tempfile.py", line 816, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\Anaconda\lib\shutil.py", line 759, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\Anaconda\lib\shutil.py", line 610, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "D:\Anaconda\lib\shutil.py", line 607, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+NotADirectoryError: [WinError 267] 目录名称无效。: 'E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\independent_audit\\new_analyzer_review_v2\\tmpjg_3a907\\base\\probe_predictions.npz'

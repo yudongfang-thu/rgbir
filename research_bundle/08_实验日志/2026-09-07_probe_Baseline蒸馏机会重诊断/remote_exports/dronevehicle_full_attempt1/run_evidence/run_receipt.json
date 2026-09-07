@@ -1,0 +1,76 @@
+{
+  "command": {
+    "argv": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/export_baseline_information.py",
+      "--spec",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/probe_spec.json",
+      "--dataset",
+      "dronevehicle",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/dronevehicle_full_attempt1"
+    ]
+  },
+  "created_at_utc": "2026-09-07T11:48:34.043951+00:00",
+  "data_role": "development_train_val",
+  "dataset": "dronevehicle",
+  "environment": {
+    "platform": "Linux-5.15.0-187-generic-x86_64-with-glibc2.35",
+    "python": "3.10.20",
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115"
+  },
+  "inputs": {
+    "diagnostic_only": true,
+    "models": {
+      "N0": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+      "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+      "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt"
+    }
+  },
+  "job_id": "baseline_info_dronevehicle_full_a1",
+  "method_identity": "PROTOCOL-ADAPTED",
+  "metric_snapshots": [
+    "metric_snapshot/01_summary.json"
+  ],
+  "resources": {
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "gpu_ids": [
+      4
+    ],
+    "lease_id": "baseline_info_dronevehicle_full_a1-03ffc874b899",
+    "peak_rss_mib": 2842,
+    "per_gpu_peak_vram_mib": {
+      "4": 580
+    }
+  },
+  "run_kind": "feature",
+  "schema": "jstars-run-receipt-v1",
+  "seed": 20260907,
+  "source_snapshots": {
+    "config": [
+      "source_snapshot/config/01_probe_spec.json",
+      "source_snapshot/config/02_protocol_config.yaml"
+    ],
+    "loss": [
+      "source_snapshot/loss/01_localization_loss.py"
+    ],
+    "split_roster": [
+      "source_snapshot/split_roster/01_frozen_roster.json"
+    ],
+    "trainer": [
+      "source_snapshot/trainer/01_export_baseline_information.py",
+      "source_snapshot/trainer/02_diagnose_opportunities.py"
+    ]
+  },
+  "terminal_status": "COMPLETED",
+  "test_exposure": {
+    "confirmatory": false,
+    "dataset": "dronevehicle",
+    "note": "Official test remains a candidate until its exposure history is audited.",
+    "role": "SEALED_CANDIDATE",
+    "test_status": "UNVERIFIED_SEALED"
+  }
+}

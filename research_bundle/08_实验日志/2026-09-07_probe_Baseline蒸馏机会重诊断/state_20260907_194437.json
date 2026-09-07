@@ -1,0 +1,191 @@
+{
+  "read_at": "2026-09-07T19:44:37.439981+08:00",
+  "root": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907",
+  "records": {
+    "attempt3/dronevehicle_canary_attempt1/progress.json": {
+      "images": 2,
+      "total": 2,
+      "objects_including_background": 29,
+      "seconds": 4.881290674209595
+    },
+    "attempt3/dronevehicle_full_attempt1/progress.json": {
+      "images": 400,
+      "total": 1224,
+      "objects_including_background": 7178,
+      "seconds": 92.94466400146484
+    },
+    "attempt3/dronevehicle_canary_attempt1/summary.json": {
+      "status": "completed",
+      "dataset": "dronevehicle",
+      "images": 2,
+      "objects_including_background": 29,
+      "models": {
+        "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+        "N0": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt"
+      },
+      "input_box_format": "xyxy",
+      "anchor_center_units": "input_pixels",
+      "reg_max": 16,
+      "reference_model": "N42",
+      "feature_shapes": {
+        "N42_P3": [
+          29,
+          256
+        ],
+        "N42_anchor_P3": [
+          29,
+          256
+        ],
+        "N42_P4": [
+          29,
+          512
+        ],
+        "N42_anchor_P4": [
+          29,
+          512
+        ],
+        "T42_P3": [
+          29,
+          256
+        ],
+        "T42_anchor_P3": [
+          29,
+          256
+        ],
+        "T42_P4": [
+          29,
+          512
+        ],
+        "T42_anchor_P4": [
+          29,
+          512
+        ],
+        "N0_P3": [
+          29,
+          256
+        ],
+        "N0_anchor_P3": [
+          29,
+          256
+        ],
+        "N0_P4": [
+          29,
+          512
+        ],
+        "N0_anchor_P4": [
+          29,
+          512
+        ]
+      },
+      "feature_region_gt_privileged": true,
+      "anchor_patch_region_gt_privileged": false,
+      "anchor_association_gt_privileged": true,
+      "head_input_verified_against_raw_feats": true,
+      "padding_excluded_from_background": true,
+      "background_class": 5,
+      "background_is_annotation_proxy": true,
+      "same_input_protocol": true,
+      "training_recipes_equal": false,
+      "postprocessing_device": "CPU_float32",
+      "gpu_allocated_peak_mib": 89.04296875,
+      "gpu_reserved_peak_mib": 120.0,
+      "resources": {
+        "gpu_ids": [
+          4
+        ],
+        "cuda_pid_counts": {
+          "4": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "4": 580
+        },
+        "peak_rss_mib": 1202
+      },
+      "seconds": 8.765785694122314,
+      "official_test_accessed": false,
+      "formal_training_authorized": false
+    },
+    "attempt3/queue_attempt1/baseline_info_dronevehicle_canary_a1_status.json": {
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "time": 1788781368.4513645,
+      "monitor_errors": [],
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 8192,
+        "expected_vram_mib": 2048,
+        "gpu_ids": [
+          4
+        ],
+        "lease_id": "baseline_info_dronevehicle_canary_a1-d3f2f251df77",
+        "pid": 169141,
+        "status": "LAUNCHED"
+      },
+      "minimum_free_mib": 6384
+    },
+    "attempt3/queue_attempt1/baseline_info_dronevehicle_full_a1_status.json": {
+      "status": "RUNNING",
+      "time": 1788781377.0230448,
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 8192,
+        "expected_vram_mib": 2048,
+        "gpu_ids": [
+          4
+        ],
+        "lease_id": "baseline_info_dronevehicle_full_a1-03ffc874b899",
+        "pid": 175062,
+        "status": "LAUNCHED"
+      },
+      "job": {
+        "id": "baseline_info_dronevehicle_full_a1",
+        "kind": "feature",
+        "vram_mib": 2048,
+        "rss_mib": 8192,
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/export_baseline_information.py",
+          "--spec",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/probe_spec.json",
+          "--dataset",
+          "dronevehicle",
+          "--output",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/dronevehicle_full_attempt1"
+        ]
+      },
+      "admission": {
+        "active_gpus_after": [
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [],
+        "four_gpu_exception": false,
+        "minimum_empty_required": 2
+      }
+    },
+    "attempt3/queue_attempt1/dronevehicle_canary_acceptance.json": {
+      "canary": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/dronevehicle_canary_attempt1",
+      "measured_vram_mib": 580,
+      "reservation_vram_mib": 2048,
+      "rss_reservation_mib": 8192,
+      "rss_reason": "resident model plus bounded 1224-image ROI arrays; no DataLoader workers",
+      "timestamp": 1788781368.452977,
+      "gpu_selection": "dynamic_shared_lease",
+      "training_modified": false
+    },
+    "attempt2/throughput_stop_receipt.json": {
+      "status": "STOPPED_TECHNICAL_THROUGHPUT",
+      "reason": "per-object GPU synchronization bottleneck; 25 images in 112.56 seconds; no outcome selection",
+      "pid": 135827,
+      "children": [
+        141895,
+        142112
+      ],
+      "time": 1788781321.266343,
+      "next_attempt": "attempt3 image-level CPU postprocessing",
+      "original_artifacts_preserved": true
+    }
+  }
+}

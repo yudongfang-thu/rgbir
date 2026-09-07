@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-07",
+  "auditor": "/root/baseline_opportunity_audit",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "baseline_opportunity_is_descriptive_and_cross_artifact_comparability_is_limited",
+  "review_metadata": {"independent_subagent": true, "model_identity": "not separately exposed by runtime tools", "cross_model_review_claimed": false, "network_used": false, "gpu_used": false, "new_inference_or_training": false},
+  "declared_input_set": "inventory_recomputed.json#/declared_inputs",
+  "audited_input_hashes": [],
+  "hash_policy": "Explicit user task prohibits SHA/hash computation; retained paths, sizes, mtimes and field-level content comparisons instead.",
+  "checks": {
+    "gt_provenance": {"status": "warn", "details": "Real modality-specific HBB labels. Legacy Drone pairing uses same-class IoU >= 0.1; D1 uses >= 0.5. LLVIP identical labels do not establish independent geometric truth. Overlap transformed RGB GT agrees within 4.31e-5 input px, 0 class mismatches.", "evidence": ["inventory_recomputed.json#/d1d2", "../independent_audit/EXPERIMENT_AUDIT.md#1-模型样本与推理身份"]},
+    "score_normalization": {"status": "warn", "details": "Pre-NMS D1 geometry assignment is not post-NMS detector error rate; sequential state labels confound dimensions. D2 CE is RGB GT DFL at temperature 1; local gradients are box-logit proxies. CKA is centered per image, with differing valid foreground subsets by level.", "evidence": ["E:/SHARE/光sar/08_实验日志/2026-09-07_probe_TaskConditional机会诊断/drone_train/run_evidence/source_snapshot/trainer/01_diagnose_opportunities.py:315", "E:/SHARE/光sar/08_实验日志/2026-09-07_probe_TaskConditional机会诊断/drone_train/run_evidence/source_snapshot/loss/01_localization_loss.py:317"]},
+    "result_existence": {"status": "pass", "details": "Read raw prediction records, D1/D2 JSONL, energy NPZ and all six N/C0 full-dev object dumps. Independently counted rows, unique objects, predictions and GT identity.", "evidence": ["inventory_recomputed.json", "recompute_inventory.py"]},
+    "dead_code": {"status": "pass", "details": "Read executed trainer/loss snapshots and confirm emitted field names and calculations match artifacts. Did not infer execution from a definition alone.", "evidence": ["inventory_recomputed.json#/d1d2", "EXPERIMENT_AUDIT.md#3-定位-d2-的真实覆盖及字段语义"]},
+    "scope": {"status": "warn", "details": "Legacy RGB/IR probes use one checkpoint seed. 200-image cohorts overlap only 30 Drone/13 LLVIP images; full path prevents stem collisions. New N/C0 models and rectangular 544x672 inference differ from legacy 640x640. Remote checkpoint contents and actual image pixels were not accessed.", "evidence": ["inventory_recomputed.json#/endpoint", "inventory_recomputed.json#/probe", "inventory_recomputed.json#/d1d2"]},
+    "eval_type": {"status": "warn", "details": "GT boxes and class comparisons are real_gt; CKA, activation energy and local DFL logit-gradient alignment are self_supervised_proxy. Neither implies distillation benefit.", "evidence": ["EXPERIMENT_AUDIT.md"]}
+  },
+  "claims": [
+    {"id": "drone_score_opportunity_more_common_than_wrong_class", "impact": "supported", "evidence": "inventory_recomputed.json#/d1d2/drone_train/d1_states", "rationale": "Descriptively, 2719 low-confidence versus 248 wrong-class objects satisfy R IoU>=.5 and reliable T own/RGB IoU>=.5; validation 321 versus 37. Not a KD effect estimate."},
+    {"id": "ir_only_means_classification_problem", "impact": "unsupported", "evidence": "EXPERIMENT_AUDIT.md#2-对分类置信度和定位机会的独立复核", "rationale": "A missed post-NMS hit can reflect score, class, localization, suppression or assignment."},
+    {"id": "localization_targets_show_conditional_quality_signal", "impact": "needs_qualifier", "evidence": "inventory_recomputed.json#/d1d2", "rationale": "D2 selected target CE advantages exist under unverified geometry and fixed old-model anchor selection; no training utility or formal geometry acceptance follows."},
+    {"id": "local_feature_cka_ranks_kd_utility", "impact": "unsupported", "evidence": "inventory_recomputed.json#/probe", "rationale": "Only per-image spatial CKA and channel-norm energy maps are saved; not channel features, object ROI feature quality or efficacy."},
+    {"id": "six_n_c0_dumps_comparable_with_each_other", "impact": "supported", "evidence": "inventory_recomputed.json#/endpoint", "rationale": "All six have exact image/GT/canvas identity and 1469 images/22462 GT, under the same reevaluation settings."},
+    {"id": "new_n_dump_can_replace_old_rgb_in_old_ir_probe", "impact": "unsupported", "evidence": "inventory_recomputed.json#/endpoint", "rationale": "Checkpoint origin, rectangle shape, confidence retention and sample extent differ."}
+  ],
+  "inaccessible_inputs": ["remote actual checkpoint bytes", "remote original image pixels", "full intermediate channel features", "full per-class logits", "full DFL probability tensors"],
+  "recomputation_command": "python E:/SHARE/光sar/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/independent_audit/recompute_inventory.py",
+  "recomputation_output": "inventory_recomputed.json"
+}

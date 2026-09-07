@@ -1,3 +1,5 @@
+> **2026-09-07 baseline数据重诊断已完成**：两数据集各1024 train＋200 dev，当前Drone N42/IR42/N0与LLVIP baseline。Drone机会以低置信为主、LLVIP定位证据更强；局部IR特征未稳定超过独立RGB，固定ridge欠拟合已单列。请先读[阶段判断](research_bundle/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/STAGE_REPORT.md)及[完整原始复核入口](research_bundle/08_实验日志/2026-09-07_probe_Baseline蒸馏机会重诊断/README.md)。这是推理/读出诊断，没有新增KD AP或定位准入。
+
 # RGB–IR 独立分类与定位蒸馏：证据与复核入口
 
 > **2026-09-07 17:06 follow-up:** The explicit post-hoc class adapter is independently accepted (17 tests and six actual endpoints). Original result files remain unchanged. C0 harm review remains REVIEW_REQUIRED with no missing items. C1 seeds were at epoch 5 as of 16:53; no complete C1 AP is available. [Evidence and review](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/heartbeat_20260907_1653/README.md).

@@ -1,0 +1,1301 @@
+{
+  "date": "2026-09-07",
+  "auditor": "/root/baseline_opportunity_audit",
+  "hashes_computed": false,
+  "hash_policy": "Explicit user task prohibits hash computation.",
+  "evaluation_type": "real_gt + self_supervised_proxy for CKA/energy and local logit gradients",
+  "probe": {
+    "drone": {
+      "config": {
+        "images": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/val"
+        ],
+        "labels": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val"
+        ],
+        "checkpoints": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt"
+        ],
+        "expected_train_data": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml"
+        ],
+        "nc": 5,
+        "role": "val",
+        "modalities": [
+          "rgb",
+          "infrared"
+        ]
+      },
+      "image_count": 200,
+      "rgb_gt": 3116,
+      "ir_gt": 3276,
+      "matched": 3083,
+      "hits": {
+        "True_True": 2505,
+        "False_True": 360,
+        "True_False": 78,
+        "False_False": 140
+      },
+      "sample_seed": 20260906,
+      "checkpoint_args": [
+        {
+          "seed": 42,
+          "epochs": 200,
+          "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "batch": 32,
+          "imgsz": 640,
+          "optimizer": "SGD",
+          "workers": 8,
+          "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml"
+        },
+        {
+          "seed": 42,
+          "epochs": 200,
+          "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "batch": 32,
+          "imgsz": 640,
+          "optimizer": "SGD",
+          "workers": 8,
+          "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml"
+        }
+      ],
+      "energy_shapes": {
+        "rgb_P3": [
+          200,
+          80,
+          80
+        ],
+        "rgb_P4": [
+          200,
+          40,
+          40
+        ],
+        "rgb_P5": [
+          200,
+          20,
+          20
+        ],
+        "ir_P3": [
+          200,
+          80,
+          80
+        ],
+        "ir_P4": [
+          200,
+          40,
+          40
+        ],
+        "ir_P5": [
+          200,
+          20,
+          20
+        ]
+      },
+      "stored_feature_channel_tensors": false,
+      "foreground_delta_cka": {
+        "P3": {
+          "n": 200,
+          "mean": 0.5822638362934813
+        },
+        "P4": {
+          "n": 198,
+          "mean": 0.5747355986819274
+        },
+        "P5": {
+          "n": 179,
+          "mean": 0.27990553796124856
+        }
+      }
+    },
+    "llvip": {
+      "config": {
+        "images": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev"
+        ],
+        "labels": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/labels/dev",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/labels/dev"
+        ],
+        "checkpoints": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt"
+        ],
+        "expected_train_data": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml"
+        ],
+        "nc": 1,
+        "role": "dev",
+        "modalities": [
+          "visible",
+          "infrared"
+        ]
+      },
+      "image_count": 200,
+      "rgb_gt": 672,
+      "ir_gt": 672,
+      "matched": 672,
+      "hits": {
+        "True_True": 484,
+        "False_True": 107,
+        "False_False": 59,
+        "True_False": 22
+      },
+      "sample_seed": 20260906,
+      "checkpoint_args": [
+        {
+          "seed": 42,
+          "epochs": 200,
+          "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "batch": 32,
+          "imgsz": 640,
+          "optimizer": "SGD",
+          "workers": 8,
+          "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml"
+        },
+        {
+          "seed": 42,
+          "epochs": 200,
+          "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "batch": 32,
+          "imgsz": 640,
+          "optimizer": "SGD",
+          "workers": 8,
+          "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml"
+        }
+      ],
+      "energy_shapes": {
+        "rgb_P3": [
+          200,
+          80,
+          80
+        ],
+        "rgb_P4": [
+          200,
+          40,
+          40
+        ],
+        "rgb_P5": [
+          200,
+          20,
+          20
+        ],
+        "ir_P3": [
+          200,
+          80,
+          80
+        ],
+        "ir_P4": [
+          200,
+          40,
+          40
+        ],
+        "ir_P5": [
+          200,
+          20,
+          20
+        ]
+      },
+      "stored_feature_channel_tensors": false,
+      "foreground_delta_cka": {
+        "P3": {
+          "n": 200,
+          "mean": 0.30617940859496595
+        },
+        "P4": {
+          "n": 200,
+          "mean": 0.4276358578428626
+        },
+        "P5": {
+          "n": 147,
+          "mean": 0.04549732508302546
+        }
+      }
+    }
+  },
+  "d1d2": {
+    "drone_train": {
+      "image_count": 2048,
+      "population": 17990,
+      "sampling": "proportional_source_groups_uniform_frame_ranks",
+      "image_overlap_with_probe_full_path": 0,
+      "overlapping_paths": [],
+      "overlap_gt_checked": 0,
+      "overlap_gt_max_input_px_difference": 0.0,
+      "overlap_gt_class_mismatches": 0,
+      "d1_row_count": 31931,
+      "d1_unique_objects": 31931,
+      "d2_row_count": 23511,
+      "d2_unique_objects": 23511,
+      "d1_states": {
+        "class_error": {
+          "n": 581,
+          "reference_iou_ge_05": 549,
+          "teacher_own_hit": 266,
+          "teacher_rgb_hit": 266,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 248
+        },
+        "low_confidence": {
+          "n": 3606,
+          "reference_iou_ge_05": 3507,
+          "teacher_own_hit": 2797,
+          "teacher_rgb_hit": 2789,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 2719
+        },
+        "localization_gap": {
+          "n": 452,
+          "reference_iou_ge_05": 426,
+          "teacher_own_hit": 356,
+          "teacher_rgb_hit": 351,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 330
+        },
+        "well_localized": {
+          "n": 27022,
+          "reference_iou_ge_05": 27022,
+          "teacher_own_hit": 24541,
+          "teacher_rgb_hit": 24467,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 24467
+        },
+        "no_coarse_candidate": {
+          "n": 270,
+          "reference_iou_ge_05": 0,
+          "teacher_own_hit": 188,
+          "teacher_rgb_hit": 187,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 0
+        }
+      },
+      "summary_totals": {
+        "rgb_gt_count": 31931,
+        "teacher_gt_count": 35407,
+        "common_count": 30765,
+        "pair_iou_count": 24475,
+        "geometry_count": 24475,
+        "inside_count": 24475,
+        "support_count": 24475,
+        "unique_owner_count": 24406,
+        "reference_candidate_count": 23511,
+        "base_count": 23511,
+        "eligible_count": 626,
+        "reference_reliable_count": 22300,
+        "both_reliable_count": 20866,
+        "reference_localization_gap_count": 786,
+        "teacher_rgb_quality_count": 719,
+        "teacher_own_quality_count": 719,
+        "selected_count": 626,
+        "selected_quality_count": 626
+      },
+      "d1_totals": {
+        "images": 2048,
+        "rgb_gt_count": 31931,
+        "ir_gt_count": 35407,
+        "paired_gt_count": 30765,
+        "reference_confidence_filtered_predictions": 365212,
+        "teacher_confidence_filtered_predictions": 391111,
+        "well_localized": 27022,
+        "unreliable_or_unpaired": 1166,
+        "object_level_localization_opportunity": 259,
+        "low_confidence": 3606,
+        "class_error": 581,
+        "localization_gap": 452,
+        "no_coarse_candidate": 270
+      },
+      "selected_dfl_ce_teacher_minus_reference_mean": -0.47022899604453067,
+      "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+      "augmentation": "centered_letterbox_scaleup_true_only",
+      "d1_fields": [
+        "image",
+        "ir_image",
+        "stem",
+        "source_group",
+        "rgb_gt_local_index",
+        "class",
+        "gt_box_input",
+        "area_input_px2",
+        "scale_bin",
+        "reference_state",
+        "reference",
+        "ir_gt_local_index",
+        "paired_gt_iou",
+        "correspondence",
+        "teacher",
+        "teacher_to_rgb_iou",
+        "object_level_localization_opportunity",
+        "mean_rgb_luma",
+        "luminance_proxy",
+        "brightness_proxy_bin"
+      ],
+      "d2_fields": [
+        "image_id",
+        "batch_index",
+        "anchor_index",
+        "rgb_gt_index",
+        "rgb_gt_local_index",
+        "ir_gt_index",
+        "class",
+        "stride",
+        "center",
+        "pair_iou",
+        "reference_iou",
+        "teacher_rgb_iou",
+        "teacher_ir_iou",
+        "reference_conf",
+        "teacher_conf",
+        "reference_correct",
+        "teacher_correct",
+        "quality_gate",
+        "rgb_distances",
+        "ir_distances",
+        "selected",
+        "teacher_gt_dfl_ce",
+        "reference_gt_dfl_ce",
+        "teacher_dfl_entropy",
+        "reference_dfl_entropy",
+        "reference_logit_kd_native_dot",
+        "reference_logit_kd_native_cosine",
+        "image",
+        "ir_image",
+        "source_group",
+        "geometry_verified",
+        "mean_rgb_luma",
+        "luminance_proxy",
+        "brightness_proxy_bin",
+        "area_input_px2",
+        "scale_bin",
+        "object_id"
+      ]
+    },
+    "drone_val": {
+      "image_count": 200,
+      "population": 1469,
+      "sampling": "proportional_source_groups_uniform_frame_ranks",
+      "image_overlap_with_probe_full_path": 30,
+      "overlapping_paths": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00037.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00045.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00222.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00259.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00340.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00399.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00421.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00436.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00450.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00495.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00583.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00635.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00716.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00768.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00841.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00893.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00908.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00967.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00974.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/00996.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01011.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01033.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01078.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01144.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01166.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01173.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01188.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01210.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01291.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/val/01336.jpg"
+      ],
+      "overlap_gt_checked": 460,
+      "overlap_gt_max_input_px_difference": 4.3056249978690175e-05,
+      "overlap_gt_class_mismatches": 0,
+      "d1_row_count": 3084,
+      "d1_unique_objects": 3084,
+      "d2_row_count": 2177,
+      "d2_unique_objects": 2177,
+      "d1_states": {
+        "class_error": {
+          "n": 133,
+          "reference_iou_ge_05": 128,
+          "teacher_own_hit": 38,
+          "teacher_rgb_hit": 38,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 37
+        },
+        "low_confidence": {
+          "n": 442,
+          "reference_iou_ge_05": 409,
+          "teacher_own_hit": 347,
+          "teacher_rgb_hit": 347,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 321
+        },
+        "localization_gap": {
+          "n": 106,
+          "reference_iou_ge_05": 97,
+          "teacher_own_hit": 84,
+          "teacher_rgb_hit": 84,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 78
+        },
+        "well_localized": {
+          "n": 2321,
+          "reference_iou_ge_05": 2321,
+          "teacher_own_hit": 2041,
+          "teacher_rgb_hit": 2028,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 2028
+        },
+        "no_coarse_candidate": {
+          "n": 82,
+          "reference_iou_ge_05": 0,
+          "teacher_own_hit": 54,
+          "teacher_rgb_hit": 54,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 0
+        }
+      },
+      "summary_totals": {
+        "rgb_gt_count": 3084,
+        "teacher_gt_count": 3423,
+        "common_count": 2946,
+        "pair_iou_count": 2358,
+        "geometry_count": 2358,
+        "inside_count": 2358,
+        "support_count": 2358,
+        "unique_owner_count": 2348,
+        "reference_candidate_count": 2177,
+        "base_count": 2177,
+        "eligible_count": 112,
+        "reference_reliable_count": 1981,
+        "both_reliable_count": 1787,
+        "reference_localization_gap_count": 175,
+        "teacher_rgb_quality_count": 141,
+        "teacher_own_quality_count": 141,
+        "selected_count": 112,
+        "selected_quality_count": 112
+      },
+      "d1_totals": {
+        "images": 200,
+        "rgb_gt_count": 3084,
+        "ir_gt_count": 3423,
+        "paired_gt_count": 2946,
+        "reference_confidence_filtered_predictions": 34294,
+        "teacher_confidence_filtered_predictions": 37215,
+        "class_error": 133,
+        "unreliable_or_unpaired": 138,
+        "object_level_localization_opportunity": 58,
+        "well_localized": 2321,
+        "low_confidence": 442,
+        "no_coarse_candidate": 82,
+        "localization_gap": 106
+      },
+      "selected_dfl_ce_teacher_minus_reference_mean": -0.636935238593391,
+      "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+      "augmentation": "centered_letterbox_scaleup_true_only",
+      "d1_fields": [
+        "image",
+        "ir_image",
+        "stem",
+        "source_group",
+        "rgb_gt_local_index",
+        "class",
+        "gt_box_input",
+        "area_input_px2",
+        "scale_bin",
+        "reference_state",
+        "reference",
+        "ir_gt_local_index",
+        "paired_gt_iou",
+        "correspondence",
+        "teacher",
+        "teacher_to_rgb_iou",
+        "object_level_localization_opportunity",
+        "mean_rgb_luma",
+        "luminance_proxy",
+        "brightness_proxy_bin"
+      ],
+      "d2_fields": [
+        "image_id",
+        "batch_index",
+        "anchor_index",
+        "rgb_gt_index",
+        "rgb_gt_local_index",
+        "ir_gt_index",
+        "class",
+        "stride",
+        "center",
+        "pair_iou",
+        "reference_iou",
+        "teacher_rgb_iou",
+        "teacher_ir_iou",
+        "reference_conf",
+        "teacher_conf",
+        "reference_correct",
+        "teacher_correct",
+        "quality_gate",
+        "rgb_distances",
+        "ir_distances",
+        "selected",
+        "teacher_gt_dfl_ce",
+        "reference_gt_dfl_ce",
+        "teacher_dfl_entropy",
+        "reference_dfl_entropy",
+        "reference_logit_kd_native_dot",
+        "reference_logit_kd_native_cosine",
+        "image",
+        "ir_image",
+        "source_group",
+        "geometry_verified",
+        "mean_rgb_luma",
+        "luminance_proxy",
+        "brightness_proxy_bin",
+        "area_input_px2",
+        "scale_bin",
+        "object_id"
+      ]
+    },
+    "llvip_train": {
+      "image_count": 2048,
+      "population": 9619,
+      "sampling": "proportional_source_groups_uniform_frame_ranks",
+      "image_overlap_with_probe_full_path": 0,
+      "overlapping_paths": [],
+      "overlap_gt_checked": 0,
+      "overlap_gt_max_input_px_difference": 0.0,
+      "overlap_gt_class_mismatches": 0,
+      "d1_row_count": 5592,
+      "d1_unique_objects": 5592,
+      "d2_row_count": 5492,
+      "d2_unique_objects": 5492,
+      "d1_states": {
+        "class_error": {
+          "n": 0,
+          "reference_iou_ge_05": 0,
+          "teacher_own_hit": 0,
+          "teacher_rgb_hit": 0,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 0
+        },
+        "low_confidence": {
+          "n": 730,
+          "reference_iou_ge_05": 715,
+          "teacher_own_hit": 586,
+          "teacher_rgb_hit": 586,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 578
+        },
+        "localization_gap": {
+          "n": 117,
+          "reference_iou_ge_05": 100,
+          "teacher_own_hit": 94,
+          "teacher_rgb_hit": 94,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 84
+        },
+        "well_localized": {
+          "n": 4716,
+          "reference_iou_ge_05": 4716,
+          "teacher_own_hit": 4489,
+          "teacher_rgb_hit": 4489,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 4489
+        },
+        "no_coarse_candidate": {
+          "n": 29,
+          "reference_iou_ge_05": 0,
+          "teacher_own_hit": 18,
+          "teacher_rgb_hit": 18,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 0
+        }
+      },
+      "summary_totals": {
+        "rgb_gt_count": 5592,
+        "teacher_gt_count": 5592,
+        "common_count": 5592,
+        "pair_iou_count": 5592,
+        "geometry_count": 5592,
+        "inside_count": 5592,
+        "support_count": 5592,
+        "unique_owner_count": 5582,
+        "reference_candidate_count": 5492,
+        "base_count": 5492,
+        "eligible_count": 211,
+        "reference_reliable_count": 5400,
+        "both_reliable_count": 5260,
+        "reference_localization_gap_count": 290,
+        "teacher_rgb_quality_count": 258,
+        "teacher_own_quality_count": 258,
+        "selected_count": 211,
+        "selected_quality_count": 211
+      },
+      "d1_totals": {
+        "images": 2048,
+        "rgb_gt_count": 5592,
+        "ir_gt_count": 5592,
+        "paired_gt_count": 5592,
+        "reference_confidence_filtered_predictions": 65422,
+        "teacher_confidence_filtered_predictions": 62996,
+        "well_localized": 4716,
+        "unreliable_or_unpaired": 0,
+        "object_level_localization_opportunity": 75,
+        "low_confidence": 730,
+        "localization_gap": 117,
+        "no_coarse_candidate": 29
+      },
+      "selected_dfl_ce_teacher_minus_reference_mean": -0.5051969854752599,
+      "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+      "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "augmentation": "centered_letterbox_scaleup_true_only",
+      "d1_fields": [
+        "image",
+        "ir_image",
+        "stem",
+        "source_group",
+        "rgb_gt_local_index",
+        "class",
+        "gt_box_input",
+        "area_input_px2",
+        "scale_bin",
+        "reference_state",
+        "reference",
+        "ir_gt_local_index",
+        "paired_gt_iou",
+        "correspondence",
+        "teacher",
+        "teacher_to_rgb_iou",
+        "object_level_localization_opportunity",
+        "mean_rgb_luma",
+        "luminance_proxy",
+        "brightness_proxy_bin"
+      ],
+      "d2_fields": [
+        "image_id",
+        "batch_index",
+        "anchor_index",
+        "rgb_gt_index",
+        "rgb_gt_local_index",
+        "ir_gt_index",
+        "class",
+        "stride",
+        "center",
+        "pair_iou",
+        "reference_iou",
+        "teacher_rgb_iou",
+        "teacher_ir_iou",
+        "reference_conf",
+        "teacher_conf",
+        "reference_correct",
+        "teacher_correct",
+        "quality_gate",
+        "rgb_distances",
+        "ir_distances",
+        "selected",
+        "teacher_gt_dfl_ce",
+        "reference_gt_dfl_ce",
+        "teacher_dfl_entropy",
+        "reference_dfl_entropy",
+        "reference_logit_kd_native_dot",
+        "reference_logit_kd_native_cosine",
+        "image",
+        "ir_image",
+        "source_group",
+        "geometry_verified",
+        "mean_rgb_luma",
+        "luminance_proxy",
+        "brightness_proxy_bin",
+        "area_input_px2",
+        "scale_bin",
+        "object_id"
+      ]
+    },
+    "llvip_val": {
+      "image_count": 200,
+      "population": 2406,
+      "sampling": "proportional_source_groups_uniform_frame_ranks",
+      "image_overlap_with_probe_full_path": 13,
+      "overlapping_paths": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/010512.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040064.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/040250.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070417.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/070441.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120088.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120162.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120199.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/120237.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250063.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250212.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250236.jpg",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev/250261.jpg"
+      ],
+      "overlap_gt_checked": 35,
+      "overlap_gt_max_input_px_difference": 3.435757815850593e-05,
+      "overlap_gt_class_mismatches": 0,
+      "d1_row_count": 643,
+      "d1_unique_objects": 643,
+      "d2_row_count": 559,
+      "d2_unique_objects": 559,
+      "d1_states": {
+        "class_error": {
+          "n": 0,
+          "reference_iou_ge_05": 0,
+          "teacher_own_hit": 0,
+          "teacher_rgb_hit": 0,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 0
+        },
+        "low_confidence": {
+          "n": 130,
+          "reference_iou_ge_05": 109,
+          "teacher_own_hit": 90,
+          "teacher_rgb_hit": 90,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 77
+        },
+        "localization_gap": {
+          "n": 162,
+          "reference_iou_ge_05": 112,
+          "teacher_own_hit": 118,
+          "teacher_rgb_hit": 118,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 91
+        },
+        "well_localized": {
+          "n": 292,
+          "reference_iou_ge_05": 292,
+          "teacher_own_hit": 271,
+          "teacher_rgb_hit": 271,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 271
+        },
+        "no_coarse_candidate": {
+          "n": 59,
+          "reference_iou_ge_05": 0,
+          "teacher_own_hit": 29,
+          "teacher_rgb_hit": 29,
+          "teacher_rgb_hit_and_reference_iou_ge_05": 0
+        }
+      },
+      "summary_totals": {
+        "rgb_gt_count": 643,
+        "teacher_gt_count": 643,
+        "common_count": 643,
+        "pair_iou_count": 643,
+        "geometry_count": 643,
+        "inside_count": 643,
+        "support_count": 643,
+        "unique_owner_count": 641,
+        "reference_candidate_count": 559,
+        "base_count": 559,
+        "eligible_count": 131,
+        "reference_reliable_count": 527,
+        "both_reliable_count": 475,
+        "reference_localization_gap_count": 192,
+        "teacher_rgb_quality_count": 151,
+        "teacher_own_quality_count": 151,
+        "selected_count": 131,
+        "selected_quality_count": 131
+      },
+      "d1_totals": {
+        "images": 200,
+        "rgb_gt_count": 643,
+        "ir_gt_count": 643,
+        "paired_gt_count": 643,
+        "reference_confidence_filtered_predictions": 7257,
+        "teacher_confidence_filtered_predictions": 7025,
+        "well_localized": 292,
+        "unreliable_or_unpaired": 0,
+        "object_level_localization_opportunity": 89,
+        "localization_gap": 162,
+        "low_confidence": 130,
+        "no_coarse_candidate": 59
+      },
+      "selected_dfl_ce_teacher_minus_reference_mean": -0.861512980388321,
+      "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+      "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "augmentation": "centered_letterbox_scaleup_true_only",
+      "d1_fields": [
+        "image",
+        "ir_image",
+        "stem",
+        "source_group",
+        "rgb_gt_local_index",
+        "class",
+        "gt_box_input",
+        "area_input_px2",
+        "scale_bin",
+        "reference_state",
+        "reference",
+        "ir_gt_local_index",
+        "paired_gt_iou",
+        "correspondence",
+        "teacher",
+        "teacher_to_rgb_iou",
+        "object_level_localization_opportunity",
+        "mean_rgb_luma",
+        "luminance_proxy",
+        "brightness_proxy_bin"
+      ],
+      "d2_fields": [
+        "image_id",
+        "batch_index",
+        "anchor_index",
+        "rgb_gt_index",
+        "rgb_gt_local_index",
+        "ir_gt_index",
+        "class",
+        "stride",
+        "center",
+        "pair_iou",
+        "reference_iou",
+        "teacher_rgb_iou",
+        "teacher_ir_iou",
+        "reference_conf",
+        "teacher_conf",
+        "reference_correct",
+        "teacher_correct",
+        "quality_gate",
+        "rgb_distances",
+        "ir_distances",
+        "selected",
+        "teacher_gt_dfl_ce",
+        "reference_gt_dfl_ce",
+        "teacher_dfl_entropy",
+        "reference_dfl_entropy",
+        "reference_logit_kd_native_dot",
+        "reference_logit_kd_native_cosine",
+        "image",
+        "ir_image",
+        "source_group",
+        "geometry_verified",
+        "mean_rgb_luma",
+        "luminance_proxy",
+        "brightness_proxy_bin",
+        "area_input_px2",
+        "scale_bin",
+        "object_id"
+      ]
+    }
+  },
+  "endpoint": {
+    "N_s0_attempt1": {
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+      "mAP50_95": 0.5434618520685575,
+      "historical_five_metrics_exact": true,
+      "image_count": 1469,
+      "gt_count": 22462,
+      "predictions_stored": 88236,
+      "canvas_shapes": [
+        [
+          544,
+          672
+        ]
+      ],
+      "exact_gt_equal_first_endpoint": true,
+      "kwargs": {
+        "imgsz": 640,
+        "batch": 32,
+        "workers": 4,
+        "quantize": null,
+        "conf": 0.001,
+        "iou": 0.7,
+        "max_det": 300,
+        "agnostic_nms": false,
+        "single_cls": false,
+        "rect": true,
+        "augment": false,
+        "half": false
+      },
+      "row_fields": [
+        "image",
+        "canvas_shape",
+        "original_shape",
+        "gt_boxes",
+        "gt_classes",
+        "pred_boxes",
+        "pred_classes",
+        "pred_confidence"
+      ]
+    },
+    "N_s42_attempt1": {
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+      "mAP50_95": 0.5451360845035178,
+      "historical_five_metrics_exact": true,
+      "image_count": 1469,
+      "gt_count": 22462,
+      "predictions_stored": 86843,
+      "canvas_shapes": [
+        [
+          544,
+          672
+        ]
+      ],
+      "exact_gt_equal_first_endpoint": true,
+      "kwargs": {
+        "imgsz": 640,
+        "batch": 32,
+        "workers": 4,
+        "quantize": null,
+        "conf": 0.001,
+        "iou": 0.7,
+        "max_det": 300,
+        "agnostic_nms": false,
+        "single_cls": false,
+        "rect": true,
+        "augment": false,
+        "half": false
+      },
+      "row_fields": [
+        "image",
+        "canvas_shape",
+        "original_shape",
+        "gt_boxes",
+        "gt_classes",
+        "pred_boxes",
+        "pred_classes",
+        "pred_confidence"
+      ]
+    },
+    "N_s123_attempt1": {
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt",
+      "mAP50_95": 0.5440743648945896,
+      "historical_five_metrics_exact": true,
+      "image_count": 1469,
+      "gt_count": 22462,
+      "predictions_stored": 86322,
+      "canvas_shapes": [
+        [
+          544,
+          672
+        ]
+      ],
+      "exact_gt_equal_first_endpoint": true,
+      "kwargs": {
+        "imgsz": 640,
+        "batch": 32,
+        "workers": 4,
+        "quantize": null,
+        "conf": 0.001,
+        "iou": 0.7,
+        "max_det": 300,
+        "agnostic_nms": false,
+        "single_cls": false,
+        "rect": true,
+        "augment": false,
+        "half": false
+      },
+      "row_fields": [
+        "image",
+        "canvas_shape",
+        "original_shape",
+        "gt_boxes",
+        "gt_classes",
+        "pred_boxes",
+        "pred_classes",
+        "pred_confidence"
+      ]
+    },
+    "C0_s0_attempt1": {
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+      "mAP50_95": 0.5477218640082956,
+      "historical_five_metrics_exact": true,
+      "image_count": 1469,
+      "gt_count": 22462,
+      "predictions_stored": 112513,
+      "canvas_shapes": [
+        [
+          544,
+          672
+        ]
+      ],
+      "exact_gt_equal_first_endpoint": true,
+      "kwargs": {
+        "imgsz": 640,
+        "batch": 32,
+        "workers": 4,
+        "quantize": null,
+        "conf": 0.001,
+        "iou": 0.7,
+        "max_det": 300,
+        "agnostic_nms": false,
+        "single_cls": false,
+        "rect": true,
+        "augment": false,
+        "half": false
+      },
+      "row_fields": [
+        "image",
+        "canvas_shape",
+        "original_shape",
+        "gt_boxes",
+        "gt_classes",
+        "pred_boxes",
+        "pred_classes",
+        "pred_confidence"
+      ]
+    },
+    "C0_s42_attempt1": {
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+      "mAP50_95": 0.5465816217191543,
+      "historical_five_metrics_exact": true,
+      "image_count": 1469,
+      "gt_count": 22462,
+      "predictions_stored": 105783,
+      "canvas_shapes": [
+        [
+          544,
+          672
+        ]
+      ],
+      "exact_gt_equal_first_endpoint": true,
+      "kwargs": {
+        "imgsz": 640,
+        "batch": 32,
+        "workers": 4,
+        "quantize": null,
+        "conf": 0.001,
+        "iou": 0.7,
+        "max_det": 300,
+        "agnostic_nms": false,
+        "single_cls": false,
+        "rect": true,
+        "augment": false,
+        "half": false
+      },
+      "row_fields": [
+        "image",
+        "canvas_shape",
+        "original_shape",
+        "gt_boxes",
+        "gt_classes",
+        "pred_boxes",
+        "pred_classes",
+        "pred_confidence"
+      ]
+    },
+    "C0_s123_attempt1": {
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt",
+      "mAP50_95": 0.5463684720507138,
+      "historical_five_metrics_exact": true,
+      "image_count": 1469,
+      "gt_count": 22462,
+      "predictions_stored": 106929,
+      "canvas_shapes": [
+        [
+          544,
+          672
+        ]
+      ],
+      "exact_gt_equal_first_endpoint": true,
+      "kwargs": {
+        "imgsz": 640,
+        "batch": 32,
+        "workers": 4,
+        "quantize": null,
+        "conf": 0.001,
+        "iou": 0.7,
+        "max_det": 300,
+        "agnostic_nms": false,
+        "single_cls": false,
+        "rect": true,
+        "augment": false,
+        "half": false
+      },
+      "row_fields": [
+        "image",
+        "canvas_shape",
+        "original_shape",
+        "gt_boxes",
+        "gt_classes",
+        "pred_boxes",
+        "pred_classes",
+        "pred_confidence"
+      ]
+    }
+  },
+  "declared_inputs": {
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\dronevehicle_full\\input_manifest.json": {
+      "size_bytes": 11908,
+      "mtime_ns": 1788630578326167300
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\dronevehicle_full\\summary.json": {
+      "size_bytes": 16457,
+      "mtime_ns": 1788630577151088900
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\dronevehicle_full\\prediction_records.json": {
+      "size_bytes": 2089865,
+      "mtime_ns": 1788630578876882100
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\dronevehicle_full\\image_metrics.json": {
+      "size_bytes": 132280,
+      "mtime_ns": 1788630580370192600
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\dronevehicle_full\\feature_metrics.json": {
+      "size_bytes": 621770,
+      "mtime_ns": 1788630579928695300
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\dronevehicle_full\\matched_objects.json": {
+      "size_bytes": 1603658,
+      "mtime_ns": 1788630579368927500
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\dronevehicle_full\\energy_maps.npz": {
+      "size_bytes": 11389987,
+      "mtime_ns": 1788630575569786800
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_train\\summary.json": {
+      "size_bytes": 32486,
+      "mtime_ns": 1788721427755326000
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_train\\frozen_roster.json": {
+      "size_bytes": 1309524,
+      "mtime_ns": 1788721427762880100
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_train\\d1_objects.jsonl": {
+      "size_bytes": 36488303,
+      "mtime_ns": 1788721470583619000
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_train\\d2_anchors.jsonl": {
+      "size_bytes": 36865405,
+      "mtime_ns": 1788721470660542800
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_val\\summary.json": {
+      "size_bytes": 7720,
+      "mtime_ns": 1788721427770441500
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_val\\frozen_roster.json": {
+      "size_bytes": 128306,
+      "mtime_ns": 1788721427784486700
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_val\\d1_objects.jsonl": {
+      "size_bytes": 3532316,
+      "mtime_ns": 1788721427776017600
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_val\\d2_anchors.jsonl": {
+      "size_bytes": 3423056,
+      "mtime_ns": 1788721427782057800
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\llvip_full\\input_manifest.json": {
+      "size_bytes": 12038,
+      "mtime_ns": 1788630574595011700
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\llvip_full\\summary.json": {
+      "size_bytes": 16380,
+      "mtime_ns": 1788630572256703900
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\llvip_full\\prediction_records.json": {
+      "size_bytes": 506976,
+      "mtime_ns": 1788630574954800100
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\llvip_full\\image_metrics.json": {
+      "size_bytes": 133935,
+      "mtime_ns": 1788630577604364500
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\llvip_full\\feature_metrics.json": {
+      "size_bytes": 624254,
+      "mtime_ns": 1788630576933015000
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\llvip_full\\matched_objects.json": {
+      "size_bytes": 330466,
+      "mtime_ns": 1788630575596391300
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识\\llvip_full\\energy_maps.npz": {
+      "size_bytes": 11332300,
+      "mtime_ns": 1788630571109147100
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_train\\summary.json": {
+      "size_bytes": 9685,
+      "mtime_ns": 1788721427788270800
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_train\\frozen_roster.json": {
+      "size_bytes": 1290542,
+      "mtime_ns": 1788721427820915700
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_train\\d1_objects.jsonl": {
+      "size_bytes": 6359812,
+      "mtime_ns": 1788721427799268600
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_train\\d2_anchors.jsonl": {
+      "size_bytes": 8597369,
+      "mtime_ns": 1788721427813413700
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_val\\summary.json": {
+      "size_bytes": 7237,
+      "mtime_ns": 1788721470662341300
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_val\\frozen_roster.json": {
+      "size_bytes": 125899,
+      "mtime_ns": 1788721470667894000
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_val\\d1_objects.jsonl": {
+      "size_bytes": 718633,
+      "mtime_ns": 1788721470663673200
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_val\\d2_anchors.jsonl": {
+      "size_bytes": 875427,
+      "mtime_ns": 1788721470666634900
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s0_attempt1\\evaluation_val.json": {
+      "size_bytes": 2117,
+      "mtime_ns": 1788768537639973100
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s0_attempt1\\evaluation_contract.json": {
+      "size_bytes": 350317,
+      "mtime_ns": 1788768537635972900
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s0_attempt1\\predictions\\objects.jsonl.gz": {
+      "size_bytes": 3641981,
+      "mtime_ns": 1788768537243969200
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s42_attempt1\\evaluation_val.json": {
+      "size_bytes": 2117,
+      "mtime_ns": 1788768433138989900
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s42_attempt1\\evaluation_contract.json": {
+      "size_bytes": 350317,
+      "mtime_ns": 1788768433130989700
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s42_attempt1\\predictions\\objects.jsonl.gz": {
+      "size_bytes": 3583101,
+      "mtime_ns": 1788768432758986200
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s123_attempt1\\evaluation_val.json": {
+      "size_bytes": 2124,
+      "mtime_ns": 1788768640784970500
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s123_attempt1\\evaluation_contract.json": {
+      "size_bytes": 350317,
+      "mtime_ns": 1788768640776970300
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\N_s123_attempt1\\predictions\\objects.jsonl.gz": {
+      "size_bytes": 3561261,
+      "mtime_ns": 1788768640388966500
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\evaluation_val.json": {
+      "size_bytes": 2115,
+      "mtime_ns": 1788768590036476600
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\evaluation_contract.json": {
+      "size_bytes": 350317,
+      "mtime_ns": 1788768590032476600
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s0_attempt1\\predictions\\objects.jsonl.gz": {
+      "size_bytes": 4568651,
+      "mtime_ns": 1788768589568472100
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s42_attempt1\\evaluation_val.json": {
+      "size_bytes": 2117,
+      "mtime_ns": 1788768483803462700
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s42_attempt1\\evaluation_contract.json": {
+      "size_bytes": 350317,
+      "mtime_ns": 1788768483799462700
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s42_attempt1\\predictions\\objects.jsonl.gz": {
+      "size_bytes": 4303581,
+      "mtime_ns": 1788768483375458700
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s123_attempt1\\evaluation_val.json": {
+      "size_bytes": 2124,
+      "mtime_ns": 1788768691413468300
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s123_attempt1\\evaluation_contract.json": {
+      "size_bytes": 350317,
+      "mtime_ns": 1788768691409468100
+    },
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\legacy_diagnostics_snapshot_20260907_161459\\C0_s123_attempt1\\predictions\\objects.jsonl.gz": {
+      "size_bytes": 4348429,
+      "mtime_ns": 1788768690873462900
+    }
+  },
+  "audited_input_hashes": []
+}

@@ -1,0 +1,71 @@
+{
+  "dronevehicle": {
+    "n_images": 200,
+    "n_common_objects": 3083,
+    "all_three_layers_valid_same_image_n": 179,
+    "fg_cka_on_all_layers_valid_images": {
+      "P3": {
+        "n": 179,
+        "mean": 0.6002547305795317,
+        "median": 0.6226283334195614
+      },
+      "P4": {
+        "n": 179,
+        "mean": 0.5970161519424376,
+        "median": 0.6222621381282807
+      },
+      "P5": {
+        "n": 179,
+        "mean": 0.2799055379612486,
+        "median": 0.26768594682216645
+      }
+    },
+    "teacher_only_strict_low_n": 118
+  },
+  "llvip": {
+    "n_images": 200,
+    "n_common_objects": 672,
+    "all_three_layers_valid_same_image_n": 147,
+    "fg_cka_on_all_layers_valid_images": {
+      "P3": {
+        "n": 147,
+        "mean": 0.33899313560148486,
+        "median": 0.3453793331980705
+      },
+      "P4": {
+        "n": 147,
+        "mean": 0.4708100747899944,
+        "median": 0.5103155478835106
+      },
+      "P5": {
+        "n": 147,
+        "mean": 0.04549732508302545,
+        "median": 0.04943671226501467
+      }
+    },
+    "teacher_only_strict_low_n": 25
+  },
+  "vedai": {
+    "n_images": 121,
+    "n_common_objects": 364,
+    "all_three_layers_valid_same_image_n": 1,
+    "fg_cka_on_all_layers_valid_images": {
+      "P3": {
+        "n": 1,
+        "mean": 0.6495036318898201,
+        "median": 0.6495036318898201
+      },
+      "P4": {
+        "n": 1,
+        "mean": 0.640686747431755,
+        "median": 0.640686747431755
+      },
+      "P5": {
+        "n": 1,
+        "mean": 0.48317686915397645,
+        "median": 0.48317686915397645
+      }
+    },
+    "teacher_only_strict_low_n": 20
+  }
+}

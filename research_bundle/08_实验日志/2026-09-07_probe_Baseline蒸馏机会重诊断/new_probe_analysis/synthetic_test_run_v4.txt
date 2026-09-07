@@ -1,0 +1,105 @@
+test_accuracy_and_macro_recall_not_interchanged (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_background_excluded_from_gt_opportunity_denominator (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_class_and_localization_can_overlap (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_dfl_background_pair_and_reference_denominators (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_dfl_gradient_cosine_direction (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_dfl_gt_raw_logit_gradient_finite_difference (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_dfl_gtce_uniform_is_log16 (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_dfl_interpolated_targets_and_exact_final_bin (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_dfl_out_of_support_never_clamped (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_empty_classification_subset (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+Ridge arm: N_logits
+Ridge arm: metadata_only
+Ridge arm: N_logits+metadata
+Ridge arm: N_logits_ROI_valid
+Ridge arm: metadata_only_ROI_valid
+Ridge arm: N_logits+T_logits
+Ridge arm: N_logits+N0_logits
+Ridge arm: N_feature_P3
+Ridge arm: N_logits+N_feature_P3
+Ridge arm: N_logits+T_feature_P3
+Ridge arm: N_logits+shuffled_T_feature_P3
+Ridge arm: N_logits+N_feature+T_feature_P3
+Ridge arm: N_logits+N_feature+shuffled_T_feature_P3
+Ridge arm: N_logits+N0_feature_P3
+Ridge arm: N_logits+N_feature+N0_feature_P3
+Ridge arm: N_region_logits_P3
+Ridge arm: N_region_logits_P3+N_feature
+Ridge arm: N_region_logits_P3+T_feature
+Ridge arm: N_region_logits_P3+T_region_logits
+Ridge arm: N_region_logits_P3+N0_region_logits
+Ridge arm: N_feature_P4
+Ridge arm: N_logits+N_feature_P4
+Ridge arm: N_logits+T_feature_P4
+Ridge arm: N_logits+shuffled_T_feature_P4
+Ridge arm: N_logits+N_feature+T_feature_P4
+Ridge arm: N_logits+N_feature+shuffled_T_feature_P4
+Ridge arm: N_logits+N0_feature_P4
+Ridge arm: N_logits+N_feature+N0_feature_P4
+Ridge arm: N_region_logits_P4
+Ridge arm: N_region_logits_P4+N_feature
+Ridge arm: N_region_logits_P4+T_feature
+Ridge arm: N_region_logits_P4+T_region_logits
+Ridge arm: N_region_logits_P4+N0_region_logits
+Ridge arm: N_feature_P3_P4
+Ridge arm: N_logits+N_feature_P3_P4
+Ridge arm: N_logits+T_feature_P3_P4
+Ridge arm: N_logits+shuffled_T_feature_P3_P4
+Ridge arm: N_logits+N_feature+T_feature_P3_P4
+Ridge arm: N_logits+N_feature+shuffled_T_feature_P3_P4
+Ridge arm: N_logits+N0_feature_P3_P4
+Ridge arm: N_logits+N_feature+N0_feature_P3_P4
+Ridge arm: N_region_logits_P3_P4
+Ridge arm: N_region_logits_P3_P4+N_feature
+Ridge arm: N_region_logits_P3_P4+T_feature
+Ridge arm: N_region_logits_P3_P4+T_region_logits
+Ridge arm: N_region_logits_P3_P4+N0_region_logits
+Ridge arm: N_anchor_feature_P3
+Ridge arm: N_logits+N_anchor_feature_P3
+Ridge arm: N_logits+T_anchor_feature_P3
+Ridge arm: N_logits+shuffled_T_anchor_feature_P3
+Ridge arm: N_logits+N_anchor_feature+T_anchor_feature_P3
+Ridge arm: N_logits+N_anchor_feature+shuffled_T_anchor_feature_P3
+Ridge arm: N_logits+N_anchor_feature+T_logits_P3
+Ridge arm: N_logits+N_anchor_feature+N0_logits_P3
+Ridge arm: N_logits+N0_anchor_feature_P3
+Ridge arm: N_logits+N_anchor_feature+N0_anchor_feature_P3
+Ridge arm: N_anchor_feature_P4
+Ridge arm: N_logits+N_anchor_feature_P4
+Ridge arm: N_logits+T_anchor_feature_P4
+Ridge arm: N_logits+shuffled_T_anchor_feature_P4
+Ridge arm: N_logits+N_anchor_feature+T_anchor_feature_P4
+Ridge arm: N_logits+N_anchor_feature+shuffled_T_anchor_feature_P4
+Ridge arm: N_logits+N_anchor_feature+T_logits_P4
+Ridge arm: N_logits+N_anchor_feature+N0_logits_P4
+Ridge arm: N_logits+N0_anchor_feature_P4
+Ridge arm: N_logits+N_anchor_feature+N0_anchor_feature_P4
+Ridge arm: N_anchor_feature_P3_P4
+Ridge arm: N_logits+N_anchor_feature_P3_P4
+Ridge arm: N_logits+T_anchor_feature_P3_P4
+Ridge arm: N_logits+shuffled_T_anchor_feature_P3_P4
+Ridge arm: N_logits+N_anchor_feature+T_anchor_feature_P3_P4
+Ridge arm: N_logits+N_anchor_feature+shuffled_T_anchor_feature_P3_P4
+Ridge arm: N_logits+N_anchor_feature+T_logits_P3_P4
+Ridge arm: N_logits+N_anchor_feature+N0_logits_P3_P4
+Ridge arm: N_logits+N0_anchor_feature_P3_P4
+Ridge arm: N_logits+N_anchor_feature+N0_anchor_feature_P3_P4
+Completed: C:\Users\MSI-PC\AppData\Local\Temp\tmpwppoumz9\analysis
+test_end_to_end_synthetic_export_and_no_overwrite (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_fixed_projection_reproducible_and_label_free (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_low_confidence_repair_is_not_class_repair (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_mean_objective_ridge_invariant_to_train_duplication (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_missing_teacher_is_replacement_harm_and_unpaired_not_harm (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_native_dfl_support_excludes_mathematical_bin15 (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_pair_threshold_excludes_unassociated_teacher (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_repairs_use_rgb_iou_not_teacher_native_ir_iou (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_same_anchor_and_assigned_are_separate (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_same_modal_object_comparison_does_not_require_ir_pair (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_shuffle_never_crosses_split_and_retains_joint_alignment (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_temperature2_kd_raw_logit_gradient_finite_difference (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+test_train_only_standardization (test_analyze_baseline_probe.ProbeKnownTruth) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.389s
+
+OK

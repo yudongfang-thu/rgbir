@@ -1,0 +1,75 @@
+{
+  "status": "completed",
+  "dataset": "llvip",
+  "images": 1224,
+  "objects_including_background": 8288,
+  "models": {
+    "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt"
+  },
+  "input_box_format": "xyxy",
+  "anchor_center_units": "input_pixels",
+  "reg_max": 16,
+  "reference_model": "N42",
+  "feature_shapes": {
+    "N42_P3": [
+      8288,
+      256
+    ],
+    "N42_anchor_P3": [
+      8288,
+      256
+    ],
+    "N42_P4": [
+      8288,
+      512
+    ],
+    "N42_anchor_P4": [
+      8288,
+      512
+    ],
+    "T42_P3": [
+      8288,
+      256
+    ],
+    "T42_anchor_P3": [
+      8288,
+      256
+    ],
+    "T42_P4": [
+      8288,
+      512
+    ],
+    "T42_anchor_P4": [
+      8288,
+      512
+    ]
+  },
+  "feature_region_gt_privileged": true,
+  "anchor_patch_region_gt_privileged": false,
+  "anchor_association_gt_privileged": true,
+  "head_input_verified_against_raw_feats": true,
+  "padding_excluded_from_background": true,
+  "background_class": 1,
+  "background_is_annotation_proxy": true,
+  "same_input_protocol": true,
+  "training_recipes_equal": false,
+  "postprocessing_device": "CPU_float32",
+  "gpu_allocated_peak_mib": 72.1298828125,
+  "gpu_reserved_peak_mib": 110.0,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 570
+    },
+    "peak_rss_mib": 1510
+  },
+  "seconds": 108.32946395874023,
+  "official_test_accessed": false,
+  "formal_training_authorized": false
+}

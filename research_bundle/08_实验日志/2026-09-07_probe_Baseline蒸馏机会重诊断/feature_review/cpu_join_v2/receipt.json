@@ -1,0 +1,18 @@
+{
+  "status": "completed_cpu_only",
+  "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_probe_RGBIR数据特性与可迁移知识",
+  "object_layer_rows": 12357,
+  "image_rows": 519,
+  "new_inference": false,
+  "new_hash_computation": false,
+  "limitations": [
+    "Energy is within-model foreground/background response, not information quality.",
+    "Image CKA cannot be interpreted as an object feature.",
+    "Correlation unit is image; scene/luminance/scale confounding remains.",
+    "Localization delta compares each model with its own modality GT.",
+    "Post-NMS conf>=.05 predictions cannot recover full logits or DFL.",
+    "No object ROI vectors or same-modal independent baseline feature cache exists here.",
+    "Tiny-object grid-center sampling misses some foreground; paired valid denominators are reported.",
+    "Descriptive, one checkpoint seed; no efficacy or statistical significance claim."
+  ]
+}

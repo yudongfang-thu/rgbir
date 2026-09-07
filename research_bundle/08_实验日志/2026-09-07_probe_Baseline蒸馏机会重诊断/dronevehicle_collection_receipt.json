@@ -1,0 +1,122 @@
+{
+  "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/dronevehicle_full_attempt1",
+  "local": "E:\\SHARE\\\u5149sar\\08_\u5b9e\u9a8c\u65e5\u5fd7\\2026-09-07_probe_Baseline\u84b8\u998f\u673a\u4f1a\u91cd\u8bca\u65ad\\remote_exports\\dronevehicle_full_attempt1",
+  "summary": {
+    "status": "completed",
+    "dataset": "dronevehicle",
+    "images": 1224,
+    "objects_including_background": 23210,
+    "models": {
+      "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+      "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "N0": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt"
+    },
+    "input_box_format": "xyxy",
+    "anchor_center_units": "input_pixels",
+    "reg_max": 16,
+    "reference_model": "N42",
+    "feature_shapes": {
+      "N42_P3": [
+        23210,
+        256
+      ],
+      "N42_anchor_P3": [
+        23210,
+        256
+      ],
+      "N42_P4": [
+        23210,
+        512
+      ],
+      "N42_anchor_P4": [
+        23210,
+        512
+      ],
+      "T42_P3": [
+        23210,
+        256
+      ],
+      "T42_anchor_P3": [
+        23210,
+        256
+      ],
+      "T42_P4": [
+        23210,
+        512
+      ],
+      "T42_anchor_P4": [
+        23210,
+        512
+      ],
+      "N0_P3": [
+        23210,
+        256
+      ],
+      "N0_anchor_P3": [
+        23210,
+        256
+      ],
+      "N0_P4": [
+        23210,
+        512
+      ],
+      "N0_anchor_P4": [
+        23210,
+        512
+      ]
+    },
+    "feature_region_gt_privileged": true,
+    "anchor_patch_region_gt_privileged": false,
+    "anchor_association_gt_privileged": true,
+    "head_input_verified_against_raw_feats": true,
+    "padding_excluded_from_background": true,
+    "background_class": 5,
+    "background_is_annotation_proxy": true,
+    "same_input_protocol": true,
+    "training_recipes_equal": false,
+    "postprocessing_device": "CPU_float32",
+    "gpu_allocated_peak_mib": 89.04296875,
+    "gpu_reserved_peak_mib": 120.0,
+    "resources": {
+      "gpu_ids": [
+        4
+      ],
+      "cuda_pid_counts": {
+        "4": 1
+      },
+      "per_gpu_peak_vram_mib": {
+        "4": 580
+      },
+      "peak_rss_mib": 2842
+    },
+    "seconds": 322.0367639064789,
+    "official_test_accessed": false,
+    "formal_training_authorized": false
+  },
+  "files": [
+    {
+      "name": "features.npz",
+      "bytes": 391886594
+    },
+    {
+      "name": "frozen_roster.json",
+      "bytes": 783775
+    },
+    {
+      "name": "logits.npz",
+      "bytes": 20154305
+    },
+    {
+      "name": "model_identity.json",
+      "bytes": 10512
+    },
+    {
+      "name": "objects.jsonl",
+      "bytes": 70960762
+    },
+    {
+      "name": "summary.json",
+      "bytes": 2064
+    }
+  ]
+}

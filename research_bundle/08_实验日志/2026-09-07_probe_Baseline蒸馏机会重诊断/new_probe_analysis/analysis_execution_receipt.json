@@ -1,0 +1,36 @@
+{
+  "status": "COMPLETED",
+  "timestamp": "2026-09-07T20:00:09.115696",
+  "compute": "CPU only",
+  "BLAS_OMP_thread_limit": 4,
+  "hashes_computed": false,
+  "frozen_analyzer_bytes": 42833,
+  "synthetic_tests_passed": 23,
+  "independent_adversarial_checks_passed": 5,
+  "datasets": {
+    "dronevehicle": {
+      "raw": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\dronevehicle_full_attempt1",
+      "collection_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\dronevehicle_collection_receipt.json",
+      "array_and_roster_preflight": "passed before run",
+      "file_bytes_match_collection": true,
+      "rows": 23210,
+      "distinct_images": {
+        "train": 1024,
+        "val": 200
+      },
+      "output": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\new_probe_analysis\\dronevehicle_analysis_v1"
+    },
+    "llvip": {
+      "raw": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\llvip_full_attempt1",
+      "collection_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\llvip_collection_receipt.json",
+      "array_and_roster_preflight": "passed before run",
+      "file_bytes_match_collection": true,
+      "rows": 8288,
+      "distinct_images": {
+        "train": 1024,
+        "val": 200
+      },
+      "output": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\new_probe_analysis\\llvip_analysis_v1"
+    }
+  }
+}

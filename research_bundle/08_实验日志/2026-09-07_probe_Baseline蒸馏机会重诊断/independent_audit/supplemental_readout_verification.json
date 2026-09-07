@@ -1,0 +1,69 @@
+{
+  "localization_known_truth_checks": {
+    "ltrb_roundtrip_known_box": "passed",
+    "negative_distance_is_invalid_not_clamped": "passed",
+    "native_dfl_bin_expectation": "passed",
+    "ridge_mean_objective_alpha1_closed_form": "passed",
+    "standardizer_train_only": "passed",
+    "split_shuffle_bijection_no_self_pair": "passed"
+  },
+  "gpu_used": false,
+  "hashes_computed": false,
+  "datasets": {
+    "dronevehicle": {
+      "localization": {
+        "cohort_n": 17840,
+        "train_n": 15019,
+        "val_n": 2821,
+        "cohort_source_row_and_id_exact": true,
+        "gt_boxes_exact": true,
+        "donor_bijection_no_self_same_split": true,
+        "all_saved_iou_mse_metrics_recomputed_max_difference": 0.0,
+        "native_decoded_box_vs_export_fp32_max_difference_px": 4.950362722411228e-05,
+        "native_dfl_expectation_exact": true
+      },
+      "direct_head": {
+        "N42": {
+          "rule_logit_threshold_log_one_third_equivalent": true,
+          "all_metrics_exact": true,
+          "foreground_macro_main": 0.6014269184035025
+        },
+        "T42": {
+          "rule_logit_threshold_log_one_third_equivalent": true,
+          "all_metrics_exact": true,
+          "foreground_macro_main": 0.5434904601571269
+        },
+        "N0": {
+          "rule_logit_threshold_log_one_third_equivalent": true,
+          "all_metrics_exact": true,
+          "foreground_macro_main": 0.5682084852195045
+        }
+      }
+    },
+    "llvip": {
+      "localization": {
+        "cohort_n": 3276,
+        "train_n": 2728,
+        "val_n": 548,
+        "cohort_source_row_and_id_exact": true,
+        "gt_boxes_exact": true,
+        "donor_bijection_no_self_same_split": true,
+        "all_saved_iou_mse_metrics_recomputed_max_difference": 0.0,
+        "native_decoded_box_vs_export_fp32_max_difference_px": 4.9188852699444396e-05,
+        "native_dfl_expectation_exact": true
+      },
+      "direct_head": {
+        "N42": {
+          "rule_logit_threshold_log_one_third_equivalent": true,
+          "all_metrics_exact": true,
+          "foreground_macro_main": 0.7060653188180405
+        },
+        "T42": {
+          "rule_logit_threshold_log_one_third_equivalent": true,
+          "all_metrics_exact": true,
+          "foreground_macro_main": 0.6485225505443235
+        }
+      }
+    }
+  }
+}

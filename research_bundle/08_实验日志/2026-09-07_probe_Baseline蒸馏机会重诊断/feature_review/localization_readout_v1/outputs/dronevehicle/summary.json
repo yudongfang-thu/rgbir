@@ -1,0 +1,453 @@
+{
+  "dataset": "dronevehicle",
+  "status": "completed_cpu_only",
+  "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\dronevehicle_full_attempt1",
+  "filter_counts": {
+    "train": {
+      "all_exported_including_background": 19416,
+      "real_gt_objects": 15782,
+      "paired_gt_iou_ge_0_5": 15253,
+      "with_reference_candidate": 15058,
+      "all_four_gt_distances_in_0_14_99": 15019
+    },
+    "val": {
+      "all_exported_including_background": 3794,
+      "real_gt_objects": 3084,
+      "paired_gt_iou_ge_0_5": 2946,
+      "with_reference_candidate": 2837,
+      "all_four_gt_distances_in_0_14_99": 2821
+    }
+  },
+  "models": {
+    "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+    "N0": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt"
+  },
+  "arms": {
+    "native_N_dfl_expectation": [],
+    "ridge_N_dfl": [
+      "N42_dfl"
+    ],
+    "ridge_N_dfl_T_dfl": [
+      "N42_dfl",
+      "T42_dfl"
+    ],
+    "ridge_N_dfl_N_feature": [
+      "N42_dfl",
+      "N42_feature"
+    ],
+    "ridge_N_dfl_N_feature_T_feature": [
+      "N42_dfl",
+      "N42_feature",
+      "T42_feature"
+    ],
+    "ridge_N_dfl_N_feature_shuffled_T_feature": [
+      "N42_dfl",
+      "N42_feature",
+      "T42_feature_shuffled"
+    ],
+    "ridge_meta_only": [
+      "meta"
+    ],
+    "ridge_N_dfl_N0_dfl": [
+      "N42_dfl",
+      "N0_dfl"
+    ],
+    "ridge_N_dfl_N_feature_N0_feature": [
+      "N42_dfl",
+      "N42_feature",
+      "N0_feature"
+    ]
+  },
+  "missing_arms": [],
+  "shuffle_same_image_count_by_split": {
+    "train": 28,
+    "val": 26
+  },
+  "metrics": [
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "native_N_dfl_expectation",
+      "input_dim": 0,
+      "n_objects": 15019,
+      "four_edge_mse": 0.07026540069519141,
+      "left_mse": 0.07151601283783939,
+      "top_mse": 0.06697407887851443,
+      "right_mse": 0.07611033878611255,
+      "bottom_mse": 0.0664611722782993,
+      "mean_iou_rgb_gt": 0.8859936450092111,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "native_N_dfl_expectation",
+      "input_dim": 0,
+      "n_objects": 2821,
+      "four_edge_mse": 0.13498202629774914,
+      "left_mse": 0.12424623209887127,
+      "top_mse": 0.12737847880835287,
+      "right_mse": 0.17079176704157356,
+      "bottom_mse": 0.11751162724219895,
+      "mean_iou_rgb_gt": 0.848450688703397,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "ridge_N_dfl",
+      "input_dim": 64,
+      "n_objects": 15019,
+      "four_edge_mse": 0.2399156361296747,
+      "left_mse": 0.24374010921329997,
+      "top_mse": 0.24484154371388342,
+      "right_mse": 0.2342309341270648,
+      "bottom_mse": 0.2368499574644505,
+      "mean_iou_rgb_gt": 0.7596483703925508,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "ridge_N_dfl",
+      "input_dim": 64,
+      "n_objects": 2821,
+      "four_edge_mse": 0.2951946535259846,
+      "left_mse": 0.28066498488525615,
+      "top_mse": 0.298518381374611,
+      "right_mse": 0.3187491479403309,
+      "bottom_mse": 0.28284609990374043,
+      "mean_iou_rgb_gt": 0.742625951235498,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "ridge_N_dfl_T_dfl",
+      "input_dim": 128,
+      "n_objects": 15019,
+      "four_edge_mse": 0.1756362897540697,
+      "left_mse": 0.17167238240611452,
+      "top_mse": 0.1754054285952447,
+      "right_mse": 0.17366486490845479,
+      "bottom_mse": 0.18180248310646477,
+      "mean_iou_rgb_gt": 0.7881467953035379,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "ridge_N_dfl_T_dfl",
+      "input_dim": 128,
+      "n_objects": 2821,
+      "four_edge_mse": 0.2226130411358585,
+      "left_mse": 0.1996071673868414,
+      "top_mse": 0.21861265972526028,
+      "right_mse": 0.2512184276485107,
+      "bottom_mse": 0.22101390978282157,
+      "mean_iou_rgb_gt": 0.7715767907574121,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "ridge_N_dfl_N_feature",
+      "input_dim": 320,
+      "n_objects": 15019,
+      "four_edge_mse": 0.18723704003816344,
+      "left_mse": 0.19704116798096996,
+      "top_mse": 0.18836457676725657,
+      "right_mse": 0.18290322062693073,
+      "bottom_mse": 0.18063919477749635,
+      "mean_iou_rgb_gt": 0.7798320133343363,
+      "invalid_negative_distance_n": 4
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "ridge_N_dfl_N_feature",
+      "input_dim": 320,
+      "n_objects": 2821,
+      "four_edge_mse": 0.25207669860588655,
+      "left_mse": 0.24210011716915164,
+      "top_mse": 0.25288358813413836,
+      "right_mse": 0.2907216839321026,
+      "bottom_mse": 0.22260140518815355,
+      "mean_iou_rgb_gt": 0.7573843976213596,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "ridge_N_dfl_N_feature_T_feature",
+      "input_dim": 576,
+      "n_objects": 15019,
+      "four_edge_mse": 0.17296644464831354,
+      "left_mse": 0.1826545789884626,
+      "top_mse": 0.17366785257931963,
+      "right_mse": 0.1670776950405789,
+      "bottom_mse": 0.16846565198489302,
+      "mean_iou_rgb_gt": 0.7859971770844361,
+      "invalid_negative_distance_n": 5
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "ridge_N_dfl_N_feature_T_feature",
+      "input_dim": 576,
+      "n_objects": 2821,
+      "four_edge_mse": 0.2323393767769311,
+      "left_mse": 0.22063386785097322,
+      "top_mse": 0.23132407732288293,
+      "right_mse": 0.27115940966046076,
+      "bottom_mse": 0.2062401522734075,
+      "mean_iou_rgb_gt": 0.7634150352916358,
+      "invalid_negative_distance_n": 1
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "ridge_N_dfl_N_feature_shuffled_T_feature",
+      "input_dim": 576,
+      "n_objects": 15019,
+      "four_edge_mse": 0.18628140792838388,
+      "left_mse": 0.1958676934322277,
+      "top_mse": 0.18744943144804932,
+      "right_mse": 0.18201225243067348,
+      "bottom_mse": 0.17979625440258498,
+      "mean_iou_rgb_gt": 0.7801583221968935,
+      "invalid_negative_distance_n": 5
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "ridge_N_dfl_N_feature_shuffled_T_feature",
+      "input_dim": 576,
+      "n_objects": 2821,
+      "four_edge_mse": 0.2527593491306213,
+      "left_mse": 0.24276556579898703,
+      "top_mse": 0.25369280162036406,
+      "right_mse": 0.291448304899062,
+      "bottom_mse": 0.22313072420407215,
+      "mean_iou_rgb_gt": 0.7569724623878576,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "ridge_meta_only",
+      "input_dim": 3,
+      "n_objects": 15019,
+      "four_edge_mse": 2.366210345696305,
+      "left_mse": 2.5039399546717576,
+      "top_mse": 2.360195679060617,
+      "right_mse": 2.2389351860304374,
+      "bottom_mse": 2.3617705630224086,
+      "mean_iou_rgb_gt": 0.4315792724987263,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "ridge_meta_only",
+      "input_dim": 3,
+      "n_objects": 2821,
+      "four_edge_mse": 2.294986427528717,
+      "left_mse": 2.27134937489385,
+      "top_mse": 2.414864984593999,
+      "right_mse": 2.133583371395296,
+      "bottom_mse": 2.3601479792317215,
+      "mean_iou_rgb_gt": 0.43451785919256897,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "ridge_N_dfl_N0_dfl",
+      "input_dim": 128,
+      "n_objects": 15019,
+      "four_edge_mse": 0.18184598083579914,
+      "left_mse": 0.18345132418655447,
+      "top_mse": 0.18360300330787402,
+      "right_mse": 0.1795154738814091,
+      "bottom_mse": 0.18081412196735908,
+      "mean_iou_rgb_gt": 0.7855959542085742,
+      "invalid_negative_distance_n": 1
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "ridge_N_dfl_N0_dfl",
+      "input_dim": 128,
+      "n_objects": 2821,
+      "four_edge_mse": 0.24382016022317754,
+      "left_mse": 0.23359637345286188,
+      "top_mse": 0.23759614058437617,
+      "right_mse": 0.27360010017171016,
+      "bottom_mse": 0.23048802668376206,
+      "mean_iou_rgb_gt": 0.764176626211253,
+      "invalid_negative_distance_n": 0
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "arm": "ridge_N_dfl_N_feature_N0_feature",
+      "input_dim": 576,
+      "n_objects": 15019,
+      "four_edge_mse": 0.1772565148935171,
+      "left_mse": 0.18627640053228317,
+      "top_mse": 0.17675051338147132,
+      "right_mse": 0.173665683462412,
+      "bottom_mse": 0.17233346219790202,
+      "mean_iou_rgb_gt": 0.7844846327611391,
+      "invalid_negative_distance_n": 11
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "val",
+      "arm": "ridge_N_dfl_N_feature_N0_feature",
+      "input_dim": 576,
+      "n_objects": 2821,
+      "four_edge_mse": 0.24515679406510787,
+      "left_mse": 0.23543860137015785,
+      "top_mse": 0.24393807225897607,
+      "right_mse": 0.2851527771480271,
+      "bottom_mse": 0.21609772548327033,
+      "mean_iou_rgb_gt": 0.7602107511219865,
+      "invalid_negative_distance_n": 2
+    }
+  ],
+  "alpha": 1.0,
+  "projection_dim_per_level": 128,
+  "seed": 20260907,
+  "new_gpu_inference": false,
+  "new_hash_computation": false,
+  "test_accessed": false,
+  "gt_privileged_association": true,
+  "deployable_detector": false,
+  "kd_gain_or_ap": false,
+  "collection_receipt": {
+    "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_baseline_information_20260907/attempt3/dronevehicle_full_attempt1",
+    "local": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\dronevehicle_full_attempt1",
+    "summary": {
+      "status": "completed",
+      "dataset": "dronevehicle",
+      "images": 1224,
+      "objects_including_background": 23210,
+      "models": {
+        "N42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "T42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+        "N0": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt"
+      },
+      "input_box_format": "xyxy",
+      "anchor_center_units": "input_pixels",
+      "reg_max": 16,
+      "reference_model": "N42",
+      "feature_shapes": {
+        "N42_P3": [
+          23210,
+          256
+        ],
+        "N42_anchor_P3": [
+          23210,
+          256
+        ],
+        "N42_P4": [
+          23210,
+          512
+        ],
+        "N42_anchor_P4": [
+          23210,
+          512
+        ],
+        "T42_P3": [
+          23210,
+          256
+        ],
+        "T42_anchor_P3": [
+          23210,
+          256
+        ],
+        "T42_P4": [
+          23210,
+          512
+        ],
+        "T42_anchor_P4": [
+          23210,
+          512
+        ],
+        "N0_P3": [
+          23210,
+          256
+        ],
+        "N0_anchor_P3": [
+          23210,
+          256
+        ],
+        "N0_P4": [
+          23210,
+          512
+        ],
+        "N0_anchor_P4": [
+          23210,
+          512
+        ]
+      },
+      "feature_region_gt_privileged": true,
+      "anchor_patch_region_gt_privileged": false,
+      "anchor_association_gt_privileged": true,
+      "head_input_verified_against_raw_feats": true,
+      "padding_excluded_from_background": true,
+      "background_class": 5,
+      "background_is_annotation_proxy": true,
+      "same_input_protocol": true,
+      "training_recipes_equal": false,
+      "postprocessing_device": "CPU_float32",
+      "gpu_allocated_peak_mib": 89.04296875,
+      "gpu_reserved_peak_mib": 120.0,
+      "resources": {
+        "gpu_ids": [
+          4
+        ],
+        "cuda_pid_counts": {
+          "4": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "4": 580
+        },
+        "peak_rss_mib": 2842
+      },
+      "seconds": 322.0367639064789,
+      "official_test_accessed": false,
+      "formal_training_authorized": false
+    },
+    "files": [
+      {
+        "name": "features.npz",
+        "bytes": 391886594
+      },
+      {
+        "name": "frozen_roster.json",
+        "bytes": 783775
+      },
+      {
+        "name": "logits.npz",
+        "bytes": 20154305
+      },
+      {
+        "name": "model_identity.json",
+        "bytes": 10512
+      },
+      {
+        "name": "objects.jsonl",
+        "bytes": 70960762
+      },
+      {
+        "name": "summary.json",
+        "bytes": 2064
+      }
+    ]
+  },
+  "seconds": 4.413140773773193
+}

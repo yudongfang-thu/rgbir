@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\independent_audit\\new_analyzer_review_v2\\analyze_baseline_probe.py",
+  "checks": [
+    "Invalid ROI values cannot alter valid-cohort predictions; all ROI arms use 23 train/11 val",
+    "IR, independent RGB and shuffled IR fixed-anchor controls have identical projected dimensions per level",
+    "Both donor maps stay within train/val; ROI donors additionally stay within common valid cohort",
+    "Main readout reports disjoint annotation-background, reference-candidate and GT-center-fallback groups",
+    "Arbitrary held-out feature shift leaves fitted training transforms and training predictions unchanged"
+  ],
+  "n_checks": 5,
+  "gpu_used": false,
+  "hashes_computed": false
+}
