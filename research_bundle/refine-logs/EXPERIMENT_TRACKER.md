@@ -45,7 +45,7 @@ Baseline信息诊断已完成2448图及独立复核：[阶段判断](../08_实�
 |P00|分析器|新arm/错误分类/配对统计独立验收|—|MUST|POSTHOC_CLASS_ADAPTER_ACCEPTED|独立17测试及真实六端点重跑通过，每端点五类；C0 harm无缺失且REVIEW_REQUIRED，30份旧关键文件不变。仅接受接口，CLI保持非自动授权；未来C1实际评价源码仍须核验|
 |P01|归因|最终类别方法四臂|0/42/123|MUST_IF_CLAIMED|WAIT_WINNER_C0_HARM_REVIEW|C0背景误检三seed同增，其后续自动扩展需专项复核；C1按原门槛，已有控制继续|
 |P02|归因|L1自己的四臂|0/42/123|MUST_IF_CLAIMED|WAIT_L_EVIDENCE|额外6次；L_GT不能替代same-modal|
-|P03|证据|GitHub阶段同步|—|MUST|PUBLISHED|最新6ed99b2已推送原分支并远端核验，baseline增量清单132文件、113份原始文件字节核对，较大特征数组仅登记路径；此前d35124d/c7bbd6d补评证据保留。见baseline诊断publication_receipt.json；C1完整端点仍待训练结束，20:09无变化快照不重复发布|
+|P03|证据|GitHub阶段同步|—|MUST|PUBLISHED|本阶段证据提交00bfb59已推送并核对远端：589文件、518份raw在Git blob层字节核对，2个大派生数组仅记录路径；根目录DUAL_DATASET_EVIDENCE_INCREMENT_20260907.json及PUBLICATION_DUAL_EVIDENCE_20260907.json为复核入口。此前6ed99b2为上一baseline诊断阶段，原始证据保留|
 |B01|诊断|当前baseline分类/定位/局部特征中间结果|诊断20260907|USER_REQUEST|COMPLETED|两数据集各1024train+200dev；固定读出、独立RGB/错配及原生head复核完成；不是新KD AP或训练准入|
 |B02|诊断|两数据集完整dev AP与少数类桥接|旧N/C0三seed+LLVIP旧42|USER_REQUEST|ACCEPTED_DESCRIPTIVE|Drone1469dev六端点、LLVIP2406dev两模型；官方TIDE/独立COCO及真值通过，非KD增益|
 |B03|诊断|定位固定25条件压力|固定train/dev缓存|USER_REQUEST|ACCEPTED_DESCRIPTIVE|两数据集attempt2独立全量复算通过；旧汇总计数错误保留，非物理配准证明|
