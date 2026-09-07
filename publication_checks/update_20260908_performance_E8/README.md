@@ -13,3 +13,5 @@
 没有上传权重、state/raw `.pt`、原始数据集图片、缓存、凭据、`host_profile` 原 JSON、主机全进程或其他用户命令明细。共 47 个源范围条目明确排除，详见 [发布清单](../../PERFORMANCE_E8_INCREMENT_20260908.json)。仅包含综合报告的派生图表。
 
 [暂存检查](staged_review.json)记录文件范围、逐字节检查与禁传扫描。Git 的普通 whitespace 检查会将保留的 CRLF 及原始文件尾随空格报告为格式提示；本次不为格式检查重写冻结源码或原始回执。正式 Git 提交身份与远端分支核验在提交推送后向请求方返回，未以文件哈希替代来源证据。
+
+Supplement: after the main stage commit `92e3ae402b6b721617de030586bfc16b997ea864`, the three small files in [the linked old-run heartbeat](../../research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/heartbeat_20260908_0335/README.md) were copied byte exactly. See [the supplemental receipt](heartbeat_link_supplement.json). No whole-host process inventory or broader historical link audit was added.

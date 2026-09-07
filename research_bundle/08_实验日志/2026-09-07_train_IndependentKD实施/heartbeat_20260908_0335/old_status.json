@@ -1,0 +1,180 @@
+{
+  "read_at": "2026-09-08T03:37:32.133483+08:00",
+  "runs": {
+    "C1_s42": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed42",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 40,
+        "epochs": 200,
+        "optimizer_updates": 11492,
+        "update_attempts": 11500,
+        "amp_skips": 8,
+        "batches": 22155,
+        "selected_objects": 2692540,
+        "seconds": 43652.6737613678,
+        "last_kd": 0.1486874371767044
+      },
+      "progress_size": 268,
+      "progress_mtime": 1788809835.6940413,
+      "progress_age_seconds": 16.437694549560547,
+      "completion": null,
+      "failure": null,
+      "evaluation": null,
+      "evaluation_receipt": null,
+      "top_level_receipt_names": [],
+      "last_completed_epoch": 39,
+      "last_completed_elapsed_seconds": 43234.5,
+      "since_previous": {
+        "same_run": true,
+        "successful_updates": 2199,
+        "amp_skips": 1
+      },
+      "amp_accounting_exact": true,
+      "finite_last_kd": true
+    },
+    "C1_s0": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed0",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 38,
+        "epochs": 200,
+        "optimizer_updates": 11082,
+        "update_attempts": 11090,
+        "amp_skips": 8,
+        "batches": 21335,
+        "selected_objects": 2593059,
+        "seconds": 43613.52104616165,
+        "last_kd": 0.126547709107399
+      },
+      "progress_size": 268,
+      "progress_mtime": 1788809826.957913,
+      "progress_age_seconds": 25.174190044403076,
+      "completion": null,
+      "failure": null,
+      "evaluation": null,
+      "evaluation_receipt": null,
+      "top_level_receipt_names": [],
+      "last_completed_epoch": 37,
+      "last_completed_elapsed_seconds": 42517.2,
+      "since_previous": {
+        "same_run": true,
+        "successful_updates": 2100,
+        "amp_skips": 0
+      },
+      "amp_accounting_exact": true,
+      "finite_last_kd": true
+    },
+    "C1_s123": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed123",
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 40,
+        "epochs": 200,
+        "optimizer_updates": 11401,
+        "update_attempts": 11410,
+        "amp_skips": 9,
+        "batches": 21975,
+        "selected_objects": 2670811,
+        "seconds": 43576.49104762077,
+        "last_kd": 0.12255148589611053
+      },
+      "progress_size": 270,
+      "progress_mtime": 1788809822.1738424,
+      "progress_age_seconds": 29.958580493927002,
+      "completion": null,
+      "failure": null,
+      "evaluation": null,
+      "evaluation_receipt": null,
+      "top_level_receipt_names": [],
+      "last_completed_epoch": 39,
+      "last_completed_elapsed_seconds": 43528.1,
+      "since_previous": {
+        "same_run": true,
+        "successful_updates": 2178,
+        "amp_skips": 2
+      },
+      "amp_accounting_exact": true,
+      "finite_last_kd": true
+    },
+    "c_shuffled": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "c_shuffled",
+        "epoch": 84,
+        "epochs": 200,
+        "optimizer_updates": 24016,
+        "update_attempts": 24030,
+        "amp_skips": 14,
+        "batches": 47215,
+        "selected_objects": 5742034,
+        "seconds": 87501.06441926956,
+        "last_kd": 0.28045356273651123
+      },
+      "progress_size": 275,
+      "progress_mtime": 1788809846.6862018,
+      "progress_age_seconds": 5.4465131759643555,
+      "completion": null,
+      "failure": null,
+      "evaluation": null,
+      "evaluation_receipt": null,
+      "top_level_receipt_names": [],
+      "last_completed_epoch": 83,
+      "last_completed_elapsed_seconds": 85646.0,
+      "since_previous": {
+        "same_run": true,
+        "successful_updates": 2389,
+        "amp_skips": 1
+      },
+      "amp_accounting_exact": true,
+      "finite_last_kd": true
+    },
+    "c_same_modal": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1",
+      "progress": {
+        "status": "running",
+        "arm": "c_same_modal",
+        "epoch": 80,
+        "epochs": 200,
+        "optimizer_updates": 22668,
+        "update_attempts": 22680,
+        "amp_skips": 12,
+        "batches": 44515,
+        "selected_objects": 3857109,
+        "seconds": 69185.76541805267,
+        "last_kd": 0.035848069936037064
+      },
+      "progress_size": 278,
+      "progress_mtime": 1788809847.858219,
+      "progress_age_seconds": 4.274907827377319,
+      "completion": null,
+      "failure": null,
+      "evaluation": null,
+      "evaluation_receipt": null,
+      "top_level_receipt_names": [],
+      "last_completed_epoch": 79,
+      "last_completed_elapsed_seconds": 69109.4,
+      "since_previous": {
+        "same_run": true,
+        "successful_updates": 2459,
+        "amp_skips": 1
+      },
+      "amp_accounting_exact": true,
+      "finite_last_kd": true
+    }
+  },
+  "remote_mutations": false,
+  "new_gpu_tasks": 0,
+  "new_hash_computed": false,
+  "checkpoint_read": false,
+  "e8_inspected": false,
+  "previous_snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\running_state_20260908_011232.json",
+  "previous_read_at": "2026-09-08T01:12:33.019650+08:00",
+  "status": "READ_ONLY_HEALTHY_NO_NEW_ENDPOINT",
+  "health_issues": [],
+  "endpoint_runs": []
+}
