@@ -1,0 +1,12 @@
+...................................................../mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu2/test_classification_logit.py:208: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  self.assertLess(abs(float(classification_relative_kd(s,s.detach(),v,k,y))),1e-6)
+..........................{"batch_completed": 1, "roster_hit_batches_so_far": 1}
+{"batch_completed": 2, "roster_hit_batches_so_far": 1}
+{"batch_completed": 3, "roster_hit_batches_so_far": 1}
+{"batch_completed": 4, "roster_hit_batches_so_far": 1}
+..........................................................................
+----------------------------------------------------------------------
+Ran 153 tests in 4.903s
+
+OK

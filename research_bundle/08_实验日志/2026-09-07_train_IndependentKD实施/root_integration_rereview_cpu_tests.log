@@ -1,0 +1,45 @@
+test_calibration_C1_y_allows_only_predefined_payload_difference (test_admission.BindingTests) ... ok
+test_calibration_and_canary_bind_measured_geometry_and_d2 (test_admission.BindingTests) ... ok
+test_calibration_wrong_source_or_family_rejected (test_admission.BindingTests) ... ok
+test_canary_source_and_arm_must_match (test_admission.BindingTests) ... ok
+test_capture_never_overwrites_prior_evidence (test_admission.BindingTests) ... ok
+test_changed_augmentation_rejected (test_admission.BindingTests) ... ok
+test_changed_classification_selection_rejected (test_admission.BindingTests) ... ok
+test_compatibility_shares_native_evidence_but_not_new_carrier (test_admission.BindingTests) ... ok
+test_compatibility_wrong_native_augmentation_is_not_ignored (test_admission.BindingTests) ... ok
+test_lambda_is_preserved_for_separate_admission_check (test_admission.BindingTests) ... ok
+test_loaded_module_edit_rejected_but_unused_eval_edit_allowed (test_admission.BindingTests) ... ok
+test_localization_GT_shares_unchanged_family_calibration (test_admission.BindingTests) ... ok
+test_main_entry_is_captured_even_without_named_import (test_admission.BindingTests) ... ok
+test_missing_actual_stage_or_runtime_module_cannot_capture (test_admission.BindingTests) ... ok
+test_missing_geometry_cannot_be_bound_or_omitted (test_admission.BindingTests) ... ok
+test_missing_record_or_stage_relabel_rejected (test_admission.BindingTests) ... ok
+test_normalization_does_not_mutate_cfg_and_rejects_nonfinite (test_admission.BindingTests) ... ok
+test_original_copy_cannot_point_to_itself (test_admission.BindingTests) ... ok
+test_real_byte_copies_and_original_paths (test_admission.BindingTests) ... ok
+test_referenced_train_and_val_list_files_are_byte_bound (test_admission.BindingTests) ... ok
+test_same_path_changed_data_bytes_rejected (test_admission.BindingTests) ... ok
+test_seed_and_administrative_fields_can_change (test_admission.BindingTests) ... ok
+test_caller_rng_not_consumed_workers0 (test_coverage_probe.CoverageTests) ... ok
+test_exact_hit_upper_bound_and_no_false_geometric_acceptance (test_coverage_probe.CoverageTests) ... {"batch_completed": 1, "roster_hit_batches_so_far": 1}
+{"batch_completed": 2, "roster_hit_batches_so_far": 1}
+{"batch_completed": 3, "roster_hit_batches_so_far": 1}
+{"batch_completed": 4, "roster_hit_batches_so_far": 1}
+ok
+test_same_seed_same_indices_and_augments (test_coverage_probe.CoverageTests) ... ok
+test_seed_changes_real_stream (test_coverage_probe.CoverageTests) ... ok
+test_workers_are_seeded_and_reproducible (test_coverage_probe.CoverageTests) ... ok
+test_authorized_fallback_budget (test_protocol.ProtocolTests) ... ok
+test_calibration_not_invented (test_protocol.ProtocolTests) ... ok
+test_content_and_seed_are_frozen (test_protocol.ProtocolTests) ... ok
+test_formal_logic_does_not_claim_receipt_acceptance (test_protocol.ProtocolTests) ... ok
+test_joint_and_unknown_arm_rejected (test_protocol.ProtocolTests) ... ok
+test_native_zero_and_c0_unchanged (test_protocol.ProtocolTests) ... ok
+test_same_modal_teacher_not_reference_or_ir_mask (test_protocol.ProtocolTests) ... ok
+test_single_task_coefficients (test_protocol.ProtocolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 4.128s
+
+OK
+

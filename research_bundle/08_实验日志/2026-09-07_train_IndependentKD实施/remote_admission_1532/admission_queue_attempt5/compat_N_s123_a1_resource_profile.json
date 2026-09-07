@@ -1,0 +1,110 @@
+{
+  "schema": "rgbir-independent-resource-profile-v1",
+  "status": "COMPLETED",
+  "measurement_valid": true,
+  "stage": "compatibility",
+  "profile_key": "drone-compatibility-B32-W4",
+  "profile_identity": null,
+  "execution_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s123_attempt1/execution_binding_compatibility/binding.json",
+  "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s123_attempt1/compatibility_receipt.json",
+  "resources": {
+    "per_gpu_peak_vram_mib": {
+      "2": 6304
+    },
+    "peak_rss_mib": 29617,
+    "cuda_pid_counts": {
+      "2": 1
+    }
+  },
+  "evaluation_profile_binding": null,
+  "companion_measurement": {
+    "requested": false,
+    "sampled_workload_active_intervals": 0,
+    "all_sampled_active_intervals_had_companion": null,
+    "verified": false
+  },
+  "technical_stage_status": "ACCEPTED",
+  "resource_measurement_only": false,
+  "minimum_free_mib": 17758,
+  "admission": {
+    "active": [
+      4,
+      5
+    ],
+    "empty": [
+      2,
+      6
+    ],
+    "reasons": [
+      {
+        "gpu": 0,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 1,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 3,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 4,
+        "reasons": [
+          "first measurement requires no other project task or lease on this GPU",
+          "project reserved VRAM would reach 70%",
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 5,
+        "reasons": [
+          "first measurement requires no other project task or lease on this GPU",
+          "project reserved VRAM would reach 70%",
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 7,
+        "reasons": [
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      }
+    ],
+    "candidate_gpus": [
+      2,
+      6
+    ],
+    "atomic_shared_lock": true,
+    "selected_gpus": [
+      2
+    ],
+    "active_gpus_after": [
+      2,
+      4,
+      5
+    ],
+    "fully_empty_gpus_after": [
+      6
+    ],
+    "four_gpu_exception": false,
+    "exception_basis": "AGENTS.md section 2.1; snapshot under shared guard lock",
+    "installed_guard_max_gpus": 4
+  },
+  "reservation": {
+    "bootstrap": true,
+    "measured": false,
+    "vram_mib": 16000,
+    "rss_mib": 65536,
+    "profiled_second_train": false
+  },
+  "lease_id": "compat_N_s123_a1-637e1618f691",
+  "exit_code": 0,
+  "time": 1788765151.8978603
+}

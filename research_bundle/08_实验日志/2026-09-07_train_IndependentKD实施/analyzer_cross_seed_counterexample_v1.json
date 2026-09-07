@@ -1,0 +1,87 @@
+{
+  "scope": "synthetic adversarial analyzer fixture only; not experimental AP",
+  "changed_both_arms_for_seed": 123,
+  "comparison": {
+    "treatment": "C1",
+    "control": "C1_y",
+    "treatment_source": "paired",
+    "control_source": "paired",
+    "pairs": [
+      {
+        "seed": 0,
+        "deltas_pp": {
+          "mAP50_95": 1,
+          "AP50": 1,
+          "AP75": 1,
+          "precision": 0,
+          "recall": 0
+        }
+      },
+      {
+        "seed": 42,
+        "deltas_pp": {
+          "mAP50_95": 1,
+          "AP50": 1,
+          "AP75": 1,
+          "precision": 0,
+          "recall": 0
+        }
+      },
+      {
+        "seed": 123,
+        "deltas_pp": {
+          "mAP50_95": 1,
+          "AP50": 1,
+          "AP75": 1,
+          "precision": 0,
+          "recall": 0
+        }
+      }
+    ],
+    "stats_pp": {
+      "mAP50_95": {
+        "n": 3,
+        "mean": 1,
+        "sample_sd": 0.0,
+        "ddof": 1,
+        "positive_seeds": 3,
+        "negative_seeds": 0
+      },
+      "AP50": {
+        "n": 3,
+        "mean": 1,
+        "sample_sd": 0.0,
+        "ddof": 1,
+        "positive_seeds": 3,
+        "negative_seeds": 0
+      },
+      "AP75": {
+        "n": 3,
+        "mean": 1,
+        "sample_sd": 0.0,
+        "ddof": 1,
+        "positive_seeds": 3,
+        "negative_seeds": 0
+      },
+      "precision": {
+        "n": 3,
+        "mean": 0,
+        "sample_sd": 0.0,
+        "ddof": 1,
+        "positive_seeds": 0,
+        "negative_seeds": 0
+      },
+      "recall": {
+        "n": 3,
+        "mean": 0,
+        "sample_sd": 0.0,
+        "ddof": 1,
+        "positive_seeds": 0,
+        "negative_seeds": 0
+      }
+    },
+    "complete_three_seed_pairing": true,
+    "issues": [],
+    "stop_running_experiments": false
+  }
+}

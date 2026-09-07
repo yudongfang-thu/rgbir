@@ -1,0 +1,719 @@
+{
+  "protocol": "independent_geometry_24_train_static_d2_natural_priority_v1",
+  "status": "FROZEN_CANDIDATE_ROSTER",
+  "requested_limit": 24,
+  "selected_pairs": 24,
+  "independent_reviews_required": 5,
+  "inputs": [
+    {
+      "dataset": "dronevehicle",
+      "train_roster": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_train\\frozen_roster.json",
+      "static_d2": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\drone_train\\d2_anchors.jsonl",
+      "unique_train_candidates": 286,
+      "natural_receipt_available": true,
+      "candidates_in_natural_stream": 38,
+      "natural_batches": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_cpu1\\coverage_drone_attempt1\\natural_batches.jsonl"
+    },
+    {
+      "dataset": "llvip",
+      "train_roster": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_train\\frozen_roster.json",
+      "static_d2": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断\\llvip_train\\d2_anchors.jsonl",
+      "unique_train_candidates": 184,
+      "natural_receipt_available": true,
+      "candidates_in_natural_stream": 35,
+      "natural_batches": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_cpu1\\coverage_llvip_attempt1\\natural_batches.jsonl"
+    }
+  ],
+  "selection_rule": "natural-hit first; balance dataset/source/scale; stable source-path tie-break",
+  "uses_model_AP": false,
+  "uses_quality_value_ranking": false,
+  "modifies_calibration_sampling": false,
+  "geometry_verified": false,
+  "annotation_points_created": 0,
+  "candidate_count_does_not_prove_16_signal_batches": true,
+  "roster": [
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "14139",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14139.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/14139.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14139.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/14139.jpg",
+      "source_group": "319_120m_30_1",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        38
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14139.jpg:14"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_14139",
+      "review_order": 0,
+      "independent_review_required": true,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "020288",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/020288.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/020288.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/020288.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/020288.jpg",
+      "source_group": "02",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        25
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/020288.jpg:3"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_020288",
+      "review_order": 1,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "17797",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17797.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/17797.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17797.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/17797.jpg",
+      "source_group": "39_120m45_1",
+      "representative_scale": "small",
+      "static_scale_counts": {
+        "small": 2
+      },
+      "static_selected_object_count": 2,
+      "natural_hit_batches": [
+        26
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17797.jpg:34",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17797.jpg:35"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_17797",
+      "review_order": 2,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "090719",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/090719.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/090719.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/090719.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/090719.jpg",
+      "source_group": "09",
+      "representative_scale": "large",
+      "static_scale_counts": {
+        "large": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        7
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/090719.jpg:1"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_090719",
+      "review_order": 3,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "130165",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/130165.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/130165.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/130165.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/130165.jpg",
+      "source_group": "13",
+      "representative_scale": "small",
+      "static_scale_counts": {
+        "small": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        51
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/130165.jpg:4"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_130165",
+      "review_order": 4,
+      "independent_review_required": true,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "17328",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17328.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/17328.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17328.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/17328.jpg",
+      "source_group": "322_100_45_2",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        61
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/17328.jpg:17"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_17328",
+      "review_order": 5,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "03429",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03429.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/03429.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03429.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/03429.jpg",
+      "source_group": "5-8",
+      "representative_scale": "small",
+      "static_scale_counts": {
+        "small": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        60
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03429.jpg:69"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_03429",
+      "review_order": 6,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "050034",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/050034.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/050034.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/050034.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/050034.jpg",
+      "source_group": "05",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        24
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/050034.jpg:1"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_050034",
+      "review_order": 7,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "140067",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/140067.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/140067.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/140067.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/140067.jpg",
+      "source_group": "14",
+      "representative_scale": "large",
+      "static_scale_counts": {
+        "large": 1,
+        "medium": 1
+      },
+      "static_selected_object_count": 2,
+      "natural_hit_batches": [
+        40
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/140067.jpg:0",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/140067.jpg:2"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_140067",
+      "review_order": 8,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "16887",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/16887.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/16887.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/16887.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/16887.jpg",
+      "source_group": "322_120_15_2",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        45
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/16887.jpg:11"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_16887",
+      "review_order": 9,
+      "independent_review_required": true,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "160310",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/160310.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/160310.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/160310.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/160310.jpg",
+      "source_group": "16",
+      "representative_scale": "small",
+      "static_scale_counts": {
+        "small": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        0
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/160310.jpg:2"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_160310",
+      "review_order": 10,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "12689",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12689.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/12689.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12689.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/12689.jpg",
+      "source_group": "B",
+      "representative_scale": "small",
+      "static_scale_counts": {
+        "small": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        0
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12689.jpg:0"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_12689",
+      "review_order": 11,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "060109",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/060109.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/060109.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/060109.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/060109.jpg",
+      "source_group": "06",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        34
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/060109.jpg:3"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_060109",
+      "review_order": 12,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "13347",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/13347.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/13347.jpg",
+      "source_group": "39_120m45_2",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 8
+      },
+      "static_selected_object_count": 8,
+      "natural_hit_batches": [
+        50
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg:4",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg:8",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg:9",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg:17",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg:22",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg:27",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg:28",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13347.jpg:41"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_13347",
+      "review_order": 13,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "10789",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10789.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/10789.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10789.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/10789.jpg",
+      "source_group": "image",
+      "representative_scale": "small",
+      "static_scale_counts": {
+        "small": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        39
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10789.jpg:24"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_10789",
+      "review_order": 14,
+      "independent_review_required": true,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "080287",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/080287.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/080287.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/080287.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/080287.jpg",
+      "source_group": "08",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        1
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/080287.jpg:1"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_080287",
+      "review_order": 15,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "01285",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01285.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/01285.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01285.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/01285.jpg",
+      "source_group": "5-15 (2)",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        46
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/01285.jpg:1"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_01285",
+      "review_order": 16,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "100317",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/100317.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/100317.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/100317.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/100317.jpg",
+      "source_group": "10",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        44
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/100317.jpg:3"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_100317",
+      "review_order": 17,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "03362",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03362.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/03362.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03362.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/03362.jpg",
+      "source_group": "5-30",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        54
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/03362.jpg:8"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_03362",
+      "review_order": 18,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "150318",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/150318.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/150318.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/150318.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/150318.jpg",
+      "source_group": "15",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        63
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/150318.jpg:3"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_150318",
+      "review_order": 19,
+      "independent_review_required": true,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "02950",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02950.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/02950.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02950.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/02950.jpg",
+      "source_group": "5-30 (2)",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        24
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02950.jpg:5"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_02950",
+      "review_order": 20,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "170294",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/170294.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/170294.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/170294.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/170294.jpg",
+      "source_group": "17",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        30
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/170294.jpg:1"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_170294",
+      "review_order": 21,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "dronevehicle",
+      "split": "train",
+      "stem": "13203",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13203.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/13203.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13203.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/images/train/13203.jpg",
+      "source_group": "B",
+      "representative_scale": "small",
+      "static_scale_counts": {
+        "small": 2
+      },
+      "static_selected_object_count": 2,
+      "natural_hit_batches": [
+        7
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13203.jpg:1",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/13203.jpg:4"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_dronevehicle_13203",
+      "review_order": 22,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    },
+    {
+      "dataset": "llvip",
+      "split": "train",
+      "stem": "050067",
+      "rgb_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/050067.jpg",
+      "ir_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/050067.jpg",
+      "rgb_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/050067.jpg",
+      "ir_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/fit/050067.jpg",
+      "source_group": "05",
+      "representative_scale": "medium",
+      "static_scale_counts": {
+        "medium": 1
+      },
+      "static_selected_object_count": 1,
+      "natural_hit_batches": [
+        21
+      ],
+      "natural_hit": true,
+      "static_object_ids": [
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/050067.jpg:2"
+      ],
+      "geometry_verified": false,
+      "audit_id": "independent_v2_llvip_050067",
+      "review_order": 23,
+      "independent_review_required": false,
+      "annotation_status": "PENDING_VISUAL_INSPECTION",
+      "review_status": "PENDING"
+    }
+  ]
+}

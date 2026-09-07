@@ -1,0 +1,31 @@
+{
+  "status": "completed_cpu_readonly",
+  "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_TaskConditional机会诊断",
+  "checks": [
+    {
+      "run": "drone_train",
+      "base_records": 23511,
+      "selected": 626,
+      "exact_existing_selection_reconstructed": true
+    },
+    {
+      "run": "drone_val",
+      "base_records": 2177,
+      "selected": 112,
+      "exact_existing_selection_reconstructed": true
+    },
+    {
+      "run": "llvip_train",
+      "base_records": 5492,
+      "selected": 211,
+      "exact_existing_selection_reconstructed": true
+    },
+    {
+      "run": "llvip_val",
+      "base_records": 559,
+      "selected": 131,
+      "exact_existing_selection_reconstructed": true
+    }
+  ],
+  "caution": "Post-existing-outcome exploratory eligibility sensitivity on existing unverified E/anchors. This is not an outcome-blind protocol or AP evidence. No training, no geometry waiver, no anchor reselection, no protocol modification."
+}

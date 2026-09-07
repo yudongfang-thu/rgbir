@@ -1,0 +1,120 @@
+{
+  "scope": "CPU reconstruction only; no historical initial checkpoint recovered; no GPU/training",
+  "model_path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+  "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+  "construction": [
+    {
+      "seed": 0,
+      "tensor_count": 499,
+      "unequal_tensors": [],
+      "torch_rng_equal": true
+    },
+    {
+      "seed": 42,
+      "tensor_count": 499,
+      "unequal_tensors": [],
+      "torch_rng_equal": true
+    },
+    {
+      "seed": 123,
+      "tensor_count": 499,
+      "unequal_tensors": [],
+      "torch_rng_equal": true
+    }
+  ],
+  "loader": [
+    {
+      "batch_1based": 1,
+      "same_file_order": true,
+      "first_image_exact_equal": true,
+      "first_image_changed_values": 0,
+      "labels_exact_equal": true,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/06384.jpg"
+    },
+    {
+      "batch_1based": 2,
+      "same_file_order": true,
+      "first_image_exact_equal": true,
+      "first_image_changed_values": 0,
+      "labels_exact_equal": true,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12704.jpg"
+    },
+    {
+      "batch_1based": 3,
+      "same_file_order": true,
+      "first_image_exact_equal": true,
+      "first_image_changed_values": 0,
+      "labels_exact_equal": true,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14568.jpg"
+    },
+    {
+      "batch_1based": 4,
+      "same_file_order": true,
+      "first_image_exact_equal": true,
+      "first_image_changed_values": 0,
+      "labels_exact_equal": true,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/04967.jpg"
+    },
+    {
+      "batch_1based": 5,
+      "same_file_order": true,
+      "first_image_exact_equal": false,
+      "first_image_changed_values": 1037731,
+      "labels_exact_equal": false,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/11060.jpg"
+    },
+    {
+      "batch_1based": 6,
+      "same_file_order": true,
+      "first_image_exact_equal": false,
+      "first_image_changed_values": 1189329,
+      "labels_exact_equal": false,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/11335.jpg"
+    },
+    {
+      "batch_1based": 7,
+      "same_file_order": true,
+      "first_image_exact_equal": false,
+      "first_image_changed_values": 1201279,
+      "labels_exact_equal": false,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14420.jpg"
+    },
+    {
+      "batch_1based": 8,
+      "same_file_order": true,
+      "first_image_exact_equal": false,
+      "first_image_changed_values": 1126238,
+      "labels_exact_equal": false,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/05414.jpg"
+    },
+    {
+      "batch_1based": 9,
+      "same_file_order": true,
+      "first_image_exact_equal": false,
+      "first_image_changed_values": 1116471,
+      "labels_exact_equal": false,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14172.jpg"
+    },
+    {
+      "batch_1based": 10,
+      "same_file_order": true,
+      "first_image_exact_equal": false,
+      "first_image_changed_values": 1141816,
+      "labels_exact_equal": false,
+      "first_file": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12644.jpg"
+    }
+  ],
+  "loader_runtime": [
+    {
+      "requested_workers": 4,
+      "actual_workers": 4,
+      "images": 17990
+    },
+    {
+      "requested_workers": 8,
+      "actual_workers": 8,
+      "images": 17990
+    }
+  ],
+  "cuda_initialized": false
+}

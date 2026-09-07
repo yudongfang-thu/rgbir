@@ -1,0 +1,22 @@
+{
+  "status": "RECORDED",
+  "successful_updates": 24,
+  "update_attempts": 30,
+  "amp_skips": 6,
+  "ema_updates": 30,
+  "batches": 30,
+  "real_optimizer_calls": 24,
+  "selected_objects": 3767,
+  "frozen_auxiliary_parameters_buffers_unchanged": true,
+  "gradient_checks": [
+    {
+      "batch": 1,
+      "native_score_gradient_l2": 0.27613016963005066,
+      "kd_score_gradient_l2": 0.0036506180185824633,
+      "total_gradient_composition_max_error": 3.814697265625e-06,
+      "weight0_exact_loss_gradient": true,
+      "teacher_has_grad": false,
+      "reference_has_grad": false
+    }
+  ]
+}

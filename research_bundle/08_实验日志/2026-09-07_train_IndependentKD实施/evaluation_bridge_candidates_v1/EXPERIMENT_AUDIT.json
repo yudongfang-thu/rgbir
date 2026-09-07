@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-07",
+  "auditor": "Codex /root/review_l1_spec",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "DRAFT_BRIDGE_REQUIRES_INDEPENDENT_REVIEW_AND_FUTURE_FORMAL_SOURCE_MATCH",
+  "declared_input_set": [
+    "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/old_endpoint_manifest_1407.json",
+    "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/snapshots/2026-09-07T140740.823638_0800/raw",
+    "probe/evaluator_profile_receipt.json",
+    "probe/native_metrics.json",
+    "probe/evidence_metrics.json",
+    "probe/native_contract.json",
+    "probe/evidence_contract.json",
+    "probe/evaluation_profile_binding/binding.json",
+    "probe/pinned_default.yaml",
+    "probe/actual_write_jstars_run_receipt.py"
+  ],
+  "audited_input_hashes": [],
+  "hash_policy": "Not computed per explicit project task instruction; original bytes and independent copies retained.",
+  "checks": {
+    "gt_provenance": {"status": "pass", "details": "Bound RGB Drone development YAML and full roster1469 match six legacy eval receipts and actual new probe. Test not accessed.", "evidence": "prepared_a1/evaluation_compatibility_candidate.json entries"},
+    "score_normalization": {"status": "pass", "details": "Five native metrics retained as fraction_0_to_1; exact values compared without rounding. No synthetic AP or metric renormalization.", "evidence": ["probe/native_metrics.json", "probe/evidence_metrics.json"]},
+    "result_existence": {"status": "pass", "details": "Nine original completed endpoint receipts verified through accepted source loader; six N/C0 candidates. Actual N42 native/evidence full1469 passed and all five historic N42 metrics exactly repeated.", "evidence": "prepared_a1/candidate_summary.json"},
+    "dead_code": {"status": "warn", "details": "Actual successful probe binds its executed source; six legacy receipts bind the same3505-byte eval entry but do not capture historical native library bytes. Semantic extension to other old checkpoints remains a review inference.", "evidence": ["prepared_a1/entries", "probe/evaluation_profile_binding/sources"]},
+    "scope": {"status": "warn", "details": "Only aggregate development evaluation bridge. Old per-class/object records absent. Draft cannot authorize training, promotion, harm CLEAR, four-arm attribution or sealed-test claims.", "evidence": "prepared_a1/evaluation_compatibility_candidate.json"},
+    "eval_type": {"status": "pass", "details": "real_gt; native/evidence probe is repeat evaluation of actual old N42 last/EMA on governed RGB development data.", "evidence": "probe/evaluator_profile_receipt.json"}
+  },
+  "claims": [
+    {"id": "native_evidence_equivalence_on_old_N42_dev1469", "impact": "supported", "evidence": "probe/evaluator_profile_receipt.json", "rationale": "Executed both paths, five and per-class metrics exact; old aggregate result also repeated exactly."},
+    {"id": "six_legacy_endpoints_share_new_evaluator_semantics", "impact": "needs_qualifier", "evidence": "prepared_a1/evaluation_compatibility_candidate.json", "rationale": "Same bound legacy evaluator/config/version/data and successful N42 repeat support a candidate; historical native source bytes and actual loader/seen were not saved, independent review pending."},
+    {"id": "legacy_complete_object_harm_evidence", "impact": "unsupported", "evidence": "prepared_a1/evaluation_compatibility_candidate.json entries", "rationale": "No old per-class/object artifacts supplied; no records are synthesized by bridge."}
+  ],
+  "verification": {"local_cpu_tests_passed": 6, "new_gpu_jobs_started_by_auditor": 0, "nine_receipt_inventory_complete": 9, "draft_entries": 6, "draft_accepted_by_new_analyzer": 0},
+  "independent_review": {"requested_from": "/root/review_matrix_spec", "status": "PENDING", "model_identity": "not separately observable"},
+  "training_admission_blocked_by_bridge": false,
+  "original_results_modified": false,
+  "official_test_accessed": false
+}

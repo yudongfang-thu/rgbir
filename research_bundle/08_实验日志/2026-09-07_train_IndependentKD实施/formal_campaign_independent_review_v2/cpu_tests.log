@@ -1,0 +1,24 @@
+Command: D:/Anaconda/envs/KGJ_proj/python.exe -m unittest test_formal_campaign -v
+Working directory: E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施
+Scope: synthetic CPU tests; no prepare, coordinator, screen, SSH, or GPU was launched.
+
+test_actual_config_discovery_does_not_fabricate_missing_seed_or_readiness (test_formal_campaign.CampaignTests) ... ok
+test_completed_training_without_guard_success_cannot_silently_evaluate (test_formal_campaign.CampaignTests) ... ok
+test_completion_never_uses_ap_for_stopping_or_selection (test_formal_campaign.CampaignTests) ... ok
+test_formal_eval_reservation_uses_actual_peak_not_bootstrap_cap (test_formal_campaign.CampaignTests) ... ok
+test_gate_rechecks_new_pending_eval_on_every_atomic_acquire (test_formal_campaign.CampaignTests) ... ok
+test_jobs_are_separate_train_then_eval_with_no_gpu_or_short_budget (test_formal_campaign.CampaignTests) ... ok
+test_next_seed_waits_for_actual_launched_not_screen_started (test_formal_campaign.CampaignTests) ... ok
+test_partial_completion_publication_defers_training (test_formal_campaign.CampaignTests) ... ok
+test_partial_evaluation_publication_does_not_crash_observer (test_formal_campaign.CampaignTests) ... ok
+test_pause_withdraws_unlaunched_train_but_preserves_eval_duty (test_formal_campaign.CampaignTests) ... ok
+test_pending_evaluation_blocks_until_its_actual_resource_launch (test_formal_campaign.CampaignTests) ... ok
+test_profile_requires_real_measured_stage_and_sufficient_reservation (test_formal_campaign.CampaignTests) ... ok
+test_technical_failure_keeps_raw_attempt_and_pauses_future_launches (test_formal_campaign.CampaignTests) ... ok
+test_worker_calls_real_dispatch_api_train_then_evaluation (test_formal_campaign.CampaignTests) ... ok
+test_worker_recovery_keeps_completed_training_and_only_evaluates (test_formal_campaign.CampaignTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.207s
+
+OK

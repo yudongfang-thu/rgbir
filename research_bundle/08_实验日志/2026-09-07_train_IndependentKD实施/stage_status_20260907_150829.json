@@ -1,0 +1,258 @@
+{
+  "read_at": "2026-09-07T15:08:31.523808+08:00",
+  "records": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_C0_s42_attempt1/compatibility_receipt.json",
+      "status": "ACCEPTED",
+      "arm": "C0",
+      "seed": 42,
+      "successful_updates": 24,
+      "loader_batches": 30,
+      "trajectory_exact": true,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 29537
+      },
+      "seconds": 132.1023166179657
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s0_attempt1/compatibility_receipt.json",
+      "status": "ACCEPTED",
+      "arm": "N",
+      "seed": 0,
+      "successful_updates": 24,
+      "loader_batches": 30,
+      "trajectory_exact": true,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 29580
+      },
+      "seconds": 131.1513650417328
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt2/compatibility_receipt.json",
+      "status": "ACCEPTED",
+      "arm": "N",
+      "seed": 42,
+      "successful_updates": 24,
+      "loader_batches": 30,
+      "trajectory_exact": true,
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 6304
+        },
+        "peak_rss_mib": 29606
+      },
+      "seconds": 136.6198935508728
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluator_profile_receipt.json",
+      "status": "evaluation_profile_completed",
+      "resources": {
+        "gpu_ids": [
+          2
+        ],
+        "cuda_pid_counts": {
+          "2": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "2": 1370
+        },
+        "peak_rss_mib": 6260
+      },
+      "seconds": 19.81158208847046,
+      "native_evidence_metrics_exact": true,
+      "metric_differences": {
+        "AP50": 0.0,
+        "AP75": 0.0,
+        "mAP50_95": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      }
+    },
+    {
+      "queue": "admission_queue_attempt5",
+      "job": "c1_profile2_a2_events",
+      "last_event": {
+        "status": "SAMPLE",
+        "time": 1788764445.9891725,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "2": 9232
+          },
+          "peak_rss_mib": 22016,
+          "cuda_pid_counts": {
+            "2": 1
+          }
+        },
+        "whole_gpu": {
+          "2": {
+            "whole_gpu_used_mib": 3805,
+            "whole_gpu_free_mib": 20279,
+            "project_actual_vram_mib": 0,
+            "project_actual_cuda_tasks": 0
+          }
+        },
+        "whole_gpu_minimum_free_mib": 11043,
+        "project_rss_mib": 58648
+      }
+    },
+    {
+      "queue": "admission_queue_attempt5",
+      "job": "compat_C0_s0_a1_events",
+      "last_event": {
+        "status": "SAMPLE",
+        "time": 1788764910.3362784,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "2": 386
+          },
+          "peak_rss_mib": 12142,
+          "cuda_pid_counts": {
+            "2": 1
+          }
+        },
+        "whole_gpu": {
+          "2": {
+            "whole_gpu_used_mib": 4197,
+            "whole_gpu_free_mib": 19887,
+            "project_actual_vram_mib": 386,
+            "project_actual_cuda_tasks": 1
+          }
+        },
+        "whole_gpu_minimum_free_mib": 19887,
+        "project_rss_mib": 70625
+      }
+    },
+    {
+      "queue": "admission_queue_attempt5",
+      "job": "compat_C0_s42_a1_events",
+      "last_event": {
+        "status": "SAMPLE",
+        "time": 1788764736.325017,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "2": 6304
+          },
+          "peak_rss_mib": 29537,
+          "cuda_pid_counts": {
+            "2": 1
+          }
+        },
+        "whole_gpu": {
+          "2": {
+            "whole_gpu_used_mib": 3803,
+            "whole_gpu_free_mib": 20281,
+            "project_actual_vram_mib": 0,
+            "project_actual_cuda_tasks": 0
+          }
+        },
+        "whole_gpu_minimum_free_mib": 13958,
+        "project_rss_mib": 59138
+      }
+    },
+    {
+      "queue": "admission_queue_attempt5",
+      "job": "compat_N_s0_a1_events",
+      "last_event": {
+        "status": "SAMPLE",
+        "time": 1788764876.5352356,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "2": 6304
+          },
+          "peak_rss_mib": 29580,
+          "cuda_pid_counts": {
+            "2": 1
+          }
+        },
+        "whole_gpu": {
+          "2": {
+            "whole_gpu_used_mib": 3803,
+            "whole_gpu_free_mib": 20280,
+            "project_actual_vram_mib": 0,
+            "project_actual_cuda_tasks": 0
+          }
+        },
+        "whole_gpu_minimum_free_mib": 13958,
+        "project_rss_mib": 59142
+      }
+    },
+    {
+      "queue": "admission_queue_attempt5",
+      "job": "compat_N_s42_a2_events",
+      "last_event": {
+        "status": "SAMPLE",
+        "time": 1788764594.272328,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "2": 6304
+          },
+          "peak_rss_mib": 29606,
+          "cuda_pid_counts": {
+            "2": 1
+          }
+        },
+        "whole_gpu": {
+          "2": {
+            "whole_gpu_used_mib": 3803,
+            "whole_gpu_free_mib": 20281,
+            "project_actual_vram_mib": 0,
+            "project_actual_cuda_tasks": 0
+          }
+        },
+        "whole_gpu_minimum_free_mib": 13959,
+        "project_rss_mib": 59277
+      }
+    },
+    {
+      "queue": "admission_queue_attempt5",
+      "job": "evaluator_profile_a2_events",
+      "last_event": {
+        "status": "SAMPLE",
+        "time": 1788764409.9350665,
+        "resources": {
+          "per_gpu_peak_vram_mib": {
+            "2": 1370
+          },
+          "peak_rss_mib": 6260,
+          "cuda_pid_counts": {
+            "2": 1
+          }
+        },
+        "whole_gpu": {
+          "2": {
+            "whole_gpu_used_mib": 3803,
+            "whole_gpu_free_mib": 20281,
+            "project_actual_vram_mib": 518,
+            "project_actual_cuda_tasks": 1
+          }
+        },
+        "whole_gpu_minimum_free_mib": 18904,
+        "project_rss_mib": 60134
+      }
+    }
+  ]
+}

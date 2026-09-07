@@ -1,0 +1,276 @@
+{
+  "release": "release_gpu4",
+  "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu4",
+  "local": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2",
+  "deployed_at": "2026-09-07T14:46:04.300637+08:00",
+  "files": [
+    {
+      "relative": "admission.py",
+      "bytes": 5928
+    },
+    {
+      "relative": "analyze_independent.py",
+      "bytes": 31976
+    },
+    {
+      "relative": "calibrate_independent.py",
+      "bytes": 11452
+    },
+    {
+      "relative": "classification_logit.py",
+      "bytes": 13413
+    },
+    {
+      "relative": "coverage_probe.py",
+      "bytes": 13955
+    },
+    {
+      "relative": "evaluate_independent.py",
+      "bytes": 16958
+    },
+    {
+      "relative": "evaluator_profile.py",
+      "bytes": 14937
+    },
+    {
+      "relative": "evidence_bindings.py",
+      "bytes": 14104
+    },
+    {
+      "relative": "geometry_support.py",
+      "bytes": 7910
+    },
+    {
+      "relative": "gradient_observation.py",
+      "bytes": 6841
+    },
+    {
+      "relative": "independent_criterion.py",
+      "bytes": 8208
+    },
+    {
+      "relative": "localization_adapter.py",
+      "bytes": 3680
+    },
+    {
+      "relative": "prepare_configs.py",
+      "bytes": 2160
+    },
+    {
+      "relative": "prepare_geometry_review.py",
+      "bytes": 10119
+    },
+    {
+      "relative": "protocol.py",
+      "bytes": 6952
+    },
+    {
+      "relative": "reference_package\\reference_kernels.py",
+      "bytes": 9836
+    },
+    {
+      "relative": "reference_package\\test_reference_kernels.py",
+      "bytes": 5580
+    },
+    {
+      "relative": "resource_dispatch.py",
+      "bytes": 28120
+    },
+    {
+      "relative": "runtime.py",
+      "bytes": 1814
+    },
+    {
+      "relative": "selection_adapter.py",
+      "bytes": 18146
+    },
+    {
+      "relative": "task_conditional_reference\\analyze_results.py",
+      "bytes": 15021
+    },
+    {
+      "relative": "task_conditional_reference\\calibrate_gradient_scale.py",
+      "bytes": 4791
+    },
+    {
+      "relative": "task_conditional_reference\\configs\\drone_draft.yaml",
+      "bytes": 2766
+    },
+    {
+      "relative": "task_conditional_reference\\configs\\llvip_draft.yaml",
+      "bytes": 2739
+    },
+    {
+      "relative": "task_conditional_reference\\content_controls.py",
+      "bytes": 11565
+    },
+    {
+      "relative": "task_conditional_reference\\criterion_items.py",
+      "bytes": 2192
+    },
+    {
+      "relative": "task_conditional_reference\\diagnose_opportunities.py",
+      "bytes": 31939
+    },
+    {
+      "relative": "task_conditional_reference\\evaluate_task_conditional.py",
+      "bytes": 3909
+    },
+    {
+      "relative": "task_conditional_reference\\geometry_audit_tools.py",
+      "bytes": 8440
+    },
+    {
+      "relative": "task_conditional_reference\\geometry_contract.py",
+      "bytes": 7914
+    },
+    {
+      "relative": "task_conditional_reference\\legacy_bridge.py",
+      "bytes": 561
+    },
+    {
+      "relative": "task_conditional_reference\\legacy_oev1\\config_drone.yaml",
+      "bytes": 2069
+    },
+    {
+      "relative": "task_conditional_reference\\legacy_oev1\\evaluate_object_evidence.py",
+      "bytes": 3505
+    },
+    {
+      "relative": "task_conditional_reference\\legacy_oev1\\object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "relative": "task_conditional_reference\\legacy_oev1\\paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "relative": "task_conditional_reference\\legacy_oev1\\train_object_evidence.py",
+      "bytes": 18948
+    },
+    {
+      "relative": "task_conditional_reference\\localization_loss.py",
+      "bytes": 20629
+    },
+    {
+      "relative": "task_conditional_reference\\prepare_configs.py",
+      "bytes": 2601
+    },
+    {
+      "relative": "task_conditional_reference\\README.md",
+      "bytes": 1926
+    },
+    {
+      "relative": "task_conditional_reference\\resource_dispatch.py",
+      "bytes": 7920
+    },
+    {
+      "relative": "task_conditional_reference\\shuffled_pair_data.py",
+      "bytes": 11424
+    },
+    {
+      "relative": "task_conditional_reference\\task_criterion.py",
+      "bytes": 8685
+    },
+    {
+      "relative": "task_conditional_reference\\test_analyze_results.py",
+      "bytes": 11842
+    },
+    {
+      "relative": "task_conditional_reference\\test_content_controls.py",
+      "bytes": 8778
+    },
+    {
+      "relative": "task_conditional_reference\\test_criterion_items.py",
+      "bytes": 2893
+    },
+    {
+      "relative": "task_conditional_reference\\test_geometry_contract.py",
+      "bytes": 4532
+    },
+    {
+      "relative": "task_conditional_reference\\test_localization_loss.py",
+      "bytes": 12159
+    },
+    {
+      "relative": "task_conditional_reference\\test_shuffled_pair_data.py",
+      "bytes": 12592
+    },
+    {
+      "relative": "task_conditional_reference\\test_tracked_pair_data.py",
+      "bytes": 1588
+    },
+    {
+      "relative": "task_conditional_reference\\tracked_pair_data.py",
+      "bytes": 3666
+    },
+    {
+      "relative": "task_conditional_reference\\train_task_conditional.py",
+      "bytes": 12910
+    },
+    {
+      "relative": "task_conditional_reference\\verify_criterion_equivalence.py",
+      "bytes": 17234
+    },
+    {
+      "relative": "task_conditional_reference\\verify_loader_equivalence.py",
+      "bytes": 10124
+    },
+    {
+      "relative": "test_admission.py",
+      "bytes": 14508
+    },
+    {
+      "relative": "test_analyze_independent.py",
+      "bytes": 18948
+    },
+    {
+      "relative": "test_classification_logit.py",
+      "bytes": 19729
+    },
+    {
+      "relative": "test_coverage_probe.py",
+      "bytes": 4440
+    },
+    {
+      "relative": "test_evaluate_independent.py",
+      "bytes": 11496
+    },
+    {
+      "relative": "test_evaluator_profile.py",
+      "bytes": 6007
+    },
+    {
+      "relative": "test_gradient_observation.py",
+      "bytes": 7725
+    },
+    {
+      "relative": "test_localization_adapter.py",
+      "bytes": 8420
+    },
+    {
+      "relative": "test_prepare_geometry_review.py",
+      "bytes": 4827
+    },
+    {
+      "relative": "test_protocol.py",
+      "bytes": 3780
+    },
+    {
+      "relative": "test_resource_dispatch.py",
+      "bytes": 18340
+    },
+    {
+      "relative": "test_verifier_process_isolation.py",
+      "bytes": 5482
+    },
+    {
+      "relative": "train_independent.py",
+      "bytes": 7927
+    },
+    {
+      "relative": "verify_compatibility.py",
+      "bytes": 39486
+    }
+  ]
+}

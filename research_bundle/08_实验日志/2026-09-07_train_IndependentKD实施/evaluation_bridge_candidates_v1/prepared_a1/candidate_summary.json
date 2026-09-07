@@ -1,0 +1,95 @@
+{
+  "status": "PREPARED_NOT_ACCEPTED",
+  "inventory": [
+    {
+      "name": "N0",
+      "old_display_arm": "N",
+      "actual_arm": "weight0",
+      "seed": 0,
+      "raw_receipt_status": "complete",
+      "issues": []
+    },
+    {
+      "name": "N42",
+      "old_display_arm": "N",
+      "actual_arm": "weight0",
+      "seed": 42,
+      "raw_receipt_status": "complete",
+      "issues": []
+    },
+    {
+      "name": "N123",
+      "old_display_arm": "N",
+      "actual_arm": "weight0",
+      "seed": 123,
+      "raw_receipt_status": "complete",
+      "issues": []
+    },
+    {
+      "name": "C0",
+      "old_display_arm": "C",
+      "actual_arm": "paired",
+      "seed": 0,
+      "raw_receipt_status": "complete",
+      "issues": []
+    },
+    {
+      "name": "C42",
+      "old_display_arm": "C",
+      "actual_arm": "paired",
+      "seed": 42,
+      "raw_receipt_status": "complete",
+      "issues": []
+    },
+    {
+      "name": "C123",
+      "old_display_arm": "C",
+      "actual_arm": "paired",
+      "seed": 123,
+      "raw_receipt_status": "complete",
+      "issues": []
+    },
+    {
+      "name": "R0",
+      "old_display_arm": "R",
+      "actual_arm": "paired_random",
+      "seed": 0,
+      "raw_receipt_status": "complete",
+      "issues": []
+    },
+    {
+      "name": "R42",
+      "old_display_arm": "R",
+      "actual_arm": "paired_random",
+      "seed": 42,
+      "raw_receipt_status": "complete",
+      "issues": []
+    },
+    {
+      "name": "R123",
+      "old_display_arm": "R",
+      "actual_arm": "paired_random",
+      "seed": 123,
+      "raw_receipt_status": "complete",
+      "issues": []
+    }
+  ],
+  "entries": 6,
+  "canonical_source_order": [
+    "source_snapshot/trainer/01_evaluate_independent.py",
+    "source_snapshot/trainer/02_val.py",
+    "source_snapshot/trainer/03_validator.py",
+    "source_snapshot/trainer/04_model.py",
+    "source_snapshot/trainer/05_utils.py",
+    "source_snapshot/trainer/06_metrics.py",
+    "source_snapshot/trainer/07_nms.py"
+  ],
+  "static_failures": [],
+  "probe_native_evidence_exact": true,
+  "historical_N42_vs_probe_exact": true,
+  "draft_rejected_by_analyzer_for_all_six": true,
+  "frozen_protocol_ids": [
+    "oev1_frozen_drone_e200"
+  ],
+  "official_test_accessed": false
+}

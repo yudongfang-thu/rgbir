@@ -1,0 +1,102 @@
+{
+  "units": "percent and percentage points",
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "rows": [
+    {
+      "seed": 0,
+      "historical_native": 54.35764829135778,
+      "current_weight0": 54.34618520685574,
+      "C": 54.77218640082956,
+      "weight0_minus_historical_pp": -0.011463084502040033,
+      "C_minus_weight0_pp": 0.42600119397381775,
+      "C_minus_historical_pp": 0.4145381094717777
+    },
+    {
+      "seed": 42,
+      "historical_native": 53.81555614141787,
+      "current_weight0": 54.51360845035178,
+      "C": 54.65816217191543,
+      "weight0_minus_historical_pp": 0.6980523089339101,
+      "C_minus_weight0_pp": 0.14455372156364632,
+      "C_minus_historical_pp": 0.8426060304975564
+    },
+    {
+      "seed": 123,
+      "historical_native": 53.687432654876964,
+      "current_weight0": 54.40743648945896,
+      "C": 54.63684720507138,
+      "weight0_minus_historical_pp": 0.7200038345819948,
+      "C_minus_weight0_pp": 0.2294107156124241,
+      "C_minus_historical_pp": 0.9494145501944189
+    }
+  ],
+  "summary": {
+    "historical_native": {
+      "mean": 53.95354569588421,
+      "sample_sd": 0.35577814393552964,
+      "positive_seeds": 3
+    },
+    "current_weight0": {
+      "mean": 54.42241004888883,
+      "sample_sd": 0.08471004206812399,
+      "positive_seeds": 3
+    },
+    "C": {
+      "mean": 54.68906525927213,
+      "sample_sd": 0.07276967145211852,
+      "positive_seeds": 3
+    },
+    "weight0_minus_historical_pp": {
+      "mean": 0.46886435300462165,
+      "sample_sd": 0.41612053876954525,
+      "positive_seeds": 2
+    },
+    "C_minus_weight0_pp": {
+      "mean": 0.26665521038329604,
+      "sample_sd": 0.14437289989666233,
+      "positive_seeds": 3
+    },
+    "C_minus_historical_pp": {
+      "mean": 0.7355195633879177,
+      "sample_sd": 0.28306153975513537,
+      "positive_seeds": 3
+    }
+  },
+  "all_args_differences_s42": {
+    "device": {
+      "historical": "",
+      "current": "0"
+    },
+    "name": {
+      "historical": "native_rgb_s42_e200",
+      "current": "full_weight0_s42_attempt1"
+    },
+    "plots": {
+      "historical": true,
+      "current": false
+    },
+    "project": {
+      "historical": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1",
+      "current": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906"
+    },
+    "save_dir": {
+      "historical": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/cgkd_w1/native_rgb_s42_e200",
+      "current": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1"
+    },
+    "val": {
+      "historical": true,
+      "current": false
+    },
+    "workers": {
+      "historical": 8,
+      "current": 4
+    }
+  },
+  "source_old": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_audit_RGBIR晚间进度与新结果\\osssl\\raw\\runs\\cgkd_w1",
+  "source_new": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\snapshots\\2026-09-07T111931.041292_0800",
+  "cpu_scope": "CPU reconstruction only; no historical initial checkpoint recovered; no GPU/training"
+}

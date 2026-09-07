@@ -1,0 +1,42 @@
+{
+  "method_id": "RGBIR-INDEPENDENT-KD-v2-C1",
+  "arm": "C1",
+  "source": "paired",
+  "seed": 42,
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/train_independent.py",
+    "--config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/calibrated_canary_configs_gpu5/C1.yaml",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/C1_companion_canary_attempt1",
+    "--arm",
+    "C1",
+    "--source",
+    "paired",
+    "--seed",
+    "42",
+    "--max-steps",
+    "24"
+  ],
+  "gpu": [
+    5
+  ],
+  "inputs": {
+    "model": {
+      "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+      "bytes": 5613764
+    },
+    "teacher": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5483610
+    },
+    "reference": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5483610
+    }
+  },
+  "source_module": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+  "test_accessed": false,
+  "canary_max_updates": 24
+}

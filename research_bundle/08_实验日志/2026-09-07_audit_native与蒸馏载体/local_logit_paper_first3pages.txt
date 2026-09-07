@@ -1,0 +1,863 @@
+LD__2022_CVPR__Localization_Distillation_for_Dense_Object_Detection.pdf
+Localization Distillation for Dense Object Detection
+Zhaohui Zheng1∗, Rongguang Ye 2*, Ping Wang 2, Dongwei Ren 3, Wangmeng Zuo 3,
+Qibin Hou1†, Ming-Ming Cheng 1
+1TMCC, CS, Nankai University 2School of Mathematics, Tianjin University
+3School of Computer Science and Technology, Harbin Institute of Technology
+Abstract
+Knowledge distillation (KD) has witnessed its powerful
+capability in learning compact models in object detection.
+Previous KD methods for object detection mostly focus on
+imitating deep features within the imitation regions instead
+of mimicking classification logit due to its inefficiency in
+distilling localization information and trivial improvement.
+In this paper, by reformulating the knowledge distillation
+process on localization, we present a novel localization dis-
+tillation (LD) method which can efficiently transfer the lo-
+calization knowledge from the teacher to the student. More-
+over, we also heuristically introduce the concept of valu-
+able localization region that can aid to selectively distill the
+semantic and localization knowledge for a certain region.
+Combining these two new components, for the first time,
+we show that logit mimicking can outperform feature imi-
+tation and localization knowledge distillation is more im-
+portant and efficient than semantic knowledge for distilling
+object detectors. Our distillation scheme is simple as well
+as effective and can be easily applied to different dense ob-
+ject detectors. Experiments show that our LD can boost
+the AP score of GFocal-ResNet-50 with a single-scale 1 ×
+training schedule from 40.1 to 42.1 on the COCO bench-
+mark without any sacrifice on the inference speed. Our
+source code and pretrained models are publicly available
+at https://github.com/HikariTJU/LD.
+1. Introduction
+Localization is a fundamental issue in object detection
+[15, 24, 33, 49, 50, 55–57, 61, 68]. Bounding box regression
+is the most popular manner so far for localization in ob-
+ject detection [10,32,39,42], where Dirac delta distribution
+representation is intuitive and popular for years. However,
+localization ambiguity where objects cannot be confidently
+located by their edges is still a common issue. For exam-
+*Equal contribution.
+†Corresponding author.
+A B
+(a) (b)
+A B
+(a) (b)
+Figure 1. Bottom edge for “ elephant” and right edge for “ surf-
+board” are ambiguous.
+ple, as shown in Fig. 1, the bottom edge for “elephant”
+and the right edge for “surfboard” are ambiguous to locate.
+This issue is even worse for lightweight detectors. One way
+to alleviate this problem is the knowledge distillation (KD),
+which, as a model compression technology, has been widely
+validated to be useful for boosting the performance of the
+small-sized student network by transferring the generalized
+knowledge captured by the large-sized teacher network.
+Speaking of KD in object detection, previous works
+[22, 52, 62] have pointed out that the original logit mimick-
+ing technique [19] for classification is inefficient as it only
+transfers the semantic knowledge (i.e., classification), while
+neglects the importance of localization knowledge distilla-
+tion. Therefore, existent KD methods for object detection
+mostly focus on enforcing the consistency of the deep fea-
+tures between the teacher-student pair, and exploit various
+imitation regions for distillation [5, 8, 16, 25, 52]. Fig. 2
+exhibits three popular KD pipelines for object detection.
+However, as the semantic knowledge and the localization
+one are mixed on the feature maps, it is hard to tell whether
+it is beneficial to the performance to transfer the hybrid
+knowledge for each location and which regions are con-
+ducive to the transfer of a certain type of knowledge.
+Motivated by the aforementioned questions, in this pa-
+per, instead of simply distilling the hybrid knowledge on the
+feature maps, we propose a novel divide-and-conquer dis-
+tillation strategy that transfers the semantic and localization
+knowledge separately. For semantic knowledge, we use the
+9407
+
+Teacher Network
+Student Network
+Logit Mimicking
+Feature Map
+Feature Map
+Classification Head
+Classification Head
+Feature Imitation
+Region Weighting
+Region Weighting
+Pseudo BBox 
+Regression
+Localization Head
+Localization Head
+Adaptive Layer
+Figure 2. Existing KD pipelines for object detection. ① Logit
+Mimicking: classification KD in [19]. ② Feature Imitation: recent
+popular methods distill intermediate features based on various dis-
+tillation regions, which usually need adaptive layers to align the
+size of the student’s feature map. ③ Pseudo BBox Regression:
+treating teachers’ predicted bounding boxes as additional regres-
+sion targets.
+original classification KD [19]. For localization knowledge,
+we reformulate the knowledge transfer process on localiza-
+tion and present a simple yet effective localization distilla-
+tion (LD) method by switching the bounding box to proba-
+bility distribution [28, 37]. This is quite different from pre-
+vious works [5, 47] that treat the teacher’s outputs as addi-
+tional regression targets (i.e., the Pseudo BBox Regression
+in Fig. 2). Benefiting from the probability distribution rep-
+resentation, our LD can efficiently transfer rich localization
+knowledge learnt by the teacher to the student. In addi-
+tion, based on the proposed divide-and-conquer distillation
+strategy, we further introduce valuable localization region
+(VLR) to help efficiently judge which regions are conducive
+to classification or localization learning. Through a series
+of experiments, we, for the first time, show that the origi-
+nal logit mimicking can be better than feature imitation and
+localization knowledge distillation is more important and
+more efficient than semantic knowledge. We believe that
+separately distilling the semantic and localization knowl-
+edge based on their respective favorable regions could be
+a promising way to train better object detectors.
+Our method is simple and can be easily equipped with
+in any dense object detectors to improve their performance
+without introducing any inference overhead. Extensive
+experiments on MS COCO show that without bells and
+whistles, we can lift the AP score of the strong baseline
+GFocal [28] with ResNet-50-FPN backbone from 40.1 to
+42.1, and AP 75 from 43.1 to 45.6. Our best model using
+ResNeXt-101-32x4d-DCN backbone can achieve a single-
+scale test of 50.5 AP, which surpasses all existing detectors
+under the same backbone, neck, and test settings.
+2. Related Work
+In this section, we give a brief review on the related
+works, including bounding box regression, localization
+quality estimation, and knowledge distillation.
+2.1. Bounding Box Regression
+Bounding box regression is the most popular method for
+localization in object detection. R-CNN series [3,35,42,60]
+adopt multiple regression stages to refine the detection re-
+sults, while [2, 32, 39–41, 48] adopt one-stage regression.
+In [43, 58, 64, 65], IoU-based loss functions are proposed to
+improve the localization quality of bounding box. Recently,
+bounding box representation has evolved from Dirac delta
+distribution [32,39,42] to Gaussian distribution [7,18], and
+further to probability distribution [28, 37]. The probability
+distribution of bounding box is more comprehensive for de-
+scribing the uncertainty of bounding box, and is validated to
+be the most advanced bounding box representation so far.
+2.2. Localization Quality Estimation
+As the name suggests, Localization Quality Estimation
+(LQE) predicts a score that measures the localization qual-
+ity of the bounding box predicted by the detector. LQE
+is usually used to cooperate with classification task dur-
+ing training [27], i.e., enhancing the consistency between
+classification and localization. It can also be applied in
+joint decision-making during post-processing [21, 39, 48],
+i.e., considering both classification score and LQE when
+performing NMS. Early research can be dated to YOLOv1
+[39], where the predicted object confidence is used to pe-
+nalize the classification score. Then, box/mask IoU [20,21]
+and box/polar center-ness [48, 53] are proposed to model
+the uncertainty of detections for object detection and in-
+stance segmentation, respectively. From the perspective of
+bounding box representation, Softer-NMS [18] and Gaus-
+sian YOLOv3 [7] predict variance for each edge of bound-
+ing box. LQE is a preliminary approach to model localiza-
+tion ambiguity.
+2.3. Knowledge Distillation
+Knowledge distillation [1, 19, 34, 36, 45, 59] aims to
+learn compact and efficient student models guided by ex-
+cellent teacher networks. FitNets [44] proposes to mimic
+the intermediate-level hints from the hidden layers of the
+teacher model. Knowledge distillation was first applied to
+object detection in [5], where the hint learning and KD
+are both used for multi-class object detection. Then, Li
+et al. [25] proposed to mimic the feature within the re-
+gion proposal for Faster R-CNN. Wang et al. [52] mim-
+icked fine-grained features on close anchor box locations.
+9408
+
+Region 
+Weighting
+Teacher
+Student
+Probability Distribution
+LD loss
+Region Weighting
+Localization Head
+Region 
+Weighting
+: Main distillation region.
+: Valuable localization region.
+: Pixel-wise multiplication.
+Figure 3. Illustration of localization distillation (LD) for an edge e ∈ B = {t, b, l, r}. Only the localization branch is visualized here.
+S(·, τ) is the generalized SoftMax function with temperature τ. For a given detector, we first switch the bounding box representation
+to probability distribution. Then, we determine where to distill via region weighting on the main distillation region and the valuable
+localization region. Finally, we calculate the LD loss between two probability distributions predicted by the teacher and the student.
+Recently, Dai et al. [8] introduced the General Instance Se-
+lection Module to mimic deep features within the discrim-
+inative patches between teacher-student pairs. DeFeat [16]
+leverages different loss weights when conducting feature
+imitation on the object regions and the background region.
+Different from the aforementioned method based on feature
+imitation, our work introduces localization distillation and
+proposes to separately transfer the classification and local-
+ization knowledge based on the valuable localization region
+to make the distillation more efficient.
+3. Proposed Method
+In this section, we introduce the proposed distillation
+method. Instead of distilling the hybrid knowledge on fea-
+ture maps, we present a novel divide-and-conquer distilla-
+tion strategy that separately distills the semantic and local-
+ization knowledge based on their respective preferred re-
+gions. To transfer the semantic knowledge, we simply adopt
+the classification KD [19] on the classification head while
+for localization knowledge, we propose a simple yet effec-
+tive localization distillation (LD). Both techniques operate
+on the logits of individual heads rather than deep features.
+Then, to further improve the distillation efficiency, we intro-
+duce valuable localization region (VLR) that can help judge
+which type of knowledge is conducive to transfer for dif-
+ferent regions. In what follows, we first briefly revisit the
+probability distribution representation of bounding box and
+then transit to the proposed method.
+3.1. Preliminaries
+For a given bounding box B, conventional representa-
+tions have two forms, i.e., {x, y, w, h} (central point coor-
+dinates, width and height) [32, 39, 42] and {t, b, l, r} (dis-
+tance from the sampling point to the top, bottom, left and
+right edges) [48]. These two forms actually follow the Dirac
+delta distribution that only focuses on the ground-truth lo-
+cations but cannot model the ambiguity of bounding boxes
+as shown in Fig. 1. This is also clearly demonstrated in pre-
+vious works [7, 18, 28, 37].
+In our method, we use the recent probability distribu-
+tion representation of bounding box [28, 37] which is more
+comprehensive for describing the localization uncertainty
+of bounding box. Let e ∈ B be an edge of a bounding box.
+Its value can be generally represented as
+ˆe =
+Z emax
+emin
+x Pr(x)dx, e ∈ B , (1)
+where x is the regression coordinate ranged in [emin, emax],
+and Pr(x) is the corresponding probability. The con-
+ventional Dirac delta representation is a special case of
+Eqn. (1), where Pr(x) = 1 when x = egt, otherwise
+Pr(x) = 0 . By quantizing the continuous regression
+range [emin, emax] into the uniform discretized variable
+e = [ e1, e2, · · · , en]T ∈ Rn with n subintervals, where
+e1 = emin and en = emax, each edge of the given bound-
+ing box can be represented as the probability distribution by
+using the SoftMax function.
+3.2. Localization Distillation
+In this subsection, we present localization distillation
+(LD), a new way to enhance the distillation efficiency for
+object detection. Our LD is evolved from the view of prob-
+ability distribution representation [28] of bounding box
+which is originally designed for the generic object detection
+and carries abundant localization information. The ambigu-
+ous and clear edges in Fig. 1 will be respectively reflected
+by the flatness and sharpness of distribution.
+The working principle of our LD can be seen in Fig. 3.
+Given an arbitrary dense object detector, following [28], we
+first switch the bounding box representation from a quater-
+nary representation to a probability distribution. We choose
+9409
+
+
+DKD__2022_CVPR__Decoupled_Knowledge_Distillation.pdf
+Decoupled Knowledge Distillation
+Borui Zhao1 Quan Cui2 Renjie Song1 Yiyu Qiu1,3 Jiajun Liang1
+1MEGVII Technology 2Waseda University 3Tsinghua University
+zhaoborui.gm@gmail.com, cui-quan@toki.waseda.jp,
+chouyy18@mails.tsinghua.edu.cn, {songrenjie, liangjiajun }@megvii.com
+Abstract
+State-of-the-art distillation methods are mainly based on
+distilling deep features from intermediate layers, while the
+signiﬁcance of logit distillation is greatly overlooked. To
+provide a novel viewpoint to study logit distillation, we re-
+formulate the classical KD loss into two parts, i.e., target
+class knowledge distillation (TCKD) and non-target class
+knowledge distillation (NCKD). We empirically investigate
+and prove the effects of the two parts: TCKD transfers
+knowledge concerning the “difﬁculty” of training samples,
+while NCKD is the prominent reason why logit distillation
+works. More importantly, we reveal that the classical KD
+loss is a coupled formulation, which (1) suppresses the ef-
+fectiveness of NCKD and (2) limits the ﬂexibility to bal-
+ance these two parts . To address these issues, we present
+Decoupled Knowledge Distillation (DKD), enabling TCKD
+and NCKD to play their roles more efﬁciently and ﬂexibly.
+Compared with complex feature-based methods, our DKD
+achieves comparable or even better results and has bet-
+ter training efﬁciency on CIF AR-100, ImageNet, and MS-
+COCO datasets for image classiﬁcation and object detec-
+tion tasks. This paper proves the great potential of logit
+distillation, and we hope it will be helpful for future re-
+search. The code is available at https://github.com/megvii-
+research/mdistiller.
+1. Introduction
+In the last decades, the computer vision ﬁeld has been
+revolutionized by deep neural networks (DNN), which suc-
+cessfully boost various real-scenario tasks, e.g., image clas-
+siﬁcation [9, 13, 21], objection detection [ 8, 27], and seman-
+tic segmentation [31,45]. However, powerful networks nor-
+mally beneﬁt from large model capacities, introducing high
+computational and storage costs. Such costs are not prefer-
+able in industrial applications, where lightweight models
+are widely deployed. In the literature, a potential direction
+of cutting down the costs is knowledge distillation (KD).
+target
+Teacher
+Student
+KLLossKD
+non-target
+(a) Classical Knowledge Distillation (KD).
+TeacherStudentTarget ClassKLLossTCKD+zNCKDNon-target Class KLLossDecoupling!"#$$%&#"'(=*!'(+,−./0∗2!'(('(345$=6∗*!'(+7∗2!'(
+./0
+./8
+targetnon-target
+(b) Decoupled Knowledge Distillation (DKD).
+Figure 1. Illustration of the classical KD [ 12] and our DKD.W e
+reformulate KD into a weighted sum of two parts, i.e., TCKD and
+NCKD. The ﬁrst equation shows that KD (1) couples NCKD with
+pT
+t (the teacher’s conﬁdence on the target class), and (2) couples
+the importance of two parts. Furthermore, we demonstrate that the
+ﬁrst coupling suppresses the effectiveness, and the second limits
+the ﬂexibility for knowledge transfer. We propose DKD to address
+these issues, which employs hyper-parameters ↵ for TCKD and  
+for NCKD, killing the two birds with one stone.
+KD represents a series of methods concentrating on trans-
+ferring knowledge from a heavy model (teacher) to a light
+one (student), which can improve the light model’s perfor-
+mance without introducing extra costs.
+The concept of KD was ﬁrstly proposed in [ 12] to trans-
+fer the knowledge via minimizing the KL-Divergence be-
+tween prediction logits of teachers and students (Figure 1a).
+Since [28], most of the research attention has been drawn to
+distill knowledge from deep features of intermediate lay-
+ers. Compared with logits-based methods, the performance
+11953
+
+of feature distillation is superior on various tasks, so re-
+search on logit distillation has been barely touched. How-
+ever, training costs of feature-based methods are unsatis-
+factory, because extra computational and storage usage are
+introduced (e.g., network modules and complex operations)
+for distilling deep features during training time.
+Logit distillation requires marginal computational and
+storage costs, but the performance is inferior. Intuitively,
+logit distillation should achieve comparable performance
+as feature distillation, since logits are in higher semantic
+level than deep features. We suppose that the potential of
+logit distillation is limited by unknown reasons, causing
+the unsatisfactory performance. To revitalize logits-based
+methods, we start this work by delving into the mecha-
+nism of KD. Firstly, we divide a classiﬁcation prediction
+into two levels: (1) a binary prediction for the target class
+and all the non-target classes and (2) a multi-category pre-
+diction for each non-target class . Based on this, we refor-
+mulate the classical KD loss [ 12] into two parts, as shown
+in Figure 1b. One is a binary logit distillation for the tar-
+get class and the other is a multi-category logit distilla-
+tion for non-target classes. For simpliﬁcation, we respec-
+tively name them as target classiﬁcation knowledge distil-
+lation (TCKD) and non-target classiﬁcation knowledge dis-
+tillation (NCKD). The reformulation allows us to study the
+effects of the two parts independently.
+TCKD transfers knowledge via binary logit distillation,
+which means only the prediction of the target class is pro-
+vided while the speciﬁc prediction of each non-target class
+is unknown. A reasonable hypothesis is that TCKD trans-
+fers knowledge about the “difﬁculty” of training samples,
+i.e., the knowledge describes how difﬁcult it is to recog-
+nize each training sample. To validate this, we design ex-
+periments from three aspects to increase the “difﬁculty” of
+training data, i.e., stronger augmentation, noisier label and
+inherently challenging dataset.
+NCKD only considers the knowledge among non-target
+logits. Interestingly, we empirically prove that only ap-
+plying NCKD achieves comparable or even better results
+than the classical KD, indicating the vital importance of
+knowledge contained in non-target logits, which could be
+the prominent “dark knowledge”.
+More importantly, our reformulation demonstrates that
+the classical KD loss is a highly coupled formulation (as
+shown in Figure 1b), which could be the reason why the po-
+tential of logit distillation is limited. Firstly, the NCKD loss
+term is weighted by a coefﬁcient that negatively correlates
+with the teacher’s prediction conﬁdence on the target class.
+Thus larger prediction scores would lead to smaller weights.
+The coupling signiﬁcantly suppresses the effects of NCKD
+on well-predicted training samples. Such suppression is not
+preferable since the more conﬁdent the teacher is in the
+training sample, the more reliable and valuable knowledge
+it could provide . Secondly, the signiﬁcance of TCKD and
+NCKD are coupled, i.e., weighting TCKD and NCKD sepa-
+rately is not allowed. Such limitation is not preferable since
+TCKD and NCKD should be separately considered since
+their contributions are from different aspects.
+To address these issues, we propose a ﬂexible and ef-
+ﬁcient logit distillation method named Decoupled Knowl-
+edge Distillation (DKD, Figure 1b). DKD decouples the
+NCKD loss from the coefﬁcient negatively correlated with
+the teacher’s conﬁdence by replacing it with a constant
+value, improving the distillation effectiveness on well-
+predicted samples. Meanwhile, NCKD and TCKD are also
+decoupled so that their importance can be separately con-
+sidered by adjusting the weight of each part.
+Overall, our contributions are summarized as follows:
+• We provide an insightful view to study logit distillation
+by dividing the classical KD into TCKD and NCKD.
+Additionally, the effects of both parts are respectively
+analyzed and proved.
+• We reveal limitations of the classical KD loss caused
+by its highly coupled formulation. Coupling NCKD
+with the teacher’s conﬁdence suppresses the effective-
+ness of knowledge transfer. Coupling TCKD with
+NCKD limits the ﬂexibility to balance the two parts.
+• We propose an effective logit distillation method
+named DKD to overcome these limitations. DKD
+achieves state-of-the-art performances on various
+tasks. We also empirically validate the higher train-
+ing efﬁciency and better feature transferability of DKD
+compared with feature-based distillation methods.
+2. Related work
+The concept of knowledge distillation (KD) was ﬁrstly
+proposed by Hinton et al . in [ 12]. KD deﬁnes a learn-
+ing manner where a bigger teacher network is employed to
+guide the training of a smaller student network for many
+tasks [ 12, 17, 18]. The “dark knowledge” is transferred to
+students via soft labels from teachers. For raising the at-
+tention on negative logits, the hyper-parameter temperature
+was introduced. The following works can be divided into
+two types, distillation from logits [ 3, 6, 22, 40, 44] and inter-
+mediate features [ 10, 11, 14, 15, 23, 25, 28, 33, 34, 41, 43].
+Previous works of logit distillation mainly focus on
+proposing effective regularization and optimization meth-
+ods rather than novel methods. DML [ 44] proposes a mu-
+tual learning manner to train students and teachers simulta-
+neously. TAKD [ 22] introduces an intermediate-sized net-
+work named “teacher assistant” to bridge the gap between
+teachers and students. Besides, several works also focus on
+interpreting the classical KD method [ 2, 26].
+State-of-the-art methods are mainly based on interme-
+diate features, which can directly transfer representations
+from the teacher to the student [ 10, 11, 28] or transfer the
+11954
+
+correlation between samples captured in the teacher to the
+student [ 23, 33, 34]. Most of the feature-based methods
+could achieve preferable performances (signiﬁcant higher
+than logits-based methods), yet involving considerably high
+computational and storage costs.
+This paper focuses on analyzing what limits the potential
+of logits-based methods and revitalizing logit distillation.
+3. Rethinking Knowledge Distillation
+In this section, we delve into the mechanism of knowl-
+edge distillation. We reformulate KD loss into a weighted
+sum of two parts, one is relevant to the target class, and the
+other is not. We explore the effect of each part in the knowl-
+edge distillation framework and reveal some limitations of
+the classical KD. Inspired by the ﬁndings, we further pro-
+pose a novel logit distillation method, achieving remarkable
+performance on various tasks.
+3.1. Reformulating KD
+Notations. For a training sample from the t-th class,
+the classiﬁcation probabilities can be denoted as p =
+[p1,p 2,. . . ,pt,. . . ,pC ] 2 R1⇥C , where pi is the probabil-
+ity of the i-th class and C is the number of classes. Each
+element in p can be obtained by the softmax function:
+pi = exp(zi)PC
+j=1 exp(zj )
+, (1)
+where zi represents the logit of the i-th class.
+To separate the predictions relevant and irrelevant to
+the target class, we deﬁne the following notations. b =
+[pt,p \t] 2 R1⇥2 represents the binary probabilities of the
+target class ( pt) and all the other non-target classes ( p\t),
+which can be calculated by:
+pt = exp(zt)PC
+j=1 exp(zj )
+,p \t =
+PC
+k=1,k6=t exp(zk)
+PC
+j=1 exp(zj )
+.
+Meanwhile, we declare ˆp =[ ˆp1,. . . ,ˆpt 1, ˆpt+1,. . . ,ˆpC ] 2
+R1⇥(C 1) to independently model probabilities among non-
+target classes (i.e., without considering the t-th class). Each
+element is calculated by:
+ˆpi = exp(zi)PC
+j=1,j6=t exp(zj )
+. (2)
+Reformulation. In this part1, we attempt to reformulate KD
+with the binary probabilities b and the probabilities among
+non-target classes ˆp. T and S denote the teacher and the
+student, respectively. The classical KD uses KL-Divergence
+as the loss function, which can be written as 2:
+1More mathematical formulations are in the supplement.
+2We omit the temperature (T) in [ 12] without loss of generality
+KD = KL(pT ||pS )
+= pT
+t log( pT
+t
+pS
+t
+)+
+CX
+i=1,i6=t
+pT
+i log( pT
+i
+pS
+i
+). (3)
+According to Eqn.( 1) and Eqn.( 2) we have ˆpi = pi/p\t, so
+we can rewrite Eqn.( 3) as:
+KD = pT
+t log( pT
+t
+pS
+t
+)+ pT
+\t
+CX
+i=1,i6=t
+ˆpT
+i (log( ˆpT
+i
+ˆpS
+i
+)+l o g (
+pT
+\t
+pS
+\t
+))
+= pT
+t log( pT
+t
+pS
+t
+)+ pT
+\t log(
+pT
+\t
+pS
+\t
+)
+| {z }
+KL(bT ||bS )
++pT
+\t
+CX
+i=1,i6=t
+ˆpT
+i log( ˆpT
+i
+ˆpS
+i
+)
+| {z }
+KL(ˆpT ||ˆpS )
+.
+(4)
+Then, Eqn.(4) can be rewritten as:
+KD = KL(bT ||bS )+( 1   pT
+t )KL(ˆpT ||ˆpS ) (5)
+As reﬂected by Eqn.( 5), the KD loss is reformulated
+into a weighted sum of two terms. KL (bT ||bS ) repre-
+sents the similarity between the teacher’s and student’s bi-
+nary probabilities of the target class. Thus, we name it
+Target Class Knowledge Distillation(TCKD). Meanwhile,
+KL(ˆpT ||ˆpS ) represents the similarity between the teacher’s
+and student’s probabilities among non-target classes, named
+Non-Target Class Knowledge Distillation(NCKD). Eqn.( 5)
+could be rewritten as:
+KD = TCKD +( 1   pT
+t )NCKD. (6)
+Obviously, the weight of NCKD is coupled with pT
+t .
+The reformulation above inspires us to investigate the in-
+dividual effects of TCKD and NCKD, which will reveal the
+limitations of the classical coupled formulation.
+3.2. Effects of TCKD and NCKD
+Performance gain of each part. We individually study the
+effects of TCKD and NCKD on CIFAR-100 [ 16]. ResNet
+[9], WideResNet (WRN) [ 42] and ShufﬂeNet [ 21] are se-
+lected as training models, among which both the same and
+different architectures are considered. The experimental re-
+sults are reported in Table 1. For each teacher-student pair,
+we report the results of (1) the student baseline (vanilla
+training), (2) the classical KD (where TCKD and NCKD
+are both used), (3) singly TCKD and (4) singly NCKD. The
+weight of each loss is set as 1.0 (including the default cross-
+entropy loss). Other implementation details are the same as
+those in Sec 4.
+Intuitively, TCKD concentrates on the knowledge related
+to the target class since the corresponding loss function con-
+siders only binary probabilities. Conversely, NCKD focuses
+on the knowledge among non-target classes. We notice that
+11955
+
+
+CrossKD__2024_CVPR__Cross_Head_KD_for_Object_Detection.pdf
+CrossKD: Cross-Head Knowledge Distillation for Object Detection
+Jiabao Wang1*, Yuming Chen1∗, Zhaohui Zheng1, Xiang Li2,1, Ming-Ming Cheng2,1, Qibin Hou2,1†
+1VCIP, College of Computer Science, Nankai University
+2NKIARI, Shenzhen Futian
+https://github.com/jbwang1997/CrossKD
+Abstract
+Knowledge Distillation (KD) has been validated as an
+effective model compression technique for learning com-
+pact object detectors. Existing state-of-the-art KD methods
+for object detection are mostly based on feature imitation.
+In this paper, we present a general and effective prediction
+mimicking distillation scheme, called CrossKD, which de-
+livers the intermediate features of the student’s detection
+head to the teacher’s detection head. The resulting cross-
+head predictions are then forced to mimic the teacher’s pre-
+dictions. This manner relieves the student’s head from re-
+ceiving contradictory supervision signals from the annota-
+tions and the teacher’s predictions, greatly improving the
+student’s detection performance. Moreover, as mimicking
+the teacher’s predictions is the target of KD, CrossKD of-
+fers more task-oriented information in contrast with feature
+imitation. On MS COCO, with only prediction mimicking
+losses applied, our CrossKD boosts the average precision
+of GFL ResNet-50 with 1 × training schedule from 40.2 to
+43.7, outperforming all existing KD methods. In addition,
+our method also works well when distilling detectors with
+heterogeneous backbones.
+1. Introduction
+Knowledge Distillation (KD), serving as a model compres-
+sion technique, has been deeply studied in object detec-
+tion [5, 13, 29, 31, 56, 60, 61, 74, 75] and has received
+excellent performance recently. According to the distil-
+lation position of the detectors, existing KD methods can
+be roughly classified into two categories: prediction mim-
+icking and feature imitation. Prediction mimicking (See
+Fig. 1(a)) was first proposed in [24], which points out that
+the smooth distribution of the teacher’s predictions is more
+comfortable for the student to learn than the Dirac distribu-
+*Equal contribution.
+†Corresponding author.
+Figure 1. Comparisons between conventional KD methods and
+our CrossKD. Rather than explicitly enforcing the consistency
+between the intermediate feature maps or the predictions of the
+teacher-student pair, CrossKD implicitly builds the connection be-
+tween the heads of the teacher-student pair to improve the distilla-
+tion efficiency.
+tion of the ground truths. In other words, prediction mim-
+icking forces the student to resemble the prediction distri-
+bution of the teacher. Differently, feature imitation (See
+Fig. 1(b)) follows the idea proposed in FitNet [54], which
+argues that intermediate features contain more information
+than the predictions from the teacher. It aims to enforce the
+feature consistency between the teacher-student pair.
+Prediction mimicking plays a vital role in distilling ob-
+ject detection models. However, it has been observed to be
+inefficient than feature imitation for a long time. Recently,
+Zheng et al. [74] proposed a localization distillation (LD)
+method that improves prediction mimicking by transferring
+localization knowledge, which pushes the prediction mim-
+icking to a new level. Despite just catching up with the ad-
+vanced feature imitation methods, e.g., PKD [5], LD shows
+that prediction mimicking has the ability to transfer task-
+arXiv:2306.11369v2  [cs.CV]  15 Apr 2024
+(a) 
+ground
+-
+truth
+(c)
+prediction mimicking
+(b) teacher predictions
+(d) 
+CrossKD
+0.00
+0.50
+1.00
+Figure 2. Visualizations of the classification predictions from the GFL [35]. (a) and (b) are ground truth and distillation targets. (c) and (d)
+are the classification outputs predicted by models training with conventional prediction mimicking and proposed CrossKD. In the green
+circled areas, the distillation targets predicted by the teacher have a large discrepancy with the ground-truth targets assigned to the student.
+prediction mimicking forces the student to mimic the teacher, while CrossKD can smooth the mimicking process.
+specific knowledge, which benefits the student from the or-
+thogonal aspect to feature imitation. This motivates us to
+further explore and improve prediction mimicking.
+Through investigation, we observe that conventional pre-
+diction mimicking may suffer from a conflict between the
+ground-truth targets from the student’s assigner and the dis-
+tillation targets predicted from the teacher. When train-
+ing a detector with prediction mimicking, the student’s pre-
+dictions are forced to mimic both the ground-truth targets
+and the teacher’s predictions simultaneously. However, the
+distillation targets predicted by the teacher usually have
+a large discrepancy with the ground-truth targets assigned
+to the student. As shown in Fig. 2(a) and Fig. 2(b), the
+teacher produces class probabilities in the green circled ar-
+eas, which conflicts with the ground-truth targets assigned
+to the student. As a result, the student detector experiences
+a contradictory learning process during distillation, which
+seriously interferes with optimization.
+To alleviate the above conflict, previous prediction mim-
+icking methods [13, 19, 74] tend to conduct the distillation
+within regions containing mediate teacher-student discrep-
+ancies. However, we argue that the heavily uncertain re-
+gions generally accommodate more information that is ben-
+eficial to the student. In this paper, we present a novel
+cross-head knowledge distillation pipeline, abbreviated as
+CrossKD. As illustrated in Fig. 1(c), We propose to feed the
+intermediate features from the head of the student to that of
+the teacher, yielding the cross-head predictions. Then, the
+KD operations can be conducted between the new cross-
+head predictions and the teacher’s predictions.
+Despite its simplicity, CrossKD offers the following two
+main advantages. First, since both the cross-head predic-
+tions and the teacher’s predictions are produced by sharing
+part of the teacher’s detection head, the cross-head predic-
+tions are relatively consistent with the teacher’s predictions.
+This relieves the discrepancy between the teacher-student
+pair and enhances the training stability of prediction mim-
+icking. In addition, as mimicking the teacher’s predictions
+is the target of KD, CrossKD is theoretically optimal and
+can offer more task-oriented information compared with
+feature imitation. Both advantages enable our CrossKD to
+efficiently distill knowledge from the teacher’s predictions
+and hence result in even better performance than previous
+state-of-the-art feature imitation methods.
+Without bells and whistles, our method can significantly
+boost the performance of the student detector, achieving a
+faster training convergence. Comprehensive experiments on
+the COCO [40] dataset are conducted in this paper to elabo-
+rate the effectiveness of CrossKD. Specifically, with only
+prediction mimicking losses applied, CrossKD achieves
+43.7 AP on GFL with 1 × training schedule, which is 3.5
+AP higher than the baseline, surpassing all previous state-
+of-the-art object detection KD methods. Moreover, exper-
+iments also indicate our CrossKD is orthogonal to feature
+imitation methods. By combining CrossKD with the state-
+of-the-art feature imitation method, like PKD [5], we fur-
+ther achieve 43.9 AP on GFL. Furthermore, we also show
+that our method can be used to distill detectors with hetero-
+geneous backbones and performs better than other methods.
+2. Related Work
+2.1. Object Detection
+Object detection is one of the most fundamental computer
+vision tasks, which requires recognizing and localizing ob-
+jects simultaneously. Modern object detectors can be briefly
+divided into two categories: one-stage [3, 10, 11, 35, 39,
+51, 57, 70] detectors and two-stage [8, 17, 18, 20, 21,
+38, 52, 58, 73] detectors. Among them, one-stage detec-
+tors, also known as dense detectors, have emerged as the
+mainstream trend in detection due to their excellent speed-
+accuracy trade-off.
+Dense object detectors have received great attention
+since YOLOv1 [49]. Typically, YOLO series detectors [2,
+16, 44, 49–51] attempt to balance the model size and their
+accuracy to meet the requirement of real-world applica-
+tions. Anchor-free detectors [27, 57, 76] attempt to dis-
+card the design of anchor boxes to avoid time-consuming
+box operations and cumbersome hyper-parameter tuning.
+Dynamic label assignment methods [15, 47, 70] are pro-
+posed to better define the positive and negative samples
+for model learning. GFL [34, 35] introduces Quality Fo-
+cal Loss (QFL) and a Distribution-Guided Quality Pre-
+dictor to increase the consistency between the classifica-
+tion score and the localization quality. It also models the
+bounding box representation as a probability distribution
+so that it can capture the localization ambiguity of the box
+edges. Recently, attributing to the strong ability of the trans-
+former block to encode expressive features, DETR fam-
+ily [4, 6, 30, 42, 45, 68, 77] has become a new trend in
+the object detection community.
+2.2. Knowledge Distillation for Object Detection
+Knowledge Distillation (KD) is an effective technique to
+transfer knowledge from a large-scale teacher model to a
+small-scale student model. It has been widely studied in
+the classification task [12, 23, 26, 36, 37, 46, 48, 54, 63,
+67, 71, 72], but it is still challenging to distill detection
+models because of the extreme background ratio. The pi-
+oneer work [7] proposes the first distillation framework
+for object detection by simply combining feature imitation
+and prediction mimicking. Since then, feature imitation
+has attracted more and more research attention. Typically,
+some works [13, 25, 33, 61] focus on selecting effective
+distillation regions for better feature imitation, while other
+works [19, 31, 75] aim to weight the imitation loss better.
+There are also methods [5, 65, 66, 69] attempting to de-
+sign new teacher-student consistency functions, aiming to
+explore more consistency information or release the strict
+limit of the MSE loss.
+As the earliest distillation strategy proposed in [24], pre-
+diction mimicking plays a vital role in classification distilla-
+tion. Recently, some improved prediction mimicking meth-
+ods have been proposed to adapt to object detection. For
+example, Rank Mimicking [31] regards the score rank of
+the teacher as a kind of knowledge and aims to force the
+student to rank instances as the teacher. LD [74] proposes
+to distill the localization distribution of bounding box [35]
+to transfer localization knowledge. In this paper, we con-
+struct a CrossKD pipeline which separates detection and
+distillation into different heads to alleviate the target con-
+flict problem of prediction mimicking. It’s worth noting
+that HEAD [59] delivers the student features to an indepen-
+dent assistant head to bridge the gap between heterogeneous
+teacher-student pairs. In contrast, we observe that sim-
+ply delivering the student feature to the teacher is effective
+enough to achieve SOTA results. This makes our method
+quite concise and different from HEAD. Our method is also
+related to [1, 28, 32, 64], but all of them aim to distill clas-
+sification models and are not tailored for object detection.
+/uni00000013/uni00000011/uni00000014/uni00000013/uni00000011/uni00000015/uni00000013/uni00000011/uni00000016/uni00000013/uni00000011/uni00000017/uni00000013/uni00000011/uni00000018
+/uni00000037/uni0000004b/uni00000055/uni00000048/uni00000056/uni0000004b/uni00000052/uni0000004f/uni00000047
+/uni00000013/uni00000011/uni00000018
+/uni00000014/uni00000011/uni00000013/uni00000035/uni00000048/uni00000057/uni0000004c/uni00000051/uni00000044/uni00000031/uni00000048/uni00000057/uni00000024 /uni00000037/uni00000036/uni00000036/uni0000002a/uni00000029/uni0000002f
+Figure 3. Statistics of the target conflict degree between stu-
+dent (GFL-R50) and teacher (GFL-R101, ATSS-R101, RetinaNet-
+R101). X-axis is the teacher-student discrepancy threshold for
+conflict areas. Y-axis represents the ratios of the target conflict
+areas to the positive areas.
+3. Methodology
+3.1. Analysis of the Target Conflict Problem
+Target conflict is a common issue confronted in conven-
+tional prediction mimicking methods. In contrast to the
+classification task, which assigns a specific category to ev-
+ery image, the labels in advanced detectors are usually dy-
+namically assigned and not deterministic. Typically, detec-
+tors depend on a hand-crafted principle, i.e., assigner, to
+determine the label in each location. In most cases, detec-
+tors cannot reproduce the assigner’s labels exactly, which
+results in a conflict between the teacher-student targets in
+KD. Furthermore, the inconsistency of the assigners of the
+student and teacher in real-world scenarios extends the dis-
+tance between the ground-truth and distillation targets.
+To quantitatively measure the degree of target conflict,
+we statistic the ratios of conflict areas to the positive areas
+under different teacher-student discrepancy in the COCO
+minival dataset and report the results in Fig. 3. As we can
+see, even if both the teacher (ATSS [70] and GFL [35])
+and student (GFL) have the same label assignment strategy,
+there are still numerous locations that have a discrepancy
+larger than 0.5 between the ground-truth and distillation tar-
+gets, respectively. When we use a teacher with a different
+assigner (RetinaNet) to distill the student (GFL), the con-
+flict areas increases by a large margin. More experiments
+in Sec. 4.5 also demonstrate that the target conflict problem
+severely hinders the performance of prediction mimicking.
+Despite the large influence of target conflict, this prob-
+lem has been neglected for a long time in previous predic-
+tion mimicking methods [24, 31]. These methods intend
+to directly minimize the discrepancy between the teacher-
+student predictions. Its objective can be described as:
+LKD = 1
+|S|
+X
+r∈R
+S(r)Dpred(ps(r), pt(r)), (1)
+where ps and pt are the prediction vectors generated by the
+detection heads of the student and the teacher, respectively.

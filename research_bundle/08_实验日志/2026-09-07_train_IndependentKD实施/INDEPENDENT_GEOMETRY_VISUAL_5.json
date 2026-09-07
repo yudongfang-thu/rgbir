@@ -1,0 +1,208 @@
+{
+  "schema": "rgbir-independent-visual-geometry-review-v1",
+  "created_date": "2026-09-07",
+  "reviewer": "/root/review_l1_spec",
+  "review_role": "independent_second_visual_review",
+  "review_status": "COMPLETE_NO_VERIFIED_POINT_SET",
+  "evidence_scope": "Only the five flagged train pairs and directly visible regions; no population-level registration estimate.",
+  "blinding": {
+    "read_primary_review_points": false,
+    "read_gt_or_prediction_annotations": false,
+    "used_model_metrics_or_ap": false,
+    "used_images": "Unannotated raw RGB/IR originals and side-by-side panels only."
+  },
+  "viewing": {
+    "tool": "functions.exec -> tools.view_image(detail=original)",
+    "all_ten_raw_images_actually_viewed": true,
+    "coordinate_system": "zero-based raw-image pixels; no accepted coordinates were produced",
+    "panel_resize_limitation": "LLVIP 2560x1054 panels were displayed at 2048x843; both LLVIP raw pairs were separately viewed at 1280x1024. No coordinates measured from resized panels."
+  },
+  "criteria": {
+    "minimum_physical_points_per_pair": 6,
+    "minimum_whole_image_quadrants": 3,
+    "need_trustworthy_structure_near_target": true,
+    "need_per_point_coordinate_uncertainty": true,
+    "geometry_contract_changed": false
+  },
+  "interpretation": {
+    "unknown_is_not_registration_failure": true,
+    "zero_accepted_points_is_not_zero_real_correspondences": true,
+    "no_verified_geometry_generated": true,
+    "no_offset_statistics_without_points": true,
+    "not_inferred_from_gt_iou_or_feature_similarity": true,
+    "not_inferred_from_small_roster_coverage": true
+  },
+  "summary": {
+    "pair_count": 5,
+    "verified_pair_count": 0,
+    "unknown_pair_count": 5,
+    "measured_failed_pair_count": 0,
+    "priority_for_precise_followup": "dronevehicle_10789",
+    "priority_is_based_on": "Shared visible static structure only; not AP."
+  },
+  "pairs": [
+    {
+      "pair_id": "dronevehicle_14139",
+      "raw_prefix": "00",
+      "width": 640,
+      "height": 512,
+      "status": "UNKNOWN",
+      "coarse_scene_correspondence_observed": true,
+      "shared_structures": [
+        "中心偏上的细杆/停车设施",
+        "左侧弯曲停车排和右側长条车辆/停车位",
+        "中下部横向路缘"
+      ],
+      "limitations": [
+        "RGB右半及下半大面积暗部，仅局部照明/车灯可见；IR可见的路缘、地面和车辆结构在RGB缺乏同等清晰的物理边界。",
+        "车灯、阴影、车顶或车体热轮廓不能直接作为同一个细结构点。",
+        "有少量局部细杆候选，但无法独立确认覆盖三个全图象限的六个可信点，目标邻域支撑域未被建立。"
+      ],
+      "offset_observation": "粗场景位置相符；未得到可接受的逐点坐标，不报告数值偏移。",
+      "follow_up": "若精细点审继续，先检查中心偏上细杆的同一实体端点；不要向暗部外推。",
+      "rgb_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/00_dronevehicle_14139_rgb.jpg",
+      "ir_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/00_dronevehicle_14139_ir.jpg",
+      "panel_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_panels_v1/independent_v2_dronevehicle_14139.png",
+      "accepted_points": [],
+      "point_uncertainty_px": null,
+      "accepted_point_count": 0,
+      "accepted_global_quadrant_count": 0,
+      "point_coverage_polygon": null,
+      "p95_identity_residual_px": null,
+      "max_identity_residual_px": null,
+      "target_neighborhood_supported": null,
+      "verified": false
+    },
+    {
+      "pair_id": "dronevehicle_16887",
+      "raw_prefix": "09",
+      "width": 640,
+      "height": 512,
+      "status": "UNKNOWN",
+      "coarse_scene_correspondence_observed": true,
+      "shared_structures": [
+        "建筑围成的车场布局",
+        "中部照明范围内的车辆排列",
+        "右侧斜向停车排"
+      ],
+      "limitations": [
+        "RGB除中部小范围照明和若干窗灯之外接近暗场；IR中清楚的屋顶、建筑边缘和停车线在RGB不能可靠逐点识别。",
+        "RGB发光窗户/照明立面与IR屋顶热纹理不是可互换的几何点。",
+        "建筑、地面、车辆位于不同深度；本次没有足够可信点量化可能的视差或建立目标邻域覆盖。"
+      ],
+      "offset_observation": "能识别同一车场；没有足够物理点量化局部或全局偏移。",
+      "follow_up": "本次不宜投入大量标点补足数量；若独立主审也无法找到共享结构，保留UNKNOWN。",
+      "rgb_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/09_dronevehicle_16887_rgb.jpg",
+      "ir_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/09_dronevehicle_16887_ir.jpg",
+      "panel_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_panels_v1/independent_v2_dronevehicle_16887.png",
+      "accepted_points": [],
+      "point_uncertainty_px": null,
+      "accepted_point_count": 0,
+      "accepted_global_quadrant_count": 0,
+      "point_coverage_polygon": null,
+      "p95_identity_residual_px": null,
+      "max_identity_residual_px": null,
+      "target_neighborhood_supported": null,
+      "verified": false
+    },
+    {
+      "pair_id": "dronevehicle_10789",
+      "raw_prefix": "14",
+      "width": 640,
+      "height": 512,
+      "status": "UNKNOWN",
+      "coarse_scene_correspondence_observed": true,
+      "shared_structures": [
+        "轨道旁立柱和接触网支架",
+        "画面下部两处路灯",
+        "公园内圆形构筑物、园路和台阶/铺装变化"
+      ],
+      "limitations": [
+        "五对中共享静态结构最多，但IR细线展宽、结构融合，不能仅将两模态最强边缘当同一物理边缘。",
+        "轨道与接触网包含多条邻近平行线；投影线交叉不必然是同一个实体连接点。",
+        "树冠、阴影、喷泉/圆形结构内部的亮暗区域不是稳定点；目标车辆附近可见结构与底部路灯之间的覆盖也尚未被坐标集合证明。",
+        "本次原分辨率目视没有足够把握给出六个满足严格像素精度、跨三象限的独立坐标及不确定度。"
+      ],
+      "offset_observation": "粗布局吻合；局部边缘存在位置/宽度差异，但无法区分对应选边歧义与真实残差，不将目视印象作为数值位移。",
+      "follow_up": "优先精细复核支柱真实端点/连接部位和路灯实体端点；逐点声明不确定度，再决定是否满足原误差合同。",
+      "rgb_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/14_dronevehicle_10789_rgb.jpg",
+      "ir_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/14_dronevehicle_10789_ir.jpg",
+      "panel_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_panels_v1/independent_v2_dronevehicle_10789.png",
+      "accepted_points": [],
+      "point_uncertainty_px": null,
+      "accepted_point_count": 0,
+      "accepted_global_quadrant_count": 0,
+      "point_coverage_polygon": null,
+      "p95_identity_residual_px": null,
+      "max_identity_residual_px": null,
+      "target_neighborhood_supported": null,
+      "verified": false
+    },
+    {
+      "pair_id": "llvip_130165",
+      "raw_prefix": "04",
+      "width": 1280,
+      "height": 1024,
+      "status": "UNKNOWN",
+      "coarse_scene_correspondence_observed": true,
+      "shared_structures": [
+        "前景多棵树干及部分粗枝分叉",
+        "中后景灯杆与球形灯具",
+        "人行道及停放车辆的场景布局"
+      ],
+      "limitations": [
+        "RGB树皮/铺砖纹理在IR中弱或不存在，IR突出热轮廓；树叶、细枝的可见性在模态间差别大。",
+        "树干、悬空线缆、汽车、人行道等跨多个深度平面；线缆的投影交叉不能直接当物理交点。",
+        "大范围枝叶和车辆遮挡使目标附近可信静态结构不足；树干轮廓宽度差异也不能直接解释为坐标偏移。",
+        "原图可确认若干结构身份，但未得到六点、三象限且误差可量化的可信集合。"
+      ],
+      "offset_observation": "同场景及部分结构身份成立；未量化视差、错位或残余变形。",
+      "follow_up": "如继续，可先审灯杆/灯具实体连接和清楚的粗枝分叉；不可把车辆或人体热轮廓用于凑点。",
+      "rgb_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/04_llvip_130165_rgb.jpg",
+      "ir_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/04_llvip_130165_ir.jpg",
+      "panel_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_panels_v1/independent_v2_llvip_130165.png",
+      "accepted_points": [],
+      "point_uncertainty_px": null,
+      "accepted_point_count": 0,
+      "accepted_global_quadrant_count": 0,
+      "point_coverage_polygon": null,
+      "p95_identity_residual_px": null,
+      "max_identity_residual_px": null,
+      "target_neighborhood_supported": null,
+      "verified": false
+    },
+    {
+      "pair_id": "llvip_150318",
+      "raw_prefix": "19",
+      "width": 1280,
+      "height": 1024,
+      "status": "UNKNOWN",
+      "coarse_scene_correspondence_observed": true,
+      "shared_structures": [
+        "中上方交通锥",
+        "树干及局部树池/路缘",
+        "停放车辆与人行道布局"
+      ],
+      "limitations": [
+        "RGB铺砖纹理清楚，IR地面近乎平滑，无法直接复用砖缝角点。",
+        "交通锥可识别但IR较暗且边缘模糊；单一对象不能提供全图几何覆盖。",
+        "前景树干和枝叶遮挡目标附近区域；车辆车窗/反光/车灯与热轮廓缺少一致的细结构端点。",
+        "存在不同深度的树、汽车、路面及行人；本次未建立六个跨三象限的可信静态点。"
+      ],
+      "offset_observation": "粗场景吻合；无法用本次点审确认满足或违反严格误差界。",
+      "follow_up": "局部交通锥或路缘可做后续精细候选；不将模糊位置估计录成接受点，不向被遮挡区域外推。",
+      "rgb_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/19_llvip_150318_rgb.jpg",
+      "ir_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_raw_v1/19_llvip_150318_ir.jpg",
+      "panel_path": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/geometry_review_panels_v1/independent_v2_llvip_150318.png",
+      "accepted_points": [],
+      "point_uncertainty_px": null,
+      "accepted_point_count": 0,
+      "accepted_global_quadrant_count": 0,
+      "point_coverage_polygon": null,
+      "p95_identity_residual_px": null,
+      "max_identity_residual_px": null,
+      "target_neighborhood_supported": null,
+      "verified": false
+    }
+  ]
+}

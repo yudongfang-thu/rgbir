@@ -1,0 +1,136 @@
+test_acceptance_requires_reviewed_source_copies (test_analyze_independent.AnalyzerTests) ... ok
+test_cross_seed_recipe_change_withholds_aggregate (test_analyze_independent.AnalyzerTests) ... ok
+test_duplicate_attempts_not_outcome_selected (test_analyze_independent.AnalyzerTests) ... ok
+test_evaluator_roster_endpoint_and_test_flag_rejected (test_analyze_independent.AnalyzerTests) ... ok
+test_fallback_requires_y_gain_over_c0 (test_analyze_independent.AnalyzerTests) ... ok
+test_file_loader_rejects_failed_or_tampered_receipt (test_analyze_independent.AnalyzerTests) ... ERROR
+test_file_loader_verifies_complete_receipt_chain (test_analyze_independent.AnalyzerTests) ... ERROR
+test_gt_and_y_do_not_complete_four_arms (test_analyze_independent.AnalyzerTests) ... ok
+test_harm_requires_review_never_early_stop (test_analyze_independent.AnalyzerTests) ... ok
+test_l_needs_independent_content_and_consistency (test_analyze_independent.AnalyzerTests) ... ok
+test_llvip_never_borrows_drone_n (test_analyze_independent.AnalyzerTests) ... ok
+test_manifest_cannot_relabel_paired_as_same_modal (test_analyze_independent.AnalyzerTests) ... ERROR
+test_missing_fixed_threshold_diagnostics_cannot_be_replaced_by_recall (test_analyze_independent.AnalyzerTests) ... ok
+test_missing_seed_and_invalid_receipt_do_not_upgrade (test_analyze_independent.AnalyzerTests) ... ok
+test_negative_seed_blocks_practical_upgrade (test_analyze_independent.AnalyzerTests) ... ok
+test_non_target_content_has_positive_three_seed_requirement (test_analyze_independent.AnalyzerTests) ... ok
+test_sample_sd_not_population_sd (test_analyze_independent.AnalyzerTests) ... ok
+test_simple_target_only_fallback (test_analyze_independent.AnalyzerTests) ... ok
+test_true_paired_deltas_and_boundary (test_analyze_independent.AnalyzerTests) ... ok
+test_unaccepted_analyzer_cannot_expand (test_analyze_independent.AnalyzerTests) ... ok
+test_units (test_analyze_independent.AnalyzerTests) ... ok
+test_analytic_temperature_and_kl_direction (test_classification_logit.ClassificationTests) ... ok
+test_base_includes_teacher_rejected_object (test_classification_logit.ClassificationTests) ... ok
+test_binary_kl_equal_zero_and_teacher_detached (test_classification_logit.ClassificationTests) ... /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/test_classification_logit.py:208: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  self.assertLess(abs(float(classification_relative_kd(s,s.detach(),v,k,y))),1e-6)
+ok
+test_c0_loss_gradient_and_complete_stats_exact (test_classification_logit.ClassificationTests) ... ok
+test_cache_rejects_another_batch_and_mutated_source (test_classification_logit.ClassificationTests) ... ok
+test_deleting_non_target_can_increase_shared_gradient_norm (test_classification_logit.ClassificationTests) ... ok
+test_exact_quality_tie_keeps_original_gt_order (test_classification_logit.ClassificationTests) ... ok
+test_independent_teacher_regions_and_background_all_gt (test_classification_logit.ClassificationTests) ... ok
+test_invalid_and_empty_pool_regions (test_classification_logit.ClassificationTests) ... ok
+test_invalid_scale_is_ignored_in_gradient_and_normalization (test_classification_logit.ClassificationTests) ... ok
+test_matches_compact_base_and_selected_mapping (test_classification_logit.ClassificationTests) ... ok
+test_no_matched_object_and_zero_selected_attach_score_gradient (test_classification_logit.ClassificationTests) ... ok
+test_nonzero_c1_and_components_json_serializable (test_classification_logit.ClassificationTests) ... ok
+test_one_valid_level_preserves_original_selection (test_classification_logit.ClassificationTests) ... ok
+test_overlap_statistics_only_use_selected_valid_levels (test_classification_logit.ClassificationTests) ... ok
+test_pool_shift_invariance_and_both_region_gradients (test_classification_logit.ClassificationTests) ... ok
+test_preteacher_denominator (test_classification_logit.ClassificationTests) ... ok
+test_raw_gt_channel_pool_matches_legacy_per_scale (test_classification_logit.ClassificationTests) ... ok
+test_reject_bad_shape_label_mask_and_nonfinite (test_classification_logit.ClassificationTests) ... ok
+test_scale_divergence_precedes_scale_average (test_classification_logit.ClassificationTests) ... ok
+test_single_class_c1_is_c1_y (test_classification_logit.ClassificationTests) ... ok
+test_small_actual_batch_does_not_scale_inside_kernel (test_classification_logit.ClassificationTests) ... ok
+test_student_changes_cannot_change_selection (test_classification_logit.ClassificationTests) ... ok
+test_target_coefficient_offtarget_average_not_class_sum (test_classification_logit.ClassificationTests) ... ok
+test_teacher_clip_before_temperature_student_not_clipped (test_classification_logit.ClassificationTests) ... ok
+test_y_only_offtarget_teacher_intervention (test_classification_logit.ClassificationTests) ... ok
+test_y_only_statistics_exclude_unused_teacher_channels (test_classification_logit.ClassificationTests) ... ok
+test_caller_rng_not_consumed_workers0 (test_coverage_probe.CoverageTests) ... ok
+test_exact_hit_upper_bound_and_no_false_geometric_acceptance (test_coverage_probe.CoverageTests) ... {"batch_completed": 1, "roster_hit_batches_so_far": 1}
+{"batch_completed": 2, "roster_hit_batches_so_far": 1}
+{"batch_completed": 3, "roster_hit_batches_so_far": 1}
+{"batch_completed": 4, "roster_hit_batches_so_far": 1}
+ok
+test_same_seed_same_indices_and_augments (test_coverage_probe.CoverageTests) ... ok
+test_seed_changes_real_stream (test_coverage_probe.CoverageTests) ... ok
+test_workers_are_seeded_and_reproducible (test_coverage_probe.CoverageTests) ... ok
+test_GT_identical_selection_normalizer_and_target_identity (test_localization_adapter.AdapterTests) ... ok
+test_exact_old_loss_when_extra_geometry_does_not_reject (test_localization_adapter.AdapterTests) ... ok
+test_no_joint_or_classification_arm (test_localization_adapter.AdapterTests) ... ok
+test_standalone_L_direct_gradient_and_detach (test_localization_adapter.AdapterTests) ... ok
+test_student_values_do_not_change_selection (test_localization_adapter.AdapterTests) ... ok
+test_unverified_rejected_or_explicit_zero_diagnostic (test_localization_adapter.AdapterTests) ... ok
+test_IR_box_must_be_fully_covered (test_localization_adapter.PairGeometryTests) ... ok
+test_anchor_must_be_inside_both_targets (test_localization_adapter.PairGeometryTests) ... ok
+test_boundary_uncertainty_neighborhood_is_covered (test_localization_adapter.PairGeometryTests) ... ok
+test_different_grid_unseen_path_and_nan_rejected (test_localization_adapter.PairGeometryTests) ... ok
+test_invalid_annotation_uncertainty_rejected (test_localization_adapter.PairGeometryTests) ... ok
+test_same_flip_scale_grids_remain_valid (test_localization_adapter.PairGeometryTests) ... ok
+test_bound24_review5_natural_priority (test_prepare_geometry_review.CandidateTests) ... ok
+test_incomplete_natural_and_overbudget_rejected (test_prepare_geometry_review.CandidateTests) ... ok
+test_missing_natural_is_draft_and_repeat_is_identical (test_prepare_geometry_review.CandidateTests) ... ok
+test_same_basename_outside_declared_train_rejected (test_prepare_geometry_review.CandidateTests) ... ok
+test_validation_split_cannot_enter (test_prepare_geometry_review.CandidateTests) ... ok
+test_visual_feed_hides_static_model_content_and_no_points (test_prepare_geometry_review.CandidateTests) ... ok
+test_authorized_fallback_budget (test_protocol.ProtocolTests) ... ok
+test_calibration_not_invented (test_protocol.ProtocolTests) ... ok
+test_content_and_seed_are_frozen (test_protocol.ProtocolTests) ... ok
+test_formal_logic_does_not_claim_receipt_acceptance (test_protocol.ProtocolTests) ... ok
+test_joint_and_unknown_arm_rejected (test_protocol.ProtocolTests) ... ok
+test_native_zero_and_c0_unchanged (test_protocol.ProtocolTests) ... ok
+test_same_modal_teacher_not_reference_or_ir_mask (test_protocol.ProtocolTests) ... ok
+test_single_task_coefficients (test_protocol.ProtocolTests) ... ok
+
+======================================================================
+ERROR: test_file_loader_rejects_failed_or_tampered_receipt (test_analyze_independent.AnalyzerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/test_analyze_independent.py", line 201, in test_file_loader_rejects_failed_or_tampered_receipt
+    root = Path(tmp) / 'run'; spec = file_fixture(root)
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/test_analyze_independent.py", line 45, in file_fixture
+    recipe = {key: 1 for key in _legacy_loader().RECIPE_FIELDS}
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/analyze_independent.py", line 248, in _legacy_loader
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/rgbir_task_conditional_v1/analyze_results.py'
+
+======================================================================
+ERROR: test_file_loader_verifies_complete_receipt_chain (test_analyze_independent.AnalyzerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/test_analyze_independent.py", line 192, in test_file_loader_verifies_complete_receipt_chain
+    root = Path(tmp) / 'run'; spec = file_fixture(root)
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/test_analyze_independent.py", line 45, in file_fixture
+    recipe = {key: 1 for key in _legacy_loader().RECIPE_FIELDS}
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/analyze_independent.py", line 248, in _legacy_loader
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/rgbir_task_conditional_v1/analyze_results.py'
+
+======================================================================
+ERROR: test_manifest_cannot_relabel_paired_as_same_modal (test_analyze_independent.AnalyzerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/test_analyze_independent.py", line 210, in test_manifest_cannot_relabel_paired_as_same_modal
+    root = Path(tmp) / 'run'; spec = file_fixture(root)
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/test_analyze_independent.py", line 45, in file_fixture
+    recipe = {key: 1 for key in _legacy_loader().RECIPE_FIELDS}
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_cpu1/analyze_independent.py", line 248, in _legacy_loader
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/rgbir_task_conditional_v1/analyze_results.py'
+
+----------------------------------------------------------------------
+Ran 79 tests in 0.662s
+
+FAILED (errors=3)

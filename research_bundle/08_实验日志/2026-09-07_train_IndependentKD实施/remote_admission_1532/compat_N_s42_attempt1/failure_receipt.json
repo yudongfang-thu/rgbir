@@ -1,0 +1,254 @@
+{
+  "status": "FAILED",
+  "error": "AssertionError('Exact compatibility failed: initial_trace.pt.rng.python[1][624]: scalar/type differs')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu3/verify_compatibility.py\", line 549, in run\n    record=verify_one(current,args.config,resolved/(\"seed%d_%s\"%(seed,args.arm)))\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu3/verify_compatibility.py\", line 496, in verify_one\n    new=run_trajectory(cfg,config_path,output/\"new\",historical_output,False)\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu3/verify_compatibility.py\", line 473, in run_trajectory\n    trainer.train()\n  File \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/trainer.py\", line 243, in train\n    self._do_train()\n  File \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/trainer.py\", line 429, in _do_train\n    self.run_callbacks(\"on_train_start\")\n  File \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/trainer.py\", line 216, in run_callbacks\n    callback(self)\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu3/verify_compatibility.py\", line 381, in on_train_start\n    self.check_or_save(\"initial_trace.pt\",initial)\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu3/verify_compatibility.py\", line 331, in check_or_save\n    require_equal(expected, value, relative, allow_pair_extensions)\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu3/verify_compatibility.py\", line 129, in require_equal\n    raise AssertionError(\"Exact compatibility failed: \" + \"; \".join(errors))\nAssertionError: Exact compatibility failed: initial_trace.pt.rng.python[1][624]: scalar/type differs\n",
+  "arm": "N",
+  "seeds": [
+    42
+  ],
+  "completed_records": [],
+  "source_files": [
+    {
+      "relative": "admission.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/admission.py"
+    },
+    {
+      "relative": "analyze_independent.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/analyze_independent.py"
+    },
+    {
+      "relative": "calibrate_independent.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/calibrate_independent.py"
+    },
+    {
+      "relative": "classification_logit.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/classification_logit.py"
+    },
+    {
+      "relative": "coverage_probe.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/coverage_probe.py"
+    },
+    {
+      "relative": "evaluate_independent.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/evaluate_independent.py"
+    },
+    {
+      "relative": "evidence_bindings.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/evidence_bindings.py"
+    },
+    {
+      "relative": "geometry_support.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/geometry_support.py"
+    },
+    {
+      "relative": "gradient_observation.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/gradient_observation.py"
+    },
+    {
+      "relative": "independent_criterion.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/independent_criterion.py"
+    },
+    {
+      "relative": "localization_adapter.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/localization_adapter.py"
+    },
+    {
+      "relative": "prepare_configs.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/prepare_configs.py"
+    },
+    {
+      "relative": "prepare_geometry_review.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/prepare_geometry_review.py"
+    },
+    {
+      "relative": "protocol.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/protocol.py"
+    },
+    {
+      "relative": "reference_package/reference_kernels.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/reference_package/reference_kernels.py"
+    },
+    {
+      "relative": "reference_package/test_reference_kernels.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/reference_package/test_reference_kernels.py"
+    },
+    {
+      "relative": "resource_dispatch.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/resource_dispatch.py"
+    },
+    {
+      "relative": "runtime.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/runtime.py"
+    },
+    {
+      "relative": "selection_adapter.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/selection_adapter.py"
+    },
+    {
+      "relative": "task_conditional_reference/analyze_results.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/analyze_results.py"
+    },
+    {
+      "relative": "task_conditional_reference/calibrate_gradient_scale.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/calibrate_gradient_scale.py"
+    },
+    {
+      "relative": "task_conditional_reference/content_controls.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/content_controls.py"
+    },
+    {
+      "relative": "task_conditional_reference/criterion_items.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/criterion_items.py"
+    },
+    {
+      "relative": "task_conditional_reference/diagnose_opportunities.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/diagnose_opportunities.py"
+    },
+    {
+      "relative": "task_conditional_reference/evaluate_task_conditional.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/evaluate_task_conditional.py"
+    },
+    {
+      "relative": "task_conditional_reference/geometry_audit_tools.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/geometry_audit_tools.py"
+    },
+    {
+      "relative": "task_conditional_reference/geometry_contract.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/geometry_contract.py"
+    },
+    {
+      "relative": "task_conditional_reference/legacy_bridge.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/legacy_bridge.py"
+    },
+    {
+      "relative": "task_conditional_reference/legacy_oev1/evaluate_object_evidence.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/legacy_oev1/evaluate_object_evidence.py"
+    },
+    {
+      "relative": "task_conditional_reference/legacy_oev1/object_evidence_loss.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/legacy_oev1/object_evidence_loss.py"
+    },
+    {
+      "relative": "task_conditional_reference/legacy_oev1/paired_rgbir_data.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/legacy_oev1/paired_rgbir_data.py"
+    },
+    {
+      "relative": "task_conditional_reference/legacy_oev1/train_object_evidence.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/legacy_oev1/train_object_evidence.py"
+    },
+    {
+      "relative": "task_conditional_reference/localization_loss.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/localization_loss.py"
+    },
+    {
+      "relative": "task_conditional_reference/prepare_configs.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/prepare_configs.py"
+    },
+    {
+      "relative": "task_conditional_reference/resource_dispatch.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/resource_dispatch.py"
+    },
+    {
+      "relative": "task_conditional_reference/shuffled_pair_data.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/shuffled_pair_data.py"
+    },
+    {
+      "relative": "task_conditional_reference/task_criterion.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/task_criterion.py"
+    },
+    {
+      "relative": "task_conditional_reference/test_analyze_results.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/test_analyze_results.py"
+    },
+    {
+      "relative": "task_conditional_reference/test_content_controls.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/test_content_controls.py"
+    },
+    {
+      "relative": "task_conditional_reference/test_criterion_items.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/test_criterion_items.py"
+    },
+    {
+      "relative": "task_conditional_reference/test_geometry_contract.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/test_geometry_contract.py"
+    },
+    {
+      "relative": "task_conditional_reference/test_localization_loss.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/test_localization_loss.py"
+    },
+    {
+      "relative": "task_conditional_reference/test_shuffled_pair_data.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/test_shuffled_pair_data.py"
+    },
+    {
+      "relative": "task_conditional_reference/test_tracked_pair_data.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/test_tracked_pair_data.py"
+    },
+    {
+      "relative": "task_conditional_reference/tracked_pair_data.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/tracked_pair_data.py"
+    },
+    {
+      "relative": "task_conditional_reference/train_task_conditional.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/train_task_conditional.py"
+    },
+    {
+      "relative": "task_conditional_reference/verify_criterion_equivalence.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/verify_criterion_equivalence.py"
+    },
+    {
+      "relative": "task_conditional_reference/verify_loader_equivalence.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/task_conditional_reference/verify_loader_equivalence.py"
+    },
+    {
+      "relative": "test_admission.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_admission.py"
+    },
+    {
+      "relative": "test_analyze_independent.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_analyze_independent.py"
+    },
+    {
+      "relative": "test_classification_logit.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_classification_logit.py"
+    },
+    {
+      "relative": "test_coverage_probe.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_coverage_probe.py"
+    },
+    {
+      "relative": "test_evaluate_independent.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_evaluate_independent.py"
+    },
+    {
+      "relative": "test_gradient_observation.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_gradient_observation.py"
+    },
+    {
+      "relative": "test_localization_adapter.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_localization_adapter.py"
+    },
+    {
+      "relative": "test_prepare_geometry_review.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_prepare_geometry_review.py"
+    },
+    {
+      "relative": "test_protocol.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_protocol.py"
+    },
+    {
+      "relative": "test_resource_dispatch.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/test_resource_dispatch.py"
+    },
+    {
+      "relative": "train_independent.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/train_independent.py"
+    },
+    {
+      "relative": "verify_compatibility.py",
+      "accepted_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/compat_N_s42_attempt1/implementation_snapshot/verify_compatibility.py"
+    }
+  ],
+  "seconds": 81.4016478061676,
+  "official_test_accessed": false
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/cpu_api_launch3.py", line 8, in <module>
+    try: lease=g.acquire(request,owner_pid=os.getpid());break
+TypeError: ProjectResourceGuard.acquire() missing 1 required keyword-only argument: 'gpus'

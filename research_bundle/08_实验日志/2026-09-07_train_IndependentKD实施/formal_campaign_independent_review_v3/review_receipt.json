@@ -1,0 +1,28 @@
+{
+  "status": "ACCEPTED",
+  "reviewer": "/root; independent of matrix implementation",
+  "created_at": "2026-09-07T15:25:05.145993+08:00",
+  "blocking_issues_remaining": 0,
+  "scope": "Final margin-only difference from independent review v2; all existing lease, source binding, order, dependent evaluation and failure rules unchanged.",
+  "test_result": "15/15 existing CPU tests independently rerun and passed",
+  "resource_rule": {
+    "training_vram": "ceil(actual C1 canary peak)+2048 MiB",
+    "evaluation_vram": "ceil(actual evaluator peak)+256 MiB",
+    "rss": "max(8192,ceil(actual process-tree RSS)+4096) MiB"
+  },
+  "reason": "Native assignment allocations vary with batch GT density; first short-run peak is not a proof of the whole-E200 maximum.",
+  "source_files": [
+    {
+      "relative": "formal_campaign.py",
+      "accepted_copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\formal_campaign_independent_review_v3\\formal_campaign.py"
+    },
+    {
+      "relative": "test_formal_campaign.py",
+      "accepted_copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\formal_campaign_independent_review_v3\\test_formal_campaign.py"
+    },
+    {
+      "relative": "FORMAL_CAMPAIGN_WORKER.md",
+      "accepted_copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\formal_campaign_independent_review_v3\\FORMAL_CAMPAIGN_WORKER.md"
+    }
+  ]
+}

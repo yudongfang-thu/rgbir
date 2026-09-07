@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/train_independent.py", line 11, in <module>
+    from runtime import HERE, REFERENCE, LEGACY, legacy, ORIGINAL_CRITERION, ORIGINAL_DATASET, TrackedDualLabelRGBIRDataset
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/runtime.py", line 11, in <module>
+    import train_object_evidence as legacy
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/legacy_oev1/train_object_evidence.py", line 20, in <module>
+    import ultralytics
+ModuleNotFoundError: No module named 'ultralytics'

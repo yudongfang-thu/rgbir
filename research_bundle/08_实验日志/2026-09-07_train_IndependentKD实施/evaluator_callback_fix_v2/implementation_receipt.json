@@ -1,0 +1,29 @@
+{
+  "status": "IMPLEMENTED_CPU_AND_PINNED_SOURCE_CHECKED",
+  "scope": "evaluator_profile callback runtime source recording only",
+  "changed_production": [
+    "evaluator_profile.py"
+  ],
+  "tests": {
+    "local_unittests": 48,
+    "pinned_actual_source_contracts": 4,
+    "passed": 52
+  },
+  "independent_code_review": {
+    "reviewer": "/root/review_matrix_spec",
+    "accepted_scope": "callback fix code only",
+    "independently_repeated_probe_tests": 10
+  },
+  "real_gpu_probe": "NOT_RERUN_BY_THIS_AGENT",
+  "ap_equivalence": "PENDING_NEW_ATTEMPT",
+  "original_failure_preserved": true,
+  "training_source_changed": false,
+  "official_test_accessed": false,
+  "source_snapshots": [
+    "source_copies/evaluator_profile.py",
+    "source_copies/test_evaluator_profile.py",
+    "source_copies/evaluate_independent.py"
+  ],
+  "installed_source_origin": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/",
+  "actual_failure_origin": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/admission_queue_attempt4/evaluator_profile_a1.log"
+}

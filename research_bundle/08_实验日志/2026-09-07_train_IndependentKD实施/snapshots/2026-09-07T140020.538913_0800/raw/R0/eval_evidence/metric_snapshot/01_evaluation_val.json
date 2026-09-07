@@ -1,0 +1,16 @@
+{
+  "AP50": 0.7689641053349323,
+  "AP75": 0.63957860250264,
+  "mAP50_95": 0.5463085656211213,
+  "precision": 0.7715389209362933,
+  "recall": 0.7327546255803248,
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1/weights/last.pt",
+  "endpoint": "fixed_budget_last_ema",
+  "split": "val",
+  "arm": "paired_random",
+  "seed": 0,
+  "single_seed_exploratory": true,
+  "official_test_accessed": false,
+  "metric_units": "fraction_0_to_1",
+  "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+}

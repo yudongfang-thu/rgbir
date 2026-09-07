@@ -1,0 +1,79 @@
+{
+  "status": "evaluation_profile_completed",
+  "schema": "rgbir-evaluator-parity-probe-v1",
+  "native_evidence_metrics_exact": true,
+  "metric_differences": {
+    "AP50": 0.0,
+    "AP75": 0.0,
+    "mAP50_95": 0.0,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "expected_val_images": 1469,
+  "native_seen": 1469,
+  "evidence_seen": 1469,
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+  "baseline_completion_input": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/completion_receipt.json",
+  "baseline_training_receipt_created": false,
+  "profile_identity": {
+    "configuration": {
+      "dataset": "dronevehicle",
+      "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+      "expected_nc": 5,
+      "imgsz": 640,
+      "batch": 32,
+      "workers": 4,
+      "torch_version": "2.10.0+cu128",
+      "ultralytics_version": "8.4.115",
+      "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "split": "val",
+      "expected_val_images": 1469
+    },
+    "actual_effective_kwargs": {
+      "imgsz": 640,
+      "batch": 32,
+      "workers": 4,
+      "quantize": null,
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "agnostic_nms": false,
+      "single_cls": false,
+      "rect": true,
+      "augment": false,
+      "half": false
+    },
+    "expected_val_images": 1469,
+    "evaluator_sources": [
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluate_independent.py",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluator_profile.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/build.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/dataset.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/utils.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/model.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/validator.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/models/yolo/detect/val.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/nn/autobackend.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/nn/tasks.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/utils/metrics.py",
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/utils/nms.py"
+    ],
+    "binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json"
+  },
+  "evaluation_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+  "resources": {
+    "gpu_ids": [
+      2
+    ],
+    "cuda_pid_counts": {
+      "2": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "2": 1370
+    },
+    "peak_rss_mib": 6260
+  },
+  "official_test_accessed": false,
+  "seconds": 19.81158208847046,
+  "purpose": "fixed_old_N42_evaluation_equivalence_and_resource_probe_only"
+}

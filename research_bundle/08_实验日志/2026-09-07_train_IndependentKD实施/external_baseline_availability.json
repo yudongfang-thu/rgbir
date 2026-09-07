@@ -1,0 +1,1852 @@
+{
+  "created_at": "2026-09-07T06:20:20.255773+00:00",
+  "scope": "Public author repository metadata only; no weights, code execution, GPU or hashes",
+  "repositories": {
+    "BCKD": {
+      "repository": "TinyTigerPan/BCKD",
+      "branch": "main",
+      "queried_urls": {
+        "repository": "https://api.github.com/repos/TinyTigerPan/BCKD",
+        "forks": "https://api.github.com/repos/TinyTigerPan/BCKD/forks?per_page=100",
+        "releases": "https://api.github.com/repos/TinyTigerPan/BCKD/releases?per_page=100",
+        "issues": "https://api.github.com/repos/TinyTigerPan/BCKD/issues?state=all&per_page=100",
+        "tree": "https://api.github.com/repos/TinyTigerPan/BCKD/git/trees/main?recursive=1"
+      },
+      "metadata": {
+        "html_url": "https://github.com/TinyTigerPan/BCKD",
+        "default_branch": "main",
+        "archived": false,
+        "forks_count": 2,
+        "open_issues_count": 4,
+        "pushed_at": "2023-10-07T07:52:10Z"
+      },
+      "forks": [
+        {
+          "full_name": "CV-Det/BCKD",
+          "html_url": "https://github.com/CV-Det/BCKD",
+          "default_branch": "main",
+          "pushed_at": "2023-09-01T08:54:09Z"
+        },
+        {
+          "full_name": "piaofu110/BCKD",
+          "html_url": "https://github.com/piaofu110/BCKD",
+          "default_branch": "main",
+          "pushed_at": "2023-09-01T08:54:09Z"
+        }
+      ],
+      "releases": [],
+      "issues": [
+        {
+          "number": 4,
+          "title": "FCOS",
+          "state": "open",
+          "html_url": "https://github.com/TinyTigerPan/BCKD/issues/4"
+        },
+        {
+          "number": 3,
+          "title": "How can we apply BCKD to two-stage object detection models like Faster R-CNN?",
+          "state": "open",
+          "html_url": "https://github.com/TinyTigerPan/BCKD/issues/3"
+        },
+        {
+          "number": 2,
+          "title": "About Eq.5 ",
+          "state": "open",
+          "html_url": "https://github.com/TinyTigerPan/BCKD/issues/2"
+        },
+        {
+          "number": 1,
+          "title": "如何与基于特征的蒸馏模型结合使用",
+          "state": "open",
+          "html_url": "https://github.com/TinyTigerPan/BCKD/issues/1"
+        }
+      ],
+      "core_candidates": [
+        "configs/bckd/bckd_mobilenet_gflv1_r101_fpn_coco_1x.py",
+        "configs/bckd/bckd_r50_gflv1_r101_fpn_coco_1x.py",
+        "configs/bckd/bckd_r50_gflv1_swint_fpn_coco_1x.py",
+        "mmdet/core/bbox/assigners/atss_assigner.py",
+        "mmdet/models/dense_heads/ld_head.py",
+        "mmdet/models/losses/kd_loss.py",
+        "tests/test_models/test_dense_heads/test_ld_head.py"
+      ],
+      "paper_or_supplement_files": []
+    },
+    "FGD": {
+      "repository": "yzd-v/FGD",
+      "branch": "master",
+      "queried_urls": {
+        "repository": "https://api.github.com/repos/yzd-v/FGD",
+        "forks": "https://api.github.com/repos/yzd-v/FGD/forks?per_page=100",
+        "releases": "https://api.github.com/repos/yzd-v/FGD/releases?per_page=100",
+        "issues": "https://api.github.com/repos/yzd-v/FGD/issues?state=all&per_page=100",
+        "tree": "https://api.github.com/repos/yzd-v/FGD/git/trees/master?recursive=1"
+      },
+      "metadata": {
+        "html_url": "https://github.com/yzd-v/FGD",
+        "default_branch": "master",
+        "archived": false,
+        "forks_count": 50,
+        "open_issues_count": 21,
+        "pushed_at": "2022-09-19T13:18:03Z"
+      },
+      "forks": [
+        {
+          "full_name": "goodfoxs/FGDcopy",
+          "html_url": "https://github.com/goodfoxs/FGDcopy",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "ULANAmRAHMAT/FGD",
+          "html_url": "https://github.com/ULANAmRAHMAT/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "UPUPUPX/FGD",
+          "html_url": "https://github.com/UPUPUPX/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "shenaibdz/FGD",
+          "html_url": "https://github.com/shenaibdz/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "hehongjie/FGD",
+          "html_url": "https://github.com/hehongjie/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "yuan81/FGD",
+          "html_url": "https://github.com/yuan81/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "jiangfengshaoniancai/FGD",
+          "html_url": "https://github.com/jiangfengshaoniancai/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "RenshengJi/FGD",
+          "html_url": "https://github.com/RenshengJi/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "hbhflw2000/FGD",
+          "html_url": "https://github.com/hbhflw2000/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "bigD233/FGD",
+          "html_url": "https://github.com/bigD233/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "BugMaker2524/FGD",
+          "html_url": "https://github.com/BugMaker2524/FGD",
+          "default_branch": "master",
+          "pushed_at": "2024-06-11T08:59:24Z"
+        },
+        {
+          "full_name": "JiangChao2009/FGD",
+          "html_url": "https://github.com/JiangChao2009/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "liyangfan0/FGD",
+          "html_url": "https://github.com/liyangfan0/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "jewelc92/FGD",
+          "html_url": "https://github.com/jewelc92/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "lb-hit/FGD",
+          "html_url": "https://github.com/lb-hit/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "liugong09/FGD",
+          "html_url": "https://github.com/liugong09/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "cc0zh/FGD",
+          "html_url": "https://github.com/cc0zh/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "ayuchan-22/FGD",
+          "html_url": "https://github.com/ayuchan-22/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "Schcher/FGD",
+          "html_url": "https://github.com/Schcher/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "anna3neng/FGD",
+          "html_url": "https://github.com/anna3neng/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "liupeng0606/-1",
+          "html_url": "https://github.com/liupeng0606/-1",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "DL-KD/FGD",
+          "html_url": "https://github.com/DL-KD/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "123cjjjj/FGD",
+          "html_url": "https://github.com/123cjjjj/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "jasonnhu/FGD",
+          "html_url": "https://github.com/jasonnhu/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "chenkeshuai/FGD",
+          "html_url": "https://github.com/chenkeshuai/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "jhyuuu/FGD",
+          "html_url": "https://github.com/jhyuuu/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-09-19T13:18:03Z"
+        },
+        {
+          "full_name": "sunyulin950824/FGD",
+          "html_url": "https://github.com/sunyulin950824/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-08-10T11:45:46Z"
+        },
+        {
+          "full_name": "HuaqingHe/FGD",
+          "html_url": "https://github.com/HuaqingHe/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-06-12T02:32:28Z"
+        },
+        {
+          "full_name": "saintrealchoi/FGD",
+          "html_url": "https://github.com/saintrealchoi/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-06-12T02:32:28Z"
+        },
+        {
+          "full_name": "kdnightz/FGD",
+          "html_url": "https://github.com/kdnightz/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-06-12T02:32:28Z"
+        },
+        {
+          "full_name": "huyiming2016/FGD",
+          "html_url": "https://github.com/huyiming2016/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-06-12T02:32:28Z"
+        },
+        {
+          "full_name": "yangfukui/FGD",
+          "html_url": "https://github.com/yangfukui/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-06-12T02:32:28Z"
+        },
+        {
+          "full_name": "sinoaidi/FGD",
+          "html_url": "https://github.com/sinoaidi/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-06-12T02:32:28Z"
+        },
+        {
+          "full_name": "myc1998/FGD",
+          "html_url": "https://github.com/myc1998/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-06-12T02:32:28Z"
+        },
+        {
+          "full_name": "anmyles/FGD",
+          "html_url": "https://github.com/anmyles/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-05-31T09:40:50Z"
+        },
+        {
+          "full_name": "luogen1996/FGD",
+          "html_url": "https://github.com/luogen1996/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-05-31T09:40:50Z"
+        },
+        {
+          "full_name": "motoight/FGD",
+          "html_url": "https://github.com/motoight/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-05-31T09:40:50Z"
+        },
+        {
+          "full_name": "CV-Det/FGD",
+          "html_url": "https://github.com/CV-Det/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-05-31T09:40:50Z"
+        },
+        {
+          "full_name": "shaoshitong/FGD",
+          "html_url": "https://github.com/shaoshitong/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-04-27T07:37:33Z"
+        },
+        {
+          "full_name": "Cuibaby/FGD",
+          "html_url": "https://github.com/Cuibaby/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-04-27T07:37:33Z"
+        },
+        {
+          "full_name": "jiye-ML/FGD",
+          "html_url": "https://github.com/jiye-ML/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-04-27T07:37:33Z"
+        },
+        {
+          "full_name": "cv-nlp/FGD",
+          "html_url": "https://github.com/cv-nlp/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-04-05T02:55:37Z"
+        },
+        {
+          "full_name": "dustasa/FGD",
+          "html_url": "https://github.com/dustasa/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-04-05T02:55:37Z"
+        },
+        {
+          "full_name": "chaobo521/FGD",
+          "html_url": "https://github.com/chaobo521/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-03-18T03:23:08Z"
+        },
+        {
+          "full_name": "CV-IP/FGD",
+          "html_url": "https://github.com/CV-IP/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-03-03T12:10:31Z"
+        },
+        {
+          "full_name": "tlwzzy/FGD",
+          "html_url": "https://github.com/tlwzzy/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-03-03T12:10:31Z"
+        },
+        {
+          "full_name": "Serissa/FGD",
+          "html_url": "https://github.com/Serissa/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-03-03T12:10:31Z"
+        },
+        {
+          "full_name": "SamXiaosheng/FGD",
+          "html_url": "https://github.com/SamXiaosheng/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-01-04T04:57:53Z"
+        },
+        {
+          "full_name": "jie311/FGD",
+          "html_url": "https://github.com/jie311/FGD",
+          "default_branch": "master",
+          "pushed_at": "2022-04-08T08:00:36Z"
+        },
+        {
+          "full_name": "Senwang98/FGD",
+          "html_url": "https://github.com/Senwang98/FGD",
+          "default_branch": "master",
+          "pushed_at": "2021-11-24T01:48:07Z"
+        }
+      ],
+      "releases": [],
+      "issues": [
+        {
+          "number": 101,
+          "title": "How to download the models?",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/101"
+        },
+        {
+          "number": 100,
+          "title": "ImportError: cannot import name 'DropPath' from 'mmcv.cnn.bricks' (/opt/anaconda3/envs/fgd/lib/python3.8/site-packages/mmcv/cnn/bricks/__init__.py)",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/100"
+        },
+        {
+          "number": 99,
+          "title": "您好我想请问以下您前面的Rethinking Knowledge Distillation via Cross-Entropy 的相关问题",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/99"
+        },
+        {
+          "number": 98,
+          "title": "你好，有空可以更新一下代码到mmdetection3.0以上版本吗。谢谢了",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/98"
+        },
+        {
+          "number": 97,
+          "title": "fgd.py文件中，area的值为0",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/97"
+        },
+        {
+          "number": 96,
+          "title": "To know Pytorch and cuda version ",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/96"
+        },
+        {
+          "number": 95,
+          "title": "FGD for Ultralytics frameworks",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/95"
+        },
+        {
+          "number": 94,
+          "title": "你好，我看到您在GitHub更新了yolox的相关蒸馏的数据",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/94"
+        },
+        {
+          "number": 93,
+          "title": "Some questions about gcblock",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/93"
+        },
+        {
+          "number": 92,
+          "title": "How to output the Params or FLOPs after FGD distillation?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/92"
+        },
+        {
+          "number": 91,
+          "title": "Drop in mAP after Retinanet Distillation",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/91"
+        },
+        {
+          "number": 90,
+          "title": "YoloX-l distill Yolox-s with coco pretrained weights",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/90"
+        },
+        {
+          "number": 89,
+          "title": "Can the network be replicated using the 2023 version of mmdetection?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/89"
+        },
+        {
+          "number": 88,
+          "title": "Why the mAP is lower after distillation in VOC?",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/88"
+        },
+        {
+          "number": 87,
+          "title": "invalid pre-training",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/87"
+        },
+        {
+          "number": 86,
+          "title": "KeyError: 'neck.fpn_convs.4.conv'",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/86"
+        },
+        {
+          "number": 85,
+          "title": "hello，I want  to ask a question about yolox distillation",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/85"
+        },
+        {
+          "number": 84,
+          "title": "Welcome update to OpenMMLab 2.0",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/84"
+        },
+        {
+          "number": 83,
+          "title": "请问作者有在yolov5上实现效果吗",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/83"
+        },
+        {
+          "number": 82,
+          "title": "ConfigDict has no attribute \"model\"",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/82"
+        },
+        {
+          "number": 81,
+          "title": "1",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/81"
+        },
+        {
+          "number": 80,
+          "title": "The pre-trained model for Solo_r101_3x.pth",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/80"
+        },
+        {
+          "number": 79,
+          "title": "Whether additional monitoring training is required for gc-block？",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/79"
+        },
+        {
+          "number": 78,
+          "title": "no module named 'mmdet.distillation'",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/78"
+        },
+        {
+          "number": 77,
+          "title": "How Can I install mmdet 2.11.0 while its latest version is 2.28.1?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/77"
+        },
+        {
+          "number": 76,
+          "title": "Why does inference slow down with weights generated by FGD？",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/76"
+        },
+        {
+          "number": 75,
+          "title": "Using fgd_retina_r101_fpn_2x_distill_retina_r50_fpn_2x_coco.py to find retina_ R50 distillation result AP is 37.3%?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/75"
+        },
+        {
+          "number": 74,
+          "title": "The cfg distillation for yoloxl_m",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/74"
+        },
+        {
+          "number": 73,
+          "title": "Add DCN",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/73"
+        },
+        {
+          "number": 72,
+          "title": "Cascadercnn-resnet50蒸馏18,loss_fgd_fpn_0太大（第一张图）",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/72"
+        },
+        {
+          "number": 71,
+          "title": "mAP为0",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/71"
+        },
+        {
+          "number": 70,
+          "title": "为什么我运行的时候总提示 the model and loaded state dict do not match exactly?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/70"
+        },
+        {
+          "number": 69,
+          "title": "The model and loaded state dict do not match exactly",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/69"
+        },
+        {
+          "number": 68,
+          "title": "Why the mAP is 0 when train myself data?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/68"
+        },
+        {
+          "number": 67,
+          "title": "Should I change the mmdet/detectors/base.py when I train yolox?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/67"
+        },
+        {
+          "number": 66,
+          "title": "FCOS训练及测试结果问题",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/66"
+        },
+        {
+          "number": 65,
+          "title": "Train my self data, the loss is large",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/65"
+        },
+        {
+          "number": 64,
+          "title": "the",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/64"
+        },
+        {
+          "number": 63,
+          "title": "if i can use MultiScale training？",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/63"
+        },
+        {
+          "number": 62,
+          "title": "Warnings during the training process for FCOS",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/62"
+        },
+        {
+          "number": 61,
+          "title": "what does it  means",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/61"
+        },
+        {
+          "number": 60,
+          "title": "FCOS实验结果问题",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/60"
+        },
+        {
+          "number": 59,
+          "title": "Using swin model as teacher ",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/59"
+        },
+        {
+          "number": 58,
+          "title": "实验数据是否有误？感谢",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/58"
+        },
+        {
+          "number": 57,
+          "title": "A question about object detection distill",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/57"
+        },
+        {
+          "number": 56,
+          "title": "Hyper-parameter settings on ablation study",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/56"
+        },
+        {
+          "number": 55,
+          "title": "利用 FGD将两个教师模型训练一个学生模型的问题",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/55"
+        },
+        {
+          "number": 54,
+          "title": "How to load a yolox-l correctly?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/54"
+        },
+        {
+          "number": 53,
+          "title": "About the cfg distillation for yolox",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/53"
+        },
+        {
+          "number": 52,
+          "title": "Testing result",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/52"
+        },
+        {
+          "number": 51,
+          "title": "fgd_yoloxl_distill_yoloxm_coco.py中的FGDLoss就是fgd_solo_r101_ms_distill_solo_r50_coco.py中的FeatureLoss吗？",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/51"
+        },
+        {
+          "number": 50,
+          "title": "About result",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/50"
+        },
+        {
+          "number": 49,
+          "title": "No module named 'mmdet.distillation'",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/49"
+        },
+        {
+          "number": 48,
+          "title": "Training log update",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/48"
+        },
+        {
+          "number": 47,
+          "title": "How to modify FGD to run yolox-s with yolox-l as the teather?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/47"
+        },
+        {
+          "number": 46,
+          "title": "Missing keys of ckpt",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/46"
+        },
+        {
+          "number": 45,
+          "title": "why use 'last_zero_init' in last conv2d of channel_add_conv?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/45"
+        },
+        {
+          "number": 44,
+          "title": "When I use pth_transfer.py to convert, run test.py and the following problem occurs",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/44"
+        },
+        {
+          "number": 43,
+          "title": "very slow training",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/43"
+        },
+        {
+          "number": 42,
+          "title": "retinaface使用FGD精度下降",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/42"
+        },
+        {
+          "number": 41,
+          "title": "retinaface使用FGD精度下降",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/41"
+        },
+        {
+          "number": 40,
+          "title": "yolox",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/40"
+        },
+        {
+          "number": 39,
+          "title": "关于loss的计算",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/39"
+        },
+        {
+          "number": 38,
+          "title": "add Gradio Web Demo for cvpr 2022 call for demos",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/38"
+        },
+        {
+          "number": 37,
+          "title": "如何展示图像检测可视化",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/37"
+        },
+        {
+          "number": 36,
+          "title": "Why can't I reproduce the accuracy of the paper according to the experimental settings given by your code?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/36"
+        },
+        {
+          "number": 35,
+          "title": "the result of solov2 model after distiller is reduced",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/35"
+        },
+        {
+          "number": 34,
+          "title": "About  Tansfer the FGD model into mmdet model",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/34"
+        },
+        {
+          "number": 33,
+          "title": "TypeError: __init__() got an unexpected keyword argument 'init_cfg'",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/33"
+        },
+        {
+          "number": 32,
+          "title": "这个代码似乎存在bug，可以放一份可以直接跑的mmdetection代码吗",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/32"
+        },
+        {
+          "number": 31,
+          "title": "AttributeError: module 'torch' has no attribute 'maximum'",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/31"
+        },
+        {
+          "number": 30,
+          "title": "why torch.abs(preds) in fgd.py def def get_attention",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/30"
+        },
+        {
+          "number": 29,
+          "title": "some confuse",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/29"
+        },
+        {
+          "number": 28,
+          "title": "Where is this content reflected in the code?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/28"
+        },
+        {
+          "number": 27,
+          "title": "init_cfg and pretrained cannot be specified at the same time",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/27"
+        },
+        {
+          "number": 26,
+          "title": "ModuleNotFoundError: No module named 'mmdet.distillation'",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/26"
+        },
+        {
+          "number": 25,
+          "title": "AssertionError: top_pool_forward miss in module _ext",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/25"
+        },
+        {
+          "number": 24,
+          "title": "GcBlock tranining",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/24"
+        },
+        {
+          "number": 23,
+          "title": "yolox-l蒸馏yolox-nano",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/23"
+        },
+        {
+          "number": 22,
+          "title": "关于 train log",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/22"
+        },
+        {
+          "number": 21,
+          "title": "Training log",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/21"
+        },
+        {
+          "number": 20,
+          "title": "你好，我有一个疑问，为什么使用torch.sqrt()?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/20"
+        },
+        {
+          "number": 19,
+          "title": "FileNotFoundError",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/19"
+        },
+        {
+          "number": 18,
+          "title": "DCN support?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/18"
+        },
+        {
+          "number": 17,
+          "title": "I think the Get_FEA_loss calculation code has some question",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/17"
+        },
+        {
+          "number": 15,
+          "title": "the result of FGD on yolov5",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/15"
+        },
+        {
+          "number": 14,
+          "title": "训练过程没办法评估",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/14"
+        },
+        {
+          "number": 13,
+          "title": "the results of lightweight backones",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/13"
+        },
+        {
+          "number": 12,
+          "title": "In line 152 and 153, should it be `S_s` and `C_s` instead of `S_t` and `C_t`?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/12"
+        },
+        {
+          "number": 11,
+          "title": "How to tune the loss weights?",
+          "state": "open",
+          "html_url": "https://github.com/yzd-v/FGD/issues/11"
+        },
+        {
+          "number": 10,
+          "title": "any plan of using it on yolox？",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/10"
+        },
+        {
+          "number": 9,
+          "title": "the test result is 0",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/9"
+        },
+        {
+          "number": 8,
+          "title": "FCOS 训练过程中一些警告信息",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/8"
+        },
+        {
+          "number": 7,
+          "title": "如何可视化特征图",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/7"
+        },
+        {
+          "number": 6,
+          "title": "visualize the spatial attention mask",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/6"
+        },
+        {
+          "number": 5,
+          "title": "How to get figure6 in the paper?",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/5"
+        },
+        {
+          "number": 4,
+          "title": "Details about config file",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/4"
+        },
+        {
+          "number": 3,
+          "title": "模型怎么转onnx",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/3"
+        },
+        {
+          "number": 2,
+          "title": "GCNet vs. Non-Local module",
+          "state": "closed",
+          "html_url": "https://github.com/yzd-v/FGD/issues/2"
+        }
+      ],
+      "core_candidates": [
+        "configs/distillers/fgd/fgd_cascade_mask_rcnn_rx101_32x4d_distill_faster_rcnn_r101_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_cascade_mask_rcnn_rx101_32x4d_distill_faster_rcnn_r50_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_cascade_mask_rcnn_rx101_32x4d_distill_mask_rcnn_r50_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_faster_rcnn_r101_fpn_2x_distill_faster_rcnn_r50_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_fcos_r101_distill_fcos_r50_2x_coco.py",
+        "configs/distillers/fgd/fgd_gfl_r101_distill_gfl_r50_fpn_1x_coco.py",
+        "configs/distillers/fgd/fgd_mask_rcnn_r101_fpn_distill_mask_rcnn_r50_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_reppoints_r101_fpn_distill_reppoints_r50_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_reppoints_rx101_64x4d_distill_reppoints_r101_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_reppoints_rx101_64x4d_distill_reppoints_r50_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_retina_r101_fpn_2x_distill_retina_r50_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_retina_rx101_64x4d_distill_retina_r101_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_retina_rx101_64x4d_distill_retina_r50_fpn_2x_coco.py",
+        "configs/distillers/fgd/fgd_solo_r101_ms_distill_solo_r50_coco.py",
+        "mmdet/distillation/__init__.py",
+        "mmdet/distillation/builder.py",
+        "mmdet/distillation/distillers/__init__.py",
+        "mmdet/distillation/distillers/detection_distiller.py",
+        "mmdet/distillation/losses/__init__.py",
+        "mmdet/distillation/losses/fgd.py"
+      ],
+      "paper_or_supplement_files": []
+    },
+    "LD": {
+      "repository": "HikariTJU/LD",
+      "branch": "main",
+      "queried_urls": {
+        "repository": "https://api.github.com/repos/HikariTJU/LD",
+        "forks": "https://api.github.com/repos/HikariTJU/LD/forks?per_page=100",
+        "releases": "https://api.github.com/repos/HikariTJU/LD/releases?per_page=100",
+        "issues": "https://api.github.com/repos/HikariTJU/LD/issues?state=all&per_page=100",
+        "tree": "https://api.github.com/repos/HikariTJU/LD/git/trees/main?recursive=1"
+      },
+      "metadata": {
+        "html_url": "https://github.com/HikariTJU/LD",
+        "default_branch": "main",
+        "archived": false,
+        "forks_count": 52,
+        "open_issues_count": 28,
+        "pushed_at": "2024-10-24T07:30:53Z"
+      },
+      "forks": [
+        {
+          "full_name": "UPUPUPX/LD",
+          "html_url": "https://github.com/UPUPUPX/LD",
+          "default_branch": "main",
+          "pushed_at": "2024-10-24T07:30:53Z"
+        },
+        {
+          "full_name": "ledieulinh96/LD",
+          "html_url": "https://github.com/ledieulinh96/LD",
+          "default_branch": "main",
+          "pushed_at": "2024-10-24T07:30:53Z"
+        },
+        {
+          "full_name": "0yuanqi-15/LD",
+          "html_url": "https://github.com/0yuanqi-15/LD",
+          "default_branch": "main",
+          "pushed_at": "2024-10-26T20:48:46Z"
+        },
+        {
+          "full_name": "standardgalactic/LD",
+          "html_url": "https://github.com/standardgalactic/LD",
+          "default_branch": "main",
+          "pushed_at": "2023-12-31T08:05:51Z"
+        },
+        {
+          "full_name": "blue-q/LD",
+          "html_url": "https://github.com/blue-q/LD",
+          "default_branch": "main",
+          "pushed_at": "2023-03-14T03:14:28Z"
+        },
+        {
+          "full_name": "FrAli75/CVPR-2022",
+          "html_url": "https://github.com/FrAli75/CVPR-2022",
+          "default_branch": "main",
+          "pushed_at": "2023-03-14T03:14:28Z"
+        },
+        {
+          "full_name": "jjam7/mmyolov5-LD",
+          "html_url": "https://github.com/jjam7/mmyolov5-LD",
+          "default_branch": "main",
+          "pushed_at": "2023-06-16T06:43:10Z"
+        },
+        {
+          "full_name": "ayuchan-22/LD",
+          "html_url": "https://github.com/ayuchan-22/LD",
+          "default_branch": "main",
+          "pushed_at": "2023-03-14T03:14:28Z"
+        },
+        {
+          "full_name": "jewelc92/LD",
+          "html_url": "https://github.com/jewelc92/LD",
+          "default_branch": "main",
+          "pushed_at": "2023-02-22T06:09:49Z"
+        },
+        {
+          "full_name": "usbser/LD_DistillationForObjectDection",
+          "html_url": "https://github.com/usbser/LD_DistillationForObjectDection",
+          "default_branch": "main",
+          "pushed_at": "2023-02-22T06:09:49Z"
+        },
+        {
+          "full_name": "xin2002/LD",
+          "html_url": "https://github.com/xin2002/LD",
+          "default_branch": "main",
+          "pushed_at": "2023-03-19T07:02:09Z"
+        },
+        {
+          "full_name": "louwenjie123/LD",
+          "html_url": "https://github.com/louwenjie123/LD",
+          "default_branch": "main",
+          "pushed_at": "2023-02-22T06:09:49Z"
+        },
+        {
+          "full_name": "dangxusheng/LD",
+          "html_url": "https://github.com/dangxusheng/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-12-05T07:24:23Z"
+        },
+        {
+          "full_name": "DL-KD/LD",
+          "html_url": "https://github.com/DL-KD/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-12-05T07:24:23Z"
+        },
+        {
+          "full_name": "CV-Det/LD",
+          "html_url": "https://github.com/CV-Det/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-12-05T07:24:23Z"
+        },
+        {
+          "full_name": "NightingaleCen/LD",
+          "html_url": "https://github.com/NightingaleCen/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-12-04T18:28:19Z"
+        },
+        {
+          "full_name": "Sunshine-Ye/LD",
+          "html_url": "https://github.com/Sunshine-Ye/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-12-03T14:03:28Z"
+        },
+        {
+          "full_name": "yu8970/MyKD",
+          "html_url": "https://github.com/yu8970/MyKD",
+          "default_branch": "main",
+          "pushed_at": "2023-09-20T08:51:14Z"
+        },
+        {
+          "full_name": "littledeep/LD",
+          "html_url": "https://github.com/littledeep/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-08-31T01:06:16Z"
+        },
+        {
+          "full_name": "Aran99G/LD",
+          "html_url": "https://github.com/Aran99G/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-08-31T01:06:16Z"
+        },
+        {
+          "full_name": "huangjun12/LD",
+          "html_url": "https://github.com/huangjun12/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-08-31T01:06:16Z"
+        },
+        {
+          "full_name": "alaa-shubbak/LD_new",
+          "html_url": "https://github.com/alaa-shubbak/LD_new",
+          "default_branch": "main",
+          "pushed_at": "2022-05-16T04:05:15Z"
+        },
+        {
+          "full_name": "yangfukui/LD",
+          "html_url": "https://github.com/yangfukui/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-05-16T04:05:15Z"
+        },
+        {
+          "full_name": "myc1998/LD",
+          "html_url": "https://github.com/myc1998/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-05-16T04:05:15Z"
+        },
+        {
+          "full_name": "demozhule/LD",
+          "html_url": "https://github.com/demozhule/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-05-16T04:05:15Z"
+        },
+        {
+          "full_name": "yaoyaoyao-1019/LD",
+          "html_url": "https://github.com/yaoyaoyao-1019/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-05-16T04:05:15Z"
+        },
+        {
+          "full_name": "wmyname/LD",
+          "html_url": "https://github.com/wmyname/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-05-16T04:05:15Z"
+        },
+        {
+          "full_name": "Logicino/LD",
+          "html_url": "https://github.com/Logicino/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-04-15T11:47:58Z"
+        },
+        {
+          "full_name": "laborer123/LD",
+          "html_url": "https://github.com/laborer123/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-04-15T11:47:58Z"
+        },
+        {
+          "full_name": "Cuibaby/LD",
+          "html_url": "https://github.com/Cuibaby/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-04-15T11:47:58Z"
+        },
+        {
+          "full_name": "MCG-NKU/LD",
+          "html_url": "https://github.com/MCG-NKU/LD",
+          "default_branch": "main",
+          "pushed_at": "2023-02-03T03:06:30Z"
+        },
+        {
+          "full_name": "pugangqiang/LD",
+          "html_url": "https://github.com/pugangqiang/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-03-02T02:23:09Z"
+        },
+        {
+          "full_name": "xialuxi/LD",
+          "html_url": "https://github.com/xialuxi/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-03-02T02:23:09Z"
+        },
+        {
+          "full_name": "CV-IP/LD",
+          "html_url": "https://github.com/CV-IP/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-03-02T02:23:09Z"
+        },
+        {
+          "full_name": "yh9468/LD",
+          "html_url": "https://github.com/yh9468/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-02-03T16:56:13Z"
+        },
+        {
+          "full_name": "XavierYoungY/LD",
+          "html_url": "https://github.com/XavierYoungY/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-01-04T08:25:13Z"
+        },
+        {
+          "full_name": "yangsuhui/LD",
+          "html_url": "https://github.com/yangsuhui/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-01-04T08:25:13Z"
+        },
+        {
+          "full_name": "Senwang98/LD",
+          "html_url": "https://github.com/Senwang98/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-10-21T21:19:55Z"
+        },
+        {
+          "full_name": "hfz223322/LD",
+          "html_url": "https://github.com/hfz223322/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-10-21T21:19:55Z"
+        },
+        {
+          "full_name": "cydiachen/LD",
+          "html_url": "https://github.com/cydiachen/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-04-26T07:43:50Z"
+        },
+        {
+          "full_name": "xiaoxiaoshu111/LD",
+          "html_url": "https://github.com/xiaoxiaoshu111/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-04-26T07:43:50Z"
+        },
+        {
+          "full_name": "blueardour/LD",
+          "html_url": "https://github.com/blueardour/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-04-26T07:43:50Z"
+        },
+        {
+          "full_name": "XrosLiang/LD",
+          "html_url": "https://github.com/XrosLiang/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-04-26T07:43:50Z"
+        },
+        {
+          "full_name": "piaofu110/LD",
+          "html_url": "https://github.com/piaofu110/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-04-26T07:43:50Z"
+        },
+        {
+          "full_name": "GloriaHM/LD",
+          "html_url": "https://github.com/GloriaHM/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-04-26T07:43:50Z"
+        },
+        {
+          "full_name": "eeric/LD",
+          "html_url": "https://github.com/eeric/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-04-26T03:07:01Z"
+        },
+        {
+          "full_name": "baodijun/LD",
+          "html_url": "https://github.com/baodijun/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-03-30T11:28:22Z"
+        },
+        {
+          "full_name": "jie311/LD",
+          "html_url": "https://github.com/jie311/LD",
+          "default_branch": "main",
+          "pushed_at": "2022-03-04T01:59:04Z"
+        },
+        {
+          "full_name": "Zzh-tju/LD",
+          "html_url": "https://github.com/Zzh-tju/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-02-28T06:34:08Z"
+        },
+        {
+          "full_name": "sherry085/LD",
+          "html_url": "https://github.com/sherry085/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-02-28T06:34:08Z"
+        },
+        {
+          "full_name": "TrendingTechnology/LD",
+          "html_url": "https://github.com/TrendingTechnology/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-02-28T06:34:08Z"
+        },
+        {
+          "full_name": "peternara/LD-Localization-Distillation-for-Object-Detection",
+          "html_url": "https://github.com/peternara/LD-Localization-Distillation-for-Object-Detection",
+          "default_branch": "main",
+          "pushed_at": "2021-02-25T01:55:25Z"
+        },
+        {
+          "full_name": "chaoso/LD",
+          "html_url": "https://github.com/chaoso/LD",
+          "default_branch": "main",
+          "pushed_at": "2021-02-25T01:55:25Z"
+        }
+      ],
+      "releases": [],
+      "issues": [
+        {
+          "number": 82,
+          "title": "mmpycocotools",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/82"
+        },
+        {
+          "number": 80,
+          "title": "Knowledge distillation related",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/80"
+        },
+        {
+          "number": 79,
+          "title": "loadcheckpoint出现问题",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/79"
+        },
+        {
+          "number": 78,
+          "title": "samples_per_gpu",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/78"
+        },
+        {
+          "number": 77,
+          "title": "Can we pass different set of image to teacher and student.",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/77"
+        },
+        {
+          "number": 76,
+          "title": "About Adaptive Layer",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/76"
+        },
+        {
+          "number": 75,
+          "title": "关于数据集minicoco",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/75"
+        },
+        {
+          "number": 74,
+          "title": "kd_loss implementation issue",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/74"
+        },
+        {
+          "number": 73,
+          "title": "请问是使用 ldv2/ld_r50_gflv2_r101_fpn_1x.py 这个文件来复现 Temperature τ in LD 这个实验吗?",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/73"
+        },
+        {
+          "number": 72,
+          "title": "知识蒸馏",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/72"
+        },
+        {
+          "number": 71,
+          "title": "请问下是否可以迁移到centernet呢",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/71"
+        },
+        {
+          "number": 70,
+          "title": "mmpycocotools",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/70"
+        },
+        {
+          "number": 69,
+          "title": "学生网络与教师网络性能差距较大",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/69"
+        },
+        {
+          "number": 68,
+          "title": "Implement LD on VisDrone dataset",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/68"
+        },
+        {
+          "number": 67,
+          "title": "将DKD与LD结合的问题",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/67"
+        },
+        {
+          "number": 66,
+          "title": "简易版本复现问题",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/66"
+        },
+        {
+          "number": 65,
+          "title": "参考install.md 里面配置的环境无法找到cuda",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/65"
+        },
+        {
+          "number": 64,
+          "title": "If I set output_feature = False , Code don't work",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/64"
+        },
+        {
+          "number": 63,
+          "title": "请问下代码里的教师模型是跟着学生模型一起训练的吗",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/63"
+        },
+        {
+          "number": 62,
+          "title": "Welcome update to OpenMMLab 2.0",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/62"
+        },
+        {
+          "number": 61,
+          "title": "I reimplement your model (Teacher: R101, Student: R50, Detection head: Foveabox) and got RuntimeError: shape '[-1, 68]' is invalid for input of size 115200",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/61"
+        },
+        {
+          "number": 60,
+          "title": "请问如果使用自己的feature-imitation方法应该在哪里添加，您的feature-imitation代码写在哪里了，我没有找到",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/60"
+        },
+        {
+          "number": 59,
+          "title": "Reproduce LD in yolov8?",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/59"
+        },
+        {
+          "number": 58,
+          "title": "FCOS_GFL_R101_2x的教师权重文件可以提供一下吗？",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/58"
+        },
+        {
+          "number": 57,
+          "title": "耦合头效果怎么样",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/57"
+        },
+        {
+          "number": 56,
+          "title": "教师助理策略",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/56"
+        },
+        {
+          "number": 55,
+          "title": "如何蒸馏自定义模型",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/55"
+        },
+        {
+          "number": 54,
+          "title": "想在VOC上进行训练时报错",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/54"
+        },
+        {
+          "number": 53,
+          "title": "将LD的骨干网更改为shufflenetV2后的问题",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/53"
+        },
+        {
+          "number": 52,
+          "title": "loss_kd_neg计算的意义",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/52"
+        },
+        {
+          "number": 51,
+          "title": "关于Two-Stage Detector Distillation 的实现问题",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/51"
+        },
+        {
+          "number": 50,
+          "title": "关于回归的变量离散化选择",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/50"
+        },
+        {
+          "number": 49,
+          "title": "请问Main 和 VLR 这两个区域是怎么确定的？",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/49"
+        },
+        {
+          "number": 48,
+          "title": "请问是否可以使用其他预训练教师模型",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/48"
+        },
+        {
+          "number": 47,
+          "title": "Where is definition of `LocalizationDistillationLoss`?",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/47"
+        },
+        {
+          "number": 46,
+          "title": "subprocess.CalledProcessError: Command '[]' returned non-zero exit status 1.",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/46"
+        },
+        {
+          "number": 45,
+          "title": "AP landscape",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/45"
+        },
+        {
+          "number": 44,
+          "title": "config问题",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/44"
+        },
+        {
+          "number": 43,
+          "title": "关于分类蒸馏的问题",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/43"
+        },
+        {
+          "number": 42,
+          "title": "Both of GFL and LD use a distribution to model bbox, what's the difference between LD and GFL?",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/42"
+        },
+        {
+          "number": 41,
+          "title": "关于ld_head.py 中loss的问题？",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/41"
+        },
+        {
+          "number": 40,
+          "title": "TypeError: KnowledgeDistillationSingleStageDetector: __init__() got an unexpected keyword argument 'output_feature'",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/40"
+        },
+        {
+          "number": 39,
+          "title": "请问LD中对预测框的概率分布的回归是用的类似GFocal中一个卷积层进行学习的吗",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/39"
+        },
+        {
+          "number": 38,
+          "title": "如何对yolox进行知识蒸馏",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/38"
+        },
+        {
+          "number": 37,
+          "title": "请问教师模型是在哪里训练得到的？",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/37"
+        },
+        {
+          "number": 36,
+          "title": "How can I train my own VOC datasets?",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/36"
+        },
+        {
+          "number": 35,
+          "title": "Whiat TOOL of Feature Visualization Do YOU USE?",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/35"
+        },
+        {
+          "number": 34,
+          "title": "使用LD的参数变化",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/34"
+        },
+        {
+          "number": 33,
+          "title": "关于GI(General Instance) Feature-based Distillation 实现的问题",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/33"
+        },
+        {
+          "number": 32,
+          "title": "Some Questions about the VLR ?",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/32"
+        },
+        {
+          "number": 31,
+          "title": "I dont understand the meaning of these codes? ",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/31"
+        },
+        {
+          "number": 30,
+          "title": "Funny Code !!! ",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/30"
+        },
+        {
+          "number": 29,
+          "title": "关于ld_loss计算的问题",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/29"
+        },
+        {
+          "number": 28,
+          "title": "losses_ld 为什么 不除以 avg_factor 呢",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/28"
+        },
+        {
+          "number": 27,
+          "title": "sigmoid for kd?",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/27"
+        },
+        {
+          "number": 26,
+          "title": "请问关于retinanet，fcos的gfocal实现",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/26"
+        },
+        {
+          "number": 25,
+          "title": "关于GI(General Instance)论文的实现问题",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/25"
+        },
+        {
+          "number": 24,
+          "title": "retinagfl_r101_2x_coco.py训练问题",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/24"
+        },
+        {
+          "number": 23,
+          "title": "On Self-LD",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/23"
+        },
+        {
+          "number": 22,
+          "title": "A question about model training",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/22"
+        },
+        {
+          "number": 21,
+          "title": "bug while running the sample model training",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/21"
+        },
+        {
+          "number": 20,
+          "title": "other models?",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/20"
+        },
+        {
+          "number": 19,
+          "title": "Run on CPU between FAST-RCNN-RN50 and SSD-LiteMobileNetv2?",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/19"
+        },
+        {
+          "number": 18,
+          "title": "AttributeError: 'ATSSAssigner' object has no attribute 'assign_neg'",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/18"
+        },
+        {
+          "number": 17,
+          "title": "效果达不到论文以及config疑问",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/17"
+        },
+        {
+          "number": 16,
+          "title": "训练时遇到subprocess.CalledProcessError",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/16"
+        },
+        {
+          "number": 15,
+          "title": "文件缺失",
+          "state": "open",
+          "html_url": "https://github.com/HikariTJU/LD/issues/15"
+        },
+        {
+          "number": 14,
+          "title": "训练达不到论文的效果",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/14"
+        },
+        {
+          "number": 13,
+          "title": "About GPU settings",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/13"
+        },
+        {
+          "number": 12,
+          "title": "why mAP of my train model is under mAP of this paper？",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/12"
+        },
+        {
+          "number": 11,
+          "title": "KeyError: \"GFL: 'LDGFLHead is not in the models registry'\",您好，请问在运行的时候报这个错误是什么原因？",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/11"
+        },
+        {
+          "number": 10,
+          "title": "where was teacher model?",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/10"
+        },
+        {
+          "number": 9,
+          "title": "Different softmax functions for prediction and soft label",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/9"
+        },
+        {
+          "number": 8,
+          "title": "map is getting worse",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/8"
+        },
+        {
+          "number": 7,
+          "title": "loss_ld is samll",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/7"
+        },
+        {
+          "number": 6,
+          "title": "setting parameter of LDLoss",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/6"
+        },
+        {
+          "number": 5,
+          "title": "how to calculate loss?",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/5"
+        },
+        {
+          "number": 4,
+          "title": "many gpus",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/4"
+        },
+        {
+          "number": 3,
+          "title": "which config",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/3"
+        },
+        {
+          "number": 2,
+          "title": "RuntimeError: NCCL error",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/2"
+        },
+        {
+          "number": 1,
+          "title": "INSTALL.md error",
+          "state": "closed",
+          "html_url": "https://github.com/HikariTJU/LD/issues/1"
+        }
+      ],
+      "core_candidates": [
+        "mmdet/core/bbox/assigners/atss_assigner.py",
+        "mmdet/models/dense_heads/ld_gflv2.py",
+        "mmdet/models/dense_heads/ld_head.py",
+        "mmdet/models/losses/kd_loss.py"
+      ],
+      "paper_or_supplement_files": []
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "capture": "2026-09-07T11:19:31.041292+08:00",
+  "active_leases": 5,
+  "physical_gpus": [
+    2,
+    4,
+    5
+  ],
+  "reserved_rss_mib": 163840,
+  "measured_project_rss_gib": 141.33361434936523,
+  "leases": [
+    {
+      "job_id": "oev1_content_c_same_modal_s42_a1",
+      "gpus": [
+        5
+      ],
+      "expected_rss_mib": 32768,
+      "expected_vram_mib": 8300,
+      "peak_rss_mib": 28483,
+      "per_gpu_peak_vram_mib": {
+        "5": 7730
+      }
+    },
+    {
+      "job_id": "oev1_content_c_shuffled_s42_a1",
+      "gpus": [
+        4
+      ],
+      "expected_rss_mib": 32768,
+      "expected_vram_mib": 8300,
+      "peak_rss_mib": 30312,
+      "per_gpu_peak_vram_mib": {
+        "4": 8010
+      }
+    },
+    {
+      "job_id": "oev1_random_full_s42",
+      "gpus": [
+        2
+      ],
+      "expected_rss_mib": 32768,
+      "expected_vram_mib": 8300,
+      "peak_rss_mib": 28907,
+      "per_gpu_peak_vram_mib": {
+        "2": 7632
+      }
+    },
+    {
+      "job_id": "oev1_random_parallel_full_s0",
+      "gpus": [
+        2
+      ],
+      "expected_rss_mib": 32768,
+      "expected_vram_mib": 8300,
+      "peak_rss_mib": 28953,
+      "per_gpu_peak_vram_mib": {
+        "2": 7632
+      }
+    },
+    {
+      "job_id": "oev1_random_parallel_full_s123",
+      "gpus": [
+        4
+      ],
+      "expected_rss_mib": 32768,
+      "expected_vram_mib": 8300,
+      "peak_rss_mib": 28847,
+      "per_gpu_peak_vram_mib": {
+        "4": 7632
+      }
+    }
+  ]
+}

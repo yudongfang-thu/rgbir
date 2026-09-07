@@ -1,0 +1,22 @@
+Ultralytics 8.4.115 🚀 Python-3.10.20 torch-2.10.0+cu128 CUDA:0 (NVIDIA GeForce RTX 4090, 24083MiB)
+YOLO11n summary (fused): 101 layers, 2,583,127 parameters, 0 gradients, 6.4 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3705.3±544.2 MB/s, size: 136.8 KB)
+[K[34m[1mval: [0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val.cache... 1469 images, 27 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 1469/1469 342.3Mit/s 0.0s
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu4/evaluator_profile.py", line 277, in <module>
+    main()
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu4/evaluator_profile.py", line 273, in main
+    print(json.dumps(run(args),ensure_ascii=False),flush=True)
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu4/evaluator_profile.py", line 230, in run
+    metrics=model.val(validator=validator_class,**kwargs)
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/model.py", line 589, in val
+    validator(model=self.model)
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/validator.py", line 239, in __call__
+    self.run_callbacks("on_val_start")
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/validator.py", line 361, in run_callbacks
+    callback(self)
+  File "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu4/evaluator_profile.py", line 216, in on_start
+    for obj in (type(v.dataloader),type(v.dataloader.dataset),type(v.model)):
+AttributeError: 'DetectionValidator' object has no attribute 'model'

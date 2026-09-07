@@ -1,0 +1,43 @@
+test_actual_partial_batch_scales_kd_once_native_already_scaled (test_gradient_observation.GradientObservationTests) ... ok
+test_fixed_epoch_schedule_observes_empty_signal_once_without_replacement (test_gradient_observation.GradientObservationTests) ... ok
+test_historical_and_wrong_eta_rejected (test_gradient_observation.GradientObservationTests) ... ok
+test_json_only_record_no_graph_or_tensor_retention (test_gradient_observation.GradientObservationTests) ... ok
+test_known_gradient_norms_directions_and_component_cancellation (test_gradient_observation.GradientObservationTests) ... ok
+test_localization_observation_and_unused_parameters (test_gradient_observation.GradientObservationTests) ... ok
+test_nonfinite_gradient_is_json_safe_observation_and_does_not_mutate_grad (test_gradient_observation.GradientObservationTests) ... ok
+test_parameter_names_and_no_arbitrary_model_fallback (test_gradient_observation.GradientObservationTests) ... ok
+test_reads_do_not_modify_accumulated_gradients_state_or_rng_and_graph_survives (test_gradient_observation.GradientObservationTests) ... ok
+test_zero_native_has_no_epsilon_ratio (test_gradient_observation.GradientObservationTests) ... ok
+test_analytic_temperature_and_kl_direction (test_classification_logit.ClassificationTests) ... ok
+test_base_includes_teacher_rejected_object (test_classification_logit.ClassificationTests) ... ok
+test_binary_kl_equal_zero_and_teacher_detached (test_classification_logit.ClassificationTests) ... ok
+test_c0_loss_gradient_and_complete_stats_exact (test_classification_logit.ClassificationTests) ... ok
+test_cache_rejects_another_batch_and_mutated_source (test_classification_logit.ClassificationTests) ... ok
+test_deleting_non_target_can_increase_shared_gradient_norm (test_classification_logit.ClassificationTests) ... ok
+test_exact_quality_tie_keeps_original_gt_order (test_classification_logit.ClassificationTests) ... ok
+test_independent_teacher_regions_and_background_all_gt (test_classification_logit.ClassificationTests) ... ok
+test_invalid_and_empty_pool_regions (test_classification_logit.ClassificationTests) ... ok
+test_invalid_scale_is_ignored_in_gradient_and_normalization (test_classification_logit.ClassificationTests) ... ok
+test_matches_compact_base_and_selected_mapping (test_classification_logit.ClassificationTests) ... ok
+test_no_matched_object_and_zero_selected_attach_score_gradient (test_classification_logit.ClassificationTests) ... ok
+test_nonzero_c1_and_components_json_serializable (test_classification_logit.ClassificationTests) ... ok
+test_one_valid_level_preserves_original_selection (test_classification_logit.ClassificationTests) ... ok
+test_overlap_statistics_only_use_selected_valid_levels (test_classification_logit.ClassificationTests) ... ok
+test_pool_shift_invariance_and_both_region_gradients (test_classification_logit.ClassificationTests) ... ok
+test_preteacher_denominator (test_classification_logit.ClassificationTests) ... ok
+test_raw_gt_channel_pool_matches_legacy_per_scale (test_classification_logit.ClassificationTests) ... ok
+test_reject_bad_shape_label_mask_and_nonfinite (test_classification_logit.ClassificationTests) ... ok
+test_scale_divergence_precedes_scale_average (test_classification_logit.ClassificationTests) ... ok
+test_single_class_c1_is_c1_y (test_classification_logit.ClassificationTests) ... ok
+test_small_actual_batch_does_not_scale_inside_kernel (test_classification_logit.ClassificationTests) ... ok
+test_student_changes_cannot_change_selection (test_classification_logit.ClassificationTests) ... ok
+test_target_coefficient_offtarget_average_not_class_sum (test_classification_logit.ClassificationTests) ... ok
+test_teacher_clip_before_temperature_student_not_clipped (test_classification_logit.ClassificationTests) ... ok
+test_y_only_offtarget_teacher_intervention (test_classification_logit.ClassificationTests) ... ok
+test_y_only_statistics_exclude_unused_teacher_channels (test_classification_logit.ClassificationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.205s
+
+OK
+

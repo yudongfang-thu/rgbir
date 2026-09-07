@@ -1,0 +1,18 @@
+{
+  "status": "FAILED",
+  "time": 1788762277.4437222,
+  "error": "RuntimeError('Workload process-tree RSS exceeded its reservation')",
+  "monitor_errors": [
+    "Workload process-tree RSS exceeded its reservation"
+  ],
+  "resources": {
+    "per_gpu_peak_vram_mib": {
+      "2": 6304
+    },
+    "peak_rss_mib": 38679,
+    "cuda_pid_counts": {
+      "2": 1
+    }
+  },
+  "lease_id": "compat_N_s42_a1-d1d8236532c3"
+}

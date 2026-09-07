@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "seed": 42,
+  "error": "RuntimeError('Workload returned 1')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_campaign_gpu5.py\", line 283, in worker\n    dispatch.run_job(row['train'],campaign/'dispatch',Path(manifest['repo']),guard)\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/resource_dispatch.py\", line 434, in run_job\n    raise RuntimeError('Workload returned ' + str(proc.returncode))\nRuntimeError: Workload returned 1\n",
+  "evaluation_obligation_pending": true
+}

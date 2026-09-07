@@ -1,0 +1,71 @@
+{
+  "active": [
+    4,
+    5
+  ],
+  "empty": [
+    2,
+    6
+  ],
+  "reasons": [
+    {
+      "gpu": 0,
+      "reasons": [
+        "companion canary requires exactly one existing project CUDA task",
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    },
+    {
+      "gpu": 1,
+      "reasons": [
+        "companion canary requires exactly one existing project CUDA task",
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    },
+    {
+      "gpu": 2,
+      "reasons": [
+        "companion canary requires exactly one existing project CUDA task"
+      ]
+    },
+    {
+      "gpu": 3,
+      "reasons": [
+        "companion canary requires exactly one existing project CUDA task",
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    },
+    {
+      "gpu": 6,
+      "reasons": [
+        "companion canary requires exactly one existing project CUDA task"
+      ]
+    },
+    {
+      "gpu": 7,
+      "reasons": [
+        "companion canary requires exactly one existing project CUDA task",
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    }
+  ],
+  "candidate_gpus": [
+    4,
+    5
+  ],
+  "atomic_shared_lock": true,
+  "selected_gpus": [
+    5
+  ],
+  "active_gpus_after": [
+    4,
+    5
+  ],
+  "fully_empty_gpus_after": [
+    2,
+    6
+  ],
+  "four_gpu_exception": false,
+  "exception_basis": "AGENTS.md section 2.1; snapshot under shared guard lock",
+  "installed_guard_max_gpus": 4
+}

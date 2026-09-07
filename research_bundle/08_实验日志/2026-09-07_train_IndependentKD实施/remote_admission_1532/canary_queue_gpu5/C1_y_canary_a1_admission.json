@@ -1,0 +1,71 @@
+{
+  "active": [
+    4,
+    5
+  ],
+  "empty": [
+    2,
+    6
+  ],
+  "reasons": [
+    {
+      "gpu": 0,
+      "reasons": [
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    },
+    {
+      "gpu": 1,
+      "reasons": [
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    },
+    {
+      "gpu": 3,
+      "reasons": [
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    },
+    {
+      "gpu": 4,
+      "reasons": [
+        "first measurement requires no other project task or lease on this GPU",
+        "project reserved VRAM would reach 70%",
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    },
+    {
+      "gpu": 5,
+      "reasons": [
+        "first measurement requires no other project task or lease on this GPU",
+        "project reserved VRAM would reach 70%",
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    },
+    {
+      "gpu": 7,
+      "reasons": [
+        "whole-GPU free memory lacks peak plus 2 GiB margin"
+      ]
+    }
+  ],
+  "candidate_gpus": [
+    2,
+    6
+  ],
+  "atomic_shared_lock": true,
+  "selected_gpus": [
+    2
+  ],
+  "active_gpus_after": [
+    2,
+    4,
+    5
+  ],
+  "fully_empty_gpus_after": [
+    6
+  ],
+  "four_gpu_exception": false,
+  "exception_basis": "AGENTS.md section 2.1; snapshot under shared guard lock",
+  "installed_guard_max_gpus": 4
+}

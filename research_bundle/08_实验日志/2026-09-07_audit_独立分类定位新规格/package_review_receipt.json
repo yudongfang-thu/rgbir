@@ -1,0 +1,104 @@
+{
+  "inspected_at": "2026-09-07T12:35:44.475384+08:00",
+  "spec": "E:\\SHARE\\光sar\\07_研究分析\\RGBIR_Independent_Class_Loc_Formal_Spec_20260907.md",
+  "archive": "E:\\SHARE\\光sar\\07_研究分析\\RGBIR_Independent_Class_Loc_Formal_Spec_20260907_Package.zip",
+  "external_internal_md_bytes_equal": true,
+  "files": [
+    {
+      "name": "rgbir_independent_cl_spec/RGBIR_Independent_Class_Loc_Formal_Spec_20260907.md",
+      "bytes": 68094
+    },
+    {
+      "name": "rgbir_independent_cl_spec/README.md",
+      "bytes": 868
+    },
+    {
+      "name": "rgbir_independent_cl_spec/reference_kernels.py",
+      "bytes": 9836,
+      "functions": [
+        "_positive",
+        "_finite_float",
+        "pool_relative_logits",
+        "classification_relative_kd",
+        "localization_from_target",
+        "aligned_dfl_kd",
+        "gt_dfl_target",
+        "combine_single_task"
+      ],
+      "tests": []
+    },
+    {
+      "name": "rgbir_independent_cl_spec/test_reference_kernels.py",
+      "bytes": 5580,
+      "functions": [
+        "sample_c",
+        "test_relative_pool_shift_invariance",
+        "test_relative_pool_invalid_and_empty",
+        "test_c_identical_zero",
+        "test_c_student_only_gradient_and_mask",
+        "test_c_y_only_no_off_target_grad",
+        "test_c_single_class_finite",
+        "test_c_fixed_base_denominator",
+        "test_c_empty_and_zero_selected",
+        "test_c_invalid_selected_level_rejected",
+        "test_c_student_temperature_is_used",
+        "test_dfl_equal_distribution_and_shift",
+        "test_dfl_teacher_detached",
+        "test_dfl_denominator_and_empty",
+        "test_same_mean_different_dfl_is_not_zero",
+        "test_gt_two_bins_and_tempering",
+        "test_gt_out_of_support_rejected",
+        "test_combine_single_scalar_and_no_fusion",
+        "test_dfl_target_rejection"
+      ],
+      "tests": [
+        "test_relative_pool_shift_invariance",
+        "test_relative_pool_invalid_and_empty",
+        "test_c_identical_zero",
+        "test_c_student_only_gradient_and_mask",
+        "test_c_y_only_no_off_target_grad",
+        "test_c_single_class_finite",
+        "test_c_fixed_base_denominator",
+        "test_c_empty_and_zero_selected",
+        "test_c_invalid_selected_level_rejected",
+        "test_c_student_temperature_is_used",
+        "test_dfl_equal_distribution_and_shift",
+        "test_dfl_teacher_detached",
+        "test_dfl_denominator_and_empty",
+        "test_same_mean_different_dfl_is_not_zero",
+        "test_gt_two_bins_and_tempering",
+        "test_gt_out_of_support_rejected",
+        "test_combine_single_scalar_and_no_fusion",
+        "test_dfl_target_rejection"
+      ]
+    },
+    {
+      "name": "rgbir_independent_cl_spec/kernel_test_results.json",
+      "bytes": 224
+    },
+    {
+      "name": "rgbir_independent_cl_spec/kernel_tests.log",
+      "bytes": 99
+    },
+    {
+      "name": "rgbir_independent_cl_spec/kernel_tests.xml",
+      "bytes": 2046
+    },
+    {
+      "name": "rgbir_independent_cl_spec/document_validation.json",
+      "bytes": 300
+    }
+  ],
+  "supplied_test_receipt": {
+    "scope": "local CPU synthetic kernels only; no trainer, data, geometry or AP validation",
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "device": "cpu",
+    "tests": 18,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "executed_package_code": false,
+  "scope": "Byte comparison, archive inventory, AST parsing and static review only. Supplied 18-test receipt is not a local rerun."
+}

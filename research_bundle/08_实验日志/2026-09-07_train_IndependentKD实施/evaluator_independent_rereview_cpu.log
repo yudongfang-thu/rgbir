@@ -1,0 +1,16 @@
+test_actual_rect_order_preserved_but_canonical_roster_stable (test_evaluate_independent.EvaluationTests) ... ok
+test_attempt_without_receipt_does_not_publish_success (test_evaluate_independent.EvaluationTests) ... ok
+test_changed_objects_or_conflicting_canonical_copy_rejected (test_evaluate_independent.EvaluationTests) ... ok
+test_complete_attempt_publish_is_idempotent_and_preserves_originals (test_evaluate_independent.EvaluationTests) ... ok
+test_duplicate_missing_or_wrong_actual_loader_rejected (test_evaluate_independent.EvaluationTests) ... ok
+test_incomplete_training_wrong_endpoint_or_unknown_dataset_rejected (test_evaluate_independent.EvaluationTests) ... ok
+test_interrupted_publication_recovers_without_metric_recompute (test_evaluate_independent.EvaluationTests) ... ok
+test_run_identity_checks_actual_training_snapshot (test_evaluate_independent.EvaluationTests) ... ok
+test_seen_and_object_capture_population_checked (test_evaluate_independent.EvaluationTests) ... ok
+test_wrapper_invokes_native_first_without_tensor_or_metric_mutation (test_evaluate_independent.EvaluationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.329s
+
+OK
+

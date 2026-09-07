@@ -1,0 +1,148 @@
+{
+  "date": "2026-09-07",
+  "status": "PREPARED_NOT_IMPLEMENTED_NOT_QUEUED",
+  "training_authorized_by_this_file": false,
+  "scope": "Only external comparison preparation; does not expand active independent C1/L1 matrix",
+  "identity": "PROTOCOL-ADAPTED",
+  "common": {
+    "dataset": "DroneVehicle",
+    "student": "YOLO11n_RGB",
+    "initialization": "inherit actual accepted current N student init path and bytes",
+    "teacher": "same IR seed42 endpoint used by current C1/L1",
+    "reference": "not used by these external selectors",
+    "recipe_from": "current workers4 N effective config",
+    "seeds_in_run_order": [
+      42,
+      0,
+      123
+    ],
+    "epochs": 200,
+    "imgsz": 640,
+    "batch": 32,
+    "nbs": 64,
+    "workers": 4,
+    "optimizer": "SGD",
+    "lr_and_augmentation": "inherit current N exactly",
+    "levels": [
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "native_assignment": "unchanged pinned TAL",
+    "eval_endpoint": "fixed last/EMA full dev",
+    "dev_count": 1469,
+    "metric": "mAP50-95 percentage",
+    "seed_pairing": [
+      0,
+      42,
+      123
+    ],
+    "sd": "sample SD ddof=1",
+    "device": "dynamic shared lease, no hardcoded GPU",
+    "source": "paired"
+  },
+  "candidates": [
+    {
+      "id": "BCKD_BCDL",
+      "priority": 1,
+      "coverage": "classification-only partial",
+      "author_repo": "TinyTigerPan/BCKD",
+      "branch": "main",
+      "source_files": [
+        "mmdet/models/losses/kd_loss.py",
+        "mmdet/models/dense_heads/ld_head.py",
+        "configs/bckd/bckd_r50_gflv1_r101_fpn_coco_1x.py"
+      ],
+      "payload": "weighted soft BCE with independent sigmoid",
+      "effective_temperature": 1,
+      "beta": 1,
+      "coefficient": 1,
+      "student_discrepancy_weight_detached": false,
+      "teacher_logits_detached": true,
+      "selection": "valid dense levels; per-level zero if no native TAL positives",
+      "normalizer": "native TAL positive count; explicit PROTOCOL-ADAPTED replacement for original ATSS positive count",
+      "classification_gate": "none of C1 E/K or reference-quality gates",
+      "localization_enabled": false,
+      "formal_name": "BCKD-BCDL (classification-only, partial; PROTOCOL-ADAPTED)"
+    },
+    {
+      "id": "FGD",
+      "priority": 2,
+      "coverage": "foreground+background+attention+global relation",
+      "author_repo": "yzd-v/FGD",
+      "branch": "yolox",
+      "source_files": [
+        "mmdet/distillation/losses/fgd.py",
+        "mmdet/distillation/distillers/detection_distiller.py",
+        "configs/distillers/fgd/fgd_yoloxl_distill_yoloxm_coco.py"
+      ],
+      "temperature": 0.5,
+      "foreground_coefficient": 0.002,
+      "background_coefficient": 0.001,
+      "attention_coefficient": 0.001,
+      "global_coefficient": 0.00001,
+      "teacher_initializes_student": false,
+      "selection": "augmented RGB GT feature masks; no C1 E/K gates",
+      "normalizer": "author sum/batch; area and background count scaling retained",
+      "auxiliary_parameters": "both student and teacher side context transforms trainable; teacher detector frozen",
+      "projection": "1x1 only when actual channels differ",
+      "formal_name": "FGD (PROTOCOL-ADAPTED)"
+    },
+    {
+      "id": "LD_Main_VLR",
+      "priority": 3,
+      "coverage": "Main localization + VLR localization + Main classification; no VLR classification or feature imitation",
+      "author_repo": "HikariTJU/LD",
+      "branch": "main",
+      "paper_scope": "CVPR 2022 arXiv2102.12252v4",
+      "source_files": [
+        "mmdet/models/dense_heads/ld_head.py",
+        "mmdet/models/losses/kd_loss.py",
+        "mmdet/core/bbox/assigners/atss_assigner.py",
+        "configs/ld/ld_r18_gflv1_r101_fpn_coco_1x.py"
+      ],
+      "bins": 16,
+      "original_gfl_bins": 17,
+      "localization_temperature": 10,
+      "main_localization_coefficient": 0.25,
+      "vlr_localization_coefficient": 0.25,
+      "classification_temperature": 2,
+      "main_classification_coefficient": 10,
+      "vlr_classification_coefficient": 0,
+      "feature_coefficient": 0,
+      "kl_reduction": "mean along bin/class dimension then T^2; KL(T||S)",
+      "aux_assignment": {
+        "type": "ATSS for KD only",
+        "topk": 9,
+        "anchor_ratio": 1,
+        "anchor_side_in_stride": 8,
+        "centers": "same native YOLO anchor centers",
+        "vlr_lower_ratio": 0.25,
+        "native_TAL": "unchanged"
+      },
+      "normalization": "preserve author per-edge divisors Main=4 VLR=16 and positive-based classification; adapt batch-sum localization to image average explicitly",
+      "formal_name": "LD Main+VLR (PROTOCOL-ADAPTED)"
+    }
+  ],
+  "loss_integration": "native_total.sum() + actual_B * KD_mean_per_image; demonstrate source-to-adapter B factor on fixed tensors, never double-divide already normalized components",
+  "outcome_blind": "No AP tuning of these frozen internal coefficients; record gradient norms, finite/nonzero behavior; no AP early stop.",
+  "before_queue": [
+    "Freeze executed author source bytes and effective config",
+    "Required loss/native invariance and real 24 successful-update canary",
+    "VRAM/RSS measured profile and shared lease",
+    "Fixed-checkpoint native/extended AP equivalence",
+    "Core winner and resource allocation by root"
+  ],
+  "not_claimed": [
+    "AUTHOR-EXACT",
+    "original-paper numbers reproduced",
+    "verified official YOLO11 port",
+    "external comparison AP",
+    "cross-modal attribution from paired alone"
+  ],
+  "missing_primary_asset": "FGD standalone supplement not independently located; no execution-wide block",
+  "historical_comparators": {
+    "CMDistill": "PROTOCOL-ADAPTED historical workers8; not current formal denominator",
+    "CCLKD": "PROTOCOL-ADAPTED partial LLD+CCL only; not current formal denominator"
+  }
+}

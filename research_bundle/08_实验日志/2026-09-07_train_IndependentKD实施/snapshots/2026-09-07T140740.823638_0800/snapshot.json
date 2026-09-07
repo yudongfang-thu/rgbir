@@ -1,0 +1,4387 @@
+{
+  "captured_at": "2026-09-07T14:07:40.823638+08:00",
+  "runs": {
+    "N0": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56695,
+        "update_attempts": 56720,
+        "amp_skips": 25,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 43621.32675790787,
+        "last_kd": 0.33459073305130005
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "weight0",
+        "seed": 0,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56697,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 25,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "weight0",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.6630139946937561,
+          "selected_object_ids": [
+            [
+              0,
+              59,
+              59
+            ],
+            [
+              1,
+              111,
+              115
+            ],
+            [
+              0,
+              87,
+              87
+            ],
+            [
+              0,
+              60,
+              60
+            ],
+            [
+              0,
+              55,
+              55
+            ],
+            [
+              0,
+              56,
+              56
+            ],
+            [
+              0,
+              37,
+              37
+            ],
+            [
+              0,
+              40,
+              40
+            ],
+            [
+              5,
+              150,
+              162
+            ],
+            [
+              0,
+              61,
+              61
+            ],
+            [
+              0,
+              39,
+              39
+            ],
+            [
+              0,
+              74,
+              74
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              0,
+              51,
+              51
+            ],
+            [
+              0,
+              76,
+              76
+            ],
+            [
+              0,
+              41,
+              41
+            ],
+            [
+              0,
+              57,
+              57
+            ],
+            [
+              0,
+              62,
+              62
+            ],
+            [
+              0,
+              58,
+              58
+            ],
+            [
+              0,
+              20,
+              20
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              13,
+              13
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              1,
+              105,
+              105
+            ],
+            [
+              0,
+              71,
+              71
+            ],
+            [
+              0,
+              49,
+              49
+            ],
+            [
+              0,
+              42,
+              42
+            ],
+            [
+              0,
+              84,
+              84
+            ],
+            [
+              1,
+              109,
+              113
+            ],
+            [
+              0,
+              38,
+              38
+            ],
+            [
+              2,
+              113,
+              117
+            ],
+            [
+              0,
+              45,
+              45
+            ],
+            [
+              0,
+              44,
+              44
+            ],
+            [
+              1,
+              104,
+              104
+            ],
+            [
+              0,
+              52,
+              52
+            ],
+            [
+              0,
+              77,
+              77
+            ],
+            [
+              0,
+              48,
+              48
+            ],
+            [
+              0,
+              47,
+              47
+            ],
+            [
+              0,
+              46,
+              46
+            ],
+            [
+              1,
+              94,
+              94
+            ],
+            [
+              0,
+              54,
+              54
+            ],
+            [
+              1,
+              91,
+              91
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              98,
+              98
+            ],
+            [
+              0,
+              64,
+              64
+            ],
+            [
+              4,
+              143,
+              155
+            ],
+            [
+              0,
+              73,
+              73
+            ],
+            [
+              0,
+              3,
+              3
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              16,
+              16
+            ],
+            [
+              0,
+              31,
+              31
+            ],
+            [
+              0,
+              7,
+              7
+            ],
+            [
+              0,
+              66,
+              66
+            ],
+            [
+              0,
+              35,
+              35
+            ],
+            [
+              0,
+              53,
+              53
+            ],
+            [
+              1,
+              95,
+              95
+            ],
+            [
+              0,
+              43,
+              43
+            ],
+            [
+              0,
+              69,
+              69
+            ],
+            [
+              0,
+              26,
+              26
+            ],
+            [
+              0,
+              15,
+              15
+            ],
+            [
+              0,
+              18,
+              18
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 1.9906641244888306,
+          "student_evidence_base_min": -2.0344133377075195,
+          "student_evidence_base_max": 7.035595893859863,
+          "student_evidence_base_sd": 1.9564036130905151,
+          "student_evidence_selected_mean": 0.3899397552013397,
+          "student_evidence_selected_sd": 0.9167706370353699,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.583371162414551,
+          "teacher_evidence_selected_sd": 1.251428484916687,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 0.6914733052253723,
+          "reference_evidence_selected_sd": 0.43408647179603577,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.313673198223114,
+          "quality_selected_sd": 0.13227620720863342,
+          "target_binary_entropy_selected": 0.3016660809516907,
+          "target_gap_to_positive_selected": 0.1034427061676979,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 22.149335861206055,
+          "kd_weight": 0.0,
+          "weighted_kd_total": 0.0,
+          "total_loss": 22.149335861206055,
+          "optimizer_updates": 56697,
+          "time_seconds": 43623.279109716415,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            5
+          ],
+          "cuda_pid_counts": {
+            "5": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "5": 7634
+          },
+          "peak_rss_mib": 28870
+        },
+        "seconds": 43625.271203279495,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.7699251535173484,
+        "AP75": 0.6393291745479234,
+        "mAP50_95": 0.5434618520685575,
+        "precision": 0.7765485331322762,
+        "recall": 0.7358216889941263,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 216.70000000000073,
+        "remaining_training_seconds_estimate": 216.70000000000073,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "C0": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56692,
+        "update_attempts": 56720,
+        "amp_skips": 28,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 44453.45324587822,
+        "last_kd": 0.19358476996421814
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired",
+        "seed": 0,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56694,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 28,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "paired",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.4178178906440735,
+          "selected_object_ids": [
+            [
+              0,
+              59,
+              59
+            ],
+            [
+              1,
+              111,
+              115
+            ],
+            [
+              0,
+              87,
+              87
+            ],
+            [
+              0,
+              60,
+              60
+            ],
+            [
+              0,
+              55,
+              55
+            ],
+            [
+              0,
+              56,
+              56
+            ],
+            [
+              0,
+              37,
+              37
+            ],
+            [
+              0,
+              40,
+              40
+            ],
+            [
+              5,
+              150,
+              162
+            ],
+            [
+              0,
+              61,
+              61
+            ],
+            [
+              0,
+              39,
+              39
+            ],
+            [
+              0,
+              74,
+              74
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              0,
+              51,
+              51
+            ],
+            [
+              0,
+              76,
+              76
+            ],
+            [
+              0,
+              41,
+              41
+            ],
+            [
+              0,
+              57,
+              57
+            ],
+            [
+              0,
+              62,
+              62
+            ],
+            [
+              0,
+              58,
+              58
+            ],
+            [
+              0,
+              20,
+              20
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              13,
+              13
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              1,
+              105,
+              105
+            ],
+            [
+              0,
+              71,
+              71
+            ],
+            [
+              0,
+              49,
+              49
+            ],
+            [
+              0,
+              42,
+              42
+            ],
+            [
+              0,
+              84,
+              84
+            ],
+            [
+              1,
+              109,
+              113
+            ],
+            [
+              0,
+              38,
+              38
+            ],
+            [
+              2,
+              113,
+              117
+            ],
+            [
+              0,
+              45,
+              45
+            ],
+            [
+              0,
+              44,
+              44
+            ],
+            [
+              1,
+              104,
+              104
+            ],
+            [
+              0,
+              52,
+              52
+            ],
+            [
+              0,
+              77,
+              77
+            ],
+            [
+              0,
+              48,
+              48
+            ],
+            [
+              0,
+              47,
+              47
+            ],
+            [
+              0,
+              46,
+              46
+            ],
+            [
+              1,
+              94,
+              94
+            ],
+            [
+              0,
+              54,
+              54
+            ],
+            [
+              1,
+              91,
+              91
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              98,
+              98
+            ],
+            [
+              0,
+              64,
+              64
+            ],
+            [
+              4,
+              143,
+              155
+            ],
+            [
+              0,
+              73,
+              73
+            ],
+            [
+              0,
+              3,
+              3
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              16,
+              16
+            ],
+            [
+              0,
+              31,
+              31
+            ],
+            [
+              0,
+              7,
+              7
+            ],
+            [
+              0,
+              66,
+              66
+            ],
+            [
+              0,
+              35,
+              35
+            ],
+            [
+              0,
+              53,
+              53
+            ],
+            [
+              1,
+              95,
+              95
+            ],
+            [
+              0,
+              43,
+              43
+            ],
+            [
+              0,
+              69,
+              69
+            ],
+            [
+              0,
+              26,
+              26
+            ],
+            [
+              0,
+              15,
+              15
+            ],
+            [
+              0,
+              18,
+              18
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 2.501250982284546,
+          "student_evidence_base_min": -0.9753916263580322,
+          "student_evidence_base_max": 5.595429420471191,
+          "student_evidence_base_sd": 1.816254734992981,
+          "student_evidence_selected_mean": 1.2398550510406494,
+          "student_evidence_selected_sd": 1.578906536102295,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.583371162414551,
+          "teacher_evidence_selected_sd": 1.251428484916687,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 0.6914733052253723,
+          "reference_evidence_selected_sd": 0.43408647179603577,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.313673198223114,
+          "quality_selected_sd": 0.13227620720863342,
+          "target_binary_entropy_selected": 0.3016660809516907,
+          "target_gap_to_positive_selected": 0.1034427061676979,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 21.642662048339844,
+          "kd_weight": 0.1,
+          "weighted_kd_total": 0.2506907343864441,
+          "total_loss": 21.893352508544922,
+          "optimizer_updates": 56694,
+          "time_seconds": 44455.158527612686,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            5
+          ],
+          "cuda_pid_counts": {
+            "5": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "5": 7634
+          },
+          "peak_rss_mib": 28857
+        },
+        "seconds": 44457.80159544945,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.7698678788788337,
+        "AP75": 0.6416654157547512,
+        "mAP50_95": 0.5477218640082956,
+        "precision": 0.7924371088621379,
+        "recall": 0.709786559338524,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 216.95000000000073,
+        "remaining_training_seconds_estimate": 216.95000000000073,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "R0": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56694,
+        "update_attempts": 56720,
+        "amp_skips": 26,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 49994.77216935158,
+        "last_kd": 0.14311902225017548
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired_random",
+        "seed": 0,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56696,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 26,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "paired_random",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.3525554835796356,
+          "selected_object_ids": [
+            [
+              4,
+              120,
+              132
+            ],
+            [
+              4,
+              145,
+              157
+            ],
+            [
+              0,
+              57,
+              57
+            ],
+            [
+              0,
+              35,
+              35
+            ],
+            [
+              0,
+              51,
+              51
+            ],
+            [
+              5,
+              166,
+              183
+            ],
+            [
+              2,
+              112,
+              116
+            ],
+            [
+              4,
+              121,
+              133
+            ],
+            [
+              0,
+              71,
+              71
+            ],
+            [
+              1,
+              96,
+              96
+            ],
+            [
+              5,
+              154,
+              165
+            ],
+            [
+              5,
+              160,
+              173
+            ],
+            [
+              5,
+              148,
+              160
+            ],
+            [
+              0,
+              44,
+              44
+            ],
+            [
+              0,
+              20,
+              20
+            ],
+            [
+              5,
+              165,
+              178
+            ],
+            [
+              0,
+              28,
+              28
+            ],
+            [
+              0,
+              48,
+              48
+            ],
+            [
+              4,
+              144,
+              156
+            ],
+            [
+              0,
+              33,
+              33
+            ],
+            [
+              0,
+              12,
+              12
+            ],
+            [
+              5,
+              150,
+              162
+            ],
+            [
+              0,
+              46,
+              46
+            ],
+            [
+              4,
+              126,
+              138
+            ],
+            [
+              0,
+              31,
+              31
+            ],
+            [
+              4,
+              142,
+              154
+            ],
+            [
+              1,
+              102,
+              102
+            ],
+            [
+              5,
+              162,
+              175
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              4,
+              137,
+              149
+            ],
+            [
+              0,
+              45,
+              45
+            ],
+            [
+              0,
+              11,
+              11
+            ],
+            [
+              0,
+              49,
+              49
+            ],
+            [
+              5,
+              151,
+              163
+            ],
+            [
+              0,
+              22,
+              22
+            ],
+            [
+              0,
+              6,
+              6
+            ],
+            [
+              0,
+              59,
+              59
+            ],
+            [
+              0,
+              65,
+              65
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              0,
+              80,
+              80
+            ],
+            [
+              5,
+              158,
+              171
+            ],
+            [
+              4,
+              127,
+              139
+            ],
+            [
+              0,
+              53,
+              53
+            ],
+            [
+              0,
+              73,
+              73
+            ],
+            [
+              4,
+              128,
+              140
+            ],
+            [
+              0,
+              15,
+              15
+            ],
+            [
+              1,
+              95,
+              95
+            ],
+            [
+              0,
+              29,
+              29
+            ],
+            [
+              0,
+              69,
+              69
+            ],
+            [
+              0,
+              30,
+              30
+            ],
+            [
+              0,
+              5,
+              5
+            ],
+            [
+              0,
+              9,
+              9
+            ],
+            [
+              4,
+              136,
+              148
+            ],
+            [
+              0,
+              18,
+              18
+            ],
+            [
+              0,
+              42,
+              42
+            ],
+            [
+              1,
+              106,
+              106
+            ],
+            [
+              0,
+              23,
+              23
+            ],
+            [
+              0,
+              10,
+              10
+            ],
+            [
+              4,
+              141,
+              153
+            ],
+            [
+              2,
+              113,
+              117
+            ],
+            [
+              0,
+              16,
+              16
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 2.390512466430664,
+          "student_evidence_base_min": -1.141200304031372,
+          "student_evidence_base_max": 5.484991550445557,
+          "student_evidence_base_sd": 1.8188501596450806,
+          "student_evidence_selected_mean": 2.47104549407959,
+          "student_evidence_selected_sd": 1.6950674057006836,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.936077833175659,
+          "teacher_evidence_selected_sd": 1.3411483764648438,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 1.9410794973373413,
+          "reference_evidence_selected_sd": 1.3665701150894165,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.13866719603538513,
+          "quality_selected_sd": 0.1526206135749817,
+          "target_binary_entropy_selected": 0.25577035546302795,
+          "target_gap_to_positive_selected": 0.08508649468421936,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 21.99474334716797,
+          "kd_weight": 0.1,
+          "weighted_kd_total": 0.21153329014778138,
+          "total_loss": 22.206275939941406,
+          "optimizer_updates": 56696,
+          "time_seconds": 49996.26726126671,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            2
+          ],
+          "cuda_pid_counts": {
+            "2": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "2": 7634
+          },
+          "peak_rss_mib": 28953
+        },
+        "seconds": 49998.32588863373,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.7689641053349323,
+        "AP75": 0.63957860250264,
+        "mAP50_95": 0.5463085656211213,
+        "precision": 0.7715389209362933,
+        "recall": 0.7327546255803248,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 203.04999999999927,
+        "remaining_training_seconds_estimate": 203.04999999999927,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "N42": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56693,
+        "update_attempts": 56720,
+        "amp_skips": 27,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 41425.08944225311,
+        "last_kd": 0.3625872731208801
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "weight0",
+        "seed": 42,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56695,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 27,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "weight0",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.6196500062942505,
+          "selected_object_ids": [
+            [
+              0,
+              59,
+              59
+            ],
+            [
+              1,
+              111,
+              115
+            ],
+            [
+              0,
+              87,
+              87
+            ],
+            [
+              0,
+              60,
+              60
+            ],
+            [
+              0,
+              55,
+              55
+            ],
+            [
+              0,
+              56,
+              56
+            ],
+            [
+              0,
+              37,
+              37
+            ],
+            [
+              0,
+              40,
+              40
+            ],
+            [
+              5,
+              150,
+              162
+            ],
+            [
+              0,
+              61,
+              61
+            ],
+            [
+              0,
+              39,
+              39
+            ],
+            [
+              0,
+              74,
+              74
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              0,
+              51,
+              51
+            ],
+            [
+              0,
+              76,
+              76
+            ],
+            [
+              0,
+              41,
+              41
+            ],
+            [
+              0,
+              57,
+              57
+            ],
+            [
+              0,
+              62,
+              62
+            ],
+            [
+              0,
+              58,
+              58
+            ],
+            [
+              0,
+              20,
+              20
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              13,
+              13
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              1,
+              105,
+              105
+            ],
+            [
+              0,
+              71,
+              71
+            ],
+            [
+              0,
+              49,
+              49
+            ],
+            [
+              0,
+              42,
+              42
+            ],
+            [
+              0,
+              84,
+              84
+            ],
+            [
+              1,
+              109,
+              113
+            ],
+            [
+              0,
+              38,
+              38
+            ],
+            [
+              2,
+              113,
+              117
+            ],
+            [
+              0,
+              45,
+              45
+            ],
+            [
+              0,
+              44,
+              44
+            ],
+            [
+              1,
+              104,
+              104
+            ],
+            [
+              0,
+              52,
+              52
+            ],
+            [
+              0,
+              77,
+              77
+            ],
+            [
+              0,
+              48,
+              48
+            ],
+            [
+              0,
+              47,
+              47
+            ],
+            [
+              0,
+              46,
+              46
+            ],
+            [
+              1,
+              94,
+              94
+            ],
+            [
+              0,
+              54,
+              54
+            ],
+            [
+              1,
+              91,
+              91
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              98,
+              98
+            ],
+            [
+              0,
+              64,
+              64
+            ],
+            [
+              4,
+              143,
+              155
+            ],
+            [
+              0,
+              73,
+              73
+            ],
+            [
+              0,
+              3,
+              3
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              16,
+              16
+            ],
+            [
+              0,
+              31,
+              31
+            ],
+            [
+              0,
+              7,
+              7
+            ],
+            [
+              0,
+              66,
+              66
+            ],
+            [
+              0,
+              35,
+              35
+            ],
+            [
+              0,
+              53,
+              53
+            ],
+            [
+              1,
+              95,
+              95
+            ],
+            [
+              0,
+              43,
+              43
+            ],
+            [
+              0,
+              69,
+              69
+            ],
+            [
+              0,
+              26,
+              26
+            ],
+            [
+              0,
+              15,
+              15
+            ],
+            [
+              0,
+              18,
+              18
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 1.9073318243026733,
+          "student_evidence_base_min": -1.167710304260254,
+          "student_evidence_base_max": 6.700396537780762,
+          "student_evidence_base_sd": 1.7630976438522339,
+          "student_evidence_selected_mean": 0.5093443393707275,
+          "student_evidence_selected_sd": 0.8226955533027649,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.583371162414551,
+          "teacher_evidence_selected_sd": 1.251428484916687,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 0.6914733052253723,
+          "reference_evidence_selected_sd": 0.43408647179603577,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.313673198223114,
+          "quality_selected_sd": 0.13227620720863342,
+          "target_binary_entropy_selected": 0.3016660809516907,
+          "target_gap_to_positive_selected": 0.1034427061676979,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 22.301639556884766,
+          "kd_weight": 0.0,
+          "weighted_kd_total": 0.0,
+          "total_loss": 22.301639556884766,
+          "optimizer_updates": 56695,
+          "time_seconds": 41426.59822654724,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            4
+          ],
+          "cuda_pid_counts": {
+            "4": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "4": 7634
+          },
+          "peak_rss_mib": 28914
+        },
+        "seconds": 41428.191229104996,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.7717965366938525,
+        "AP75": 0.6416656614678693,
+        "mAP50_95": 0.5451360845035178,
+        "precision": 0.7864732611282166,
+        "recall": 0.7292365679591741,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 200.89999999999782,
+        "remaining_training_seconds_estimate": 200.89999999999782,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "C42": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56693,
+        "update_attempts": 56720,
+        "amp_skips": 27,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 40169.60675621033,
+        "last_kd": 0.1990199089050293
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired",
+        "seed": 42,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56695,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 27,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "paired",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.4746798574924469,
+          "selected_object_ids": [
+            [
+              0,
+              59,
+              59
+            ],
+            [
+              1,
+              111,
+              115
+            ],
+            [
+              0,
+              87,
+              87
+            ],
+            [
+              0,
+              60,
+              60
+            ],
+            [
+              0,
+              55,
+              55
+            ],
+            [
+              0,
+              56,
+              56
+            ],
+            [
+              0,
+              37,
+              37
+            ],
+            [
+              0,
+              40,
+              40
+            ],
+            [
+              5,
+              150,
+              162
+            ],
+            [
+              0,
+              61,
+              61
+            ],
+            [
+              0,
+              39,
+              39
+            ],
+            [
+              0,
+              74,
+              74
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              0,
+              51,
+              51
+            ],
+            [
+              0,
+              76,
+              76
+            ],
+            [
+              0,
+              41,
+              41
+            ],
+            [
+              0,
+              57,
+              57
+            ],
+            [
+              0,
+              62,
+              62
+            ],
+            [
+              0,
+              58,
+              58
+            ],
+            [
+              0,
+              20,
+              20
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              13,
+              13
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              1,
+              105,
+              105
+            ],
+            [
+              0,
+              71,
+              71
+            ],
+            [
+              0,
+              49,
+              49
+            ],
+            [
+              0,
+              42,
+              42
+            ],
+            [
+              0,
+              84,
+              84
+            ],
+            [
+              1,
+              109,
+              113
+            ],
+            [
+              0,
+              38,
+              38
+            ],
+            [
+              2,
+              113,
+              117
+            ],
+            [
+              0,
+              45,
+              45
+            ],
+            [
+              0,
+              44,
+              44
+            ],
+            [
+              1,
+              104,
+              104
+            ],
+            [
+              0,
+              52,
+              52
+            ],
+            [
+              0,
+              77,
+              77
+            ],
+            [
+              0,
+              48,
+              48
+            ],
+            [
+              0,
+              47,
+              47
+            ],
+            [
+              0,
+              46,
+              46
+            ],
+            [
+              1,
+              94,
+              94
+            ],
+            [
+              0,
+              54,
+              54
+            ],
+            [
+              1,
+              91,
+              91
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              98,
+              98
+            ],
+            [
+              0,
+              64,
+              64
+            ],
+            [
+              4,
+              143,
+              155
+            ],
+            [
+              0,
+              73,
+              73
+            ],
+            [
+              0,
+              3,
+              3
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              16,
+              16
+            ],
+            [
+              0,
+              31,
+              31
+            ],
+            [
+              0,
+              7,
+              7
+            ],
+            [
+              0,
+              66,
+              66
+            ],
+            [
+              0,
+              35,
+              35
+            ],
+            [
+              0,
+              53,
+              53
+            ],
+            [
+              1,
+              95,
+              95
+            ],
+            [
+              0,
+              43,
+              43
+            ],
+            [
+              0,
+              69,
+              69
+            ],
+            [
+              0,
+              26,
+              26
+            ],
+            [
+              0,
+              15,
+              15
+            ],
+            [
+              0,
+              18,
+              18
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 2.4862804412841797,
+          "student_evidence_base_min": -2.7494208812713623,
+          "student_evidence_base_max": 5.957769393920898,
+          "student_evidence_base_sd": 1.9333782196044922,
+          "student_evidence_selected_mean": 1.1081690788269043,
+          "student_evidence_selected_sd": 1.5779132843017578,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.583371162414551,
+          "teacher_evidence_selected_sd": 1.251428484916687,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 0.6914733052253723,
+          "reference_evidence_selected_sd": 0.43408647179603577,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.313673198223114,
+          "quality_selected_sd": 0.13227620720863342,
+          "target_binary_entropy_selected": 0.3016660809516907,
+          "target_gap_to_positive_selected": 0.1034427061676979,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 21.99285316467285,
+          "kd_weight": 0.1,
+          "weighted_kd_total": 0.28480791449546816,
+          "total_loss": 22.277660369873047,
+          "optimizer_updates": 56695,
+          "time_seconds": 40171.18488931656,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            4
+          ],
+          "cuda_pid_counts": {
+            "4": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "4": 7634
+          },
+          "peak_rss_mib": 28915
+        },
+        "seconds": 40172.4308719635,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.770696200439378,
+        "AP75": 0.638393230492208,
+        "mAP50_95": 0.5465816217191543,
+        "precision": 0.7743225301297307,
+        "recall": 0.7243045069089454,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 201.0,
+        "remaining_training_seconds_estimate": 201.0,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "R42": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56696,
+        "update_attempts": 56720,
+        "amp_skips": 24,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 50297.258343458176,
+        "last_kd": 0.1512620598077774
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired_random",
+        "seed": 42,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56697,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 25,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "paired_random",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.37063103914260864,
+          "selected_object_ids": [
+            [
+              2,
+              116,
+              120
+            ],
+            [
+              0,
+              7,
+              7
+            ],
+            [
+              1,
+              104,
+              104
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              4,
+              143,
+              155
+            ],
+            [
+              1,
+              109,
+              113
+            ],
+            [
+              0,
+              56,
+              56
+            ],
+            [
+              1,
+              97,
+              97
+            ],
+            [
+              4,
+              129,
+              141
+            ],
+            [
+              5,
+              165,
+              178
+            ],
+            [
+              4,
+              141,
+              153
+            ],
+            [
+              1,
+              92,
+              92
+            ],
+            [
+              0,
+              70,
+              70
+            ],
+            [
+              5,
+              151,
+              163
+            ],
+            [
+              0,
+              76,
+              76
+            ],
+            [
+              0,
+              41,
+              41
+            ],
+            [
+              0,
+              35,
+              35
+            ],
+            [
+              0,
+              27,
+              27
+            ],
+            [
+              0,
+              14,
+              14
+            ],
+            [
+              1,
+              111,
+              115
+            ],
+            [
+              0,
+              29,
+              29
+            ],
+            [
+              0,
+              18,
+              18
+            ],
+            [
+              4,
+              118,
+              130
+            ],
+            [
+              2,
+              114,
+              118
+            ],
+            [
+              0,
+              72,
+              72
+            ],
+            [
+              1,
+              102,
+              102
+            ],
+            [
+              1,
+              110,
+              114
+            ],
+            [
+              0,
+              77,
+              77
+            ],
+            [
+              0,
+              52,
+              52
+            ],
+            [
+              0,
+              22,
+              22
+            ],
+            [
+              0,
+              3,
+              3
+            ],
+            [
+              0,
+              88,
+              88
+            ],
+            [
+              0,
+              84,
+              84
+            ],
+            [
+              0,
+              47,
+              47
+            ],
+            [
+              0,
+              33,
+              33
+            ],
+            [
+              4,
+              142,
+              154
+            ],
+            [
+              0,
+              43,
+              43
+            ],
+            [
+              5,
+              147,
+              159
+            ],
+            [
+              4,
+              124,
+              136
+            ],
+            [
+              5,
+              163,
+              176
+            ],
+            [
+              0,
+              21,
+              21
+            ],
+            [
+              0,
+              79,
+              79
+            ],
+            [
+              4,
+              133,
+              145
+            ],
+            [
+              0,
+              36,
+              36
+            ],
+            [
+              0,
+              46,
+              46
+            ],
+            [
+              0,
+              87,
+              87
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              4,
+              123,
+              135
+            ],
+            [
+              0,
+              64,
+              64
+            ],
+            [
+              5,
+              155,
+              166
+            ],
+            [
+              0,
+              9,
+              9
+            ],
+            [
+              0,
+              20,
+              20
+            ],
+            [
+              1,
+              98,
+              98
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              80,
+              80
+            ],
+            [
+              0,
+              30,
+              30
+            ],
+            [
+              4,
+              119,
+              131
+            ],
+            [
+              0,
+              58,
+              58
+            ],
+            [
+              5,
+              156,
+              182
+            ],
+            [
+              0,
+              44,
+              44
+            ],
+            [
+              0,
+              49,
+              49
+            ],
+            [
+              4,
+              137,
+              149
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 2.262165069580078,
+          "student_evidence_base_min": -0.9989838600158691,
+          "student_evidence_base_max": 6.323955535888672,
+          "student_evidence_base_sd": 1.6313316822052002,
+          "student_evidence_selected_mean": 2.1488449573516846,
+          "student_evidence_selected_sd": 1.592037320137024,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.9607174396514893,
+          "teacher_evidence_selected_sd": 1.5145301818847656,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 1.7455867528915405,
+          "reference_evidence_selected_sd": 1.3552100658416748,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.16850805282592773,
+          "quality_selected_sd": 0.1610802859067917,
+          "target_binary_entropy_selected": 0.26113563776016235,
+          "target_gap_to_positive_selected": 0.08911491185426712,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 22.130373001098633,
+          "kd_weight": 0.1,
+          "weighted_kd_total": 0.2223786234855652,
+          "total_loss": 22.352750778198242,
+          "optimizer_updates": 56697,
+          "time_seconds": 50299.23745512962,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            2
+          ],
+          "cuda_pid_counts": {
+            "2": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "2": 7634
+          },
+          "peak_rss_mib": 28907
+        },
+        "seconds": 50302.34415221214,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.7647841906336172,
+        "AP75": 0.6376612626327512,
+        "mAP50_95": 0.5449215666305265,
+        "precision": 0.78516933078987,
+        "recall": 0.7207884332189176,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 259.65000000000146,
+        "remaining_training_seconds_estimate": 259.65000000000146,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "N123": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56694,
+        "update_attempts": 56720,
+        "amp_skips": 26,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 43074.70373463631,
+        "last_kd": 0.3763922452926636
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "weight0",
+        "seed": 123,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56696,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 26,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "weight0",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.6251160502433777,
+          "selected_object_ids": [
+            [
+              0,
+              59,
+              59
+            ],
+            [
+              1,
+              111,
+              115
+            ],
+            [
+              0,
+              87,
+              87
+            ],
+            [
+              0,
+              60,
+              60
+            ],
+            [
+              0,
+              55,
+              55
+            ],
+            [
+              0,
+              56,
+              56
+            ],
+            [
+              0,
+              37,
+              37
+            ],
+            [
+              0,
+              40,
+              40
+            ],
+            [
+              5,
+              150,
+              162
+            ],
+            [
+              0,
+              61,
+              61
+            ],
+            [
+              0,
+              39,
+              39
+            ],
+            [
+              0,
+              74,
+              74
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              0,
+              51,
+              51
+            ],
+            [
+              0,
+              76,
+              76
+            ],
+            [
+              0,
+              41,
+              41
+            ],
+            [
+              0,
+              57,
+              57
+            ],
+            [
+              0,
+              62,
+              62
+            ],
+            [
+              0,
+              58,
+              58
+            ],
+            [
+              0,
+              20,
+              20
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              13,
+              13
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              1,
+              105,
+              105
+            ],
+            [
+              0,
+              71,
+              71
+            ],
+            [
+              0,
+              49,
+              49
+            ],
+            [
+              0,
+              42,
+              42
+            ],
+            [
+              0,
+              84,
+              84
+            ],
+            [
+              1,
+              109,
+              113
+            ],
+            [
+              0,
+              38,
+              38
+            ],
+            [
+              2,
+              113,
+              117
+            ],
+            [
+              0,
+              45,
+              45
+            ],
+            [
+              0,
+              44,
+              44
+            ],
+            [
+              1,
+              104,
+              104
+            ],
+            [
+              0,
+              52,
+              52
+            ],
+            [
+              0,
+              77,
+              77
+            ],
+            [
+              0,
+              48,
+              48
+            ],
+            [
+              0,
+              47,
+              47
+            ],
+            [
+              0,
+              46,
+              46
+            ],
+            [
+              1,
+              94,
+              94
+            ],
+            [
+              0,
+              54,
+              54
+            ],
+            [
+              1,
+              91,
+              91
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              98,
+              98
+            ],
+            [
+              0,
+              64,
+              64
+            ],
+            [
+              4,
+              143,
+              155
+            ],
+            [
+              0,
+              73,
+              73
+            ],
+            [
+              0,
+              3,
+              3
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              16,
+              16
+            ],
+            [
+              0,
+              31,
+              31
+            ],
+            [
+              0,
+              7,
+              7
+            ],
+            [
+              0,
+              66,
+              66
+            ],
+            [
+              0,
+              35,
+              35
+            ],
+            [
+              0,
+              53,
+              53
+            ],
+            [
+              1,
+              95,
+              95
+            ],
+            [
+              0,
+              43,
+              43
+            ],
+            [
+              0,
+              69,
+              69
+            ],
+            [
+              0,
+              26,
+              26
+            ],
+            [
+              0,
+              15,
+              15
+            ],
+            [
+              0,
+              18,
+              18
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 2.009556293487549,
+          "student_evidence_base_min": -1.294080138206482,
+          "student_evidence_base_max": 5.546143054962158,
+          "student_evidence_base_sd": 1.7981510162353516,
+          "student_evidence_selected_mean": 0.5073639154434204,
+          "student_evidence_selected_sd": 1.007560133934021,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.583371162414551,
+          "teacher_evidence_selected_sd": 1.251428484916687,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 0.6914733052253723,
+          "reference_evidence_selected_sd": 0.43408647179603577,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.313673198223114,
+          "quality_selected_sd": 0.13227620720863342,
+          "target_binary_entropy_selected": 0.3016660809516907,
+          "target_gap_to_positive_selected": 0.1034427061676979,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 21.506736755371094,
+          "kd_weight": 0.0,
+          "weighted_kd_total": 0.0,
+          "total_loss": 21.506736755371094,
+          "optimizer_updates": 56696,
+          "time_seconds": 43076.30475616455,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            6
+          ],
+          "cuda_pid_counts": {
+            "6": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "6": 7634
+          },
+          "peak_rss_mib": 28862
+        },
+        "seconds": 43078.59835934639,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.7692741735562139,
+        "AP75": 0.6368947787552206,
+        "mAP50_95": 0.5440743648945896,
+        "precision": 0.7784148488728724,
+        "recall": 0.7341004085623704,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 211.95000000000437,
+        "remaining_training_seconds_estimate": 211.95000000000437,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "C123": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56693,
+        "update_attempts": 56720,
+        "amp_skips": 27,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 45845.933898210526,
+        "last_kd": 0.2129717469215393
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired",
+        "seed": 123,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56695,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 27,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "paired",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.4961988627910614,
+          "selected_object_ids": [
+            [
+              0,
+              59,
+              59
+            ],
+            [
+              1,
+              111,
+              115
+            ],
+            [
+              0,
+              87,
+              87
+            ],
+            [
+              0,
+              60,
+              60
+            ],
+            [
+              0,
+              55,
+              55
+            ],
+            [
+              0,
+              56,
+              56
+            ],
+            [
+              0,
+              37,
+              37
+            ],
+            [
+              0,
+              40,
+              40
+            ],
+            [
+              5,
+              150,
+              162
+            ],
+            [
+              0,
+              61,
+              61
+            ],
+            [
+              0,
+              39,
+              39
+            ],
+            [
+              0,
+              74,
+              74
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              0,
+              51,
+              51
+            ],
+            [
+              0,
+              76,
+              76
+            ],
+            [
+              0,
+              41,
+              41
+            ],
+            [
+              0,
+              57,
+              57
+            ],
+            [
+              0,
+              62,
+              62
+            ],
+            [
+              0,
+              58,
+              58
+            ],
+            [
+              0,
+              20,
+              20
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              13,
+              13
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              1,
+              105,
+              105
+            ],
+            [
+              0,
+              71,
+              71
+            ],
+            [
+              0,
+              49,
+              49
+            ],
+            [
+              0,
+              42,
+              42
+            ],
+            [
+              0,
+              84,
+              84
+            ],
+            [
+              1,
+              109,
+              113
+            ],
+            [
+              0,
+              38,
+              38
+            ],
+            [
+              2,
+              113,
+              117
+            ],
+            [
+              0,
+              45,
+              45
+            ],
+            [
+              0,
+              44,
+              44
+            ],
+            [
+              1,
+              104,
+              104
+            ],
+            [
+              0,
+              52,
+              52
+            ],
+            [
+              0,
+              77,
+              77
+            ],
+            [
+              0,
+              48,
+              48
+            ],
+            [
+              0,
+              47,
+              47
+            ],
+            [
+              0,
+              46,
+              46
+            ],
+            [
+              1,
+              94,
+              94
+            ],
+            [
+              0,
+              54,
+              54
+            ],
+            [
+              1,
+              91,
+              91
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              98,
+              98
+            ],
+            [
+              0,
+              64,
+              64
+            ],
+            [
+              4,
+              143,
+              155
+            ],
+            [
+              0,
+              73,
+              73
+            ],
+            [
+              0,
+              3,
+              3
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              16,
+              16
+            ],
+            [
+              0,
+              31,
+              31
+            ],
+            [
+              0,
+              7,
+              7
+            ],
+            [
+              0,
+              66,
+              66
+            ],
+            [
+              0,
+              35,
+              35
+            ],
+            [
+              0,
+              53,
+              53
+            ],
+            [
+              1,
+              95,
+              95
+            ],
+            [
+              0,
+              43,
+              43
+            ],
+            [
+              0,
+              69,
+              69
+            ],
+            [
+              0,
+              26,
+              26
+            ],
+            [
+              0,
+              15,
+              15
+            ],
+            [
+              0,
+              18,
+              18
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 2.299997091293335,
+          "student_evidence_base_min": -2.142289400100708,
+          "student_evidence_base_max": 5.716909408569336,
+          "student_evidence_base_sd": 1.7905834913253784,
+          "student_evidence_selected_mean": 0.9654784202575684,
+          "student_evidence_selected_sd": 1.4964745044708252,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.583371162414551,
+          "teacher_evidence_selected_sd": 1.251428484916687,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 0.6914733052253723,
+          "reference_evidence_selected_sd": 0.43408647179603577,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.313673198223114,
+          "quality_selected_sd": 0.13227620720863342,
+          "target_binary_entropy_selected": 0.3016660809516907,
+          "target_gap_to_positive_selected": 0.1034427061676979,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 22.363313674926758,
+          "kd_weight": 0.1,
+          "weighted_kd_total": 0.29771931767463683,
+          "total_loss": 22.661033630371094,
+          "optimizer_updates": 56695,
+          "time_seconds": 45847.72835445404,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            6
+          ],
+          "cuda_pid_counts": {
+            "6": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "6": 7634
+          },
+          "peak_rss_mib": 28920
+        },
+        "seconds": 45849.00522971153,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.7730455672411458,
+        "AP75": 0.6421477409983494,
+        "mAP50_95": 0.5463684720507138,
+        "precision": 0.7787129583514844,
+        "recall": 0.7298865399139216,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 220.25,
+        "remaining_training_seconds_estimate": 220.25,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "R123": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56695,
+        "update_attempts": 56720,
+        "amp_skips": 25,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 45292.58724117279,
+        "last_kd": 0.16234277188777924
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired_random",
+        "seed": 123,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56696,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 26,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "selected_objects": 13694017,
+        "gradient_checks": [],
+        "kd_last": {
+          "arm": "paired_random",
+          "rgb_gt_count": 168,
+          "teacher_gt_count": 185,
+          "common_count": 168,
+          "valid_region_count": 166,
+          "reference_candidate_count": 162,
+          "base_count": 160,
+          "teacher_correct_base_count": 149,
+          "eligible_count": 124,
+          "selected_count": 62,
+          "normalizer": 160,
+          "nominal_dose": 0.3875,
+          "loss_unweighted": 0.3068598806858063,
+          "selected_object_ids": [
+            [
+              5,
+              160,
+              173
+            ],
+            [
+              5,
+              152,
+              181
+            ],
+            [
+              0,
+              6,
+              6
+            ],
+            [
+              0,
+              83,
+              83
+            ],
+            [
+              4,
+              140,
+              152
+            ],
+            [
+              4,
+              132,
+              144
+            ],
+            [
+              4,
+              135,
+              147
+            ],
+            [
+              0,
+              68,
+              68
+            ],
+            [
+              1,
+              110,
+              114
+            ],
+            [
+              4,
+              131,
+              143
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              4,
+              133,
+              145
+            ],
+            [
+              4,
+              137,
+              149
+            ],
+            [
+              5,
+              163,
+              176
+            ],
+            [
+              4,
+              121,
+              133
+            ],
+            [
+              0,
+              67,
+              67
+            ],
+            [
+              4,
+              136,
+              148
+            ],
+            [
+              4,
+              117,
+              129
+            ],
+            [
+              4,
+              118,
+              130
+            ],
+            [
+              5,
+              150,
+              162
+            ],
+            [
+              1,
+              108,
+              112
+            ],
+            [
+              0,
+              56,
+              56
+            ],
+            [
+              0,
+              47,
+              47
+            ],
+            [
+              0,
+              88,
+              88
+            ],
+            [
+              0,
+              82,
+              82
+            ],
+            [
+              0,
+              24,
+              24
+            ],
+            [
+              1,
+              91,
+              91
+            ],
+            [
+              0,
+              45,
+              45
+            ],
+            [
+              0,
+              42,
+              42
+            ],
+            [
+              0,
+              25,
+              25
+            ],
+            [
+              0,
+              61,
+              61
+            ],
+            [
+              0,
+              11,
+              11
+            ],
+            [
+              4,
+              130,
+              142
+            ],
+            [
+              5,
+              167,
+              179
+            ],
+            [
+              0,
+              41,
+              41
+            ],
+            [
+              0,
+              72,
+              72
+            ],
+            [
+              1,
+              92,
+              92
+            ],
+            [
+              0,
+              55,
+              55
+            ],
+            [
+              2,
+              112,
+              116
+            ],
+            [
+              0,
+              29,
+              29
+            ],
+            [
+              0,
+              38,
+              38
+            ],
+            [
+              5,
+              164,
+              177
+            ],
+            [
+              0,
+              12,
+              12
+            ],
+            [
+              5,
+              158,
+              171
+            ],
+            [
+              4,
+              141,
+              153
+            ],
+            [
+              1,
+              107,
+              107
+            ],
+            [
+              0,
+              31,
+              31
+            ],
+            [
+              5,
+              159,
+              172
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              5,
+              155,
+              166
+            ],
+            [
+              0,
+              77,
+              77
+            ],
+            [
+              0,
+              39,
+              39
+            ],
+            [
+              0,
+              73,
+              73
+            ],
+            [
+              0,
+              65,
+              65
+            ],
+            [
+              4,
+              143,
+              155
+            ],
+            [
+              2,
+              116,
+              120
+            ],
+            [
+              0,
+              4,
+              4
+            ],
+            [
+              0,
+              15,
+              15
+            ],
+            [
+              1,
+              93,
+              93
+            ],
+            [
+              5,
+              154,
+              165
+            ],
+            [
+              4,
+              138,
+              150
+            ],
+            [
+              1,
+              102,
+              102
+            ]
+          ],
+          "config": {
+            "input_size": 640,
+            "levels": [
+              0,
+              1
+            ],
+            "temperature": 2.0,
+            "background_scale": 2.0,
+            "minimum_foreground": 1,
+            "minimum_background": 4,
+            "match_iou": 0.5,
+            "reference_conf": 0.05,
+            "reference_iou": 0.1,
+            "teacher_conf": 0.25,
+            "teacher_iou": 0.5,
+            "rho": 0.5,
+            "target_clip": 8.0,
+            "smooth_l1_beta": 1.0
+          },
+          "student_evidence_base_mean": 2.2047245502471924,
+          "student_evidence_base_min": -1.5870792865753174,
+          "student_evidence_base_max": 5.200351238250732,
+          "student_evidence_base_sd": 1.6963568925857544,
+          "student_evidence_selected_mean": 2.425288438796997,
+          "student_evidence_selected_sd": 1.757429599761963,
+          "teacher_evidence_base_mean": 2.928856372833252,
+          "teacher_evidence_base_min": 0.21425235271453857,
+          "teacher_evidence_base_max": 7.449451923370361,
+          "teacher_evidence_base_sd": 1.3981119394302368,
+          "teacher_evidence_selected_mean": 2.9501614570617676,
+          "teacher_evidence_selected_sd": 1.2509291172027588,
+          "reference_evidence_base_mean": 1.9417961835861206,
+          "reference_evidence_base_min": -0.19884490966796875,
+          "reference_evidence_base_max": 6.44019889831543,
+          "reference_evidence_base_sd": 1.5272042751312256,
+          "reference_evidence_selected_mean": 2.137594699859619,
+          "reference_evidence_selected_sd": 1.4858624935150146,
+          "quality_base_mean": 0.1534833014011383,
+          "quality_base_min": 0.0,
+          "quality_base_max": 0.6100098490715027,
+          "quality_base_sd": 0.1644717901945114,
+          "quality_selected_mean": 0.1291082501411438,
+          "quality_selected_sd": 0.1552640199661255,
+          "target_binary_entropy_selected": 0.24668434262275696,
+          "target_gap_to_positive_selected": 0.07974483072757721,
+          "target_clipped_count": 0,
+          "batch": 112600,
+          "epoch": 199,
+          "native_total": 21.936676025390625,
+          "kd_weight": 0.1,
+          "weighted_kd_total": 0.18411592841148378,
+          "total_loss": 22.120792388916016,
+          "optimizer_updates": 56696,
+          "time_seconds": 45294.34484624863,
+          "student_files": [
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+            "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+          ]
+        },
+        "gpu_allocated_peak_mib": 5565.45556640625,
+        "gpu_reserved_peak_mib": 7100.0,
+        "resources": {
+          "gpu_ids": [
+            4
+          ],
+          "cuda_pid_counts": {
+            "4": 1
+          },
+          "per_gpu_peak_vram_mib": {
+            "4": 7634
+          },
+          "peak_rss_mib": 28856
+        },
+        "seconds": 45296.2142226696,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1/weights/last.pt",
+        "official_test_accessed": false,
+        "single_seed_exploratory": true
+      },
+      "evaluation": {
+        "AP50": 0.7694093121240413,
+        "AP75": 0.6374250867258423,
+        "mAP50_95": 0.5441936700091095,
+        "precision": 0.7883540828667716,
+        "recall": 0.7227335625816458,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "eval_receipt_exists": true,
+      "eta": {
+        "completed_epoch": 199,
+        "recent_median_epoch_seconds": 230.20000000000073,
+        "remaining_training_seconds_estimate": 230.20000000000073,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "S42": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "c_shuffled",
+        "epoch": 42,
+        "epochs": 200,
+        "optimizer_updates": 12121,
+        "update_attempts": 12130,
+        "amp_skips": 9,
+        "batches": 23415,
+        "selected_objects": 2845397,
+        "seconds": 38898.33051753044,
+        "last_kd": 0.21651379764080048
+      },
+      "completion": null,
+      "evaluation": null,
+      "eval_receipt_exists": false,
+      "eta": {
+        "completed_epoch": 41,
+        "recent_median_epoch_seconds": 935.2000000000007,
+        "remaining_training_seconds_estimate": 148696.8000000001,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    },
+    "M42": {
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1",
+      "exists": true,
+      "progress": {
+        "status": "running",
+        "arm": "c_same_modal",
+        "epoch": 28,
+        "epochs": 200,
+        "optimizer_updates": 8043,
+        "update_attempts": 8050,
+        "amp_skips": 7,
+        "batches": 15255,
+        "selected_objects": 1321497,
+        "seconds": 20577.088844776154,
+        "last_kd": 0.06598416715860367
+      },
+      "completion": null,
+      "evaluation": null,
+      "eval_receipt_exists": false,
+      "eta": {
+        "completed_epoch": 27,
+        "recent_median_epoch_seconds": 660.2999999999993,
+        "remaining_training_seconds_estimate": 114231.89999999988,
+        "assumption": "recent throughput unchanged; excludes independent evaluation and resource queue delay"
+      }
+    }
+  },
+  "gpus": "0, 24564, 20143, 3941, 0\n1, 24564, 19590, 4494, 48\n2, 24564, 1, 24082, 0\n3, 24564, 18134, 5950, 47\n4, 24564, 8046, 16038, 51\n5, 24564, 7754, 16330, 17\n6, 24564, 19766, 4318, 100\n7, 24564, 19851, 4233, 50\n",
+  "cuda_processes": "1070544, GPU-f084b507-45a9-1b42-4d6c-abd882060d40, 20132, /home/lijunwei/data/miniconda3/envs/gui/bin/python\n3111771, GPU-0e6b9fe0-31ff-f6ce-ddf0-652e388d529f, 19580, /home/lijunwei/data/miniconda3/envs/gui/bin/python\n2086675, GPU-495a9ab5-3280-e754-74a2-1b35c2e4bc9a, 18124, /home/lijunwei/data/miniconda3/envs/gui/bin/python\n2265745, GPU-66fe989e-920f-65c8-f838-b5e32bfaadae, 8020, /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\n4148148, GPU-167c0c6c-0998-a996-c352-4ae05e355878, 7730, /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python\n2177500, GPU-1d1bf3db-3d4e-3dba-3792-f29aa92e4e42, 19756, /home/fengshuwen/data/miniconda3/envs/qwen3/bin/python\n3111772, GPU-32b6862c-896e-9702-78a8-c31e0af68ffa, 19840, /home/lijunwei/data/miniconda3/envs/gui/bin/python\n",
+  "project_processes": {
+    "2228125": {
+      "ppid": 2265608,
+      "rss_kib": 22524,
+      "cmdline": "nvidia-smi --query-gpu=index,uuid --format=csv,noheader "
+    },
+    "2265509": {
+      "ppid": 1,
+      "rss_kib": 2472,
+      "cmdline": "SCREEN -L -Logfile /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_screen.log -dmS oev1content_shuffled_42 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py --manifest /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_manifest.json --output /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_dispatch_a1 "
+    },
+    "2265510": {
+      "ppid": 2265509,
+      "rss_kib": 30832,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py --manifest /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_manifest.json --output /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_dispatch_a1 "
+    },
+    "2265577": {
+      "ppid": 1,
+      "rss_kib": 2428,
+      "cmdline": "SCREEN -L -Logfile /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_screen.log -dmS oev1content_same_modal_42 /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py --manifest /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_manifest.json --output /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_dispatch_a1 "
+    },
+    "2265578": {
+      "ppid": 2265577,
+      "rss_kib": 29544,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py --manifest /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_manifest.json --output /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_dispatch_a1 "
+    },
+    "2265608": {
+      "ppid": 2265510,
+      "rss_kib": 21600,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id oev1_content_c_shuffled_s42_a1 --kind train --expected-vram-mib 8300 --expected-rss-mib 32768 --free-safety-mib 2048 --candidate-gpu 4 --candidate-gpu 5 --candidate-gpu 6 --candidate-gpu 2 --formal-train --profiled-second-train -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2265745": {
+      "ppid": 2265608,
+      "rss_kib": 10293916,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267111": {
+      "ppid": 2265745,
+      "rss_kib": 2008092,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267115": {
+      "ppid": 2265745,
+      "rss_kib": 2007212,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267125": {
+      "ppid": 2265745,
+      "rss_kib": 2002348,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267131": {
+      "ppid": 2265745,
+      "rss_kib": 2008212,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267180": {
+      "ppid": 2265745,
+      "rss_kib": 1562708,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267212": {
+      "ppid": 2265745,
+      "rss_kib": 1562764,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267218": {
+      "ppid": 2265745,
+      "rss_kib": 1562320,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267223": {
+      "ppid": 2265745,
+      "rss_kib": 1563004,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267228": {
+      "ppid": 2265745,
+      "rss_kib": 1562744,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267232": {
+      "ppid": 2265745,
+      "rss_kib": 1562888,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267236": {
+      "ppid": 2265745,
+      "rss_kib": 1563492,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "2267240": {
+      "ppid": 2265745,
+      "rss_kib": 1563424,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_shuffled_s42.yaml --arm c_shuffled --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1 "
+    },
+    "4148001": {
+      "ppid": 2265578,
+      "rss_kib": 21188,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py run --job-id oev1_content_c_same_modal_s42_a1 --kind train --expected-vram-mib 8300 --expected-rss-mib 32768 --free-safety-mib 2048 --candidate-gpu 2 --candidate-gpu 4 --candidate-gpu 5 --candidate-gpu 6 --candidate-gpu 3 --candidate-gpu 1 --candidate-gpu 7 --candidate-gpu 0 --formal-train --profiled-second-train -- /mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4148148": {
+      "ppid": 4148001,
+      "rss_kib": 9191652,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149029": {
+      "ppid": 4148148,
+      "rss_kib": 1872744,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149033": {
+      "ppid": 4148148,
+      "rss_kib": 1874184,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149038": {
+      "ppid": 4148148,
+      "rss_kib": 1893456,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149042": {
+      "ppid": 4148148,
+      "rss_kib": 1835724,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149054": {
+      "ppid": 4148148,
+      "rss_kib": 1537160,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149059": {
+      "ppid": 4148148,
+      "rss_kib": 1536036,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149063": {
+      "ppid": 4148148,
+      "rss_kib": 1536616,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149068": {
+      "ppid": 4148148,
+      "rss_kib": 1536356,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149073": {
+      "ppid": 4148148,
+      "rss_kib": 1536696,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149077": {
+      "ppid": 4148148,
+      "rss_kib": 1536928,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149081": {
+      "ppid": 4148148,
+      "rss_kib": 1536672,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    },
+    "4149085": {
+      "ppid": 4148148,
+      "rss_kib": 1536936,
+      "cmdline": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/train_task_conditional.py --config /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/c_controls_full_v1/c_same_modal_s42.yaml --arm c_same_modal --seed 42 --output /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1 "
+    }
+  },
+  "project_rss_kib_readonly": 59914872,
+  "rss_scope": "project path cmdline roots plus all descendants; shared pages double-counted as RSS; raw lease snapshot retained",
+  "remote_mutations": false
+}

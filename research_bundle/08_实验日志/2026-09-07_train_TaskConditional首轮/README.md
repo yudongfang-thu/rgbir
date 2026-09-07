@@ -2,6 +2,8 @@
 
 > **03:22 阶段结论：独立模块已部署94，N/C与两种C内容对照均完成24次成功更新，新旧C/N精确等价通过；D1/D2发现定位机会，但已接纳几何覆盖内有效对象为0，CL42/CGT42不准入。按预设分支继续C归因：C-shuffled42正式训练已启动，C-same-modal42等待资源。**
 
+已推送既有GitHub分支，提交7bfaf2f；见 [发布回执](PUBLICATION_RECEIPT.md) 与 [外部复核入口](https://github.com/yudongfang-thu/rgbir/blob/research/full-evidence-20260906/TASK_CONDITIONAL_STATUS_20260907.md)。
+
 ## 目的
 保持 OEv1 C 不变，检验条件定位教师内容是否同时超过 C 与同掩码 GT 重监督。正式冻结见 EXPERIMENT_PLAN.md。
 

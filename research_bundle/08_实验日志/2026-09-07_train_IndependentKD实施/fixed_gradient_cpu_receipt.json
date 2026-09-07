@@ -1,0 +1,17 @@
+{
+  "status": "CPU_TESTS_PASSED_NOT_GPU_ACCEPTANCE",
+  "date": "2026-09-07",
+  "command": "D:/Anaconda/envs/KGJ_proj/python.exe -m unittest test_gradient_observation test_classification_logit -v",
+  "tests": 37,
+  "new_gradient_tests": 10,
+  "classification_regression_tests": 27,
+  "failures": 0,
+  "errors": 0,
+  "fixed_epochs": [0, 10, 50, 100, 199],
+  "epoch_batch": "first_real_training_batch",
+  "arms": ["C1", "C1_y", "L1", "L_GT"],
+  "gpu_run": false,
+  "ssh_used": false,
+  "old_execution_bindings_reusable_without_recheck": false,
+  "log": "fixed_gradient_cpu_tests_attempt1.log"
+}

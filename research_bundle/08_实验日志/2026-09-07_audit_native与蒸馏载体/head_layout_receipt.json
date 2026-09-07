@@ -1,0 +1,45 @@
+{
+  "status": "read_only_cpu",
+  "heads": [
+    {
+      "role": "teacher",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "nc": 5,
+      "reg_max": 16,
+      "no": 69,
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "names": {
+        "0": "car",
+        "1": "freight car",
+        "2": "truck",
+        "3": "bus",
+        "4": "van"
+      },
+      "device": "cpu"
+    },
+    {
+      "role": "reference",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+      "nc": 5,
+      "reg_max": 16,
+      "no": 69,
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "names": {
+        "0": "car",
+        "1": "freight car",
+        "2": "truck",
+        "3": "bus",
+        "4": "van"
+      },
+      "device": "cpu"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "release": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115"
+  },
+  "stages": [
+    {
+      "name": "operator_tests",
+      "exit_code": 0,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "-p",
+        "test_*.py"
+      ],
+      "log": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/operator_tests_gpu5.log"
+    },
+    {
+      "name": "reference_package",
+      "exit_code": 0,
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/reference_package"
+      ],
+      "log": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/reference_package_gpu5.log"
+    }
+  ],
+  "time": 1788764378.9076445
+}

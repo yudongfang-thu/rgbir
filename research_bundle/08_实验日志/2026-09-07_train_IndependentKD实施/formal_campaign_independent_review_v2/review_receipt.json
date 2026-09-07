@@ -1,0 +1,43 @@
+{
+  "schema": "rgbir-scoped-code-review-v1",
+  "status": "ACCEPTED",
+  "reviewer": "/root/review_c1_spec",
+  "author": "/root/review_matrix_spec",
+  "date": "2026-09-07",
+  "scope": "Persistent C1 campaign control flow plus measured peak resource margins; code scope only",
+  "blocking_issues_remaining": 0,
+  "source_files": [
+    {
+      "relative": "formal_campaign.py",
+      "accepted_copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\formal_campaign_independent_review_v2\\formal_campaign.py"
+    },
+    {
+      "relative": "test_formal_campaign.py",
+      "accepted_copy": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\formal_campaign_independent_review_v2\\test_formal_campaign.py"
+    }
+  ],
+  "cpu_tests_passed": 15,
+  "cpu_tests_failed": 0,
+  "cpu_test_log": "cpu_tests.log",
+  "seed_order": [
+    42,
+    0,
+    123
+  ],
+  "seed_order_event": "actual dispatcher training LAUNCHED",
+  "global_guard_retained": true,
+  "measured_reservation_policy": {
+    "vram_margin_mib": 256,
+    "rss_margin_mib": 4096,
+    "rss_minimum_mib": 8192,
+    "rounding": "ceil each actual measured peak in MiB"
+  },
+  "profile_file_and_execution_binding_retained": true,
+  "technical_pause_scope": "new training admissions only; already admitted/running jobs and their evaluation duties remain",
+  "ap_early_stop": false,
+  "gpu_execution_accepted": false,
+  "campaign_prepared_or_launched_by_review": false,
+  "formal_training_authorized_by_receipt": false,
+  "review_document": "REVIEW.md",
+  "previous_review_preserved": "formal_campaign_independent_review_v1"
+}

@@ -1,7 +1,9 @@
-# 最新结果入口（2026-09-07）
+# 最新结果与执行状态
 
-当前完整状态、严格配对数字、新D1/D2、工程验收和在跑任务见 [Task-Conditional阶段证据](TASK_CONDITIONAL_STATUS_20260907.md)。
+当前请读 [Independent KD 实施证据](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/README.md) 与 [旧九份端点收口](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/OLD_RESULTS_1407.md)。
 
-C42−N42仅+0.144554pp mAP、−0.327243pp AP75；旧三seed仍4/9独立端点。CL/CGT尚未训练：已接纳几何覆盖下L对象为0。C-shuffled42正式运行，C-same-modal42按240GiB内存预约阈值排队。没有新增正式AP，也没有宣布整个冲刺完成。
+N/C0/random 三 seed 完整配对：C0−N **+0.266655±0.144373 pp**，C0−random **+0.174939±0.038853 pp**。C0 汇总 recall 相对 N 三 seed 同降，需固定阈值对象诊断，不声称负迁移已消除。
 
-[上一版2026-09-06 21:46状态](LATEST_RESULTS_20260906_2146.md)保留为历史快照。
+C1三seed已正式启动，λ=.09227393550836771；L1因几何证据不足尚未准入。不得将旧C0数字或两批资源探针当作新方法结果。实际状态见[正式启动验收](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/FORMAL_LAUNCH_ACCEPTANCE_1535.md)。
+
+[旧 Task-Conditional 状态](TASK_CONDITIONAL_STATUS_20260907.md) 是历史快照，已被当前独立分支排程替代。

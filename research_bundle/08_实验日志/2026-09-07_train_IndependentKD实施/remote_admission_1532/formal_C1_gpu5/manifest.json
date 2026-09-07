@@ -1,0 +1,219 @@
+{
+  "schema": "rgbir-persistent-c1-campaign-v1",
+  "release": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+  "repo": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction",
+  "python": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-otd-r0/bin/python3.10",
+  "worker_script": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_campaign_gpu5.py",
+  "seed_order": [
+    42,
+    0,
+    123
+  ],
+  "seeds": [
+    {
+      "seed": 42,
+      "screen": "ikdv2_C1_42",
+      "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed42",
+      "train": {
+        "queue_owner": "independent_v2",
+        "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+        "id": "ikdv2_C1_42_train_a1",
+        "kind": "train",
+        "stage": "train",
+        "formal": true,
+        "profile_key": "drone-C1-train-B32-W4",
+        "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/companion_queue_gpu5/C1_companion_canary_a1_resource_profile.json",
+        "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed42/completion_receipt.json",
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-otd-r0/bin/python3.10",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/train_independent.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+          "--output",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed42",
+          "--arm",
+          "C1",
+          "--source",
+          "paired",
+          "--seed",
+          "42"
+        ],
+        "vram_mib": 8558,
+        "rss_mib": 32840
+      },
+      "evaluation": {
+        "queue_owner": "independent_v2",
+        "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+        "id": "ikdv2_C1_42_eval_a1",
+        "kind": "eval",
+        "stage": "evaluation",
+        "formal": false,
+        "profile_key": "drone-eval640-b32-w4",
+        "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/admission_queue_attempt5/evaluator_profile_a2_resource_profile.json",
+        "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed42/evaluation_val.json",
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-otd-r0/bin/python3.10",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluate_independent.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+          "--run",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed42",
+          "--attempt",
+          "1"
+        ],
+        "vram_mib": 1626,
+        "rss_mib": 10356
+      }
+    },
+    {
+      "seed": 0,
+      "screen": "ikdv2_C1_0",
+      "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s0.yaml",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed0",
+      "train": {
+        "queue_owner": "independent_v2",
+        "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s0.yaml",
+        "id": "ikdv2_C1_0_train_a1",
+        "kind": "train",
+        "stage": "train",
+        "formal": true,
+        "profile_key": "drone-C1-train-B32-W4",
+        "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/companion_queue_gpu5/C1_companion_canary_a1_resource_profile.json",
+        "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed0/completion_receipt.json",
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-otd-r0/bin/python3.10",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/train_independent.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s0.yaml",
+          "--output",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed0",
+          "--arm",
+          "C1",
+          "--source",
+          "paired",
+          "--seed",
+          "0"
+        ],
+        "vram_mib": 8558,
+        "rss_mib": 32840
+      },
+      "evaluation": {
+        "queue_owner": "independent_v2",
+        "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s0.yaml",
+        "id": "ikdv2_C1_0_eval_a1",
+        "kind": "eval",
+        "stage": "evaluation",
+        "formal": false,
+        "profile_key": "drone-eval640-b32-w4",
+        "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/admission_queue_attempt5/evaluator_profile_a2_resource_profile.json",
+        "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed0/evaluation_val.json",
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-otd-r0/bin/python3.10",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluate_independent.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s0.yaml",
+          "--run",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed0",
+          "--attempt",
+          "1"
+        ],
+        "vram_mib": 1626,
+        "rss_mib": 10356
+      }
+    },
+    {
+      "seed": 123,
+      "screen": "ikdv2_C1_123",
+      "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s123.yaml",
+      "run": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed123",
+      "train": {
+        "queue_owner": "independent_v2",
+        "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s123.yaml",
+        "id": "ikdv2_C1_123_train_a1",
+        "kind": "train",
+        "stage": "train",
+        "formal": true,
+        "profile_key": "drone-C1-train-B32-W4",
+        "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/companion_queue_gpu5/C1_companion_canary_a1_resource_profile.json",
+        "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed123/completion_receipt.json",
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-otd-r0/bin/python3.10",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/train_independent.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s123.yaml",
+          "--output",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed123",
+          "--arm",
+          "C1",
+          "--source",
+          "paired",
+          "--seed",
+          "123"
+        ],
+        "vram_mib": 8558,
+        "rss_mib": 32840
+      },
+      "evaluation": {
+        "queue_owner": "independent_v2",
+        "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s123.yaml",
+        "id": "ikdv2_C1_123_eval_a1",
+        "kind": "eval",
+        "stage": "evaluation",
+        "formal": false,
+        "profile_key": "drone-eval640-b32-w4",
+        "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/admission_queue_attempt5/evaluator_profile_a2_resource_profile.json",
+        "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed123/evaluation_val.json",
+        "command": [
+          "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-otd-r0/bin/python3.10",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluate_independent.py",
+          "--config",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s123.yaml",
+          "--run",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/runs/C1_seed123",
+          "--attempt",
+          "1"
+        ],
+        "vram_mib": 1626,
+        "rss_mib": 10356
+      }
+    }
+  ],
+  "input_snapshots": [
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_campaign_gpu5.py",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/frozen_inputs/000_formal_campaign_gpu5.py"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s0.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/frozen_inputs/001_C1_s0.yaml"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s123.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/frozen_inputs/002_C1_s123.yaml"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_configs_gpu5/C1_s42.yaml",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/frozen_inputs/003_C1_s42.yaml"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/companion_queue_gpu5/C1_companion_canary_a1_resource_profile.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/frozen_inputs/004_C1_companion_canary_a1_resource_profile.json"
+    },
+    {
+      "original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/admission_queue_attempt5/evaluator_profile_a2_resource_profile.json",
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5/frozen_inputs/005_evaluator_profile_a2_resource_profile.json"
+    }
+  ],
+  "status": "PREPARED_NOT_LAUNCHED",
+  "no_ap_early_stop": true,
+  "measured_reservation_policy": {
+    "train_vram_margin_mib": 2048,
+    "evaluation_vram_margin_mib": 256,
+    "rss_margin_mib": 4096,
+    "rss_minimum_mib": 8192,
+    "rounding": "ceil each actual measured peak in MiB",
+    "training_margin_reason": "Current C1 canary measured peak plus 2048 MiB for native TAL batch GT-density variation; no historical C0 peak substitution"
+  },
+  "evaluation_priority": "at each atomic resource admission; running evaluation does not block later training"
+}

@@ -1,0 +1,59 @@
+{
+  "scope": "read-only CPU roster/D2 intersection; no geometry approval or model execution",
+  "key": "dataset, stem; reconciles raw/processed path aliases only for this diagnostic",
+  "natural_stream_approximation": "64*(1-(1-M/N)^32); independent uniform image approximation, not actual fixed-loader result",
+  "datasets": {
+    "dronevehicle": {
+      "assumed_train_image_count_from_existing_recipe": 17990,
+      "roster_rows": 258,
+      "roster_unique_stems": 238,
+      "d2_base_images": 1859,
+      "d2_selected_images": 286,
+      "roster_with_existing_d2_base": 160,
+      "roster_with_existing_d2_selected": 20,
+      "roster_selected_stems": [
+        "00853",
+        "05317",
+        "09832",
+        "09990",
+        "10061",
+        "10198",
+        "10389",
+        "10410",
+        "13645",
+        "14076",
+        "14642",
+        "16171",
+        "16887",
+        "17238",
+        "17322",
+        "17328",
+        "17797",
+        "17982",
+        "17989",
+        "17990"
+      ],
+      "nonoverlap_is_not_a_negative_geometry_or_selection_result": true,
+      "expected_hit_batches_if_every_roster_image_effective": 22.20772604932658,
+      "expected_hit_batches_if_only_known_selected_roster_images_effective": 2.238019430036573
+    },
+    "llvip": {
+      "assumed_train_image_count_from_existing_recipe": 9619,
+      "roster_rows": 42,
+      "roster_unique_stems": 42,
+      "d2_base_images": 2045,
+      "d2_selected_images": 184,
+      "roster_with_existing_d2_base": 31,
+      "roster_with_existing_d2_selected": 4,
+      "roster_selected_stems": [
+        "091259",
+        "100001",
+        "130001",
+        "130500"
+      ],
+      "nonoverlap_is_not_a_negative_geometry_or_selection_result": true,
+      "expected_hit_batches_if_every_roster_image_effective": 8.362708483013002,
+      "expected_hit_batches_if_only_known_selected_roster_images_effective": 0.8461811780435013
+    }
+  }
+}

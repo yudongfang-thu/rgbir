@@ -1,0 +1,111 @@
+{
+  "schema": "rgbir-independent-resource-profile-v1",
+  "status": "COMPLETED",
+  "measurement_valid": true,
+  "stage": "canary",
+  "profile_key": "drone-C1-train-B32-W4",
+  "profile_identity": null,
+  "execution_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/C1_companion_canary_attempt1/execution_binding_canary/binding.json",
+  "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/C1_companion_canary_attempt1/completion_receipt.json",
+  "resources": {
+    "per_gpu_peak_vram_mib": {
+      "5": 6510
+    },
+    "peak_rss_mib": 28744,
+    "cuda_pid_counts": {
+      "5": 1
+    }
+  },
+  "evaluation_profile_binding": null,
+  "companion_measurement": {
+    "requested": true,
+    "sampled_workload_active_intervals": 28,
+    "all_sampled_active_intervals_had_companion": true,
+    "verified": true
+  },
+  "technical_stage_status": "canary_completed",
+  "resource_measurement_only": false,
+  "minimum_free_mib": 9802,
+  "admission": {
+    "active": [
+      4,
+      5
+    ],
+    "empty": [
+      2,
+      6
+    ],
+    "reasons": [
+      {
+        "gpu": 0,
+        "reasons": [
+          "companion canary requires exactly one existing project CUDA task",
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 1,
+        "reasons": [
+          "companion canary requires exactly one existing project CUDA task",
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 2,
+        "reasons": [
+          "companion canary requires exactly one existing project CUDA task"
+        ]
+      },
+      {
+        "gpu": 3,
+        "reasons": [
+          "companion canary requires exactly one existing project CUDA task",
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      },
+      {
+        "gpu": 6,
+        "reasons": [
+          "companion canary requires exactly one existing project CUDA task"
+        ]
+      },
+      {
+        "gpu": 7,
+        "reasons": [
+          "companion canary requires exactly one existing project CUDA task",
+          "whole-GPU free memory lacks peak plus 2 GiB margin"
+        ]
+      }
+    ],
+    "candidate_gpus": [
+      4,
+      5
+    ],
+    "atomic_shared_lock": true,
+    "selected_gpus": [
+      5
+    ],
+    "active_gpus_after": [
+      4,
+      5
+    ],
+    "fully_empty_gpus_after": [
+      2,
+      6
+    ],
+    "four_gpu_exception": false,
+    "exception_basis": "AGENTS.md section 2.1; snapshot under shared guard lock",
+    "installed_guard_max_gpus": 4
+  },
+  "reservation": {
+    "bootstrap": false,
+    "measured": true,
+    "vram_mib": 8558,
+    "rss_mib": 32795,
+    "profiled_second_train": false,
+    "prerequisite": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/canary_queue_gpu5/C1_canary_a1_resource_profile.json"
+  },
+  "lease_id": "C1_companion_canary_a1-4c40978dacac",
+  "exit_code": 0,
+  "time": 1788765810.7779894
+}

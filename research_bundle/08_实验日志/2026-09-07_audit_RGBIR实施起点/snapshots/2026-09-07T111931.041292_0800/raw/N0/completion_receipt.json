@@ -1,0 +1,422 @@
+{
+  "status": "training_completed",
+  "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+  "arm": "weight0",
+  "seed": 0,
+  "epochs_configured": 200,
+  "last_epoch": 200,
+  "optimizer_updates": 56697,
+  "optimizer_update_attempts": 56722,
+  "amp_skipped_updates": 25,
+  "ema_updates": 56722,
+  "batches": 112600,
+  "selected_objects": 13694017,
+  "gradient_checks": [],
+  "kd_last": {
+    "arm": "weight0",
+    "rgb_gt_count": 168,
+    "teacher_gt_count": 185,
+    "common_count": 168,
+    "valid_region_count": 166,
+    "reference_candidate_count": 162,
+    "base_count": 160,
+    "teacher_correct_base_count": 149,
+    "eligible_count": 124,
+    "selected_count": 62,
+    "normalizer": 160,
+    "nominal_dose": 0.3875,
+    "loss_unweighted": 0.6630139946937561,
+    "selected_object_ids": [
+      [
+        0,
+        59,
+        59
+      ],
+      [
+        1,
+        111,
+        115
+      ],
+      [
+        0,
+        87,
+        87
+      ],
+      [
+        0,
+        60,
+        60
+      ],
+      [
+        0,
+        55,
+        55
+      ],
+      [
+        0,
+        56,
+        56
+      ],
+      [
+        0,
+        37,
+        37
+      ],
+      [
+        0,
+        40,
+        40
+      ],
+      [
+        5,
+        150,
+        162
+      ],
+      [
+        0,
+        61,
+        61
+      ],
+      [
+        0,
+        39,
+        39
+      ],
+      [
+        0,
+        74,
+        74
+      ],
+      [
+        0,
+        83,
+        83
+      ],
+      [
+        0,
+        51,
+        51
+      ],
+      [
+        0,
+        76,
+        76
+      ],
+      [
+        0,
+        41,
+        41
+      ],
+      [
+        0,
+        57,
+        57
+      ],
+      [
+        0,
+        62,
+        62
+      ],
+      [
+        0,
+        58,
+        58
+      ],
+      [
+        0,
+        20,
+        20
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        13,
+        13
+      ],
+      [
+        1,
+        107,
+        107
+      ],
+      [
+        1,
+        105,
+        105
+      ],
+      [
+        0,
+        71,
+        71
+      ],
+      [
+        0,
+        49,
+        49
+      ],
+      [
+        0,
+        42,
+        42
+      ],
+      [
+        0,
+        84,
+        84
+      ],
+      [
+        1,
+        109,
+        113
+      ],
+      [
+        0,
+        38,
+        38
+      ],
+      [
+        2,
+        113,
+        117
+      ],
+      [
+        0,
+        45,
+        45
+      ],
+      [
+        0,
+        44,
+        44
+      ],
+      [
+        1,
+        104,
+        104
+      ],
+      [
+        0,
+        52,
+        52
+      ],
+      [
+        0,
+        77,
+        77
+      ],
+      [
+        0,
+        48,
+        48
+      ],
+      [
+        0,
+        47,
+        47
+      ],
+      [
+        0,
+        46,
+        46
+      ],
+      [
+        1,
+        94,
+        94
+      ],
+      [
+        0,
+        54,
+        54
+      ],
+      [
+        1,
+        91,
+        91
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        98,
+        98
+      ],
+      [
+        0,
+        64,
+        64
+      ],
+      [
+        4,
+        143,
+        155
+      ],
+      [
+        0,
+        73,
+        73
+      ],
+      [
+        0,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        4
+      ],
+      [
+        0,
+        16,
+        16
+      ],
+      [
+        0,
+        31,
+        31
+      ],
+      [
+        0,
+        7,
+        7
+      ],
+      [
+        0,
+        66,
+        66
+      ],
+      [
+        0,
+        35,
+        35
+      ],
+      [
+        0,
+        53,
+        53
+      ],
+      [
+        1,
+        95,
+        95
+      ],
+      [
+        0,
+        43,
+        43
+      ],
+      [
+        0,
+        69,
+        69
+      ],
+      [
+        0,
+        26,
+        26
+      ],
+      [
+        0,
+        15,
+        15
+      ],
+      [
+        0,
+        18,
+        18
+      ]
+    ],
+    "config": {
+      "input_size": 640,
+      "levels": [
+        0,
+        1
+      ],
+      "temperature": 2.0,
+      "background_scale": 2.0,
+      "minimum_foreground": 1,
+      "minimum_background": 4,
+      "match_iou": 0.5,
+      "reference_conf": 0.05,
+      "reference_iou": 0.1,
+      "teacher_conf": 0.25,
+      "teacher_iou": 0.5,
+      "rho": 0.5,
+      "target_clip": 8.0,
+      "smooth_l1_beta": 1.0
+    },
+    "student_evidence_base_mean": 1.9906641244888306,
+    "student_evidence_base_min": -2.0344133377075195,
+    "student_evidence_base_max": 7.035595893859863,
+    "student_evidence_base_sd": 1.9564036130905151,
+    "student_evidence_selected_mean": 0.3899397552013397,
+    "student_evidence_selected_sd": 0.9167706370353699,
+    "teacher_evidence_base_mean": 2.928856372833252,
+    "teacher_evidence_base_min": 0.21425235271453857,
+    "teacher_evidence_base_max": 7.449451923370361,
+    "teacher_evidence_base_sd": 1.3981119394302368,
+    "teacher_evidence_selected_mean": 2.583371162414551,
+    "teacher_evidence_selected_sd": 1.251428484916687,
+    "reference_evidence_base_mean": 1.9417961835861206,
+    "reference_evidence_base_min": -0.19884490966796875,
+    "reference_evidence_base_max": 6.44019889831543,
+    "reference_evidence_base_sd": 1.5272042751312256,
+    "reference_evidence_selected_mean": 0.6914733052253723,
+    "reference_evidence_selected_sd": 0.43408647179603577,
+    "quality_base_mean": 0.1534833014011383,
+    "quality_base_min": 0.0,
+    "quality_base_max": 0.6100098490715027,
+    "quality_base_sd": 0.1644717901945114,
+    "quality_selected_mean": 0.313673198223114,
+    "quality_selected_sd": 0.13227620720863342,
+    "target_binary_entropy_selected": 0.3016660809516907,
+    "target_gap_to_positive_selected": 0.1034427061676979,
+    "target_clipped_count": 0,
+    "batch": 112600,
+    "epoch": 199,
+    "native_total": 22.149335861206055,
+    "kd_weight": 0.0,
+    "weighted_kd_total": 0.0,
+    "total_loss": 22.149335861206055,
+    "optimizer_updates": 56697,
+    "time_seconds": 43623.279109716415,
+    "student_files": [
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/14775.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12289.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10624.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/10754.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/12019.jpg",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/images/train/02310.jpg"
+    ]
+  },
+  "gpu_allocated_peak_mib": 5565.45556640625,
+  "gpu_reserved_peak_mib": 7100.0,
+  "resources": {
+    "gpu_ids": [
+      5
+    ],
+    "cuda_pid_counts": {
+      "5": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "5": 7634
+    },
+    "peak_rss_mib": 28870
+  },
+  "seconds": 43625.271203279495,
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+  "official_test_accessed": false,
+  "single_seed_exploratory": true
+}

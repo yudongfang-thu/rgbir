@@ -1,0 +1,28 @@
+{
+  "schema": "rgbir-scoped-code-review-v1",
+  "status": "ACCEPTED",
+  "reviewer": "/root/review_c1_spec",
+  "date": "2026-09-07",
+  "scope": "C1 formal admission chain and stage materialization; code scope only",
+  "blocking_issues_remaining": 0,
+  "source_files": [
+    {"relative": "admission.py", "accepted_copy": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/c1_formal_admission_code_review_v1/admission.py"},
+    {"relative": "evidence_bindings.py", "accepted_copy": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/c1_formal_admission_code_review_v1/evidence_bindings.py"},
+    {"relative": "protocol.py", "accepted_copy": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/c1_formal_admission_code_review_v1/protocol.py"},
+    {"relative": "train_independent.py", "accepted_copy": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/c1_formal_admission_code_review_v1/train_independent.py"}
+  ],
+  "orchestration_sources": [
+    {"original": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/prepare_c1_stage.py", "accepted_copy": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/c1_formal_admission_code_review_v1/prepare_c1_stage.py"}
+  ],
+  "authorship_disclosure": "Primary reviewer authored only the newly authorized validate_cpu_preflight helper in LOG; NEW admission and training files were not modified by this task.",
+  "cpu_helper_independent_reviewer": "/root/review_matrix_spec",
+  "cpu_helper_independent_review": "Same-release absolute path, pinned versions, exactly two successful named stages, command pointing to release, and actual log existence checked; no substantive blocker in the authorized narrow scope.",
+  "cpu_fixture_checks_passed": 7,
+  "cpu_fixture_log": "cpu_preflight_fixture.log",
+  "actual_cpu_evidence_policy": "Use final same-release pinned runs and logs; historical summary-only cpu_gpu receipts cannot independently transfer across releases.",
+  "gpu_execution_accepted": false,
+  "formal_training_authorized_by_this_receipt": false,
+  "whole_release_review": false,
+  "pending_execution": ["six accepted N/C0 compatibility receipts", "64 natural train-batch C1 calibration", "C1 canary with at least 24 successful updates", "final same-release CPU preflight evidence"],
+  "review_document": "E:/SHARE/光sar/08_实验日志/2026-09-07_train_IndependentKD实施/C1_FORMAL_ADMISSION_CODE_REVIEW.md"
+}

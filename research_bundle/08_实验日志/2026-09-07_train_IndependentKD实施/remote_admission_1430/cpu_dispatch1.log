@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py", line 803, in <module>
+    raise SystemExit(main())
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py", line 724, in main
+    lease = guard.acquire(
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py", line 417, in acquire
+    request.validate()
+  File "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/tools/project_resource_guard.py", line 79, in validate
+    raise ResourceGuardError("CPU-only leases require no GPU candidates, CUDA processes, or VRAM")
+__main__.ResourceGuardError: CPU-only leases require no GPU candidates, CUDA processes, or VRAM

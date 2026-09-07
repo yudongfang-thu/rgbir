@@ -1,0 +1,30 @@
+test_analytic_temperature_and_kl_direction (__main__.ClassificationTests) ... ok
+test_base_includes_teacher_rejected_object (__main__.ClassificationTests) ... ok
+test_binary_kl_equal_zero_and_teacher_detached (__main__.ClassificationTests) ... ok
+test_c0_loss_gradient_and_complete_stats_exact (__main__.ClassificationTests) ... ok
+test_cache_rejects_another_batch_and_mutated_source (__main__.ClassificationTests) ... ok
+test_deleting_non_target_can_increase_shared_gradient_norm (__main__.ClassificationTests) ... ok
+test_exact_quality_tie_keeps_original_gt_order (__main__.ClassificationTests) ... ok
+test_independent_teacher_regions_and_background_all_gt (__main__.ClassificationTests) ... ok
+test_invalid_and_empty_pool_regions (__main__.ClassificationTests) ... ok
+test_invalid_scale_is_ignored_in_gradient_and_normalization (__main__.ClassificationTests) ... ok
+test_matches_compact_base_and_selected_mapping (__main__.ClassificationTests) ... ok
+test_no_matched_object_and_zero_selected_attach_score_gradient (__main__.ClassificationTests) ... ok
+test_nonzero_c1_and_components_json_serializable (__main__.ClassificationTests) ... ok
+test_one_valid_level_preserves_original_selection (__main__.ClassificationTests) ... ok
+test_pool_shift_invariance_and_both_region_gradients (__main__.ClassificationTests) ... ok
+test_preteacher_denominator (__main__.ClassificationTests) ... ok
+test_raw_gt_channel_pool_matches_legacy_per_scale (__main__.ClassificationTests) ... ok
+test_reject_bad_shape_label_mask_and_nonfinite (__main__.ClassificationTests) ... ok
+test_scale_divergence_precedes_scale_average (__main__.ClassificationTests) ... ok
+test_single_class_c1_is_c1_y (__main__.ClassificationTests) ... ok
+test_small_actual_batch_does_not_scale_inside_kernel (__main__.ClassificationTests) ... ok
+test_student_changes_cannot_change_selection (__main__.ClassificationTests) ... ok
+test_target_coefficient_offtarget_average_not_class_sum (__main__.ClassificationTests) ... ok
+test_teacher_clip_before_temperature_student_not_clipped (__main__.ClassificationTests) ... ok
+test_y_only_offtarget_teacher_intervention (__main__.ClassificationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.162s
+
+OK

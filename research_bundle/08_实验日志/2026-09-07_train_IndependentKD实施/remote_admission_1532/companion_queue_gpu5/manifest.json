@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "id": "C1_companion_canary_a1",
+      "kind": "other",
+      "stage": "canary",
+      "formal": false,
+      "require_project_companion": true,
+      "requires_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/canary_queue_gpu5/C1_canary_a1_resource_profile.json",
+      "profile_key": "drone-C1-train-B32-W4",
+      "vram_mib": 8558,
+      "rss_mib": 32795,
+      "config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/calibrated_canary_configs_gpu5/C1.yaml",
+      "result_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/C1_companion_canary_attempt1/completion_receipt.json",
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/train_independent.py",
+        "--config",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/calibrated_canary_configs_gpu5/C1.yaml",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/C1_companion_canary_attempt1",
+        "--arm",
+        "C1",
+        "--source",
+        "paired",
+        "--seed",
+        "42",
+        "--max-steps",
+        "24"
+      ]
+    }
+  ],
+  "reservation_basis": "Actual C1 single-canary NVML peak +2048MiB for batch-dependent native assignment growth; actual process-tree RSS +4096MiB, min8192"
+}

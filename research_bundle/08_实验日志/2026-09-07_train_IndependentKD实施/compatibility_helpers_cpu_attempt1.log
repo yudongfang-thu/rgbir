@@ -1,0 +1,65 @@
+test_clone_and_tree_scope (__main__.self_test.<locals>.HelperTests) ... ERROR
+test_exact_tensor_dtype_shape_and_nan_bits (__main__.self_test.<locals>.HelperTests) ... ERROR
+test_observer_does_not_change_rng_or_fields (__main__.self_test.<locals>.HelperTests) ... ERROR
+test_pair_extensions_are_only_allowed_in_pair_info (__main__.self_test.<locals>.HelperTests) ... ERROR
+
+======================================================================
+ERROR: test_clone_and_tree_scope (__main__.self_test.<locals>.HelperTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 598, in test_clone_and_tree_scope
+    self.assertFalse(differences(a,b))
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 108, in differences
+    errors += differences(expected[key], actual[key], path + "." + str(key), allow_pair_extensions, limit)
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 115, in differences
+    errors += differences(left, right, path + "[%d]" % i, allow_pair_extensions, limit)
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 92, in differences
+    if not tensor_bits_equal(expected, actual):
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 83, in tensor_bits_equal
+    a = left.detach().cpu().contiguous().reshape(-1).view(torch.uint8)
+RuntimeError: Viewing a tensor as a new dtype with a different number of bytes per element is not supported.
+
+======================================================================
+ERROR: test_exact_tensor_dtype_shape_and_nan_bits (__main__.self_test.<locals>.HelperTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 569, in test_exact_tensor_dtype_shape_and_nan_bits
+    self.assertTrue(tensor_bits_equal(a,a.clone()))
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 83, in tensor_bits_equal
+    a = left.detach().cpu().contiguous().reshape(-1).view(torch.uint8)
+RuntimeError: Viewing a tensor as a new dtype with a different number of bytes per element is not supported.
+
+======================================================================
+ERROR: test_observer_does_not_change_rng_or_fields (__main__.self_test.<locals>.HelperTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 592, in test_observer_does_not_change_rng_or_fields
+    require_equal(expected,actual,"sample")
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 124, in require_equal
+    errors = differences(expected, actual, path, allow_pair_extensions)
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 108, in differences
+    errors += differences(expected[key], actual[key], path + "." + str(key), allow_pair_extensions, limit)
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 92, in differences
+    if not tensor_bits_equal(expected, actual):
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 83, in tensor_bits_equal
+    a = left.detach().cpu().contiguous().reshape(-1).view(torch.uint8)
+RuntimeError: Viewing a tensor as a new dtype with a different number of bytes per element is not supported.
+
+======================================================================
+ERROR: test_pair_extensions_are_only_allowed_in_pair_info (__main__.self_test.<locals>.HelperTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 575, in test_pair_extensions_are_only_allowed_in_pair_info
+    self.assertTrue(differences(a,b))
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 108, in differences
+    errors += differences(expected[key], actual[key], path + "." + str(key), allow_pair_extensions, limit)
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 92, in differences
+    if not tensor_bits_equal(expected, actual):
+  File "03_���й���/SpaceNet6_OTD_official_reproduction/experiments/rgbir_independent_kd_v2/verify_compatibility.py", line 83, in tensor_bits_equal
+    a = left.detach().cpu().contiguous().reshape(-1).view(torch.uint8)
+RuntimeError: Viewing a tensor as a new dtype with a different number of bytes per element is not supported.
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.161s
+
+FAILED (errors=4)
