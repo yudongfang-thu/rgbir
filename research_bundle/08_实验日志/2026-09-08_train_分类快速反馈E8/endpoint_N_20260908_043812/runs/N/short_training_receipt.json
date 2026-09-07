@@ -1,0 +1,53 @@
+{
+  "status": "SHORT_SCREEN_TRAINING_COMPLETED",
+  "scope": "SHORT_SCREEN",
+  "single_seed": true,
+  "arm": "N",
+  "seed": 42,
+  "dataset": "dronevehicle",
+  "epochs_configured": 8,
+  "last_epoch": 8,
+  "endpoint": "SHORT_SCREEN_E8_LAST_EMA",
+  "independent_lr_horizon": 8,
+  "not_e200_prefix": true,
+  "formal_e200_complete": false,
+  "configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/short_screen_config.yaml",
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/weights/last.pt",
+    "bytes": 10753555,
+    "mtime_ns": 1788812556756139776
+  },
+  "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+  "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+  "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+  "classification_coefficient": 0.0,
+  "localization_coefficient": 0.0,
+  "optimizer_updates": 2667,
+  "attempts": 2674,
+  "amp_skips": 7,
+  "ema_updates": 2674,
+  "batches": 4504,
+  "selected_objects": 547433,
+  "candidate": {
+    "kind": "original"
+  },
+  "seconds": 3057.7879603409674,
+  "new_hash_computed": false,
+  "official_test_accessed": false,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 7630
+    },
+    "peak_rss_mib": 28957
+  },
+  "gpu_allocated_peak_mib": 5565.119140625,
+  "gpu_reserved_peak_mib": 7096.0,
+  "training_source_manifest": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/source_manifest.json",
+  "formal_paper_gain_claim": false
+}

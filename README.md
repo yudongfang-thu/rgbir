@@ -1,3 +1,5 @@
+> **2026-09-08 首个 E8 端点**：Drone seed42 的 N 已完成固定 E8 last/EMA 与完整 dev 独立评价，mAP50–95 为 **43.37654**；17 项限定回执复核通过。这是单独的短程 N 原值，C0/C1 尚未完成匹配比较，不是蒸馏增益或 E200 等价结论。请读[原始端点与复核](research_bundle/08_实验日志/2026-09-08_train_分类快速反馈E8/endpoint_N_20260908_043812/README.md)。训练 CSV 的占位/末行短列不作为 AP 来源。
+
 > **2026-09-08 性能修复与 E8 快速反馈**：原 block16 的真实训练轨迹失败保留；selected-only 在各 24 次成功更新上实现学习损失、梯度、模型/optimizer/EMA 状态逐位一致。正常日志频率仍需约 2.48 秒/C1批，已按先验预算启动共同 E8 的 N/C0/C1 单 seed 队列，尚无新 AP。请读[性能与失败证据](research_bundle/08_实验日志/2026-09-08_ops_训练吞吐诊断/README.md)、[E8 设置与启动](research_bundle/08_实验日志/2026-09-08_train_分类快速反馈E8/README.md)、[既有数据分析综合报告](research_bundle/07_研究分析/RGBIR数据分析综合报告_20260908.md)。旧 E200 继续，本次不声称 E200 等价或方法增益。
 
 > **2026-09-07 双数据集证据推进**：LLVIP完整2406dev旧RGB/IR baseline mAP32.8784/48.8529，定位优先；Drone全1469dev六端点表明少数类混淆贡献macro分类oracle的94.26%，不能将对象计数概括为全AP瓶颈。请先读[新阶段判断](research_bundle/08_实验日志/2026-09-07_probe_双数据集证据优先推进/STAGE_REPORT.md)与[原始证据/独立审阅入口](research_bundle/08_实验日志/2026-09-07_probe_双数据集证据优先推进/README.md)。已有C1继续，新定位方法尚未准入。

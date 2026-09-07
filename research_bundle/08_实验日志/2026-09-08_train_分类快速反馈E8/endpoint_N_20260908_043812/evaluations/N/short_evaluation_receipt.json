@@ -1,0 +1,80 @@
+{
+  "status": "SHORT_SCREEN_EVALUATION_COMPLETED",
+  "scope": "SHORT_SCREEN",
+  "single_seed": true,
+  "seed": 42,
+  "arm": "N",
+  "dataset": "dronevehicle",
+  "endpoint": "SHORT_SCREEN_E8_LAST_EMA",
+  "epochs": 8,
+  "independent_lr_horizon": 8,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "metric_units": "fraction_0_to_1",
+  "native_metric_definition": "pinned Ultralytics native AP; not TIDE oracle",
+  "AP50": 0.6498349455948857,
+  "AP75": 0.5030198554757389,
+  "mAP50_95": 0.43376541843642175,
+  "precision": 0.6699554409241066,
+  "recall": 0.6247787342418504,
+  "per_class": [
+    {
+      "class_id": 0,
+      "name": "car",
+      "AP50": 0.9255120068771134,
+      "AP75": 0.7173853670485032,
+      "mAP50_95": 0.6190240590451099
+    },
+    {
+      "class_id": 1,
+      "name": "freight car",
+      "AP50": 0.39065753403783887,
+      "AP75": 0.2317833395820062,
+      "mAP50_95": 0.22687248036873106
+    },
+    {
+      "class_id": 2,
+      "name": "truck",
+      "AP50": 0.5694473427552158,
+      "AP75": 0.45665485880158385,
+      "mAP50_95": 0.3894836585388079
+    },
+    {
+      "class_id": 3,
+      "name": "bus",
+      "AP50": 0.907464815895928,
+      "AP75": 0.7911541785621117,
+      "mAP50_95": 0.6516226912894804
+    },
+    {
+      "class_id": 4,
+      "name": "van",
+      "AP50": 0.4560930284083328,
+      "AP75": 0.3181215333844891,
+      "mAP50_95": 0.2818242029399794
+    }
+  ],
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/weights/last.pt",
+    "bytes": 10753555,
+    "mtime_ns": 1788812556756139776
+  },
+  "full_dev_images": 1469,
+  "full_dev_gt_objects": 22462,
+  "native_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+  "seconds": 14.542418943019584,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 4052
+  },
+  "new_hash_computed": false,
+  "official_test_accessed": false
+}
