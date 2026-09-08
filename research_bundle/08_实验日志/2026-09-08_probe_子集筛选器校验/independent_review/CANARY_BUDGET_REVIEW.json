@@ -1,0 +1,395 @@
+{
+  "date": "2026-09-08T10:15:24.522601+00:00",
+  "auditor": {
+    "agent": "/root/object_transport_review",
+    "model_identity": "Not exposed; inherited parent settings",
+    "cross_model_claim": false
+  },
+  "status": "PASS_CANARY_AND_BUDGET_ADMISSION",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "scope": "DRONE_SUBSET2048_PRETRAIN_E8_CHECK",
+  "checks": [
+    {
+      "name": "source_still_reviewed_budget.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\budget.py"
+    },
+    {
+      "name": "source_still_reviewed_configs/drone_C0_s42_E8.yaml",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\configs\\drone_C0_s42_E8.yaml"
+    },
+    {
+      "name": "source_still_reviewed_configs/drone_N_s42_E8.yaml",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\configs\\drone_N_s42_E8.yaml"
+    },
+    {
+      "name": "source_still_reviewed_evaluate_short_screen.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\evaluate_short_screen.py"
+    },
+    {
+      "name": "source_still_reviewed_run_subset_queue.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\run_subset_queue.py"
+    },
+    {
+      "name": "source_still_reviewed_screen_common.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\screen_common.py"
+    },
+    {
+      "name": "source_still_reviewed_test_queue_cpu.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\test_queue_cpu.py"
+    },
+    {
+      "name": "source_still_reviewed_test_subset_cpu.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\test_subset_cpu.py"
+    },
+    {
+      "name": "source_still_reviewed_train_short_screen.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\train_short_screen.py"
+    },
+    {
+      "name": "source_still_reviewed_validated_amp_prior.json",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\validated_amp_prior.json"
+    },
+    {
+      "name": "N_completed_identity",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\canary.json"
+    },
+    {
+      "name": "N_actual_clean_exit",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\subset_e8_attempt1_N_canary_status.json"
+    },
+    {
+      "name": "N_fixed_update_gate",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\canary.json"
+    },
+    {
+      "name": "N_runtime_population_BN_fresh",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\runtime_ready.json"
+    },
+    {
+      "name": "N_actual_gradient_and_finiteness",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\canary.json"
+    },
+    {
+      "name": "N_state_reference_contract",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\initialization_check.json"
+    },
+    {
+      "name": "N_all30_actual_flow_receipt",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\flow_check.json"
+    },
+    {
+      "name": "N_pixels_are_full_uint8_prefix",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\sample_stream.jsonl"
+    },
+    {
+      "name": "N_actual_config_bytes",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\short_screen_config.yaml"
+    },
+    {
+      "name": "N_runtime_source_binding",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\source_manifest.json"
+    },
+    {
+      "name": "N_all_batch_timings_exact",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\batch_timing.jsonl"
+    },
+    {
+      "name": "N_flow_cost_closed",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\flow_check.json"
+    },
+    {
+      "name": "N_independent_budget_arithmetic",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\budget_decision.json"
+    },
+    {
+      "name": "N_independent_resource_reservation",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\N\\canary.json"
+    },
+    {
+      "name": "N_observed_shared_resource_discipline",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\subset_e8_attempt1_N_canary_resource_profile.json"
+    },
+    {
+      "name": "N_RUNNING_clock_observed",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\subset_e8_attempt1_N_canary_timing.json"
+    },
+    {
+      "name": "N_gate_receipt_size",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\canary_checks.json"
+    },
+    {
+      "name": "N_gate_flow_size",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\canary_checks.json"
+    },
+    {
+      "name": "N_gate_initialization_size",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\canary_checks.json"
+    },
+    {
+      "name": "C0_completed_identity",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\canary.json"
+    },
+    {
+      "name": "C0_actual_clean_exit",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\subset_e8_attempt1_C0_canary_status.json"
+    },
+    {
+      "name": "C0_fixed_update_gate",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\canary.json"
+    },
+    {
+      "name": "C0_runtime_population_BN_fresh",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\runtime_ready.json"
+    },
+    {
+      "name": "C0_actual_gradient_and_finiteness",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\canary.json"
+    },
+    {
+      "name": "C0_state_reference_contract",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\initialization_check.json"
+    },
+    {
+      "name": "C0_all30_actual_flow_receipt",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\flow_check.json"
+    },
+    {
+      "name": "C0_pixels_are_full_uint8_prefix",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\sample_stream.jsonl"
+    },
+    {
+      "name": "C0_actual_config_bytes",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\short_screen_config.yaml"
+    },
+    {
+      "name": "C0_runtime_source_binding",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\source_manifest.json"
+    },
+    {
+      "name": "C0_all_batch_timings_exact",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\batch_timing.jsonl"
+    },
+    {
+      "name": "C0_flow_cost_closed",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\flow_check.json"
+    },
+    {
+      "name": "C0_independent_budget_arithmetic",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\budget_decision.json"
+    },
+    {
+      "name": "C0_independent_resource_reservation",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\canary.json"
+    },
+    {
+      "name": "C0_observed_shared_resource_discipline",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\subset_e8_attempt1_C0_canary_resource_profile.json"
+    },
+    {
+      "name": "C0_RUNNING_clock_observed",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\subset_e8_attempt1_C0_canary_timing.json"
+    },
+    {
+      "name": "C0_gate_receipt_size",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\canary_checks.json"
+    },
+    {
+      "name": "C0_gate_flow_size",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\canary_checks.json"
+    },
+    {
+      "name": "C0_gate_initialization_size",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\canary_checks.json"
+    },
+    {
+      "name": "common_initial_state_reference_and_inputs",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\initialization_check.json"
+    },
+    {
+      "name": "common30_reference_and_all_saved_metadata",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\canaries\\C0\\sample_stream.jsonl"
+    },
+    {
+      "name": "budget_928seconds_below2700",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\budget_decision.json"
+    },
+    {
+      "name": "driver_overhead_included_without_wait",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_canaries\\queue\\budget_decision.json"
+    },
+    {
+      "name": "all_read_inputs_stable",
+      "status": "pass",
+      "evidence": "CANARY_BUDGET_INPUTS.json"
+    }
+  ],
+  "canaries": {
+    "N": {
+      "seconds": 36.77259262697771,
+      "batches": 30,
+      "optimizer_attempts": 30,
+      "successful_updates": 24,
+      "amp_skips": 6,
+      "ema_updates": 30,
+      "selected_occurrences": 3697,
+      "nvml_peak_mib": 6692,
+      "allocated_peak_mib": 5543.9814453125,
+      "reserved_peak_mib": 6160.0,
+      "rss_peak_mib": 18120,
+      "reservation_vram_mib": 7168,
+      "reservation_rss_mib": 20480,
+      "flow_io_seconds": 5.29125606501475,
+      "initial_state_io_seconds": 0.06902146199718118,
+      "gradient_checks": [
+        {
+          "batch": 1,
+          "native_score_gradient_l2": 0.31325027346611023,
+          "kd_score_gradient_l2": 0.00445516686886549,
+          "total_gradient_composition_max_error": 0.0,
+          "weight0_exact_loss_gradient": true,
+          "teacher_has_grad": false,
+          "reference_has_grad": false
+        }
+      ]
+    },
+    "C0": {
+      "seconds": 31.384069268824533,
+      "batches": 31,
+      "optimizer_attempts": 31,
+      "successful_updates": 24,
+      "amp_skips": 7,
+      "ema_updates": 31,
+      "selected_occurrences": 3840,
+      "nvml_peak_mib": 6692,
+      "allocated_peak_mib": 5543.9814453125,
+      "reserved_peak_mib": 6160.0,
+      "rss_peak_mib": 18000,
+      "reservation_vram_mib": 7168,
+      "reservation_rss_mib": 20480,
+      "flow_io_seconds": 3.5542566699441522,
+      "initial_state_io_seconds": 0.09296521195210516,
+      "gradient_checks": [
+        {
+          "batch": 1,
+          "native_score_gradient_l2": 0.31325027346611023,
+          "kd_score_gradient_l2": 0.00445516686886549,
+          "total_gradient_composition_max_error": 7.62939453125e-06,
+          "weight0_exact_loss_gradient": true,
+          "teacher_has_grad": false,
+          "reference_has_grad": false
+        }
+      ]
+    }
+  },
+  "independent_budget": {
+    "N": {
+      "mean_normal_batch_seconds": 0.5780915080880126,
+      "measured_batches": 30,
+      "observed_non_batch_overhead_seconds": 14.138591319322586,
+      "observed_flow_audit_seconds": 5.29125606501475,
+      "train_seconds_with_margin": 378.4952394304797,
+      "margin_factor": 1.2
+    },
+    "C0": {
+      "mean_normal_batch_seconds": 0.5471567403630263,
+      "measured_batches": 31,
+      "observed_non_batch_overhead_seconds": 10.867953647626564,
+      "observed_flow_audit_seconds": 3.5542566699441522,
+      "train_seconds_with_margin": 353.4797536601282,
+      "margin_factor": 1.2
+    }
+  },
+  "total_estimate_seconds": 928.8420924034406,
+  "limit_seconds": 2700,
+  "spent_execution_seconds": 76.86709931283258,
+  "observed_canary_execution_seconds": 76.86259248969145,
+  "driver_handoff_seconds": 0.004506823141127825,
+  "excluded_admission_seconds": 3.2851152871735394,
+  "reference_tensor_bytes": 2361520810,
+  "initial_state_reference_bytes": 10579489,
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "new_tests": 0,
+  "new_GPU": 0,
+  "mid_training_AP_read": false,
+  "source_modified": false,
+  "claims": [
+    {
+      "id": "actual_canary_gate",
+      "impact": "supported",
+      "rationale": "Both reach24successful updates within48attempts, required30prefix, actual shared state/flow receipts and resources."
+    },
+    {
+      "id": "measured_budget_admission",
+      "impact": "supported",
+      "rationale": "Independent recomputation uses all30/31 actual batch samples plus measured IO/overhead,20percent margin and120second eval reserve; estimate928.842092seconds."
+    },
+    {
+      "id": "full_training_or_AP_completed",
+      "impact": "unsupported",
+      "rationale": "Canary budget review only; no intermediate AP read, no final endpoint observed."
+    }
+  ],
+  "limits": [
+    "Raw pixel and initialized-state tensors remain server-only; this reviewer verifies actual torch.equal receipts bound to reviewed code and source identity, without downloading or rerunning these comparisons.",
+    "Pixel evidence is exactly the first30 augmented pre-normalization dual-modality batches, not original image files or all512 batches.",
+    "Canaries have equal24successful updates but N30/C031batches, six/sevenAMP skips and EMA30/31; these are not equal exposures.",
+    "Normal BN actually changed243 buffers; generic80class checkpoint equality is not claimed for the adaptedfive-class head.",
+    "Budget is a conservative observed cost estimate and does not establish future runtime or completedtraining; the2700second execution guard remains required.",
+    "No AP, method effectiveness or general screener validity follows from this admission."
+  ],
+  "input_manifest": "CANARY_BUDGET_INPUTS.json"
+}

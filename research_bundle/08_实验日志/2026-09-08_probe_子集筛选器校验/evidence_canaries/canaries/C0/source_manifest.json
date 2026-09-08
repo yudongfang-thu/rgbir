@@ -1,0 +1,565 @@
+{
+  "new_hash_computed": false,
+  "files": [
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_infrared.yaml",
+      "bytes": 398,
+      "mtime_ns": 1788832558626210068,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0000_data_infrared.yaml",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_rgb.yaml",
+      "bytes": 383,
+      "mtime_ns": 1788832558626210068,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0001_data_rgb.yaml",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/rgb_to_infrared_train.json",
+      "bytes": 493571,
+      "mtime_ns": 1788832558626210068,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0002_rgb_to_infrared_train.json",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/train_infrared.txt",
+      "bytes": 243712,
+      "mtime_ns": 1788832558622210035,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0003_train_infrared.txt",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/train_rgb.txt",
+      "bytes": 233472,
+      "mtime_ns": 1788832558618209999,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0004_train_rgb.txt",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/admission.py",
+      "bytes": 5928,
+      "mtime_ns": 1788760817662859916,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0005_admission.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/analyze_independent.py",
+      "bytes": 31976,
+      "mtime_ns": 1788759446723378658,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0006_analyze_independent.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/calibrate_independent.py",
+      "bytes": 11452,
+      "mtime_ns": 1788761462534729003,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0007_calibrate_independent.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/classification_logit.py",
+      "bytes": 13413,
+      "mtime_ns": 1788758525883321046,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0008_classification_logit.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/coverage_probe.py",
+      "bytes": 13955,
+      "mtime_ns": 1788758358852160453,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0009_coverage_probe.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluate_independent.py",
+      "bytes": 16958,
+      "mtime_ns": 1788761738599740266,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0010_evaluate_independent.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluator_profile.py",
+      "bytes": 15929,
+      "mtime_ns": 1788764199317541122,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0011_evaluator_profile.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evidence_bindings.py",
+      "bytes": 14104,
+      "mtime_ns": 1788760830619113445,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0012_evidence_bindings.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/geometry_support.py",
+      "bytes": 7910,
+      "mtime_ns": 1788758558174442052,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0013_geometry_support.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/gradient_observation.py",
+      "bytes": 6841,
+      "mtime_ns": 1788761274317896842,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0014_gradient_observation.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/independent_criterion.py",
+      "bytes": 8208,
+      "mtime_ns": 1788761274330370664,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0015_independent_criterion.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/localization_adapter.py",
+      "bytes": 3680,
+      "mtime_ns": 1788757988792436599,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0016_localization_adapter.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/prepare_configs.py",
+      "bytes": 2160,
+      "mtime_ns": 1788759088540838956,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0017_prepare_configs.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/prepare_geometry_review.py",
+      "bytes": 10119,
+      "mtime_ns": 1788759461289175510,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0018_prepare_geometry_review.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/protocol.py",
+      "bytes": 6952,
+      "mtime_ns": 1788758021900957584,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0019_protocol.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/reference_package/reference_kernels.py",
+      "bytes": 9836,
+      "mtime_ns": 1788759129637770891,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0020_reference_kernels.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/reference_package/test_reference_kernels.py",
+      "bytes": 5580,
+      "mtime_ns": 1788759129637770891,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0021_test_reference_kernels.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/resource_dispatch.py",
+      "bytes": 28120,
+      "mtime_ns": 1788763224080950736,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0022_resource_dispatch.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/runtime.py",
+      "bytes": 1814,
+      "mtime_ns": 1788759858749130010,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0023_runtime.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/selection_adapter.py",
+      "bytes": 18146,
+      "mtime_ns": 1788758240136032104,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0024_selection_adapter.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/analyze_results.py",
+      "bytes": 15021,
+      "mtime_ns": 1788720209847699403,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0025_analyze_results.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/calibrate_gradient_scale.py",
+      "bytes": 4791,
+      "mtime_ns": 1788720072837006092,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0026_calibrate_gradient_scale.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/content_controls.py",
+      "bytes": 11565,
+      "mtime_ns": 1788720256076847791,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0027_content_controls.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/criterion_items.py",
+      "bytes": 2192,
+      "mtime_ns": 1788721864607337474,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0028_criterion_items.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/diagnose_opportunities.py",
+      "bytes": 31939,
+      "mtime_ns": 1788720003739575386,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0029_diagnose_opportunities.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/evaluate_task_conditional.py",
+      "bytes": 3909,
+      "mtime_ns": 1788722116264483928,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0030_evaluate_task_conditional.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/geometry_audit_tools.py",
+      "bytes": 8440,
+      "mtime_ns": 1788719882530122995,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0031_geometry_audit_tools.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/geometry_contract.py",
+      "bytes": 7914,
+      "mtime_ns": 1788720085716454744,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0032_geometry_contract.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/legacy_bridge.py",
+      "bytes": 561,
+      "mtime_ns": 1788719143193965911,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0033_legacy_bridge.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/legacy_oev1/evaluate_object_evidence.py",
+      "bytes": 3505,
+      "mtime_ns": 1788719173120805025,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0034_evaluate_object_evidence.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/legacy_oev1/object_evidence_loss.py",
+      "bytes": 19364,
+      "mtime_ns": 1788719173118606328,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0035_object_evidence_loss.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/legacy_oev1/paired_rgbir_data.py",
+      "bytes": 10325,
+      "mtime_ns": 1788719173119695901,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0036_paired_rgbir_data.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/legacy_oev1/train_object_evidence.py",
+      "bytes": 18948,
+      "mtime_ns": 1788719173117410659,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0037_train_object_evidence.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/localization_loss.py",
+      "bytes": 20629,
+      "mtime_ns": 1788719440631575822,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0038_localization_loss.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/prepare_configs.py",
+      "bytes": 2601,
+      "mtime_ns": 1788719960712244510,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0039_prepare_configs.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/resource_dispatch.py",
+      "bytes": 7920,
+      "mtime_ns": 1788720957703618764,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0040_resource_dispatch.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/shuffled_pair_data.py",
+      "bytes": 11424,
+      "mtime_ns": 1788721129065304040,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0041_shuffled_pair_data.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/task_criterion.py",
+      "bytes": 8685,
+      "mtime_ns": 1788721406320330858,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0042_task_criterion.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/test_analyze_results.py",
+      "bytes": 11842,
+      "mtime_ns": 1788720248329417943,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0043_test_analyze_results.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/test_content_controls.py",
+      "bytes": 8778,
+      "mtime_ns": 1788720352968164443,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0044_test_content_controls.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/test_criterion_items.py",
+      "bytes": 2893,
+      "mtime_ns": 1788721864608855485,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0045_test_criterion_items.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/test_geometry_contract.py",
+      "bytes": 4532,
+      "mtime_ns": 1788720064269742727,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0046_test_geometry_contract.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/test_localization_loss.py",
+      "bytes": 12159,
+      "mtime_ns": 1788720707408432722,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0047_test_localization_loss.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/test_shuffled_pair_data.py",
+      "bytes": 12592,
+      "mtime_ns": 1788721263021077394,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0048_test_shuffled_pair_data.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/test_tracked_pair_data.py",
+      "bytes": 1588,
+      "mtime_ns": 1788720871513345479,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0049_test_tracked_pair_data.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/tracked_pair_data.py",
+      "bytes": 3666,
+      "mtime_ns": 1788720712897404432,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0050_tracked_pair_data.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/train_task_conditional.py",
+      "bytes": 12910,
+      "mtime_ns": 1788721747305168628,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0051_train_task_conditional.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/verify_criterion_equivalence.py",
+      "bytes": 17234,
+      "mtime_ns": 1788721781577563762,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0052_verify_criterion_equivalence.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/task_conditional_reference/verify_loader_equivalence.py",
+      "bytes": 10124,
+      "mtime_ns": 1788720979180158138,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0053_verify_loader_equivalence.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_admission.py",
+      "bytes": 14508,
+      "mtime_ns": 1788760830619637012,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0054_test_admission.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_analyze_independent.py",
+      "bytes": 18948,
+      "mtime_ns": 1788759674386989116,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0055_test_analyze_independent.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_classification_logit.py",
+      "bytes": 19729,
+      "mtime_ns": 1788758582544444322,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0056_test_classification_logit.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_coverage_probe.py",
+      "bytes": 4440,
+      "mtime_ns": 1788758358854015827,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0057_test_coverage_probe.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_evaluate_independent.py",
+      "bytes": 11496,
+      "mtime_ns": 1788761738601935386,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0058_test_evaluate_independent.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_evaluator_profile.py",
+      "bytes": 7252,
+      "mtime_ns": 1788764199317541122,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0059_test_evaluator_profile.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_gradient_observation.py",
+      "bytes": 7725,
+      "mtime_ns": 1788761362930491685,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0060_test_gradient_observation.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_localization_adapter.py",
+      "bytes": 8420,
+      "mtime_ns": 1788758558174442052,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0061_test_localization_adapter.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_prepare_geometry_review.py",
+      "bytes": 4827,
+      "mtime_ns": 1788759122774171113,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0062_test_prepare_geometry_review.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_protocol.py",
+      "bytes": 3780,
+      "mtime_ns": 1788758334560334682,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0063_test_protocol.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_resource_dispatch.py",
+      "bytes": 18340,
+      "mtime_ns": 1788763296314826250,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0064_test_resource_dispatch.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/test_verifier_process_isolation.py",
+      "bytes": 5482,
+      "mtime_ns": 1788762846949368476,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0065_test_verifier_process_isolation.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/train_independent.py",
+      "bytes": 7927,
+      "mtime_ns": 1788760207412961959,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0066_train_independent.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/verify_compatibility.py",
+      "bytes": 39486,
+      "mtime_ns": 1788762775437505960,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0067_verify_compatibility.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/budget.py",
+      "bytes": 2444,
+      "mtime_ns": 1788861738530313407,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0068_budget.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/configs/drone_C0_s42_E8.yaml",
+      "bytes": 4137,
+      "mtime_ns": 1788861738530313407,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0069_drone_C0_s42_E8.yaml",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/evaluate_short_screen.py",
+      "bytes": 11476,
+      "mtime_ns": 1788861738534313466,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0070_evaluate_short_screen.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/run_subset_queue.py",
+      "bytes": 13146,
+      "mtime_ns": 1788861738534313466,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0071_run_subset_queue.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/screen_common.py",
+      "bytes": 13636,
+      "mtime_ns": 1788861738538313525,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0072_screen_common.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/test_queue_cpu.py",
+      "bytes": 2645,
+      "mtime_ns": 1788861738542313583,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0073_test_queue_cpu.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/test_subset_cpu.py",
+      "bytes": 8092,
+      "mtime_ns": 1788861738542313583,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0074_test_subset_cpu.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/train_short_screen.py",
+      "bytes": 15500,
+      "mtime_ns": 1788861738546313642,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0075_train_short_screen.py",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/release_v1/validated_amp_prior.json",
+      "bytes": 502,
+      "mtime_ns": 1788861738546313642,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0076_validated_amp_prior.json",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml",
+      "bytes": 200,
+      "mtime_ns": 1788115540094061632,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0077_infrared.data.yaml",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+      "bytes": 195,
+      "mtime_ns": 1788115538846043763,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0078_rgb.data.yaml",
+      "byte_identity": true
+    },
+    {
+      "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/models/yolo/detect/train.py",
+      "bytes": 12056,
+      "mtime_ns": 1787431001155953527,
+      "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/source_copies/0079_train.py",
+      "byte_identity": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "reference_state": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/N/flow_reference/initial_student.pt",
+    "bytes": 10579489,
+    "mtime_ns": 1788861945349836186
+  },
+  "tensors": 499,
+  "head_included": true,
+  "cross_arm_initial_state_exact": true,
+  "state_reference_written_and_verified": false,
+  "scope": "initialized_student_all_parameters_and_buffers",
+  "equality_to_original80class_pretrained_not_claimed": true,
+  "remote_only_tensor": true,
+  "initialization": {
+    "model": {
+      "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+      "bytes": 5613764,
+      "mtime_ns": 1787430880966430625
+    },
+    "teacher": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5483610,
+      "mtime_ns": 1788133393714042412
+    },
+    "reference": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5483610,
+      "mtime_ns": 1788133016384388766
+    }
+  },
+  "fresh_optimizer": true,
+  "fresh_ema": true,
+  "ema_updates": 0,
+  "bn_running_statistics": "normal_training",
+  "batchnorm_modules": 81,
+  "actual_amp": true
+}

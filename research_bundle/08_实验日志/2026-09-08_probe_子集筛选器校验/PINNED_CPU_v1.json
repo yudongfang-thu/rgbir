@@ -1,0 +1,30 @@
+{
+  "receipt": {
+    "status": "PASS",
+    "tests": 12,
+    "failures": 0,
+    "errors": 0,
+    "modules": [
+      "test_queue_cpu"
+    ],
+    "wrapper": {
+      "status": "PASS",
+      "tests": 8,
+      "failures": [],
+      "errors": [],
+      "cuda_initialized": false,
+      "torch_version": "2.10.0+cu128",
+      "new_hash_computed": false,
+      "scope": "new_subset_contract_private_binding_flow_budget_only_no_model_forward"
+    },
+    "cli": {
+      "train_short_screen.py": 0,
+      "evaluate_short_screen.py": 0,
+      "run_subset_queue.py": 0
+    },
+    "GPU_used": false,
+    "new_hash_computed": false,
+    "seconds": 2.1304593086242676
+  },
+  "log": "test_driver_and_excluded_admission (test_queue_cpu.ClockTruths) ... ok\ntest_no_launch_failure_is_not_execution (test_queue_cpu.ClockTruths) ... ok\ntest_queued_time_does_not_spend_execution_limit (test_queue_cpu.ClockTruths) ... ok\ntest_watchdog_only_targets_declared_own_pid (test_queue_cpu.ClockTruths) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.354s\n\nOK\ntest_01_population_arm_and_recipe (__main__.Checks) ... ok\ntest_02_canary_attempt_budget (__main__.Checks) ... ok\ntest_03_flow_all_elements_and_dual_labels (__main__.Checks) ... ok\ntest_04_full_initialized_state_reference (__main__.Checks) ... ok\ntest_05_private_binding_preserves_original_builder (__main__.Checks) ... ok\ntest_06_amp_scope_restoration (__main__.Checks) ... ok\ntest_07_deadline_explicit_incomplete (__main__.Checks) ... ok\ntest_08_full_dev_projection (__main__.Checks) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.152s\n\nOK\nusage: train_short_screen.py [-h] --reference-dir REFERENCE_DIR --config\n                             CONFIG --output OUTPUT --flow-reference-dir\n                             FLOW_REFERENCE_DIR [--amp-prior AMP_PRIOR]\n                             --wall-seconds WALL_SECONDS [--canary]\n                             [--write-flow-reference]\n                             [--canary-receipt CANARY_RECEIPT]\n\nOriginal N/C0 loss, generic pretrain, fixed2048 E8; no C1 fast-path migration.\n\noptions:\n  -h, --help            show this help message and exit\n  --reference-dir REFERENCE_DIR\n  --config CONFIG\n  --output OUTPUT\n  --flow-reference-dir FLOW_REFERENCE_DIR\n  --amp-prior AMP_PRIOR\n  --wall-seconds WALL_SECONDS\n  --canary\n  --write-flow-reference\n  --canary-receipt CANARY_RECEIPT\nusage: evaluate_short_screen.py [-h] --reference-dir REFERENCE_DIR --run RUN\n                                --output OUTPUT --native-profile-binding\n                                NATIVE_PROFILE_BINDING --wall-seconds\n                                WALL_SECONDS\n\nIndependent SHORT_SCREEN full-dev native evaluation; rejects E200 receipts.\n\noptions:\n  -h, --help            show this help message and exit\n  --reference-dir REFERENCE_DIR\n  --run RUN\n  --output OUTPUT\n  --native-profile-binding NATIVE_PROFILE_BINDING\n  --wall-seconds WALL_SECONDS\nusage: run_subset_queue.py [-h] --release-dir RELEASE_DIR --output OUTPUT\n\nTwo-arm subset check using only the existing global lease and bounded\nexecution.\n\noptions:\n  -h, --help            show this help message and exit\n  --release-dir RELEASE_DIR\n  --output OUTPUT\n"
+}

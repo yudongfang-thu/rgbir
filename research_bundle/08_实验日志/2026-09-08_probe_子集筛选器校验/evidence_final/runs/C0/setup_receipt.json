@@ -1,0 +1,35 @@
+{
+  "seconds": 9.43068848690018,
+  "native_setup_seconds": 4.824029637034982,
+  "bypass": {
+    "new_scope_setup_check_amp_bypass": true,
+    "actual_autocast": true,
+    "unrelated_model_forward": false,
+    "original_check_amp_restored": true,
+    "setup_bitwise_equivalence_claim": false
+  },
+  "amp_prior": {
+    "actual_amp": true,
+    "prior_sources": {
+      "configuration": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/short_screen_config.yaml",
+        "bytes": 4543,
+        "mtime_ns": 1788809499676671855
+      },
+      "runtime_ready": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/runtime_ready.json",
+        "bytes": 449,
+        "mtime_ns": 1788809515596950970
+      },
+      "training_receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_short_screen_E8_20260908_attempt1/runs/N/short_training_receipt.json",
+        "bytes": 1961,
+        "mtime_ns": 1788812559696184117
+      }
+    },
+    "same_version_model_paths": true,
+    "historical_checkpoint_content_equality_claim": false
+  },
+  "initial_state_audit_seconds": 0.18607258494012058,
+  "batchnorm_modules": 81
+}

@@ -1,0 +1,1 @@
+Original publisher source before streaming gzip scanner correction. First manifest preparation failed at 32 MB decompressed scan cap; no manifest, mirror, worktree copy or push occurred. Experiment sources and results unchanged.

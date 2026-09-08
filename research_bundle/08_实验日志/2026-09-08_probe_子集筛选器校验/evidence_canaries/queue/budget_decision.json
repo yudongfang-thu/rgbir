@@ -1,0 +1,27 @@
+{
+  "status": "PASS_WITHIN_EXECUTION_BUDGET",
+  "spent_execution_seconds": 76.86709931283258,
+  "arms": {
+    "N": {
+      "mean_normal_batch_seconds": 0.5780915080880126,
+      "measured_batches": 30,
+      "observed_non_batch_overhead_seconds": 14.138591319322586,
+      "observed_flow_audit_seconds": 5.29125606501475,
+      "train_seconds_with_margin": 378.4952394304797,
+      "margin_factor": 1.2
+    },
+    "C0": {
+      "mean_normal_batch_seconds": 0.5471567403630263,
+      "measured_batches": 31,
+      "observed_non_batch_overhead_seconds": 10.867953647626564,
+      "observed_flow_audit_seconds": 3.5542566699441522,
+      "train_seconds_with_margin": 353.4797536601282,
+      "margin_factor": 1.2
+    }
+  },
+  "eval_reserve_seconds_each": 60.0,
+  "estimate_total_execution_seconds": 928.8420924034406,
+  "limit_seconds": 2700.0,
+  "queue_admission_wait_excluded": true,
+  "ap_used": false
+}

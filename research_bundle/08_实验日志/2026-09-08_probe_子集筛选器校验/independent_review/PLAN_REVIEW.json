@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-08",
+  "auditor": {"agent": "/root/object_transport_review", "model_identity": "Not exposed; inherited parent settings", "cross_model_claim": false},
+  "status": "PLAN_ACCEPTED_SOURCE_AND_PINNED_PENDING",
+  "scope": "DRONE_SUBSET2048_PRETRAIN_E8_CHECK",
+  "GPU_ready": false,
+  "actual_run_claim": false,
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "fixed_comparison": {"arms": ["N", "C0"], "seed": 42, "epochs": 8, "batches_per_arm": 512, "training_images": 2048, "development_images": 1469, "development_GT": 22462, "initialization": "original generic yolo11n; native five-class head adaptation, cross-arm full-state equality required", "BN": "normal native training"},
+  "execution_budget_seconds": 2700,
+  "queue_time_separate": true,
+  "training_prediction_minimum_margin": 0.2,
+  "pixel_identity": {"method": "server-only actual per-batch torch.equal", "reference": "N canary first 30 batches", "comparators": ["C0 canary", "N train", "C0 train"], "modalities": ["RGB", "IR"], "labels_also_compared": true, "all_512_batch_pixel_equality_claim": false, "pixel_sampling_stage_must_be_explicit": true},
+  "pending": ["Bounded new source-difference review; original C0 formula/gates/base preserved", "Actual affected pinned checks", "New source and deployment direct-byte binding", "Actual canary numerical/resources/time and budget admission evidence"],
+  "details": "PLAN_REVIEW.md"
+}

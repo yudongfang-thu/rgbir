@@ -1,0 +1,2276 @@
+{
+  "status": "SUBSET_E8_CHECK_EVIDENCE_MIRRORED",
+  "destination": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/review_v1",
+  "files": [
+    {
+      "relative_path": "analysis/analyze_subset_e8.py",
+      "bytes": 9835,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/analyze_subset_e8_before_incomplete.py",
+      "bytes": 9708,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/analyze_subset_e8_before_scope_wording.py",
+      "bytes": 9619,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/BUDGET_INDEPENDENT_CPU_attempt1.json",
+      "bytes": 769,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/BUDGET_INDEPENDENT_CPU_attempt1_budget_source.py",
+      "bytes": 2445,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/BUDGET_INDEPENDENT_CPU_attempt2.json",
+      "bytes": 791,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/BUDGET_INDEPENDENT_CPU_attempt2_budget_source.py",
+      "bytes": 2445,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/BUDGET_INDEPENDENT_REVIEW.md",
+      "bytes": 1405,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/CPU_attempt1.json",
+      "bytes": 219,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/CPU_attempt2.json",
+      "bytes": 219,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/INTERFACE_ADDENDUM.md",
+      "bytes": 953,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/output_attempt1/analyze_subset_e8_source.py",
+      "bytes": 9835,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/output_attempt1/README.md",
+      "bytes": 1069,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/output_attempt1/summary.json",
+      "bytes": 12383,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/PROTOCOL.md",
+      "bytes": 1864,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/review_budget_cpu.py",
+      "bytes": 5072,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/review_budget_cpu_attempt1_source.py",
+      "bytes": 5010,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/test_subset_analyzer_cpu.py",
+      "bytes": 5971,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "analysis/test_subset_analyzer_cpu_before_incomplete.py",
+      "bytes": 5126,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "BUDGET_AND_EXECUTION.md",
+      "bytes": 3510,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "DEPLOYMENT_v1.json",
+      "bytes": 1436,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/args.yaml",
+      "bytes": 2049,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/batch_timing.jsonl",
+      "bytes": 6231,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/canary.json",
+      "bytes": 6855,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/flow_check.json",
+      "bytes": 10677,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/gradient_checks.jsonl",
+      "bytes": 259,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/kd_batches.jsonl",
+      "bytes": 23613,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/progress.json",
+      "bytes": 255,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/results.csv",
+      "bytes": 141,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/runtime_ready.json",
+      "bytes": 446,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/setup_receipt.json",
+      "bytes": 1284,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/short_screen_config.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/C0/source_manifest.json",
+      "bytes": 33780,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/args.yaml",
+      "bytes": 2047,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/batch_timing.jsonl",
+      "bytes": 6038,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/canary.json",
+      "bytes": 6749,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/flow_check.json",
+      "bytes": 10677,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/gradient_checks.jsonl",
+      "bytes": 245,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/initialization_check.json",
+      "bytes": 1454,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/kd_batches.jsonl",
+      "bytes": 23573,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/progress.json",
+      "bytes": 254,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/results.csv",
+      "bytes": 143,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/runtime_ready.json",
+      "bytes": 447,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/sample_stream.jsonl",
+      "bytes": 4426309,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/setup_receipt.json",
+      "bytes": 1283,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/canaries/N/source_manifest.json",
+      "bytes": 33698,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/collection_receipt.json",
+      "bytes": 5017,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/budget_decision.json",
+      "bytes": 904,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/canary_checks.json",
+      "bytes": 2070,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/manifest.json",
+      "bytes": 1168,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_job.json",
+      "bytes": 1350,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_status.json",
+      "bytes": 381,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_timing.json",
+      "bytes": 358,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_job.json",
+      "bytes": 1373,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_status.json",
+      "bytes": 380,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_timing.json",
+      "bytes": 360,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_train_job.json",
+      "bytes": 1485,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_train_status.json",
+      "bytes": 2070,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/args.yaml",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/batch_timing.jsonl",
+      "bytes": 37132,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/kd_batches.jsonl",
+      "bytes": 31804,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/progress.json",
+      "bytes": 259,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/results.csv",
+      "bytes": 430,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/runtime_ready.json",
+      "bytes": 447,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/setup_receipt.json",
+      "bytes": 1282,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_canaries/runs/N/source_manifest.json",
+      "bytes": 33378,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/args.yaml",
+      "bytes": 2049,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/batch_timing.jsonl",
+      "bytes": 6231,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/canary.json",
+      "bytes": 6855,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/flow_check.json",
+      "bytes": 10677,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/gradient_checks.jsonl",
+      "bytes": 259,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/kd_batches.jsonl",
+      "bytes": 23613,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/progress.json",
+      "bytes": 255,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/results.csv",
+      "bytes": 141,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/runtime_ready.json",
+      "bytes": 446,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/setup_receipt.json",
+      "bytes": 1284,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/short_screen_config.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/C0/source_manifest.json",
+      "bytes": 33780,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/args.yaml",
+      "bytes": 2047,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/batch_timing.jsonl",
+      "bytes": 6038,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/canary.json",
+      "bytes": 6749,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/flow_check.json",
+      "bytes": 10677,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/gradient_checks.jsonl",
+      "bytes": 245,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/initialization_check.json",
+      "bytes": 1454,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/kd_batches.jsonl",
+      "bytes": 23573,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/progress.json",
+      "bytes": 254,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/results.csv",
+      "bytes": 143,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/runtime_ready.json",
+      "bytes": 447,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/sample_stream.jsonl",
+      "bytes": 4426309,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/setup_receipt.json",
+      "bytes": 1283,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/canaries/N/source_manifest.json",
+      "bytes": 33698,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/collection_receipt.json",
+      "bytes": 9399,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/C0/development_roster.txt",
+      "bytes": 164528,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/C0/native_capture/objects.jsonl.gz",
+      "bytes": 15381856,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/C0/short_evaluation_contract.json",
+      "bytes": 351279,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/C0/short_evaluation_receipt.json",
+      "bytes": 5218,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/C0/short_screen_config.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/C0/short_training_receipt_copy.json",
+      "bytes": 41864,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/C0/source_manifest.json",
+      "bytes": 9300,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/N/development_roster.txt",
+      "bytes": 164528,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/N/native_capture/objects.jsonl.gz",
+      "bytes": 15280627,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/N/short_evaluation_contract.json",
+      "bytes": 351279,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/N/short_evaluation_receipt.json",
+      "bytes": 5216,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/N/short_training_receipt_copy.json",
+      "bytes": 41885,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/evaluations/N/source_manifest.json",
+      "bytes": 9277,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/budget_decision.json",
+      "bytes": 904,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/canary_checks.json",
+      "bytes": 2070,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/completion.json",
+      "bytes": 4326,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/manifest.json",
+      "bytes": 1168,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_canary_job.json",
+      "bytes": 1350,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_canary_status.json",
+      "bytes": 381,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_canary_timing.json",
+      "bytes": 358,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_eval_job.json",
+      "bytes": 1217,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_eval_status.json",
+      "bytes": 378,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_eval_timing.json",
+      "bytes": 356,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_train_job.json",
+      "bytes": 1492,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_train_status.json",
+      "bytes": 380,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_train_timing.json",
+      "bytes": 361,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_canary_job.json",
+      "bytes": 1373,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_canary_status.json",
+      "bytes": 380,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_canary_timing.json",
+      "bytes": 360,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_eval_job.json",
+      "bytes": 1211,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_eval_status.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_eval_timing.json",
+      "bytes": 357,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_train_job.json",
+      "bytes": 1485,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_train_status.json",
+      "bytes": 379,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/queue/subset_e8_attempt1_N_train_timing.json",
+      "bytes": 358,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/args.yaml",
+      "bytes": 2041,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/batch_timing.jsonl",
+      "bytes": 97259,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/flow_check.json",
+      "bytes": 10681,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/kd_batches.jsonl",
+      "bytes": 63147,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/progress.json",
+      "bytes": 259,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/results.csv",
+      "bytes": 798,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/runtime_ready.json",
+      "bytes": 446,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/setup_receipt.json",
+      "bytes": 1283,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/short_screen_config.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/short_training_receipt.json",
+      "bytes": 41864,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/C0/source_manifest.json",
+      "bytes": 33460,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/args.yaml",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/batch_timing.jsonl",
+      "bytes": 97281,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/flow_check.json",
+      "bytes": 10682,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/kd_batches.jsonl",
+      "bytes": 63042,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/progress.json",
+      "bytes": 260,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/results.csv",
+      "bytes": 797,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/runtime_ready.json",
+      "bytes": 447,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/setup_receipt.json",
+      "bytes": 1282,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/short_training_receipt.json",
+      "bytes": 41885,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "evidence_final/runs/N/source_manifest.json",
+      "bytes": 33378,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "FINAL_REPORT.md",
+      "bytes": 5257,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/analyzer_reviewed_source/analyze_subset_e8.py",
+      "bytes": 9708,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/analyzer_reviewed_source/PROTOCOL.md",
+      "bytes": 1864,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/analyzer_reviewed_source/test_subset_analyzer_cpu.py",
+      "bytes": 5126,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/analyzer_reviewed_source_v2/analyze_subset_e8.py",
+      "bytes": 9835,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/analyzer_reviewed_source_v2/PROTOCOL.md",
+      "bytes": 1864,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/analyzer_reviewed_source_v2/test_subset_analyzer_cpu.py",
+      "bytes": 5971,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/ANALYZER_SOURCE_REVIEW.json",
+      "bytes": 3147,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/ANALYZER_SOURCE_REVIEW.md",
+      "bytes": 1048,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/ANALYZER_SOURCE_REVIEW_before_incomplete.json",
+      "bytes": 3037,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/ANALYZER_SOURCE_REVIEW_before_incomplete.md",
+      "bytes": 718,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/CANARY_BUDGET_INPUTS.json",
+      "bytes": 12799,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/CANARY_BUDGET_REVIEW.json",
+      "bytes": 17403,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/CANARY_BUDGET_REVIEW.md",
+      "bytes": 2073,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/FINAL_EXECUTION_INPUTS.json",
+      "bytes": 18473,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/FINAL_EXECUTION_REVIEW.json",
+      "bytes": 19999,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/FINAL_EXECUTION_REVIEW.md",
+      "bytes": 2142,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/PLAN_REVIEW.json",
+      "bytes": 1428,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/PLAN_REVIEW.md",
+      "bytes": 2941,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/review_canary_budget.py",
+      "bytes": 15228,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/review_final_execution.py",
+      "bytes": 15493,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/budget.py",
+      "bytes": 2444,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/configs/drone_C0_s42_E8.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/configs/drone_N_s42_E8.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/evaluate_short_screen.py",
+      "bytes": 11476,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/run_subset_queue.py",
+      "bytes": 13146,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/screen_common.py",
+      "bytes": 13636,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/test_queue_cpu.py",
+      "bytes": 2645,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/test_subset_cpu.py",
+      "bytes": 8092,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/train_short_screen.py",
+      "bytes": 15500,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/reviewed_source_v1/validated_amp_prior.json",
+      "bytes": 502,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/SOURCE_REVIEW.json",
+      "bytes": 10432,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/SOURCE_REVIEW.md",
+      "bytes": 1369,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "independent_review/SUBSET_CPU_REVIEWER_attempt1.json",
+      "bytes": 258,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "NEXT_ACTION_REVIEW.md",
+      "bytes": 10715,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "PINNED_CPU_v1.json",
+      "bytes": 3364,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "publication_source_v1/README.md",
+      "bytes": 230,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "publication_source_v1/sync_evidence.py",
+      "bytes": 11736,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "QUEUE_LAUNCH_attempt1.json",
+      "bytes": 348,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "README.md",
+      "bytes": 3173,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/budget.py",
+      "bytes": 2444,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/configs/drone_C0_s42_E8.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/configs/drone_N_s42_E8.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/evaluate_short_screen.py",
+      "bytes": 11476,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/run_subset_queue.py",
+      "bytes": 13146,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/screen_common.py",
+      "bytes": 13636,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/SUBSET_CPU_attempt1.json",
+      "bytes": 258,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/test_queue_cpu.py",
+      "bytes": 2645,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/test_subset_cpu.py",
+      "bytes": 8092,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/train_short_screen.py",
+      "bytes": 15500,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "release/validated_amp_prior.json",
+      "bytes": 502,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "remote_ops.py",
+      "bytes": 7739,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "SCREEN_VALIDITY_REPORT.md",
+      "bytes": 7274,
+      "byte_exact": true
+    },
+    {
+      "relative_path": "sync_evidence.py",
+      "bytes": 12267,
+      "byte_exact": true
+    }
+  ],
+  "new_hash_computed": false,
+  "local_source_snapshot": {
+    "scope": "SUBSET_E8_CHECK_EVIDENCE_PUBLICATION",
+    "execution_state": "COMPLETED",
+    "state_note": "N/C0子集E8两臂及完整dev实测9分42秒；mAP27.588046/26.459942，差−1.128105pp；本筛选器未保留已知方向，结束版本。",
+    "entry": "2026-09-08_probe_子集筛选器校验",
+    "files": [
+      {
+        "relative_path": "analysis/analyze_subset_e8.py",
+        "bytes": 9835,
+        "mtime_ns": 1788861550530689800
+      },
+      {
+        "relative_path": "analysis/analyze_subset_e8_before_incomplete.py",
+        "bytes": 9708,
+        "mtime_ns": 1788861043498378500
+      },
+      {
+        "relative_path": "analysis/analyze_subset_e8_before_scope_wording.py",
+        "bytes": 9619,
+        "mtime_ns": 1788861066574268300
+      },
+      {
+        "relative_path": "analysis/BUDGET_INDEPENDENT_CPU_attempt1.json",
+        "bytes": 769,
+        "mtime_ns": 1788861196362996900
+      },
+      {
+        "relative_path": "analysis/BUDGET_INDEPENDENT_CPU_attempt1_budget_source.py",
+        "bytes": 2445,
+        "mtime_ns": 1788861196362996900
+      },
+      {
+        "relative_path": "analysis/BUDGET_INDEPENDENT_CPU_attempt2.json",
+        "bytes": 791,
+        "mtime_ns": 1788861445405465700
+      },
+      {
+        "relative_path": "analysis/BUDGET_INDEPENDENT_CPU_attempt2_budget_source.py",
+        "bytes": 2445,
+        "mtime_ns": 1788861445405465700
+      },
+      {
+        "relative_path": "analysis/BUDGET_INDEPENDENT_REVIEW.md",
+        "bytes": 1405,
+        "mtime_ns": 1788861590688717400
+      },
+      {
+        "relative_path": "analysis/CPU_attempt1.json",
+        "bytes": 219,
+        "mtime_ns": 1788860988071897200
+      },
+      {
+        "relative_path": "analysis/CPU_attempt2.json",
+        "bytes": 219,
+        "mtime_ns": 1788861551140979200
+      },
+      {
+        "relative_path": "analysis/INTERFACE_ADDENDUM.md",
+        "bytes": 953,
+        "mtime_ns": 1788861590690635200
+      },
+      {
+        "relative_path": "analysis/output_attempt1/analyze_subset_e8_source.py",
+        "bytes": 9835,
+        "mtime_ns": 1788862582374650400
+      },
+      {
+        "relative_path": "analysis/output_attempt1/README.md",
+        "bytes": 1069,
+        "mtime_ns": 1788862582374650400
+      },
+      {
+        "relative_path": "analysis/output_attempt1/summary.json",
+        "bytes": 12383,
+        "mtime_ns": 1788862582372652400
+      },
+      {
+        "relative_path": "analysis/PROTOCOL.md",
+        "bytes": 1864,
+        "mtime_ns": 1788860918067601200
+      },
+      {
+        "relative_path": "analysis/review_budget_cpu.py",
+        "bytes": 5072,
+        "mtime_ns": 1788861444675482500
+      },
+      {
+        "relative_path": "analysis/review_budget_cpu_attempt1_source.py",
+        "bytes": 5010,
+        "mtime_ns": 1788861195825401400
+      },
+      {
+        "relative_path": "analysis/test_subset_analyzer_cpu.py",
+        "bytes": 5971,
+        "mtime_ns": 1788861550530689800
+      },
+      {
+        "relative_path": "analysis/test_subset_analyzer_cpu_before_incomplete.py",
+        "bytes": 5126,
+        "mtime_ns": 1788860987312247400
+      },
+      {
+        "relative_path": "BUDGET_AND_EXECUTION.md",
+        "bytes": 3510,
+        "mtime_ns": 1788861017054004300
+      },
+      {
+        "relative_path": "DEPLOYMENT_v1.json",
+        "bytes": 1436,
+        "mtime_ns": 1788861738025187300
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/args.yaml",
+        "bytes": 2049,
+        "mtime_ns": 1788862111629400200
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/batch_timing.jsonl",
+        "bytes": 6231,
+        "mtime_ns": 1788862111649068600
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/canary.json",
+        "bytes": 6855,
+        "mtime_ns": 1788862111656069900
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/flow_check.json",
+        "bytes": 10677,
+        "mtime_ns": 1788862111667192700
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/gradient_checks.jsonl",
+        "bytes": 259,
+        "mtime_ns": 1788862111685461500
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/initialization_check.json",
+        "bytes": 1455,
+        "mtime_ns": 1788862111692605700
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/kd_batches.jsonl",
+        "bytes": 23613,
+        "mtime_ns": 1788862111700656300
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/progress.json",
+        "bytes": 255,
+        "mtime_ns": 1788862111709960600
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/results.csv",
+        "bytes": 141,
+        "mtime_ns": 1788862111724307100
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/runtime_ready.json",
+        "bytes": 446,
+        "mtime_ns": 1788862111739119900
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/sample_stream.jsonl",
+        "bytes": 4426129,
+        "mtime_ns": 1788862111756509800
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/setup_receipt.json",
+        "bytes": 1284,
+        "mtime_ns": 1788862111769168700
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/short_screen_config.yaml",
+        "bytes": 4137,
+        "mtime_ns": 1788862111780425300
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/C0/source_manifest.json",
+        "bytes": 33780,
+        "mtime_ns": 1788862111783572300
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/args.yaml",
+        "bytes": 2047,
+        "mtime_ns": 1788862111796282300
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/batch_timing.jsonl",
+        "bytes": 6038,
+        "mtime_ns": 1788862111807948700
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/canary.json",
+        "bytes": 6749,
+        "mtime_ns": 1788862111815976600
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/flow_check.json",
+        "bytes": 10677,
+        "mtime_ns": 1788862111828955900
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/gradient_checks.jsonl",
+        "bytes": 245,
+        "mtime_ns": 1788862111849608500
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/initialization_check.json",
+        "bytes": 1454,
+        "mtime_ns": 1788862111863840700
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/kd_batches.jsonl",
+        "bytes": 23573,
+        "mtime_ns": 1788862111872842700
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/progress.json",
+        "bytes": 254,
+        "mtime_ns": 1788862111885848300
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/results.csv",
+        "bytes": 143,
+        "mtime_ns": 1788862111900952400
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/runtime_ready.json",
+        "bytes": 447,
+        "mtime_ns": 1788862111908549500
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/sample_stream.jsonl",
+        "bytes": 4426309,
+        "mtime_ns": 1788862111927813000
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/setup_receipt.json",
+        "bytes": 1283,
+        "mtime_ns": 1788862111949229000
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/short_screen_config.yaml",
+        "bytes": 4135,
+        "mtime_ns": 1788862111963884900
+      },
+      {
+        "relative_path": "evidence_canaries/canaries/N/source_manifest.json",
+        "bytes": 33698,
+        "mtime_ns": 1788862111965885300
+      },
+      {
+        "relative_path": "evidence_canaries/collection_receipt.json",
+        "bytes": 5017,
+        "mtime_ns": 1788862112298065600
+      },
+      {
+        "relative_path": "evidence_canaries/queue/budget_decision.json",
+        "bytes": 904,
+        "mtime_ns": 1788862111979882500
+      },
+      {
+        "relative_path": "evidence_canaries/queue/canary_checks.json",
+        "bytes": 2070,
+        "mtime_ns": 1788862111993610700
+      },
+      {
+        "relative_path": "evidence_canaries/queue/manifest.json",
+        "bytes": 1168,
+        "mtime_ns": 1788862112008556500
+      },
+      {
+        "relative_path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_job.json",
+        "bytes": 1350,
+        "mtime_ns": 1788862112026268300
+      },
+      {
+        "relative_path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_status.json",
+        "bytes": 381,
+        "mtime_ns": 1788862112048474000
+      },
+      {
+        "relative_path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_timing.json",
+        "bytes": 358,
+        "mtime_ns": 1788862112060788100
+      },
+      {
+        "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_job.json",
+        "bytes": 1373,
+        "mtime_ns": 1788862112081884100
+      },
+      {
+        "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_status.json",
+        "bytes": 380,
+        "mtime_ns": 1788862112105248400
+      },
+      {
+        "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_timing.json",
+        "bytes": 360,
+        "mtime_ns": 1788862112121866100
+      },
+      {
+        "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_train_job.json",
+        "bytes": 1485,
+        "mtime_ns": 1788862112141414500
+      },
+      {
+        "relative_path": "evidence_canaries/queue/subset_e8_attempt1_N_train_status.json",
+        "bytes": 2070,
+        "mtime_ns": 1788862112156786500
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/args.yaml",
+        "bytes": 2039,
+        "mtime_ns": 1788862112174839200
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/batch_timing.jsonl",
+        "bytes": 37132,
+        "mtime_ns": 1788862112194933600
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/initialization_check.json",
+        "bytes": 1455,
+        "mtime_ns": 1788862112208000200
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/kd_batches.jsonl",
+        "bytes": 31804,
+        "mtime_ns": 1788862112209783400
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/progress.json",
+        "bytes": 259,
+        "mtime_ns": 1788862112229137800
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/results.csv",
+        "bytes": 430,
+        "mtime_ns": 1788862112238759900
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/runtime_ready.json",
+        "bytes": 447,
+        "mtime_ns": 1788862112246767000
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/sample_stream.jsonl",
+        "bytes": 4426129,
+        "mtime_ns": 1788862112257004700
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/setup_receipt.json",
+        "bytes": 1282,
+        "mtime_ns": 1788862112273780200
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/short_screen_config.yaml",
+        "bytes": 4135,
+        "mtime_ns": 1788862112289680300
+      },
+      {
+        "relative_path": "evidence_canaries/runs/N/source_manifest.json",
+        "bytes": 33378,
+        "mtime_ns": 1788862112291498700
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/args.yaml",
+        "bytes": 2049,
+        "mtime_ns": 1788862563192208600
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/batch_timing.jsonl",
+        "bytes": 6231,
+        "mtime_ns": 1788862563195207300
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/canary.json",
+        "bytes": 6855,
+        "mtime_ns": 1788862563196207200
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/flow_check.json",
+        "bytes": 10677,
+        "mtime_ns": 1788862563198207900
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/gradient_checks.jsonl",
+        "bytes": 259,
+        "mtime_ns": 1788862563209459200
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/initialization_check.json",
+        "bytes": 1455,
+        "mtime_ns": 1788862563211181100
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/kd_batches.jsonl",
+        "bytes": 23613,
+        "mtime_ns": 1788862563213564600
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/progress.json",
+        "bytes": 255,
+        "mtime_ns": 1788862563226565300
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/results.csv",
+        "bytes": 141,
+        "mtime_ns": 1788862563227855500
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/runtime_ready.json",
+        "bytes": 446,
+        "mtime_ns": 1788862563231038300
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/sample_stream.jsonl",
+        "bytes": 4426129,
+        "mtime_ns": 1788862563241985200
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/setup_receipt.json",
+        "bytes": 1284,
+        "mtime_ns": 1788862563258279200
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/short_screen_config.yaml",
+        "bytes": 4137,
+        "mtime_ns": 1788862563260764800
+      },
+      {
+        "relative_path": "evidence_final/canaries/C0/source_manifest.json",
+        "bytes": 33780,
+        "mtime_ns": 1788862563262441600
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/args.yaml",
+        "bytes": 2047,
+        "mtime_ns": 1788862563276528000
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/batch_timing.jsonl",
+        "bytes": 6038,
+        "mtime_ns": 1788862563277740600
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/canary.json",
+        "bytes": 6749,
+        "mtime_ns": 1788862563281829000
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/flow_check.json",
+        "bytes": 10677,
+        "mtime_ns": 1788862563283673700
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/gradient_checks.jsonl",
+        "bytes": 245,
+        "mtime_ns": 1788862563293848600
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/initialization_check.json",
+        "bytes": 1454,
+        "mtime_ns": 1788862563294859200
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/kd_batches.jsonl",
+        "bytes": 23573,
+        "mtime_ns": 1788862563296847100
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/progress.json",
+        "bytes": 254,
+        "mtime_ns": 1788862563305360600
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/results.csv",
+        "bytes": 143,
+        "mtime_ns": 1788862563306454600
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/runtime_ready.json",
+        "bytes": 447,
+        "mtime_ns": 1788862563307361300
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/sample_stream.jsonl",
+        "bytes": 4426309,
+        "mtime_ns": 1788862563317853100
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/setup_receipt.json",
+        "bytes": 1283,
+        "mtime_ns": 1788862563333466700
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/short_screen_config.yaml",
+        "bytes": 4135,
+        "mtime_ns": 1788862563334624100
+      },
+      {
+        "relative_path": "evidence_final/canaries/N/source_manifest.json",
+        "bytes": 33698,
+        "mtime_ns": 1788862563336514200
+      },
+      {
+        "relative_path": "evidence_final/collection_receipt.json",
+        "bytes": 9399,
+        "mtime_ns": 1788862564103994400
+      },
+      {
+        "relative_path": "evidence_final/evaluations/C0/development_roster.txt",
+        "bytes": 164528,
+        "mtime_ns": 1788862563345467400
+      },
+      {
+        "relative_path": "evidence_final/evaluations/C0/native_capture/objects.jsonl.gz",
+        "bytes": 15381856,
+        "mtime_ns": 1788862563397240800
+      },
+      {
+        "relative_path": "evidence_final/evaluations/C0/short_evaluation_contract.json",
+        "bytes": 351279,
+        "mtime_ns": 1788862563424880300
+      },
+      {
+        "relative_path": "evidence_final/evaluations/C0/short_evaluation_receipt.json",
+        "bytes": 5218,
+        "mtime_ns": 1788862563434412700
+      },
+      {
+        "relative_path": "evidence_final/evaluations/C0/short_screen_config.yaml",
+        "bytes": 4137,
+        "mtime_ns": 1788862563448401500
+      },
+      {
+        "relative_path": "evidence_final/evaluations/C0/short_training_receipt_copy.json",
+        "bytes": 41864,
+        "mtime_ns": 1788862563452401800
+      },
+      {
+        "relative_path": "evidence_final/evaluations/C0/source_manifest.json",
+        "bytes": 9300,
+        "mtime_ns": 1788862563467756800
+      },
+      {
+        "relative_path": "evidence_final/evaluations/N/development_roster.txt",
+        "bytes": 164528,
+        "mtime_ns": 1788862563484697500
+      },
+      {
+        "relative_path": "evidence_final/evaluations/N/native_capture/objects.jsonl.gz",
+        "bytes": 15280627,
+        "mtime_ns": 1788862563542444400
+      },
+      {
+        "relative_path": "evidence_final/evaluations/N/short_evaluation_contract.json",
+        "bytes": 351279,
+        "mtime_ns": 1788862563565471900
+      },
+      {
+        "relative_path": "evidence_final/evaluations/N/short_evaluation_receipt.json",
+        "bytes": 5216,
+        "mtime_ns": 1788862563580184800
+      },
+      {
+        "relative_path": "evidence_final/evaluations/N/short_screen_config.yaml",
+        "bytes": 4135,
+        "mtime_ns": 1788862563599929000
+      },
+      {
+        "relative_path": "evidence_final/evaluations/N/short_training_receipt_copy.json",
+        "bytes": 41885,
+        "mtime_ns": 1788862563601750000
+      },
+      {
+        "relative_path": "evidence_final/evaluations/N/source_manifest.json",
+        "bytes": 9277,
+        "mtime_ns": 1788862563615932000
+      },
+      {
+        "relative_path": "evidence_final/queue/budget_decision.json",
+        "bytes": 904,
+        "mtime_ns": 1788862563627602100
+      },
+      {
+        "relative_path": "evidence_final/queue/canary_checks.json",
+        "bytes": 2070,
+        "mtime_ns": 1788862563629584900
+      },
+      {
+        "relative_path": "evidence_final/queue/completion.json",
+        "bytes": 4326,
+        "mtime_ns": 1788862563631584200
+      },
+      {
+        "relative_path": "evidence_final/queue/manifest.json",
+        "bytes": 1168,
+        "mtime_ns": 1788862563645194200
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_canary_job.json",
+        "bytes": 1350,
+        "mtime_ns": 1788862563649314300
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_canary_status.json",
+        "bytes": 381,
+        "mtime_ns": 1788862563653866200
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_canary_timing.json",
+        "bytes": 358,
+        "mtime_ns": 1788862563656205800
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_eval_job.json",
+        "bytes": 1217,
+        "mtime_ns": 1788862563662381900
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_eval_status.json",
+        "bytes": 378,
+        "mtime_ns": 1788862563678945000
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_eval_timing.json",
+        "bytes": 356,
+        "mtime_ns": 1788862563687001900
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_train_job.json",
+        "bytes": 1492,
+        "mtime_ns": 1788862563716705800
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_train_status.json",
+        "bytes": 380,
+        "mtime_ns": 1788862563736526600
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_C0_train_timing.json",
+        "bytes": 361,
+        "mtime_ns": 1788862563744700900
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_canary_job.json",
+        "bytes": 1373,
+        "mtime_ns": 1788862563757988000
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_canary_status.json",
+        "bytes": 380,
+        "mtime_ns": 1788862563761096500
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_canary_timing.json",
+        "bytes": 360,
+        "mtime_ns": 1788862563762812100
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_eval_job.json",
+        "bytes": 1211,
+        "mtime_ns": 1788862563766977600
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_eval_status.json",
+        "bytes": 376,
+        "mtime_ns": 1788862563783151200
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_eval_timing.json",
+        "bytes": 357,
+        "mtime_ns": 1788862563792665400
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_train_job.json",
+        "bytes": 1485,
+        "mtime_ns": 1788862563802512200
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_train_status.json",
+        "bytes": 379,
+        "mtime_ns": 1788862563825421200
+      },
+      {
+        "relative_path": "evidence_final/queue/subset_e8_attempt1_N_train_timing.json",
+        "bytes": 358,
+        "mtime_ns": 1788862563832898500
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/args.yaml",
+        "bytes": 2041,
+        "mtime_ns": 1788862563845264200
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/batch_timing.jsonl",
+        "bytes": 97259,
+        "mtime_ns": 1788862563857217300
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/flow_check.json",
+        "bytes": 10681,
+        "mtime_ns": 1788862563866999000
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/initialization_check.json",
+        "bytes": 1455,
+        "mtime_ns": 1788862563875985500
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/kd_batches.jsonl",
+        "bytes": 63147,
+        "mtime_ns": 1788862563876986500
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/progress.json",
+        "bytes": 259,
+        "mtime_ns": 1788862563892093400
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/results.csv",
+        "bytes": 798,
+        "mtime_ns": 1788862563902768300
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/runtime_ready.json",
+        "bytes": 446,
+        "mtime_ns": 1788862563912010100
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/sample_stream.jsonl",
+        "bytes": 4426129,
+        "mtime_ns": 1788862563922993300
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/setup_receipt.json",
+        "bytes": 1283,
+        "mtime_ns": 1788862563935020100
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/short_screen_config.yaml",
+        "bytes": 4137,
+        "mtime_ns": 1788862563951315900
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/short_training_receipt.json",
+        "bytes": 41864,
+        "mtime_ns": 1788862563954249200
+      },
+      {
+        "relative_path": "evidence_final/runs/C0/source_manifest.json",
+        "bytes": 33460,
+        "mtime_ns": 1788862563967271300
+      },
+      {
+        "relative_path": "evidence_final/runs/N/args.yaml",
+        "bytes": 2039,
+        "mtime_ns": 1788862563990513700
+      },
+      {
+        "relative_path": "evidence_final/runs/N/batch_timing.jsonl",
+        "bytes": 97281,
+        "mtime_ns": 1788862563992816400
+      },
+      {
+        "relative_path": "evidence_final/runs/N/flow_check.json",
+        "bytes": 10682,
+        "mtime_ns": 1788862564003198300
+      },
+      {
+        "relative_path": "evidence_final/runs/N/initialization_check.json",
+        "bytes": 1455,
+        "mtime_ns": 1788862564017997200
+      },
+      {
+        "relative_path": "evidence_final/runs/N/kd_batches.jsonl",
+        "bytes": 63042,
+        "mtime_ns": 1788862564019997600
+      },
+      {
+        "relative_path": "evidence_final/runs/N/progress.json",
+        "bytes": 260,
+        "mtime_ns": 1788862564029509200
+      },
+      {
+        "relative_path": "evidence_final/runs/N/results.csv",
+        "bytes": 797,
+        "mtime_ns": 1788862564039510000
+      },
+      {
+        "relative_path": "evidence_final/runs/N/runtime_ready.json",
+        "bytes": 447,
+        "mtime_ns": 1788862564050113100
+      },
+      {
+        "relative_path": "evidence_final/runs/N/sample_stream.jsonl",
+        "bytes": 4426129,
+        "mtime_ns": 1788862564061040700
+      },
+      {
+        "relative_path": "evidence_final/runs/N/setup_receipt.json",
+        "bytes": 1282,
+        "mtime_ns": 1788862564074793800
+      },
+      {
+        "relative_path": "evidence_final/runs/N/short_screen_config.yaml",
+        "bytes": 4135,
+        "mtime_ns": 1788862564076913400
+      },
+      {
+        "relative_path": "evidence_final/runs/N/short_training_receipt.json",
+        "bytes": 41885,
+        "mtime_ns": 1788862564077853800
+      },
+      {
+        "relative_path": "evidence_final/runs/N/source_manifest.json",
+        "bytes": 33378,
+        "mtime_ns": 1788862564088402600
+      },
+      {
+        "relative_path": "FINAL_REPORT.md",
+        "bytes": 5257,
+        "mtime_ns": 1788862772477132400
+      },
+      {
+        "relative_path": "independent_review/analyzer_reviewed_source/analyze_subset_e8.py",
+        "bytes": 9708,
+        "mtime_ns": 1788861107854589700
+      },
+      {
+        "relative_path": "independent_review/analyzer_reviewed_source/PROTOCOL.md",
+        "bytes": 1864,
+        "mtime_ns": 1788861107866947000
+      },
+      {
+        "relative_path": "independent_review/analyzer_reviewed_source/test_subset_analyzer_cpu.py",
+        "bytes": 5126,
+        "mtime_ns": 1788861107860946600
+      },
+      {
+        "relative_path": "independent_review/analyzer_reviewed_source_v2/analyze_subset_e8.py",
+        "bytes": 9835,
+        "mtime_ns": 1788861601464879200
+      },
+      {
+        "relative_path": "independent_review/analyzer_reviewed_source_v2/PROTOCOL.md",
+        "bytes": 1864,
+        "mtime_ns": 1788861601477656700
+      },
+      {
+        "relative_path": "independent_review/analyzer_reviewed_source_v2/test_subset_analyzer_cpu.py",
+        "bytes": 5971,
+        "mtime_ns": 1788861601471805500
+      },
+      {
+        "relative_path": "independent_review/ANALYZER_SOURCE_REVIEW.json",
+        "bytes": 3147,
+        "mtime_ns": 1788861601478769900
+      },
+      {
+        "relative_path": "independent_review/ANALYZER_SOURCE_REVIEW.md",
+        "bytes": 1048,
+        "mtime_ns": 1788861601478769900
+      },
+      {
+        "relative_path": "independent_review/ANALYZER_SOURCE_REVIEW_before_incomplete.json",
+        "bytes": 3037,
+        "mtime_ns": 1788861601460362100
+      },
+      {
+        "relative_path": "independent_review/ANALYZER_SOURCE_REVIEW_before_incomplete.md",
+        "bytes": 718,
+        "mtime_ns": 1788861601463880400
+      },
+      {
+        "relative_path": "independent_review/CANARY_BUDGET_INPUTS.json",
+        "bytes": 12799,
+        "mtime_ns": 1788862524522601900
+      },
+      {
+        "relative_path": "independent_review/CANARY_BUDGET_REVIEW.json",
+        "bytes": 17403,
+        "mtime_ns": 1788862524524365800
+      },
+      {
+        "relative_path": "independent_review/CANARY_BUDGET_REVIEW.md",
+        "bytes": 2073,
+        "mtime_ns": 1788862524525031600
+      },
+      {
+        "relative_path": "independent_review/FINAL_EXECUTION_INPUTS.json",
+        "bytes": 18473,
+        "mtime_ns": 1788862796530397800
+      },
+      {
+        "relative_path": "independent_review/FINAL_EXECUTION_REVIEW.json",
+        "bytes": 19999,
+        "mtime_ns": 1788862796530397800
+      },
+      {
+        "relative_path": "independent_review/FINAL_EXECUTION_REVIEW.md",
+        "bytes": 2142,
+        "mtime_ns": 1788862796530397800
+      },
+      {
+        "relative_path": "independent_review/PLAN_REVIEW.json",
+        "bytes": 1428,
+        "mtime_ns": 1788860822006926400
+      },
+      {
+        "relative_path": "independent_review/PLAN_REVIEW.md",
+        "bytes": 2941,
+        "mtime_ns": 1788860822006926400
+      },
+      {
+        "relative_path": "independent_review/review_canary_budget.py",
+        "bytes": 15228,
+        "mtime_ns": 1788862523695138100
+      },
+      {
+        "relative_path": "independent_review/review_final_execution.py",
+        "bytes": 15493,
+        "mtime_ns": 1788862794038715000
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/budget.py",
+        "bytes": 2444,
+        "mtime_ns": 1788861804635142500
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/configs/drone_C0_s42_E8.yaml",
+        "bytes": 4137,
+        "mtime_ns": 1788861804641674100
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/configs/drone_N_s42_E8.yaml",
+        "bytes": 4135,
+        "mtime_ns": 1788861804646673100
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/evaluate_short_screen.py",
+        "bytes": 11476,
+        "mtime_ns": 1788861804648184500
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/run_subset_queue.py",
+        "bytes": 13146,
+        "mtime_ns": 1788861804656098300
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/screen_common.py",
+        "bytes": 13636,
+        "mtime_ns": 1788861804662658300
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/test_queue_cpu.py",
+        "bytes": 2645,
+        "mtime_ns": 1788861804669038400
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/test_subset_cpu.py",
+        "bytes": 8092,
+        "mtime_ns": 1788861804675957700
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/train_short_screen.py",
+        "bytes": 15500,
+        "mtime_ns": 1788861804682951700
+      },
+      {
+        "relative_path": "independent_review/reviewed_source_v1/validated_amp_prior.json",
+        "bytes": 502,
+        "mtime_ns": 1788861804689957300
+      },
+      {
+        "relative_path": "independent_review/SOURCE_REVIEW.json",
+        "bytes": 10432,
+        "mtime_ns": 1788861912160798600
+      },
+      {
+        "relative_path": "independent_review/SOURCE_REVIEW.md",
+        "bytes": 1369,
+        "mtime_ns": 1788861912162069800
+      },
+      {
+        "relative_path": "independent_review/SUBSET_CPU_REVIEWER_attempt1.json",
+        "bytes": 258,
+        "mtime_ns": 1788861653294811300
+      },
+      {
+        "relative_path": "NEXT_ACTION_REVIEW.md",
+        "bytes": 10715,
+        "mtime_ns": 1788862949073781600
+      },
+      {
+        "relative_path": "PINNED_CPU_v1.json",
+        "bytes": 3364,
+        "mtime_ns": 1788861753917928700
+      },
+      {
+        "relative_path": "publication_source_v1/README.md",
+        "bytes": 230,
+        "mtime_ns": 1788863044371839700
+      },
+      {
+        "relative_path": "publication_source_v1/sync_evidence.py",
+        "bytes": 11736,
+        "mtime_ns": 1788863044371839700
+      },
+      {
+        "relative_path": "QUEUE_LAUNCH_attempt1.json",
+        "bytes": 348,
+        "mtime_ns": 1788861930532492600
+      },
+      {
+        "relative_path": "README.md",
+        "bytes": 3173,
+        "mtime_ns": 1788862852025925600
+      },
+      {
+        "relative_path": "release/budget.py",
+        "bytes": 2444,
+        "mtime_ns": 1788861625684602800
+      },
+      {
+        "relative_path": "release/configs/drone_C0_s42_E8.yaml",
+        "bytes": 4137,
+        "mtime_ns": 1788861299077807800
+      },
+      {
+        "relative_path": "release/configs/drone_N_s42_E8.yaml",
+        "bytes": 4135,
+        "mtime_ns": 1788861299065717800
+      },
+      {
+        "relative_path": "release/evaluate_short_screen.py",
+        "bytes": 11476,
+        "mtime_ns": 1788861394114437600
+      },
+      {
+        "relative_path": "release/run_subset_queue.py",
+        "bytes": 13146,
+        "mtime_ns": 1788861307534405300
+      },
+      {
+        "relative_path": "release/screen_common.py",
+        "bytes": 13636,
+        "mtime_ns": 1788861186519425500
+      },
+      {
+        "relative_path": "release/SUBSET_CPU_attempt1.json",
+        "bytes": 258,
+        "mtime_ns": 1788861514826786200
+      },
+      {
+        "relative_path": "release/test_queue_cpu.py",
+        "bytes": 2645,
+        "mtime_ns": 1788861489383523700
+      },
+      {
+        "relative_path": "release/test_subset_cpu.py",
+        "bytes": 8092,
+        "mtime_ns": 1788861513726807700
+      },
+      {
+        "relative_path": "release/train_short_screen.py",
+        "bytes": 15500,
+        "mtime_ns": 1788861394075204100
+      },
+      {
+        "relative_path": "release/validated_amp_prior.json",
+        "bytes": 502,
+        "mtime_ns": 1788861299079847800
+      },
+      {
+        "relative_path": "remote_ops.py",
+        "bytes": 7739,
+        "mtime_ns": 1788861736781111900
+      },
+      {
+        "relative_path": "SCREEN_VALIDITY_REPORT.md",
+        "bytes": 7274,
+        "mtime_ns": 1788862882193647100
+      },
+      {
+        "relative_path": "sync_evidence.py",
+        "bytes": 12267,
+        "mtime_ns": 1788863044432743700
+      }
+    ],
+    "excluded": [
+      {
+        "path": "analysis/__pycache__/",
+        "reason": "excluded_or_external_directory"
+      },
+      {
+        "path": "release/__pycache__/",
+        "reason": "excluded_or_external_directory"
+      },
+      {
+        "path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_resource_profile.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_resource_profile.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_canaries/queue/subset_e8_attempt1_N_train_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_C0_canary_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_C0_canary_resource_profile.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_C0_eval_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_C0_eval_resource_profile.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_C0_train_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_C0_train_resource_profile.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_N_canary_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_N_canary_resource_profile.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_N_eval_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_N_eval_resource_profile.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_N_train_admission.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "evidence_final/queue/subset_e8_attempt1_N_train_resource_profile.json",
+        "reason": "full_resource_or_admission_profile"
+      },
+      {
+        "path": "SYNC_SCOPE_MANIFEST.json",
+        "reason": "generated_sync_receipt_or_full_host_snapshot"
+      }
+    ],
+    "total_bytes": 64301278,
+    "new_hash_computed": false,
+    "weights_uploaded": false,
+    "images_uploaded": false,
+    "server_only_flow_tensors_excluded": true,
+    "full_host_profiles_excluded": true,
+    "credential_marker_scan_passed": true,
+    "prior_failures_and_reviews_retained": true,
+    "new_training_or_evaluation": false
+  }
+}

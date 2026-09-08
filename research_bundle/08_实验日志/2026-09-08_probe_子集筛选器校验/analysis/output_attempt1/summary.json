@@ -1,0 +1,355 @@
+{
+  "status": "COMPLETE_SUBSET_E8_READOUT",
+  "scope": "DRONE_SUBSET2048_PRETRAIN_E8_CHECK",
+  "endpoint": "SUBSET2048_PRETRAIN_E8_LAST_EMA",
+  "purpose": "known_positive_control_screener_validation",
+  "dataset": "dronevehicle",
+  "seed": 42,
+  "n_seeds": 1,
+  "epochs": 8,
+  "independent_lr_horizon": 8,
+  "train_images": 2048,
+  "dev_images": 1469,
+  "dev_gt_objects": 22462,
+  "standard_deviation": null,
+  "raw_metric_units": "fraction_0_to_1",
+  "display_metric_units": "percent",
+  "difference_units": "percentage_points",
+  "arms": [
+    {
+      "arm": "N",
+      "status": "COMPLETED",
+      "classification_coefficient": 0.0,
+      "raw_fraction": {
+        "mAP50_95": 0.27588046126255605,
+        "AP50": 0.43153525383720587,
+        "AP75": 0.31457493863583874,
+        "precision": 0.4221740536936397,
+        "recall": 0.47784625908888845
+      },
+      "display_percent": {
+        "mAP50_95": 27.588046126255605,
+        "AP50": 43.153525383720584,
+        "AP75": 31.457493863583874,
+        "precision": 42.217405369363966,
+        "recall": 47.78462590888884
+      },
+      "per_class": [
+        {
+          "class_id": 0,
+          "name": "car",
+          "raw_fraction": {
+            "mAP50_95": 0.5683352779295339,
+            "AP50": 0.8810245289310297,
+            "AP75": 0.6477390784892183
+          },
+          "display_percent": {
+            "mAP50_95": 56.83352779295339,
+            "AP50": 88.10245289310296,
+            "AP75": 64.77390784892182
+          }
+        },
+        {
+          "class_id": 1,
+          "name": "freight car",
+          "raw_fraction": {
+            "mAP50_95": 0.10260852369857196,
+            "AP50": 0.17314458700260243,
+            "AP75": 0.10899132238582504
+          },
+          "display_percent": {
+            "mAP50_95": 10.260852369857195,
+            "AP50": 17.314458700260243,
+            "AP75": 10.899132238582505
+          }
+        },
+        {
+          "class_id": 2,
+          "name": "truck",
+          "raw_fraction": {
+            "mAP50_95": 0.21187856926860218,
+            "AP50": 0.3256826758373528,
+            "AP75": 0.2457782268055355
+          },
+          "display_percent": {
+            "mAP50_95": 21.187856926860217,
+            "AP50": 32.56826758373528,
+            "AP75": 24.57782268055355
+          }
+        },
+        {
+          "class_id": 3,
+          "name": "bus",
+          "raw_fraction": {
+            "mAP50_95": 0.43010989206452016,
+            "AP50": 0.6629164199587039,
+            "AP75": 0.5030547096492579
+          },
+          "display_percent": {
+            "mAP50_95": 43.01098920645202,
+            "AP50": 66.29164199587039,
+            "AP75": 50.30547096492579
+          }
+        },
+        {
+          "class_id": 4,
+          "name": "van",
+          "raw_fraction": {
+            "mAP50_95": 0.06647004335155227,
+            "AP50": 0.11490805745634096,
+            "AP75": 0.06731135584935694
+          },
+          "display_percent": {
+            "mAP50_95": 6.647004335155227,
+            "AP50": 11.490805745634097,
+            "AP75": 6.731135584935694
+          }
+        }
+      ],
+      "evaluation_seconds": 18.347237559966743,
+      "initialization": {
+        "model": {
+          "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "bytes": 5613764,
+          "mtime_ns": 1787430880966430625
+        },
+        "teacher": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5483610,
+          "mtime_ns": 1788133393714042412
+        },
+        "reference": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5483610,
+          "mtime_ns": 1788133016384388766
+        }
+      },
+      "training_subset_identity": {
+        "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_rgb.yaml",
+        "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_infrared.yaml",
+        "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/rgb_to_infrared_train.json"
+      },
+      "training_configuration": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/runs/N/short_screen_config.yaml",
+        "bytes": 4135,
+        "mtime_ns": 1788862014663759479
+      },
+      "training_completion": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/runs/N/short_training_receipt.json",
+        "bytes": 41885,
+        "mtime_ns": 1788862237665362703
+      }
+    },
+    {
+      "arm": "C0",
+      "status": "COMPLETED",
+      "classification_coefficient": 0.1,
+      "raw_fraction": {
+        "mAP50_95": 0.26459941538629644,
+        "AP50": 0.4173579963575628,
+        "AP75": 0.30036810871537206,
+        "precision": 0.4135613146265906,
+        "recall": 0.4487689045501916
+      },
+      "display_percent": {
+        "mAP50_95": 26.459941538629643,
+        "AP50": 41.73579963575628,
+        "AP75": 30.036810871537206,
+        "precision": 41.356131462659064,
+        "recall": 44.87689045501916
+      },
+      "per_class": [
+        {
+          "class_id": 0,
+          "name": "car",
+          "raw_fraction": {
+            "mAP50_95": 0.550559642789492,
+            "AP50": 0.8695969598040767,
+            "AP75": 0.6223191928075018
+          },
+          "display_percent": {
+            "mAP50_95": 55.0559642789492,
+            "AP50": 86.95969598040767,
+            "AP75": 62.23191928075018
+          }
+        },
+        {
+          "class_id": 1,
+          "name": "freight car",
+          "raw_fraction": {
+            "mAP50_95": 0.09355198191832807,
+            "AP50": 0.1576015001377381,
+            "AP75": 0.09820973357574204
+          },
+          "display_percent": {
+            "mAP50_95": 9.355198191832807,
+            "AP50": 15.76015001377381,
+            "AP75": 9.820973357574205
+          }
+        },
+        {
+          "class_id": 2,
+          "name": "truck",
+          "raw_fraction": {
+            "mAP50_95": 0.1938800784871699,
+            "AP50": 0.29621421001563636,
+            "AP75": 0.22122455112549536
+          },
+          "display_percent": {
+            "mAP50_95": 19.38800784871699,
+            "AP50": 29.621421001563636,
+            "AP75": 22.122455112549535
+          }
+        },
+        {
+          "class_id": 3,
+          "name": "bus",
+          "raw_fraction": {
+            "mAP50_95": 0.42408232799225365,
+            "AP50": 0.6598096338066648,
+            "AP75": 0.49509003385203715
+          },
+          "display_percent": {
+            "mAP50_95": 42.40823279922537,
+            "AP50": 65.98096338066648,
+            "AP75": 49.50900338520371
+          }
+        },
+        {
+          "class_id": 4,
+          "name": "van",
+          "raw_fraction": {
+            "mAP50_95": 0.06092304574423833,
+            "AP50": 0.10356767802369846,
+            "AP75": 0.06499703221608394
+          },
+          "display_percent": {
+            "mAP50_95": 6.092304574423833,
+            "AP50": 10.356767802369845,
+            "AP75": 6.499703221608394
+          }
+        }
+      ],
+      "evaluation_seconds": 19.02456731116399,
+      "initialization": {
+        "model": {
+          "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "bytes": 5613764,
+          "mtime_ns": 1787430880966430625
+        },
+        "teacher": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5483610,
+          "mtime_ns": 1788133393714042412
+        },
+        "reference": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5483610,
+          "mtime_ns": 1788133016384388766
+        }
+      },
+      "training_subset_identity": {
+        "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_rgb.yaml",
+        "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_infrared.yaml",
+        "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/rgb_to_infrared_train.json"
+      },
+      "training_configuration": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/runs/C0/short_screen_config.yaml",
+        "bytes": 4137,
+        "mtime_ns": 1788862272018161852
+      },
+      "training_completion": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/runs/C0/short_training_receipt.json",
+        "bytes": 41864,
+        "mtime_ns": 1788862483950813895
+      }
+    }
+  ],
+  "comparison": {
+    "contrast": "C0 - N",
+    "status": "COMPUTED",
+    "delta_pp": {
+      "mAP50_95": -1.128104587625961,
+      "AP50": -1.4177257479643046,
+      "AP75": -1.420682992046668,
+      "precision": -0.8612739067049069,
+      "recall": -2.9077354538696865
+    },
+    "direction": {
+      "mAP50_95": "negative",
+      "AP50": "negative",
+      "AP75": "negative",
+      "precision": "negative",
+      "recall": "negative"
+    },
+    "per_class": [
+      {
+        "class_id": 0,
+        "name": "car",
+        "delta_pp": {
+          "mAP50_95": -1.7775635140041879,
+          "AP50": -1.1427569126952974,
+          "AP75": -2.541988568171649
+        }
+      },
+      {
+        "class_id": 1,
+        "name": "freight car",
+        "delta_pp": {
+          "mAP50_95": -0.9056541780243885,
+          "AP50": -1.554308686486433,
+          "AP75": -1.0781588810082996
+        }
+      },
+      {
+        "class_id": 2,
+        "name": "truck",
+        "delta_pp": {
+          "mAP50_95": -1.7998490781432286,
+          "AP50": -2.9468465821716414,
+          "AP75": -2.4553675680040135
+        }
+      },
+      {
+        "class_id": 3,
+        "name": "bus",
+        "delta_pp": {
+          "mAP50_95": -0.6027564072266511,
+          "AP50": -0.3106786152039076,
+          "AP75": -0.7964675797220766
+        }
+      },
+      {
+        "class_id": 4,
+        "name": "van",
+        "delta_pp": {
+          "mAP50_95": -0.5546997607313933,
+          "AP50": -1.1340379432642502,
+          "AP75": -0.23143236332729966
+        }
+      }
+    ]
+  },
+  "primary_direction": "negative",
+  "new_method_causal_claim": false,
+  "causal_modality_claim": false,
+  "general_method_ranking_validated": false,
+  "automatically_admit_e200": false,
+  "automatically_extend_matrix": false,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "new_hash_computed": false,
+  "scope_limit": "Only the known N/C0 direction in one fixed subset/seed/independent E8 schedule; no general efficacy inference. Actual training identity remains the responsibility of its collected execution receipts.",
+  "input_sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\N\\short_evaluation_receipt.json",
+      "bytes": 5216,
+      "mtime_ns": 1788862563580184800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\C0\\short_evaluation_receipt.json",
+      "bytes": 5218,
+      "mtime_ns": 1788862563434412700
+    }
+  ]
+}

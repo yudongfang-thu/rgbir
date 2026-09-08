@@ -1,0 +1,128 @@
+{
+  "status": "SUBSET_SCREEN_MATRIX_COMPLETED",
+  "scope": "DRONE_SUBSET2048_PRETRAIN_E8_CHECK",
+  "completed": [
+    {
+      "arm": "N",
+      "stage": "canary",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/N/canary.json",
+      "validated": true
+    },
+    {
+      "arm": "C0",
+      "stage": "canary",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/canary.json",
+      "validated": true
+    },
+    {
+      "arm": "N",
+      "stage": "train",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/runs/N/short_training_receipt.json",
+      "validated": true
+    },
+    {
+      "arm": "N",
+      "stage": "eval",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/evaluations/N/short_evaluation_receipt.json",
+      "validated": true
+    },
+    {
+      "arm": "C0",
+      "stage": "train",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/runs/C0/short_training_receipt.json",
+      "validated": true
+    },
+    {
+      "arm": "C0",
+      "stage": "eval",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/evaluations/C0/short_evaluation_receipt.json",
+      "validated": true
+    }
+  ],
+  "error": null,
+  "execution_seconds": 571.5482431035489,
+  "admission_wait_seconds": 10.68745645834133,
+  "total_wall_seconds": 582.2357020140626,
+  "stage_timings": [
+    {
+      "job_id": "subset_e8_attempt1_N_canary",
+      "stage": "canary",
+      "arm": "N",
+      "wall_seconds": 43.155801792861894,
+      "observed_execution_seconds": 41.54152865288779,
+      "admission_wait_seconds": 1.6142731399741024,
+      "execution_limit_seconds": 2699.9998803769704,
+      "budget_timed_out": false,
+      "actual_launch_observed": true,
+      "new_hash_computed": false
+    },
+    {
+      "job_id": "subset_e8_attempt1_C0_canary",
+      "stage": "canary",
+      "arm": "C0",
+      "wall_seconds": 36.9919059840031,
+      "observed_execution_seconds": 35.32106383680366,
+      "admission_wait_seconds": 1.670842147199437,
+      "execution_limit_seconds": 2658.455198890064,
+      "budget_timed_out": false,
+      "actual_launch_observed": true,
+      "new_hash_computed": false
+    },
+    {
+      "job_id": "subset_e8_attempt1_N_train",
+      "stage": "train",
+      "arm": "N",
+      "wall_seconds": 231.48099913122132,
+      "observed_execution_seconds": 230.1336480169557,
+      "admission_wait_seconds": 1.3473511142656207,
+      "execution_limit_seconds": 2623.1325156311505,
+      "budget_timed_out": false,
+      "actual_launch_observed": true,
+      "new_hash_computed": false
+    },
+    {
+      "job_id": "subset_e8_attempt1_N_eval",
+      "stage": "eval",
+      "arm": "N",
+      "wall_seconds": 24.470369619783014,
+      "observed_execution_seconds": 22.610174098052084,
+      "admission_wait_seconds": 1.8601955217309296,
+      "execution_limit_seconds": 2392.9949125554413,
+      "budget_timed_out": false,
+      "actual_launch_observed": true,
+      "new_hash_computed": false
+    },
+    {
+      "job_id": "subset_e8_attempt1_C0_train",
+      "stage": "train",
+      "arm": "C0",
+      "wall_seconds": 221.32456003595144,
+      "observed_execution_seconds": 219.30019377800636,
+      "admission_wait_seconds": 2.0243662579450756,
+      "execution_limit_seconds": 2370.3833730742335,
+      "budget_timed_out": false,
+      "actual_launch_observed": true,
+      "new_hash_computed": false
+    },
+    {
+      "job_id": "subset_e8_attempt1_C0_eval",
+      "stage": "eval",
+      "arm": "C0",
+      "wall_seconds": 24.79715128405951,
+      "observed_execution_seconds": 22.626738137798384,
+      "admission_wait_seconds": 2.170413146261126,
+      "execution_limit_seconds": 2151.079323097132,
+      "budget_timed_out": false,
+      "actual_launch_observed": true,
+      "new_hash_computed": false
+    }
+  ],
+  "single_seed": true,
+  "seed": 42,
+  "epochs": 8,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "automatic_retry": false,
+  "ap_adaptive": false,
+  "new_hash_computed": false
+}

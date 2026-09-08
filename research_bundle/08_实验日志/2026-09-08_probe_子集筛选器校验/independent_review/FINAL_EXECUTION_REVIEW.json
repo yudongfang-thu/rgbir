@@ -1,0 +1,455 @@
+{
+  "date": "2026-09-08T10:19:56.529400+00:00",
+  "auditor": {
+    "agent": "/root/object_transport_review",
+    "model_identity": "Not exposed; inherited parent settings",
+    "cross_model_claim": false
+  },
+  "status": "PASS_EXECUTED_SUBSET_SCREEN",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "scope": "DRONE_SUBSET2048_PRETRAIN_E8_CHECK",
+  "endpoint": "SUBSET2048_PRETRAIN_E8_LAST_EMA",
+  "eval_type": "real_gt",
+  "checks": [
+    {
+      "name": "source_budget.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\budget.py"
+    },
+    {
+      "name": "source_configs/drone_C0_s42_E8.yaml",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\configs\\drone_C0_s42_E8.yaml"
+    },
+    {
+      "name": "source_configs/drone_N_s42_E8.yaml",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\configs\\drone_N_s42_E8.yaml"
+    },
+    {
+      "name": "source_evaluate_short_screen.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\evaluate_short_screen.py"
+    },
+    {
+      "name": "source_run_subset_queue.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\run_subset_queue.py"
+    },
+    {
+      "name": "source_screen_common.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\screen_common.py"
+    },
+    {
+      "name": "source_test_queue_cpu.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\test_queue_cpu.py"
+    },
+    {
+      "name": "source_test_subset_cpu.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\test_subset_cpu.py"
+    },
+    {
+      "name": "source_train_short_screen.py",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\train_short_screen.py"
+    },
+    {
+      "name": "source_validated_amp_prior.json",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\validated_amp_prior.json"
+    },
+    {
+      "name": "actual_analyzer_source_accepted",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\output_attempt1\\analyze_subset_e8_source.py"
+    },
+    {
+      "name": "six_actual_stages_fixed_order",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\completion.json"
+    },
+    {
+      "name": "collection102_without_private_tensors",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\collection_receipt.json"
+    },
+    {
+      "name": "no_failed_final_attempt_artifacts",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final"
+    },
+    {
+      "name": "subset_e8_attempt1_N_canary_clean_exit",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_N_canary_status.json"
+    },
+    {
+      "name": "subset_e8_attempt1_N_canary_shared_resource_limits",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_N_canary_resource_profile.json"
+    },
+    {
+      "name": "subset_e8_attempt1_C0_canary_clean_exit",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_C0_canary_status.json"
+    },
+    {
+      "name": "subset_e8_attempt1_C0_canary_shared_resource_limits",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_C0_canary_resource_profile.json"
+    },
+    {
+      "name": "subset_e8_attempt1_N_train_clean_exit",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_N_train_status.json"
+    },
+    {
+      "name": "subset_e8_attempt1_N_train_shared_resource_limits",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_N_train_resource_profile.json"
+    },
+    {
+      "name": "subset_e8_attempt1_N_eval_clean_exit",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_N_eval_status.json"
+    },
+    {
+      "name": "subset_e8_attempt1_N_eval_shared_resource_limits",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_N_eval_resource_profile.json"
+    },
+    {
+      "name": "subset_e8_attempt1_C0_train_clean_exit",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_C0_train_status.json"
+    },
+    {
+      "name": "subset_e8_attempt1_C0_train_shared_resource_limits",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_C0_train_resource_profile.json"
+    },
+    {
+      "name": "subset_e8_attempt1_C0_eval_clean_exit",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_C0_eval_status.json"
+    },
+    {
+      "name": "subset_e8_attempt1_C0_eval_shared_resource_limits",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\subset_e8_attempt1_C0_eval_resource_profile.json"
+    },
+    {
+      "name": "execution_wait_wall_close",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\queue\\completion.json"
+    },
+    {
+      "name": "N_canary_unchanged",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\canaries\\N\\canary.json"
+    },
+    {
+      "name": "N_E8_512_completed",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\N\\short_training_receipt.json"
+    },
+    {
+      "name": "N_BN_optimizer_EMA_accounting",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\N\\short_training_receipt.json"
+    },
+    {
+      "name": "N_common_fiveclass_state",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\N\\initialization_check.json"
+    },
+    {
+      "name": "N_actual_server30_pixel_label_equality",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\N\\flow_check.json"
+    },
+    {
+      "name": "N_all512_timing_records",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\N\\batch_timing.jsonl"
+    },
+    {
+      "name": "N_fixed_config_all_copies",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\N\\short_screen_config.yaml"
+    },
+    {
+      "name": "N_runs_source_manifest",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\N\\source_manifest.json"
+    },
+    {
+      "name": "N_evaluations_source_manifest",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\N\\source_manifest.json"
+    },
+    {
+      "name": "N_lastEMA_receipt_stat_binding",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\N\\short_evaluation_receipt.json"
+    },
+    {
+      "name": "N_full_dev_actual_completion",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\N\\short_evaluation_contract.json"
+    },
+    {
+      "name": "N_full_unique_roster",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\N\\development_roster.txt"
+    },
+    {
+      "name": "N_actual_GT_capture_population",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\N\\native_capture\\objects.jsonl.gz"
+    },
+    {
+      "name": "N_saved_actual_aux_path",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\N\\kd_batches.jsonl"
+    },
+    {
+      "name": "N_native_fraction_and_analyzer_values",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\output_attempt1\\summary.json"
+    },
+    {
+      "name": "C0_canary_unchanged",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\canaries\\C0\\canary.json"
+    },
+    {
+      "name": "C0_E8_512_completed",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\C0\\short_training_receipt.json"
+    },
+    {
+      "name": "C0_BN_optimizer_EMA_accounting",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\C0\\short_training_receipt.json"
+    },
+    {
+      "name": "C0_common_fiveclass_state",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\C0\\initialization_check.json"
+    },
+    {
+      "name": "C0_actual_server30_pixel_label_equality",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\C0\\flow_check.json"
+    },
+    {
+      "name": "C0_all512_timing_records",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\C0\\batch_timing.jsonl"
+    },
+    {
+      "name": "C0_fixed_config_all_copies",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\C0\\short_screen_config.yaml"
+    },
+    {
+      "name": "C0_runs_source_manifest",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\C0\\source_manifest.json"
+    },
+    {
+      "name": "C0_evaluations_source_manifest",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\C0\\source_manifest.json"
+    },
+    {
+      "name": "C0_lastEMA_receipt_stat_binding",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\C0\\short_evaluation_receipt.json"
+    },
+    {
+      "name": "C0_full_dev_actual_completion",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\C0\\short_evaluation_contract.json"
+    },
+    {
+      "name": "C0_full_unique_roster",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\C0\\development_roster.txt"
+    },
+    {
+      "name": "C0_actual_GT_capture_population",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations\\C0\\native_capture\\objects.jsonl.gz"
+    },
+    {
+      "name": "C0_saved_actual_aux_path",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs\\C0\\kd_batches.jsonl"
+    },
+    {
+      "name": "C0_native_fraction_and_analyzer_values",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\output_attempt1\\summary.json"
+    },
+    {
+      "name": "both_actual_eval_contracts_and_GT_match",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\evaluations"
+    },
+    {
+      "name": "both_train30_saved_metadata_exact",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\evidence_final\\runs"
+    },
+    {
+      "name": "existing_metric_differences_exact",
+      "status": "pass",
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\output_attempt1\\summary.json"
+    },
+    {
+      "name": "inspected_inputs_stable",
+      "status": "pass",
+      "evidence": "FINAL_EXECUTION_INPUTS.json"
+    }
+  ],
+  "arms": {
+    "N": {
+      "training_seconds": 224.97628071787767,
+      "evaluation_seconds": 18.347237559966743,
+      "epochs": 8,
+      "batches": 512,
+      "optimizer_attempts": 304,
+      "successful_updates": 298,
+      "amp_skips": 6,
+      "ema_updates": 304,
+      "selected_occurrences": 62774,
+      "bn_buffers_changed": 243,
+      "raw_fraction": {
+        "mAP50_95": 0.27588046126255605,
+        "AP50": 0.43153525383720587,
+        "AP75": 0.31457493863583874,
+        "precision": 0.4221740536936397,
+        "recall": 0.47784625908888845
+      },
+      "nvml_peak_mib": 6704,
+      "rss_peak_mib": 17727,
+      "full_train_gradient_probe_enabled": false,
+      "saved_nonzero_C0_loss_records": null
+    },
+    "C0": {
+      "training_seconds": 214.6191897878889,
+      "evaluation_seconds": 19.02456731116399,
+      "epochs": 8,
+      "batches": 512,
+      "optimizer_attempts": 304,
+      "successful_updates": 297,
+      "amp_skips": 7,
+      "ema_updates": 304,
+      "selected_occurrences": 62774,
+      "bn_buffers_changed": 243,
+      "raw_fraction": {
+        "mAP50_95": 0.26459941538629644,
+        "AP50": 0.4173579963575628,
+        "AP75": 0.30036810871537206,
+        "precision": 0.4135613146265906,
+        "recall": 0.4487689045501916
+      },
+      "nvml_peak_mib": 6704,
+      "rss_peak_mib": 17964,
+      "full_train_gradient_probe_enabled": false,
+      "saved_nonzero_C0_loss_records": 8
+    }
+  },
+  "delta_pp": {
+    "mAP50_95": -1.128104587625961,
+    "AP50": -1.4177257479643046,
+    "AP75": -1.420682992046668,
+    "precision": -0.8612739067049069,
+    "recall": -2.9077354538696865
+  },
+  "execution_seconds": 571.5482431035489,
+  "admission_wait_seconds": 10.68745645834133,
+  "total_wall_seconds": 582.2357020140626,
+  "driver_handoff_seconds": 0.01489658304490149,
+  "stage_resources": {
+    "subset_e8_attempt1_N_canary": {
+      "reserved_vram_mib": 8192,
+      "reserved_rss_mib": 32768,
+      "minimum_free_mib": 17370,
+      "observed_execution_seconds": 41.54152865288779,
+      "admission_wait_seconds": 1.6142731399741024
+    },
+    "subset_e8_attempt1_C0_canary": {
+      "reserved_vram_mib": 8192,
+      "reserved_rss_mib": 32768,
+      "minimum_free_mib": 17370,
+      "observed_execution_seconds": 35.32106383680366,
+      "admission_wait_seconds": 1.670842147199437
+    },
+    "subset_e8_attempt1_N_train": {
+      "reserved_vram_mib": 7168,
+      "reserved_rss_mib": 20480,
+      "minimum_free_mib": 17358,
+      "observed_execution_seconds": 230.1336480169557,
+      "admission_wait_seconds": 1.3473511142656207
+    },
+    "subset_e8_attempt1_N_eval": {
+      "reserved_vram_mib": 2048,
+      "reserved_rss_mib": 8192,
+      "minimum_free_mib": 22704,
+      "observed_execution_seconds": 22.610174098052084,
+      "admission_wait_seconds": 1.8601955217309296
+    },
+    "subset_e8_attempt1_C0_train": {
+      "reserved_vram_mib": 7168,
+      "reserved_rss_mib": 20480,
+      "minimum_free_mib": 17358,
+      "observed_execution_seconds": 219.30019377800636,
+      "admission_wait_seconds": 2.0243662579450756
+    },
+    "subset_e8_attempt1_C0_eval": {
+      "reserved_vram_mib": 2048,
+      "reserved_rss_mib": 8192,
+      "minimum_free_mib": 22704,
+      "observed_execution_seconds": 22.626738137798384,
+      "admission_wait_seconds": 2.170413146261126
+    }
+  },
+  "new_tests": 0,
+  "new_GPU": 0,
+  "new_inference": 0,
+  "new_metrics": 0,
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "claims": [
+    {
+      "id": "actual_E8_endpoints_complete",
+      "impact": "supported",
+      "rationale": "Both actual512batch/E8/full-dev1469/22462/fixedlastEMA chains and clean6stage terminal records checked."
+    },
+    {
+      "id": "known_C0_direction_not_retained",
+      "impact": "supported",
+      "rationale": "C0-N mAP50-95=-1.128104587625961pp in this fixedsubset/seed42/independentE8. This screener version did not preserve the known direction."
+    },
+    {
+      "id": "C0_ineffective_or_general_rank_validity",
+      "impact": "unsupported",
+      "rationale": "Single known-control calibration and lower subset exposure do not establish C0 inefficacy, general ranking, significance or E200 predictivity."
+    }
+  ],
+  "limits": [
+    "Pixel and initial-state tensor equality is supported by actual server torch.equal receipts bound to reviewed code; tensors were not downloaded or compared again. Only first30 pixel prefix is covered.",
+    "N/C0 have298/297 successful updates becauseAMP skips differ6/7, although both512batches/304attempts/EMA304; no matched successful-update claim.",
+    "Full training disables gradient probes: gradient_checks=[] and nonzero_kd_gradient=false mean unobserved, not zero KD. Actual canary gradient was nonzero and all8saved C0loss rows are positive.",
+    "62774 selected occurrences are cumulative, not unique objects or full per-batchmask observation.",
+    "No original native AP re-inference/recomputation from predictions, full weight reload, new metric, test or hash. Existing APfractions and declared differences only recomputed."
+  ],
+  "input_manifest": "FINAL_EXECUTION_INPUTS.json"
+}

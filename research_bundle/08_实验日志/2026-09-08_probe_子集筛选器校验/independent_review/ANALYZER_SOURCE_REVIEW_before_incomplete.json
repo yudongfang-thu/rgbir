@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-08T09:51:47.872157+00:00",
+  "auditor": {
+    "agent": "/root/object_transport_review",
+    "model_identity": "Not exposed; inherited parent settings",
+    "cross_model_claim": false
+  },
+  "status": "SOURCE_ACCEPTED_FOR_RECEIPT_READOUT",
+  "scope": "DRONE_SUBSET2048_PRETRAIN_E8_CHECK",
+  "reviewed_source_files": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\analyze_subset_e8.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\analyzer_reviewed_source\\analyze_subset_e8.py",
+      "bytes": 9708,
+      "direct_byte_identity": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\test_subset_analyzer_cpu.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\analyzer_reviewed_source\\test_subset_analyzer_cpu.py",
+      "bytes": 5126,
+      "direct_byte_identity": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\PROTOCOL.md",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\analyzer_reviewed_source\\PROTOCOL.md",
+      "bytes": 1864,
+      "direct_byte_identity": true
+    }
+  ],
+  "reviewed_CPU_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\CPU_attempt1.json",
+  "author_synthetic_tests": 6,
+  "reviewer_new_tests": 0,
+  "actual_new_AP_read": false,
+  "GPU_ready": false,
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "checks": [
+    "Strict new scope/endpoint, E8 horizon,2048train/1469dev/22462GT,seed42,normalBN,N0/C0.1",
+    "Finite raw fractions, five unique classIDs, class macroAP and classID alignment",
+    "Initial model/teacher/reference stat equality and same three subset paths acrossarms",
+    "All five metrics display100x; only C0-N pp=100*(C0-N)",
+    "Missing/failed/conflicting receipts remain null; invalidcompletedidentity rejects",
+    "Observed positive/zero/negative direction has scoped interpretation and no automaticE200 or matrixexpansion"
+  ],
+  "correction": "Nonpositive interpretation wording explicitly says this fixed screener check did not retain known direction. One wording-only line changed after six synthetic checks; no computational logic changed; before-source preserved.",
+  "limits": [
+    "Receipt reader does not itself prove generic five-class state equality or rawpixels; require actualtrain/queue evidence",
+    "Actualfull-devpopulation/settings/source/config and result existence require later artifactaudit",
+    "Oneknowncontrol/subset/seed/E8 direction is not generalranking or C0efficacy evidence"
+  ],
+  "next_step": "Use this exact source for later completed collectedreceipt readout; training release readiness remains separate."
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "DRONE_SUBSET2048_PRETRAIN_E8_CHECK",
+  "endpoint": "SUBSET2048_PRETRAIN_E8_LAST_EMA",
+  "arms": [
+    "N",
+    "C0"
+  ],
+  "sequence": "both canaries -> measured budget -> N train/eval -> C0 train/eval",
+  "limit_execution_seconds": 2700.0,
+  "queue_admission_wait_separate": true,
+  "dispatcher": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py",
+    "bytes": 7920,
+    "mtime_ns": 1788722284046588537
+  },
+  "python": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+  "eval_basis": {
+    "source": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evidence_metrics.json",
+      "bytes": 176912,
+      "mtime_ns": 1788764406106073819
+    },
+    "vram_mib": 2048,
+    "rss_mib": 8192,
+    "measured_nvml_peak_mib": 1370,
+    "measured_rss_peak_mib": 6260
+  },
+  "private_pixel_reference": "server_only_first30_no_hash_no_upload",
+  "new_scheduler_created": false,
+  "new_hash_computed": false,
+  "ap_adaptive": false
+}

@@ -1,0 +1,56 @@
+{
+  "status": "BOTH_CANARIES_VALID",
+  "arms": {
+    "N": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/N/canary.json",
+        "bytes": 6749,
+        "mtime_ns": 1788861969578520057
+      },
+      "flow": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/N/flow_check.json",
+        "bytes": 10677,
+        "mtime_ns": 1788861968718496002
+      },
+      "initialization": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/N/initialization_check.json",
+        "bytes": 1454,
+        "mtime_ns": 1788861945381837097
+      },
+      "reservation": {
+        "vram_mib": 7168,
+        "rss_mib": 20480,
+        "measured_nvml_peak_mib": 6692.0,
+        "measured_rss_peak_mib": 18120.0,
+        "measured_combined_peak_mib": 6692.0,
+        "source": "this_arm_new_actual_canary"
+      }
+    },
+    "C0": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/canary.json",
+        "bytes": 6855,
+        "mtime_ns": 1788862007403562688
+      },
+      "flow": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/flow_check.json",
+        "bytes": 10677,
+        "mtime_ns": 1788862006767545399
+      },
+      "initialization": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_subset_e8_check_20260908/attempt1/canaries/C0/initialization_check.json",
+        "bytes": 1455,
+        "mtime_ns": 1788861985374959090
+      },
+      "reservation": {
+        "vram_mib": 7168,
+        "rss_mib": 20480,
+        "measured_nvml_peak_mib": 6692.0,
+        "measured_rss_peak_mib": 18000.0,
+        "measured_combined_peak_mib": 6692.0,
+        "source": "this_arm_new_actual_canary"
+      }
+    }
+  },
+  "new_hash_computed": false
+}

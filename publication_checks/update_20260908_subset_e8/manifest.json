@@ -1,0 +1,1193 @@
+{
+  "scope": "SUBSET_E8_CHECK_EVIDENCE_PUBLICATION",
+  "execution_state": "COMPLETED",
+  "state_note": "N/C0子集E8两臂及完整dev实测9分42秒；mAP27.588046/26.459942，差−1.128105pp；本筛选器未保留已知方向，结束版本。",
+  "entry": "2026-09-08_probe_子集筛选器校验",
+  "files": [
+    {
+      "path": "analysis/analyze_subset_e8.py",
+      "bytes": 9835,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/analyze_subset_e8_before_incomplete.py",
+      "bytes": 9708,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/analyze_subset_e8_before_scope_wording.py",
+      "bytes": 9619,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/BUDGET_INDEPENDENT_CPU_attempt1.json",
+      "bytes": 769,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/BUDGET_INDEPENDENT_CPU_attempt1_budget_source.py",
+      "bytes": 2445,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/BUDGET_INDEPENDENT_CPU_attempt2.json",
+      "bytes": 791,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/BUDGET_INDEPENDENT_CPU_attempt2_budget_source.py",
+      "bytes": 2445,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/BUDGET_INDEPENDENT_REVIEW.md",
+      "bytes": 1405,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/CPU_attempt1.json",
+      "bytes": 219,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/CPU_attempt2.json",
+      "bytes": 219,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/INTERFACE_ADDENDUM.md",
+      "bytes": 953,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/output_attempt1/analyze_subset_e8_source.py",
+      "bytes": 9835,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/output_attempt1/README.md",
+      "bytes": 1069,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/output_attempt1/summary.json",
+      "bytes": 12383,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/PROTOCOL.md",
+      "bytes": 1864,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/review_budget_cpu.py",
+      "bytes": 5072,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/review_budget_cpu_attempt1_source.py",
+      "bytes": 5010,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/test_subset_analyzer_cpu.py",
+      "bytes": 5971,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/test_subset_analyzer_cpu_before_incomplete.py",
+      "bytes": 5126,
+      "byte_exact": true
+    },
+    {
+      "path": "BUDGET_AND_EXECUTION.md",
+      "bytes": 3510,
+      "byte_exact": true
+    },
+    {
+      "path": "DEPLOYMENT_v1.json",
+      "bytes": 1436,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/args.yaml",
+      "bytes": 2049,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/batch_timing.jsonl",
+      "bytes": 6231,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/canary.json",
+      "bytes": 6855,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/flow_check.json",
+      "bytes": 10677,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/gradient_checks.jsonl",
+      "bytes": 259,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/kd_batches.jsonl",
+      "bytes": 23613,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/progress.json",
+      "bytes": 255,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/results.csv",
+      "bytes": 141,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/runtime_ready.json",
+      "bytes": 446,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/setup_receipt.json",
+      "bytes": 1284,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/short_screen_config.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/C0/source_manifest.json",
+      "bytes": 33780,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/args.yaml",
+      "bytes": 2047,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/batch_timing.jsonl",
+      "bytes": 6038,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/canary.json",
+      "bytes": 6749,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/flow_check.json",
+      "bytes": 10677,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/gradient_checks.jsonl",
+      "bytes": 245,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/initialization_check.json",
+      "bytes": 1454,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/kd_batches.jsonl",
+      "bytes": 23573,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/progress.json",
+      "bytes": 254,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/results.csv",
+      "bytes": 143,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/runtime_ready.json",
+      "bytes": 447,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/sample_stream.jsonl",
+      "bytes": 4426309,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/setup_receipt.json",
+      "bytes": 1283,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/canaries/N/source_manifest.json",
+      "bytes": 33698,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/collection_receipt.json",
+      "bytes": 5017,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/budget_decision.json",
+      "bytes": 904,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/canary_checks.json",
+      "bytes": 2070,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/manifest.json",
+      "bytes": 1168,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_job.json",
+      "bytes": 1350,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_status.json",
+      "bytes": 381,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_timing.json",
+      "bytes": 358,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_job.json",
+      "bytes": 1373,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_status.json",
+      "bytes": 380,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_timing.json",
+      "bytes": 360,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_N_train_job.json",
+      "bytes": 1485,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_N_train_status.json",
+      "bytes": 2070,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/args.yaml",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/batch_timing.jsonl",
+      "bytes": 37132,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/kd_batches.jsonl",
+      "bytes": 31804,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/progress.json",
+      "bytes": 259,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/results.csv",
+      "bytes": 430,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/runtime_ready.json",
+      "bytes": 447,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/setup_receipt.json",
+      "bytes": 1282,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_canaries/runs/N/source_manifest.json",
+      "bytes": 33378,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/args.yaml",
+      "bytes": 2049,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/batch_timing.jsonl",
+      "bytes": 6231,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/canary.json",
+      "bytes": 6855,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/flow_check.json",
+      "bytes": 10677,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/gradient_checks.jsonl",
+      "bytes": 259,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/kd_batches.jsonl",
+      "bytes": 23613,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/progress.json",
+      "bytes": 255,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/results.csv",
+      "bytes": 141,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/runtime_ready.json",
+      "bytes": 446,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/setup_receipt.json",
+      "bytes": 1284,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/short_screen_config.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/C0/source_manifest.json",
+      "bytes": 33780,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/args.yaml",
+      "bytes": 2047,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/batch_timing.jsonl",
+      "bytes": 6038,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/canary.json",
+      "bytes": 6749,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/flow_check.json",
+      "bytes": 10677,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/gradient_checks.jsonl",
+      "bytes": 245,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/initialization_check.json",
+      "bytes": 1454,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/kd_batches.jsonl",
+      "bytes": 23573,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/progress.json",
+      "bytes": 254,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/results.csv",
+      "bytes": 143,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/runtime_ready.json",
+      "bytes": 447,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/sample_stream.jsonl",
+      "bytes": 4426309,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/setup_receipt.json",
+      "bytes": 1283,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/canaries/N/source_manifest.json",
+      "bytes": 33698,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/collection_receipt.json",
+      "bytes": 9399,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/C0/development_roster.txt",
+      "bytes": 164528,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/C0/native_capture/objects.jsonl.gz",
+      "bytes": 15381856,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/C0/short_evaluation_contract.json",
+      "bytes": 351279,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/C0/short_evaluation_receipt.json",
+      "bytes": 5218,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/C0/short_screen_config.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/C0/short_training_receipt_copy.json",
+      "bytes": 41864,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/C0/source_manifest.json",
+      "bytes": 9300,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/N/development_roster.txt",
+      "bytes": 164528,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/N/native_capture/objects.jsonl.gz",
+      "bytes": 15280627,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/N/short_evaluation_contract.json",
+      "bytes": 351279,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/N/short_evaluation_receipt.json",
+      "bytes": 5216,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/N/short_training_receipt_copy.json",
+      "bytes": 41885,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/evaluations/N/source_manifest.json",
+      "bytes": 9277,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/budget_decision.json",
+      "bytes": 904,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/canary_checks.json",
+      "bytes": 2070,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/completion.json",
+      "bytes": 4326,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/manifest.json",
+      "bytes": 1168,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_canary_job.json",
+      "bytes": 1350,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_canary_status.json",
+      "bytes": 381,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_canary_timing.json",
+      "bytes": 358,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_eval_job.json",
+      "bytes": 1217,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_eval_status.json",
+      "bytes": 378,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_eval_timing.json",
+      "bytes": 356,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_train_job.json",
+      "bytes": 1492,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_train_status.json",
+      "bytes": 380,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_train_timing.json",
+      "bytes": 361,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_canary_job.json",
+      "bytes": 1373,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_canary_status.json",
+      "bytes": 380,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_canary_timing.json",
+      "bytes": 360,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_eval_job.json",
+      "bytes": 1211,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_eval_status.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_eval_timing.json",
+      "bytes": 357,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_train_job.json",
+      "bytes": 1485,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_train_status.json",
+      "bytes": 379,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_train_timing.json",
+      "bytes": 358,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/args.yaml",
+      "bytes": 2041,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/batch_timing.jsonl",
+      "bytes": 97259,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/flow_check.json",
+      "bytes": 10681,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/kd_batches.jsonl",
+      "bytes": 63147,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/progress.json",
+      "bytes": 259,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/results.csv",
+      "bytes": 798,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/runtime_ready.json",
+      "bytes": 446,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/setup_receipt.json",
+      "bytes": 1283,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/short_screen_config.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/short_training_receipt.json",
+      "bytes": 41864,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/C0/source_manifest.json",
+      "bytes": 33460,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/args.yaml",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/batch_timing.jsonl",
+      "bytes": 97281,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/flow_check.json",
+      "bytes": 10682,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/initialization_check.json",
+      "bytes": 1455,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/kd_batches.jsonl",
+      "bytes": 63042,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/progress.json",
+      "bytes": 260,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/results.csv",
+      "bytes": 797,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/runtime_ready.json",
+      "bytes": 447,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/sample_stream.jsonl",
+      "bytes": 4426129,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/setup_receipt.json",
+      "bytes": 1282,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/short_screen_config.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/short_training_receipt.json",
+      "bytes": 41885,
+      "byte_exact": true
+    },
+    {
+      "path": "evidence_final/runs/N/source_manifest.json",
+      "bytes": 33378,
+      "byte_exact": true
+    },
+    {
+      "path": "FINAL_REPORT.md",
+      "bytes": 5257,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_reviewed_source/analyze_subset_e8.py",
+      "bytes": 9708,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_reviewed_source/PROTOCOL.md",
+      "bytes": 1864,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_reviewed_source/test_subset_analyzer_cpu.py",
+      "bytes": 5126,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_reviewed_source_v2/analyze_subset_e8.py",
+      "bytes": 9835,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_reviewed_source_v2/PROTOCOL.md",
+      "bytes": 1864,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_reviewed_source_v2/test_subset_analyzer_cpu.py",
+      "bytes": 5971,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/ANALYZER_SOURCE_REVIEW.json",
+      "bytes": 3147,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/ANALYZER_SOURCE_REVIEW.md",
+      "bytes": 1048,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/ANALYZER_SOURCE_REVIEW_before_incomplete.json",
+      "bytes": 3037,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/ANALYZER_SOURCE_REVIEW_before_incomplete.md",
+      "bytes": 718,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/CANARY_BUDGET_INPUTS.json",
+      "bytes": 12799,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/CANARY_BUDGET_REVIEW.json",
+      "bytes": 17403,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/CANARY_BUDGET_REVIEW.md",
+      "bytes": 2073,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/FINAL_EXECUTION_INPUTS.json",
+      "bytes": 18473,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/FINAL_EXECUTION_REVIEW.json",
+      "bytes": 19999,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/FINAL_EXECUTION_REVIEW.md",
+      "bytes": 2142,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/PLAN_REVIEW.json",
+      "bytes": 1428,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/PLAN_REVIEW.md",
+      "bytes": 2941,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/review_canary_budget.py",
+      "bytes": 15228,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/review_final_execution.py",
+      "bytes": 15493,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/budget.py",
+      "bytes": 2444,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/configs/drone_C0_s42_E8.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/configs/drone_N_s42_E8.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/evaluate_short_screen.py",
+      "bytes": 11476,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/run_subset_queue.py",
+      "bytes": 13146,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/screen_common.py",
+      "bytes": 13636,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/test_queue_cpu.py",
+      "bytes": 2645,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/test_subset_cpu.py",
+      "bytes": 8092,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/train_short_screen.py",
+      "bytes": 15500,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reviewed_source_v1/validated_amp_prior.json",
+      "bytes": 502,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/SOURCE_REVIEW.json",
+      "bytes": 10432,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/SOURCE_REVIEW.md",
+      "bytes": 1369,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/SUBSET_CPU_REVIEWER_attempt1.json",
+      "bytes": 258,
+      "byte_exact": true
+    },
+    {
+      "path": "NEXT_ACTION_REVIEW.md",
+      "bytes": 10715,
+      "byte_exact": true
+    },
+    {
+      "path": "PINNED_CPU_v1.json",
+      "bytes": 3364,
+      "byte_exact": true
+    },
+    {
+      "path": "publication_source_v1/README.md",
+      "bytes": 230,
+      "byte_exact": true
+    },
+    {
+      "path": "publication_source_v1/sync_evidence.py",
+      "bytes": 11736,
+      "byte_exact": true
+    },
+    {
+      "path": "QUEUE_LAUNCH_attempt1.json",
+      "bytes": 348,
+      "byte_exact": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 3173,
+      "byte_exact": true
+    },
+    {
+      "path": "release/budget.py",
+      "bytes": 2444,
+      "byte_exact": true
+    },
+    {
+      "path": "release/configs/drone_C0_s42_E8.yaml",
+      "bytes": 4137,
+      "byte_exact": true
+    },
+    {
+      "path": "release/configs/drone_N_s42_E8.yaml",
+      "bytes": 4135,
+      "byte_exact": true
+    },
+    {
+      "path": "release/evaluate_short_screen.py",
+      "bytes": 11476,
+      "byte_exact": true
+    },
+    {
+      "path": "release/run_subset_queue.py",
+      "bytes": 13146,
+      "byte_exact": true
+    },
+    {
+      "path": "release/screen_common.py",
+      "bytes": 13636,
+      "byte_exact": true
+    },
+    {
+      "path": "release/SUBSET_CPU_attempt1.json",
+      "bytes": 258,
+      "byte_exact": true
+    },
+    {
+      "path": "release/test_queue_cpu.py",
+      "bytes": 2645,
+      "byte_exact": true
+    },
+    {
+      "path": "release/test_subset_cpu.py",
+      "bytes": 8092,
+      "byte_exact": true
+    },
+    {
+      "path": "release/train_short_screen.py",
+      "bytes": 15500,
+      "byte_exact": true
+    },
+    {
+      "path": "release/validated_amp_prior.json",
+      "bytes": 502,
+      "byte_exact": true
+    },
+    {
+      "path": "remote_ops.py",
+      "bytes": 7739,
+      "byte_exact": true
+    },
+    {
+      "path": "SCREEN_VALIDITY_REPORT.md",
+      "bytes": 7274,
+      "byte_exact": true
+    },
+    {
+      "path": "sync_evidence.py",
+      "bytes": 12267,
+      "byte_exact": true
+    },
+    {
+      "path": "REMOTE_MIRROR_RECEIPT.json",
+      "bytes": 68202,
+      "byte_exact": true
+    }
+  ],
+  "excluded": [
+    {
+      "path": "analysis/__pycache__/",
+      "reason": "excluded_or_external_directory"
+    },
+    {
+      "path": "release/__pycache__/",
+      "reason": "excluded_or_external_directory"
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_C0_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_N_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_canaries/queue/subset_e8_attempt1_N_train_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_eval_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_eval_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_train_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_C0_train_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_eval_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_eval_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_train_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "evidence_final/queue/subset_e8_attempt1_N_train_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "REMOTE_MIRROR_RECEIPT.json",
+      "reason": "generated_sync_receipt_or_full_host_snapshot"
+    },
+    {
+      "path": "SYNC_SCOPE_MANIFEST.json",
+      "reason": "generated_sync_receipt_or_full_host_snapshot"
+    }
+  ],
+  "total_bytes": 64301278,
+  "new_hash_computed": false,
+  "weights_uploaded": false,
+  "images_uploaded": false,
+  "server_only_flow_tensors_excluded": true,
+  "full_host_profiles_excluded": true,
+  "credential_marker_scan_passed": true,
+  "prior_failures_and_reviews_retained": true,
+  "new_training_or_evaluation": false
+}

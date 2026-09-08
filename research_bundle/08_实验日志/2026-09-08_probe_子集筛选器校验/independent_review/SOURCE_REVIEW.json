@@ -1,0 +1,156 @@
+{
+  "date": "2026-09-08T10:05:12.160233+00:00",
+  "auditor": {
+    "agent": "/root/object_transport_review",
+    "model_identity": "Not exposed; inherited parent settings",
+    "independent_of_implementation": true,
+    "cross_model_claim": false
+  },
+  "status": "READY_FOR_GPU_PREFLIGHT",
+  "scope": "DRONE_SUBSET2048_PRETRAIN_E8_CHECK",
+  "endpoint": "SUBSET2048_PRETRAIN_E8_LAST_EMA",
+  "GPU_ready": true,
+  "actual_GPU_execution_claim": false,
+  "reviewed_source_files": [
+    {
+      "relative_path": "budget.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\budget.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\budget.py",
+      "bytes": 2444,
+      "mtime_ns": 1788861625684602800,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "configs/drone_C0_s42_E8.yaml",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\configs\\drone_C0_s42_E8.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\configs\\drone_C0_s42_E8.yaml",
+      "bytes": 4137,
+      "mtime_ns": 1788861299077807800,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "configs/drone_N_s42_E8.yaml",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\configs\\drone_N_s42_E8.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\configs\\drone_N_s42_E8.yaml",
+      "bytes": 4135,
+      "mtime_ns": 1788861299065717800,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "evaluate_short_screen.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\evaluate_short_screen.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\evaluate_short_screen.py",
+      "bytes": 11476,
+      "mtime_ns": 1788861394114437600,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "run_subset_queue.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\run_subset_queue.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\run_subset_queue.py",
+      "bytes": 13146,
+      "mtime_ns": 1788861307534405300,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "screen_common.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\screen_common.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\screen_common.py",
+      "bytes": 13636,
+      "mtime_ns": 1788861186519425500,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "test_queue_cpu.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\test_queue_cpu.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\test_queue_cpu.py",
+      "bytes": 2645,
+      "mtime_ns": 1788861489383523700,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "test_subset_cpu.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\test_subset_cpu.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\test_subset_cpu.py",
+      "bytes": 8092,
+      "mtime_ns": 1788861513726807700,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "train_short_screen.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\train_short_screen.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\train_short_screen.py",
+      "bytes": 15500,
+      "mtime_ns": 1788861394075204100,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    },
+    {
+      "relative_path": "validated_amp_prior.json",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\release\\validated_amp_prior.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1\\validated_amp_prior.json",
+      "bytes": 502,
+      "mtime_ns": 1788861299079847800,
+      "direct_byte_identity": true,
+      "remote_deployment_byte_exact": true
+    }
+  ],
+  "source_snapshot_directory": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\reviewed_source_v1",
+  "deployment_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\DEPLOYMENT_v1.json",
+  "pinned_CPU_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\PINNED_CPU_v1.json",
+  "actual_pinned_tests": 12,
+  "pinned_wrapper_tests": 8,
+  "pinned_queue_tests": 4,
+  "pinned_CLI_exit_codes": {
+    "train_short_screen.py": 0,
+    "evaluate_short_screen.py": 0,
+    "run_subset_queue.py": 0
+  },
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "identity_method": "All operational release Python, two configs and AMP binding directly compared to independent snapshots; corresponding remote deployment record exact. No new hash.",
+  "reviewed_behavior": [
+    "Scope, generic pretrained five-class initialization, fixed2048 subset, full1469dev/22462GT, normalBN and original E8 recipe are frozen for N0/C0.1 only.",
+    "Private pinned build_trainer(historical=False) retains original N/C0 superclass formula, gates and base; T/R validates original full data while loader consumes fixed subset.",
+    "N canary writes and fully reads back common five-class initialized state; C0canary and both trains compare all state tensors. N reference creation is distinct from cross-arm equality.",
+    "First30 augmented pre-normalization uint8 RGB/IR batches and dual labels are stored server-only and compared with torch.equal plus shape/dtype/device/source metadata. No claim of512batch pixel equality.",
+    "Canary requires24 successful optimizer updates and30batches within48attempts, countsAMP/EMA explicitly, verifies finite native/KD gradients and student/EMA state, nonzeroC0 signal and loader cleanup.",
+    "All complete batch intervals enter measured cost; flow I/O, setup and remaining overhead are included, at least20percent training margin, two60second eval reserves,2700second cumulative execution limit.",
+    "Original global dispatcher is privately observed at RUNNING; admission excluded and driver handoffs included. Worker remaining budget plus ownPID watchdog enforce incomplete stop; both canaries and budget must pass before training.",
+    "Training reservations derive from own actual canary; full-dev evaluator has existing measured resource basis and unchanged accepted native profile/projection.",
+    "Evaluator checks512batches/8epochs/fixedlastEMA and config/checkpoint/flow/state/canary bindings. Analyzer separately accepts only complete identity or null failure/incomplete/conflict."
+  ],
+  "evidence": {
+    "independent_local_affected_8": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\SUBSET_CPU_REVIEWER_attempt1.json",
+    "actual_pinned_12": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\PINNED_CPU_v1.json",
+    "independent_budget_7": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\analysis\\BUDGET_INDEPENDENT_CPU_attempt2.json",
+    "analyzer_6": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_子集筛选器校验\\independent_review\\ANALYZER_SOURCE_REVIEW.json"
+  },
+  "final_micro_change": "Budget output field renamed measured_framework_peak_mib to measured_combined_peak_mib; verified this is the only difference from seven-truth accepted budget source; values and calculation unchanged.",
+  "next_step_contract": "May launch only this exact release through original global lease into N/C0 actual canaries. Their actual initialization/pixel/numerical/resource/time evidence and the encoded measured budget must pass before fixed512batch training and complete-dev evaluation. READY does not claim those GPU stages already ran.",
+  "limits": [
+    "No new large classification/math matrix; reviewer independently ran the eight bounded changed-interface CPU tests only.",
+    "Pinned12 checks are actual CPU, not production canary evidence.",
+    "First30 pixel/state artifacts remain server-only; no hashes or upload.",
+    "Only known-control direction retention in this subset/seed/E8; neither result proves general method ranking, E200 predictivity or C0 ineffectiveness.",
+    "Original AMP prior setup bypass remains explicitly scoped; no broad bitwise-equivalence claim."
+  ],
+  "source_review_attempt_history": [
+    {
+      "status": "WRITER_PARSE_FAILURE",
+      "effect": "An inline report-writer command had a missing closing parenthesis; no source or results changed."
+    },
+    {
+      "status": "PENDING_BUDGET_SOURCE_FIELD_RENAME",
+      "effect": "Snapshot creation succeeded but conservative comparison to prior budget source stopped on the diagnostic field rename; root confirmed and exact one-token diff was reviewed before final acceptance."
+    }
+  ]
+}
