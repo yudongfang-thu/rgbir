@@ -1,0 +1,20 @@
+{
+  "status": "PASS_FOR_RECEIPT_ONLY_DIRECTION_ANALYZER",
+  "tests_run": 11,
+  "independent_extra_tests": 4,
+  "failures": 0,
+  "errors": 0,
+  "source": {
+    "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\newentry\\analysis\\analyze_direction.py",
+    "bytes": 11343,
+    "mtime_ns": 1788838474023816100
+  },
+  "source_bytes_unchanged": true,
+  "actual_direction_AP_read": false,
+  "formal_analysis_executed": false,
+  "new_hash_computed": false,
+  "torch_imported": false,
+  "gpu_or_ssh": false,
+  "test_output": "test_bad_units_values_classes_or_macro_rejected (test_analyze_direction_cpu.Truths) ... ok\ntest_class_id_pairing_is_independent_of_list_order (test_analyze_direction_cpu.Truths) ... ok\ntest_known_percent_pp_direction_and_fixed_controls (test_analyze_direction_cpu.Truths) ... ok\ntest_llvip_l2_control_requires_exact_shared_coefficient_only (test_analyze_direction_cpu.Truths) ... ok\ntest_missing_failed_and_absent_control_are_null_not_zero (test_analyze_direction_cpu.Truths) ... ok\ntest_scope_endpoint_population_control_and_dose_rejected (test_analyze_direction_cpu.Truths) ... ok\ntest_small_file_collection_preserves_conflict_and_failure (test_analyze_direction_cpu.Truths) ... ok\ntest_all_missing_remains_partial_and_null (__main__.ExtraTruths) ... ok\ntest_exact_zero_contrast_and_no_cross_dataset_pooling (__main__.ExtraTruths) ... ok\ntest_nonuniform_perclass_delta_macro_and_percent (__main__.ExtraTruths) ... ok\ntest_seed_and_scientific_promotion_flags_rejected (__main__.ExtraTruths) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.011s\n\nOK\n",
+  "accepted_scope": "Fixed 7-arm seed42 FT3 receipt values and 8 descriptive pp contrasts; missing/failed/conflict remain unavailable"
+}

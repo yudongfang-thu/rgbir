@@ -1,0 +1,110 @@
+{
+  "status": "DIRECTION_EVALUATION_COMPLETED",
+  "scope": "DIRECTION_FT3_BNFROZEN",
+  "endpoint": "DIRECTION_FT3_BNFROZEN_LAST_EMA",
+  "seed": 42,
+  "arm": "C2",
+  "dataset": "drone",
+  "single_seed": true,
+  "epochs": 3,
+  "independent_lr_horizon": 3,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "metric_units": "fraction_0_to_1",
+  "native_metric_definition": "pinned native AP; no TIDE oracle",
+  "AP50": 0.7723774298716544,
+  "AP75": 0.640115690539595,
+  "mAP50_95": 0.5454072404421959,
+  "precision": 0.7849490049064723,
+  "recall": 0.7359273436324896,
+  "per_class": [
+    {
+      "class_id": 0,
+      "name": "car",
+      "AP50": 0.948348970824681,
+      "AP75": 0.7576735474219591,
+      "mAP50_95": 0.6527236492540741
+    },
+    {
+      "class_id": 1,
+      "name": "freight car",
+      "AP50": 0.612552475250792,
+      "AP75": 0.43723740748109624,
+      "mAP50_95": 0.39581147048969917
+    },
+    {
+      "class_id": 2,
+      "name": "truck",
+      "AP50": 0.7280587162372145,
+      "AP75": 0.6106654504097944,
+      "mAP50_95": 0.5182567976695898
+    },
+    {
+      "class_id": 3,
+      "name": "bus",
+      "AP50": 0.9464985311265078,
+      "AP75": 0.8863292329466927,
+      "mAP50_95": 0.7312266404384355
+    },
+    {
+      "class_id": 4,
+      "name": "van",
+      "AP50": 0.6264284559190768,
+      "AP75": 0.5086728144384327,
+      "mAP50_95": 0.4290176443591805
+    }
+  ],
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/runs/drone/C2/weights/last.pt",
+    "bytes": 10753043,
+    "mtime_ns": 1788839931115204121
+  },
+  "full_dev_images": 1469,
+  "full_dev_gt_objects": 22462,
+  "observed_images": 1469,
+  "gt_objects_captured": 22462,
+  "training_configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/effective_configs/drone_C2_s42_FT3.yaml",
+  "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+  "training_completion": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/runs/drone/C2/completion_receipt.json",
+  "evaluation_identity_projection": {
+    "kind": "explicit_direction_training_to_full_dev_evaluation_projection",
+    "dataset": "drone",
+    "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "training_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_rgb.yaml",
+    "actual_evaluation_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+    "native_configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml",
+    "native_contract_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "prior_binding_validated": true,
+    "native_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+    "profile_scope": "existing_Drone_evaluator_binding",
+    "native_vs_capture_parity_rerun": false,
+    "accepted_endpoint_claim": false,
+    "subset_dev_roster_exact_to_full": true,
+    "training_identity_unchanged_claim": false,
+    "expected_dev_images": 1469,
+    "expected_dev_gt_objects": 22462
+  },
+  "kd_coefficient": 0.10975098761504075,
+  "bn_training_evidence": {
+    "bn_running_buffers_unchanged": true,
+    "bn_buffer_count": 243,
+    "bn_affine_trainable": true
+  },
+  "seconds": 11.933056442067027,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 4102
+  },
+  "actual_native_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/evaluations/drone/C2/actual_native_evaluation_profile.json",
+  "accepted_endpoint_claim": false,
+  "new_hash_computed": false,
+  "official_test_accessed": false
+}

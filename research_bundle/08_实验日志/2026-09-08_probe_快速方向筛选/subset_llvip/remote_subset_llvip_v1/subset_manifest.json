@@ -1,0 +1,1497 @@
+{
+  "status": "CPU_SUBSET_CREATED_NO_TRAINING",
+  "dataset": "llvip",
+  "method": "NATURAL_PROPORTIONAL_STRATIFIED_V1",
+  "seed": 20260908,
+  "subset_images": 2048,
+  "fraction": 0.21291194510863914,
+  "full_train": {
+    "images": 9619,
+    "objects": 26251,
+    "empty_images": 2,
+    "class_object_counts": {
+      "person": 26251
+    },
+    "class_image_counts": {
+      "person": 9617
+    },
+    "source_groups": {
+      "02": 500,
+      "03": 473,
+      "05": 428,
+      "06": 515,
+      "08": 1518,
+      "09": 1258,
+      "10": 1313,
+      "11": 468,
+      "13": 500,
+      "14": 558,
+      "15": 603,
+      "16": 567,
+      "17": 512,
+      "18": 406
+    }
+  },
+  "subset": {
+    "images": 2048,
+    "objects": 5592,
+    "empty_images": 0,
+    "class_object_counts": {
+      "person": 5592
+    },
+    "class_image_counts": {
+      "person": 2048
+    },
+    "source_groups": {
+      "02": 106,
+      "03": 101,
+      "05": 93,
+      "06": 111,
+      "08": 324,
+      "09": 267,
+      "10": 280,
+      "11": 99,
+      "13": 105,
+      "14": 118,
+      "15": 129,
+      "16": 121,
+      "17": 108,
+      "18": 86
+    }
+  },
+  "binning": {
+    "positive_image_density_quartiles": [
+      1,
+      2,
+      4
+    ],
+    "positive_image_median_scale_tertiles": [
+      0.11747360794025183,
+      0.13678848590067805
+    ],
+    "scale_definition": "Per-image median sqrt(normalized GT width * height); relative image area, not feature stride or pixel dimensions.",
+    "boundary_rule": "bisect_right; tied thresholds may leave bins empty; empty images have a separate stratum."
+  },
+  "allocation": [
+    {
+      "key": [
+        "02",
+        "1",
+        "0"
+      ],
+      "population": 13,
+      "selected": 3,
+      "remainder": 7386,
+      "tie": 0.2434140953929126
+    },
+    {
+      "key": [
+        "02",
+        "1",
+        "1"
+      ],
+      "population": 39,
+      "selected": 8,
+      "remainder": 2920,
+      "tie": 0.1905854743140607
+    },
+    {
+      "key": [
+        "02",
+        "1",
+        "2"
+      ],
+      "population": 115,
+      "selected": 24,
+      "remainder": 4664,
+      "tie": 0.12591979048950308
+    },
+    {
+      "key": [
+        "02",
+        "2",
+        "0"
+      ],
+      "population": 18,
+      "selected": 4,
+      "remainder": 8007,
+      "tie": 0.625706780454538
+    },
+    {
+      "key": [
+        "02",
+        "2",
+        "1"
+      ],
+      "population": 88,
+      "selected": 19,
+      "remainder": 7082,
+      "tie": 0.3509049955764142
+    },
+    {
+      "key": [
+        "02",
+        "2",
+        "2"
+      ],
+      "population": 111,
+      "selected": 24,
+      "remainder": 6091,
+      "tie": 0.011862823258972699
+    },
+    {
+      "key": [
+        "02",
+        "3",
+        "0"
+      ],
+      "population": 11,
+      "selected": 2,
+      "remainder": 3290,
+      "tie": 0.48423916929778377
+    },
+    {
+      "key": [
+        "02",
+        "3",
+        "1"
+      ],
+      "population": 72,
+      "selected": 15,
+      "remainder": 3171,
+      "tie": 0.9768756665639537
+    },
+    {
+      "key": [
+        "02",
+        "3",
+        "2"
+      ],
+      "population": 33,
+      "selected": 7,
+      "remainder": 251,
+      "tie": 0.984199644710971
+    },
+    {
+      "key": [
+        "03",
+        "1",
+        "0"
+      ],
+      "population": 8,
+      "selected": 2,
+      "remainder": 6765,
+      "tie": 0.41168870354970666
+    },
+    {
+      "key": [
+        "03",
+        "1",
+        "1"
+      ],
+      "population": 38,
+      "selected": 8,
+      "remainder": 872,
+      "tie": 0.8682928353742639
+    },
+    {
+      "key": [
+        "03",
+        "1",
+        "2"
+      ],
+      "population": 70,
+      "selected": 15,
+      "remainder": 8694,
+      "tie": 0.8787271767518993
+    },
+    {
+      "key": [
+        "03",
+        "2",
+        "0"
+      ],
+      "population": 67,
+      "selected": 14,
+      "remainder": 2550,
+      "tie": 0.22293213728846628
+    },
+    {
+      "key": [
+        "03",
+        "2",
+        "1"
+      ],
+      "population": 100,
+      "selected": 21,
+      "remainder": 2801,
+      "tie": 0.7548510760651745
+    },
+    {
+      "key": [
+        "03",
+        "2",
+        "2"
+      ],
+      "population": 50,
+      "selected": 11,
+      "remainder": 6210,
+      "tie": 0.7059792609291449
+    },
+    {
+      "key": [
+        "03",
+        "3",
+        "0"
+      ],
+      "population": 37,
+      "selected": 8,
+      "remainder": 8443,
+      "tie": 0.2675586670275584
+    },
+    {
+      "key": [
+        "03",
+        "3",
+        "1"
+      ],
+      "population": 67,
+      "selected": 14,
+      "remainder": 2550,
+      "tie": 0.08185923876331669
+    },
+    {
+      "key": [
+        "03",
+        "3",
+        "2"
+      ],
+      "population": 36,
+      "selected": 8,
+      "remainder": 6395,
+      "tie": 0.7305694775139625
+    },
+    {
+      "key": [
+        "05",
+        "1",
+        "0"
+      ],
+      "population": 3,
+      "selected": 1,
+      "remainder": 6144,
+      "tie": 0.90263481245294
+    },
+    {
+      "key": [
+        "05",
+        "1",
+        "1"
+      ],
+      "population": 9,
+      "selected": 2,
+      "remainder": 8813,
+      "tie": 0.0753090294718014
+    },
+    {
+      "key": [
+        "05",
+        "1",
+        "2"
+      ],
+      "population": 34,
+      "selected": 7,
+      "remainder": 2299,
+      "tie": 0.27548013251368064
+    },
+    {
+      "key": [
+        "05",
+        "2",
+        "0"
+      ],
+      "population": 18,
+      "selected": 4,
+      "remainder": 8007,
+      "tie": 0.17379813514646492
+    },
+    {
+      "key": [
+        "05",
+        "2",
+        "1"
+      ],
+      "population": 45,
+      "selected": 10,
+      "remainder": 5589,
+      "tie": 0.8313702680388733
+    },
+    {
+      "key": [
+        "05",
+        "2",
+        "2"
+      ],
+      "population": 113,
+      "selected": 24,
+      "remainder": 568,
+      "tie": 0.2648158300847766
+    },
+    {
+      "key": [
+        "05",
+        "3",
+        "0"
+      ],
+      "population": 22,
+      "selected": 5,
+      "remainder": 6580,
+      "tie": 0.9705255261094434
+    },
+    {
+      "key": [
+        "05",
+        "3",
+        "1"
+      ],
+      "population": 101,
+      "selected": 22,
+      "remainder": 4849,
+      "tie": 0.11836322322095116
+    },
+    {
+      "key": [
+        "05",
+        "3",
+        "2"
+      ],
+      "population": 83,
+      "selected": 18,
+      "remainder": 6461,
+      "tie": 0.8563501774603258
+    },
+    {
+      "key": [
+        "06",
+        "1",
+        "0"
+      ],
+      "population": 13,
+      "selected": 3,
+      "remainder": 7386,
+      "tie": 0.8400833112363346
+    },
+    {
+      "key": [
+        "06",
+        "1",
+        "1"
+      ],
+      "population": 20,
+      "selected": 4,
+      "remainder": 2484,
+      "tie": 0.2845937743068482
+    },
+    {
+      "key": [
+        "06",
+        "1",
+        "2"
+      ],
+      "population": 5,
+      "selected": 1,
+      "remainder": 621,
+      "tie": 0.7624190774939569
+    },
+    {
+      "key": [
+        "06",
+        "2",
+        "0"
+      ],
+      "population": 101,
+      "selected": 22,
+      "remainder": 4849,
+      "tie": 0.2396991035940751
+    },
+    {
+      "key": [
+        "06",
+        "2",
+        "1"
+      ],
+      "population": 105,
+      "selected": 22,
+      "remainder": 3422,
+      "tie": 0.9738515120212666
+    },
+    {
+      "key": [
+        "06",
+        "2",
+        "2"
+      ],
+      "population": 13,
+      "selected": 3,
+      "remainder": 7386,
+      "tie": 0.7506098441909571
+    },
+    {
+      "key": [
+        "06",
+        "3",
+        "0"
+      ],
+      "population": 130,
+      "selected": 28,
+      "remainder": 6527,
+      "tie": 0.5303928847902377
+    },
+    {
+      "key": [
+        "06",
+        "3",
+        "1"
+      ],
+      "population": 125,
+      "selected": 27,
+      "remainder": 5906,
+      "tie": 0.34207304391774673
+    },
+    {
+      "key": [
+        "06",
+        "3",
+        "2"
+      ],
+      "population": 3,
+      "selected": 1,
+      "remainder": 6144,
+      "tie": 0.8293108369448251
+    },
+    {
+      "key": [
+        "08",
+        "1",
+        "0"
+      ],
+      "population": 31,
+      "selected": 7,
+      "remainder": 5774,
+      "tie": 0.3465620876989217
+    },
+    {
+      "key": [
+        "08",
+        "1",
+        "1"
+      ],
+      "population": 91,
+      "selected": 19,
+      "remainder": 3607,
+      "tie": 0.11298335490921196
+    },
+    {
+      "key": [
+        "08",
+        "1",
+        "2"
+      ],
+      "population": 149,
+      "selected": 32,
+      "remainder": 6963,
+      "tie": 0.160617947014285
+    },
+    {
+      "key": [
+        "08",
+        "2",
+        "0"
+      ],
+      "population": 151,
+      "selected": 32,
+      "remainder": 1440,
+      "tie": 0.22635092044821703
+    },
+    {
+      "key": [
+        "08",
+        "2",
+        "1"
+      ],
+      "population": 196,
+      "selected": 42,
+      "remainder": 7029,
+      "tie": 0.29782055109982086
+    },
+    {
+      "key": [
+        "08",
+        "2",
+        "2"
+      ],
+      "population": 317,
+      "selected": 68,
+      "remainder": 4743,
+      "tie": 0.03761703866890431
+    },
+    {
+      "key": [
+        "08",
+        "3",
+        "0"
+      ],
+      "population": 105,
+      "selected": 22,
+      "remainder": 3422,
+      "tie": 0.31822450853618933
+    },
+    {
+      "key": [
+        "08",
+        "3",
+        "1"
+      ],
+      "population": 233,
+      "selected": 50,
+      "remainder": 5853,
+      "tie": 0.9393479709361086
+    },
+    {
+      "key": [
+        "08",
+        "3",
+        "2"
+      ],
+      "population": 245,
+      "selected": 52,
+      "remainder": 1572,
+      "tie": 0.29695393590434316
+    },
+    {
+      "key": [
+        "09",
+        "1",
+        "0"
+      ],
+      "population": 32,
+      "selected": 7,
+      "remainder": 7822,
+      "tie": 0.4744136529268753
+    },
+    {
+      "key": [
+        "09",
+        "1",
+        "1"
+      ],
+      "population": 77,
+      "selected": 16,
+      "remainder": 3792,
+      "tie": 0.7023235780627533
+    },
+    {
+      "key": [
+        "09",
+        "1",
+        "2"
+      ],
+      "population": 161,
+      "selected": 34,
+      "remainder": 2682,
+      "tie": 0.8757767928026857
+    },
+    {
+      "key": [
+        "09",
+        "2",
+        "0"
+      ],
+      "population": 135,
+      "selected": 29,
+      "remainder": 7148,
+      "tie": 0.5720678315604794
+    },
+    {
+      "key": [
+        "09",
+        "2",
+        "1"
+      ],
+      "population": 218,
+      "selected": 46,
+      "remainder": 3990,
+      "tie": 0.5552025344284836
+    },
+    {
+      "key": [
+        "09",
+        "2",
+        "2"
+      ],
+      "population": 222,
+      "selected": 47,
+      "remainder": 2563,
+      "tie": 0.5151205481499471
+    },
+    {
+      "key": [
+        "09",
+        "3",
+        "0"
+      ],
+      "population": 78,
+      "selected": 17,
+      "remainder": 5840,
+      "tie": 0.5870008871730675
+    },
+    {
+      "key": [
+        "09",
+        "3",
+        "1"
+      ],
+      "population": 223,
+      "selected": 47,
+      "remainder": 4611,
+      "tie": 0.19693783767118223
+    },
+    {
+      "key": [
+        "09",
+        "3",
+        "2"
+      ],
+      "population": 112,
+      "selected": 24,
+      "remainder": 8139,
+      "tie": 0.3252678292826884
+    },
+    {
+      "key": [
+        "10",
+        "1",
+        "0"
+      ],
+      "population": 132,
+      "selected": 28,
+      "remainder": 1004,
+      "tie": 0.4296575990393716
+    },
+    {
+      "key": [
+        "10",
+        "1",
+        "1"
+      ],
+      "population": 185,
+      "selected": 39,
+      "remainder": 3739,
+      "tie": 0.18414118920305778
+    },
+    {
+      "key": [
+        "10",
+        "1",
+        "2"
+      ],
+      "population": 195,
+      "selected": 42,
+      "remainder": 4981,
+      "tie": 0.8141423201912358
+    },
+    {
+      "key": [
+        "10",
+        "2",
+        "0"
+      ],
+      "population": 280,
+      "selected": 60,
+      "remainder": 5919,
+      "tie": 0.20647373884347586
+    },
+    {
+      "key": [
+        "10",
+        "2",
+        "1"
+      ],
+      "population": 226,
+      "selected": 48,
+      "remainder": 1136,
+      "tie": 0.6385025408750016
+    },
+    {
+      "key": [
+        "10",
+        "2",
+        "2"
+      ],
+      "population": 121,
+      "selected": 26,
+      "remainder": 7333,
+      "tie": 0.6120695757323373
+    },
+    {
+      "key": [
+        "10",
+        "3",
+        "0"
+      ],
+      "population": 112,
+      "selected": 24,
+      "remainder": 8139,
+      "tie": 0.4286293889559849
+    },
+    {
+      "key": [
+        "10",
+        "3",
+        "1"
+      ],
+      "population": 47,
+      "selected": 10,
+      "remainder": 66,
+      "tie": 0.2524072558123287
+    },
+    {
+      "key": [
+        "10",
+        "3",
+        "2"
+      ],
+      "population": 13,
+      "selected": 3,
+      "remainder": 7386,
+      "tie": 0.12090874190030365
+    },
+    {
+      "key": [
+        "10",
+        "empty",
+        "empty"
+      ],
+      "population": 2,
+      "selected": 0,
+      "remainder": 4096,
+      "tie": 0.6695782137321034
+    },
+    {
+      "key": [
+        "11",
+        "1",
+        "0"
+      ],
+      "population": 130,
+      "selected": 28,
+      "remainder": 6527,
+      "tie": 0.5662482212142785
+    },
+    {
+      "key": [
+        "11",
+        "1",
+        "1"
+      ],
+      "population": 1,
+      "selected": 0,
+      "remainder": 2048,
+      "tie": 0.7004714555948148
+    },
+    {
+      "key": [
+        "11",
+        "2",
+        "0"
+      ],
+      "population": 246,
+      "selected": 52,
+      "remainder": 3620,
+      "tie": 0.1259726493640212
+    },
+    {
+      "key": [
+        "11",
+        "3",
+        "0"
+      ],
+      "population": 91,
+      "selected": 19,
+      "remainder": 3607,
+      "tie": 0.8320108054042964
+    },
+    {
+      "key": [
+        "13",
+        "1",
+        "0"
+      ],
+      "population": 30,
+      "selected": 6,
+      "remainder": 3726,
+      "tie": 0.9391204026824079
+    },
+    {
+      "key": [
+        "13",
+        "1",
+        "1"
+      ],
+      "population": 37,
+      "selected": 8,
+      "remainder": 8443,
+      "tie": 0.4428664111667324
+    },
+    {
+      "key": [
+        "13",
+        "1",
+        "2"
+      ],
+      "population": 7,
+      "selected": 1,
+      "remainder": 4717,
+      "tie": 0.13275805268978758
+    },
+    {
+      "key": [
+        "13",
+        "2",
+        "0"
+      ],
+      "population": 185,
+      "selected": 39,
+      "remainder": 3739,
+      "tie": 0.03796964978387074
+    },
+    {
+      "key": [
+        "13",
+        "2",
+        "1"
+      ],
+      "population": 48,
+      "selected": 10,
+      "remainder": 2114,
+      "tie": 0.02314699665533715
+    },
+    {
+      "key": [
+        "13",
+        "2",
+        "2"
+      ],
+      "population": 1,
+      "selected": 0,
+      "remainder": 2048,
+      "tie": 0.4285671699696295
+    },
+    {
+      "key": [
+        "13",
+        "3",
+        "0"
+      ],
+      "population": 175,
+      "selected": 37,
+      "remainder": 2497,
+      "tie": 0.5318851640660857
+    },
+    {
+      "key": [
+        "13",
+        "3",
+        "1"
+      ],
+      "population": 17,
+      "selected": 4,
+      "remainder": 5959,
+      "tie": 0.09880717733878919
+    },
+    {
+      "key": [
+        "14",
+        "1",
+        "0"
+      ],
+      "population": 5,
+      "selected": 1,
+      "remainder": 621,
+      "tie": 0.9909781036297477
+    },
+    {
+      "key": [
+        "14",
+        "1",
+        "1"
+      ],
+      "population": 32,
+      "selected": 7,
+      "remainder": 7822,
+      "tie": 0.7517531782946358
+    },
+    {
+      "key": [
+        "14",
+        "1",
+        "2"
+      ],
+      "population": 115,
+      "selected": 24,
+      "remainder": 4664,
+      "tie": 0.5866868246418996
+    },
+    {
+      "key": [
+        "14",
+        "2",
+        "0"
+      ],
+      "population": 27,
+      "selected": 6,
+      "remainder": 7201,
+      "tie": 0.8714043425363394
+    },
+    {
+      "key": [
+        "14",
+        "2",
+        "1"
+      ],
+      "population": 109,
+      "selected": 23,
+      "remainder": 1995,
+      "tie": 0.7842817049852978
+    },
+    {
+      "key": [
+        "14",
+        "2",
+        "2"
+      ],
+      "population": 143,
+      "selected": 30,
+      "remainder": 4294,
+      "tie": 0.20936254690779565
+    },
+    {
+      "key": [
+        "14",
+        "3",
+        "0"
+      ],
+      "population": 7,
+      "selected": 1,
+      "remainder": 4717,
+      "tie": 0.1073311086484765
+    },
+    {
+      "key": [
+        "14",
+        "3",
+        "1"
+      ],
+      "population": 75,
+      "selected": 16,
+      "remainder": 9315,
+      "tie": 0.0013115617649090971
+    },
+    {
+      "key": [
+        "14",
+        "3",
+        "2"
+      ],
+      "population": 45,
+      "selected": 10,
+      "remainder": 5589,
+      "tie": 0.05780857903235859
+    },
+    {
+      "key": [
+        "15",
+        "1",
+        "1"
+      ],
+      "population": 13,
+      "selected": 3,
+      "remainder": 7386,
+      "tie": 0.4448700739366648
+    },
+    {
+      "key": [
+        "15",
+        "1",
+        "2"
+      ],
+      "population": 238,
+      "selected": 51,
+      "remainder": 6474,
+      "tie": 0.3737415964356168
+    },
+    {
+      "key": [
+        "15",
+        "2",
+        "0"
+      ],
+      "population": 8,
+      "selected": 2,
+      "remainder": 6765,
+      "tie": 0.4201087555159966
+    },
+    {
+      "key": [
+        "15",
+        "2",
+        "1"
+      ],
+      "population": 28,
+      "selected": 6,
+      "remainder": 9249,
+      "tie": 0.4447476093729812
+    },
+    {
+      "key": [
+        "15",
+        "2",
+        "2"
+      ],
+      "population": 249,
+      "selected": 53,
+      "remainder": 145,
+      "tie": 0.3783739166841408
+    },
+    {
+      "key": [
+        "15",
+        "3",
+        "1"
+      ],
+      "population": 6,
+      "selected": 1,
+      "remainder": 2669,
+      "tie": 0.18587922332225826
+    },
+    {
+      "key": [
+        "15",
+        "3",
+        "2"
+      ],
+      "population": 61,
+      "selected": 13,
+      "remainder": 9500,
+      "tie": 0.3527676406327993
+    },
+    {
+      "key": [
+        "16",
+        "1",
+        "0"
+      ],
+      "population": 106,
+      "selected": 23,
+      "remainder": 5470,
+      "tie": 0.0476169676806133
+    },
+    {
+      "key": [
+        "16",
+        "1",
+        "1"
+      ],
+      "population": 48,
+      "selected": 10,
+      "remainder": 2114,
+      "tie": 0.5685287404798111
+    },
+    {
+      "key": [
+        "16",
+        "1",
+        "2"
+      ],
+      "population": 18,
+      "selected": 4,
+      "remainder": 8007,
+      "tie": 0.34555539927531975
+    },
+    {
+      "key": [
+        "16",
+        "2",
+        "0"
+      ],
+      "population": 300,
+      "selected": 64,
+      "remainder": 8403,
+      "tie": 0.13612068334989336
+    },
+    {
+      "key": [
+        "16",
+        "2",
+        "1"
+      ],
+      "population": 58,
+      "selected": 12,
+      "remainder": 3356,
+      "tie": 0.9492064870416419
+    },
+    {
+      "key": [
+        "16",
+        "2",
+        "2"
+      ],
+      "population": 1,
+      "selected": 0,
+      "remainder": 2048,
+      "tie": 0.9184186979147818
+    },
+    {
+      "key": [
+        "16",
+        "3",
+        "0"
+      ],
+      "population": 31,
+      "selected": 7,
+      "remainder": 5774,
+      "tie": 0.8978345497897277
+    },
+    {
+      "key": [
+        "16",
+        "3",
+        "1"
+      ],
+      "population": 5,
+      "selected": 1,
+      "remainder": 621,
+      "tie": 0.19915317361195706
+    },
+    {
+      "key": [
+        "17",
+        "1",
+        "0"
+      ],
+      "population": 42,
+      "selected": 9,
+      "remainder": 9064,
+      "tie": 0.18065454770264233
+    },
+    {
+      "key": [
+        "17",
+        "1",
+        "1"
+      ],
+      "population": 82,
+      "selected": 17,
+      "remainder": 4413,
+      "tie": 0.5651307296932059
+    },
+    {
+      "key": [
+        "17",
+        "1",
+        "2"
+      ],
+      "population": 28,
+      "selected": 6,
+      "remainder": 9249,
+      "tie": 0.32980249346424473
+    },
+    {
+      "key": [
+        "17",
+        "2",
+        "0"
+      ],
+      "population": 177,
+      "selected": 38,
+      "remainder": 6593,
+      "tie": 0.2043668946398277
+    },
+    {
+      "key": [
+        "17",
+        "2",
+        "1"
+      ],
+      "population": 133,
+      "selected": 28,
+      "remainder": 3052,
+      "tie": 0.18396245757989949
+    },
+    {
+      "key": [
+        "17",
+        "2",
+        "2"
+      ],
+      "population": 8,
+      "selected": 2,
+      "remainder": 6765,
+      "tie": 0.6925077323633047
+    },
+    {
+      "key": [
+        "17",
+        "3",
+        "0"
+      ],
+      "population": 30,
+      "selected": 6,
+      "remainder": 3726,
+      "tie": 0.9619986171672608
+    },
+    {
+      "key": [
+        "17",
+        "3",
+        "1"
+      ],
+      "population": 11,
+      "selected": 2,
+      "remainder": 3290,
+      "tie": 0.24169835759475122
+    },
+    {
+      "key": [
+        "17",
+        "3",
+        "2"
+      ],
+      "population": 1,
+      "selected": 0,
+      "remainder": 2048,
+      "tie": 0.11558761399952622
+    },
+    {
+      "key": [
+        "18",
+        "1",
+        "0"
+      ],
+      "population": 26,
+      "selected": 6,
+      "remainder": 5153,
+      "tie": 0.30236786545964456
+    },
+    {
+      "key": [
+        "18",
+        "1",
+        "1"
+      ],
+      "population": 35,
+      "selected": 7,
+      "remainder": 4347,
+      "tie": 0.8450073575816424
+    },
+    {
+      "key": [
+        "18",
+        "1",
+        "2"
+      ],
+      "population": 42,
+      "selected": 9,
+      "remainder": 9064,
+      "tie": 0.06759833152017214
+    },
+    {
+      "key": [
+        "18",
+        "2",
+        "0"
+      ],
+      "population": 76,
+      "selected": 16,
+      "remainder": 1744,
+      "tie": 0.10869903666207681
+    },
+    {
+      "key": [
+        "18",
+        "2",
+        "1"
+      ],
+      "population": 122,
+      "selected": 26,
+      "remainder": 9381,
+      "tie": 0.6264665434607093
+    },
+    {
+      "key": [
+        "18",
+        "2",
+        "2"
+      ],
+      "population": 44,
+      "selected": 9,
+      "remainder": 3541,
+      "tie": 0.17232990661635883
+    },
+    {
+      "key": [
+        "18",
+        "3",
+        "0"
+      ],
+      "population": 16,
+      "selected": 3,
+      "remainder": 3911,
+      "tie": 0.13036319524946582
+    },
+    {
+      "key": [
+        "18",
+        "3",
+        "1"
+      ],
+      "population": 41,
+      "selected": 9,
+      "remainder": 7016,
+      "tie": 0.11519529082259872
+    },
+    {
+      "key": [
+        "18",
+        "3",
+        "2"
+      ],
+      "population": 4,
+      "selected": 1,
+      "remainder": 8192,
+      "tie": 0.40533953391873034
+    }
+  ],
+  "sampling": "Unchanged previous sampler: largest remainder proportional allocation in governed prefix x train-GT density x train-GT relative scale, random ties and uniform sampling within strata. No class floors, swaps or second subset.",
+  "inputs": {
+    "fit_tsv": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/splits/grouped_v1/fit.tsv",
+      "bytes": 2606799,
+      "mtime_ns": 1788110903658727413
+    },
+    "dev_tsv": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/splits/grouped_v1/dev.tsv",
+      "bytes": 652076,
+      "mtime_ns": 1788110903666727515
+    },
+    "train_mapping": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/mappings/visible_to_infrared_train.json",
+      "bytes": 1760280,
+      "mtime_ns": 1788115524501838535
+    },
+    "visible_yaml": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+      "bytes": 151,
+      "mtime_ns": 1788115519325764545
+    },
+    "infrared_yaml": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml",
+      "bytes": 152,
+      "mtime_ns": 1788115520437780437
+    }
+  },
+  "dev_unchanged": {
+    "images": 2406,
+    "visible_gt": 7879,
+    "infrared_gt": 7879,
+    "visible": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev",
+    "infrared": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev"
+  },
+  "source_groups": {
+    "train": [
+      "02",
+      "03",
+      "05",
+      "06",
+      "08",
+      "09",
+      "10",
+      "11",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "dev": [
+      "01",
+      "04",
+      "07",
+      "12",
+      "25"
+    ],
+    "disjoint": true,
+    "scope": "Existing governed sequence_prefix only, not geometric registration or acquisition-independence certification."
+  },
+  "checks": {
+    "full_fit_mapping_and_governed_stems_exact": true,
+    "processed_to_governed_raw_targets_exact": true,
+    "train_visible_ir_label_bytes_exact": true,
+    "same_seed_replay_exact": true,
+    "processed_aliases_preserved_for_label_loading": true,
+    "mapping_canonical_original_subset_exact": true
+  },
+  "checkpoint_identity": {
+    "visible": {
+      "checkpoint": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+        "bytes": 5482010,
+        "mtime_ns": 1788127857140185407
+      },
+      "historical_args": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/args.yaml",
+        "bytes": 2065,
+        "mtime_ns": 1788120565471429198
+      },
+      "data_yaml": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+        "bytes": 151,
+        "mtime_ns": 1788115519325764545
+      },
+      "args_data_path_exact": true,
+      "configured_terminal_lr": 0.0001,
+      "identity_scope": "Path/stat plus original args/data YAML; no checkpoint bytes read or model loaded."
+    },
+    "infrared": {
+      "checkpoint": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+        "bytes": 5482010,
+        "mtime_ns": 1788127257614850390
+      },
+      "historical_args": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/args.yaml",
+        "bytes": 2068,
+        "mtime_ns": 1788120535878987339
+      },
+      "data_yaml": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml",
+        "bytes": 152,
+        "mtime_ns": 1788115520437780437
+      },
+      "args_data_path_exact": true,
+      "configured_terminal_lr": 0.0001,
+      "identity_scope": "Path/stat plus original args/data YAML; no checkpoint bytes read or model loaded."
+    }
+  },
+  "label_text_bytes_read": 3139960,
+  "train_gt_only_sampling": true,
+  "dev_used_only_for_existing_identity_counts": true,
+  "test_files_read": 0,
+  "image_bytes_read": 0,
+  "checkpoint_bytes_read": 0,
+  "gpu_used": false,
+  "new_hash_computed": false,
+  "original_inputs_modified": false,
+  "interpretation": "Single-class person coverage and proportional source/density/area support are descriptive. Shared RGB/IR GT is not physical geometry proof; original L1 geometry remains blocked."
+}

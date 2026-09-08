@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-09-08T11:11:10.317692+08:00",
+  "returncode": 0,
+  "stdout": "{\"status\": \"CPU_SELF_TEST_PASS\", \"gpu_used\": false, \"new_hash_computed\": false}\n{\"status\": \"CPU_SUBSET_CREATED_NO_TRAINING\", \"output\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1\", \"full_train\": {\"images\": 9619, \"objects\": 26251, \"empty_images\": 2, \"class_object_counts\": {\"person\": 26251}, \"class_image_counts\": {\"person\": 9617}, \"source_groups\": {\"02\": 500, \"03\": 473, \"05\": 428, \"06\": 515, \"08\": 1518, \"09\": 1258, \"10\": 1313, \"11\": 468, \"13\": 500, \"14\": 558, \"15\": 603, \"16\": 567, \"17\": 512, \"18\": 406}}, \"subset\": {\"images\": 2048, \"objects\": 5592, \"empty_images\": 0, \"class_object_counts\": {\"person\": 5592}, \"class_image_counts\": {\"person\": 2048}, \"source_groups\": {\"02\": 106, \"03\": 101, \"05\": 93, \"06\": 111, \"08\": 324, \"09\": 267, \"10\": 280, \"11\": 99, \"13\": 105, \"14\": 118, \"15\": 129, \"16\": 121, \"17\": 108, \"18\": 86}}, \"strata\": 118, \"dev\": {\"images\": 2406, \"visible_gt\": 7879, \"infrared_gt\": 7879, \"visible\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/dev\", \"infrared\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/infrared/images/dev\"}}\n",
+  "stderr": "",
+  "remote_output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1",
+  "builder_source_bytes": {
+    "build_llvip_subset_v2.py": 12066,
+    "natural_sampler_source.py": 13306
+  },
+  "source_byte_identity": true,
+  "gpu_used": false,
+  "new_hash_computed": false
+}

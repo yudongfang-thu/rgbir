@@ -1,0 +1,23 @@
+{
+  "id": "direction_screen_attempt1_drone_C1_train",
+  "dataset": "drone",
+  "arm": "C1",
+  "stage": "train",
+  "formal": false,
+  "kind": "train",
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/release_v1/train_direction.py",
+    "--reference-dir",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+    "--config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/effective_configs/drone_C1_s42_FT3.yaml",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/runs/drone/C1",
+    "--canary-receipt",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/C1/canary.json"
+  ],
+  "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/runs/drone/C1/completion_receipt.json",
+  "vram_mib": 7168,
+  "rss_mib": 30720
+}

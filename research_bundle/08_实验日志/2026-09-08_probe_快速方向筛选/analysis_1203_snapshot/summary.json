@@ -1,0 +1,785 @@
+{
+  "status": "PARTIAL_DIRECTION_READOUT",
+  "scope": "DIRECTION_FT3_BNFROZEN",
+  "endpoint": "DIRECTION_FT3_BNFROZEN_LAST_EMA",
+  "seed": 42,
+  "n_seeds": 1,
+  "standard_deviation": null,
+  "raw_metric_units": "fraction_0_to_1",
+  "display_metric_units": "percent",
+  "difference_units": "percentage_points",
+  "datasets": {
+    "drone": {
+      "images": 1469,
+      "gt_objects": 22462,
+      "arms": [
+        {
+          "arm": "N",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.5451821706459709,
+            "AP50": 0.7714970300332411,
+            "AP75": 0.6404186490677514,
+            "precision": 0.7821591975924277,
+            "recall": 0.7378655934460113
+          },
+          "display_percent": {
+            "mAP50_95": 54.51821706459709,
+            "AP50": 77.1497030033241,
+            "AP75": 64.04186490677513,
+            "precision": 78.21591975924277,
+            "recall": 73.78655934460113
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "car",
+              "raw_fraction": {
+                "mAP50_95": 0.6527284770751997,
+                "AP50": 0.948224157530051,
+                "AP75": 0.7575518727087093
+              },
+              "display_percent": {
+                "mAP50_95": 65.27284770751997,
+                "AP50": 94.82241575300509,
+                "AP75": 75.75518727087093
+              }
+            },
+            {
+              "class_id": 1,
+              "name": "freight car",
+              "raw_fraction": {
+                "mAP50_95": 0.3945399286985698,
+                "AP50": 0.6102864340936682,
+                "AP75": 0.43883836120532527
+              },
+              "display_percent": {
+                "mAP50_95": 39.45399286985698,
+                "AP50": 61.02864340936682,
+                "AP75": 43.88383612053253
+              }
+            },
+            {
+              "class_id": 2,
+              "name": "truck",
+              "raw_fraction": {
+                "mAP50_95": 0.519025733117044,
+                "AP50": 0.7273951254483488,
+                "AP75": 0.6096956946036592
+              },
+              "display_percent": {
+                "mAP50_95": 51.9025733117044,
+                "AP50": 72.73951254483488,
+                "AP75": 60.969569460365925
+              }
+            },
+            {
+              "class_id": 3,
+              "name": "bus",
+              "raw_fraction": {
+                "mAP50_95": 0.7308145728936726,
+                "AP50": 0.9451958979440702,
+                "AP75": 0.8861588146223016
+              },
+              "display_percent": {
+                "mAP50_95": 73.08145728936725,
+                "AP50": 94.51958979440703,
+                "AP75": 88.61588146223016
+              }
+            },
+            {
+              "class_id": 4,
+              "name": "van",
+              "raw_fraction": {
+                "mAP50_95": 0.42880214144536843,
+                "AP50": 0.6263835351500676,
+                "AP75": 0.5098485021987618
+              },
+              "display_percent": {
+                "mAP50_95": 42.88021414453684,
+                "AP50": 62.63835351500676,
+                "AP75": 50.98485021987618
+              }
+            }
+          ],
+          "kd_coefficient": 0.0,
+          "evaluation_seconds": 11.66953208995983,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt"
+        },
+        {
+          "arm": "C1",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.5454354819825679,
+            "AP50": 0.7726113081818353,
+            "AP75": 0.6397904328143932,
+            "precision": 0.7872447543067594,
+            "recall": 0.7322949365154726
+          },
+          "display_percent": {
+            "mAP50_95": 54.54354819825679,
+            "AP50": 77.26113081818353,
+            "AP75": 63.97904328143932,
+            "precision": 78.72447543067594,
+            "recall": 73.22949365154726
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "car",
+              "raw_fraction": {
+                "mAP50_95": 0.6527261025178623,
+                "AP50": 0.9483482523014631,
+                "AP75": 0.7574108018202672
+              },
+              "display_percent": {
+                "mAP50_95": 65.27261025178623,
+                "AP50": 94.83482523014631,
+                "AP75": 75.74108018202672
+              }
+            },
+            {
+              "class_id": 1,
+              "name": "freight car",
+              "raw_fraction": {
+                "mAP50_95": 0.3970474169822093,
+                "AP50": 0.6145411263807614,
+                "AP75": 0.4376980133216214
+              },
+              "display_percent": {
+                "mAP50_95": 39.70474169822093,
+                "AP50": 61.45411263807614,
+                "AP75": 43.76980133216214
+              }
+            },
+            {
+              "class_id": 2,
+              "name": "truck",
+              "raw_fraction": {
+                "mAP50_95": 0.5180835902476432,
+                "AP50": 0.7277177474144567,
+                "AP75": 0.606753777719732
+              },
+              "display_percent": {
+                "mAP50_95": 51.808359024764314,
+                "AP50": 72.77177474144567,
+                "AP75": 60.6753777719732
+              }
+            },
+            {
+              "class_id": 3,
+              "name": "bus",
+              "raw_fraction": {
+                "mAP50_95": 0.729770612573238,
+                "AP50": 0.9456001295860273,
+                "AP75": 0.8877880749033867
+              },
+              "display_percent": {
+                "mAP50_95": 72.97706125732381,
+                "AP50": 94.56001295860274,
+                "AP75": 88.77880749033868
+              }
+            },
+            {
+              "class_id": 4,
+              "name": "van",
+              "raw_fraction": {
+                "mAP50_95": 0.42954968759188616,
+                "AP50": 0.6268492852264678,
+                "AP75": 0.5093014963069589
+              },
+              "display_percent": {
+                "mAP50_95": 42.95496875918862,
+                "AP50": 62.68492852264678,
+                "AP75": 50.93014963069589
+              }
+            }
+          ],
+          "kd_coefficient": 0.09227393550836771,
+          "evaluation_seconds": 11.938859767979011,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt"
+        },
+        {
+          "arm": "C2",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.5454072404421959,
+            "AP50": 0.7723774298716544,
+            "AP75": 0.640115690539595,
+            "precision": 0.7849490049064723,
+            "recall": 0.7359273436324896
+          },
+          "display_percent": {
+            "mAP50_95": 54.54072404421959,
+            "AP50": 77.23774298716543,
+            "AP75": 64.0115690539595,
+            "precision": 78.49490049064724,
+            "recall": 73.59273436324895
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "car",
+              "raw_fraction": {
+                "mAP50_95": 0.6527236492540741,
+                "AP50": 0.948348970824681,
+                "AP75": 0.7576735474219591
+              },
+              "display_percent": {
+                "mAP50_95": 65.27236492540742,
+                "AP50": 94.83489708246809,
+                "AP75": 75.76735474219592
+              }
+            },
+            {
+              "class_id": 1,
+              "name": "freight car",
+              "raw_fraction": {
+                "mAP50_95": 0.39581147048969917,
+                "AP50": 0.612552475250792,
+                "AP75": 0.43723740748109624
+              },
+              "display_percent": {
+                "mAP50_95": 39.58114704896992,
+                "AP50": 61.255247525079206,
+                "AP75": 43.72374074810963
+              }
+            },
+            {
+              "class_id": 2,
+              "name": "truck",
+              "raw_fraction": {
+                "mAP50_95": 0.5182567976695898,
+                "AP50": 0.7280587162372145,
+                "AP75": 0.6106654504097944
+              },
+              "display_percent": {
+                "mAP50_95": 51.82567976695898,
+                "AP50": 72.80587162372146,
+                "AP75": 61.066545040979435
+              }
+            },
+            {
+              "class_id": 3,
+              "name": "bus",
+              "raw_fraction": {
+                "mAP50_95": 0.7312266404384355,
+                "AP50": 0.9464985311265078,
+                "AP75": 0.8863292329466927
+              },
+              "display_percent": {
+                "mAP50_95": 73.12266404384356,
+                "AP50": 94.64985311265079,
+                "AP75": 88.63292329466927
+              }
+            },
+            {
+              "class_id": 4,
+              "name": "van",
+              "raw_fraction": {
+                "mAP50_95": 0.4290176443591805,
+                "AP50": 0.6264284559190768,
+                "AP75": 0.5086728144384327
+              },
+              "display_percent": {
+                "mAP50_95": 42.90176443591805,
+                "AP50": 62.64284559190768,
+                "AP75": 50.86728144384327
+              }
+            }
+          ],
+          "kd_coefficient": 0.10975098761504075,
+          "evaluation_seconds": 11.933056442067027,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt"
+        },
+        {
+          "arm": "F-rel",
+          "status": "MISSING",
+          "reason": "No collected terminal receipt",
+          "raw_fraction": null,
+          "display_percent": null,
+          "per_class": null
+        }
+      ],
+      "comparisons": [
+        {
+          "contrast": "C1 - N",
+          "arm": "C1",
+          "control": "N",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": 0.025331133659700633,
+            "AP50": 0.11142781485942166,
+            "AP75": -0.06282162533581825,
+            "precision": 0.5085556714331751,
+            "recall": -0.5570656930538709
+          },
+          "direction": {
+            "mAP50_95": "positive",
+            "AP50": "positive",
+            "AP75": "negative",
+            "precision": "positive",
+            "recall": "negative"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "car",
+              "delta_pp": {
+                "mAP50_95": -0.000237455733731462,
+                "AP50": 0.01240947714121754,
+                "AP75": -0.014107088844206306
+              }
+            },
+            {
+              "class_id": 1,
+              "name": "freight car",
+              "delta_pp": {
+                "mAP50_95": 0.2507488283639503,
+                "AP50": 0.4254692287093187,
+                "AP75": -0.11403478837038739
+              }
+            },
+            {
+              "class_id": 2,
+              "name": "truck",
+              "delta_pp": {
+                "mAP50_95": -0.09421428694008638,
+                "AP50": 0.03226219661078833,
+                "AP75": -0.2941916883927198
+              }
+            },
+            {
+              "class_id": 3,
+              "name": "bus",
+              "delta_pp": {
+                "mAP50_95": -0.10439603204345227,
+                "AP50": 0.040423164195713124,
+                "AP75": 0.1629260281085121
+              }
+            },
+            {
+              "class_id": 4,
+              "name": "van",
+              "delta_pp": {
+                "mAP50_95": 0.07475461465177302,
+                "AP50": 0.0465750076400151,
+                "AP75": -0.05470058918028986
+              }
+            }
+          ]
+        },
+        {
+          "contrast": "C2 - N",
+          "arm": "C2",
+          "control": "N",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": 0.022506979622505252,
+            "AP50": 0.08803998384132594,
+            "AP75": -0.03029585281563163,
+            "precision": 0.27898073140446566,
+            "recall": -0.1938249813521753
+          },
+          "direction": {
+            "mAP50_95": "positive",
+            "AP50": "positive",
+            "AP75": "negative",
+            "precision": "positive",
+            "recall": "negative"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "car",
+              "delta_pp": {
+                "mAP50_95": -0.0004827821125541476,
+                "AP50": 0.012481329462998847,
+                "AP75": 0.012167471324986412
+              }
+            },
+            {
+              "class_id": 1,
+              "name": "freight car",
+              "delta_pp": {
+                "mAP50_95": 0.12715417911293714,
+                "AP50": 0.22660411571238104,
+                "AP75": -0.16009537242290262
+              }
+            },
+            {
+              "class_id": 2,
+              "name": "truck",
+              "delta_pp": {
+                "mAP50_95": -0.07689354474542665,
+                "AP50": 0.06635907888656867,
+                "AP75": 0.09697558061351197
+              }
+            },
+            {
+              "class_id": 3,
+              "name": "bus",
+              "delta_pp": {
+                "mAP50_95": 0.04120675447629729,
+                "AP50": 0.1302633182437618,
+                "AP75": 0.017041832439113058
+              }
+            },
+            {
+              "class_id": 4,
+              "name": "van",
+              "delta_pp": {
+                "mAP50_95": 0.02155029138120601,
+                "AP50": 0.004492076900919351,
+                "AP75": -0.11756877603290583
+              }
+            }
+          ]
+        },
+        {
+          "contrast": "F-rel - N",
+          "arm": "F-rel",
+          "control": "N",
+          "status": "UNAVAILABLE",
+          "missing_or_failed_arms": [
+            "F-rel"
+          ],
+          "delta_pp": null,
+          "direction": null,
+          "per_class": null
+        },
+        {
+          "contrast": "C2 - C1",
+          "arm": "C2",
+          "control": "C1",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": -0.002824154037195381,
+            "AP50": -0.023387831018095717,
+            "AP75": 0.032525772520186624,
+            "precision": -0.22957494002870948,
+            "recall": 0.3632407117016956
+          },
+          "direction": {
+            "mAP50_95": "negative",
+            "AP50": "negative",
+            "AP75": "positive",
+            "precision": "negative",
+            "recall": "positive"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "car",
+              "delta_pp": {
+                "mAP50_95": -0.0002453263788226856,
+                "AP50": 7.185232178130718e-05,
+                "AP75": 0.026274560169192718
+              }
+            },
+            {
+              "class_id": 1,
+              "name": "freight car",
+              "delta_pp": {
+                "mAP50_95": -0.12359464925101316,
+                "AP50": -0.19886511299693765,
+                "AP75": -0.04606058405251523
+              }
+            },
+            {
+              "class_id": 2,
+              "name": "truck",
+              "delta_pp": {
+                "mAP50_95": 0.017320742194659733,
+                "AP50": 0.03409688227578034,
+                "AP75": 0.3911672690062318
+              }
+            },
+            {
+              "class_id": 3,
+              "name": "bus",
+              "delta_pp": {
+                "mAP50_95": 0.14560278651974956,
+                "AP50": 0.08984015404804868,
+                "AP75": -0.14588419566939903
+              }
+            },
+            {
+              "class_id": 4,
+              "name": "van",
+              "delta_pp": {
+                "mAP50_95": -0.05320432327056701,
+                "AP50": -0.04208293073909575,
+                "AP75": -0.06286818685261597
+              }
+            }
+          ]
+        },
+        {
+          "contrast": "F-rel - C1",
+          "arm": "F-rel",
+          "control": "C1",
+          "status": "UNAVAILABLE",
+          "missing_or_failed_arms": [
+            "F-rel"
+          ],
+          "delta_pp": null,
+          "direction": null,
+          "per_class": null
+        }
+      ]
+    },
+    "llvip": {
+      "images": 2406,
+      "gt_objects": 7879,
+      "arms": [
+        {
+          "arm": "N",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.3217122432299565,
+            "AP50": 0.7059327479566188,
+            "AP75": 0.23475437645444727,
+            "precision": 0.7287986696936332,
+            "recall": 0.6957846181718673
+          },
+          "display_percent": {
+            "mAP50_95": 32.17122432299565,
+            "AP50": 70.59327479566187,
+            "AP75": 23.475437645444728,
+            "precision": 72.87986696936332,
+            "recall": 69.57846181718674
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "raw_fraction": {
+                "mAP50_95": 0.3217122432299565,
+                "AP50": 0.7059327479566188,
+                "AP75": 0.23475437645444727
+              },
+              "display_percent": {
+                "mAP50_95": 32.17122432299565,
+                "AP50": 70.59327479566187,
+                "AP75": 23.475437645444728
+              }
+            }
+          ],
+          "kd_coefficient": 0.0,
+          "evaluation_seconds": 15.121216322062537,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt"
+        },
+        {
+          "arm": "L2-box",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.32147232220353417,
+            "AP50": 0.7055101738676077,
+            "AP75": 0.23418618329845958,
+            "precision": 0.7267354292572306,
+            "recall": 0.6976773702246478
+          },
+          "display_percent": {
+            "mAP50_95": 32.147232220353416,
+            "AP50": 70.55101738676078,
+            "AP75": 23.41861832984596,
+            "precision": 72.67354292572305,
+            "recall": 69.76773702246479
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "raw_fraction": {
+                "mAP50_95": 0.32147232220353417,
+                "AP50": 0.7055101738676077,
+                "AP75": 0.23418618329845958
+              },
+              "display_percent": {
+                "mAP50_95": 32.147232220353416,
+                "AP50": 70.55101738676078,
+                "AP75": 23.41861832984596
+              }
+            }
+          ],
+          "kd_coefficient": 1.0,
+          "evaluation_seconds": 15.279525591991842,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt"
+        },
+        {
+          "arm": "L2-GT",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.3216269911256207,
+            "AP50": 0.7058147182568821,
+            "AP75": 0.2342521513292882,
+            "precision": 0.7288626297814291,
+            "recall": 0.6964081736260946
+          },
+          "display_percent": {
+            "mAP50_95": 32.16269911256207,
+            "AP50": 70.58147182568821,
+            "AP75": 23.42521513292882,
+            "precision": 72.88626297814291,
+            "recall": 69.64081736260947
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "raw_fraction": {
+                "mAP50_95": 0.3216269911256207,
+                "AP50": 0.7058147182568821,
+                "AP75": 0.2342521513292882
+              },
+              "display_percent": {
+                "mAP50_95": 32.16269911256207,
+                "AP50": 70.58147182568821,
+                "AP75": 23.42521513292882
+              }
+            }
+          ],
+          "kd_coefficient": 1.0,
+          "evaluation_seconds": 14.703763877041638,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt"
+        }
+      ],
+      "comparisons": [
+        {
+          "contrast": "L2-box - N",
+          "arm": "L2-box",
+          "control": "N",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": -0.02399210264223406,
+            "AP50": -0.042257408901102966,
+            "AP75": -0.05681931559876896,
+            "precision": -0.20632404364026025,
+            "recall": 0.18927520527804997
+          },
+          "direction": {
+            "mAP50_95": "negative",
+            "AP50": "negative",
+            "AP75": "negative",
+            "precision": "negative",
+            "recall": "positive"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "delta_pp": {
+                "mAP50_95": -0.02399210264223406,
+                "AP50": -0.042257408901102966,
+                "AP75": -0.05681931559876896
+              }
+            }
+          ]
+        },
+        {
+          "contrast": "L2-GT - N",
+          "arm": "L2-GT",
+          "control": "N",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": -0.008525210433579788,
+            "AP50": -0.011802969973662147,
+            "AP75": -0.05022251251590726,
+            "precision": 0.006396008779596674,
+            "recall": 0.06235554542273203
+          },
+          "direction": {
+            "mAP50_95": "negative",
+            "AP50": "negative",
+            "AP75": "negative",
+            "precision": "positive",
+            "recall": "positive"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "delta_pp": {
+                "mAP50_95": -0.008525210433579788,
+                "AP50": -0.011802969973662147,
+                "AP75": -0.05022251251590726
+              }
+            }
+          ]
+        },
+        {
+          "contrast": "L2-box - L2-GT",
+          "arm": "L2-box",
+          "control": "L2-GT",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": -0.01546689220865427,
+            "AP50": -0.03045443892744082,
+            "AP75": -0.006596803082861702,
+            "precision": -0.21272005241985692,
+            "recall": 0.12691965985531795
+          },
+          "direction": {
+            "mAP50_95": "negative",
+            "AP50": "negative",
+            "AP75": "negative",
+            "precision": "negative",
+            "recall": "positive"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "delta_pp": {
+                "mAP50_95": -0.01546689220865427,
+                "AP50": -0.03045443892744082,
+                "AP75": -0.006596803082861702
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "decision_policy": "Display signed raw control contrasts only; no AP threshold or best-arm selection",
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "causal_modality_claim": false,
+  "automatically_extend_matrix": false,
+  "automatically_admit_e200": false,
+  "new_hash_computed": false,
+  "scope_limit": "Receipt-only FT3 screening; no checkpoint/GT-box re-audit, SD, significance or cross-dataset pooling. Root interprets gradient and coverage separately.",
+  "input_sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\drone\\N\\direction_evaluation_receipt.json",
+      "bytes": 4398,
+      "mtime_ns": 1788840154959009500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\drone\\C1\\direction_evaluation_receipt.json",
+      "bytes": 4419,
+      "mtime_ns": 1788840154962004700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\drone\\C2\\direction_evaluation_receipt.json",
+      "bytes": 4419,
+      "mtime_ns": 1788840154954283800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\llvip\\N\\direction_evaluation_receipt.json",
+      "bytes": 3602,
+      "mtime_ns": 1788840154971859800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\llvip\\L2-box\\direction_evaluation_receipt.json",
+      "bytes": 3629,
+      "mtime_ns": 1788840154967915100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\llvip\\L2-GT\\direction_evaluation_receipt.json",
+      "bytes": 3620,
+      "mtime_ns": 1788840154964510100
+    }
+  ]
+}

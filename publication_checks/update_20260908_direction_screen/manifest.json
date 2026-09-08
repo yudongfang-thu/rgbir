@@ -1,0 +1,1397 @@
+{
+  "files": [
+    {
+      "path": "analysis_1203_snapshot/analyze_direction_source.py",
+      "bytes": 11343
+    },
+    {
+      "path": "analysis_1203_snapshot/README.md",
+      "bytes": 2109
+    },
+    {
+      "path": "analysis_1203_snapshot/summary.json",
+      "bytes": 26336
+    },
+    {
+      "path": "build_training_release.py",
+      "bytes": 7361
+    },
+    {
+      "path": "collect_direction.py",
+      "bytes": 2404
+    },
+    {
+      "path": "collect_swap.py",
+      "bytes": 747
+    },
+    {
+      "path": "confidence_deployment_attempt1.json",
+      "bytes": 323
+    },
+    {
+      "path": "CONFIDENCE_FOLLOWUP_PLAN.md",
+      "bytes": 2248
+    },
+    {
+      "path": "deploy_confidence.py",
+      "bytes": 834
+    },
+    {
+      "path": "deploy_direction.py",
+      "bytes": 2409
+    },
+    {
+      "path": "deploy_initial_eval.py",
+      "bytes": 730
+    },
+    {
+      "path": "deploy_swaps.py",
+      "bytes": 787
+    },
+    {
+      "path": "deployment_attempt1.json",
+      "bytes": 308
+    },
+    {
+      "path": "dispatch_initial_eval.py",
+      "bytes": 1018
+    },
+    {
+      "path": "dispatch_swaps.py",
+      "bytes": 1501
+    },
+    {
+      "path": "dispatch_swaps_v2.py",
+      "bytes": 1516
+    },
+    {
+      "path": "early_llvip_evidence/BATCH_TABLE.csv",
+      "bytes": 1913
+    },
+    {
+      "path": "early_llvip_evidence/collect_drone_calibration_once.py",
+      "bytes": 2424
+    },
+    {
+      "path": "early_llvip_evidence/collect_small.py",
+      "bytes": 3463
+    },
+    {
+      "path": "early_llvip_evidence/collection_receipt.json",
+      "bytes": 18856
+    },
+    {
+      "path": "early_llvip_evidence/drone_calibration_once/calibration/drone/calibration_receipt.json",
+      "bytes": 3033
+    },
+    {
+      "path": "early_llvip_evidence/drone_calibration_once/calibration/drone/direction_config.yaml",
+      "bytes": 4541
+    },
+    {
+      "path": "early_llvip_evidence/drone_calibration_once/coefficient_readout.json",
+      "bytes": 921
+    },
+    {
+      "path": "early_llvip_evidence/drone_calibration_once/collection_receipt.json",
+      "bytes": 1997
+    },
+    {
+      "path": "early_llvip_evidence/drone_calibration_once/queue/direction_screen_attempt1_drone_N_calibration_job.json",
+      "bytes": 1065
+    },
+    {
+      "path": "early_llvip_evidence/drone_calibration_once/queue/direction_screen_attempt1_drone_N_calibration_status.json",
+      "bytes": 397
+    },
+    {
+      "path": "early_llvip_evidence/DRONE_CALIBRATION_RESULT.md",
+      "bytes": 2581
+    },
+    {
+      "path": "early_llvip_evidence/GROUP_TABLE.csv",
+      "bytes": 297
+    },
+    {
+      "path": "early_llvip_evidence/LLVIP_STAGE_RESULT.md",
+      "bytes": 3558
+    },
+    {
+      "path": "early_llvip_evidence/OUTPUT_COORDINATE_OBJECTS.json",
+      "bytes": 30826
+    },
+    {
+      "path": "early_llvip_evidence/output_coordinate_similarity.py",
+      "bytes": 5306
+    },
+    {
+      "path": "early_llvip_evidence/OUTPUT_COORDINATE_SUMMARY.json",
+      "bytes": 1646
+    },
+    {
+      "path": "early_llvip_evidence/OUTPUT_COORDINATE_TABLE.csv",
+      "bytes": 6101
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/release_v1/calibrate_direction.py",
+      "bytes": 7354
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/release_v1/localization_box_v2.py",
+      "bytes": 13285
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/calibration/llvip/calibration_batches.jsonl",
+      "bytes": 957383
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/calibration/llvip/calibration_receipt.json",
+      "bytes": 2517
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/calibration/llvip/direction_config.yaml",
+      "bytes": 4399
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/L2-box/canary.json",
+      "bytes": 4319
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/L2-box/direction_config.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/L2-box/gradient_checks.jsonl",
+      "bytes": 838
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/L2-box/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/L2-box/kd_batches.jsonl",
+      "bytes": 343332
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/L2-box/runtime_ready.json",
+      "bytes": 375
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/N/canary.json",
+      "bytes": 4300
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/N/direction_config.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/N/gradient_checks.jsonl",
+      "bytes": 838
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/N/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/N/kd_batches.jsonl",
+      "bytes": 343221
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/canaries/llvip/N/runtime_ready.json",
+      "bytes": 376
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/direction_screen_attempt1_llvip_L2-box_canary_job.json",
+      "bytes": 1092
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/direction_screen_attempt1_llvip_L2-box_canary_status.json",
+      "bytes": 398
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/direction_screen_attempt1_llvip_L2-GT_canary_job.json",
+      "bytes": 1087
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/direction_screen_attempt1_llvip_L2-GT_canary_status.json",
+      "bytes": 1637
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/direction_screen_attempt1_llvip_N_calibration_job.json",
+      "bytes": 1065
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/direction_screen_attempt1_llvip_N_calibration_status.json",
+      "bytes": 397
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/direction_screen_attempt1_llvip_N_canary_job.json",
+      "bytes": 1067
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/direction_screen_attempt1_llvip_N_canary_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "early_llvip_evidence/raw_attempt1/screen_attempt1/queue/llvip_coefficient_freeze.json",
+      "bytes": 1150
+    },
+    {
+      "path": "early_llvip_evidence/README.md",
+      "bytes": 6569
+    },
+    {
+      "path": "early_llvip_evidence/summarize_early.py",
+      "bytes": 9793
+    },
+    {
+      "path": "early_llvip_evidence/summary.json",
+      "bytes": 11407
+    },
+    {
+      "path": "evaluate_state_swap.py",
+      "bytes": 15514
+    },
+    {
+      "path": "FEATURE_GM_FOLLOWUP_PLAN.md",
+      "bytes": 2739
+    },
+    {
+      "path": "independent_review_l2/author_tests_independent_run.json",
+      "bytes": 596
+    },
+    {
+      "path": "independent_review_l2/independent_checks.py",
+      "bytes": 3131
+    },
+    {
+      "path": "independent_review_l2/independent_checks_receipt.json",
+      "bytes": 647
+    },
+    {
+      "path": "independent_review_l2/README.md",
+      "bytes": 2124
+    },
+    {
+      "path": "independent_train_review/check_cpu.py",
+      "bytes": 5098
+    },
+    {
+      "path": "independent_train_review/cpu_receipt.json",
+      "bytes": 888
+    },
+    {
+      "path": "independent_train_review/README.md",
+      "bytes": 2132
+    },
+    {
+      "path": "initial_baseline_eval.py",
+      "bytes": 9331
+    },
+    {
+      "path": "INITIAL_EVAL_ENTRY.md",
+      "bytes": 1622
+    },
+    {
+      "path": "INITIAL_EVAL_ENTRY_CHECK.json",
+      "bytes": 415
+    },
+    {
+      "path": "initial_llvip_evidence/development_roster.txt",
+      "bytes": 209322
+    },
+    {
+      "path": "initial_llvip_evidence/initial_evaluation_contract.json",
+      "bytes": 454284
+    },
+    {
+      "path": "initial_llvip_evidence/initial_evaluation_receipt.json",
+      "bytes": 2411
+    },
+    {
+      "path": "inspect_head.py",
+      "bytes": 183
+    },
+    {
+      "path": "newentry/analysis/analyze_direction.py",
+      "bytes": 11343
+    },
+    {
+      "path": "newentry/analysis/analyze_direction_before_l2_coefficient_check.py",
+      "bytes": 11099
+    },
+    {
+      "path": "newentry/analysis/CPU_CHECKS_attempt1.json",
+      "bytes": 217
+    },
+    {
+      "path": "newentry/analysis/CPU_CHECKS_attempt2.json",
+      "bytes": 217
+    },
+    {
+      "path": "newentry/analysis/INDEPENDENT_ACCEPTANCE.json",
+      "bytes": 1823
+    },
+    {
+      "path": "newentry/analysis/independent_cpu_review.py",
+      "bytes": 4168
+    },
+    {
+      "path": "newentry/analysis/INDEPENDENT_REVIEW.md",
+      "bytes": 2137
+    },
+    {
+      "path": "newentry/analysis/PROTOCOL.md",
+      "bytes": 2345
+    },
+    {
+      "path": "newentry/analysis/test_analyze_direction_cpu.py",
+      "bytes": 7498
+    },
+    {
+      "path": "newentry/analysis/test_analyze_direction_cpu_before_l2_coefficient_check.py",
+      "bytes": 7037
+    },
+    {
+      "path": "newentry/confidence_analysis/analyze_confidence.py",
+      "bytes": 9333
+    },
+    {
+      "path": "newentry/confidence_analysis/CPU_CHECKS.json",
+      "bytes": 201
+    },
+    {
+      "path": "newentry/confidence_analysis/CPU_CHECKS_v2.json",
+      "bytes": 201
+    },
+    {
+      "path": "newentry/confidence_analysis/INDEPENDENT_ACCEPTANCE.json",
+      "bytes": 1149
+    },
+    {
+      "path": "newentry/confidence_analysis/INDEPENDENT_REVIEW.md",
+      "bytes": 1469
+    },
+    {
+      "path": "newentry/confidence_analysis/independent_review_cpu.py",
+      "bytes": 2319
+    },
+    {
+      "path": "newentry/confidence_analysis/PROTOCOL.md",
+      "bytes": 1412
+    },
+    {
+      "path": "newentry/confidence_analysis/QUEUE_INDEPENDENT_CPU.json",
+      "bytes": 407
+    },
+    {
+      "path": "newentry/confidence_analysis/QUEUE_INDEPENDENT_REVIEW.md",
+      "bytes": 1013
+    },
+    {
+      "path": "newentry/confidence_analysis/test_confidence_analysis_cpu.py",
+      "bytes": 5297
+    },
+    {
+      "path": "newentry/confidence_release/confidence_common.py",
+      "bytes": 2774
+    },
+    {
+      "path": "newentry/confidence_release/confidence_criterion.py",
+      "bytes": 530
+    },
+    {
+      "path": "newentry/confidence_release/configs/llvip_C0_s42_FT3.yaml",
+      "bytes": 3397
+    },
+    {
+      "path": "newentry/confidence_release/configs/llvip_N_s42_FT3.yaml",
+      "bytes": 3395
+    },
+    {
+      "path": "newentry/confidence_release/configs/llvip_native_evaluation.yaml",
+      "bytes": 4378
+    },
+    {
+      "path": "newentry/confidence_release/CPU_CHECKS_attempt1.json",
+      "bytes": 607
+    },
+    {
+      "path": "newentry/confidence_release/evaluate_confidence.py",
+      "bytes": 16598
+    },
+    {
+      "path": "newentry/confidence_release/QUEUE_ACTUAL_CONFIG_CHECK.json",
+      "bytes": 635
+    },
+    {
+      "path": "newentry/confidence_release/QUEUE_CPU_attempt1.json",
+      "bytes": 407
+    },
+    {
+      "path": "newentry/confidence_release/QUEUE_CPU_attempt2.json",
+      "bytes": 407
+    },
+    {
+      "path": "newentry/confidence_release/QUEUE_README.md",
+      "bytes": 2415
+    },
+    {
+      "path": "newentry/confidence_release/README.md",
+      "bytes": 4325
+    },
+    {
+      "path": "newentry/confidence_release/run_confidence_queue.py",
+      "bytes": 15143
+    },
+    {
+      "path": "newentry/confidence_release/run_confidence_queue_before_main_failure_gate.py",
+      "bytes": 15050
+    },
+    {
+      "path": "newentry/confidence_release/test_confidence_cpu.py",
+      "bytes": 7072
+    },
+    {
+      "path": "newentry/confidence_release/test_confidence_queue_cpu.py",
+      "bytes": 4839
+    },
+    {
+      "path": "newentry/confidence_release/train_confidence.py",
+      "bytes": 11528
+    },
+    {
+      "path": "newentry/DIRECTION_LOSSES_CPU_attempt2.json",
+      "bytes": 465
+    },
+    {
+      "path": "newentry/DIRECTION_LOSSES_CPU_import_attempt1.json",
+      "bytes": 331
+    },
+    {
+      "path": "newentry/DIRECTION_LOSSES_PROTOCOL.md",
+      "bytes": 3883
+    },
+    {
+      "path": "newentry/feature_gm_analysis/dose_readout.py",
+      "bytes": 3387
+    },
+    {
+      "path": "newentry/feature_gm_analysis/FIXED8_DOSE_READOUT.json",
+      "bytes": 6810
+    },
+    {
+      "path": "newentry/feature_gm_release/CALIBRATION_RATIO_READOUT.json",
+      "bytes": 4339
+    },
+    {
+      "path": "newentry/feature_gm_release/configs/drone_F-rel-GM_s42_FT3.yaml",
+      "bytes": 4825
+    },
+    {
+      "path": "newentry/feature_gm_release/CPU_CHECKS_attempt1.json",
+      "bytes": 401
+    },
+    {
+      "path": "newentry/feature_gm_release/direction_losses.py",
+      "bytes": 9450
+    },
+    {
+      "path": "newentry/feature_gm_release/evaluate_feature_gm.py",
+      "bytes": 16715
+    },
+    {
+      "path": "newentry/feature_gm_release/feature_gm_common.py",
+      "bytes": 2783
+    },
+    {
+      "path": "newentry/feature_gm_release/feature_gm_criterion.py",
+      "bytes": 4575
+    },
+    {
+      "path": "newentry/feature_gm_release/original_blocked_calibration_receipt.json",
+      "bytes": 3033
+    },
+    {
+      "path": "newentry/feature_gm_release/README.md",
+      "bytes": 4572
+    },
+    {
+      "path": "newentry/feature_gm_release/test_feature_gm_cpu.py",
+      "bytes": 7367
+    },
+    {
+      "path": "newentry/feature_gm_release/train_feature_gm.py",
+      "bytes": 12140
+    },
+    {
+      "path": "newentry/prepare_confidence_release.py",
+      "bytes": 6595
+    },
+    {
+      "path": "newentry/prepare_feature_gm_release.py",
+      "bytes": 7863
+    },
+    {
+      "path": "newentry/release/calibrate_direction.py",
+      "bytes": 7354
+    },
+    {
+      "path": "newentry/release/configs/drone_C1_s42_FT3.yaml",
+      "bytes": 4575
+    },
+    {
+      "path": "newentry/release/configs/drone_C2_s42_FT3.yaml",
+      "bytes": 4542
+    },
+    {
+      "path": "newentry/release/configs/drone_F-rel_s42_FT3.yaml",
+      "bytes": 4548
+    },
+    {
+      "path": "newentry/release/configs/drone_N_s42_FT3.yaml",
+      "bytes": 4541
+    },
+    {
+      "path": "newentry/release/configs/llvip_L2-box_s42_FT3.yaml",
+      "bytes": 4408
+    },
+    {
+      "path": "newentry/release/configs/llvip_L2-GT_s42_FT3.yaml",
+      "bytes": 4406
+    },
+    {
+      "path": "newentry/release/configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4399
+    },
+    {
+      "path": "newentry/release/configs/llvip_native_evaluation.yaml",
+      "bytes": 4378
+    },
+    {
+      "path": "newentry/release/direction_common.py",
+      "bytes": 2616
+    },
+    {
+      "path": "newentry/release/direction_criterion.py",
+      "bytes": 4417
+    },
+    {
+      "path": "newentry/release/DIRECTION_EVAL_CONFIG_IMPORT.json",
+      "bytes": 1716
+    },
+    {
+      "path": "newentry/release/DIRECTION_EVAL_CPU_attempt1.json",
+      "bytes": 466
+    },
+    {
+      "path": "newentry/release/DIRECTION_EVAL_CPU_attempt2.json",
+      "bytes": 466
+    },
+    {
+      "path": "newentry/release/DIRECTION_EVAL_README.md",
+      "bytes": 2675
+    },
+    {
+      "path": "newentry/release/direction_losses.py",
+      "bytes": 9450
+    },
+    {
+      "path": "newentry/release/DIRECTION_QUEUE_CPU_CHECKS.json",
+      "bytes": 180
+    },
+    {
+      "path": "newentry/release/DIRECTION_QUEUE_README.md",
+      "bytes": 2923
+    },
+    {
+      "path": "newentry/release/evaluate_direction.py",
+      "bytes": 16184
+    },
+    {
+      "path": "newentry/release/L2_CPU_CHECKS_attempt1.json",
+      "bytes": 596
+    },
+    {
+      "path": "newentry/release/L2_PROTOCOL.md",
+      "bytes": 3735
+    },
+    {
+      "path": "newentry/release/L2_README.md",
+      "bytes": 1638
+    },
+    {
+      "path": "newentry/release/localization_box_v2.py",
+      "bytes": 13285
+    },
+    {
+      "path": "newentry/release/run_direction_queue.py",
+      "bytes": 22207
+    },
+    {
+      "path": "newentry/release/test_direction_queue_cpu.py",
+      "bytes": 8693
+    },
+    {
+      "path": "newentry/release/test_evaluate_direction_cpu.py",
+      "bytes": 7685
+    },
+    {
+      "path": "newentry/release/test_localization_box_v2_cpu.py",
+      "bytes": 8364
+    },
+    {
+      "path": "newentry/release/train_direction.py",
+      "bytes": 11970
+    },
+    {
+      "path": "newentry/test_direction_losses_cpu.py",
+      "bytes": 10744
+    },
+    {
+      "path": "prepare_native_config.py",
+      "bytes": 489
+    },
+    {
+      "path": "publish_stage.py",
+      "bytes": 4240
+    },
+    {
+      "path": "README.md",
+      "bytes": 3932
+    },
+    {
+      "path": "remote_cpu.py",
+      "bytes": 417
+    },
+    {
+      "path": "results_1203_snapshot/calibration/drone/args.yaml",
+      "bytes": 2081
+    },
+    {
+      "path": "results_1203_snapshot/calibration/drone/calibration_batches.jsonl",
+      "bytes": 89481
+    },
+    {
+      "path": "results_1203_snapshot/calibration/drone/calibration_receipt.json",
+      "bytes": 3033
+    },
+    {
+      "path": "results_1203_snapshot/calibration/drone/direction_config.yaml",
+      "bytes": 4541
+    },
+    {
+      "path": "results_1203_snapshot/calibration/llvip/args.yaml",
+      "bytes": 2100
+    },
+    {
+      "path": "results_1203_snapshot/calibration/llvip/calibration_batches.jsonl",
+      "bytes": 957383
+    },
+    {
+      "path": "results_1203_snapshot/calibration/llvip/calibration_receipt.json",
+      "bytes": 2517
+    },
+    {
+      "path": "results_1203_snapshot/calibration/llvip/direction_config.yaml",
+      "bytes": 4399
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/C1/args.yaml",
+      "bytes": 2081
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/C1/canary.json",
+      "bytes": 4288
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/C1/direction_config.yaml",
+      "bytes": 4571
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/C1/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/C2/args.yaml",
+      "bytes": 2081
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/C2/canary.json",
+      "bytes": 4281
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/C2/direction_config.yaml",
+      "bytes": 4570
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/C2/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/N/args.yaml",
+      "bytes": 2079
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/N/canary.json",
+      "bytes": 4231
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/N/direction_config.yaml",
+      "bytes": 4537
+    },
+    {
+      "path": "results_1203_snapshot/canaries/drone/N/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/L2-box/args.yaml",
+      "bytes": 2108
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/L2-box/canary.json",
+      "bytes": 4319
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/L2-box/direction_config.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/L2-box/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/L2-GT/args.yaml",
+      "bytes": 2106
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/L2-GT/canary.json",
+      "bytes": 4317
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/L2-GT/direction_config.yaml",
+      "bytes": 4403
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/L2-GT/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/N/args.yaml",
+      "bytes": 2098
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/N/canary.json",
+      "bytes": 4300
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/N/direction_config.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "results_1203_snapshot/canaries/llvip/N/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "results_1203_snapshot/collection_receipt.json",
+      "bytes": 18769
+    },
+    {
+      "path": "results_1203_snapshot/effective_configs/drone_C1_s42_FT3.yaml",
+      "bytes": 4571
+    },
+    {
+      "path": "results_1203_snapshot/effective_configs/drone_C2_s42_FT3.yaml",
+      "bytes": 4570
+    },
+    {
+      "path": "results_1203_snapshot/effective_configs/drone_N_s42_FT3.yaml",
+      "bytes": 4537
+    },
+    {
+      "path": "results_1203_snapshot/effective_configs/llvip_L2-box_s42_FT3.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "results_1203_snapshot/effective_configs/llvip_L2-GT_s42_FT3.yaml",
+      "bytes": 4403
+    },
+    {
+      "path": "results_1203_snapshot/effective_configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/C1/actual_native_evaluation_profile.json",
+      "bytes": 3149
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/C1/development_roster.txt",
+      "bytes": 164528
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/C1/direction_config.yaml",
+      "bytes": 4571
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/C1/direction_evaluation_receipt.json",
+      "bytes": 4419
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/C2/actual_native_evaluation_profile.json",
+      "bytes": 3149
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/C2/development_roster.txt",
+      "bytes": 164528
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/C2/direction_config.yaml",
+      "bytes": 4570
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/C2/direction_evaluation_receipt.json",
+      "bytes": 4419
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/N/actual_native_evaluation_profile.json",
+      "bytes": 3148
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/N/development_roster.txt",
+      "bytes": 164528
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/N/direction_config.yaml",
+      "bytes": 4537
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/drone/N/direction_evaluation_receipt.json",
+      "bytes": 4398
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/L2-box/actual_native_evaluation_profile.json",
+      "bytes": 2924
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/L2-box/development_roster.txt",
+      "bytes": 209322
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/L2-box/direction_config.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/L2-box/direction_evaluation_receipt.json",
+      "bytes": 3629
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/L2-GT/actual_native_evaluation_profile.json",
+      "bytes": 2923
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/L2-GT/development_roster.txt",
+      "bytes": 209322
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/L2-GT/direction_config.yaml",
+      "bytes": 4403
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/L2-GT/direction_evaluation_receipt.json",
+      "bytes": 3620
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/N/actual_native_evaluation_profile.json",
+      "bytes": 2919
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/N/development_roster.txt",
+      "bytes": 209322
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/N/direction_config.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "results_1203_snapshot/evaluations/llvip/N/direction_evaluation_receipt.json",
+      "bytes": 3602
+    },
+    {
+      "path": "results_1203_snapshot/queue/completion.json",
+      "bytes": 8242
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C1_canary_job.json",
+      "bytes": 1072
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C1_canary_status.json",
+      "bytes": 393
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C1_eval_job.json",
+      "bytes": 1637
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C1_eval_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C1_train_job.json",
+      "bytes": 1224
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C1_train_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C2_canary_job.json",
+      "bytes": 1072
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C2_canary_status.json",
+      "bytes": 393
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C2_eval_job.json",
+      "bytes": 1637
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C2_eval_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C2_train_job.json",
+      "bytes": 1224
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_C2_train_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_calibration_job.json",
+      "bytes": 1065
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_calibration_status.json",
+      "bytes": 397
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_canary_job.json",
+      "bytes": 1067
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_canary_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_eval_job.json",
+      "bytes": 1631
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_eval_status.json",
+      "bytes": 390
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_train_job.json",
+      "bytes": 1218
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_train_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-box_canary_job.json",
+      "bytes": 1092
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-box_canary_status.json",
+      "bytes": 398
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-box_eval_job.json",
+      "bytes": 1434
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-box_eval_status.json",
+      "bytes": 395
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-box_train_job.json",
+      "bytes": 1248
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-box_train_status.json",
+      "bytes": 396
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-GT_canary_job.json",
+      "bytes": 1087
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-GT_canary_status.json",
+      "bytes": 397
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-GT_eval_job.json",
+      "bytes": 1428
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-GT_eval_status.json",
+      "bytes": 394
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-GT_train_job.json",
+      "bytes": 1242
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_L2-GT_train_status.json",
+      "bytes": 395
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_N_calibration_job.json",
+      "bytes": 1065
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_N_calibration_status.json",
+      "bytes": 397
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_N_canary_job.json",
+      "bytes": 1067
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_N_canary_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_N_eval_job.json",
+      "bytes": 1404
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_N_eval_status.json",
+      "bytes": 389
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_N_train_job.json",
+      "bytes": 1218
+    },
+    {
+      "path": "results_1203_snapshot/queue/direction_screen_attempt1_llvip_N_train_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "results_1203_snapshot/queue/drone_C1_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "results_1203_snapshot/queue/drone_C2_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "results_1203_snapshot/queue/drone_canary_checks.json",
+      "bytes": 4823
+    },
+    {
+      "path": "results_1203_snapshot/queue/drone_coefficient_freeze.json",
+      "bytes": 1215
+    },
+    {
+      "path": "results_1203_snapshot/queue/drone_completion.json",
+      "bytes": 3585
+    },
+    {
+      "path": "results_1203_snapshot/queue/drone_N_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "results_1203_snapshot/queue/llvip_canary_checks.json",
+      "bytes": 4838
+    },
+    {
+      "path": "results_1203_snapshot/queue/llvip_coefficient_freeze.json",
+      "bytes": 1150
+    },
+    {
+      "path": "results_1203_snapshot/queue/llvip_completion.json",
+      "bytes": 3576
+    },
+    {
+      "path": "results_1203_snapshot/queue/llvip_L2-box_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "results_1203_snapshot/queue/llvip_L2-GT_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "results_1203_snapshot/queue/llvip_N_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "results_1203_snapshot/queue/manifest.json",
+      "bytes": 1314
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/C1/args.yaml",
+      "bytes": 2073
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/C1/completion_receipt.json",
+      "bytes": 7651
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/C1/direction_config.yaml",
+      "bytes": 4571
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/C1/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/C2/args.yaml",
+      "bytes": 2073
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/C2/completion_receipt.json",
+      "bytes": 7656
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/C2/direction_config.yaml",
+      "bytes": 4570
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/C2/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/N/args.yaml",
+      "bytes": 2071
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/N/completion_receipt.json",
+      "bytes": 7604
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/N/direction_config.yaml",
+      "bytes": 4537
+    },
+    {
+      "path": "results_1203_snapshot/runs/drone/N/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/L2-box/args.yaml",
+      "bytes": 2100
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/L2-box/completion_receipt.json",
+      "bytes": 7698
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/L2-box/direction_config.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/L2-box/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/L2-GT/args.yaml",
+      "bytes": 2098
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/L2-GT/completion_receipt.json",
+      "bytes": 7703
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/L2-GT/direction_config.yaml",
+      "bytes": 4403
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/L2-GT/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/N/args.yaml",
+      "bytes": 2090
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/N/completion_receipt.json",
+      "bytes": 7700
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/N/direction_config.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "results_1203_snapshot/runs/llvip/N/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "retry_swaps_v2.py",
+      "bytes": 940
+    },
+    {
+      "path": "review_state_swap.py",
+      "bytes": 5603
+    },
+    {
+      "path": "STAGE_REPORT.md",
+      "bytes": 4216
+    },
+    {
+      "path": "STATE_SWAP_CONTRAST.md",
+      "bytes": 2608
+    },
+    {
+      "path": "STATE_SWAP_CPU_CHECKS.json",
+      "bytes": 445
+    },
+    {
+      "path": "state_swap_evidence/buffer_only/composition.json",
+      "bytes": 119202
+    },
+    {
+      "path": "state_swap_evidence/buffer_only/evaluation_contract.json",
+      "bytes": 351735
+    },
+    {
+      "path": "state_swap_evidence/buffer_only/swap_evaluation_receipt.json",
+      "bytes": 2852
+    },
+    {
+      "path": "state_swap_evidence/parameter_only/composition.json",
+      "bytes": 119205
+    },
+    {
+      "path": "state_swap_evidence/parameter_only/evaluation_contract.json",
+      "bytes": 351738
+    },
+    {
+      "path": "state_swap_evidence/parameter_only/swap_evaluation_receipt.json",
+      "bytes": 2863
+    },
+    {
+      "path": "STATE_SWAP_RESULT.md",
+      "bytes": 3604
+    },
+    {
+      "path": "STATE_SWAP_RESULT_receipt.json",
+      "bytes": 5545
+    },
+    {
+      "path": "subset_llvip/build_llvip_subset.py",
+      "bytes": 11703
+    },
+    {
+      "path": "subset_llvip/build_llvip_subset_v2.py",
+      "bytes": 12066
+    },
+    {
+      "path": "subset_llvip/collection_receipt.json",
+      "bytes": 2363
+    },
+    {
+      "path": "subset_llvip/cpu_validation_receipt.json",
+      "bytes": 474
+    },
+    {
+      "path": "subset_llvip/natural_sampler_source.py",
+      "bytes": 13306
+    },
+    {
+      "path": "subset_llvip/prepare_on94.py",
+      "bytes": 3408
+    },
+    {
+      "path": "subset_llvip/prepare_on94_v2.py",
+      "bytes": 3420
+    },
+    {
+      "path": "subset_llvip/PROTOCOL_RISK_REVIEW.md",
+      "bytes": 2103
+    },
+    {
+      "path": "subset_llvip/README.md",
+      "bytes": 4562
+    },
+    {
+      "path": "subset_llvip/remote_build_receipt.json",
+      "bytes": 1748
+    },
+    {
+      "path": "subset_llvip/remote_build_receipt_v2.json",
+      "bytes": 1758
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/checkpoint_identity.json",
+      "bytes": 1773
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/data_infrared.yaml",
+      "bytes": 358
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/data_visible.yaml",
+      "bytes": 355
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/dev_infrared.txt",
+      "bytes": 276690
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/dev_visible.txt",
+      "bytes": 274284
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/originals/infrared_args.yaml",
+      "bytes": 2068
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/originals/infrared_data.yaml",
+      "bytes": 152
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/originals/visible_args.yaml",
+      "bytes": 2065
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/originals/visible_data.yaml",
+      "bytes": 151
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/selected_metadata.jsonl",
+      "bytes": 1461759
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/source_groups.tsv",
+      "bytes": 96211
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/subset_manifest.json",
+      "bytes": 27532
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/train_infrared.txt",
+      "bytes": 235520
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/train_visible.txt",
+      "bytes": 233472
+    },
+    {
+      "path": "subset_llvip/remote_subset_llvip_v1/visible_to_infrared_train.json",
+      "bytes": 374787
+    },
+    {
+      "path": "test_state_swap_cpu.py",
+      "bytes": 5134
+    }
+  ],
+  "total_bytes": 9575474,
+  "new_hash_computed": false,
+  "weights_uploaded": false,
+  "credentials_uploaded": false,
+  "dataset_images_uploaded": false
+}

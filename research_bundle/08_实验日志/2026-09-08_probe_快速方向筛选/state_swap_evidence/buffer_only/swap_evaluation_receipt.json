@@ -1,0 +1,94 @@
+{
+  "status": "BN_PARAMETER_SWAP_EVALUATION_COMPLETED",
+  "scope": "BN_PARAMETER_SWAP_DIAGNOSTIC",
+  "variant": "buffer_only",
+  "dataset": "dronevehicle",
+  "seed": 42,
+  "single_seed": true,
+  "endpoint": "in_memory_buffer_only",
+  "formal_training_endpoint": false,
+  "initial_checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "bytes": 10772755,
+    "mtime_ns": 1788715564014453204
+  },
+  "finetuned_checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/runs/N/weights/last.pt",
+    "bytes": 10753043,
+    "mtime_ns": 1788833554146124031
+  },
+  "native_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+  "native_config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml",
+  "full_dev_images": 1469,
+  "full_dev_gt_objects": 22462,
+  "metric_units": "fraction_0_to_1",
+  "AP50": 0.77015862792738,
+  "AP75": 0.63510963247682,
+  "mAP50_95": 0.5425186438753893,
+  "precision": 0.7873809255275686,
+  "recall": 0.7259305198896209,
+  "per_class": [
+    {
+      "class_id": 0,
+      "name": "car",
+      "AP50": 0.9523948918229752,
+      "AP75": 0.7555893525828705,
+      "mAP50_95": 0.6523575592110997
+    },
+    {
+      "class_id": 1,
+      "name": "freight car",
+      "AP50": 0.6027742801126176,
+      "AP75": 0.43760812396737414,
+      "mAP50_95": 0.38787066985621077
+    },
+    {
+      "class_id": 2,
+      "name": "truck",
+      "AP50": 0.7179780928822549,
+      "AP75": 0.6028538869771515,
+      "mAP50_95": 0.5112642733338896
+    },
+    {
+      "class_id": 3,
+      "name": "bus",
+      "AP50": 0.9474316774333797,
+      "AP75": 0.8812930851930341,
+      "mAP50_95": 0.7296277154860049
+    },
+    {
+      "class_id": 4,
+      "name": "van",
+      "AP50": 0.6302141973856729,
+      "AP75": 0.4982037136636698,
+      "mAP50_95": 0.4314730014897415
+    }
+  ],
+  "model_identity": {
+    "validator_received_memory_model": true,
+    "forward_memory_identity": true,
+    "forward_calls": 48
+  },
+  "changed_buffers_all_bn": true,
+  "seconds": 12.394929743139073,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 3963
+  },
+  "gpu_allocated_peak_mib": 711.716796875,
+  "gpu_reserved_peak_mib": 884.0,
+  "new_hash_computed": false,
+  "official_test_accessed": false,
+  "checkpoint_written": false,
+  "optimizer_created": false,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false
+}

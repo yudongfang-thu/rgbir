@@ -1,0 +1,726 @@
+{
+  "files": [
+    {
+      "path": "canaries/drone/C2/direction_config.yaml",
+      "bytes": 4570
+    },
+    {
+      "path": "canaries/drone/C2/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "canaries/drone/C2/args.yaml",
+      "bytes": 2081
+    },
+    {
+      "path": "canaries/drone/C2/canary.json",
+      "bytes": 4281
+    },
+    {
+      "path": "canaries/drone/N/direction_config.yaml",
+      "bytes": 4537
+    },
+    {
+      "path": "canaries/drone/N/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "canaries/drone/N/args.yaml",
+      "bytes": 2079
+    },
+    {
+      "path": "canaries/drone/N/canary.json",
+      "bytes": 4231
+    },
+    {
+      "path": "canaries/drone/C1/direction_config.yaml",
+      "bytes": 4571
+    },
+    {
+      "path": "canaries/drone/C1/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "canaries/drone/C1/args.yaml",
+      "bytes": 2081
+    },
+    {
+      "path": "canaries/drone/C1/canary.json",
+      "bytes": 4288
+    },
+    {
+      "path": "canaries/llvip/L2-GT/direction_config.yaml",
+      "bytes": 4403
+    },
+    {
+      "path": "canaries/llvip/L2-GT/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "canaries/llvip/L2-GT/args.yaml",
+      "bytes": 2106
+    },
+    {
+      "path": "canaries/llvip/L2-GT/canary.json",
+      "bytes": 4317
+    },
+    {
+      "path": "canaries/llvip/L2-box/direction_config.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "canaries/llvip/L2-box/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "canaries/llvip/L2-box/args.yaml",
+      "bytes": 2108
+    },
+    {
+      "path": "canaries/llvip/L2-box/canary.json",
+      "bytes": 4319
+    },
+    {
+      "path": "canaries/llvip/N/direction_config.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "canaries/llvip/N/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "canaries/llvip/N/args.yaml",
+      "bytes": 2098
+    },
+    {
+      "path": "canaries/llvip/N/canary.json",
+      "bytes": 4300
+    },
+    {
+      "path": "runs/drone/C2/direction_config.yaml",
+      "bytes": 4570
+    },
+    {
+      "path": "runs/drone/C2/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "runs/drone/C2/completion_receipt.json",
+      "bytes": 7656
+    },
+    {
+      "path": "runs/drone/C2/args.yaml",
+      "bytes": 2073
+    },
+    {
+      "path": "runs/drone/N/direction_config.yaml",
+      "bytes": 4537
+    },
+    {
+      "path": "runs/drone/N/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "runs/drone/N/completion_receipt.json",
+      "bytes": 7604
+    },
+    {
+      "path": "runs/drone/N/args.yaml",
+      "bytes": 2071
+    },
+    {
+      "path": "runs/drone/C1/direction_config.yaml",
+      "bytes": 4571
+    },
+    {
+      "path": "runs/drone/C1/initialization_check.json",
+      "bytes": 443
+    },
+    {
+      "path": "runs/drone/C1/completion_receipt.json",
+      "bytes": 7651
+    },
+    {
+      "path": "runs/drone/C1/args.yaml",
+      "bytes": 2073
+    },
+    {
+      "path": "runs/llvip/L2-GT/direction_config.yaml",
+      "bytes": 4403
+    },
+    {
+      "path": "runs/llvip/L2-GT/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "runs/llvip/L2-GT/completion_receipt.json",
+      "bytes": 7703
+    },
+    {
+      "path": "runs/llvip/L2-GT/args.yaml",
+      "bytes": 2098
+    },
+    {
+      "path": "runs/llvip/L2-box/direction_config.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "runs/llvip/L2-box/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "runs/llvip/L2-box/completion_receipt.json",
+      "bytes": 7698
+    },
+    {
+      "path": "runs/llvip/L2-box/args.yaml",
+      "bytes": 2100
+    },
+    {
+      "path": "runs/llvip/N/direction_config.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "runs/llvip/N/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "runs/llvip/N/completion_receipt.json",
+      "bytes": 7700
+    },
+    {
+      "path": "runs/llvip/N/args.yaml",
+      "bytes": 2090
+    },
+    {
+      "path": "calibration/drone/direction_config.yaml",
+      "bytes": 4541
+    },
+    {
+      "path": "calibration/drone/calibration_receipt.json",
+      "bytes": 3033
+    },
+    {
+      "path": "calibration/drone/args.yaml",
+      "bytes": 2081
+    },
+    {
+      "path": "calibration/drone/calibration_batches.jsonl",
+      "bytes": 89481
+    },
+    {
+      "path": "calibration/llvip/direction_config.yaml",
+      "bytes": 4399
+    },
+    {
+      "path": "calibration/llvip/calibration_receipt.json",
+      "bytes": 2517
+    },
+    {
+      "path": "calibration/llvip/args.yaml",
+      "bytes": 2100
+    },
+    {
+      "path": "calibration/llvip/calibration_batches.jsonl",
+      "bytes": 957383
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_train_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_eval_job.json",
+      "bytes": 1404
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_train_resource_profile.json",
+      "bytes": 11668
+    },
+    {
+      "path": "queue/llvip_canary_checks.json",
+      "bytes": 4838
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_canary_resource_profile.json",
+      "bytes": 3088
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_eval_job.json",
+      "bytes": 1637
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_canary_status.json",
+      "bytes": 393
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_eval_status.json",
+      "bytes": 389
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_canary_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_train_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_canary_job.json",
+      "bytes": 1072
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_eval_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_canary_job.json",
+      "bytes": 1067
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_eval_resource_profile.json",
+      "bytes": 1936
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_eval_resource_profile.json",
+      "bytes": 1748
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_canary_admission.json",
+      "bytes": 150
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_calibration_resource_profile.json",
+      "bytes": 2517
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_eval_resource_profile.json",
+      "bytes": 1935
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_canary_job.json",
+      "bytes": 1087
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_eval_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_canary_resource_profile.json",
+      "bytes": 3092
+    },
+    {
+      "path": "queue/llvip_L2-GT_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_canary_job.json",
+      "bytes": 1072
+    },
+    {
+      "path": "queue/completion.json",
+      "bytes": 8242
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_eval_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_train_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_canary_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/llvip_N_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/llvip_L2-box_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_train_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "queue/drone_coefficient_freeze.json",
+      "bytes": 1215
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_calibration_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_canary_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_calibration_resource_profile.json",
+      "bytes": 2515
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_canary_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_train_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_calibration_status.json",
+      "bytes": 397
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_train_job.json",
+      "bytes": 1218
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_train_job.json",
+      "bytes": 1242
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_train_resource_profile.json",
+      "bytes": 5198
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_eval_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_canary_resource_profile.json",
+      "bytes": 4802
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_eval_job.json",
+      "bytes": 1428
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_calibration_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_train_job.json",
+      "bytes": 1248
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_canary_resource_profile.json",
+      "bytes": 4801
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_calibration_job.json",
+      "bytes": 1065
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_canary_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "queue/drone_C1_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_canary_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_eval_job.json",
+      "bytes": 1631
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_eval_job.json",
+      "bytes": 1434
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_canary_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_calibration_status.json",
+      "bytes": 397
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_eval_admission.json",
+      "bytes": 150
+    },
+    {
+      "path": "queue/drone_C2_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_train_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/drone_completion.json",
+      "bytes": 3585
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_train_job.json",
+      "bytes": 1224
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_eval_resource_profile.json",
+      "bytes": 1936
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_canary_resource_profile.json",
+      "bytes": 2901
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_eval_resource_profile.json",
+      "bytes": 1937
+    },
+    {
+      "path": "queue/drone_canary_checks.json",
+      "bytes": 4823
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_eval_admission.json",
+      "bytes": 150
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_canary_status.json",
+      "bytes": 398
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_train_job.json",
+      "bytes": 1224
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_train_status.json",
+      "bytes": 396
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_canary_job.json",
+      "bytes": 1067
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_train_job.json",
+      "bytes": 1218
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_eval_status.json",
+      "bytes": 395
+    },
+    {
+      "path": "queue/llvip_completion.json",
+      "bytes": 3576
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_canary_status.json",
+      "bytes": 397
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_train_admission.json",
+      "bytes": 150
+    },
+    {
+      "path": "queue/manifest.json",
+      "bytes": 1314
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_canary_status.json",
+      "bytes": 393
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_eval_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_eval_status.json",
+      "bytes": 390
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_train_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_train_resource_profile.json",
+      "bytes": 10946
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_N_calibration_job.json",
+      "bytes": 1065
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_train_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/drone_N_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_canary_job.json",
+      "bytes": 1092
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_train_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C2_eval_job.json",
+      "bytes": 1637
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_eval_status.json",
+      "bytes": 394
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_train_resource_profile.json",
+      "bytes": 10520
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_train_resource_profile.json",
+      "bytes": 5202
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_train_status.json",
+      "bytes": 395
+    },
+    {
+      "path": "queue/direction_screen_attempt1_drone_C1_canary_resource_profile.json",
+      "bytes": 4421
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-GT_train_resource_profile.json",
+      "bytes": 5010
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_L2-box_eval_resource_profile.json",
+      "bytes": 1942
+    },
+    {
+      "path": "queue/llvip_coefficient_freeze.json",
+      "bytes": 1150
+    },
+    {
+      "path": "queue/direction_screen_attempt1_llvip_N_eval_admission.json",
+      "bytes": 141
+    },
+    {
+      "path": "effective_configs/llvip_L2-box_s42_FT3.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "effective_configs/llvip_L2-GT_s42_FT3.yaml",
+      "bytes": 4403
+    },
+    {
+      "path": "effective_configs/drone_C2_s42_FT3.yaml",
+      "bytes": 4570
+    },
+    {
+      "path": "effective_configs/drone_C1_s42_FT3.yaml",
+      "bytes": 4571
+    },
+    {
+      "path": "effective_configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "effective_configs/drone_N_s42_FT3.yaml",
+      "bytes": 4537
+    },
+    {
+      "path": "evaluations/drone/C2/direction_config.yaml",
+      "bytes": 4570
+    },
+    {
+      "path": "evaluations/drone/C2/actual_native_evaluation_profile.json",
+      "bytes": 3149
+    },
+    {
+      "path": "evaluations/drone/C2/direction_evaluation_receipt.json",
+      "bytes": 4419
+    },
+    {
+      "path": "evaluations/drone/C2/development_roster.txt",
+      "bytes": 164528
+    },
+    {
+      "path": "evaluations/drone/N/direction_config.yaml",
+      "bytes": 4537
+    },
+    {
+      "path": "evaluations/drone/N/actual_native_evaluation_profile.json",
+      "bytes": 3148
+    },
+    {
+      "path": "evaluations/drone/N/direction_evaluation_receipt.json",
+      "bytes": 4398
+    },
+    {
+      "path": "evaluations/drone/N/development_roster.txt",
+      "bytes": 164528
+    },
+    {
+      "path": "evaluations/drone/C1/direction_config.yaml",
+      "bytes": 4571
+    },
+    {
+      "path": "evaluations/drone/C1/actual_native_evaluation_profile.json",
+      "bytes": 3149
+    },
+    {
+      "path": "evaluations/drone/C1/direction_evaluation_receipt.json",
+      "bytes": 4419
+    },
+    {
+      "path": "evaluations/drone/C1/development_roster.txt",
+      "bytes": 164528
+    },
+    {
+      "path": "evaluations/llvip/L2-GT/direction_config.yaml",
+      "bytes": 4403
+    },
+    {
+      "path": "evaluations/llvip/L2-GT/actual_native_evaluation_profile.json",
+      "bytes": 2923
+    },
+    {
+      "path": "evaluations/llvip/L2-GT/direction_evaluation_receipt.json",
+      "bytes": 3620
+    },
+    {
+      "path": "evaluations/llvip/L2-GT/development_roster.txt",
+      "bytes": 209322
+    },
+    {
+      "path": "evaluations/llvip/L2-box/direction_config.yaml",
+      "bytes": 4405
+    },
+    {
+      "path": "evaluations/llvip/L2-box/actual_native_evaluation_profile.json",
+      "bytes": 2924
+    },
+    {
+      "path": "evaluations/llvip/L2-box/direction_evaluation_receipt.json",
+      "bytes": 3629
+    },
+    {
+      "path": "evaluations/llvip/L2-box/development_roster.txt",
+      "bytes": 209322
+    },
+    {
+      "path": "evaluations/llvip/N/direction_config.yaml",
+      "bytes": 4396
+    },
+    {
+      "path": "evaluations/llvip/N/actual_native_evaluation_profile.json",
+      "bytes": 2919
+    },
+    {
+      "path": "evaluations/llvip/N/direction_evaluation_receipt.json",
+      "bytes": 3602
+    },
+    {
+      "path": "evaluations/llvip/N/development_roster.txt",
+      "bytes": 209322
+    }
+  ],
+  "new_hash_computed": false,
+  "weights_downloaded": false
+}

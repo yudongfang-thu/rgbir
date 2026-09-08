@@ -1,0 +1,114 @@
+{
+  "protocol_revision_scope": "FEATURE_RELATION_GM_FT3",
+  "fixed_coefficient": 14.438521129817886,
+  "old_status": "BLOCKED",
+  "old_record_unchanged": true,
+  "calibration_scope": "EXPLORATORY_FIXED8_BNFROZEN",
+  "batches": 8,
+  "existing_rows_reused": true,
+  "new_calibration": false,
+  "new_AP_read": false,
+  "raw_coefficient_median": 14.438521129817886,
+  "actual_ratio_min": 0.49062902184125984,
+  "actual_ratio_median": 1.008674928623853,
+  "actual_ratio_max": 2.2976954163366283,
+  "ratio_definition": "fixed_lambda_F * ||B grad F|| / (lambda_C1 * ||B grad C1||)",
+  "calibration_design": "Median of per-batch target/unit-F coefficient ratios; actual norm-ratio median is reported, not forced to 1",
+  "finite_all_eight": true,
+  "formal_admission": false,
+  "new_hash_computed": false,
+  "rows": [
+    {
+      "batch": 1,
+      "native_norm": 36.53212588381001,
+      "unit_B_C1_norm": 56.32904137668274,
+      "target_B_lambda_C1_norm": 5.197702331240199,
+      "unit_B_F_norm": 0.8271440485209477,
+      "raw_coefficient_ratio": 6.283914320044299,
+      "fixed_B_lambda_F_norm": 11.942736821972813,
+      "actual_F_over_C1_norm_ratio": 2.2976954163366283
+    },
+    {
+      "batch": 2,
+      "native_norm": 25.38733553207282,
+      "unit_B_C1_norm": 71.64632728368376,
+      "target_B_lambda_C1_norm": 6.611088583186041,
+      "unit_B_F_norm": 0.4067115957749732,
+      "raw_coefficient_ratio": 16.254979331456898,
+      "fixed_B_lambda_F_norm": 5.872313969338901,
+      "actual_F_over_C1_norm_ratio": 0.8882521986279138
+    },
+    {
+      "batch": 3,
+      "native_norm": 19.649915351246346,
+      "unit_B_C1_norm": 67.39943201666951,
+      "target_B_lambda_C1_norm": 6.219210843206776,
+      "unit_B_F_norm": 0.474766216035576,
+      "raw_coefficient_ratio": 13.0995227401369,
+      "fixed_B_lambda_F_norm": 6.854922041953348,
+      "actual_F_over_C1_norm_ratio": 1.10221734152026
+    },
+    {
+      "batch": 4,
+      "native_norm": 20.314133112502184,
+      "unit_B_C1_norm": 103.99355369178198,
+      "target_B_lambda_C1_norm": 9.595894466641466,
+      "unit_B_F_norm": 0.326073859887037,
+      "raw_coefficient_ratio": 29.428591638611593,
+      "fixed_B_lambda_F_norm": 4.708024315860261,
+      "actual_F_over_C1_norm_ratio": 0.49062902184125984
+    },
+    {
+      "batch": 5,
+      "native_norm": 22.29031205280373,
+      "unit_B_C1_norm": 31.379716634997074,
+      "target_B_lambda_C1_norm": 2.8955299490485733,
+      "unit_B_F_norm": 0.3371355199755203,
+      "raw_coefficient_ratio": 8.588623201906522,
+      "fixed_B_lambda_F_norm": 4.867738328778691,
+      "actual_F_over_C1_norm_ratio": 1.681121733994896
+    },
+    {
+      "batch": 6,
+      "native_norm": 21.135208317877225,
+      "unit_B_C1_norm": 77.63897880449329,
+      "target_B_lambda_C1_norm": 7.164054123141342,
+      "unit_B_F_norm": 0.5622388255346904,
+      "raw_coefficient_ratio": 12.742012464771195,
+      "fixed_B_lambda_F_norm": 8.117897162486619,
+      "actual_F_over_C1_norm_ratio": 1.1331429136282167
+    },
+    {
+      "batch": 7,
+      "native_norm": 21.550359273826693,
+      "unit_B_C1_norm": 63.919975374104226,
+      "target_B_lambda_C1_norm": 5.8981476853665455,
+      "unit_B_F_norm": 0.3501826965621996,
+      "raw_coefficient_ratio": 16.84305861845722,
+      "fixed_B_lambda_F_norm": 5.056120263609924,
+      "actual_F_over_C1_norm_ratio": 0.8572386676844812
+    },
+    {
+      "batch": 8,
+      "native_norm": 26.739498266362986,
+      "unit_B_C1_norm": 75.72401014784246,
+      "target_B_lambda_C1_norm": 6.9873524288169975,
+      "unit_B_F_norm": 0.44286761427749005,
+      "raw_coefficient_ratio": 15.777519519498874,
+      "fixed_B_lambda_F_norm": 6.3943534064575775,
+      "actual_F_over_C1_norm_ratio": 0.9151325157274458
+    }
+  ],
+  "sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1156_partial\\calibration\\drone\\calibration_receipt.json",
+      "bytes": 3033,
+      "mtime_ns": 1788839704714533700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1156_partial\\calibration\\drone\\calibration_batches.jsonl",
+      "bytes": 89481,
+      "mtime_ns": 1788839704716253400
+    }
+  ]
+}

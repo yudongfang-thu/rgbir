@@ -1,0 +1,45 @@
+{
+  "scope": "DIRECTION_FT3_BNFROZEN",
+  "endpoint": "DIRECTION_FT3_BNFROZEN_LAST_EMA",
+  "dataset_order": [
+    "llvip",
+    "drone"
+  ],
+  "arms": {
+    "llvip": [
+      "N",
+      "L2-box",
+      "L2-GT"
+    ],
+    "drone": [
+      "N",
+      "C1",
+      "C2",
+      "F-rel"
+    ]
+  },
+  "reference_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+  "source": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/release_v1/run_direction_queue.py",
+    "bytes": 22207,
+    "mtime_ns": 1788838055090909269
+  },
+  "dispatcher": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py",
+    "bytes": 7920,
+    "mtime_ns": 1788722284046588537
+  },
+  "python": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+  "sequence_per_dataset": "calibration8 -> all valid-arm canaries24 -> each arm train/eval",
+  "initial_calibration_canary_ceilings": {
+    "vram_mib": 8192,
+    "rss_mib": 32768
+  },
+  "evaluation_reservation": {
+    "vram_mib": 2048,
+    "rss_mib": 8192
+  },
+  "new_hash_computed": false,
+  "new_scheduler_created": false,
+  "ap_adaptive": false
+}

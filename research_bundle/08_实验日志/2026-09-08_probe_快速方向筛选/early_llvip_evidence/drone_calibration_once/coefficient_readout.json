@@ -1,0 +1,33 @@
+{
+  "C2": {
+    "coefficient": 0.10975098761504075,
+    "finite_nonzero_batches": 8,
+    "raw_ratio_min": 0.031107978510295495,
+    "raw_ratio_max": 0.3604865710909291,
+    "actual_weighted_C2_gradient_over_weighted_C1_target_from_receipt_ratios": {
+      "median": 1.0056441713588802,
+      "min": 0.30445236082693683,
+      "max": 3.528065559731487
+    }
+  },
+  "F-rel": {
+    "coefficient": null,
+    "finite_nonzero_batches": 8,
+    "raw_median": 14.438521129817886,
+    "blocked": "Unclipped coefficient outside (0,1]",
+    "zero_gradient_claim": false,
+    "AP_evaluated_claim": false
+  },
+  "resources": {
+    "NVML_peak_mib": 8900,
+    "reservation_mib": 8192,
+    "excess_mib": 708,
+    "cuda_reserved_peak_mib": 8366,
+    "rss_peak_mib": 27536,
+    "monitor_status": "COMPLETED",
+    "monitor_errors": [],
+    "full_card_minimum_free_mib": 7121
+  },
+  "single_remote_read": true,
+  "new_hash_computed": false
+}

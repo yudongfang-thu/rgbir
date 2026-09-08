@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-09-08T11:09:14.541242+08:00",
+  "returncode": 1,
+  "stdout": "{\"status\": \"CPU_SELF_TEST_PASS\", \"gpu_used\": false, \"new_hash_computed\": false}\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_builder_llvip_v1/build_llvip_subset.py\", line 200, in <module>\n    main()\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_builder_llvip_v1/build_llvip_subset.py\", line 122, in main\n    assert vp.parent == v_root / 'images/fit' and tp.parent == t_root / 'images/fit' and vp.stem == tp.stem\nAssertionError\nTraceback (most recent call last):\n  File \"<stdin>\", line 12, in <module>\n  File \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-otd-r0/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python', '/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_builder_llvip_v1/build_llvip_subset.py', '--output', '/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1']' returned non-zero exit status 1.\n",
+  "remote_output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1",
+  "builder_source_bytes": {
+    "build_llvip_subset.py": 11703,
+    "natural_sampler_source.py": 13306
+  },
+  "source_byte_identity": true,
+  "gpu_used": false,
+  "new_hash_computed": false
+}

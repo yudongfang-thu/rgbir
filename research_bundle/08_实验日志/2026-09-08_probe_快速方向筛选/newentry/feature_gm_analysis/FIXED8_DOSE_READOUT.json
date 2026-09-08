@@ -1,0 +1,194 @@
+{
+  "status": "FIXED8_PROJECTED_DOSE_READOUT",
+  "fixed_lambda_F": 14.438521129817886,
+  "fixed_lambda_C1": 0.09227393550836771,
+  "scope": "CPU projection of previously measured shared-parameter gradients; no new backward or F AP",
+  "norm_definition": "L2 norm of B*unit-KD gradients on the original model16/model19 shared parameter list; native.sum() uses the same list",
+  "original_F_rel_still_blocked": true,
+  "new_protocol": "FEATURE_RELATION_GM_FT3",
+  "protocol_revised_after_calibration": true,
+  "distributions": {
+    "coefficient_to_match_C1": {
+      "n": 8,
+      "minimum": 6.283914320044299,
+      "median": 14.438521129817886,
+      "mean": 14.877277729360438,
+      "maximum": 29.428591638611593,
+      "values": [
+        6.283914320044299,
+        16.254979331456898,
+        13.0995227401369,
+        29.428591638611593,
+        8.588623201906522,
+        12.742012464771195,
+        16.84305861845722,
+        15.777519519498874
+      ]
+    },
+    "projected_F_over_weighted_C1": {
+      "n": 8,
+      "minimum": 0.49062902184125984,
+      "median": 1.008674928623853,
+      "mean": 1.1706787261701377,
+      "maximum": 2.2976954163366283,
+      "values": [
+        2.2976954163366283,
+        0.8882521986279138,
+        1.10221734152026,
+        0.49062902184125984,
+        1.681121733994896,
+        1.1331429136282167,
+        0.8572386676844812,
+        0.9151325157274458
+      ]
+    },
+    "projected_F_over_native": {
+      "n": 8,
+      "minimum": 0.21837910197252777,
+      "median": 0.23687698451722233,
+      "mean": 0.2768824339196992,
+      "maximum": 0.3840935485655986,
+      "values": [
+        0.32691053512616663,
+        0.23130879417889977,
+        0.34885249729681694,
+        0.2317610251831392,
+        0.21837910197252777,
+        0.3840935485655986,
+        0.23461883857085739,
+        0.23913513046358725
+      ]
+    },
+    "weighted_C1_over_native": {
+      "n": 8,
+      "minimum": 0.1299008260714038,
+      "median": 0.26750170499725867,
+      "mean": 0.27442871062561497,
+      "maximum": 0.4723752873675788,
+      "values": [
+        0.14227757639321154,
+        0.260408918251149,
+        0.31650064298176767,
+        0.4723752873675788,
+        0.1299008260714038,
+        0.3389630239452915,
+        0.2736913853928159,
+        0.26131202460170144
+      ]
+    },
+    "F_native_cosine": {
+      "n": 8,
+      "minimum": -0.015539145356224962,
+      "median": 0.08883838573174402,
+      "mean": 0.0887378527510996,
+      "maximum": 0.2168926969927975,
+      "values": [
+        -0.003998554280626061,
+        -0.015539145356224962,
+        0.05083176292415604,
+        0.1165528590222722,
+        0.2168926969927975,
+        0.1674864312429341,
+        0.07967022653258034,
+        0.09800654493090771
+      ]
+    }
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "native_norm": 36.53212588381001,
+      "C1_unit_B_norm": 56.32904137668274,
+      "F_unit_B_norm": 0.8271440485209477,
+      "coefficient_to_match_C1": 6.283914320044299,
+      "projected_F_over_weighted_C1": 2.2976954163366283,
+      "projected_F_over_native": 0.32691053512616663,
+      "weighted_C1_over_native": 0.14227757639321154,
+      "F_native_cosine": -0.003998554280626061
+    },
+    {
+      "batch": 2,
+      "native_norm": 25.38733553207282,
+      "C1_unit_B_norm": 71.64632728368376,
+      "F_unit_B_norm": 0.4067115957749732,
+      "coefficient_to_match_C1": 16.254979331456898,
+      "projected_F_over_weighted_C1": 0.8882521986279138,
+      "projected_F_over_native": 0.23130879417889977,
+      "weighted_C1_over_native": 0.260408918251149,
+      "F_native_cosine": -0.015539145356224962
+    },
+    {
+      "batch": 3,
+      "native_norm": 19.649915351246346,
+      "C1_unit_B_norm": 67.39943201666951,
+      "F_unit_B_norm": 0.474766216035576,
+      "coefficient_to_match_C1": 13.0995227401369,
+      "projected_F_over_weighted_C1": 1.10221734152026,
+      "projected_F_over_native": 0.34885249729681694,
+      "weighted_C1_over_native": 0.31650064298176767,
+      "F_native_cosine": 0.05083176292415604
+    },
+    {
+      "batch": 4,
+      "native_norm": 20.314133112502184,
+      "C1_unit_B_norm": 103.99355369178198,
+      "F_unit_B_norm": 0.326073859887037,
+      "coefficient_to_match_C1": 29.428591638611593,
+      "projected_F_over_weighted_C1": 0.49062902184125984,
+      "projected_F_over_native": 0.2317610251831392,
+      "weighted_C1_over_native": 0.4723752873675788,
+      "F_native_cosine": 0.1165528590222722
+    },
+    {
+      "batch": 5,
+      "native_norm": 22.29031205280373,
+      "C1_unit_B_norm": 31.379716634997074,
+      "F_unit_B_norm": 0.3371355199755203,
+      "coefficient_to_match_C1": 8.588623201906522,
+      "projected_F_over_weighted_C1": 1.681121733994896,
+      "projected_F_over_native": 0.21837910197252777,
+      "weighted_C1_over_native": 0.1299008260714038,
+      "F_native_cosine": 0.2168926969927975
+    },
+    {
+      "batch": 6,
+      "native_norm": 21.135208317877225,
+      "C1_unit_B_norm": 77.63897880449329,
+      "F_unit_B_norm": 0.5622388255346904,
+      "coefficient_to_match_C1": 12.742012464771195,
+      "projected_F_over_weighted_C1": 1.1331429136282167,
+      "projected_F_over_native": 0.3840935485655986,
+      "weighted_C1_over_native": 0.3389630239452915,
+      "F_native_cosine": 0.1674864312429341
+    },
+    {
+      "batch": 7,
+      "native_norm": 21.550359273826693,
+      "C1_unit_B_norm": 63.919975374104226,
+      "F_unit_B_norm": 0.3501826965621996,
+      "coefficient_to_match_C1": 16.84305861845722,
+      "projected_F_over_weighted_C1": 0.8572386676844812,
+      "projected_F_over_native": 0.23461883857085739,
+      "weighted_C1_over_native": 0.2736913853928159,
+      "F_native_cosine": 0.07967022653258034
+    },
+    {
+      "batch": 8,
+      "native_norm": 26.739498266362986,
+      "C1_unit_B_norm": 75.72401014784246,
+      "F_unit_B_norm": 0.44286761427749005,
+      "coefficient_to_match_C1": 15.777519519498874,
+      "projected_F_over_weighted_C1": 0.9151325157274458,
+      "projected_F_over_native": 0.23913513046358725,
+      "weighted_C1_over_native": 0.26131202460170144,
+      "F_native_cosine": 0.09800654493090771
+    }
+  ],
+  "new_hash_computed": false,
+  "limitations": [
+    "Eight initial fixed batches and a parameter subset do not bound whole-model or later-step gradients.",
+    "Gradient norm matching does not imply direction matching, equal updates, stability or AP benefit.",
+    "The even-sample median of reciprocal ratios need not equal one.",
+    "This is a post-calibration protocol revision fixed before any F AP; the original numeric-cap block is preserved."
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "status": "PASS_RECEIPT_LEVEL_SWAP_DESCRIPTIVE_REVIEW",
+  "scope": "SINGLE_SEED_REGISTERED_STATE_SWAP_ONLY",
+  "checks": {
+    "parameter_only": {
+      "composition_checked": true,
+      "registered_parameters": 256,
+      "registered_buffers": 243,
+      "changed_source_parameter_keys": 239,
+      "changed_source_buffer_keys": 162,
+      "changed_buffers_all_bn": true,
+      "model_identity": {
+        "validator_received_memory_model": true,
+        "forward_memory_identity": true,
+        "forward_calls": 48
+      },
+      "population_and_roster_checked": true,
+      "full_checkpoint_stat_matches_ft": true,
+      "seconds": 12.924644981976599,
+      "resources": {
+        "gpu_ids": [
+          4
+        ],
+        "cuda_pid_counts": {
+          "4": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "4": 1370
+        },
+        "peak_rss_mib": 4074
+      }
+    },
+    "buffer_only": {
+      "composition_checked": true,
+      "registered_parameters": 256,
+      "registered_buffers": 243,
+      "changed_source_parameter_keys": 239,
+      "changed_source_buffer_keys": 162,
+      "changed_buffers_all_bn": true,
+      "model_identity": {
+        "validator_received_memory_model": true,
+        "forward_memory_identity": true,
+        "forward_calls": 48
+      },
+      "population_and_roster_checked": true,
+      "full_checkpoint_stat_matches_ft": true,
+      "seconds": 12.394929743139073,
+      "resources": {
+        "gpu_ids": [
+          4
+        ],
+        "cuda_pid_counts": {
+          "4": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "4": 1370
+        },
+        "peak_rss_mib": 3963
+      }
+    }
+  },
+  "percent": {
+    "initial": {
+      "mAP50_95": 54.51360845035178,
+      "AP50": 77.17965366938525,
+      "AP75": 64.16656614678693
+    },
+    "full_ft": {
+      "mAP50_95": 53.71408272766861,
+      "AP50": 76.44231302985253,
+      "AP75": 62.776442327434
+    },
+    "parameter_only": {
+      "mAP50_95": 53.245419929690826,
+      "AP50": 75.80551247403532,
+      "AP75": 62.12275763502706
+    },
+    "buffer_only": {
+      "mAP50_95": 54.25186438753893,
+      "AP50": 77.015862792738,
+      "AP75": 63.51096324768199
+    }
+  },
+  "vs_initial_pp": {
+    "initial": {
+      "mAP50_95": 0.0,
+      "AP50": 0.0,
+      "AP75": 0.0
+    },
+    "full_ft": {
+      "mAP50_95": -0.7995257226831698,
+      "AP50": -0.7373406395327242,
+      "AP75": -1.3901238193529286
+    },
+    "parameter_only": {
+      "mAP50_95": -1.2681885206609511,
+      "AP50": -1.3741411953499316,
+      "AP75": -2.0438085117598703
+    },
+    "buffer_only": {
+      "mAP50_95": -0.261744062812852,
+      "AP50": -0.16379087664725178,
+      "AP75": -0.6556028991049345
+    }
+  },
+  "full_minus_parameter_only_pp": {
+    "mAP50_95": 0.4686627979777813,
+    "AP50": 0.6368005558172074,
+    "AP75": 0.6536846924069417
+  },
+  "descriptive_nonadditivity_pp": {
+    "mAP50_95": 0.7304068607906333,
+    "AP50": 0.8005914324644592,
+    "AP75": 1.3092875915118762
+  },
+  "new_hash_computed": false,
+  "weights_loaded": false,
+  "new_gpu_or_ssh": false,
+  "new_direction_AP_read": false,
+  "sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\evaluator_profile_attempt2\\native_metrics.json",
+      "bytes": 176910,
+      "mtime_ns": 1788766379014401100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\remote_admission_1532\\evaluator_profile_attempt2\\native_contract.json",
+      "bytes": 351087,
+      "mtime_ns": 1788766379017107700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_小时级筛选重构\\snapshot_1016\\evaluations\\N\\hourly_evaluation_receipt.json",
+      "bytes": 4014,
+      "mtime_ns": 1788833793075266400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_小时级筛选重构\\snapshot_1016\\evaluations\\N\\development_roster.txt",
+      "bytes": 164528,
+      "mtime_ns": 1788833793076334700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\state_swap_evidence\\parameter_only\\composition.json",
+      "bytes": 119205,
+      "mtime_ns": 1788837998168560100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\state_swap_evidence\\parameter_only\\swap_evaluation_receipt.json",
+      "bytes": 2863,
+      "mtime_ns": 1788837998972546600
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\state_swap_evidence\\parameter_only\\evaluation_contract.json",
+      "bytes": 351738,
+      "mtime_ns": 1788837998575849700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\state_swap_evidence\\buffer_only\\composition.json",
+      "bytes": 119202,
+      "mtime_ns": 1788837999375169200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\state_swap_evidence\\buffer_only\\swap_evaluation_receipt.json",
+      "bytes": 2852,
+      "mtime_ns": 1788838000143251900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\state_swap_evidence\\buffer_only\\evaluation_contract.json",
+      "bytes": 351735,
+      "mtime_ns": 1788837999789143100
+    }
+  ]
+}

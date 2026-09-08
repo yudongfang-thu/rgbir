@@ -1,0 +1,96 @@
+{
+  "status": "DIRECTION_CALIBRATION_COMPLETED",
+  "scope": "EXPLORATORY_FIXED8_BNFROZEN",
+  "dataset": "llvip",
+  "coefficients": {
+    "N": 0.0,
+    "L2-box": 1.0,
+    "L2-GT": 1.0
+  },
+  "blocked": {},
+  "details": {
+    "L2-box": {
+      "finite_nonzero_batches": 7,
+      "raw_median": 7.92627235437891,
+      "ratios": [
+        5.495050822653396,
+        9.848174923751225,
+        4.540536309030666,
+        13.590430451455687,
+        10.136859040212077,
+        7.92627235437891,
+        2.9738131805078147
+      ]
+    },
+    "L2-GT": {
+      "finite_nonzero_batches": 7,
+      "raw_median": 8.050263740394527,
+      "ratios": [
+        5.676717098204923,
+        9.522011266519216,
+        4.534759268614028,
+        13.769832912469198,
+        8.65749383657999,
+        8.050263740394527,
+        2.973760400892022
+      ]
+    }
+  },
+  "batches": 8,
+  "minimum_nonzero": 4,
+  "seed": 42,
+  "student_initial_checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "bytes": 5482010,
+    "mtime_ns": 1788127857140185407
+  },
+  "parameter_names": [
+    "model.16.cv1.conv.weight",
+    "model.16.cv1.bn.weight",
+    "model.16.cv1.bn.bias",
+    "model.16.cv2.conv.weight",
+    "model.16.cv2.bn.weight",
+    "model.16.cv2.bn.bias",
+    "model.16.m.0.cv1.conv.weight",
+    "model.16.m.0.cv1.bn.weight",
+    "model.16.m.0.cv1.bn.bias",
+    "model.16.m.0.cv2.conv.weight",
+    "model.16.m.0.cv2.bn.weight",
+    "model.16.m.0.cv2.bn.bias",
+    "model.19.cv1.conv.weight",
+    "model.19.cv1.bn.weight",
+    "model.19.cv1.bn.bias",
+    "model.19.cv2.conv.weight",
+    "model.19.cv2.bn.weight",
+    "model.19.cv2.bn.bias",
+    "model.19.m.0.cv1.conv.weight",
+    "model.19.m.0.cv1.bn.weight",
+    "model.19.m.0.cv1.bn.bias",
+    "model.19.m.0.cv2.conv.weight",
+    "model.19.m.0.cv2.bn.weight",
+    "model.19.m.0.cv2.bn.bias"
+  ],
+  "reset_all_parameters_buffers_each_batch": true,
+  "optimizer_updates": 0,
+  "ema_updates": 0,
+  "bn_running_buffers_unchanged": true,
+  "full_initial_checkpoint_state_verified": true,
+  "formal64_admission": false,
+  "seconds": 24.882811204064637,
+  "new_hash_computed": false,
+  "official_test_accessed": false,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 8506
+    },
+    "peak_rss_mib": 27508
+  },
+  "gpu_allocated_peak_mib": 7377.7119140625,
+  "gpu_reserved_peak_mib": 8006.0
+}

@@ -1,0 +1,21 @@
+{
+  "id": "direction_screen_attempt1_llvip_N_calibration",
+  "dataset": "llvip",
+  "arm": "N",
+  "stage": "calibration",
+  "formal": false,
+  "kind": "train",
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/release_v1/calibrate_direction.py",
+    "--reference-dir",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+    "--config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/release_v1/configs/llvip_N_s42_FT3.yaml",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/calibration/llvip"
+  ],
+  "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/calibration/llvip/calibration_receipt.json",
+  "vram_mib": 8192,
+  "rss_mib": 32768
+}

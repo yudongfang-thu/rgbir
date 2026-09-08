@@ -1,0 +1,133 @@
+{
+  "status": "DIRECTION_CANARIES_MATCHED",
+  "dataset": "drone",
+  "arms": {
+    "N": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/N/canary.json",
+        "bytes": 4231,
+        "mtime_ns": 1788839015120753889
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+          "bytes": 10772755,
+          "mtime_ns": 1788715564014453204
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "resources": {
+        "vram_mib": 7168,
+        "rss_mib": 30720,
+        "measured_nvml_peak_mib": 6772,
+        "measured_allocated_peak_mib": 5554.12255859375,
+        "measured_reserved_peak_mib": 6238.0,
+        "measured_rss_peak_mib": 27840,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      },
+      "successful_updates": 24,
+      "actual_coefficient": 0.0
+    },
+    "C1": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/C1/canary.json",
+        "bytes": 4288,
+        "mtime_ns": 1788839111574405269
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+          "bytes": 10772755,
+          "mtime_ns": 1788715564014453204
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "resources": {
+        "vram_mib": 7168,
+        "rss_mib": 30720,
+        "measured_nvml_peak_mib": 6772,
+        "measured_allocated_peak_mib": 5554.12255859375,
+        "measured_reserved_peak_mib": 6238.0,
+        "measured_rss_peak_mib": 27811,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      },
+      "successful_updates": 24,
+      "actual_coefficient": 0.09227393550836771
+    },
+    "C2": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/C2/canary.json",
+        "bytes": 4281,
+        "mtime_ns": 1788839204127979623
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+          "bytes": 10772755,
+          "mtime_ns": 1788715564014453204
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "resources": {
+        "vram_mib": 7168,
+        "rss_mib": 30720,
+        "measured_nvml_peak_mib": 6772,
+        "measured_allocated_peak_mib": 5554.12255859375,
+        "measured_reserved_peak_mib": 6238.0,
+        "measured_rss_peak_mib": 27912,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      },
+      "successful_updates": 24,
+      "actual_coefficient": 0.10975098761504075
+    }
+  },
+  "sample_stream": {
+    "batch_records": 30,
+    "batch_size": 32,
+    "arms": [
+      "N",
+      "C1",
+      "C2"
+    ],
+    "record_content_exact": true,
+    "ignored_fields": [
+      "arm"
+    ],
+    "sources": {
+      "N": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/N/sample_stream.jsonl",
+        "bytes": 3141927,
+        "mtime_ns": 1788838985892250991
+      },
+      "C1": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/C1/sample_stream.jsonl",
+        "bytes": 3141927,
+        "mtime_ns": 1788839082909915736
+      },
+      "C2": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/C2/sample_stream.jsonl",
+        "bytes": 3141927,
+        "mtime_ns": 1788839175491493475
+      }
+    }
+  },
+  "new_hash_computed": false
+}

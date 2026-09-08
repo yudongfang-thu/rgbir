@@ -1,0 +1,115 @@
+{
+  "status": "DIRECTION_CALIBRATION_COMPLETED",
+  "scope": "EXPLORATORY_FIXED8_BNFROZEN",
+  "dataset": "drone",
+  "coefficients": {
+    "N": 0.0,
+    "C1": 0.09227393550836771,
+    "C2": 0.10975098761504075,
+    "F-rel": null
+  },
+  "blocked": {
+    "F-rel": "Unclipped coefficient outside (0,1]"
+  },
+  "details": {
+    "C1": {
+      "finite_nonzero_batches": 8,
+      "raw_median": 0.09227393550836771,
+      "ratios": [
+        0.09227393550836771,
+        0.09227393550836771,
+        0.09227393550836771,
+        0.09227393550836772,
+        0.09227393550836771,
+        0.09227393550836771,
+        0.09227393550836771,
+        0.09227393550836771
+      ]
+    },
+    "C2": {
+      "finite_nonzero_batches": 8,
+      "raw_median": 0.10975098761504075,
+      "ratios": [
+        0.3432693982407123,
+        0.3604865710909291,
+        0.10152881931922396,
+        0.18438902209128744,
+        0.03407357174137981,
+        0.07799606645503394,
+        0.031107978510295495,
+        0.11797315591085754
+      ]
+    },
+    "F-rel": {
+      "finite_nonzero_batches": 8,
+      "raw_median": 14.438521129817886,
+      "ratios": [
+        6.283914320044299,
+        16.254979331456898,
+        13.0995227401369,
+        29.428591638611593,
+        8.588623201906522,
+        12.742012464771195,
+        16.84305861845722,
+        15.777519519498874
+      ]
+    }
+  },
+  "batches": 8,
+  "minimum_nonzero": 4,
+  "seed": 42,
+  "student_initial_checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "bytes": 10772755,
+    "mtime_ns": 1788715564014453204
+  },
+  "parameter_names": [
+    "model.16.cv1.conv.weight",
+    "model.16.cv1.bn.weight",
+    "model.16.cv1.bn.bias",
+    "model.16.cv2.conv.weight",
+    "model.16.cv2.bn.weight",
+    "model.16.cv2.bn.bias",
+    "model.16.m.0.cv1.conv.weight",
+    "model.16.m.0.cv1.bn.weight",
+    "model.16.m.0.cv1.bn.bias",
+    "model.16.m.0.cv2.conv.weight",
+    "model.16.m.0.cv2.bn.weight",
+    "model.16.m.0.cv2.bn.bias",
+    "model.19.cv1.conv.weight",
+    "model.19.cv1.bn.weight",
+    "model.19.cv1.bn.bias",
+    "model.19.cv2.conv.weight",
+    "model.19.cv2.bn.weight",
+    "model.19.cv2.bn.bias",
+    "model.19.m.0.cv1.conv.weight",
+    "model.19.m.0.cv1.bn.weight",
+    "model.19.m.0.cv1.bn.bias",
+    "model.19.m.0.cv2.conv.weight",
+    "model.19.m.0.cv2.bn.weight",
+    "model.19.m.0.cv2.bn.bias"
+  ],
+  "reset_all_parameters_buffers_each_batch": true,
+  "optimizer_updates": 0,
+  "ema_updates": 0,
+  "bn_running_buffers_unchanged": true,
+  "full_initial_checkpoint_state_verified": true,
+  "formal64_admission": false,
+  "seconds": 25.244656024035066,
+  "new_hash_computed": false,
+  "official_test_accessed": false,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 8900
+    },
+    "peak_rss_mib": 27536
+  },
+  "gpu_allocated_peak_mib": 7967.27880859375,
+  "gpu_reserved_peak_mib": 8366.0
+}
