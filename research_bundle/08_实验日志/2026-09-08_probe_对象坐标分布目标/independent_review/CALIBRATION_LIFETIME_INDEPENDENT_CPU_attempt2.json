@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "actual_old_cleanup_retains_last_loss_graph": true,
+  "explicit_loss_deletion_releases_graph_before_next_forward": true,
+  "same_gradient_norms_exact": true,
+  "gradient_norms": [
+    {
+      "batch": 1,
+      "norms": {
+        "DFL": 0.24258825615723748,
+        "GT": 0.35677969289575023
+      }
+    },
+    {
+      "batch": 2,
+      "norms": {
+        "DFL": 0.24258825615723748,
+        "GT": 0.35677969289575023
+      }
+    }
+  ],
+  "last_autograd_context_live_after_legacy_cleanup": true,
+  "last_autograd_context_live_after_fixed_cleanup": false,
+  "measurement": "Weak references track custom autograd context owning saved tensors. Python Tensor-wrapper weakrefs cannot establish C++ saved-storage lifetime.",
+  "scope": "Synthetic autograd graph-lifetime mechanism, not a measurement of production VRAM or complete proof of its magnitude.",
+  "torch_version": "1.8.0+cu111",
+  "device": "cpu",
+  "new_GPU": false,
+  "new_hash_computed": false
+}

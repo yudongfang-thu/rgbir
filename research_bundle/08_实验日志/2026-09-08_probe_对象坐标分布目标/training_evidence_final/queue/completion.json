@@ -1,0 +1,104 @@
+{
+  "status": "OBJECT_DFL_MATRIX_COMPLETED",
+  "datasets": [
+    {
+      "dataset": "llvip",
+      "completed": [
+        {
+          "id": "object_dfl_attempt2_llvip_N_calibration",
+          "dataset": "llvip",
+          "arm": "N",
+          "stage": "calibration",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_N_canary",
+          "dataset": "llvip",
+          "arm": "N",
+          "stage": "canary",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/N/canary.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_L3-DFL_canary",
+          "dataset": "llvip",
+          "arm": "L3-DFL",
+          "stage": "canary",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/L3-DFL/canary.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_L3-GT_canary",
+          "dataset": "llvip",
+          "arm": "L3-GT",
+          "stage": "canary",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/L3-GT/canary.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_N_train",
+          "dataset": "llvip",
+          "arm": "N",
+          "stage": "train",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/runs/llvip/N/completion_receipt.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_N_eval",
+          "dataset": "llvip",
+          "arm": "N",
+          "stage": "eval",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/evaluations/llvip/N/direction_evaluation_receipt.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_L3-DFL_train",
+          "dataset": "llvip",
+          "arm": "L3-DFL",
+          "stage": "train",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/runs/llvip/L3-DFL/completion_receipt.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_L3-DFL_eval",
+          "dataset": "llvip",
+          "arm": "L3-DFL",
+          "stage": "eval",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/evaluations/llvip/L3-DFL/direction_evaluation_receipt.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_L3-GT_train",
+          "dataset": "llvip",
+          "arm": "L3-GT",
+          "stage": "train",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/runs/llvip/L3-GT/completion_receipt.json",
+          "receipt_validated": true
+        },
+        {
+          "id": "object_dfl_attempt2_llvip_L3-GT_eval",
+          "dataset": "llvip",
+          "arm": "L3-GT",
+          "stage": "eval",
+          "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/evaluations/llvip/L3-GT/direction_evaluation_receipt.json",
+          "receipt_validated": true
+        }
+      ],
+      "blocked": {},
+      "status": "COMPLETED",
+      "seconds": 666.8552968502045,
+      "new_hash_computed": false
+    }
+  ],
+  "seconds": 666.8562324047089,
+  "single_seed": true,
+  "seed": 42,
+  "epochs": 3,
+  "train_images_each_dataset": 2048,
+  "batches_per_full_arm": 192,
+  "new_hash_computed": false,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "ap_adaptive": false
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-08T09:03:48.684081+00:00",
+  "auditor": "/root/object_transport_review",
+  "status": "READY_FOR_RECEIPT_READOUT",
+  "source_integrity_status": "pass",
+  "actual_L3_AP_analyzed": false,
+  "scope": "Receipt identity and arithmetic only; actual executed endpoint audit remains required after collection.",
+  "checks": {
+    "previous_independent_arithmetic_checks": 8,
+    "previous_authored_synthetic_tests_run_by_reviewer": 6,
+    "targeted_method_identity_checks": {
+      "explicit_method_identity_accepted": true,
+      "wrong_method_identity_rejected": true,
+      "missing_method_identity_rejected": true
+    },
+    "author_current_source_CPU_attempt2_tests": 6
+  },
+  "reviewed_source_files": [
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\analyze_object_dfl.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\analyzer_reviewed_source\\analyze_object_dfl.py",
+      "bytes": 11404,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\test_analyzer_cpu.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\analyzer_reviewed_source\\test_analyzer_cpu.py",
+      "bytes": 3857,
+      "direct_byte_identity": true
+    }
+  ],
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "supported_behavior": [
+    "Explicit new method, dataset/scope/seed/endpoint identities and complete dev 2406/7879 population checks.",
+    "Fraction metrics retained; display percent and signed percentage-point differences are separate; per-class macro consistency checked.",
+    "All controls must share initialization path/class map/full-dev YAML; DFL/GT coefficients equal.",
+    "Missing/failed/conflicting arms retain explicit states and null differences; no implicit zeros or result selection.",
+    "Single-seed output has null SD, no significance claim, no best-arm choice, no automatic expansion/E200."
+  ],
+  "limitations": [
+    "This analyzer reports inter-arm contrasts only. Each arm versus mature initialization requires the separately matched original baseline AP evidence and root report.",
+    "Receipt-only checks do not reconstruct actual AP from predictions or verify checkpoint tensors/GT files.",
+    "No actual L3 training/evaluation result was available or read in this source review."
+  ],
+  "source_correction": "Require method_identity OBJECT_DFL_FT3_BNFROZEN; reject wrong/missing field. Old source and earlier tests preserved by root.",
+  "evidence": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\ANALYZER_CPU_TESTS.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\CPU_attempt2.json"
+  ]
+}

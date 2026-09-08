@@ -1,0 +1,155 @@
+method_id: RGBIR-OBJECT-DFL-llvip-N
+method_identity: OBJECT_DFL_FT3_BNFROZEN
+description: Fixed prospective LLVIP object-coordinate DFL FT3 screen
+dataset: llvip
+student_modality: visible
+privileged_modality: infrared
+expected_nc: 1
+evaluation_role: val
+model: /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt
+teacher: /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt
+reference: /mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt
+ultralytics_version: 8.4.115
+torch_version: 2.10.0+cu128
+imgsz: 640
+epochs: 3
+batch: 32
+nbs: 64
+workers: 4
+seed: 42
+optimizer: SGD
+lr0: 0.0001
+lrf: 1.0
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 0.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+cos_lr: false
+close_mosaic: 0
+patience: 0
+amp: true
+deterministic: true
+kd_weight: 0.1
+teacher_cache_images: 64
+log_every_batches: 100
+evidence:
+  input_size: 640
+  levels:
+  - 0
+  - 1
+  temperature: 2.0
+  background_scale: 2.0
+  minimum_foreground: 1
+  minimum_background: 4
+  match_iou: 0.5
+  reference_conf: 0.05
+  reference_iou: 0.1
+  teacher_conf: 0.25
+  teacher_iou: 0.5
+  rho: 0.5
+  target_clip: 8.0
+  smooth_l1_beta: 1.0
+augmentation:
+  mosaic: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  copy_paste: 0.0
+  degrees: 0.0
+  shear: 0.0
+  perspective: 0.0
+  translate: 0.1
+  scale: 0.5
+  fliplr: 0.5
+  flipud: 0.0
+  hsv_h: 0.0
+  hsv_s: 0.0
+  hsv_v: 0.0
+  erasing: 0.0
+  bgr: 0.0
+paths:
+  student_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_visible.yaml
+  privileged_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_infrared.yaml
+  paired_train_mapping: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/visible_to_infrared_train.json
+protocol_status: FROZEN_OBJECT_DFL_PROSPECTIVE
+geometry_contract: null
+calibration_receipt: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json
+d2_receipt: null
+canary_acceptance: null
+localization_coefficient: 0.0
+localization:
+  input_size: 640
+  levels:
+  - 0
+  - 1
+  temperature: 2.0
+  match_iou: 0.5
+  pair_iou: 0.8
+  reference_conf: 0.05
+  reference_iou: 0.1
+  reliable_conf: 0.25
+  reference_iou_max: 0.7
+  teacher_rgb_iou_min: 0.6
+  teacher_ir_iou_min: 0.5
+  localization_margin: 0.05
+  support_epsilon: 0.01
+  native_candidate_epsilon: 1.0e-09
+expected_train_images: 2048
+expected_val_images: 2406
+formal_training_authorized: false
+source_geometry_scope: not_yet_verified
+arm: N
+source: paired
+classification_coefficient: 0.0
+readiness_receipt: null
+classification:
+  temperature: 2.0
+  teacher_raw_delta_clip: 16.0
+  off_target_weight: 0.25
+  levels:
+  - 0
+  - 1
+  loss: bernoulli_relative_kl
+  normalization: pre_teacher_base_objects
+calibration:
+  batches: 8
+  min_nonzero_batches: 4
+  seed: 42
+evaluation_contract:
+  endpoint: fixed_budget_last_ema
+  split: val
+  expected_val_images: 2406
+auxiliary_data_identity:
+  student_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml
+  privileged_data_yaml: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml
+native_contract_config: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/configs/llvip_native_evaluation.yaml
+scope: OBJECT_DFL_FT3_BNFROZEN
+freeze_bn_running_statistics: true
+direction_screen:
+  scope: OBJECT_DFL_FT3_BNFROZEN
+  endpoint: OBJECT_DFL_FT3_BNFROZEN_LAST_EMA
+  single_seed: true
+  subset_seed: 20260908
+  training_images: 2048
+  batches_per_epoch: 64
+  initialization: completed matched N42 last/EMA
+  fresh_optimizer: true
+  fresh_ema: true
+  coefficient_recalibrated: false
+  not_from_scratch: true
+  comparison_arms:
+  - N
+  - L3-DFL
+  - L3-GT
+  candidate_source: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/performance_candidate/selected_only_v1.py
+  approved_candidate_source: /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/approved/selected_only_v1.py
+kd_coefficient: 0.0
+object_dfl:
+  temperature: 2.0
+  teacher_anchor: same_reference_index
+  normalization: coarse_reference_base_before_quality
+  teacher_transport: object_coordinate_full_mass
+  gt_target: sqrt_adjacent_bins_normalized
+  full_support: reject_any_positive_mass_outside_0_15
+  native_loss_replaced: false
+  physical_registration_claim: false

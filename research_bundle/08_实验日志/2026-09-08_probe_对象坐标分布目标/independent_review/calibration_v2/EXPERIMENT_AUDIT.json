@@ -1,0 +1,215 @@
+{
+  "date": "2026-09-08T09:18:55.697793+00:00",
+  "auditor": "/root/object_transport_review",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "ACTUAL_FIXED8_CALIBRATION_AND_RESOURCE_COMPUTATION_ACCEPTED",
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Actual original LLVIP train annotations used through frozen dual-label loader; audit checks logged same-mask base/anchor identities, not independent physical correspondence.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_batches.jsonl records1-8"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "Shared lambda independently recomputed from .1 native/B-unit-DFL norms, seven valid rows; GT shares lambda and actual GT gradient dose is separately reported. No AP involved.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\RECOMPUTATION.json"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "Completed calibration receipt and three materialized eight-row numerical/resource/lifecycle ledgers exist. This snapshot outer dispatcher status was still RUNNING, so this audit accepts computation terminal, not outer queue process completion.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_receipt.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\queue\\object_dfl_attempt2_llvip_N_calibration_status.json"
+      ]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "V2 cleanup branch exercised all eight times; direct lifecycle diagnostics show no cross-batch accumulation over this window. Source-copy manifest binds to reviewed v2.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_allocation_lifecycle.jsonl",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\source_manifest.json"
+      ]
+    },
+    "scope": {
+      "status": "pass",
+      "details": "Exactly eight B32 batches, zero optimizer/EMA updates; first complete batch content equals preserved attempt1. No new canary, FT3 endpoint, AP or KD effect accepted here.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\RECOMPUTATION.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_receipt.json"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "types": [
+        "real_gt"
+      ],
+      "details": "Real model forward/gradient calibration on train labels and GPU resource observation; not a detection accuracy evaluation.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_batches.jsonl"
+      ]
+    },
+    "resource_and_lifetime": {
+      "status": "pass",
+      "details": "All eight peak-plus-margin gates pass; cleanup/start allocation stable without empty_cache. Formal subsequent training must still use actual canary peaks.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\RECOMPUTATION.json"
+      ]
+    },
+    "all_specific_checks": {
+      "status": "pass",
+      "details": {
+        "executed_fixed8": {
+          "status": "pass",
+          "details": "Three independent eight-row ledgers and completed calibration receipt; no failed retry rows substituted."
+        },
+        "runtime_identity": {
+          "status": "pass",
+          "details": "Pinned LLVIP FT3 subset and seed42 runtime identity."
+        },
+        "no_state_updates": {
+          "status": "pass",
+          "details": "Executed receipt reflects source assertions for full initial state, reset each batch, zero optimizer/EMA, frozen BN; no independent model replay in this audit."
+        },
+        "firstbatch_attempt1_exact": {
+          "status": "pass",
+          "details": "All first-batch files, gradient norms, cosines, complete selection statistics and object records equal the preserved attempt1 first batch exactly."
+        },
+        "fixed_B32_stream": {
+          "status": "pass",
+          "details": "Eight sequential B32 file lists preserved. Eight-batch pixel tensors were not recopied or independently replayed."
+        },
+        "config_bytes_equal": {
+          "status": "pass",
+          "details": "Executed calibration config equals independently reviewed v2 N template byte for byte."
+        },
+        "same_mask_base": {
+          "status": "pass",
+          "details": "Both variants share all 649 logged base records and 25 selected objects; normalizer stays max(1,base), including zero-selected batch3."
+        },
+        "ratio_recompute_L3-DFL": {
+          "status": "pass",
+          "details": "Independent .1*native_norm/(B*unit_KD_norm) recomputation from every finite nonzero batch."
+        },
+        "ratio_recompute_L3-GT": {
+          "status": "pass",
+          "details": "Independent .1*native_norm/(B*unit_KD_norm) recomputation from every finite nonzero batch."
+        },
+        "shared_fixed_coefficient": {
+          "status": "pass",
+          "details": "Exactly one DFL-derived coefficient; GT keeps the same lambda despite its different raw gradient calibration median."
+        },
+        "all_resource_gates": {
+          "status": "pass",
+          "details": "All eight recorded peaks plus unchanged margin independently satisfy 8192 MiB VRAM and 32768 MiB RSS ceilings."
+        },
+        "lifetime_plateau": {
+          "status": "pass",
+          "details": "Batches2-8 start allocated is exactly constant; cleanup allocation range <.001 MiB, reserved constant, no empty_cache. This establishes stability in the observed eight-batch window only."
+        },
+        "peak_ledger_closure": {
+          "status": "pass",
+          "details": "Terminal framework/NVML peaks agree with per-batch cumulative ledger. RSS terminal may rise during serialization; terminal peak remains below ceiling."
+        },
+        "terminal_RSS_within_budget": {
+          "status": "pass",
+          "details": "Terminal process-tree RSS independently remains within the fixed ceiling after margin."
+        },
+        "P3_P4_parameter_scope": {
+          "status": "pass",
+          "details": "24 unique parameter tensors in the frozen P3/P4 source modules; names are explicit in executed receipt."
+        },
+        "source_execution_binding": {
+          "status": "pass",
+          "details": "All 15 calibration source-copy records bind reviewed release_v2 paths/bytes and producer byte-identity assertions; local reviewed/current bytes rechecked. Remote source-copy bytes were not downloaded again."
+        }
+      },
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\RECOMPUTATION.json"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "v2_calibration_completed",
+      "impact": "supported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_receipt.json"
+      ],
+      "rationale": "Eight real rows and independently recomputed shared coefficient agree."
+    },
+    {
+      "id": "v2_no_graph_accumulation_in_fixed8",
+      "impact": "supported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_allocation_lifecycle.jsonl"
+      ],
+      "rationale": "Batch2-8 starts and cleanup memory show a plateau; original batch2 resource failure does not recur within fixed8."
+    },
+    {
+      "id": "GT_DFL_equal_actual_gradient_dose",
+      "impact": "unsupported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\RECOMPUTATION.json"
+      ],
+      "rationale": "Lambda is shared, but actual gradient magnitudes/cosines differ; GT median actual ratio is separately reported."
+    },
+    {
+      "id": "canary_FT3_KD_utility_or_physical_registration",
+      "impact": "unsupported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_receipt.json"
+      ],
+      "rationale": "This scoped review accepts calibration only, not subsequent endpoints or scientific efficacy."
+    }
+  ],
+  "run_id": "rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip",
+  "code_revision": "release_v2, reviewed exact-byte source snapshot",
+  "declared_input_set": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_receipt.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_batches.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_allocation_lifecycle.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_resource_batches.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\direction_config.yaml",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\runtime_ready.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\source_manifest.json"
+  ],
+  "audited_input_hashes": [],
+  "new_hash_computed": false,
+  "identity_policy": "Direct full-byte snapshots and resolved paths; user no-new-hash scope overrides skill hash default.",
+  "measurements": {
+    "lambda_shared": 0.6900524651944485,
+    "finite_nonzero_batches": 7,
+    "base_objects_total": 649,
+    "selected_objects_total": 25,
+    "allocated_peak_mib": 4390.5732421875,
+    "NVML_peak_mib": 5454,
+    "reserved_peak_mib": 4954.0,
+    "RSS_peak_mib": 17280,
+    "start_allocated_batches2_8_mib": 82.583984375,
+    "after_cleanup_allocated_range_mib": [
+      382.5888671875,
+      382.58984375
+    ],
+    "reserved_after_cleanup_mib": 4954.0,
+    "median_actual_scaled_gradient_ratio_nonzero": {
+      "L3-DFL": 0.1,
+      "L3-GT": 0.12283740486876371
+    },
+    "seconds": 37.56572435796261
+  },
+  "recomputation_command": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\audit_actual_calibration_v2.py",
+  "inaccessible_inputs": [
+    "Original per-parameter gradient arrays and complete GPU tensors were not stored/recomputed by the reviewer.",
+    "Outer dispatcher clean-exit terminal was not yet present in this snapshot."
+  ],
+  "limits": [
+    "Accepts actual calibration computation and resource/lifetime evidence only.",
+    "Does not block or bypass the already encoded subsequent canary gates.",
+    "No AP, efficacy, physical registration or full-training memory guarantee."
+  ]
+}

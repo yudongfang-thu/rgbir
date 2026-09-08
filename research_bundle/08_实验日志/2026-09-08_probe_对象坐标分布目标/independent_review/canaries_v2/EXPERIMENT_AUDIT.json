@@ -1,0 +1,480 @@
+{
+  "date": "2026-09-08T09:22:06.074440+00:00",
+  "auditor": "/root/object_transport_review",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "ACTUAL_THREE_CANARIES_MATCHED_AND_RECONCILED",
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Same recorded actual dual-label first30 flow and same logged object/anchor/base identities across three arms; no new physical-registration evidence.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N/sample_stream.jsonl",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL/sample_stream.jsonl",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT/sample_stream.jsonl"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "No AP score; fixed shared lambda from accepted calibration, zero N coefficient, complete native total retained. Successful updates, attempts, skips and EMA counter remain distinct.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N/canary.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL/canary.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT/canary.json"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "All three completed actual canary receipts and clean dispatcher exits verified.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\queue\\llvip_canary_checks.json"
+      ]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "Actual nonzero shared student KD gradients recorded for both KD arms, no auxiliary gradients; source/cfg/initialization binding checked.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N/gradient_checks.jsonl",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL/gradient_checks.jsonl",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT/gradient_checks.jsonl"
+      ]
+    },
+    "scope": {
+      "status": "pass",
+      "details": "58 batches, 29 attempts, 5 AMP skips, 24 successful optimizer updates and EMA counter29 per arm. These are canaries, not full192-batch endpoints.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\EXPERIMENT_AUDIT.json metrics"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "types": [
+        "real_gt"
+      ],
+      "details": "Actual train-label gradient/update canaries and resource measurements; no new accuracy evaluation.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N/canary.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL/canary.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT/canary.json"
+      ]
+    },
+    "specific_checks": {
+      "status": "pass",
+      "details": {
+        "matched_queue_receipt": {
+          "status": "pass",
+          "details": "Original queue explicitly matched all three real canaries."
+        },
+        "N_terminal": {
+          "status": "pass",
+          "details": "Actual completed canary receipt and clean dispatcher exit for this arm."
+        },
+        "N_actual_counts": {
+          "status": "pass",
+          "details": "24 successful optimizer updates from 29 attempts, 5 AMP skips, 58 B32 batches; native EMA counter is 29, not mislabeled as 24."
+        },
+        "N_initialization": {
+          "status": "pass",
+          "details": "All 499 initial tensors including head matched the same mature checkpoint; fresh optimizer/EMA and auxiliary isolation asserted in executed source."
+        },
+        "N_BN_and_runtime": {
+          "status": "pass",
+          "details": "243 BN running buffers unchanged; affine remains trainable; auxiliary models excluded from optimizer."
+        },
+        "N_config_and_coefficient": {
+          "status": "pass",
+          "details": "Canary exact effective config bytes and fixed shared-calibration dose agree; no classification KD."
+        },
+        "N_gradient_isolation": {
+          "status": "pass",
+          "details": "Recorded nonzero student shared-parameter unit KD gradient for KD arms; no teacher/reference accumulated gradients. N retains unit observation but applies zero dose."
+        },
+        "N_first30": {
+          "status": "pass",
+          "details": "Complete contiguous first30 actual image/label records, including batch-index and teacher-label fields."
+        },
+        "N_native_total_exact": {
+          "status": "pass",
+          "details": "All available actual sparse N loss rows equal native total; source asserts this on every call."
+        },
+        "N_reservation": {
+          "status": "pass",
+          "details": "Independent actual-canary peak plus unchanged margin recomputes 6144 MiB GPU / 20480 MiB process-tree RSS reservation; observed whole-card free margin >2 GiB."
+        },
+        "N_source_binding": {
+          "status": "pass",
+          "details": "All operational Python and AMP inputs in actual source-copy manifest bind to reviewed release_v2 paths/byte sizes and producer byte-copy assertions. Review does not download large source/runtime trees again."
+        },
+        "L3-DFL_terminal": {
+          "status": "pass",
+          "details": "Actual completed canary receipt and clean dispatcher exit for this arm."
+        },
+        "L3-DFL_actual_counts": {
+          "status": "pass",
+          "details": "24 successful optimizer updates from 29 attempts, 5 AMP skips, 58 B32 batches; native EMA counter is 29, not mislabeled as 24."
+        },
+        "L3-DFL_initialization": {
+          "status": "pass",
+          "details": "All 499 initial tensors including head matched the same mature checkpoint; fresh optimizer/EMA and auxiliary isolation asserted in executed source."
+        },
+        "L3-DFL_BN_and_runtime": {
+          "status": "pass",
+          "details": "243 BN running buffers unchanged; affine remains trainable; auxiliary models excluded from optimizer."
+        },
+        "L3-DFL_config_and_coefficient": {
+          "status": "pass",
+          "details": "Canary exact effective config bytes and fixed shared-calibration dose agree; no classification KD."
+        },
+        "L3-DFL_gradient_isolation": {
+          "status": "pass",
+          "details": "Recorded nonzero student shared-parameter unit KD gradient for KD arms; no teacher/reference accumulated gradients. N retains unit observation but applies zero dose."
+        },
+        "L3-DFL_first30": {
+          "status": "pass",
+          "details": "Complete contiguous first30 actual image/label records, including batch-index and teacher-label fields."
+        },
+        "L3-DFL_reservation": {
+          "status": "pass",
+          "details": "Independent actual-canary peak plus unchanged margin recomputes 6144 MiB GPU / 20480 MiB process-tree RSS reservation; observed whole-card free margin >2 GiB."
+        },
+        "L3-DFL_source_binding": {
+          "status": "pass",
+          "details": "All operational Python and AMP inputs in actual source-copy manifest bind to reviewed release_v2 paths/byte sizes and producer byte-copy assertions. Review does not download large source/runtime trees again."
+        },
+        "L3-GT_terminal": {
+          "status": "pass",
+          "details": "Actual completed canary receipt and clean dispatcher exit for this arm."
+        },
+        "L3-GT_actual_counts": {
+          "status": "pass",
+          "details": "24 successful optimizer updates from 29 attempts, 5 AMP skips, 58 B32 batches; native EMA counter is 29, not mislabeled as 24."
+        },
+        "L3-GT_initialization": {
+          "status": "pass",
+          "details": "All 499 initial tensors including head matched the same mature checkpoint; fresh optimizer/EMA and auxiliary isolation asserted in executed source."
+        },
+        "L3-GT_BN_and_runtime": {
+          "status": "pass",
+          "details": "243 BN running buffers unchanged; affine remains trainable; auxiliary models excluded from optimizer."
+        },
+        "L3-GT_config_and_coefficient": {
+          "status": "pass",
+          "details": "Canary exact effective config bytes and fixed shared-calibration dose agree; no classification KD."
+        },
+        "L3-GT_gradient_isolation": {
+          "status": "pass",
+          "details": "Recorded nonzero student shared-parameter unit KD gradient for KD arms; no teacher/reference accumulated gradients. N retains unit observation but applies zero dose."
+        },
+        "L3-GT_first30": {
+          "status": "pass",
+          "details": "Complete contiguous first30 actual image/label records, including batch-index and teacher-label fields."
+        },
+        "L3-GT_reservation": {
+          "status": "pass",
+          "details": "Independent actual-canary peak plus unchanged margin recomputes 6144 MiB GPU / 20480 MiB process-tree RSS reservation; observed whole-card free margin >2 GiB."
+        },
+        "L3-GT_source_binding": {
+          "status": "pass",
+          "details": "All operational Python and AMP inputs in actual source-copy manifest bind to reviewed release_v2 paths/byte sizes and producer byte-copy assertions. Review does not download large source/runtime trees again."
+        },
+        "cross_arm_first30_exact": {
+          "status": "pass",
+          "details": "All first30 source records are both structurally and byte-for-byte identical across three arms."
+        },
+        "common_initialization_exact": {
+          "status": "pass",
+          "details": "Initialization check records equal exactly across arms."
+        },
+        "logged_selection_exact": {
+          "status": "pass",
+          "details": "All stored per-batch selection identities/denominators match and terminal selected totals are 190 per arm; not a claim that unlogged pixel tensors were compared."
+        },
+        "calibration_dispatch_terminal": {
+          "status": "pass",
+          "details": "This newer snapshot supplies the clean calibration process terminal missing from training_evidence_1716."
+        },
+        "calibration_snapshot_unchanged_calibration_receipt.json": {
+          "status": "pass",
+          "details": "New collection calibration file equals previously audited copy byte for byte."
+        },
+        "calibration_snapshot_unchanged_calibration_batches.jsonl": {
+          "status": "pass",
+          "details": "New collection calibration file equals previously audited copy byte for byte."
+        },
+        "calibration_snapshot_unchanged_calibration_allocation_lifecycle.jsonl": {
+          "status": "pass",
+          "details": "New collection calibration file equals previously audited copy byte for byte."
+        },
+        "calibration_snapshot_unchanged_calibration_resource_batches.jsonl": {
+          "status": "pass",
+          "details": "New collection calibration file equals previously audited copy byte for byte."
+        }
+      },
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\EXPERIMENT_AUDIT.json"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "three_actual_canaries_pass",
+      "impact": "supported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\queue\\llvip_canary_checks.json"
+      ],
+      "rationale": "All actual terminals, counts, source/init/data/gradient and resource contracts independently reconciled."
+    },
+    {
+      "id": "new_short_training_reservation",
+      "impact": "supported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\queue\\llvip_canary_checks.json"
+      ],
+      "rationale": "Each measured canary recomputes to 6144 MiB VRAM and 20480 MiB RSS with the original margins."
+    },
+    {
+      "id": "full_FT3_or_KD_gain",
+      "impact": "unsupported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N/canary.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL/canary.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT/canary.json"
+      ],
+      "rationale": "No full training/evaluation endpoint or AP is accepted by this audit."
+    }
+  ],
+  "metrics": {
+    "N": {
+      "successful_updates": 24,
+      "attempts": 29,
+      "AMP_skips": 5,
+      "EMA_updates_counter": 29,
+      "batches": 58,
+      "selected_objects": 190,
+      "unit_shared_KD_gradient_norm": 0.23607932601998238,
+      "coefficient": 0.0,
+      "NVML_peak_mib": 5694,
+      "allocated_peak_mib": 4732.99560546875,
+      "reserved_peak_mib": 5162.0,
+      "RSS_peak_mib": 17768,
+      "training_vram_reservation_mib": 6144,
+      "training_rss_reservation_mib": 20480,
+      "seconds": 37.05557902390137,
+      "minimum_whole_card_free_mib": 14886
+    },
+    "L3-DFL": {
+      "successful_updates": 24,
+      "attempts": 29,
+      "AMP_skips": 5,
+      "EMA_updates_counter": 29,
+      "batches": 58,
+      "selected_objects": 190,
+      "unit_shared_KD_gradient_norm": 0.23607932601998238,
+      "coefficient": 0.6900524651944485,
+      "NVML_peak_mib": 5694,
+      "allocated_peak_mib": 4732.99560546875,
+      "reserved_peak_mib": 5162.0,
+      "RSS_peak_mib": 17565,
+      "training_vram_reservation_mib": 6144,
+      "training_rss_reservation_mib": 20480,
+      "seconds": 36.9027418398764,
+      "minimum_whole_card_free_mib": 14885
+    },
+    "L3-GT": {
+      "successful_updates": 24,
+      "attempts": 29,
+      "AMP_skips": 5,
+      "EMA_updates_counter": 29,
+      "batches": 58,
+      "selected_objects": 190,
+      "unit_shared_KD_gradient_norm": 0.3057697138178183,
+      "coefficient": 0.6900524651944485,
+      "NVML_peak_mib": 5694,
+      "allocated_peak_mib": 4732.99560546875,
+      "reserved_peak_mib": 5162.0,
+      "RSS_peak_mib": 17857,
+      "training_vram_reservation_mib": 6144,
+      "training_rss_reservation_mib": 20480,
+      "seconds": 38.35483780503273,
+      "minimum_whole_card_free_mib": 14889
+    }
+  },
+  "declared_input_set": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\canary.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\initialization_check.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\gradient_checks.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\direction_config.yaml",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\sample_stream.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\kd_batches.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\source_manifest.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\canary.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\initialization_check.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\gradient_checks.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\direction_config.yaml",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\sample_stream.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\kd_batches.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\source_manifest.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\canary.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\initialization_check.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\gradient_checks.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\direction_config.yaml",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\sample_stream.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\kd_batches.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\source_manifest.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\queue\\llvip_canary_checks.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\queue\\object_dfl_attempt2_llvip_N_calibration_status.json"
+  ],
+  "audited_input_hashes": [],
+  "new_hash_computed": false,
+  "identity_policy": "Exact local snapshots and direct full-byte equality, plus already reviewed deployment/source-manifest provenance. No new hash per user instruction.",
+  "source_evidence_identity": [
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\canary.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\N\\canary.json",
+      "bytes": 6072,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\initialization_check.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\N\\initialization_check.json",
+      "bytes": 448,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\gradient_checks.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\N\\gradient_checks.jsonl",
+      "bytes": 898,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\direction_config.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\N\\direction_config.yaml",
+      "bytes": 4865,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\sample_stream.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\N\\sample_stream.jsonl",
+      "bytes": 592205,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\kd_batches.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\N\\kd_batches.jsonl",
+      "bytes": 409548,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\N\\source_manifest.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\N\\source_manifest.json",
+      "bytes": 37478,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\canary.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-DFL\\canary.json",
+      "bytes": 6143,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\initialization_check.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-DFL\\initialization_check.json",
+      "bytes": 448,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\gradient_checks.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-DFL\\gradient_checks.jsonl",
+      "bytes": 913,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\direction_config.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-DFL\\direction_config.yaml",
+      "bytes": 4905,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\sample_stream.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-DFL\\sample_stream.jsonl",
+      "bytes": 592205,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\kd_batches.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-DFL\\kd_batches.jsonl",
+      "bytes": 409742,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-DFL\\source_manifest.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-DFL\\source_manifest.json",
+      "bytes": 37923,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\canary.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-GT\\canary.json",
+      "bytes": 6135,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\initialization_check.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-GT\\initialization_check.json",
+      "bytes": 448,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\gradient_checks.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-GT\\gradient_checks.jsonl",
+      "bytes": 912,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\direction_config.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-GT\\direction_config.yaml",
+      "bytes": 4903,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\sample_stream.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-GT\\sample_stream.jsonl",
+      "bytes": 592205,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\kd_batches.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-GT\\kd_batches.jsonl",
+      "bytes": 409680,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\canaries\\llvip\\L3-GT\\source_manifest.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\canaries\\llvip\\L3-GT\\source_manifest.json",
+      "bytes": 37834,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\queue\\llvip_canary_checks.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\queue\\llvip_canary_checks.json",
+      "bytes": 4833,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_canaries\\queue\\object_dfl_attempt2_llvip_N_calibration_status.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\evidence_snapshot\\queue\\object_dfl_attempt2_llvip_N_calibration_status.json",
+      "bytes": 392,
+      "direct_byte_identity": true
+    }
+  ],
+  "run_id": "rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip",
+  "recomputation_command": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\audit_actual_canaries_v2.py",
+  "inaccessible_inputs": [
+    "Large checkpoints and original full pixel tensors were not re-downloaded or replayed."
+  ],
+  "limits": [
+    "Source-executed state assertions and manifests are checked, not replaced by a new full model replay.",
+    "EMA counter29 is reported as native runtime counter, not as 29 successful optimizer steps.",
+    "Only permits continued previously authorized guarded FT3; no scientific gain conclusion."
+  ]
+}

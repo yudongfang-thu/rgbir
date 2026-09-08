@@ -1,0 +1,78 @@
+{
+  "status": "INITIAL_BASELINE_EVALUATION_COMPLETED",
+  "scope": "INITIAL_BASELINE_NATIVE_RECHECK",
+  "endpoint": "INITIAL_FIXED_LAST_EMA_RECHECK",
+  "dataset": "llvip",
+  "seed": 42,
+  "single_seed": true,
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "bytes": 5482010,
+    "mtime_ns": 1788127857140185407
+  },
+  "full_dev_images": 2406,
+  "full_dev_gt_objects": 7879,
+  "observed_images": 2406,
+  "gt_objects_captured": 7879,
+  "metric_units": "fraction_0_to_1",
+  "AP50": 0.7161396006544973,
+  "AP75": 0.24282631410771383,
+  "mAP50_95": 0.3287840510939928,
+  "precision": 0.7463069993744104,
+  "recall": 0.7019331948389218,
+  "per_class": [
+    {
+      "class_id": 0,
+      "name": "person",
+      "AP50": 0.7161396006544973,
+      "AP75": 0.24282631410771383,
+      "mAP50_95": 0.3287840510939928
+    }
+  ],
+  "actual_effective_kwargs": {
+    "imgsz": 640,
+    "batch": 32,
+    "workers": 4,
+    "quantize": null,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "agnostic_nms": false,
+    "single_cls": false,
+    "rect": true,
+    "augment": false,
+    "half": false
+  },
+  "actual_evaluation_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+  "configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/release_v1/configs/llvip_native_evaluation.yaml",
+  "configuration_role": "Only native full-dev evaluation fields consumed; inherited FT training fields ignored",
+  "training_receipt_required": false,
+  "training_performed": false,
+  "formal_training_endpoint": false,
+  "evaluation_epoch_budget": null,
+  "prior_LLVIP_profile_binding_claim": false,
+  "accepted_endpoint_claim": false,
+  "matrix_changed": false,
+  "parameters_or_thresholds_changed": false,
+  "checkpoint_written": false,
+  "optimizer_created": false,
+  "formal_paper_gain_claim": false,
+  "formal_e200_complete": false,
+  "seconds": 15.708032866939902,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 3983
+  },
+  "gpu_allocated_peak_mib": 711.61669921875,
+  "gpu_reserved_peak_mib": 884.0,
+  "new_hash_computed": false,
+  "official_test_accessed": false
+}

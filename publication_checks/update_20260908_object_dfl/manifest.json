@@ -1,0 +1,2804 @@
+{
+  "scope": "OBJECT_DFL_EVIDENCE_PUBLICATION",
+  "execution_state": "COMPLETED",
+  "state_note": "三臂短筛11分6.86秒完成；DFL未胜N与GT，结束当前L3微调版本。",
+  "entry": "2026-09-08_probe_对象坐标分布目标",
+  "files": [
+    {
+      "path": "analysis/analyze_object_dfl.py",
+      "bytes": 11404,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/analyze_object_dfl_before_method_identity.py",
+      "bytes": 11382,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/CPU_attempt1.json",
+      "bytes": 171,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/CPU_attempt2.json",
+      "bytes": 171,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/output_attempt1/analyze_object_dfl_source.py",
+      "bytes": 11404,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/output_attempt1/README.md",
+      "bytes": 1204,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/output_attempt1/summary.json",
+      "bytes": 8743,
+      "byte_exact": true
+    },
+    {
+      "path": "analysis/test_analyzer_cpu.py",
+      "bytes": 3857,
+      "byte_exact": true
+    },
+    {
+      "path": "CALIBRATION_LIFETIME_V2.md",
+      "bytes": 2816,
+      "byte_exact": true
+    },
+    {
+      "path": "collect_training_evidence.py",
+      "bytes": 2228,
+      "byte_exact": true
+    },
+    {
+      "path": "CONTINUATION.md",
+      "bytes": 1102,
+      "byte_exact": true
+    },
+    {
+      "path": "deploy_training_source.py",
+      "bytes": 1982,
+      "byte_exact": true
+    },
+    {
+      "path": "failure_source_v1/calibrate_object_dfl.py",
+      "bytes": 9080,
+      "byte_exact": true
+    },
+    {
+      "path": "failure_source_v1/COPY_RECEIPT.json",
+      "bytes": 1265,
+      "byte_exact": true
+    },
+    {
+      "path": "failure_source_v1/FINAL_WRAPPER_INPUTS.json",
+      "bytes": 3072,
+      "byte_exact": true
+    },
+    {
+      "path": "failure_source_v1/object_dfl_common.py",
+      "bytes": 6436,
+      "byte_exact": true
+    },
+    {
+      "path": "failure_source_v1/object_dfl_criterion.py",
+      "bytes": 4585,
+      "byte_exact": true
+    },
+    {
+      "path": "FINAL_REPORT.md",
+      "bytes": 8455,
+      "byte_exact": true
+    },
+    {
+      "path": "FT3_DECISION_SCOPE_REVIEW.md",
+      "bytes": 2501,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/accept_pinned_cpu.py",
+      "bytes": 5078,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/accept_pinned_cpu_v2.py",
+      "bytes": 3277,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_cpu_test_output.txt",
+      "bytes": 561,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/ANALYZER_CPU_TESTS.json",
+      "bytes": 481,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_reviewed_source/analyze_object_dfl.py",
+      "bytes": 11404,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/analyzer_reviewed_source/test_analyzer_cpu.py",
+      "bytes": 3857,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/ANALYZER_SOURCE_REVIEW.json",
+      "bytes": 3023,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/ANALYZER_SOURCE_REVIEW.md",
+      "bytes": 1176,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/audit_actual_calibration_v2.py",
+      "bytes": 16451,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/audit_actual_canaries_v2.py",
+      "bytes": 14316,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/audit_cached.py",
+      "bytes": 12105,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/audit_final_matrix.py",
+      "bytes": 18337,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/CALIBRATION_ATTEMPT1_FAILURE_REVIEW.md",
+      "bytes": 2871,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/CALIBRATION_LIFETIME_INDEPENDENT_CPU.json",
+      "bytes": 831,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/CALIBRATION_LIFETIME_INDEPENDENT_CPU_attempt2.json",
+      "bytes": 1006,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/evidence_snapshot/calibration_allocation_lifecycle.jsonl",
+      "bytes": 2017,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/evidence_snapshot/calibration_batches.jsonl",
+      "bytes": 1135968,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/evidence_snapshot/calibration_receipt.json",
+      "bytes": 4407,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/evidence_snapshot/calibration_resource_batches.jsonl",
+      "bytes": 3059,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/evidence_snapshot/direction_config.yaml",
+      "bytes": 4883,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/evidence_snapshot/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/evidence_snapshot/source_manifest.json",
+      "bytes": 6369,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/EXPERIMENT_AUDIT.json",
+      "bytes": 12126,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/EXPERIMENT_AUDIT.md",
+      "bytes": 1678,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/calibration_v2/RECOMPUTATION.json",
+      "bytes": 12004,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/CALIBRATOR_V1_TO_V2.diff",
+      "bytes": 3509,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-DFL/canary.json",
+      "bytes": 6143,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-DFL/direction_config.yaml",
+      "bytes": 4905,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-DFL/gradient_checks.jsonl",
+      "bytes": 913,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-DFL/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-DFL/kd_batches.jsonl",
+      "bytes": 409742,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-DFL/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-DFL/source_manifest.json",
+      "bytes": 37923,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-GT/canary.json",
+      "bytes": 6135,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-GT/direction_config.yaml",
+      "bytes": 4903,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-GT/gradient_checks.jsonl",
+      "bytes": 912,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-GT/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-GT/kd_batches.jsonl",
+      "bytes": 409680,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-GT/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/L3-GT/source_manifest.json",
+      "bytes": 37834,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/N/canary.json",
+      "bytes": 6072,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/N/direction_config.yaml",
+      "bytes": 4865,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/N/gradient_checks.jsonl",
+      "bytes": 898,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/N/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/N/kd_batches.jsonl",
+      "bytes": 409548,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/N/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/canaries/llvip/N/source_manifest.json",
+      "bytes": 37478,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/queue/llvip_canary_checks.json",
+      "bytes": 4833,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/evidence_snapshot/queue/object_dfl_attempt2_llvip_N_calibration_status.json",
+      "bytes": 392,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/EXPERIMENT_AUDIT.json",
+      "bytes": 30757,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/canaries_v2/EXPERIMENT_AUDIT.md",
+      "bytes": 1444,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/EXPERIMENT_AUDIT.json",
+      "bytes": 16526,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/EXPERIMENT_AUDIT.md",
+      "bytes": 1964,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/final_matrix/EXPERIMENT_AUDIT.json",
+      "bytes": 17268,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/final_matrix/EXPERIMENT_AUDIT.md",
+      "bytes": 4350,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/final_matrix/INPUT_MANIFEST.json",
+      "bytes": 74518,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/final_matrix/RECOMPUTATION.json",
+      "bytes": 54574,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/final_matrix/WRITE_ATTEMPT1_FAILURE.json",
+      "bytes": 345,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/finalize_analyzer_review.py",
+      "bytes": 4647,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/finalize_audit.py",
+      "bytes": 10980,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/finalize_training_source_review.py",
+      "bytes": 8184,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/finalize_training_source_v2.py",
+      "bytes": 5558,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/freeze_source_review.py",
+      "bytes": 3964,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/independent_oracle.py",
+      "bytes": 4790,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/input_snapshot/anchor_distributions.jsonl",
+      "bytes": 1531674,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/input_snapshot/completion_receipt.json",
+      "bytes": 2453,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/input_snapshot/dfl_contract.json",
+      "bytes": 2539,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/input_snapshot/objects.jsonl",
+      "bytes": 407526,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/input_snapshot_manifest.json",
+      "bytes": 2657,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/recomputation_rows.json",
+      "bytes": 40974,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/recomputation_summary.json",
+      "bytes": 6691,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/reproduce_calibration_lifetime_cpu.py",
+      "bytes": 2614,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/result_snapshot/objects.jsonl",
+      "bytes": 1931001,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/result_snapshot/README.md",
+      "bytes": 906,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/result_snapshot/summary.json",
+      "bytes": 3154,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/review_analyzer_cpu.py",
+      "bytes": 2088,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/review_criterion_cpu.py",
+      "bytes": 947,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/review_source.py",
+      "bytes": 3632,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/REVIEW_TRACE.md",
+      "bytes": 2184,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/review_training_pure_cpu.py",
+      "bytes": 3791,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/review_training_tensor_cpu.py",
+      "bytes": 4114,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/review_wrapper_cpu.py",
+      "bytes": 1050,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/snapshot_inputs.py",
+      "bytes": 1333,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/SOURCE_REVIEW.json",
+      "bytes": 2477,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/SOURCE_REVIEW.md",
+      "bytes": 2105,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/SOURCE_REVIEW_ADDENDUM.md",
+      "bytes": 762,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_small_truth_result.json",
+      "bytes": 1726,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_snapshot/PLAN.md",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_snapshot/probability_transport.py",
+      "bytes": 5760,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_snapshot/run_cached_transport.py",
+      "bytes": 9768,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_snapshot/test_transport_cpu.py",
+      "bytes": 3787,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_snapshot_v2/PLAN.md",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_snapshot_v2/probability_transport.py",
+      "bytes": 5760,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_snapshot_v2/run_cached_transport.py",
+      "bytes": 9820,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/source_snapshot_v2/test_transport_cpu.py",
+      "bytes": 3787,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/trainer_criterion_cpu_test_output.txt",
+      "bytes": 414,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINER_CRITERION_CPU_TESTS.json",
+      "bytes": 224,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINER_PURE_CPU_TESTS.json",
+      "bytes": 793,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINER_PURE_CPU_TESTS_attempt2.json",
+      "bytes": 792,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/trainer_queue_cpu_test_output.txt",
+      "bytes": 8901,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/trainer_queue_cpu_test_output_attempt2.txt",
+      "bytes": 686,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/trainer_tensor_cpu_test_output.txt",
+      "bytes": 1103,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/trainer_tensor_cpu_test_output_attempt2.txt",
+      "bytes": 1103,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINER_TENSOR_CPU_TESTS.json",
+      "bytes": 1030,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINER_TENSOR_CPU_TESTS_attempt2.json",
+      "bytes": 1109,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/trainer_wrapper_cpu_test_output.txt",
+      "bytes": 1215,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINER_WRAPPER_CPU_TESTS.json",
+      "bytes": 163,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_PINNED_CPU_ACCEPTANCE.md",
+      "bytes": 1357,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/calibrate_object_dfl.py",
+      "bytes": 9080,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/configs/llvip_L3-DFL_s42_FT3.yaml",
+      "bytes": 4893,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/configs/llvip_L3-GT_s42_FT3.yaml",
+      "bytes": 4891,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4883,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/configs/llvip_native_evaluation.yaml",
+      "bytes": 4378,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/evaluate_object_dfl.py",
+      "bytes": 16218,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/l3_distribution_loss.py",
+      "bytes": 18084,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/localization_box_v2.py",
+      "bytes": 13285,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/object_dfl_common.py",
+      "bytes": 6436,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/object_dfl_criterion.py",
+      "bytes": 4585,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/probability_transport.py",
+      "bytes": 5760,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/run_object_dfl_queue.py",
+      "bytes": 22764,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/test_l3_cpu.py",
+      "bytes": 8897,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/test_object_dfl_queue_cpu.py",
+      "bytes": 8638,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/test_object_dfl_wrappers_cpu.py",
+      "bytes": 11976,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/train_object_dfl.py",
+      "bytes": 12424,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/validated_amp_prior.json",
+      "bytes": 2453,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source/validated_amp_prior_config.yaml",
+      "bytes": 4396,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/calibrate_object_dfl.py",
+      "bytes": 10144,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/configs/llvip_L3-DFL_s42_FT3.yaml",
+      "bytes": 4893,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/configs/llvip_L3-GT_s42_FT3.yaml",
+      "bytes": 4891,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4883,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/configs/llvip_native_evaluation.yaml",
+      "bytes": 4378,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/evaluate_object_dfl.py",
+      "bytes": 16218,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/l3_distribution_loss.py",
+      "bytes": 18084,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/localization_box_v2.py",
+      "bytes": 13285,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/object_dfl_common.py",
+      "bytes": 6436,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/object_dfl_criterion.py",
+      "bytes": 4585,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/probability_transport.py",
+      "bytes": 5760,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/run_object_dfl_queue.py",
+      "bytes": 22764,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/test_l3_cpu.py",
+      "bytes": 8897,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/test_object_dfl_queue_cpu.py",
+      "bytes": 8638,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/test_object_dfl_wrappers_cpu.py",
+      "bytes": 11976,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/train_object_dfl.py",
+      "bytes": 12424,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/validated_amp_prior.json",
+      "bytes": 2453,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/training_reviewed_source_v2/validated_amp_prior_config.yaml",
+      "bytes": 4396,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_SOURCE_REVIEW.json",
+      "bytes": 17589,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_SOURCE_REVIEW.md",
+      "bytes": 2302,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_SOURCE_REVIEW_PRE_PINNED.json",
+      "bytes": 16337,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_SOURCE_REVIEW_PRE_PINNED.md",
+      "bytes": 1947,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_SOURCE_REVIEW_v2.json",
+      "bytes": 21612,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_SOURCE_REVIEW_v2.md",
+      "bytes": 1557,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_SOURCE_REVIEW_v2_PRE_PINNED.json",
+      "bytes": 20949,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/TRAINING_SOURCE_REVIEW_v2_PRE_PINNED.md",
+      "bytes": 1195,
+      "byte_exact": true
+    },
+    {
+      "path": "independent_review/write_final_matrix_audit.py",
+      "bytes": 15815,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/collect_known_initial.py",
+      "bytes": 1791,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/development_roster.txt",
+      "bytes": 209322,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/INDEPENDENT_REFERENCE_REVIEW.json",
+      "bytes": 1492,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/INDEPENDENT_REFERENCE_REVIEW.md",
+      "bytes": 1530,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/independent_verify_small_package.py",
+      "bytes": 4586,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/initial_evaluation_contract.json",
+      "bytes": 454284,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/initial_evaluation_receipt.json",
+      "bytes": 2411,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/LOCAL_COPY_RECEIPT.json",
+      "bytes": 989,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/README.md",
+      "bytes": 3276,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/REFERENCE_IDENTITY.json",
+      "bytes": 2899,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/REMOTE_COLLECTION.json",
+      "bytes": 2190,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/remote_source/0000_initial_baseline_eval.py",
+      "bytes": 9331,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/remote_source/initial_evaluation_receipt.json",
+      "bytes": 2411,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/remote_source/requested_native_config.yaml",
+      "bytes": 4378,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/remote_source/source_manifest.json",
+      "bytes": 7113,
+      "byte_exact": true
+    },
+    {
+      "path": "initial_endpoint_reference/verify_initial_reference.py",
+      "bytes": 5202,
+      "byte_exact": true
+    },
+    {
+      "path": "LOCAL_PREFLIGHT_REPAIRS.md",
+      "bytes": 894,
+      "byte_exact": true
+    },
+    {
+      "path": "NEXT_FAST_SCREEN_TASK.md",
+      "bytes": 3589,
+      "byte_exact": true
+    },
+    {
+      "path": "PINNED_TRAINING_CPU_ACCEPTED_v1.json",
+      "bytes": 2676,
+      "byte_exact": true
+    },
+    {
+      "path": "PINNED_TRAINING_CPU_ACCEPTED_v2.json",
+      "bytes": 5338,
+      "byte_exact": true
+    },
+    {
+      "path": "PINNED_TRAINING_CPU_v1.json",
+      "bytes": 4796,
+      "byte_exact": true
+    },
+    {
+      "path": "prepare_analyzer.py",
+      "bytes": 1088,
+      "byte_exact": true
+    },
+    {
+      "path": "prepare_queue.py",
+      "bytes": 2639,
+      "byte_exact": true
+    },
+    {
+      "path": "prepare_queue_test.py",
+      "bytes": 467,
+      "byte_exact": true
+    },
+    {
+      "path": "prepare_trainer_wrappers.py",
+      "bytes": 8450,
+      "byte_exact": true
+    },
+    {
+      "path": "QUEUE_LAUNCH_attempt1.json",
+      "bytes": 488,
+      "byte_exact": true
+    },
+    {
+      "path": "QUEUE_LAUNCH_attempt2.json",
+      "bytes": 488,
+      "byte_exact": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 2524,
+      "byte_exact": true
+    },
+    {
+      "path": "run_pinned_cpu_v2.py",
+      "bytes": 2618,
+      "byte_exact": true
+    },
+    {
+      "path": "run_pinned_l3_cpu.py",
+      "bytes": 2606,
+      "byte_exact": true
+    },
+    {
+      "path": "run_pinned_training_cpu.py",
+      "bytes": 1892,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/calibrate_direction.py",
+      "bytes": 7354,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/COPY_RECEIPT.json",
+      "bytes": 4347,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/direction_common.py",
+      "bytes": 2616,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/direction_criterion.py",
+      "bytes": 4417,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/evaluate_direction.py",
+      "bytes": 16184,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/llvip_N_s42_FT3.yaml",
+      "bytes": 4399,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/llvip_native_evaluation.yaml",
+      "bytes": 4378,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/localization_box_v2.py",
+      "bytes": 13285,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/pinned_gradient_observation.py",
+      "bytes": 6841,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/pinned_runtime.py",
+      "bytes": 1814,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/pinned_selection_adapter.py",
+      "bytes": 18146,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/pinned_train_object_evidence.py",
+      "bytes": 18948,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/PRIOR_SOURCE_IDENTITY.json",
+      "bytes": 1340,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/run_direction_queue.py",
+      "bytes": 22207,
+      "byte_exact": true
+    },
+    {
+      "path": "runtime_inputs/train_direction.py",
+      "bytes": 11970,
+      "byte_exact": true
+    },
+    {
+      "path": "SHORT_SCREEN_PROTOCOL.md",
+      "bytes": 5557,
+      "byte_exact": true
+    },
+    {
+      "path": "STAGE_EVIDENCE.md",
+      "bytes": 8147,
+      "byte_exact": true
+    },
+    {
+      "path": "start_training_queue.py",
+      "bytes": 3740,
+      "byte_exact": true
+    },
+    {
+      "path": "start_training_queue_before_schema_fix.py",
+      "bytes": 3455,
+      "byte_exact": true
+    },
+    {
+      "path": "start_training_queue_v1.py",
+      "bytes": 3491,
+      "byte_exact": true
+    },
+    {
+      "path": "sync_evidence.py",
+      "bytes": 11607,
+      "byte_exact": true
+    },
+    {
+      "path": "SYNC_PREPARATION.md",
+      "bytes": 2580,
+      "byte_exact": true
+    },
+    {
+      "path": "TRAINER_INTERFACE_REVIEW.md",
+      "bytes": 12575,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/calibrate_object_dfl.py",
+      "bytes": 10144,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/CLI_CPU_attempt1.json",
+      "bytes": 384,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/configs/llvip_L3-DFL_s42_FT3.yaml",
+      "bytes": 4893,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/configs/llvip_L3-GT_s42_FT3.yaml",
+      "bytes": 4891,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4883,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/configs/llvip_native_evaluation.yaml",
+      "bytes": 4378,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/evaluate_object_dfl.py",
+      "bytes": 16218,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/FINAL_WRAPPER_INPUTS.json",
+      "bytes": 3072,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/FINAL_WRAPPER_INPUTS_V2.json",
+      "bytes": 857,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/L3_CPU_attempt1.json",
+      "bytes": 559,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/L3_CPU_attempt2.json",
+      "bytes": 559,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/l3_distribution_loss.py",
+      "bytes": 18084,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/L3_LOSS_INTERFACE.md",
+      "bytes": 3678,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/localization_box_v2.py",
+      "bytes": 13285,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/object_dfl_common.py",
+      "bytes": 6436,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/object_dfl_criterion.py",
+      "bytes": 4585,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/probability_transport.py",
+      "bytes": 5760,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/run_object_dfl_queue.py",
+      "bytes": 22764,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/test_l3_cpu.py",
+      "bytes": 8897,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/test_object_dfl_queue_cpu.py",
+      "bytes": 8638,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/test_object_dfl_wrappers_cpu.py",
+      "bytes": 11976,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/train_object_dfl.py",
+      "bytes": 12424,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/validated_amp_prior.json",
+      "bytes": 2453,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/validated_amp_prior_config.yaml",
+      "bytes": 4396,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/WRAPPER_CPU_attempt1.json",
+      "bytes": 315,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/WRAPPER_CPU_LIFETIME_V2.json",
+      "bytes": 315,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/WRAPPER_README.md",
+      "bytes": 4271,
+      "byte_exact": true
+    },
+    {
+      "path": "trainer_release/WRAPPER_SOURCE_ADAPTATION.json",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "path": "TRAINING_DEPLOYMENT_v1.json",
+      "bytes": 2785,
+      "byte_exact": true
+    },
+    {
+      "path": "TRAINING_DEPLOYMENT_v2.json",
+      "bytes": 3210,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/args.yaml",
+      "bytes": 2088,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/calibration_batches.jsonl",
+      "bytes": 140192,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/calibration_resource_batches.jsonl",
+      "bytes": 783,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/direction_config.yaml",
+      "bytes": 4883,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/failure.json",
+      "bytes": 558,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/first_batch_resource_receipt.json",
+      "bytes": 470,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/source_manifest.json",
+      "bytes": 6368,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/calibration/llvip/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/collection_receipt.json",
+      "bytes": 2118,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/pinned_source/deployment.json",
+      "bytes": 2659,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/pinned_source/pinned_cpu.json",
+      "bytes": 198,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/pinned_source/pinned_cpu_accepted.json",
+      "bytes": 1068,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/pinned_source/pinned_l3_cpu.json",
+      "bytes": 532,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/queue/completion.json",
+      "bytes": 1656,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/queue/llvip_completion.json",
+      "bytes": 1260,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/queue/manifest.json",
+      "bytes": 1234,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/queue/object_dfl_attempt1_llvip_N_calibration_job.json",
+      "bytes": 1050,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1703/queue/object_dfl_attempt1_llvip_N_calibration_status.json",
+      "bytes": 389,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/args.yaml",
+      "bytes": 2088,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/calibration_allocation_lifecycle.jsonl",
+      "bytes": 2017,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/calibration_batches.jsonl",
+      "bytes": 1135968,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/calibration_receipt.json",
+      "bytes": 4407,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/calibration_resource_batches.jsonl",
+      "bytes": 3059,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/direction_config.yaml",
+      "bytes": 4883,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/first_batch_resource_receipt.json",
+      "bytes": 470,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/source_manifest.json",
+      "bytes": 6369,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/calibration/llvip/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/collection_receipt.json",
+      "bytes": 1881,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/pinned_source/deployment.json",
+      "bytes": 3064,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/pinned_source/pinned_cpu_accepted.json",
+      "bytes": 866,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/pinned_source/pinned_l3_cpu.json",
+      "bytes": 532,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/queue/manifest.json",
+      "bytes": 1234,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/queue/object_dfl_attempt2_llvip_N_calibration_job.json",
+      "bytes": 1050,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_1716/queue/object_dfl_attempt2_llvip_N_calibration_status.json",
+      "bytes": 1624,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/args.yaml",
+      "bytes": 2088,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/calibration_allocation_lifecycle.jsonl",
+      "bytes": 2017,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/calibration_batches.jsonl",
+      "bytes": 1135968,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/calibration_receipt.json",
+      "bytes": 4407,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/calibration_resource_batches.jsonl",
+      "bytes": 3059,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/direction_config.yaml",
+      "bytes": 4883,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/first_batch_resource_receipt.json",
+      "bytes": 470,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/source_manifest.json",
+      "bytes": 6369,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/calibration/llvip/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/args.yaml",
+      "bytes": 2096,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/canary.json",
+      "bytes": 6143,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/direction_config.yaml",
+      "bytes": 4905,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/gradient_checks.jsonl",
+      "bytes": 913,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/kd_batches.jsonl",
+      "bytes": 409742,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/progress.json",
+      "bytes": 254,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/results.csv",
+      "bytes": 132,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/runtime_ready.json",
+      "bytes": 375,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/source_manifest.json",
+      "bytes": 37923,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-DFL/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/args.yaml",
+      "bytes": 2094,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/canary.json",
+      "bytes": 6135,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/direction_config.yaml",
+      "bytes": 4903,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/gradient_checks.jsonl",
+      "bytes": 912,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/kd_batches.jsonl",
+      "bytes": 409680,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/progress.json",
+      "bytes": 255,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/results.csv",
+      "bytes": 132,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/runtime_ready.json",
+      "bytes": 375,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/source_manifest.json",
+      "bytes": 37834,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/L3-GT/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/args.yaml",
+      "bytes": 2086,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/canary.json",
+      "bytes": 6072,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/direction_config.yaml",
+      "bytes": 4865,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/gradient_checks.jsonl",
+      "bytes": 898,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/kd_batches.jsonl",
+      "bytes": 409548,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/progress.json",
+      "bytes": 253,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/results.csv",
+      "bytes": 132,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/source_manifest.json",
+      "bytes": 37478,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/canaries/llvip/N/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/collection_receipt.json",
+      "bytes": 8243,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/effective_configs/llvip_L3-DFL_s42_FT3.yaml",
+      "bytes": 4905,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/effective_configs/llvip_L3-GT_s42_FT3.yaml",
+      "bytes": 4903,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/effective_configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4865,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/pinned_source/deployment.json",
+      "bytes": 3064,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/pinned_source/pinned_cpu_accepted.json",
+      "bytes": 866,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/pinned_source/pinned_l3_cpu.json",
+      "bytes": 532,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/llvip_canary_checks.json",
+      "bytes": 4833,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/llvip_coefficient_freeze.json",
+      "bytes": 1156,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/manifest.json",
+      "bytes": 1234,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_L3-DFL_canary_job.json",
+      "bytes": 1070,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_L3-DFL_canary_status.json",
+      "bytes": 392,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_L3-GT_canary_job.json",
+      "bytes": 1065,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_L3-GT_canary_status.json",
+      "bytes": 391,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_calibration_job.json",
+      "bytes": 1050,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_calibration_status.json",
+      "bytes": 392,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_canary_job.json",
+      "bytes": 1045,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_canary_status.json",
+      "bytes": 387,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_train_job.json",
+      "bytes": 1190,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_train_status.json",
+      "bytes": 1762,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/args.yaml",
+      "bytes": 2078,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/direction_config.yaml",
+      "bytes": 4865,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/gradient_checks.jsonl",
+      "bytes": 898,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/kd_batches.jsonl",
+      "bytes": 68316,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/sample_stream.jsonl",
+      "bytes": 19378,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/source_manifest.json",
+      "bytes": 37130,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_canaries/runs/llvip/N/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/args.yaml",
+      "bytes": 2088,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/calibration_allocation_lifecycle.jsonl",
+      "bytes": 2017,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/calibration_batches.jsonl",
+      "bytes": 1135968,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/calibration_receipt.json",
+      "bytes": 4407,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/calibration_resource_batches.jsonl",
+      "bytes": 3059,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/direction_config.yaml",
+      "bytes": 4883,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/first_batch_resource_receipt.json",
+      "bytes": 470,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/source_manifest.json",
+      "bytes": 6369,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/calibration/llvip/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/args.yaml",
+      "bytes": 2096,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/canary.json",
+      "bytes": 6143,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/direction_config.yaml",
+      "bytes": 4905,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/gradient_checks.jsonl",
+      "bytes": 913,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/kd_batches.jsonl",
+      "bytes": 409742,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/progress.json",
+      "bytes": 254,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/results.csv",
+      "bytes": 132,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/runtime_ready.json",
+      "bytes": 375,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/source_manifest.json",
+      "bytes": 37923,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-DFL/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/args.yaml",
+      "bytes": 2094,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/canary.json",
+      "bytes": 6135,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/direction_config.yaml",
+      "bytes": 4903,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/gradient_checks.jsonl",
+      "bytes": 912,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/kd_batches.jsonl",
+      "bytes": 409680,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/progress.json",
+      "bytes": 255,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/results.csv",
+      "bytes": 132,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/runtime_ready.json",
+      "bytes": 375,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/source_manifest.json",
+      "bytes": 37834,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/L3-GT/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/args.yaml",
+      "bytes": 2086,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/canary.json",
+      "bytes": 6072,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/direction_config.yaml",
+      "bytes": 4865,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/gradient_checks.jsonl",
+      "bytes": 898,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/kd_batches.jsonl",
+      "bytes": 409548,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/progress.json",
+      "bytes": 253,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/results.csv",
+      "bytes": 132,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/source_manifest.json",
+      "bytes": 37478,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/canaries/llvip/N/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/collection_receipt.json",
+      "bytes": 16354,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/effective_configs/llvip_L3-DFL_s42_FT3.yaml",
+      "bytes": 4905,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/effective_configs/llvip_L3-GT_s42_FT3.yaml",
+      "bytes": 4903,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/effective_configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4865,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/actual_native_evaluation_profile.json",
+      "bytes": 2920,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/direction_config.yaml",
+      "bytes": 4905,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/direction_evaluation_contract.json",
+      "bytes": 455360,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/direction_evaluation_receipt.json",
+      "bytes": 3670,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/evaluation_identity_projection.json",
+      "bytes": 1245,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/native_capture/objects.jsonl.gz",
+      "bytes": 1230305,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/native_config.yaml",
+      "bytes": 4378,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/source_manifest.json",
+      "bytes": 8295,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-DFL/training_completion_copy.json",
+      "bytes": 9527,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/actual_native_evaluation_profile.json",
+      "bytes": 2919,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/direction_config.yaml",
+      "bytes": 4903,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/direction_evaluation_contract.json",
+      "bytes": 455360,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/direction_evaluation_receipt.json",
+      "bytes": 3664,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/evaluation_identity_projection.json",
+      "bytes": 1245,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/native_capture/objects.jsonl.gz",
+      "bytes": 1215536,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/native_config.yaml",
+      "bytes": 4378,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/source_manifest.json",
+      "bytes": 8273,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/L3-GT/training_completion_copy.json",
+      "bytes": 9523,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/actual_native_evaluation_profile.json",
+      "bytes": 2915,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/direction_config.yaml",
+      "bytes": 4865,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/direction_evaluation_contract.json",
+      "bytes": 455360,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/direction_evaluation_receipt.json",
+      "bytes": 3630,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/evaluation_identity_projection.json",
+      "bytes": 1245,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/native_capture/objects.jsonl.gz",
+      "bytes": 1222704,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/native_config.yaml",
+      "bytes": 4378,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/source_manifest.json",
+      "bytes": 8185,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/evaluations/llvip/N/training_completion_copy.json",
+      "bytes": 9478,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/pinned_source/deployment.json",
+      "bytes": 3064,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/pinned_source/pinned_cpu_accepted.json",
+      "bytes": 866,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/pinned_source/pinned_l3_cpu.json",
+      "bytes": 532,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/completion.json",
+      "bytes": 4154,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/llvip_canary_checks.json",
+      "bytes": 4833,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/llvip_coefficient_freeze.json",
+      "bytes": 1156,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/llvip_completion.json",
+      "bytes": 3456,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/llvip_L3-DFL_training_stream_check.json",
+      "bytes": 90,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/llvip_L3-GT_training_stream_check.json",
+      "bytes": 90,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/llvip_N_training_stream_check.json",
+      "bytes": 90,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/manifest.json",
+      "bytes": 1234,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_canary_job.json",
+      "bytes": 1070,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_canary_status.json",
+      "bytes": 392,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_eval_job.json",
+      "bytes": 1407,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_eval_status.json",
+      "bytes": 388,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_train_job.json",
+      "bytes": 1220,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_train_status.json",
+      "bytes": 391,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_canary_job.json",
+      "bytes": 1065,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_canary_status.json",
+      "bytes": 391,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_eval_job.json",
+      "bytes": 1401,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_eval_status.json",
+      "bytes": 388,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_train_job.json",
+      "bytes": 1214,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_train_status.json",
+      "bytes": 390,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_calibration_job.json",
+      "bytes": 1050,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_calibration_status.json",
+      "bytes": 392,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_canary_job.json",
+      "bytes": 1045,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_canary_status.json",
+      "bytes": 387,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_eval_job.json",
+      "bytes": 1377,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_eval_status.json",
+      "bytes": 383,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_train_job.json",
+      "bytes": 1190,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_train_status.json",
+      "bytes": 386,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/args.yaml",
+      "bytes": 2088,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/completion_receipt.json",
+      "bytes": 9527,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/direction_config.yaml",
+      "bytes": 4905,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/gradient_checks.jsonl",
+      "bytes": 913,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/kd_batches.jsonl",
+      "bytes": 992705,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/progress.json",
+      "bytes": 256,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/results.csv",
+      "bytes": 383,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/runtime_ready.json",
+      "bytes": 375,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/source_manifest.json",
+      "bytes": 37575,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-DFL/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/args.yaml",
+      "bytes": 2086,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/completion_receipt.json",
+      "bytes": 9523,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/direction_config.yaml",
+      "bytes": 4903,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/gradient_checks.jsonl",
+      "bytes": 912,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/kd_batches.jsonl",
+      "bytes": 992549,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/progress.json",
+      "bytes": 256,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/results.csv",
+      "bytes": 385,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/runtime_ready.json",
+      "bytes": 375,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/source_manifest.json",
+      "bytes": 37486,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/L3-GT/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/args.yaml",
+      "bytes": 2078,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/completion_receipt.json",
+      "bytes": 9478,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/direction_config.yaml",
+      "bytes": 4865,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/gradient_checks.jsonl",
+      "bytes": 898,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/initialization_check.json",
+      "bytes": 448,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/kd_batches.jsonl",
+      "bytes": 992210,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/progress.json",
+      "bytes": 257,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/results.csv",
+      "bytes": 385,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/runtime_ready.json",
+      "bytes": 376,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/sample_stream.jsonl",
+      "bytes": 592205,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/source_manifest.json",
+      "bytes": 37130,
+      "byte_exact": true
+    },
+    {
+      "path": "training_evidence_final/runs/llvip/N/validated_amp_binding.json",
+      "bytes": 1301,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/CPU_attempt1.json",
+      "bytes": 158,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/CPU_attempt2.json",
+      "bytes": 158,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/CPU_attempt3.json",
+      "bytes": 158,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/output_attempt1/objects.jsonl",
+      "bytes": 1931001,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/output_attempt1/README.md",
+      "bytes": 906,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/output_attempt1/sources/PLAN.md",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/output_attempt1/sources/probability_transport.py",
+      "bytes": 5760,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/output_attempt1/sources/run_cached_transport.py",
+      "bytes": 9820,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/output_attempt1/sources/test_transport_cpu.py",
+      "bytes": 3787,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/output_attempt1/summary.json",
+      "bytes": 3154,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/PLAN.md",
+      "bytes": 2039,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/probability_transport.py",
+      "bytes": 5760,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/run_cached_transport.py",
+      "bytes": 9820,
+      "byte_exact": true
+    },
+    {
+      "path": "transport/test_transport_cpu.py",
+      "bytes": 3787,
+      "byte_exact": true
+    },
+    {
+      "path": "REMOTE_MIRROR_RECEIPT.json",
+      "bytes": 175791,
+      "byte_exact": true
+    }
+  ],
+  "excluded": [
+    {
+      "path": "__pycache__/",
+      "reason": "excluded_or_external_directory"
+    },
+    {
+      "path": "analysis/__pycache__/",
+      "reason": "excluded_or_external_directory"
+    },
+    {
+      "path": "independent_review/__pycache__/",
+      "reason": "excluded_or_external_directory"
+    },
+    {
+      "path": "trainer_release/__pycache__/",
+      "reason": "excluded_or_external_directory"
+    },
+    {
+      "path": "transport/__pycache__/",
+      "reason": "excluded_or_external_directory"
+    },
+    {
+      "path": "REMOTE_MIRROR_RECEIPT.json",
+      "reason": "generated_sync_receipt_or_full_host_snapshot"
+    },
+    {
+      "path": "SYNC_SCOPE_MANIFEST.json",
+      "reason": "generated_sync_receipt_or_full_host_snapshot"
+    },
+    {
+      "path": "training_evidence_1703/queue/object_dfl_attempt1_llvip_N_calibration_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_1703/queue/object_dfl_attempt1_llvip_N_calibration_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_1716/queue/object_dfl_attempt2_llvip_N_calibration_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_L3-DFL_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_L3-DFL_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_L3-GT_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_L3-GT_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_calibration_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_calibration_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_canaries/queue/object_dfl_attempt2_llvip_N_train_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_eval_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_eval_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_train_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-DFL_train_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_eval_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_eval_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_train_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_L3-GT_train_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_calibration_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_calibration_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_canary_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_canary_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_eval_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_eval_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_train_admission.json",
+      "reason": "full_resource_or_admission_profile"
+    },
+    {
+      "path": "training_evidence_final/queue/object_dfl_attempt2_llvip_N_train_resource_profile.json",
+      "reason": "full_resource_or_admission_profile"
+    }
+  ],
+  "total_bytes": 32640736,
+  "new_hash_computed": false,
+  "weights_uploaded": false,
+  "images_uploaded": false,
+  "full_host_profiles_excluded": true,
+  "credential_marker_scan_passed": true,
+  "prior_failures_and_reviews_retained": true,
+  "new_training_or_evaluation": false
+}

@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "independent_checks": {
+    "T_squared_four_mean_base_analytic_gradient": true,
+    "full_KL_matches_manual": true,
+    "unselected_anchor_zero_gradient": true,
+    "T2_before_nonidentity_independent_hat_basis": true,
+    "GT_adjacent_then_sqrt_reference": false
+  },
+  "metrics": {
+    "max_analytical_gradient_error": 7.450580596923828e-09,
+    "manual_KL_absolute_error": 1.6186975515530833e-07,
+    "T2_transport_reference_max_error": 9.58435669717872e-09
+  },
+  "author_tensor_tests_executed_by_reviewer": 14,
+  "author_tensor_tests_passed": true,
+  "python_executable": "D:\\Anaconda\\envs\\KGJ_proj\\python.exe",
+  "torch_version": "1.8.0+cu111",
+  "device": "cpu",
+  "reference_helpers": "E:\\SHARE\\\u5149sar\\03_\u73b0\u884c\u5de5\u7a0b\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2",
+  "new_GPU_or_SSH": false,
+  "new_hash_computed": false,
+  "scope": "Synthetic numerical and autograd checks only; production CUDA canary remains mandatory."
+}

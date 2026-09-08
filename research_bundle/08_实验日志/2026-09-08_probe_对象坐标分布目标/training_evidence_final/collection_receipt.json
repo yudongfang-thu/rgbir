@@ -1,0 +1,660 @@
+{
+  "remote": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2",
+  "files": [
+    {
+      "path": "calibration/llvip/args.yaml",
+      "bytes": 2088
+    },
+    {
+      "path": "calibration/llvip/calibration_allocation_lifecycle.jsonl",
+      "bytes": 2017
+    },
+    {
+      "path": "calibration/llvip/calibration_batches.jsonl",
+      "bytes": 1135968
+    },
+    {
+      "path": "calibration/llvip/calibration_receipt.json",
+      "bytes": 4407
+    },
+    {
+      "path": "calibration/llvip/calibration_resource_batches.jsonl",
+      "bytes": 3059
+    },
+    {
+      "path": "calibration/llvip/direction_config.yaml",
+      "bytes": 4883
+    },
+    {
+      "path": "calibration/llvip/first_batch_resource_receipt.json",
+      "bytes": 470
+    },
+    {
+      "path": "calibration/llvip/runtime_ready.json",
+      "bytes": 376
+    },
+    {
+      "path": "calibration/llvip/source_manifest.json",
+      "bytes": 6369
+    },
+    {
+      "path": "calibration/llvip/validated_amp_binding.json",
+      "bytes": 1301
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/args.yaml",
+      "bytes": 2096
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/canary.json",
+      "bytes": 6143
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/direction_config.yaml",
+      "bytes": 4905
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/gradient_checks.jsonl",
+      "bytes": 913
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/kd_batches.jsonl",
+      "bytes": 409742
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/progress.json",
+      "bytes": 254
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/results.csv",
+      "bytes": 132
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/runtime_ready.json",
+      "bytes": 375
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/sample_stream.jsonl",
+      "bytes": 592205
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/source_manifest.json",
+      "bytes": 37923
+    },
+    {
+      "path": "canaries/llvip/L3-DFL/validated_amp_binding.json",
+      "bytes": 1301
+    },
+    {
+      "path": "canaries/llvip/L3-GT/args.yaml",
+      "bytes": 2094
+    },
+    {
+      "path": "canaries/llvip/L3-GT/canary.json",
+      "bytes": 6135
+    },
+    {
+      "path": "canaries/llvip/L3-GT/direction_config.yaml",
+      "bytes": 4903
+    },
+    {
+      "path": "canaries/llvip/L3-GT/gradient_checks.jsonl",
+      "bytes": 912
+    },
+    {
+      "path": "canaries/llvip/L3-GT/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "canaries/llvip/L3-GT/kd_batches.jsonl",
+      "bytes": 409680
+    },
+    {
+      "path": "canaries/llvip/L3-GT/progress.json",
+      "bytes": 255
+    },
+    {
+      "path": "canaries/llvip/L3-GT/results.csv",
+      "bytes": 132
+    },
+    {
+      "path": "canaries/llvip/L3-GT/runtime_ready.json",
+      "bytes": 375
+    },
+    {
+      "path": "canaries/llvip/L3-GT/sample_stream.jsonl",
+      "bytes": 592205
+    },
+    {
+      "path": "canaries/llvip/L3-GT/source_manifest.json",
+      "bytes": 37834
+    },
+    {
+      "path": "canaries/llvip/L3-GT/validated_amp_binding.json",
+      "bytes": 1301
+    },
+    {
+      "path": "canaries/llvip/N/args.yaml",
+      "bytes": 2086
+    },
+    {
+      "path": "canaries/llvip/N/canary.json",
+      "bytes": 6072
+    },
+    {
+      "path": "canaries/llvip/N/direction_config.yaml",
+      "bytes": 4865
+    },
+    {
+      "path": "canaries/llvip/N/gradient_checks.jsonl",
+      "bytes": 898
+    },
+    {
+      "path": "canaries/llvip/N/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "canaries/llvip/N/kd_batches.jsonl",
+      "bytes": 409548
+    },
+    {
+      "path": "canaries/llvip/N/progress.json",
+      "bytes": 253
+    },
+    {
+      "path": "canaries/llvip/N/results.csv",
+      "bytes": 132
+    },
+    {
+      "path": "canaries/llvip/N/runtime_ready.json",
+      "bytes": 376
+    },
+    {
+      "path": "canaries/llvip/N/sample_stream.jsonl",
+      "bytes": 592205
+    },
+    {
+      "path": "canaries/llvip/N/source_manifest.json",
+      "bytes": 37478
+    },
+    {
+      "path": "canaries/llvip/N/validated_amp_binding.json",
+      "bytes": 1301
+    },
+    {
+      "path": "effective_configs/llvip_L3-DFL_s42_FT3.yaml",
+      "bytes": 4905
+    },
+    {
+      "path": "effective_configs/llvip_L3-GT_s42_FT3.yaml",
+      "bytes": 4903
+    },
+    {
+      "path": "effective_configs/llvip_N_s42_FT3.yaml",
+      "bytes": 4865
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/actual_native_evaluation_profile.json",
+      "bytes": 2920
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/direction_config.yaml",
+      "bytes": 4905
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/direction_evaluation_contract.json",
+      "bytes": 455360
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/direction_evaluation_receipt.json",
+      "bytes": 3670
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/evaluation_identity_projection.json",
+      "bytes": 1245
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/native_capture/objects.jsonl.gz",
+      "bytes": 1230305
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/native_config.yaml",
+      "bytes": 4378
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/source_manifest.json",
+      "bytes": 8295
+    },
+    {
+      "path": "evaluations/llvip/L3-DFL/training_completion_copy.json",
+      "bytes": 9527
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/actual_native_evaluation_profile.json",
+      "bytes": 2919
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/direction_config.yaml",
+      "bytes": 4903
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/direction_evaluation_contract.json",
+      "bytes": 455360
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/direction_evaluation_receipt.json",
+      "bytes": 3664
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/evaluation_identity_projection.json",
+      "bytes": 1245
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/native_capture/objects.jsonl.gz",
+      "bytes": 1215536
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/native_config.yaml",
+      "bytes": 4378
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/source_manifest.json",
+      "bytes": 8273
+    },
+    {
+      "path": "evaluations/llvip/L3-GT/training_completion_copy.json",
+      "bytes": 9523
+    },
+    {
+      "path": "evaluations/llvip/N/actual_native_evaluation_profile.json",
+      "bytes": 2915
+    },
+    {
+      "path": "evaluations/llvip/N/direction_config.yaml",
+      "bytes": 4865
+    },
+    {
+      "path": "evaluations/llvip/N/direction_evaluation_contract.json",
+      "bytes": 455360
+    },
+    {
+      "path": "evaluations/llvip/N/direction_evaluation_receipt.json",
+      "bytes": 3630
+    },
+    {
+      "path": "evaluations/llvip/N/evaluation_identity_projection.json",
+      "bytes": 1245
+    },
+    {
+      "path": "evaluations/llvip/N/native_capture/objects.jsonl.gz",
+      "bytes": 1222704
+    },
+    {
+      "path": "evaluations/llvip/N/native_config.yaml",
+      "bytes": 4378
+    },
+    {
+      "path": "evaluations/llvip/N/source_manifest.json",
+      "bytes": 8185
+    },
+    {
+      "path": "evaluations/llvip/N/training_completion_copy.json",
+      "bytes": 9478
+    },
+    {
+      "path": "queue/completion.json",
+      "bytes": 4154
+    },
+    {
+      "path": "queue/llvip_L3-DFL_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/llvip_L3-GT_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/llvip_N_training_stream_check.json",
+      "bytes": 90
+    },
+    {
+      "path": "queue/llvip_canary_checks.json",
+      "bytes": 4833
+    },
+    {
+      "path": "queue/llvip_coefficient_freeze.json",
+      "bytes": 1156
+    },
+    {
+      "path": "queue/llvip_completion.json",
+      "bytes": 3456
+    },
+    {
+      "path": "queue/manifest.json",
+      "bytes": 1234
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_canary_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_canary_job.json",
+      "bytes": 1070
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_canary_resource_profile.json",
+      "bytes": 3461
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_canary_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_eval_admission.json",
+      "bytes": 170
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_eval_job.json",
+      "bytes": 1407
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_eval_resource_profile.json",
+      "bytes": 1921
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_eval_status.json",
+      "bytes": 388
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_train_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_train_job.json",
+      "bytes": 1220
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_train_resource_profile.json",
+      "bytes": 6894
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-DFL_train_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_canary_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_canary_job.json",
+      "bytes": 1065
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_canary_resource_profile.json",
+      "bytes": 3463
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_canary_status.json",
+      "bytes": 391
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_eval_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_eval_job.json",
+      "bytes": 1401
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_eval_resource_profile.json",
+      "bytes": 1934
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_eval_status.json",
+      "bytes": 388
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_train_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_train_job.json",
+      "bytes": 1214
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_train_resource_profile.json",
+      "bytes": 4780
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_L3-GT_train_status.json",
+      "bytes": 390
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_calibration_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_calibration_job.json",
+      "bytes": 1050
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_calibration_resource_profile.json",
+      "bytes": 3272
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_calibration_status.json",
+      "bytes": 392
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_canary_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_canary_job.json",
+      "bytes": 1045
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_canary_resource_profile.json",
+      "bytes": 3459
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_canary_status.json",
+      "bytes": 387
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_eval_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_eval_job.json",
+      "bytes": 1377
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_eval_resource_profile.json",
+      "bytes": 2121
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_eval_status.json",
+      "bytes": 383
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_train_admission.json",
+      "bytes": 163
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_train_job.json",
+      "bytes": 1190
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_train_resource_profile.json",
+      "bytes": 6896
+    },
+    {
+      "path": "queue/object_dfl_attempt2_llvip_N_train_status.json",
+      "bytes": 386
+    },
+    {
+      "path": "runs/llvip/L3-DFL/args.yaml",
+      "bytes": 2088
+    },
+    {
+      "path": "runs/llvip/L3-DFL/completion_receipt.json",
+      "bytes": 9527
+    },
+    {
+      "path": "runs/llvip/L3-DFL/direction_config.yaml",
+      "bytes": 4905
+    },
+    {
+      "path": "runs/llvip/L3-DFL/gradient_checks.jsonl",
+      "bytes": 913
+    },
+    {
+      "path": "runs/llvip/L3-DFL/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "runs/llvip/L3-DFL/kd_batches.jsonl",
+      "bytes": 992705
+    },
+    {
+      "path": "runs/llvip/L3-DFL/progress.json",
+      "bytes": 256
+    },
+    {
+      "path": "runs/llvip/L3-DFL/results.csv",
+      "bytes": 383
+    },
+    {
+      "path": "runs/llvip/L3-DFL/runtime_ready.json",
+      "bytes": 375
+    },
+    {
+      "path": "runs/llvip/L3-DFL/sample_stream.jsonl",
+      "bytes": 592205
+    },
+    {
+      "path": "runs/llvip/L3-DFL/source_manifest.json",
+      "bytes": 37575
+    },
+    {
+      "path": "runs/llvip/L3-DFL/validated_amp_binding.json",
+      "bytes": 1301
+    },
+    {
+      "path": "runs/llvip/L3-GT/args.yaml",
+      "bytes": 2086
+    },
+    {
+      "path": "runs/llvip/L3-GT/completion_receipt.json",
+      "bytes": 9523
+    },
+    {
+      "path": "runs/llvip/L3-GT/direction_config.yaml",
+      "bytes": 4903
+    },
+    {
+      "path": "runs/llvip/L3-GT/gradient_checks.jsonl",
+      "bytes": 912
+    },
+    {
+      "path": "runs/llvip/L3-GT/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "runs/llvip/L3-GT/kd_batches.jsonl",
+      "bytes": 992549
+    },
+    {
+      "path": "runs/llvip/L3-GT/progress.json",
+      "bytes": 256
+    },
+    {
+      "path": "runs/llvip/L3-GT/results.csv",
+      "bytes": 385
+    },
+    {
+      "path": "runs/llvip/L3-GT/runtime_ready.json",
+      "bytes": 375
+    },
+    {
+      "path": "runs/llvip/L3-GT/sample_stream.jsonl",
+      "bytes": 592205
+    },
+    {
+      "path": "runs/llvip/L3-GT/source_manifest.json",
+      "bytes": 37486
+    },
+    {
+      "path": "runs/llvip/L3-GT/validated_amp_binding.json",
+      "bytes": 1301
+    },
+    {
+      "path": "runs/llvip/N/args.yaml",
+      "bytes": 2078
+    },
+    {
+      "path": "runs/llvip/N/completion_receipt.json",
+      "bytes": 9478
+    },
+    {
+      "path": "runs/llvip/N/direction_config.yaml",
+      "bytes": 4865
+    },
+    {
+      "path": "runs/llvip/N/gradient_checks.jsonl",
+      "bytes": 898
+    },
+    {
+      "path": "runs/llvip/N/initialization_check.json",
+      "bytes": 448
+    },
+    {
+      "path": "runs/llvip/N/kd_batches.jsonl",
+      "bytes": 992210
+    },
+    {
+      "path": "runs/llvip/N/progress.json",
+      "bytes": 257
+    },
+    {
+      "path": "runs/llvip/N/results.csv",
+      "bytes": 385
+    },
+    {
+      "path": "runs/llvip/N/runtime_ready.json",
+      "bytes": 376
+    },
+    {
+      "path": "runs/llvip/N/sample_stream.jsonl",
+      "bytes": 592205
+    },
+    {
+      "path": "runs/llvip/N/source_manifest.json",
+      "bytes": 37130
+    },
+    {
+      "path": "runs/llvip/N/validated_amp_binding.json",
+      "bytes": 1301
+    },
+    {
+      "path": "pinned_source/deployment.json",
+      "bytes": 3064
+    },
+    {
+      "path": "pinned_source/pinned_cpu_accepted.json",
+      "bytes": 866
+    },
+    {
+      "path": "pinned_source/pinned_l3_cpu.json",
+      "bytes": 532
+    }
+  ],
+  "new_hash_computed": false,
+  "weights_downloaded": false,
+  "images_downloaded": false
+}

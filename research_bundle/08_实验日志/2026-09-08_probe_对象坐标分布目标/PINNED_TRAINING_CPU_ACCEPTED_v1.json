@@ -1,0 +1,35 @@
+{
+  "receipt": {
+    "status": "PASS",
+    "tests": 36,
+    "failures": 0,
+    "errors": 0,
+    "scope": "ACTUAL_PINNED_CPU_LOSS_WRAPPER_QUEUE",
+    "prior_discovery_receipt": "pinned_cpu.json",
+    "prior_failure_preserved": true,
+    "resolved_issue": "L3 CLI requires explicit reference-dir/output; unchanged source invoked via its declared entry point.",
+    "wrapper_tests_passed": 15,
+    "queue_tests_passed": 7,
+    "L3": {
+      "status": "PASS",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "source": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/l3_distribution_loss.py",
+        "bytes": 18084,
+        "mtime_ns": 1788857871520778153
+      },
+      "reference_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+      "scope": "CPU_SYNTHETIC_LOSS_SELECTION_ONLY",
+      "GPU_used": false,
+      "new_AP_read": false,
+      "new_hash_computed": false
+    },
+    "source_changed": false,
+    "GPU_used": false,
+    "new_hash_computed": false,
+    "seconds": 2.1510813236236572
+  },
+  "log": "test_GT_and_DFL_identical_selection (__main__.Truths) ... ok\ntest_GT_sqrt_after_adjacent_bins_no_clamp (__main__.Truths) ... ok\ntest_R_gap_point70_unchanged (__main__.Truths) ... ok\ntest_all_class_IR_unique_owner_gate (__main__.Truths) ... ok\ntest_base_denominator_before_R_reliability (__main__.Truths) ... /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/test_l3_cpu.py:115: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n  self.assertAlmostEqual(float(two),float(one)/2,places=6)\nok\ntest_empty_differentiable_zero (__main__.Truths) ... ok\ntest_exact_KL_temperature_fourmean_base_not_selected (__main__.Truths) ... ok\ntest_finite_gradient_only_actual_student_anchor (__main__.Truths) ... ok\ntest_full_tail_shift_rejects_without_shrinking_base (__main__.Truths) ... ok\ntest_learning_dtype_positive_tail_rejected_zeros_legal (__main__.Truths) ... ok\ntest_no_independent_teacher_anchor_substitution (__main__.Truths) ... ok\ntest_old_R_base_and_gap_exact (__main__.Truths) ... ok\ntest_student_outputs_not_used_for_selection (__main__.Truths) ... ok\ntest_temperature_before_nonidentity_transport (__main__.Truths) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.540s\n\nOK\n"
+}

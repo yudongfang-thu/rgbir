@@ -1,0 +1,330 @@
+{
+  "checks": {
+    "executed_fixed8": {
+      "status": "pass",
+      "details": "Three independent eight-row ledgers and completed calibration receipt; no failed retry rows substituted."
+    },
+    "runtime_identity": {
+      "status": "pass",
+      "details": "Pinned LLVIP FT3 subset and seed42 runtime identity."
+    },
+    "no_state_updates": {
+      "status": "pass",
+      "details": "Executed receipt reflects source assertions for full initial state, reset each batch, zero optimizer/EMA, frozen BN; no independent model replay in this audit."
+    },
+    "firstbatch_attempt1_exact": {
+      "status": "pass",
+      "details": "All first-batch files, gradient norms, cosines, complete selection statistics and object records equal the preserved attempt1 first batch exactly."
+    },
+    "fixed_B32_stream": {
+      "status": "pass",
+      "details": "Eight sequential B32 file lists preserved. Eight-batch pixel tensors were not recopied or independently replayed."
+    },
+    "config_bytes_equal": {
+      "status": "pass",
+      "details": "Executed calibration config equals independently reviewed v2 N template byte for byte."
+    },
+    "same_mask_base": {
+      "status": "pass",
+      "details": "Both variants share all 649 logged base records and 25 selected objects; normalizer stays max(1,base), including zero-selected batch3."
+    },
+    "ratio_recompute_L3-DFL": {
+      "status": "pass",
+      "details": "Independent .1*native_norm/(B*unit_KD_norm) recomputation from every finite nonzero batch."
+    },
+    "ratio_recompute_L3-GT": {
+      "status": "pass",
+      "details": "Independent .1*native_norm/(B*unit_KD_norm) recomputation from every finite nonzero batch."
+    },
+    "shared_fixed_coefficient": {
+      "status": "pass",
+      "details": "Exactly one DFL-derived coefficient; GT keeps the same lambda despite its different raw gradient calibration median."
+    },
+    "all_resource_gates": {
+      "status": "pass",
+      "details": "All eight recorded peaks plus unchanged margin independently satisfy 8192 MiB VRAM and 32768 MiB RSS ceilings."
+    },
+    "lifetime_plateau": {
+      "status": "pass",
+      "details": "Batches2-8 start allocated is exactly constant; cleanup allocation range <.001 MiB, reserved constant, no empty_cache. This establishes stability in the observed eight-batch window only."
+    },
+    "peak_ledger_closure": {
+      "status": "pass",
+      "details": "Terminal framework/NVML peaks agree with per-batch cumulative ledger. RSS terminal may rise during serialization; terminal peak remains below ceiling."
+    },
+    "terminal_RSS_within_budget": {
+      "status": "pass",
+      "details": "Terminal process-tree RSS independently remains within the fixed ceiling after margin."
+    },
+    "P3_P4_parameter_scope": {
+      "status": "pass",
+      "details": "24 unique parameter tensors in the frozen P3/P4 source modules; names are explicit in executed receipt."
+    },
+    "source_execution_binding": {
+      "status": "pass",
+      "details": "All 15 calibration source-copy records bind reviewed release_v2 paths/bytes and producer byte-identity assertions; local reviewed/current bytes rechecked. Remote source-copy bytes were not downloaded again."
+    }
+  },
+  "measurements": {
+    "lambda_shared": 0.6900524651944485,
+    "finite_nonzero_batches": 7,
+    "base_objects_total": 649,
+    "selected_objects_total": 25,
+    "allocated_peak_mib": 4390.5732421875,
+    "NVML_peak_mib": 5454,
+    "reserved_peak_mib": 4954.0,
+    "RSS_peak_mib": 17280,
+    "start_allocated_batches2_8_mib": 82.583984375,
+    "after_cleanup_allocated_range_mib": [
+      382.5888671875,
+      382.58984375
+    ],
+    "reserved_after_cleanup_mib": 4954.0,
+    "median_actual_scaled_gradient_ratio_nonzero": {
+      "L3-DFL": 0.1,
+      "L3-GT": 0.12283740486876371
+    },
+    "seconds": 37.56572435796261
+  },
+  "batch_rows": [
+    {
+      "batch": 1,
+      "base": 79,
+      "selected": 7,
+      "native_norm": 34.30773951931766,
+      "unit_B_kd_norms": {
+        "L3-DFL": 7.555210307774781,
+        "L3-GT": 9.783787626272494
+      },
+      "native_cosines": {
+        "L3-DFL": 0.20105045751352157,
+        "L3-GT": 0.21328061813778207
+      },
+      "actual_scaled_gradient_ratios": {
+        "L3-DFL": 0.15196254754723598,
+        "L3-GT": 0.19678728080137156
+      }
+    },
+    {
+      "batch": 2,
+      "base": 85,
+      "selected": 2,
+      "native_norm": 32.522491853849374,
+      "unit_B_kd_norms": {
+        "L3-DFL": 2.6374634388113027,
+        "L3-GT": 4.26992607304486
+      },
+      "native_cosines": {
+        "L3-DFL": -0.007321183815752275,
+        "L3-GT": 0.05484912730960211
+      },
+      "actual_scaled_gradient_ratios": {
+        "L3-DFL": 0.05596090717742935,
+        "L3-GT": 0.0905980090991678
+      }
+    },
+    {
+      "batch": 3,
+      "base": 69,
+      "selected": 0,
+      "native_norm": 35.83566121967788,
+      "unit_B_kd_norms": {
+        "L3-DFL": 0.0,
+        "L3-GT": 0.0
+      },
+      "native_cosines": {
+        "L3-DFL": null,
+        "L3-GT": null
+      },
+      "actual_scaled_gradient_ratios": {
+        "L3-DFL": 0.0,
+        "L3-GT": 0.0
+      }
+    },
+    {
+      "batch": 4,
+      "base": 78,
+      "selected": 2,
+      "native_norm": 31.42974758124894,
+      "unit_B_kd_norms": {
+        "L3-DFL": 5.331077812278657,
+        "L3-GT": 6.957149887572064
+      },
+      "native_cosines": {
+        "L3-DFL": 0.10322136370062661,
+        "L3-GT": 0.12792719275578057
+      },
+      "actual_scaled_gradient_ratios": {
+        "L3-DFL": 0.11704590935693832,
+        "L3-GT": 0.15274696108315391
+      }
+    },
+    {
+      "batch": 5,
+      "base": 97,
+      "selected": 1,
+      "native_norm": 30.116208573815207,
+      "unit_B_kd_norms": {
+        "L3-DFL": 1.5343979894612259,
+        "L3-GT": 1.8491476152537034
+      },
+      "native_cosines": {
+        "L3-DFL": -0.04503655473781819,
+        "L3-GT": -0.05163492121601774
+      },
+      "actual_scaled_gradient_ratios": {
+        "L3-DFL": 0.03515764982905983,
+        "L3-GT": 0.0423695056861736
+      }
+    },
+    {
+      "batch": 6,
+      "base": 86,
+      "selected": 4,
+      "native_norm": 33.03535673550956,
+      "unit_B_kd_norms": {
+        "L3-DFL": 2.2323823850025213,
+        "L3-GT": 3.975618089149163
+      },
+      "native_cosines": {
+        "L3-DFL": 0.011827909199235697,
+        "L3-GT": -0.023556825870410924
+      },
+      "actual_scaled_gradient_ratios": {
+        "L3-DFL": 0.046630674533380094,
+        "L3-GT": 0.0830439061110598
+      }
+    },
+    {
+      "batch": 7,
+      "base": 67,
+      "selected": 3,
+      "native_norm": 38.49067712220979,
+      "unit_B_kd_norms": {
+        "L3-DFL": 5.577934876497192,
+        "L3-GT": 6.85179044755883
+      },
+      "native_cosines": {
+        "L3-DFL": 0.03300111388655216,
+        "L3-GT": 0.12141800652569879
+      },
+      "actual_scaled_gradient_ratios": {
+        "L3-DFL": 0.1,
+        "L3-GT": 0.12283740486876371
+      }
+    },
+    {
+      "batch": 8,
+      "base": 88,
+      "selected": 6,
+      "native_norm": 32.794735698336076,
+      "unit_B_kd_norms": {
+        "L3-DFL": 15.919681331937252,
+        "L3-GT": 19.231926007745553
+      },
+      "native_cosines": {
+        "L3-DFL": 0.1346552864695581,
+        "L3-GT": 0.1469662914034692
+      },
+      "actual_scaled_gradient_ratios": {
+        "L3-DFL": 0.33497496211779854,
+        "L3-GT": 0.40466976389614223
+      }
+    }
+  ],
+  "resource_rows": [
+    {
+      "batch": 1,
+      "recomputed_vram_reservation_mib": 5888,
+      "recomputed_rss_reservation_mib": 19456,
+      "pass": true
+    },
+    {
+      "batch": 2,
+      "recomputed_vram_reservation_mib": 5888,
+      "recomputed_rss_reservation_mib": 19456,
+      "pass": true
+    },
+    {
+      "batch": 3,
+      "recomputed_vram_reservation_mib": 5888,
+      "recomputed_rss_reservation_mib": 19456,
+      "pass": true
+    },
+    {
+      "batch": 4,
+      "recomputed_vram_reservation_mib": 5888,
+      "recomputed_rss_reservation_mib": 19456,
+      "pass": true
+    },
+    {
+      "batch": 5,
+      "recomputed_vram_reservation_mib": 5888,
+      "recomputed_rss_reservation_mib": 19456,
+      "pass": true
+    },
+    {
+      "batch": 6,
+      "recomputed_vram_reservation_mib": 5888,
+      "recomputed_rss_reservation_mib": 19456,
+      "pass": true
+    },
+    {
+      "batch": 7,
+      "recomputed_vram_reservation_mib": 5888,
+      "recomputed_rss_reservation_mib": 19456,
+      "pass": true
+    },
+    {
+      "batch": 8,
+      "recomputed_vram_reservation_mib": 5888,
+      "recomputed_rss_reservation_mib": 19456,
+      "pass": true
+    }
+  ],
+  "source_evidence_identity": [
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_receipt.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\evidence_snapshot\\calibration_receipt.json",
+      "bytes": 4407,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_batches.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\evidence_snapshot\\calibration_batches.jsonl",
+      "bytes": 1135968,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_allocation_lifecycle.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\evidence_snapshot\\calibration_allocation_lifecycle.jsonl",
+      "bytes": 2017,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\calibration_resource_batches.jsonl",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\evidence_snapshot\\calibration_resource_batches.jsonl",
+      "bytes": 3059,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\direction_config.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\evidence_snapshot\\direction_config.yaml",
+      "bytes": 4883,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\runtime_ready.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\evidence_snapshot\\runtime_ready.json",
+      "bytes": 376,
+      "direct_byte_identity": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1716\\calibration\\llvip\\source_manifest.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\evidence_snapshot\\source_manifest.json",
+      "bytes": 6369,
+      "direct_byte_identity": true
+    }
+  ],
+  "new_hash_computed": false
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-08T08:47:59.793358+00:00",
+  "auditor": {
+    "agent": "/root/object_transport_review",
+    "model_identity": "not exposed to reviewer; inherited parent settings",
+    "independent_from_executor": "/root/ap_error",
+    "cross_model_claim": false
+  },
+  "status": "READY_FOR_CPU_CACHE_RUN",
+  "scope": "Source and independent synthetic truth only; actual cache execution not yet accepted",
+  "independent_checks": 37,
+  "all_checks_passed": true,
+  "source_identity": [
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\probability_transport.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot\\probability_transport.py",
+      "bytes": 5760,
+      "direct_bytes_equal": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\run_cached_transport.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot\\run_cached_transport.py",
+      "bytes": 9768,
+      "direct_bytes_equal": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\test_transport_cpu.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot\\test_transport_cpu.py",
+      "bytes": 3787,
+      "direct_bytes_equal": true
+    },
+    {
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\PLAN.md",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot\\PLAN.md",
+      "bytes": 2039,
+      "direct_bytes_equal": true
+    }
+  ],
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "hash_policy": "User requested no new hashes; exact paths and direct full-byte snapshots used.",
+  "remaining": "Run fixed existing cache once, then independently recompute all 80 GT x 2 inputs before execution verdict.",
+  "limits": [
+    "No physical registration proof",
+    "No old L1 geometry admission",
+    "No KD utility or AP claim",
+    "FP64 T=1 softmax from raw logits, not cached FP32 bitwise equality"
+  ]
+}

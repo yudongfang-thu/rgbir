@@ -1,0 +1,52 @@
+{
+  "status": "RUNNING",
+  "time": 1788859063.4873333,
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 20480,
+    "expected_vram_mib": 6144,
+    "gpu_ids": [
+      0
+    ],
+    "lease_id": "object_dfl_attempt2_llvip_N_train-fce7b604299f",
+    "pid": 1279379,
+    "status": "LAUNCHED"
+  },
+  "job": {
+    "id": "object_dfl_attempt2_llvip_N_train",
+    "dataset": "llvip",
+    "arm": "N",
+    "stage": "train",
+    "formal": false,
+    "kind": "train",
+    "command": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/train_object_dfl.py",
+      "--reference-dir",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/effective_configs/llvip_N_s42_FT3.yaml",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/runs/llvip/N",
+      "--canary-receipt",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/N/canary.json"
+    ],
+    "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/runs/llvip/N/completion_receipt.json",
+    "vram_mib": 6144,
+    "rss_mib": 20480
+  },
+  "admission": {
+    "active_gpus_after": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "empty_gpus_after": [
+      1,
+      3
+    ],
+    "four_gpu_exception": true,
+    "minimum_empty_required": 2
+  }
+}

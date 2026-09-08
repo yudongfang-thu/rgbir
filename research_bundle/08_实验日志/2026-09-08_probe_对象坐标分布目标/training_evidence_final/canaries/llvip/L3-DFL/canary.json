@@ -1,0 +1,184 @@
+{
+  "status": "OBJECT_DFL_CANARY_COMPLETED",
+  "scope": "OBJECT_DFL_FT3_BNFROZEN",
+  "method_identity": "OBJECT_DFL_FT3_BNFROZEN",
+  "single_seed": true,
+  "arm": "L3-DFL",
+  "seed": 42,
+  "dataset": "llvip",
+  "epochs_configured": 3,
+  "last_epoch": 1,
+  "endpoint": "OBJECT_DFL_FT3_BNFROZEN_LAST_EMA",
+  "formal_e200_complete": false,
+  "config_copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/L3-DFL/direction_config.yaml",
+  "model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "teacher": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+  "reference": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "classification_coefficient": 0.0,
+  "localization_coefficient": 0.6900524651944485,
+  "kd_coefficient": 0.6900524651944485,
+  "bn_running_buffers_unchanged": true,
+  "bn_buffer_count": 243,
+  "bn_affine_trainable": true,
+  "setup_amp": {
+    "new_protocol_specific_setup_check_amp_bypass": true,
+    "validated_value": true,
+    "calls": 1,
+    "original_binding_restored": true,
+    "setup_equivalence_claim": false,
+    "unrelated_model_forward": false,
+    "actual_autocast_unchanged": true
+  },
+  "validated_amp_prior": {
+    "actual_amp": true,
+    "prior_receipt": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/validated_amp_prior.json",
+      "bytes": 2453,
+      "mtime_ns": 1788858740556231239
+    },
+    "prior_configuration": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/validated_amp_prior_config.yaml",
+      "bytes": 4396,
+      "mtime_ns": 1788858740556231239
+    },
+    "prior_current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+    "initialization": {
+      "model": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+        "bytes": 5482010,
+        "mtime_ns": 1788127857140185407
+      },
+      "teacher": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+        "bytes": 5482010,
+        "mtime_ns": 1788127257614850390
+      },
+      "reference": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+        "bytes": 5482010,
+        "mtime_ns": 1788127857140185407
+      }
+    }
+  },
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/L3-DFL/weights/last.pt",
+    "bytes": 10749523,
+    "mtime_ns": 1788858987692772453
+  },
+  "successful_updates": 24,
+  "optimizer_updates": 24,
+  "attempts": 29,
+  "amp_skips": 5,
+  "ema_updates": 29,
+  "batches": 58,
+  "selected_objects": 190,
+  "gradient_checks": [
+    {
+      "batch": 1,
+      "kd_gradient_l2": 0.23607932601998238,
+      "parameter_names": [
+        "model.16.cv1.conv.weight",
+        "model.16.cv1.bn.weight",
+        "model.16.cv1.bn.bias",
+        "model.16.cv2.conv.weight",
+        "model.16.cv2.bn.weight",
+        "model.16.cv2.bn.bias",
+        "model.16.m.0.cv1.conv.weight",
+        "model.16.m.0.cv1.bn.weight",
+        "model.16.m.0.cv1.bn.bias",
+        "model.16.m.0.cv2.conv.weight",
+        "model.16.m.0.cv2.bn.weight",
+        "model.16.m.0.cv2.bn.bias",
+        "model.19.cv1.conv.weight",
+        "model.19.cv1.bn.weight",
+        "model.19.cv1.bn.bias",
+        "model.19.cv2.conv.weight",
+        "model.19.cv2.bn.weight",
+        "model.19.cv2.bn.bias",
+        "model.19.m.0.cv1.conv.weight",
+        "model.19.m.0.cv1.bn.weight",
+        "model.19.m.0.cv1.bn.bias",
+        "model.19.m.0.cv2.conv.weight",
+        "model.19.m.0.cv2.bn.weight",
+        "model.19.m.0.cv2.bn.bias"
+      ],
+      "gradient_scope": "P3_P4_pre_head_source_module_parameters",
+      "actual_B": 32,
+      "coefficient": 0.6900524651944485,
+      "teacher_has_grad": false,
+      "reference_has_grad": false
+    }
+  ],
+  "seconds": 36.9027418398764,
+  "steady_batch_intervals_seconds": [
+    0.3453203069511801,
+    0.42437856597825885,
+    0.4158712869975716,
+    0.39006142504513264,
+    0.3999996439088136,
+    0.32548675313591957,
+    0.32239260897040367,
+    0.30530312191694975,
+    0.32062928401865065,
+    0.3784700809046626,
+    0.48195502115413547,
+    0.4092562268488109,
+    0.41745299217291176,
+    0.47296754480339587,
+    0.36541483411565423,
+    0.3603331078775227,
+    0.4366850850638002,
+    0.4435315190348774,
+    0.2823096609208733,
+    0.35602712305262685,
+    0.4235348319634795,
+    0.3589474631007761,
+    0.3621407139580697,
+    0.42825012700632215,
+    0.48116164398379624,
+    0.4284392320550978,
+    0.3443551720120013,
+    0.35731197195127606,
+    0.31489442591555417,
+    0.46912813815288246,
+    0.3907521909568459,
+    0.40686481003649533,
+    0.29130701487883925,
+    0.3291242669802159,
+    0.3095025531947613,
+    0.33592065889388323,
+    0.38547246903181076,
+    0.45757441804744303,
+    0.38032727991230786,
+    0.30721758701838553,
+    0.36792375706136227,
+    0.44627195899374783,
+    0.425496120005846,
+    0.3724676719866693,
+    0.37297121598385274,
+    0.4187156849075109,
+    0.41865595197305083,
+    0.4275539161171764,
+    0.25709708500653505,
+    0.32826373795978725,
+    0.31720119807869196
+  ],
+  "new_hash_computed": false,
+  "official_test_accessed": false,
+  "resources": {
+    "gpu_ids": [
+      0
+    ],
+    "cuda_pid_counts": {
+      "0": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "0": 5694
+    },
+    "peak_rss_mib": 17565
+  },
+  "gpu_allocated_peak_mib": 4732.99560546875,
+  "gpu_reserved_peak_mib": 5162.0,
+  "canary_receipt": null,
+  "formal_paper_gain_claim": false
+}

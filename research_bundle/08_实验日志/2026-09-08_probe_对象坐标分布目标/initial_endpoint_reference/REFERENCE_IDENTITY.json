@@ -1,0 +1,71 @@
+{
+  "status": "PASS_EXISTING_INITIAL_REFERENCE_PROVENANCE",
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "bytes": 5482010,
+    "mtime_ns": 1788127857140185407
+  },
+  "metrics_fraction": {
+    "AP50": 0.7161396006544973,
+    "AP75": 0.24282631410771383,
+    "mAP50_95": 0.3287840510939928,
+    "precision": 0.7463069993744104,
+    "recall": 0.7019331948389218
+  },
+  "original_evaluation_status": "INITIAL_BASELINE_EVALUATION_COMPLETED",
+  "scope": "INITIAL_BASELINE_NATIVE_RECHECK",
+  "endpoint": "INITIAL_FIXED_LAST_EMA_RECHECK",
+  "metric_units": "fraction_0_to_1",
+  "full_dev_images": 2406,
+  "full_dev_gt_objects": 7879,
+  "evaluator_identity": {
+    "native": "ultralytics.DetectionValidator",
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115",
+    "extension": "read_only_post_metric_object_capture_v1"
+  },
+  "actual_effective_kwargs": {
+    "imgsz": 640,
+    "batch": 32,
+    "workers": 4,
+    "quantize": null,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "agnostic_nms": false,
+    "single_cls": false,
+    "rect": true,
+    "augment": false,
+    "half": false
+  },
+  "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+  "actual_source_file": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/initial_eval_release_v1/initial_baseline_eval.py",
+    "bytes": 9331,
+    "mtime_ns": 1788838845749820667,
+    "copy": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/initial_llvip_recheck_attempt1/evaluation/source_copies/0000_initial_baseline_eval.py",
+    "byte_identity": true
+  },
+  "checks": {
+    "remote_and_local_receipt_byte_exact": true,
+    "source_manifest_snapshot_size_exact": true,
+    "canonical_roster_exact": true,
+    "actual_loader_roster_set_exact": true,
+    "receipt_contract_checkpoint_stat_exact": true,
+    "prior_DFL_forward_initialization_stat_exact": true,
+    "new_three_configs_initial_checkpoint_paths_exact": true,
+    "new_three_configs_versions_exact": true,
+    "new_evaluator_effective_kwargs_exact": true,
+    "new_native_projection_config_byte_exact": true
+  },
+  "new_three_arm_results_read": false,
+  "new_AP_recomputed": false,
+  "new_weight_read": false,
+  "new_GPU": false,
+  "new_hash_computed": false,
+  "limits": [
+    "Initial readout has its own scope and accepted_endpoint_claim=false; this provenance check is not a new metric acceptance.",
+    "New arm completion/init/checkpoint binding and actual evaluation profile/roster must still match before subtracting.",
+    "This run did not re-open weights or recompute native AP from dense predictions."
+  ]
+}

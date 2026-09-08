@@ -1,0 +1,362 @@
+{
+  "date": "2026-09-08T09:12:05.829013+00:00",
+  "auditor": {
+    "agent": "/root/object_transport_review",
+    "model_identity": "not exposed; inherited parent settings",
+    "cross_model_claim": false
+  },
+  "status": "READY_FOR_PINNED_CPU",
+  "source_verdict": "pass",
+  "execution_status": "V1 actual calibration failed at batch2 resource gate; no v2 GPU stage has run in this review.",
+  "reviewed_source_files": [
+    {
+      "relative_path": "calibrate_object_dfl.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\calibrate_object_dfl.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\calibrate_object_dfl.py",
+      "bytes": 10144,
+      "mtime_ns": 1788858499832039100,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": false
+    },
+    {
+      "relative_path": "configs/llvip_L3-DFL_s42_FT3.yaml",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\configs\\llvip_L3-DFL_s42_FT3.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\configs\\llvip_L3-DFL_s42_FT3.yaml",
+      "bytes": 4893,
+      "mtime_ns": 1788857335927913700,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "configs/llvip_L3-GT_s42_FT3.yaml",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\configs\\llvip_L3-GT_s42_FT3.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\configs\\llvip_L3-GT_s42_FT3.yaml",
+      "bytes": 4891,
+      "mtime_ns": 1788857335932926900,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "configs/llvip_N_s42_FT3.yaml",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\configs\\llvip_N_s42_FT3.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\configs\\llvip_N_s42_FT3.yaml",
+      "bytes": 4883,
+      "mtime_ns": 1788857335923407000,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "configs/llvip_native_evaluation.yaml",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\configs\\llvip_native_evaluation.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\configs\\llvip_native_evaluation.yaml",
+      "bytes": 4378,
+      "mtime_ns": 1788857335933931200,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "evaluate_object_dfl.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\evaluate_object_dfl.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\evaluate_object_dfl.py",
+      "bytes": 16218,
+      "mtime_ns": 1788857335874390600,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "l3_distribution_loss.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\l3_distribution_loss.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\l3_distribution_loss.py",
+      "bytes": 18084,
+      "mtime_ns": 1788857687528360400,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "localization_box_v2.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\localization_box_v2.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\localization_box_v2.py",
+      "bytes": 13285,
+      "mtime_ns": 1788857335875390000,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "object_dfl_common.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\object_dfl_common.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\object_dfl_common.py",
+      "bytes": 6436,
+      "mtime_ns": 1788857627443246500,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "object_dfl_criterion.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\object_dfl_criterion.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\object_dfl_criterion.py",
+      "bytes": 4585,
+      "mtime_ns": 1788857383637477700,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "probability_transport.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\probability_transport.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\probability_transport.py",
+      "bytes": 5760,
+      "mtime_ns": 1788856963373351500,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "run_object_dfl_queue.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\run_object_dfl_queue.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\run_object_dfl_queue.py",
+      "bytes": 22764,
+      "mtime_ns": 1788857206744932200,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "test_l3_cpu.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\test_l3_cpu.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\test_l3_cpu.py",
+      "bytes": 8897,
+      "mtime_ns": 1788857687528971400,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "test_object_dfl_queue_cpu.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\test_object_dfl_queue_cpu.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\test_object_dfl_queue_cpu.py",
+      "bytes": 8638,
+      "mtime_ns": 1788857277485620000,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "test_object_dfl_wrappers_cpu.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\test_object_dfl_wrappers_cpu.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\test_object_dfl_wrappers_cpu.py",
+      "bytes": 11976,
+      "mtime_ns": 1788857760633183100,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "train_object_dfl.py",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\train_object_dfl.py",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\train_object_dfl.py",
+      "bytes": 12424,
+      "mtime_ns": 1788857627442262300,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "validated_amp_prior.json",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\validated_amp_prior.json",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\validated_amp_prior.json",
+      "bytes": 2453,
+      "mtime_ns": 1788857589617260800,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    },
+    {
+      "relative_path": "validated_amp_prior_config.yaml",
+      "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\validated_amp_prior_config.yaml",
+      "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\validated_amp_prior_config.yaml",
+      "bytes": 4396,
+      "mtime_ns": 1788857589617913200,
+      "direct_byte_identity": true,
+      "unchanged_from_reviewed_v1": true
+    }
+  ],
+  "source_snapshot_directory": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2",
+  "new_hash_computed": false,
+  "audited_input_hashes": [],
+  "identity_method": "All operational Python, all configs and both AMP prior inputs copied and directly compared byte for byte; exact source paths retained. No new hashes per user instruction.",
+  "prior_amp_receipt_bytes_equal_to_completed_raw_DFL": true,
+  "transport_bytes_equal_to_accepted_CPU_operator": true,
+  "fixed_protocol": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\SHORT_SCREEN_PROTOCOL.md",
+  "reviewed_behavior": [
+    "Frozen R coarse base and R reliability/gap gates retained; source is same R index only, owned uniquely among all native teacher GT.",
+    "T=1 teacher expectation quality gates precede complete positive-mass support; no student output enters mask.",
+    "DFL T=2 softmax is applied to teacher logits before exact object-coordinate transport. FP64-to-FP32 positive underflow rejects the whole object and leaves base denominator unchanged.",
+    "GT uses exactly the same mask/anchor/base and lambda, with adjacent RGB GT bin mass then sqrt-normalization; no RGB-only control claim.",
+    "KL is four-side mean, target detached, T squared, selected sum divided by coarse base; criterion adds actual B times lambda once to complete native sum. N keeps auxiliary selection at lambda zero.",
+    "Only DFL gradient ratios on fixed first eight reset batches determine shared lambda=min(1, median(.1 native_norm/B_unit_DFL_norm)); at least four valid ratios needed. GT gradient dose/cosine recorded without a second calibration.",
+    "Fresh full student initialization/EMA/optimizer and frozen BN running buffers checked; parameter names identify P3/P4 pre-head gradient scope.",
+    "Calibration resource checks and first-batch receipt precede continuation. Global lease dispatch retained, 8192 MiB VRAM/32768 MiB RSS ceilings, measured canary plus margin determine full FT3 reservations.",
+    "Scoped AMP check binding reuses completed same-model actual AMP evidence and restores original binding; it does not claim setup equivalence.",
+    "Queue requires three real canaries with at least 24 successful updates, matched first30 stream and initialization/config identities before each fresh 192-batch FT3/complete-dev endpoint. Technical failures stop without adaptive retries.",
+    "Evaluation differs from copied prior evaluator only in new method/scope/arms/identity binding; native AP computation and full LLVIP dev population remain unchanged."
+  ],
+  "executed_local_CPU_checks": {
+    "TRAINER_PURE_CPU_TESTS_attempt2.json": {
+      "status": "PASS",
+      "independent_checks": {
+        "config_N": true,
+        "config_L3-DFL": true,
+        "config_L3-GT": true,
+        "one_DFL_median_shared_GT": true,
+        "less4_blocks_both": true,
+        "upper_cap1": true,
+        "firstbatch_within": true,
+        "firstbatch_vram_exceeds": true,
+        "firstbatch_rss_exceeds": true,
+        "invalid_resource_empty": true,
+        "invalid_resource_nan": true,
+        "amp_binding_restores_exact_original": true,
+        "amp_false_rejected": true
+      },
+      "independent_check_count": 13,
+      "author_queue_tests_executed_by_reviewer": 7,
+      "author_queue_tests_passed": true,
+      "new_GPU_or_SSH": false,
+      "new_hash_computed": false,
+      "scope": "Pure CPU source/control checks; tensor-loss numerical verification requires separate torch CPU evidence."
+    },
+    "TRAINER_TENSOR_CPU_TESTS_attempt2.json": {
+      "status": "PASS",
+      "independent_checks": {
+        "T_squared_four_mean_base_analytic_gradient": true,
+        "full_KL_matches_manual": true,
+        "unselected_anchor_zero_gradient": true,
+        "T2_before_nonidentity_independent_hat_basis": true,
+        "GT_adjacent_then_sqrt_reference": true
+      },
+      "metrics": {
+        "max_analytical_gradient_error": 7.450580596923828e-09,
+        "manual_KL_absolute_error": 1.6186975515530833e-07,
+        "T2_transport_reference_max_error": 9.58435669717872e-09,
+        "GT_adjacent_expected_float32_rounding_abs_error": 4.4061020276764395e-08
+      },
+      "author_tensor_tests_executed_by_reviewer": 14,
+      "author_tensor_tests_passed": true,
+      "python_executable": "D:\\Anaconda\\envs\\KGJ_proj\\python.exe",
+      "torch_version": "1.8.0+cu111",
+      "device": "cpu",
+      "reference_helpers": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\experiments\\rgbir_independent_kd_v2",
+      "new_GPU_or_SSH": false,
+      "new_hash_computed": false,
+      "scope": "Synthetic numerical and autograd checks only; production CUDA canary remains mandatory."
+    },
+    "TRAINER_WRAPPER_CPU_TESTS.json": {
+      "status": "PASS",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "reviewer_executed": true,
+      "new_GPU_or_SSH": false,
+      "new_hash_computed": false
+    },
+    "TRAINER_CRITERION_CPU_TESTS.json": {
+      "status": "PASS",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "reviewer_executed": true,
+      "scope": "Synthetic criterion wiring; no actual training",
+      "new_GPU_or_SSH": false,
+      "new_hash_computed": false
+    }
+  },
+  "inspection_corrections": [
+    "Added first-batch and per-batch measured resource checks before proceeding.",
+    "Added explicit target FP32 positive-mass-underflow rejection."
+  ],
+  "review_attempt_history": [
+    "Pure CPU attempt1 failed only because the reviewer used default Windows GBK with a Chinese temporary path; preserved. -X utf8 attempt2 passed without production source changes.",
+    "Independent tensor attempt1 used an arbitrary 3e-8 tolerance against double GT sqrt/division. Observed FP32 error 4.4061e-8; preserved. Attempt2 uses machine epsilon for the two FP32 operations and passes. No production calculation or scientific protocol changed."
+  ],
+  "next_step_contract": "Deploy exact v2 bytes to new release_v2, run affected wrapper/CLI/AST checks in pinned runtime, retain explicit inheritance of untouched L3/queue evidence. Then a new v2 READY may authorize new attempt2 from the same first batch through all eight calibration batches under unchanged resource/gate/lambda rules. Old v1 READY must not authorize changed v2 bytes.",
+  "remaining": [
+    "Pinned affected CPU checks and exact v2 deployment identity.",
+    "New attempt2 actual eight-batch allocation/resource/dose evidence.",
+    "All encoded real canary gates before any fresh FT3 training."
+  ],
+  "limits": [
+    "No physical registration, old L1 release, KD AP gain or shape-only benefit established.",
+    "No GPU, SSH job, new inference or training was started by the reviewer.",
+    "Local mathematical tests and actual pinned-runtime CPU suites passed; CUDA numerical/runtime behavior still requires the real guarded preflight/canaries."
+  ],
+  "release_version": 2,
+  "changed_source_files": [
+    "calibrate_object_dfl.py"
+  ],
+  "previous_review": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\TRAINING_SOURCE_REVIEW.json",
+  "previous_failed_attempt_evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1703",
+  "failure_review": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\CALIBRATION_ATTEMPT1_FAILURE_REVIEW.md",
+  "reviewed_source_diff": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\CALIBRATOR_V1_TO_V2.diff",
+  "v2_affected_checks": {
+    "independent_lifetime_CPU": {
+      "status": "PASS",
+      "actual_old_cleanup_retains_last_loss_graph": true,
+      "explicit_loss_deletion_releases_graph_before_next_forward": true,
+      "same_gradient_norms_exact": true,
+      "gradient_norms": [
+        {
+          "batch": 1,
+          "norms": {
+            "DFL": 0.24258825615723748,
+            "GT": 0.35677969289575023
+          }
+        },
+        {
+          "batch": 2,
+          "norms": {
+            "DFL": 0.24258825615723748,
+            "GT": 0.35677969289575023
+          }
+        }
+      ],
+      "last_autograd_context_live_after_legacy_cleanup": true,
+      "last_autograd_context_live_after_fixed_cleanup": false,
+      "measurement": "Weak references track custom autograd context owning saved tensors. Python Tensor-wrapper weakrefs cannot establish C++ saved-storage lifetime.",
+      "scope": "Synthetic autograd graph-lifetime mechanism, not a measurement of production VRAM or complete proof of its magnitude.",
+      "torch_version": "1.8.0+cu111",
+      "device": "cpu",
+      "new_GPU": false,
+      "new_hash_computed": false
+    },
+    "wrapper_CPU": {
+      "status": "PASS",
+      "tests_run": 15,
+      "failures": 0,
+      "errors": 0,
+      "test_scope": "synthetic_CPU_wrapper_contracts",
+      "torch_version": "1.8.0+cu111",
+      "cuda_initialized": false,
+      "new_AP_read": false,
+      "new_GPU": false,
+      "new_hash_computed": false,
+      "operator_truths_are_separate": true
+    },
+    "calibration_CLI_and_AST": "Reported PASS in CALIBRATION_LIFETIME_V2.md; pinned production execution pending."
+  },
+  "inherited_unchanged_evidence": {
+    "L3_CPU_tests": 14,
+    "queue_CPU_tests": 7,
+    "source_byte_identity": true,
+    "original_pinned_receipt": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\PINNED_TRAINING_CPU_ACCEPTED_v1.json",
+    "original_independent_source_review": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\TRAINING_SOURCE_REVIEW.json"
+  },
+  "v2_correction_scope": {
+    "mechanism": "Final for-loop scalar loss retained the previous shared student graph after deleting losses; delete final loss/stats/native_items plus prior graph references.",
+    "diagnostics": "CUDA allocated at batch start/before cleanup/after cleanup plus reserved after cleanup, with synchronization. No empty_cache.",
+    "unchanged": [
+      "fixed first8 batch flow",
+      "full model reset",
+      "temperature",
+      "selection gates",
+      "base denominator",
+      "gradient arithmetic",
+      "DFL-derived shared lambda",
+      "minimum4 valid batches",
+      "8192 VRAM/32768 RSS ceilings",
+      "global lease and subsequent canary/FT3 sequence"
+    ],
+    "claim_limit": "The defect and release mechanism are verified; successful production VRAM resolution is not established until actual new fixed8 measurements."
+  }
+}

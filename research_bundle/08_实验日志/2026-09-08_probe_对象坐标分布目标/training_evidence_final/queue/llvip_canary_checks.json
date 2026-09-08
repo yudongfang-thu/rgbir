@@ -1,0 +1,133 @@
+{
+  "status": "OBJECT_DFL_CANARIES_MATCHED",
+  "dataset": "llvip",
+  "arms": {
+    "N": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/N/canary.json",
+        "bytes": 6072,
+        "mtime_ns": 1788858934683833964
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5482010,
+          "mtime_ns": 1788127857140185407
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "resources": {
+        "vram_mib": 6144,
+        "rss_mib": 20480,
+        "measured_nvml_peak_mib": 5694,
+        "measured_allocated_peak_mib": 4732.99560546875,
+        "measured_reserved_peak_mib": 5162.0,
+        "measured_rss_peak_mib": 17768,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      },
+      "successful_updates": 24,
+      "actual_coefficient": 0.0
+    },
+    "L3-DFL": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/L3-DFL/canary.json",
+        "bytes": 6143,
+        "mtime_ns": 1788858990408820096
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5482010,
+          "mtime_ns": 1788127857140185407
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "resources": {
+        "vram_mib": 6144,
+        "rss_mib": 20480,
+        "measured_nvml_peak_mib": 5694,
+        "measured_allocated_peak_mib": 4732.99560546875,
+        "measured_reserved_peak_mib": 5162.0,
+        "measured_rss_peak_mib": 17565,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      },
+      "successful_updates": 24,
+      "actual_coefficient": 0.6900524651944485
+    },
+    "L3-GT": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/L3-GT/canary.json",
+        "bytes": 6135,
+        "mtime_ns": 1788859049041838853
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5482010,
+          "mtime_ns": 1788127857140185407
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "resources": {
+        "vram_mib": 6144,
+        "rss_mib": 20480,
+        "measured_nvml_peak_mib": 5694,
+        "measured_allocated_peak_mib": 4732.99560546875,
+        "measured_reserved_peak_mib": 5162.0,
+        "measured_rss_peak_mib": 17857,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      },
+      "successful_updates": 24,
+      "actual_coefficient": 0.6900524651944485
+    }
+  },
+  "sample_stream": {
+    "batch_records": 30,
+    "batch_size": 32,
+    "arms": [
+      "N",
+      "L3-DFL",
+      "L3-GT"
+    ],
+    "record_content_exact": true,
+    "ignored_fields": [
+      "arm"
+    ],
+    "sources": {
+      "N": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/N/sample_stream.jsonl",
+        "bytes": 592205,
+        "mtime_ns": 1788858920807585456
+      },
+      "L3-DFL": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/L3-DFL/sample_stream.jsonl",
+        "bytes": 592205,
+        "mtime_ns": 1788858976320572511
+      },
+      "L3-GT": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/canaries/llvip/L3-GT/sample_stream.jsonl",
+        "bytes": 592205,
+        "mtime_ns": 1788859034617589906
+      }
+    }
+  },
+  "new_hash_computed": false
+}

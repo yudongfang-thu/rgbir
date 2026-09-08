@@ -1,0 +1,90 @@
+{
+  "status": "OBJECT_COORDINATE_TRANSPORT_CPU_COMPLETED",
+  "scope": "OBJECT_COORDINATE_FULL_PROBABILITY_TRANSPORT_CPU",
+  "current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+  "objects": 80,
+  "cached_distributions": 317,
+  "interface_rows": 160,
+  "variants": {
+    "same_R_primary": {
+      "GT_objects": 80,
+      "available_pairs": 79,
+      "status_counts": {
+        "SUPPORTED": 79,
+        "MISSING_ROLE": 1
+      },
+      "algebraic_identity_objects": 79,
+      "support_status": "ALL_AVAILABLE_SUPPORTED",
+      "supported_targets": 79,
+      "maxima": {
+        "mass_closure_error": 0.0,
+        "expectation_closure_error_bin": 0.0,
+        "edge_closure_error": 0.0
+      },
+      "recomputed_FP64_vs_cached_FP32_max_abs": 2.2822693412916095e-07
+    },
+    "native_T_pressure": {
+      "GT_objects": 80,
+      "available_pairs": 78,
+      "status_counts": {
+        "OUTSIDE_STUDENT_SUPPORT": 63,
+        "SUPPORTED": 15,
+        "MISSING_ROLE": 2
+      },
+      "algebraic_identity_objects": 15,
+      "support_status": "PARTIAL_SUPPORT",
+      "supported_targets": 15,
+      "maxima": {
+        "mass_closure_error": 0.0,
+        "expectation_closure_error_bin": 0.0,
+        "edge_closure_error": 5.684341886080802e-14
+      },
+      "recomputed_FP64_vs_cached_FP32_max_abs": 2.443613299485392e-07
+    }
+  },
+  "inputs": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\objects.jsonl",
+      "bytes": 407526,
+      "mtime_ns": 1788854525095548300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\anchor_distributions.jsonl",
+      "bytes": 1531674,
+      "mtime_ns": 1788854525100684800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\completion_receipt.json",
+      "bytes": 2453,
+      "mtime_ns": 1788854525090625000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\dfl_contract.json",
+      "bytes": 2539,
+      "mtime_ns": 1788854525093046700
+    }
+  ],
+  "source_probability": "Float64 stable T=1 softmax recomputed from saved raw logits; cached FP32/native retained separately",
+  "geometry": "Exact rational affine on saved binary scalars; annotation correspondence only",
+  "support_boundary": "Any strictly positive mass outside [0,15] rejects whole object; no tolerance",
+  "closure_tolerance": {
+    "mass_abs": 1e-12,
+    "expectation_abs": 1e-12,
+    "expectation_rel": 1e-12,
+    "edge_abs": 1e-10,
+    "edge_rel": 1e-12
+  },
+  "temperature": 1,
+  "clamping": false,
+  "truncation": false,
+  "renormalization": false,
+  "anchor_reselection": false,
+  "physical_registration_claim": false,
+  "old_L1_geometry_unblocked": false,
+  "training_admission": false,
+  "GPU_used": false,
+  "new_forward": false,
+  "new_training": false,
+  "new_hash_computed": false,
+  "seconds": 0.1001483
+}

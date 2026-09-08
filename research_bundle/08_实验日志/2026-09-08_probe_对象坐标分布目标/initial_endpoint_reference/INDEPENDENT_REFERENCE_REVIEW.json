@@ -1,0 +1,39 @@
+{
+  "status": "PASS_AS_PROVENANCE_BOUND_INITIAL_REFERENCE",
+  "auditor": "/root/ap_error",
+  "scope": "Independent small-package provenance only; no AP recomputation",
+  "metrics_fraction": {
+    "mAP50_95": 0.3287840510939928,
+    "AP50": 0.7161396006544973,
+    "AP75": 0.24282631410771383,
+    "precision": 0.7463069993744104,
+    "recall": 0.7019331948389218
+  },
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "bytes": 5482010,
+    "mtime_ns": 1788127857140185407
+  },
+  "full_dev_images": 2406,
+  "full_dev_gt_objects": 7879,
+  "checks": {
+    "original_local_copies_byte_exact": true,
+    "remote_receipt_copy_byte_exact": true,
+    "receipt_contract_and_prior_DFL_init_stat_exact": true,
+    "canonical_roster_exact": true,
+    "actual_roster_set_exact": true,
+    "all_three_config_init_paths_and_versions_exact": true,
+    "native_projection_config_byte_exact": true,
+    "old_actual_profile_new_evaluator_constant_exact": true
+  },
+  "original_scope": "INITIAL_BASELINE_NATIVE_RECHECK",
+  "original_accepted_endpoint_claim": false,
+  "current_three_arm_execution_initialization_verified": false,
+  "current_three_arm_actual_evaluation_verified": false,
+  "can_replace_matched_N": false,
+  "new_GPU": false,
+  "new_forward": false,
+  "new_weight_read": false,
+  "new_AP_recomputed": false,
+  "new_hash_computed": false
+}

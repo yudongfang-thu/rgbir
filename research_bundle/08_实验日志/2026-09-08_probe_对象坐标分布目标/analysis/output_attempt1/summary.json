@@ -1,0 +1,250 @@
+{
+  "status": "COMPLETE_OBJECT_DFL_READOUT",
+  "scope": "OBJECT_DFL_FT3_BNFROZEN",
+  "endpoint": "OBJECT_DFL_FT3_BNFROZEN_LAST_EMA",
+  "seed": 42,
+  "n_seeds": 1,
+  "standard_deviation": null,
+  "raw_metric_units": "fraction_0_to_1",
+  "display_metric_units": "percent",
+  "difference_units": "percentage_points",
+  "datasets": {
+    "llvip": {
+      "images": 2406,
+      "gt_objects": 7879,
+      "arms": [
+        {
+          "arm": "N",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.3217122432299565,
+            "AP50": 0.7059327479566188,
+            "AP75": 0.23475437645444727,
+            "precision": 0.7287986696936332,
+            "recall": 0.6957846181718673
+          },
+          "display_percent": {
+            "mAP50_95": 32.17122432299565,
+            "AP50": 70.59327479566187,
+            "AP75": 23.475437645444728,
+            "precision": 72.87986696936332,
+            "recall": 69.57846181718674
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "raw_fraction": {
+                "mAP50_95": 0.3217122432299565,
+                "AP50": 0.7059327479566188,
+                "AP75": 0.23475437645444727
+              },
+              "display_percent": {
+                "mAP50_95": 32.17122432299565,
+                "AP50": 70.59327479566187,
+                "AP75": 23.475437645444728
+              }
+            }
+          ],
+          "kd_coefficient": 0.0,
+          "evaluation_seconds": 12.590086308075115,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt"
+        },
+        {
+          "arm": "L3-DFL",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.3216054496250292,
+            "AP50": 0.7061090006645306,
+            "AP75": 0.23441985580287011,
+            "precision": 0.7293758055647236,
+            "recall": 0.6956466556669628
+          },
+          "display_percent": {
+            "mAP50_95": 32.16054496250292,
+            "AP50": 70.61090006645307,
+            "AP75": 23.44198558028701,
+            "precision": 72.93758055647235,
+            "recall": 69.56466556669628
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "raw_fraction": {
+                "mAP50_95": 0.3216054496250292,
+                "AP50": 0.7061090006645306,
+                "AP75": 0.23441985580287011
+              },
+              "display_percent": {
+                "mAP50_95": 32.16054496250292,
+                "AP50": 70.61090006645307,
+                "AP75": 23.44198558028701
+              }
+            }
+          ],
+          "kd_coefficient": 0.6900524651944485,
+          "evaluation_seconds": 10.296242340933532,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt"
+        },
+        {
+          "arm": "L3-GT",
+          "status": "COMPLETED",
+          "raw_fraction": {
+            "mAP50_95": 0.3220377944336773,
+            "AP50": 0.7067613110849347,
+            "AP75": 0.23432822579518564,
+            "precision": 0.7270396269973344,
+            "recall": 0.698565807843635
+          },
+          "display_percent": {
+            "mAP50_95": 32.20377944336773,
+            "AP50": 70.67613110849346,
+            "AP75": 23.432822579518565,
+            "precision": 72.70396269973344,
+            "recall": 69.8565807843635
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "raw_fraction": {
+                "mAP50_95": 0.3220377944336773,
+                "AP50": 0.7067613110849347,
+                "AP75": 0.23432822579518564
+              },
+              "display_percent": {
+                "mAP50_95": 32.20377944336773,
+                "AP50": 70.67613110849346,
+                "AP75": 23.432822579518565
+              }
+            }
+          ],
+          "kd_coefficient": 0.6900524651944485,
+          "evaluation_seconds": 12.824893957003951,
+          "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt"
+        }
+      ],
+      "comparisons": [
+        {
+          "contrast": "L3-DFL - N",
+          "arm": "L3-DFL",
+          "control": "N",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": -0.010679360492732437,
+            "AP50": 0.017625270791188363,
+            "AP75": -0.033452065157715816,
+            "precision": 0.05771358710904284,
+            "recall": -0.013796250490449857
+          },
+          "direction": {
+            "mAP50_95": "negative",
+            "AP50": "positive",
+            "AP75": "negative",
+            "precision": "positive",
+            "recall": "negative"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "delta_pp": {
+                "mAP50_95": -0.010679360492732437,
+                "AP50": 0.017625270791188363,
+                "AP75": -0.033452065157715816
+              }
+            }
+          ]
+        },
+        {
+          "contrast": "L3-GT - N",
+          "arm": "L3-GT",
+          "control": "N",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": 0.03255512037207975,
+            "AP50": 0.08285631283159178,
+            "AP75": -0.042615065926163154,
+            "precision": -0.17590426962987848,
+            "recall": 0.2781189671767659
+          },
+          "direction": {
+            "mAP50_95": "positive",
+            "AP50": "positive",
+            "AP75": "negative",
+            "precision": "negative",
+            "recall": "positive"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "delta_pp": {
+                "mAP50_95": 0.03255512037207975,
+                "AP50": 0.08285631283159178,
+                "AP75": -0.042615065926163154
+              }
+            }
+          ]
+        },
+        {
+          "contrast": "L3-DFL - L3-GT",
+          "arm": "L3-DFL",
+          "control": "L3-GT",
+          "status": "COMPUTED",
+          "delta_pp": {
+            "mAP50_95": -0.043234480864812186,
+            "AP50": -0.06523104204040342,
+            "AP75": 0.009163000768447338,
+            "precision": 0.23361785673892133,
+            "recall": -0.29191521766721573
+          },
+          "direction": {
+            "mAP50_95": "negative",
+            "AP50": "negative",
+            "AP75": "positive",
+            "precision": "positive",
+            "recall": "negative"
+          },
+          "per_class": [
+            {
+              "class_id": 0,
+              "name": "person",
+              "delta_pp": {
+                "mAP50_95": -0.043234480864812186,
+                "AP50": -0.06523104204040342,
+                "AP75": 0.009163000768447338
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "decision_policy": "Display signed raw control contrasts only; no AP threshold or best-arm selection",
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "causal_modality_claim": false,
+  "automatically_extend_matrix": false,
+  "automatically_admit_e200": false,
+  "new_hash_computed": false,
+  "scope_limit": "Receipt-only FT3 screening; no checkpoint/GT-box re-audit, SD, significance or cross-dataset pooling. Root interprets gradient and coverage separately.",
+  "input_sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\direction_evaluation_receipt.json",
+      "bytes": 3630,
+      "mtime_ns": 1788859555554923200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\direction_evaluation_receipt.json",
+      "bytes": 3670,
+      "mtime_ns": 1788859555537899700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\direction_evaluation_receipt.json",
+      "bytes": 3664,
+      "mtime_ns": 1788859555547221200
+    }
+  ]
+}

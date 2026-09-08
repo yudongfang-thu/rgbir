@@ -1,0 +1,25 @@
+{
+  "id": "object_dfl_attempt2_llvip_L3-GT_eval",
+  "dataset": "llvip",
+  "arm": "L3-GT",
+  "stage": "eval",
+  "formal": false,
+  "kind": "eval",
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/evaluate_object_dfl.py",
+    "--reference-dir",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+    "--config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/effective_configs/llvip_L3-GT_s42_FT3.yaml",
+    "--checkpoint",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/runs/llvip/L3-GT/weights/last.pt",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/evaluations/llvip/L3-GT",
+    "--native-config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/configs/llvip_native_evaluation.yaml"
+  ],
+  "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/evaluations/llvip/L3-GT/direction_evaluation_receipt.json",
+  "vram_mib": 2048,
+  "rss_mib": 8192
+}

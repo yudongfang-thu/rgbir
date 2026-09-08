@@ -1,0 +1,18 @@
+{
+  "kind": "explicit_direction_training_to_full_dev_evaluation_projection",
+  "dataset": "llvip",
+  "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "training_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_visible.yaml",
+  "actual_evaluation_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+  "native_configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/configs/llvip_native_evaluation.yaml",
+  "native_contract_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "prior_binding_validated": false,
+  "native_profile_binding": null,
+  "profile_scope": "new_LLVIP_actual_native_profile_only",
+  "native_vs_capture_parity_rerun": false,
+  "accepted_endpoint_claim": false,
+  "subset_dev_roster_exact_to_full": true,
+  "training_identity_unchanged_claim": false,
+  "expected_dev_images": 2406,
+  "expected_dev_gt_objects": 7879
+}

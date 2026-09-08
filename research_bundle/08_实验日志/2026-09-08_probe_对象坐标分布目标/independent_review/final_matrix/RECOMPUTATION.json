@@ -1,0 +1,1401 @@
+{
+  "status": "PASS",
+  "artifact_checks": [
+    {
+      "name": "collection_163_files_present_exact_sizes",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\collection_receipt.json",
+      "details": null
+    },
+    {
+      "name": "reviewed_source_calibrate_object_dfl.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "calibrate_object_dfl.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\calibrate_object_dfl.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\calibrate_object_dfl.py",
+        "bytes": 10144,
+        "mtime_ns": 1788858499832039100,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": false
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_configs/llvip_L3-DFL_s42_FT3.yaml",
+      "passed": true,
+      "evidence": {
+        "relative_path": "configs/llvip_L3-DFL_s42_FT3.yaml",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\configs\\llvip_L3-DFL_s42_FT3.yaml",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\configs\\llvip_L3-DFL_s42_FT3.yaml",
+        "bytes": 4893,
+        "mtime_ns": 1788857335927913700,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_configs/llvip_L3-GT_s42_FT3.yaml",
+      "passed": true,
+      "evidence": {
+        "relative_path": "configs/llvip_L3-GT_s42_FT3.yaml",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\configs\\llvip_L3-GT_s42_FT3.yaml",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\configs\\llvip_L3-GT_s42_FT3.yaml",
+        "bytes": 4891,
+        "mtime_ns": 1788857335932926900,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_configs/llvip_N_s42_FT3.yaml",
+      "passed": true,
+      "evidence": {
+        "relative_path": "configs/llvip_N_s42_FT3.yaml",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\configs\\llvip_N_s42_FT3.yaml",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\configs\\llvip_N_s42_FT3.yaml",
+        "bytes": 4883,
+        "mtime_ns": 1788857335923407000,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_configs/llvip_native_evaluation.yaml",
+      "passed": true,
+      "evidence": {
+        "relative_path": "configs/llvip_native_evaluation.yaml",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\configs\\llvip_native_evaluation.yaml",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\configs\\llvip_native_evaluation.yaml",
+        "bytes": 4378,
+        "mtime_ns": 1788857335933931200,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_evaluate_object_dfl.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "evaluate_object_dfl.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\evaluate_object_dfl.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\evaluate_object_dfl.py",
+        "bytes": 16218,
+        "mtime_ns": 1788857335874390600,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_l3_distribution_loss.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "l3_distribution_loss.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\l3_distribution_loss.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\l3_distribution_loss.py",
+        "bytes": 18084,
+        "mtime_ns": 1788857687528360400,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_localization_box_v2.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "localization_box_v2.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\localization_box_v2.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\localization_box_v2.py",
+        "bytes": 13285,
+        "mtime_ns": 1788857335875390000,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_object_dfl_common.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "object_dfl_common.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\object_dfl_common.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\object_dfl_common.py",
+        "bytes": 6436,
+        "mtime_ns": 1788857627443246500,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_object_dfl_criterion.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "object_dfl_criterion.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\object_dfl_criterion.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\object_dfl_criterion.py",
+        "bytes": 4585,
+        "mtime_ns": 1788857383637477700,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_probability_transport.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "probability_transport.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\probability_transport.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\probability_transport.py",
+        "bytes": 5760,
+        "mtime_ns": 1788856963373351500,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_run_object_dfl_queue.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "run_object_dfl_queue.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\run_object_dfl_queue.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\run_object_dfl_queue.py",
+        "bytes": 22764,
+        "mtime_ns": 1788857206744932200,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_test_l3_cpu.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "test_l3_cpu.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\test_l3_cpu.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\test_l3_cpu.py",
+        "bytes": 8897,
+        "mtime_ns": 1788857687528971400,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_test_object_dfl_queue_cpu.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "test_object_dfl_queue_cpu.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\test_object_dfl_queue_cpu.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\test_object_dfl_queue_cpu.py",
+        "bytes": 8638,
+        "mtime_ns": 1788857277485620000,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_test_object_dfl_wrappers_cpu.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "test_object_dfl_wrappers_cpu.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\test_object_dfl_wrappers_cpu.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\test_object_dfl_wrappers_cpu.py",
+        "bytes": 11976,
+        "mtime_ns": 1788857760633183100,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_train_object_dfl.py",
+      "passed": true,
+      "evidence": {
+        "relative_path": "train_object_dfl.py",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\train_object_dfl.py",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\train_object_dfl.py",
+        "bytes": 12424,
+        "mtime_ns": 1788857627442262300,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_validated_amp_prior.json",
+      "passed": true,
+      "evidence": {
+        "relative_path": "validated_amp_prior.json",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\validated_amp_prior.json",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\validated_amp_prior.json",
+        "bytes": 2453,
+        "mtime_ns": 1788857589617260800,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "reviewed_source_validated_amp_prior_config.yaml",
+      "passed": true,
+      "evidence": {
+        "relative_path": "validated_amp_prior_config.yaml",
+        "source_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\validated_amp_prior_config.yaml",
+        "snapshot_path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\training_reviewed_source_v2\\validated_amp_prior_config.yaml",
+        "bytes": 4396,
+        "mtime_ns": 1788857589617913200,
+        "direct_byte_identity": true,
+        "unchanged_from_reviewed_v1": true
+      },
+      "details": null
+    },
+    {
+      "name": "executed_analyzer_source_exact",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\analyze_object_dfl_source.py",
+      "details": null
+    },
+    {
+      "name": "ten_stage_complete_order",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\llvip_completion.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_N_calibration_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_calibration_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_N_calibration_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_calibration_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_N_canary_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_canary_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_N_canary_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_canary_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-DFL_canary_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-DFL_canary_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-DFL_canary_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-DFL_canary_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-GT_canary_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-GT_canary_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-GT_canary_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-GT_canary_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_N_train_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_train_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_N_train_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_train_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_N_eval_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_eval_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_N_eval_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_eval_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-DFL_train_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-DFL_train_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-DFL_train_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-DFL_train_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-DFL_eval_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-DFL_eval_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-DFL_eval_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-DFL_eval_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-GT_train_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-GT_train_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-GT_train_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-GT_train_admission.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-GT_eval_terminal",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-GT_eval_status.json",
+      "details": null
+    },
+    {
+      "name": "object_dfl_attempt2_llvip_L3-GT_eval_resources",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_L3-GT_eval_admission.json",
+      "details": null
+    },
+    {
+      "name": "prior_actual_calibration_canaries_unchanged",
+      "passed": true,
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\calibration_v2\\EXPERIMENT_AUDIT.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\canaries_v2\\EXPERIMENT_AUDIT.json"
+      ],
+      "details": {
+        "compared_files": 46
+      }
+    },
+    {
+      "name": "initial_existing_receipt_copy_identity",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\initial_endpoint_reference\\REMOTE_COLLECTION.json",
+      "details": null
+    },
+    {
+      "name": "initial_full_roster_identity",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\initial_endpoint_reference\\initial_evaluation_contract.json",
+      "details": null
+    },
+    {
+      "name": "N_training_completion",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\completion_receipt.json",
+      "details": null
+    },
+    {
+      "name": "N_full_warm_start_isolation",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\initialization_check.json",
+      "details": null
+    },
+    {
+      "name": "N_independent_last_checkpoint_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\direction_evaluation_receipt.json",
+      "details": null
+    },
+    {
+      "name": "N_all_config_copies_exact",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\effective_configs\\llvip_N_s42_FT3.yaml",
+      "details": null
+    },
+    {
+      "name": "N_only_frozen_calibration_config_updates",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\effective_configs\\llvip_N_s42_FT3.yaml",
+      "details": {
+        "calibration_receipt": [
+          null,
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json"
+        ]
+      }
+    },
+    {
+      "name": "N_first30_cross_arm_and_canary_bytes",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\sample_stream.jsonl",
+      "details": null
+    },
+    {
+      "name": "N_runtime_population",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\runtime_ready.json",
+      "details": null
+    },
+    {
+      "name": "N_runs_runtime_source_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\source_manifest.json",
+      "details": {
+        "release_v2_records": 14,
+        "all_manifest_records": 87,
+        "remote_source_copies_not_redownloaded": true
+      }
+    },
+    {
+      "name": "N_evaluations_runtime_source_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\source_manifest.json",
+      "details": {
+        "release_v2_records": 1,
+        "all_manifest_records": 19,
+        "remote_source_copies_not_redownloaded": true
+      }
+    },
+    {
+      "name": "N_saved_diagnostics_finite",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "N_positive_aux_gradient_isolated",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\gradient_checks.jsonl",
+      "details": null
+    },
+    {
+      "name": "N_native_loss_retained_and_once_scaled",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "N_n_exact_or_nonzero_aux",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "N_full_dev_actual_profile",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\direction_evaluation_contract.json",
+      "details": null
+    },
+    {
+      "name": "N_native_yaml_exact_to_initial",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\native_config.yaml",
+      "details": null
+    },
+    {
+      "name": "N_actual_capture_population_and_finite",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\native_capture\\objects.jsonl.gz",
+      "details": null
+    },
+    {
+      "name": "N_native_metric_fraction_class_mean",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\direction_evaluation_receipt.json",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_training_completion",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\completion_receipt.json",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_full_warm_start_isolation",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\initialization_check.json",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_independent_last_checkpoint_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\direction_evaluation_receipt.json",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_all_config_copies_exact",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\effective_configs\\llvip_L3-DFL_s42_FT3.yaml",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_only_frozen_calibration_config_updates",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\effective_configs\\llvip_L3-DFL_s42_FT3.yaml",
+      "details": {
+        "localization_coefficient": [
+          1.0,
+          0.6900524651944485
+        ],
+        "kd_coefficient": [
+          1.0,
+          0.6900524651944485
+        ],
+        "calibration_receipt": [
+          null,
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json"
+        ]
+      }
+    },
+    {
+      "name": "L3-DFL_first30_cross_arm_and_canary_bytes",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\sample_stream.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_runtime_population",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\runtime_ready.json",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_runs_runtime_source_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\source_manifest.json",
+      "details": {
+        "release_v2_records": 14,
+        "all_manifest_records": 87,
+        "remote_source_copies_not_redownloaded": true
+      }
+    },
+    {
+      "name": "L3-DFL_evaluations_runtime_source_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\source_manifest.json",
+      "details": {
+        "release_v2_records": 1,
+        "all_manifest_records": 19,
+        "remote_source_copies_not_redownloaded": true
+      }
+    },
+    {
+      "name": "L3-DFL_saved_diagnostics_finite",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_positive_aux_gradient_isolated",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\gradient_checks.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_native_loss_retained_and_once_scaled",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_n_exact_or_nonzero_aux",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_full_dev_actual_profile",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\direction_evaluation_contract.json",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_native_yaml_exact_to_initial",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\native_config.yaml",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_actual_capture_population_and_finite",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\native_capture\\objects.jsonl.gz",
+      "details": null
+    },
+    {
+      "name": "L3-DFL_native_metric_fraction_class_mean",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\direction_evaluation_receipt.json",
+      "details": null
+    },
+    {
+      "name": "L3-GT_training_completion",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\completion_receipt.json",
+      "details": null
+    },
+    {
+      "name": "L3-GT_full_warm_start_isolation",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\initialization_check.json",
+      "details": null
+    },
+    {
+      "name": "L3-GT_independent_last_checkpoint_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\direction_evaluation_receipt.json",
+      "details": null
+    },
+    {
+      "name": "L3-GT_all_config_copies_exact",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\effective_configs\\llvip_L3-GT_s42_FT3.yaml",
+      "details": null
+    },
+    {
+      "name": "L3-GT_only_frozen_calibration_config_updates",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\effective_configs\\llvip_L3-GT_s42_FT3.yaml",
+      "details": {
+        "localization_coefficient": [
+          1.0,
+          0.6900524651944485
+        ],
+        "kd_coefficient": [
+          1.0,
+          0.6900524651944485
+        ],
+        "calibration_receipt": [
+          null,
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json"
+        ]
+      }
+    },
+    {
+      "name": "L3-GT_first30_cross_arm_and_canary_bytes",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\sample_stream.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-GT_runtime_population",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\runtime_ready.json",
+      "details": null
+    },
+    {
+      "name": "L3-GT_runs_runtime_source_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\source_manifest.json",
+      "details": {
+        "release_v2_records": 14,
+        "all_manifest_records": 87,
+        "remote_source_copies_not_redownloaded": true
+      }
+    },
+    {
+      "name": "L3-GT_evaluations_runtime_source_binding",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\source_manifest.json",
+      "details": {
+        "release_v2_records": 1,
+        "all_manifest_records": 19,
+        "remote_source_copies_not_redownloaded": true
+      }
+    },
+    {
+      "name": "L3-GT_saved_diagnostics_finite",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-GT_positive_aux_gradient_isolated",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\gradient_checks.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-GT_native_loss_retained_and_once_scaled",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-GT_n_exact_or_nonzero_aux",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "L3-GT_full_dev_actual_profile",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\direction_evaluation_contract.json",
+      "details": null
+    },
+    {
+      "name": "L3-GT_native_yaml_exact_to_initial",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\native_config.yaml",
+      "details": null
+    },
+    {
+      "name": "L3-GT_actual_capture_population_and_finite",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\native_capture\\objects.jsonl.gz",
+      "details": null
+    },
+    {
+      "name": "L3-GT_native_metric_fraction_class_mean",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\direction_evaluation_receipt.json",
+      "details": null
+    },
+    {
+      "name": "actual_gt_capture_exact_all_three_arms",
+      "passed": true,
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\native_capture\\objects.jsonl.gz",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\native_capture\\objects.jsonl.gz",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\native_capture\\objects.jsonl.gz"
+      ],
+      "details": null
+    },
+    {
+      "name": "all_saved_mask_base_anchor_identity",
+      "passed": true,
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\kd_batches.jsonl",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\kd_batches.jsonl",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\kd_batches.jsonl"
+      ],
+      "details": null
+    },
+    {
+      "name": "saved_selected_masks_satisfy_frozen_bounds",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\kd_batches.jsonl",
+      "details": null
+    },
+    {
+      "name": "analyzer_complete_scope_units",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\summary.json",
+      "details": null
+    },
+    {
+      "name": "analyzer_N_all_values",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\summary.json#datasets.llvip.arms",
+      "details": null
+    },
+    {
+      "name": "analyzer_L3-DFL_all_values",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\summary.json#datasets.llvip.arms",
+      "details": null
+    },
+    {
+      "name": "analyzer_L3-GT_all_values",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\summary.json#datasets.llvip.arms",
+      "details": null
+    },
+    {
+      "name": "analyzer_L3-DFL - N_all_differences",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\summary.json#datasets.llvip.comparisons",
+      "details": null
+    },
+    {
+      "name": "analyzer_L3-GT - N_all_differences",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\summary.json#datasets.llvip.comparisons",
+      "details": null
+    },
+    {
+      "name": "analyzer_L3-DFL - L3-GT_all_differences",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\summary.json#datasets.llvip.comparisons",
+      "details": null
+    },
+    {
+      "name": "final_report_display_arithmetic_and_seconds",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\FINAL_REPORT.md",
+      "details": {
+        "numeric_tokens_verified": 43,
+        "not_claiming_unrelated_historical_C0_L2_sources_reviewed": true
+      }
+    },
+    {
+      "name": "final_report_four_gpu_example",
+      "passed": true,
+      "evidence": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\FINAL_REPORT.md#实测代价与有效性",
+      "details": null
+    }
+  ],
+  "raw_metrics_fraction": {
+    "N": {
+      "mAP50_95": 0.3217122432299565,
+      "AP50": 0.7059327479566188,
+      "AP75": 0.23475437645444727,
+      "precision": 0.7287986696936332,
+      "recall": 0.6957846181718673
+    },
+    "L3-DFL": {
+      "mAP50_95": 0.3216054496250292,
+      "AP50": 0.7061090006645306,
+      "AP75": 0.23441985580287011,
+      "precision": 0.7293758055647236,
+      "recall": 0.6956466556669628
+    },
+    "L3-GT": {
+      "mAP50_95": 0.3220377944336773,
+      "AP50": 0.7067613110849347,
+      "AP75": 0.23432822579518564,
+      "precision": 0.7270396269973344,
+      "recall": 0.698565807843635
+    }
+  },
+  "display_percent": {
+    "N": {
+      "mAP50_95": 32.17122432299565,
+      "AP50": 70.59327479566187,
+      "AP75": 23.475437645444728,
+      "precision": 72.87986696936332,
+      "recall": 69.57846181718674
+    },
+    "L3-DFL": {
+      "mAP50_95": 32.16054496250292,
+      "AP50": 70.61090006645307,
+      "AP75": 23.44198558028701,
+      "precision": 72.93758055647235,
+      "recall": 69.56466556669628
+    },
+    "L3-GT": {
+      "mAP50_95": 32.20377944336773,
+      "AP50": 70.67613110849346,
+      "AP75": 23.432822579518565,
+      "precision": 72.70396269973344,
+      "recall": 69.8565807843635
+    }
+  },
+  "differences_pp": {
+    "L3-DFL - N": {
+      "mAP50_95": -0.010679360492732437,
+      "AP50": 0.017625270791188363,
+      "AP75": -0.033452065157715816,
+      "precision": 0.05771358710904284,
+      "recall": -0.013796250490449857
+    },
+    "L3-GT - N": {
+      "mAP50_95": 0.03255512037207975,
+      "AP50": 0.08285631283159178,
+      "AP75": -0.042615065926163154,
+      "precision": -0.17590426962987848,
+      "recall": 0.2781189671767659
+    },
+    "L3-DFL - L3-GT": {
+      "mAP50_95": -0.043234480864812186,
+      "AP50": -0.06523104204040342,
+      "AP75": 0.009163000768447338,
+      "precision": 0.23361785673892133,
+      "recall": -0.29191521766721573
+    }
+  },
+  "initial_reference_fraction": {
+    "mAP50_95": 0.3287840510939928,
+    "AP50": 0.7161396006544973,
+    "AP75": 0.24282631410771383,
+    "precision": 0.7463069993744104,
+    "recall": 0.7019331948389218
+  },
+  "difference_from_initial_pp": {
+    "N": {
+      "mAP50_95": -0.7071807864036272,
+      "AP50": -1.0206852697878577,
+      "AP75": -0.8071937653266553,
+      "precision": -1.7508329680777202,
+      "recall": -0.6148576667054484
+    },
+    "L3-DFL": {
+      "mAP50_95": -0.7178601468963597,
+      "AP50": -1.0030599989966693,
+      "AP75": -0.8406458304843711,
+      "precision": -1.6931193809686773,
+      "recall": -0.6286539171958982
+    },
+    "L3-GT": {
+      "mAP50_95": -0.6746256660315475,
+      "AP50": -0.9378289569562659,
+      "AP75": -0.8498088312528185,
+      "precision": -1.9267372377075986,
+      "recall": -0.3367386995286825
+    }
+  },
+  "stage_resources_and_seconds": [
+    {
+      "id": "object_dfl_attempt2_llvip_N_calibration",
+      "seconds": 37.56572435796261,
+      "minimum_free_mib": 15126,
+      "peak_project_rss_mib": 158397,
+      "admission": {
+        "active_gpus_after": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          1,
+          3
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8192,
+        "gpu_ids": [
+          0
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_N_calibration-da491d3c9e3e",
+        "pid": 1246961,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_N_canary",
+      "seconds": 37.05557902390137,
+      "minimum_free_mib": 14886,
+      "peak_project_rss_mib": 158912,
+      "admission": {
+        "active_gpus_after": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          1,
+          3
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8192,
+        "gpu_ids": [
+          0
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_N_canary-1319a6affff1",
+        "pid": 1254066,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_L3-DFL_canary",
+      "seconds": 36.9027418398764,
+      "minimum_free_mib": 14885,
+      "peak_project_rss_mib": 158725,
+      "admission": {
+        "active_gpus_after": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          1,
+          3
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8192,
+        "gpu_ids": [
+          0
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_L3-DFL_canary-40e5caa78e5c",
+        "pid": 1262594,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_L3-GT_canary",
+      "seconds": 38.35483780503273,
+      "minimum_free_mib": 14889,
+      "peak_project_rss_mib": 159032,
+      "admission": {
+        "active_gpus_after": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          1,
+          3
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 32768,
+        "expected_vram_mib": 8192,
+        "gpu_ids": [
+          0
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_L3-GT_canary-855b949c0b82",
+        "pid": 1271478,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_N_train",
+      "seconds": 92.54502732213587,
+      "minimum_free_mib": 14886,
+      "peak_project_rss_mib": 159111,
+      "admission": {
+        "active_gpus_after": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          1,
+          3
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 20480,
+        "expected_vram_mib": 6144,
+        "gpu_ids": [
+          0
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_N_train-fce7b604299f",
+        "pid": 1279379,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_N_eval",
+      "seconds": 12.590086308075115,
+      "minimum_free_mib": 19223,
+      "peak_project_rss_mib": 145146,
+      "admission": {
+        "active_gpus_after": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          1,
+          3
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 8192,
+        "expected_vram_mib": 2048,
+        "gpu_ids": [
+          0
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_N_eval-8458fc031a9b",
+        "pid": 1299093,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_L3-DFL_train",
+      "seconds": 91.87253269110806,
+      "minimum_free_mib": 14886,
+      "peak_project_rss_mib": 159069,
+      "admission": {
+        "active_gpus_after": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          1,
+          3
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 20480,
+        "expected_vram_mib": 6144,
+        "gpu_ids": [
+          0
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_L3-DFL_train-6091d179b227",
+        "pid": 1306238,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_L3-DFL_eval",
+      "seconds": 10.296242340933532,
+      "minimum_free_mib": 22704,
+      "peak_project_rss_mib": 145241,
+      "admission": {
+        "active_gpus_after": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          3,
+          6,
+          7
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 8192,
+        "expected_vram_mib": 2048,
+        "gpu_ids": [
+          1
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_L3-DFL_eval-298b2109c35f",
+        "pid": 1323996,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_L3-GT_train",
+      "seconds": 75.89550077402964,
+      "minimum_free_mib": 18368,
+      "peak_project_rss_mib": 159131,
+      "admission": {
+        "active_gpus_after": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          3,
+          7
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 20480,
+        "expected_vram_mib": 6144,
+        "gpu_ids": [
+          1
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_L3-GT_train-e0284c154cec",
+        "pid": 1326883,
+        "status": "LAUNCHED"
+      }
+    },
+    {
+      "id": "object_dfl_attempt2_llvip_L3-GT_eval",
+      "seconds": 12.824893957003951,
+      "minimum_free_mib": 19225,
+      "peak_project_rss_mib": 145224,
+      "admission": {
+        "active_gpus_after": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "empty_gpus_after": [
+          1,
+          3
+        ],
+        "four_gpu_exception": true,
+        "minimum_empty_required": 2
+      },
+      "launch": {
+        "cuda_processes_per_gpu": 1,
+        "expected_rss_mib": 8192,
+        "expected_vram_mib": 2048,
+        "gpu_ids": [
+          0
+        ],
+        "lease_id": "object_dfl_attempt2_llvip_L3-GT_eval-94222f6957c5",
+        "pid": 1341209,
+        "status": "LAUNCHED"
+      }
+    }
+  ],
+  "queue_seconds": 666.8562324047089,
+  "mask_coverage": {
+    "rgb_gt_count": 1184,
+    "teacher_gt_count": 1184,
+    "common_count": 1184,
+    "pair_iou_count": 1184,
+    "reference_support_count": 1184,
+    "reference_unique_owner_count": 1182,
+    "base_count": 1156,
+    "reference_reliable_count": 1130,
+    "reference_gap_count": 75,
+    "teacher_own_quality_count": 65,
+    "mapped_rgb_quality_count": 61,
+    "localization_margin_count": 54,
+    "fullsupport_checked": 54,
+    "fullsupport_rejected": 0,
+    "teacher_same_anchor_unique_count": 75,
+    "target_float32_rejected": 0,
+    "selected_count": 54,
+    "saved_batches": [
+      1,
+      2,
+      3,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      112,
+      128,
+      144,
+      160,
+      176,
+      192
+    ],
+    "saved_zero_selected_batches": [
+      3,
+      80
+    ],
+    "total_selected_occurrences_per_arm": 673,
+    "all_saved_base_rgb_ir_gt_equal": true,
+    "all_saved_selected_mapped_box_identity": false
+  },
+  "capture_coverage": {
+    "N": {
+      "images": 2406,
+      "gt_objects": 7879,
+      "predictions": 25542,
+      "empty_prediction_images": 6,
+      "all_stored_numbers_finite": true
+    },
+    "L3-DFL": {
+      "images": 2406,
+      "gt_objects": 7879,
+      "predictions": 25718,
+      "empty_prediction_images": 7,
+      "all_stored_numbers_finite": true
+    },
+    "L3-GT": {
+      "images": 2406,
+      "gt_objects": 7879,
+      "predictions": 25352,
+      "empty_prediction_images": 8,
+      "all_stored_numbers_finite": true
+    }
+  },
+  "config_changes_from_frozen": {
+    "N": {
+      "calibration_receipt": [
+        null,
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json"
+      ]
+    },
+    "L3-DFL": {
+      "localization_coefficient": [
+        1.0,
+        0.6900524651944485
+      ],
+      "kd_coefficient": [
+        1.0,
+        0.6900524651944485
+      ],
+      "calibration_receipt": [
+        null,
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json"
+      ]
+    },
+    "L3-GT": {
+      "localization_coefficient": [
+        1.0,
+        0.6900524651944485
+      ],
+      "kd_coefficient": [
+        1.0,
+        0.6900524651944485
+      ],
+      "calibration_receipt": [
+        null,
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json"
+      ]
+    }
+  },
+  "results_csv_column_counts": {
+    "N": [
+      15,
+      15,
+      15,
+      8
+    ],
+    "L3-DFL": [
+      15,
+      15,
+      15,
+      8
+    ],
+    "L3-GT": [
+      15,
+      15,
+      15,
+      8
+    ]
+  },
+  "new_hash_computed": false,
+  "new_GPU": false,
+  "new_tests": false,
+  "new_inference": false
+}

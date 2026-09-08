@@ -1,0 +1,5 @@
+{
+  "status": "OBJECT_DFL_CALIBRATION_FAILED",
+  "error": "RuntimeError('Calibration actual peak plus margin exceeds frozen resource limit')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/calibrate_object_dfl.py\", line 92, in run\n    if resources['status']!='PASS':raise RuntimeError('Calibration actual peak plus margin exceeds frozen resource limit')\nRuntimeError: Calibration actual peak plus margin exceeds frozen resource limit\n"
+}

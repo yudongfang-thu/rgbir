@@ -1,0 +1,283 @@
+{
+  "date": "2026-09-08T09:37:51.066313+00:00",
+  "auditor": {
+    "agent": "/root/object_transport_review",
+    "independent_of_implementer_and_executor": true,
+    "model_identity": "Not exposed; inherited parent settings",
+    "cross_model_claim": false
+  },
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "FIXED_EXECUTED_MATRIX_PROVENANCE_AND_ARITHMETIC_ACCEPTED_WITH_EXPLICIT_SCOPE",
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Real dataset person labels. All three actual dev capture GT payloads match exactly, each2406 unique images and7879GT. Actual loader/canonical roster and settings equal initial reference; local alias filenames match while runtime contract records resolved canonical paths. Originaltrain/dev split only; no official test access reported.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\direction_evaluation_contract.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-DFL\\direction_evaluation_contract.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\L3-GT\\direction_evaluation_contract.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\initial_endpoint_reference\\initial_evaluation_contract.json",
+        "RECOMPUTATION.json#capture_coverage"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "Native ultralytics8.4.115 DetectionValidator undertorch2.10.0+cu128, complete dev, FP32 effective kwargs:640/B32/workers4/conf.001/iou.7/max_det300/recttrue/augmentfalse/halffalse/quantizenull. Five raw metric fractions copied exactly; display100x, differences100x(rawA-rawB), onepersonclass AP matches macro. Independently recomputed all15 contrast metrics and15 changes frominitial; no AP regeneration.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\trainer_release\\evaluate_object_dfl.py:222",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\analysis\\output_attempt1\\summary.json",
+        "RECOMPUTATION.json#differences_pp"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "All10 fixed stages have actual cleanexit0, empty monitor_errors, valid receipts and correct order. Calibration8 then all3canary24successful then eacharm train192/evalfull-dev. Matrix actual666.8562324047089seconds. Initial8/canary files match previously audited snapshots; originalfailedattempt1 preserved.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\llvip_completion.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\completion.json",
+        "RECOMPUTATION.json#stage_resources_and_seconds"
+      ]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "Executed release_v2 manifest links to reviewed/deployed source; all18reviewed local files still byteexact. Effective configs differ from frozen only by completed calibration receipt and fixed coefficient. Actual positive unitKD gradient, selected counts and nonzero added losses confirm auxiliary path ran. NativeN total is exact in saved rows. Head-inclusive499tensor warmstart/freshoptimizerEMA/243frozenBNbuffers and detachedT/R recorded.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\TRAINING_SOURCE_REVIEW_v2.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\pinned_source\\deployment.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\completion_receipt.json",
+        "RECOMPUTATION.json#artifact_checks"
+      ]
+    },
+    "scope": {
+      "status": "pass",
+      "details": "Supports scoped execution and arithmetic plus the predeclared decision to stop this version because DFLmAP is belowN andGT. No paper gain, causal modality, allDFL failure, physical-registration or long-training conclusion. All three arms drift below mature reference; this run does not identify the cause.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\SHORT_SCREEN_PROTOCOL.md",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\FINAL_REPORT.md",
+        "RECOMPUTATION.json#difference_from_initial_pp"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "details": "real_gt for actual held-outdev detection AP. Annotation-coordinate L3 targets use the shared RGB/IRGT and teacher/reference outputs; target-coordinate diagnostics do not supply independent physical truth.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\evaluations\\llvip\\N\\direction_evaluation_contract.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\kd_batches.jsonl"
+      ]
+    },
+    "resource_admission": {
+      "status": "pass",
+      "details": "All10stage status/resource records clean. Every sample retains>=2048MiB cardfree and projectRSS<=300GiB. At most4activeprojectGPUs; every fourth-GPU admission has>=2emptycards. Ntraining example active0/2/4/5 andempty1/3 agrees with report. Three training reservations6144MiB/20480MiB; NVMLpeak5694MiB,allocated4733.03564453125,reserved5162; RSS17968/17862/18022MiB.",
+      "evidence": [
+        "RECOMPUTATION.json#stage_resources_and_seconds",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\object_dfl_attempt2_llvip_N_train_admission.json"
+      ]
+    },
+    "mask_and_model_boundaries": {
+      "status": "pass",
+      "details": "Thirty sample rows byteexact acrossalltrainarms and eachcanary. All15saved diagnostic base/mask/anchor records equal, all54selected satisfy fixed gates. Zero-selected savedbatches3/80 retained; fullsupport andFP32positive-tail rejects0 withinsaved54. Nonempty predictions in2400/2399/2398images, allsavednumbersfinite; unavailable full dense/state checks explicitly limited.",
+      "evidence": [
+        "RECOMPUTATION.json#mask_coverage",
+        "RECOMPUTATION.json#capture_coverage"
+      ]
+    },
+    "nonendpoint_csv_format": {
+      "status": "warn",
+      "details": "Minor known logging defect: finaltrainingCSV row8columns under15columnheader; missing/zero validation fields do not represent AP and were not used. No material effect on independently completed eval receipts or comparison arithmetic.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\N\\results.csv",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-DFL\\results.csv",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\runs\\llvip\\L3-GT\\results.csv"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "fixed_matrix_executed",
+      "impact": "supported",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\llvip_completion.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_final\\queue\\completion.json",
+        "RECOMPUTATION.json#stage_resources_and_seconds"
+      ],
+      "rationale": "10actualstages completed with scoped provenance; not inferred from source readiness."
+    },
+    {
+      "id": "stop_current_DFL_FT3_version",
+      "impact": "supported",
+      "evidence": [
+        "RECOMPUTATION.json#differences_pp",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\SHORT_SCREEN_PROTOCOL.md"
+      ],
+      "rationale": "ObservedDFL-N=-0.010679360492732437pp andDFL-GT=-0.043234480864812186pp on frozenmAP50-95; follows prospective screen rule."
+    },
+    {
+      "id": "all_three_below_initial",
+      "impact": "needs_qualifier",
+      "evidence": [
+        "RECOMPUTATION.json#difference_from_initial_pp"
+      ],
+      "rationale": "N/DFL/GT are-0.7071807864/-0.7178601469/-0.6746256660pp versus existingmatchedinitialreadout. Does not identifyBN/overfitting/alignment mechanism."
+    },
+    {
+      "id": "GT_gain_or_distribution_shape_benefit",
+      "impact": "unsupported",
+      "evidence": [
+        "RECOMPUTATION.json#differences_pp"
+      ],
+      "rationale": "GT-N+0.0325551204pp is a single-seed tiny observation; shapes andmeans notisolated, actualgradientdoses differ."
+    },
+    {
+      "id": "all_DFL_or_localization_distillation_invalid",
+      "impact": "unsupported",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\FINAL_REPORT.md"
+      ],
+      "rationale": "Onlythismatureinitialization/FT3/prespecifiedmask/coefficient versiontested. No generalnegativeinference."
+    },
+    {
+      "id": "full_per_batch_mask_or_all_dense_tensor_finiteness",
+      "impact": "unsupported",
+      "evidence": [
+        "RECOMPUTATION.json#mask_coverage",
+        "RECOMPUTATION.json#capture_coverage"
+      ],
+      "rationale": "Saved30sampleflow/15maskdiagnostics andpostNMSfiniteoutputs donotobserveall192maskrecords orallmodeltensors."
+    }
+  ],
+  "scope": "OBJECT_DFL_FT3_BNFROZEN",
+  "endpoint": "OBJECT_DFL_FT3_BNFROZEN_LAST_EMA",
+  "eval_type": "real_gt",
+  "dataset": "llvip",
+  "seed": 42,
+  "n_seeds": 1,
+  "standard_deviation": null,
+  "declared_input_set": "INPUT_MANIFEST.json",
+  "audited_input_hashes": [],
+  "new_hash_computed": false,
+  "identity_method": "Direct byte comparisons against bytes actually inspected and reviewed snapshots; no new hash per explicit task scope",
+  "inspection_coverage": {
+    "artifact_checks_passed": 108,
+    "declared_files": 258,
+    "existing_final_collection_files": 163,
+    "new_tests": 0,
+    "new_GPU": 0,
+    "new_inference": 0,
+    "read_existing_native_capture": true,
+    "new_AP_from_predictions_recomputed": false
+  },
+  "recomputation_command": "D:/Anaconda/python.exe -X utf8 E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\audit_final_matrix.py",
+  "recomputation_output": "RECOMPUTATION.json",
+  "source_review": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\TRAINING_SOURCE_REVIEW_v2.json",
+  "analyzer_review": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\ANALYZER_SOURCE_REVIEW.json",
+  "limits": [
+    "Single dataset LLVIP, seed42, mature visible42 initialization, fixed FT3/2048 training images. No variance, statistical significance, E200 ranking validity, cross-dataset or general DFL claim.",
+    "All arms have 192 batches, 96 optimizer attempts, 5 AMP skips, 91 successful optimizer updates; EMA is called 96 times. Equal update counts do not imply no AMP skips.",
+    "Full dev actual native receipts/profile/captured population are traceable; accepted_endpoint_claim=false and independent_endpoint_accepted=false remain in original receipts. This audit accepts scoped provenance/comparison arithmetic, not a new native-vs-capture parity experiment or a fresh AP computation from raw predictions.",
+    "The stored post-NMS boxes/classes/confidences are finite for all 7218 image records and 23637 GT occurrences. This does not prove every dense model tensor/gradient/checkpoint tensor finite; complete weights were not downloaded or reloaded.",
+    "Only the first30 batches have full saved sample-flow records; mask/base diagnostics are 15 saved batches per arm, covering1156 base and54 selected occurrences. Total673 selected occurrences per arm is the actual trainer counter, not673 unique objects or independently observed masks for all192 batches.",
+    "Shared RGB/IR labels define annotation-coordinate targets, not independent physical registration. No release of prior L1 BLOCKED and no separation of distribution shape from its mean.",
+    "GT and DFL use the same lambda and nominal mask/base dose; actual calibration gradient ratios differ (DFL median0.1 versusGT0.12283740486876371). This is not strict gradient-dose matching.",
+    "Each results.csv has column counts[15,15,15,8]; training-loop validation is disabled and its zero/short metric columns are not AP evidence. Full-dev AP comes from separate completed evaluation receipts. Original CSVs remain untouched.",
+    "Runtime remote source_copies are retained remotely. Existing execution manifests record direct-byte copy identity; deployment/launcher record remote byte equality to the independently reviewed18-file snapshot. This audit directly rechecked local source/snapshot and read those runtime manifests without a fresh remote download.",
+    "Initial mature endpoint is an existing separately completed native readout, with matched checkpoint path/stat, actual settings/evaluator and canonical/actual loader rosters; it supplements the current matchedN and does not replace it.",
+    "Final report numerical tables, stage durations, update accounting and fourth-GPU example were checked. Its contextual historical C0/C1/L2 research statements were not newly audited here."
+  ],
+  "unavailable_inputs": [
+    "Complete remote weights and all dense checkpoint/gradient tensors",
+    "Per-batch full masks for unsaved177batches",
+    "Fresh remote download of allruntime source_copies",
+    "New native/capture parity experiment or nativeAP re-computation"
+  ],
+  "raw_metrics_fraction": {
+    "N": {
+      "mAP50_95": 0.3217122432299565,
+      "AP50": 0.7059327479566188,
+      "AP75": 0.23475437645444727,
+      "precision": 0.7287986696936332,
+      "recall": 0.6957846181718673
+    },
+    "L3-DFL": {
+      "mAP50_95": 0.3216054496250292,
+      "AP50": 0.7061090006645306,
+      "AP75": 0.23441985580287011,
+      "precision": 0.7293758055647236,
+      "recall": 0.6956466556669628
+    },
+    "L3-GT": {
+      "mAP50_95": 0.3220377944336773,
+      "AP50": 0.7067613110849347,
+      "AP75": 0.23432822579518564,
+      "precision": 0.7270396269973344,
+      "recall": 0.698565807843635
+    }
+  },
+  "differences_pp": {
+    "L3-DFL - N": {
+      "mAP50_95": -0.010679360492732437,
+      "AP50": 0.017625270791188363,
+      "AP75": -0.033452065157715816,
+      "precision": 0.05771358710904284,
+      "recall": -0.013796250490449857
+    },
+    "L3-GT - N": {
+      "mAP50_95": 0.03255512037207975,
+      "AP50": 0.08285631283159178,
+      "AP75": -0.042615065926163154,
+      "precision": -0.17590426962987848,
+      "recall": 0.2781189671767659
+    },
+    "L3-DFL - L3-GT": {
+      "mAP50_95": -0.043234480864812186,
+      "AP50": -0.06523104204040342,
+      "AP75": 0.009163000768447338,
+      "precision": 0.23361785673892133,
+      "recall": -0.29191521766721573
+    }
+  },
+  "initial_reference_fraction": {
+    "mAP50_95": 0.3287840510939928,
+    "AP50": 0.7161396006544973,
+    "AP75": 0.24282631410771383,
+    "precision": 0.7463069993744104,
+    "recall": 0.7019331948389218
+  },
+  "difference_from_initial_pp": {
+    "N": {
+      "mAP50_95": -0.7071807864036272,
+      "AP50": -1.0206852697878577,
+      "AP75": -0.8071937653266553,
+      "precision": -1.7508329680777202,
+      "recall": -0.6148576667054484
+    },
+    "L3-DFL": {
+      "mAP50_95": -0.7178601468963597,
+      "AP50": -1.0030599989966693,
+      "AP75": -0.8406458304843711,
+      "precision": -1.6931193809686773,
+      "recall": -0.6286539171958982
+    },
+    "L3-GT": {
+      "mAP50_95": -0.6746256660315475,
+      "AP50": -0.9378289569562659,
+      "AP75": -0.8498088312528185,
+      "precision": -1.9267372377075986,
+      "recall": -0.3367386995286825
+    }
+  },
+  "queue_seconds": 666.8562324047089,
+  "run_ids": [
+    "object_dfl_attempt2_llvip_N_calibration",
+    "object_dfl_attempt2_llvip_N_canary",
+    "object_dfl_attempt2_llvip_L3-DFL_canary",
+    "object_dfl_attempt2_llvip_L3-GT_canary",
+    "object_dfl_attempt2_llvip_N_train",
+    "object_dfl_attempt2_llvip_N_eval",
+    "object_dfl_attempt2_llvip_L3-DFL_train",
+    "object_dfl_attempt2_llvip_L3-DFL_eval",
+    "object_dfl_attempt2_llvip_L3-GT_train",
+    "object_dfl_attempt2_llvip_L3-GT_eval"
+  ],
+  "original_failed_attempt_preserved": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\training_evidence_1703"
+}

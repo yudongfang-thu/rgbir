@@ -1,0 +1,27 @@
+{
+  "status": "OBJECT_DFL_MATRIX_PARTIAL_FAILURE",
+  "datasets": [
+    {
+      "dataset": "llvip",
+      "completed": [],
+      "blocked": {},
+      "status": "DATASET_STOPPED_ON_TECHNICAL_FAILURE",
+      "error": "RuntimeError('Launched stage failed; preserve attempt and inspect: object_dfl_attempt1_llvip_N_calibration')",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/run_object_dfl_queue.py\", line 270, in process_dataset\n    calibration = execute(make_job(release, output, dataset, 'N', 'calibration', reference_dir))\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/run_object_dfl_queue.py\", line 260, in execute\n    executor(job, queue)\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py\", line 112, in run_job\n    if rc or monitor_errors:raise RuntimeError('Launched stage failed; preserve attempt and inspect: '+job['id'])\nRuntimeError: Launched stage failed; preserve attempt and inspect: object_dfl_attempt1_llvip_N_calibration\n",
+      "automatic_retry": false,
+      "unrelated_next_dataset_may_continue": true,
+      "seconds": 35.623467445373535,
+      "new_hash_computed": false
+    }
+  ],
+  "seconds": 35.62391471862793,
+  "single_seed": true,
+  "seed": 42,
+  "epochs": 3,
+  "train_images_each_dataset": 2048,
+  "batches_per_full_arm": 192,
+  "new_hash_computed": false,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "ap_adaptive": false
+}

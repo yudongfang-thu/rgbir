@@ -1,0 +1,31 @@
+{
+  "actual_amp": true,
+  "prior_receipt": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/validated_amp_prior.json",
+    "bytes": 2453,
+    "mtime_ns": 1788857871548779280
+  },
+  "prior_configuration": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/validated_amp_prior_config.yaml",
+    "bytes": 4396,
+    "mtime_ns": 1788857871548779280
+  },
+  "prior_current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+  "initialization": {
+    "model": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127857140185407
+    },
+    "teacher": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127257614850390
+    },
+    "reference": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127857140185407
+    }
+  }
+}

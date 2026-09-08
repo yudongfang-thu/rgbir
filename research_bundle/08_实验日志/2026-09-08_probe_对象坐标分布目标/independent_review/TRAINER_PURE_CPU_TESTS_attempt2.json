@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "independent_checks": {
+    "config_N": true,
+    "config_L3-DFL": true,
+    "config_L3-GT": true,
+    "one_DFL_median_shared_GT": true,
+    "less4_blocks_both": true,
+    "upper_cap1": true,
+    "firstbatch_within": true,
+    "firstbatch_vram_exceeds": true,
+    "firstbatch_rss_exceeds": true,
+    "invalid_resource_empty": true,
+    "invalid_resource_nan": true,
+    "amp_binding_restores_exact_original": true,
+    "amp_false_rejected": true
+  },
+  "independent_check_count": 13,
+  "author_queue_tests_executed_by_reviewer": 7,
+  "author_queue_tests_passed": true,
+  "new_GPU_or_SSH": false,
+  "new_hash_computed": false,
+  "scope": "Pure CPU source/control checks; tensor-loss numerical verification requires separate torch CPU evidence."
+}

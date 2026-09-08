@@ -1,0 +1,245 @@
+{
+  "date": "2026-09-08T08:51:14.976385+00:00",
+  "auditor": {
+    "agent": "/root/object_transport_review",
+    "independent_from_executor": "/root/ap_error",
+    "observable_model_identity": "not exposed; inherited parent settings",
+    "cross_model_review_claim": false
+  },
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "FIXED_CPU_TARGET_INTERFACE_EXECUTED_AND_INDEPENDENTLY_RECOMPUTED",
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Uses the declared paired native RGB/IR annotation boxes from the already accepted original 32-frame LLVIP train batch; every result preserves stable GT/frame/role/anchor/forward identity. Annotation-defined correspondence is not physical registration evidence.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\objects.jsonl (all 80 object records)",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\objects.jsonl (all 160 records)"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "No AP or efficacy score computed. FP64 stable T=1 softmax is explicitly derived from raw logits; cached FP32/native vectors retained separately. All positive mass is transported by a fixed annotation affine and hat basis without clipping, tail deletion or target renormalization. Mass and first moment close; exact support is tested before exposure of a whole-object target.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\probability_transport.py:41",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\recomputation_summary.json"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "Actual executor output_attempt1 exists with completed summary, 160 object/path rows, 4 executed source copies, and runtime 0.100148300 seconds. Independent recomputation executed after production.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\objects.jsonl",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\recomputation_rows.json"
+      ]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "Actual entrypoint run() -> validate_inputs() -> analyze() -> transport_logits() -> scatter_complete() is exercised by executed rows. All 160 rows and 628 available side vectors were independently rebuilt directly from original inputs. Executed source copies match pre-execution v2 snapshots and current source byte for byte.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\run_cached_transport.py:83",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\probability_transport.py:41",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot_v2",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\recomputation_summary.json"
+      ]
+    },
+    "scope": {
+      "status": "pass",
+      "details": "Exactly 80 GT and two prelisted interfaces. same_R_primary: 79 supported / 1 missing, all 79 supported are affine identity. native_T_pressure: 15 supported / 63 positive-mass-outside / 2 missing, all 15 supported are affine identity. No new batch, inference, anchor matching, GPU, training, AP, old L1 admission, or efficacy claim.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json variants",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\recomputation_rows.json all 160 rows"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "details": "Mixed: real_gt for annotation-defined geometry on cached actual model logits; synthetic_proxy for independent mathematical small truths. This is a target-interface integrity evaluation, not a detection-performance or physical-registration evaluation.",
+      "types": [
+        "real_gt",
+        "synthetic_proxy"
+      ],
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_small_truth_result.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json"
+      ]
+    },
+    "input_and_source_identity": {
+      "status": "pass",
+      "details": "Four original input files, all four source files, and final result files rechecked by exact path and direct full-byte equality immediately before this verdict. Per-object identities were also checked. No new content hashes, per explicit user scope.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\input_snapshot_manifest.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot_v2",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\result_snapshot"
+      ]
+    },
+    "independent_recomputation": {
+      "status": "pass",
+      "details": "37 independent synthetic checks; actual 80 x 2 path and all 628 available side vectors x 16 bins inspected. Source/target probabilities and mapped distances differ from independent oracle by 0. Maximum independently reconstructed edge-coordinate difference 1.1368683772161603e-13; FP64 source versus saved FP32 difference 2.443613299485392e-07 is disclosed, not counted as transport error.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\review_source.py",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\independent_oracle.py",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\audit_cached.py",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\recomputation_summary.json"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "complete_probability_target_interface",
+      "impact": "supported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\recomputation_summary.json"
+      ],
+      "rationale": "For this frozen cache, the complete-mass operator and its explicit support/missing outcomes agree with independent original-input recomputation."
+    },
+    {
+      "id": "same_R_primary_coverage",
+      "impact": "needs_qualifier",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json variants.same_R_primary"
+      ],
+      "rationale": "79/80 objects supported; every supported map is identity because labels and the fixed anchor geometry coincide. This validates the declared target definition, not a nontrivial cross-anchor warp."
+    },
+    {
+      "id": "native_T_pressure_coverage",
+      "impact": "needs_qualifier",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json variants.native_T_pressure"
+      ],
+      "rationale": "Only 15/80 supported, 63/80 support-rejected and 2/80 missing. All supported cases are identity; the rejected tail mass cannot be discarded or repaired to raise coverage."
+    },
+    {
+      "id": "physical_registration_or_old_L1_admission",
+      "impact": "unsupported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\README.md",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json"
+      ],
+      "rationale": "Shared annotation geometry and interface correctness provide no independent physical registration proof and do not unblock old L1 geometry."
+    },
+    {
+      "id": "KD_utility_AP_or_shape_gain",
+      "impact": "unsupported",
+      "affected_evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json"
+      ],
+      "rationale": "There is no training intervention or detection evaluation here. The audit does not establish student learning, AP gain, or shape value beyond expectation-box quality."
+    }
+  ],
+  "declared_input_set": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\objects.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\anchor_distributions.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\completion_receipt.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\dfl_contract.json"
+  ],
+  "audited_input_hashes": [],
+  "hash_exception": "User explicitly requested no new hashes. The skill default of SHA-256 is superseded by full-byte snapshots and direct equality with resolved paths; no hashes were computed.",
+  "new_hash_computed": false,
+  "final_direct_byte_comparison": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\objects.jsonl",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\input_snapshot\\objects.jsonl",
+      "bytes": 407526,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\anchor_distributions.jsonl",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\input_snapshot\\anchor_distributions.jsonl",
+      "bytes": 1531674,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\completion_receipt.json",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\input_snapshot\\completion_receipt.json",
+      "bytes": 2453,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\dfl_contract.json",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\input_snapshot\\dfl_contract.json",
+      "bytes": 2539,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\probability_transport.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot_v2\\probability_transport.py",
+      "bytes": 5760,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\run_cached_transport.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot_v2\\run_cached_transport.py",
+      "bytes": 9820,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\test_transport_cpu.py",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot_v2\\test_transport_cpu.py",
+      "bytes": 3787,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\PLAN.md",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_snapshot_v2\\PLAN.md",
+      "bytes": 2039,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\objects.jsonl",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\result_snapshot\\objects.jsonl",
+      "bytes": 1931001,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\summary.json",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\result_snapshot\\summary.json",
+      "bytes": 3154,
+      "direct_bytes_equal": true
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1\\README.md",
+      "snapshot": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\result_snapshot\\README.md",
+      "bytes": 906,
+      "direct_bytes_equal": true
+    }
+  ],
+  "run_id": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\transport\\output_attempt1",
+  "current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+  "code_revision": "No new commit used; four reviewed/executed source files matched byte for byte to source_snapshot_v2.",
+  "data_version": "Accepted evidence_1602_final/probe, fixed LLVIP train first 32 frames, seed42, 80 GT, 317 cached distributions.",
+  "evaluator_version": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\audit_cached.py",
+  "recomputation_commands": [
+    "python independent_review/review_source.py",
+    "python independent_review/audit_cached.py",
+    "python independent_review/finalize_audit.py"
+  ],
+  "recomputation_outputs": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\source_small_truth_result.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\recomputation_summary.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\recomputation_rows.json"
+  ],
+  "review_trace": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\SOURCE_REVIEW.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\SOURCE_REVIEW.md",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\SOURCE_REVIEW_ADDENDUM.md",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_对象坐标分布目标\\independent_review\\REVIEW_TRACE.md"
+  ],
+  "inaccessible_inputs": [],
+  "inspection_coverage": {
+    "GT_objects": 80,
+    "interfaces": 2,
+    "result_rows": 160,
+    "available_side_vectors": 628,
+    "source_and_mapped_bins_per_side": 16,
+    "independent_synthetic_checks": 37
+  },
+  "limits": [
+    "Does not re-run or expand the earlier 317-distribution forward audit.",
+    "Does not access GPU, train, or use test data.",
+    "No physical registration or KD utility conclusion.",
+    "An integrity pass is scoped evidence, not a guarantee against every possible defect."
+  ]
+}

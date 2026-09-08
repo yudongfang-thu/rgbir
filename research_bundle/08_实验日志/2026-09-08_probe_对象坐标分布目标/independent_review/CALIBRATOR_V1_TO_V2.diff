@@ -1,0 +1,45 @@
+--- reviewed_v1/calibrate_object_dfl.py
++++ reviewed_v2/calibrate_object_dfl.py
+@@ -65,11 +65,13 @@
+         torch.cuda.reset_peak_memory_stats()
+         for bi,raw in enumerate(trainer.train_loader):
+             if bi==8:break
++            torch.cuda.synchronize()
++            allocation_start_mib=torch.cuda.memory_allocated()/2**20
+             trainer.model.load_state_dict(initial,strict=True);trainer._model_train()
+             batch=trainer.preprocess_batch(raw);criterion.calls=bi+1
+             with torch.amp.autocast('cuda',enabled=bool(trainer.amp)):
+                 prediction=trainer.model(batch['img']);student=legacy.raw_prediction(prediction)
+-                native,_=criterion.native(prediction,batch)
++                native,native_items=criterion.native(prediction,batch)
+                 with torch.no_grad():
+                     teacher=legacy.raw_prediction(criterion.teacher(batch['strong_img']))
+                     reference=legacy.raw_prediction(criterion.reference(batch['img']))
+@@ -91,7 +93,18 @@
+             if bi==0:write_new(output/'first_batch_resource_receipt.json',resources)
+             if resources['status']!='PASS':raise RuntimeError('Calibration actual peak plus margin exceeds frozen resource limit')
+             rows.append(row);legacy.append_json(output/'calibration_batches.jsonl',row)
+-            del prediction,student,native,teacher,reference,losses,grads,ng,batch,raw
++            allocation_before_cleanup_mib=torch.cuda.memory_allocated()/2**20
++            # Python's loop target `loss` otherwise keeps the last GT graph alive
++            # despite deleting the `losses` container (all reads used retain_graph).
++            # Remove native items explicitly as well, regardless of detach details.
++            del loss,stats,native_items,prediction,student,native,teacher,reference,losses,grads,ng,batch,raw
++            torch.cuda.synchronize()
++            legacy.append_json(output/'calibration_allocation_lifecycle.jsonl',dict(batch=bi+1,
++                allocated_start_mib=allocation_start_mib,
++                allocated_before_cleanup_mib=allocation_before_cleanup_mib,
++                allocated_after_cleanup_mib=torch.cuda.memory_allocated()/2**20,
++                reserved_after_cleanup_mib=torch.cuda.memory_reserved()/2**20,
++                empty_cache_called=False,graph_loop_references_deleted=True))
+         if len(rows)!=8:raise RuntimeError('Need exactly eight fixed batches')
+         if trainer.optimizer.state or trainer.ema.updates!=0:raise AssertionError('Calibration updated optimizer/EMA')
+         if any(not torch.equal(v,bn_state(trainer.model)[k]) for k,v in frozen.items()):raise AssertionError('Frozen BN changed')
+@@ -103,6 +116,7 @@
+             reset_all_parameters_buffers_each_batch=True,optimizer_updates=0,ema_updates=0,bn_running_buffers_unchanged=True,
+             full_initial_checkpoint_state_verified=True,
+             setup_amp=amp_setup,validated_amp_prior=amp_prior,all_eight_batch_resource_checks_passed=True,
++            calibration_graph_lifetime='v2_explicit_loop_loss_and_native_items_cleanup',
+             formal64_admission=False,seconds=time.perf_counter()-started,new_hash_computed=False,official_test_accessed=False,
+             resources=legacy.bound_lease_resource_record_from_environment(),
+             gpu_allocated_peak_mib=torch.cuda.max_memory_allocated()/2**20,gpu_reserved_peak_mib=torch.cuda.max_memory_reserved()/2**20))

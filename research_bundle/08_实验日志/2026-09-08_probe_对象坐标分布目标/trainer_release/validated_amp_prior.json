@@ -1,0 +1,80 @@
+{
+  "status": "RAW_DFL_SINGLE_BATCH_COMPLETED",
+  "scope": "RAW_DFL_SINGLE_BATCH",
+  "current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+  "dataset": "llvip",
+  "seed": 42,
+  "batches": 1,
+  "frames": 32,
+  "objects_n": 80,
+  "unique_distributions": 317,
+  "raw_forward_counts": {
+    "student": 1,
+    "reference": 1,
+    "teacher": 1
+  },
+  "raw_forward_counter_scope": "Actual requested batch only; setup excluded",
+  "head_decode_readout_calls_per_model": 1,
+  "optimizer_updates": 0,
+  "ema_updates": 0,
+  "backward": 0,
+  "training": 0,
+  "optimizer_constructed_for_loader_setup": true,
+  "optimizer_state_empty": true,
+  "first_batch_stream_exact": true,
+  "identity_exact": true,
+  "student_full_state_unchanged": true,
+  "auxiliary_full_state_unchanged": true,
+  "all_gradients_absent": true,
+  "student_mode": "train_with_BN_frozen",
+  "teacher_reference_mode": "eval",
+  "actual_amp": true,
+  "initialization": {
+    "model": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127857140185407
+    },
+    "teacher": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127257614850390
+    },
+    "reference": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127857140185407
+    }
+  },
+  "setup_amp": {
+    "probe_specific_setup_check_amp_bypass": true,
+    "validated_value": true,
+    "calls": 1,
+    "original_binding_restored": true,
+    "setup_equivalence_claim": false,
+    "unrelated_model_forward": false
+  },
+  "historical_same_forward_claim": false,
+  "historical_pixel_tensor_comparison": false,
+  "head_decode_nonstate_caches_may_change": true,
+  "new_NMS": false,
+  "new_matching": false,
+  "new_loss": false,
+  "resources": {
+    "gpu_ids": [
+      0
+    ],
+    "cuda_pid_counts": {
+      "0": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "0": 1684
+    },
+    "peak_rss_mib": 16336
+  },
+  "gpu_allocated_peak_mib": 950.798828125,
+  "gpu_reserved_peak_mib": 1192.0,
+  "seconds": 21.426048330962658,
+  "new_hash_computed": false,
+  "official_test_accessed": false
+}

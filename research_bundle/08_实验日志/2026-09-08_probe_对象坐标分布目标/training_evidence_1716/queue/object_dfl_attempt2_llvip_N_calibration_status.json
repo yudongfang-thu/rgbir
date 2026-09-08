@@ -1,0 +1,50 @@
+{
+  "status": "RUNNING",
+  "time": 1788858835.2126765,
+  "launch": {
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 32768,
+    "expected_vram_mib": 8192,
+    "gpu_ids": [
+      0
+    ],
+    "lease_id": "object_dfl_attempt2_llvip_N_calibration-da491d3c9e3e",
+    "pid": 1246961,
+    "status": "LAUNCHED"
+  },
+  "job": {
+    "id": "object_dfl_attempt2_llvip_N_calibration",
+    "dataset": "llvip",
+    "arm": "N",
+    "stage": "calibration",
+    "formal": false,
+    "kind": "train",
+    "command": [
+      "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/calibrate_object_dfl.py",
+      "--reference-dir",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+      "--config",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/configs/llvip_N_s42_FT3.yaml",
+      "--output",
+      "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip"
+    ],
+    "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/calibration/llvip/calibration_receipt.json",
+    "vram_mib": 8192,
+    "rss_mib": 32768
+  },
+  "admission": {
+    "active_gpus_after": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "empty_gpus_after": [
+      1,
+      3
+    ],
+    "four_gpu_exception": true,
+    "minimum_empty_required": 2
+  }
+}

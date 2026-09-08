@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "resources": {
+    "gpu_ids": [
+      0
+    ],
+    "cuda_pid_counts": {
+      "0": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "0": 5454
+    },
+    "peak_rss_mib": 16868
+  },
+  "gpu_allocated_peak_mib": 4389.4931640625,
+  "gpu_reserved_peak_mib": 4954.0,
+  "measured_with_margin_vram_mib": 5888,
+  "measured_with_margin_rss_mib": 19456,
+  "limits": {
+    "vram_mib": 8192,
+    "rss_mib": 32768
+  },
+  "new_hash_computed": false,
+  "batch": 1
+}

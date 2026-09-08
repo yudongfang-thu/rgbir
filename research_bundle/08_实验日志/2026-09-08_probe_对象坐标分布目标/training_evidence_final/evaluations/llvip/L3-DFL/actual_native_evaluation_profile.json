@@ -1,0 +1,61 @@
+{
+  "schema": "direction-actual-native-profile-v1",
+  "dataset": "llvip",
+  "scope": "OBJECT_DFL_FT3_BNFROZEN",
+  "effective_kwargs": {
+    "imgsz": 640,
+    "batch": 32,
+    "workers": 4,
+    "quantize": null,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "agnostic_nms": false,
+    "single_cls": false,
+    "rect": true,
+    "augment": false,
+    "half": false
+  },
+  "runtime_sources": {
+    "loader": {
+      "class_name": "ultralytics.data.build.InfiniteDataLoader",
+      "source_file": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/build.py"
+    },
+    "dataset": {
+      "class_name": "ultralytics.data.dataset.YOLODataset",
+      "source_file": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/dataset.py"
+    },
+    "network": {
+      "class_name": "ultralytics.nn.tasks.DetectionModel",
+      "source_file": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/nn/tasks.py"
+    }
+  },
+  "actual_class_names": {
+    "0": "person"
+  },
+  "observed_images": 2406,
+  "gt_objects_before_inference": 7879,
+  "gt_objects_captured": 7879,
+  "profile_projection": {
+    "kind": "explicit_direction_training_to_full_dev_evaluation_projection",
+    "dataset": "llvip",
+    "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "training_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_visible.yaml",
+    "actual_evaluation_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+    "native_configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v1/configs/llvip_native_evaluation.yaml",
+    "native_contract_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "prior_binding_validated": false,
+    "native_profile_binding": null,
+    "profile_scope": "new_LLVIP_actual_native_profile_only",
+    "native_vs_capture_parity_rerun": false,
+    "accepted_endpoint_claim": false,
+    "subset_dev_roster_exact_to_full": true,
+    "training_identity_unchanged_claim": false,
+    "expected_dev_images": 2406,
+    "expected_dev_gt_objects": 7879
+  },
+  "source_manifest": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/attempt2/evaluations/llvip/L3-DFL/source_manifest.json",
+  "independent_endpoint_accepted": false,
+  "new_native_capture_equivalence_claim": false,
+  "new_hash_computed": false
+}

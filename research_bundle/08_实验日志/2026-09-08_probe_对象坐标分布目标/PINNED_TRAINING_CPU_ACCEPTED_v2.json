@@ -1,0 +1,31 @@
+{
+  "receipt": {
+    "status": "PASS",
+    "tests": 36,
+    "wrapper_and_queue_tests": 22,
+    "L3": {
+      "status": "PASS",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "source": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/l3_distribution_loss.py",
+        "bytes": 18084,
+        "mtime_ns": 1788858740528230697
+      },
+      "reference_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+      "scope": "CPU_SYNTHETIC_LOSS_SELECTION_ONLY",
+      "GPU_used": false,
+      "new_AP_read": false,
+      "new_hash_computed": false
+    },
+    "calibrator_cli_exit": 0,
+    "source_changed": false,
+    "GPU_used": false,
+    "CUDA_VISIBLE_DEVICES": "",
+    "new_hash_computed": false,
+    "seconds": 4.51933217048645,
+    "scope": "ACTUAL_PINNED_CPU_V2_DECLARED_ENTRY_POINTS"
+  },
+  "log": "test_actual_resource_ceiling_includes_margin (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_amp_prior_full_identity_and_version (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_amp_scoped_binding_restored_success_and_failure (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_cloned_binding_does_not_mutate_original (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_dfl_calibrates_shared_gt_without_using_gt_ratios (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_eval_completion_new_scope_and_exact_config_binding (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_fraction_metric_contract (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_full_dev_projection_and_no_drone_binding (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_insufficient_dfl_and_invalid_ratio (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_old_arm_scope_or_temperature_rejected (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_one_coefficient_and_zero_native (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_three_real_template_configs (test_object_dfl_wrappers_cpu.Contracts) ... ok\ntest_N_keeps_auxiliary_selection_but_native_gradient (test_object_dfl_wrappers_cpu.CriterionTruth) ... /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/test_object_dfl_wrappers_cpu.py:176: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n  self.assertEqual(float(total),5.);self.assertTrue(self.torch.equal(m.p.grad,self.torch.ones(2)))\nok\ntest_native_plus_B_lambda_once_and_nonzero_shared_grad (test_object_dfl_wrappers_cpu.CriterionTruth) ... ok\ntest_same_batch_DFL_GT_selection_binding (test_object_dfl_wrappers_cpu.CriterionTruth) ... ok\ntest_actual_seven_configs_and_fixed_coefficients (test_object_dfl_queue_cpu.Tests) ... ok\ntest_eval_CLI_and_resource_ceilings (test_object_dfl_queue_cpu.Tests) ... ok\ntest_full_both_dataset_sequences (test_object_dfl_queue_cpu.Tests) ... ok\ntest_invalid_calibration_blocks_all_three_arms (test_object_dfl_queue_cpu.Tests) ... ok\ntest_malformed_coefficients_fail_closed (test_object_dfl_queue_cpu.Tests) ... ok\ntest_technical_failure_stops_only_dataset (test_object_dfl_queue_cpu.Tests) ... ok\ntest_training_stream_mismatch_blocks_eval (test_object_dfl_queue_cpu.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 2.326s\n\nOK\ntest_GT_and_DFL_identical_selection (__main__.Truths) ... ok\ntest_GT_sqrt_after_adjacent_bins_no_clamp (__main__.Truths) ... ok\ntest_R_gap_point70_unchanged (__main__.Truths) ... ok\ntest_all_class_IR_unique_owner_gate (__main__.Truths) ... ok\ntest_base_denominator_before_R_reliability (__main__.Truths) ... /mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_object_dfl_screen_20260908/release_v2/test_l3_cpu.py:115: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n  self.assertAlmostEqual(float(two),float(one)/2,places=6)\nok\ntest_empty_differentiable_zero (__main__.Truths) ... ok\ntest_exact_KL_temperature_fourmean_base_not_selected (__main__.Truths) ... ok\ntest_finite_gradient_only_actual_student_anchor (__main__.Truths) ... ok\ntest_full_tail_shift_rejects_without_shrinking_base (__main__.Truths) ... ok\ntest_learning_dtype_positive_tail_rejected_zeros_legal (__main__.Truths) ... ok\ntest_no_independent_teacher_anchor_substitution (__main__.Truths) ... ok\ntest_old_R_base_and_gap_exact (__main__.Truths) ... ok\ntest_student_outputs_not_used_for_selection (__main__.Truths) ... ok\ntest_temperature_before_nonidentity_transport (__main__.Truths) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.509s\n\nOK\n\nCALIBRATOR_CLI\nusage: calibrate_object_dfl.py [-h] --reference-dir REFERENCE_DIR --config\n                               CONFIG --output OUTPUT\n\noptions:\n  -h, --help            show this help message and exit\n  --reference-dir REFERENCE_DIR\n  --config CONFIG\n  --output OUTPUT\n"
+}
