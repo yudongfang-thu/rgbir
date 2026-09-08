@@ -1,0 +1,426 @@
+{
+  "objects": 30,
+  "edges": 120,
+  "teacher_target_minus_GT_signed_by_edge": {
+    "x1": {
+      "n": 30,
+      "mean": -0.004638971040381642,
+      "minimum": -0.1585039896527108,
+      "median": 0.007276222604339456,
+      "p90": 0.07869411443447918,
+      "maximum": 0.12576733795582204
+    },
+    "y1": {
+      "n": 30,
+      "mean": -0.010131065890350201,
+      "minimum": -0.10965721706737752,
+      "median": -0.0025589999531203233,
+      "p90": 0.037595553173166166,
+      "maximum": 0.04553438079209859
+    },
+    "x2": {
+      "n": 30,
+      "mean": -0.0008034416157858752,
+      "minimum": -0.19952296761471566,
+      "median": 0.002880179728254717,
+      "p90": 0.06461048407198351,
+      "maximum": 0.08506706268893693
+    },
+    "y2": {
+      "n": 30,
+      "mean": 0.00462092735444201,
+      "minimum": -0.0784613172663382,
+      "median": -0.00028856754251660455,
+      "p90": 0.052911166256609646,
+      "maximum": 0.1348241898305751
+    }
+  },
+  "teacher_target_minus_GT_abs_by_edge": {
+    "x1": {
+      "n": 30,
+      "mean": 0.048514428893270595,
+      "minimum": 0.00013993078625030878,
+      "median": 0.02301588338270407,
+      "p90": 0.12666440969032539,
+      "maximum": 0.1585039896527108
+    },
+    "y1": {
+      "n": 30,
+      "mean": 0.025694242910838414,
+      "minimum": 0.0021276096268775663,
+      "median": 0.018663173491595898,
+      "p90": 0.046311855579090025,
+      "maximum": 0.10965721706737752
+    },
+    "x2": {
+      "n": 30,
+      "mean": 0.036334201269579654,
+      "minimum": 0.0022627221507636186,
+      "median": 0.01741535024230273,
+      "p90": 0.07414678469803745,
+      "maximum": 0.19952296761471566
+    },
+    "y2": {
+      "n": 30,
+      "mean": 0.02899799902561307,
+      "minimum": 0.00012616250882713231,
+      "median": 0.011763762580389081,
+      "p90": 0.06596457120708522,
+      "maximum": 0.1348241898305751
+    }
+  },
+  "teacher_target_absolute_residual": {
+    "n": 120,
+    "mean": 0.034885218024825436,
+    "minimum": 0.00012616250882713231,
+    "median": 0.016858642572319393,
+    "p90": 0.08709256147902056,
+    "maximum": 0.19952296761471566
+  },
+  "reference_absolute_GT_error": {
+    "n": 120,
+    "mean": 0.14302912994025235,
+    "minimum": 0.0004273167463831884,
+    "median": 0.10307067329058162,
+    "p90": 0.29415039695642065,
+    "maximum": 1.7856784467987425
+  },
+  "teacher_target_exact_GT_edges": 0,
+  "teacher_target_residual_lt_beta_edges": 108,
+  "teacher_target_residual_lt_reference_error_edges": 105,
+  "target_error_norm_over_reference_error": {
+    "n": 30,
+    "mean": 0.30663443450693817,
+    "minimum": 0.0262741731679517,
+    "median": 0.2548036937005419,
+    "p90": 0.6191427679045384,
+    "maximum": 0.7960597220589218
+  },
+  "derivative_exactly_equal_edges": 47,
+  "same_nonzero_sign_edges": 110,
+  "opposite_sign_edges": 10,
+  "both_zero_edges": 0,
+  "exactly_one_zero_edge": 0,
+  "same_sign_different_magnitude_edges": 63,
+  "objects_with_any_opposite_edge": 8,
+  "GT_derivative_saturated_edges": 61,
+  "teacher_derivative_saturated_edges": 48,
+  "regimes": {
+    "both_saturated_same_sign": 47,
+    "both_quadratic": 58,
+    "one_saturated": 15
+  },
+  "per_object_cosine": {
+    "n": 30,
+    "mean": 0.961448373643144,
+    "minimum": 0.8193822938802603,
+    "median": 0.9793386763014343,
+    "p90": 0.9989272197192102,
+    "maximum": 0.9998706255409209
+  },
+  "stack_unscaled_output_derivative_cosine": 0.9586630695132701,
+  "stack_loss_scaled_output_derivative_cosine": 0.9596809702134895,
+  "stack_pixel_B_lambda_output_derivative_cosine": 0.980441927303999,
+  "opposite_edge_records": [
+    {
+      "occurrence_id": "batch1:rgb19:ir19",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/020011.jpg",
+      "edge": "y2",
+      "reference_minus_GT": -0.05379598706593036,
+      "teacher_minus_GT": -0.0645760438671682,
+      "GT_derivative": -0.5379598706593036,
+      "teacher_derivative": 0.10780056801237836
+    },
+    {
+      "occurrence_id": "batch1:rgb25:ir25",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/130313.jpg",
+      "edge": "y1",
+      "reference_minus_GT": 0.026738646685732646,
+      "teacher_minus_GT": 0.04246110554440722,
+      "GT_derivative": 0.2673864668573264,
+      "teacher_derivative": -0.15722458858674573
+    },
+    {
+      "occurrence_id": "batch1:rgb55:ir55",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/110162.jpg",
+      "edge": "x2",
+      "reference_minus_GT": 0.0022087792212475144,
+      "teacher_minus_GT": 0.005733810549850782,
+      "GT_derivative": 0.022087792212475144,
+      "teacher_derivative": -0.035250313286032675
+    },
+    {
+      "occurrence_id": "batch1:rgb55:ir55",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/110162.jpg",
+      "edge": "y2",
+      "reference_minus_GT": -0.006067830831024357,
+      "teacher_minus_GT": -0.007911449048120245,
+      "GT_derivative": -0.06067830831024357,
+      "teacher_derivative": 0.01843618217095888
+    },
+    {
+      "occurrence_id": "batch1:rgb59:ir59",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/020030.jpg",
+      "edge": "y2",
+      "reference_minus_GT": -0.041015950161912285,
+      "teacher_minus_GT": -0.047747748476535845,
+      "GT_derivative": -0.41015950161912285,
+      "teacher_derivative": 0.0673179831462356
+    },
+    {
+      "occurrence_id": "batch1:rgb76:ir76",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/180167.jpg",
+      "edge": "y2",
+      "reference_minus_GT": 0.04318536628497327,
+      "teacher_minus_GT": 0.05118917423090208,
+      "GT_derivative": 0.4318536628497327,
+      "teacher_derivative": -0.08003807945928809
+    },
+    {
+      "occurrence_id": "batch5:rgb29:ir29",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/090270.jpg",
+      "edge": "y1",
+      "reference_minus_GT": -0.0010454634096805752,
+      "teacher_minus_GT": -0.002743190902291175,
+      "GT_derivative": -0.010454634096805752,
+      "teacher_derivative": 0.016977274926105995
+    },
+    {
+      "occurrence_id": "batch5:rgb29:ir29",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/090270.jpg",
+      "edge": "x2",
+      "reference_minus_GT": -0.0004273167463831884,
+      "teacher_minus_GT": -0.013219727009866511,
+      "GT_derivative": -0.004273167463831884,
+      "teacher_derivative": 0.12792410263483323
+    },
+    {
+      "occurrence_id": "batch6:rgb19:ir19",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/101235.jpg",
+      "edge": "y2",
+      "reference_minus_GT": -0.0737901927755622,
+      "teacher_minus_GT": -0.0784613172663382,
+      "GT_derivative": -0.737901927755622,
+      "teacher_derivative": 0.04671124490776002
+    },
+    {
+      "occurrence_id": "batch8:rgb37:ir37",
+      "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/100710.jpg",
+      "edge": "y1",
+      "reference_minus_GT": 0.03969965551320954,
+      "teacher_minus_GT": 0.04553438079209859,
+      "GT_derivative": 0.39699655513209536,
+      "teacher_derivative": -0.0583472527888905
+    }
+  ],
+  "status": "L2_TARGET_AUDIT_COMPLETED",
+  "scope": "REFERENCE_OUTPUT_PROXY_NOT_PARAMETER_GRADIENT",
+  "batches": 8,
+  "base_objects": 649,
+  "image_occurrences": 256,
+  "unique_images": 256,
+  "repeated_image_occurrences": 0,
+  "selected_object_occurrences": 30,
+  "selected_image_occurrences": 26,
+  "selected_unique_images": 26,
+  "selected_images_repeated_across_batches": 0,
+  "selected_multiple_objects_same_image": {
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/130313.jpg": 2,
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/100626.jpg": 2,
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/090257.jpg": 2,
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1/visible/images/fit/100710.jpg": 2
+  },
+  "stable_original_GT_identity_available_all8": false,
+  "selected_RGB_IR_GT_exact_count": 30,
+  "selected_mapped_teacher_equals_IR_box_count": 28,
+  "all_base_RGB_IR_GT_exact_count": 649,
+  "non_null_teacher_mapping_count": 32,
+  "mapped_IR_box_max_abs_pixel_difference": 1.52587890625e-05,
+  "mapped_IR_box_nonexact_records": [
+    {
+      "batch": 4,
+      "rgb_gt_index": 12,
+      "selected": true,
+      "max_abs_pixel_difference": 1.52587890625e-05
+    },
+    {
+      "batch": 7,
+      "rgb_gt_index": 21,
+      "selected": true,
+      "max_abs_pixel_difference": 7.62939453125e-06
+    }
+  ],
+  "selected_reference_teacher_same_anchor_count": 1,
+  "stored_base_records_without_teacher_target": 617,
+  "stored_base_records_with_student_box": 0,
+  "batch_results": [
+    {
+      "batch": 1,
+      "base": 79,
+      "selected": 7,
+      "selected_image_occurrences": 6,
+      "reference_proxy_teacher_loss": 0.005940835127093316,
+      "reference_proxy_GT_loss": 0.007887285436904557,
+      "actual_recorded_student_teacher_loss": 0.0059408401139080524,
+      "actual_recorded_student_GT_loss": 0.00788729079067707,
+      "actual_recorded_native_cosine": {
+        "L2-box": 0.07673070982780535,
+        "L2-GT": 0.08240961897473224
+      },
+      "actual_recorded_unit_B_kd_norms": {
+        "L2-box": 0.6243388937893658,
+        "L2-GT": 0.6043588032626527
+      }
+    },
+    {
+      "batch": 2,
+      "base": 85,
+      "selected": 2,
+      "selected_image_occurrences": 2,
+      "reference_proxy_teacher_loss": 0.001086420893231693,
+      "reference_proxy_GT_loss": 0.0016460996204200834,
+      "actual_recorded_student_teacher_loss": 0.001086420495994389,
+      "actual_recorded_student_GT_loss": 0.00164609937928617,
+      "actual_recorded_native_cosine": {
+        "L2-box": -0.040831300026960726,
+        "L2-GT": -0.0031426463238341555
+      },
+      "actual_recorded_unit_B_kd_norms": {
+        "L2-box": 0.33023877120027206,
+        "L2-GT": 0.3415506550407393
+      }
+    },
+    {
+      "batch": 3,
+      "base": 69,
+      "selected": 0,
+      "selected_image_occurrences": 0,
+      "reference_proxy_teacher_loss": 0,
+      "reference_proxy_GT_loss": 0,
+      "actual_recorded_student_teacher_loss": 0.0,
+      "actual_recorded_student_GT_loss": 0.0,
+      "actual_recorded_native_cosine": {
+        "L2-box": null,
+        "L2-GT": null
+      },
+      "actual_recorded_unit_B_kd_norms": {
+        "L2-box": 0.0,
+        "L2-GT": 0.0
+      }
+    },
+    {
+      "batch": 4,
+      "base": 78,
+      "selected": 3,
+      "selected_image_occurrences": 3,
+      "reference_proxy_teacher_loss": 0.002805951504459162,
+      "reference_proxy_GT_loss": 0.004149684657734011,
+      "actual_recorded_student_teacher_loss": 0.0028059494215995073,
+      "actual_recorded_student_GT_loss": 0.004149682819843292,
+      "actual_recorded_native_cosine": {
+        "L2-box": 0.09696155646190488,
+        "L2-GT": 0.09344013840271831
+      },
+      "actual_recorded_unit_B_kd_norms": {
+        "L2-box": 0.692203419202669,
+        "L2-GT": 0.6930852492828116
+      }
+    },
+    {
+      "batch": 5,
+      "base": 97,
+      "selected": 2,
+      "selected_image_occurrences": 2,
+      "reference_proxy_teacher_loss": 0.0020765367820557747,
+      "reference_proxy_GT_loss": 0.0022871963355347922,
+      "actual_recorded_student_teacher_loss": 0.0020765368826687336,
+      "actual_recorded_student_GT_loss": 0.0022871962282806635,
+      "actual_recorded_native_cosine": {
+        "L2-box": -0.1258480821595102,
+        "L2-GT": -0.12814857982647235
+      },
+      "actual_recorded_unit_B_kd_norms": {
+        "L2-box": 0.22159863649196945,
+        "L2-GT": 0.21871150336576445
+      }
+    },
+    {
+      "batch": 6,
+      "base": 86,
+      "selected": 5,
+      "selected_image_occurrences": 4,
+      "reference_proxy_teacher_loss": 0.002081675206712966,
+      "reference_proxy_GT_loss": 0.003779418425652465,
+      "actual_recorded_student_teacher_loss": 0.0020816714968532324,
+      "actual_recorded_student_GT_loss": 0.0037794148083776236,
+      "actual_recorded_native_cosine": {
+        "L2-box": -0.18741487570938778,
+        "L2-GT": -0.180201927946352
+      },
+      "actual_recorded_unit_B_kd_norms": {
+        "L2-box": 0.3258934212704453,
+        "L2-GT": 0.3815810598204211
+      }
+    },
+    {
+      "batch": 7,
+      "base": 67,
+      "selected": 4,
+      "selected_image_occurrences": 3,
+      "reference_proxy_teacher_loss": 0.004850859781575654,
+      "reference_proxy_GT_loss": 0.0051292680899776505,
+      "actual_recorded_student_teacher_loss": 0.004850858822464943,
+      "actual_recorded_student_GT_loss": 0.005129266995936632,
+      "actual_recorded_native_cosine": {
+        "L2-box": 0.011159640042716202,
+        "L2-GT": 0.03668177112286793
+      },
+      "actual_recorded_unit_B_kd_norms": {
+        "L2-box": 0.48560881334017514,
+        "L2-GT": 0.4781293925697326
+      }
+    },
+    {
+      "batch": 8,
+      "base": 88,
+      "selected": 7,
+      "selected_image_occurrences": 6,
+      "reference_proxy_teacher_loss": 0.011871549857540756,
+      "reference_proxy_GT_loss": 0.013146551948694667,
+      "actual_recorded_student_teacher_loss": 0.01187154557555914,
+      "actual_recorded_student_GT_loss": 0.013146547600626945,
+      "actual_recorded_native_cosine": {
+        "L2-box": 0.10876497679584801,
+        "L2-GT": 0.11132673534161631
+      },
+      "actual_recorded_unit_B_kd_norms": {
+        "L2-box": 1.1027839917212277,
+        "L2-GT": 1.102803564419609
+      }
+    }
+  ],
+  "physical_registration_claim": false,
+  "student_output_exact_claim": false,
+  "parameter_gradient_reconstructed": false,
+  "DFL_distribution_reconstructed": false,
+  "GPU_used": false,
+  "new_forward": false,
+  "new_hash_computed": false,
+  "inputs": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\calibration\\llvip\\calibration_batches.jsonl",
+      "bytes": 957383,
+      "mtime_ns": 1788840154887126200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\calibration\\llvip\\calibration_receipt.json",
+      "bytes": 2517,
+      "mtime_ns": 1788840154882456800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\early_llvip_evidence\\raw_attempt1\\release_v1\\localization_box_v2.py",
+      "bytes": 13285,
+      "mtime_ns": 1788838302095684700
+    }
+  ]
+}

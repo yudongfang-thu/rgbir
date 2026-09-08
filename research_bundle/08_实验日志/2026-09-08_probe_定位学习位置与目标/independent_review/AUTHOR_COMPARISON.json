@@ -1,0 +1,353 @@
+{
+  "status": "PASS_AUTHOR_OUTPUT_COMPARISON",
+  "auditor": "/root/loc_target_review",
+  "model": "unavailable",
+  "target_objects_compared": 30,
+  "anchor_rows_compared": 80,
+  "anchor_output": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_定位学习位置与目标\\anchor_join\\output_attempt3",
+  "source_byte_comparisons": [
+    "localization_box_v2.py",
+    "direction_criterion.py",
+    "calibrate_direction.py"
+  ],
+  "teacher_targets_within_reference_DFL_expectation_range": 30,
+  "teacher_target_stride_distance_min": 0.08938217163085938,
+  "teacher_target_stride_distance_max": 8.940414428710938,
+  "representability_scope": "Cached 30 selected target boxes and recorded 640-grid only; not native TAL assignment or physical registration.",
+  "support_rows": [
+    {
+      "batch": 1,
+      "rgb_gt_index": 19,
+      "reference_anchor": 7187,
+      "target_ltrb_in_stride_units": [
+        2.025968551635742,
+        2.3260421752929688,
+        1.0417900085449219,
+        3.4385242462158203
+      ]
+    },
+    {
+      "batch": 1,
+      "rgb_gt_index": 25,
+      "reference_anchor": 7154,
+      "target_ltrb_in_stride_units": [
+        2.0076522827148438,
+        3.1214942932128906,
+        0.5074615478515625,
+        4.016239166259766
+      ]
+    },
+    {
+      "batch": 1,
+      "rgb_gt_index": 26,
+      "reference_anchor": 7156,
+      "target_ltrb_in_stride_units": [
+        1.3173789978027344,
+        1.865041732788086,
+        0.8579292297363281,
+        4.998603820800781
+      ]
+    },
+    {
+      "batch": 1,
+      "rgb_gt_index": 51,
+      "reference_anchor": 7054,
+      "target_ltrb_in_stride_units": [
+        1.535843849182129,
+        5.445890426635742,
+        0.8527603149414062,
+        1.5075244903564453
+      ]
+    },
+    {
+      "batch": 1,
+      "rgb_gt_index": 55,
+      "reference_anchor": 5439,
+      "target_ltrb_in_stride_units": [
+        0.44280242919921875,
+        7.3426055908203125,
+        0.5048446655273438,
+        8.940414428710938
+      ]
+    },
+    {
+      "batch": 1,
+      "rgb_gt_index": 59,
+      "reference_anchor": 7680,
+      "target_ltrb_in_stride_units": [
+        0.4997493326663971,
+        7.800506591796875,
+        0.9339478015899658,
+        3.4522628784179688
+      ]
+    },
+    {
+      "batch": 1,
+      "rgb_gt_index": 76,
+      "reference_anchor": 6889,
+      "target_ltrb_in_stride_units": [
+        2.026477336883545,
+        6.468175888061523,
+        1.7281427383422852,
+        5.270149230957031
+      ]
+    },
+    {
+      "batch": 2,
+      "rgb_gt_index": 80,
+      "reference_anchor": 7735,
+      "target_ltrb_in_stride_units": [
+        2.6486825942993164,
+        4.837322235107422,
+        0.5242061614990234,
+        5.271400451660156
+      ]
+    },
+    {
+      "batch": 2,
+      "rgb_gt_index": 84,
+      "reference_anchor": 6567,
+      "target_ltrb_in_stride_units": [
+        1.524184226989746,
+        3.794550895690918,
+        0.553924560546875,
+        4.7781572341918945
+      ]
+    },
+    {
+      "batch": 4,
+      "rgb_gt_index": 12,
+      "reference_anchor": 6821,
+      "target_ltrb_in_stride_units": [
+        2.720428466796875,
+        3.2016725540161133,
+        1.3258323669433594,
+        4.56361198425293
+      ]
+    },
+    {
+      "batch": 4,
+      "rgb_gt_index": 29,
+      "reference_anchor": 7738,
+      "target_ltrb_in_stride_units": [
+        2.752962112426758,
+        5.367361068725586,
+        0.6892967224121094,
+        1.4897727966308594
+      ]
+    },
+    {
+      "batch": 4,
+      "rgb_gt_index": 45,
+      "reference_anchor": 7980,
+      "target_ltrb_in_stride_units": [
+        2.1848506927490234,
+        2.548473358154297,
+        1.1755847930908203,
+        0.4953765869140625
+      ]
+    },
+    {
+      "batch": 5,
+      "rgb_gt_index": 15,
+      "reference_anchor": 7415,
+      "target_ltrb_in_stride_units": [
+        1.3438653945922852,
+        1.8752994537353516,
+        0.3986396789550781,
+        1.5065288543701172
+      ]
+    },
+    {
+      "batch": 5,
+      "rgb_gt_index": 29,
+      "reference_anchor": 6479,
+      "target_ltrb_in_stride_units": [
+        5.203945159912109,
+        1.5207128524780273,
+        0.41809844970703125,
+        6.142417907714844
+      ]
+    },
+    {
+      "batch": 6,
+      "rgb_gt_index": 19,
+      "reference_anchor": 1299,
+      "target_ltrb_in_stride_units": [
+        0.8780288696289062,
+        4.400458335876465,
+        0.9590530395507812,
+        5.811372756958008
+      ]
+    },
+    {
+      "batch": 6,
+      "rgb_gt_index": 38,
+      "reference_anchor": 6853,
+      "target_ltrb_in_stride_units": [
+        0.5314550399780273,
+        4.240998268127441,
+        1.0401554107666016,
+        1.3865852355957031
+      ]
+    },
+    {
+      "batch": 6,
+      "rgb_gt_index": 58,
+      "reference_anchor": 6607,
+      "target_ltrb_in_stride_units": [
+        0.9243130683898926,
+        1.3103022575378418,
+        1.1004467010498047,
+        4.589447975158691
+      ]
+    },
+    {
+      "batch": 6,
+      "rgb_gt_index": 59,
+      "reference_anchor": 6610,
+      "target_ltrb_in_stride_units": [
+        1.187840461730957,
+        1.7484955787658691,
+        0.1365966796875,
+        4.494121551513672
+      ]
+    },
+    {
+      "batch": 6,
+      "rgb_gt_index": 64,
+      "reference_anchor": 7470,
+      "target_ltrb_in_stride_units": [
+        2.9340362548828125,
+        3.1025638580322266,
+        1.0661735534667969,
+        5.1096343994140625
+      ]
+    },
+    {
+      "batch": 7,
+      "rgb_gt_index": 7,
+      "reference_anchor": 5750,
+      "target_ltrb_in_stride_units": [
+        1.957672119140625,
+        4.3201141357421875,
+        1.0899276733398438,
+        1.0286865234375
+      ]
+    },
+    {
+      "batch": 7,
+      "rgb_gt_index": 21,
+      "reference_anchor": 6603,
+      "target_ltrb_in_stride_units": [
+        1.968425989151001,
+        4.780174255371094,
+        1.7094645500183105,
+        2.4333362579345703
+      ]
+    },
+    {
+      "batch": 7,
+      "rgb_gt_index": 35,
+      "reference_anchor": 7498,
+      "target_ltrb_in_stride_units": [
+        0.3768501281738281,
+        3.0301246643066406,
+        1.4600982666015625,
+        1.3590736389160156
+      ]
+    },
+    {
+      "batch": 7,
+      "rgb_gt_index": 36,
+      "reference_anchor": 7537,
+      "target_ltrb_in_stride_units": [
+        2.5657997131347656,
+        4.316400527954102,
+        0.3023357391357422,
+        3.6204795837402344
+      ]
+    },
+    {
+      "batch": 8,
+      "rgb_gt_index": 8,
+      "reference_anchor": 7074,
+      "target_ltrb_in_stride_units": [
+        2.2454795837402344,
+        6.885237693786621,
+        1.6464385986328125,
+        4.003791809082031
+      ]
+    },
+    {
+      "batch": 8,
+      "rgb_gt_index": 13,
+      "reference_anchor": 3791,
+      "target_ltrb_in_stride_units": [
+        1.5686511993408203,
+        3.832599639892578,
+        1.1505546569824219,
+        5.0289306640625
+      ]
+    },
+    {
+      "batch": 8,
+      "rgb_gt_index": 27,
+      "reference_anchor": 7946,
+      "target_ltrb_in_stride_units": [
+        2.7855873107910156,
+        0.48175811767578125,
+        1.3706245422363281,
+        1.4984397888183594
+      ]
+    },
+    {
+      "batch": 8,
+      "rgb_gt_index": 36,
+      "reference_anchor": 7378,
+      "target_ltrb_in_stride_units": [
+        1.0613727569580078,
+        2.879955291748047,
+        1.6400833129882812,
+        2.2433242797851562
+      ]
+    },
+    {
+      "batch": 8,
+      "rgb_gt_index": 37,
+      "reference_anchor": 7380,
+      "target_ltrb_in_stride_units": [
+        0.757171630859375,
+        3.132020950317383,
+        0.7549800872802734,
+        1.4677696228027344
+      ]
+    },
+    {
+      "batch": 8,
+      "rgb_gt_index": 40,
+      "reference_anchor": 6859,
+      "target_ltrb_in_stride_units": [
+        0.08938217163085938,
+        1.1750917434692383,
+        0.9414234161376953,
+        1.9208412170410156
+      ]
+    },
+    {
+      "batch": 8,
+      "rgb_gt_index": 80,
+      "reference_anchor": 7009,
+      "target_ltrb_in_stride_units": [
+        2.3117175102233887,
+        5.296688079833984,
+        1.721792221069336,
+        5.5138397216796875
+      ]
+    }
+  ],
+  "hash": "not computed: explicit task constraint",
+  "GPU_used": false,
+  "model_forward": false,
+  "new_training": false
+}

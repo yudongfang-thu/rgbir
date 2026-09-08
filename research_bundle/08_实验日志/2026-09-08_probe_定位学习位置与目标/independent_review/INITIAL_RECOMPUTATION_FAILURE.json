@@ -1,0 +1,14 @@
+{
+  "auditor": "/root/loc_target_review",
+  "status": "ASSERTION_FAILED_AND_REVIEWED",
+  "command": "D:/Anaconda/envs/KGJ_proj/python.exe 08_实验日志/2026-09-08_probe_定位学习位置与目标/independent_review/recompute_independent.py",
+  "failed_check": "assert mapped_teacher_box == teacher_box for all non-null teacher records",
+  "cause": "Reviewer initially conflated mathematical identity under equal RGB/IR GT with bitwise floating-point arithmetic identity.",
+  "actual_evidence": [
+    {"batch": 4, "rgb_gt_index": 12, "selected": true, "max_absolute_pixel_difference": 0.0000152587890625},
+    {"batch": 7, "rgb_gt_index": 21, "selected": true, "max_absolute_pixel_difference": 0.00000762939453125}
+  ],
+  "correction": "Keep original data. Report floating-point reconstruction residual and nonexact records; retain all other identity assertions. No selector/threshold/data/loss changes.",
+  "old_result_modified": false,
+  "hash": "not computed"
+}

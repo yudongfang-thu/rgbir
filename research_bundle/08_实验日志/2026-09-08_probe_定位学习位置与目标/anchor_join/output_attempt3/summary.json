@@ -1,0 +1,336 @@
+{
+  "status": "COMPLETED_PENDING_INDEPENDENT_REVIEW",
+  "scope": "LLVIP_FIRST32_HISTORICAL_L2_NATIVE_ANCHOR_JOIN",
+  "cohorts": {
+    "all80": {
+      "objects": 80,
+      "images": 31,
+      "C_selected": 32,
+      "L2_base": 79,
+      "L2_selected": 7,
+      "relations": {
+        "R_candidate_vs_native_S": {
+          "same": 73,
+          "different": 4,
+          "unavailable": 3,
+          "unavailable_reasons": {
+            "no_historical_base": 1,
+            "native_GT_unmatched": 2
+          }
+        },
+        "actual_learning_vs_native_S": {
+          "same": 5,
+          "different": 1,
+          "unavailable": 74,
+          "unavailable_reasons": {
+            "not_L2_selected": 73,
+            "native_GT_unmatched": 1
+          }
+        },
+        "R_candidate_vs_native_R": {
+          "same": 73,
+          "different": 4,
+          "unavailable": 3,
+          "unavailable_reasons": {
+            "no_historical_base": 1,
+            "native_GT_unmatched": 2
+          }
+        },
+        "actual_learning_vs_native_R": {
+          "same": 5,
+          "different": 1,
+          "unavailable": 74,
+          "unavailable_reasons": {
+            "not_L2_selected": 73,
+            "native_GT_unmatched": 1
+          }
+        },
+        "T_candidate_vs_native_T": {
+          "same": 0,
+          "different": 7,
+          "unavailable": 73,
+          "unavailable_reasons": {
+            "teacher_not_evaluated_or_no_candidate": 73
+          }
+        },
+        "R_candidate_vs_raw_dense_R": {
+          "same": 72,
+          "different": 5,
+          "unavailable": 3,
+          "unavailable_reasons": {
+            "no_historical_base": 1,
+            "no_saved_dense_witness": 2
+          }
+        }
+      },
+      "C_and_L2_selected": 6,
+      "teacher_gate_not_evaluated": 73
+    },
+    "native_T_localization11": {
+      "objects": 11,
+      "images": 8,
+      "C_selected": 8,
+      "L2_base": 11,
+      "L2_selected": 4,
+      "relations": {
+        "R_candidate_vs_native_S": {
+          "same": 11,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "actual_learning_vs_native_S": {
+          "same": 4,
+          "different": 0,
+          "unavailable": 7,
+          "unavailable_reasons": {
+            "not_L2_selected": 7
+          }
+        },
+        "R_candidate_vs_native_R": {
+          "same": 11,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "actual_learning_vs_native_R": {
+          "same": 4,
+          "different": 0,
+          "unavailable": 7,
+          "unavailable_reasons": {
+            "not_L2_selected": 7
+          }
+        },
+        "T_candidate_vs_native_T": {
+          "same": 0,
+          "different": 4,
+          "unavailable": 7,
+          "unavailable_reasons": {
+            "teacher_not_evaluated_or_no_candidate": 7
+          }
+        },
+        "R_candidate_vs_raw_dense_R": {
+          "same": 11,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        }
+      },
+      "C_and_L2_selected": 4,
+      "teacher_gate_not_evaluated": 7
+    },
+    "native_S_reverse1": {
+      "objects": 1,
+      "images": 1,
+      "C_selected": 0,
+      "L2_base": 1,
+      "L2_selected": 0,
+      "relations": {
+        "R_candidate_vs_native_S": {
+          "same": 1,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "actual_learning_vs_native_S": {
+          "same": 0,
+          "different": 0,
+          "unavailable": 1,
+          "unavailable_reasons": {
+            "not_L2_selected": 1
+          }
+        },
+        "R_candidate_vs_native_R": {
+          "same": 1,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "actual_learning_vs_native_R": {
+          "same": 0,
+          "different": 0,
+          "unavailable": 1,
+          "unavailable_reasons": {
+            "not_L2_selected": 1
+          }
+        },
+        "T_candidate_vs_native_T": {
+          "same": 0,
+          "different": 0,
+          "unavailable": 1,
+          "unavailable_reasons": {
+            "teacher_not_evaluated_or_no_candidate": 1
+          }
+        },
+        "R_candidate_vs_raw_dense_R": {
+          "same": 0,
+          "different": 1,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        }
+      },
+      "C_and_L2_selected": 0,
+      "teacher_gate_not_evaluated": 1
+    },
+    "L2_selected7": {
+      "objects": 7,
+      "images": 6,
+      "C_selected": 6,
+      "L2_base": 7,
+      "L2_selected": 7,
+      "relations": {
+        "R_candidate_vs_native_S": {
+          "same": 5,
+          "different": 1,
+          "unavailable": 1,
+          "unavailable_reasons": {
+            "native_GT_unmatched": 1
+          }
+        },
+        "actual_learning_vs_native_S": {
+          "same": 5,
+          "different": 1,
+          "unavailable": 1,
+          "unavailable_reasons": {
+            "native_GT_unmatched": 1
+          }
+        },
+        "R_candidate_vs_native_R": {
+          "same": 5,
+          "different": 1,
+          "unavailable": 1,
+          "unavailable_reasons": {
+            "native_GT_unmatched": 1
+          }
+        },
+        "actual_learning_vs_native_R": {
+          "same": 5,
+          "different": 1,
+          "unavailable": 1,
+          "unavailable_reasons": {
+            "native_GT_unmatched": 1
+          }
+        },
+        "T_candidate_vs_native_T": {
+          "same": 0,
+          "different": 7,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "R_candidate_vs_raw_dense_R": {
+          "same": 5,
+          "different": 1,
+          "unavailable": 1,
+          "unavailable_reasons": {
+            "no_saved_dense_witness": 1
+          }
+        }
+      },
+      "C_and_L2_selected": 6,
+      "teacher_gate_not_evaluated": 0
+    },
+    "T_localization_intersection_L2_selected": {
+      "objects": 4,
+      "images": 4,
+      "C_selected": 4,
+      "L2_base": 4,
+      "L2_selected": 4,
+      "relations": {
+        "R_candidate_vs_native_S": {
+          "same": 4,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "actual_learning_vs_native_S": {
+          "same": 4,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "R_candidate_vs_native_R": {
+          "same": 4,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "actual_learning_vs_native_R": {
+          "same": 4,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "T_candidate_vs_native_T": {
+          "same": 0,
+          "different": 4,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        },
+        "R_candidate_vs_raw_dense_R": {
+          "same": 4,
+          "different": 0,
+          "unavailable": 0,
+          "unavailable_reasons": {}
+        }
+      },
+      "C_and_L2_selected": 4,
+      "teacher_gate_not_evaluated": 0
+    }
+  },
+  "frames": 32,
+  "objects": 80,
+  "original_bridge_identity": {
+    "first32_files_exact": true,
+    "historical_base_dual_GT_rows_boxes_classes_exact": true,
+    "C_masks_exact": true,
+    "initial_student_checkpoint_stat_exact": true,
+    "teacher_reference_config_paths_exact": true,
+    "separate_historical_teacher_checkpoint_stat_available": false,
+    "calibration_receipt_reset_all_parameters_buffers_each_batch": true,
+    "calibration_BN_unchanged": true,
+    "historical_pixel_tensor_comparison": false,
+    "entire_raw_tensor_exact_claim": false
+  },
+  "missing_fields": [
+    {
+      "field": "historical_student_DFL_at_learning_anchor",
+      "scope": "all 7 selected",
+      "status": "unavailable",
+      "effect": "Cannot reconstruct loss gradient at actual student learning point"
+    },
+    {
+      "field": "historical_student_decoded_box_at_learning_anchor",
+      "scope": "all 7 selected",
+      "status": "unavailable",
+      "effect": "Do not substitute frozen R box or current native AMP box as historical S decode"
+    },
+    {
+      "field": "C_single_learning_anchor",
+      "scope": "all 80",
+      "status": "not_defined",
+      "effect": "C pools multiple foreground/background positions; selected object is not one localization anchor"
+    },
+    {
+      "field": "historical_teacher_candidate_after_reference_gap_rejection",
+      "scope": "per object null remains null",
+      "status": "not_executed",
+      "effect": "Cannot infer whether a teacher candidate would pass"
+    },
+    {
+      "field": "entire_historical_raw_or_pixels_and_T_checkpoint_stat",
+      "scope": "across historical/current forwards",
+      "status": "not_recorded",
+      "effect": "Identity bridge and same-anchor partial fields do not establish whole-forward bitwise equivalence"
+    }
+  ],
+  "actual_student_learning_anchor_source": "selected_anchors[:,1] passed to decode_selected(student, ids[:,0], ids[:,1],...)",
+  "same_anchor_meaning": "same image index and original flattened anchor ID on recorded grid; box values are separate",
+  "no_current_L2_reexecution": true,
+  "new_GPU": false,
+  "new_matching": false,
+  "new_forward": false,
+  "new_training": false,
+  "new_hash_computed": false,
+  "gradient_claim": false,
+  "seconds": 0.033704399999999995
+}
