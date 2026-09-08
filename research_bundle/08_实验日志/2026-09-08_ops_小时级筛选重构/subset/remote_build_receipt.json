@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-09-08T09:55:58.426320+08:00",
+  "returncode": 0,
+  "stdout": "{\"status\": \"CPU_SELF_TEST_PASS\", \"image_reads\": 0, \"gpu_used\": false, \"hashes_computed\": false}\n{\"status\": \"CPU_SUBSET_CREATED_NO_TRAINING\", \"output\": \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1\", \"images\": 2048, \"strata\": 662, \"full_class_images\": {\"car\": 16566, \"freight car\": 3836, \"truck\": 4503, \"bus\": 3095, \"van\": 2971}, \"subset_class_images\": {\"car\": 1894, \"freight car\": 433, \"truck\": 491, \"bus\": 366, \"van\": 330}, \"full_class_objects\": {\"car\": 246699, \"freight car\": 8712, \"truck\": 13685, \"bus\": 10421, \"van\": 7275}, \"subset_class_objects\": {\"car\": 28654, \"freight car\": 936, \"truck\": 1669, \"bus\": 1155, \"van\": 782}, \"missing_classes\": []}\n",
+  "stderr": "",
+  "remote_output": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1",
+  "source_bytes": 13306,
+  "arguments": [
+    "--student-yaml",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+    "--privileged-yaml",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml",
+    "--mapping",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/mappings/rgb_to_infrared_train.json",
+    "--groups",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb_train_source_groups.tsv",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1",
+    "--size",
+    "2048",
+    "--seed",
+    "20260908",
+    "--rgb-checkpoint",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+    "--ir-checkpoint",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt"
+  ],
+  "scope": "Authorized CPU train-label metadata subset creation; no original input changes, images, GPU, predictions or hashes."
+}

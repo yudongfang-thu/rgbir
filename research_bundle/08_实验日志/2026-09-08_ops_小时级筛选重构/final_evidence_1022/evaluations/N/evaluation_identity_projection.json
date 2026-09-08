@@ -1,0 +1,13 @@
+{
+  "kind": "explicit_training_to_original_full_dev_evaluation_identity",
+  "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+  "training_student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_rgb.yaml",
+  "training_expected_images": 2048,
+  "native_contract_config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml",
+  "native_contract_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+  "actual_evaluation_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+  "native_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+  "subset_dev_roster_exact_to_full": true,
+  "training_identity_unchanged_claim": false,
+  "scope": "Original binding validates evaluator sources/data/kwargs; hourly checkpoint and training identity are separate."
+}

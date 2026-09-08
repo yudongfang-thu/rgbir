@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FOR_FIXED_HOURLY_DESCRIPTIVE_ANALYZER",
+  "author_tests": 14,
+  "independent_tests": 4,
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "source": {
+    "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_小时级筛选重构\\analysis\\analyze_hourly.py",
+    "bytes": 13880,
+    "mtime_ns": 1788833610308997400
+  },
+  "source_bytes_unchanged": true,
+  "known_truth_only": true,
+  "new_AP_read": false,
+  "actual_analysis_executed": false,
+  "torch_imported": false,
+  "gpu_or_ssh": false,
+  "new_hash_computed": false,
+  "accepted_scope": "Fixed N/C0/C1 seed42 mature RGB warm-start FT3 descriptive values, pp and serial queue timing only",
+  "scientific_claim_accepted": false,
+  "test_output": "test_class_duplicate_mean_and_names_rejected (hourly_author_synthetic_tests.Tests) ... ok\ntest_counter_closure_and_no_single_arm_replenishment (hourly_author_synthetic_tests.Tests) ... ok\ntest_fixed_arm_coefficients (hourly_author_synthetic_tests.Tests) ... ok\ntest_forbidden_claim_and_test_flags_rejected (hourly_author_synthetic_tests.Tests) ... ok\ntest_identity_and_population_rejected (hourly_author_synthetic_tests.Tests) ... ok\ntest_incomplete_or_E8_input_rejected (hourly_author_synthetic_tests.Tests) ... ok\ntest_incomplete_reordered_duplicate_queue_rejected (hourly_author_synthetic_tests.Tests) ... ok\ntest_invalid_units_nonfinite_and_boolean_rejected (hourly_author_synthetic_tests.Tests) ... ok\ntest_known_macro_and_signed_pp (hourly_author_synthetic_tests.Tests) ... ok\ntest_markdown_uses_pp_and_explicit_time_scope (hourly_author_synthetic_tests.Tests) ... ok\ntest_no_sd_or_scientific_upgrade (hourly_author_synthetic_tests.Tests) ... ok\ntest_nonuniform_class_alignment_and_delta_mean (hourly_author_synthetic_tests.Tests) ... ok\ntest_read_only_load_and_roster_drift (hourly_author_synthetic_tests.Tests) ... ok\ntest_time_boundaries_and_invalid_time (hourly_author_synthetic_tests.Tests) ... ok\ntest_corrupted_identity_and_coefficients_rejected (__main__.IndependentChecks) ... ok\ntest_percent_and_pp_are_distinct_transforms (__main__.IndependentChecks) ... ok\ntest_queue_seconds_not_added_again (__main__.IndependentChecks) ... ok\ntest_zero_difference_and_exact_timing_partition (__main__.IndependentChecks) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.093s\n\nOK\n"
+}

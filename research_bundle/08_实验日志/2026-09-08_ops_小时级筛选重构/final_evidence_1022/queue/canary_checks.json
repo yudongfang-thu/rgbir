@@ -1,0 +1,130 @@
+{
+  "status": "HOURLY_CANARIES_MATCHED",
+  "arms": {
+    "N": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/N/canary.json",
+        "bytes": 3233,
+        "mtime_ns": 1788833227300331852
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+          "bytes": 10772755,
+          "mtime_ns": 1788715564014453204
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "successful_updates": 24,
+      "resources": {
+        "vram_mib": 7168,
+        "rss_mib": 30720,
+        "measured_nvml_peak_mib": 6702,
+        "measured_allocated_peak_mib": 5554.02490234375,
+        "measured_reserved_peak_mib": 6168.0,
+        "measured_rss_peak_mib": 28167,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      }
+    },
+    "C0": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/C0/canary.json",
+        "bytes": 3250,
+        "mtime_ns": 1788833307420271087
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+          "bytes": 10772755,
+          "mtime_ns": 1788715564014453204
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "successful_updates": 24,
+      "resources": {
+        "vram_mib": 7168,
+        "rss_mib": 30720,
+        "measured_nvml_peak_mib": 6702,
+        "measured_allocated_peak_mib": 5554.21240234375,
+        "measured_reserved_peak_mib": 6168.0,
+        "measured_rss_peak_mib": 27842,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      }
+    },
+    "C1": {
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/C1/canary.json",
+        "bytes": 3368,
+        "mtime_ns": 1788833417005020892
+      },
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+          "bytes": 10772755,
+          "mtime_ns": 1788715564014453204
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "successful_updates": 24,
+      "resources": {
+        "vram_mib": 7168,
+        "rss_mib": 30720,
+        "measured_nvml_peak_mib": 6782,
+        "measured_allocated_peak_mib": 5554.21240234375,
+        "measured_reserved_peak_mib": 6248.0,
+        "measured_rss_peak_mib": 27914,
+        "margin": "GPU max(256 MiB,5%), round up to256; RSS max(2048 MiB,5%), round up to1024"
+      }
+    }
+  },
+  "sample_stream": {
+    "batch_records": 30,
+    "batch_size": 32,
+    "arms": [
+      "N",
+      "C0",
+      "C1"
+    ],
+    "record_content_exact": true,
+    "ignored_fields": [
+      "arm"
+    ],
+    "sources": {
+      "N": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/N/sample_stream.jsonl",
+        "bytes": 3141927,
+        "mtime_ns": 1788833211851875838
+      },
+      "C0": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/C0/sample_stream.jsonl",
+        "bytes": 3141927,
+        "mtime_ns": 1788833291635528752
+      },
+      "C1": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/C1/sample_stream.jsonl",
+        "bytes": 3141927,
+        "mtime_ns": 1788833390575935895
+      }
+    }
+  },
+  "new_hash_computed": false,
+  "scope": "Warm-start/first30 flow/resources only"
+}

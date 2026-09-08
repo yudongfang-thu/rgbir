@@ -1,0 +1,18 @@
+{
+  "status": "CPU_REPLAY_AND_OUTPUT_CONTRACT_PASS",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "full_metadata_rows": 17990,
+  "selected_rows": 2048,
+  "allocation_strata": 662,
+  "selected_roster_exact": true,
+  "allocation_json_exact": true,
+  "binning_exact": true,
+  "coverage_statistics_exact": true,
+  "no_duplicates_and_paired_lists_exact": true,
+  "original_dev_paths_preserved": true,
+  "gpu_used": false,
+  "hashes_computed": false,
+  "images_read": 0,
+  "scope": "CPU replay against collected train-label metadata; no new sampling decision, subset mutation or training.",
+  "test_note": "An initial direct Python allocation comparison encountered tuple-vs-JSON-list representation. JSON normalization fixed the test comparison only; selected roster already matched and no sampling values changed."
+}

@@ -1,0 +1,69 @@
+{
+  "status": "HOURLY_SCREEN_MATRIX_COMPLETED",
+  "completed": [
+    {
+      "id": "hourly_ft_screen_attempt1_N_canary",
+      "arm": "N",
+      "stage": "canary",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/N/canary.json"
+    },
+    {
+      "id": "hourly_ft_screen_attempt1_C0_canary",
+      "arm": "C0",
+      "stage": "canary",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/C0/canary.json"
+    },
+    {
+      "id": "hourly_ft_screen_attempt1_C1_canary",
+      "arm": "C1",
+      "stage": "canary",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/C1/canary.json"
+    },
+    {
+      "id": "hourly_ft_screen_attempt1_N_train",
+      "arm": "N",
+      "stage": "train",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/runs/N/hourly_training_receipt.json"
+    },
+    {
+      "id": "hourly_ft_screen_attempt1_N_eval",
+      "arm": "N",
+      "stage": "eval",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/evaluations/N/hourly_evaluation_receipt.json"
+    },
+    {
+      "id": "hourly_ft_screen_attempt1_C0_train",
+      "arm": "C0",
+      "stage": "train",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/runs/C0/hourly_training_receipt.json"
+    },
+    {
+      "id": "hourly_ft_screen_attempt1_C0_eval",
+      "arm": "C0",
+      "stage": "eval",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/evaluations/C0/hourly_evaluation_receipt.json"
+    },
+    {
+      "id": "hourly_ft_screen_attempt1_C1_train",
+      "arm": "C1",
+      "stage": "train",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/runs/C1/hourly_training_receipt.json"
+    },
+    {
+      "id": "hourly_ft_screen_attempt1_C1_eval",
+      "arm": "C1",
+      "stage": "eval",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/evaluations/C1/hourly_evaluation_receipt.json"
+    }
+  ],
+  "seconds": 956.6251196861267,
+  "single_seed": true,
+  "seed": 42,
+  "epochs": 3,
+  "train_images": 2048,
+  "batches_per_arm": 192,
+  "new_hash_computed": false,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "ap_adaptive": false
+}

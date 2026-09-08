@@ -1,0 +1,30 @@
+{
+  "status": "PASS_CPU_EVALUATION_ADAPTER_FIXTURES",
+  "checks": {
+    "valid_hourly_completion_default_canary": true,
+    "valid_explicit_same_canary": true,
+    "reject_e8_status": true,
+    "reject_wrong_epoch": true,
+    "reject_initialization_mismatch": true,
+    "reject_checkpoint_stat_mismatch": true,
+    "reject_other_explicit_canary": true,
+    "reject_incomplete_canary": true,
+    "reject_canary_wrong_arm": true,
+    "reject_short_canary": true,
+    "reject_canary_config_bytes": true,
+    "original_config_passed_to_native_binding": true,
+    "changed_training_identity_explicit": true,
+    "actual_eval_data_original_full": true,
+    "reject_same_set_wrong_dev_order": true,
+    "reject_changed_native_kwargs": true,
+    "reject_training_eval_invariant_change": true,
+    "source_bytes_unchanged": true,
+    "no_torch_imported": true
+  },
+  "count": 19,
+  "common_helpers": "Actual release/hourly_common.py imported; no stub",
+  "real_receipts_used": false,
+  "real_checkpoint_loaded": false,
+  "gpu": false,
+  "new_hashes": false
+}

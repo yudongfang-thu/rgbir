@@ -1,0 +1,96 @@
+{
+  "status": "HOURLY_SCREEN_EVALUATION_COMPLETED",
+  "scope": "HOURLY_SCREEN_FT",
+  "single_seed": true,
+  "seed": 42,
+  "arm": "C0",
+  "dataset": "dronevehicle",
+  "endpoint": "HOURLY_SCREEN_FT_E3_LAST_EMA",
+  "epochs": 3,
+  "independent_lr_horizon": 3,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "metric_units": "fraction_0_to_1",
+  "native_metric_definition": "pinned Ultralytics native AP; not TIDE oracle",
+  "AP50": 0.765536843042206,
+  "AP75": 0.6252196151219014,
+  "mAP50_95": 0.5366257032970634,
+  "precision": 0.7934203959269785,
+  "recall": 0.7161570561651388,
+  "per_class": [
+    {
+      "class_id": 0,
+      "name": "car",
+      "AP50": 0.9468586959290606,
+      "AP75": 0.7514253779624978,
+      "mAP50_95": 0.6491173473759327
+    },
+    {
+      "class_id": 1,
+      "name": "freight car",
+      "AP50": 0.5973822656736254,
+      "AP75": 0.41098999504442246,
+      "mAP50_95": 0.3793660386163803
+    },
+    {
+      "class_id": 2,
+      "name": "truck",
+      "AP50": 0.7192559054933932,
+      "AP75": 0.592239810633337,
+      "mAP50_95": 0.5089317249598676
+    },
+    {
+      "class_id": 3,
+      "name": "bus",
+      "AP50": 0.944589192378423,
+      "AP75": 0.8758699413710891,
+      "mAP50_95": 0.7211080443668129
+    },
+    {
+      "class_id": 4,
+      "name": "van",
+      "AP50": 0.6195981557365275,
+      "AP75": 0.4955729505981604,
+      "mAP50_95": 0.4246053611663226
+    }
+  ],
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/runs/C0/weights/last.pt",
+    "bytes": 10753043,
+    "mtime_ns": 1788833741563954569
+  },
+  "full_dev_images": 1469,
+  "full_dev_gt_objects": 22462,
+  "training_configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/runs/C0/hourly_config.yaml",
+  "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+  "native_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+  "canary_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/ft_screen_attempt1/canaries/C0/canary.json",
+  "evaluation_identity_projection": {
+    "kind": "explicit_training_to_original_full_dev_evaluation_identity",
+    "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "training_student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_rgb.yaml",
+    "training_expected_images": 2048,
+    "native_contract_config": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml",
+    "native_contract_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "actual_evaluation_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+    "native_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+    "subset_dev_roster_exact_to_full": true,
+    "training_identity_unchanged_claim": false,
+    "scope": "Original binding validates evaluator sources/data/kwargs; hourly checkpoint and training identity are separate."
+  },
+  "seconds": 12.876464403932914,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 4019
+  },
+  "new_hash_computed": false,
+  "official_test_accessed": false
+}
