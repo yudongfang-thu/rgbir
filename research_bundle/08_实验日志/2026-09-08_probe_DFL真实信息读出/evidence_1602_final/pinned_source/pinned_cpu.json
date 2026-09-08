@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "tests": 15,
+  "failures": 0,
+  "errors": 0,
+  "commands": [
+    {
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "test_dfl_cpu.py",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_dfl_information_20260908/release_v1/helper_cpu.json"
+      ],
+      "returncode": 0,
+      "log": "pinned_cpu_0.log"
+    },
+    {
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "test_installed_native_cpu.py",
+        "--reference-dir",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_dfl_information_20260908/release_v1/installed_native_cpu.json"
+      ],
+      "returncode": 0,
+      "log": "pinned_cpu_1.log"
+    }
+  ],
+  "installed_native": {
+    "status": "PASS",
+    "scope": "INSTALLED_NATIVE_CPU_SYNTHETIC_RAW_ONLY",
+    "checks": 9,
+    "unique_distributions": 9,
+    "native_probability_hooks": true,
+    "native_and_FP32_decode_exact": true,
+    "GT_role_semantics_exact": true,
+    "state_unchanged": true,
+    "backbone_forward": false,
+    "checkpoint_loaded": false,
+    "GPU_used": false,
+    "new_hash_computed": false
+  },
+  "seconds": 4.1164069175720215,
+  "CUDA_VISIBLE_DEVICES": "",
+  "new_hash_computed": false
+}

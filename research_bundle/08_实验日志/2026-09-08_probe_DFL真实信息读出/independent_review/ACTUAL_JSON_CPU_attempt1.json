@@ -1,0 +1,74 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL_JSON_CPU",
+  "auditor": "/root/dfl_readout_review",
+  "model_identity": "unavailable",
+  "objects": 80,
+  "frames": 32,
+  "unique_distributions": 317,
+  "role_counts": {
+    "S/historical_R_candidate": 80,
+    "S/own_native_iou50": 80,
+    "R/historical_R_candidate": 80,
+    "R/own_native_iou50": 80,
+    "T/same_historical_R_index": 80,
+    "T/same_S_native_iou50_index": 80,
+    "T/same_R_native_iou50_index": 80,
+    "T/own_native_iou50": 80,
+    "T/historical_selected_T": 80
+  },
+  "missing_roles": {
+    "T/historical_selected_T": 73,
+    "S/historical_R_candidate": 1,
+    "S/own_native_iou50": 3,
+    "R/historical_R_candidate": 1,
+    "R/own_native_iou50": 3,
+    "T/same_historical_R_index": 1,
+    "T/same_S_native_iou50_index": 3,
+    "T/same_R_native_iou50_index": 3,
+    "T/own_native_iou50": 2
+  },
+  "valid_all4_roles": {
+    "S/historical_R_candidate": 79,
+    "S/own_native_iou50": 76,
+    "R/historical_R_candidate": 79,
+    "R/own_native_iou50": 76,
+    "T/same_historical_R_index": 79,
+    "T/same_S_native_iou50_index": 76,
+    "T/same_R_native_iou50_index": 76,
+    "T/own_native_iou50": 77,
+    "T/historical_selected_T": 7
+  },
+  "bucket_counts": {
+    "both05_both075": 60,
+    "both05_onlyT075": 11,
+    "both05_neither075": 5,
+    "neither05": 2,
+    "T_only05": 1,
+    "both05_onlyS075": 1
+  },
+  "raw_dtype_counts": {
+    "torch.float16": 317
+  },
+  "closure_maxima": {
+    "FP64_vs_saved_FP32_probability": 3.2508557490373846e-07,
+    "FP64_vs_saved_FP32_mean_bin": 1.6501448172334676e-06,
+    "FP64_vs_saved_FP32_box_px": 4.166110613823548e-05,
+    "native_probability_sum_error": 3.534853476594435e-07,
+    "native_vs_FP32_box_px": 0.06689453125,
+    "native_conv_vs_unrounded_native_probability_mean_bin": 0.004178858987870626
+  },
+  "current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+  "inputs": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_定位学习位置与目标\\anchor_join\\output_attempt3\\objects.jsonl",
+    "08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1601\\probe"
+  ],
+  "audited_input_hashes": "not computed; task boundary",
+  "new_GPU": false,
+  "new_model_forward": false,
+  "limits": [
+    "FP64 independent closure uses numerical tolerance, not FP32 bitwise emulation.",
+    "Native decode closure is an executed producer assertion on actual pinned operations; FP64/native differences are reported, not silently equated.",
+    "State/forward/update facts are from the reviewed executed producer guards; independent reviewer did not run a second forward.",
+    "This verifies the fixed single-batch readout and cannot establish physical registration or KD utility."
+  ]
+}

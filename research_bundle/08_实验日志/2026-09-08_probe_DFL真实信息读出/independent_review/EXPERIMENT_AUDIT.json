@@ -1,0 +1,331 @@
+{
+  "date": "2026-09-08T08:09:48.612081+00:00",
+  "auditor": {
+    "agent": "/root/dfl_readout_review",
+    "model_identity": "unavailable",
+    "independent_reviewer": true
+  },
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "reason_code": "ACCEPTED_SINGLE_BATCH_RAW_READOUT_AND_CPU_DERIVATIONS_ONLY",
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Real LLVIP training dataset native preaugmentation label-row IDs, complete 32-frame/80-GT identity and stream exact to prior witness; IR ownGT for T, RGB ownGT for S/R. Shared labels do not certify physical registration.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\run_dfl_probe.py:78",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\identity_contract.json",
+        "ACTUAL_JSON_CPU_attempt1.json"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "Full 16-bin distributions; stable FP64 logsumexp; entropy nat and variance bin squared. Unclamped adjacent-bin CE only for finite distances 0<=d<15; illegal/missing remain null, mean4 only all four valid. No training assignment/weights reconstructed; no cross-anchor KL. All 317/720/27 recomputed independently.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\dfl_metrics.py:5",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\dfl_metrics.py:18",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\analyze_dfl.py:21",
+        "DERIVED_CPU_attempt1.json"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "Executed one producer batch and complete queue exit0, 317 real distributions, 720 role rows and 27 summaries. Early/final10 probe files byte-exact; actual source copies and reviewed release byte-exact.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\completion_receipt.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\queue\\completion.json",
+        "FINAL_BINDING_RESOURCE_CPU.json"
+      ]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "Pinned actual Detect/DFL synthetic raw integration ran before single GPU batch; actual source export guards and hook counts executed successfully. Separate FP32/native closure and S/R/T full-state/gradient/update checks. No second backbone invocation by reviewer.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\pinned_cpu_v1.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\dfl_export.py:57",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\dfl_export.py:64",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\run_dfl_probe.py:83",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\run_dfl_probe.py:89"
+      ]
+    },
+    "scope": {
+      "status": "pass",
+      "details": "Only original first32 training images,80GT,seed42;11 positive and1 reverse fixed cohort. One new data batch, zero optimizer/EMA/backward, no AP or KD gain. Newforward identity explicit; no historical pixel/logit bitwise claim. Generic setup check_amp bypass disclosed and restored.",
+      "evidence": [
+        "SOURCE_REVIEW.json",
+        "ACTUAL_JSON_CPU_attempt1.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\run_dfl_probe.py:16"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "value": "real_gt",
+      "details": "Actual descriptive own-GT anchor readout uses dataset GT. Supporting shape/decoder truths are synthetic_proxy and are separately labeled, not efficacy evaluations.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\objects.jsonl",
+        "LOCAL_CPU_TRUTH_attempt2.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\pinned_cpu_v1.json"
+      ]
+    },
+    "resources": {
+      "status": "pass",
+      "details": "Existing sole lease, completed exit0 without monitor errors;GPU0 task NVML1684MiB/RSS16336MiB;sampled wholecard minfree22378MiB/projectRSS157503MiB. FourGPU exception admitted with two fully empty GPUs [6,7]. Sampled scope only.",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\queue\\raw_dfl_attempt1_resource_profile.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\queue\\raw_dfl_attempt1_admission.json",
+        "FINAL_BINDING_RESOURCE_CPU.json"
+      ]
+    },
+    "dtype_and_decode": {
+      "status": "pass",
+      "details": "All317 rawFP16/nativeprobFP32/nativeDFLdistanceFP16/nativeboxFP32. Native vsFP32 maxboxdifference0.06689453125px is preserved; original native and FP32 closures checked separately. No probability repair or normalization.",
+      "evidence": [
+        "ACTUAL_JSON_CPU_attempt1.json",
+        "FINAL_BINDING_RESOURCE_CPU.json",
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\dfl_contract.json"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "REAL_RAW_DFL_PRESERVED",
+      "impact": "supported",
+      "evidence": [
+        "ACTUAL_JSON_CPU_attempt1.json"
+      ],
+      "rationale": "All317 requests are original-valued4x16 logits and complete probabilities with linked image/GT/anchor semantics; not distributions fabricated from NMS boxes."
+    },
+    {
+      "id": "OWN_ANCHOR_DESCRIPTIVE_READOUT",
+      "impact": "supported",
+      "evidence": [
+        "DERIVED_CPU_attempt1.json",
+        "APPENDIX_CPU_attempt1.json"
+      ],
+      "rationale": "All317 descriptions,720roles,27summaries independently closed with ownGT lawful support/nulls.79same-index common-legal GT sets identical, but not a physical calibration proof."
+    },
+    {
+      "id": "INFORMATION_BEYOND_EXPECTATION",
+      "impact": "needs_qualifier",
+      "evidence": [
+        "LOCAL_CPU_TRUTH_attempt2.json"
+      ],
+      "rationale": "Synthetic equal-mean distributions can differ in entropy/variance/CE and real vectors are retained. This does not establish useful additional teacher information or KD improvement."
+    },
+    {
+      "id": "TEACHER_RELIABLE_TRANSFERABLE_LEARNABLE",
+      "impact": "unsupported",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\PLAN.md"
+      ],
+      "rationale": "No training, calibrated uncertainty, feature/physical registration, student loss, gradient or AP evaluation occurred. No inference of learned KD utility is licensed."
+    },
+    {
+      "id": "GLOBAL_OR_MULTISEED_EFFECT",
+      "impact": "unsupported",
+      "evidence": [
+        "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\completion_receipt.json"
+      ],
+      "rationale": "One fixed training batch andseed42, not full population/multiple seeds."
+    }
+  ],
+  "current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+  "run_id": "raw_dfl_attempt1",
+  "code_revision": "Immutable release_v1 with byte-exact reviewed_source and executed_source copies; git revision not asserted",
+  "dataset_version": "LLVIP frozen first32 original training stream seed42 / native preaugmentation label-row identities",
+  "evaluator_version": "Pinned Torch2.10.0+cu128 Ultralytics8.4.115 exporter; frozen CPU analyzer code copies",
+  "declared_input_set": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\run_dfl_probe.py",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\dfl_export.py",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\run_dfl_queue.py",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\test_dfl_cpu.py",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\test_installed_native_cpu.py",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\llvip_N_s42_FT3.yaml",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\SCHEMA.md",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\analyze_dfl.py",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\dfl_metrics.py",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\PLAN.md",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\describe_completed.py",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\READOUT_DENOMINATOR_APPENDIX.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\completion_receipt.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\dfl_contract.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\objects.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\anchor_distributions.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\identity_contract.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\first_batch_stream.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\dependency_identity.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\output_attempt1\\summary.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\output_attempt1\\object_role_readout.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\output_attempt1\\distribution_readout.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\pinned_cpu_v1.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\RESOURCE_COMPLETION.json",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\executed_source_copies\\receipt.json"
+  ],
+  "audited_input_hashes": {
+    "status": "not computed",
+    "reason": "Explicit task prohibits new hashes; direct byte comparison/stat/execution chain retained"
+  },
+  "evidence_manifest": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\run_dfl_probe.py",
+      "bytes": 11888,
+      "mtime_ns": 1788854195045498200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\dfl_export.py",
+      "bytes": 7961,
+      "mtime_ns": 1788853724590682200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\run_dfl_queue.py",
+      "bytes": 3911,
+      "mtime_ns": 1788853698992716400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\test_dfl_cpu.py",
+      "bytes": 3893,
+      "mtime_ns": 1788854195047141400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\test_installed_native_cpu.py",
+      "bytes": 2777,
+      "mtime_ns": 1788853851053578500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\llvip_N_s42_FT3.yaml",
+      "bytes": 4396,
+      "mtime_ns": 1788853699007014000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\release\\SCHEMA.md",
+      "bytes": 4550,
+      "mtime_ns": 1788854234670479700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\analyze_dfl.py",
+      "bytes": 11424,
+      "mtime_ns": 1788854126276799400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\dfl_metrics.py",
+      "bytes": 2121,
+      "mtime_ns": 1788853566740235800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\PLAN.md",
+      "bytes": 2965,
+      "mtime_ns": 1788853566739693400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\describe_completed.py",
+      "bytes": 3471,
+      "mtime_ns": 1788854758868319000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\READOUT_DENOMINATOR_APPENDIX.json",
+      "bytes": 53822,
+      "mtime_ns": 1788854706012936000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\completion_receipt.json",
+      "bytes": 2453,
+      "mtime_ns": 1788854525090625000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\dfl_contract.json",
+      "bytes": 2539,
+      "mtime_ns": 1788854525093046700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\objects.jsonl",
+      "bytes": 407526,
+      "mtime_ns": 1788854525095548300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\anchor_distributions.jsonl",
+      "bytes": 1531674,
+      "mtime_ns": 1788854525100684800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\identity_contract.json",
+      "bytes": 359436,
+      "mtime_ns": 1788854525090003500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\first_batch_stream.json",
+      "bytes": 28191,
+      "mtime_ns": 1788854525091833500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1602_final\\probe\\dependency_identity.json",
+      "bytes": 4140,
+      "mtime_ns": 1788854525091287800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\output_attempt1\\summary.json",
+      "bytes": 54161,
+      "mtime_ns": 1788854521612961200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\output_attempt1\\object_role_readout.jsonl",
+      "bytes": 3703970,
+      "mtime_ns": 1788854521687710100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\cpu_analysis\\output_attempt1\\distribution_readout.jsonl",
+      "bytes": 1179096,
+      "mtime_ns": 1788854521717093600
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\pinned_cpu_v1.json",
+      "bytes": 1578,
+      "mtime_ns": 1788854266237031500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\RESOURCE_COMPLETION.json",
+      "bytes": 1569,
+      "mtime_ns": 1788854560616922000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\executed_source_copies\\receipt.json",
+      "bytes": 1154,
+      "mtime_ns": 1788854589156401300
+    }
+  ],
+  "recomputation_commands": [
+    {
+      "command": "python independent_review/verify_actual_cpu.py --workspace E:/SHARE/光sar --probe evidence_1601/probe --output independent_review/ACTUAL_JSON_CPU_attempt1.json",
+      "exit_code": 0,
+      "output": "PASS_INDEPENDENT_ACTUAL_JSON_CPU 317"
+    },
+    {
+      "command": "python independent_review/verify_analysis_cpu.py --probe evidence_1601/probe --analysis cpu_analysis/output_attempt1 --output independent_review/DERIVED_CPU_attempt1.json",
+      "exit_code": 0,
+      "output": "PASS_INDEPENDENT_ALL_DERIVED_CPU 317 720 27"
+    }
+  ],
+  "additional_executed_receipts": [
+    "FINAL_BINDING_RESOURCE_CPU.json",
+    "APPENDIX_CPU_attempt1.json",
+    "LOCAL_CPU_TRUTH_attempt2.json",
+    "CPU_METRICS_INDEPENDENT_attempt1.json",
+    "CPU_WRAPPER_INDEPENDENT_attempt1.json"
+  ],
+  "inaccessible_or_not_recomputed": [
+    "Checkpoint tensors not independently reloaded; actual full-state checks from byte-bound executed producer.",
+    "No historical full pixel/logit tensors; no bitwise replay claim.",
+    "No continuous instantaneous resource observations.",
+    "Hash not computed by explicit task boundary."
+  ],
+  "independent_trace": {
+    "prompt": "prompt_trace.txt",
+    "raw_response": "response_trace.txt",
+    "parsed_findings": "SOURCE_FINDINGS.json",
+    "final_response": "EXPERIMENT_AUDIT.md"
+  },
+  "inspection_coverage": "Full original80 GT identities,317 raw distributions,720role readouts,27summaries,9common-legality joins,83S/R raw pairs,7frozen source files/4executed source copies,10early-final probe copies,completed resource receipts",
+  "limitations": [
+    "Integrity pass is scoped and not a guarantee against every possible defect.",
+    "No physical registration, KD utility, additional training protocol, AP or multiseed effect is established."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "FAILED_REVIEWER_EXPECTATION",
+  "auditor": "/root/dfl_readout_review",
+  "model_identity": "unavailable",
+  "command": "python independent_review/local_cpu_truth.py --workspace E:/SHARE/光sar --output independent_review/LOCAL_CPU_TRUTH_attempt1.json",
+  "exit_code": 1,
+  "error": "AssertionError: ('historical_full_population', [80, 80, 80, 31], [80, 80, 80, 32])",
+  "cause": "Reviewer assumed all 32 batch frames have GT; existing records show 80 GT in 31 nonempty frames. Empty-frame inclusion must be checked from frames separately.",
+  "source_snapshot": "local_cpu_truth_source_attempt1.py",
+  "new_GPU": false,
+  "new_model_forward": false,
+  "new_hash_computed": false
+}

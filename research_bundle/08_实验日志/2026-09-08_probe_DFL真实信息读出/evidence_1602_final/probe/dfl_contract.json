@@ -1,0 +1,84 @@
+{
+  "scope": "RAW_DFL_SINGLE_BATCH",
+  "decode": {
+    "S": {
+      "fp32_expectation_decode_exact": true,
+      "native_DFL_output_decode_exact": true,
+      "native_DFL_calls": {
+        "probability": 1,
+        "distance": 1
+      },
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "requested_unique_anchors": 83
+    },
+    "R": {
+      "fp32_expectation_decode_exact": true,
+      "native_DFL_output_decode_exact": true,
+      "native_DFL_calls": {
+        "probability": 1,
+        "distance": 1
+      },
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "requested_unique_anchors": 83
+    },
+    "T": {
+      "fp32_expectation_decode_exact": true,
+      "native_DFL_output_decode_exact": true,
+      "native_DFL_calls": {
+        "probability": 1,
+        "distance": 1
+      },
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "requested_unique_anchors": 151
+    }
+  },
+  "roles": {
+    "S": [
+      "historical_R_candidate",
+      "own_native_iou50"
+    ],
+    "R": [
+      "historical_R_candidate",
+      "own_native_iou50"
+    ],
+    "T": [
+      "same_historical_R_index",
+      "same_S_native_iou50_index",
+      "same_R_native_iou50_index",
+      "own_native_iou50",
+      "historical_selected_T"
+    ]
+  },
+  "full_probability_vectors": true,
+  "GT_distances_clamped": false,
+  "cross_anchor_KL": false,
+  "new_NMS": false,
+  "new_matching": false,
+  "new_loss": false,
+  "current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+  "initialization": {
+    "model": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127857140185407
+    },
+    "teacher": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127257614850390
+    },
+    "reference": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+      "bytes": 5482010,
+      "mtime_ns": 1788127857140185407
+    }
+  },
+  "previous_probe": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_selection_coverage_20260908/witness_attempt1/probe",
+  "historical_same_forward_claim": false,
+  "objects_n": 80,
+  "frames": 32,
+  "unique_distributions": 317
+}

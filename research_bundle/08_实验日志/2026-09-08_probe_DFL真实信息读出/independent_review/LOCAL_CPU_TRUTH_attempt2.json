@@ -1,0 +1,291 @@
+{
+  "status": "PASS_INDEPENDENT_STDLIB_CPU_TRUTHS",
+  "auditor": "/root/dfl_readout_review",
+  "model_identity": "unavailable",
+  "date": "2026-09-08T07:45:54.941818+00:00",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "checks": [
+    {
+      "name": "same_mean_distinct_shape",
+      "status": "pass",
+      "actual": [
+        7.5,
+        7.5,
+        21.25,
+        38.75
+      ],
+      "expected": [
+        7.5,
+        7.5,
+        21.25,
+        38.75
+      ]
+    },
+    {
+      "name": "same_mean_not_equal_probabilities",
+      "status": "pass",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "same_box_different_anchor_distances",
+      "status": "pass",
+      "actual": [
+        [
+          4.0,
+          4.0,
+          6.0,
+          6.0
+        ],
+        [
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ]
+      ],
+      "expected": [
+        [
+          4,
+          4,
+          6,
+          6
+        ],
+        [
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ]
+      ]
+    },
+    {
+      "name": "unclamped_support_vs_native_no_change_domain",
+      "status": "pass",
+      "actual": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "expected": [
+        [
+          false,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "unclamped_two_bin_gt_readout_uniform",
+      "status": "pass",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "level_row_major_boundaries",
+      "status": "pass",
+      "actual": [
+        [
+          4.0,
+          4.0
+        ],
+        [
+          636.0,
+          4.0
+        ],
+        [
+          4.0,
+          12.0
+        ],
+        [
+          636.0,
+          636.0
+        ],
+        [
+          8.0,
+          8.0
+        ],
+        [
+          632.0,
+          632.0
+        ],
+        [
+          16.0,
+          16.0
+        ],
+        [
+          624.0,
+          624.0
+        ]
+      ],
+      "expected": [
+        [
+          4,
+          4
+        ],
+        [
+          636,
+          4
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          636,
+          636
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          632,
+          632
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          624,
+          624
+        ]
+      ]
+    },
+    {
+      "name": "historical_full_population",
+      "status": "pass",
+      "actual": [
+        80,
+        80,
+        80,
+        32,
+        31
+      ],
+      "expected": [
+        80,
+        80,
+        80,
+        32,
+        31
+      ]
+    },
+    {
+      "name": "all80_original_identity_anchor_geometry_native_id",
+      "status": "pass",
+      "actual": true,
+      "expected": true
+    }
+  ],
+  "same_mean_example": {
+    "p": [
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625
+    ],
+    "q": [
+      0.28125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.03125,
+      0.28125
+    ],
+    "p_stats": {
+      "mean": 7.5,
+      "variance_bin2": 21.25,
+      "entropy_nats": 2.772588722239781
+    },
+    "q_stats": {
+      "mean": 7.5,
+      "variance_bin2": 38.75,
+      "entropy_nats": 2.2297970780481036
+    }
+  },
+  "fixed_population_bucket_counts": {
+    "both05_both075": 60,
+    "both05_onlyT075": 11,
+    "both05_neither075": 5,
+    "neither05": 2,
+    "T_only05": 1,
+    "both05_onlyS075": 1
+  },
+  "inputs": [
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_定位学习位置与目标\\anchor_join\\output_attempt3\\objects.jsonl",
+    "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\witness_evidence_1315_final\\probe\\witness_objects.jsonl"
+  ],
+  "new_GPU": false,
+  "new_model_forward": false,
+  "training": false,
+  "official_test_accessed": false,
+  "audited_input_hashes": "not computed; task boundary",
+  "limits": [
+    "Synthetic truths verify coordinate/statistical semantics only, not producer execution.",
+    "Historical exact identity is across saved identity records, not an assertion of historical pixel/logit bitwise equality.",
+    "Geometric bin support [0,15] and native clamp-invariant domain [0,14.99] are deliberately distinct."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "auditor": "/root/dfl_readout_review",
+  "model_identity": "unavailable",
+  "stage": "pre_execution",
+  "overall_verdict": "warn",
+  "audited_input_hashes": "not computed; explicit task boundary",
+  "findings": [
+    {
+      "id": "T_NATIVE_INDEX_COVERAGE",
+      "status": "corrected_in_source",
+      "evidence": "release/dfl_export.py ROLES/build_requests",
+      "details": "Initial T roles omitted same-S-native and same-R-native indices. Fixed contract requires T at all S/R requested indices; source now exports these roles with distribution deduplication and null missingness. No new anchor selection."
+    },
+    {
+      "id": "ALL_MODEL_STATE_AND_FORWARD_COUNTS",
+      "status": "corrected_in_source",
+      "evidence": "release/run_dfl_probe.py states/counts guards",
+      "details": "Old witness compared only S full state and R/T BN and reported literal counts. New driver snapshots S/R/T state_dict, checks exact equality and gradients, and hooks each model around the one requested batch; setup is separately scoped."
+    },
+    {
+      "id": "IMPLICIT_SETUP_AMP_FORWARD",
+      "status": "awaiting_source_correction",
+      "evidence": "setup_sources/BaseTrainer_setup_train.py and check_amp.py",
+      "details": "Pinned setup calls check_amp; it loads YOLO(yolo26n.pt) and runs two eight-image bus.jpg comparisons. This is outside the bounded requested batch. Reviewer proposed reusing prior same-runtime/checkpoint actual_amp contract with a narrowly scoped temporary check_amp replacement, restored afterward and disclosed."
+    },
+    {
+      "id": "ACTUAL_EXPORT_INTERFACE_CPU",
+      "status": "awaiting_executed_pinned_receipt",
+      "evidence": "release/test_installed_native_cpu.py",
+      "details": "Portable five-helper tests do not call export_dfl. New integration script constructs installed Detect/DFL CPU modules and synthetic raw, calls the actual exporter, and checks native hooks/FP32 and native closure/role semantics/state. File existence is not accepted as execution."
+    },
+    {
+      "id": "EMPTY_FRAME_EXPECTATION",
+      "status": "reviewer_error_corrected_and_executed",
+      "evidence": "LOCAL_CPU_TRUTH_attempt1_FAILURE.json and LOCAL_CPU_TRUTH_attempt2.json",
+      "details": "Independent initial historical check incorrectly expected all 32 frames to contain GT. Original population has 80 GT in 31 nonempty frames, plus one empty frame. Revised check separately verifies full frames=32 and passes. Failure source and receipt retained."
+    },
+    {
+      "id": "NATIVE_VS_UNCLAMPED_DFL_SEMANTICS",
+      "status": "qualified_in_analysis_plan",
+      "evidence": "cpu_analysis/PLAN.md and dfl_metrics.py",
+      "details": "GT CE uses the disclosed adjacent-bin formula on unchanged distances in [0,15). This is a diagnostic, not actual training DFLoss; native training clamps above 14.99. Negative or >=15 target CE is null. Native FP16 probability mass is not renormalized."
+    }
+  ],
+  "executed_cpu_evidence": [
+    "LOCAL_CPU_TRUTH_attempt2.json: 8 independent stdlib truths and all80 historical identity checks",
+    "CPU_METRICS_INDEPENDENT_attempt1.json: 5 analysis core truths independently rerun",
+    "CPU_WRAPPER_INDEPENDENT_attempt1.json: 2 wrapper truths independently rerun"
+  ],
+  "actual_new_batch_evidence": "not yet available; no actual producer verdict"
+}

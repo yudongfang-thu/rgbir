@@ -1,0 +1,58 @@
+{
+  "status": "PASS_FINAL_SOURCE_IDENTITY_RESOURCE_CPU",
+  "auditor": "/root/dfl_readout_review",
+  "model_identity": "unavailable",
+  "source_files_byte_exact": 7,
+  "executed_source_copies_byte_exact": 4,
+  "early_final_probe_files_byte_exact": [
+    "anchor_distributions.jsonl",
+    "args.yaml",
+    "completion_receipt.json",
+    "dependency_identity.json",
+    "dfl_contract.json",
+    "first_batch_stream.json",
+    "identity_contract.json",
+    "inherited_training_config.yaml",
+    "objects.jsonl",
+    "runtime_ready.json"
+  ],
+  "prior_stream_and_full_GT_identity_exact": true,
+  "analysis_source_copies_byte_exact": true,
+  "actual_dtype_counts": {
+    "raw_dtype": {
+      "torch.float16": 317
+    },
+    "native_probability_dtype": {
+      "torch.float32": 317
+    },
+    "native_distance_dtype": {
+      "torch.float16": 317
+    },
+    "native_decode_dtype": {
+      "torch.float32": 317
+    }
+  },
+  "resources": {
+    "samples": 7,
+    "min_free_mib": 22378,
+    "max_project_rss_mib": 157503,
+    "four_gpu_exception": {
+      "active_gpus_after": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "empty_gpus_after": [
+        6,
+        7
+      ],
+      "four_gpu_exception": true,
+      "minimum_empty_required": 2
+    }
+  },
+  "new_GPU": false,
+  "new_model_forward": false,
+  "new_hash_computed": false,
+  "limits": "Sampled resource evidence only; no continuous instantaneous resource claim."
+}

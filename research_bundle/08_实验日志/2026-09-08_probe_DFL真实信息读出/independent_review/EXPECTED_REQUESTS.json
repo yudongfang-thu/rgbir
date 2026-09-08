@@ -1,0 +1,35 @@
+{
+  "status": "FROZEN_HISTORICAL_REQUEST_ROSTER",
+  "objects": 80,
+  "unique_distributions": 317,
+  "unique_by_model": {
+    "T": 151,
+    "R": 83,
+    "S": 83
+  },
+  "present": {
+    "S/historical_R_candidate": 79,
+    "S/own_native_iou50": 77,
+    "R/historical_R_candidate": 79,
+    "R/own_native_iou50": 77,
+    "T/same_historical_R_index": 79,
+    "T/same_S_native_iou50_index": 77,
+    "T/same_R_native_iou50_index": 77,
+    "T/own_native_iou50": 78,
+    "T/historical_selected_T": 7
+  },
+  "missing": {
+    "T/historical_selected_T": 73,
+    "S/historical_R_candidate": 1,
+    "S/own_native_iou50": 3,
+    "R/historical_R_candidate": 1,
+    "R/own_native_iou50": 3,
+    "T/same_historical_R_index": 1,
+    "T/same_S_native_iou50_index": 3,
+    "T/same_R_native_iou50_index": 3,
+    "T/own_native_iou50": 2
+  },
+  "new_GPU": false,
+  "new_model_forward": false,
+  "new_hash_computed": false
+}

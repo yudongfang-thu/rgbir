@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETED_RESOURCE_AND_COLLECTION_CHECK",
+  "producer_seconds": 21.426048330962658,
+  "queue_seconds": 61.704506397247314,
+  "GPU": [
+    0
+  ],
+  "four_gpu_exception_used": true,
+  "admission": {
+    "active_gpus_after": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "empty_gpus_after": [
+      6,
+      7
+    ],
+    "four_gpu_exception": true,
+    "minimum_empty_required": 2
+  },
+  "observed_whole_card_minimum_free_mib": 22378,
+  "observed_project_maximum_RSS_mib": 157503,
+  "producer_peak": {
+    "gpu_ids": [
+      0
+    ],
+    "cuda_pid_counts": {
+      "0": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "0": 1684
+    },
+    "peak_rss_mib": 16336
+  },
+  "framework_allocated_peak_mib": 950.798828125,
+  "framework_reserved_peak_mib": 1192.0,
+  "monitor_errors": [],
+  "early_and_final_probe_byte_exact": [
+    "probe/anchor_distributions.jsonl",
+    "probe/args.yaml",
+    "probe/completion_receipt.json",
+    "probe/dependency_identity.json",
+    "probe/dfl_contract.json",
+    "probe/first_batch_stream.json",
+    "probe/identity_contract.json",
+    "probe/inherited_training_config.yaml",
+    "probe/objects.jsonl",
+    "probe/runtime_ready.json"
+  ],
+  "original_running_snapshot_retained": true,
+  "one_measured_batch_only": true,
+  "additional_training": false,
+  "raw_host_profiles_excluded_from_publication": true,
+  "new_hash_computed": false,
+  "limits": "Sampled NVML/RSS observations and existing dispatcher guards; not a claim of continuously observed microsecond peaks."
+}

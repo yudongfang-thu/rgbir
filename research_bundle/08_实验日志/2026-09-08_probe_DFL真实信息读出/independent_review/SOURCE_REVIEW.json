@@ -1,0 +1,75 @@
+{
+  "status": "READY_FOR_SINGLE_BATCH",
+  "date": "2026-09-08T07:59:49.246622+00:00",
+  "auditor": "/root/dfl_readout_review",
+  "model_identity": "unavailable",
+  "reviewed_source_files": [
+    "run_dfl_probe.py",
+    "dfl_export.py",
+    "run_dfl_queue.py",
+    "test_dfl_cpu.py",
+    "test_installed_native_cpu.py",
+    "llvip_N_s42_FT3.yaml",
+    "SCHEMA.md"
+  ],
+  "reviewed_release_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_dfl_information_20260908/release_v1",
+  "source_snapshot": [
+    {
+      "path": "reviewed_source/run_dfl_probe.py",
+      "source": "release/run_dfl_probe.py",
+      "bytes": 11888,
+      "byte_exact": true
+    },
+    {
+      "path": "reviewed_source/dfl_export.py",
+      "source": "release/dfl_export.py",
+      "bytes": 7961,
+      "byte_exact": true
+    },
+    {
+      "path": "reviewed_source/run_dfl_queue.py",
+      "source": "release/run_dfl_queue.py",
+      "bytes": 3911,
+      "byte_exact": true
+    },
+    {
+      "path": "reviewed_source/test_dfl_cpu.py",
+      "source": "release/test_dfl_cpu.py",
+      "bytes": 3893,
+      "byte_exact": true
+    },
+    {
+      "path": "reviewed_source/test_installed_native_cpu.py",
+      "source": "release/test_installed_native_cpu.py",
+      "bytes": 2777,
+      "byte_exact": true
+    },
+    {
+      "path": "reviewed_source/llvip_N_s42_FT3.yaml",
+      "source": "release/llvip_N_s42_FT3.yaml",
+      "bytes": 4396,
+      "byte_exact": true
+    },
+    {
+      "path": "reviewed_source/SCHEMA.md",
+      "source": "release/SCHEMA.md",
+      "bytes": 4550,
+      "byte_exact": true
+    }
+  ],
+  "actual_pinned_CPU_receipt": "pinned_cpu_v1.json",
+  "actual_pinned_CPU_scope": "6 helper unit tests plus one actual installed-native synthetic raw integration with 9 reported checks",
+  "independent_cpu_receipts": [
+    "LOCAL_CPU_TRUTH_attempt2.json",
+    "CPU_METRICS_INDEPENDENT_attempt1.json",
+    "CPU_WRAPPER_INDEPENDENT_attempt1.json"
+  ],
+  "expected_objects": 80,
+  "expected_frames": 32,
+  "expected_unique_distributions": 317,
+  "permitted_scope": "Only one original first32 zero-update S/R/T data batch through original sole lease, actual raw readout; no additional full stage",
+  "actual_new_batch_verdict": "unavailable before execution",
+  "new_GPU_by_reviewer": false,
+  "new_model_forward_by_reviewer": false,
+  "audited_input_hashes": "not computed; explicit task boundary"
+}

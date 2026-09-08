@@ -1,0 +1,1537 @@
+{
+  "status": "RAW_DFL_CPU_READOUT_COMPLETED",
+  "scope": "OWN_ANCHOR_UNCLAMPED_DFL_DIAGNOSTIC",
+  "current_forward_id": "raw_dfl_new_forward::probe::1788854451018472481",
+  "objects": 80,
+  "unique_distributions": 317,
+  "model_roles": {
+    "S": [
+      "historical_R_candidate",
+      "own_native_iou50"
+    ],
+    "R": [
+      "historical_R_candidate",
+      "own_native_iou50"
+    ],
+    "T": [
+      "same_historical_R_index",
+      "same_S_native_iou50_index",
+      "same_R_native_iou50_index",
+      "own_native_iou50",
+      "historical_selected_T"
+    ]
+  },
+  "by_group": {
+    "all80": {
+      "S": {
+        "historical_R_candidate": {
+          "GT_objects": 80,
+          "anchor_present": 79,
+          "anchor_missing": 1,
+          "unique_distribution_ids": 79,
+          "all_four_GT_edges_valid_objects": 79,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 316,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 316,
+            "mean": 0.7139835682184416,
+            "median": 0.6996103422026398,
+            "minimum": 0.34550069256343313,
+            "maximum": 2.0116505860067475
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 316,
+            "mean": 0.28225058583044066,
+            "median": 0.250254928341787,
+            "minimum": 0.08741241850521032,
+            "maximum": 3.444627384837213
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 316,
+            "mean": 2.648955601812563,
+            "median": 2.120924908433464,
+            "minimum": 0.3857924520885828,
+            "maximum": 8.971850120098704
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 316,
+            "mean": 0.7557488642207657,
+            "median": 0.6837768929224906,
+            "minimum": 0.16533241579422728,
+            "maximum": 5.56921093383435
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 79,
+            "mean": 0.7557488642207657,
+            "median": 0.6687775565754515,
+            "minimum": 0.44906474492898174,
+            "maximum": 2.089878854609491
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 79,
+            "mean": 0.21511171146617986,
+            "median": 0.16819329642866,
+            "minimum": 0.046361183229828073,
+            "maximum": 0.8713266559268437
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 80,
+          "anchor_present": 77,
+          "anchor_missing": 3,
+          "unique_distribution_ids": 77,
+          "all_four_GT_edges_valid_objects": 76,
+          "invalid_GT_objects": 1,
+          "valid_GT_edges": 307,
+          "invalid_GT_edges": 1,
+          "invalid_reasons": {
+            "negative_GT_distance": 1
+          },
+          "entropy_nat_all_present_edges": {
+            "n": 308,
+            "mean": 0.7019857300763863,
+            "median": 0.6980600365778494,
+            "minimum": 0.34550069256343313,
+            "maximum": 1.2443832778257162
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 308,
+            "mean": 0.26267310217504186,
+            "median": 0.24922318243102304,
+            "minimum": 0.08741241850521032,
+            "maximum": 0.8464776513013311
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 308,
+            "mean": 2.6069189912456223,
+            "median": 2.0645089756801562,
+            "minimum": 0.1991373757898454,
+            "maximum": 6.997818491180359
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 307,
+            "mean": 0.7299188253068659,
+            "median": 0.677911815698862,
+            "minimum": 0.16533241579422728,
+            "maximum": 5.56921093383435
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 76,
+            "mean": 0.7288953144831034,
+            "median": 0.6609610615958598,
+            "minimum": 0.44906474492898174,
+            "maximum": 2.089878854609491
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 76,
+            "mean": 0.20172742234686783,
+            "median": 0.16257959667720506,
+            "minimum": 0.046361183229828073,
+            "maximum": 0.8713266559268437
+          }
+        }
+      },
+      "R": {
+        "historical_R_candidate": {
+          "GT_objects": 80,
+          "anchor_present": 79,
+          "anchor_missing": 1,
+          "unique_distribution_ids": 79,
+          "all_four_GT_edges_valid_objects": 79,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 316,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 316,
+            "mean": 0.7139835682184416,
+            "median": 0.6996103422026398,
+            "minimum": 0.34550069256343313,
+            "maximum": 2.0116505860067475
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 316,
+            "mean": 0.28225058583044066,
+            "median": 0.250254928341787,
+            "minimum": 0.08741241850521032,
+            "maximum": 3.444627384837213
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 316,
+            "mean": 2.648955601812563,
+            "median": 2.120924908433464,
+            "minimum": 0.3857924520885828,
+            "maximum": 8.971850120098704
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 316,
+            "mean": 0.7557488642207657,
+            "median": 0.6837768929224906,
+            "minimum": 0.16533241579422728,
+            "maximum": 5.56921093383435
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 79,
+            "mean": 0.7557488642207657,
+            "median": 0.6687775565754515,
+            "minimum": 0.44906474492898174,
+            "maximum": 2.089878854609491
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 79,
+            "mean": 0.21511171146617986,
+            "median": 0.16819329642866,
+            "minimum": 0.046361183229828073,
+            "maximum": 0.8713266559268437
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 80,
+          "anchor_present": 77,
+          "anchor_missing": 3,
+          "unique_distribution_ids": 77,
+          "all_four_GT_edges_valid_objects": 76,
+          "invalid_GT_objects": 1,
+          "valid_GT_edges": 307,
+          "invalid_GT_edges": 1,
+          "invalid_reasons": {
+            "negative_GT_distance": 1
+          },
+          "entropy_nat_all_present_edges": {
+            "n": 308,
+            "mean": 0.7019857300763863,
+            "median": 0.6980600365778494,
+            "minimum": 0.34550069256343313,
+            "maximum": 1.2443832778257162
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 308,
+            "mean": 0.26267310217504186,
+            "median": 0.24922318243102304,
+            "minimum": 0.08741241850521032,
+            "maximum": 0.8464776513013311
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 308,
+            "mean": 2.6069189912456223,
+            "median": 2.0645089756801562,
+            "minimum": 0.1991373757898454,
+            "maximum": 6.997818491180359
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 307,
+            "mean": 0.7299188253068659,
+            "median": 0.677911815698862,
+            "minimum": 0.16533241579422728,
+            "maximum": 5.56921093383435
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 76,
+            "mean": 0.7288953144831034,
+            "median": 0.6609610615958598,
+            "minimum": 0.44906474492898174,
+            "maximum": 2.089878854609491
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 76,
+            "mean": 0.20172742234686783,
+            "median": 0.16257959667720506,
+            "minimum": 0.046361183229828073,
+            "maximum": 0.8713266559268437
+          }
+        }
+      },
+      "T": {
+        "same_historical_R_index": {
+          "GT_objects": 80,
+          "anchor_present": 79,
+          "anchor_missing": 1,
+          "unique_distribution_ids": 79,
+          "all_four_GT_edges_valid_objects": 79,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 316,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 316,
+            "mean": 0.6727590765710532,
+            "median": 0.6797283061543347,
+            "minimum": 0.30756113542033325,
+            "maximum": 1.8747027878849272
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 316,
+            "mean": 0.2614635568778996,
+            "median": 0.2379607884055372,
+            "minimum": 0.07396408129127138,
+            "maximum": 2.7147665675579296
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 316,
+            "mean": 2.6558541048832454,
+            "median": 2.118726979982231,
+            "minimum": 0.19273390478103458,
+            "maximum": 9.222513889797916
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 316,
+            "mean": 0.6642568008158266,
+            "median": 0.6619768298621557,
+            "minimum": 0.08742352617711559,
+            "maximum": 3.5410227192183354
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 79,
+            "mean": 0.6642568008158267,
+            "median": 0.6328382330345179,
+            "minimum": 0.42695102151779235,
+            "maximum": 1.316044180889468
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 79,
+            "mean": 0.15577676157474502,
+            "median": 0.14456459534719265,
+            "minimum": 0.026998262857510003,
+            "maximum": 0.462973007869554
+          }
+        },
+        "same_S_native_iou50_index": {
+          "GT_objects": 80,
+          "anchor_present": 77,
+          "anchor_missing": 3,
+          "unique_distribution_ids": 77,
+          "all_four_GT_edges_valid_objects": 76,
+          "invalid_GT_objects": 1,
+          "valid_GT_edges": 307,
+          "invalid_GT_edges": 1,
+          "invalid_reasons": {
+            "negative_GT_distance": 1
+          },
+          "entropy_nat_all_present_edges": {
+            "n": 308,
+            "mean": 0.6601386526263523,
+            "median": 0.6787666134839239,
+            "minimum": 0.30756113542033325,
+            "maximum": 1.5829413752198023
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 308,
+            "mean": 0.24082649397073896,
+            "median": 0.23649275928990166,
+            "minimum": 0.07396408129127138,
+            "maximum": 1.4868672281443063
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 308,
+            "mean": 2.6153241920897874,
+            "median": 2.1277732649990524,
+            "minimum": 0.13619377224078072,
+            "maximum": 8.079181407788626
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 307,
+            "mean": 0.6562898032929374,
+            "median": 0.6610145400553065,
+            "minimum": 0.08742352617711559,
+            "maximum": 3.5410227192183354
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 76,
+            "mean": 0.6549920345958553,
+            "median": 0.631138669831418,
+            "minimum": 0.42695102151779235,
+            "maximum": 1.316044180889468
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 76,
+            "mean": 0.15079481822312443,
+            "median": 0.13765848104900988,
+            "minimum": 0.026998262857510003,
+            "maximum": 0.40850581464865265
+          }
+        },
+        "same_R_native_iou50_index": {
+          "GT_objects": 80,
+          "anchor_present": 77,
+          "anchor_missing": 3,
+          "unique_distribution_ids": 77,
+          "all_four_GT_edges_valid_objects": 76,
+          "invalid_GT_objects": 1,
+          "valid_GT_edges": 307,
+          "invalid_GT_edges": 1,
+          "invalid_reasons": {
+            "negative_GT_distance": 1
+          },
+          "entropy_nat_all_present_edges": {
+            "n": 308,
+            "mean": 0.6601386526263523,
+            "median": 0.6787666134839239,
+            "minimum": 0.30756113542033325,
+            "maximum": 1.5829413752198023
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 308,
+            "mean": 0.24082649397073896,
+            "median": 0.23649275928990166,
+            "minimum": 0.07396408129127138,
+            "maximum": 1.4868672281443063
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 308,
+            "mean": 2.6153241920897874,
+            "median": 2.1277732649990524,
+            "minimum": 0.13619377224078072,
+            "maximum": 8.079181407788626
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 307,
+            "mean": 0.6562898032929374,
+            "median": 0.6610145400553065,
+            "minimum": 0.08742352617711559,
+            "maximum": 3.5410227192183354
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 76,
+            "mean": 0.6549920345958553,
+            "median": 0.631138669831418,
+            "minimum": 0.42695102151779235,
+            "maximum": 1.316044180889468
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 76,
+            "mean": 0.15079481822312443,
+            "median": 0.13765848104900988,
+            "minimum": 0.026998262857510003,
+            "maximum": 0.40850581464865265
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 80,
+          "anchor_present": 78,
+          "anchor_missing": 2,
+          "unique_distribution_ids": 78,
+          "all_four_GT_edges_valid_objects": 77,
+          "invalid_GT_objects": 1,
+          "valid_GT_edges": 311,
+          "invalid_GT_edges": 1,
+          "invalid_reasons": {
+            "negative_GT_distance": 1
+          },
+          "entropy_nat_all_present_edges": {
+            "n": 312,
+            "mean": 0.6521443863775658,
+            "median": 0.6760267640190055,
+            "minimum": 0.2892434827878089,
+            "maximum": 1.4266729603303663
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 312,
+            "mean": 0.23433505077296593,
+            "median": 0.23447274988430833,
+            "minimum": 0.06849574747492866,
+            "maximum": 1.1616309192336391
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 312,
+            "mean": 2.5937993118424036,
+            "median": 2.109277976759697,
+            "minimum": 0.13619377224078072,
+            "maximum": 6.942816392026766
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 311,
+            "mean": 0.6512826253251022,
+            "median": 0.6522781250246814,
+            "minimum": 0.08106813046492696,
+            "maximum": 3.817244441574177
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 77,
+            "mean": 0.6499529395529707,
+            "median": 0.6321969312846564,
+            "minimum": 0.4179010403815306,
+            "maximum": 1.3883518296135169
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 77,
+            "mean": 0.14978190093827312,
+            "median": 0.14231807532335972,
+            "minimum": 0.026998262857510003,
+            "maximum": 0.37946636632064057
+          }
+        },
+        "historical_selected_T": {
+          "GT_objects": 80,
+          "anchor_present": 7,
+          "anchor_missing": 73,
+          "unique_distribution_ids": 7,
+          "all_four_GT_edges_valid_objects": 7,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 28,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 28,
+            "mean": 0.8013681216861538,
+            "median": 0.7247292315497137,
+            "minimum": 0.39426039207642904,
+            "maximum": 1.5985211022547343
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 28,
+            "mean": 0.3763056946147573,
+            "median": 0.26625187772526704,
+            "minimum": 0.10194506583496248,
+            "maximum": 1.5757274818970743
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 28,
+            "mean": 2.9384370034432723,
+            "median": 1.930207319322819,
+            "minimum": 0.43852360508599353,
+            "maximum": 9.34260733337484
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 28,
+            "mean": 0.7698418129749435,
+            "median": 0.6963035753261727,
+            "minimum": 0.3859534262930504,
+            "maximum": 1.6026825720822306
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 7,
+            "mean": 0.7698418129749433,
+            "median": 0.8428764073077254,
+            "minimum": 0.6321631374811248,
+            "maximum": 0.8756280096045572
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 7,
+            "mean": 0.19635711818561497,
+            "median": 0.21059818425209686,
+            "minimum": 0.12197813251601583,
+            "maximum": 0.2515987110972747
+          }
+        }
+      }
+    },
+    "both05_onlyT075": {
+      "S": {
+        "historical_R_candidate": {
+          "GT_objects": 11,
+          "anchor_present": 11,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 11,
+          "all_four_GT_edges_valid_objects": 11,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 44,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 44,
+            "mean": 0.7620478225695343,
+            "median": 0.7253235750005957,
+            "minimum": 0.4517431999148222,
+            "maximum": 1.2351793265143005
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 44,
+            "mean": 0.29908930755360214,
+            "median": 0.26457518386209755,
+            "minimum": 0.12808145596059142,
+            "maximum": 0.756395240353805
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 44,
+            "mean": 2.4021066132624984,
+            "median": 2.0312677264271026,
+            "minimum": 0.7705123575661447,
+            "maximum": 5.301463287097789
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 44,
+            "mean": 1.097779644019447,
+            "median": 0.8235664978094647,
+            "minimum": 0.20692490871869987,
+            "maximum": 5.56921093383435
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 11,
+            "mean": 1.0977796440194472,
+            "median": 1.0375550596532825,
+            "minimum": 0.632073073120162,
+            "maximum": 2.089878854609491
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 11,
+            "mean": 0.4251711723148556,
+            "median": 0.3699209618556133,
+            "minimum": 0.2791504327718233,
+            "maximum": 0.8713266559268437
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 11,
+          "anchor_present": 11,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 11,
+          "all_four_GT_edges_valid_objects": 11,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 44,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 44,
+            "mean": 0.7620478225695343,
+            "median": 0.7253235750005957,
+            "minimum": 0.4517431999148222,
+            "maximum": 1.2351793265143005
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 44,
+            "mean": 0.29908930755360214,
+            "median": 0.26457518386209755,
+            "minimum": 0.12808145596059142,
+            "maximum": 0.756395240353805
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 44,
+            "mean": 2.4021066132624984,
+            "median": 2.0312677264271026,
+            "minimum": 0.7705123575661447,
+            "maximum": 5.301463287097789
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 44,
+            "mean": 1.097779644019447,
+            "median": 0.8235664978094647,
+            "minimum": 0.20692490871869987,
+            "maximum": 5.56921093383435
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 11,
+            "mean": 1.0977796440194472,
+            "median": 1.0375550596532825,
+            "minimum": 0.632073073120162,
+            "maximum": 2.089878854609491
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 11,
+            "mean": 0.4251711723148556,
+            "median": 0.3699209618556133,
+            "minimum": 0.2791504327718233,
+            "maximum": 0.8713266559268437
+          }
+        }
+      },
+      "R": {
+        "historical_R_candidate": {
+          "GT_objects": 11,
+          "anchor_present": 11,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 11,
+          "all_four_GT_edges_valid_objects": 11,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 44,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 44,
+            "mean": 0.7620478225695343,
+            "median": 0.7253235750005957,
+            "minimum": 0.4517431999148222,
+            "maximum": 1.2351793265143005
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 44,
+            "mean": 0.29908930755360214,
+            "median": 0.26457518386209755,
+            "minimum": 0.12808145596059142,
+            "maximum": 0.756395240353805
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 44,
+            "mean": 2.4021066132624984,
+            "median": 2.0312677264271026,
+            "minimum": 0.7705123575661447,
+            "maximum": 5.301463287097789
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 44,
+            "mean": 1.097779644019447,
+            "median": 0.8235664978094647,
+            "minimum": 0.20692490871869987,
+            "maximum": 5.56921093383435
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 11,
+            "mean": 1.0977796440194472,
+            "median": 1.0375550596532825,
+            "minimum": 0.632073073120162,
+            "maximum": 2.089878854609491
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 11,
+            "mean": 0.4251711723148556,
+            "median": 0.3699209618556133,
+            "minimum": 0.2791504327718233,
+            "maximum": 0.8713266559268437
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 11,
+          "anchor_present": 11,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 11,
+          "all_four_GT_edges_valid_objects": 11,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 44,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 44,
+            "mean": 0.7620478225695343,
+            "median": 0.7253235750005957,
+            "minimum": 0.4517431999148222,
+            "maximum": 1.2351793265143005
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 44,
+            "mean": 0.29908930755360214,
+            "median": 0.26457518386209755,
+            "minimum": 0.12808145596059142,
+            "maximum": 0.756395240353805
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 44,
+            "mean": 2.4021066132624984,
+            "median": 2.0312677264271026,
+            "minimum": 0.7705123575661447,
+            "maximum": 5.301463287097789
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 44,
+            "mean": 1.097779644019447,
+            "median": 0.8235664978094647,
+            "minimum": 0.20692490871869987,
+            "maximum": 5.56921093383435
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 11,
+            "mean": 1.0977796440194472,
+            "median": 1.0375550596532825,
+            "minimum": 0.632073073120162,
+            "maximum": 2.089878854609491
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 11,
+            "mean": 0.4251711723148556,
+            "median": 0.3699209618556133,
+            "minimum": 0.2791504327718233,
+            "maximum": 0.8713266559268437
+          }
+        }
+      },
+      "T": {
+        "same_historical_R_index": {
+          "GT_objects": 11,
+          "anchor_present": 11,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 11,
+          "all_four_GT_edges_valid_objects": 11,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 44,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 44,
+            "mean": 0.7240582751733528,
+            "median": 0.6980191642829391,
+            "minimum": 0.3220542770652239,
+            "maximum": 1.5829413752198023
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 44,
+            "mean": 0.2928141439123262,
+            "median": 0.24252857261604713,
+            "minimum": 0.08185297910212183,
+            "maximum": 1.4868672281443063
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 44,
+            "mean": 2.4334462782780335,
+            "median": 2.0052405031723657,
+            "minimum": 0.49648353868461875,
+            "maximum": 6.4355176677278845
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 44,
+            "mean": 0.6840747384272068,
+            "median": 0.679528330764805,
+            "minimum": 0.1724029608183518,
+            "maximum": 1.5872297393625292
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 11,
+            "mean": 0.6840747384272068,
+            "median": 0.6883951770446977,
+            "minimum": 0.4584040691281488,
+            "maximum": 0.8485321027434918
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 11,
+            "mean": 0.16833489762510231,
+            "median": 0.16402180656298793,
+            "minimum": 0.033719379568332736,
+            "maximum": 0.26933552560524715
+          }
+        },
+        "same_S_native_iou50_index": {
+          "GT_objects": 11,
+          "anchor_present": 11,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 11,
+          "all_four_GT_edges_valid_objects": 11,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 44,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 44,
+            "mean": 0.7240582751733528,
+            "median": 0.6980191642829391,
+            "minimum": 0.3220542770652239,
+            "maximum": 1.5829413752198023
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 44,
+            "mean": 0.2928141439123262,
+            "median": 0.24252857261604713,
+            "minimum": 0.08185297910212183,
+            "maximum": 1.4868672281443063
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 44,
+            "mean": 2.4334462782780335,
+            "median": 2.0052405031723657,
+            "minimum": 0.49648353868461875,
+            "maximum": 6.4355176677278845
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 44,
+            "mean": 0.6840747384272068,
+            "median": 0.679528330764805,
+            "minimum": 0.1724029608183518,
+            "maximum": 1.5872297393625292
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 11,
+            "mean": 0.6840747384272068,
+            "median": 0.6883951770446977,
+            "minimum": 0.4584040691281488,
+            "maximum": 0.8485321027434918
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 11,
+            "mean": 0.16833489762510231,
+            "median": 0.16402180656298793,
+            "minimum": 0.033719379568332736,
+            "maximum": 0.26933552560524715
+          }
+        },
+        "same_R_native_iou50_index": {
+          "GT_objects": 11,
+          "anchor_present": 11,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 11,
+          "all_four_GT_edges_valid_objects": 11,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 44,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 44,
+            "mean": 0.7240582751733528,
+            "median": 0.6980191642829391,
+            "minimum": 0.3220542770652239,
+            "maximum": 1.5829413752198023
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 44,
+            "mean": 0.2928141439123262,
+            "median": 0.24252857261604713,
+            "minimum": 0.08185297910212183,
+            "maximum": 1.4868672281443063
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 44,
+            "mean": 2.4334462782780335,
+            "median": 2.0052405031723657,
+            "minimum": 0.49648353868461875,
+            "maximum": 6.4355176677278845
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 44,
+            "mean": 0.6840747384272068,
+            "median": 0.679528330764805,
+            "minimum": 0.1724029608183518,
+            "maximum": 1.5872297393625292
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 11,
+            "mean": 0.6840747384272068,
+            "median": 0.6883951770446977,
+            "minimum": 0.4584040691281488,
+            "maximum": 0.8485321027434918
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 11,
+            "mean": 0.16833489762510231,
+            "median": 0.16402180656298793,
+            "minimum": 0.033719379568332736,
+            "maximum": 0.26933552560524715
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 11,
+          "anchor_present": 11,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 11,
+          "all_four_GT_edges_valid_objects": 11,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 44,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 44,
+            "mean": 0.6776325723517056,
+            "median": 0.6792265798186479,
+            "minimum": 0.2892434827878089,
+            "maximum": 1.4266729603303663
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 44,
+            "mean": 0.256899963545046,
+            "median": 0.2385374199234337,
+            "minimum": 0.08164070177483468,
+            "maximum": 1.1616309192336391
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 44,
+            "mean": 2.2364661634357437,
+            "median": 1.7380257238276509,
+            "minimum": 0.4676915143444325,
+            "maximum": 6.16750441875238
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 44,
+            "mean": 0.6520530396036347,
+            "median": 0.6356587890216017,
+            "minimum": 0.1724029608183518,
+            "maximum": 1.4193600737394352
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 11,
+            "mean": 0.6520530396036347,
+            "median": 0.6627881759546252,
+            "minimum": 0.4584040691281488,
+            "maximum": 0.8399829950580957
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 11,
+            "mean": 0.1544365314626748,
+            "median": 0.1529073623231314,
+            "minimum": 0.034200548265240535,
+            "maximum": 0.27380144456314126
+          }
+        },
+        "historical_selected_T": {
+          "GT_objects": 11,
+          "anchor_present": 4,
+          "anchor_missing": 7,
+          "unique_distribution_ids": 4,
+          "all_four_GT_edges_valid_objects": 4,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 16,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 16,
+            "mean": 0.7393073484010743,
+            "median": 0.7212544133066852,
+            "minimum": 0.39426039207642904,
+            "maximum": 1.4225100495975207
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 16,
+            "mean": 0.3077357744575349,
+            "median": 0.26255415855861053,
+            "minimum": 0.10194506583496248,
+            "maximum": 1.1536341304028848
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 16,
+            "mean": 2.707508598845342,
+            "median": 2.024722235078424,
+            "minimum": 0.43852360508599353,
+            "maximum": 6.270148684292949
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 16,
+            "mean": 0.7563281584340501,
+            "median": 0.6935036852160089,
+            "minimum": 0.3859534262930504,
+            "maximum": 1.6026825720822306
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 4,
+            "mean": 0.7563281584340502,
+            "median": 0.7587607433252592,
+            "minimum": 0.6321631374811248,
+            "maximum": 0.8756280096045572
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 4,
+            "mean": 0.1996730093353764,
+            "median": 0.20490791653459184,
+            "minimum": 0.13727749317504725,
+            "maximum": 0.2515987110972747
+          }
+        }
+      }
+    },
+    "both05_onlyS075": {
+      "S": {
+        "historical_R_candidate": {
+          "GT_objects": 1,
+          "anchor_present": 1,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 1,
+          "all_four_GT_edges_valid_objects": 1,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 4,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 4,
+            "mean": 0.83836377580314,
+            "median": 0.7901125745657236,
+            "minimum": 0.5537727301561862,
+            "maximum": 1.2194572239249268
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 4,
+            "mean": 0.3768232421950111,
+            "median": 0.3030490933827271,
+            "minimum": 0.16848324633949863,
+            "maximum": 0.7327115356750916
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 4,
+            "mean": 3.5498616193688592,
+            "median": 3.9513661619205713,
+            "minimum": 0.47575477950165407,
+            "maximum": 5.820959374132642
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 4,
+            "mean": 0.7007081602413702,
+            "median": 0.6952881749125762,
+            "minimum": 0.6082891113177986,
+            "maximum": 0.8039671798225297
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 1,
+            "mean": 0.7007081602413702,
+            "median": 0.7007081602413702,
+            "minimum": 0.7007081602413702,
+            "maximum": 0.7007081602413702
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 1,
+            "mean": 0.12428383736235303,
+            "median": 0.12428383736235303,
+            "minimum": 0.12428383736235303,
+            "maximum": 0.12428383736235303
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 1,
+          "anchor_present": 1,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 1,
+          "all_four_GT_edges_valid_objects": 1,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 4,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 4,
+            "mean": 0.83836377580314,
+            "median": 0.7901125745657236,
+            "minimum": 0.5537727301561862,
+            "maximum": 1.2194572239249268
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 4,
+            "mean": 0.3768232421950111,
+            "median": 0.3030490933827271,
+            "minimum": 0.16848324633949863,
+            "maximum": 0.7327115356750916
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 4,
+            "mean": 3.5498616193688592,
+            "median": 3.9513661619205713,
+            "minimum": 0.47575477950165407,
+            "maximum": 5.820959374132642
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 4,
+            "mean": 0.7007081602413702,
+            "median": 0.6952881749125762,
+            "minimum": 0.6082891113177986,
+            "maximum": 0.8039671798225297
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 1,
+            "mean": 0.7007081602413702,
+            "median": 0.7007081602413702,
+            "minimum": 0.7007081602413702,
+            "maximum": 0.7007081602413702
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 1,
+            "mean": 0.12428383736235303,
+            "median": 0.12428383736235303,
+            "minimum": 0.12428383736235303,
+            "maximum": 0.12428383736235303
+          }
+        }
+      },
+      "R": {
+        "historical_R_candidate": {
+          "GT_objects": 1,
+          "anchor_present": 1,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 1,
+          "all_four_GT_edges_valid_objects": 1,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 4,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 4,
+            "mean": 0.83836377580314,
+            "median": 0.7901125745657236,
+            "minimum": 0.5537727301561862,
+            "maximum": 1.2194572239249268
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 4,
+            "mean": 0.3768232421950111,
+            "median": 0.3030490933827271,
+            "minimum": 0.16848324633949863,
+            "maximum": 0.7327115356750916
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 4,
+            "mean": 3.5498616193688592,
+            "median": 3.9513661619205713,
+            "minimum": 0.47575477950165407,
+            "maximum": 5.820959374132642
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 4,
+            "mean": 0.7007081602413702,
+            "median": 0.6952881749125762,
+            "minimum": 0.6082891113177986,
+            "maximum": 0.8039671798225297
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 1,
+            "mean": 0.7007081602413702,
+            "median": 0.7007081602413702,
+            "minimum": 0.7007081602413702,
+            "maximum": 0.7007081602413702
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 1,
+            "mean": 0.12428383736235303,
+            "median": 0.12428383736235303,
+            "minimum": 0.12428383736235303,
+            "maximum": 0.12428383736235303
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 1,
+          "anchor_present": 1,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 1,
+          "all_four_GT_edges_valid_objects": 1,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 4,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 4,
+            "mean": 0.83836377580314,
+            "median": 0.7901125745657236,
+            "minimum": 0.5537727301561862,
+            "maximum": 1.2194572239249268
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 4,
+            "mean": 0.3768232421950111,
+            "median": 0.3030490933827271,
+            "minimum": 0.16848324633949863,
+            "maximum": 0.7327115356750916
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 4,
+            "mean": 3.5498616193688592,
+            "median": 3.9513661619205713,
+            "minimum": 0.47575477950165407,
+            "maximum": 5.820959374132642
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 4,
+            "mean": 0.7007081602413702,
+            "median": 0.6952881749125762,
+            "minimum": 0.6082891113177986,
+            "maximum": 0.8039671798225297
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 1,
+            "mean": 0.7007081602413702,
+            "median": 0.7007081602413702,
+            "minimum": 0.7007081602413702,
+            "maximum": 0.7007081602413702
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 1,
+            "mean": 0.12428383736235303,
+            "median": 0.12428383736235303,
+            "minimum": 0.12428383736235303,
+            "maximum": 0.12428383736235303
+          }
+        }
+      },
+      "T": {
+        "same_historical_R_index": {
+          "GT_objects": 1,
+          "anchor_present": 1,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 1,
+          "all_four_GT_edges_valid_objects": 1,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 4,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 4,
+            "mean": 0.8298696782056888,
+            "median": 0.7438226668494711,
+            "minimum": 0.62455022423227,
+            "maximum": 1.207283154891543
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 4,
+            "mean": 0.3699956707265627,
+            "median": 0.28076604024981544,
+            "minimum": 0.20881190934635405,
+            "maximum": 0.709638693060266
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 4,
+            "mean": 3.5071324235196633,
+            "median": 3.514450784395979,
+            "minimum": 0.6832634102784335,
+            "maximum": 6.3163647150082625
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 4,
+            "mean": 0.9491505558073459,
+            "median": 0.8460745611153029,
+            "minimum": 0.6960010817178707,
+            "maximum": 1.408452019280907
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 1,
+            "mean": 0.9491505558073459,
+            "median": 0.9491505558073459,
+            "minimum": 0.9491505558073459,
+            "maximum": 0.9491505558073459
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 1,
+            "mean": 0.40850581464865265,
+            "median": 0.40850581464865265,
+            "minimum": 0.40850581464865265,
+            "maximum": 0.40850581464865265
+          }
+        },
+        "same_S_native_iou50_index": {
+          "GT_objects": 1,
+          "anchor_present": 1,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 1,
+          "all_four_GT_edges_valid_objects": 1,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 4,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 4,
+            "mean": 0.8298696782056888,
+            "median": 0.7438226668494711,
+            "minimum": 0.62455022423227,
+            "maximum": 1.207283154891543
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 4,
+            "mean": 0.3699956707265627,
+            "median": 0.28076604024981544,
+            "minimum": 0.20881190934635405,
+            "maximum": 0.709638693060266
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 4,
+            "mean": 3.5071324235196633,
+            "median": 3.514450784395979,
+            "minimum": 0.6832634102784335,
+            "maximum": 6.3163647150082625
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 4,
+            "mean": 0.9491505558073459,
+            "median": 0.8460745611153029,
+            "minimum": 0.6960010817178707,
+            "maximum": 1.408452019280907
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 1,
+            "mean": 0.9491505558073459,
+            "median": 0.9491505558073459,
+            "minimum": 0.9491505558073459,
+            "maximum": 0.9491505558073459
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 1,
+            "mean": 0.40850581464865265,
+            "median": 0.40850581464865265,
+            "minimum": 0.40850581464865265,
+            "maximum": 0.40850581464865265
+          }
+        },
+        "same_R_native_iou50_index": {
+          "GT_objects": 1,
+          "anchor_present": 1,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 1,
+          "all_four_GT_edges_valid_objects": 1,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 4,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 4,
+            "mean": 0.8298696782056888,
+            "median": 0.7438226668494711,
+            "minimum": 0.62455022423227,
+            "maximum": 1.207283154891543
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 4,
+            "mean": 0.3699956707265627,
+            "median": 0.28076604024981544,
+            "minimum": 0.20881190934635405,
+            "maximum": 0.709638693060266
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 4,
+            "mean": 3.5071324235196633,
+            "median": 3.514450784395979,
+            "minimum": 0.6832634102784335,
+            "maximum": 6.3163647150082625
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 4,
+            "mean": 0.9491505558073459,
+            "median": 0.8460745611153029,
+            "minimum": 0.6960010817178707,
+            "maximum": 1.408452019280907
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 1,
+            "mean": 0.9491505558073459,
+            "median": 0.9491505558073459,
+            "minimum": 0.9491505558073459,
+            "maximum": 0.9491505558073459
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 1,
+            "mean": 0.40850581464865265,
+            "median": 0.40850581464865265,
+            "minimum": 0.40850581464865265,
+            "maximum": 0.40850581464865265
+          }
+        },
+        "own_native_iou50": {
+          "GT_objects": 1,
+          "anchor_present": 1,
+          "anchor_missing": 0,
+          "unique_distribution_ids": 1,
+          "all_four_GT_edges_valid_objects": 1,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 4,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 4,
+            "mean": 0.7941501055876432,
+            "median": 0.7638269865333216,
+            "minimum": 0.6103153318391689,
+            "maximum": 1.038631117444761
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 4,
+            "mean": 0.32312713383169367,
+            "median": 0.2900160118973031,
+            "minimum": 0.19222764347183852,
+            "maximum": 0.5202488680603299
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 4,
+            "mean": 3.4507433414735393,
+            "median": 3.610874771528432,
+            "minimum": 0.644875526859613,
+            "maximum": 5.936348295977679
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 4,
+            "mean": 0.8834395675968209,
+            "median": 0.7702381800847864,
+            "minimum": 0.6366927074202463,
+            "maximum": 1.3565892027974642
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 1,
+            "mean": 0.8834395675968209,
+            "median": 0.8834395675968209,
+            "minimum": 0.8834395675968209,
+            "maximum": 0.8834395675968209
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 1,
+            "mean": 0.3439699690201964,
+            "median": 0.3439699690201964,
+            "minimum": 0.3439699690201964,
+            "maximum": 0.3439699690201964
+          }
+        },
+        "historical_selected_T": {
+          "GT_objects": 1,
+          "anchor_present": 0,
+          "anchor_missing": 1,
+          "unique_distribution_ids": 0,
+          "all_four_GT_edges_valid_objects": 0,
+          "invalid_GT_objects": 0,
+          "valid_GT_edges": 0,
+          "invalid_GT_edges": 0,
+          "invalid_reasons": {},
+          "entropy_nat_all_present_edges": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "variance_bin2_all_present_edges": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "expectation_bin_all_present_edges": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "DFL_CE_nat_valid_edges": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "mean4_DFL_CE_nat_valid_objects": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "minimum": null,
+            "maximum": null
+          },
+          "mean4_absolute_mean_error_bin_valid_objects": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "minimum": null,
+            "maximum": null
+          }
+        }
+      }
+    }
+  },
+  "numeric_closure_maxima": {
+    "FP64_recomputed_vs_saved_FP32_probability_max_abs": 3.2508557490373846e-07,
+    "FP64_recomputed_vs_saved_FP32_expectation_max_abs": 1.6501448190098245e-06,
+    "saved_FP32_expectation_box_reconstruction_max_abs_px": 3.0517578125e-05,
+    "native_probability_mass_error_max_abs": 3.534853476594435e-07,
+    "native_probability_float64_mean_vs_native_conv_max_abs_bin": 0.004178858987870626,
+    "native_vs_FP32_box_max_abs_px": 0.06689453125
+  },
+  "numerical_contract": {
+    "primary": "float64 stable softmax of original-valued raw logits",
+    "entropy": "nat",
+    "variance": "bin squared",
+    "GT_interval": "0 <= distance < 15, no clamp",
+    "CE": "Adjacent-bin interpolation; not reconstructed training DFLoss",
+    "native_probabilities": "Retained and rounding reported; never renormalized"
+  },
+  "inputs": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1601\\probe\\completion_receipt.json",
+      "bytes": 2453,
+      "mtime_ns": 1788854473886929000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1601\\probe\\dfl_contract.json",
+      "bytes": 2539,
+      "mtime_ns": 1788854473890120100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1601\\probe\\objects.jsonl",
+      "bytes": 407526,
+      "mtime_ns": 1788854473893500500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_DFL真实信息读出\\evidence_1601\\probe\\anchor_distributions.jsonl",
+      "bytes": 1531674,
+      "mtime_ns": 1788854473898707400
+    }
+  ],
+  "GPU_used": false,
+  "new_forward": false,
+  "new_hash_computed": false,
+  "cross_anchor_KL": false,
+  "AP_estimated": false,
+  "parameter_gradient_comparison": false,
+  "DFL_utility_proven": false,
+  "full_probability_vectors_available": true
+}

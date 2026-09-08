@@ -1,0 +1,92 @@
+{
+  "status": "READ_ONLY_PREFLIGHT",
+  "observed_utc": "2026-09-08T07:44:27.139630+00:00",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mib": 24564,
+      "used_mib": 1,
+      "free_mib": 24082,
+      "utilization_percent": 0
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mib": 24564,
+      "used_mib": 1,
+      "free_mib": 24082,
+      "utilization_percent": 0
+    },
+    {
+      "index": 2,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mib": 24564,
+      "used_mib": 15999,
+      "free_mib": 8085,
+      "utilization_percent": 99
+    },
+    {
+      "index": 3,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mib": 24564,
+      "used_mib": 1,
+      "free_mib": 24082,
+      "utilization_percent": 0
+    },
+    {
+      "index": 4,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mib": 24564,
+      "used_mib": 8047,
+      "free_mib": 16037,
+      "utilization_percent": 16
+    },
+    {
+      "index": 5,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mib": 24564,
+      "used_mib": 15764,
+      "free_mib": 8320,
+      "utilization_percent": 97
+    },
+    {
+      "index": 6,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mib": 24564,
+      "used_mib": 17542,
+      "free_mib": 6542,
+      "utilization_percent": 68
+    },
+    {
+      "index": 7,
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_mib": 24564,
+      "used_mib": 1,
+      "free_mib": 24082,
+      "utilization_percent": 0
+    }
+  ],
+  "requested_reservation": {
+    "vram_mib": 8192,
+    "rss_mib": 32768
+  },
+  "old_witness_resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1646
+    },
+    "peak_rss_mib": 26771
+  },
+  "old_framework_allocated_mib": 938.36669921875,
+  "old_framework_reserved_mib": 1150.0,
+  "old_witness_receipt": "08_实验日志\\2026-09-08_probe_同帧选择覆盖\\witness_evidence_1315_final\\probe\\completion_receipt.json",
+  "not_GPU_admission": true,
+  "dynamic_original_lease_rechecks_at_start": true,
+  "new_hash_computed": false
+}
