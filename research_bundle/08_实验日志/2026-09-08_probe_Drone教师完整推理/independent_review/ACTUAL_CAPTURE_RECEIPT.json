@@ -1,0 +1,93 @@
+{
+  "status": "ACCEPTED_ACTUAL_DRONE_IR42_CAPTURE",
+  "populations": {
+    "T42_canary_attempt1": {
+      "images": 32,
+      "GT": 514,
+      "class_counts": [
+        447,
+        24,
+        30,
+        13,
+        0
+      ],
+      "empty_GT_images": 0,
+      "prediction_rows": 932,
+      "outside_canvas_predictions_kept": 1,
+      "AP_macro_mean_max_error": 0.0,
+      "native_capture_dual_path_exact": true,
+      "seconds": 24.46673011779785
+    },
+    "T42_full_attempt1": {
+      "images": 1469,
+      "GT": 24490,
+      "class_counts": [
+        20588,
+        918,
+        1470,
+        789,
+        725
+      ],
+      "empty_GT_images": 2,
+      "prediction_rows": 61969,
+      "outside_canvas_predictions_kept": 19,
+      "AP_macro_mean_max_error": 1.1102230246251565e-16,
+      "native_capture_dual_path_exact": false,
+      "seconds": 28.6913583278656
+    }
+  },
+  "canary_full_shared_GT_exact": true,
+  "N_T_native_kwargs_classes_canvas_roster_stems_exact": true,
+  "N_RGB_GT": 22462,
+  "T_IR_GT": 24490,
+  "GT_arrays_not_assumed_equal": true,
+  "N_checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+  "T_checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+  "same_training_protocol_claim": false,
+  "crossmodal_GT_pairing_not_yet_accepted": true,
+  "full_AP50_fraction": 0.8083569915490951,
+  "full_AP75_fraction": 0.7119863600014217,
+  "full_mAP_fraction": 0.5963198259876477,
+  "queue_seconds": 212.53457880020142,
+  "resources": {
+    "canary": {
+      "minimum_free_mib": 15513,
+      "max_sampled_project_rss_mib": 142928,
+      "task_vram_peak_mib": 1370,
+      "task_rss_peak_mib": 1560,
+      "reserved_vram_mib": 4096,
+      "reserved_rss_mib": 12288
+    },
+    "full": {
+      "minimum_free_mib": 14661,
+      "max_sampled_project_rss_mib": 145335,
+      "task_vram_peak_mib": 1370,
+      "task_rss_peak_mib": 4017,
+      "reserved_vram_mib": 1882,
+      "reserved_rss_mib": 12288
+    }
+  },
+  "resource_evidence_scope": "existing lease guard completed without monitor errors plus retained samples; not exhaustive independent continuous sampling",
+  "new_GPU": false,
+  "new_model_forward": false,
+  "new_NMS": false,
+  "new_hash": false,
+  "checkpoint_loaded": false,
+  "inputs": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_Drone教师完整推理\\evidence_1401\\collection_receipt.json",
+      "bytes": 3960,
+      "mtime_ns": 1788847176664763000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_Drone教师完整推理\\evidence_1401\\T42_full_attempt1\\capture\\objects.jsonl.gz",
+      "bytes": 2667844,
+      "mtime_ns": 1788847176662236800
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_Drone教师完整推理\\evidence_1401\\T42_canary_attempt1\\capture\\objects.jsonl.gz",
+      "bytes": 42484,
+      "mtime_ns": 1788847176643031600
+    }
+  ]
+}

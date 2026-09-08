@@ -1,0 +1,555 @@
+{
+  "files": [
+    {
+      "path": "accepted_llvip_export_full_dev_source.py",
+      "bytes": 12260
+    },
+    {
+      "path": "ACTUAL_CAPTURE_REVIEW.md",
+      "bytes": 3374
+    },
+    {
+      "path": "audit_remote_inputs.py",
+      "bytes": 4239
+    },
+    {
+      "path": "collect_capture.py",
+      "bytes": 2608
+    },
+    {
+      "path": "collection_failure_1358.json",
+      "bytes": 635
+    },
+    {
+      "path": "COLLECTION_INPUT_CORRECTION.md",
+      "bytes": 1063
+    },
+    {
+      "path": "cpu_analysis/analyze_drone_dev.py",
+      "bytes": 15320
+    },
+    {
+      "path": "cpu_analysis/analyze_drone_dev_attempt1_source.py",
+      "bytes": 15298
+    },
+    {
+      "path": "cpu_analysis/CPU_attempt1.json",
+      "bytes": 214
+    },
+    {
+      "path": "cpu_analysis/frozen_sources/3_val.py",
+      "bytes": 24135
+    },
+    {
+      "path": "cpu_analysis/frozen_sources/4_validator.py",
+      "bytes": 19871
+    },
+    {
+      "path": "cpu_analysis/frozen_sources/7_metrics.py",
+      "bytes": 89620
+    },
+    {
+      "path": "cpu_analysis/frozen_sources/object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "cpu_analysis/frozen_sources/paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "cpu_analysis/native_cached_match.py",
+      "bytes": 3591
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/failure.json",
+      "bytes": 693
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/image_mapping.json",
+      "bytes": 349625
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/image_mapping_provenance.json",
+      "bytes": 572
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/input_manifest.json",
+      "bytes": 5083
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/0_analyze_drone_dev.py",
+      "bytes": 15298
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/1_CPU_attempt1.json",
+      "bytes": 214
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/2_native_cached_match.py",
+      "bytes": 3591
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/3_pairing_core.py",
+      "bytes": 6802
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/4_test_drone_cpu.py",
+      "bytes": 4083
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/5_3_val.py",
+      "bytes": 24135
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/6_4_validator.py",
+      "bytes": 19871
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/7_7_metrics.py",
+      "bytes": 89620
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/8_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "cpu_analysis/output_attempt1/source_copies/9_paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/all_gt_objects.jsonl.gz",
+      "bytes": 2888746
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/completion.json",
+      "bytes": 241
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/frames.jsonl.gz",
+      "bytes": 156036
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/image_mapping.json",
+      "bytes": 349625
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/image_mapping_provenance.json",
+      "bytes": 572
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/input_manifest.json",
+      "bytes": 5096
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/paired_objects.jsonl.gz",
+      "bytes": 2353193
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/prediction_matches.jsonl.gz",
+      "bytes": 8273609
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/README.md",
+      "bytes": 617
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/0_analyze_drone_dev.py",
+      "bytes": 15320
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/10_paired_rgbir_data.py",
+      "bytes": 10325
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/11_PLAN_CPU_PAIRING.md",
+      "bytes": 5427
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/1_analyze_drone_dev_attempt1_source.py",
+      "bytes": 15298
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/2_CPU_attempt1.json",
+      "bytes": 214
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/3_native_cached_match.py",
+      "bytes": 3591
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/4_pairing_core.py",
+      "bytes": 6802
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/5_test_drone_cpu.py",
+      "bytes": 4083
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/6_3_val.py",
+      "bytes": 24135
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/7_4_validator.py",
+      "bytes": 19871
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/8_7_metrics.py",
+      "bytes": 89620
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/source_copies/9_object_evidence_loss.py",
+      "bytes": 19364
+    },
+    {
+      "path": "cpu_analysis/output_attempt2/summary.json",
+      "bytes": 37377
+    },
+    {
+      "path": "cpu_analysis/pairing_core.py",
+      "bytes": 6802
+    },
+    {
+      "path": "cpu_analysis/README.md",
+      "bytes": 2390
+    },
+    {
+      "path": "cpu_analysis/test_drone_cpu.py",
+      "bytes": 4083
+    },
+    {
+      "path": "CPU_attempt1.json",
+      "bytes": 243
+    },
+    {
+      "path": "cross_gt_attempt1/completion.json",
+      "bytes": 209
+    },
+    {
+      "path": "cross_gt_attempt1/input_manifest.json",
+      "bytes": 2665
+    },
+    {
+      "path": "cross_gt_attempt1/objects.jsonl.gz",
+      "bytes": 642125
+    },
+    {
+      "path": "cross_gt_attempt1/README.md",
+      "bytes": 950
+    },
+    {
+      "path": "cross_gt_attempt1/source_copies/0_analyze_cross_gt.py",
+      "bytes": 10832
+    },
+    {
+      "path": "cross_gt_attempt1/source_copies/1_test_cross_gt_cpu.py",
+      "bytes": 4170
+    },
+    {
+      "path": "cross_gt_attempt1/source_copies/2_CROSS_GT_PLAN.md",
+      "bytes": 2420
+    },
+    {
+      "path": "cross_gt_attempt1/source_copies/3_native_cached_match.py",
+      "bytes": 3591
+    },
+    {
+      "path": "cross_gt_attempt1/source_copies/4_3_val.py",
+      "bytes": 24135
+    },
+    {
+      "path": "cross_gt_attempt1/source_copies/5_4_validator.py",
+      "bytes": 19871
+    },
+    {
+      "path": "cross_gt_attempt1/source_copies/6_7_metrics.py",
+      "bytes": 89620
+    },
+    {
+      "path": "cross_gt_attempt1/summary.json",
+      "bytes": 5400
+    },
+    {
+      "path": "CROSS_GT_PLAN.md",
+      "bytes": 2420
+    },
+    {
+      "path": "cross_gt_source/analyze_cross_gt.py",
+      "bytes": 10832
+    },
+    {
+      "path": "cross_gt_source/CPU_attempt1.json",
+      "bytes": 165
+    },
+    {
+      "path": "cross_gt_source/test_cross_gt_cpu.py",
+      "bytes": 4170
+    },
+    {
+      "path": "deploy_capture.py",
+      "bytes": 1920
+    },
+    {
+      "path": "deployment_v1.json",
+      "bytes": 1266
+    },
+    {
+      "path": "evidence_1401/collection_receipt.json",
+      "bytes": 3960
+    },
+    {
+      "path": "evidence_1401/pinned_source/deployment.json",
+      "bytes": 1234
+    },
+    {
+      "path": "evidence_1401/pinned_source/pinned_cpu.json",
+      "bytes": 233
+    },
+    {
+      "path": "evidence_1401/queue/canary_acceptance.json",
+      "bytes": 395
+    },
+    {
+      "path": "evidence_1401/queue/canary_job.json",
+      "bytes": 886
+    },
+    {
+      "path": "evidence_1401/queue/completion.json",
+      "bytes": 367
+    },
+    {
+      "path": "evidence_1401/queue/drone_teacher_attempt1_canary_admission.json",
+      "bytes": 150
+    },
+    {
+      "path": "evidence_1401/queue/drone_teacher_attempt1_canary_status.json",
+      "bytes": 382
+    },
+    {
+      "path": "evidence_1401/queue/drone_teacher_attempt1_full_admission.json",
+      "bytes": 150
+    },
+    {
+      "path": "evidence_1401/queue/drone_teacher_attempt1_full_status.json",
+      "bytes": 380
+    },
+    {
+      "path": "evidence_1401/queue/full_job.json",
+      "bytes": 864
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/capture/objects.jsonl.gz",
+      "bytes": 42484
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/capture_contract.json",
+      "bytes": 16709
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/capture_metrics.json",
+      "bytes": 807
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/evaluation_only_data.yaml",
+      "bytes": 493
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/evaluation_roster.txt",
+      "bytes": 3744
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/input_spec.json",
+      "bytes": 398259
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/model_identity.json",
+      "bytes": 7429
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/native_contract.json",
+      "bytes": 16687
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/native_metrics.json",
+      "bytes": 807
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/original_args.yaml",
+      "bytes": 2089
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/original_data.yaml",
+      "bytes": 200
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/population.json",
+      "bytes": 384186
+    },
+    {
+      "path": "evidence_1401/T42_canary_attempt1/summary.json",
+      "bytes": 2638
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/capture/objects.jsonl.gz",
+      "bytes": 2667844
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/capture_contract.json",
+      "bytes": 723730
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/capture_metrics.json",
+      "bytes": 994
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/evaluation_only_data.yaml",
+      "bytes": 487
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/evaluation_roster.txt",
+      "bytes": 171873
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/input_spec.json",
+      "bytes": 398259
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/model_identity.json",
+      "bytes": 3716
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/original_args.yaml",
+      "bytes": 2089
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/original_data.yaml",
+      "bytes": 200
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/population.json",
+      "bytes": 740579
+    },
+    {
+      "path": "evidence_1401/T42_full_attempt1/summary.json",
+      "bytes": 2851
+    },
+    {
+      "path": "FINAL_REPORT.md",
+      "bytes": 9438
+    },
+    {
+      "path": "independent_review/ACTUAL_CAPTURE_RECEIPT.json",
+      "bytes": 3172
+    },
+    {
+      "path": "independent_review/CPU_REPLAY.json",
+      "bytes": 243
+    },
+    {
+      "path": "independent_review/CROSS_GT_ACTUAL_RECEIPT.json",
+      "bytes": 2012
+    },
+    {
+      "path": "independent_review/CROSS_GT_CPU_REPLAY.json",
+      "bytes": 165
+    },
+    {
+      "path": "independent_review/CROSS_GT_REVIEW.md",
+      "bytes": 2442
+    },
+    {
+      "path": "independent_review/DRONE_ANALYZER_CPU_REPLAY.json",
+      "bytes": 214
+    },
+    {
+      "path": "independent_review/DRONE_ANALYZER_REVIEW.md",
+      "bytes": 3299
+    },
+    {
+      "path": "independent_review/DRONE_TABLES_ACTUAL_RECEIPT.json",
+      "bytes": 775
+    },
+    {
+      "path": "independent_review/review_capture_actual.py",
+      "bytes": 11232
+    },
+    {
+      "path": "independent_review/review_cross_gt.py",
+      "bytes": 7081
+    },
+    {
+      "path": "independent_review/review_drone_tables.py",
+      "bytes": 11396
+    },
+    {
+      "path": "INPUT_AUDIT.md",
+      "bytes": 4464
+    },
+    {
+      "path": "NEXT_BOUNDED_ACTIONS.md",
+      "bytes": 3366
+    },
+    {
+      "path": "PLAN_CPU_PAIRING.md",
+      "bytes": 5427
+    },
+    {
+      "path": "prepare_capture_source.py",
+      "bytes": 7400
+    },
+    {
+      "path": "queue_launch_attempt1.json",
+      "bytes": 1038
+    },
+    {
+      "path": "README.md",
+      "bytes": 1508
+    },
+    {
+      "path": "release/drone_teacher_spec.json",
+      "bytes": 398259
+    },
+    {
+      "path": "release/export_drone_teacher.py",
+      "bytes": 14876
+    },
+    {
+      "path": "release/README.md",
+      "bytes": 2867
+    },
+    {
+      "path": "release/run_capture_queue.py",
+      "bytes": 4535
+    },
+    {
+      "path": "release/test_capture_cpu.py",
+      "bytes": 3170
+    },
+    {
+      "path": "remote_input_audit.json",
+      "bytes": 632947
+    },
+    {
+      "path": "run_capture_queue.py",
+      "bytes": 4535
+    },
+    {
+      "path": "SOURCE_REVIEW.md",
+      "bytes": 2052
+    },
+    {
+      "path": "start_capture.py",
+      "bytes": 2046
+    },
+    {
+      "path": "sync_publish_evidence.py",
+      "bytes": 5613
+    },
+    {
+      "path": "REMOTE_MIRROR_RECEIPT.json",
+      "bytes": 17365
+    }
+  ],
+  "total_bytes": 22651726,
+  "excluded": "raw host resource profiles, caches, weights and images",
+  "new_hash_computed": false
+}

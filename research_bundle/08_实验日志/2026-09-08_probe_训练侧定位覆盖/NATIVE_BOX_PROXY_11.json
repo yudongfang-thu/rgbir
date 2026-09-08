@@ -1,0 +1,424 @@
+{
+  "status": "NATIVE_BOX_PROXY_READOUT_COMPLETED",
+  "scope": "SAVED_FIRST32_11_BOTH05_ONLYT075_OBJECTS",
+  "objects": 11,
+  "S_iou_lt_070_count": 4,
+  "T_lead_gt_005_count": 10,
+  "conjunction_count": 4,
+  "source": "output_attempt1/objects.jsonl",
+  "matching": "independent native post-NMS own-GT IoU0.5 pairs; this batch unchanged at IoU0.75",
+  "actual_L2_selector": false,
+  "actual_L1_selector": false,
+  "GPU_used": false,
+  "new_forward": false,
+  "new_hash_computed": false,
+  "rows": [
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/130231.jpg::native_gt:1",
+      "frame_id": "llvip_first32_seed42::image:2",
+      "S": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.7483850717544556,
+        "confidence": 0.63720703125,
+        "anchor_index": 7181,
+        "class_id": 0,
+        "box": [
+          328.96875,
+          253.78125,
+          375.4375,
+          386.25
+        ]
+      },
+      "T": {
+        "prediction_id": 0,
+        "filtered_prediction_id": 0,
+        "iou": 0.9057598114013672,
+        "confidence": 0.802734375,
+        "anchor_index": 7182,
+        "class_id": 0,
+        "box": [
+          332.40625,
+          241.0625,
+          378.828125,
+          387.125
+        ]
+      },
+      "S_iou_lt_070": false,
+      "T_minus_S_iou": 0.15737473964691162,
+      "T_lead_gt_005": true,
+      "C_selected": true
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/130231.jpg::native_gt:2",
+      "frame_id": "llvip_first32_seed42::image:2",
+      "S": {
+        "prediction_id": 0,
+        "filtered_prediction_id": 0,
+        "iou": 0.7230458855628967,
+        "confidence": 0.818359375,
+        "anchor_index": 7501,
+        "class_id": 0,
+        "box": [
+          319.90625,
+          379.21875,
+          368.734375,
+          492.3125
+        ]
+      },
+      "T": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.8734230399131775,
+        "confidence": 0.75,
+        "anchor_index": 7581,
+        "class_id": 0,
+        "box": [
+          321.28125,
+          376.8125,
+          373.296875,
+          501.6875
+        ]
+      },
+      "S_iou_lt_070": false,
+      "T_minus_S_iou": 0.15037715435028076,
+      "T_lead_gt_005": true,
+      "C_selected": true
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/020011.jpg::native_gt:1",
+      "frame_id": "llvip_first32_seed42::image:9",
+      "S": {
+        "prediction_id": 1,
+        "filtered_prediction_id": 1,
+        "iou": 0.6569775938987732,
+        "confidence": 0.759765625,
+        "anchor_index": 7187,
+        "class_id": 0,
+        "box": [
+          413.546875,
+          274.65625,
+          462.25,
+          368.0625
+        ]
+      },
+      "T": {
+        "prediction_id": 1,
+        "filtered_prediction_id": 1,
+        "iou": 0.7969467639923096,
+        "confidence": 0.79736328125,
+        "anchor_index": 7147,
+        "class_id": 0,
+        "box": [
+          408.390625,
+          274.671875,
+          457.203125,
+          367.0
+        ]
+      },
+      "S_iou_lt_070": true,
+      "T_minus_S_iou": 0.13996917009353638,
+      "T_lead_gt_005": true,
+      "C_selected": true
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/020011.jpg::native_gt:2",
+      "frame_id": "llvip_first32_seed42::image:9",
+      "S": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.7321638464927673,
+        "confidence": 0.414794921875,
+        "anchor_index": 7473,
+        "class_id": 0,
+        "box": [
+          516.71875,
+          382.09375,
+          551.71875,
+          456.34375
+        ]
+      },
+      "T": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.8578782677650452,
+        "confidence": 0.544921875,
+        "anchor_index": 7473,
+        "class_id": 0,
+        "box": [
+          522.6640625,
+          387.34375,
+          551.796875,
+          447.640625
+        ]
+      },
+      "S_iou_lt_070": false,
+      "T_minus_S_iou": 0.12571442127227783,
+      "T_lead_gt_005": true,
+      "C_selected": true
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/130313.jpg::native_gt:2",
+      "frame_id": "llvip_first32_seed42::image:12",
+      "S": {
+        "prediction_id": 4,
+        "filtered_prediction_id": 4,
+        "iou": 0.5884312391281128,
+        "confidence": 0.260498046875,
+        "anchor_index": 7154,
+        "class_id": 0,
+        "box": [
+          532.171875,
+          244.15625,
+          564.328125,
+          343.6875
+        ]
+      },
+      "T": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.858812153339386,
+        "confidence": 0.8125,
+        "anchor_index": 7153,
+        "class_id": 0,
+        "box": [
+          519.8125,
+          246.21875,
+          559.625,
+          359.96875
+        ]
+      },
+      "S_iou_lt_070": true,
+      "T_minus_S_iou": 0.2703809142112732,
+      "T_lead_gt_005": true,
+      "C_selected": true
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:1",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/030056.jpg::native_gt:1",
+      "frame_id": "llvip_first32_seed42::image:13",
+      "S": {
+        "prediction_id": 1,
+        "filtered_prediction_id": 1,
+        "iou": 0.7040625214576721,
+        "confidence": 0.76220703125,
+        "anchor_index": 3157,
+        "class_id": 0,
+        "box": [
+          281.125,
+          294.5,
+          316.453125,
+          346.578125
+        ]
+      },
+      "T": {
+        "prediction_id": 1,
+        "filtered_prediction_id": 1,
+        "iou": 0.8859444856643677,
+        "confidence": 0.779296875,
+        "anchor_index": 7178,
+        "class_id": 0,
+        "box": [
+          282.4375,
+          295.09375,
+          315.53125,
+          338.796875
+        ]
+      },
+      "S_iou_lt_070": false,
+      "T_minus_S_iou": 0.18188196420669556,
+      "T_lead_gt_005": true,
+      "C_selected": false
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:1",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/160573.jpg::native_gt:1",
+      "frame_id": "llvip_first32_seed42::image:15",
+      "S": {
+        "prediction_id": 0,
+        "filtered_prediction_id": 0,
+        "iou": 0.7280181646347046,
+        "confidence": 0.82275390625,
+        "anchor_index": 7824,
+        "class_id": 0,
+        "box": [
+          373.890625,
+          515.46875,
+          413.21875,
+          619.5625
+        ]
+      },
+      "T": {
+        "prediction_id": 1,
+        "filtered_prediction_id": 1,
+        "iou": 0.9611920118331909,
+        "confidence": 0.8837890625,
+        "anchor_index": 7825,
+        "class_id": 0,
+        "box": [
+          379.96875,
+          515.1875,
+          415.48046875,
+          610.5
+        ]
+      },
+      "S_iou_lt_070": false,
+      "T_minus_S_iou": 0.23317384719848633,
+      "T_lead_gt_005": true,
+      "C_selected": false
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/160573.jpg::native_gt:2",
+      "frame_id": "llvip_first32_seed42::image:15",
+      "S": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.7114017009735107,
+        "confidence": 0.466796875,
+        "anchor_index": 6145,
+        "class_id": 0,
+        "box": [
+          505.265625,
+          576.6875,
+          535.71875,
+          624.5234375
+        ]
+      },
+      "T": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.7848916053771973,
+        "confidence": 0.71484375,
+        "anchor_index": 7952,
+        "class_id": 0,
+        "box": [
+          500.5,
+          572.46875,
+          530.3125,
+          624.2265625
+        ]
+      },
+      "S_iou_lt_070": false,
+      "T_minus_S_iou": 0.07348990440368652,
+      "T_lead_gt_005": true,
+      "C_selected": true
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/100910.jpg::native_gt:3",
+      "frame_id": "llvip_first32_seed42::image:21",
+      "S": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.6989696621894836,
+        "confidence": 0.72705078125,
+        "anchor_index": 7054,
+        "class_id": 0,
+        "box": [
+          210.140625,
+          179.1875,
+          248.40625,
+          296.375
+        ]
+      },
+      "T": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.8409534096717834,
+        "confidence": 0.73486328125,
+        "anchor_index": 7014,
+        "class_id": 0,
+        "box": [
+          207.8125,
+          177.4375,
+          245.59375,
+          287.03125
+        ]
+      },
+      "S_iou_lt_070": true,
+      "T_minus_S_iou": 0.1419837474822998,
+      "T_lead_gt_005": true,
+      "C_selected": true
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/100171.jpg::native_gt:2",
+      "frame_id": "llvip_first32_seed42::image:22",
+      "S": {
+        "prediction_id": 0,
+        "filtered_prediction_id": 0,
+        "iou": 0.7418842315673828,
+        "confidence": 0.8134765625,
+        "anchor_index": 7271,
+        "class_id": 0,
+        "box": [
+          487.09375,
+          289.6875,
+          535.875,
+          376.625
+        ]
+      },
+      "T": {
+        "prediction_id": 1,
+        "filtered_prediction_id": 1,
+        "iou": 0.7778478264808655,
+        "confidence": 0.794921875,
+        "anchor_index": 7312,
+        "class_id": 0,
+        "box": [
+          482.25,
+          289.8125,
+          533.9453125,
+          375.828125
+        ]
+      },
+      "S_iou_lt_070": false,
+      "T_minus_S_iou": 0.035963594913482666,
+      "T_lead_gt_005": false,
+      "C_selected": false
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/180167.jpg::native_gt:2",
+      "frame_id": "llvip_first32_seed42::image:30",
+      "S": {
+        "prediction_id": 1,
+        "filtered_prediction_id": 1,
+        "iou": 0.6438030004501343,
+        "confidence": 0.7333984375,
+        "anchor_index": 6889,
+        "class_id": 0,
+        "box": [
+          125.421875,
+          135.6875,
+          179.390625,
+          282.875
+        ]
+      },
+      "T": {
+        "prediction_id": 2,
+        "filtered_prediction_id": 2,
+        "iou": 0.903377890586853,
+        "confidence": 0.68505859375,
+        "anchor_index": 6849,
+        "class_id": 0,
+        "box": [
+          120.15625,
+          95.9375,
+          180.0625,
+          282.6875
+        ]
+      },
+      "S_iou_lt_070": true,
+      "T_minus_S_iou": 0.25957489013671875,
+      "T_lead_gt_005": true,
+      "C_selected": true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "status": "ACCEPTED_FIXED_IOU50_CROSS_GT_DESCRIPTION",
+  "objects": 2819,
+  "cohorts": {
+    "T_own75_only": 1869,
+    "N_own75_only": 950
+  },
+  "all_fixed_native_prediction_IDs_boxes_and_GT_exact": true,
+  "all_iou75_same_changed_unmatched_identities_exact": true,
+  "all_11276_scalar_cross_IoUs_exact": true,
+  "max_abs_IoU_difference": 0,
+  "all_strata_denominators_images_and_signed_difference_counts_exact": true,
+  "source_copies_exact": true,
+  "overall": {
+    "T_own75_only": {
+      "objects": 1869,
+      "images": 492,
+      "T_on_RGB_ge050": 1865,
+      "T_on_RGB_ge075": 1639,
+      "N_on_RGB_ge050": 1869,
+      "N_on_RGB_ge075": 0,
+      "T_fixed_own_ge075": 1867,
+      "delta_positive": 1693,
+      "delta_gt005": 1555,
+      "delta_negative": 176,
+      "delta_lt_negative005": 120,
+      "delta_zero": 0,
+      "teacher_own_positive_but_cross_nonpositive": 175,
+      "native_iou75_identity": {
+        "N": {
+          "same": 0,
+          "changed": 0,
+          "unmatched": 1869
+        },
+        "T": {
+          "same": 1867,
+          "changed": 2,
+          "unmatched": 0
+        }
+      }
+    },
+    "N_own75_only": {
+      "objects": 950,
+      "images": 411,
+      "T_on_RGB_ge050": 934,
+      "T_on_RGB_ge075": 113,
+      "N_on_RGB_ge050": 950,
+      "N_on_RGB_ge075": 949,
+      "T_fixed_own_ge075": 0,
+      "delta_positive": 32,
+      "delta_gt005": 10,
+      "delta_negative": 918,
+      "delta_lt_negative005": 819,
+      "delta_zero": 0,
+      "teacher_own_positive_but_cross_nonpositive": 0,
+      "native_iou75_identity": {
+        "N": {
+          "same": 949,
+          "changed": 1,
+          "unmatched": 0
+        },
+        "T": {
+          "same": 0,
+          "changed": 0,
+          "unmatched": 950
+        }
+      }
+    }
+  },
+  "new_GPU": false,
+  "new_matching": false,
+  "new_NMS": false,
+  "new_hash": false,
+  "physical_alignment_verified": false,
+  "KD_gain_claim": false
+}

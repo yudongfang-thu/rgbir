@@ -1,0 +1,44 @@
+{
+  "status": "ACCEPTED_HISTORICAL_RECORD_BRIDGE_ONLY",
+  "objects": 80,
+  "original_base_records": 79,
+  "source_and_replay_exact": true,
+  "original_identity_and_gate_fields_exact": true,
+  "all_counts_and_cross_cells_exact": true,
+  "all_C_L2_selected_cross": {
+    "C0_L20": 47,
+    "C0_L21": 1,
+    "C1_L20": 26,
+    "C1_L21": 6
+  },
+  "eleven_C_L2_selected_cross": {
+    "C0_L20": 3,
+    "C0_L21": 0,
+    "C1_L20": 4,
+    "C1_L21": 4
+  },
+  "eleven_L2_gate_counts": {
+    "base": 11,
+    "reference_reliable": 11,
+    "reference_gap": 4,
+    "teacher_own_quality": 4,
+    "mapped_rgb_quality": 4,
+    "selected": 4
+  },
+  "partial_raw_overlap": {
+    "R": {
+      "same_anchor": 72,
+      "all_fields_exact": 72
+    },
+    "T": {
+      "same_anchor": 0,
+      "all_fields_exact": 0
+    }
+  },
+  "historical_teacher_separate_stat_available": false,
+  "current_L2_reexecution": false,
+  "full_raw_tensor_identity_claim": false,
+  "new_GPU": false,
+  "new_forward": false,
+  "new_hash": false
+}

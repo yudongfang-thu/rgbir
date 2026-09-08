@@ -1,0 +1,195 @@
+{
+  "status": "COMPLETED_PENDING_INDEPENDENT_REVIEW",
+  "scope": "DRONE_FIXED_NATIVE_IOU50_WITNESS_CROSS_GT",
+  "cohorts": {
+    "T_own75_only": {
+      "overall": {
+        "objects": 1869,
+        "images": 492,
+        "T_on_RGB_ge050": 1865,
+        "T_on_RGB_ge075": 1639,
+        "N_on_RGB_ge050": 1869,
+        "N_on_RGB_ge075": 0,
+        "T_fixed_own_ge075": 1867,
+        "delta_positive": 1693,
+        "delta_gt005": 1555,
+        "delta_negative": 176,
+        "delta_lt_negative005": 120,
+        "delta_zero": 0,
+        "teacher_own_positive_but_cross_nonpositive": 175,
+        "native_iou75_identity": {
+          "N": {
+            "same": 0,
+            "changed": 0,
+            "unmatched": 1869
+          },
+          "T": {
+            "same": 1867,
+            "changed": 2,
+            "unmatched": 0
+          }
+        }
+      },
+      "by_label_iou": {
+        "label_iou_0.5_to_lt0.8": {
+          "objects": 246,
+          "images": 161,
+          "T_on_RGB_ge050": 242,
+          "T_on_RGB_ge075": 41,
+          "N_on_RGB_ge050": 246,
+          "N_on_RGB_ge075": 0,
+          "T_fixed_own_ge075": 246,
+          "delta_positive": 79,
+          "delta_gt005": 39,
+          "delta_negative": 167,
+          "delta_lt_negative005": 118,
+          "delta_zero": 0,
+          "teacher_own_positive_but_cross_nonpositive": 167,
+          "native_iou75_identity": {
+            "N": {
+              "same": 0,
+              "changed": 0,
+              "unmatched": 246
+            },
+            "T": {
+              "same": 246,
+              "changed": 0,
+              "unmatched": 0
+            }
+          }
+        },
+        "label_iou_0.8_to_1": {
+          "objects": 1623,
+          "images": 411,
+          "T_on_RGB_ge050": 1623,
+          "T_on_RGB_ge075": 1598,
+          "N_on_RGB_ge050": 1623,
+          "N_on_RGB_ge075": 0,
+          "T_fixed_own_ge075": 1621,
+          "delta_positive": 1614,
+          "delta_gt005": 1516,
+          "delta_negative": 9,
+          "delta_lt_negative005": 2,
+          "delta_zero": 0,
+          "teacher_own_positive_but_cross_nonpositive": 8,
+          "native_iou75_identity": {
+            "N": {
+              "same": 0,
+              "changed": 0,
+              "unmatched": 1623
+            },
+            "T": {
+              "same": 1621,
+              "changed": 2,
+              "unmatched": 0
+            }
+          }
+        }
+      }
+    },
+    "N_own75_only": {
+      "overall": {
+        "objects": 950,
+        "images": 411,
+        "T_on_RGB_ge050": 934,
+        "T_on_RGB_ge075": 113,
+        "N_on_RGB_ge050": 950,
+        "N_on_RGB_ge075": 949,
+        "T_fixed_own_ge075": 0,
+        "delta_positive": 32,
+        "delta_gt005": 10,
+        "delta_negative": 918,
+        "delta_lt_negative005": 819,
+        "delta_zero": 0,
+        "teacher_own_positive_but_cross_nonpositive": 0,
+        "native_iou75_identity": {
+          "N": {
+            "same": 949,
+            "changed": 1,
+            "unmatched": 0
+          },
+          "T": {
+            "same": 0,
+            "changed": 0,
+            "unmatched": 950
+          }
+        }
+      },
+      "by_label_iou": {
+        "label_iou_0.5_to_lt0.8": {
+          "objects": 253,
+          "images": 158,
+          "T_on_RGB_ge050": 238,
+          "T_on_RGB_ge075": 86,
+          "N_on_RGB_ge050": 253,
+          "N_on_RGB_ge075": 253,
+          "T_fixed_own_ge075": 0,
+          "delta_positive": 23,
+          "delta_gt005": 9,
+          "delta_negative": 230,
+          "delta_lt_negative005": 206,
+          "delta_zero": 0,
+          "teacher_own_positive_but_cross_nonpositive": 0,
+          "native_iou75_identity": {
+            "N": {
+              "same": 253,
+              "changed": 0,
+              "unmatched": 0
+            },
+            "T": {
+              "same": 0,
+              "changed": 0,
+              "unmatched": 253
+            }
+          }
+        },
+        "label_iou_0.8_to_1": {
+          "objects": 697,
+          "images": 303,
+          "T_on_RGB_ge050": 696,
+          "T_on_RGB_ge075": 27,
+          "N_on_RGB_ge050": 697,
+          "N_on_RGB_ge075": 696,
+          "T_fixed_own_ge075": 0,
+          "delta_positive": 9,
+          "delta_gt005": 1,
+          "delta_negative": 688,
+          "delta_lt_negative005": 613,
+          "delta_zero": 0,
+          "teacher_own_positive_but_cross_nonpositive": 0,
+          "native_iou75_identity": {
+            "N": {
+              "same": 696,
+              "changed": 1,
+              "unmatched": 0
+            },
+            "T": {
+              "same": 0,
+              "changed": 0,
+              "unmatched": 697
+            }
+          }
+        }
+      }
+    }
+  },
+  "primary_boxes": "Original native IoU .5 matched prediction IDs, never substituted by .75 matches",
+  "native_canvas_HW": [
+    544,
+    672
+  ],
+  "original_image_HW": [
+    512,
+    640
+  ],
+  "physical_alignment_verified": false,
+  "approximate_identity_coordinate_readout": true,
+  "new_matching": false,
+  "new_GPU": false,
+  "new_NMS": false,
+  "new_hash_computed": false,
+  "checkpoint_loaded": false,
+  "AP_estimated": false,
+  "KD_gain_claim": false,
+  "seconds": 1.904589
+}

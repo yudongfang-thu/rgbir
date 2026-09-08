@@ -1,0 +1,62 @@
+{
+  "status": "PASS_PARTIAL_TEACHER_OUTPUT_OVERLAP",
+  "historical_selected": 7,
+  "same_assigned_anchor": 5,
+  "all_four_fields_exact": 5,
+  "rows": [
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+      "anchor": 7306,
+      "exact_fields": {
+        "box": true,
+        "confidence": true,
+        "own_gt_iou": true,
+        "class_id": true
+      }
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+      "anchor": 7194,
+      "exact_fields": {
+        "box": true,
+        "confidence": true,
+        "own_gt_iou": true,
+        "class_id": true
+      }
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3",
+      "anchor": 7316,
+      "exact_fields": {
+        "box": true,
+        "confidence": true,
+        "own_gt_iou": true,
+        "class_id": true
+      }
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+      "anchor": 7053,
+      "exact_fields": {
+        "box": true,
+        "confidence": true,
+        "own_gt_iou": true,
+        "class_id": true
+      }
+    },
+    {
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+      "anchor": 6848,
+      "exact_fields": {
+        "box": true,
+        "confidence": true,
+        "own_gt_iou": true,
+        "class_id": true
+      }
+    }
+  ],
+  "historical_teacher_checkpoint_stat_verified": false,
+  "full_raw_identity_claim": false,
+  "new_GPU": false,
+  "new_hash": false
+}

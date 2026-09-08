@@ -1,0 +1,98 @@
+{
+  "status": "completed",
+  "scope": "DRONE_IR42_FULL_DEV_CAPTURE",
+  "model": "T42",
+  "dataset": "dronevehicle",
+  "images": 1469,
+  "full_population": 1469,
+  "canary": false,
+  "native_capture_exact": false,
+  "gt_count": 24490,
+  "full_gt": 24490,
+  "class_counts": [
+    20588,
+    918,
+    1470,
+    789,
+    725
+  ],
+  "class_names": [
+    "car",
+    "freight car",
+    "truck",
+    "bus",
+    "van"
+  ],
+  "metric_units": "fraction_0_to_1",
+  "metrics": {
+    "AP50": 0.8083569915490951,
+    "AP75": 0.7119863600014217,
+    "mAP50_95": 0.5963198259876477,
+    "precision": 0.8062099074751365,
+    "recall": 0.7667917954633685,
+    "per_class": [
+      {
+        "class_id": 0,
+        "name": "car",
+        "AP50": 0.980980002032546,
+        "AP75": 0.8507046303593531,
+        "mAP50_95": 0.7008549766998674
+      },
+      {
+        "class_id": 1,
+        "name": "freight car",
+        "AP50": 0.7095681570356269,
+        "AP75": 0.5982199357312162,
+        "mAP50_95": 0.5040542021953824
+      },
+      {
+        "class_id": 2,
+        "name": "truck",
+        "AP50": 0.7577064294370939,
+        "AP75": 0.6388599888507633,
+        "mAP50_95": 0.5385909301401699
+      },
+      {
+        "class_id": 3,
+        "name": "bus",
+        "AP50": 0.9632298732034035,
+        "AP75": 0.9234905624961801,
+        "mAP50_95": 0.7753155482488588
+      },
+      {
+        "class_id": 4,
+        "name": "van",
+        "AP50": 0.6303004960368048,
+        "AP75": 0.5486566825695955,
+        "mAP50_95": 0.46278347265395975
+      }
+    ]
+  },
+  "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+  "input_data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml",
+  "historical_training_args": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/args.yaml",
+  "objects": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_drone_teacher_capture_20260908/attempt1/T42_full_attempt1/capture/objects.jsonl.gz",
+  "evaluation_contract": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_drone_teacher_capture_20260908/attempt1/T42_full_attempt1/capture_contract.json",
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 4017
+  },
+  "gpu_reserved_peak_mib": 884.0,
+  "gpu_allocated_peak_mib": 711.669921875,
+  "seconds": 28.6913583278656,
+  "official_test_accessed": false,
+  "training_modified": false,
+  "new_protocol_N": false,
+  "physical_alignment_verified": false,
+  "new_hash_computed": false,
+  "optimizer_updates": 0,
+  "independent_ir_labels": true
+}

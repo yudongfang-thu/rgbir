@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "error": "PermissionError(13, 'Permission denied')",
+  "traceback": "Traceback (most recent call last):\n  File \"08_实验日志/2026-09-08_probe_Drone教师完整推理/cpu_analysis/analyze_drone_dev.py\", line 109, in run\n    for i,p in enumerate(code):shutil.copyfile(p,copy/(str(i)+'_'+p.name))\n  File \"D:\\Anaconda\\envs\\KGJ_proj\\lib\\shutil.py\", line 259, in copyfile\n    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:\nPermissionError: [Errno 13] Permission denied: 'E:\\\\SHARE\\\\光sar\\\\08_实验日志\\\\2026-09-08_probe_Drone教师完整推理\\\\cpu_analysis\\\\frozen_sources\\\\__pycache__'\n",
+  "seconds": 0.8159474999999999
+}

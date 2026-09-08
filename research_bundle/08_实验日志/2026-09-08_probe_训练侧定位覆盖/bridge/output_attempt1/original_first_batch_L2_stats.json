@@ -1,0 +1,3135 @@
+{
+  "version": "L2_object_relative_box_v2",
+  "method_family": "object_relative_coordinate_regression",
+  "scope": "L2_DIAGNOSTIC_CANDIDATE_ONLY",
+  "L1_geometry_admitted": false,
+  "physical_registration_verified": false,
+  "same_anchor_required": false,
+  "same_DFL_bin_claim": false,
+  "target_coordinate_basis": "annotation_coordinate",
+  "shared_annotation_caveat": "Shared RGB/IR labels (including LLVIP) do not establish independently annotated physical correspondence.",
+  "object_index_space": "augmented_batch_global_gt_rows",
+  "normalization": "coarse_R_base_before_R_reliability_and_teacher_quality",
+  "config": {
+    "match_iou": 0.5,
+    "pair_iou": 0.8,
+    "reference_conf": 0.05,
+    "reference_iou": 0.1,
+    "reliable_conf": 0.25,
+    "reference_iou_max": 0.7,
+    "teacher_ir_iou_min": 0.5,
+    "mapped_rgb_iou_min": 0.6,
+    "localization_margin": 0.05,
+    "support_epsilon": 0.01,
+    "native_candidate_epsilon": 1e-09,
+    "smooth_l1_beta": 0.1,
+    "levels": [
+      0,
+      1
+    ]
+  },
+  "rgb_gt_count": 80,
+  "teacher_gt_count": 80,
+  "common_count": 80,
+  "pair_iou_count": 80,
+  "reference_support_count": 80,
+  "reference_unique_owner_count": 80,
+  "base_count": 79,
+  "reference_reliable_count": 78,
+  "reference_gap_count": 7,
+  "teacher_own_quality_count": 7,
+  "mapped_rgb_quality_count": 7,
+  "selected_count": 7,
+  "normalizer": 79,
+  "selected_anchors": [
+    [
+      9,
+      7187,
+      7306,
+      19,
+      19
+    ],
+    [
+      12,
+      7154,
+      7194,
+      25,
+      25
+    ],
+    [
+      12,
+      7156,
+      7316,
+      26,
+      26
+    ],
+    [
+      21,
+      7054,
+      7053,
+      51,
+      51
+    ],
+    [
+      23,
+      5439,
+      5599,
+      55,
+      55
+    ],
+    [
+      24,
+      7680,
+      7720,
+      59,
+      59
+    ],
+    [
+      30,
+      6889,
+      6848,
+      76,
+      76
+    ]
+  ],
+  "selected_object_ids": [
+    [
+      9,
+      19,
+      19
+    ],
+    [
+      12,
+      25,
+      25
+    ],
+    [
+      12,
+      26,
+      26
+    ],
+    [
+      21,
+      51,
+      51
+    ],
+    [
+      23,
+      55,
+      55
+    ],
+    [
+      24,
+      59,
+      59
+    ],
+    [
+      30,
+      76,
+      76
+    ]
+  ],
+  "base_records": [
+    {
+      "batch_index": 0,
+      "rgb_gt_index": 0,
+      "ir_gt_index": 0,
+      "class_id": 0,
+      "reference_anchor": 6807,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        103.5517578125,
+        118.21175384521484,
+        140.23672485351562,
+        208.9588165283203
+      ],
+      "ir_gt": [
+        103.5517578125,
+        118.21175384521484,
+        140.23672485351562,
+        208.9588165283203
+      ],
+      "reference_box": [
+        105.40786743164062,
+        118.65960693359375,
+        139.72340393066406,
+        208.80899047851562
+      ],
+      "reference_iou": 0.9292506575584412,
+      "reference_conf": 0.8338664174079895,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 0,
+      "rgb_gt_index": 1,
+      "ir_gt_index": 1,
+      "class_id": 0,
+      "reference_anchor": 6965,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        66.48062896728516,
+        161.07525634765625,
+        103.93791198730469,
+        262.24853515625
+      ],
+      "ir_gt": [
+        66.48062896728516,
+        161.07525634765625,
+        103.93791198730469,
+        262.24853515625
+      ],
+      "reference_box": [
+        66.77003479003906,
+        159.18453979492188,
+        100.80431365966797,
+        259.029541015625
+      ],
+      "reference_iou": 0.8650186061859131,
+      "reference_conf": 0.8227594494819641,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 0,
+      "rgb_gt_index": 2,
+      "ir_gt_index": 2,
+      "class_id": 0,
+      "reference_anchor": 1505,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        514.0372314453125,
+        99.67619323730469,
+        538.7512817382812,
+        182.3139190673828
+      ],
+      "ir_gt": [
+        514.0372314453125,
+        99.67619323730469,
+        538.7512817382812,
+        182.3139190673828
+      ],
+      "reference_box": [
+        511.67852783203125,
+        104.07323455810547,
+        537.9548950195312,
+        184.95077514648438
+      ],
+      "reference_iou": 0.8149890899658203,
+      "reference_conf": 0.5544704794883728,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 1,
+      "rgb_gt_index": 3,
+      "ir_gt_index": 3,
+      "class_id": 0,
+      "reference_anchor": 6828,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        438.1521301269531,
+        141.17379760742188,
+        478.1470947265625,
+        227.96282958984375
+      ],
+      "ir_gt": [
+        438.1521301269531,
+        141.17379760742188,
+        478.1470947265625,
+        227.96282958984375
+      ],
+      "reference_box": [
+        437.0614318847656,
+        145.44842529296875,
+        477.3353576660156,
+        226.70611572265625
+      ],
+      "reference_iou": 0.8944270610809326,
+      "reference_conf": 0.783326268196106,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 1,
+      "rgb_gt_index": 4,
+      "ir_gt_index": 4,
+      "class_id": 0,
+      "reference_anchor": 7383,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        356.9624328613281,
+        347.5476379394531,
+        402.5566101074219,
+        439.93603515625
+      ],
+      "ir_gt": [
+        356.9624328613281,
+        347.5476379394531,
+        402.5566101074219,
+        439.93603515625
+      ],
+      "reference_box": [
+        357.04473876953125,
+        351.63946533203125,
+        401.3001708984375,
+        440.6500244140625
+      ],
+      "reference_iou": 0.9207421541213989,
+      "reference_conf": 0.8074606657028198,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 2,
+      "rgb_gt_index": 5,
+      "ir_gt_index": 5,
+      "class_id": 0,
+      "reference_anchor": 7184,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        371.97808837890625,
+        267.5061340332031,
+        420.03411865234375,
+        412.3809509277344
+      ],
+      "ir_gt": [
+        371.97808837890625,
+        267.5061340332031,
+        420.03411865234375,
+        412.3809509277344
+      ],
+      "reference_box": [
+        372.33740234375,
+        263.5851135253906,
+        421.88720703125,
+        413.18975830078125
+      ],
+      "reference_iou": 0.9256681203842163,
+      "reference_conf": 0.7766229510307312,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 2,
+      "rgb_gt_index": 6,
+      "ir_gt_index": 6,
+      "class_id": 0,
+      "reference_anchor": 7181,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        331.69580078125,
+        241.35800170898438,
+        381.87200927734375,
+        384.1127014160156
+      ],
+      "ir_gt": [
+        331.69580078125,
+        241.35800170898438,
+        381.87200927734375,
+        384.1127014160156
+      ],
+      "reference_box": [
+        328.9698791503906,
+        253.76304626464844,
+        375.4458312988281,
+        386.2304992675781
+      ],
+      "reference_iou": 0.7487293481826782,
+      "reference_conf": 0.637030839920044,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 2,
+      "rgb_gt_index": 7,
+      "ir_gt_index": 7,
+      "class_id": 0,
+      "reference_anchor": 7501,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        323.92205810546875,
+        378.45904541015625,
+        376.92498779296875,
+        502.1326904296875
+      ],
+      "ir_gt": [
+        323.92205810546875,
+        378.45904541015625,
+        376.92498779296875,
+        502.1326904296875
+      ],
+      "reference_box": [
+        319.8958740234375,
+        379.2007141113281,
+        368.7408142089844,
+        492.3009033203125
+      ],
+      "reference_iou": 0.7230671048164368,
+      "reference_conf": 0.818156361579895,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 3,
+      "rgb_gt_index": 8,
+      "ir_gt_index": 8,
+      "class_id": 0,
+      "reference_anchor": 6855,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        223.5672149658203,
+        88.06692504882812,
+        271.5950927734375,
+        226.81411743164062
+      ],
+      "ir_gt": [
+        223.5672149658203,
+        88.06692504882812,
+        271.5950927734375,
+        226.81411743164062
+      ],
+      "reference_box": [
+        225.0382080078125,
+        89.11859130859375,
+        270.4376525878906,
+        227.36636352539062
+      ],
+      "reference_iou": 0.9345914721488953,
+      "reference_conf": 0.5573635101318359,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 4,
+      "rgb_gt_index": 9,
+      "ir_gt_index": 9,
+      "class_id": 0,
+      "reference_anchor": 6574,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        206.92794799804688,
+        1.8080759048461914,
+        270.322021484375,
+        131.7344512939453
+      ],
+      "ir_gt": [
+        206.92794799804688,
+        1.8080759048461914,
+        270.322021484375,
+        131.7344512939453
+      ],
+      "reference_box": [
+        206.73593139648438,
+        0.6251449584960938,
+        264.5038146972656,
+        135.3056640625
+      ],
+      "reference_iou": 0.8763466477394104,
+      "reference_conf": 0.7988152503967285,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 4,
+      "rgb_gt_index": 10,
+      "ir_gt_index": 10,
+      "class_id": 0,
+      "reference_anchor": 6650,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        138.5126953125,
+        25.031627655029297,
+        196.2576904296875,
+        180.6922149658203
+      ],
+      "ir_gt": [
+        138.5126953125,
+        25.031627655029297,
+        196.2576904296875,
+        180.6922149658203
+      ],
+      "reference_box": [
+        134.9700927734375,
+        20.679359436035156,
+        189.05032348632812,
+        178.63427734375
+      ],
+      "reference_iou": 0.7946966886520386,
+      "reference_conf": 0.818156361579895,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 4,
+      "rgb_gt_index": 11,
+      "ir_gt_index": 11,
+      "class_id": 0,
+      "reference_anchor": 6526,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        87.67184448242188,
+        0.0,
+        120.31033325195312,
+        87.17033386230469
+      ],
+      "ir_gt": [
+        87.67184448242188,
+        0.0,
+        120.31033325195312,
+        87.17033386230469
+      ],
+      "reference_box": [
+        79.06391143798828,
+        0.37807464599609375,
+        123.65109252929688,
+        87.39453125
+      ],
+      "reference_iou": 0.7278141379356384,
+      "reference_conf": 0.4464947283267975,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 4,
+      "rgb_gt_index": 12,
+      "ir_gt_index": 12,
+      "class_id": 0,
+      "reference_anchor": 6557,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        567.8345947265625,
+        0.0,
+        626.2073364257812,
+        141.14939880371094
+      ],
+      "ir_gt": [
+        567.8345947265625,
+        0.0,
+        626.2073364257812,
+        141.14939880371094
+      ],
+      "reference_box": [
+        571.7259521484375,
+        0.003635406494140625,
+        625.2048950195312,
+        144.84423828125
+      ],
+      "reference_iou": 0.8946829438209534,
+      "reference_conf": 0.8327813148498535,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 5,
+      "rgb_gt_index": 13,
+      "ir_gt_index": 13,
+      "class_id": 0,
+      "reference_anchor": 4529,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        387.4654541015625,
+        416.8272705078125,
+        404.5999755859375,
+        463.5842590332031
+      ],
+      "ir_gt": [
+        387.4654541015625,
+        416.8272705078125,
+        404.5999755859375,
+        463.5842590332031
+      ],
+      "reference_box": [
+        387.2899475097656,
+        416.3580017089844,
+        407.01934814453125,
+        463.8208312988281
+      ],
+      "reference_iou": 0.8555610775947571,
+      "reference_conf": 0.7620701193809509,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 5,
+      "rgb_gt_index": 14,
+      "ir_gt_index": 14,
+      "class_id": 0,
+      "reference_anchor": 4360,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        313.11895751953125,
+        405.5010681152344,
+        332.57684326171875,
+        463.00341796875
+      ],
+      "ir_gt": [
+        313.11895751953125,
+        405.5010681152344,
+        332.57684326171875,
+        463.00341796875
+      ],
+      "reference_box": [
+        312.2293395996094,
+        403.53717041015625,
+        332.793212890625,
+        463.3148498535156
+      ],
+      "reference_iou": 0.9102008938789368,
+      "reference_conf": 0.7563575506210327,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 5,
+      "rgb_gt_index": 15,
+      "ir_gt_index": 15,
+      "class_id": 0,
+      "reference_anchor": 4277,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        288.72406005859375,
+        405.79150390625,
+        307.3106689453125,
+        463.5842590332031
+      ],
+      "ir_gt": [
+        288.72406005859375,
+        405.79150390625,
+        307.3106689453125,
+        463.5842590332031
+      ],
+      "reference_box": [
+        291.0790710449219,
+        401.4798583984375,
+        307.66607666015625,
+        464.6636962890625
+      ],
+      "reference_iou": 0.792198657989502,
+      "reference_conf": 0.6076632142066956,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 6,
+      "rgb_gt_index": 16,
+      "ir_gt_index": 16,
+      "class_id": 0,
+      "reference_anchor": 7454,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        213.56027221679688,
+        355.99639892578125,
+        280.7757263183594,
+        464.5368957519531
+      ],
+      "ir_gt": [
+        213.56027221679688,
+        355.99639892578125,
+        280.7757263183594,
+        464.5368957519531
+      ],
+      "reference_box": [
+        214.11337280273438,
+        352.99468994140625,
+        284.5830383300781,
+        470.0472412109375
+      ],
+      "reference_iou": 0.8708432912826538,
+      "reference_conf": 0.6627964973449707,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 9,
+      "rgb_gt_index": 18,
+      "ir_gt_index": 18,
+      "class_id": 0,
+      "reference_anchor": 6906,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        406.86907958984375,
+        173.7795867919922,
+        445.71551513671875,
+        258.0149230957031
+      ],
+      "ir_gt": [
+        406.86907958984375,
+        173.7795867919922,
+        445.71551513671875,
+        258.0149230957031
+      ],
+      "reference_box": [
+        407.92999267578125,
+        169.28184509277344,
+        445.0555419921875,
+        259.3595886230469
+      ],
+      "reference_iou": 0.8962891101837158,
+      "reference_conf": 0.826151430606842,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 9,
+      "rgb_gt_index": 19,
+      "ir_gt_index": 19,
+      "class_id": 0,
+      "reference_anchor": 7187,
+      "teacher_anchor": 7306,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        403.597900390625,
+        275.5980224609375,
+        454.3026428222656,
+        373.3273620605469
+      ],
+      "ir_gt": [
+        403.597900390625,
+        275.5980224609375,
+        454.3026428222656,
+        373.3273620605469
+      ],
+      "reference_box": [
+        413.5548400878906,
+        274.64739990234375,
+        462.2429504394531,
+        368.0699157714844
+      ],
+      "reference_iou": 0.6569221019744873,
+      "reference_conf": 0.7599387168884277,
+      "reference_reliable": true,
+      "reference_gap": true,
+      "teacher_conf": 0.39793843030929565,
+      "teacher_own_iou": 0.8194940090179443,
+      "teacher_box": [
+        407.5845031738281,
+        274.7833251953125,
+        456.66864013671875,
+        367.0163879394531
+      ],
+      "mapped_teacher_box": [
+        407.5845031738281,
+        274.7833251953125,
+        456.66864013671875,
+        367.0163879394531
+      ],
+      "mapped_teacher_rgb_iou": 0.8194940090179443,
+      "selected": true
+    },
+    {
+      "batch_index": 9,
+      "rgb_gt_index": 20,
+      "ir_gt_index": 20,
+      "class_id": 0,
+      "reference_anchor": 7473,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        519.3192138671875,
+        388.45703125,
+        552.44091796875,
+        448.1578063964844
+      ],
+      "ir_gt": [
+        519.3192138671875,
+        388.45703125,
+        552.44091796875,
+        448.1578063964844
+      ],
+      "reference_box": [
+        516.7222900390625,
+        382.0835876464844,
+        551.7188720703125,
+        456.33099365234375
+      ],
+      "reference_iou": 0.7322641611099243,
+      "reference_conf": 0.4148988425731659,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 10,
+      "rgb_gt_index": 21,
+      "ir_gt_index": 21,
+      "class_id": 0,
+      "reference_anchor": 7399,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        619.5235595703125,
+        356.29351806640625,
+        640.0,
+        440.2373962402344
+      ],
+      "ir_gt": [
+        619.5235595703125,
+        356.29351806640625,
+        640.0,
+        440.2373962402344
+      ],
+      "reference_box": [
+        621.6629028320312,
+        341.5921936035156,
+        639.97412109375,
+        450.26495361328125
+      ],
+      "reference_iou": 0.7077971696853638,
+      "reference_conf": 0.2628418207168579,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 11,
+      "rgb_gt_index": 22,
+      "ir_gt_index": 22,
+      "class_id": 0,
+      "reference_anchor": 7153,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        484.195068359375,
+        184.97621154785156,
+        566.34619140625,
+        354.1109619140625
+      ],
+      "ir_gt": [
+        484.195068359375,
+        184.97621154785156,
+        566.34619140625,
+        354.1109619140625
+      ],
+      "reference_box": [
+        484.0264587402344,
+        184.03489685058594,
+        565.5368041992188,
+        353.0450744628906
+      ],
+      "reference_iou": 0.9765235781669617,
+      "reference_conf": 0.8381505608558655,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 12,
+      "rgb_gt_index": 23,
+      "ir_gt_index": 23,
+      "class_id": 0,
+      "reference_anchor": 7375,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        215.477294921875,
+        339.84637451171875,
+        265.165771484375,
+        453.3453063964844
+      ],
+      "ir_gt": [
+        215.477294921875,
+        339.84637451171875,
+        265.165771484375,
+        453.3453063964844
+      ],
+      "reference_box": [
+        217.68785095214844,
+        338.35540771484375,
+        260.79388427734375,
+        448.502197265625
+      ],
+      "reference_iou": 0.8211497068405151,
+      "reference_conf": 0.7950222492218018,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 12,
+      "rgb_gt_index": 24,
+      "ir_gt_index": 24,
+      "class_id": 0,
+      "reference_anchor": 7647,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        101.45535278320312,
+        427.1934814453125,
+        146.9595184326172,
+        536.508056640625
+      ],
+      "ir_gt": [
+        101.45535278320312,
+        427.1934814453125,
+        146.9595184326172,
+        536.508056640625
+      ],
+      "reference_box": [
+        100.78055572509766,
+        425.1801452636719,
+        147.2462921142578,
+        539.3403930664062
+      ],
+      "reference_iou": 0.9377379417419434,
+      "reference_conf": 0.7819972634315491,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 12,
+      "rgb_gt_index": 25,
+      "ir_gt_index": 25,
+      "class_id": 0,
+      "reference_anchor": 7154,
+      "teacher_anchor": 7194,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        521.9766235351562,
+        240.9925079345703,
+        561.7274169921875,
+        360.2447814941406
+      ],
+      "ir_gt": [
+        521.9766235351562,
+        240.9925079345703,
+        561.7274169921875,
+        360.2447814941406
+      ],
+      "reference_box": [
+        532.1771850585938,
+        244.18115234375,
+        564.3281860351562,
+        343.69635009765625
+      ],
+      "reference_iou": 0.5882349014282227,
+      "reference_conf": 0.26057758927345276,
+      "reference_reliable": true,
+      "reference_gap": true,
+      "teacher_conf": 0.7779753804206848,
+      "teacher_own_iou": 0.8744757771492004,
+      "teacher_box": [
+        519.8775634765625,
+        246.05609130859375,
+        560.119384765625,
+        360.25982666015625
+      ],
+      "mapped_teacher_box": [
+        519.8775634765625,
+        246.05609130859375,
+        560.119384765625,
+        360.25982666015625
+      ],
+      "mapped_teacher_rgb_iou": 0.8744757771492004,
+      "selected": true
+    },
+    {
+      "batch_index": 12,
+      "rgb_gt_index": 26,
+      "ir_gt_index": 26,
+      "class_id": 0,
+      "reference_anchor": 7156,
+      "teacher_anchor": 7316,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        563.2965698242188,
+        265.5752258300781,
+        597.8169555664062,
+        382.73541259765625
+      ],
+      "ir_gt": [
+        563.2965698242188,
+        265.5752258300781,
+        597.8169555664062,
+        382.73541259765625
+      ],
+      "reference_box": [
+        575.1421508789062,
+        255.3617401123047,
+        606.6680908203125,
+        358.42376708984375
+      ],
+      "reference_iou": 0.40578901767730713,
+      "reference_conf": 0.3821414113044739,
+      "reference_reliable": true,
+      "reference_gap": true,
+      "teacher_conf": 0.4980469048023224,
+      "teacher_own_iou": 0.9254744052886963,
+      "teacher_box": [
+        562.9219360351562,
+        266.1593322753906,
+        597.7268676757812,
+        375.9776611328125
+      ],
+      "mapped_teacher_box": [
+        562.9219360351562,
+        266.1593322753906,
+        597.7268676757812,
+        375.9776611328125
+      ],
+      "mapped_teacher_rgb_iou": 0.9254744052886963,
+      "selected": true
+    },
+    {
+      "batch_index": 13,
+      "rgb_gt_index": 27,
+      "ir_gt_index": 27,
+      "class_id": 0,
+      "reference_anchor": 3558,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        289.3081970214844,
+        326.156494140625,
+        327.201416015625,
+        389.39715576171875
+      ],
+      "ir_gt": [
+        289.3081970214844,
+        326.156494140625,
+        327.201416015625,
+        389.39715576171875
+      ],
+      "reference_box": [
+        286.7732238769531,
+        328.50384521484375,
+        327.3369140625,
+        387.6110534667969
+      ],
+      "reference_iou": 0.8768813610076904,
+      "reference_conf": 0.8031737804412842,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 13,
+      "rgb_gt_index": 28,
+      "ir_gt_index": 28,
+      "class_id": 0,
+      "reference_anchor": 3157,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        282.395263671875,
+        295.17620849609375,
+        315.67987060546875,
+        334.0935974121094
+      ],
+      "ir_gt": [
+        282.395263671875,
+        295.17620849609375,
+        315.67987060546875,
+        334.0935974121094
+      ],
+      "reference_box": [
+        281.12176513671875,
+        294.498291015625,
+        316.4471130371094,
+        346.5767517089844
+      ],
+      "reference_iou": 0.7041133642196655,
+      "reference_conf": 0.7620701193809509,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 14,
+      "rgb_gt_index": 29,
+      "ir_gt_index": 29,
+      "class_id": 0,
+      "reference_anchor": 7298,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        253.74490356445312,
+        282.4602355957031,
+        326.10882568359375,
+        414.76190185546875
+      ],
+      "ir_gt": [
+        253.74490356445312,
+        282.4602355957031,
+        326.10882568359375,
+        414.76190185546875
+      ],
+      "reference_box": [
+        254.30294799804688,
+        278.5825500488281,
+        327.6105041503906,
+        411.59674072265625
+      ],
+      "reference_iou": 0.9224742650985718,
+      "reference_conf": 0.8727816939353943,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 14,
+      "rgb_gt_index": 30,
+      "ir_gt_index": 30,
+      "class_id": 0,
+      "reference_anchor": 6941,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        293.2161865234375,
+        114.34207153320312,
+        367.7728271484375,
+        304.388671875
+      ],
+      "ir_gt": [
+        293.2161865234375,
+        114.34207153320312,
+        367.7728271484375,
+        304.388671875
+      ],
+      "reference_box": [
+        294.03656005859375,
+        112.894775390625,
+        369.14935302734375,
+        306.21600341796875
+      ],
+      "reference_iou": 0.9547941088676453,
+      "reference_conf": 0.8193157911300659,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 15,
+      "rgb_gt_index": 31,
+      "ir_gt_index": 31,
+      "class_id": 0,
+      "reference_anchor": 7686,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        81.2381591796875,
+        429.85369873046875,
+        125.901123046875,
+        544.6327514648438
+      ],
+      "ir_gt": [
+        81.2381591796875,
+        429.85369873046875,
+        125.901123046875,
+        544.6327514648438
+      ],
+      "reference_box": [
+        84.89414978027344,
+        427.6817321777344,
+        121.43363952636719,
+        544.731201171875
+      ],
+      "reference_iou": 0.8050874471664429,
+      "reference_conf": 0.802555501461029,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 15,
+      "rgb_gt_index": 32,
+      "ir_gt_index": 32,
+      "class_id": 0,
+      "reference_anchor": 7824,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        379.4715576171875,
+        515.3377075195312,
+        415.9703369140625,
+        609.4661254882812
+      ],
+      "ir_gt": [
+        379.4715576171875,
+        515.3377075195312,
+        415.9703369140625,
+        609.4661254882812
+      ],
+      "reference_box": [
+        373.89544677734375,
+        515.4701538085938,
+        413.21697998046875,
+        619.5594482421875
+      ],
+      "reference_iou": 0.7280774116516113,
+      "reference_conf": 0.8227594494819641,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 15,
+      "rgb_gt_index": 33,
+      "ir_gt_index": 33,
+      "class_id": 0,
+      "reference_anchor": 6145,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        502.4148254394531,
+        580.1710205078125,
+        530.7493896484375,
+        624.353759765625
+      ],
+      "ir_gt": [
+        502.4148254394531,
+        580.1710205078125,
+        530.7493896484375,
+        624.353759765625
+      ],
+      "reference_box": [
+        505.2677917480469,
+        576.6815795898438,
+        535.7197265625,
+        624.5216674804688
+      ],
+      "reference_iou": 0.7112669944763184,
+      "reference_conf": 0.4668455719947815,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 16,
+      "rgb_gt_index": 34,
+      "ir_gt_index": 34,
+      "class_id": 0,
+      "reference_anchor": 7667,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        382.875732421875,
+        427.8146057128906,
+        470.23309326171875,
+        577.570068359375
+      ],
+      "ir_gt": [
+        382.875732421875,
+        427.8146057128906,
+        470.23309326171875,
+        577.570068359375
+      ],
+      "reference_box": [
+        383.33624267578125,
+        428.61358642578125,
+        473.09100341796875,
+        576.589111328125
+      ],
+      "reference_iou": 0.9521267414093018,
+      "reference_conf": 0.8444089889526367,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 17,
+      "rgb_gt_index": 35,
+      "ir_gt_index": 35,
+      "class_id": 0,
+      "reference_anchor": 7715,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        551.5029296875,
+        491.2505798339844,
+        588.8362426757812,
+        540.038330078125
+      ],
+      "ir_gt": [
+        551.5029296875,
+        491.2505798339844,
+        588.8362426757812,
+        540.038330078125
+      ],
+      "reference_box": [
+        549.6414184570312,
+        489.2027893066406,
+        588.1218872070312,
+        539.7412109375
+      ],
+      "reference_iou": 0.8920872211456299,
+      "reference_conf": 0.7924642562866211,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 17,
+      "rgb_gt_index": 36,
+      "ir_gt_index": 36,
+      "class_id": 0,
+      "reference_anchor": 7667,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        431.4425964355469,
+        473.856689453125,
+        465.80615234375,
+        540.038330078125
+      ],
+      "ir_gt": [
+        431.4425964355469,
+        473.856689453125,
+        465.80615234375,
+        540.038330078125
+      ],
+      "reference_box": [
+        427.42755126953125,
+        470.96563720703125,
+        460.63983154296875,
+        539.9781494140625
+      ],
+      "reference_iou": 0.7324572801589966,
+      "reference_conf": 0.7468782067298889,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 17,
+      "rgb_gt_index": 37,
+      "ir_gt_index": 37,
+      "class_id": 0,
+      "reference_anchor": 7706,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        403.4426574707031,
+        485.7354431152344,
+        434.8365478515625,
+        540.038330078125
+      ],
+      "ir_gt": [
+        403.4426574707031,
+        485.7354431152344,
+        434.8365478515625,
+        540.038330078125
+      ],
+      "reference_box": [
+        401.7261047363281,
+        484.39544677734375,
+        434.5731201171875,
+        539.9086303710938
+      ],
+      "reference_iou": 0.9156533479690552,
+      "reference_conf": 0.7468782067298889,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 17,
+      "rgb_gt_index": 38,
+      "ir_gt_index": 38,
+      "class_id": 0,
+      "reference_anchor": 7094,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        209.56423950195312,
+        226.94805908203125,
+        262.5944519042969,
+        338.94781494140625
+      ],
+      "ir_gt": [
+        209.56423950195312,
+        226.94805908203125,
+        262.5944519042969,
+        338.94781494140625
+      ],
+      "reference_box": [
+        213.0126495361328,
+        221.48193359375,
+        259.19696044921875,
+        338.24951171875
+      ],
+      "reference_iou": 0.8301889300346375,
+      "reference_conf": 0.8494724035263062,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 17,
+      "rgb_gt_index": 39,
+      "ir_gt_index": 39,
+      "class_id": 0,
+      "reference_anchor": 6929,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        133.20074462890625,
+        156.09970092773438,
+        176.473388671875,
+        265.978271484375
+      ],
+      "ir_gt": [
+        133.20074462890625,
+        156.09970092773438,
+        176.473388671875,
+        265.978271484375
+      ],
+      "reference_box": [
+        132.94696044921875,
+        158.31968688964844,
+        175.87620544433594,
+        266.2355651855469
+      ],
+      "reference_iou": 0.9585396647453308,
+      "reference_conf": 0.8474634885787964,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 18,
+      "rgb_gt_index": 40,
+      "ir_gt_index": 40,
+      "class_id": 0,
+      "reference_anchor": 7348,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        408.34783935546875,
+        338.4073181152344,
+        477.917724609375,
+        465.50616455078125
+      ],
+      "ir_gt": [
+        408.34783935546875,
+        338.4073181152344,
+        477.917724609375,
+        465.50616455078125
+      ],
+      "reference_box": [
+        414.04827880859375,
+        334.0108947753906,
+        479.134521484375,
+        463.79534912109375
+      ],
+      "reference_iou": 0.8628908395767212,
+      "reference_conf": 0.8250265121459961,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 18,
+      "rgb_gt_index": 41,
+      "ir_gt_index": 41,
+      "class_id": 0,
+      "reference_anchor": 7704,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        346.80523681640625,
+        430.72119140625,
+        413.6993713378906,
+        603.3079833984375
+      ],
+      "ir_gt": [
+        346.80523681640625,
+        430.72119140625,
+        413.6993713378906,
+        603.3079833984375
+      ],
+      "reference_box": [
+        346.1808166503906,
+        431.87158203125,
+        426.7785949707031,
+        602.1583862304688
+      ],
+      "reference_iou": 0.8207740187644958,
+      "reference_conf": 0.86200350522995,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 18,
+      "rgb_gt_index": 42,
+      "ir_gt_index": 42,
+      "class_id": 0,
+      "reference_anchor": 7560,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        0.0,
+        393.2605285644531,
+        26.3824462890625,
+        569.8609619140625
+      ],
+      "ir_gt": [
+        0.0,
+        393.2605285644531,
+        26.3824462890625,
+        569.8609619140625
+      ],
+      "reference_box": [
+        -0.04042625427246094,
+        401.501953125,
+        30.56018829345703,
+        557.8217163085938
+      ],
+      "reference_iou": 0.7754198312759399,
+      "reference_conf": 0.45713669061660767,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 18,
+      "rgb_gt_index": 43,
+      "ir_gt_index": 43,
+      "class_id": 0,
+      "reference_anchor": 7935,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        204.9897918701172,
+        544.441162109375,
+        289.9452819824219,
+        640.0
+      ],
+      "ir_gt": [
+        204.9897918701172,
+        544.441162109375,
+        289.9452819824219,
+        640.0
+      ],
+      "reference_box": [
+        206.91622924804688,
+        546.6369018554688,
+        291.6802673339844,
+        640.0315551757812
+      ],
+      "reference_iou": 0.9358852505683899,
+      "reference_conf": 0.8444089889526367,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 19,
+      "rgb_gt_index": 44,
+      "ir_gt_index": 44,
+      "class_id": 0,
+      "reference_anchor": 6642,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        24.707353591918945,
+        50.25424575805664,
+        64.98992919921875,
+        171.59927368164062
+      ],
+      "ir_gt": [
+        24.707353591918945,
+        50.25424575805664,
+        64.98992919921875,
+        171.59927368164062
+      ],
+      "reference_box": [
+        18.384801864624023,
+        49.706024169921875,
+        62.911338806152344,
+        166.272705078125
+      ],
+      "reference_iou": 0.7850409746170044,
+      "reference_conf": 0.8484706878662109,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 19,
+      "rgb_gt_index": 45,
+      "ir_gt_index": 45,
+      "class_id": 0,
+      "reference_anchor": 7569,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        113.72686767578125,
+        441.1443786621094,
+        160.47454833984375,
+        522.7041015625
+      ],
+      "ir_gt": [
+        113.72686767578125,
+        441.1443786621094,
+        160.47454833984375,
+        522.7041015625
+      ],
+      "reference_box": [
+        112.78123474121094,
+        440.3556213378906,
+        163.67034912109375,
+        522.249267578125
+      ],
+      "reference_iou": 0.9051527976989746,
+      "reference_conf": 0.8098781704902649,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 20,
+      "rgb_gt_index": 46,
+      "ir_gt_index": 46,
+      "class_id": 0,
+      "reference_anchor": 6901,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        299.70166015625,
+        115.55500030517578,
+        366.1571044921875,
+        280.0595397949219
+      ],
+      "ir_gt": [
+        299.70166015625,
+        115.55500030517578,
+        366.1571044921875,
+        280.0595397949219
+      ],
+      "reference_box": [
+        305.97882080078125,
+        117.9964599609375,
+        369.0520935058594,
+        279.515625
+      ],
+      "reference_iou": 0.8526403903961182,
+      "reference_conf": 0.8524448275566101,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 20,
+      "rgb_gt_index": 47,
+      "ir_gt_index": 47,
+      "class_id": 0,
+      "reference_anchor": 7737,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        232.70144653320312,
+        468.5316162109375,
+        302.4252014160156,
+        573.6619873046875
+      ],
+      "ir_gt": [
+        232.70144653320312,
+        468.5316162109375,
+        302.4252014160156,
+        573.6619873046875
+      ],
+      "reference_box": [
+        233.4910125732422,
+        468.0469665527344,
+        303.42626953125,
+        588.5767822265625
+      ],
+      "reference_iou": 0.8513661623001099,
+      "reference_conf": 0.7898827195167542,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 21,
+      "rgb_gt_index": 48,
+      "ir_gt_index": 48,
+      "class_id": 0,
+      "reference_anchor": 7319,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        614.1658935546875,
+        290.05694580078125,
+        639.9999389648438,
+        435.6228332519531
+      ],
+      "ir_gt": [
+        614.1658935546875,
+        290.05694580078125,
+        639.9999389648438,
+        435.6228332519531
+      ],
+      "reference_box": [
+        613.609619140625,
+        292.4018249511719,
+        640.0110473632812,
+        440.7132263183594
+      ],
+      "reference_iou": 0.9305287003517151,
+      "reference_conf": 0.6766199469566345,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 21,
+      "rgb_gt_index": 49,
+      "ir_gt_index": 49,
+      "class_id": 0,
+      "reference_anchor": 7357,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        581.7547607421875,
+        292.3314208984375,
+        624.9696044921875,
+        443.0148620605469
+      ],
+      "ir_gt": [
+        581.7547607421875,
+        292.3314208984375,
+        624.9696044921875,
+        443.0148620605469
+      ],
+      "reference_box": [
+        578.26123046875,
+        290.0391845703125,
+        626.1278686523438,
+        442.1990966796875
+      ],
+      "reference_iou": 0.8849337697029114,
+      "reference_conf": 0.8193157911300659,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 21,
+      "rgb_gt_index": 50,
+      "ir_gt_index": 50,
+      "class_id": 0,
+      "reference_anchor": 6976,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        246.2709197998047,
+        158.1378936767578,
+        284.36822509765625,
+        300.29205322265625
+      ],
+      "ir_gt": [
+        246.2709197998047,
+        158.1378936767578,
+        284.36822509765625,
+        300.29205322265625
+      ],
+      "reference_box": [
+        245.69464111328125,
+        163.07528686523438,
+        287.09210205078125,
+        298.11334228515625
+      ],
+      "reference_iou": 0.8777154684066772,
+      "reference_conf": 0.7859664559364319,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 21,
+      "rgb_gt_index": 51,
+      "ir_gt_index": 51,
+      "class_id": 0,
+      "reference_anchor": 7054,
+      "teacher_anchor": 7053,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        207.0364227294922,
+        175.19638061523438,
+        246.27096557617188,
+        274.7043151855469
+      ],
+      "ir_gt": [
+        207.0364227294922,
+        175.19638061523438,
+        246.27096557617188,
+        274.7043151855469
+      ],
+      "reference_box": [
+        210.13482666015625,
+        179.17660522460938,
+        248.39599609375,
+        296.37298583984375
+      ],
+      "reference_iou": 0.6993216872215271,
+      "reference_conf": 0.7272012233734131,
+      "reference_reliable": true,
+      "reference_gap": true,
+      "teacher_conf": 0.6315943002700806,
+      "teacher_own_iou": 0.846561849117279,
+      "teacher_box": [
+        207.42649841308594,
+        176.86575317382812,
+        245.6441650390625,
+        288.1203918457031
+      ],
+      "mapped_teacher_box": [
+        207.42649841308594,
+        176.86575317382812,
+        245.6441650390625,
+        288.1203918457031
+      ],
+      "mapped_teacher_rgb_iou": 0.846561849117279,
+      "selected": true
+    },
+    {
+      "batch_index": 22,
+      "rgb_gt_index": 52,
+      "ir_gt_index": 52,
+      "class_id": 0,
+      "reference_anchor": 7448,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        112.53894805908203,
+        399.53204345703125,
+        161.04148864746094,
+        455.0133972167969
+      ],
+      "ir_gt": [
+        112.53894805908203,
+        399.53204345703125,
+        161.04148864746094,
+        455.0133972167969
+      ],
+      "reference_box": [
+        113.1568603515625,
+        397.40478515625,
+        159.06346130371094,
+        454.60675048828125
+      ],
+      "reference_iou": 0.9066392779350281,
+      "reference_conf": 0.7988152503967285,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 22,
+      "rgb_gt_index": 53,
+      "ir_gt_index": 53,
+      "class_id": 0,
+      "reference_anchor": 7260,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        308.2938537597656,
+        328.6973571777344,
+        357.4942626953125,
+        416.2811279296875
+      ],
+      "ir_gt": [
+        308.2938537597656,
+        328.6973571777344,
+        357.4942626953125,
+        416.2811279296875
+      ],
+      "reference_box": [
+        312.0944519042969,
+        326.32269287109375,
+        358.44879150390625,
+        417.38189697265625
+      ],
+      "reference_iou": 0.873168408870697,
+      "reference_conf": 0.8037906289100647,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 22,
+      "rgb_gt_index": 54,
+      "ir_gt_index": 54,
+      "class_id": 0,
+      "reference_anchor": 7271,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        476.4825439453125,
+        293.803466796875,
+        536.8490600585938,
+        380.6893310546875
+      ],
+      "ir_gt": [
+        476.4825439453125,
+        293.803466796875,
+        536.8490600585938,
+        380.6893310546875
+      ],
+      "reference_box": [
+        487.09344482421875,
+        289.6642761230469,
+        535.8659057617188,
+        376.6275634765625
+      ],
+      "reference_iou": 0.7416242957115173,
+      "reference_conf": 0.8134608268737793,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 23,
+      "rgb_gt_index": 55,
+      "ir_gt_index": 55,
+      "class_id": 0,
+      "reference_anchor": 5439,
+      "teacher_anchor": 5599,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        633.2298583984375,
+        476.2049560546875,
+        639.9999389648438,
+        612.6024169921875
+      ],
+      "ir_gt": [
+        633.2298583984375,
+        476.2049560546875,
+        639.9999389648438,
+        612.6024169921875
+      ],
+      "reference_box": [
+        629.8929443359375,
+        483.72808837890625,
+        640.014892578125,
+        611.7747802734375
+      ],
+      "reference_iou": 0.6408954858779907,
+      "reference_conf": 0.319121390581131,
+      "reference_reliable": true,
+      "reference_gap": true,
+      "teacher_conf": 0.35042136907577515,
+      "teacher_own_iou": 0.8569790720939636,
+      "teacher_box": [
+        632.4575805664062,
+        481.2591552734375,
+        640.0387573242188,
+        611.5233154296875
+      ],
+      "mapped_teacher_box": [
+        632.4575805664062,
+        481.2591552734375,
+        640.0387573242188,
+        611.5233154296875
+      ],
+      "mapped_teacher_rgb_iou": 0.8569790720939636,
+      "selected": true
+    },
+    {
+      "batch_index": 23,
+      "rgb_gt_index": 56,
+      "ir_gt_index": 56,
+      "class_id": 0,
+      "reference_anchor": 7538,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        282.0790100097656,
+        373.9068908691406,
+        327.0611267089844,
+        514.6574096679688
+      ],
+      "ir_gt": [
+        282.0790100097656,
+        373.9068908691406,
+        327.0611267089844,
+        514.6574096679688
+      ],
+      "reference_box": [
+        281.9970703125,
+        374.2854309082031,
+        327.29296875,
+        505.68511962890625
+      ],
+      "reference_iou": 0.9275242686271667,
+      "reference_conf": 0.8514594435691833,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 24,
+      "rgb_gt_index": 57,
+      "ir_gt_index": 57,
+      "class_id": 0,
+      "reference_anchor": 7670,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        460.7812805175781,
+        414.8243408203125,
+        521.140869140625,
+        597.960693359375
+      ],
+      "ir_gt": [
+        460.7812805175781,
+        414.8243408203125,
+        521.140869140625,
+        597.960693359375
+      ],
+      "reference_box": [
+        455.2817687988281,
+        413.93304443359375,
+        516.756103515625,
+        594.55517578125
+      ],
+      "reference_iou": 0.8316265344619751,
+      "reference_conf": 0.826151430606842,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 24,
+      "rgb_gt_index": 58,
+      "ir_gt_index": 58,
+      "class_id": 0,
+      "reference_anchor": 7529,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        145.951416015625,
+        380.5291442871094,
+        197.39422607421875,
+        549.9473876953125
+      ],
+      "ir_gt": [
+        145.951416015625,
+        380.5291442871094,
+        197.39422607421875,
+        549.9473876953125
+      ],
+      "reference_box": [
+        144.38792419433594,
+        377.512451171875,
+        199.95614624023438,
+        549.1353759765625
+      ],
+      "reference_iou": 0.9055205583572388,
+      "reference_conf": 0.531209409236908,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 24,
+      "rgb_gt_index": 59,
+      "ir_gt_index": 59,
+      "class_id": 0,
+      "reference_anchor": 7680,
+      "teacher_anchor": 7720,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        0.0,
+        395.6190490722656,
+        28.661865234375,
+        584.2425537109375
+      ],
+      "ir_gt": [
+        0.0,
+        395.6190490722656,
+        28.661865234375,
+        584.2425537109375
+      ],
+      "reference_box": [
+        -0.02134990692138672,
+        408.4615173339844,
+        20.56768035888672,
+        576.5059814453125
+      ],
+      "reference_iou": 0.6388828158378601,
+      "reference_conf": 0.6477982401847839,
+      "reference_reliable": true,
+      "reference_gap": true,
+      "teacher_conf": 0.5136684775352478,
+      "teacher_own_iou": 0.760744035243988,
+      "teacher_box": [
+        0.004010677337646484,
+        395.19189453125,
+        22.943164825439453,
+        575.2362060546875
+      ],
+      "mapped_teacher_box": [
+        0.004010677337646484,
+        395.19189453125,
+        22.943164825439453,
+        575.2362060546875
+      ],
+      "mapped_teacher_rgb_iou": 0.760744035243988,
+      "selected": true
+    },
+    {
+      "batch_index": 24,
+      "rgb_gt_index": 60,
+      "ir_gt_index": 60,
+      "class_id": 0,
+      "reference_anchor": 7612,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        159.66952514648438,
+        381.90093994140625,
+        201.5096435546875,
+        581.4989013671875
+      ],
+      "ir_gt": [
+        159.66952514648438,
+        381.90093994140625,
+        201.5096435546875,
+        581.4989013671875
+      ],
+      "reference_box": [
+        155.39889526367188,
+        379.2906188964844,
+        206.1726837158203,
+        578.97265625
+      ],
+      "reference_iou": 0.8048860430717468,
+      "reference_conf": 0.7209580540657043,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 25,
+      "rgb_gt_index": 61,
+      "ir_gt_index": 61,
+      "class_id": 0,
+      "reference_anchor": 6705,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        381.6708984375,
+        22.114381790161133,
+        437.0333251953125,
+        177.86727905273438
+      ],
+      "ir_gt": [
+        381.6708984375,
+        22.114381790161133,
+        437.0333251953125,
+        177.86727905273438
+      ],
+      "reference_box": [
+        383.0832824707031,
+        30.184539794921875,
+        436.0626220703125,
+        185.340087890625
+      ],
+      "reference_iou": 0.8675395846366882,
+      "reference_conf": 0.7793218493461609,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 26,
+      "rgb_gt_index": 62,
+      "ir_gt_index": 62,
+      "class_id": 0,
+      "reference_anchor": 7606,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        92.80846405029297,
+        402.00787353515625,
+        139.28759765625,
+        542.5135498046875
+      ],
+      "ir_gt": [
+        92.80846405029297,
+        402.00787353515625,
+        139.28759765625,
+        542.5135498046875
+      ],
+      "reference_box": [
+        92.82442474365234,
+        401.8260498046875,
+        136.5773468017578,
+        542.1024780273438
+      ],
+      "reference_iou": 0.9374494552612305,
+      "reference_conf": 0.7937461733818054,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 27,
+      "rgb_gt_index": 63,
+      "ir_gt_index": 63,
+      "class_id": 0,
+      "reference_anchor": 7791,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        487.0224609375,
+        499.4171447753906,
+        545.9015502929688,
+        603.4559936523438
+      ],
+      "ir_gt": [
+        487.0224609375,
+        499.4171447753906,
+        545.9015502929688,
+        603.4559936523438
+      ],
+      "reference_box": [
+        486.2279052734375,
+        501.17974853515625,
+        546.1892700195312,
+        606.7091064453125
+      ],
+      "reference_iou": 0.9363236427307129,
+      "reference_conf": 0.8524448275566101,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 27,
+      "rgb_gt_index": 64,
+      "ir_gt_index": 64,
+      "class_id": 0,
+      "reference_anchor": 2879,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        635.07763671875,
+        218.74111938476562,
+        640.0,
+        348.5037536621094
+      ],
+      "ir_gt": [
+        635.07763671875,
+        218.74111938476562,
+        640.0,
+        348.5037536621094
+      ],
+      "reference_box": [
+        627.9266357421875,
+        224.82763671875,
+        639.999267578125,
+        350.28607177734375
+      ],
+      "reference_iou": 0.39405861496925354,
+      "reference_conf": 0.10594828426837921,
+      "reference_reliable": false,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 27,
+      "rgb_gt_index": 65,
+      "ir_gt_index": 65,
+      "class_id": 0,
+      "reference_anchor": 7457,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        260.65234375,
+        358.2216796875,
+        292.664306640625,
+        479.9813232421875
+      ],
+      "ir_gt": [
+        260.65234375,
+        358.2216796875,
+        292.664306640625,
+        479.9813232421875
+      ],
+      "reference_box": [
+        256.9658203125,
+        357.05633544921875,
+        291.5644226074219,
+        480.15911865234375
+      ],
+      "reference_iou": 0.8567615151405334,
+      "reference_conf": 0.814643383026123,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 27,
+      "rgb_gt_index": 66,
+      "ir_gt_index": 66,
+      "class_id": 0,
+      "reference_anchor": 7415,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        229.212158203125,
+        347.3605041503906,
+        267.5120849609375,
+        476.5514831542969
+      ],
+      "ir_gt": [
+        229.212158203125,
+        347.3605041503906,
+        267.5120849609375,
+        476.5514831542969
+      ],
+      "reference_box": [
+        229.21481323242188,
+        350.680419921875,
+        266.8525695800781,
+        478.8625183105469
+      ],
+      "reference_iou": 0.9409167766571045,
+      "reference_conf": 0.8037906289100647,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 27,
+      "rgb_gt_index": 67,
+      "ir_gt_index": 67,
+      "class_id": 0,
+      "reference_anchor": 7524,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        54.289737701416016,
+        366.7962646484375,
+        110.88226318359375,
+        501.7037353515625
+      ],
+      "ir_gt": [
+        54.289737701416016,
+        366.7962646484375,
+        110.88226318359375,
+        501.7037353515625
+      ],
+      "reference_box": [
+        57.57844543457031,
+        367.7177429199219,
+        111.35540771484375,
+        501.68115234375
+      ],
+      "reference_iou": 0.927595853805542,
+      "reference_conf": 0.8433797955513,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 27,
+      "rgb_gt_index": 68,
+      "ir_gt_index": 68,
+      "class_id": 0,
+      "reference_anchor": 7521,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        0.5553913116455078,
+        364.5097351074219,
+        65.15090942382812,
+        492.5575256347656
+      ],
+      "ir_gt": [
+        0.5553913116455078,
+        364.5097351074219,
+        65.15090942382812,
+        492.5575256347656
+      ],
+      "reference_box": [
+        0.8588275909423828,
+        362.7090148925781,
+        63.84687805175781,
+        491.8498229980469
+      ],
+      "reference_iou": 0.9566078186035156,
+      "reference_conf": 0.8238958716392517,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 27,
+      "rgb_gt_index": 69,
+      "ir_gt_index": 69,
+      "class_id": 0,
+      "reference_anchor": 7240,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        0.0,
+        291.9112854003906,
+        39.9986572265625,
+        385.6605224609375
+      ],
+      "ir_gt": [
+        0.0,
+        291.9112854003906,
+        39.9986572265625,
+        385.6605224609375
+      ],
+      "reference_box": [
+        -0.020719528198242188,
+        291.2283020019531,
+        46.090763092041016,
+        389.9518127441406
+      ],
+      "reference_iou": 0.8237273693084717,
+      "reference_conf": 0.7859664559364319,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 28,
+      "rgb_gt_index": 70,
+      "ir_gt_index": 70,
+      "class_id": 0,
+      "reference_anchor": 7337,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        255.8097686767578,
+        329.7392578125,
+        293.9266662597656,
+        394.916259765625
+      ],
+      "ir_gt": [
+        255.8097686767578,
+        329.7392578125,
+        293.9266662597656,
+        394.916259765625
+      ],
+      "reference_box": [
+        260.6598205566406,
+        331.2173767089844,
+        294.1824951171875,
+        396.7513122558594
+      ],
+      "reference_iou": 0.8270614147186279,
+      "reference_conf": 0.7962924242019653,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 28,
+      "rgb_gt_index": 71,
+      "ir_gt_index": 71,
+      "class_id": 0,
+      "reference_anchor": 3535,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        105.96087646484375,
+        342.5418395996094,
+        133.89385986328125,
+        376.0032958984375
+      ],
+      "ir_gt": [
+        105.96087646484375,
+        342.5418395996094,
+        133.89385986328125,
+        376.0032958984375
+      ],
+      "reference_box": [
+        107.76789093017578,
+        341.8226318359375,
+        136.3975372314453,
+        377.5491638183594
+      ],
+      "reference_iou": 0.8069882392883301,
+      "reference_conf": 0.7718434929847717,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 29,
+      "rgb_gt_index": 72,
+      "ir_gt_index": 72,
+      "class_id": 0,
+      "reference_anchor": 7007,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        108.70909118652344,
+        212.3816680908203,
+        143.73634338378906,
+        313.4216613769531
+      ],
+      "ir_gt": [
+        108.70909118652344,
+        212.3816680908203,
+        143.73634338378906,
+        313.4216613769531
+      ],
+      "reference_box": [
+        104.04265594482422,
+        211.68145751953125,
+        142.1927947998047,
+        310.37432861328125
+      ],
+      "reference_iou": 0.8155707120895386,
+      "reference_conf": 0.6731916666030884,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 29,
+      "rgb_gt_index": 73,
+      "ir_gt_index": 73,
+      "class_id": 0,
+      "reference_anchor": 7258,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        272.16943359375,
+        303.542236328125,
+        335.4878234863281,
+        406.37847900390625
+      ],
+      "ir_gt": [
+        272.16943359375,
+        303.542236328125,
+        335.4878234863281,
+        406.37847900390625
+      ],
+      "reference_box": [
+        283.188720703125,
+        304.6477355957031,
+        334.754638671875,
+        401.64404296875
+      ],
+      "reference_iou": 0.7681427001953125,
+      "reference_conf": 0.8193157911300659,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 30,
+      "rgb_gt_index": 74,
+      "ir_gt_index": 74,
+      "class_id": 0,
+      "reference_anchor": 6982,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        330.34539794921875,
+        148.64071655273438,
+        383.41741943359375,
+        299.0113830566406
+      ],
+      "ir_gt": [
+        330.34539794921875,
+        148.64071655273438,
+        383.41741943359375,
+        299.0113830566406
+      ],
+      "reference_box": [
+        331.8759765625,
+        144.70364379882812,
+        385.5761413574219,
+        299.53472900390625
+      ],
+      "reference_iou": 0.9070423245429993,
+      "reference_conf": 0.7937461733818054,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 30,
+      "rgb_gt_index": 75,
+      "ir_gt_index": 75,
+      "class_id": 0,
+      "reference_anchor": 7015,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        218.07769775390625,
+        161.5684814453125,
+        270.46929931640625,
+        320.7845458984375
+      ],
+      "ir_gt": [
+        218.07769775390625,
+        161.5684814453125,
+        270.46929931640625,
+        320.7845458984375
+      ],
+      "reference_box": [
+        221.88018798828125,
+        161.02334594726562,
+        278.1816711425781,
+        308.3584899902344
+      ],
+      "reference_iou": 0.7504327893257141,
+      "reference_conf": 0.7193835973739624,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 30,
+      "rgb_gt_index": 76,
+      "ir_gt_index": 76,
+      "class_id": 0,
+      "reference_anchor": 6889,
+      "teacher_anchor": 6848,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        116.69656372070312,
+        96.92951965332031,
+        179.9747314453125,
+        275.197021484375
+      ],
+      "ir_gt": [
+        116.69656372070312,
+        96.92951965332031,
+        179.9747314453125,
+        275.197021484375
+      ],
+      "reference_box": [
+        125.42958068847656,
+        135.68209838867188,
+        179.3939666748047,
+        282.89556884765625
+      ],
+      "reference_iou": 0.6437166929244995,
+      "reference_conf": 0.7333563566207886,
+      "reference_reliable": true,
+      "reference_gap": true,
+      "teacher_conf": 0.6057990789413452,
+      "teacher_own_iou": 0.9034357666969299,
+      "teacher_box": [
+        119.57636260986328,
+        96.50918579101562,
+        179.65028381347656,
+        284.3223876953125
+      ],
+      "mapped_teacher_box": [
+        119.57636260986328,
+        96.50918579101562,
+        179.65028381347656,
+        284.3223876953125
+      ],
+      "mapped_teacher_rgb_iou": 0.9034357666969299,
+      "selected": true
+    },
+    {
+      "batch_index": 31,
+      "rgb_gt_index": 77,
+      "ir_gt_index": 77,
+      "class_id": 0,
+      "reference_anchor": 7460,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        314.72821044921875,
+        404.01898193359375,
+        359.23443603515625,
+        479.730712890625
+      ],
+      "ir_gt": [
+        314.72821044921875,
+        404.01898193359375,
+        359.23443603515625,
+        479.730712890625
+      ],
+      "reference_box": [
+        318.494140625,
+        398.6492919921875,
+        362.97332763671875,
+        475.4427185058594
+      ],
+      "reference_iou": 0.7508200407028198,
+      "reference_conf": 0.8169911503791809,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 31,
+      "rgb_gt_index": 78,
+      "ir_gt_index": 78,
+      "class_id": 0,
+      "reference_anchor": 7464,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        373.0467529296875,
+        403.5074157714844,
+        406.0427551269531,
+        487.915771484375
+      ],
+      "ir_gt": [
+        373.0467529296875,
+        403.5074157714844,
+        406.0427551269531,
+        487.915771484375
+      ],
+      "reference_box": [
+        373.9340515136719,
+        405.8505554199219,
+        406.33050537109375,
+        485.1437683105469
+      ],
+      "reference_iou": 0.9067105054855347,
+      "reference_conf": 0.8050197958946228,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    },
+    {
+      "batch_index": 31,
+      "rgb_gt_index": 79,
+      "ir_gt_index": 79,
+      "class_id": 0,
+      "reference_anchor": 7105,
+      "teacher_anchor": null,
+      "pair_iou": 1.0,
+      "rgb_gt": [
+        393.76513671875,
+        245.9451904296875,
+        419.8550109863281,
+        310.4024658203125
+      ],
+      "ir_gt": [
+        393.76513671875,
+        245.9451904296875,
+        419.8550109863281,
+        310.4024658203125
+      ],
+      "reference_box": [
+        391.1966552734375,
+        249.34442138671875,
+        421.13177490234375,
+        310.5421142578125
+      ],
+      "reference_iou": 0.8294067978858948,
+      "reference_conf": 0.6261242032051086,
+      "reference_reliable": true,
+      "reference_gap": false,
+      "teacher_conf": null,
+      "teacher_own_iou": null,
+      "teacher_box": null,
+      "mapped_teacher_box": null,
+      "mapped_teacher_rgb_iou": null,
+      "selected": false
+    }
+  ],
+  "nominal_dose": 0.08860759493670886,
+  "variant": "L2-box",
+  "loss_unweighted": 0.0059408401139080524,
+  "target_kind": "canonical_teacher_object_relative_xyxy",
+  "native_loss_replaced": false,
+  "classification_kd_evaluated": false,
+  "lambda_applied": false,
+  "batch_size_multiplier_applied": false
+}

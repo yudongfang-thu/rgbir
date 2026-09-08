@@ -1,0 +1,1455 @@
+{
+  "status": "COMPLETED_PENDING_INDEPENDENT_REVIEW",
+  "scope": "DRONE_FULL_DEV_CACHED_NATIVE_PAIRED_OPPORTUNITIES",
+  "dataset": "dronevehicle",
+  "seed": 42,
+  "images": 1469,
+  "paired_GT": 21568,
+  "unpaired_GT": {
+    "N": 894,
+    "T": 2922
+  },
+  "input_statistics": {
+    "N": {
+      "images": 1469,
+      "GT": 22462,
+      "predictions": 86843,
+      "empty_GT_images": 27,
+      "empty_prediction_images": 6,
+      "native_predictions_cross_canvas": 3,
+      "identity": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "stat": {
+          "size": 10772755,
+          "mtime_ns": 1788715564014453204,
+          "ctime_ns": 1788715564014453204,
+          "device": 2049,
+          "inode": 165841515
+        },
+        "scope": "weight0_native_N42_E200"
+      }
+    },
+    "T": {
+      "images": 1469,
+      "GT": 24490,
+      "predictions": 61969,
+      "empty_GT_images": 2,
+      "empty_prediction_images": 0,
+      "native_predictions_cross_canvas": 19,
+      "identity": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+        "stat": {
+          "size": 5483610,
+          "mtime_ns": 1788133393714042412
+        },
+        "checkpoint_epoch": -1,
+        "ema_present": false,
+        "loaded_source": "model",
+        "names": {
+          "0": "car",
+          "1": "freight car",
+          "2": "truck",
+          "3": "bus",
+          "4": "van"
+        },
+        "training_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/infrared.data.yaml",
+          "epochs": 200,
+          "time": null,
+          "patience": 0,
+          "batch": 32,
+          "imgsz": 640,
+          "save": true,
+          "save_period": -1,
+          "cache": false,
+          "device": "0",
+          "workers": 8,
+          "project": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle",
+          "name": "infrared_seed42_native_b32a2",
+          "exist_ok": true,
+          "pretrained": true,
+          "cls_remap": true,
+          "optimizer": "SGD",
+          "verbose": true,
+          "seed": 42,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 0,
+          "resume": false,
+          "amp": true,
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "channels_last": false,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": false,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "quantize": null,
+          "dnn": false,
+          "plots": false,
+          "end2end": null,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "nms": false,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.1,
+          "distill_model": null,
+          "dis": 6.0,
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "dlog": 1.0,
+          "dgrad": 0.5,
+          "dlam": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.0,
+          "hsv_s": 0.0,
+          "hsv_v": 0.0,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 0.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.0,
+          "cfg": null,
+          "tracker": "tracktrack.yaml",
+          "save_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2"
+        },
+        "scope": "historical_native_infrared_teacher_seed42_E200"
+      }
+    }
+  },
+  "groups": {
+    "all_iou50": {
+      "confidence": null,
+      "iou": 0.5,
+      "paired_GT": 21568,
+      "buckets": {
+        "both_correct": {
+          "objects": 20756,
+          "fraction": 0.9623516320474778,
+          "images": 1432
+        },
+        "T_only": {
+          "objects": 554,
+          "fraction": 0.02568620178041543,
+          "images": 144
+        },
+        "N_only": {
+          "objects": 173,
+          "fraction": 0.00802114243323442,
+          "images": 118
+        },
+        "both_unmatched": {
+          "objects": 85,
+          "fraction": 0.0039410237388724035,
+          "images": 54
+        }
+      },
+      "whole_model_metrics": {
+        "N": {
+          "tp": 21799,
+          "fp": 65044,
+          "fn": 663,
+          "predictions": 86843
+        },
+        "T": {
+          "tp": 24183,
+          "fp": 37786,
+          "fn": 307,
+          "predictions": 61969
+        }
+      },
+      "unpaired": {
+        "N": {
+          "objects": 894,
+          "images": 337,
+          "correct": 870,
+          "unmatched": 24
+        },
+        "T": {
+          "objects": 2922,
+          "images": 508,
+          "correct": 2873,
+          "unmatched": 49
+        }
+      },
+      "per_class": [
+        {
+          "class_id": 0,
+          "name": "car",
+          "paired_GT": 18177,
+          "buckets": {
+            "both_correct": {
+              "objects": 17719,
+              "fraction": 0.9748033228805634,
+              "images": 1342
+            },
+            "T_only": {
+              "objects": 367,
+              "fraction": 0.02019035044286736,
+              "images": 93
+            },
+            "N_only": {
+              "objects": 69,
+              "fraction": 0.0037960059415745174,
+              "images": 51
+            },
+            "both_unmatched": {
+              "objects": 22,
+              "fraction": 0.0012103207349947736,
+              "images": 17
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 788,
+              "correct": 773
+            },
+            "T": {
+              "GT": 2411,
+              "correct": 2387
+            }
+          }
+        },
+        {
+          "class_id": 1,
+          "name": "freight car",
+          "paired_GT": 687,
+          "buckets": {
+            "both_correct": {
+              "objects": 614,
+              "fraction": 0.893740902474527,
+              "images": 247
+            },
+            "T_only": {
+              "objects": 32,
+              "fraction": 0.046579330422125184,
+              "images": 22
+            },
+            "N_only": {
+              "objects": 27,
+              "fraction": 0.039301310043668124,
+              "images": 20
+            },
+            "both_unmatched": {
+              "objects": 14,
+              "fraction": 0.020378457059679767,
+              "images": 11
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 23,
+              "correct": 19
+            },
+            "T": {
+              "GT": 231,
+              "correct": 223
+            }
+          }
+        },
+        {
+          "class_id": 2,
+          "name": "truck",
+          "paired_GT": 1303,
+          "buckets": {
+            "both_correct": {
+              "objects": 1119,
+              "fraction": 0.8587874136607828,
+              "images": 377
+            },
+            "T_only": {
+              "objects": 115,
+              "fraction": 0.08825786646201074,
+              "images": 32
+            },
+            "N_only": {
+              "objects": 44,
+              "fraction": 0.03376822716807368,
+              "images": 31
+            },
+            "both_unmatched": {
+              "objects": 25,
+              "fraction": 0.01918649270913277,
+              "images": 15
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 33,
+              "correct": 32
+            },
+            "T": {
+              "GT": 167,
+              "correct": 160
+            }
+          }
+        },
+        {
+          "class_id": 3,
+          "name": "bus",
+          "paired_GT": 739,
+          "buckets": {
+            "both_correct": {
+              "objects": 715,
+              "fraction": 0.9675236806495264,
+              "images": 277
+            },
+            "T_only": {
+              "objects": 12,
+              "fraction": 0.016238159675236806,
+              "images": 8
+            },
+            "N_only": {
+              "objects": 3,
+              "fraction": 0.0040595399188092015,
+              "images": 3
+            },
+            "both_unmatched": {
+              "objects": 9,
+              "fraction": 0.012178619756427604,
+              "images": 4
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 12,
+              "correct": 11
+            },
+            "T": {
+              "GT": 50,
+              "correct": 47
+            }
+          }
+        },
+        {
+          "class_id": 4,
+          "name": "van",
+          "paired_GT": 662,
+          "buckets": {
+            "both_correct": {
+              "objects": 589,
+              "fraction": 0.8897280966767371,
+              "images": 252
+            },
+            "T_only": {
+              "objects": 28,
+              "fraction": 0.04229607250755287,
+              "images": 20
+            },
+            "N_only": {
+              "objects": 30,
+              "fraction": 0.045317220543806644,
+              "images": 23
+            },
+            "both_unmatched": {
+              "objects": 15,
+              "fraction": 0.022658610271903322,
+              "images": 12
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 38,
+              "correct": 35
+            },
+            "T": {
+              "GT": 63,
+              "correct": 56
+            }
+          }
+        }
+      ]
+    },
+    "all_iou75": {
+      "confidence": null,
+      "iou": 0.75,
+      "paired_GT": 21568,
+      "buckets": {
+        "both_correct": {
+          "objects": 16249,
+          "fraction": 0.753384643916914,
+          "images": 1416
+        },
+        "T_only": {
+          "objects": 2817,
+          "fraction": 0.13061016320474778,
+          "images": 583
+        },
+        "N_only": {
+          "objects": 1260,
+          "fraction": 0.05841988130563798,
+          "images": 509
+        },
+        "both_unmatched": {
+          "objects": 1242,
+          "fraction": 0.0575853115727003,
+          "images": 331
+        }
+      },
+      "whole_model_metrics": {
+        "N": {
+          "tp": 18183,
+          "fp": 68660,
+          "fn": 4279,
+          "predictions": 86843
+        },
+        "T": {
+          "tp": 21522,
+          "fp": 40447,
+          "fn": 2968,
+          "predictions": 61969
+        }
+      },
+      "unpaired": {
+        "N": {
+          "objects": 894,
+          "images": 337,
+          "correct": 674,
+          "unmatched": 220
+        },
+        "T": {
+          "objects": 2922,
+          "images": 508,
+          "correct": 2456,
+          "unmatched": 466
+        }
+      },
+      "per_class": [
+        {
+          "class_id": 0,
+          "name": "car",
+          "paired_GT": 18177,
+          "buckets": {
+            "both_correct": {
+              "objects": 13759,
+              "fraction": 0.7569455905815041,
+              "images": 1317
+            },
+            "T_only": {
+              "objects": 2421,
+              "fraction": 0.1331902954282885,
+              "images": 505
+            },
+            "N_only": {
+              "objects": 1031,
+              "fraction": 0.056720030808164165,
+              "images": 441
+            },
+            "both_unmatched": {
+              "objects": 966,
+              "fraction": 0.05314408318204324,
+              "images": 275
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 788,
+              "correct": 589
+            },
+            "T": {
+              "GT": 2411,
+              "correct": 2022
+            }
+          }
+        },
+        {
+          "class_id": 1,
+          "name": "freight car",
+          "paired_GT": 687,
+          "buckets": {
+            "both_correct": {
+              "objects": 470,
+              "fraction": 0.6841339155749636,
+              "images": 217
+            },
+            "T_only": {
+              "objects": 103,
+              "fraction": 0.14992721979621543,
+              "images": 48
+            },
+            "N_only": {
+              "objects": 59,
+              "fraction": 0.0858806404657933,
+              "images": 44
+            },
+            "both_unmatched": {
+              "objects": 55,
+              "fraction": 0.08005822416302766,
+              "images": 24
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 23,
+              "correct": 18
+            },
+            "T": {
+              "GT": 231,
+              "correct": 205
+            }
+          }
+        },
+        {
+          "class_id": 2,
+          "name": "truck",
+          "paired_GT": 1303,
+          "buckets": {
+            "both_correct": {
+              "objects": 905,
+              "fraction": 0.6945510360706063,
+              "images": 344
+            },
+            "T_only": {
+              "objects": 162,
+              "fraction": 0.12432847275518036,
+              "images": 65
+            },
+            "N_only": {
+              "objects": 92,
+              "fraction": 0.07060629316960859,
+              "images": 64
+            },
+            "both_unmatched": {
+              "objects": 144,
+              "fraction": 0.11051419800460476,
+              "images": 51
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 33,
+              "correct": 28
+            },
+            "T": {
+              "GT": 167,
+              "correct": 139
+            }
+          }
+        },
+        {
+          "class_id": 3,
+          "name": "bus",
+          "paired_GT": 739,
+          "buckets": {
+            "both_correct": {
+              "objects": 662,
+              "fraction": 0.8958051420838972,
+              "images": 268
+            },
+            "T_only": {
+              "objects": 41,
+              "fraction": 0.05548037889039242,
+              "images": 28
+            },
+            "N_only": {
+              "objects": 18,
+              "fraction": 0.02435723951285521,
+              "images": 16
+            },
+            "both_unmatched": {
+              "objects": 18,
+              "fraction": 0.02435723951285521,
+              "images": 9
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 12,
+              "correct": 9
+            },
+            "T": {
+              "GT": 50,
+              "correct": 43
+            }
+          }
+        },
+        {
+          "class_id": 4,
+          "name": "van",
+          "paired_GT": 662,
+          "buckets": {
+            "both_correct": {
+              "objects": 453,
+              "fraction": 0.6842900302114804,
+              "images": 210
+            },
+            "T_only": {
+              "objects": 90,
+              "fraction": 0.13595166163141995,
+              "images": 55
+            },
+            "N_only": {
+              "objects": 60,
+              "fraction": 0.09063444108761329,
+              "images": 43
+            },
+            "both_unmatched": {
+              "objects": 59,
+              "fraction": 0.0891238670694864,
+              "images": 42
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 38,
+              "correct": 30
+            },
+            "T": {
+              "GT": 63,
+              "correct": 47
+            }
+          }
+        }
+      ]
+    },
+    "gt025_iou50": {
+      "confidence": 0.25,
+      "iou": 0.5,
+      "paired_GT": 21568,
+      "buckets": {
+        "both_correct": {
+          "objects": 18309,
+          "fraction": 0.8488965133531158,
+          "images": 1415
+        },
+        "T_only": {
+          "objects": 1873,
+          "fraction": 0.0868416172106825,
+          "images": 461
+        },
+        "N_only": {
+          "objects": 587,
+          "fraction": 0.027216246290801188,
+          "images": 360
+        },
+        "both_unmatched": {
+          "objects": 799,
+          "fraction": 0.037045623145400594,
+          "images": 383
+        }
+      },
+      "whole_model_metrics": {
+        "N": {
+          "tp": 19644,
+          "fp": 2517,
+          "fn": 2818,
+          "predictions": 22161
+        },
+        "T": {
+          "tp": 22806,
+          "fp": 2502,
+          "fn": 1684,
+          "predictions": 25308
+        }
+      },
+      "unpaired": {
+        "N": {
+          "objects": 894,
+          "images": 337,
+          "correct": 748,
+          "unmatched": 146
+        },
+        "T": {
+          "objects": 2922,
+          "images": 508,
+          "correct": 2624,
+          "unmatched": 298
+        }
+      },
+      "per_class": [
+        {
+          "class_id": 0,
+          "name": "car",
+          "paired_GT": 18177,
+          "buckets": {
+            "both_correct": {
+              "objects": 16191,
+              "fraction": 0.89074104637729,
+              "images": 1331
+            },
+            "T_only": {
+              "objects": 1458,
+              "fraction": 0.08021125598283545,
+              "images": 320
+            },
+            "N_only": {
+              "objects": 303,
+              "fraction": 0.016669417395609835,
+              "images": 212
+            },
+            "both_unmatched": {
+              "objects": 225,
+              "fraction": 0.01237828024426473,
+              "images": 161
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 788,
+              "correct": 694
+            },
+            "T": {
+              "GT": 2411,
+              "correct": 2272
+            }
+          }
+        },
+        {
+          "class_id": 1,
+          "name": "freight car",
+          "paired_GT": 687,
+          "buckets": {
+            "both_correct": {
+              "objects": 362,
+              "fraction": 0.5269286754002911,
+              "images": 158
+            },
+            "T_only": {
+              "objects": 103,
+              "fraction": 0.14992721979621543,
+              "images": 55
+            },
+            "N_only": {
+              "objects": 89,
+              "fraction": 0.12954876273653565,
+              "images": 55
+            },
+            "both_unmatched": {
+              "objects": 133,
+              "fraction": 0.19359534206695778,
+              "images": 80
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 23,
+              "correct": 8
+            },
+            "T": {
+              "GT": 231,
+              "correct": 150
+            }
+          }
+        },
+        {
+          "class_id": 2,
+          "name": "truck",
+          "paired_GT": 1303,
+          "buckets": {
+            "both_correct": {
+              "objects": 746,
+              "fraction": 0.5725249424405219,
+              "images": 257
+            },
+            "T_only": {
+              "objects": 216,
+              "fraction": 0.16577129700690713,
+              "images": 97
+            },
+            "N_only": {
+              "objects": 118,
+              "fraction": 0.09056024558710668,
+              "images": 91
+            },
+            "both_unmatched": {
+              "objects": 223,
+              "fraction": 0.17114351496546432,
+              "images": 111
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 33,
+              "correct": 18
+            },
+            "T": {
+              "GT": 167,
+              "correct": 121
+            }
+          }
+        },
+        {
+          "class_id": 3,
+          "name": "bus",
+          "paired_GT": 739,
+          "buckets": {
+            "both_correct": {
+              "objects": 656,
+              "fraction": 0.8876860622462788,
+              "images": 252
+            },
+            "T_only": {
+              "objects": 36,
+              "fraction": 0.04871447902571042,
+              "images": 21
+            },
+            "N_only": {
+              "objects": 15,
+              "fraction": 0.02029769959404601,
+              "images": 15
+            },
+            "both_unmatched": {
+              "objects": 32,
+              "fraction": 0.04330175913396482,
+              "images": 23
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 12,
+              "correct": 7
+            },
+            "T": {
+              "GT": 50,
+              "correct": 41
+            }
+          }
+        },
+        {
+          "class_id": 4,
+          "name": "van",
+          "paired_GT": 662,
+          "buckets": {
+            "both_correct": {
+              "objects": 354,
+              "fraction": 0.5347432024169184,
+              "images": 160
+            },
+            "T_only": {
+              "objects": 60,
+              "fraction": 0.09063444108761329,
+              "images": 45
+            },
+            "N_only": {
+              "objects": 62,
+              "fraction": 0.09365558912386707,
+              "images": 45
+            },
+            "both_unmatched": {
+              "objects": 186,
+              "fraction": 0.2809667673716012,
+              "images": 96
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 38,
+              "correct": 21
+            },
+            "T": {
+              "GT": 63,
+              "correct": 40
+            }
+          }
+        }
+      ]
+    },
+    "gt025_iou75": {
+      "confidence": 0.25,
+      "iou": 0.75,
+      "paired_GT": 21568,
+      "buckets": {
+        "both_correct": {
+          "objects": 14767,
+          "fraction": 0.6846717359050445,
+          "images": 1397
+        },
+        "T_only": {
+          "objects": 3399,
+          "fraction": 0.15759458456973294,
+          "images": 660
+        },
+        "N_only": {
+          "objects": 1414,
+          "fraction": 0.06556008902077151,
+          "images": 593
+        },
+        "both_unmatched": {
+          "objects": 1988,
+          "fraction": 0.09217359050445104,
+          "images": 544
+        }
+      },
+      "whole_model_metrics": {
+        "N": {
+          "tp": 16772,
+          "fp": 5389,
+          "fn": 5690,
+          "predictions": 22161
+        },
+        "T": {
+          "tp": 20439,
+          "fp": 4869,
+          "fn": 4051,
+          "predictions": 25308
+        }
+      },
+      "unpaired": {
+        "N": {
+          "objects": 894,
+          "images": 337,
+          "correct": 591,
+          "unmatched": 303
+        },
+        "T": {
+          "objects": 2922,
+          "images": 508,
+          "correct": 2273,
+          "unmatched": 649
+        }
+      },
+      "per_class": [
+        {
+          "class_id": 0,
+          "name": "car",
+          "paired_GT": 18177,
+          "buckets": {
+            "both_correct": {
+              "objects": 12926,
+              "fraction": 0.7111184463882929,
+              "images": 1305
+            },
+            "T_only": {
+              "objects": 2918,
+              "fraction": 0.1605325411233977,
+              "images": 531
+            },
+            "N_only": {
+              "objects": 1095,
+              "fraction": 0.060240963855421686,
+              "images": 465
+            },
+            "both_unmatched": {
+              "objects": 1238,
+              "fraction": 0.06810804863288772,
+              "images": 355
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 788,
+              "correct": 542
+            },
+            "T": {
+              "GT": 2411,
+              "correct": 1949
+            }
+          }
+        },
+        {
+          "class_id": 1,
+          "name": "freight car",
+          "paired_GT": 687,
+          "buckets": {
+            "both_correct": {
+              "objects": 278,
+              "fraction": 0.40465793304221254,
+              "images": 138
+            },
+            "T_only": {
+              "objects": 139,
+              "fraction": 0.20232896652110627,
+              "images": 67
+            },
+            "N_only": {
+              "objects": 94,
+              "fraction": 0.13682678311499272,
+              "images": 65
+            },
+            "both_unmatched": {
+              "objects": 176,
+              "fraction": 0.2561863173216885,
+              "images": 88
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 23,
+              "correct": 7
+            },
+            "T": {
+              "GT": 231,
+              "correct": 137
+            }
+          }
+        },
+        {
+          "class_id": 2,
+          "name": "truck",
+          "paired_GT": 1303,
+          "buckets": {
+            "both_correct": {
+              "objects": 653,
+              "fraction": 0.501151189562548,
+              "images": 241
+            },
+            "T_only": {
+              "objects": 202,
+              "fraction": 0.15502686108979277,
+              "images": 100
+            },
+            "N_only": {
+              "objects": 127,
+              "fraction": 0.09746738296239447,
+              "images": 94
+            },
+            "both_unmatched": {
+              "objects": 321,
+              "fraction": 0.24635456638526476,
+              "images": 134
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 33,
+              "correct": 16
+            },
+            "T": {
+              "GT": 167,
+              "correct": 112
+            }
+          }
+        },
+        {
+          "class_id": 3,
+          "name": "bus",
+          "paired_GT": 739,
+          "buckets": {
+            "both_correct": {
+              "objects": 613,
+              "fraction": 0.8294993234100135,
+              "images": 248
+            },
+            "T_only": {
+              "objects": 58,
+              "fraction": 0.07848443843031123,
+              "images": 35
+            },
+            "N_only": {
+              "objects": 25,
+              "fraction": 0.03382949932341001,
+              "images": 23
+            },
+            "both_unmatched": {
+              "objects": 43,
+              "fraction": 0.058186738836265225,
+              "images": 30
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 12,
+              "correct": 7
+            },
+            "T": {
+              "GT": 50,
+              "correct": 38
+            }
+          }
+        },
+        {
+          "class_id": 4,
+          "name": "van",
+          "paired_GT": 662,
+          "buckets": {
+            "both_correct": {
+              "objects": 297,
+              "fraction": 0.4486404833836858,
+              "images": 145
+            },
+            "T_only": {
+              "objects": 82,
+              "fraction": 0.12386706948640483,
+              "images": 52
+            },
+            "N_only": {
+              "objects": 73,
+              "fraction": 0.11027190332326284,
+              "images": 52
+            },
+            "both_unmatched": {
+              "objects": 210,
+              "fraction": 0.31722054380664655,
+              "images": 110
+            }
+          },
+          "unpaired": {
+            "N": {
+              "GT": 38,
+              "correct": 19
+            },
+            "T": {
+              "GT": 63,
+              "correct": 37
+            }
+          }
+        }
+      ]
+    }
+  },
+  "low_to_gt025_transitions": {
+    "iou50": [
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "both_correct",
+        "objects": 18309
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "T_only",
+        "objects": 1441
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "N_only",
+        "objects": 514
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "both_unmatched",
+        "objects": 492
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "both_correct",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "T_only",
+        "objects": 432
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "N_only",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "both_unmatched",
+        "objects": 122
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "both_correct",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "T_only",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "N_only",
+        "objects": 73
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "both_unmatched",
+        "objects": 100
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "both_correct",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "T_only",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "N_only",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "both_unmatched",
+        "objects": 85
+      }
+    ],
+    "iou75": [
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "both_correct",
+        "objects": 14767
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "T_only",
+        "objects": 811
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "N_only",
+        "objects": 368
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "both_unmatched",
+        "objects": 303
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "both_correct",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "T_only",
+        "objects": 2588
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "N_only",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "both_unmatched",
+        "objects": 229
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "both_correct",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "T_only",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "N_only",
+        "objects": 1046
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "both_unmatched",
+        "objects": 214
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "both_correct",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "T_only",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "N_only",
+        "objects": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "both_unmatched",
+        "objects": 1242
+      }
+    ]
+  },
+  "gt025_joint_iou50_iou75": [
+    {
+      "N_iou50": false,
+      "N_iou75": false,
+      "T_iou50": false,
+      "T_iou75": false,
+      "objects": 799,
+      "images": 383
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": false,
+      "T_iou50": false,
+      "T_iou75": true,
+      "objects": 0,
+      "images": 0
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": false,
+      "T_iou50": true,
+      "T_iou75": false,
+      "objects": 343,
+      "images": 125
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": false,
+      "T_iou50": true,
+      "T_iou75": true,
+      "objects": 1530,
+      "images": 426
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": true,
+      "T_iou50": false,
+      "T_iou75": false,
+      "objects": 0,
+      "images": 0
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": true,
+      "T_iou50": false,
+      "T_iou75": true,
+      "objects": 0,
+      "images": 0
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": true,
+      "T_iou50": true,
+      "T_iou75": false,
+      "objects": 0,
+      "images": 0
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": true,
+      "T_iou50": true,
+      "T_iou75": true,
+      "objects": 0,
+      "images": 0
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": false,
+      "T_iou50": false,
+      "T_iou75": false,
+      "objects": 123,
+      "images": 94
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": false,
+      "T_iou50": false,
+      "T_iou75": true,
+      "objects": 0,
+      "images": 0
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": false,
+      "T_iou50": true,
+      "T_iou75": false,
+      "objects": 723,
+      "images": 231
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": false,
+      "T_iou50": true,
+      "T_iou75": true,
+      "objects": 1869,
+      "images": 492
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": true,
+      "T_iou50": false,
+      "T_iou75": false,
+      "objects": 464,
+      "images": 302
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": true,
+      "T_iou50": false,
+      "T_iou75": true,
+      "objects": 0,
+      "images": 0
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": true,
+      "T_iou50": true,
+      "T_iou75": false,
+      "objects": 950,
+      "images": 411
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": true,
+      "T_iou50": true,
+      "T_iou75": true,
+      "objects": 14767,
+      "images": 1397
+    }
+  ],
+  "denominator": "Four buckets and joint tables use paired GT only; all own-GT native metrics and unpaired GT are separate.",
+  "GT_pairing": "Original same-class maximum-cardinality then maximum-IoU assignment at IoU>=.5 on native canvas; no physical registration claim.",
+  "AP_estimated": false,
+  "KD_gain_claim": false,
+  "selector_coverage_inferred": false,
+  "new_GPU": false,
+  "new_model_forward": false,
+  "checkpoint_loaded": false,
+  "new_hash_computed": false,
+  "official_test_accessed": false,
+  "seconds": 19.6716071,
+  "torch_CPU_runtime": "1.8.0+cu111"
+}
