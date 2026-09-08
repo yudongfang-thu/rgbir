@@ -1,0 +1,68 @@
+{
+  "status": "CONFIDENCE_CANARIES_MATCHED",
+  "scope": "LLVIP_CONFIDENCE_FT3",
+  "checks": {
+    "N": {
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5482010,
+          "mtime_ns": 1788127857140185407
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_attempt1/canaries/N/canary.json",
+        "bytes": 3506,
+        "mtime_ns": 1788840057387550923
+      },
+      "resources": {
+        "vram_mib": 6144,
+        "rss_mib": 30720,
+        "measured_nvml_peak_mib": 5704,
+        "measured_allocated_peak_mib": 4733.18310546875,
+        "measured_reserved_peak_mib": 5170.0,
+        "measured_rss_peak_mib": 27830,
+        "margin": "GPU max(256 MiB,5%), ceil256; RSS max(2048 MiB,5%), ceil1024"
+      }
+    },
+    "C0": {
+      "initialization": {
+        "status": "PASS_FULL_STATE_WARM_START",
+        "initial_checkpoint": {
+          "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+          "bytes": 5482010,
+          "mtime_ns": 1788127857140185407
+        },
+        "state_tensors": 499,
+        "head_included": true,
+        "fresh_optimizer": true,
+        "fresh_ema": true,
+        "teacher_reference_isolated": true,
+        "new_hash_computed": false
+      },
+      "receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_attempt1/canaries/C0/canary.json",
+        "bytes": 3519,
+        "mtime_ns": 1788840129211854852
+      },
+      "resources": {
+        "vram_mib": 6144,
+        "rss_mib": 30720,
+        "measured_nvml_peak_mib": 5704,
+        "measured_allocated_peak_mib": 4733.18310546875,
+        "measured_reserved_peak_mib": 5170.0,
+        "measured_rss_peak_mib": 27922,
+        "margin": "GPU max(256 MiB,5%), ceil256; RSS max(2048 MiB,5%), ceil1024"
+      }
+    }
+  },
+  "first30_stream_exact": true,
+  "new_hash_computed": false
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "LLVIP_CONFIDENCE_FT3",
+  "endpoint": "LLVIP_CONFIDENCE_FT3_LAST_EMA",
+  "arms": [
+    "N",
+    "C0"
+  ],
+  "coefficients": {
+    "N": 0.0,
+    "C0": 0.1
+  },
+  "wait_for": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/queue/completion.json",
+  "sequence": "wait main terminal -> canary N/C0 -> first30 exact -> N train/eval -> C0 train/eval",
+  "python": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+  "dispatcher": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_task_conditional_v1_20260907/release_v8/resource_dispatch.py",
+    "bytes": 7920,
+    "mtime_ns": 1788722284046588537
+  },
+  "source": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_release_v1/run_confidence_queue.py",
+    "bytes": 15143,
+    "mtime_ns": 1788839788851171838
+  },
+  "calibration": false,
+  "new_resource_pool": false,
+  "ap_adaptive": false,
+  "new_hash_computed": false
+}

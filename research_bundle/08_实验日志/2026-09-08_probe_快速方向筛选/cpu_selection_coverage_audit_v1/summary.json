@@ -1,0 +1,706 @@
+{
+  "status": "COMPLETED_STATIC_CACHE_PROXY_AUDIT",
+  "datasets": {
+    "llvip": {
+      "train": {
+        "total": {
+          "gt": 2753,
+          "native_correct": 2367,
+          "native_errors": 386,
+          "teacher_repairs": 303,
+          "teacher_potential_harms": 110,
+          "repair_states": {
+            "low_confidence": 290,
+            "localization_only": 4,
+            "no_candidate": 9
+          },
+          "repair_cached_anchor_yes": 294,
+          "repair_cached_anchor_no": 9,
+          "repair_common_valid_roi_yes": 303,
+          "repair_anchor_and_roi_yes": 294,
+          "actual_selected_coverage": null,
+          "repair_state_proxy_table": {
+            "localization_only": {
+              "n": 4,
+              "anchor_yes": 4,
+              "common_roi_yes": 4,
+              "anchor_and_roi_yes": 4
+            },
+            "low_confidence": {
+              "n": 290,
+              "anchor_yes": 290,
+              "common_roi_yes": 290,
+              "anchor_and_roi_yes": 290
+            },
+            "no_candidate": {
+              "n": 9,
+              "anchor_yes": 0,
+              "common_roi_yes": 9,
+              "anchor_and_roi_yes": 0
+            }
+          }
+        },
+        "by_class": {
+          "0": {
+            "gt": 2753,
+            "native_correct": 2367,
+            "native_errors": 386,
+            "teacher_repairs": 303,
+            "teacher_potential_harms": 110,
+            "repair_states": {
+              "low_confidence": 290,
+              "localization_only": 4,
+              "no_candidate": 9
+            },
+            "repair_cached_anchor_yes": 294,
+            "repair_cached_anchor_no": 9,
+            "repair_common_valid_roi_yes": 303,
+            "repair_anchor_and_roi_yes": 294,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "localization_only": {
+                "n": 4,
+                "anchor_yes": 4,
+                "common_roi_yes": 4,
+                "anchor_and_roi_yes": 4
+              },
+              "low_confidence": {
+                "n": 290,
+                "anchor_yes": 290,
+                "common_roi_yes": 290,
+                "anchor_and_roi_yes": 290
+              },
+              "no_candidate": {
+                "n": 9,
+                "anchor_yes": 0,
+                "common_roi_yes": 9,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          }
+        }
+      },
+      "val": {
+        "total": {
+          "gt": 643,
+          "native_correct": 404,
+          "native_errors": 239,
+          "teacher_repairs": 146,
+          "teacher_potential_harms": 42,
+          "repair_states": {
+            "low_confidence": 90,
+            "localization_only": 27,
+            "no_candidate": 29
+          },
+          "repair_cached_anchor_yes": 117,
+          "repair_cached_anchor_no": 29,
+          "repair_common_valid_roi_yes": 146,
+          "repair_anchor_and_roi_yes": 117,
+          "actual_selected_coverage": null,
+          "repair_state_proxy_table": {
+            "localization_only": {
+              "n": 27,
+              "anchor_yes": 27,
+              "common_roi_yes": 27,
+              "anchor_and_roi_yes": 27
+            },
+            "low_confidence": {
+              "n": 90,
+              "anchor_yes": 90,
+              "common_roi_yes": 90,
+              "anchor_and_roi_yes": 90
+            },
+            "no_candidate": {
+              "n": 29,
+              "anchor_yes": 0,
+              "common_roi_yes": 29,
+              "anchor_and_roi_yes": 0
+            }
+          }
+        },
+        "by_class": {
+          "0": {
+            "gt": 643,
+            "native_correct": 404,
+            "native_errors": 239,
+            "teacher_repairs": 146,
+            "teacher_potential_harms": 42,
+            "repair_states": {
+              "low_confidence": 90,
+              "localization_only": 27,
+              "no_candidate": 29
+            },
+            "repair_cached_anchor_yes": 117,
+            "repair_cached_anchor_no": 29,
+            "repair_common_valid_roi_yes": 146,
+            "repair_anchor_and_roi_yes": 117,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "localization_only": {
+                "n": 27,
+                "anchor_yes": 27,
+                "common_roi_yes": 27,
+                "anchor_and_roi_yes": 27
+              },
+              "low_confidence": {
+                "n": 90,
+                "anchor_yes": 90,
+                "common_roi_yes": 90,
+                "anchor_and_roi_yes": 90
+              },
+              "no_candidate": {
+                "n": 29,
+                "anchor_yes": 0,
+                "common_roi_yes": 29,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "dronevehicle": {
+      "train": {
+        "total": {
+          "gt": 15782,
+          "native_correct": 13574,
+          "native_errors": 2208,
+          "teacher_repairs": 1602,
+          "teacher_potential_harms": 905,
+          "repair_states": {
+            "low_confidence": 1395,
+            "class_only": 83,
+            "localization_only": 12,
+            "no_candidate": 110,
+            "class_and_localization": 2
+          },
+          "repair_cached_anchor_yes": 1478,
+          "repair_cached_anchor_no": 124,
+          "repair_common_valid_roi_yes": 1599,
+          "repair_anchor_and_roi_yes": 1475,
+          "actual_selected_coverage": null,
+          "repair_state_proxy_table": {
+            "class_and_localization": {
+              "n": 2,
+              "anchor_yes": 2,
+              "common_roi_yes": 2,
+              "anchor_and_roi_yes": 2
+            },
+            "class_only": {
+              "n": 83,
+              "anchor_yes": 83,
+              "common_roi_yes": 83,
+              "anchor_and_roi_yes": 83
+            },
+            "localization_only": {
+              "n": 12,
+              "anchor_yes": 12,
+              "common_roi_yes": 12,
+              "anchor_and_roi_yes": 12
+            },
+            "low_confidence": {
+              "n": 1395,
+              "anchor_yes": 1381,
+              "common_roi_yes": 1392,
+              "anchor_and_roi_yes": 1378
+            },
+            "no_candidate": {
+              "n": 110,
+              "anchor_yes": 0,
+              "common_roi_yes": 110,
+              "anchor_and_roi_yes": 0
+            }
+          }
+        },
+        "by_class": {
+          "0": {
+            "gt": 13556,
+            "native_correct": 11939,
+            "native_errors": 1617,
+            "teacher_repairs": 1260,
+            "teacher_potential_harms": 688,
+            "repair_states": {
+              "low_confidence": 1130,
+              "class_only": 16,
+              "localization_only": 12,
+              "no_candidate": 101,
+              "class_and_localization": 1
+            },
+            "repair_cached_anchor_yes": 1156,
+            "repair_cached_anchor_no": 104,
+            "repair_common_valid_roi_yes": 1259,
+            "repair_anchor_and_roi_yes": 1155,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_and_localization": {
+                "n": 1,
+                "anchor_yes": 1,
+                "common_roi_yes": 1,
+                "anchor_and_roi_yes": 1
+              },
+              "class_only": {
+                "n": 16,
+                "anchor_yes": 16,
+                "common_roi_yes": 16,
+                "anchor_and_roi_yes": 16
+              },
+              "localization_only": {
+                "n": 12,
+                "anchor_yes": 12,
+                "common_roi_yes": 12,
+                "anchor_and_roi_yes": 12
+              },
+              "low_confidence": {
+                "n": 1130,
+                "anchor_yes": 1127,
+                "common_roi_yes": 1129,
+                "anchor_and_roi_yes": 1126
+              },
+              "no_candidate": {
+                "n": 101,
+                "anchor_yes": 0,
+                "common_roi_yes": 101,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          },
+          "1": {
+            "gt": 497,
+            "native_correct": 340,
+            "native_errors": 157,
+            "teacher_repairs": 92,
+            "teacher_potential_harms": 48,
+            "repair_states": {
+              "class_only": 16,
+              "low_confidence": 71,
+              "no_candidate": 5
+            },
+            "repair_cached_anchor_yes": 84,
+            "repair_cached_anchor_no": 8,
+            "repair_common_valid_roi_yes": 91,
+            "repair_anchor_and_roi_yes": 83,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_only": {
+                "n": 16,
+                "anchor_yes": 16,
+                "common_roi_yes": 16,
+                "anchor_and_roi_yes": 16
+              },
+              "low_confidence": {
+                "n": 71,
+                "anchor_yes": 68,
+                "common_roi_yes": 70,
+                "anchor_and_roi_yes": 67
+              },
+              "no_candidate": {
+                "n": 5,
+                "anchor_yes": 0,
+                "common_roi_yes": 5,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          },
+          "2": {
+            "gt": 697,
+            "native_correct": 512,
+            "native_errors": 185,
+            "teacher_repairs": 112,
+            "teacher_potential_harms": 74,
+            "repair_states": {
+              "low_confidence": 88,
+              "class_only": 22,
+              "no_candidate": 1,
+              "class_and_localization": 1
+            },
+            "repair_cached_anchor_yes": 104,
+            "repair_cached_anchor_no": 8,
+            "repair_common_valid_roi_yes": 111,
+            "repair_anchor_and_roi_yes": 103,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_and_localization": {
+                "n": 1,
+                "anchor_yes": 1,
+                "common_roi_yes": 1,
+                "anchor_and_roi_yes": 1
+              },
+              "class_only": {
+                "n": 22,
+                "anchor_yes": 22,
+                "common_roi_yes": 22,
+                "anchor_and_roi_yes": 22
+              },
+              "low_confidence": {
+                "n": 88,
+                "anchor_yes": 81,
+                "common_roi_yes": 87,
+                "anchor_and_roi_yes": 80
+              },
+              "no_candidate": {
+                "n": 1,
+                "anchor_yes": 0,
+                "common_roi_yes": 1,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          },
+          "3": {
+            "gt": 623,
+            "native_correct": 522,
+            "native_errors": 101,
+            "teacher_repairs": 80,
+            "teacher_potential_harms": 59,
+            "repair_states": {
+              "low_confidence": 75,
+              "no_candidate": 1,
+              "class_only": 4
+            },
+            "repair_cached_anchor_yes": 78,
+            "repair_cached_anchor_no": 2,
+            "repair_common_valid_roi_yes": 80,
+            "repair_anchor_and_roi_yes": 78,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_only": {
+                "n": 4,
+                "anchor_yes": 4,
+                "common_roi_yes": 4,
+                "anchor_and_roi_yes": 4
+              },
+              "low_confidence": {
+                "n": 75,
+                "anchor_yes": 74,
+                "common_roi_yes": 75,
+                "anchor_and_roi_yes": 74
+              },
+              "no_candidate": {
+                "n": 1,
+                "anchor_yes": 0,
+                "common_roi_yes": 1,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          },
+          "4": {
+            "gt": 409,
+            "native_correct": 261,
+            "native_errors": 148,
+            "teacher_repairs": 58,
+            "teacher_potential_harms": 36,
+            "repair_states": {
+              "class_only": 25,
+              "low_confidence": 31,
+              "no_candidate": 2
+            },
+            "repair_cached_anchor_yes": 56,
+            "repair_cached_anchor_no": 2,
+            "repair_common_valid_roi_yes": 58,
+            "repair_anchor_and_roi_yes": 56,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_only": {
+                "n": 25,
+                "anchor_yes": 25,
+                "common_roi_yes": 25,
+                "anchor_and_roi_yes": 25
+              },
+              "low_confidence": {
+                "n": 31,
+                "anchor_yes": 31,
+                "common_roi_yes": 31,
+                "anchor_and_roi_yes": 31
+              },
+              "no_candidate": {
+                "n": 2,
+                "anchor_yes": 0,
+                "common_roi_yes": 2,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          }
+        }
+      },
+      "val": {
+        "total": {
+          "gt": 3084,
+          "native_correct": 2386,
+          "native_errors": 698,
+          "teacher_repairs": 461,
+          "teacher_potential_harms": 193,
+          "repair_states": {
+            "low_confidence": 351,
+            "no_candidate": 73,
+            "localization_only": 8,
+            "class_only": 28,
+            "class_and_localization": 1
+          },
+          "repair_cached_anchor_yes": 385,
+          "repair_cached_anchor_no": 76,
+          "repair_common_valid_roi_yes": 457,
+          "repair_anchor_and_roi_yes": 382,
+          "actual_selected_coverage": null,
+          "repair_state_proxy_table": {
+            "class_and_localization": {
+              "n": 1,
+              "anchor_yes": 1,
+              "common_roi_yes": 1,
+              "anchor_and_roi_yes": 1
+            },
+            "class_only": {
+              "n": 28,
+              "anchor_yes": 28,
+              "common_roi_yes": 28,
+              "anchor_and_roi_yes": 28
+            },
+            "localization_only": {
+              "n": 8,
+              "anchor_yes": 8,
+              "common_roi_yes": 8,
+              "anchor_and_roi_yes": 8
+            },
+            "low_confidence": {
+              "n": 351,
+              "anchor_yes": 348,
+              "common_roi_yes": 348,
+              "anchor_and_roi_yes": 345
+            },
+            "no_candidate": {
+              "n": 73,
+              "anchor_yes": 0,
+              "common_roi_yes": 72,
+              "anchor_and_roi_yes": 0
+            }
+          }
+        },
+        "by_class": {
+          "0": {
+            "gt": 2662,
+            "native_correct": 2167,
+            "native_errors": 495,
+            "teacher_repairs": 369,
+            "teacher_potential_harms": 134,
+            "repair_states": {
+              "low_confidence": 296,
+              "no_candidate": 63,
+              "localization_only": 7,
+              "class_only": 3
+            },
+            "repair_cached_anchor_yes": 306,
+            "repair_cached_anchor_no": 63,
+            "repair_common_valid_roi_yes": 365,
+            "repair_anchor_and_roi_yes": 303,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_only": {
+                "n": 3,
+                "anchor_yes": 3,
+                "common_roi_yes": 3,
+                "anchor_and_roi_yes": 3
+              },
+              "localization_only": {
+                "n": 7,
+                "anchor_yes": 7,
+                "common_roi_yes": 7,
+                "anchor_and_roi_yes": 7
+              },
+              "low_confidence": {
+                "n": 296,
+                "anchor_yes": 296,
+                "common_roi_yes": 293,
+                "anchor_and_roi_yes": 293
+              },
+              "no_candidate": {
+                "n": 63,
+                "anchor_yes": 0,
+                "common_roi_yes": 62,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          },
+          "1": {
+            "gt": 81,
+            "native_correct": 51,
+            "native_errors": 30,
+            "teacher_repairs": 15,
+            "teacher_potential_harms": 13,
+            "repair_states": {
+              "low_confidence": 12,
+              "class_only": 2,
+              "no_candidate": 1
+            },
+            "repair_cached_anchor_yes": 13,
+            "repair_cached_anchor_no": 2,
+            "repair_common_valid_roi_yes": 15,
+            "repair_anchor_and_roi_yes": 13,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_only": {
+                "n": 2,
+                "anchor_yes": 2,
+                "common_roi_yes": 2,
+                "anchor_and_roi_yes": 2
+              },
+              "low_confidence": {
+                "n": 12,
+                "anchor_yes": 11,
+                "common_roi_yes": 12,
+                "anchor_and_roi_yes": 11
+              },
+              "no_candidate": {
+                "n": 1,
+                "anchor_yes": 0,
+                "common_roi_yes": 1,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          },
+          "2": {
+            "gt": 176,
+            "native_correct": 76,
+            "native_errors": 100,
+            "teacher_repairs": 46,
+            "teacher_potential_harms": 29,
+            "repair_states": {
+              "class_only": 14,
+              "low_confidence": 23,
+              "class_and_localization": 1,
+              "no_candidate": 8
+            },
+            "repair_cached_anchor_yes": 36,
+            "repair_cached_anchor_no": 10,
+            "repair_common_valid_roi_yes": 46,
+            "repair_anchor_and_roi_yes": 36,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_and_localization": {
+                "n": 1,
+                "anchor_yes": 1,
+                "common_roi_yes": 1,
+                "anchor_and_roi_yes": 1
+              },
+              "class_only": {
+                "n": 14,
+                "anchor_yes": 14,
+                "common_roi_yes": 14,
+                "anchor_and_roi_yes": 14
+              },
+              "low_confidence": {
+                "n": 23,
+                "anchor_yes": 21,
+                "common_roi_yes": 23,
+                "anchor_and_roi_yes": 21
+              },
+              "no_candidate": {
+                "n": 8,
+                "anchor_yes": 0,
+                "common_roi_yes": 8,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          },
+          "3": {
+            "gt": 66,
+            "native_correct": 48,
+            "native_errors": 18,
+            "teacher_repairs": 13,
+            "teacher_potential_harms": 7,
+            "repair_states": {
+              "low_confidence": 12,
+              "no_candidate": 1
+            },
+            "repair_cached_anchor_yes": 12,
+            "repair_cached_anchor_no": 1,
+            "repair_common_valid_roi_yes": 13,
+            "repair_anchor_and_roi_yes": 12,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "low_confidence": {
+                "n": 12,
+                "anchor_yes": 12,
+                "common_roi_yes": 12,
+                "anchor_and_roi_yes": 12
+              },
+              "no_candidate": {
+                "n": 1,
+                "anchor_yes": 0,
+                "common_roi_yes": 1,
+                "anchor_and_roi_yes": 0
+              }
+            }
+          },
+          "4": {
+            "gt": 99,
+            "native_correct": 44,
+            "native_errors": 55,
+            "teacher_repairs": 18,
+            "teacher_potential_harms": 10,
+            "repair_states": {
+              "low_confidence": 8,
+              "class_only": 9,
+              "localization_only": 1
+            },
+            "repair_cached_anchor_yes": 18,
+            "repair_cached_anchor_no": 0,
+            "repair_common_valid_roi_yes": 18,
+            "repair_anchor_and_roi_yes": 18,
+            "actual_selected_coverage": null,
+            "repair_state_proxy_table": {
+              "class_only": {
+                "n": 9,
+                "anchor_yes": 9,
+                "common_roi_yes": 9,
+                "anchor_and_roi_yes": 9
+              },
+              "localization_only": {
+                "n": 1,
+                "anchor_yes": 1,
+                "common_roi_yes": 1,
+                "anchor_and_roi_yes": 1
+              },
+              "low_confidence": {
+                "n": 8,
+                "anchor_yes": 8,
+                "common_roi_yes": 8,
+                "anchor_and_roi_yes": 8
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\llvip_full_attempt1\\objects.jsonl",
+      "bytes": 19192615,
+      "mtime_ns": 1788781961261796100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\remote_exports\\dronevehicle_full_attempt1\\objects.jsonl",
+      "bytes": 70960762,
+      "mtime_ns": 1788781753929499600
+    }
+  ],
+  "original_state_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_probe_Baseline蒸馏机会重诊断\\new_probe_analysis\\analyze_baseline_probe.py",
+  "fixed_thresholds": {
+    "confidence": 0.25,
+    "hit_iou": 0.5,
+    "pair_iou": 0.5
+  },
+  "actual_C1_F_selection_join": "NOT_IDENTIFIABLE_FROM_CURRENT_CACHES",
+  "actual_selected_coverage": null,
+  "no_training_or_dev_join": true,
+  "no_AP_oracle_join": true,
+  "proxy_is_gate_bound": false,
+  "new_hash_computed": false,
+  "gpu_execution": false,
+  "missing_contract": [
+    "Same forward/frame snapshot identity for both detection-error labels and C selection",
+    "Augmented global GT row to stable original source GT row mapping",
+    "Actual per-object pair/valid/ref_candidate/teacher_correct/q/eligible/selected with per-batch ranking denominator",
+    "Actual student error state on same forward, separated from mature fixed reference R",
+    "Full predicted FP association if claiming AP-error coverage, rather than one row per GT"
+  ],
+  "model_identity_caveat": "LLVIP cached N42 has same checkpoint role as current initial S/R; Drone cached N42 differs from current frozen R. Neither same path nor original GT ID aligns different augmentation frames."
+}

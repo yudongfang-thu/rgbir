@@ -1,0 +1,91 @@
+{
+  "schema": "task-resource-admission-excerpt-v1",
+  "status": "VERIFIED_EXISTING_LOCAL_RECEIPTS",
+  "task_id": "direction_screen_attempt1_drone_N_train",
+  "dataset": "drone",
+  "arm": "N",
+  "stage": "train",
+  "source_collection": "results_1203_snapshot/collection_receipt.json",
+  "sources": {
+    "admission": {
+      "remote_source_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/queue/direction_screen_attempt1_drone_N_train_admission.json",
+      "local_source_path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_train_admission.json",
+      "bytes": 163,
+      "collected_bytes_match": true
+    },
+    "job": {
+      "remote_source_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/queue/direction_screen_attempt1_drone_N_train_job.json",
+      "local_source_path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_train_job.json",
+      "bytes": 1218,
+      "collected_bytes_match": true
+    },
+    "guard": {
+      "remote_source_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/queue/direction_screen_attempt1_drone_N_train_resource_profile.json",
+      "local_source_path": "results_1203_snapshot/queue/direction_screen_attempt1_drone_N_train_resource_profile.json",
+      "bytes": 10946,
+      "collected_bytes_match": true
+    },
+    "training": {
+      "remote_source_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/runs/drone/N/completion_receipt.json",
+      "local_source_path": "results_1203_snapshot/runs/drone/N/completion_receipt.json",
+      "bytes": 7604,
+      "collected_bytes_match": true
+    }
+  },
+  "admission": {
+    "active_gpus_after": [
+      2,
+      4,
+      5,
+      7
+    ],
+    "empty_gpus_after": [
+      1,
+      3
+    ],
+    "four_gpu_exception": true,
+    "minimum_empty_required": 2
+  },
+  "policy_basis": "AGENTS.md section 2.1: at most four project GPUs when at least two completely empty GPUs remain after admission.",
+  "reservation": {
+    "vram_mib": 7168,
+    "rss_mib": 30720
+  },
+  "measured_task_resources": {
+    "gpu_ids": [
+      7
+    ],
+    "cuda_pid_counts": {
+      "7": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "7": 6776
+    },
+    "peak_rss_mib": 27822
+  },
+  "guard": {
+    "status": "COMPLETED",
+    "exit_code": 0,
+    "monitor_errors": [],
+    "gpu_ids": [
+      7
+    ],
+    "cuda_processes_per_gpu": 1,
+    "expected_vram_mib": 7168,
+    "expected_rss_mib": 30720,
+    "samples": 55,
+    "minimum_free_mib": 13474,
+    "maximum_sampled_project_rss_mib": 169909
+  },
+  "redaction": {
+    "full_admission_and_guard_retained_locally": true,
+    "full_admission_and_guard_published": false,
+    "other_users_processes_included": false,
+    "commands_or_pids_included": false,
+    "full_host_snapshot_included": false
+  },
+  "limitations": "Subset of existing receipt fields plus sample count and maximum sampled project RSS. No new continuous monitoring or GPU action; aggregate samples do not observe every instant.",
+  "gpu_used": false,
+  "ssh_used": false,
+  "new_hash_computed": false
+}

@@ -1,0 +1,243 @@
+{
+  "status": "COMPLETE_FEATURE_GM_MATCHED_READOUT",
+  "scope": "FEATURE_RELATION_GM_FT3",
+  "control_scope": "DIRECTION_FT3_BNFROZEN",
+  "seed": 42,
+  "n_seeds": 1,
+  "epochs": 3,
+  "training_images": 2048,
+  "full_dev_images": 1469,
+  "full_dev_gt_objects": 22462,
+  "coefficients": {
+    "N": 0.0,
+    "C1": 0.09227393550836771,
+    "F-rel-GM": 14.438521129817886
+  },
+  "raw_fraction": {
+    "N": {
+      "mAP50_95": 0.5451821706459709,
+      "AP50": 0.7714970300332411,
+      "AP75": 0.6404186490677514,
+      "precision": 0.7821591975924277,
+      "recall": 0.7378655934460113
+    },
+    "C1": {
+      "mAP50_95": 0.5454354819825679,
+      "AP50": 0.7726113081818353,
+      "AP75": 0.6397904328143932,
+      "precision": 0.7872447543067594,
+      "recall": 0.7322949365154726
+    },
+    "F-rel-GM": {
+      "mAP50_95": 0.5455547402686748,
+      "AP50": 0.7725060362718932,
+      "AP75": 0.6414960757810546,
+      "precision": 0.7920510536649735,
+      "recall": 0.7274811939138706
+    }
+  },
+  "display_percent": {
+    "N": {
+      "mAP50_95": 54.51821706459709,
+      "AP50": 77.1497030033241,
+      "AP75": 64.04186490677513,
+      "precision": 78.21591975924277,
+      "recall": 73.78655934460113
+    },
+    "C1": {
+      "mAP50_95": 54.54354819825679,
+      "AP50": 77.26113081818353,
+      "AP75": 63.97904328143932,
+      "precision": 78.72447543067594,
+      "recall": 73.22949365154726
+    },
+    "F-rel-GM": {
+      "mAP50_95": 54.55547402686748,
+      "AP50": 77.25060362718932,
+      "AP75": 64.14960757810546,
+      "precision": 79.20510536649735,
+      "recall": 72.74811939138705
+    }
+  },
+  "F_minus_control_pp": {
+    "N": {
+      "mAP50_95": 0.03725696227039332,
+      "AP50": 0.1009006238652077,
+      "AP75": 0.10774267133032422,
+      "precision": 0.9891856072545835,
+      "recall": -1.0384399532140764
+    },
+    "C1": {
+      "mAP50_95": 0.01192582861069269,
+      "AP50": -0.010527190994213953,
+      "AP75": 0.17056429666614248,
+      "precision": 0.48062993582140834,
+      "recall": -0.48137426016020557
+    }
+  },
+  "per_class_raw_fraction": {
+    "N": [
+      {
+        "class_id": 0,
+        "name": "car",
+        "AP50": 0.948224157530051,
+        "AP75": 0.7575518727087093,
+        "mAP50_95": 0.6527284770751997
+      },
+      {
+        "class_id": 1,
+        "name": "freight car",
+        "AP50": 0.6102864340936682,
+        "AP75": 0.43883836120532527,
+        "mAP50_95": 0.3945399286985698
+      },
+      {
+        "class_id": 2,
+        "name": "truck",
+        "AP50": 0.7273951254483488,
+        "AP75": 0.6096956946036592,
+        "mAP50_95": 0.519025733117044
+      },
+      {
+        "class_id": 3,
+        "name": "bus",
+        "AP50": 0.9451958979440702,
+        "AP75": 0.8861588146223016,
+        "mAP50_95": 0.7308145728936726
+      },
+      {
+        "class_id": 4,
+        "name": "van",
+        "AP50": 0.6263835351500676,
+        "AP75": 0.5098485021987618,
+        "mAP50_95": 0.42880214144536843
+      }
+    ],
+    "C1": [
+      {
+        "class_id": 0,
+        "name": "car",
+        "AP50": 0.9483482523014631,
+        "AP75": 0.7574108018202672,
+        "mAP50_95": 0.6527261025178623
+      },
+      {
+        "class_id": 1,
+        "name": "freight car",
+        "AP50": 0.6145411263807614,
+        "AP75": 0.4376980133216214,
+        "mAP50_95": 0.3970474169822093
+      },
+      {
+        "class_id": 2,
+        "name": "truck",
+        "AP50": 0.7277177474144567,
+        "AP75": 0.606753777719732,
+        "mAP50_95": 0.5180835902476432
+      },
+      {
+        "class_id": 3,
+        "name": "bus",
+        "AP50": 0.9456001295860273,
+        "AP75": 0.8877880749033867,
+        "mAP50_95": 0.729770612573238
+      },
+      {
+        "class_id": 4,
+        "name": "van",
+        "AP50": 0.6268492852264678,
+        "AP75": 0.5093014963069589,
+        "mAP50_95": 0.42954968759188616
+      }
+    ],
+    "F-rel-GM": [
+      {
+        "class_id": 0,
+        "name": "car",
+        "AP50": 0.948836141711742,
+        "AP75": 0.7573290828920138,
+        "mAP50_95": 0.6527115406264496
+      },
+      {
+        "class_id": 1,
+        "name": "freight car",
+        "AP50": 0.612634805326965,
+        "AP75": 0.440877361412393,
+        "mAP50_95": 0.39463026878048335
+      },
+      {
+        "class_id": 2,
+        "name": "truck",
+        "AP50": 0.7286784882818664,
+        "AP75": 0.6107017595508963,
+        "mAP50_95": 0.5188110232936667
+      },
+      {
+        "class_id": 3,
+        "name": "bus",
+        "AP50": 0.9451191006638783,
+        "AP75": 0.8893425303878024,
+        "mAP50_95": 0.7325074704048729
+      },
+      {
+        "class_id": 4,
+        "name": "van",
+        "AP50": 0.6272616453750144,
+        "AP75": 0.5092296446621676,
+        "mAP50_95": 0.4291133982379014
+      }
+    ]
+  },
+  "common_initialization": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "bytes": 10772755,
+    "mtime_ns": 1788715564014453204
+  },
+  "common_training_subset": {
+    "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_rgb.yaml",
+    "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_infrared.yaml",
+    "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/rgb_to_infrared_train.json"
+  },
+  "protocol_revised_after_calibration": true,
+  "original_F_rel_still_blocked": true,
+  "original_F_rel_AP_available": false,
+  "standard_deviation": null,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "causal_modality_claim": false,
+  "automatically_extend_matrix": false,
+  "new_hash_computed": false,
+  "limits": "Single seed FT3 matched cross-scope receipt readout. Revision followed calibration and preceded F AP; no original-plan outcome-blind claim, long-run effect, significance or modality attribution.",
+  "input_sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\drone\\N\\direction_evaluation_receipt.json",
+      "bytes": 4398,
+      "mtime_ns": 1788840154959009500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\drone\\N\\direction_config.yaml",
+      "bytes": 4537,
+      "mtime_ns": 1788840154956996100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\drone\\C1\\direction_evaluation_receipt.json",
+      "bytes": 4419,
+      "mtime_ns": 1788840154962004700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\results_1203_snapshot\\evaluations\\drone\\C1\\direction_config.yaml",
+      "bytes": 4571,
+      "mtime_ns": 1788840154961004500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\feature_gm_results_1225\\evaluations\\F-rel-GM\\direction_evaluation_receipt.json",
+      "bytes": 5050,
+      "mtime_ns": 1788841508117175300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\feature_gm_results_1225\\evaluations\\F-rel-GM\\feature_gm_config.yaml",
+      "bytes": 4825,
+      "mtime_ns": 1788841508114435800
+    }
+  ]
+}

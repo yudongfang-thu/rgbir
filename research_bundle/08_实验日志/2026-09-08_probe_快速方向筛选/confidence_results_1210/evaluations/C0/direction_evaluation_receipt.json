@@ -1,0 +1,88 @@
+{
+  "status": "DIRECTION_EVALUATION_COMPLETED",
+  "scope": "LLVIP_CONFIDENCE_FT3",
+  "endpoint": "LLVIP_CONFIDENCE_FT3_LAST_EMA",
+  "seed": 42,
+  "arm": "C0",
+  "dataset": "llvip",
+  "single_seed": true,
+  "epochs": 3,
+  "independent_lr_horizon": 3,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "metric_units": "fraction_0_to_1",
+  "native_metric_definition": "pinned native AP; no TIDE oracle",
+  "AP50": 0.7043739834111555,
+  "AP75": 0.23417782396598075,
+  "mAP50_95": 0.32185720609987734,
+  "precision": 0.7372003920083268,
+  "recall": 0.6910592439088739,
+  "per_class": [
+    {
+      "class_id": 0,
+      "name": "person",
+      "AP50": 0.7043739834111555,
+      "AP75": 0.23417782396598075,
+      "mAP50_95": 0.32185720609987734
+    }
+  ],
+  "checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_attempt1/runs/C0/weights/last.pt",
+    "bytes": 10749971,
+    "mtime_ns": 1788840421837678677
+  },
+  "full_dev_images": 2406,
+  "full_dev_gt_objects": 7879,
+  "observed_images": 2406,
+  "gt_objects_captured": 7879,
+  "training_configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_attempt1/frozen_configs/llvip_C0_s42_FT3.yaml",
+  "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "training_completion": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_attempt1/runs/C0/completion_receipt.json",
+  "evaluation_identity_projection": {
+    "kind": "explicit_direction_training_to_full_dev_evaluation_projection",
+    "dataset": "llvip",
+    "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "training_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_visible.yaml",
+    "actual_evaluation_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+    "native_configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_release_v1/configs/llvip_native_evaluation.yaml",
+    "native_contract_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+    "prior_binding_validated": false,
+    "native_profile_binding": null,
+    "profile_scope": "new_LLVIP_actual_native_profile_only",
+    "native_vs_capture_parity_rerun": false,
+    "accepted_endpoint_claim": false,
+    "subset_dev_roster_exact_to_full": true,
+    "training_identity_unchanged_claim": false,
+    "expected_dev_images": 2406,
+    "expected_dev_gt_objects": 7879
+  },
+  "training_subset_identity": {
+    "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_visible.yaml",
+    "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_infrared.yaml",
+    "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/visible_to_infrared_train.json"
+  },
+  "expected_train_images": 2048,
+  "kd_coefficient": 0.1,
+  "bn_training_evidence": {
+    "bn_running_buffers_unchanged": true,
+    "bn_buffer_count": 243,
+    "bn_affine_trainable": true
+  },
+  "seconds": 15.790294229984283,
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 1370
+    },
+    "peak_rss_mib": 3993
+  },
+  "actual_native_profile": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_attempt1/evaluations/C0/actual_native_evaluation_profile.json",
+  "accepted_endpoint_claim": false,
+  "new_hash_computed": false,
+  "official_test_accessed": false
+}

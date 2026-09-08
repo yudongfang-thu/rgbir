@@ -1,0 +1,50 @@
+{
+  "status": "FEATURE_GM_QUEUE_COMPLETED",
+  "scope": "FEATURE_RELATION_GM_FT3",
+  "endpoint": "FEATURE_RELATION_GM_FT3_LAST_EMA",
+  "dataset": "drone",
+  "arm": "F-rel-GM",
+  "seed": 42,
+  "single_seed": true,
+  "epochs": 3,
+  "train_images": 2048,
+  "batches": 192,
+  "completed": [
+    {
+      "id": "feature_gm_feature_gm_attempt1_canary",
+      "stage": "canary",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/feature_gm_attempt1/canaries/F-rel-GM/canary.json",
+      "receipt_validated": true
+    },
+    {
+      "id": "feature_gm_feature_gm_attempt1_train",
+      "stage": "train",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/feature_gm_attempt1/runs/F-rel-GM/completion_receipt.json",
+      "receipt_validated": true
+    },
+    {
+      "id": "feature_gm_feature_gm_attempt1_eval",
+      "stage": "eval",
+      "receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/feature_gm_attempt1/evaluations/F-rel-GM/direction_evaluation_receipt.json",
+      "receipt_validated": true
+    }
+  ],
+  "seconds": 374.30656933784485,
+  "preceding_confidence_queue": {
+    "completion": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/confidence_attempt1/queue/completion.json",
+      "bytes": 2585,
+      "mtime_ns": 1788840481390137200
+    },
+    "status": "CONFIDENCE_MATRIX_COMPLETED"
+  },
+  "matched_control_projection": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/feature_gm_attempt1/queue/matched_control_projection.json",
+    "bytes": 6213,
+    "mtime_ns": 1788841197312853765
+  },
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "ap_adaptive": false,
+  "new_hash_computed": false
+}

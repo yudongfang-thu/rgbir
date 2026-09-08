@@ -1,0 +1,65 @@
+{
+  "schema": "direction-actual-native-profile-v1",
+  "dataset": "drone",
+  "scope": "FEATURE_RELATION_GM_FT3",
+  "effective_kwargs": {
+    "imgsz": 640,
+    "batch": 32,
+    "workers": 4,
+    "quantize": null,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "agnostic_nms": false,
+    "single_cls": false,
+    "rect": true,
+    "augment": false,
+    "half": false
+  },
+  "runtime_sources": {
+    "loader": {
+      "class_name": "ultralytics.data.build.InfiniteDataLoader",
+      "source_file": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/build.py"
+    },
+    "dataset": {
+      "class_name": "ultralytics.data.dataset.YOLODataset",
+      "source_file": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/data/dataset.py"
+    },
+    "network": {
+      "class_name": "ultralytics.nn.tasks.DetectionModel",
+      "source_file": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/nn/tasks.py"
+    }
+  },
+  "actual_class_names": {
+    "0": "car",
+    "1": "freight car",
+    "2": "truck",
+    "3": "bus",
+    "4": "van"
+  },
+  "observed_images": 1469,
+  "gt_objects_before_inference": 22462,
+  "gt_objects_captured": 22462,
+  "profile_projection": {
+    "kind": "explicit_direction_training_to_full_dev_evaluation_projection",
+    "dataset": "drone",
+    "training_model": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "training_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_hourly_screen_20260908/subset_v1/data_rgb.yaml",
+    "actual_evaluation_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+    "native_configuration": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_throughput_20260908/short_screen_E8_release_attempt1/short_screen_E8_release/configs/drone_N_s42_E8.yaml",
+    "native_contract_model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+    "prior_binding_validated": true,
+    "native_profile_binding": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/evaluator_profile_attempt2/evaluation_profile_binding/binding.json",
+    "profile_scope": "existing_Drone_evaluator_binding",
+    "native_vs_capture_parity_rerun": false,
+    "accepted_endpoint_claim": false,
+    "subset_dev_roster_exact_to_full": true,
+    "training_identity_unchanged_claim": false,
+    "expected_dev_images": 1469,
+    "expected_dev_gt_objects": 22462
+  },
+  "source_manifest": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/feature_gm_attempt1/evaluations/F-rel-GM/source_manifest.json",
+  "independent_endpoint_accepted": false,
+  "new_native_capture_equivalence_claim": false,
+  "new_hash_computed": false
+}

@@ -1,0 +1,184 @@
+{
+  "status": "FEATURE_GM_MATCHED_CONTROL_VERIFIED",
+  "scope": "FEATURE_RELATION_GM_FT3",
+  "candidate_scope": "FEATURE_RELATION_GM_FT3",
+  "candidate_arm": "F-rel-GM",
+  "control_scope": "DIRECTION_FT3_BNFROZEN",
+  "dataset": "drone",
+  "seed": 42,
+  "controls": {
+    "N": {
+      "common_config_fields_exact": true,
+      "first30_canary_exact": true,
+      "initial_checkpoint_stat_exact": true,
+      "control_full_train_first30_exact": true,
+      "control_evaluation_receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/evaluations/drone/N/direction_evaluation_receipt.json",
+        "bytes": 4398,
+        "mtime_ns": 1788839455725325543
+      },
+      "control_training_receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/runs/drone/N/completion_receipt.json",
+        "bytes": 7604,
+        "mtime_ns": 1788839420601804895
+      },
+      "control_config": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/effective_configs/drone_N_s42_FT3.yaml",
+        "bytes": 4537,
+        "mtime_ns": 1788838893514652829
+      },
+      "control_canary_receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/N/canary.json",
+        "bytes": 4231,
+        "mtime_ns": 1788839015120753889
+      },
+      "common_config_fields": [
+        "dataset",
+        "student_modality",
+        "privileged_modality",
+        "model",
+        "teacher",
+        "reference",
+        "paths",
+        "auxiliary_data_identity",
+        "native_contract_config",
+        "augmentation",
+        "evidence",
+        "source",
+        "seed",
+        "epochs",
+        "imgsz",
+        "batch",
+        "nbs",
+        "workers",
+        "amp",
+        "optimizer",
+        "lr0",
+        "lrf",
+        "momentum",
+        "weight_decay",
+        "warmup_epochs",
+        "warmup_momentum",
+        "warmup_bias_lr",
+        "cos_lr",
+        "close_mosaic",
+        "patience",
+        "deterministic",
+        "expected_train_images",
+        "expected_val_images",
+        "expected_nc",
+        "freeze_bn_running_statistics",
+        "torch_version",
+        "ultralytics_version",
+        "teacher_cache_images"
+      ],
+      "screen_fields": [
+        "subset_seed",
+        "training_images",
+        "batches_per_epoch",
+        "initialization",
+        "fresh_optimizer",
+        "fresh_ema",
+        "not_from_scratch"
+      ]
+    },
+    "C1": {
+      "common_config_fields_exact": true,
+      "first30_canary_exact": true,
+      "initial_checkpoint_stat_exact": true,
+      "control_full_train_first30_exact": true,
+      "control_evaluation_receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/evaluations/drone/C1/direction_evaluation_receipt.json",
+        "bytes": 4419,
+        "mtime_ns": 1788839712951348703
+      },
+      "control_training_receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/runs/drone/C1/completion_receipt.json",
+        "bytes": 7651,
+        "mtime_ns": 1788839679563476753
+      },
+      "control_config": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/effective_configs/drone_C1_s42_FT3.yaml",
+        "bytes": 4571,
+        "mtime_ns": 1788838893522652968
+      },
+      "control_canary_receipt": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/canaries/drone/C1/canary.json",
+        "bytes": 4288,
+        "mtime_ns": 1788839111574405269
+      },
+      "common_config_fields": [
+        "dataset",
+        "student_modality",
+        "privileged_modality",
+        "model",
+        "teacher",
+        "reference",
+        "paths",
+        "auxiliary_data_identity",
+        "native_contract_config",
+        "augmentation",
+        "evidence",
+        "source",
+        "seed",
+        "epochs",
+        "imgsz",
+        "batch",
+        "nbs",
+        "workers",
+        "amp",
+        "optimizer",
+        "lr0",
+        "lrf",
+        "momentum",
+        "weight_decay",
+        "warmup_epochs",
+        "warmup_momentum",
+        "warmup_bias_lr",
+        "cos_lr",
+        "close_mosaic",
+        "patience",
+        "deterministic",
+        "expected_train_images",
+        "expected_val_images",
+        "expected_nc",
+        "freeze_bn_running_statistics",
+        "torch_version",
+        "ultralytics_version",
+        "teacher_cache_images"
+      ],
+      "screen_fields": [
+        "subset_seed",
+        "training_images",
+        "batches_per_epoch",
+        "initialization",
+        "fresh_optimizer",
+        "fresh_ema",
+        "not_from_scratch"
+      ]
+    }
+  },
+  "initial_checkpoint": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+    "bytes": 10772755,
+    "mtime_ns": 1788715564014453204
+  },
+  "candidate_configuration": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/feature_gm_attempt1/frozen_configs/drone_F-rel-GM_s42_FT3.yaml",
+    "bytes": 4825,
+    "mtime_ns": 1788841095471811321
+  },
+  "candidate_canary_receipt": {
+    "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/feature_gm_attempt1/canaries/F-rel-GM/canary.json",
+    "bytes": 4301,
+    "mtime_ns": 1788841187348751008
+  },
+  "fixed_candidate_coefficient": 14.438521129817886,
+  "batch_records": 30,
+  "batch_size": 32,
+  "comparison_scope": "single-seed mature warm-start FT3, explicit cross-scope control projection",
+  "checkpoint_tensor_equality_source": "existing executed full-state initialization receipts; no new weight loads",
+  "new_hash_computed": false,
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false
+}

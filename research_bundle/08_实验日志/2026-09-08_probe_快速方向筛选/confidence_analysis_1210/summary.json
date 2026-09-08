@@ -1,0 +1,99 @@
+{
+  "status": "COMPLETE_CONFIDENCE_PAIR_READOUT",
+  "scope": "LLVIP_CONFIDENCE_FT3",
+  "endpoint": "LLVIP_CONFIDENCE_FT3_LAST_EMA",
+  "dataset": "llvip",
+  "seed": 42,
+  "n_seeds": 1,
+  "standard_deviation": null,
+  "epochs": 3,
+  "expected_train_images": 2048,
+  "full_dev_images": 2406,
+  "full_dev_gt_objects": 7879,
+  "raw_metric_units": "fraction_0_to_1",
+  "display_metric_units": "percent",
+  "difference_units": "percentage_points",
+  "raw_fraction": {
+    "N": {
+      "mAP50_95": 0.3217122432299565,
+      "AP50": 0.7059327479566188,
+      "AP75": 0.23475437645444727,
+      "precision": 0.7287986696936332,
+      "recall": 0.6957846181718673
+    },
+    "C0": {
+      "mAP50_95": 0.32185720609987734,
+      "AP50": 0.7043739834111555,
+      "AP75": 0.23417782396598075,
+      "precision": 0.7372003920083268,
+      "recall": 0.6910592439088739
+    }
+  },
+  "display_percent": {
+    "N": {
+      "mAP50_95": 32.17122432299565,
+      "AP50": 70.59327479566187,
+      "AP75": 23.475437645444728,
+      "precision": 72.87986696936332,
+      "recall": 69.57846181718674
+    },
+    "C0": {
+      "mAP50_95": 32.18572060998773,
+      "AP50": 70.43739834111555,
+      "AP75": 23.417782396598074,
+      "precision": 73.72003920083267,
+      "recall": 69.10592439088738
+    }
+  },
+  "coefficients": {
+    "N": 0.0,
+    "C0": 0.1
+  },
+  "comparison": {
+    "contrast": "C0 - N",
+    "delta_pp": {
+      "mAP50_95": 0.01449628699208283,
+      "AP50": -0.15587645454632204,
+      "AP75": -0.05765524884665252,
+      "precision": 0.8401722314693605,
+      "recall": -0.4725374262993465
+    },
+    "direction": {
+      "mAP50_95": "positive",
+      "AP50": "negative",
+      "AP75": "negative",
+      "precision": "positive",
+      "recall": "negative"
+    }
+  },
+  "evaluation_seconds": {
+    "N": 14.966653062961996,
+    "C0": 15.790294229984283
+  },
+  "common_initialization": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+  "common_training_subset": {
+    "student_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_visible.yaml",
+    "privileged_data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/data_infrared.yaml",
+    "paired_train_mapping": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/subset_llvip_v1/visible_to_infrared_train.json"
+  },
+  "full_dev_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+  "formal_e200_complete": false,
+  "formal_paper_gain_claim": false,
+  "causal_modality_claim": false,
+  "automatically_extend_matrix": false,
+  "old_L2_N_reused": false,
+  "new_hash_computed": false,
+  "limitation": "Receipt-only single-seed fixed confidence FT3 comparison. No significance/SD, checkpoint reread, GT-box re-audit, old-L2-N comparison or content-causality claim.",
+  "input_sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\confidence_results_1210\\evaluations\\N\\direction_evaluation_receipt.json",
+      "bytes": 4146,
+      "mtime_ns": 1788840567514950300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_快速方向筛选\\confidence_results_1210\\evaluations\\C0\\direction_evaluation_receipt.json",
+      "bytes": 4153,
+      "mtime_ns": 1788840567519200300
+    }
+  ]
+}
