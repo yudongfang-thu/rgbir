@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETED_RESOURCE_EXCERPTS",
+  "probes": [
+    {
+      "source": "evidence_1255_final/queue/selection_coverage_attempt1_resource_profile.json",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "monitor_errors": [],
+      "gpu_ids": [
+        4
+      ],
+      "sample_count": 6,
+      "sampled_minimum_free_mib": 14377,
+      "sampled_maximum_project_rss_mib": 168615,
+      "reservation_vram_mib": 8192,
+      "reservation_rss_mib": 32768,
+      "queue_seconds": 166.044846534729,
+      "new_resource_pool": false,
+      "admission_status": null,
+      "warning": "Sampled guard observations, not continuous exact process VRAM/RSS peaks. Full original records remain local and on 94."
+    },
+    {
+      "source": "witness_evidence_1315_final/queue/detector_witness_witness_attempt1_resource_profile.json",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "monitor_errors": [],
+      "gpu_ids": [
+        4
+      ],
+      "sample_count": 7,
+      "sampled_minimum_free_mib": 14375,
+      "sampled_maximum_project_rss_mib": 168797,
+      "reservation_vram_mib": 8192,
+      "reservation_rss_mib": 32768,
+      "queue_seconds": 78.2683892250061,
+      "new_resource_pool": false,
+      "admission_status": null,
+      "warning": "Sampled guard observations, not continuous exact process VRAM/RSS peaks. Full original records remain local and on 94."
+    }
+  ],
+  "new_hash_computed": false
+}

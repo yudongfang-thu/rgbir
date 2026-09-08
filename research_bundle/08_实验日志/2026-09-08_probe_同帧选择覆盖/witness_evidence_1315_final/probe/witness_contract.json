@@ -1,0 +1,61 @@
+{
+  "scope": "SAME_FORWARD_DETECTOR_WITNESS",
+  "objects_n": 80,
+  "raw_decode": "original OEv1 _decode_boxes detach/float32",
+  "native_decode": "pinned Detect._inference(existing_raw), original raw dtype and caller AMP",
+  "dense_conf_operator": ">=",
+  "native_conf_operator": ">",
+  "confidence": 0.25,
+  "correct_iou": 0.5,
+  "native_profile": {
+    "conf": 0.25,
+    "iou": 0.7,
+    "max_det": 300,
+    "multi_label": true,
+    "agnostic_nms": false,
+    "matching_iou": 0.5
+  },
+  "nms": {
+    "iou": 0.7,
+    "max_det": 300,
+    "multi_label": true,
+    "agnostic": false,
+    "per_image": true
+  },
+  "native_match_provenance": {
+    "native_process_batch": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/models/yolo/detect/val.py",
+    "native_match_predictions": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/validator.py",
+    "captured_matches_exact": true
+  },
+  "decode_diagnostics": {
+    "S": {
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "nms_backend": "torchvision.ops.nms",
+      "fp32_native_max_box_abs_difference": 0.126129150390625
+    },
+    "T": {
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "nms_backend": "torchvision.ops.nms",
+      "fp32_native_max_box_abs_difference": 0.0975341796875
+    },
+    "R": {
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "nms_backend": "torchvision.ops.nms",
+      "fp32_native_max_box_abs_difference": 0.126129150390625
+    }
+  },
+  "native_tp_and_gt_pairs_exact": true,
+  "source_files": {
+    "postprocess": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/utils/nms.py",
+    "native_matching": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/validator.py",
+    "native_process_batch": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/models/yolo/detect/val.py"
+  },
+  "new_model_forward": false,
+  "backward": false,
+  "optimizer_updates": 0,
+  "new_hash_computed": false,
+  "AP_estimated": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "detector_witness_witness_attempt1",
+  "kind": "feature",
+  "formal": false,
+  "vram_mib": 8192,
+  "rss_mib": 32768,
+  "expected_receipt": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_selection_coverage_20260908/witness_attempt1/probe/completion_receipt.json",
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_selection_coverage_20260908/witness_release_v1/run_witness.py",
+    "--screen-release",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/release_v1",
+    "--reference-dir",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5",
+    "--config",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_selection_coverage_20260908/witness_release_v1/llvip_N_s42_FT3.yaml",
+    "--expected-stream",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_direction_screen_20260908/screen_attempt1/runs/llvip/N/sample_stream.jsonl",
+    "--previous-objects",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_selection_coverage_20260908/attempt1/probe/objects.jsonl",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_selection_coverage_20260908/witness_attempt1/probe"
+  ]
+}

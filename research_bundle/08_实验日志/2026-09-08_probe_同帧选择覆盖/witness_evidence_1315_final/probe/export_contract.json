@@ -1,0 +1,390 @@
+{
+  "scope": "SAME_FORWARD_SELECTION_COVERAGE",
+  "forward_id": "llvip_first32_seed42",
+  "batch_index": 1,
+  "objects_n": 80,
+  "ir_objects_n": 80,
+  "selector_counts": {
+    "rgb_gt_count": 80,
+    "teacher_gt_count": 80,
+    "common_count": 80,
+    "valid_region_count": 80,
+    "reference_candidate_count": 79,
+    "base_count": 79,
+    "teacher_correct_base_count": 78,
+    "eligible_count": 64,
+    "selected_count": 32,
+    "normalizer": 79
+  },
+  "original_selector_stats": {
+    "arm": "paired",
+    "rgb_gt_count": 80,
+    "teacher_gt_count": 80,
+    "common_count": 80,
+    "valid_region_count": 80,
+    "reference_candidate_count": 79,
+    "base_count": 79,
+    "teacher_correct_base_count": 78,
+    "eligible_count": 64,
+    "selected_count": 32,
+    "normalizer": 79,
+    "nominal_dose": 0.4050632911392405,
+    "loss_unweighted": 0.6984167695045471,
+    "selected_object_ids": [
+      [
+        19,
+        44,
+        44
+      ],
+      [
+        12,
+        26,
+        26
+      ],
+      [
+        9,
+        19,
+        19
+      ],
+      [
+        27,
+        67,
+        67
+      ],
+      [
+        2,
+        7,
+        7
+      ],
+      [
+        25,
+        61,
+        61
+      ],
+      [
+        2,
+        6,
+        6
+      ],
+      [
+        31,
+        79,
+        79
+      ],
+      [
+        15,
+        33,
+        33
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        21,
+        50,
+        50
+      ],
+      [
+        27,
+        69,
+        69
+      ],
+      [
+        27,
+        68,
+        68
+      ],
+      [
+        3,
+        8,
+        8
+      ],
+      [
+        23,
+        55,
+        55
+      ],
+      [
+        9,
+        20,
+        20
+      ],
+      [
+        21,
+        51,
+        51
+      ],
+      [
+        16,
+        34,
+        34
+      ],
+      [
+        12,
+        25,
+        25
+      ],
+      [
+        10,
+        21,
+        21
+      ],
+      [
+        4,
+        12,
+        12
+      ],
+      [
+        14,
+        30,
+        30
+      ],
+      [
+        13,
+        27,
+        27
+      ],
+      [
+        19,
+        45,
+        45
+      ],
+      [
+        23,
+        56,
+        56
+      ],
+      [
+        30,
+        76,
+        76
+      ],
+      [
+        31,
+        77,
+        77
+      ],
+      [
+        20,
+        47,
+        47
+      ],
+      [
+        12,
+        24,
+        24
+      ],
+      [
+        31,
+        78,
+        78
+      ],
+      [
+        4,
+        11,
+        11
+      ],
+      [
+        29,
+        73,
+        73
+      ]
+    ],
+    "config": {
+      "input_size": 640,
+      "levels": [
+        0,
+        1
+      ],
+      "temperature": 2.0,
+      "background_scale": 2.0,
+      "minimum_foreground": 1,
+      "minimum_background": 4,
+      "match_iou": 0.5,
+      "reference_conf": 0.05,
+      "reference_iou": 0.1,
+      "teacher_conf": 0.25,
+      "teacher_iou": 0.5,
+      "rho": 0.5,
+      "target_clip": 8.0,
+      "smooth_l1_beta": 1.0
+    },
+    "student_evidence_base_mean": 3.49446177482605,
+    "student_evidence_base_min": 0.4322636127471924,
+    "student_evidence_base_max": 8.18815803527832,
+    "student_evidence_base_sd": 1.3883086442947388,
+    "student_evidence_selected_mean": 2.3594062328338623,
+    "student_evidence_selected_sd": 0.8364932537078857,
+    "teacher_evidence_base_mean": 4.700954914093018,
+    "teacher_evidence_base_min": 1.6902594566345215,
+    "teacher_evidence_base_max": 8.077787399291992,
+    "teacher_evidence_base_sd": 1.2798727750778198,
+    "teacher_evidence_selected_mean": 4.566141605377197,
+    "teacher_evidence_selected_sd": 1.2211045026779175,
+    "reference_evidence_base_mean": 3.49446177482605,
+    "reference_evidence_base_min": 0.4322636127471924,
+    "reference_evidence_base_max": 8.18815803527832,
+    "reference_evidence_base_sd": 1.3883086442947388,
+    "reference_evidence_selected_mean": 2.3594062328338623,
+    "reference_evidence_selected_sd": 0.8364932537078857,
+    "quality_base_mean": 0.046295300126075745,
+    "quality_base_min": 0.0,
+    "quality_base_max": 0.48836106061935425,
+    "quality_base_sd": 0.08226673305034637,
+    "quality_selected_mean": 0.10106181353330612,
+    "quality_selected_sd": 0.10554908215999603,
+    "target_binary_entropy_selected": 0.08573754131793976,
+    "target_gap_to_positive_selected": 0.020126262679696083,
+    "target_clipped_count": 0
+  },
+  "evidence_config": {
+    "input_size": 640,
+    "levels": [
+      0,
+      1
+    ],
+    "temperature": 2.0,
+    "background_scale": 2.0,
+    "minimum_foreground": 1,
+    "minimum_background": 4,
+    "match_iou": 0.5,
+    "reference_conf": 0.05,
+    "reference_iou": 0.1,
+    "teacher_conf": 0.25,
+    "teacher_iou": 0.5,
+    "rho": 0.5,
+    "target_clip": 8.0,
+    "smooth_l1_beta": 1.0
+  },
+  "selection_seed": 43,
+  "selector_version": "oev1_paired_selection_adapter_v1",
+  "thin_path_used": true,
+  "thin_path_fallback_reason": null,
+  "full_diagnostics": true,
+  "exact_selector_crosscheck": true,
+  "raw_shapes": {
+    "S": {
+      "scores": [
+        32,
+        1,
+        8400
+      ],
+      "boxes": [
+        32,
+        64,
+        8400
+      ],
+      "feats": [
+        [
+          32,
+          64,
+          80,
+          80
+        ],
+        [
+          32,
+          128,
+          40,
+          40
+        ],
+        [
+          32,
+          256,
+          20,
+          20
+        ]
+      ]
+    },
+    "T": {
+      "scores": [
+        32,
+        1,
+        8400
+      ],
+      "boxes": [
+        32,
+        64,
+        8400
+      ],
+      "feats": [
+        [
+          32,
+          64,
+          80,
+          80
+        ],
+        [
+          32,
+          128,
+          40,
+          40
+        ],
+        [
+          32,
+          256,
+          20,
+          20
+        ]
+      ]
+    },
+    "R": {
+      "scores": [
+        32,
+        1,
+        8400
+      ],
+      "boxes": [
+        32,
+        64,
+        8400
+      ],
+      "feats": [
+        [
+          32,
+          64,
+          80,
+          80
+        ],
+        [
+          32,
+          128,
+          40,
+          40
+        ],
+        [
+          32,
+          256,
+          20,
+          20
+        ]
+      ]
+    }
+  },
+  "state_definition": {
+    "coarse_confidence": 0.05,
+    "coarse_iou": 0.1,
+    "correct_confidence": 0.25,
+    "correct_iou": 0.5,
+    "assignment": "baseline_GT_assisted_one_to_one_spatial_assignment",
+    "T_primary": "IR own GT",
+    "T_secondary": "same teacher box against RGB GT without remap",
+    "state_priority": [
+      "no_candidate",
+      "low_confidence",
+      "class_and_localization",
+      "class_only",
+      "localization_only",
+      "correct"
+    ]
+  },
+  "selection_population": "whole true batch; rank among original eligible, normalization by original base",
+  "new_model_forward": false,
+  "training": false,
+  "backward": false,
+  "optimizer_updates": 0,
+  "new_hash_computed": false,
+  "AP_oracle_coverage_claim": false,
+  "stable_identity_contract_status": "STABLE_GT_IDENTITY_VERIFIED"
+}

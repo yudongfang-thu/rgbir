@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "tests": 4,
+  "source": {
+    "path": "E:\\SHARE\\\u5149sar\\08_\u5b9e\u9a8c\u65e5\u5fd7\\2026-09-07_probe_\u53cc\u6570\u636e\u96c6\u8bc1\u636e\u4f18\u5148\u63a8\u8fdb\\llvip_full_eval\\remote_completed_attempt2\\N42_full_attempt1\\sources\\4_validator.py",
+    "bytes": 19871,
+    "mtime_ns": 1788787232191029000
+  },
+  "cases": [
+    {
+      "case": "native_unique_order",
+      "iou": [
+        [
+          0.8,
+          0.9
+        ]
+      ],
+      "actual_gt_detection_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_tp": [
+        [
+          true
+        ],
+        [
+          false
+        ]
+      ]
+    },
+    {
+      "case": "one_detection_two_gt",
+      "iou": [
+        [
+          0.8
+        ],
+        [
+          0.9
+        ]
+      ],
+      "actual_gt_detection_pairs": [
+        [
+          1,
+          0
+        ]
+      ],
+      "native_tp": [
+        [
+          true
+        ]
+      ]
+    },
+    {
+      "case": "wrong_class",
+      "iou": [
+        [
+          0.9
+        ]
+      ],
+      "actual_gt_detection_pairs": [],
+      "native_tp": [
+        [
+          false
+        ]
+      ]
+    },
+    {
+      "case": "tied_iou",
+      "iou": [
+        [
+          0.9,
+          0.9
+        ]
+      ],
+      "actual_gt_detection_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_tp": [
+        [
+          true
+        ],
+        [
+          false
+        ]
+      ]
+    }
+  ],
+  "method": "native function return-frame local matches; no reconstructed greedy matcher",
+  "GPU_used": false,
+  "new_hash_computed": false
+}

@@ -1,0 +1,1388 @@
+{
+  "status": "SAME_FORWARD_DETECTOR_WITNESS_READOUT_COMPLETED",
+  "scope": "SAME_FORWARD_DETECTOR_WITNESS",
+  "dataset": "llvip",
+  "frames": 32,
+  "objects_n": 80,
+  "selected_total": 32,
+  "same_previous_objects_exact": true,
+  "modalities": {
+    "S": {
+      "correct_counts": {
+        "old_assigned": 64,
+        "dense_any_correct": 77,
+        "native_pre_nms_any_correct": 77,
+        "native_postnms_matched": 77
+      },
+      "confusion_tables": [
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "dense_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 13,
+              "fraction_known": 0.1625
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 64,
+              "fraction_known": 0.8
+            }
+          ]
+        },
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "native_pre_nms_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 13,
+              "fraction_known": 0.1625
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 64,
+              "fraction_known": 0.8
+            }
+          ]
+        },
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 13,
+              "fraction_known": 0.1625
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 64,
+              "fraction_known": 0.8
+            }
+          ]
+        },
+        {
+          "row_definition": "dense_any_correct",
+          "column_definition": "native_pre_nms_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 77,
+              "fraction_known": 0.9625
+            }
+          ]
+        },
+        {
+          "row_definition": "dense_any_correct",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 77,
+              "fraction_known": 0.9625
+            }
+          ]
+        },
+        {
+          "row_definition": "native_pre_nms_any_correct",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 77,
+              "fraction_known": 0.9625
+            }
+          ]
+        }
+      ]
+    },
+    "T": {
+      "correct_counts": {
+        "old_assigned": 63,
+        "dense_any_correct": 78,
+        "native_pre_nms_any_correct": 78,
+        "native_postnms_matched": 78
+      },
+      "confusion_tables": [
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "dense_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 2,
+              "fraction_known": 0.025
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 15,
+              "fraction_known": 0.1875
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 63,
+              "fraction_known": 0.7875
+            }
+          ]
+        },
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "native_pre_nms_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 2,
+              "fraction_known": 0.025
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 15,
+              "fraction_known": 0.1875
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 63,
+              "fraction_known": 0.7875
+            }
+          ]
+        },
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 2,
+              "fraction_known": 0.025
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 15,
+              "fraction_known": 0.1875
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 63,
+              "fraction_known": 0.7875
+            }
+          ]
+        },
+        {
+          "row_definition": "dense_any_correct",
+          "column_definition": "native_pre_nms_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 2,
+              "fraction_known": 0.025
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 78,
+              "fraction_known": 0.975
+            }
+          ]
+        },
+        {
+          "row_definition": "dense_any_correct",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 2,
+              "fraction_known": 0.025
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 78,
+              "fraction_known": 0.975
+            }
+          ]
+        },
+        {
+          "row_definition": "native_pre_nms_any_correct",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 2,
+              "fraction_known": 0.025
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 78,
+              "fraction_known": 0.975
+            }
+          ]
+        }
+      ]
+    },
+    "R": {
+      "correct_counts": {
+        "old_assigned": 64,
+        "dense_any_correct": 77,
+        "native_pre_nms_any_correct": 77,
+        "native_postnms_matched": 77
+      },
+      "confusion_tables": [
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "dense_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 13,
+              "fraction_known": 0.1625
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 64,
+              "fraction_known": 0.8
+            }
+          ]
+        },
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "native_pre_nms_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 13,
+              "fraction_known": 0.1625
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 64,
+              "fraction_known": 0.8
+            }
+          ]
+        },
+        {
+          "row_definition": "old_assigned",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 13,
+              "fraction_known": 0.1625
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 64,
+              "fraction_known": 0.8
+            }
+          ]
+        },
+        {
+          "row_definition": "dense_any_correct",
+          "column_definition": "native_pre_nms_any_correct",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 77,
+              "fraction_known": 0.9625
+            }
+          ]
+        },
+        {
+          "row_definition": "dense_any_correct",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 77,
+              "fraction_known": 0.9625
+            }
+          ]
+        },
+        {
+          "row_definition": "native_pre_nms_any_correct",
+          "column_definition": "native_postnms_matched",
+          "known_gt_n": 80,
+          "unknown_gt_n": 0,
+          "cells": [
+            {
+              "row_correct": false,
+              "column_correct": false,
+              "n": 3,
+              "fraction_known": 0.0375
+            },
+            {
+              "row_correct": false,
+              "column_correct": true,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": false,
+              "n": 0,
+              "fraction_known": 0.0
+            },
+            {
+              "row_correct": true,
+              "column_correct": true,
+              "n": 77,
+              "fraction_known": 0.9625
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "coverage_by_definition": {
+    "old_assigned": {
+      "T_correct_S_error": {
+        "objects": 9,
+        "fraction_all_gt": 0.1125,
+        "selected": 7,
+        "selected_over_bucket": 0.7777777777777778,
+        "fraction_of_all_selected": 0.21875,
+        "unique_images": 7,
+        "selected_images": 6,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2"
+        ]
+      },
+      "S_correct_T_error": {
+        "objects": 10,
+        "fraction_all_gt": 0.125,
+        "selected": 3,
+        "selected_over_bucket": 0.3,
+        "fraction_of_all_selected": 0.09375,
+        "unique_images": 9,
+        "selected_images": 3,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:0"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0"
+        ]
+      },
+      "both_correct": {
+        "objects": 54,
+        "fraction_all_gt": 0.675,
+        "selected": 19,
+        "selected_over_bucket": 0.35185185185185186,
+        "fraction_of_all_selected": 0.59375,
+        "unique_images": 28,
+        "selected_images": 17,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020397.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020397.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100446.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100604.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020124.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150504.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090580.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/091242.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:5",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:1"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100446.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150504.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090580.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:5",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:1"
+        ]
+      },
+      "both_error": {
+        "objects": 7,
+        "fraction_all_gt": 0.0875,
+        "selected": 3,
+        "selected_over_bucket": 0.42857142857142855,
+        "fraction_of_all_selected": 0.09375,
+        "unique_images": 7,
+        "selected_images": 3,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100439.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/170065.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:0"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/170065.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:0"
+        ]
+      },
+      "teacher_unknown": {
+        "objects": 0,
+        "fraction_all_gt": 0.0,
+        "selected": 0,
+        "selected_over_bucket": null,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 0,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [],
+        "selected_rgb_gt_ids": []
+      }
+    },
+    "dense_any_correct": {
+      "T_correct_S_error": {
+        "objects": 1,
+        "fraction_all_gt": 0.0125,
+        "selected": 1,
+        "selected_over_bucket": 1.0,
+        "fraction_of_all_selected": 0.03125,
+        "unique_images": 1,
+        "selected_images": 1,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3"
+        ]
+      },
+      "S_correct_T_error": {
+        "objects": 0,
+        "fraction_all_gt": 0.0,
+        "selected": 0,
+        "selected_over_bucket": null,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 0,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [],
+        "selected_rgb_gt_ids": []
+      },
+      "both_correct": {
+        "objects": 77,
+        "fraction_all_gt": 0.9625,
+        "selected": 31,
+        "selected_over_bucket": 0.4025974025974026,
+        "fraction_of_all_selected": 0.96875,
+        "unique_images": 30,
+        "selected_images": 20,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020397.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020397.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100446.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100604.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/170065.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020124.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150504.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090580.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/091242.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:5",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100446.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/170065.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150504.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090580.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:5",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2"
+        ]
+      },
+      "both_error": {
+        "objects": 2,
+        "fraction_all_gt": 0.025,
+        "selected": 0,
+        "selected_over_bucket": 0.0,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 2,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100439.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:1"
+        ],
+        "selected_rgb_gt_ids": []
+      },
+      "teacher_unknown": {
+        "objects": 0,
+        "fraction_all_gt": 0.0,
+        "selected": 0,
+        "selected_over_bucket": null,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 0,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [],
+        "selected_rgb_gt_ids": []
+      }
+    },
+    "native_pre_nms_any_correct": {
+      "T_correct_S_error": {
+        "objects": 1,
+        "fraction_all_gt": 0.0125,
+        "selected": 1,
+        "selected_over_bucket": 1.0,
+        "fraction_of_all_selected": 0.03125,
+        "unique_images": 1,
+        "selected_images": 1,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3"
+        ]
+      },
+      "S_correct_T_error": {
+        "objects": 0,
+        "fraction_all_gt": 0.0,
+        "selected": 0,
+        "selected_over_bucket": null,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 0,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [],
+        "selected_rgb_gt_ids": []
+      },
+      "both_correct": {
+        "objects": 77,
+        "fraction_all_gt": 0.9625,
+        "selected": 31,
+        "selected_over_bucket": 0.4025974025974026,
+        "fraction_of_all_selected": 0.96875,
+        "unique_images": 30,
+        "selected_images": 20,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020397.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020397.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100446.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100604.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/170065.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020124.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150504.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090580.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/091242.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:5",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100446.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/170065.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150504.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090580.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:5",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2"
+        ]
+      },
+      "both_error": {
+        "objects": 2,
+        "fraction_all_gt": 0.025,
+        "selected": 0,
+        "selected_over_bucket": 0.0,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 2,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100439.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:1"
+        ],
+        "selected_rgb_gt_ids": []
+      },
+      "teacher_unknown": {
+        "objects": 0,
+        "fraction_all_gt": 0.0,
+        "selected": 0,
+        "selected_over_bucket": null,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 0,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [],
+        "selected_rgb_gt_ids": []
+      }
+    },
+    "native_postnms_matched": {
+      "T_correct_S_error": {
+        "objects": 1,
+        "fraction_all_gt": 0.0125,
+        "selected": 1,
+        "selected_over_bucket": 1.0,
+        "fraction_of_all_selected": 0.03125,
+        "unique_images": 1,
+        "selected_images": 1,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3"
+        ]
+      },
+      "S_correct_T_error": {
+        "objects": 0,
+        "fraction_all_gt": 0.0,
+        "selected": 0,
+        "selected_over_bucket": null,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 0,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [],
+        "selected_rgb_gt_ids": []
+      },
+      "both_correct": {
+        "objects": 77,
+        "fraction_all_gt": 0.9625,
+        "selected": 31,
+        "selected_over_bucket": 0.4025974025974026,
+        "fraction_of_all_selected": 0.96875,
+        "unique_images": 30,
+        "selected_images": 20,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020397.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020397.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100446.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100604.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/170065.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020124.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150504.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090827.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100171.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090580.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/091242.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:5",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2"
+        ],
+        "selected_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130231.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100446.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/170065.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/140102.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150504.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/150395.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/110162.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/090580.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:4",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:5",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180167.jpg::native_gt:2",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:1",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2"
+        ]
+      },
+      "both_error": {
+        "objects": 2,
+        "fraction_all_gt": 0.025,
+        "selected": 0,
+        "selected_over_bucket": 0.0,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 2,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100439.jpg::native_gt:0",
+          "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:1"
+        ],
+        "selected_rgb_gt_ids": []
+      },
+      "teacher_unknown": {
+        "objects": 0,
+        "fraction_all_gt": 0.0,
+        "selected": 0,
+        "selected_over_bucket": null,
+        "fraction_of_all_selected": 0.0,
+        "unique_images": 0,
+        "selected_images": 0,
+        "stable_rgb_gt_ids": [],
+        "selected_rgb_gt_ids": []
+      }
+    }
+  },
+  "native_profile": {
+    "conf": 0.25,
+    "iou": 0.7,
+    "max_det": 300,
+    "multi_label": true,
+    "agnostic_nms": false,
+    "matching_iou": 0.5
+  },
+  "decode_diagnostics": {
+    "S": {
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "nms_backend": "torchvision.ops.nms",
+      "fp32_native_max_box_abs_difference": 0.126129150390625
+    },
+    "T": {
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "nms_backend": "torchvision.ops.nms",
+      "fp32_native_max_box_abs_difference": 0.0975341796875
+    },
+    "R": {
+      "raw_dtype": "torch.float16",
+      "native_dtype": "torch.float32",
+      "nms_backend": "torchvision.ops.nms",
+      "fp32_native_max_box_abs_difference": 0.126129150390625
+    }
+  },
+  "definitions": {
+    "old_assigned": "Previous FP32 GT-assisted one-to-one assigned raw anchor correctness.",
+    "dense_any_correct": "Any FP32 proxy-decode anchor correct to own GT, confidence >= .25.",
+    "native_pre_nms_any_correct": "Any native-head-decode anchor correct to own GT, native confidence > .25.",
+    "native_postnms_matched": "Native NMS(.25,.7,max_det300,multi_label=True) plus captured native one-to-one IoU .5 GT match.",
+    "T_coordinates": "IR own GT; no physical geometric alignment or RGB-remap claim."
+  },
+  "AP_estimated": false,
+  "training_performed": false,
+  "negative_transfer_claim": false,
+  "negative_transfer_eliminated_claim": false,
+  "global_dev_claim": false,
+  "old_dev200_combined": false,
+  "new_hash_computed": false,
+  "limitations": "Same 32 train frames/80 augmented GT and unchanged original selection only. Matching/state definitions differ; counts are not gradients, AP changes or observed learning effects.",
+  "input_sources": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\evidence_1255_final\\probe\\objects.jsonl",
+      "bytes": 352846,
+      "mtime_ns": 1788843336307198700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\witness_evidence_1315_final\\probe\\objects.jsonl",
+      "bytes": 352846,
+      "mtime_ns": 1788844383353885300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\witness_evidence_1315_final\\probe\\witness_objects.jsonl",
+      "bytes": 580138,
+      "mtime_ns": 1788844383343586300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\witness_evidence_1315_final\\probe\\completion_receipt.json",
+      "bytes": 384425,
+      "mtime_ns": 1788844383347322400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\witness_evidence_1315_final\\probe\\witness_contract.json",
+      "bytes": 2426,
+      "mtime_ns": 1788844383348476000
+    }
+  ]
+}

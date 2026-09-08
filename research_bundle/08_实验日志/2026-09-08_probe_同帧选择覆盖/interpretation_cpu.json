@@ -1,0 +1,2536 @@
+{
+  "status": "COMPLETED_CPU_ASSIGNMENT_GATE_INTERPRETATION",
+  "scope": "SAME_FORWARD_SELECTION_COVERAGE",
+  "frames": 32,
+  "objects": 80,
+  "buckets": {
+    "both_correct": {
+      "objects": 54,
+      "selected": 19,
+      "eligible": 43,
+      "quality_positive": 43,
+      "teacher_any_correct": 54,
+      "S_states": {
+        "correct": 54
+      },
+      "T_states": {
+        "correct": 54
+      },
+      "rows": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19,
+        22,
+        23,
+        24,
+        27,
+        29,
+        30,
+        32,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46,
+        47,
+        49,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        60,
+        61,
+        62,
+        63,
+        66,
+        67,
+        68,
+        73,
+        74,
+        75,
+        76,
+        78
+      ]
+    },
+    "S_correct_T_error": {
+      "objects": 10,
+      "selected": 3,
+      "eligible": 9,
+      "quality_positive": 9,
+      "teacher_any_correct": 10,
+      "S_states": {
+        "correct": 10
+      },
+      "T_states": {
+        "low_confidence": 10
+      },
+      "rows": [
+        2,
+        11,
+        28,
+        35,
+        44,
+        58,
+        65,
+        70,
+        71,
+        72
+      ]
+    },
+    "T_correct_S_error": {
+      "objects": 9,
+      "selected": 7,
+      "eligible": 8,
+      "quality_positive": 8,
+      "teacher_any_correct": 9,
+      "S_states": {
+        "low_confidence": 9
+      },
+      "T_states": {
+        "correct": 9
+      },
+      "rows": [
+        13,
+        20,
+        25,
+        26,
+        31,
+        33,
+        51,
+        69,
+        79
+      ]
+    },
+    "both_error": {
+      "objects": 7,
+      "selected": 3,
+      "eligible": 4,
+      "quality_positive": 5,
+      "teacher_any_correct": 5,
+      "S_states": {
+        "no_candidate": 1,
+        "low_confidence": 6
+      },
+      "T_states": {
+        "no_candidate": 1,
+        "low_confidence": 6
+      },
+      "rows": [
+        17,
+        21,
+        48,
+        55,
+        59,
+        64,
+        77
+      ]
+    }
+  },
+  "teacher_any_correct": 78,
+  "teacher_gate_false_rows": [
+    {
+      "row": 17,
+      "stable_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100439.jpg::native_gt:0",
+      "S": {
+        "state": "no_candidate",
+        "candidate": false,
+        "confidence_ok": false,
+        "class_ok": false,
+        "localization_ok": false,
+        "correct": false,
+        "iou": null,
+        "assigned": null,
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "no_candidate",
+        "candidate": false,
+        "confidence_ok": false,
+        "class_ok": false,
+        "localization_ok": false,
+        "correct": false,
+        "iou": null,
+        "assigned": null,
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": null
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          false
+        ],
+        "region_valid": true,
+        "reference_candidate": false,
+        "teacher_correct_own": false,
+        "quality_q": 0.0,
+        "quality_positive": false,
+        "base": false,
+        "eligible": false,
+        "selected": false,
+        "matched_row": 17,
+        "base_row": null,
+        "selected_rank": null,
+        "eligible_rank": null,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 20,
+            "rgb_bg": 12,
+            "ir_fg": 20,
+            "ir_bg": 12,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 0,
+            "rgb_bg": 16,
+            "ir_fg": 0,
+            "ir_bg": 16,
+            "student_valid": false,
+            "teacher_valid": false,
+            "reference_valid": false,
+            "common_valid": false
+          }
+        ],
+        "student_evidence": 1.5871820449829102,
+        "teacher_evidence": 1.05963134765625,
+        "reference_evidence": 1.5871820449829102
+      }
+    },
+    {
+      "row": 64,
+      "stable_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:1",
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.6081511974334717,
+        "assigned": {
+          "anchor_index": 3119,
+          "class": 0,
+          "confidence": 0.05899302288889885,
+          "own_gt_iou": 0.6081511974334717,
+          "box": [
+            632.6215209960938,
+            211.09808349609375,
+            640.0352172851562,
+            352.7677917480469
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.7884727120399475,
+        "assigned": {
+          "anchor_index": 2799,
+          "class": 0,
+          "confidence": 0.06301946938037872,
+          "own_gt_iou": 0.7884727120399475,
+          "box": [
+            634.0194702148438,
+            216.44517517089844,
+            640.0518798828125,
+            345.8804931640625
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.7884727120399475
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          false
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": false,
+        "quality_q": 0.12744276225566864,
+        "quality_positive": true,
+        "base": true,
+        "eligible": false,
+        "selected": false,
+        "matched_row": 64,
+        "base_row": 63,
+        "selected_rank": null,
+        "eligible_rank": null,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 17,
+            "rgb_bg": 16,
+            "ir_fg": 17,
+            "ir_bg": 16,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 0,
+            "rgb_bg": 0,
+            "ir_fg": 0,
+            "ir_bg": 0,
+            "student_valid": false,
+            "teacher_valid": false,
+            "reference_valid": false,
+            "common_valid": false
+          }
+        ],
+        "student_evidence": 1.8368492126464844,
+        "teacher_evidence": 3.8825151920318604,
+        "reference_evidence": 1.8368492126464844
+      }
+    }
+  ],
+  "rgb_ir_augmented_gt_exact": 80,
+  "S_R_states_exact": 80,
+  "S_R_scalar_evidence_exact": 80,
+  "independent_iou_max_abs_error": 2.1524722071397662e-07,
+  "selected_last": {
+    "row": 73,
+    "q": 0.022440105676651
+  },
+  "assigned_alternative_witness_objects": 1,
+  "complete_raw_outputs_saved": false,
+  "full_candidate_ids_saved": false,
+  "details": [
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 2,
+      "image_index": 0,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180339.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/180339.jpg::native_gt:2",
+      "rgb_gt_xyxy": [
+        514.0372314453125,
+        99.67619323730469,
+        538.7512817382812,
+        182.3139190673828
+      ],
+      "ir_gt_xyxy": [
+        514.0372314453125,
+        99.67619323730469,
+        538.7512817382812,
+        182.3139190673828
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.879734992980957,
+        "assigned": {
+          "anchor_index": 1345,
+          "class": 0,
+          "confidence": 0.2845759987831116,
+          "own_gt_iou": 0.879734992980957,
+          "box": [
+            513.6348876953125,
+            104.04031372070312,
+            537.7060546875,
+            183.647705078125
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.9655851125717163,
+        "assigned": {
+          "anchor_index": 6832,
+          "class": 0,
+          "confidence": 0.12984344363212585,
+          "own_gt_iou": 0.9655851125717163,
+          "box": [
+            514.399169921875,
+            99.9892578125,
+            539.1300048828125,
+            182.20355224609375
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.9655851125717163
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.10303293168544769,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 2,
+        "base_row": 2,
+        "selected_rank": 10,
+        "eligible_rank": 10,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 33,
+            "rgb_bg": 93,
+            "ir_fg": 33,
+            "ir_bg": 93,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 10,
+            "rgb_bg": 20,
+            "ir_fg": 10,
+            "ir_bg": 20,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 2.1592888832092285,
+        "teacher_evidence": 5.082279205322266,
+        "reference_evidence": 2.1592888832092285
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 11,
+      "image_index": 4,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180342.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/180342.jpg::native_gt:2",
+      "rgb_gt_xyxy": [
+        87.67184448242188,
+        0.0,
+        120.31033325195312,
+        87.17033386230469
+      ],
+      "ir_gt_xyxy": [
+        87.67184448242188,
+        0.0,
+        120.31033325195312,
+        87.17033386230469
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.7421481609344482,
+        "assigned": {
+          "anchor_index": 6525,
+          "class": 0,
+          "confidence": 0.3711366057395935,
+          "own_gt_iou": 0.7421481609344482,
+          "box": [
+            78.23380279541016,
+            0.31549072265625,
+            121.5795669555664,
+            88.20043182373047
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.8209334015846252,
+        "assigned": {
+          "anchor_index": 6566,
+          "class": 0,
+          "confidence": 0.15713684260845184,
+          "own_gt_iou": 0.8209334015846252,
+          "box": [
+            82.47933197021484,
+            0.34610748291015625,
+            119.53341674804688,
+            89.16270446777344
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.8209334015846252
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.02415451593697071,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 11,
+        "base_row": 11,
+        "selected_rank": 31,
+        "eligible_rank": 31,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 44,
+            "rgb_bg": 84,
+            "ir_fg": 44,
+            "ir_bg": 84,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 15,
+            "rgb_bg": 25,
+            "ir_fg": 15,
+            "ir_bg": 25,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 3.2710440158843994,
+        "teacher_evidence": 4.327875137329102,
+        "reference_evidence": 3.2710440158843994
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 13,
+      "image_index": 5,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160368.jpg::native_gt:0",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/160368.jpg::native_gt:0",
+      "rgb_gt_xyxy": [
+        387.4654541015625,
+        416.8272705078125,
+        404.5999755859375,
+        463.5842590332031
+      ],
+      "ir_gt_xyxy": [
+        387.4654541015625,
+        416.8272705078125,
+        404.5999755859375,
+        463.5842590332031
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.8968095183372498,
+        "assigned": {
+          "anchor_index": 4368,
+          "class": 0,
+          "confidence": 0.08540366590023041,
+          "own_gt_iou": 0.8968095183372498,
+          "box": [
+            386.1029357910156,
+            416.6302185058594,
+            405.1087341308594,
+            463.52947998046875
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.8033344745635986,
+        "assigned": {
+          "anchor_index": 4450,
+          "class": 0,
+          "confidence": 0.815232515335083,
+          "own_gt_iou": 0.8033344745635986,
+          "box": [
+            387.7947692871094,
+            416.20806884765625,
+            407.9080505371094,
+            464.0732727050781
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.8033344745635986
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.0,
+        "quality_positive": false,
+        "base": true,
+        "eligible": false,
+        "selected": false,
+        "matched_row": 13,
+        "base_row": 13,
+        "selected_rank": null,
+        "eligible_rank": null,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 18,
+            "rgb_bg": 42,
+            "ir_fg": 18,
+            "ir_bg": 42,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 3,
+            "rgb_bg": 7,
+            "ir_fg": 3,
+            "ir_bg": 7,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 8.18815803527832,
+        "teacher_evidence": 8.077787399291992,
+        "reference_evidence": 8.18815803527832
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 20,
+      "image_index": 9,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020011.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/020011.jpg::native_gt:2",
+      "rgb_gt_xyxy": [
+        519.3192138671875,
+        388.45703125,
+        552.44091796875,
+        448.1578063964844
+      ],
+      "ir_gt_xyxy": [
+        519.3192138671875,
+        388.45703125,
+        552.44091796875,
+        448.1578063964844
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.8025563955307007,
+        "assigned": {
+          "anchor_index": 4146,
+          "class": 0,
+          "confidence": 0.17895588278770447,
+          "own_gt_iou": 0.8025563955307007,
+          "box": [
+            518.4271240234375,
+            381.8077697753906,
+            551.0503540039062,
+            451.61712646484375
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.8822471499443054,
+        "assigned": {
+          "anchor_index": 7513,
+          "class": 0,
+          "confidence": 0.3951341509819031,
+          "own_gt_iou": 0.8822471499443054,
+          "box": [
+            521.4730224609375,
+            387.04638671875,
+            551.7977905273438,
+            449.2090148925781
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.8822471499443054
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.06498534977436066,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 20,
+        "base_row": 19,
+        "selected_rank": 16,
+        "eligible_rank": 16,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 28,
+            "rgb_bg": 92,
+            "ir_fg": 28,
+            "ir_bg": 92,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 12,
+            "rgb_bg": 28,
+            "ir_fg": 12,
+            "ir_bg": 28,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 2.6035008430480957,
+        "teacher_evidence": 5.045485973358154,
+        "reference_evidence": 2.6035008430480957
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 25,
+      "image_index": 12,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/130313.jpg::native_gt:2",
+      "rgb_gt_xyxy": [
+        521.9766235351562,
+        240.9925079345703,
+        561.7274169921875,
+        360.2447814941406
+      ],
+      "ir_gt_xyxy": [
+        521.9766235351562,
+        240.9925079345703,
+        561.7274169921875,
+        360.2447814941406
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.7411114573478699,
+        "assigned": {
+          "anchor_index": 7233,
+          "class": 0,
+          "confidence": 0.05964693799614906,
+          "own_gt_iou": 0.7411114573478699,
+          "box": [
+            527.9771728515625,
+            246.005859375,
+            561.9376831054688,
+            350.58111572265625
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.8744757771492004,
+        "assigned": {
+          "anchor_index": 7194,
+          "class": 0,
+          "confidence": 0.7779753804206848,
+          "own_gt_iou": 0.8744757771492004,
+          "box": [
+            519.8775634765625,
+            246.05609130859375,
+            560.119384765625,
+            360.25982666015625
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.8744757771492004
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.05129898339509964,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 25,
+        "base_row": 24,
+        "selected_rank": 19,
+        "eligible_rank": 19,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 75,
+            "rgb_bg": 170,
+            "ir_fg": 75,
+            "ir_bg": 170,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 16,
+            "rgb_bg": 52,
+            "ir_fg": 16,
+            "ir_bg": 52,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 2.8801660537719727,
+        "teacher_evidence": 5.709761619567871,
+        "reference_evidence": 2.8801660537719727
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 26,
+      "image_index": 12,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/130313.jpg::native_gt:3",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/130313.jpg::native_gt:3",
+      "rgb_gt_xyxy": [
+        563.2965698242188,
+        265.5752258300781,
+        597.8169555664062,
+        382.73541259765625
+      ],
+      "ir_gt_xyxy": [
+        563.2965698242188,
+        265.5752258300781,
+        597.8169555664062,
+        382.73541259765625
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.5004815459251404,
+        "assigned": {
+          "anchor_index": 7276,
+          "class": 0,
+          "confidence": 0.12808825075626373,
+          "own_gt_iou": 0.5004815459251404,
+          "box": [
+            571.0437622070312,
+            254.63531494140625,
+            603.9639892578125,
+            358.6007995605469
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.9254744052886963,
+        "assigned": {
+          "anchor_index": 7316,
+          "class": 0,
+          "confidence": 0.4980469048023224,
+          "own_gt_iou": 0.9254744052886963,
+          "box": [
+            562.9219360351562,
+            266.1593322753906,
+            597.7268676757812,
+            375.9776611328125
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.9254744052886963
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.34957388043403625,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 26,
+        "base_row": 25,
+        "selected_rank": 2,
+        "eligible_rank": 2,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 75,
+            "rgb_bg": 156,
+            "ir_fg": 75,
+            "ir_bg": 156,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 14,
+            "rgb_bg": 38,
+            "ir_fg": 14,
+            "ir_bg": 38,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 0.8618662357330322,
+        "teacher_evidence": 5.893755912780762,
+        "reference_evidence": 0.8618662357330322
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 28,
+      "image_index": 13,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/030056.jpg::native_gt:1",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/030056.jpg::native_gt:1",
+      "rgb_gt_xyxy": [
+        282.395263671875,
+        295.17620849609375,
+        315.67987060546875,
+        334.0935974121094
+      ],
+      "ir_gt_xyxy": [
+        282.395263671875,
+        295.17620849609375,
+        315.67987060546875,
+        334.0935974121094
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.7529566884040833,
+        "assigned": {
+          "anchor_index": 3238,
+          "class": 0,
+          "confidence": 0.5583269596099854,
+          "own_gt_iou": 0.7529566884040833,
+          "box": [
+            281.6416015625,
+            294.61199951171875,
+            315.5892333984375,
+            345.0467224121094
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.9736548662185669,
+        "assigned": {
+          "anchor_index": 2997,
+          "class": 0,
+          "confidence": 0.14033624529838562,
+          "own_gt_iou": 0.9736548662185669,
+          "box": [
+            282.4635314941406,
+            294.9844970703125,
+            315.1982116699219,
+            333.89154052734375
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.9736548662185669
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.021823305636644363,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": false,
+        "matched_row": 28,
+        "base_row": 27,
+        "selected_rank": null,
+        "eligible_rank": 34,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 20,
+            "rgb_bg": 58,
+            "ir_fg": 20,
+            "ir_bg": 58,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 6,
+            "rgb_bg": 12,
+            "ir_fg": 6,
+            "ir_bg": 12,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 3.7357687950134277,
+        "teacher_evidence": 6.346441745758057,
+        "reference_evidence": 3.7357687950134277
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 31,
+      "image_index": 15,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:0",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/160573.jpg::native_gt:0",
+      "rgb_gt_xyxy": [
+        81.2381591796875,
+        429.85369873046875,
+        125.901123046875,
+        544.6327514648438
+      ],
+      "ir_gt_xyxy": [
+        81.2381591796875,
+        429.85369873046875,
+        125.901123046875,
+        544.6327514648438
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.8446917533874512,
+        "assigned": {
+          "anchor_index": 7525,
+          "class": 0,
+          "confidence": 0.15713684260845184,
+          "own_gt_iou": 0.8446917533874512,
+          "box": [
+            82.73570251464844,
+            428.9385070800781,
+            120.97776794433594,
+            543.8582153320312
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.9590515494346619,
+        "assigned": {
+          "anchor_index": 7685,
+          "class": 0,
+          "confidence": 0.6627964973449707,
+          "own_gt_iou": 0.9590515494346619,
+          "box": [
+            79.94506072998047,
+            429.49090576171875,
+            126.24896240234375,
+            544.9293823242188
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.9590515494346619
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.005903572775423527,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": false,
+        "matched_row": 31,
+        "base_row": 30,
+        "selected_rank": null,
+        "eligible_rank": 51,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 84,
+            "rgb_bg": 252,
+            "ir_fg": 84,
+            "ir_bg": 252,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 21,
+            "rgb_bg": 54,
+            "ir_fg": 21,
+            "ir_bg": 54,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 4.636815071105957,
+        "teacher_evidence": 5.587254047393799,
+        "reference_evidence": 4.636815071105957
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 33,
+      "image_index": 15,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/160573.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/160573.jpg::native_gt:2",
+      "rgb_gt_xyxy": [
+        502.4148254394531,
+        580.1710205078125,
+        530.7493896484375,
+        624.353759765625
+      ],
+      "ir_gt_xyxy": [
+        502.4148254394531,
+        580.1710205078125,
+        530.7493896484375,
+        624.353759765625
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.7765979170799255,
+        "assigned": {
+          "anchor_index": 5984,
+          "class": 0,
+          "confidence": 0.16830945014953613,
+          "own_gt_iou": 0.7765979170799255,
+          "box": [
+            503.0109558105469,
+            573.6394653320312,
+            533.392578125,
+            624.715576171875
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.7881371378898621,
+        "assigned": {
+          "anchor_index": 7872,
+          "class": 0,
+          "confidence": 0.6934729218482971,
+          "own_gt_iou": 0.7881371378898621,
+          "box": [
+            500.6192626953125,
+            571.8514404296875,
+            530.68994140625,
+            624.2455444335938
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.7881371378898621
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.1274828463792801,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 33,
+        "base_row": 32,
+        "selected_rank": 9,
+        "eligible_rank": 9,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 15,
+            "rgb_bg": 55,
+            "ir_fg": 15,
+            "ir_bg": 55,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 6,
+            "rgb_bg": 9,
+            "ir_fg": 6,
+            "ir_bg": 9,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 1.9745075702667236,
+        "teacher_evidence": 5.9829206466674805,
+        "reference_evidence": 1.9745075702667236
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 35,
+      "image_index": 17,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080473.jpg::native_gt:0",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/080473.jpg::native_gt:0",
+      "rgb_gt_xyxy": [
+        551.5029296875,
+        491.2505798339844,
+        588.8362426757812,
+        540.038330078125
+      ],
+      "ir_gt_xyxy": [
+        551.5029296875,
+        491.2505798339844,
+        588.8362426757812,
+        540.038330078125
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.9135817885398865,
+        "assigned": {
+          "anchor_index": 5191,
+          "class": 0,
+          "confidence": 0.7310585379600525,
+          "own_gt_iou": 0.9135817885398865,
+          "box": [
+            550.7682495117188,
+            488.79864501953125,
+            588.1975708007812,
+            539.7703247070312
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.9566777944564819,
+        "assigned": {
+          "anchor_index": 5272,
+          "class": 0,
+          "confidence": 0.2030746340751648,
+          "own_gt_iou": 0.9566777944564819,
+          "box": [
+            551.4495849609375,
+            489.56695556640625,
+            588.94091796875,
+            539.7385864257812
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.9566777944564819
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.002582322806119919,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": false,
+        "matched_row": 35,
+        "base_row": 34,
+        "selected_rank": null,
+        "eligible_rank": 57,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 35,
+            "rgb_bg": 82,
+            "ir_fg": 35,
+            "ir_bg": 82,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 9,
+            "rgb_bg": 21,
+            "ir_fg": 9,
+            "ir_bg": 21,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 5.622575759887695,
+        "teacher_evidence": 6.8811116218566895,
+        "reference_evidence": 5.622575759887695
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 44,
+      "image_index": 19,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/180149.jpg::native_gt:0",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/180149.jpg::native_gt:0",
+      "rgb_gt_xyxy": [
+        24.707353591918945,
+        50.25424575805664,
+        64.98992919921875,
+        171.59927368164062
+      ],
+      "ir_gt_xyxy": [
+        24.707353591918945,
+        50.25424575805664,
+        64.98992919921875,
+        171.59927368164062
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.7916695475578308,
+        "assigned": {
+          "anchor_index": 6682,
+          "class": 0,
+          "confidence": 0.845432698726654,
+          "own_gt_iou": 0.7916695475578308,
+          "box": [
+            18.712987899780273,
+            49.36091613769531,
+            62.87578201293945,
+            166.97030639648438
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.8400937914848328,
+        "assigned": {
+          "anchor_index": 6762,
+          "class": 0,
+          "confidence": 0.06878728419542313,
+          "own_gt_iou": 0.8400937914848328,
+          "box": [
+            19.936250686645508,
+            48.45556640625,
+            65.23934936523438,
+            166.01539611816406
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.8400937914848328
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.48836106061935425,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 44,
+        "base_row": 43,
+        "selected_rank": 1,
+        "eligible_rank": 1,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 75,
+            "rgb_bg": 215,
+            "ir_fg": 75,
+            "ir_bg": 215,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 16,
+            "rgb_bg": 59,
+            "ir_fg": 16,
+            "ir_bg": 59,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 0.4322636127471924,
+        "teacher_evidence": 4.431097030639648,
+        "reference_evidence": 0.4322636127471924
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 51,
+      "image_index": 21,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/100910.jpg::native_gt:3",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/100910.jpg::native_gt:3",
+      "rgb_gt_xyxy": [
+        207.0364227294922,
+        175.19638061523438,
+        246.27096557617188,
+        274.7043151855469
+      ],
+      "ir_gt_xyxy": [
+        207.0364227294922,
+        175.19638061523438,
+        246.27096557617188,
+        274.7043151855469
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.7207051515579224,
+        "assigned": {
+          "anchor_index": 2268,
+          "class": 0,
+          "confidence": 0.09434341639280319,
+          "own_gt_iou": 0.7207051515579224,
+          "box": [
+            211.936279296875,
+            178.01614379882812,
+            245.85641479492188,
+            293.7637939453125
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.846561849117279,
+        "assigned": {
+          "anchor_index": 7053,
+          "class": 0,
+          "confidence": 0.6315943002700806,
+          "own_gt_iou": 0.846561849117279,
+          "box": [
+            207.42649841308594,
+            176.86575317382812,
+            245.6441650390625,
+            288.1203918457031
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.846561849117279
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.051461268216371536,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 51,
+        "base_row": 50,
+        "selected_rank": 17,
+        "eligible_rank": 17,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 60,
+            "rgb_bg": 154,
+            "ir_fg": 60,
+            "ir_bg": 154,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 12,
+            "rgb_bg": 30,
+            "ir_fg": 12,
+            "ir_bg": 30,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 2.851227045059204,
+        "teacher_evidence": 5.356806755065918,
+        "reference_evidence": 2.851227045059204
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 58,
+      "image_index": 24,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020030.jpg::native_gt:1",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/020030.jpg::native_gt:1",
+      "rgb_gt_xyxy": [
+        145.951416015625,
+        380.5291442871094,
+        197.39422607421875,
+        549.9473876953125
+      ],
+      "ir_gt_xyxy": [
+        145.951416015625,
+        380.5291442871094,
+        197.39422607421875,
+        549.9473876953125
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.9358741044998169,
+        "assigned": {
+          "anchor_index": 7490,
+          "class": 0,
+          "confidence": 0.3242354094982147,
+          "own_gt_iou": 0.9358741044998169,
+          "box": [
+            145.1194610595703,
+            377.5831298828125,
+            198.60231018066406,
+            551.704833984375
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.794697105884552,
+        "assigned": {
+          "anchor_index": 7530,
+          "class": 0,
+          "confidence": 0.09138210862874985,
+          "own_gt_iou": 0.794697105884552,
+          "box": [
+            148.59158325195312,
+            377.4190368652344,
+            200.5743408203125,
+            568.9583740234375
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.794697105884552
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.0,
+        "quality_positive": false,
+        "base": true,
+        "eligible": false,
+        "selected": false,
+        "matched_row": 58,
+        "base_row": 57,
+        "selected_rank": null,
+        "eligible_rank": null,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 147,
+            "rgb_bg": 379,
+            "ir_fg": 147,
+            "ir_bg": 379,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 30,
+            "rgb_bg": 86,
+            "ir_fg": 30,
+            "ir_bg": 86,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 3.226353168487549,
+        "teacher_evidence": 3.1975579261779785,
+        "reference_evidence": 3.226353168487549
+      },
+      "observed_saved_assigned_alternative_witnesses": [
+        {
+          "anchor_index": 7571,
+          "assigned_to_global_row": 60,
+          "confidence": 0.8062431216239929,
+          "iou_to_this_ir_gt": 0.6605246650571017,
+          "box": [
+            154.38031005859375,
+            377.8894958496094,
+            202.63409423828125,
+            576.9339599609375
+          ]
+        }
+      ],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 65,
+      "image_index": 27,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/060331.jpg::native_gt:2",
+      "rgb_gt_xyxy": [
+        260.65234375,
+        358.2216796875,
+        292.664306640625,
+        479.9813232421875
+      ],
+      "ir_gt_xyxy": [
+        260.65234375,
+        358.2216796875,
+        292.664306640625,
+        479.9813232421875
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.8715443015098572,
+        "assigned": {
+          "anchor_index": 7377,
+          "class": 0,
+          "confidence": 0.8000679016113281,
+          "own_gt_iou": 0.8715443015098572,
+          "box": [
+            257.03009033203125,
+            358.3208923339844,
+            291.9327087402344,
+            480.78448486328125
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.8211865425109863,
+        "assigned": {
+          "anchor_index": 7577,
+          "class": 0,
+          "confidence": 0.08632347732782364,
+          "own_gt_iou": 0.8211865425109863,
+          "box": [
+            255.9784393310547,
+            355.38031005859375,
+            291.7126159667969,
+            478.8651123046875
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.8211865425109863
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.021722912788391113,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": false,
+        "matched_row": 65,
+        "base_row": 64,
+        "selected_rank": null,
+        "eligible_rank": 35,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 60,
+            "rgb_bg": 154,
+            "ir_fg": 60,
+            "ir_bg": 154,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 16,
+            "rgb_bg": 36,
+            "ir_fg": 16,
+            "ir_bg": 36,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 3.7222580909729004,
+        "teacher_evidence": 6.132540702819824,
+        "reference_evidence": 3.7222580909729004
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 69,
+      "image_index": 27,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060331.jpg::native_gt:6",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/060331.jpg::native_gt:6",
+      "rgb_gt_xyxy": [
+        0.0,
+        291.9112854003906,
+        39.9986572265625,
+        385.6605224609375
+      ],
+      "ir_gt_xyxy": [
+        0.0,
+        291.9112854003906,
+        39.9986572265625,
+        385.6605224609375
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.8485283851623535,
+        "assigned": {
+          "anchor_index": 3361,
+          "class": 0,
+          "confidence": 0.13028541207313538,
+          "own_gt_iou": 0.8485283851623535,
+          "box": [
+            0.17155933380126953,
+            292.4162292480469,
+            36.92484664916992,
+            393.52252197265625
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.9476006627082825,
+        "assigned": {
+          "anchor_index": 7281,
+          "class": 0,
+          "confidence": 0.7627776861190796,
+          "own_gt_iou": 0.9476006627082825,
+          "box": [
+            -0.1527233123779297,
+            291.9442138671875,
+            41.096778869628906,
+            387.81182861328125
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.9476006627082825
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.08706916868686676,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 69,
+        "base_row": 68,
+        "selected_rank": 12,
+        "eligible_rank": 12,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 60,
+            "rgb_bg": 55,
+            "ir_fg": 60,
+            "ir_bg": 55,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 12,
+            "rgb_bg": 22,
+            "ir_fg": 12,
+            "ir_bg": 22,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 2.144815444946289,
+        "teacher_evidence": 3.7322187423706055,
+        "reference_evidence": 2.144815444946289
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 70,
+      "image_index": 28,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:0",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/060420.jpg::native_gt:0",
+      "rgb_gt_xyxy": [
+        255.8097686767578,
+        329.7392578125,
+        293.9266662597656,
+        394.916259765625
+      ],
+      "ir_gt_xyxy": [
+        255.8097686767578,
+        329.7392578125,
+        293.9266662597656,
+        394.916259765625
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.8585985898971558,
+        "assigned": {
+          "anchor_index": 3714,
+          "class": 0,
+          "confidence": 0.6842640042304993,
+          "own_gt_iou": 0.8585985898971558,
+          "box": [
+            259.89129638671875,
+            330.45697021484375,
+            294.1226501464844,
+            396.61724853515625
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.9231609106063843,
+        "assigned": {
+          "anchor_index": 3633,
+          "class": 0,
+          "confidence": 0.07423137128353119,
+          "own_gt_iou": 0.9231609106063843,
+          "box": [
+            256.4391784667969,
+            330.6623840332031,
+            292.6322021484375,
+            395.8767395019531
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.9231609106063843
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.001787401968613267,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": false,
+        "matched_row": 70,
+        "base_row": 69,
+        "selected_rank": null,
+        "eligible_rank": 58,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 40,
+            "rgb_bg": 104,
+            "ir_fg": 40,
+            "ir_bg": 104,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 8,
+            "rgb_bg": 32,
+            "ir_fg": 8,
+            "ir_bg": 32,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 6.04654598236084,
+        "teacher_evidence": 7.459421157836914,
+        "reference_evidence": 6.04654598236084
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 71,
+      "image_index": 28,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/060420.jpg::native_gt:1",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/060420.jpg::native_gt:1",
+      "rgb_gt_xyxy": [
+        105.96087646484375,
+        342.5418395996094,
+        133.89385986328125,
+        376.0032958984375
+      ],
+      "ir_gt_xyxy": [
+        105.96087646484375,
+        342.5418395996094,
+        133.89385986328125,
+        376.0032958984375
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.843504011631012,
+        "assigned": {
+          "anchor_index": 7247,
+          "class": 0,
+          "confidence": 0.6039317846298218,
+          "own_gt_iou": 0.843504011631012,
+          "box": [
+            107.67909240722656,
+            341.8044738769531,
+            135.28750610351562,
+            377.38909912109375
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.8704497218132019,
+        "assigned": {
+          "anchor_index": 3694,
+          "class": 0,
+          "confidence": 0.14953137934207916,
+          "own_gt_iou": 0.8704497218132019,
+          "box": [
+            107.68092346191406,
+            343.3529968261719,
+            134.316162109375,
+            377.3088073730469
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.8704497218132019
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.0011811084114015102,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": false,
+        "matched_row": 71,
+        "base_row": 70,
+        "selected_rank": null,
+        "eligible_rank": 62,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 16,
+            "rgb_bg": 40,
+            "ir_fg": 16,
+            "ir_bg": 40,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 3,
+            "rgb_bg": 12,
+            "ir_fg": 3,
+            "ir_bg": 12,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 5.636021614074707,
+        "teacher_evidence": 6.039642810821533,
+        "reference_evidence": 5.636021614074707
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "S_correct_T_error",
+      "global_row": 72,
+      "image_index": 29,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/020359.jpg::native_gt:0",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/020359.jpg::native_gt:0",
+      "rgb_gt_xyxy": [
+        108.70909118652344,
+        212.3816680908203,
+        143.73634338378906,
+        313.4216613769531
+      ],
+      "ir_gt_xyxy": [
+        108.70909118652344,
+        212.3816680908203,
+        143.73634338378906,
+        313.4216613769531
+      ],
+      "S": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.8591886162757874,
+        "assigned": {
+          "anchor_index": 7088,
+          "class": 0,
+          "confidence": 0.47268348932266235,
+          "own_gt_iou": 0.8591886162757874,
+          "box": [
+            104.01702117919922,
+            211.82408142089844,
+            144.27955627441406,
+            312.61663818359375
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.7883910536766052,
+        "assigned": {
+          "anchor_index": 7128,
+          "class": 0,
+          "confidence": 0.12085322290658951,
+          "own_gt_iou": 0.7883910536766052,
+          "box": [
+            102.44015502929688,
+            211.07400512695312,
+            142.56556701660156,
+            310.3132629394531
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.7883910536766052
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.007310888729989529,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": false,
+        "matched_row": 72,
+        "base_row": 71,
+        "selected_rank": null,
+        "eligible_rank": 49,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 48,
+            "rgb_bg": 177,
+            "ir_fg": 48,
+            "ir_bg": 177,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 14,
+            "rgb_bg": 38,
+            "ir_fg": 14,
+            "ir_bg": 38,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 4.680666923522949,
+        "teacher_evidence": 6.254881858825684,
+        "reference_evidence": 4.680666923522949
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": true,
+      "highest_iou_per_object_not_proven": true
+    },
+    {
+      "bucket": "T_correct_S_error",
+      "global_row": 79,
+      "image_index": 31,
+      "stable_rgb_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/visible/train/080413.jpg::native_gt:2",
+      "stable_ir_gt_id": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP/infrared/train/080413.jpg::native_gt:2",
+      "rgb_gt_xyxy": [
+        393.76513671875,
+        245.9451904296875,
+        419.8550109863281,
+        310.4024658203125
+      ],
+      "ir_gt_xyxy": [
+        393.76513671875,
+        245.9451904296875,
+        419.8550109863281,
+        310.4024658203125
+      ],
+      "S": {
+        "state": "low_confidence",
+        "candidate": true,
+        "confidence_ok": false,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": false,
+        "iou": 0.864045262336731,
+        "assigned": {
+          "anchor_index": 2931,
+          "class": 0,
+          "confidence": 0.17217184603214264,
+          "own_gt_iou": 0.864045262336731,
+          "box": [
+            393.8813171386719,
+            250.27682495117188,
+            421.5975646972656,
+            309.66241455078125
+          ]
+        },
+        "coordinate_scope": "own_gt"
+      },
+      "T": {
+        "state": "correct",
+        "candidate": true,
+        "confidence_ok": true,
+        "class_ok": true,
+        "localization_ok": true,
+        "correct": true,
+        "iou": 0.9190951585769653,
+        "assigned": {
+          "anchor_index": 2691,
+          "class": 0,
+          "confidence": 0.403566837310791,
+          "own_gt_iou": 0.9190951585769653,
+          "box": [
+            393.45574951171875,
+            247.3232421875,
+            420.6019592285156,
+            308.8553771972656
+          ]
+        },
+        "coordinate_scope": "ir_own_gt",
+        "iou_to_rgb_gt": 0.9190951585769653
+      },
+      "gates": {
+        "matched": true,
+        "valid_levels": [
+          true,
+          true
+        ],
+        "region_valid": true,
+        "reference_candidate": true,
+        "teacher_correct_own": true,
+        "quality_q": 0.1277688443660736,
+        "quality_positive": true,
+        "base": true,
+        "eligible": true,
+        "selected": true,
+        "matched_row": 79,
+        "base_row": 78,
+        "selected_rank": 8,
+        "eligible_rank": 8,
+        "region_counts": [
+          {
+            "level": 0,
+            "rgb_fg": 24,
+            "rgb_bg": 72,
+            "ir_fg": 24,
+            "ir_bg": 72,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          },
+          {
+            "level": 1,
+            "rgb_fg": 4,
+            "rgb_bg": 20,
+            "ir_fg": 4,
+            "ir_bg": 20,
+            "student_valid": true,
+            "teacher_valid": true,
+            "reference_valid": true,
+            "common_valid": true
+          }
+        ],
+        "student_evidence": 1.9849014282226562,
+        "teacher_evidence": 6.936736583709717,
+        "reference_evidence": 1.9849014282226562
+      },
+      "observed_saved_assigned_alternative_witnesses": [],
+      "complete_candidate_witnesses_available": false,
+      "dense_correct_alternative_exists_by_original_gate": false,
+      "highest_iou_per_object_not_proven": true
+    }
+  ],
+  "source_files": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\evidence_1252\\probe\\objects.jsonl",
+      "bytes": 352846,
+      "mtime_ns": 1788843152099569600
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\evidence_1252\\probe\\completion_receipt.json",
+      "bytes": 384123,
+      "mtime_ns": 1788843152093180400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_同帧选择覆盖\\analysis_1252\\summary.json",
+      "bytes": 296738,
+      "mtime_ns": 1788843152257445800
+    }
+  ],
+  "GPU_used": false,
+  "model_forward": false,
+  "training": false,
+  "new_hash_computed": false,
+  "AP_detection_error_claim": false,
+  "negative_transfer_claim": false
+}
