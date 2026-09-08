@@ -1,0 +1,820 @@
+{
+  "status": "COMPLETED_PENDING_INDEPENDENT_REVIEW",
+  "scope": "LLVIP_FULL_DEV_CACHED_NATIVE_OPPORTUNITIES",
+  "dataset": "llvip",
+  "seed": 42,
+  "images": 2406,
+  "paired_GT": 7879,
+  "unpaired_GT": {
+    "N": 0,
+    "T": 0
+  },
+  "input_statistics": {
+    "N": {
+      "images": 2406,
+      "GT": 7879,
+      "predictions": 28406,
+      "empty_predictions": 1,
+      "confidence_exact_025": 0,
+      "native_predictions_cross_canvas": 25,
+      "checkpoint_identity": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2/weights/last.pt",
+        "stat": {
+          "size": 5482010,
+          "mtime_ns": 1788127857140185407
+        },
+        "checkpoint_epoch": -1,
+        "ema_present": false,
+        "loaded_source": "model",
+        "names": {
+          "0": "person"
+        },
+        "training_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+          "epochs": 200,
+          "time": null,
+          "patience": 0,
+          "batch": 32,
+          "imgsz": 640,
+          "save": true,
+          "save_period": -1,
+          "cache": false,
+          "device": "0",
+          "workers": 8,
+          "project": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip",
+          "name": "visible_seed42_native_b32a2",
+          "exist_ok": true,
+          "pretrained": true,
+          "cls_remap": true,
+          "optimizer": "SGD",
+          "verbose": true,
+          "seed": 42,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 0,
+          "resume": false,
+          "amp": true,
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "channels_last": false,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": false,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "quantize": null,
+          "dnn": false,
+          "plots": false,
+          "end2end": null,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "nms": false,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.1,
+          "distill_model": null,
+          "dis": 6.0,
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "dlog": 1.0,
+          "dgrad": 0.5,
+          "dlam": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.0,
+          "hsv_s": 0.0,
+          "hsv_v": 0.0,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 0.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.0,
+          "cfg": null,
+          "tracker": "tracktrack.yaml",
+          "save_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/visible_seed42_native_b32a2"
+        },
+        "scope": "historical_baseline_not_new_protocol_N"
+      }
+    },
+    "T": {
+      "images": 2406,
+      "GT": 7879,
+      "predictions": 12929,
+      "empty_predictions": 0,
+      "confidence_exact_025": 0,
+      "native_predictions_cross_canvas": 15,
+      "checkpoint_identity": {
+        "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2/weights/last.pt",
+        "stat": {
+          "size": 5482010,
+          "mtime_ns": 1788127257614850390
+        },
+        "checkpoint_epoch": -1,
+        "ema_present": false,
+        "loaded_source": "model",
+        "names": {
+          "0": "person"
+        },
+        "training_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+          "data": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/infrared.data.yaml",
+          "epochs": 200,
+          "time": null,
+          "patience": 0,
+          "batch": 32,
+          "imgsz": 640,
+          "save": true,
+          "save_period": -1,
+          "cache": false,
+          "device": "0",
+          "workers": 8,
+          "project": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip",
+          "name": "infrared_seed42_native_b32a2",
+          "exist_ok": true,
+          "pretrained": true,
+          "cls_remap": true,
+          "optimizer": "SGD",
+          "verbose": true,
+          "seed": 42,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 0,
+          "resume": false,
+          "amp": true,
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "channels_last": false,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": false,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "quantize": null,
+          "dnn": false,
+          "plots": false,
+          "end2end": null,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "nms": false,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.1,
+          "distill_model": null,
+          "dis": 6.0,
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "dlog": 1.0,
+          "dgrad": 0.5,
+          "dlam": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.0,
+          "hsv_s": 0.0,
+          "hsv_v": 0.0,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 0.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.0,
+          "cfg": null,
+          "tracker": "tracktrack.yaml",
+          "save_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/llvip/infrared_seed42_native_b32a2"
+        },
+        "scope": "historical_baseline_not_new_protocol_N"
+      }
+    }
+  },
+  "groups": {
+    "all_iou50": {
+      "confidence": null,
+      "iou": 0.5,
+      "GT": 7879,
+      "models": {
+        "N": {
+          "tp": 6510,
+          "fp": 21896,
+          "fn": 1369,
+          "predictions": 28406
+        },
+        "T": {
+          "tp": 7464,
+          "fp": 5465,
+          "fn": 415,
+          "predictions": 12929
+        }
+      },
+      "buckets": {
+        "both_correct": {
+          "objects": 6326,
+          "fraction": 0.8028937682447012,
+          "images": 2281
+        },
+        "T_only": {
+          "objects": 1138,
+          "fraction": 0.1444345729153446,
+          "images": 749
+        },
+        "N_only": {
+          "objects": 184,
+          "fraction": 0.02335321741337733,
+          "images": 172
+        },
+        "both_unmatched": {
+          "objects": 231,
+          "fraction": 0.029318441426576976,
+          "images": 202
+        }
+      }
+    },
+    "all_iou75": {
+      "confidence": null,
+      "iou": 0.75,
+      "GT": 7879,
+      "models": {
+        "N": {
+          "tp": 3262,
+          "fp": 25144,
+          "fn": 4617,
+          "predictions": 28406
+        },
+        "T": {
+          "tp": 4771,
+          "fp": 8158,
+          "fn": 3108,
+          "predictions": 12929
+        }
+      },
+      "buckets": {
+        "both_correct": {
+          "objects": 2515,
+          "fraction": 0.31920294453610865,
+          "images": 1436
+        },
+        "T_only": {
+          "objects": 2256,
+          "fraction": 0.28633075263358293,
+          "images": 1430
+        },
+        "N_only": {
+          "objects": 747,
+          "fraction": 0.09480898591191776,
+          "images": 574
+        },
+        "both_unmatched": {
+          "objects": 2361,
+          "fraction": 0.29965731691839065,
+          "images": 1322
+        }
+      }
+    },
+    "gt025_iou50": {
+      "confidence": 0.25,
+      "iou": 0.5,
+      "GT": 7879,
+      "models": {
+        "N": {
+          "tp": 5589,
+          "fp": 1998,
+          "fn": 2290,
+          "predictions": 7587
+        },
+        "T": {
+          "tp": 6986,
+          "fp": 519,
+          "fn": 893,
+          "predictions": 7505
+        }
+      },
+      "buckets": {
+        "both_correct": {
+          "objects": 5351,
+          "fraction": 0.6791470998857723,
+          "images": 2090
+        },
+        "T_only": {
+          "objects": 1635,
+          "fraction": 0.20751364386343443,
+          "images": 1035
+        },
+        "N_only": {
+          "objects": 238,
+          "fraction": 0.03020687904556416,
+          "images": 221
+        },
+        "both_unmatched": {
+          "objects": 655,
+          "fraction": 0.08313237720522909,
+          "images": 504
+        }
+      }
+    },
+    "gt025_iou75": {
+      "confidence": 0.25,
+      "iou": 0.75,
+      "GT": 7879,
+      "models": {
+        "N": {
+          "tp": 2917,
+          "fp": 4670,
+          "fn": 4962,
+          "predictions": 7587
+        },
+        "T": {
+          "tp": 4555,
+          "fp": 2950,
+          "fn": 3324,
+          "predictions": 7505
+        }
+      },
+      "buckets": {
+        "both_correct": {
+          "objects": 2258,
+          "fraction": 0.28658459195329355,
+          "images": 1309
+        },
+        "T_only": {
+          "objects": 2297,
+          "fraction": 0.2915344586876507,
+          "images": 1459
+        },
+        "N_only": {
+          "objects": 659,
+          "fraction": 0.08364005584465034,
+          "images": 516
+        },
+        "both_unmatched": {
+          "objects": 2665,
+          "fraction": 0.3382408935144054,
+          "images": 1409
+        }
+      }
+    }
+  },
+  "low_to_gt025_transitions": {
+    "iou50": [
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "both_correct",
+        "objects": 5351,
+        "images": 2090
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "T_only",
+        "objects": 771,
+        "images": 603
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "N_only",
+        "objects": 103,
+        "images": 101
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "both_unmatched",
+        "objects": 101,
+        "images": 95
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "both_correct",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "T_only",
+        "objects": 864,
+        "images": 630
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "N_only",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "both_unmatched",
+        "objects": 274,
+        "images": 232
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "both_correct",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "T_only",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "N_only",
+        "objects": 135,
+        "images": 130
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "both_unmatched",
+        "objects": 49,
+        "images": 48
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "both_correct",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "T_only",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "N_only",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "both_unmatched",
+        "objects": 231,
+        "images": 202
+      }
+    ],
+    "iou75": [
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "both_correct",
+        "objects": 2258,
+        "images": 1309
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "T_only",
+        "objects": 207,
+        "images": 199
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "N_only",
+        "objects": 24,
+        "images": 24
+      },
+      {
+        "low_threshold_bucket": "both_correct",
+        "gt025_bucket": "both_unmatched",
+        "objects": 26,
+        "images": 26
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "both_correct",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "T_only",
+        "objects": 2090,
+        "images": 1373
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "N_only",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "T_only",
+        "gt025_bucket": "both_unmatched",
+        "objects": 166,
+        "images": 155
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "both_correct",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "T_only",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "N_only",
+        "objects": 635,
+        "images": 495
+      },
+      {
+        "low_threshold_bucket": "N_only",
+        "gt025_bucket": "both_unmatched",
+        "objects": 112,
+        "images": 108
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "both_correct",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "T_only",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "N_only",
+        "objects": 0,
+        "images": 0
+      },
+      {
+        "low_threshold_bucket": "both_unmatched",
+        "gt025_bucket": "both_unmatched",
+        "objects": 2361,
+        "images": 1322
+      }
+    ]
+  },
+  "gt025_joint_iou50_iou75": [
+    {
+      "N_iou50": false,
+      "N_iou75": false,
+      "T_iou50": false,
+      "T_iou75": false,
+      "objects": 655,
+      "fraction": 0.08313237720522909,
+      "images": 504
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": false,
+      "T_iou50": false,
+      "T_iou75": true,
+      "objects": 0,
+      "fraction": 0.0,
+      "images": 0
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": false,
+      "T_iou50": true,
+      "T_iou75": false,
+      "objects": 642,
+      "fraction": 0.08148242162711004,
+      "images": 489
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": false,
+      "T_iou50": true,
+      "T_iou75": true,
+      "objects": 993,
+      "fraction": 0.1260312222363244,
+      "images": 739
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": true,
+      "T_iou50": false,
+      "T_iou75": false,
+      "objects": 0,
+      "fraction": 0.0,
+      "images": 0
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": true,
+      "T_iou50": false,
+      "T_iou75": true,
+      "objects": 0,
+      "fraction": 0.0,
+      "images": 0
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": true,
+      "T_iou50": true,
+      "T_iou75": false,
+      "objects": 0,
+      "fraction": 0.0,
+      "images": 0
+    },
+    {
+      "N_iou50": false,
+      "N_iou75": true,
+      "T_iou50": true,
+      "T_iou75": true,
+      "objects": 0,
+      "fraction": 0.0,
+      "images": 0
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": false,
+      "T_iou50": false,
+      "T_iou75": false,
+      "objects": 189,
+      "fraction": 0.02398781571265389,
+      "images": 177
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": false,
+      "T_iou50": false,
+      "T_iou75": true,
+      "objects": 0,
+      "fraction": 0.0,
+      "images": 0
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": false,
+      "T_iou50": true,
+      "T_iou75": false,
+      "objects": 1179,
+      "fraction": 0.14963827896941237,
+      "images": 819
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": false,
+      "T_iou50": true,
+      "T_iou75": true,
+      "objects": 1304,
+      "fraction": 0.1655032364513263,
+      "images": 994
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": true,
+      "T_iou50": false,
+      "T_iou75": false,
+      "objects": 49,
+      "fraction": 0.006219063332910267,
+      "images": 48
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": true,
+      "T_iou50": false,
+      "T_iou75": true,
+      "objects": 0,
+      "fraction": 0.0,
+      "images": 0
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": true,
+      "T_iou50": true,
+      "T_iou75": false,
+      "objects": 610,
+      "fraction": 0.07742099251174007,
+      "images": 490
+    },
+    {
+      "N_iou50": true,
+      "N_iou75": true,
+      "T_iou50": true,
+      "T_iou75": true,
+      "objects": 2258,
+      "fraction": 0.28658459195329355,
+      "images": 1309
+    }
+  ],
+  "denominators": "All paired cached GT rows. Each confidence/IoU combination independently matched.",
+  "model_scope": "historical native visible42/infrared42 E200; no FT endpoint",
+  "matching": "Actual accepted native _process_batch/match_predictions; one threshold per invocation, original prediction order retained",
+  "AP_estimated": false,
+  "KD_gain_claim": false,
+  "loss_carrier_ranking": false,
+  "selector_coverage_inferred": false,
+  "new_GPU": false,
+  "new_model_forward": false,
+  "checkpoint_loaded": false,
+  "new_hash_computed": false,
+  "official_test_accessed": false,
+  "drone_gap": "Full N/C0 six endpoints available locally; full IR42 post-NMS cache not located. No substituted dev200 or new inference.",
+  "seconds": 9.4546729,
+  "torch_CPU_runtime": "1.8.0+cu111",
+  "source_native_runtime": "accepted torch2.10/ultralytics8.4.115 source functions with local CPU float32"
+}

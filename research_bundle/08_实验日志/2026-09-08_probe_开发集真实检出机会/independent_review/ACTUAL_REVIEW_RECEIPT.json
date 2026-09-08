@@ -1,0 +1,100 @@
+{
+  "status": "ACCEPTED_LOCAL_CPU_CACHED_REMATCH",
+  "images": 2406,
+  "paired_GT": 7879,
+  "prediction_rows": 41335,
+  "independent_native_match_calls": 19248,
+  "all_gt_and_original_prediction_ids_exact": true,
+  "all_tp_bits_exact_within_local_CPU": true,
+  "witness_iou_max_abs_difference": 0.0,
+  "four_bucket_counts": {
+    "all_iou50": {
+      "both_correct": 6326,
+      "T_only": 1138,
+      "N_only": 184,
+      "both_unmatched": 231
+    },
+    "all_iou75": {
+      "both_unmatched": 2361,
+      "both_correct": 2515,
+      "N_only": 747,
+      "T_only": 2256
+    },
+    "gt025_iou50": {
+      "both_correct": 5351,
+      "T_only": 1635,
+      "both_unmatched": 655,
+      "N_only": 238
+    },
+    "gt025_iou75": {
+      "both_unmatched": 2665,
+      "both_correct": 2258,
+      "N_only": 659,
+      "T_only": 2297
+    }
+  },
+  "four_bucket_image_counts": {
+    "all_iou50": {
+      "both_correct": 2281,
+      "T_only": 749,
+      "N_only": 172,
+      "both_unmatched": 202
+    },
+    "all_iou75": {
+      "both_correct": 1436,
+      "T_only": 1430,
+      "N_only": 574,
+      "both_unmatched": 1322
+    },
+    "gt025_iou50": {
+      "both_correct": 2090,
+      "T_only": 1035,
+      "N_only": 221,
+      "both_unmatched": 504
+    },
+    "gt025_iou75": {
+      "both_correct": 1309,
+      "T_only": 1459,
+      "N_only": 516,
+      "both_unmatched": 1409
+    }
+  },
+  "all_joint_and_confidence_transition_cells_exact": true,
+  "source_copies_byte_exact": true,
+  "local_torch": "1.8.0+cu111",
+  "native_source": "accepted Ultralytics8.4.115 function bodies",
+  "original_GPU_TP_bitwise_reproduction_claim": false,
+  "new_GPU": false,
+  "new_NMS": false,
+  "new_model_forward": false,
+  "checkpoint_loaded": false,
+  "new_hash_computed": false,
+  "seconds": 6.3137311,
+  "inputs": [
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_开发集真实检出机会\\output_attempt1\\summary.json",
+      "bytes": 21856,
+      "mtime_ns": 1788845254987332100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_开发集真实检出机会\\output_attempt1\\objects.jsonl.gz",
+      "bytes": 660733,
+      "mtime_ns": 1788845254479520000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_开发集真实检出机会\\output_attempt1\\prediction_matches.jsonl.gz",
+      "bytes": 2191052,
+      "mtime_ns": 1788845253975141100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_开发集真实检出机会\\analyze_dev_cache.py",
+      "bytes": 15884,
+      "mtime_ns": 1788845065610016500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_probe_开发集真实检出机会\\native_cached_match.py",
+      "bytes": 3591,
+      "mtime_ns": 1788844889910811300
+    }
+  ]
+}
