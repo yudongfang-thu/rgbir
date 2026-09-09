@@ -1,0 +1,303 @@
+{
+  "observed_at": "2026-09-09T19:58:26.163938+08:00",
+  "campaign": {
+    "launched_seeds": [
+      42,
+      0
+    ],
+    "pending_seeds": [
+      123
+    ],
+    "active_seeds": [
+      42,
+      0
+    ],
+    "failures": {},
+    "seed42_five_epoch_pass": true,
+    "reads_ap": false,
+    "max_concurrent_runs": 2,
+    "existing_seed42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/attempt1/C1_seed42",
+    "recovery_reason": "seed0_shared_card_budget_abort; unchanged_training_new_attempt",
+    "updated_at": "2026-09-09T19:58:04.478800+08:00",
+    "status": "RUNNING"
+  },
+  "original_campaign": {
+    "launched_seeds": [
+      42,
+      0
+    ],
+    "pending_seeds": [
+      123
+    ],
+    "active_seeds": [
+      42
+    ],
+    "failures": {
+      "0": "BUDGET_ABORTED"
+    },
+    "seed42_five_epoch_pass": true,
+    "reads_ap": false,
+    "max_concurrent_runs": 2,
+    "updated_at": "2026-09-09T17:21:44.132623+08:00",
+    "status": "PAUSED_TECHNICAL",
+    "note": "Unstarted seeds held; already running seeds retain their own deadlines"
+  },
+  "runs": {
+    "42": {
+      "run_status.json": {
+        "status": "TRAINING",
+        "seed": 42,
+        "budget_seconds": 36000,
+        "run_kind": "train_then_independent_dev",
+        "official_test_accessed": false,
+        "stages": [],
+        "queue_seconds": 0.720159810000041,
+        "physical_gpu_ids": [
+          0
+        ],
+        "started_at": "2026-09-09T16:46:12.164631+08:00"
+      },
+      "run_final.json": null,
+      "training/fastpath_launch.json": {
+        "status": "RUNNING",
+        "seed": 42,
+        "fresh_initialization": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+        "candidate_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/release_v1/fast_candidate/batched_selection_v1.py",
+        "epochs": 200,
+        "batch": 32,
+        "workers": 4,
+        "train_images": 17990,
+        "test_accessed": false,
+        "accepted_implementation": "RGBIR-C1-BATCHED-SELECTION-v1-E200-FRESH-20260908",
+        "wrapper_version": "C1-BATCHED-E200-BUDGET10H-20260909"
+      },
+      "training/progress.json": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 84,
+        "epochs": 200,
+        "optimizer_updates": 23956,
+        "update_attempts": 23970,
+        "amp_skips": 14,
+        "batches": 47095,
+        "selected_objects": 5727337,
+        "seconds": 11529.993025302887,
+        "last_kd": 0.15755382180213928
+      },
+      "training/budget_progress.json": {
+        "completed_epochs": 83,
+        "elapsed_seconds": 11451.565446348002,
+        "recent_mean_epoch_seconds": 129.4693927193342,
+        "projected_total_seconds": 30199.484394510102,
+        "tail_reserve_seconds": 3600,
+        "budget_seconds": 36000,
+        "eligible": true,
+        "stop_for_budget": false,
+        "reads_ap": false
+      },
+      "training/failure_receipt.json": null,
+      "run_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/attempt1/C1_seed42",
+      "training/epoch_timing.jsonl_last": [
+        {
+          "epoch": 81,
+          "epoch_seconds": 130.94408982599998,
+          "run_elapsed_seconds": 11194.099228069,
+          "optimizer_updates": 23210,
+          "amp_skips": 14,
+          "batches": 45603,
+          "peak_allocated_mib": 5565.45556640625,
+          "peak_reserved_mib": 7100.0
+        },
+        {
+          "epoch": 82,
+          "epoch_seconds": 128.66241414700198,
+          "run_elapsed_seconds": 11322.762727214002,
+          "optimizer_updates": 23491,
+          "amp_skips": 14,
+          "batches": 46166,
+          "peak_allocated_mib": 5565.45556640625,
+          "peak_reserved_mib": 7100.0
+        },
+        {
+          "epoch": 83,
+          "epoch_seconds": 128.8016741850006,
+          "run_elapsed_seconds": 11451.565446348002,
+          "optimizer_updates": 23773,
+          "amp_skips": 14,
+          "batches": 46729,
+          "peak_allocated_mib": 5565.45556640625,
+          "peak_reserved_mib": 7100.0
+        }
+      ],
+      "resources.jsonl_last": [
+        {
+          "elapsed_seconds": 11519.651705324002,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 13593,
+              "memory_used_mib": 10491,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 57657,
+          "violations": []
+        },
+        {
+          "elapsed_seconds": 11525.174170874001,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 13593,
+              "memory_used_mib": 10491,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 57670,
+          "violations": []
+        },
+        {
+          "elapsed_seconds": 11530.614983748,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 13487,
+              "memory_used_mib": 10597,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 57717,
+          "violations": []
+        }
+      ],
+      "log_tail": "    1.057        476        640: 63% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 359/563 4.5it/s 1:20<45.0s\r\u001b[K     84/200      6.93G      1.059     0.5605      1.057        465        640: 63% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 360/563 4.7it/s 1:20<43.4s\r\u001b[K     84/200      6.93G      1.059     0.5604      1.057        463        640: 64% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 361/563 4.6it/s 1:20<43.8s\r\u001b[K     84/200      6.93G      1.059     0.5605      1.057        415        640: 64% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 362/563 5.0it/s 1:20<40.5s\r\u001b[K     84/200      6.93G      1.059     0.5605      1.057        524        640: 64% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 363/563 4.6it/s 1:20<43.4s\r\u001b[K     84/200      6.93G      1.059     0.5605      1.057        519        640: 64% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 364/563 4.5it/s 1:21<44.1s\r\u001b[K     84/200      6.93G      1.059     0.5605      1.057        685        640: 64% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 365/563 4.5it/s 1:21<44.4s\r\u001b[K     84/200      6.93G      1.059     0.5606      1.057        608        640: 65% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 366/563 4.4it/s 1:21<44.6s\r\u001b[K     84/200      6.93G       1.06     0.5607      1.057        541        640: 65% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 367/563 4.4it/s 1:21<44.3s\r\u001b[K     84/200      6.93G       1.06     0.5609      1.057        311        640: 65% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 368/563 5.0it/s 1:21<39.2s\r\u001b[K     84/200      6.93G      1.059     0.5609      1.057        504        640: 65% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500 369/563 4.7it/s 1:22<41.2s"
+    },
+    "0": {
+      "run_status.json": {
+        "status": "TRAINING",
+        "seed": 0,
+        "budget_seconds": 36000,
+        "run_kind": "train_then_independent_dev",
+        "official_test_accessed": false,
+        "stages": [],
+        "queue_seconds": 1.1628497519996017,
+        "physical_gpu_ids": [
+          6
+        ],
+        "started_at": "2026-09-09T17:56:58.638396+08:00"
+      },
+      "run_final.json": null,
+      "training/fastpath_launch.json": {
+        "status": "RUNNING",
+        "seed": 0,
+        "fresh_initialization": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+        "candidate_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/release_v1/fast_candidate/batched_selection_v1.py",
+        "epochs": 200,
+        "batch": 32,
+        "workers": 4,
+        "train_images": 17990,
+        "test_accessed": false,
+        "accepted_implementation": "RGBIR-C1-BATCHED-SELECTION-v1-E200-FRESH-20260908",
+        "wrapper_version": "C1-BATCHED-E200-BUDGET10H-20260909"
+      },
+      "training/progress.json": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 59,
+        "epochs": 200,
+        "optimizer_updates": 16750,
+        "update_attempts": 16760,
+        "amp_skips": 10,
+        "batches": 32675,
+        "selected_objects": 3972227,
+        "seconds": 7280.603338241577,
+        "last_kd": 0.09715313464403152
+      },
+      "training/budget_progress.json": {
+        "completed_epochs": 58,
+        "elapsed_seconds": 7278.892014887999,
+        "recent_mean_epoch_seconds": 122.34228640066674,
+        "projected_total_seconds": 28251.496683782676,
+        "tail_reserve_seconds": 3600,
+        "budget_seconds": 36000,
+        "eligible": true,
+        "stop_for_budget": false,
+        "reads_ap": false
+      },
+      "training/failure_receipt.json": null,
+      "run_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/recovery_attempt2/C1_seed0",
+      "training/epoch_timing.jsonl_last": [
+        {
+          "epoch": 56,
+          "epoch_seconds": 124.1968727559979,
+          "run_elapsed_seconds": 7036.059639858999,
+          "optimizer_updates": 16176,
+          "amp_skips": 10,
+          "batches": 31528,
+          "peak_allocated_mib": 5565.45556640625,
+          "peak_reserved_mib": 7100.0
+        },
+        {
+          "epoch": 57,
+          "epoch_seconds": 121.29416167300224,
+          "run_elapsed_seconds": 7157.354882044001,
+          "optimizer_updates": 16458,
+          "amp_skips": 10,
+          "batches": 32091,
+          "peak_allocated_mib": 5565.45556640625,
+          "peak_reserved_mib": 7100.0
+        },
+        {
+          "epoch": 58,
+          "epoch_seconds": 121.53582477300006,
+          "run_elapsed_seconds": 7278.892014887999,
+          "optimizer_updates": 16739,
+          "amp_skips": 10,
+          "batches": 32654,
+          "peak_allocated_mib": 5565.45556640625,
+          "peak_reserved_mib": 7100.0
+        }
+      ],
+      "resources.jsonl_last": [
+        {
+          "elapsed_seconds": 7275.276664227,
+          "gpus": {
+            "6": {
+              "memory_free_mib": 16428,
+              "memory_used_mib": 7656,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 57729,
+          "violations": []
+        },
+        {
+          "elapsed_seconds": 7280.814030486999,
+          "gpus": {
+            "6": {
+              "memory_free_mib": 16428,
+              "memory_used_mib": 7656,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 57588,
+          "violations": []
+        },
+        {
+          "elapsed_seconds": 7286.357805242998,
+          "gpus": {
+            "6": {
+              "memory_free_mib": 16428,
+              "memory_used_mib": 7656,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 57629,
+          "violations": []
+        }
+      ],
+      "log_tail": "    6.93G      1.091     0.5902      1.083        425        640: 4% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 28/563 4.5it/s 6.2s<1:58\r\u001b[K     59/200      6.93G      1.093     0.5939      1.081        376        640: 5% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 29/563 4.8it/s 6.4s<1:52\r\u001b[K     59/200      6.93G      1.089     0.5915       1.08        593        640: 5% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 30/563 4.6it/s 6.7s<1:56\r\u001b[K     59/200      6.93G      1.089     0.5915      1.078        426        640: 5% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 31/563 4.5it/s 6.9s<1:59\r\u001b[K     59/200      6.93G      1.087     0.5915      1.077        411        640: 5% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 32/563 4.4it/s 7.2s<2:02\r\u001b[K     59/200      6.93G      1.085     0.5905      1.075        452        640: 5% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 33/563 4.4it/s 7.4s<1:60\r\u001b[K     59/200      6.93G      1.082      0.587      1.073        379        640: 6% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 34/563 4.4it/s 7.6s<2:00\r\u001b[K     59/200      6.93G      1.084     0.5871      1.074        593        640: 6% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 35/563 4.5it/s 7.8s<1:58\r\u001b[K     59/200      6.93G      1.085     0.5865      1.073        465        640: 6% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 36/563 4.3it/s 8.1s<2:03\r\u001b[K     59/200      6.93G      1.086     0.5869      1.072        357        640: 6% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 37/563 4.4it/s 8.3s<2:01\r\u001b[K     59/200      6.93G      1.086     0.5863      1.071        435        640: 6% \u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 38/563 4.9it/s 8.5s<1:48"
+    },
+    "123": {
+      "status": "NOT_LAUNCHED"
+    }
+  },
+  "tmux": "c1budget_paired_0: 1 windows (created Wed Sep  9 17:56:57 2026)\nc1budget_paired_42: 1 windows (created Wed Sep  9 16:46:11 2026)\nc1budget_recovery_0: 1 windows (created Wed Sep  9 17:56:57 2026)\n"
+}
