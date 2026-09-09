@@ -1,0 +1,34 @@
+{
+  "campaign": "error_complement_d0p_20260829",
+  "schema": "error-complement-d0p-governance-v1",
+  "status": "TERMINAL_KILL_NO_SHARED_ERROR_COMPLEMENT",
+  "science_owner": "parent",
+  "allowed_now": [
+    "read and report the frozen D0+ result",
+    "archive the completed campaign artifacts"
+  ],
+  "blocked_now": [
+    "property-confirm rescue or second-candidate substitution",
+    "threshold or metric changes",
+    "GT-free AP materializer",
+    "seed42 AP pilot",
+    "method-dev sealed-confirm or official-test access"
+  ],
+  "required_parent_input": [],
+  "preflight_gpu_hour_ceiling": 1.0,
+  "m1_gpu_hour_ceiling": 18.0,
+  "engineering_repairs_used": 0,
+  "scientific_repairs_used": 0,
+  "p1_corrections_accepted": true,
+  "cpu_preflight": "PASS_23_OF_23_LOCAL_AND_REMOTE",
+  "cuda_canary": "PASS_4_OF_4",
+  "outcome_blind": false,
+  "discovery_candidate": "P5",
+  "confirm_decision": "KILL_NO_SHARED_ERROR_COMPLEMENT",
+  "confirm_failures": [
+    "ogsod:recovery",
+    "ogsod:best_null",
+    "spacenet6:recovery",
+    "spacenet6:best_null"
+  ]
+}

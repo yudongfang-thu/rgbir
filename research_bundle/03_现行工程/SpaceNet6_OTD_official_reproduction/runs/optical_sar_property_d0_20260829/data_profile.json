@@ -1,0 +1,270 @@
+{
+  "ogsod": {
+    "property_confirm": {
+      "access_boundary": "property role only; no checkpoints, detection metrics, method-dev, sealed or official evaluation data read",
+      "aspect_ratio_quartiles": [
+        0.8823600277083403,
+        1.1428571428571428,
+        1.6666856297644799
+      ],
+      "class_area_quartiles": {
+        "0": [
+          80.99884800409583,
+          149.99871999180783,
+          374.0007679918081
+        ],
+        "1": [
+          728.0,
+          5025.0,
+          11330.0
+        ],
+        "2": [
+          36.0,
+          54.0,
+          72.0
+        ]
+      },
+      "class_conditioned_image_confounding": {
+        "0": {
+          "images": 2772,
+          "mean_background_fraction": 0.9849687606569321,
+          "mean_density": 2.232683982683983
+        },
+        "1": {
+          "images": 271,
+          "mean_background_fraction": 0.7234638397104186,
+          "mean_density": 3.3247232472324724
+        },
+        "2": {
+          "images": 128,
+          "mean_background_fraction": 0.9804574251174927,
+          "mean_density": 16.734375
+        }
+      },
+      "class_counts": {
+        "0": 5167,
+        "1": 665,
+        "2": 1994
+      },
+      "context_missing": 269,
+      "context_missing_fraction": 0.034372604140046004,
+      "dataset": "ogsod",
+      "donor_coverage": {
+        "hard_wrong": 1.0
+      },
+      "groups": 40,
+      "image_sizes": {
+        "256x256": 3072
+      },
+      "invalid_boxes_excluded_from_roi": 1,
+      "mean_background_fraction": 0.9639222075541815,
+      "mean_foreground_fraction": 0.03607779244581858,
+      "mean_object_density": 2.5475260416666665,
+      "nearest_neighbor_quartiles": [
+        10.856840703191114,
+        33.55956018820269,
+        82.60369644810928
+      ],
+      "object_area_quartiles": [
+        60.00051198361607,
+        119.0006399959042,
+        340.7516960030723
+      ],
+      "objects": 7826,
+      "pairs": 3072,
+      "role": "property_confirm",
+      "space_net_annotation_note": null,
+      "ssl_patch_profile": null
+    },
+    "property_fit": {
+      "access_boundary": "property role only; no checkpoints, detection metrics, method-dev, sealed or official evaluation data read",
+      "aspect_ratio_quartiles": [
+        0.8888888888888888,
+        1.1428571428571428,
+        1.6666097789913863
+      ],
+      "class_area_quartiles": {
+        "0": [
+          79.99897600000008,
+          143.99897599999997,
+          359.9974400000002
+        ],
+        "1": [
+          652.0,
+          4608.0,
+          10044.5
+        ],
+        "2": [
+          36.0,
+          49.0,
+          64.0
+        ]
+      },
+      "class_conditioned_image_confounding": {
+        "0": {
+          "images": 6485,
+          "mean_background_fraction": 0.9844409269099063,
+          "mean_density": 2.3765612952968387
+        },
+        "1": {
+          "images": 621,
+          "mean_background_fraction": 0.7307653749622585,
+          "mean_density": 3.3059581320450886
+        },
+        "2": {
+          "images": 286,
+          "mean_background_fraction": 0.9743951117242133,
+          "mean_density": 18.856643356643357
+        }
+      },
+      "class_counts": {
+        "0": 12450,
+        "1": 1563,
+        "2": 5033
+      },
+      "context_missing": 571,
+      "context_missing_fraction": 0.02998004830410585,
+      "dataset": "ogsod",
+      "donor_coverage": {
+        "hard_wrong": 1.0
+      },
+      "groups": 40,
+      "image_sizes": {
+        "256x256": 7168
+      },
+      "invalid_boxes_excluded_from_roi": 5,
+      "mean_background_fraction": 0.9644264280796051,
+      "mean_foreground_fraction": 0.0355735719203949,
+      "mean_object_density": 2.6570870535714284,
+      "nearest_neighbor_quartiles": [
+        10.0,
+        31.567388235329194,
+        80.6488915459394
+      ],
+      "object_area_quartiles": [
+        56.00051200000007,
+        109.9996159959041,
+        322.99987199590396
+      ],
+      "objects": 19046,
+      "pairs": 7168,
+      "role": "property_fit",
+      "space_net_annotation_note": null,
+      "ssl_patch_profile": null
+    }
+  },
+  "spacenet6": {
+    "property_confirm": {
+      "access_boundary": "property role only; no checkpoints, detection metrics, method-dev, sealed or official evaluation data read",
+      "aspect_ratio_quartiles": [
+        1.0875023906220125,
+        1.2187253909326121,
+        1.4285622453571307
+      ],
+      "class_area_quartiles": {
+        "0": [
+          560.2464000225018,
+          1013.9960999699995,
+          2915.0001999900005
+        ]
+      },
+      "class_conditioned_image_confounding": null,
+      "class_counts": {
+        "0": 2990
+      },
+      "context_missing": 75,
+      "context_missing_fraction": 0.02508361204013378,
+      "dataset": "spacenet6",
+      "donor_coverage": {
+        "cross_acquisition_wrong": 1.0,
+        "hard_wrong": 1.0,
+        "same_acquisition_wrong": 0.9662162162162162
+      },
+      "groups": 29,
+      "image_sizes": {
+        "900x900": 148
+      },
+      "invalid_boxes_excluded_from_roi": 0,
+      "mean_background_fraction": 0.9466706706706706,
+      "mean_foreground_fraction": 0.053329329329329336,
+      "mean_object_density": 20.2027027027027,
+      "nearest_neighbor_quartiles": [
+        21.094918820417295,
+        31.256551318403634,
+        69.64146466193839
+      ],
+      "object_area_quartiles": [
+        560.2464000225018,
+        1013.9960999699995,
+        2915.0001999900005
+      ],
+      "objects": 2990,
+      "pairs": 148,
+      "role": "property_confirm",
+      "space_net_annotation_note": "optical crops inherit SAR-derived tank labels; optical foreground AUC may reflect annotation-source bias",
+      "ssl_patch_profile": {
+        "patches": 2960,
+        "target_center_fraction": 0.3307432432432432,
+        "target_center_patches": 979,
+        "target_intersection_fraction": 0.3847972972972973,
+        "target_intersection_patches": 1139
+      }
+    },
+    "property_fit": {
+      "access_boundary": "property role only; no checkpoints, detection metrics, method-dev, sealed or official evaluation data read",
+      "aspect_ratio_quartiles": [
+        1.0908995277946612,
+        1.2222249999999955,
+        1.3684335180711478
+      ],
+      "class_area_quartiles": {
+        "0": [
+          648.0081000000023,
+          1152.014399999999,
+          2204.982000000005
+        ]
+      },
+      "class_conditioned_image_confounding": null,
+      "class_counts": {
+        "0": 7219
+      },
+      "context_missing": 65,
+      "context_missing_fraction": 0.009004017176894306,
+      "dataset": "spacenet6",
+      "donor_coverage": {
+        "cross_acquisition_wrong": 1.0,
+        "hard_wrong": 1.0,
+        "same_acquisition_wrong": 1.0
+      },
+      "groups": 29,
+      "image_sizes": {
+        "900x900": 350
+      },
+      "invalid_boxes_excluded_from_roi": 0,
+      "mean_background_fraction": 0.9495875097001764,
+      "mean_foreground_fraction": 0.050412490299823635,
+      "mean_object_density": 20.625714285714285,
+      "nearest_neighbor_quartiles": [
+        24.515493067446155,
+        35.79460015155908,
+        58.9924585794827
+      ],
+      "object_area_quartiles": [
+        648.0081000000023,
+        1152.014399999999,
+        2204.982000000005
+      ],
+      "objects": 7219,
+      "pairs": 350,
+      "role": "property_fit",
+      "space_net_annotation_note": "optical crops inherit SAR-derived tank labels; optical foreground AUC may reflect annotation-source bias",
+      "ssl_patch_profile": {
+        "patches": 7000,
+        "target_center_fraction": 0.34514285714285714,
+        "target_center_patches": 2416,
+        "target_intersection_fraction": 0.4005714285714286,
+        "target_intersection_patches": 2804
+      }
+    }
+  }
+}

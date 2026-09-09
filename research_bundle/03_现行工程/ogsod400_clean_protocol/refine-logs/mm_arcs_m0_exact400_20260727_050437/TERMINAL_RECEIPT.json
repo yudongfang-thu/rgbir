@@ -1,0 +1,63 @@
+{
+  "schema": "mm_arcs_m0_terminal_receipt_v1",
+  "terminal_at_cst": "2026-07-27T06:13:10+08:00",
+  "terminal_at_utc": "2026-07-26T22:13:10Z",
+  "terminal_status": "DEFER_ANALYZER_INTEGRITY",
+  "decision": "DEFER",
+  "candidate_family_id": "MM_ARCS_M0_CANDIDATE_FAMILY_1",
+  "scientific_result_classification": null,
+  "reason_no_classification": "No accepted commit-last analyzer bundle exists.",
+  "fresh_review": {
+    "reviewer_context": "fork_turns=none",
+    "outcome_blind": true,
+    "p0": 0,
+    "p1": 0,
+    "p2": 4,
+    "blocking_p2": 4,
+    "verdict": "BLOCK_PRODUCTION_ANALYSIS"
+  },
+  "blocking_findings": [
+    "source pathname execution is not bound through time of use, permitting TOCTOU false acceptance",
+    "H/A/P/U failure returns do not prove reaping of all descendant processes",
+    "validated H/A/P/U inputs are reopened, permitting wrong-provenance commit after input drift",
+    "epoch50 provenance can persist before exact400 success and cleanup failures can leave one-shot residue"
+  ],
+  "formal_execution": {
+    "r2a_attempts": 0,
+    "hapu_attempts": 0,
+    "source_lock_authorized": false,
+    "fresh_executor_spawned": false,
+    "accepted_commit": false
+  },
+  "access_and_compute": {
+    "outcome_accessed_in_m0": false,
+    "sixiang_test_accessed": false,
+    "detector_runs_started": 0,
+    "detector_runs_retrained": 0,
+    "gpu_hours": 0.0
+  },
+  "artifact_sha256": {
+    "PHASE_RECORD.md": "a3d82a6e8a966bbb042bf955114b2ada10748e418fca82399c4858e25032250a",
+    "ROOT_CAUSE_DELTA.md": "a62dd1abc9a4a93287fb7988d31af8a012ebfbbb064ee73b4a3179687ddc5e57",
+    "EXACT_HASH_REVIEW.md": "34d4bc7d862377d00ee96bdc96cd03cbd214781182e96c347ab6b3099b2c9126",
+    "FRESH_ZERO_CONTEXT_ADVERSARIAL_REVIEW.md": "72c5924a0b32da26f2da13949eade26dd13aceb3ca65a207f21bbd8448409de7",
+    "SOURCE_LOCK_STATUS.md": "251ab60cd981887a240f633d8d266b368e1ae2c1a482abefe3c0936848441037",
+    "EXECUTION_RECEIPT.json": "89750ef62d82d5f2c599ec29e98bbe4fcbcb84e18f37a5aa679633638d25921d",
+    "COMMIT_MANIFEST_VERIFICATION.json": "9e49b66927b20e25f5932569adf1bc98577931a7ddcdd093ae66fc9397f446c7",
+    "EVIDENCE_LEDGER.md": "8ee2dd2a5ac357515b86770e9889cced23e40b01f95dca2f497f672c31098bcb",
+    "EXACT_COMMANDS.md": "6b95c811b92030db426d91566e2a6c1ee53c011025e36967dc823d26a6176399"
+  },
+  "historical_provenance": {
+    "r2a_unplanned_interim_access_at_cst": "2026-07-19T04:39:00+08:00",
+    "no_rescue_or_mutation_recorded": true,
+    "r2a_seed42_boundary": "descriptive-only reused-development evidence"
+  },
+  "forbidden_actions": [
+    "invoke either M0 production wrapper",
+    "create an executable SOURCE_LOCK.json under this candidate family",
+    "manually inspect or reconstruct raw outcomes",
+    "change statistics, thresholds, arms, endpoints, seeds, selection, or source oracle",
+    "launch, retrain, or rescue any detector"
+  ],
+  "recommended_parent_goal": "If continued, explicitly authorize a new M1 analyzer-engineering candidate family limited to time-of-use execution identity, whole-process-tree cleanup, single-read immutable input snapshots, and failure-atomic epoch50-plus-exact400 commit-last publication; then require a new fork_turns=none review before any one-shot outcome access."
+}

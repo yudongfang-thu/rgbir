@@ -1,0 +1,273 @@
+{
+  "status": "ARITHMETIC_RECHECK_PASS",
+  "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_audit_项目与94最新全景\\independent_outcomes\\recomputed_results.json",
+  "scope": "saved accepted endpoint arithmetic; no AP recomputation",
+  "raw_metric_units": "fraction_0_to_1",
+  "display_units": "percent; deltas pp",
+  "seed_order": [
+    0,
+    42,
+    123
+  ],
+  "evidence": [
+    {
+      "arm": "C0",
+      "seed": 42,
+      "source_record": "raw/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    },
+    {
+      "arm": "N",
+      "seed": 42,
+      "source_record": "raw/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    },
+    {
+      "arm": "C0",
+      "seed": 0,
+      "source_record": "raw/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    },
+    {
+      "arm": "C0",
+      "seed": 123,
+      "source_record": "raw/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    },
+    {
+      "arm": "N",
+      "seed": 0,
+      "source_record": "raw/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    },
+    {
+      "arm": "N",
+      "seed": 123,
+      "source_record": "raw/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    },
+    {
+      "arm": "random",
+      "seed": 0,
+      "source_record": "raw/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    },
+    {
+      "arm": "random",
+      "seed": 123,
+      "source_record": "raw/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    },
+    {
+      "arm": "random",
+      "seed": 42,
+      "source_record": "raw/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+      "checkpoint_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1/weights/last.pt",
+      "endpoint": "fixed_budget_last_ema"
+    }
+  ],
+  "arms": {
+    "N": {
+      "mAP50_95": {
+        "values_seed0_42_123": [
+          54.34618520685574,
+          54.51360845035178,
+          54.40743648945896
+        ],
+        "mean": 54.42241004888883,
+        "sample_sd_ddof1": 0.08471004206812399,
+        "positive_count": 3
+      },
+      "AP50": {
+        "values_seed0_42_123": [
+          76.99251535173484,
+          77.17965366938525,
+          76.92741735562139
+        ],
+        "mean": 77.03319545891382,
+        "sample_sd_ddof1": 0.13094633570805003,
+        "positive_count": 3
+      },
+      "AP75": {
+        "values_seed0_42_123": [
+          63.93291745479234,
+          64.16656614678693,
+          63.68947787552206
+        ],
+        "mean": 63.92965382570044,
+        "sample_sd_ddof1": 0.23856087923371674,
+        "positive_count": 3
+      }
+    },
+    "C0": {
+      "mAP50_95": {
+        "values_seed0_42_123": [
+          54.77218640082956,
+          54.65816217191543,
+          54.63684720507138
+        ],
+        "mean": 54.68906525927213,
+        "sample_sd_ddof1": 0.07276967145211852,
+        "positive_count": 3
+      },
+      "AP50": {
+        "values_seed0_42_123": [
+          76.98678788788337,
+          77.0696200439378,
+          77.30455672411458
+        ],
+        "mean": 77.12032155197858,
+        "sample_sd_ddof1": 0.16484004522002899,
+        "positive_count": 3
+      },
+      "AP75": {
+        "values_seed0_42_123": [
+          64.16654157547512,
+          63.839323049220795,
+          64.21477409983494
+        ],
+        "mean": 64.07354624151029,
+        "sample_sd_ddof1": 0.20427180901005418,
+        "positive_count": 3
+      }
+    },
+    "random": {
+      "mAP50_95": {
+        "values_seed0_42_123": [
+          54.63085656211213,
+          54.49215666305265,
+          54.419367000910945
+        ],
+        "mean": 54.51412674202524,
+        "sample_sd_ddof1": 0.10744287738986603,
+        "positive_count": 3
+      },
+      "AP50": {
+        "values_seed0_42_123": [
+          76.89641053349322,
+          76.47841906336173,
+          76.94093121240412
+        ],
+        "mean": 76.77192026975302,
+        "sample_sd_ddof1": 0.2551523884417551,
+        "positive_count": 3
+      },
+      "AP75": {
+        "values_seed0_42_123": [
+          63.957860250264,
+          63.766126263275126,
+          63.74250867258423
+        ],
+        "mean": 63.822165062041115,
+        "sample_sd_ddof1": 0.1181073059875759,
+        "positive_count": 3
+      }
+    }
+  },
+  "paired_comparisons": {
+    "C0-N": {
+      "mAP50_95": {
+        "values_seed0_42_123": [
+          0.42600119397381775,
+          0.14455372156364632,
+          0.2294107156124241
+        ],
+        "mean": 0.26665521038329604,
+        "sample_sd_ddof1": 0.14437289989666233,
+        "positive_count": 3
+      },
+      "AP50": {
+        "values_seed0_42_123": [
+          -0.005727463851471271,
+          -0.11003362544744277,
+          0.3771393684931894
+        ],
+        "mean": 0.08712609306475845,
+        "sample_sd_ddof1": 0.2565165078123949,
+        "positive_count": 1
+      },
+      "AP75": {
+        "values_seed0_42_123": [
+          0.2336241206827836,
+          -0.32724309756613934,
+          0.525296224312882
+        ],
+        "mean": 0.1438924158098421,
+        "sample_sd_ddof1": 0.43329511649918107,
+        "positive_count": 2
+      }
+    },
+    "C0-random": {
+      "mAP50_95": {
+        "values_seed0_42_123": [
+          0.1413298387174322,
+          0.16600550886278143,
+          0.217480204160438
+        ],
+        "mean": 0.1749385172468839,
+        "sample_sd_ddof1": 0.03885316613055706,
+        "positive_count": 3
+      },
+      "AP50": {
+        "values_seed0_42_123": [
+          0.09037735439014227,
+          0.5912009805760761,
+          0.36362551171045254
+        ],
+        "mean": 0.34840128222555694,
+        "sample_sd_ddof1": 0.25075866686729603,
+        "positive_count": 3
+      },
+      "AP75": {
+        "values_seed0_42_123": [
+          0.20868132521112415,
+          0.07319678594566881,
+          0.4722654272507114
+        ],
+        "mean": 0.2513811794691681,
+        "sample_sd_ddof1": 0.2029320164082219,
+        "positive_count": 3
+      }
+    },
+    "random-N": {
+      "mAP50_95": {
+        "values_seed0_42_123": [
+          0.28467135525638554,
+          -0.021451787299135106,
+          0.011930511451986092
+        ],
+        "mean": 0.09171669313641218,
+        "sample_sd_ddof1": 0.16793516812404746,
+        "positive_count": 2
+      },
+      "AP50": {
+        "values_seed0_42_123": [
+          -0.09610481824161354,
+          -0.7012346060235188,
+          0.013513856782736866
+        ],
+        "mean": -0.2612751891607985,
+        "sample_sd_ddof1": 0.3849380207814788,
+        "positive_count": 1
+      },
+      "AP75": {
+        "values_seed0_42_123": [
+          0.02494279547165945,
+          -0.40043988351180815,
+          0.05303079706217062
+        ],
+        "mean": -0.10748876365932603,
+        "sample_sd_ddof1": 0.254091524702133,
+        "positive_count": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "integrity_status": "PASS",
+  "campaign_id": "r1-baseline-seed168120232",
+  "cell": "baseline",
+  "seed": 168120232,
+  "exit_code": 0,
+  "terminal_outcome_accessed": true,
+  "fixed_test_accessed_only_at_terminal": true,
+  "result": {
+    "endpoint": "COCO bbox AP50 on fixed 200-image SAR test split",
+    "bbox_mAP_50": 0.462,
+    "bbox_mAP": 0.202,
+    "bbox_mAP_75": 0.149,
+    "epoch": 60,
+    "paper_AP50": 0.457,
+    "delta_AP50_percentage_points": 0.5
+  },
+  "checkpoint": {
+    "path": "work_dirs/r1/baseline/seed_168120232/epoch_60.pth",
+    "bytes": 330268561,
+    "sha256": "837052b462d4ced68d235fb86c3d0dd6ae7a258d72090e58a9e44721d491c664",
+    "meta_epoch": 60,
+    "state_tensors": 348,
+    "all_floating_tensors_finite": true,
+    "optimizer_present": true
+  },
+  "log": {
+    "path": "logs/r1_baseline_seed168120232.formal.log",
+    "bytes": 411650,
+    "sha256": "c64484c87500d7da0c2e13dc414c2d570ba6194e1e8d3a3022edc5e5327d1fe8",
+    "fatal_flags_all_false": true
+  },
+  "identity": {
+    "config_sha256": "64c90ef46cba67c663a364b20aadc94a14d77272d57f11c17800cdf5bd1f5c72",
+    "launcher_sha256": "edcd51e702d8b309c2cb5dadbd9e59cf6f9e631bbef1adf4917dea524a13668c",
+    "train_annotation_sha256": "d136c6e7fd0e4a472b48e2d18668d4f44a49a3a6d86be88e381e4e21ab001c15",
+    "test_annotation_sha256": "55d884b1d8151a8b31fc9a707a899b10521ecc0c45e28d96e7bd75f52d751011"
+  },
+  "integrity_evidence": "governance/R1_BASELINE_SEED168120232_TERMINAL_INTEGRITY.json",
+  "claim_boundary": "One frozen seed result; the three-seed aggregate remains pending.",
+  "verdict": "PASS_BASELINE_SEED168120232"
+}

@@ -1,0 +1,58 @@
+protocol_id: sixiang_yolo11n_nomosaic_direct300_sgd_b64_v1
+status: frozen
+frozen_at: 2026-07-19
+frozen_by: user_decision_epochs300
+dataset: sixiang_coarse10_private
+task: hbb
+data_yaml: configs/datasets/sixiang_hbb_sar.yaml
+split_scope: scene_clean_group_aware
+split_artifact: /private/data/sixiang_yolo_coarse10_s42_v1/manifest.json
+scene_oof: true
+model: YOLO11n
+student_init: yolo11n.pt
+student_init_source_epochs: 0
+teacher_init: yolo11n.pt
+teacher_init_source_epochs: 0
+effective_total_student_epochs: 300
+epochs: 300
+patience: 300
+imgsz: 512
+batch: 64
+strict_batch_size: true
+workers: 8
+optimizer: SGD
+lr0: 0.01
+lrf: 0.01
+cos_lr: false
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+amp: true
+deterministic: true
+mosaic: 0.0
+close_mosaic: 0
+mixup: 0.0
+cutmix: 0.0
+degrees: 0.0
+perspective: 0.0
+translate: 0.1
+scale: 0.5
+fliplr: 0.5
+flipud: 0.0
+hsv_h: 0.0
+hsv_s: 0.0
+hsv_v: 0.0
+erasing: 0.0
+augmentation_source: repository_default_non_mosaic_albumentations
+seeds: [0, 42, 123]
+evaluation: sar_only
+metrics: [AP50, AP50-95]
+report_final_epoch: 300
+report_best_within_epochs: 1-300
+notes:
+  - epochs=300 frozen by user 2026-07-19 (matches repo default and prior 300-epoch practice; dataset reported fast-converging). Curve review after first wave; any revision requires a new protocol_id.
+  - Hyperparameters mirror the OGSOD main protocol except imgsz=512 (native chip size) and epochs=300.
+  - val split is for development selection only; test split stays untouched until final evaluation.
+  - Baseline runs double as KD teacher pool (SAR teacher for H_S, RGB teacher for RGB-CMD).

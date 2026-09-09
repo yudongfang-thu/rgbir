@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "status": "COMPLETE_ALL_12_RUNS_TERMINAL_INTEGRITY_ACCEPTED",
+  "seeds": [168120232, 3407, 20260820],
+  "endpoint": "COCO bbox AP50 percentage points on fixed 200-image SAR test",
+  "cells": {
+    "baseline": {"values": [46.2, 45.4, 47.0], "mean": 46.2, "sample_std": 0.8, "paper": 45.7},
+    "akd": {"values": [44.4, 44.9, 46.2], "mean": 45.1667, "sample_std": 0.9292, "paper": 47.6},
+    "os_ssl": {"values": [53.7, 52.4, 52.7], "mean": 52.9333, "sample_std": 0.6807, "paper": 54.6},
+    "full": {"values": [52.9, 53.2, 51.7], "mean": 52.6, "sample_std": 0.7937, "paper": 56.2}
+  },
+  "paired_effects": {
+    "akd_minus_baseline": {"values": [-1.8, -0.5, -0.8], "mean": -1.0333, "sample_std": 0.6807},
+    "os_ssl_minus_baseline": {"values": [7.5, 7.0, 5.7], "mean": 6.7333, "sample_std": 0.9292},
+    "full_minus_os_ssl": {"values": [-0.8, 0.8, -1.0], "mean": -0.3333, "sample_std": 0.9866},
+    "full_minus_baseline": {"values": [6.7, 7.8, 4.7], "mean": 6.4, "sample_std": 1.5716}
+  },
+  "result_to_claim": {
+    "baseline_reproduced": true,
+    "os_ssl_positive_effect_supported": true,
+    "akd_positive_effect_supported": false,
+    "full_paper_value_reproduced": false,
+    "interpretation": "Under the frozen released implementation, OS-SSL provides a consistent gain, while official AKD does not provide a positive mean paired effect. R4 tests the preregistered feature-alignment and teacher-protocol hypotheses without changing this R1 conclusion."
+  },
+  "receipts": "governance/R1_*_TERMINAL_RECEIPT.json"
+}

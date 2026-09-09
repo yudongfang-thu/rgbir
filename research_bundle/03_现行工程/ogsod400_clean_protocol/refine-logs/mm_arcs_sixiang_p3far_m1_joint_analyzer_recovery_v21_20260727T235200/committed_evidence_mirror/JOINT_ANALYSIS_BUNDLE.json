@@ -1,0 +1,81 @@
+{
+  "campaign_id": "MMARCS-SX-P3FAR-M1-S42S123-20260727T091652+0800",
+  "claim_boundary": "two prospective development seeds only; not paper-ready and not shared/private evidence",
+  "descriptive_two_seed_mean": {
+    "cannot_override_seedwise_2of2_gate": true,
+    "endpoint_delta": "-0.00879",
+    "h_endpoint": "0.406185",
+    "h_late10": "0.4052675",
+    "late10_delta": "-0.0068535",
+    "p_endpoint": "0.397395",
+    "p_late10": "0.398414"
+  },
+  "evidence_level": "development_exploratory",
+  "joint_verdict": "DEFER_PORTABILITY_HETEROGENEITY",
+  "method": "MM-ARCS P3/far_background mass=0.10 q=0.5",
+  "pass_count": 1,
+  "per_seed": {
+    "123": {
+      "delta": {
+        "endpoint": "0.00905",
+        "late10": "0.012051"
+      },
+      "gates": {
+        "both_strictly_positive": true,
+        "endpoint_delta_ge_0.003": true,
+        "late10_delta_ge_0.002": true,
+        "lineage_dose_finite_checkpoint_integrity": true
+      },
+      "h": {
+        "endpoint": "0.39923",
+        "late10": "0.399267"
+      },
+      "integrity": {
+        "h_results_sha256": "d2144393f025520c1b6d3b3976c9c40345a97ebc32bf547d7686088db6220ac2",
+        "p_results_sha256": "29b92da75a16e078341af00827fc7bef1afb753d967025b0858c0d88284c8cfa",
+        "precheck_sha256": "538e344318205e88bfa14469974ffe6cebaafd637fc3bed82b7e954db73eaa40",
+        "source_lock_sha256": "d2cf25aa8a6a4bf26aac6b97b22b6381fd2cca96c9b9773b1de06569050d9fb2"
+      },
+      "p": {
+        "endpoint": "0.40828",
+        "late10": "0.411318"
+      },
+      "seed_verdict": "PASS"
+    },
+    "42": {
+      "delta": {
+        "endpoint": "-0.02663",
+        "late10": "-0.025758"
+      },
+      "gates": {
+        "both_strictly_positive": false,
+        "endpoint_delta_ge_0.003": false,
+        "late10_delta_ge_0.002": false,
+        "lineage_dose_finite_checkpoint_integrity": true
+      },
+      "h": {
+        "endpoint": "0.41314",
+        "late10": "0.411268"
+      },
+      "integrity": {
+        "h_results_sha256": "64ab63ec9489ed5c85f6d2db224544ea372ead499bde6b65a4bfc485dcdfa343",
+        "p_results_sha256": "c58f069ae7eabeb7957170b85d57455a9529abdd3e94c7a1af20258afa26f276",
+        "precheck_sha256": "7d7b16f24f01bf199e55386f17801ce79cd26ce77fb924688350479ff8872ea0",
+        "source_lock_sha256": "7e5b6167b46321eea0b004a3f43dc7c1ece90368b7a713a09f9648089109b940"
+      },
+      "p": {
+        "endpoint": "0.38651",
+        "late10": "0.38551"
+      },
+      "seed_verdict": "FAIL"
+    }
+  },
+  "protocol": "sixiang_yolo11n_nomosaic_direct300_sgd_b64_v1",
+  "schema": "mm_arcs.sixiang.m1.joint_analysis/v2",
+  "seed0_included": false,
+  "seed_roster": [
+    42,
+    123
+  ],
+  "synthetic_fixture": false
+}

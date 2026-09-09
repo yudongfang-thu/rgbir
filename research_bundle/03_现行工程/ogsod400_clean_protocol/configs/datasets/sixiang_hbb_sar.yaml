@@ -1,0 +1,17 @@
+path: /private/data/sixiang_yolo_coarse10_s42_v1/sar
+train: images/train
+val: images/val
+test: images/test
+
+nc: 10
+names:
+  0: "民船"
+  1: "航母_甲板航空舰"
+  2: "两栖登陆_远征平台"
+  3: "巡洋_驱逐舰"
+  4: "护卫_巡防舰"
+  5: "濒海战斗_导弹艇"
+  6: "潜艇"
+  7: "补给_保障舰"
+  8: "特种辅助舰"
+  9: "其他_未知"

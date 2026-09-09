@@ -1,0 +1,165 @@
+{
+  "analysis_scope": "full",
+  "audited_cells": 12,
+  "claim_scope": "three paired detector/SSL seeds [0,42,123]",
+  "dataset": "sixiang",
+  "endpoints": {
+    "native": {
+      "by_seed": {
+        "0": 0.40706,
+        "123": 0.40614,
+        "42": 0.41287
+      },
+      "mean": 0.40869,
+      "sample_std": 0.0036490957784086862
+    },
+    "paired": {
+      "by_seed": {
+        "0": 0.40554,
+        "123": 0.40942,
+        "42": 0.39764
+      },
+      "mean": 0.40420000000000006,
+      "sample_std": 0.006003232462598803
+    },
+    "sar_only": {
+      "by_seed": {
+        "0": 0.37861,
+        "123": 0.39839,
+        "42": 0.40439
+      },
+      "mean": 0.39379666666666663,
+      "sample_std": 0.01348985297671304
+    },
+    "shuffled": {
+      "by_seed": {
+        "0": 0.39915,
+        "123": 0.35494,
+        "42": 0.37174
+      },
+      "mean": 0.3752766666666667,
+      "sample_std": 0.022316183216072902
+    }
+  },
+  "matched_group_complete": true,
+  "metric": "metrics/mAP50-95(B)",
+  "metric_scale": "fraction_[0,1]",
+  "paired_deltas": {
+    "paired_minus_native": {
+      "by_seed": {
+        "0": -0.0015199999999999658,
+        "123": 0.003280000000000005,
+        "42": -0.015230000000000021
+      },
+      "mean": -0.004489999999999994,
+      "sample_std": 0.009605763894662432
+    },
+    "paired_minus_sar_only": {
+      "by_seed": {
+        "0": 0.02693000000000001,
+        "123": 0.011029999999999984,
+        "42": -0.006750000000000034
+      },
+      "mean": 0.01040333333333332,
+      "sample_std": 0.016848742781980324
+    },
+    "paired_minus_shuffled": {
+      "by_seed": {
+        "0": 0.006390000000000007,
+        "123": 0.05448000000000003,
+        "42": 0.02589999999999998
+      },
+      "mean": 0.02892333333333334,
+      "sample_std": 0.024187133632022913
+    }
+  },
+  "preregistered_gate": {
+    "detector_seed_direction_stable": false,
+    "paired_wins_all_controls_all_detector_seeds": false,
+    "paired_wins_all_controls_seed42": false,
+    "pretraining_seed_direction_checked": true,
+    "primary_gate_name": "sixiang_seed42_direction_gate",
+    "primary_gate_pass": false,
+    "seed42_paired_minus_strongest_control": -0.015230000000000021
+  },
+  "schema_version": "yolo-osssl-3seed-v2-analysis-v1",
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "sources": {
+    "seed0/native": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_0/native.json",
+      "audit_sha256": "62609d0b7957470b5bd060adceb3553ab7b2622e03d9e6c516da2e471c068edc",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_0/native/results.csv",
+      "results_csv_sha256": "4adb563c24589ed30967a70d55d9f7e3ffe57925d85248894f0b5dbcbfc54246"
+    },
+    "seed0/paired": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_0/paired.json",
+      "audit_sha256": "5538fe3b1c86a4b701cfb0d7c54be0d4ac14224c7b999c9dac88fc22ce32e151",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_0/paired/results.csv",
+      "results_csv_sha256": "49dc4907c880b37764dd9ec1e2a4199bceb681d4b7206fc093decbca540de85b"
+    },
+    "seed0/sar_only": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_0/sar_only.json",
+      "audit_sha256": "f1d0d8c60dbf279e9ee5e68388157aa77d110aa8c1a10ba70d67c9c23bfd2022",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_0/sar_only/results.csv",
+      "results_csv_sha256": "979aba77e2a2811d9f3ec31f564b371235d16b189b434c3c30d73f621aa4edb7"
+    },
+    "seed0/shuffled": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_0/shuffled.json",
+      "audit_sha256": "64fdce46f891c23edad976f5b03bb196f718b6207dceb53721bcca74ee964e6c",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_0/shuffled/results.csv",
+      "results_csv_sha256": "1daf489922c5902c74093528570f06216f8ab30ad17b59267d111fa353a68369"
+    },
+    "seed123/native": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_123/native.json",
+      "audit_sha256": "41ee1bf88b46d33687fd9b09a2e8f0165bf4bb5c0d108808a5937734dc4fabf0",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_123/native/results.csv",
+      "results_csv_sha256": "ddadb2c1b9b2e50876542a0face4cd7851d72ea42d3b07abb5b4320dc1bfd388"
+    },
+    "seed123/paired": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_123/paired.json",
+      "audit_sha256": "48f4320f3764928e2932cb12215c94a7b9c203b1495fa37d50eca3d126607606",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_123/paired/results.csv",
+      "results_csv_sha256": "51aa88ef561f029f7fcfdad4a168e4fc6ebaa8e26e8fe8d69d962154048e510e"
+    },
+    "seed123/sar_only": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_123/sar_only.json",
+      "audit_sha256": "c3061586368462eb11a5692b6081e757515b36c69490b22284b2301dfc45a340",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_123/sar_only/results.csv",
+      "results_csv_sha256": "3bd0587b6217fc68113afdf37fe26abe3d13a330e3db0e90b4f63d2f34a020ed"
+    },
+    "seed123/shuffled": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_123/shuffled.json",
+      "audit_sha256": "03dddf933748c9443672d50949e6e3cf9b1a87986c2aca7c9b8c2d34b70b76fc",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_123/shuffled/results.csv",
+      "results_csv_sha256": "6a207152a5996755dde76d452dfe2246ffb00745933ccefab85ca90e912a8916"
+    },
+    "seed42/native": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_42/native.json",
+      "audit_sha256": "ab5514a4922bcf9404198832dc4d978d27753dc3a2fa6945952148fcad8e81fd",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_42/native/results.csv",
+      "results_csv_sha256": "eaec85966e85227a834456306ca9c048b51473f61d8a115febbb9d9a6a9fa923"
+    },
+    "seed42/paired": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_42/paired.json",
+      "audit_sha256": "dc138f8e18423e82ec73bd60b018f72c726cb2a3885af020b69150ea0278e3f3",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_42/paired/results.csv",
+      "results_csv_sha256": "88288d438484c07b341855ed2284b978f2d253641954e5badd7833317f1707b1"
+    },
+    "seed42/sar_only": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_42/sar_only.json",
+      "audit_sha256": "176052a438d142767b13d88f4aab50a5311a17bd294753ae3421cce43eb03b41",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_42/sar_only/results.csv",
+      "results_csv_sha256": "320280fe9e75ef7cb59db4af6770ff3811343a4aa7e9fcbdab6dbdeff411fa79"
+    },
+    "seed42/shuffled": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/sixiang/seed_42/shuffled.json",
+      "audit_sha256": "8433b9524f8c9fd2e5488e3a9ba8d9a2cb9457f58a1c506c0e939e4c623d8b43",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/sixiang/seed_42/shuffled/results.csv",
+      "results_csv_sha256": "86fd9abc41a67f15a9137eb2b69ae5e933433747d14e1da780272030cb4378b2"
+    }
+  }
+}

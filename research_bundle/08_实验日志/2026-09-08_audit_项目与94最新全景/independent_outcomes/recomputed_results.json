@@ -1,0 +1,1098 @@
+{
+  "snapshot_time": "2026-09-08T14:45:39.916710+08:00",
+  "auditor": "/root/independent_outcomes",
+  "model_identity": "unavailable",
+  "metric_units": "percentage_points (original fractions multiplied by 100)",
+  "sample_sd_ddof": 1,
+  "runs": [
+    {
+      "run": "raw/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "40162.4",
+        "train/box_loss": "0.91615",
+        "train/cls_loss": "0.43307",
+        "train/dfl_loss": "0.96325",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.770696200439378,
+        "AP75": 0.638393230492208,
+        "mAP50_95": 0.5465816217191543,
+        "precision": 0.7743225301297307,
+        "recall": 0.7243045069089454,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired",
+        "seed": 42,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56695,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 27,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 40172.4308719635,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_paired_s42_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56693,
+        "update_attempts": 56720,
+        "amp_skips": 27,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 40169.60675621033,
+        "last_kd": 0.1990199089050293
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "41414.7",
+        "train/box_loss": "0.91788",
+        "train/cls_loss": "0.43949",
+        "train/dfl_loss": "0.98984",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.7717965366938525,
+        "AP75": 0.6416656614678693,
+        "mAP50_95": 0.5451360845035178,
+        "precision": 0.7864732611282166,
+        "recall": 0.7292365679591741,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "weight0",
+        "seed": 42,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56695,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 27,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 41428.191229104996,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_v1_20260906/full_weight0_s42_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56693,
+        "update_attempts": 56720,
+        "amp_skips": 27,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 41425.08944225311,
+        "last_kd": 0.3625872731208801
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "44442.6",
+        "train/box_loss": "0.91679",
+        "train/cls_loss": "0.43278",
+        "train/dfl_loss": "0.96399",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.7698678788788337,
+        "AP75": 0.6416654157547512,
+        "mAP50_95": 0.5477218640082956,
+        "precision": 0.7924371088621379,
+        "recall": 0.709786559338524,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired",
+        "seed": 0,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56694,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 28,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 44457.80159544945,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s0_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56692,
+        "update_attempts": 56720,
+        "amp_skips": 28,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 44453.45324587822,
+        "last_kd": 0.19358476996421814
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "45835.9",
+        "train/box_loss": "0.91557",
+        "train/cls_loss": "0.43396",
+        "train/dfl_loss": "0.95981",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.7730455672411458,
+        "AP75": 0.6421477409983494,
+        "mAP50_95": 0.5463684720507138,
+        "precision": 0.7787129583514844,
+        "recall": 0.7298865399139216,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired",
+        "seed": 123,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56695,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 27,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 45849.00522971153,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_paired_s123_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56693,
+        "update_attempts": 56720,
+        "amp_skips": 27,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 45845.933898210526,
+        "last_kd": 0.2129717469215393
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "43612.7",
+        "train/box_loss": "0.91626",
+        "train/cls_loss": "0.43944",
+        "train/dfl_loss": "0.98981",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.7699251535173484,
+        "AP75": 0.6393291745479234,
+        "mAP50_95": 0.5434618520685575,
+        "precision": 0.7765485331322762,
+        "recall": 0.7358216889941263,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "weight0",
+        "seed": 0,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56697,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 25,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 43625.271203279495,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s0_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56695,
+        "update_attempts": 56720,
+        "amp_skips": 25,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 43621.32675790787,
+        "last_kd": 0.33459073305130005
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "43066.6",
+        "train/box_loss": "0.91565",
+        "train/cls_loss": "0.43983",
+        "train/dfl_loss": "0.98719",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.7692741735562139,
+        "AP75": 0.6368947787552206,
+        "mAP50_95": 0.5440743648945896,
+        "precision": 0.7784148488728724,
+        "recall": 0.7341004085623704,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "weight0",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "weight0",
+        "seed": 123,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56696,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 26,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 43078.59835934639,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_object_evidence_expand_20260906/full_weight0_s123_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "weight0",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56694,
+        "update_attempts": 56720,
+        "amp_skips": 26,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 43074.70373463631,
+        "last_kd": 0.3763922452926636
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "49984.3",
+        "train/box_loss": "0.91717",
+        "train/cls_loss": "0.43539",
+        "train/dfl_loss": "0.96402",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.7689641053349323,
+        "AP75": 0.63957860250264,
+        "mAP50_95": 0.5463085656211213,
+        "precision": 0.7715389209362933,
+        "recall": 0.7327546255803248,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 0,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired_random",
+        "seed": 0,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56696,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 26,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 49998.32588863373,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s0_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56694,
+        "update_attempts": 56720,
+        "amp_skips": 26,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 49994.77216935158,
+        "last_kd": 0.14311902225017548
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "45282.7",
+        "train/box_loss": "0.91548",
+        "train/cls_loss": "0.4361",
+        "train/dfl_loss": "0.96088",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.7694093121240413,
+        "AP75": 0.6374250867258423,
+        "mAP50_95": 0.5441936700091095,
+        "precision": 0.7883540828667716,
+        "recall": 0.7227335625816458,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 123,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired_random",
+        "seed": 123,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56696,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 26,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 45296.2142226696,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s123_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56695,
+        "update_attempts": 56720,
+        "amp_skips": 25,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 45292.58724117279,
+        "last_kd": 0.16234277188777924
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1",
+      "csv_rows": 200,
+      "csv_last": {
+        "epoch": "200",
+        "time": "50290.4",
+        "train/box_loss": "0.91523",
+        "train/cls_loss": "0.43724",
+        "train/dfl_loss": "0.9567",
+        "metrics/precision(B)": "0.0001495",
+        "metrics/recall(B)": "0.0001495",
+        "metrics/mAP50(B)": "0.0001495",
+        "metrics/mAP50-95(B)": null,
+        "val/box_loss": null,
+        "val/cls_loss": null,
+        "val/dfl_loss": null,
+        "lr/pg0": null,
+        "lr/pg1": null,
+        "lr/pg2": null
+      },
+      "evaluation": {
+        "AP50": 0.7647841906336172,
+        "AP75": 0.6376612626327512,
+        "mAP50_95": 0.5449215666305265,
+        "precision": 0.78516933078987,
+        "recall": 0.7207884332189176,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1/weights/last.pt",
+        "endpoint": "fixed_budget_last_ema",
+        "split": "val",
+        "arm": "paired_random",
+        "seed": 42,
+        "single_seed_exploratory": true,
+        "official_test_accessed": false,
+        "metric_units": "fraction_0_to_1",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1"
+      },
+      "completion": {
+        "status": "training_completed",
+        "method_id": "RGBIR-OBJECT-EVIDENCE-v1",
+        "arm": "paired_random",
+        "seed": 42,
+        "epochs_configured": 200,
+        "last_epoch": 200,
+        "optimizer_updates": 56697,
+        "optimizer_update_attempts": 56722,
+        "amp_skipped_updates": 25,
+        "ema_updates": 56722,
+        "batches": 112600,
+        "seconds": 50302.34415221214,
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbir_oev1_random_20260906/full_paired_random_s42_attempt1/weights/last.pt"
+      },
+      "progress": {
+        "status": "running",
+        "arm": "paired_random",
+        "epoch": 200,
+        "epochs": 200,
+        "optimizer_updates": 56696,
+        "update_attempts": 56720,
+        "amp_skips": 24,
+        "batches": 112595,
+        "selected_objects": 13693433,
+        "seconds": 50297.258343458176,
+        "last_kd": 0.1512620598077774
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_task_conditional_c_attribution_20260907/full_c_same_modal_s42_attempt1",
+      "csv_rows": 119,
+      "csv_last": {
+        "epoch": "119",
+        "time": "108736",
+        "train/box_loss": "1.02504",
+        "train/cls_loss": "0.5276",
+        "train/dfl_loss": "1.03931",
+        "metrics/precision(B)": "0",
+        "metrics/recall(B)": "0",
+        "metrics/mAP50(B)": "0",
+        "metrics/mAP50-95(B)": "0",
+        "val/box_loss": "0",
+        "val/cls_loss": "0",
+        "val/dfl_loss": "0",
+        "lr/pg0": "0.004159",
+        "lr/pg1": "0.004159",
+        "lr/pg2": "0.004159"
+      },
+      "evaluation": null,
+      "completion": null,
+      "progress": {
+        "status": "running",
+        "arm": "c_same_modal",
+        "epoch": 120,
+        "epochs": 200,
+        "optimizer_updates": 34052,
+        "update_attempts": 34070,
+        "amp_skips": 18,
+        "batches": 67295,
+        "selected_objects": 5835316,
+        "seconds": 109275.429251194,
+        "last_kd": 0.037725403904914856
+      }
+    },
+    {
+      "run": "raw/runs/rgbir_task_conditional_c_attribution_20260907/full_c_shuffled_s42_attempt1",
+      "csv_rows": 144,
+      "csv_last": {
+        "epoch": "144",
+        "time": "127068",
+        "train/box_loss": "0.99859",
+        "train/cls_loss": "0.5049",
+        "train/dfl_loss": "1.0374",
+        "metrics/precision(B)": "0",
+        "metrics/recall(B)": "0",
+        "metrics/mAP50(B)": "0",
+        "metrics/mAP50-95(B)": "0",
+        "val/box_loss": "0",
+        "val/cls_loss": "0",
+        "val/dfl_loss": "0",
+        "lr/pg0": "0.0029215",
+        "lr/pg1": "0.0029215",
+        "lr/pg2": "0.0029215"
+      },
+      "evaluation": null,
+      "completion": null,
+      "progress": {
+        "status": "running",
+        "arm": "c_shuffled",
+        "epoch": 145,
+        "epochs": 200,
+        "optimizer_updates": 41170,
+        "update_attempts": 41190,
+        "amp_skips": 20,
+        "batches": 81535,
+        "selected_objects": 9915786,
+        "seconds": 127592.79992508888,
+        "last_kd": 0.29711729288101196
+      }
+    },
+    {
+      "run": "raw/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed0",
+      "csv_rows": 72,
+      "csv_last": {
+        "epoch": "72",
+        "time": "82921.5",
+        "train/box_loss": "1.07312",
+        "train/cls_loss": "0.57783",
+        "train/dfl_loss": "1.06909",
+        "metrics/precision(B)": "0",
+        "metrics/recall(B)": "0",
+        "metrics/mAP50(B)": "0",
+        "metrics/mAP50-95(B)": "0",
+        "val/box_loss": "0",
+        "val/cls_loss": "0",
+        "val/dfl_loss": "0",
+        "lr/pg0": "0.0064855",
+        "lr/pg1": "0.0064855",
+        "lr/pg2": "0.0064855"
+      },
+      "evaluation": null,
+      "completion": null,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 73,
+        "epochs": 200,
+        "optimizer_updates": 20867,
+        "update_attempts": 20880,
+        "amp_skips": 13,
+        "batches": 40915,
+        "selected_objects": 4975731,
+        "seconds": 83694.04106974602,
+        "last_kd": 0.19062237441539764
+      }
+    },
+    {
+      "run": "raw/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed123",
+      "csv_rows": 73,
+      "csv_last": {
+        "epoch": "73",
+        "time": "83614.1",
+        "train/box_loss": "1.07157",
+        "train/cls_loss": "0.57606",
+        "train/dfl_loss": "1.06506",
+        "metrics/precision(B)": "0",
+        "metrics/recall(B)": "0",
+        "metrics/mAP50(B)": "0",
+        "metrics/mAP50-95(B)": "0",
+        "val/box_loss": "0",
+        "val/cls_loss": "0",
+        "val/dfl_loss": "0",
+        "lr/pg0": "0.006436",
+        "lr/pg1": "0.006436",
+        "lr/pg2": "0.006436"
+      },
+      "evaluation": null,
+      "completion": null,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 74,
+        "epochs": 200,
+        "optimizer_updates": 20967,
+        "update_attempts": 20980,
+        "amp_skips": 13,
+        "batches": 41115,
+        "selected_objects": 4999817,
+        "seconds": 83660.52162671089,
+        "last_kd": 0.0849071741104126
+      }
+    },
+    {
+      "run": "raw/artifacts/rgbir_independent_kd_v2_20260907/formal_C1_gpu5_attempt2/runs/C1_seed42",
+      "csv_rows": 75,
+      "csv_last": {
+        "epoch": "75",
+        "time": "83425",
+        "train/box_loss": "1.07155",
+        "train/cls_loss": "0.57331",
+        "train/dfl_loss": "1.06272",
+        "metrics/precision(B)": "0",
+        "metrics/recall(B)": "0",
+        "metrics/mAP50(B)": "0",
+        "metrics/mAP50-95(B)": "0",
+        "val/box_loss": "0",
+        "val/cls_loss": "0",
+        "val/dfl_loss": "0",
+        "lr/pg0": "0.006337",
+        "lr/pg1": "0.006337",
+        "lr/pg2": "0.006337"
+      },
+      "evaluation": null,
+      "completion": null,
+      "progress": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 76,
+        "epochs": 200,
+        "optimizer_updates": 21598,
+        "update_attempts": 21610,
+        "amp_skips": 12,
+        "batches": 42375,
+        "selected_objects": 5153410,
+        "seconds": 83728.26337099075,
+        "last_kd": 0.11293911933898926
+      }
+    }
+  ],
+  "aggregates": {
+    "paired": {
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "metrics_pp": {
+        "mAP50_95": {
+          "values": {
+            "0": 54.77218640082956,
+            "42": 54.65816217191543,
+            "123": 54.63684720507138
+          },
+          "mean": 54.68906525927213,
+          "sample_sd": 0.07276967145211852
+        },
+        "AP50": {
+          "values": {
+            "0": 76.98678788788337,
+            "42": 77.0696200439378,
+            "123": 77.30455672411458
+          },
+          "mean": 77.12032155197858,
+          "sample_sd": 0.16484004522002899
+        },
+        "AP75": {
+          "values": {
+            "0": 64.16654157547512,
+            "42": 63.839323049220795,
+            "123": 64.21477409983494
+          },
+          "mean": 64.07354624151029,
+          "sample_sd": 0.20427180901005418
+        },
+        "precision": {
+          "values": {
+            "0": 79.24371088621379,
+            "42": 77.43225301297308,
+            "123": 77.87129583514843
+          },
+          "mean": 78.1824199114451,
+          "sample_sd": 0.9449569036575335
+        },
+        "recall": {
+          "values": {
+            "0": 70.9786559338524,
+            "42": 72.43045069089455,
+            "123": 72.98865399139216
+          },
+          "mean": 72.13258687204636,
+          "sample_sd": 1.0375765941666761
+        }
+      }
+    },
+    "weight0": {
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "metrics_pp": {
+        "mAP50_95": {
+          "values": {
+            "0": 54.34618520685574,
+            "42": 54.51360845035178,
+            "123": 54.40743648945896
+          },
+          "mean": 54.42241004888883,
+          "sample_sd": 0.08471004206812399
+        },
+        "AP50": {
+          "values": {
+            "0": 76.99251535173484,
+            "42": 77.17965366938525,
+            "123": 76.92741735562139
+          },
+          "mean": 77.03319545891382,
+          "sample_sd": 0.13094633570805003
+        },
+        "AP75": {
+          "values": {
+            "0": 63.93291745479234,
+            "42": 64.16656614678693,
+            "123": 63.68947787552206
+          },
+          "mean": 63.92965382570044,
+          "sample_sd": 0.23856087923371674
+        },
+        "precision": {
+          "values": {
+            "0": 77.65485331322762,
+            "42": 78.64732611282166,
+            "123": 77.84148488728724
+          },
+          "mean": 78.0478881044455,
+          "sample_sd": 0.5274488416173367
+        },
+        "recall": {
+          "values": {
+            "0": 73.58216889941262,
+            "42": 72.92365679591741,
+            "123": 73.41004085623703
+          },
+          "mean": 73.30528885052236,
+          "sample_sd": 0.34152493999466305
+        }
+      }
+    },
+    "paired_random": {
+      "seeds": [
+        0,
+        42,
+        123
+      ],
+      "metrics_pp": {
+        "mAP50_95": {
+          "values": {
+            "0": 54.63085656211213,
+            "42": 54.49215666305265,
+            "123": 54.419367000910945
+          },
+          "mean": 54.51412674202524,
+          "sample_sd": 0.10744287738986603
+        },
+        "AP50": {
+          "values": {
+            "0": 76.89641053349322,
+            "42": 76.47841906336173,
+            "123": 76.94093121240412
+          },
+          "mean": 76.77192026975302,
+          "sample_sd": 0.25515238844175503
+        },
+        "AP75": {
+          "values": {
+            "0": 63.957860250264,
+            "42": 63.766126263275126,
+            "123": 63.74250867258423
+          },
+          "mean": 63.822165062041115,
+          "sample_sd": 0.1181073059875759
+        },
+        "precision": {
+          "values": {
+            "0": 77.15389209362932,
+            "42": 78.516933078987,
+            "123": 78.83540828667715
+          },
+          "mean": 78.16874448643115,
+          "sample_sd": 0.8931968701579881
+        },
+        "recall": {
+          "values": {
+            "0": 73.27546255803247,
+            "42": 72.07884332189177,
+            "123": 72.27335625816458
+          },
+          "mean": 72.54255404602961,
+          "sample_sd": 0.6421253661233596
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "paired minus weight0": {
+      "mAP50_95": {
+        "deltas_pp": {
+          "0": 0.42600119397381286,
+          "42": 0.144553721563645,
+          "123": 0.22941071561242143
+        },
+        "mean": 0.2666552103832931,
+        "sample_sd": 0.14437289989666055,
+        "positive_seeds": 3
+      },
+      "AP50": {
+        "deltas_pp": {
+          "0": -0.005727463851468162,
+          "42": -0.11003362544744766,
+          "123": 0.3771393684931956
+        },
+        "mean": 0.08712609306475994,
+        "sample_sd": 0.2565165078123997,
+        "positive_seeds": 1
+      },
+      "AP75": {
+        "deltas_pp": {
+          "0": 0.23362412068278493,
+          "42": -0.32724309756613223,
+          "123": 0.5252962243128767
+        },
+        "mean": 0.14389241580984313,
+        "sample_sd": 0.433295116499175,
+        "positive_seeds": 2
+      },
+      "precision": {
+        "deltas_pp": {
+          "0": 1.5888575729861687,
+          "42": -1.2150730998485848,
+          "123": 0.029810947861197423
+        },
+        "mean": 0.13453180699959377,
+        "sample_sd": 1.4048956004877735,
+        "positive_seeds": 2
+      },
+      "recall": {
+        "deltas_pp": {
+          "0": -2.6035129655602285,
+          "42": -0.49320610502286977,
+          "123": -0.42138686484487486
+        },
+        "mean": -1.1727019784759911,
+        "sample_sd": 1.2396388834598824,
+        "positive_seeds": 0
+      }
+    },
+    "paired_random minus weight0": {
+      "mAP50_95": {
+        "deltas_pp": {
+          "0": 0.2846713552563829,
+          "42": -0.021451787299131553,
+          "123": 0.011930511451985204
+        },
+        "mean": 0.09171669313641218,
+        "sample_sd": 0.16793516812404496,
+        "positive_seeds": 2
+      },
+      "AP50": {
+        "deltas_pp": {
+          "0": -0.09610481824160466,
+          "42": -0.7012346060235264,
+          "123": 0.013513856782743083
+        },
+        "mean": -0.261275189160796,
+        "sample_sd": 0.38493802078148726,
+        "positive_seeds": 1
+      },
+      "AP75": {
+        "deltas_pp": {
+          "0": 0.024942795471660784,
+          "42": -0.40043988351180504,
+          "123": 0.053030797062170176
+        },
+        "mean": -0.1074887636593247,
+        "sample_sd": 0.25409152470213137,
+        "positive_seeds": 2
+      },
+      "precision": {
+        "deltas_pp": {
+          "0": -0.5009612195982949,
+          "42": -0.13039303383466372,
+          "123": 0.9939233993899177
+        },
+        "mean": 0.12085638198565303,
+        "sample_sd": 0.7784694648696384,
+        "positive_seeds": 1
+      },
+      "recall": {
+        "deltas_pp": {
+          "0": -0.3067063413801474,
+          "42": -0.8448134740256519,
+          "123": -1.1366845980724571
+        },
+        "mean": -0.7627348044927521,
+        "sample_sd": 0.42103284627178394,
+        "positive_seeds": 0
+      }
+    },
+    "paired minus paired_random": {
+      "mAP50_95": {
+        "deltas_pp": {
+          "0": 0.14132983871743,
+          "42": 0.16600550886277654,
+          "123": 0.21748020416043623
+        },
+        "mean": 0.17493851724688092,
+        "sample_sd": 0.03885316613055761,
+        "positive_seeds": 3
+      },
+      "AP50": {
+        "deltas_pp": {
+          "0": 0.0903773543901365,
+          "42": 0.5912009805760787,
+          "123": 0.36362551171045254
+        },
+        "mean": 0.34840128222555594,
+        "sample_sd": 0.2507586668673003,
+        "positive_seeds": 3
+      },
+      "AP75": {
+        "deltas_pp": {
+          "0": 0.20868132521112415,
+          "42": 0.0731967859456728,
+          "123": 0.4722654272507065
+        },
+        "mean": 0.2513811794691678,
+        "sample_sd": 0.20293201640821748,
+        "positive_seeds": 3
+      },
+      "precision": {
+        "deltas_pp": {
+          "0": 2.0898187925844636,
+          "42": -1.084680066013921,
+          "123": -0.9641124515287203
+        },
+        "mean": 0.013675425013940737,
+        "sample_sd": 1.7990032238564684,
+        "positive_seeds": 1
+      },
+      "recall": {
+        "deltas_pp": {
+          "0": -2.296806624180081,
+          "42": 0.3516073690027821,
+          "123": 0.7152977332275823
+        },
+        "mean": -0.4099671739832389,
+        "sample_sd": 1.64413807308627,
+        "positive_seeds": 2
+      }
+    }
+  },
+  "snapshot_hashes_reverified": true,
+  "files_checked": 325
+}

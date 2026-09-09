@@ -1,0 +1,33 @@
+{
+  "status": "NEW_WORK_PAUSED_FOR_USER_REVIEW",
+  "observed_at": "2026-09-09T22:41:21.737667+08:00",
+  "queue_pids": [
+    2366178
+  ],
+  "queue_alive_after": [],
+  "campaign_state_before": {
+    "launched_seeds": [
+      42,
+      0
+    ],
+    "pending_seeds": [
+      123
+    ],
+    "active_seeds": [
+      42,
+      0
+    ],
+    "failures": {},
+    "seed42_five_epoch_pass": true,
+    "reads_ap": false,
+    "max_concurrent_runs": 2,
+    "existing_seed42": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/attempt1/C1_seed42",
+    "recovery_reason": "seed0_shared_card_budget_abort; unchanged_training_new_attempt",
+    "updated_at": "2026-09-09T22:41:14.170780+08:00",
+    "status": "RUNNING"
+  },
+  "running_training_interrupted": false,
+  "existing_trainers_may_finish_and_evaluate": true,
+  "reason": "User requested comprehensive three-line review before further advancement",
+  "app_automation": "No longer exists according to app update result; not recreated"
+}

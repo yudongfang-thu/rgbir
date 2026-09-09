@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-09",
+  "auditor": "/root",
+  "independent_reviewers": [
+    "/root/audit_rgbsar_history",
+    "/root/audit_reproduction_line"
+  ],
+  "model_identity": "unavailable",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "DECLARED_LOCAL_EVIDENCE_SCOPE_WITH_HISTORICAL_PROVENANCE_LIMITS",
+  "audited_input_hashes": "not_computed_by_explicit_scope",
+  "input_manifest": "input_manifest.json",
+  "checks": [
+    {
+      "name": "gt_provenance",
+      "status": "warn",
+      "scope": "Inherited dataset/annotation audits; no full pixel/GT replay"
+    },
+    {
+      "name": "score_normalization",
+      "status": "pass",
+      "scope": "Saved N/C0/random 0-1 metrics to percent; same-seed deltas; ddof=1"
+    },
+    {
+      "name": "result_existence",
+      "status": "pass",
+      "scope": "Declared saved endpoints, partial failures and status records distinguished"
+    },
+    {
+      "name": "dead_code",
+      "status": "warn",
+      "scope": "Selected source checks and prior execution audits; no full historical replay"
+    },
+    {
+      "name": "scope",
+      "status": "pass",
+      "scope": "Weight re-evaluation, retraining, adaptation, probes and method effects separated"
+    },
+    {
+      "name": "eval_type",
+      "status": "pass",
+      "scope": "real_gt AP, proxy, oracle and engineering status distinguished"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C0_MATCHED_GAIN",
+      "verdict": "supported",
+      "statement": "C0-N +0.266655 +/- 0.144373 pp; all three student seeds positive under fixed Drone dev protocol"
+    },
+    {
+      "id": "C0_SELECTION",
+      "verdict": "supported",
+      "statement": "C0-random +0.174939 +/- 0.038853 pp; three positive; whole selection rule, not content attribution"
+    },
+    {
+      "id": "LLVIP_LOC_OPPORTUNITY",
+      "verdict": "supported",
+      "statement": "1304 GT: both pass IoU .5, only IR passes .75 at score >.25; descriptive, not KD gain"
+    },
+    {
+      "id": "AUTHOR_WEIGHTS",
+      "verdict": "needs_qualifier",
+      "statement": "CFT and LLVIP published weights match specified revised-paper numbers under reconstructed evaluation"
+    },
+    {
+      "id": "ORIGINAL_RETRAINING90",
+      "verdict": "unsupported",
+      "statement": "No new CFT/LLVIP E200 retraining was launched; canaries failed"
+    },
+    {
+      "id": "SN6_OSSSL",
+      "verdict": "needs_qualifier",
+      "statement": "External adapted pretraining positive in fixed SN6 four-arm protocol; not novel supervised KD"
+    },
+    {
+      "id": "C1_OR_LOC_PROVEN",
+      "verdict": "unsupported",
+      "statement": "No completed C1 endpoint or valid full localization utility result at cutoff"
+    },
+    {
+      "id": "ALL_RGBSAR_NO_SPACE",
+      "verdict": "unsupported",
+      "statement": "Limited oracle/variant failures do not establish no transferable information"
+    },
+    {
+      "id": "PAPER_READY_METHOD",
+      "verdict": "unsupported",
+      "statement": "Final retained novel method does not yet have full three-seed four-arm evidence"
+    }
+  ],
+  "no_new_model_execution": true,
+  "current_action": "new work paused; retain two existing trainers pending user clarification",
+  "status_cutoffs": {
+    "94": "2026-09-09T22:46:14+08:00",
+    "90": "2026-09-09T22:33:00+08:00"
+  },
+  "scope_limits": [
+    "No model weights or whole dataset content validation",
+    "No independent regeneration of all predictions",
+    "No new novelty or full literature audit",
+    "A paused queue overrides its stale RUNNING status file"
+  ]
+}

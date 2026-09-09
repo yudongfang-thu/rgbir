@@ -1,0 +1,165 @@
+{
+  "analysis_scope": "full",
+  "audited_cells": 12,
+  "claim_scope": "three paired detector/SSL seeds [0,42,123]",
+  "dataset": "ogsod",
+  "endpoints": {
+    "native": {
+      "by_seed": {
+        "0": 0.49141,
+        "123": 0.49679,
+        "42": 0.49306
+      },
+      "mean": 0.4937533333333333,
+      "sample_std": 0.002756199073603598
+    },
+    "paired": {
+      "by_seed": {
+        "0": 0.4968,
+        "123": 0.49402,
+        "42": 0.49628
+      },
+      "mean": 0.49570000000000003,
+      "sample_std": 0.001477971582947384
+    },
+    "sar_only": {
+      "by_seed": {
+        "0": 0.49565,
+        "123": 0.49732,
+        "42": 0.49105
+      },
+      "mean": 0.4946733333333333,
+      "sample_std": 0.003247096138603432
+    },
+    "shuffled": {
+      "by_seed": {
+        "0": 0.48354,
+        "123": 0.4786,
+        "42": 0.47866
+      },
+      "mean": 0.4802666666666667,
+      "sample_std": 0.002834948559204102
+    }
+  },
+  "matched_group_complete": true,
+  "metric": "metrics/mAP50-95(B)",
+  "metric_scale": "fraction_[0,1]",
+  "paired_deltas": {
+    "paired_minus_native": {
+      "by_seed": {
+        "0": 0.005390000000000006,
+        "123": -0.0027699999999999947,
+        "42": 0.0032200000000000006
+      },
+      "mean": 0.0019466666666666705,
+      "sample_std": 0.004226397204870045
+    },
+    "paired_minus_sar_only": {
+      "by_seed": {
+        "0": 0.0011500000000000399,
+        "123": -0.0032999999999999696,
+        "42": 0.005230000000000012
+      },
+      "mean": 0.0010266666666666942,
+      "sample_std": 0.004266337226864897
+    },
+    "paired_minus_shuffled": {
+      "by_seed": {
+        "0": 0.013259999999999994,
+        "123": 0.01541999999999999,
+        "42": 0.017620000000000025
+      },
+      "mean": 0.015433333333333335,
+      "sample_std": 0.0021800305808252784
+    }
+  },
+  "preregistered_gate": {
+    "detector_seed_direction_stable": false,
+    "paired_wins_all_controls_all_detector_seeds": false,
+    "paired_wins_all_controls_seed42": true,
+    "pretraining_seed_direction_checked": true,
+    "primary_gate_name": "ogsod_seed42_effect_gate",
+    "primary_gate_pass": false,
+    "seed42_paired_minus_strongest_control": 0.0032200000000000006
+  },
+  "schema_version": "yolo-osssl-3seed-v2-analysis-v1",
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "sources": {
+    "seed0/native": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_0/native.json",
+      "audit_sha256": "a33f8ecee7568bceb5ad62af011cc4adc259208007d17dbbcd8355dcd733e6d4",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_0/native/results.csv",
+      "results_csv_sha256": "75f26dd491e5a891d305eaadf6f2c7e9df54cd8ab643e99663d28296db90439f"
+    },
+    "seed0/paired": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_0/paired.json",
+      "audit_sha256": "ebc1851f3f2936bfe68ff44967c8c6fa02e8eb45d045de9ac0fc7c145359fbc9",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_0/paired/results.csv",
+      "results_csv_sha256": "fc27ba8c16229c63da7d247929ae2d2648396089d2fd6ef0e8ad5abce22affbd"
+    },
+    "seed0/sar_only": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_0/sar_only.json",
+      "audit_sha256": "de72208bbea2c258e2772f0a5fa1de53e64d894d219d472ec302f4f104391ea9",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_0/sar_only/results.csv",
+      "results_csv_sha256": "ac2667aa8569eff1ce5e83da5cf20af3221e81ba3acf237e4917742feadee447"
+    },
+    "seed0/shuffled": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_0/shuffled.json",
+      "audit_sha256": "ed57e8317b659c91bf5864673e340f08556e5a82a87aa8cd935739a0d465eb2e",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_0/shuffled/results.csv",
+      "results_csv_sha256": "6b99dd306b04369646cce8e7aaab4ea5789d7cf6db5162cd622faa52bd8139d8"
+    },
+    "seed123/native": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_123/native.json",
+      "audit_sha256": "feee318029944e24a4382651698e677882b797f679736afa4c18e2cd058bc907",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_123/native/results.csv",
+      "results_csv_sha256": "c2b7002f18b1024f252a4ebe3edeb001fd7741dffca12f07b638373f702e216d"
+    },
+    "seed123/paired": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_123/paired.json",
+      "audit_sha256": "37dee614af853496e77f62ca5046e645876d959ab8485144022f66c6ad96eac9",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_123/paired/results.csv",
+      "results_csv_sha256": "d4e4c4b8854671b5473dcddda0956904fa8c2d7ec0324cf2b6923752131309a3"
+    },
+    "seed123/sar_only": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_123/sar_only.json",
+      "audit_sha256": "b8f55c840995852835917223137ba02c02e7384ba74cc7abcf1370e661f7ab04",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_123/sar_only/results.csv",
+      "results_csv_sha256": "435bb180f8abb1352802bec21207327b94b385cf34c2ea0aaf1cbee171c50798"
+    },
+    "seed123/shuffled": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_123/shuffled.json",
+      "audit_sha256": "cdde744dfa8853507d5bb6f5de8eb82f2bac63015b90edcb964b85dea309578a",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_123/shuffled/results.csv",
+      "results_csv_sha256": "6e67e41f9956dea16ffed3cfce33e582c9e3af9bef253286cabba97194f7755d"
+    },
+    "seed42/native": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_42/native.json",
+      "audit_sha256": "08230645bbabcc90e615f544663b52a611f4bf9a78e63e28454f382fcafca5b0",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_42/native/results.csv",
+      "results_csv_sha256": "6b90717bdc56b5eb68ed73e4843d5c4127e2de1359500fda3b2c0e70cdb50182"
+    },
+    "seed42/paired": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_42/paired.json",
+      "audit_sha256": "74cd716aaebb27e3a0ec3141a6878ab9adae44c36d9d0756b66685a310eef1b6",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_42/paired/results.csv",
+      "results_csv_sha256": "b8cf052623a3b1efaa527d73394e5a5e33af67b2713965c141e600e668451dbc"
+    },
+    "seed42/sar_only": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_42/sar_only.json",
+      "audit_sha256": "fa9baf3ef6b6f84bbe2d315a683f14dbdf516dd6af6e6081bf43aefc3daaad43",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_42/sar_only/results.csv",
+      "results_csv_sha256": "f7ffba1de5ff6e2a9e7f82aff4b6085493ddfdd76c2249c884eb42a3606849e0"
+    },
+    "seed42/shuffled": {
+      "audit": "runs/yolo_osssl_3seed_v2/terminal_audits/detector/ogsod/seed_42/shuffled.json",
+      "audit_sha256": "8f039be044c62b704c2b9af7b6df9845e8434fd0e3c0fcd56cf0644047ec8969",
+      "results_csv": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/yolo_osssl_3seed_v2/detector/ogsod/seed_42/shuffled/results.csv",
+      "results_csv_sha256": "c54a115fbbf9d97af9d2a6c6889d8d6f64e90e77eeee49ae3458e2477567a7cd"
+    }
+  }
+}
