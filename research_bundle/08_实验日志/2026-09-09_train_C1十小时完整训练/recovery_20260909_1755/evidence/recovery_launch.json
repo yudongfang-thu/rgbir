@@ -1,0 +1,17 @@
+{
+  "status": "RECOVERY_QUEUE_LAUNCHED",
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "-B",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/release_v2/campaign.py",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/recovery_attempt2",
+    "--existing42",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/attempt1/C1_seed42"
+  ],
+  "started_at": "2026-09-09T17:56:57.398063+08:00",
+  "unchanged_training_eval_budget": true,
+  "requires_empty_gpu": true,
+  "preserves_existing_seed42": true,
+  "no_resume": true
+}

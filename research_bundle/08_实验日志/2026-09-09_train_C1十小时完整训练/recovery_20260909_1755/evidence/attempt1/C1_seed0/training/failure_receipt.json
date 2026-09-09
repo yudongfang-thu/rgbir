@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "arm": "C1",
+  "error": "RuntimeError('Engineering budget exceeded; no AP-based stop or method conclusion')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/train_independent.py\", line 67, in run\n    trainer.train()\n  File \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/trainer.py\", line 243, in train\n    self._do_train()\n  File \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/trainer.py\", line 624, in _do_train\n    self.run_callbacks(\"on_fit_epoch_end\")\n  File \"/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/lib/python3.10/site-packages/ultralytics/engine/trainer.py\", line 216, in run_callbacks\n    callback(self)\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/release_v1/train_c1_budget.py\", line 117, in epoch_end\n    raise RuntimeError('Engineering budget exceeded; no AP-based stop or method conclusion')\nRuntimeError: Engineering budget exceeded; no AP-based stop or method conclusion\n",
+  "seconds": 924.0404117107391,
+  "updates": 2104,
+  "official_test_accessed": false
+}

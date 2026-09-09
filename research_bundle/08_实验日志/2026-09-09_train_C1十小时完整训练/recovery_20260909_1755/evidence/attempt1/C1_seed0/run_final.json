@@ -1,0 +1,45 @@
+{
+  "status": "BUDGET_ABORTED",
+  "seed": 0,
+  "budget_seconds": 36000,
+  "run_kind": "train_then_independent_dev",
+  "official_test_accessed": false,
+  "stages": [
+    {
+      "kind": "train",
+      "command": [
+        "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+        "-B",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/release_v1/train_c1_budget.py",
+        "--seed",
+        "0",
+        "--output",
+        "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/attempt1/C1_seed0/training"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 928.887552406999,
+      "pid": 1815352
+    }
+  ],
+  "queue_seconds": 1.2553302320011426,
+  "physical_gpu_ids": [
+    4
+  ],
+  "started_at": "2026-09-09T17:05:44.459702+08:00",
+  "error": "RunStopped('Epoch-based total runtime projection exceeded10hours')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/release_v1/run_budgeted.py\", line 158, in main\n    raise RunStopped('BUDGET_ABORTED', 'Epoch-based total runtime projection exceeded10hours')\nRunStopped: Epoch-based total runtime projection exceeded10hours\n",
+  "resources": {
+    "gpu_ids": [
+      4
+    ],
+    "cuda_pid_counts": {
+      "4": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "4": 7630
+    },
+    "peak_rss_mib": 28795
+  },
+  "run_seconds": 929.7022829470006,
+  "finished_at": "2026-09-09T17:21:14.161853+08:00"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "byte_identical": {
+    "train_c1_budget.py": true,
+    "evaluate_c1_budget.py": true,
+    "budget_policy.py": true
+  },
+  "config_preflight": "recovery_preflight_s0.txt",
+  "tensor_recovery_check": "UNAVAILABLE_INITIAL_SNAPSHOT_NOT_SAVED_BY_FORMAL_TRAINER",
+  "scope": "Source/config identity; no direct equality claim for restarted full tensor trajectory",
+  "resume": false,
+  "new_hash_computed": false
+}

@@ -1,0 +1,97 @@
+{
+  "lease": {
+    "admission": {
+      "active_gpus_after": [
+        0,
+        6
+      ],
+      "per_gpu": {
+        "6": {
+          "project_cuda_processes_after": 1,
+          "project_vram_reserved_after_mib": 8192
+        }
+      },
+      "project_rss_reserved_after_mib": 65536
+    },
+    "created_at": 1788947818.6357217,
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 32768,
+    "expected_vram_mib": 8192,
+    "formal_train": true,
+    "free_safety_mib": 2048,
+    "gpus": [
+      6
+    ],
+    "job_id": "c1budget_s0_C1_seed0",
+    "job_pid": 2366184,
+    "kind": "train",
+    "lease_id": "c1budget_s0_C1_seed0-2b182e29ba4f",
+    "observed_cuda_pids": [],
+    "owner_pid": 2366184,
+    "peak_cuda_pid_counts": {
+      "6": 0
+    },
+    "peak_rss_mib": 0,
+    "per_gpu_peak_vram_mib": {
+      "6": 0
+    },
+    "profiled_second_train": false,
+    "bound_at": 1788947818.6374178
+  },
+  "gpu_snapshot": {
+    "0": {
+      "memory_free_mib": 15882,
+      "memory_used_mib": 8201,
+      "memory_total_mib": 24564
+    },
+    "1": {
+      "memory_free_mib": 6550,
+      "memory_used_mib": 17534,
+      "memory_total_mib": 24564
+    },
+    "2": {
+      "memory_free_mib": 21432,
+      "memory_used_mib": 2652,
+      "memory_total_mib": 24564
+    },
+    "3": {
+      "memory_free_mib": 6054,
+      "memory_used_mib": 18030,
+      "memory_total_mib": 24564
+    },
+    "4": {
+      "memory_free_mib": 16169,
+      "memory_used_mib": 7915,
+      "memory_total_mib": 24564
+    },
+    "5": {
+      "memory_free_mib": 16844,
+      "memory_used_mib": 7240,
+      "memory_total_mib": 24564
+    },
+    "6": {
+      "memory_free_mib": 24082,
+      "memory_used_mib": 2,
+      "memory_total_mib": 24564
+    },
+    "7": {
+      "memory_free_mib": 24082,
+      "memory_used_mib": 2,
+      "memory_total_mib": 24564
+    }
+  },
+  "utilization": {
+    "0": 60,
+    "1": 38,
+    "2": 6,
+    "3": 100,
+    "4": 21,
+    "5": 20,
+    "6": 0,
+    "7": 0
+  },
+  "max_project_gpus": 3,
+  "admission_mode": "empty_card_after_shared_card_budget_failure",
+  "measured_c1_nvml_peak_mib": 7630,
+  "measured_c1_tree_rss_mib": 28814
+}
