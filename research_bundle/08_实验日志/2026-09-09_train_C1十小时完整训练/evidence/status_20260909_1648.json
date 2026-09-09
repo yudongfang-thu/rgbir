@@ -1,0 +1,89 @@
+{
+  "observed_at": "2026-09-09T16:48:39.915118+08:00",
+  "campaign": {
+    "launched_seeds": [
+      42
+    ],
+    "pending_seeds": [
+      0,
+      123
+    ],
+    "active_seeds": [
+      42
+    ],
+    "failures": {},
+    "seed42_five_epoch_pass": false,
+    "reads_ap": false,
+    "max_concurrent_runs": 2,
+    "updated_at": "2026-09-09T16:48:11.492941+08:00",
+    "status": "RUNNING"
+  },
+  "runs": {
+    "42": {
+      "run_status.json": {
+        "status": "TRAINING",
+        "seed": 42,
+        "budget_seconds": 36000,
+        "run_kind": "train_then_independent_dev",
+        "official_test_accessed": false,
+        "stages": [],
+        "queue_seconds": 0.720159810000041,
+        "physical_gpu_ids": [
+          0
+        ],
+        "started_at": "2026-09-09T16:46:12.164631+08:00"
+      },
+      "run_final.json": null,
+      "training/fastpath_launch.json": null,
+      "training/progress.json": null,
+      "training/budget_progress.json": null,
+      "training/failure_receipt.json": null,
+      "resources.jsonl_last": [
+        {
+          "elapsed_seconds": 136.14437320300203,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 22942,
+              "memory_used_mib": 1142,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 1978,
+          "violations": []
+        },
+        {
+          "elapsed_seconds": 141.6366712199997,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 22938,
+              "memory_used_mib": 1146,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 1978,
+          "violations": []
+        },
+        {
+          "elapsed_seconds": 147.0983151520013,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 23484,
+              "memory_used_mib": 600,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 1979,
+          "violations": []
+        }
+      ],
+      "log_tail": "\ufffd\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 4566/17990 76.3it/s 35.0s<2:56\r\u001b[K\u001b[34m\u001b[1mtrain: \u001b[0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4587 images, 1 backgrounds, 0 corrupt: 25% \u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 4587/17990 95.9it/s 35.1s<2:20\r\u001b[K\u001b[34m\u001b[1mtrain: \u001b[0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4606 images, 1 backgrounds, 0 corrupt: 25% \u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 4606/17990 105.7it/s 35.3s<2:07\r\u001b[K\u001b[34m\u001b[1mtrain: \u001b[0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4621 images, 1 backgrounds, 0 corrupt: 25% \u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 4621/17990 103.5it/s 35.4s<2:09\r\u001b[K\u001b[34m\u001b[1mtrain: \u001b[0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4633 images, 1 backgrounds, 0 corrupt: 25% \u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 4633/17990 102.3it/s 35.5s<2:11\r\u001b[K\u001b[34m\u001b[1mtrain: \u001b[0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4652 images, 1 backgrounds, 0 corrupt: 25% \u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 4652/17990 126.6it/s 35.6s<1:45\r\u001b[K\u001b[34m\u001b[1mtrain: \u001b[0mScanning /mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train... 4669 images, 1 backgrounds, 0 corrupt: 25% \u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 4669/17990 138.8it/s 35.7s<1:36"
+    },
+    "0": {
+      "status": "NOT_LAUNCHED"
+    },
+    "123": {
+      "status": "NOT_LAUNCHED"
+    }
+  },
+  "tmux": "c1budget_paired_42: 1 windows (created Wed Sep  9 16:46:11 2026)\nc1budget_queue_42: 1 windows (created Wed Sep  9 16:46:11 2026)\n"
+}

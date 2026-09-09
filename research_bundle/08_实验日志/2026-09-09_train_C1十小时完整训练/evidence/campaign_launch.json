@@ -1,0 +1,19 @@
+{
+  "status": "CAMPAIGN_LAUNCHED",
+  "command": [
+    "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/environments/sn6-int8-kd/bin/python",
+    "-B",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/release_v1/campaign.py",
+    "--output",
+    "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/c1_budget10h_20260909/attempt1"
+  ],
+  "session": "c1budget_queue_42",
+  "started_at": "2026-09-09T16:46:11.355171+08:00",
+  "max_concurrent_runs": 2,
+  "seeds": [
+    42,
+    0,
+    123
+  ],
+  "no_ap_gating": true
+}

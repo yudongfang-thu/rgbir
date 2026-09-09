@@ -1,0 +1,113 @@
+{
+  "observed_at": "2026-09-09T16:55:17.842436+08:00",
+  "campaign": {
+    "launched_seeds": [
+      42
+    ],
+    "pending_seeds": [
+      0,
+      123
+    ],
+    "active_seeds": [
+      42
+    ],
+    "failures": {},
+    "seed42_five_epoch_pass": false,
+    "reads_ap": false,
+    "max_concurrent_runs": 2,
+    "updated_at": "2026-09-09T16:55:11.862395+08:00",
+    "status": "RUNNING"
+  },
+  "runs": {
+    "42": {
+      "run_status.json": {
+        "status": "TRAINING",
+        "seed": 42,
+        "budget_seconds": 36000,
+        "run_kind": "train_then_independent_dev",
+        "official_test_accessed": false,
+        "stages": [],
+        "queue_seconds": 0.720159810000041,
+        "physical_gpu_ids": [
+          0
+        ],
+        "started_at": "2026-09-09T16:46:12.164631+08:00"
+      },
+      "run_final.json": null,
+      "training/fastpath_launch.json": {
+        "status": "RUNNING",
+        "seed": 42,
+        "fresh_initialization": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+        "candidate_source": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/release_v1/fast_candidate/batched_selection_v1.py",
+        "epochs": 200,
+        "batch": 32,
+        "workers": 4,
+        "train_images": 17990,
+        "test_accessed": false,
+        "accepted_implementation": "RGBIR-C1-BATCHED-SELECTION-v1-E200-FRESH-20260908",
+        "wrapper_version": "C1-BATCHED-E200-BUDGET10H-20260909"
+      },
+      "training/progress.json": {
+        "status": "running",
+        "arm": "paired",
+        "epoch": 1,
+        "epochs": 200,
+        "optimizer_updates": 383,
+        "update_attempts": 390,
+        "amp_skips": 7,
+        "batches": 390,
+        "selected_objects": 47380,
+        "seconds": 535.3271906375885,
+        "last_kd": 0.4480476975440979
+      },
+      "training/budget_progress.json": null,
+      "training/failure_receipt.json": null,
+      "resources.jsonl_last": [
+        {
+          "elapsed_seconds": 533.7538722370009,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 16456,
+              "memory_used_mib": 7628,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 28673,
+          "violations": []
+        },
+        {
+          "elapsed_seconds": 539.202356345002,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 16456,
+              "memory_used_mib": 7628,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 28621,
+          "violations": []
+        },
+        {
+          "elapsed_seconds": 544.5607745689995,
+          "gpus": {
+            "0": {
+              "memory_free_mib": 15910,
+              "memory_used_mib": 8174,
+              "memory_total_mib": 24564
+            }
+          },
+          "project_rss_mib": 28622,
+          "violations": []
+        }
+      ],
+      "log_tail": "     1.29        452        640: 68% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 388/563 4.8it/s 4:23<36.4s\r\u001b[K      1/200      6.91G      1.429      1.845       1.29        440        640: 69% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 389/563 4.8it/s 4:23<36.3s\r\u001b[K      1/200      6.91G      1.429      1.843       1.29        448        640: 69% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 390/563 5.5it/s 4:23<31.6s\r\u001b[K      1/200      6.91G      1.428      1.842       1.29        524        640: 69% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 391/563 4.0it/s 4:26<43.5s\r\u001b[K      1/200      6.91G      1.428       1.84       1.29        606        640: 69% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 392/563 4.7it/s 4:26<36.6s\r\u001b[K      1/200      6.91G      1.428      1.838      1.289        537        640: 69% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 393/563 5.2it/s 4:26<32.5s\r\u001b[K      1/200      6.91G      1.428      1.836      1.289        449        640: 69% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 394/563 5.7it/s 4:26<29.8s\r\u001b[K      1/200      6.91G      1.428      1.834      1.289        532        640: 70% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 395/563 4.1it/s 4:28<40.9s\r\u001b[K      1/200      6.91G      1.428      1.833      1.289        448        640: 70% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 396/563 4.8it/s 4:29<34.5s\r\u001b[K      1/200      6.91G      1.427      1.831      1.289        468        640: 70% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 397/563 5.3it/s 4:29<31.5s\r\u001b[K      1/200      6.91G      1.427      1.829      1.289        454        640: 70% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500 398/563 5.5it/s 4:29<30.2s"
+    },
+    "0": {
+      "status": "NOT_LAUNCHED"
+    },
+    "123": {
+      "status": "NOT_LAUNCHED"
+    }
+  },
+  "tmux": "c1budget_paired_42: 1 windows (created Wed Sep  9 16:46:11 2026)\nc1budget_queue_42: 1 windows (created Wed Sep  9 16:46:11 2026)\n"
+}
