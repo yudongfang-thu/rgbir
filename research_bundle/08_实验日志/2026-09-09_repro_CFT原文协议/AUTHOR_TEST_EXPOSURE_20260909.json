@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-09",
+  "dataset": "LLVIP",
+  "split": "official_test",
+  "images": 3463,
+  "authorization": "User explicitly requested original-paper protocol and original-model reproduction before adapted experiments in the current turn.",
+  "purpose": "Fixed CFT author-checkpoint reproduction",
+  "primary_annotation_version": "Official previous annotations, before 2023-02-21 update",
+  "gt_objects": 7931,
+  "model_deployment_inputs": ["RGB", "IR"],
+  "checkpoint": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_llvip.pt",
+  "evaluation": "Original author test.py, image1024, batch64, conf0.001, NMS0.5, FP16",
+  "new_our_method_selection": false,
+  "post_result_threshold_selection": false,
+  "grouped_fit_dev_data_modified": false,
+  "exposure_statement": "Official LLVIP test has now been accessed for author-protocol reproduction. Future reports must retain this exposure and must not claim that the project has never accessed this test set.",
+  "original_frozen_governance_files_overwritten": false,
+  "new_digest_calculated": false
+}

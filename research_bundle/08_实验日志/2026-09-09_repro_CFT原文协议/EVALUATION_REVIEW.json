@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-09",
+  "auditor": {
+    "agent": "/root/port90_code_inventory",
+    "role": "reused reviewer, separate from execution agent",
+    "fresh_context": false,
+    "cross_model_review": false,
+    "model_identity": "not independently observable",
+    "instruction_override": "User explicitly requested reused agent and no new hashes"
+  },
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "COMPLETE_CHECKPOINT_REEVALUATION_WITH_HISTORICAL_AND_PORTABILITY_LIMITS",
+  "run_id": "cft_author_full64",
+  "run_directory": "server_execution/official_test_attempt1",
+  "source_revision": "fb591c9b163177c0e950db08e213e24ddc912d41",
+  "identity": "PAPER-RECONSTRUCTED checkpoint reevaluation",
+  "evaluation_type": "real_gt",
+  "metrics_fraction": {
+    "AP50": 0.973769069033232,
+    "AP75": 0.728913482579285,
+    "AP50_95": 0.6353747763563038
+  },
+  "paper_target_percent": {"AP50": 97.5, "AP75": 72.9, "AP50_95": 63.6},
+  "execution_minus_paper_percentage_points": {
+    "AP50": -0.1230930966768,
+    "AP75": -0.0086517420715,
+    "AP50_95": -0.06252236436962
+  },
+  "matches_paper_at_one_decimal": {"AP50": false, "AP75": true, "AP50_95": false},
+  "paper_evidence": {
+    "url": "https://arxiv.org/html/2111.00273v2#S4.T3",
+    "verified": "direct primary-page inspection on 2026-09-09",
+    "tables": [1, 3]
+  },
+  "checks": {
+    "gt_provenance": {
+      "status": "warn",
+      "details": "Saved target_cls contains 7931 real person GT labels matching official previous-annotation receipt. Current archive has 8302 test objects. Full XML and exact historical private conversion not independently reread.",
+      "evidence": ["server_execution/annotation_audit.json:previous.splits.test.objects", "server_execution/data_receipt.json", "server_execution/official_test_attempt1/author_metric_inputs.npz:target_cls", "server_execution/official_test_attempt1/effective_data.yaml"]
+    },
+    "score_normalization": {
+      "status": "warn",
+      "details": "Original AP functions rerun on saved arrays. Fraction units and IoU columns verified. Executor supplied same NumPy 2.2.6 CPU receipt exactly matching all APs. Independent local NumPy 2.3.5 differs by at most 0.0029652303 percentage points; unstable confidence tie ordering is plausible but not experimentally isolated.",
+      "evidence": ["server_execution/official_test_attempt1/source_snapshot/utils/metrics.py:18", "server_execution/official_test_attempt1/source_snapshot/utils/metrics.py:33", "server_execution/official_test_attempt1/source_snapshot/utils/metrics.py:103", "server_execution/official_test_attempt1/source_snapshot/test.py:233", "server_execution/pinned_cpu_recompute.json", "EVALUATION_RECOMPUTE.json"]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "Exit zero, COMPLETED receipt, 55/55 batches; 3463 unique paired roster entries, 7931 GT, 18275 predictions, 3461 nonempty prediction TXT files. Missing TXT only 240113 and 240165: no detections, GT retained. No NMS timeout warning; executed wrapper rejects that cutoff.",
+      "evidence": ["server_execution/official_test.exit", "server_execution/official_test.log", "server_execution/official_test_attempt1/receipt.json", "server_execution/official_test_attempt1/evaluated_roster.json", "server_execution/official_test_attempt1/author_output/labels", "server_execution/official_test_attempt1/source_snapshot/test.py:138", "server_execution/official_test_attempt1/executed_wrapper.py:73"]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "Executed wrapper captures original metric arguments and returns original metric; original test function called with save_hybrid=False. NPZ confidence/class order agrees with all serialized prediction rows. Source definitions alone were not accepted as execution proof.",
+      "evidence": ["server_execution/official_test_attempt1/executed_wrapper.py:140", "server_execution/official_test_attempt1/executed_wrapper.py:148", "server_execution/official_test_attempt1/author_metric_inputs.npz", "EVALUATION_RECOMPUTE.json"]
+    },
+    "scope": {
+      "status": "warn",
+      "details": "One author checkpoint on LLVIP official previous test, RGB+IR, one HBB class. Historical training code/labels exactness unknown; 24 class rebindings preserve stored parameters by receipt. No model/IoU replay in this audit, no new training, no 3-seed gain, no MR, no DroneVehicle result. Official test is exposed for author reproduction and cannot be described as globally unseen.",
+      "evidence": ["server_execution/official_test_attempt1/plan.json", "server_execution/official_test_attempt1/checkpoint_compatibility.json", "server_execution/author_protocol.json", "EVALUATION_REVIEW.md"]
+    },
+    "eval_type": {
+      "status": "pass",
+      "details": "real_gt: dataset human annotations, not model-derived targets. Author save_hybrid=False; GT not injected as detections.",
+      "evidence": ["server_execution/data_receipt.json", "server_execution/annotation_audit.json", "server_execution/official_test_attempt1/executed_wrapper.py:148"]
+    }
+  },
+  "claims": [
+    {"id": "C1_FULL_EVALUATION", "impact": "supported", "claim": "The disclosed author-checkpoint evaluation covered all 3463 listed paired test images without demonstrated NMS truncation", "evidence": ["EVALUATION_RECOMPUTE.json", "server_execution/official_test.log"], "rationale": "Roster, final seen/GT counts, prediction serialization, exit and timeout guard agree"},
+    {"id": "C2_METRICS", "impact": "needs_qualifier", "claim": "Original AP50/AP75/AP50_95 fractions are reproducible from saved author AP inputs", "evidence": ["server_execution/pinned_cpu_recompute.json", "EVALUATION_RECOMPUTE.json"], "rationale": "Same-runtime CPU receipt agrees exactly; reviewer local runtime has explicitly retained tiny discrepancies and no independent box matching replay"},
+    {"id": "C3_PAPER_EQUALITY", "impact": "unsupported", "claim": "All three paper scores are exactly reproduced at published one-decimal precision", "evidence": ["server_execution/official_test_attempt1/receipt.json", "https://arxiv.org/html/2111.00273v2#S4.T3"], "rationale": "Only AP75 matches: 97.4/72.9/63.5 versus paper 97.5/72.9/63.6"},
+    {"id": "C4_BOUNDED_REEVALUATION", "impact": "needs_qualifier", "claim": "Public author model and reconstructed public protocol produce scores close to the paper", "evidence": ["server_execution/author_protocol.json", "server_execution/official_test_attempt1/checkpoint_compatibility.json"], "rationale": "Disclose previous-label version, current converter, compatibility layer and unavailable exact training history"},
+    {"id": "C5_GAIN_OR_TRAINING", "impact": "unsupported", "claim": "This result establishes a three-seed gain, training reproduction, RGB-only method result or broad robustness", "evidence": ["server_execution/official_test_attempt1/plan.json"], "rationale": "A single existing-checkpoint RGB+IR evaluation does not test these claims"}
+  ],
+  "recomputation": {
+    "script": "audit_author_evaluation.py",
+    "command": "& 'C:/Users/MSI-PC/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -B './audit_author_evaluation.py'",
+    "output": "EVALUATION_RECOMPUTE.json",
+    "local_numpy": "2.3.5",
+    "source_runtime_numpy": "2.2.6",
+    "checks_passed": 27,
+    "checks_warn": 2,
+    "original_exact_tolerance": 1e-12,
+    "tolerance_relaxed": false,
+    "local_max_absolute_fraction_difference": 0.000029652302652838358,
+    "source_runtime_cpu_ap_differences": [0.0, 0.0, 0.0]
+  },
+  "declared_input_set": "EVALUATION_RECOMPUTE.json:declared_input_set",
+  "audited_input_hashes": [],
+  "new_hash_computed": false,
+  "input_preservation": "All declared input sizes and mtime_ns checked before/after; no raw artifact changes. No content identity assertion without hashes.",
+  "user_scope_override": "Explicitly no new hashes and no fresh/cross-model delegation; requested EVALUATION_REVIEW filenames preserved",
+  "review_trace": {
+    "prompt_scope": "Read actual local CFT artifacts, recompute 3 AP via author function, verify 3463 images/7931 GT/3461 TXT, empty predictions and NMS completeness, units/paper scope; no SSH/GPU/install/training/hash/raw edits",
+    "reviewer_raw_findings": "EVALUATION_RECOMPUTE.json",
+    "parsed_findings": "EVALUATION_REVIEW.json:checks",
+    "response": "EVALUATION_REVIEW.md",
+    "independence_limit": "Reused agent with preceding context; same model identity not independently observable"
+  },
+  "unreviewed": [
+    "No full checkpoint forward replay",
+    "No independent predicted-box-to-GT IoU rematching",
+    "No full XML/image reread",
+    "Unavailable exact historical training source/private labels/conversion",
+    "No verification of from-scratch training or multiple seeds",
+    "No cross-runtime tie-order backend isolation"
+  ]
+}

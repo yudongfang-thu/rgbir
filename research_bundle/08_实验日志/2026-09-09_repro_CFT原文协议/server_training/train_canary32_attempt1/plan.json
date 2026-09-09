@@ -1,0 +1,135 @@
+{
+  "opt": {
+    "weights": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_initialization/yolov5l.pt",
+    "cfg": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_source/models/transformer/yolov5l_fusion_transformerx3_llvip.yaml",
+    "data": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_attempt1/previous/LLVIP.yaml",
+    "hyp": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_source/data/hyp.scratch.yaml",
+    "epochs": 200,
+    "batch_size": 32,
+    "total_batch_size": 32,
+    "img_size": [
+      1024,
+      1024
+    ],
+    "rect": false,
+    "resume": false,
+    "nosave": false,
+    "notest": false,
+    "noautoanchor": false,
+    "evolve": false,
+    "bucket": "",
+    "cache_images": false,
+    "image_weights": false,
+    "device": "0",
+    "multi_scale": false,
+    "single_cls": false,
+    "adam": false,
+    "sync_bn": false,
+    "local_rank": -1,
+    "workers": 8,
+    "project": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/cft_author_protocol_20260909_attempt1/train_canary32_attempt1",
+    "entity": null,
+    "name": "author_train_canary",
+    "exist_ok": false,
+    "quad": false,
+    "linear_lr": false,
+    "label_smoothing": 0.0,
+    "upload_dataset": false,
+    "bbox_interval": -1,
+    "save_period": -1,
+    "artifact_alias": "latest",
+    "world_size": 1,
+    "global_rank": -1,
+    "save_dir": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/cft_author_protocol_20260909_attempt1/train_canary32_attempt1/author_train"
+  },
+  "hyp": {
+    "lr0": 0.01,
+    "lrf": 0.2,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "box": 0.05,
+    "cls": 0.5,
+    "cls_pw": 1.0,
+    "obj": 1.0,
+    "obj_pw": 1.0,
+    "iou_t": 0.2,
+    "anchor_t": 4.0,
+    "fl_gamma": 0.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 0.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "flipud": 0.0,
+    "fliplr": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.0
+  },
+  "lease": {
+    "admission": {
+      "active_gpus_after": [
+        3
+      ],
+      "per_gpu": {
+        "3": {
+          "project_cuda_processes_after": 1,
+          "project_vram_reserved_after_mib": 16384
+        }
+      },
+      "project_rss_reserved_after_mib": 65536
+    },
+    "bound_at": 1788923459.7065418,
+    "created_at": 1788923459.7049108,
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 65536,
+    "expected_vram_mib": 16384,
+    "formal_train": true,
+    "free_safety_mib": 2048,
+    "gpus": [
+      3
+    ],
+    "job_id": "cft_author_train_canary32",
+    "job_pid": 2220909,
+    "kind": "train",
+    "lease_id": "cft_author_train_canary32-ad9885d34e23",
+    "observed_cuda_pids": [],
+    "owner_pid": 2220909,
+    "peak_cuda_pid_counts": {
+      "3": 0
+    },
+    "peak_rss_mib": 37,
+    "per_gpu_peak_vram_mib": {
+      "3": 0
+    },
+    "profiled_second_train": false
+  },
+  "original_train_function": "train.train_rgb_ir",
+  "stop_after_successful_optimizer_steps": 2,
+  "max_training_batches": 16,
+  "input_population": "complete official train12025; original val loader scans official test3463",
+  "official_test_authorized_for_author_reproduction": true,
+  "primary_annotations": "previous",
+  "initialization": "author generic COCO yolov5l.pt",
+  "initialization_author_url": "https://drive.google.com/file/d/12OFGLF73CqTgOCMJAycZ8lB4eW19D0nb/view",
+  "allocator_memory_fraction": 0.65,
+  "torch_version": "2.10.0+cu128",
+  "logging_only_changes": [
+    "wandb optional branch disabled",
+    "tb_writer=None",
+    "label-distribution plotting skipped"
+  ],
+  "formula_changes": [],
+  "runtime_aliases": [
+    "np.int=int",
+    "np.float=float",
+    "legacy torch.load allowed"
+  ],
+  "outcome_use": "resource and execution feasibility only; no AP selection; no 10-hour guarantee",
+  "started": "2026-09-09T11:11:34.896921+08:00"
+}

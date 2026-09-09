@@ -1,0 +1,82 @@
+{
+  "status": "ORIGINAL_TRAINING_NOT_ADMITTED",
+  "reason": "Original totalB32/img1024 failed before first successful update within current project VRAM cap on single GPU and author two-GPU DataParallel path",
+  "attempts": [
+    {
+      "attempt": "train_canary32_attempt1",
+      "status": "RESOURCE_FAILURE_OOM",
+      "successful_steps": 0,
+      "batches": 1,
+      "gpu_count": 1,
+      "torch_max_allocated_mib": 15478.720703125,
+      "torch_max_reserved_mib": 15728.0,
+      "observed_lease_resources": {
+        "gpu_ids": [
+          3
+        ],
+        "cuda_pid_counts": {
+          "3": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "3": 16038
+        },
+        "peak_rss_mib": 38469
+      },
+      "elapsed_seconds": 155.65842797397636,
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 23.80 GiB of which 8.23 GiB is free. Including non-PyTorch memory, this process has 15.54 GiB memory in use. 15.47 GiB allowed; Of the allocated memory 14.99 GiB is allocated by PyTorch, and 247.61 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "attempt": "train_canary32_attempt2",
+      "status": "RESOURCE_FAILURE_OOM",
+      "successful_steps": 0,
+      "batches": 1,
+      "gpu_count": 1,
+      "torch_max_allocated_mib": 16374.77099609375,
+      "torch_max_reserved_mib": 16498.0,
+      "observed_lease_resources": {
+        "gpu_ids": [
+          3
+        ],
+        "cuda_pid_counts": {
+          "3": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "3": 16806
+        },
+        "peak_rss_mib": 40608
+      },
+      "elapsed_seconds": 29.781567962141708,
+      "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 128.00 MiB. GPU 0 has a total capacity of 23.80 GiB of which 7.35 GiB is free. Including non-PyTorch memory, this process has 16.41 GiB memory in use. 16.19 GiB allowed; Of the allocated memory 15.99 GiB is allocated by PyTorch, and 121.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')"
+    },
+    {
+      "attempt": "train_canary32_dp_attempt1",
+      "status": "RESOURCE_FAILURE_OOM",
+      "successful_steps": 0,
+      "batches": 1,
+      "gpu_count": 2,
+      "torch_max_allocated_mib": 16247.9091796875,
+      "torch_max_reserved_mib": 16570.0,
+      "observed_lease_resources": {
+        "gpu_ids": [
+          3,
+          6
+        ],
+        "cuda_pid_counts": {
+          "3": 1,
+          "6": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "3": 6772,
+          "6": 16978
+        },
+        "peak_rss_mib": 39814
+      },
+      "elapsed_seconds": 28.471153013175353,
+      "error": "OutOfMemoryError('Caught OutOfMemoryError in replica 0 on device 0.\\n"
+    }
+  ],
+  "full_training_started": false,
+  "elapsed_hours_projection": null,
+  "original_recipe_not_reduced": true,
+  "checkpoint_evaluation_remains_valid": true
+}

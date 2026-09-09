@@ -1,0 +1,71 @@
+{
+  "status": "STARTED",
+  "mode": "full",
+  "batch_size": 64,
+  "input_size": 1024,
+  "conf_thres": 0.001,
+  "nms_iou": 0.5,
+  "augment": false,
+  "rect": true,
+  "pad": 0.5,
+  "half_precision": true,
+  "model": "author CFT LLVIP checkpoint",
+  "checkpoint": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_llvip.pt",
+  "data": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_attempt1/previous/LLVIP.yaml",
+  "split": "official_test",
+  "expected_images": 3463,
+  "annotations": "official previous version",
+  "identity": "PAPER-RECONSTRUCTED",
+  "purpose": "Original-paper protocol checkpoint reevaluation; not our method selection",
+  "compatibility": [
+    "torch2.10 legacy pickle loading",
+    "NumPy removed int/float aliases",
+    "explicit CFT class rebinding"
+  ],
+  "original_evaluator": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_source/test.py",
+  "original_loader": true,
+  "original_ap_function": true,
+  "author_cli_batch_default": 64,
+  "batch_resource_deviation": false,
+  "lease": {
+    "admission": {
+      "active_gpus_after": [
+        3
+      ],
+      "per_gpu": {
+        "3": {
+          "project_cuda_processes_after": 1,
+          "project_vram_reserved_after_mib": 15360
+        }
+      },
+      "project_rss_reserved_after_mib": 32768
+    },
+    "bound_at": 1788923002.3033793,
+    "created_at": 1788923002.30191,
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 32768,
+    "expected_vram_mib": 15360,
+    "formal_train": false,
+    "free_safety_mib": 2048,
+    "gpus": [
+      3
+    ],
+    "job_id": "cft_author_full64",
+    "job_pid": 2215151,
+    "kind": "eval",
+    "lease_id": "cft_author_full64-e70ec111eab7",
+    "observed_cuda_pids": [],
+    "owner_pid": 2215151,
+    "peak_cuda_pid_counts": {
+      "3": 0
+    },
+    "peak_rss_mib": 36,
+    "per_gpu_peak_vram_mib": {
+      "3": 0
+    },
+    "profiled_second_train": false
+  },
+  "training_started": false,
+  "new_digest_calculated": false,
+  "started": "2026-09-09T11:03:27.102913+08:00"
+}

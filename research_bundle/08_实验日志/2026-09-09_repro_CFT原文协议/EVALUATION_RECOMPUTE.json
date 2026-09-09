@@ -1,0 +1,408 @@
+{
+  "date": "2026-09-09T03:15:46.565464+00:00",
+  "auditor": {
+    "agent": "/root/port90_code_inventory",
+    "role": "reused reviewer independent of execution",
+    "fresh_context": false,
+    "cross_model_review": false,
+    "model_identity": "not independently exposed"
+  },
+  "execution_integrity": "pass",
+  "recomputation_integrity": "warn",
+  "checks": [
+    {
+      "id": "array_schema",
+      "status": "pass",
+      "details": "Captured arguments of the author AP function"
+    },
+    {
+      "id": "array_finite",
+      "status": "pass",
+      "details": "All stored arrays finite"
+    },
+    {
+      "id": "single_class",
+      "status": "pass",
+      "details": "person class id=0"
+    },
+    {
+      "id": "tp_threshold_monotonicity",
+      "status": "pass",
+      "details": "Per-prediction TP flags never rise with IoU"
+    },
+    {
+      "id": "gt_denominator",
+      "status": "pass",
+      "details": "GT argument count agrees with previous-annotation audit"
+    },
+    {
+      "id": "tp_bound",
+      "status": "pass",
+      "details": "No threshold has more TPs than GT"
+    },
+    {
+      "id": "prediction_confidence",
+      "status": "pass",
+      "details": "Original strict confidence cutoff retained"
+    },
+    {
+      "id": "roster",
+      "status": "pass",
+      "details": "3463 unique loader-ordered RGB/IR pairs"
+    },
+    {
+      "id": "exit_and_receipt",
+      "status": "pass",
+      "details": "Successful original full evaluation"
+    },
+    {
+      "id": "seen_and_gt_log",
+      "status": "pass",
+      "details": "Author evaluator increments seen per output image; final counts cover full roster"
+    },
+    {
+      "id": "all_batches_completed",
+      "status": "pass",
+      "details": "ceil(3463/64)=55 batches complete"
+    },
+    {
+      "id": "no_nms_timeout",
+      "status": "pass",
+      "details": "No author NMS cutoff warning in combined run log"
+    },
+    {
+      "id": "timeout_fail_closed",
+      "status": "pass",
+      "details": "Wrapper captures the original stdout warning and rejects timeout before COMPLETED"
+    },
+    {
+      "id": "capture_delegates_metric",
+      "status": "pass",
+      "details": "Saved arrays are forwarded to the original AP function"
+    },
+    {
+      "id": "no_hybrid_gt_predictions",
+      "status": "pass",
+      "details": "Ground truth is not injected into prediction NMS"
+    },
+    {
+      "id": "no_prediction_preserves_gt",
+      "status": "pass",
+      "details": "Empty-prediction images count as seen and their GT remains in stats"
+    },
+    {
+      "id": "prediction_file_scope",
+      "status": "pass",
+      "details": "Only official roster predictions; 3461 TXT files"
+    },
+    {
+      "id": "empty_prediction_scope",
+      "status": "pass",
+      "details": "Two seen images have no detections and therefore no TXT"
+    },
+    {
+      "id": "prediction_count",
+      "status": "pass",
+      "details": "TXT rows in evaluated roster order equal captured AP predictions"
+    },
+    {
+      "id": "prediction_txt_finite",
+      "status": "pass",
+      "details": "Every TXT contains finite one-class six-column predictions"
+    },
+    {
+      "id": "prediction_txt_confidence_order",
+      "status": "pass",
+      "details": "Confidence tokens exactly match author %g serialization of saved conf, in loader order"
+    },
+    {
+      "id": "prediction_txt_class_order",
+      "status": "pass",
+      "details": "TXT class sequence exactly matches saved AP inputs"
+    },
+    {
+      "id": "author_metric_functions",
+      "status": "pass",
+      "details": "Only inspected NumPy functions compiled; module imports skipped"
+    },
+    {
+      "id": "recomputed_equals_receipt",
+      "status": "warn",
+      "details": {
+        "max_absolute_difference": 2.9652302652838358e-05,
+        "tolerance": 1e-12,
+        "receipt": {
+          "precision": 0.9517655116995322,
+          "recall": 0.9406127852729794,
+          "AP50": 0.973769069033232,
+          "AP75": 0.728913482579285,
+          "AP50_95": 0.6353747763563038
+        },
+        "recomputed": {
+          "precision": 0.9517655116995322,
+          "recall": 0.9406127852729794,
+          "AP50": 0.9737643423308047,
+          "AP75": 0.7289431348819378,
+          "AP50_95": 0.6353707575913673
+        },
+        "note": "No tolerance relaxation: cross-runtime mismatch is retained as a warning"
+      }
+    },
+    {
+      "id": "per_class_map_equals_receipt",
+      "status": "warn",
+      "details": "Single-class map array compared to receipt at original 1e-12 tolerance"
+    },
+    {
+      "id": "compatibility_preserves_objects",
+      "status": "pass",
+      "details": "Runtime receipt records 24 stored CFT blocks rebound, no random parameters"
+    },
+    {
+      "id": "pinned_cpu_receipt_agreement",
+      "status": "pass",
+      "details": "Executor supplied separate NumPy 2.2.6 CPU recomputation receipt: all three APs exactly equal"
+    },
+    {
+      "id": "pinned_cpu_scope",
+      "status": "pass",
+      "details": "Pinned CPU receipt matches array scope; this reviewer did not execute on server"
+    },
+    {
+      "id": "input_stats_unchanged",
+      "status": "pass",
+      "details": "All fixed inputs and 3461 TXT files retain size/mtime_ns; not a content digest"
+    }
+  ],
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "metric_source": "server_execution\\official_test_attempt1\\source_snapshot\\utils\\metrics.py",
+  "plot": false,
+  "recomputed": {
+    "precision": 0.9517655116995322,
+    "recall": 0.9406127852729794,
+    "AP50": 0.9737643423308047,
+    "AP75": 0.7289431348819378,
+    "AP50_95": 0.6353707575913673
+  },
+  "receipt_absolute_differences": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "AP50": 4.726702427348961e-06,
+    "AP75": 2.9652302652838358e-05,
+    "AP50_95": 4.018764936497554e-06
+  },
+  "receipt_metrics": {
+    "precision": 0.9517655116995322,
+    "recall": 0.9406127852729794,
+    "AP50": 0.973769069033232,
+    "AP75": 0.728913482579285,
+    "AP50_95": 0.6353747763563038
+  },
+  "confidence_ties": {
+    "distinct_confidences": 5220,
+    "tied_confidence_groups": 3035,
+    "predictions_in_tied_groups": 16090,
+    "largest_tied_group": 43,
+    "sort": "np.argsort(-conf), default quicksort, not stable",
+    "default_equals_stable_order": false,
+    "diagnosis": "Ties and unstable ordering are verified; NumPy/platform tie-order effects are a plausible cause, not yet isolated"
+  },
+  "pinned_cpu_recompute": {
+    "status": "CPU_RECOMPUTED",
+    "numpy_version": "2.2.6",
+    "values": {
+      "AP50": 0.973769069033232,
+      "AP75": 0.728913482579285,
+      "AP50_95": 0.6353747763563038
+    },
+    "difference_to_execution": {
+      "AP50": 0.0,
+      "AP75": 0.0,
+      "AP50_95": 0.0
+    },
+    "cuda_initialized": false,
+    "predictions": 18275,
+    "gt_labels": 7931,
+    "unique_confidences": 5220,
+    "source": "same original utils.metrics.ap_per_class; existing raw arrays; no new inference",
+    "import_compatibility": "import utils.general before metrics to follow author test import order; direct metrics-first import was circular"
+  },
+  "pinned_cpu_provenance": "Executor supplied server receipt, read and checked here; reviewer performed only the local NumPy 2.3.5 recomputation",
+  "ap_at_each_iou": [
+    [
+      0.9737643423308047,
+      0.9580625356156931,
+      0.9372971705439475,
+      0.8979926430506368,
+      0.8305500463076176,
+      0.7289431348819378,
+      0.5564442174879108,
+      0.33707638488178315,
+      0.12377848893416421,
+      0.009798611879177866
+    ]
+  ],
+  "tp_at_each_iou": [
+    7807,
+    7700,
+    7554,
+    7306,
+    6888,
+    6292,
+    5292,
+    3864,
+    2117,
+    445
+  ],
+  "iou_thresholds": [
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "arrays": {
+    "tp": {
+      "shape": [
+        18275,
+        10
+      ],
+      "dtype": "bool"
+    },
+    "conf": {
+      "shape": [
+        18275
+      ],
+      "dtype": "float32"
+    },
+    "pred_cls": {
+      "shape": [
+        18275
+      ],
+      "dtype": "float32"
+    },
+    "target_cls": {
+      "shape": [
+        7931
+      ],
+      "dtype": "float64"
+    }
+  },
+  "images": 3463,
+  "gt_objects": 7931,
+  "predictions": 18275,
+  "prediction_txt_files": 3461,
+  "no_prediction_stems": [
+    "240113",
+    "240165"
+  ],
+  "empty_prediction_txt": [],
+  "txt_conf_max_rounding_error": 5.000000000143778e-07,
+  "paper_comparison": {
+    "AP50": {
+      "recomputed_fraction": 0.9737643423308047,
+      "recomputed_percent": 97.37643423308046,
+      "paper_percent": 97.5,
+      "delta_percentage_points": -0.12356576691954047,
+      "one_decimal_percent": "97.4",
+      "paper_one_decimal": "97.5",
+      "matches_paper_display": false
+    },
+    "AP75": {
+      "recomputed_fraction": 0.7289431348819378,
+      "recomputed_percent": 72.89431348819379,
+      "paper_percent": 72.9,
+      "delta_percentage_points": -0.005686511806217709,
+      "one_decimal_percent": "72.9",
+      "paper_one_decimal": "72.9",
+      "matches_paper_display": true
+    },
+    "AP50_95": {
+      "recomputed_fraction": 0.6353707575913673,
+      "recomputed_percent": 63.53707575913673,
+      "paper_percent": 63.6,
+      "delta_percentage_points": -0.06292424086327486,
+      "one_decimal_percent": "63.5",
+      "paper_one_decimal": "63.6",
+      "matches_paper_display": false
+    }
+  },
+  "paper_url": "https://arxiv.org/html/2111.00273v2",
+  "execution_paper_comparison": {
+    "AP50": {
+      "execution_fraction": 0.973769069033232,
+      "execution_percent": 97.3769069033232,
+      "paper_percent": 97.5,
+      "delta_percentage_points": -0.12309309667679713,
+      "one_decimal_percent": "97.4",
+      "matches_paper_display": false
+    },
+    "AP75": {
+      "execution_fraction": 0.728913482579285,
+      "execution_percent": 72.8913482579285,
+      "paper_percent": 72.9,
+      "delta_percentage_points": -0.008651742071506874,
+      "one_decimal_percent": "72.9",
+      "matches_paper_display": true
+    },
+    "AP50_95": {
+      "execution_fraction": 0.6353747763563038,
+      "execution_percent": 63.53747763563038,
+      "paper_percent": 63.6,
+      "delta_percentage_points": -0.06252236436962022,
+      "one_decimal_percent": "63.5",
+      "matches_paper_display": false
+    }
+  },
+  "annotation_version": "official previous annotations",
+  "current_archive_test_gt": 8302,
+  "annotation_count_difference": 371,
+  "eval_type": "real_gt",
+  "identity": "PAPER-RECONSTRUCTED checkpoint reevaluation",
+  "new_model_forward": false,
+  "training_started": false,
+  "ssh_used": false,
+  "new_digest_calculated": false,
+  "audited_input_hashes": [],
+  "hash_policy_override": "Explicit user instruction forbids new hash; bytes/mtime_ns checked instead, weaker than content identity",
+  "declared_input_set": [
+    "server_execution\\official_test_attempt1\\receipt.json",
+    "server_execution\\official_test_attempt1\\evaluated_roster.json",
+    "server_execution\\official_test_attempt1\\author_metric_inputs.npz",
+    "server_execution\\official_test_attempt1\\checkpoint_compatibility.json",
+    "server_execution\\official_test_attempt1\\effective_data.yaml",
+    "server_execution\\official_test_attempt1\\executed_wrapper.py",
+    "server_execution\\official_test_attempt1\\plan.json",
+    "server_execution\\official_test.log",
+    "server_execution\\official_test.exit",
+    "server_execution\\data_receipt.json",
+    "server_execution\\annotation_audit.json",
+    "server_execution\\author_protocol.json",
+    "server_execution\\legacy_annotations_download.json",
+    "server_execution\\pinned_cpu_recompute.json",
+    "server_execution\\official_test_attempt1\\source_snapshot\\test.py",
+    "server_execution\\official_test_attempt1\\source_snapshot\\utils\\metrics.py",
+    "server_execution\\official_test_attempt1\\source_snapshot\\utils\\general.py",
+    "server_execution\\official_test_attempt1\\source_snapshot\\utils\\datasets.py",
+    {
+      "glob": "server_execution/official_test_attempt1/author_output/labels/*.txt",
+      "actual_files": 3461,
+      "all_input_stats_checked": true
+    }
+  ],
+  "input_stats_unchanged": true,
+  "unreviewed": [
+    "No checkpoint/model forward replay",
+    "No raw-image or full-XML GT reread",
+    "No independent bounding-box IoU matching replay; saved arrays contain TP flags, not GT box coordinates",
+    "Exact unavailable checkpoint training source/history",
+    "No three-seed or from-scratch training audit"
+  ],
+  "elapsed_seconds": 0.3916377001442015
+}

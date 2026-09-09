@@ -1,0 +1,15 @@
+{
+  "gpus": "0, 20226, 4148\n1, 20243, 4131\n2, 20948, 3426\n3, 11, 24363\n4, 22056, 2318\n5, 21296, 3078\n6, 1085, 23289\n",
+  "leases": {
+    "leases": {},
+    "policy": {
+      "formal_trains_per_gpu_default": 1,
+      "host_rss_admission_mib": 245760,
+      "host_rss_hard_mib": 307200,
+      "max_active_gpus": 3,
+      "max_cuda_processes_per_gpu": 2,
+      "project_vram_fraction_lt": 0.7
+    },
+    "schema": "jstars-project-resource-leases-v1"
+  }
+}

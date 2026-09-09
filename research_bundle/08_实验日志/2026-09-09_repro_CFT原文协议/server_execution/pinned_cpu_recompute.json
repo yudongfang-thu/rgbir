@@ -1,0 +1,20 @@
+{
+  "status": "CPU_RECOMPUTED",
+  "numpy_version": "2.2.6",
+  "values": {
+    "AP50": 0.973769069033232,
+    "AP75": 0.728913482579285,
+    "AP50_95": 0.6353747763563038
+  },
+  "difference_to_execution": {
+    "AP50": 0.0,
+    "AP75": 0.0,
+    "AP50_95": 0.0
+  },
+  "cuda_initialized": false,
+  "predictions": 18275,
+  "gt_labels": 7931,
+  "unique_confidences": 5220,
+  "source": "same original utils.metrics.ap_per_class; existing raw arrays; no new inference",
+  "import_compatibility": "import utils.general before metrics to follow author test import order; direct metrics-first import was circular"
+}

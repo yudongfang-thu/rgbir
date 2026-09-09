@@ -1,0 +1,103 @@
+{
+  "status": "COMPLETED",
+  "metrics": {
+    "precision": 0.9517655116995322,
+    "recall": 0.9406127852729794,
+    "AP50": 0.973769069033232,
+    "AP75": 0.728913482579285,
+    "AP50_95": 0.6353747763563038
+  },
+  "maps": [
+    0.6353747763563038
+  ],
+  "author_timing": [
+    15.011096806186078,
+    1.186363551783968,
+    16.197460357970048,
+    1024,
+    1024,
+    64
+  ],
+  "ap_computed": true,
+  "plan": {
+    "status": "STARTED",
+    "mode": "full",
+    "batch_size": 64,
+    "input_size": 1024,
+    "conf_thres": 0.001,
+    "nms_iou": 0.5,
+    "augment": false,
+    "rect": true,
+    "pad": 0.5,
+    "half_precision": true,
+    "model": "author CFT LLVIP checkpoint",
+    "checkpoint": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_llvip.pt",
+    "data": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_attempt1/previous/LLVIP.yaml",
+    "split": "official_test",
+    "expected_images": 3463,
+    "annotations": "official previous version",
+    "identity": "PAPER-RECONSTRUCTED",
+    "purpose": "Original-paper protocol checkpoint reevaluation; not our method selection",
+    "compatibility": [
+      "torch2.10 legacy pickle loading",
+      "NumPy removed int/float aliases",
+      "explicit CFT class rebinding"
+    ],
+    "original_evaluator": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_source/test.py",
+    "original_loader": true,
+    "original_ap_function": true,
+    "author_cli_batch_default": 64,
+    "batch_resource_deviation": false,
+    "lease": {
+      "admission": {
+        "active_gpus_after": [
+          3
+        ],
+        "per_gpu": {
+          "3": {
+            "project_cuda_processes_after": 1,
+            "project_vram_reserved_after_mib": 15360
+          }
+        },
+        "project_rss_reserved_after_mib": 32768
+      },
+      "bound_at": 1788923002.3033793,
+      "created_at": 1788923002.30191,
+      "cuda_processes_per_gpu": 1,
+      "expected_rss_mib": 32768,
+      "expected_vram_mib": 15360,
+      "formal_train": false,
+      "free_safety_mib": 2048,
+      "gpus": [
+        3
+      ],
+      "job_id": "cft_author_full64",
+      "job_pid": 2215151,
+      "kind": "eval",
+      "lease_id": "cft_author_full64-e70ec111eab7",
+      "observed_cuda_pids": [],
+      "owner_pid": 2215151,
+      "peak_cuda_pid_counts": {
+        "3": 0
+      },
+      "peak_rss_mib": 36,
+      "per_gpu_peak_vram_mib": {
+        "3": 0
+      },
+      "profiled_second_train": false
+    },
+    "training_started": false,
+    "new_digest_calculated": false,
+    "started": "2026-09-09T11:03:27.102913+08:00"
+  },
+  "peak": {
+    "process_tree_rss_mib": 18500.39453125,
+    "nvml_process_mib": 11412,
+    "nvml_card_used_mib": 11445,
+    "nvml_min_card_free_mib": 12929
+  },
+  "torch_max_allocated_mib": 10037.95263671875,
+  "torch_max_reserved_mib": 11092.0,
+  "elapsed_seconds": 90.36303832894191,
+  "finished": "2026-09-09T11:04:52.724209+08:00"
+}
