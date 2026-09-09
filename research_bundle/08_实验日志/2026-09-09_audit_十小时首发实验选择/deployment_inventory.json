@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-09-09T15:16:07.450998+08:00",
+  "gpu_used": false,
+  "new_hash": false,
+  "model_loaded": false,
+  "attempts": {
+    "0": {
+      "output_exists": false,
+      "completed": false
+    },
+    "42": {
+      "output_exists": false,
+      "completed": false
+    },
+    "123": {
+      "output_exists": false,
+      "completed": false
+    }
+  },
+  "files": [
+    {
+      "name": "entry",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/production_release_v2/train_c1_fast.py",
+      "exists": true,
+      "bytes": 9997
+    },
+    {
+      "name": "launcher",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/production_release_v2/launch_prepared_v2.py",
+      "exists": true,
+      "bytes": 1823
+    },
+    {
+      "name": "candidate",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/release_v1/fast_candidate/batched_selection_v1.py",
+      "exists": true,
+      "bytes": 23534
+    },
+    {
+      "name": "evaluator",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_independent_kd_v2_20260907/release_gpu5/evaluate_independent.py",
+      "exists": true,
+      "bytes": 16958
+    },
+    {
+      "name": "config_seed0",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/production_release_v2/configs/C1_s0.yaml",
+      "exists": true,
+      "bytes": 3562
+    },
+    {
+      "name": "config_seed42",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/production_release_v2/configs/C1_s42.yaml",
+      "exists": true,
+      "bytes": 3563
+    },
+    {
+      "name": "model",
+      "path": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/artifacts/int8_cross_modal_stage2_v1/weights/yolo11n.pt",
+      "exists": true,
+      "bytes": 5613764
+    },
+    {
+      "name": "teacher",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/infrared_seed42_native_b32a2/weights/last.pt",
+      "exists": true,
+      "bytes": 5483610
+    },
+    {
+      "name": "reference",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_p3_causal_v1/formal_native/dronevehicle/rgb_seed42_native_b32a2/weights/last.pt",
+      "exists": true,
+      "bytes": 5483610
+    },
+    {
+      "name": "config_seed123",
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbir_c1_fastpath_20260908/production_release_v2/configs/C1_s123.yaml",
+      "exists": true,
+      "bytes": 3564
+    }
+  ],
+  "source_references": {
+    "train_c1_fast.py": [
+      {
+        "line": 117,
+        "text": "            independent_full_dev_evaluation_pending=True,old_runs_modified=False)"
+      }
+    ],
+    "launch_prepared_v2.py": [],
+    "dispatch_single_formal.py": [
+      {
+        "line": 33,
+        "text": "    _,alive=psutil.wait_procs(owned,timeout=5)"
+      },
+      {
+        "line": 104,
+        "text": "            rc=proc.wait();stop.set();watcher.join(timeout=3)"
+      }
+    ]
+  },
+  "automatic_evaluation_in_launcher": false,
+  "full_epoch_measured_in_prior_plan": false,
+  "status": "READ_ONLY_INVENTORY_COMPLETED_NOT_LAUNCH_ADMISSION"
+}
