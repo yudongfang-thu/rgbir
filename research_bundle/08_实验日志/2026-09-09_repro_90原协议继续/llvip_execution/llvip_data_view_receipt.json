@@ -1,0 +1,34 @@
+{
+  "status": "PREPARED",
+  "source": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_attempt1/previous",
+  "output": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_baseline_attempt1",
+  "counts": [
+    {
+      "modality": "visible",
+      "split": "train",
+      "images": 12025,
+      "gt": 33648
+    },
+    {
+      "modality": "visible",
+      "split": "test",
+      "images": 3463,
+      "gt": 7931
+    },
+    {
+      "modality": "infrared",
+      "split": "train",
+      "images": 12025,
+      "gt": 33648
+    },
+    {
+      "modality": "infrared",
+      "split": "test",
+      "images": 3463,
+      "gt": 7931
+    }
+  ],
+  "elapsed_seconds": 8.275708660949022,
+  "scope": "Independent author-baseline cache/labels view; CFT views and official source files unchanged",
+  "new_hash_computed": false
+}

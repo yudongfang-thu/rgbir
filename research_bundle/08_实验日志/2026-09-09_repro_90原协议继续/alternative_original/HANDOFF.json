@@ -1,0 +1,314 @@
+{
+  "date": "2026-09-09T12:42:40.883372",
+  "selected": "LLVIP author released YOLOv5l visible and infrared baselines",
+  "identity": "PAPER-RECONSTRUCTED",
+  "wrapper": "llvip_author_baseline.py",
+  "template": "llvip_author_protocol.template.json",
+  "wrapper_checks": [
+    "AST syntax passed",
+    "CLI --help passed without model import"
+  ],
+  "model_execution_by_this_agent": false,
+  "ssh_by_this_agent": false,
+  "new_hash": false,
+  "weight_endpoint_locally_checked": "LLVIP_author_weight_endpoint_check2.json",
+  "remote_assets_reported_by_parent": {
+    "source_revision": "c1a655cce437ebfd990a97b04fc48fbb99f4c47b",
+    "source": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/llvip_author_baseline/author_source/yolov5",
+    "rar_bytes": 173666266,
+    "each_extracted_weight_bytes": 93884963,
+    "weight_names": [
+      "yolov5_visible.pt",
+      "yolov5_infrared.pt"
+    ],
+    "official_previous_test_images": 3463,
+    "official_previous_test_gt": 7931
+  },
+  "local_source_status": {
+    "llvip_source_complete": false,
+    "llvip_python_files_saved": 6,
+    "raw_download_attempt": "stopped after connection/read timeouts; six files retained",
+    "codeload_attempt": "stopped at 30MB bound; archive not saved",
+    "amfd_text_code_files_saved": 48
+  },
+  "gpu_execution_requirements": [
+    "existing bound project resource lease",
+    "one visible GPU",
+    "allocator cap .68",
+    "same-weight modality protocol CPU identity",
+    "2 complete B32/1280/FP32 batches without aggregate AP",
+    "measured-resource admission before full evaluation"
+  ],
+  "provenance_limitations": [
+    "earlier paper16836pairs70/30 vs author published15488pairs",
+    "previous annotations rather than2023corrected annotations",
+    "exact historical source and private preprocessing not proved",
+    "no metrics or forward results in this subtask"
+  ],
+  "local_inventory": [
+    {
+      "path": "AMFD_annotations_drive.html",
+      "bytes": 312972
+    },
+    {
+      "path": "AMFD_LLVIP_drive.html",
+      "bytes": 301913
+    },
+    {
+      "path": "AMFD_LLVIP_drive.html.receipt.json",
+      "bytes": 358
+    },
+    {
+      "path": "AMFD_models_drive.html",
+      "bytes": 314862
+    },
+    {
+      "path": "AMFD_README.md",
+      "bytes": 5044
+    },
+    {
+      "path": "AMFD_root_drive.html",
+      "bytes": 320472
+    },
+    {
+      "path": "AMFD_source\\__init__.py",
+      "bytes": 19
+    },
+    {
+      "path": "AMFD_source\\amfd\\__init__.py",
+      "bytes": 250
+    },
+    {
+      "path": "AMFD_source\\amfd\\api\\__init__.py",
+      "bytes": 78
+    },
+    {
+      "path": "AMFD_source\\amfd\\api\\init_backbone.py",
+      "bytes": 4575
+    },
+    {
+      "path": "AMFD_source\\amfd\\backbones\\__init__.py",
+      "bytes": 184
+    },
+    {
+      "path": "AMFD_source\\amfd\\backbones\\doubleresnets.py",
+      "bytes": 25920
+    },
+    {
+      "path": "AMFD_source\\amfd\\backbones\\Fusionresnets.py",
+      "bytes": 27216
+    },
+    {
+      "path": "AMFD_source\\amfd\\data_preprocessors\\__init__.py",
+      "bytes": 145
+    },
+    {
+      "path": "AMFD_source\\amfd\\data_preprocessors\\data_preprocessor.py",
+      "bytes": 13935
+    },
+    {
+      "path": "AMFD_source\\amfd\\datasets\\__init__.py",
+      "bytes": 193
+    },
+    {
+      "path": "AMFD_source\\amfd\\datasets\\kaist_dataset.py",
+      "bytes": 6154
+    },
+    {
+      "path": "AMFD_source\\amfd\\datasets\\llvip_dataset.py",
+      "bytes": 5727
+    },
+    {
+      "path": "AMFD_source\\amfd\\datasets\\smod_dataset.py",
+      "bytes": 6153
+    },
+    {
+      "path": "AMFD_source\\amfd\\datasets\\transforms\\__init__.py",
+      "bytes": 165
+    },
+    {
+      "path": "AMFD_source\\amfd\\datasets\\transforms\\LoadMultiModalImage.py",
+      "bytes": 33907
+    },
+    {
+      "path": "AMFD_source\\amfd\\datasets\\transforms\\unittest.py",
+      "bytes": 2455
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\__init__.py",
+      "bytes": 540
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\multibackbone_retinanet.py",
+      "bytes": 1028
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\multibackbone_single_stage.py",
+      "bytes": 8225
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\multispec_distill_cascadercnn.py",
+      "bytes": 2535
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\multispec_distill_cascadercnn_align_necks.py",
+      "bytes": 2621
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\multispec_distill_retinanet.py",
+      "bytes": 3772
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\single_stage_distill.py",
+      "bytes": 13414
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\single_stage_distill_align_necks.py",
+      "bytes": 13378
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\thermal_first_cascade_rcnn.py",
+      "bytes": 2981
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\thermal_first_two_stage_detector_ori.py",
+      "bytes": 24025
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\two_stage_distill_thermal_first.py",
+      "bytes": 15836
+    },
+    {
+      "path": "AMFD_source\\amfd\\detectors\\two_stage_distill_thermal_first_align_necks.py",
+      "bytes": 19679
+    },
+    {
+      "path": "AMFD_source\\amfd\\losses\\__init__.py",
+      "bytes": 157
+    },
+    {
+      "path": "AMFD_source\\amfd\\losses\\cwd_loss.py",
+      "bytes": 1620
+    },
+    {
+      "path": "AMFD_source\\amfd\\losses\\mea_loss.py",
+      "bytes": 8132
+    },
+    {
+      "path": "AMFD_source\\amfd\\losses\\mgd_loss.py",
+      "bytes": 3214
+    },
+    {
+      "path": "AMFD_source\\amfd\\losses\\pkd_loss.py",
+      "bytes": 3133
+    },
+    {
+      "path": "AMFD_source\\amfd\\metrics\\__init__.py",
+      "bytes": 72
+    },
+    {
+      "path": "AMFD_source\\amfd\\metrics\\kaist_missrate_metric.py",
+      "bytes": 63710
+    },
+    {
+      "path": "AMFD_source\\amfd\\metrics\\smod_missrate_metric.py",
+      "bytes": 40632
+    },
+    {
+      "path": "AMFD_source\\amfd\\modules\\__init__.py",
+      "bytes": 73
+    },
+    {
+      "path": "AMFD_source\\amfd\\modules\\baa_gate.py",
+      "bytes": 19425
+    },
+    {
+      "path": "AMFD_source\\config\\KAIST\\Student_Fasterrcnn_r18_fpn_1x_kaist.py",
+      "bytes": 14544
+    },
+    {
+      "path": "AMFD_source\\config\\KAIST\\Student_Fasterrcnn_r18_fpn_1x_kaist_amfd.py",
+      "bytes": 14540
+    },
+    {
+      "path": "AMFD_source\\config\\KAIST\\Teacher_Fasterrcnn_r50_fpn_1x_kaist_thermal_first.py",
+      "bytes": 9774
+    },
+    {
+      "path": "AMFD_source\\config\\LLVIP\\Student_Fasterrcnn_r18_fpn_1x_llvip_amfd.py",
+      "bytes": 14534
+    },
+    {
+      "path": "AMFD_source\\config\\LLVIP\\Teacher_r50_fpn_1x_llvip_thermal_first.py",
+      "bytes": 9681
+    },
+    {
+      "path": "AMFD_source\\config\\SMOD\\Student_Fasterrcnn_r18_fpn_1x_smod_amfd.py",
+      "bytes": 14574
+    },
+    {
+      "path": "AMFD_source\\config\\SMOD\\Student_Retinanet_r18_fpn_1x_smod_amfd.py",
+      "bytes": 12120
+    },
+    {
+      "path": "AMFD_source\\config\\SMOD\\Teacher_Fasterrcnn_r50_fpn_1x_smod_thermal_first.py",
+      "bytes": 9695
+    },
+    {
+      "path": "AMFD_source\\config\\SMOD\\Teacher_Retinanet_r50_fpn_1x_smod.py",
+      "bytes": 6760
+    },
+    {
+      "path": "AMFD_source\\README.md",
+      "bytes": 5044
+    },
+    {
+      "path": "AMFD_source.tar.gz.receipt.json",
+      "bytes": 2570
+    },
+    {
+      "path": "llvip_author_baseline.py",
+      "bytes": 17301
+    },
+    {
+      "path": "llvip_author_protocol.template.json",
+      "bytes": 1259
+    },
+    {
+      "path": "LLVIP_author_source\\yolov5\\models\\common.py",
+      "bytes": 20093
+    },
+    {
+      "path": "LLVIP_author_source\\yolov5\\models\\experimental.py",
+      "bytes": 4521
+    },
+    {
+      "path": "LLVIP_author_source\\yolov5\\utils\\datasets.py",
+      "bytes": 44959
+    },
+    {
+      "path": "LLVIP_author_source\\yolov5\\utils\\general.py",
+      "bytes": 34153
+    },
+    {
+      "path": "LLVIP_author_source\\yolov5\\utils\\metrics.py",
+      "bytes": 13664
+    },
+    {
+      "path": "LLVIP_author_source\\yolov5\\utils\\torch_utils.py",
+      "bytes": 14025
+    },
+    {
+      "path": "LLVIP_author_weight_endpoint_check2.json",
+      "bytes": 436
+    },
+    {
+      "path": "metadata_download_receipt.json",
+      "bytes": 1410
+    },
+    {
+      "path": "README.md",
+      "bytes": 10110
+    }
+  ]
+}

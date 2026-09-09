@@ -1,0 +1,66 @@
+{
+  "status": "STAGE_COMPLETED_WITH_TRAINING_RESOURCE_BLOCKS",
+  "identity": "PAPER-RECONSTRUCTED",
+  "new_completed_evaluations": {
+    "visible": {
+      "metrics": {
+        "AP50": 0.9078818308630796,
+        "AP75": 0.5634289336523524,
+        "AP50_95": 0.5266423891725144,
+        "ap_at_each_iou": [
+          [
+            0.9078818308630796,
+            0.8816834232535425,
+            0.841709796042463,
+            0.7890398322135741,
+            0.6968889005459454,
+            0.5634289336523524,
+            0.3702661544143023,
+            0.17165065612816108,
+            0.041975452014311444,
+            0.001898912597412149
+          ]
+        ],
+        "predictions": 44361,
+        "gt": 7931
+      },
+      "seconds": 90.69560789200477
+    },
+    "infrared": {
+      "metrics": {
+        "AP50": 0.963782783951325,
+        "AP75": 0.7642067402380133,
+        "AP50_95": 0.6701490793430571,
+        "ap_at_each_iou": [
+          [
+            0.963782783951325,
+            0.9510049878071409,
+            0.9292357210894726,
+            0.8971613088281608,
+            0.8477815647986872,
+            0.7642067402380133,
+            0.6394596934951223,
+            0.45427162575659136,
+            0.21940968408513833,
+            0.035176683380918866
+          ]
+        ],
+        "predictions": 25061,
+        "gt": 7931
+      },
+      "seconds": 88.06127838185057
+    }
+  },
+  "independent_numeric_coverage_checks_passed": 44,
+  "training": {
+    "cft_successful_updates": 0,
+    "llvip_successful_updates": 10,
+    "llvip_amp_skips": 0,
+    "llvip_status": "RESOURCE_FAILURE_OOM",
+    "required_updates": 24,
+    "e200_started": false
+  },
+  "new_drone_original_protocol_ap": false,
+  "new_kd_ap": false,
+  "scope": "Published author checkpoints reproduce revised paper metrics closely; no from-initialization training reproduction or transferable KD gain established."
+}

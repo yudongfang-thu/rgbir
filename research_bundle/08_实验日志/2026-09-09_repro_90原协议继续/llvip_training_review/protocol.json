@@ -1,0 +1,100 @@
+{
+  "status": "CORE_RECIPE_EXPLICIT_RECONSTRUCTION_READY_FOR_CPU_AND_GPU_CANARY",
+  "identity": "PAPER-RECONSTRUCTED",
+  "paper": {
+    "epochs": 200,
+    "batch_size": 8,
+    "optimizer": "SGD",
+    "lr0": 0.0032,
+    "final_lr": 0.000384,
+    "lrf_derived": 0.12,
+    "momentum": 0.843,
+    "weight_decay": 0.00036,
+    "pretraining": "COCO yolov5l.pt; exact release not specified",
+    "input": "visible or infrared separately"
+  },
+  "readme": {
+    "imgsz": 1280,
+    "epochs": 200,
+    "batch_size": 8,
+    "weights": "yolov5l.pt",
+    "train_split": "official train",
+    "validation_split": "official test"
+  },
+  "repository_defaults": {
+    "weights": "yolov5s.pt",
+    "imgsz": 640,
+    "batch_size": 16,
+    "epochs": 300,
+    "lr0": 0.01,
+    "lrf": 0.1,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "patience": 100,
+    "cosine_schedule": true,
+    "warmup_epochs": 3,
+    "gradient_accumulation_after_warmup": 8
+  },
+  "explicit_reconstruction": {
+    "patience": 0,
+    "reason": "Full E200 budget; default early stop differs",
+    "other_hyp": "unchanged author default",
+    "source_commit": "c1a655cce437ebfd990a97b04fc48fbb99f4c47b"
+  },
+  "uncertainties": [
+    "exact pretrained release",
+    "complete historical hyp and software revision",
+    "author last/best checkpoint association",
+    "exact old historical split for v1"
+  ],
+  "next_entry": {
+    "file": "train_author_canary.py",
+    "original_call": "train.train(hyp,opt,device,Callbacks())",
+    "cpu_mode": "preflight",
+    "gpu_mode": "canary",
+    "successful_updates": 24,
+    "allocator_cap": 0.68,
+    "full_train_images": 12025,
+    "official_val_images": 3463,
+    "new_trainer": false
+  },
+  "paper_versions": {
+    "v1": {
+      "pairs": 16836,
+      "train_fraction": 0.7,
+      "visible": [
+        90.8,
+        51.9,
+        50.0
+      ],
+      "infrared": [
+        94.6,
+        72.2,
+        61.9
+      ]
+    },
+    "v2_v4": {
+      "pairs": 15488,
+      "train_fraction": 0.776,
+      "visible": [
+        90.8,
+        56.4,
+        52.7
+      ],
+      "infrared": [
+        96.5,
+        76.4,
+        67.0
+      ]
+    }
+  },
+  "source_links": [
+    "https://arxiv.org/html/2108.10831v1#S5.SS2",
+    "https://arxiv.org/html/2108.10831v2#S5.SS2",
+    "https://github.com/bupt-ai-cz/LLVIP",
+    "https://github.com/bupt-ai-cz/LLVIP/blob/c1a655cce437ebfd990a97b04fc48fbb99f4c47b/yolov5/train.py"
+  ],
+  "new_hash": false,
+  "ssh": false,
+  "gpu_executed_by_this_subagent": false
+}

@@ -1,0 +1,173 @@
+{
+  "checked_at": {
+    "90": "2026-09-09T13:06:18.858781+08:00",
+    "94": "2026-09-09T13:06:18.906825+08:00"
+  },
+  "servers": {
+    "90": {
+      "ssh": true,
+      "project_root_readable": true,
+      "gpus": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total": "24576 MiB",
+          "used": "5821 MiB",
+          "free": "18553 MiB",
+          "utilization": "90 %"
+        },
+        {
+          "index": 1,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total": "24576 MiB",
+          "used": "5817 MiB",
+          "free": "18557 MiB",
+          "utilization": "90 %"
+        },
+        {
+          "index": 2,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total": "24576 MiB",
+          "used": "20948 MiB",
+          "free": "3426 MiB",
+          "utilization": "100 %"
+        },
+        {
+          "index": 3,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total": "24576 MiB",
+          "used": "5425 MiB",
+          "free": "18949 MiB",
+          "utilization": "87 %"
+        },
+        {
+          "index": 4,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total": "24576 MiB",
+          "used": "21836 MiB",
+          "free": "2538 MiB",
+          "utilization": "100 %"
+        },
+        {
+          "index": 5,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total": "24576 MiB",
+          "used": "21500 MiB",
+          "free": "2874 MiB",
+          "utilization": "100 %"
+        },
+        {
+          "index": 6,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total": "24576 MiB",
+          "used": "1085 MiB",
+          "free": "23289 MiB",
+          "utilization": "100 %"
+        }
+      ],
+      "project_tmux_session_present": false,
+      "lease": {
+        "leases": {},
+        "policy": {
+          "formal_trains_per_gpu_default": 1,
+          "host_rss_admission_mib": 245760,
+          "host_rss_hard_mib": 307200,
+          "max_active_gpus": 3,
+          "max_cuda_processes_per_gpu": 2,
+          "project_vram_fraction_lt": 0.7
+        },
+        "schema": "jstars-project-resource-leases-v1"
+      },
+      "old_rgbir_training_resumed": false,
+      "no_current_stage_training_process": true
+    },
+    "94": {
+      "ssh": true,
+      "project_root_readable": true,
+      "gpus": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total": "24564 MiB",
+          "used": "7484 MiB",
+          "free": "16600 MiB",
+          "utilization": "90 %"
+        },
+        {
+          "index": 1,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total": "24564 MiB",
+          "used": "7231 MiB",
+          "free": "16853 MiB",
+          "utilization": "80 %"
+        },
+        {
+          "index": 2,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total": "24564 MiB",
+          "used": "6664 MiB",
+          "free": "17420 MiB",
+          "utilization": "80 %"
+        },
+        {
+          "index": 3,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total": "24564 MiB",
+          "used": "4023 MiB",
+          "free": "20061 MiB",
+          "utilization": "44 %"
+        },
+        {
+          "index": 4,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total": "24564 MiB",
+          "used": "10717 MiB",
+          "free": "13367 MiB",
+          "utilization": "100 %"
+        },
+        {
+          "index": 5,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total": "24564 MiB",
+          "used": "10340 MiB",
+          "free": "13744 MiB",
+          "utilization": "16 %"
+        },
+        {
+          "index": 6,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total": "24564 MiB",
+          "used": "10717 MiB",
+          "free": "13367 MiB",
+          "utilization": "17 %"
+        },
+        {
+          "index": 7,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total": "24564 MiB",
+          "used": "10326 MiB",
+          "free": "13758 MiB",
+          "utilization": "100 %"
+        }
+      ],
+      "project_tmux_session_present": false,
+      "lease": {
+        "leases": {},
+        "policy": {
+          "formal_trains_per_gpu_default": 1,
+          "host_rss_admission_mib": 245760,
+          "host_rss_hard_mib": 307200,
+          "max_active_gpus": 3,
+          "max_cuda_processes_per_gpu": 2,
+          "project_vram_fraction_lt": 0.7
+        },
+        "schema": "jstars-project-resource-leases-v1"
+      },
+      "old_rgbir_training_resumed": false,
+      "functional_check": "16 forward/backward iterations and existing LLVIP image decode passed on one dynamically leased GPU; not an eight-card stress test",
+      "lease_file": "/mnt/dataset/yudongfang/projects/SpaceNet6_OTD_official_reproduction/runs/.project_resource_leases.json",
+      "lease_checked_at": "2026-09-09T13:11:49.778311+08:00"
+    }
+  },
+  "raw_host_process_lists_published": false
+}

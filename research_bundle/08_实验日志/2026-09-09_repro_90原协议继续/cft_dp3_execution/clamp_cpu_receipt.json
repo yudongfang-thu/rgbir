@@ -1,0 +1,18 @@
+{
+  "torch": "2.10.0+cu128",
+  "case": "author long grid indices with float shape-derived clamp bound",
+  "original": "RuntimeError(\"result type Float can't be cast to the desired output type long int\")",
+  "integer_bounds": [
+    0,
+    0,
+    3,
+    4
+  ],
+  "float_then_long_reference": [
+    0,
+    0,
+    3,
+    4
+  ],
+  "cuda_initialized": false
+}

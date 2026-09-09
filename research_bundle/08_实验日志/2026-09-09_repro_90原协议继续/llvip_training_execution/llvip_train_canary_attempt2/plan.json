@@ -1,0 +1,136 @@
+{
+  "opt": {
+    "weights": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_initialization/yolov5l.pt",
+    "cfg": "",
+    "data": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_baseline_attempt1/visible/data.yaml",
+    "hyp": "data/hyps/hyp.scratch.yaml",
+    "epochs": 200,
+    "batch_size": 8,
+    "imgsz": 1280,
+    "rect": false,
+    "resume": false,
+    "nosave": false,
+    "noval": false,
+    "noautoanchor": false,
+    "evolve": null,
+    "bucket": "",
+    "cache": null,
+    "image_weights": false,
+    "device": "0",
+    "multi_scale": false,
+    "single_cls": false,
+    "adam": false,
+    "sync_bn": false,
+    "workers": 8,
+    "project": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/original_repro_continue_20260909_attempt1/llvip_train_canary_attempt2",
+    "name": "author_train",
+    "exist_ok": false,
+    "quad": false,
+    "linear_lr": false,
+    "label_smoothing": 0.0,
+    "patience": 0,
+    "freeze": 0,
+    "save_period": -1,
+    "local_rank": -1,
+    "entity": null,
+    "upload_dataset": false,
+    "bbox_interval": -1,
+    "artifact_alias": "latest",
+    "save_dir": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/original_repro_continue_20260909_attempt1/llvip_train_canary_attempt2/author_train"
+  },
+  "hyp": {
+    "lr0": 0.0032,
+    "lrf": 0.12,
+    "momentum": 0.843,
+    "weight_decay": 0.00036,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "warmup_bias_lr": 0.1,
+    "box": 0.05,
+    "cls": 0.5,
+    "cls_pw": 1.0,
+    "obj": 1.0,
+    "obj_pw": 1.0,
+    "iou_t": 0.2,
+    "anchor_t": 4.0,
+    "fl_gamma": 0.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 0.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "flipud": 0.0,
+    "fliplr": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.0,
+    "copy_paste": 0.0
+  },
+  "lease": {
+    "admission": {
+      "active_gpus_after": [
+        6
+      ],
+      "per_gpu": {
+        "6": {
+          "project_cuda_processes_after": 1,
+          "project_vram_reserved_after_mib": 17152
+        }
+      },
+      "project_rss_reserved_after_mib": 65536
+    },
+    "bound_at": 1788929673.3576996,
+    "created_at": 1788929673.3558471,
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 65536,
+    "expected_vram_mib": 17152,
+    "formal_train": true,
+    "free_safety_mib": 2048,
+    "gpus": [
+      6
+    ],
+    "job_id": "llvip_author_train_canary_v2_20260909",
+    "job_pid": 2271887,
+    "kind": "train",
+    "lease_id": "llvip_author_train_canary_v2_20260909-c2f9368fad7a",
+    "observed_cuda_pids": [],
+    "owner_pid": 2271887,
+    "peak_cuda_pid_counts": {
+      "6": 0
+    },
+    "peak_rss_mib": 36,
+    "per_gpu_peak_vram_mib": {
+      "6": 0
+    },
+    "profiled_second_train": false
+  },
+  "modality": "visible",
+  "identity": "PAPER-RECONSTRUCTED",
+  "paper_overrides": [
+    "lr0",
+    "lrf",
+    "momentum",
+    "weight_decay"
+  ],
+  "patience_note": "Explicitly disable current-code early stop to budget full paper E200",
+  "allocator_cap": 0.68,
+  "original_train": "train.train(hyp,opt,device,callbacks)",
+  "target_successful_updates": 24,
+  "max_batches": 256,
+  "author_source_commit_preexisting": "c1a655cce437ebfd990a97b04fc48fbb99f4c47b",
+  "compatibility": [
+    "CPU-validated two integer loss bounds",
+    "legacy pickle",
+    "NumPy aliases",
+    "no-digest dataset cache key",
+    "optional wandb disabled",
+    "batch image plotting/TensorBoard JIT trace skipped; no extra diagnostic model forward"
+  ],
+  "training_population": "official train12025; original val loader scans official test3463",
+  "official_test_authorized": true,
+  "primary_annotations": "previous",
+  "ap_disabled": true,
+  "steady_optimizer_regime_observed": false
+}

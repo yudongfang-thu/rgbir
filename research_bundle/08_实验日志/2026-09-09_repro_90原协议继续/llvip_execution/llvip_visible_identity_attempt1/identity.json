@@ -1,0 +1,340 @@
+{
+  "started": "2026-09-09T04:38:20.632182+00:00",
+  "mode": "identity",
+  "author_repo": "https://github.com/bupt-ai-cz/LLVIP",
+  "source_root": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/llvip_author_baseline/author_source/yolov5",
+  "source_file_sizes": {
+    "val.py": 17092,
+    "models/yolo.py": 14693,
+    "models/common.py": 20093,
+    "models/experimental.py": 4521,
+    "utils/datasets.py": 44959,
+    "utils/metrics.py": 13664,
+    "utils/general.py": 34153
+  },
+  "torch": "2.10.0+cu128",
+  "numpy": "2.2.6",
+  "new_hash_computed": false,
+  "training_started": false,
+  "compatibility": [
+    "known author legacy pickle loading",
+    "NumPy int/float aliases"
+  ],
+  "source_content_identity_proved": false,
+  "lease": null,
+  "identity": "PAPER-RECONSTRUCTED",
+  "release_description": "author-released single-modality LLVIP baseline",
+  "allocator_memory_fraction": null,
+  "status": "IDENTITY_READ_CPU",
+  "weights": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/llvip_author_baseline/extracted_attempt1/yolov5_trained_model/yolov5_visible.pt",
+  "weights_bytes": 93884963,
+  "checkpoint_keys": [
+    "epoch",
+    "best_fitness",
+    "model",
+    "ema",
+    "updates",
+    "optimizer",
+    "wandb_id",
+    "training_results"
+  ],
+  "selected": "model",
+  "epoch": -1,
+  "model_class": "models.yolo.Model",
+  "parameters": 46631350,
+  "names": [
+    "person"
+  ],
+  "yaml": {
+    "nc": 1,
+    "depth_multiple": 1.0,
+    "width_multiple": 1.0,
+    "anchors": [
+      [
+        10,
+        13,
+        16,
+        30,
+        33,
+        23
+      ],
+      [
+        30,
+        61,
+        62,
+        45,
+        59,
+        119
+      ],
+      [
+        116,
+        90,
+        156,
+        198,
+        373,
+        326
+      ]
+    ],
+    "backbone": [
+      [
+        -1,
+        1,
+        "Focus",
+        [
+          64,
+          3
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          128,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C3",
+        [
+          128
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          256,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        9,
+        "C3",
+        [
+          256
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          512,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        9,
+        "C3",
+        [
+          512
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          1024,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        1,
+        "SPP",
+        [
+          1024,
+          [
+            5,
+            9,
+            13
+          ]
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C3",
+        [
+          1024,
+          false
+        ]
+      ]
+    ],
+    "head": [
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          512,
+          1,
+          1
+        ]
+      ],
+      [
+        -1,
+        1,
+        "nn.Upsample",
+        [
+          "None",
+          2,
+          "nearest"
+        ]
+      ],
+      [
+        [
+          -1,
+          6
+        ],
+        1,
+        "Concat",
+        [
+          1
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C3",
+        [
+          512,
+          false
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          256,
+          1,
+          1
+        ]
+      ],
+      [
+        -1,
+        1,
+        "nn.Upsample",
+        [
+          "None",
+          2,
+          "nearest"
+        ]
+      ],
+      [
+        [
+          -1,
+          4
+        ],
+        1,
+        "Concat",
+        [
+          1
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C3",
+        [
+          256,
+          false
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          256,
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          -1,
+          14
+        ],
+        1,
+        "Concat",
+        [
+          1
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C3",
+        [
+          512,
+          false
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          512,
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          -1,
+          10
+        ],
+        1,
+        "Concat",
+        [
+          1
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C3",
+        [
+          1024,
+          false
+        ]
+      ],
+      [
+        [
+          17,
+          20,
+          23
+        ],
+        1,
+        "Detect",
+        [
+          "nc",
+          "anchors"
+        ]
+      ]
+    ],
+    "ch": 3
+  },
+  "stride": [
+    8.0,
+    16.0,
+    32.0
+  ],
+  "cuda_initialized": false,
+  "new_forward": false,
+  "modality": "not inferred from weights; verify archive filename and author metadata"
+}

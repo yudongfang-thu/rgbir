@@ -1,0 +1,286 @@
+{
+  "date": "2026-09-09T04:49:55.383818+00:00",
+  "auditor": {
+    "agent": "/root/port90_code_inventory",
+    "fresh_context": false,
+    "cross_model_review": false,
+    "model_identity": "not independently observable",
+    "independence": "Separate from executor, reused context; reviewer wrote initial wrapper, not a blind independent code-author review"
+  },
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "NUMERIC_AND_COVERAGE_PASS_WITH_HISTORICAL_SOURCE_AND_DEVICE_LIMITS",
+  "identity": "PAPER-RECONSTRUCTED",
+  "checks": {
+    "gt_provenance": {
+      "status": "warn",
+      "details": "Real previous-version human annotations; each captured target_cls=7931 agrees with independent data-view receipt; no XML/box rematching replay. Corrected version8302 not mixed.",
+      "evidence": [
+        "llvip_execution/llvip_data_view_receipt.json",
+        "LLVIP_EVALUATION_RECOMPUTE.json:results[*].gt"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "Three AP and all ten columns independently recomputed using actual author NumPy functions; every difference to executed receipt is0 at original1e-12 tolerance. Fraction-to-percent units and class/IoU aggregation verified.",
+      "evidence": [
+        "llvip_execution/llvip_visible_full_attempt1/source_snapshot/utils/metrics.py:36",
+        "llvip_execution/llvip_visible_full_attempt1/source_snapshot/utils/metrics.py:96",
+        "LLVIP_EVALUATION_RECOMPUTE.json"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "Each run3463unique images,7931GT,109batches,exit0,COMPLETED. Visible44361pred/3461TXT;IR25061pred/3462TXT. Empty-detection images retained, no extra TXT or NMS timeout.",
+      "evidence": [
+        "llvip_execution/llvip_visible_full_attempt1/source_snapshot/val.py:194",
+        "llvip_execution/llvip_author_visible_evaluate_20260909.log",
+        "llvip_execution/llvip_author_infrared_evaluate_20260909.log",
+        "LLVIP_EVALUATION_RECOMPUTE.json"
+      ]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "Actual16888-byte execution snapshots inspected; captured arrays forwarded to original AP; TXT tokens exactly match arrays. Later device-default patch was not executed and not substituted into evidence.",
+      "evidence": [
+        "llvip_execution/llvip_visible_full_attempt1/executed_wrapper.py:239",
+        "llvip_execution/llvip_visible_full_attempt1/executed_wrapper.py:259",
+        "llvip_execution/llvip_infrared_full_attempt1/executed_wrapper.py"
+      ]
+    },
+    "scope": {
+      "status": "warn",
+      "details": "Two pretrained single-modality checkpoint reevaluations; no model/IoU replay or three-seed/training claim. Newer paper references appended after execution, frozenv1 retained. Old device selector rewrites environment after prior CUDA initialization; observed physicalGPU3 consistent but not a general guarantee.",
+      "evidence": [
+        "LLVIP_EVALUATION_REVIEW.md",
+        "llvip_execution/llvip_visible_full_attempt1/receipt.json:observed_lease_resources",
+        "llvip_execution/llvip_infrared_full_attempt1/receipt.json:observed_lease_resources"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "details": "real_gt, dataset human annotations; save_hybrid=False, no model-derived targets.",
+      "evidence": [
+        "llvip_execution/llvip_data_view_receipt.json",
+        "llvip_execution/llvip_visible_full_attempt1/frozen_protocol.json",
+        "llvip_execution/llvip_infrared_full_attempt1/frozen_protocol.json"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "FULL_SINGLE_MODALITY_EVALUATIONS",
+      "impact": "supported",
+      "claim": "Both disclosed checkpoint evaluations completed full3463-image official test coverage",
+      "evidence": "LLVIP_EVALUATION_RECOMPUTE.json",
+      "rationale": "Roster,GT,TXT,exit,logs and timeout guard close"
+    },
+    {
+      "id": "SAVED_INPUT_AP_REPRODUCTION",
+      "impact": "supported",
+      "claim": "The author AP aggregation of saved inputs reproduces all recorded AP values",
+      "evidence": "LLVIP_EVALUATION_RECOMPUTE.json:results[*].signed_difference_fraction",
+      "rationale": "Both localNumPy2.3.5 and execution2.2.6 values match exactly; no inference or IoU rematching implied"
+    },
+    {
+      "id": "CLOSE_TO_UPDATED_PAPER",
+      "impact": "needs_qualifier",
+      "claim": "Public author weights give results close to v2/v4 Table3",
+      "evidence": "LLVIP_EVALUATION_RECOMPUTE.json:results[*].comparisons",
+      "rationale": "Largest difference0.121722pp;retain version/data/source limitations and frozenv1 references"
+    },
+    {
+      "id": "ALL_SIX_PUBLISHED_VALUES_EXACT",
+      "impact": "unsupported",
+      "claim": "All six metrics match at published one-decimal precision",
+      "evidence": "LLVIP_EVALUATION_RECOMPUTE.json:results[*].comparisons.v2_v4_additional",
+      "rationale": "Only4of6 match;RGB AP75 rounds56.3versus56.4,IR AP50rounds96.4versus96.5"
+    },
+    {
+      "id": "PHYSICAL_GPU3_THIS_RUN",
+      "impact": "supported",
+      "claim": "Recorded actual device use was physicalGPU3",
+      "evidence": [
+        "llvip_execution/llvip_visible_full_attempt1/receipt.json:observed_lease_resources",
+        "llvip_execution/llvip_infrared_full_attempt1/receipt.json:observed_lease_resources"
+      ],
+      "rationale": "Lease/NVML agree;allocator initialized CUDA before author device selector. Do not generalize old wrapper environment behavior"
+    },
+    {
+      "id": "TRAINING_OR_METHOD_GAIN",
+      "impact": "unsupported",
+      "claim": "These reevaluations establish original training,three-seed gain,or gain over frozenv1",
+      "evidence": "llvip_execution/llvip_visible_full_attempt1/receipt.json:training_started",
+      "rationale": "No training;v1-to-v2/v4 reference revision is not a method change"
+    }
+  ],
+  "results": [
+    {
+      "modality": "visible",
+      "images": 3463,
+      "gt": 7931,
+      "predictions": 44361,
+      "prediction_txts": 3461,
+      "no_prediction_stems": [
+        "210359",
+        "210382"
+      ],
+      "execution_metrics": {
+        "AP50": 0.9078818308630796,
+        "AP75": 0.5634289336523524,
+        "AP50_95": 0.5266423891725144
+      },
+      "recomputed": {
+        "AP50": 0.9078818308630796,
+        "AP75": 0.5634289336523524,
+        "AP50_95": 0.5266423891725144
+      },
+      "signed_difference_fraction": {
+        "AP50": 0.0,
+        "AP75": 0.0,
+        "AP50_95": 0.0
+      },
+      "comparisons": {
+        "frozen_v1": {
+          "AP50": {
+            "paper_percent": 90.8,
+            "execution_percent": 90.78818308630797,
+            "delta_pp": -0.011816913692030084,
+            "one_decimal_matches": true
+          },
+          "AP75": {
+            "paper_percent": 51.9,
+            "execution_percent": 56.342893365235234,
+            "delta_pp": 4.442893365235236,
+            "one_decimal_matches": false
+          },
+          "AP50_95": {
+            "paper_percent": 50.0,
+            "execution_percent": 52.66423891725144,
+            "delta_pp": 2.6642389172514385,
+            "one_decimal_matches": false
+          }
+        },
+        "v2_v4_additional": {
+          "AP50": {
+            "paper_percent": 90.8,
+            "execution_percent": 90.78818308630797,
+            "delta_pp": -0.011816913692030084,
+            "one_decimal_matches": true
+          },
+          "AP75": {
+            "paper_percent": 56.4,
+            "execution_percent": 56.342893365235234,
+            "delta_pp": -0.05710663476476441,
+            "one_decimal_matches": false
+          },
+          "AP50_95": {
+            "paper_percent": 52.7,
+            "execution_percent": 52.66423891725144,
+            "delta_pp": -0.03576108274856438,
+            "one_decimal_matches": true
+          }
+        }
+      },
+      "elapsed_seconds_recorded": 90.69560789200477,
+      "exit_wall_seconds_recorded": 94.60652008512989,
+      "executed_wrapper_bytes": 16888
+    },
+    {
+      "modality": "infrared",
+      "images": 3463,
+      "gt": 7931,
+      "predictions": 25061,
+      "prediction_txts": 3462,
+      "no_prediction_stems": [
+        "210176"
+      ],
+      "execution_metrics": {
+        "AP50": 0.963782783951325,
+        "AP75": 0.7642067402380133,
+        "AP50_95": 0.6701490793430571
+      },
+      "recomputed": {
+        "AP50": 0.963782783951325,
+        "AP75": 0.7642067402380133,
+        "AP50_95": 0.6701490793430571
+      },
+      "signed_difference_fraction": {
+        "AP50": 0.0,
+        "AP75": 0.0,
+        "AP50_95": 0.0
+      },
+      "comparisons": {
+        "frozen_v1": {
+          "AP50": {
+            "paper_percent": 94.6,
+            "execution_percent": 96.3782783951325,
+            "delta_pp": 1.778278395132503,
+            "one_decimal_matches": false
+          },
+          "AP75": {
+            "paper_percent": 72.2,
+            "execution_percent": 76.42067402380133,
+            "delta_pp": 4.2206740238013225,
+            "one_decimal_matches": false
+          },
+          "AP50_95": {
+            "paper_percent": 61.9,
+            "execution_percent": 67.01490793430571,
+            "delta_pp": 5.1149079343057124,
+            "one_decimal_matches": false
+          }
+        },
+        "v2_v4_additional": {
+          "AP50": {
+            "paper_percent": 96.5,
+            "execution_percent": 96.3782783951325,
+            "delta_pp": -0.12172160486750272,
+            "one_decimal_matches": false
+          },
+          "AP75": {
+            "paper_percent": 76.4,
+            "execution_percent": 76.42067402380133,
+            "delta_pp": 0.020674023801319663,
+            "one_decimal_matches": true
+          },
+          "AP50_95": {
+            "paper_percent": 67.0,
+            "execution_percent": 67.01490793430571,
+            "delta_pp": 0.014907934305711024,
+            "one_decimal_matches": true
+          }
+        }
+      },
+      "elapsed_seconds_recorded": 88.06127838185057,
+      "exit_wall_seconds_recorded": 92.39085690700449,
+      "executed_wrapper_bytes": 16888
+    }
+  ],
+  "recomputation": {
+    "script": "llvip_evaluation_recompute.py",
+    "output": "LLVIP_EVALUATION_RECOMPUTE.json",
+    "checks_passed": 44,
+    "checks_failed": 0,
+    "new_model_forward": false,
+    "new_training": false,
+    "new_hash": false
+  },
+  "paper_references": {
+    "frozen_v1": "https://arxiv.org/html/2108.10831v1#S5.T3",
+    "additional_v2": "https://arxiv.org/html/2108.10831v2#S5.T3",
+    "additional_v4": "https://arxiv.org/html/2108.10831v4#S5.T3",
+    "addition_timing": "after execution, version explanation only;no original protocol edits,no rerun"
+  },
+  "audited_input_hashes": [],
+  "declared_input_set": "LLVIP_EVALUATION_RECOMPUTE.json:results[*].declared_inputs",
+  "source_preservation": "All declared input sizes/mtime_ns unchanged;no raw artifacts overwritten;weaker than content-digest identity",
+  "user_override": "No new hashes;reused bounded reviewer;no new model evaluation",
+  "unreviewed": [
+    "No independent box/GT IoU rematching",
+    "No model inference replay or XML/image reread",
+    "Reviewer also prepared initial wrapper; separate from executor but not a blind independent code-author review",
+    "Source/receipt sizes and timestamps only, no content identity guarantee",
+    "Later paper reference added after execution for version explanation; frozen v1 retained; no rerun"
+  ]
+}

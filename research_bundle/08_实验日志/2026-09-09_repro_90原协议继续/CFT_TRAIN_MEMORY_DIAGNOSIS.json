@@ -1,0 +1,232 @@
+{
+  "status": "TRAINING_RESOURCE_ADMISSION_NOT_ESTABLISHED",
+  "review_scope": "local source diagnosis and read-back of original90 receipts",
+  "reviewer": "reused subagent /root/port90_protocol_assets; not fresh or cross-model",
+  "current_attempt": "08_实验日志\\2026-09-09_repro_90原协议继续\\cft_dp3_execution\\cft_dp3_canary_attempt1",
+  "status_observed": "RESOURCE_FAILURE_OOM",
+  "successful_optimizer_steps": 0,
+  "backward_reached": false,
+  "loss_reached_in_gpu_attempt": false,
+  "elapsed_seconds": 23.236591103952378,
+  "physical_gpu_ids": [
+    0,
+    1,
+    3
+  ],
+  "per_device_torch_peaks": {
+    "0": {
+      "allocated_mib": 16338.298828125,
+      "reserved_mib": 16560.0
+    },
+    "1": {
+      "allocated_mib": 16388.71240234375,
+      "reserved_mib": 16516.0
+    },
+    "2": {
+      "allocated_mib": 16424.53271484375,
+      "reserved_mib": 16562.0
+    }
+  },
+  "replica_inputs": [
+    {
+      "event": "replica_train_input",
+      "elapsed": 20.07093679299578,
+      "device": 0,
+      "rgb_shape": [
+        11,
+        3,
+        1024,
+        1024
+      ],
+      "ir_shape": [
+        11,
+        3,
+        1024,
+        1024
+      ],
+      "rgb_dtype": "torch.float32",
+      "ir_dtype": "torch.float32",
+      "autocast_enabled": true,
+      "autocast_dtype": "torch.float16",
+      "grad_enabled": true
+    },
+    {
+      "event": "replica_train_input",
+      "elapsed": 20.07224180898629,
+      "device": 1,
+      "rgb_shape": [
+        11,
+        3,
+        1024,
+        1024
+      ],
+      "ir_shape": [
+        11,
+        3,
+        1024,
+        1024
+      ],
+      "rgb_dtype": "torch.float32",
+      "ir_dtype": "torch.float32",
+      "autocast_enabled": true,
+      "autocast_dtype": "torch.float16",
+      "grad_enabled": true
+    },
+    {
+      "event": "replica_train_input",
+      "elapsed": 20.073205838911235,
+      "device": 2,
+      "rgb_shape": [
+        10,
+        3,
+        1024,
+        1024
+      ],
+      "ir_shape": [
+        10,
+        3,
+        1024,
+        1024
+      ],
+      "rgb_dtype": "torch.float32",
+      "ir_dtype": "torch.float32",
+      "autocast_enabled": true,
+      "autocast_dtype": "torch.float16",
+      "grad_enabled": true
+    }
+  ],
+  "first_conv_outputs": [
+    {
+      "event": "replica_first_conv_output",
+      "elapsed": 21.52929999004118,
+      "device": 0,
+      "input_dtype": "torch.float32",
+      "output_dtype": "torch.float16",
+      "output_shape": [
+        11,
+        64,
+        512,
+        512
+      ],
+      "autocast_enabled": true
+    },
+    {
+      "event": "replica_first_conv_output",
+      "elapsed": 21.52828451595269,
+      "device": 1,
+      "input_dtype": "torch.float32",
+      "output_dtype": "torch.float16",
+      "output_shape": [
+        11,
+        64,
+        512,
+        512
+      ],
+      "autocast_enabled": true
+    },
+    {
+      "event": "replica_first_conv_output",
+      "elapsed": 21.5305945801083,
+      "device": 2,
+      "input_dtype": "torch.float32",
+      "output_dtype": "torch.float16",
+      "output_shape": [
+        10,
+        64,
+        512,
+        512
+      ],
+      "autocast_enabled": true
+    }
+  ],
+  "cpu_loss_compatibility": {
+    "status": "PASS",
+    "torch_version": "2.10.0+cu128",
+    "cuda_initialized": false,
+    "runtime_change_count": 2,
+    "changes": [
+      {
+        "before": "gj.clamp_(0, gain[3] - 1)",
+        "after": "gj.clamp_(0, p[i].shape[2] - 1)"
+      },
+      {
+        "before": "gi.clamp_(0, gain[2] - 1)",
+        "after": "gi.clamp_(0, p[i].shape[3] - 1)"
+      }
+    ],
+    "cases": [
+      {
+        "case": "empty",
+        "status": "PASS",
+        "matched_per_level": [
+          0,
+          0,
+          0
+        ],
+        "compared": "all tcls/tbox/indices/anchors, exact tensor equality"
+      },
+      {
+        "case": "interior_and_edges",
+        "status": "PASS",
+        "matched_per_level": [
+          24,
+          33,
+          27
+        ],
+        "compared": "all tcls/tbox/indices/anchors, exact tensor equality"
+      }
+    ],
+    "original_failures": [
+      {
+        "case": "empty",
+        "error": "result type Float can't be cast to the desired output type long int"
+      },
+      {
+        "case": "interior_and_edges",
+        "error": "result type Float can't be cast to the desired output type long int"
+      }
+    ],
+    "new_hash_computed": false
+  },
+  "protocol_preserved": {
+    "model": "original CFT model/yolo_test.py",
+    "global_batch": 32,
+    "resolution": [
+      1024,
+      1024
+    ],
+    "configured_epochs": 200,
+    "train_count": 12025,
+    "augmentation": "original",
+    "optimizer": "original SGD",
+    "amp": "original enabled",
+    "initialization": "author COCO80 yolov5l.pt"
+  },
+  "explicit_changes": [
+    "Three visible GPU original DP/direct train_rgb_ir bypasses CLI B%NGPU check; replica BatchNorm sizes differ from one/two GPU",
+    "Exactly two integer shape bounds in original build_targets runtime AST; original source untouched",
+    "Diagnostic metadata hooks and post-SGD successful-step early exit"
+  ],
+  "evidence_supports": [
+    "DP actually splits total32 into11/11/10",
+    "AMP active inside each DP worker and convolution executes float16",
+    "Original storage pattern still exceeds .68 allocator cap in first forward",
+    "Modern Torch loss type incompatibility found and CPU validated with exact output equality"
+  ],
+  "evidence_does_not_support": [
+    "Successful optimizer update",
+    "Full E200 resource admission",
+    "Training throughput or 10h feasibility",
+    "New AP or complete paper reproduction"
+  ],
+  "disposition": "Stop repeated original-storage B32 attempts; do not add GPU count or remove cap; parent proceeds author baseline checkpoint re-evaluation",
+  "optional_unexecuted_candidate": "Per-DP-worker torch.autograd.graph.save_on_cpu(pin_memory=True); no recomputation; CPU RAM/PCIe cost and walltime unmeasured; no further framework or GPU attempt prepared",
+  "local_actions": {
+    "ssh": false,
+    "gpu": false,
+    "hash": false,
+    "old_source_modified": false,
+    "old_attempt_modified": false
+  },
+  "source_commit_preexisting": "fb591c9b163177c0e950db08e213e24ddc912d41"
+}

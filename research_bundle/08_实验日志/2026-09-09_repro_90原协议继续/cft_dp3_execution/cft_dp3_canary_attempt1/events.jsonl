@@ -1,0 +1,11 @@
+{"event": "calling_original_train_rgb_ir", "elapsed": 4.067788671003655}
+{"event": "original_loader_ready", "elapsed": 8.422274929005653, "split": "train", "images": 12025, "batches": 376}
+{"event": "original_loader_ready", "elapsed": 8.9510841909796, "split": "official_test", "images": 3463, "batches": 55}
+{"event": "diagnostic_label_plot_skipped", "elapsed": 8.96553549496457}
+{"event": "train_batch", "elapsed": 14.974169627996162, "index": 1, "input_shape": [32, 6, 1024, 1024], "loader_seconds": 5.832645298214629, "source_stems": ["010001", "010002", "010003", "010004", "010005", "010006", "010007", "010008", "010009", "010010", "010011", "010012", "010013", "010014", "010015", "010016", "010017", "010018", "010019", "010020", "010021", "010022", "010023", "010024", "010025", "010026", "010027", "010028", "010029", "010030", "010031", "010032"]}
+{"event": "replica_train_input", "elapsed": 20.07093679299578, "device": 0, "rgb_shape": [11, 3, 1024, 1024], "ir_shape": [11, 3, 1024, 1024], "rgb_dtype": "torch.float32", "ir_dtype": "torch.float32", "autocast_enabled": true, "autocast_dtype": "torch.float16", "grad_enabled": true}
+{"event": "replica_train_input", "elapsed": 20.07224180898629, "device": 1, "rgb_shape": [11, 3, 1024, 1024], "ir_shape": [11, 3, 1024, 1024], "rgb_dtype": "torch.float32", "ir_dtype": "torch.float32", "autocast_enabled": true, "autocast_dtype": "torch.float16", "grad_enabled": true}
+{"event": "replica_train_input", "elapsed": 20.073205838911235, "device": 2, "rgb_shape": [10, 3, 1024, 1024], "ir_shape": [10, 3, 1024, 1024], "rgb_dtype": "torch.float32", "ir_dtype": "torch.float32", "autocast_enabled": true, "autocast_dtype": "torch.float16", "grad_enabled": true}
+{"event": "replica_first_conv_output", "elapsed": 21.52828451595269, "device": 1, "input_dtype": "torch.float32", "output_dtype": "torch.float16", "output_shape": [11, 64, 512, 512], "autocast_enabled": true}
+{"event": "replica_first_conv_output", "elapsed": 21.52929999004118, "device": 0, "input_dtype": "torch.float32", "output_dtype": "torch.float16", "output_shape": [11, 64, 512, 512], "autocast_enabled": true}
+{"event": "replica_first_conv_output", "elapsed": 21.5305945801083, "device": 2, "input_dtype": "torch.float32", "output_dtype": "torch.float16", "output_shape": [10, 64, 512, 512], "autocast_enabled": true}

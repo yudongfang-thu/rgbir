@@ -1,0 +1,381 @@
+{
+  "status": "RESOURCE_FAILURE_OOM",
+  "identity": "PAPER-RECONSTRUCTED",
+  "mode": "canary",
+  "successful_optimizer_updates": 10,
+  "scaler_step_attempts": 10,
+  "amp_skips": 0,
+  "batches": [
+    {
+      "batch": 1,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.00028354302048683167,
+      "source_stems": [
+        "010001",
+        "010002",
+        "010003",
+        "010004",
+        "010005",
+        "010006",
+        "010007",
+        "010008"
+      ],
+      "training_seconds": 2.8284517540596426,
+      "successful_updates": 1,
+      "allocated_mib": 697.70458984375,
+      "reserved_mib": 3924.0
+    },
+    {
+      "batch": 2,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.00015953113324940205,
+      "source_stems": [
+        "010009",
+        "010010",
+        "010011",
+        "010012",
+        "010013",
+        "010014",
+        "010015",
+        "010016"
+      ],
+      "training_seconds": 1.1383406759705395,
+      "successful_updates": 2,
+      "allocated_mib": 697.70458984375,
+      "reserved_mib": 4724.0
+    },
+    {
+      "batch": 3,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.00023348000831902027,
+      "source_stems": [
+        "010017",
+        "010018",
+        "010019",
+        "010020",
+        "010021",
+        "010022",
+        "010023",
+        "010024"
+      ],
+      "training_seconds": 1.058651875006035,
+      "successful_updates": 3,
+      "allocated_mib": 697.70458984375,
+      "reserved_mib": 5582.0
+    },
+    {
+      "batch": 4,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.00012517208233475685,
+      "source_stems": [
+        "010025",
+        "010026",
+        "010027",
+        "010028",
+        "010029",
+        "010030",
+        "010031",
+        "010032"
+      ],
+      "training_seconds": 1.0519190379418433,
+      "successful_updates": 4,
+      "allocated_mib": 697.70458984375,
+      "reserved_mib": 6364.0
+    },
+    {
+      "batch": 5,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.0001317090354859829,
+      "source_stems": [
+        "010033",
+        "010034",
+        "010035",
+        "010036",
+        "010037",
+        "010038",
+        "010039",
+        "010040"
+      ],
+      "training_seconds": 1.0468510140199214,
+      "successful_updates": 5,
+      "allocated_mib": 697.23583984375,
+      "reserved_mib": 7378.0
+    },
+    {
+      "batch": 6,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.00014092703349888325,
+      "source_stems": [
+        "010041",
+        "010042",
+        "010043",
+        "010044",
+        "010045",
+        "010046",
+        "010047",
+        "010048"
+      ],
+      "training_seconds": 1.0155820809304714,
+      "successful_updates": 6,
+      "allocated_mib": 697.70458984375,
+      "reserved_mib": 8310.0
+    },
+    {
+      "batch": 7,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.0001710441429167986,
+      "source_stems": [
+        "010049",
+        "010050",
+        "010051",
+        "010052",
+        "010053",
+        "010054",
+        "010055",
+        "010056"
+      ],
+      "training_seconds": 1.0244589291978627,
+      "successful_updates": 7,
+      "allocated_mib": 697.23583984375,
+      "reserved_mib": 9098.0
+    },
+    {
+      "batch": 8,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.00011499086394906044,
+      "source_stems": [
+        "010057",
+        "010058",
+        "010059",
+        "010060",
+        "010061",
+        "010062",
+        "010063",
+        "010064"
+      ],
+      "training_seconds": 0.9887291530612856,
+      "successful_updates": 8,
+      "allocated_mib": 697.23583984375,
+      "reserved_mib": 10022.0
+    },
+    {
+      "batch": 9,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.0002369810827076435,
+      "source_stems": [
+        "010065",
+        "010066",
+        "010067",
+        "010068",
+        "010069",
+        "010070",
+        "010071",
+        "010072"
+      ],
+      "training_seconds": 0.8548232240136713,
+      "successful_updates": 9,
+      "allocated_mib": 697.23583984375,
+      "reserved_mib": 15882.0
+    },
+    {
+      "batch": 10,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.00011089700274169445,
+      "source_stems": [
+        "010073",
+        "010074",
+        "010075",
+        "010076",
+        "010077",
+        "010078",
+        "010079",
+        "010080"
+      ],
+      "training_seconds": 0.8326420451048762,
+      "successful_updates": 10,
+      "allocated_mib": 697.23583984375,
+      "reserved_mib": 16514.0
+    },
+    {
+      "batch": 11,
+      "input_shape": [
+        8,
+        3,
+        1280,
+        1280
+      ],
+      "loader_seconds": 0.00013575982302427292,
+      "source_stems": [
+        "010081",
+        "010082",
+        "010083",
+        "010084",
+        "010085",
+        "010086",
+        "010087",
+        "010088"
+      ]
+    }
+  ],
+  "update_events": [
+    {
+      "batch": 1,
+      "attempt": 1,
+      "successful_updates": 1,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 2,
+      "attempt": 2,
+      "successful_updates": 2,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 3,
+      "attempt": 3,
+      "successful_updates": 3,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 4,
+      "attempt": 4,
+      "successful_updates": 4,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 5,
+      "attempt": 5,
+      "successful_updates": 5,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 6,
+      "attempt": 6,
+      "successful_updates": 6,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 7,
+      "attempt": 7,
+      "successful_updates": 7,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 8,
+      "attempt": 8,
+      "successful_updates": 8,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 9,
+      "attempt": 9,
+      "successful_updates": 9,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    },
+    {
+      "batch": 10,
+      "attempt": 10,
+      "successful_updates": 10,
+      "skipped": false,
+      "scale_before_update": 65536.0
+    }
+  ],
+  "ap_computed": false,
+  "training_completed": false,
+  "new_hash_computed": false,
+  "original_source_modified": false,
+  "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 100.00 MiB. GPU 0 has a total capacity of 23.80 GiB of which 6.34 GiB is free. Process 3927586 has 1.03 GiB memory in use. Including non-PyTorch memory, this process has 16.40 GiB memory in use. 16.19 GiB allowed; Of the allocated memory 15.77 GiB is allocated by PyTorch, and 329.80 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/original_repro_continue_20260909_attempt1/train_author_canary_v2.py\", line 257, in main\n    author.train(hyp, opt, torch.device('cuda:0'), callbacks)\n  File \"/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/llvip_author_baseline/author_source/yolov5/train.py\", line 323, in train\n    scaler.scale(loss).backward()\n  File \"/mnt/dataY/ydf/conda/envs/ogsod400/lib/python3.11/site-packages/torch/_tensor.py\", line 630, in backward\n    torch.autograd.backward(\n  File \"/mnt/dataY/ydf/conda/envs/ogsod400/lib/python3.11/site-packages/torch/autograd/__init__.py\", line 364, in backward\n    _engine_run_backward(\n  File \"/mnt/dataY/ydf/conda/envs/ogsod400/lib/python3.11/site-packages/torch/autograd/graph.py\", line 865, in _engine_run_backward\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 100.00 MiB. GPU 0 has a total capacity of 23.80 GiB of which 6.34 GiB is free. Process 3927586 has 1.03 GiB memory in use. Including non-PyTorch memory, this process has 16.40 GiB memory in use. 16.19 GiB allowed; Of the allocated memory 15.77 GiB is allocated by PyTorch, and 329.80 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+  "post_startup_timing": {
+    "excluded_first_batches": 4,
+    "measured_batches": 6,
+    "mean_training_seconds": 0.9605144077213481,
+    "mean_loader_seconds": 0.00015109152688334385,
+    "mean_batch_seconds": 0.9606654992482314,
+    "median_batch_seconds": 1.0022835759446025,
+    "e200_train_only_extrapolated_hours": 80.26893949274111,
+    "excludes": [
+      "epoch-end validation",
+      "checkpoint saving",
+      "startup"
+    ],
+    "regime": "Original early warmup; not steady LR/gradient accumulation, no 10h admission by itself"
+  },
+  "torch_version": "2.10.0+cu128",
+  "cuda_initialized": true,
+  "torch_peak_allocated_mib": 16282.45751953125,
+  "torch_peak_reserved_mib": 16570.0,
+  "lease_resources": {
+    "gpu_ids": [
+      6
+    ],
+    "cuda_pid_counts": {
+      "6": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "6": 16838
+    },
+    "peak_rss_mib": 20793
+  },
+  "elapsed_seconds": 39.156643349910155,
+  "finished": "2026-09-09T12:55:12.586084+08:00"
+}

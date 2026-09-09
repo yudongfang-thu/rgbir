@@ -1,0 +1,592 @@
+{
+  "date": "2026-09-09T04:49:55.383818+00:00",
+  "reviewer": "/root/port90_code_inventory",
+  "reused_reviewer": true,
+  "fresh_context": false,
+  "cross_model_review": false,
+  "model_forward": false,
+  "ssh": false,
+  "new_hash": false,
+  "results": [
+    {
+      "modality": "visible",
+      "run": "llvip_execution\\llvip_visible_full_attempt1",
+      "checks": [
+        {
+          "id": "arrays",
+          "status": "pass",
+          "details": "Finite person-only captured arguments and 7931 GT"
+        },
+        {
+          "id": "tp_invariants",
+          "status": "pass",
+          "details": "TP flags monotone across IoU and below GT count"
+        },
+        {
+          "id": "confidence",
+          "status": "pass",
+          "details": "Original strict confidence cutoff"
+        },
+        {
+          "id": "roster",
+          "status": "pass",
+          "details": "Full unique loader roster"
+        },
+        {
+          "id": "completed",
+          "status": "pass",
+          "details": "Successful recorded execution and exit"
+        },
+        {
+          "id": "log_counts",
+          "status": "pass",
+          "details": "109 batches and final seen/GT counts"
+        },
+        {
+          "id": "no_nms_cutoff",
+          "status": "pass",
+          "details": "No cutoff warning; executed wrapper rejects author NMS cutoff"
+        },
+        {
+          "id": "empty_prediction_gt",
+          "status": "pass",
+          "details": "Seen count and empty-prediction GT retained by original val loop"
+        },
+        {
+          "id": "original_ap_delegation",
+          "status": "pass",
+          "details": "Captured arrays delegated to author AP function"
+        },
+        {
+          "id": "frozen_protocol",
+          "status": "pass",
+          "details": "Disclosed single-modality original public protocol preserved"
+        },
+        {
+          "id": "txt_scope",
+          "status": "pass",
+          "details": "No extra or empty TXT; missing files are no-detection cases"
+        },
+        {
+          "id": "txt_count",
+          "status": "pass",
+          "details": "All TXT predictions accounted for"
+        },
+        {
+          "id": "txt_values",
+          "status": "pass",
+          "details": "Finite normalized boxes and correct class sequence"
+        },
+        {
+          "id": "txt_conf_order",
+          "status": "pass",
+          "details": "Exact author %g confidence serialization in loader order"
+        },
+        {
+          "id": "metric_source",
+          "status": "pass",
+          "details": "Only two inspected NumPy functions executed via AST; no model imports"
+        },
+        {
+          "id": "ap_receipt_exact",
+          "status": "pass",
+          "details": {
+            "original_tolerance": 1e-12,
+            "difference_fraction": {
+              "AP50": 0.0,
+              "AP75": 0.0,
+              "AP50_95": 0.0
+            }
+          }
+        },
+        {
+          "id": "ap10_receipt_exact",
+          "status": "pass",
+          "details": "All ten IoU APs compared at 1e-12"
+        },
+        {
+          "id": "actual_wrapper",
+          "status": "pass",
+          "details": "Actual old executed snapshot retained; not silently replaced by later device-default variant"
+        },
+        {
+          "id": "cuda_init_order",
+          "status": "pass",
+          "details": "Allocator initialization precedes author device selection"
+        },
+        {
+          "id": "physical_gpu",
+          "status": "pass",
+          "details": "Lease and recorded NVML process scope both physical GPU3"
+        },
+        {
+          "id": "no_hash_override",
+          "status": "pass",
+          "details": "Executed wrapper replaces author metadata MD5 before loader with plain path-size tuple"
+        },
+        {
+          "id": "inputs_preserved",
+          "status": "pass",
+          "details": "All reviewed raw input sizes/mtime_ns unchanged; not a content digest"
+        }
+      ],
+      "images": 3463,
+      "gt": 7931,
+      "predictions": 44361,
+      "prediction_txts": 3461,
+      "no_prediction_stems": [
+        "210359",
+        "210382"
+      ],
+      "empty_txt": [],
+      "arrays": {
+        "tp": {
+          "shape": [
+            44361,
+            10
+          ],
+          "dtype": "bool"
+        },
+        "conf": {
+          "shape": [
+            44361
+          ],
+          "dtype": "float32"
+        },
+        "pred_cls": {
+          "shape": [
+            44361
+          ],
+          "dtype": "float32"
+        },
+        "target_cls": {
+          "shape": [
+            7931
+          ],
+          "dtype": "float64"
+        }
+      },
+      "tp_by_iou": [
+        7581,
+        7391,
+        7106,
+        6741,
+        6131,
+        5321,
+        4082,
+        2534,
+        1048,
+        126
+      ],
+      "recomputed": {
+        "AP50": 0.9078818308630796,
+        "AP75": 0.5634289336523524,
+        "AP50_95": 0.5266423891725144
+      },
+      "recomputed_ap10": [
+        [
+          0.9078818308630796,
+          0.8816834232535425,
+          0.841709796042463,
+          0.7890398322135741,
+          0.6968889005459454,
+          0.5634289336523524,
+          0.3702661544143023,
+          0.17165065612816108,
+          0.041975452014311444,
+          0.001898912597412149
+        ]
+      ],
+      "execution_metrics": {
+        "AP50": 0.9078818308630796,
+        "AP75": 0.5634289336523524,
+        "AP50_95": 0.5266423891725144
+      },
+      "signed_difference_fraction": {
+        "AP50": 0.0,
+        "AP75": 0.0,
+        "AP50_95": 0.0
+      },
+      "confidence_ties": {
+        "unique": 44328,
+        "tied_predictions": 66
+      },
+      "comparisons": {
+        "frozen_v1": {
+          "AP50": {
+            "paper_percent": 90.8,
+            "execution_percent": 90.78818308630797,
+            "delta_pp": -0.011816913692030084,
+            "one_decimal_matches": true
+          },
+          "AP75": {
+            "paper_percent": 51.9,
+            "execution_percent": 56.342893365235234,
+            "delta_pp": 4.442893365235236,
+            "one_decimal_matches": false
+          },
+          "AP50_95": {
+            "paper_percent": 50.0,
+            "execution_percent": 52.66423891725144,
+            "delta_pp": 2.6642389172514385,
+            "one_decimal_matches": false
+          }
+        },
+        "v2_v4_additional": {
+          "AP50": {
+            "paper_percent": 90.8,
+            "execution_percent": 90.78818308630797,
+            "delta_pp": -0.011816913692030084,
+            "one_decimal_matches": true
+          },
+          "AP75": {
+            "paper_percent": 56.4,
+            "execution_percent": 56.342893365235234,
+            "delta_pp": -0.05710663476476441,
+            "one_decimal_matches": false
+          },
+          "AP50_95": {
+            "paper_percent": 52.7,
+            "execution_percent": 52.66423891725144,
+            "delta_pp": -0.03576108274856438,
+            "one_decimal_matches": true
+          }
+        }
+      },
+      "execution_numpy": "2.2.6",
+      "review_numpy": "2.3.5",
+      "elapsed_seconds_recorded": 90.69560789200477,
+      "exit_wall_seconds_recorded": 94.60652008512989,
+      "physical_gpu_recorded": {
+        "gpu_ids": [
+          3
+        ],
+        "cuda_pid_counts": {
+          "3": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "3": 8908
+        },
+        "peak_rss_mib": 12138
+      },
+      "executed_wrapper_bytes": 16888,
+      "declared_inputs": [
+        "llvip_execution\\llvip_visible_full_attempt1\\source_snapshot\\val.py",
+        "llvip_execution\\llvip_visible_full_attempt1\\source_snapshot\\models\\common.py",
+        "llvip_execution\\llvip_visible_full_attempt1\\source_snapshot\\models\\experimental.py",
+        "llvip_execution\\llvip_visible_full_attempt1\\source_snapshot\\models\\yolo.py",
+        "llvip_execution\\llvip_visible_full_attempt1\\source_snapshot\\utils\\datasets.py",
+        "llvip_execution\\llvip_visible_full_attempt1\\source_snapshot\\utils\\general.py",
+        "llvip_execution\\llvip_visible_full_attempt1\\source_snapshot\\utils\\metrics.py",
+        "llvip_execution\\llvip_visible_full_attempt1\\receipt.json",
+        "llvip_execution\\llvip_visible_full_attempt1\\frozen_protocol.json",
+        "llvip_execution\\llvip_visible_full_attempt1\\evaluated_roster.json",
+        "llvip_execution\\llvip_visible_full_attempt1\\author_metric_inputs.npz",
+        "llvip_execution\\llvip_visible_full_attempt1\\executed_wrapper.py",
+        "llvip_execution\\llvip_visible_full_attempt1\\effective_data.yaml",
+        "llvip_execution\\llvip_author_visible_evaluate_20260909.log",
+        "llvip_execution\\llvip_author_visible_evaluate_20260909_exit.json",
+        "llvip_execution\\llvip_data_view_receipt.json",
+        {
+          "glob": "llvip_execution\\llvip_visible_full_attempt1\\author_output\\labels\\*.txt",
+          "count": 3461
+        }
+      ],
+      "inputs_size_mtime_unchanged": true,
+      "audited_input_hashes": []
+    },
+    {
+      "modality": "infrared",
+      "run": "llvip_execution\\llvip_infrared_full_attempt1",
+      "checks": [
+        {
+          "id": "arrays",
+          "status": "pass",
+          "details": "Finite person-only captured arguments and 7931 GT"
+        },
+        {
+          "id": "tp_invariants",
+          "status": "pass",
+          "details": "TP flags monotone across IoU and below GT count"
+        },
+        {
+          "id": "confidence",
+          "status": "pass",
+          "details": "Original strict confidence cutoff"
+        },
+        {
+          "id": "roster",
+          "status": "pass",
+          "details": "Full unique loader roster"
+        },
+        {
+          "id": "completed",
+          "status": "pass",
+          "details": "Successful recorded execution and exit"
+        },
+        {
+          "id": "log_counts",
+          "status": "pass",
+          "details": "109 batches and final seen/GT counts"
+        },
+        {
+          "id": "no_nms_cutoff",
+          "status": "pass",
+          "details": "No cutoff warning; executed wrapper rejects author NMS cutoff"
+        },
+        {
+          "id": "empty_prediction_gt",
+          "status": "pass",
+          "details": "Seen count and empty-prediction GT retained by original val loop"
+        },
+        {
+          "id": "original_ap_delegation",
+          "status": "pass",
+          "details": "Captured arrays delegated to author AP function"
+        },
+        {
+          "id": "frozen_protocol",
+          "status": "pass",
+          "details": "Disclosed single-modality original public protocol preserved"
+        },
+        {
+          "id": "txt_scope",
+          "status": "pass",
+          "details": "No extra or empty TXT; missing files are no-detection cases"
+        },
+        {
+          "id": "txt_count",
+          "status": "pass",
+          "details": "All TXT predictions accounted for"
+        },
+        {
+          "id": "txt_values",
+          "status": "pass",
+          "details": "Finite normalized boxes and correct class sequence"
+        },
+        {
+          "id": "txt_conf_order",
+          "status": "pass",
+          "details": "Exact author %g confidence serialization in loader order"
+        },
+        {
+          "id": "metric_source",
+          "status": "pass",
+          "details": "Only two inspected NumPy functions executed via AST; no model imports"
+        },
+        {
+          "id": "ap_receipt_exact",
+          "status": "pass",
+          "details": {
+            "original_tolerance": 1e-12,
+            "difference_fraction": {
+              "AP50": 0.0,
+              "AP75": 0.0,
+              "AP50_95": 0.0
+            }
+          }
+        },
+        {
+          "id": "ap10_receipt_exact",
+          "status": "pass",
+          "details": "All ten IoU APs compared at 1e-12"
+        },
+        {
+          "id": "actual_wrapper",
+          "status": "pass",
+          "details": "Actual old executed snapshot retained; not silently replaced by later device-default variant"
+        },
+        {
+          "id": "cuda_init_order",
+          "status": "pass",
+          "details": "Allocator initialization precedes author device selection"
+        },
+        {
+          "id": "physical_gpu",
+          "status": "pass",
+          "details": "Lease and recorded NVML process scope both physical GPU3"
+        },
+        {
+          "id": "no_hash_override",
+          "status": "pass",
+          "details": "Executed wrapper replaces author metadata MD5 before loader with plain path-size tuple"
+        },
+        {
+          "id": "inputs_preserved",
+          "status": "pass",
+          "details": "All reviewed raw input sizes/mtime_ns unchanged; not a content digest"
+        }
+      ],
+      "images": 3463,
+      "gt": 7931,
+      "predictions": 25061,
+      "prediction_txts": 3462,
+      "no_prediction_stems": [
+        "210176"
+      ],
+      "empty_txt": [],
+      "arrays": {
+        "tp": {
+          "shape": [
+            25061,
+            10
+          ],
+          "dtype": "bool"
+        },
+        "conf": {
+          "shape": [
+            25061
+          ],
+          "dtype": "float32"
+        },
+        "pred_cls": {
+          "shape": [
+            25061
+          ],
+          "dtype": "float32"
+        },
+        "target_cls": {
+          "shape": [
+            7931
+          ],
+          "dtype": "float64"
+        }
+      },
+      "tp_by_iou": [
+        7774,
+        7680,
+        7521,
+        7283,
+        6926,
+        6363,
+        5533,
+        4251,
+        2502,
+        686
+      ],
+      "recomputed": {
+        "AP50": 0.963782783951325,
+        "AP75": 0.7642067402380133,
+        "AP50_95": 0.6701490793430571
+      },
+      "recomputed_ap10": [
+        [
+          0.963782783951325,
+          0.9510049878071409,
+          0.9292357210894726,
+          0.8971613088281608,
+          0.8477815647986872,
+          0.7642067402380133,
+          0.6394596934951223,
+          0.45427162575659136,
+          0.21940968408513833,
+          0.035176683380918866
+        ]
+      ],
+      "execution_metrics": {
+        "AP50": 0.963782783951325,
+        "AP75": 0.7642067402380133,
+        "AP50_95": 0.6701490793430571
+      },
+      "signed_difference_fraction": {
+        "AP50": 0.0,
+        "AP75": 0.0,
+        "AP50_95": 0.0
+      },
+      "confidence_ties": {
+        "unique": 25043,
+        "tied_predictions": 36
+      },
+      "comparisons": {
+        "frozen_v1": {
+          "AP50": {
+            "paper_percent": 94.6,
+            "execution_percent": 96.3782783951325,
+            "delta_pp": 1.778278395132503,
+            "one_decimal_matches": false
+          },
+          "AP75": {
+            "paper_percent": 72.2,
+            "execution_percent": 76.42067402380133,
+            "delta_pp": 4.2206740238013225,
+            "one_decimal_matches": false
+          },
+          "AP50_95": {
+            "paper_percent": 61.9,
+            "execution_percent": 67.01490793430571,
+            "delta_pp": 5.1149079343057124,
+            "one_decimal_matches": false
+          }
+        },
+        "v2_v4_additional": {
+          "AP50": {
+            "paper_percent": 96.5,
+            "execution_percent": 96.3782783951325,
+            "delta_pp": -0.12172160486750272,
+            "one_decimal_matches": false
+          },
+          "AP75": {
+            "paper_percent": 76.4,
+            "execution_percent": 76.42067402380133,
+            "delta_pp": 0.020674023801319663,
+            "one_decimal_matches": true
+          },
+          "AP50_95": {
+            "paper_percent": 67.0,
+            "execution_percent": 67.01490793430571,
+            "delta_pp": 0.014907934305711024,
+            "one_decimal_matches": true
+          }
+        }
+      },
+      "execution_numpy": "2.2.6",
+      "review_numpy": "2.3.5",
+      "elapsed_seconds_recorded": 88.06127838185057,
+      "exit_wall_seconds_recorded": 92.39085690700449,
+      "physical_gpu_recorded": {
+        "gpu_ids": [
+          3
+        ],
+        "cuda_pid_counts": {
+          "3": 1
+        },
+        "per_gpu_peak_vram_mib": {
+          "3": 8908
+        },
+        "peak_rss_mib": 12173
+      },
+      "executed_wrapper_bytes": 16888,
+      "declared_inputs": [
+        "llvip_execution\\llvip_infrared_full_attempt1\\source_snapshot\\val.py",
+        "llvip_execution\\llvip_infrared_full_attempt1\\source_snapshot\\models\\common.py",
+        "llvip_execution\\llvip_infrared_full_attempt1\\source_snapshot\\models\\experimental.py",
+        "llvip_execution\\llvip_infrared_full_attempt1\\source_snapshot\\models\\yolo.py",
+        "llvip_execution\\llvip_infrared_full_attempt1\\source_snapshot\\utils\\datasets.py",
+        "llvip_execution\\llvip_infrared_full_attempt1\\source_snapshot\\utils\\general.py",
+        "llvip_execution\\llvip_infrared_full_attempt1\\source_snapshot\\utils\\metrics.py",
+        "llvip_execution\\llvip_infrared_full_attempt1\\receipt.json",
+        "llvip_execution\\llvip_infrared_full_attempt1\\frozen_protocol.json",
+        "llvip_execution\\llvip_infrared_full_attempt1\\evaluated_roster.json",
+        "llvip_execution\\llvip_infrared_full_attempt1\\author_metric_inputs.npz",
+        "llvip_execution\\llvip_infrared_full_attempt1\\executed_wrapper.py",
+        "llvip_execution\\llvip_infrared_full_attempt1\\effective_data.yaml",
+        "llvip_execution\\llvip_author_infrared_evaluate_20260909.log",
+        "llvip_execution\\llvip_author_infrared_evaluate_20260909_exit.json",
+        "llvip_execution\\llvip_data_view_receipt.json",
+        {
+          "glob": "llvip_execution\\llvip_infrared_full_attempt1\\author_output\\labels\\*.txt",
+          "count": 3462
+        }
+      ],
+      "inputs_size_mtime_unchanged": true,
+      "audited_input_hashes": []
+    }
+  ],
+  "limits": [
+    "No independent box/GT IoU rematching",
+    "No model inference replay or XML/image reread",
+    "Reviewer also prepared initial wrapper; separate from executor but not a blind independent code-author review",
+    "Source/receipt sizes and timestamps only, no content identity guarantee",
+    "Later paper reference added after execution for version explanation; frozen v1 retained; no rerun"
+  ]
+}

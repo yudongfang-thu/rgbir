@@ -1,0 +1,28 @@
+{
+  "status": "FROZEN_BEFORE_AP",
+  "identity": "PAPER-RECONSTRUCTED",
+  "modality": "visible",
+  "weights": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/llvip_author_baseline/extracted_attempt1/yolov5_trained_model/yolov5_visible.pt",
+  "identity_receipt": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/original_repro_continue_20260909_attempt1/llvip_visible_identity_attempt1/identity.json",
+  "data": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_baseline_attempt1/visible/data.yaml",
+  "expected_roster": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_baseline_attempt1/test_roster.json",
+  "device": "0",
+  "imgsz": 1280,
+  "batch_size": 32,
+  "conf_thres": 0.001,
+  "iou_thres": 0.6,
+  "half": false,
+  "augment": false,
+  "save_hybrid": false,
+  "label_version": "previous",
+  "expected_images": 3463,
+  "expected_gt": 7931,
+  "paper_reference_percent": {
+    "AP50": 90.8,
+    "AP75": 51.9,
+    "AP50_95": 50.0
+  },
+  "paper_reference_caveat": "v1 paper describes earlier 16836/70-30 split; public author release after removals uses15488 pairs. Not exact historical training/split reconstruction.",
+  "source_revision": "c1a655cce437ebfd990a97b04fc48fbb99f4c47b",
+  "canary_receipt": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/original_repro_continue_20260909_attempt1/llvip_visible_canary_attempt1/receipt.json"
+}

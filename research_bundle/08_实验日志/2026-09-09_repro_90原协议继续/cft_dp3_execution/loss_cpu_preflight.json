@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "torch_version": "2.10.0+cu128",
+  "cuda_initialized": false,
+  "runtime_change_count": 2,
+  "changes": [
+    {
+      "before": "gj.clamp_(0, gain[3] - 1)",
+      "after": "gj.clamp_(0, p[i].shape[2] - 1)"
+    },
+    {
+      "before": "gi.clamp_(0, gain[2] - 1)",
+      "after": "gi.clamp_(0, p[i].shape[3] - 1)"
+    }
+  ],
+  "cases": [
+    {
+      "case": "empty",
+      "status": "PASS",
+      "matched_per_level": [
+        0,
+        0,
+        0
+      ],
+      "compared": "all tcls/tbox/indices/anchors, exact tensor equality"
+    },
+    {
+      "case": "interior_and_edges",
+      "status": "PASS",
+      "matched_per_level": [
+        24,
+        33,
+        27
+      ],
+      "compared": "all tcls/tbox/indices/anchors, exact tensor equality"
+    }
+  ],
+  "original_failures": [
+    {
+      "case": "empty",
+      "error": "result type Float can't be cast to the desired output type long int"
+    },
+    {
+      "case": "interior_and_edges",
+      "error": "result type Float can't be cast to the desired output type long int"
+    }
+  ],
+  "new_hash_computed": false
+}

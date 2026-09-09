@@ -1,0 +1,150 @@
+{
+  "started": "2026-09-09T04:43:11.188664+00:00",
+  "mode": "evaluate",
+  "author_repo": "https://github.com/bupt-ai-cz/LLVIP",
+  "source_root": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/llvip_author_baseline/author_source/yolov5",
+  "source_file_sizes": {
+    "val.py": 17092,
+    "models/yolo.py": 14693,
+    "models/common.py": 20093,
+    "models/experimental.py": 4521,
+    "utils/datasets.py": 44959,
+    "utils/metrics.py": 13664,
+    "utils/general.py": 34153
+  },
+  "torch": "2.10.0+cu128",
+  "numpy": "2.2.6",
+  "new_hash_computed": false,
+  "training_started": false,
+  "compatibility": [
+    "known author legacy pickle loading",
+    "NumPy int/float aliases"
+  ],
+  "source_content_identity_proved": false,
+  "lease": {
+    "admission": {
+      "active_gpus_after": [
+        3
+      ],
+      "per_gpu": {
+        "3": {
+          "project_cuda_processes_after": 1,
+          "project_vram_reserved_after_mib": 10240
+        }
+      },
+      "project_rss_reserved_after_mib": 32768
+    },
+    "bound_at": 1788928989.5620933,
+    "created_at": 1788928989.560626,
+    "cuda_processes_per_gpu": 1,
+    "expected_rss_mib": 32768,
+    "expected_vram_mib": 10240,
+    "formal_train": false,
+    "free_safety_mib": 2048,
+    "gpus": [
+      3
+    ],
+    "job_id": "llvip_author_infrared_evaluate_20260909",
+    "job_pid": 2264118,
+    "kind": "eval",
+    "lease_id": "llvip_author_infrared_evaluate_20260909-911197b1dbe1",
+    "observed_cuda_pids": [],
+    "owner_pid": 2264118,
+    "peak_cuda_pid_counts": {
+      "3": 0
+    },
+    "peak_rss_mib": 35,
+    "per_gpu_peak_vram_mib": {
+      "3": 0
+    },
+    "profiled_second_train": false
+  },
+  "identity": "PAPER-RECONSTRUCTED",
+  "release_description": "author-released single-modality LLVIP baseline",
+  "allocator_memory_fraction": 0.68,
+  "cache_identity_compatibility": "author get_hash metadata MD5 replaced by plain path/size tuple; isolated baseline data view required",
+  "status": "COMPLETED",
+  "protocol": {
+    "status": "FROZEN_BEFORE_AP",
+    "identity": "PAPER-RECONSTRUCTED",
+    "modality": "infrared",
+    "weights": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/llvip_author_baseline/extracted_attempt1/yolov5_trained_model/yolov5_infrared.pt",
+    "identity_receipt": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/original_repro_continue_20260909_attempt1/llvip_infrared_identity_attempt1/identity.json",
+    "data": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_baseline_attempt1/infrared/data.yaml",
+    "expected_roster": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_author_protocol/llvip_baseline_attempt1/test_roster.json",
+    "device": "0",
+    "imgsz": 1280,
+    "batch_size": 32,
+    "conf_thres": 0.001,
+    "iou_thres": 0.6,
+    "half": false,
+    "augment": false,
+    "save_hybrid": false,
+    "label_version": "previous",
+    "expected_images": 3463,
+    "expected_gt": 7931,
+    "paper_reference_percent": {
+      "AP50": 94.6,
+      "AP75": 72.2,
+      "AP50_95": 61.9
+    },
+    "paper_reference_caveat": "v1 paper describes earlier 16836/70-30 split; public author release after removals uses15488 pairs. Not exact historical training/split reconstruction.",
+    "source_revision": "c1a655cce437ebfd990a97b04fc48fbb99f4c47b",
+    "canary_receipt": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/original_repro_continue_20260909_attempt1/llvip_infrared_canary_attempt1/receipt.json"
+  },
+  "metrics": {
+    "AP50": 0.963782783951325,
+    "AP75": 0.7642067402380133,
+    "AP50_95": 0.6701490793430571,
+    "ap_at_each_iou": [
+      [
+        0.963782783951325,
+        0.9510049878071409,
+        0.9292357210894726,
+        0.8971613088281608,
+        0.8477815647986872,
+        0.7642067402380133,
+        0.6394596934951223,
+        0.45427162575659136,
+        0.21940968408513833,
+        0.035176683380918866
+      ]
+    ],
+    "predictions": 25061,
+    "gt": 7931
+  },
+  "author_return": [
+    [
+      0.9470037711716142,
+      0.9329214474845543,
+      0.963782783951325,
+      0.6701490793430571,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "[    0.67015]",
+    [
+      0.6442099611710305,
+      19.445901449932173,
+      0.8202080364486162
+    ]
+  ],
+  "elapsed_seconds": 88.06127838185057,
+  "source_sizes_unchanged": true,
+  "ap_computed": true,
+  "torch_max_allocated_mib": 7706.9755859375,
+  "torch_max_reserved_mib": 8596.0,
+  "observed_lease_resources": {
+    "gpu_ids": [
+      3
+    ],
+    "cuda_pid_counts": {
+      "3": 1
+    },
+    "per_gpu_peak_vram_mib": {
+      "3": 8908
+    },
+    "peak_rss_mib": 12173
+  }
+}
