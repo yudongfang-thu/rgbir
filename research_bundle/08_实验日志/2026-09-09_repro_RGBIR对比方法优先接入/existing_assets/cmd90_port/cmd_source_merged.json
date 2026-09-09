@@ -1,0 +1,20 @@
+{
+  "status": "SOURCE_MERGED",
+  "identity": "PROTOCOL-ADAPTED",
+  "source": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cmdistill_corrected/source_attempt1",
+  "native_source": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/migration_20260909_attempt1/payload_native",
+  "cmd_source": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/reproduction_20260909_attempt1/cmd90_port",
+  "new_files": [
+    "tools/train_rgbt_cmdistill.py",
+    "yolo_osssl/rgbt_cmdistill_kd.py",
+    "yolo_osssl/rgbt_hnewa_pairing.py",
+    "tests/test_train_rgbt_cmdistill.py",
+    "tests/test_rgbt_cmdistill_kd.py",
+    "configs/research/cmdistill_corrected_90_llvip_seed42.template.yaml",
+    "configs/research/cmdistill_corrected_90_drone_seed42.template.yaml"
+  ],
+  "teacher_checkpoint": "TO_BIND",
+  "gpu_started": false,
+  "new_hash_calculated": false,
+  "time": "2026-09-09T10:15:09.872202+08:00"
+}

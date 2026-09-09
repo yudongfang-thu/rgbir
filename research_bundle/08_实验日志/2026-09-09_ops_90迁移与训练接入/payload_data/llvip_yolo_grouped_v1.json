@@ -1,0 +1,29 @@
+{
+  "version": "llvip_yolo_grouped_v1",
+  "generated_at": "2026-08-30T17:34:39.742484+00:00",
+  "manifest_dir": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/splits/grouped_v1",
+  "output_root": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/llvip/yolo/grouped_v1",
+  "splits": {
+    "fit": {
+      "image_pairs": 9619,
+      "output_objects_per_modality": 26251
+    },
+    "dev": {
+      "image_pairs": 2406,
+      "output_objects_per_modality": 7879
+    },
+    "test": {
+      "image_pairs": 3463,
+      "output_objects_per_modality": 8302
+    }
+  },
+  "class_instances_before_exclusion": {
+    "person": 42437
+  },
+  "excluded_degenerate_boxes": 5,
+  "excluded_by_split": {
+    "fit": 5,
+    "dev": 0,
+    "test": 0
+  }
+}

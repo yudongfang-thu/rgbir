@@ -1,0 +1,53 @@
+{
+  "archive": "/mnt/dataY/ydf/dataset/LLVIP.zip",
+  "byte_identity_with_94": "not asserted; selected ZIP CRC, original labels functions and historical counters checked",
+  "extraction": {
+    "bytes_written": 3274078038,
+    "selected_member_crc": "zipfile streamed EOF validation",
+    "selected_members": 36075,
+    "test_extracted": false
+  },
+  "frozen_fit_dev_rosters_exact": true,
+  "splits": {
+    "dev": {
+      "class_instances_before_exclusion": {
+        "person": 7879
+      },
+      "excluded_degenerate": 0,
+      "output_boxes_per_modality": 7879,
+      "pairs": 2406
+    },
+    "fit": {
+      "class_instances_before_exclusion": {
+        "person": 26256
+      },
+      "excluded_degenerate": 5,
+      "output_boxes_per_modality": 26251,
+      "pairs": 9619
+    }
+  },
+  "test_accessed": false,
+  "validation": {
+    "dev/infrared": {
+      "boxes": 7879,
+      "images": 2406,
+      "labels": 2406
+    },
+    "dev/visible": {
+      "boxes": 7879,
+      "images": 2406,
+      "labels": 2406
+    },
+    "fit/infrared": {
+      "boxes": 26251,
+      "images": 9619,
+      "labels": 9619
+    },
+    "fit/visible": {
+      "boxes": 26251,
+      "images": 9619,
+      "labels": 9619
+    }
+  },
+  "version": "llvip_yolo_grouped_v1-fit-dev-restoration"
+}

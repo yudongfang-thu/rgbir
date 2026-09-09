@@ -1,0 +1,36 @@
+Creating new Ultralytics Settings v0.0.7 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/mnt/dataX/ydf/projects/RGBT_campaign_90/cache/ultralytics/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+{
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "python_path": "/mnt/dataX/ydf/projects/RGBT_campaign_90/environments/rgbir90/bin/python",
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "ultralytics": "8.4.115",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "PyYAML": "6.0.3",
+    "psutil": "7.2.2",
+    "opencv-python": "5.0.0.93"
+  },
+  "cuda_disabled": true,
+  "generic_candidate": {
+    "source": "/mnt/dataY/ydf/projects/LADD_public/yolo11n.pt",
+    "bytes": 5613764,
+    "model_class": "DetectionModel",
+    "nc": 80,
+    "scale": "n",
+    "parameters": 2624080,
+    "copy": "/mnt/dataX/ydf/projects/RGBT_campaign_90/weights/pretrained/yolo11n.pt"
+  },
+  "checks": [
+    "CPU imports succeeded",
+    "Generic YOLO load succeeded"
+  ],
+  "limitations": [
+    "Python3.11 differs from94Python3.10",
+    "No94generic checkpoint available for byte equality",
+    "No current94 teacher/reference backup found"
+  ]
+}

@@ -1,0 +1,25 @@
+usage: train_rgbt_cmdistill.py [-h] --config CONFIG --arm
+                               {cmdistill_literal,cmdistill_corrected}
+                               --teacher-weights TEACHER_WEIGHTS --output
+                               OUTPUT [--device DEVICE] [--seed SEED]
+                               [--batch BATCH] [--workers WORKERS]
+                               [--max-steps MAX_STEPS] [--validate-only]
+
+CMDistill-adapted trainer: native YOLO11 loss + PCCFD/SLRD/IBCLD. Modes follow
+the ALIGN_AND_IMPROVE plan: IR-teacher (privileged) to weak student on the
+frozen paired dataset config. The teacher is a frozen single-modality
+detector; inference keeps the plain student graph.
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --arm {cmdistill_literal,cmdistill_corrected}
+  --teacher-weights TEACHER_WEIGHTS
+  --output OUTPUT
+  --device DEVICE
+  --seed SEED
+  --batch BATCH
+  --workers WORKERS
+  --max-steps MAX_STEPS
+  --validate-only
+

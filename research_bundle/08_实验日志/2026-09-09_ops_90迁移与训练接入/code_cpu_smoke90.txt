@@ -1,0 +1,22 @@
+{
+  "status": "CPU_IMPORT_PASSED_TEMPLATES_BLOCKED",
+  "source_files": 75,
+  "new_hashes_computed": false,
+  "models_loaded": false,
+  "gpu_queried": false,
+  "training_started": false,
+  "templates_blocked": [
+    "C0_s42.template.yaml",
+    "C1_s42.template.yaml",
+    "N_s42.template.yaml"
+  ],
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "ultralytics": "8.4.115",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "yaml": "6.0.3"
+  },
+  "lease_file": "/mnt/dataX/ydf/projects/RGBT_campaign_90/runs/.project_resource_leases.json",
+  "cuda_initialized": false
+}

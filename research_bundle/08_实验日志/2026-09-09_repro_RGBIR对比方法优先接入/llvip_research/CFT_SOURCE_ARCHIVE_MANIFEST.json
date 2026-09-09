@@ -1,0 +1,611 @@
+{
+  "repo": "https://github.com/DocF/multispectral-object-detection",
+  "official_commit_ref": "fb591c9b163177c0e950db08e213e24ddc912d41",
+  "new_hashes": false,
+  "identity_scope": "Official GitHub commit/blob refs were read, never calculated. Local size equality is not a digest comparison.",
+  "selected_count": 78,
+  "present_count": 54,
+  "complete_source_archive": false,
+  "source_rows": [
+    {
+      "path": "LICENSE",
+      "official_blob_ref": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
+      "expected_size_bytes": 34523,
+      "present": true,
+      "size_bytes": 34523,
+      "size_matches": true
+    },
+    {
+      "path": "README.md",
+      "official_blob_ref": "ef7b4bfec7fd6e151d8b143ba7b3334845d8a7e9",
+      "expected_size_bytes": 5878,
+      "present": true,
+      "size_bytes": 5878,
+      "size_matches": true
+    },
+    {
+      "path": "data/GlobalWheat2020.yaml",
+      "official_blob_ref": "b6f812d7038361e548584e6312df0b3349f4f45b",
+      "expected_size_bytes": 2047,
+      "present": true,
+      "size_bytes": 2047,
+      "size_matches": true
+    },
+    {
+      "path": "data/VisDrone.yaml",
+      "official_blob_ref": "c4603b2001327b439a0b9ef9ce38401e59731f34",
+      "expected_size_bytes": 2787,
+      "present": true,
+      "size_bytes": 2787,
+      "size_matches": true
+    },
+    {
+      "path": "data/argoverse_hd.yaml",
+      "official_blob_ref": "0ba314d82ce112416f89f88c7fb803554188b675",
+      "expected_size_bytes": 848,
+      "present": true,
+      "size_bytes": 848,
+      "size_matches": true
+    },
+    {
+      "path": "data/coco.yaml",
+      "official_blob_ref": "f818a49ff0fa0c381df45567f3b623693c25ebbf",
+      "expected_size_bytes": 1717,
+      "present": true,
+      "size_bytes": 1717,
+      "size_matches": true
+    },
+    {
+      "path": "data/coco128.yaml",
+      "official_blob_ref": "83fbc29d3404f335a1f86331d4c6bd30d2e57901",
+      "expected_size_bytes": 1543,
+      "present": true,
+      "size_bytes": 1543,
+      "size_matches": true
+    },
+    {
+      "path": "data/hyp.finetune.yaml",
+      "official_blob_ref": "0f476452d50d6f5f3ebbaa8a4c4ca6d6ff33d157",
+      "expected_size_bytes": 854,
+      "present": true,
+      "size_bytes": 854,
+      "size_matches": true
+    },
+    {
+      "path": "data/hyp.scratch.yaml",
+      "official_blob_ref": "fdfa4ac14823f496551d177afa3a788a13cb4c6b",
+      "expected_size_bytes": 1576,
+      "present": true,
+      "size_bytes": 1576,
+      "size_matches": true
+    },
+    {
+      "path": "data/multispectral/FLIR_aligned.yaml",
+      "official_blob_ref": "144d37dd369f00e667788bfe769a79e8ec7435b9",
+      "expected_size_bytes": 878,
+      "present": true,
+      "size_bytes": 878,
+      "size_matches": true
+    },
+    {
+      "path": "data/multispectral/LLVIP.yaml",
+      "official_blob_ref": "9a754e98c909fe306ee43533b7a9ea1a1bac672b",
+      "expected_size_bytes": 599,
+      "present": true,
+      "size_bytes": 599,
+      "size_matches": true
+    },
+    {
+      "path": "data/multispectral/vedai_color_2.yaml",
+      "official_blob_ref": "5b01231b00abaa46999a79c9d227e54857343c53",
+      "expected_size_bytes": 922,
+      "present": true,
+      "size_bytes": 922,
+      "size_matches": true
+    },
+    {
+      "path": "data/voc.yaml",
+      "official_blob_ref": "ca293c4f091f4138a493a41ae3a6e83c7323df8f",
+      "expected_size_bytes": 737,
+      "present": true,
+      "size_bytes": 737,
+      "size_matches": true
+    },
+    {
+      "path": "detect_twostream.py",
+      "official_blob_ref": "d8bea90f53b7503ef427ccb9c8ef300b8e1e7340",
+      "expected_size_bytes": 11581,
+      "present": true,
+      "size_bytes": 11581,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "global_var.py",
+      "official_blob_ref": "3985dc1f99b8f0bd775a19cf78494eec01c632ba",
+      "expected_size_bytes": 462,
+      "present": true,
+      "size_bytes": 462,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "hubconf.py",
+      "official_blob_ref": "e42d0b59bd2accca5590515da6195efc78c7b51b",
+      "expected_size_bytes": 5863,
+      "present": true,
+      "size_bytes": 5863,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "models/__init__.py",
+      "official_blob_ref": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "expected_size_bytes": 1,
+      "present": true,
+      "size_bytes": 1,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "models/common.py",
+      "official_blob_ref": "95c5e69fca9fde14f35328261e4868b5271d9659",
+      "expected_size_bytes": 25857,
+      "present": true,
+      "size_bytes": 25857,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "models/experimental.py",
+      "official_blob_ref": "548353c93be0736f81169e8ad9fde33bc9bd86ff",
+      "expected_size_bytes": 5134,
+      "present": true,
+      "size_bytes": 5134,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "models/export.py",
+      "official_blob_ref": "da15079149a1a79c47daa6e8566e48f89b7c859c",
+      "expected_size_bytes": 5964,
+      "present": true,
+      "size_bytes": 5964,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "models/hub/anchors.yaml",
+      "official_blob_ref": "a07a4dc72387ef79ee0d473ac1055d23c6543ee9",
+      "expected_size_bytes": 3356,
+      "present": true,
+      "size_bytes": 3356,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov3-spp.yaml",
+      "official_blob_ref": "38dcc449f0d0c1b85b4e6ff426da0d9e9df07d4e",
+      "expected_size_bytes": 1531,
+      "present": true,
+      "size_bytes": 1531,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov3-tiny.yaml",
+      "official_blob_ref": "ff7638cad3beb5a0186cc67b84e23799ffb53bae",
+      "expected_size_bytes": 1196,
+      "present": true,
+      "size_bytes": 1196,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov3.yaml",
+      "official_blob_ref": "f2e76135546945f3ccbb3311c99bf3882a90c199",
+      "expected_size_bytes": 1524,
+      "present": true,
+      "size_bytes": 1524,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5-fpn.yaml",
+      "official_blob_ref": "e772bffecbbca75c536cd43d9e1659e41910b337",
+      "expected_size_bytes": 1245,
+      "present": true,
+      "size_bytes": 1245,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5-p2.yaml",
+      "official_blob_ref": "0633a90fd065efce8d9c771da36815ae353fa2f2",
+      "expected_size_bytes": 1738,
+      "present": true,
+      "size_bytes": 1738,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5-p6.yaml",
+      "official_blob_ref": "3728a118f09016eebc68538e7651134e070bd79f",
+      "expected_size_bytes": 1809,
+      "present": true,
+      "size_bytes": 1809,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5-p7.yaml",
+      "official_blob_ref": "ca8f8492ce0e9750e1856ac67f19ff4bf92d1948",
+      "expected_size_bytes": 2232,
+      "present": true,
+      "size_bytes": 2232,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5-panet.yaml",
+      "official_blob_ref": "340f95a4dbc9a7a3250cd6e41422ea4c520991c8",
+      "expected_size_bytes": 1459,
+      "present": true,
+      "size_bytes": 1459,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5l6.yaml",
+      "official_blob_ref": "11298b01f47915d729c747714caf308b676ec579",
+      "expected_size_bytes": 1977,
+      "present": true,
+      "size_bytes": 1977,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5m6.yaml",
+      "official_blob_ref": "48afc865593ae964493e8fbd042a72209ab6487f",
+      "expected_size_bytes": 1979,
+      "present": true,
+      "size_bytes": 1979,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5s-transformer.yaml",
+      "official_blob_ref": "f2d666722b30508eea865cf4d51ce607589a60ec",
+      "expected_size_bytes": 1406,
+      "present": true,
+      "size_bytes": 1406,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5s6.yaml",
+      "official_blob_ref": "1df577a2cc97c66763eafd37c70b97f6e893d4fd",
+      "expected_size_bytes": 1979,
+      "present": true,
+      "size_bytes": 1979,
+      "size_matches": true
+    },
+    {
+      "path": "models/hub/yolov5x6.yaml",
+      "official_blob_ref": "5ebc02124fe785d730316fde42bde40c830eac66",
+      "expected_size_bytes": 1979,
+      "present": true,
+      "size_bytes": 1979,
+      "size_matches": true
+    },
+    {
+      "path": "models/transformer/yolov5l_fusion_add_FLIR_aligned.yaml",
+      "official_blob_ref": "f94dd72532b7e9c63a5d3a650a90a283d0c631bd",
+      "expected_size_bytes": 2080,
+      "present": true,
+      "size_bytes": 2080,
+      "size_matches": true
+    },
+    {
+      "path": "models/transformer/yolov5l_fusion_add_llvip.yaml",
+      "official_blob_ref": "62f2dda5dd614f69f9b2a42a682df62f8a2bbafb",
+      "expected_size_bytes": 2080,
+      "present": true,
+      "size_bytes": 2080,
+      "size_matches": true
+    },
+    {
+      "path": "models/transformer/yolov5l_fusion_transformer_FLIR.yaml",
+      "official_blob_ref": "f4b9139ad349c7a3d2067bf86fe56a1939859250",
+      "expected_size_bytes": 3331,
+      "present": true,
+      "size_bytes": 3331,
+      "size_matches": true
+    },
+    {
+      "path": "models/transformer/yolov5l_fusion_transformer_FLIR_aligned.yaml",
+      "official_blob_ref": "f4b9139ad349c7a3d2067bf86fe56a1939859250",
+      "expected_size_bytes": 3331,
+      "present": true,
+      "size_bytes": 3331,
+      "size_matches": true
+    },
+    {
+      "path": "models/transformer/yolov5l_fusion_transformer_llvip.yaml",
+      "official_blob_ref": "0cb24b207bb3883867801fd3d431d3d63ff8f63f",
+      "expected_size_bytes": 3331,
+      "present": true,
+      "size_bytes": 3331,
+      "size_matches": true
+    },
+    {
+      "path": "models/transformer/yolov5l_fusion_transformer_vedai.yaml",
+      "official_blob_ref": "dee686e78e9d3a24fa4e819ab76effc5d9c09707",
+      "expected_size_bytes": 3331,
+      "present": false
+    },
+    {
+      "path": "models/transformer/yolov5l_fusion_transformerx3_FLIR_aligned.yaml",
+      "official_blob_ref": "1330e76542ee11d79ab4022154ae198595b063e8",
+      "expected_size_bytes": 3107,
+      "present": false
+    },
+    {
+      "path": "models/transformer/yolov5l_fusion_transformerx3_llvip.yaml",
+      "official_blob_ref": "90bb4f823797057e474ed21c8d2d13af5622c8a2",
+      "expected_size_bytes": 3107,
+      "present": true,
+      "size_bytes": 3107,
+      "size_matches": true
+    },
+    {
+      "path": "models/transformer/yolov5s_fusion_add_vedai.yaml",
+      "official_blob_ref": "0cd810ce44015f480b308e7700af33366de626fd",
+      "expected_size_bytes": 2080,
+      "present": false
+    },
+    {
+      "path": "models/transformer/yolov5s_fusion_transformer_vedai.yaml",
+      "official_blob_ref": "0782b2f0559385445d22ff650d271ad3cfb6f083",
+      "expected_size_bytes": 3331,
+      "present": false
+    },
+    {
+      "path": "models/transformer/yolov5s_fusion_transformerx3_vedai.yaml",
+      "official_blob_ref": "40d7febe8e53e3f982b67c71d6389fff00f1ed4d",
+      "expected_size_bytes": 3107,
+      "present": false
+    },
+    {
+      "path": "models/transformer/yolov5x_fusion_transformer_FLIR.yaml",
+      "official_blob_ref": "fb5c74fb0c5b18d0657b2a3667f4ec743dca786a",
+      "expected_size_bytes": 3331,
+      "present": false
+    },
+    {
+      "path": "models/transformer/yolov5x_fusion_transformer_FLIR_aligned.yaml",
+      "official_blob_ref": "fb5c74fb0c5b18d0657b2a3667f4ec743dca786a",
+      "expected_size_bytes": 3331,
+      "present": false
+    },
+    {
+      "path": "models/yolo.py",
+      "official_blob_ref": "123d2c071ecbce754131b4ea137c34203befaeb7",
+      "expected_size_bytes": 13094,
+      "present": true,
+      "size_bytes": 13094,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "models/yolo_test.py",
+      "official_blob_ref": "55df7ea751e2752ee49b9048815cf2ee8cf900f0",
+      "expected_size_bytes": 28539,
+      "present": true,
+      "size_bytes": 28539,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "models/yolov5l.yaml",
+      "official_blob_ref": "71ebf86e57918ca222264d47fa6f04205be445a7",
+      "expected_size_bytes": 1365,
+      "present": false
+    },
+    {
+      "path": "models/yolov5m.yaml",
+      "official_blob_ref": "3c749c916246815fbfaa3ac96506c85a65466c02",
+      "expected_size_bytes": 1367,
+      "present": false
+    },
+    {
+      "path": "models/yolov5s.yaml",
+      "official_blob_ref": "aca669d60d8b5db54963302b1ae629afe4499565",
+      "expected_size_bytes": 1367,
+      "present": false
+    },
+    {
+      "path": "models/yolov5x.yaml",
+      "official_blob_ref": "d3babdf7baf01a95a2a8da760a6db41bb8c7dd79",
+      "expected_size_bytes": 1367,
+      "present": false
+    },
+    {
+      "path": "requirements.txt",
+      "official_blob_ref": "fd187eb56cfe01b861ab08f0adaf897d4cf23448",
+      "expected_size_bytes": 599,
+      "present": true,
+      "size_bytes": 599,
+      "size_matches": true
+    },
+    {
+      "path": "test.py",
+      "official_blob_ref": "2c4f200399bce6af7e1b7b5520e5b1d6932bb99e",
+      "expected_size_bytes": 18383,
+      "present": true,
+      "size_bytes": 18383,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "train.py",
+      "official_blob_ref": "6059b3d41b9226683b982a5938fad9ee85a8b882",
+      "expected_size_bytes": 57155,
+      "present": false
+    },
+    {
+      "path": "utils/__init__.py",
+      "official_blob_ref": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "expected_size_bytes": 1,
+      "present": true,
+      "size_bytes": 1,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/activations.py",
+      "official_blob_ref": "92a3b5eaa54bcb46464dff900db247b0436e5046",
+      "expected_size_bytes": 3722,
+      "present": true,
+      "size_bytes": 3722,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/autoanchor.py",
+      "official_blob_ref": "5f89fc054978fb3e12daab3cb630cf2a359e9063",
+      "expected_size_bytes": 9327,
+      "present": true,
+      "size_bytes": 9327,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/aws/__init__.py",
+      "official_blob_ref": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "expected_size_bytes": 1,
+      "present": false
+    },
+    {
+      "path": "utils/aws/resume.py",
+      "official_blob_ref": "4b0d4246b594acddbecf065956fc8729bb96ec36",
+      "expected_size_bytes": 1095,
+      "present": false
+    },
+    {
+      "path": "utils/datasets.py",
+      "official_blob_ref": "5383382ef1587d8674f375726d1da9d2ddbc1c68",
+      "expected_size_bytes": 90174,
+      "present": true,
+      "size_bytes": 90174,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/ds_fusion.py",
+      "official_blob_ref": "f8b088abaf7f1edf50282fef6c2ff56747607e2b",
+      "expected_size_bytes": 5640,
+      "present": false
+    },
+    {
+      "path": "utils/flask_rest_api/README.md",
+      "official_blob_ref": "0cdc51be692dc42cf3598e230882bc58a5071735",
+      "expected_size_bytes": 1436,
+      "present": false
+    },
+    {
+      "path": "utils/flask_rest_api/example_request.py",
+      "official_blob_ref": "ff21f30f93ca37578ce45366a1ddbe3f3eadaa79",
+      "expected_size_bytes": 299,
+      "present": false
+    },
+    {
+      "path": "utils/flask_rest_api/restapi.py",
+      "official_blob_ref": "a54e2309715ce5d3d41e9e2e76a347db3cdb7ccb",
+      "expected_size_bytes": 1078,
+      "present": false
+    },
+    {
+      "path": "utils/general.py",
+      "official_blob_ref": "fbb99b9e7f99af8d36909546327c12d335519577",
+      "expected_size_bytes": 27367,
+      "present": true,
+      "size_bytes": 27367,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/google_app_engine/additional_requirements.txt",
+      "official_blob_ref": "5fcc30524a59ca2d3356b07725df7e2b64f81422",
+      "expected_size_bytes": 105,
+      "present": false
+    },
+    {
+      "path": "utils/google_app_engine/app.yaml",
+      "official_blob_ref": "ac29d104b144abd634482b35282725d694e84a2b",
+      "expected_size_bytes": 173,
+      "present": false
+    },
+    {
+      "path": "utils/google_utils.py",
+      "official_blob_ref": "6a4660bad509aede938e6447e96940491c277b40",
+      "expected_size_bytes": 5059,
+      "present": true,
+      "size_bytes": 5059,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/gradcam.py",
+      "official_blob_ref": "8cf05d904d986097639e7f618a7bbda0f2f9d278",
+      "expected_size_bytes": 2251,
+      "present": false
+    },
+    {
+      "path": "utils/loss.py",
+      "official_blob_ref": "9e78df17fdf31c23c70a5d1fce8b17fb7b78726a",
+      "expected_size_bytes": 9460,
+      "present": true,
+      "size_bytes": 9460,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/metrics.py",
+      "official_blob_ref": "6abc9050f0e7b6452afd41337ed617570d50e5ce",
+      "expected_size_bytes": 9041,
+      "present": true,
+      "size_bytes": 9041,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/plots.py",
+      "official_blob_ref": "858fa23b8879a6f5c4c7e17794da08724ee06648",
+      "expected_size_bytes": 18628,
+      "present": true,
+      "size_bytes": 18628,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/torch_utils.py",
+      "official_blob_ref": "9991e5ec87d8b1ed953d88c30bb57ff25431f5ab",
+      "expected_size_bytes": 12438,
+      "present": true,
+      "size_bytes": 12438,
+      "size_matches": true,
+      "syntax": "parsed"
+    },
+    {
+      "path": "utils/wandb_logging/__init__.py",
+      "official_blob_ref": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "expected_size_bytes": 1,
+      "present": false
+    },
+    {
+      "path": "utils/wandb_logging/log_dataset.py",
+      "official_blob_ref": "f45a23011f15920e0cee33783504299337604a8d",
+      "expected_size_bytes": 800,
+      "present": false
+    },
+    {
+      "path": "utils/wandb_logging/wandb_utils.py",
+      "official_blob_ref": "d8fbd1ef42aa516fe613def18e3f0ddb2ee30f61",
+      "expected_size_bytes": 16221,
+      "present": false
+    }
+  ],
+  "notes": [
+    "API rate limit interrupted full source capture; parent reports complete official git clone on 90.",
+    "Media, videos and model weights were not stored in this local archive."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "Local source parsing and pure-function checks only; no server execution or data preparation",
+  "script": "../prepare_data90.py",
+  "no_new_hashes": true,
+  "original_sources": "E:/SHARE/光sar/03_现行工程/SpaceNet6_OTD_official_reproduction/tools/",
+  "governance_source": "E:/SHARE/光sar/08_实验日志/2026-09-06_probe_RGBIR数据特性与可迁移知识/dataset_model_inventory.json#governance",
+  "fit_source": "E:/SHARE/光sar/08_实验日志/2026-09-07_probe_双数据集证据优先推进/natural_flow_diagnostic/governance_group_sources/llvip_0.tsv",
+  "dev_source": "E:/SHARE/光sar/08_实验日志/2026-09-07_probe_双数据集证据优先推进/llvip_full_eval/remote_completed_attempt2/N42_full_attempt1/evaluation_roster.txt",
+  "drone_groups_source": "E:/SHARE/光sar/08_实验日志/2026-09-07_probe_双数据集证据优先推进/natural_flow_diagnostic/governance_group_sources/drone_0.tsv",
+  "checks": {
+    "new_entrypoint_ast_parse": "PASS",
+    "four_original_payload_scripts_ast_parse": "PASS",
+    "frozen_llvip_fit_unique_count": 9619,
+    "frozen_llvip_dev_unique_count": 2406,
+    "frozen_llvip_roles_disjoint_and_prefixes_exact": "PASS",
+    "frozen_drone_train_group_stems_exact_00001_through_17990": "PASS",
+    "synthetic_zip_metadata_selected_count": 36075,
+    "synthetic_zip_test_image_and_xml_not_selected": "PASS",
+    "synthetic_zip_duplicate_selected_destination_rejected": "PASS",
+    "zip_traversal_absolute_drive_backslash_rejected": "PASS"
+  },
+  "limitations": [
+    "Actual archive layout, actual Drone conversion counters and image decoding will be checked by server execution.",
+    "New output is a protocol reconstruction, not a claim of image or weight byte identity with 94.",
+    "No teacher/reference/initialization model is included and no training is launched by this script.",
+    "KD data-loader admission is not established by the PREPARED receipt. Original pair mapping resolves symlinks, while the paired loader indexes canonical teacher image paths back into a teacher dataset built from its processed-data YAML. That chain still needs a real 90 loader check."
+  ]
+}

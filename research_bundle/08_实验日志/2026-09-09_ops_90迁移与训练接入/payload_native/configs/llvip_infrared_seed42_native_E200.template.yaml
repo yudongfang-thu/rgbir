@@ -1,0 +1,196 @@
+method_id: RGBT-P3-CAUSAL-v1
+ultralytics_version: 8.4.115
+torch_version: 2.10.0+cu128
+dataset: llvip
+student_modality: infrared
+privileged_modality: visible
+expected_nc: 1
+evaluation_role: dev
+model: /mnt/dataX/ydf/projects/RGBT_campaign_90/weights/pretrained/yolo11n.pt
+imgsz: 640
+epochs: 200
+workers: 8
+batch: 32
+nbs: 64
+optimizer: SGD
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+cos_lr: false
+close_mosaic: 0
+patience: 0
+amp: true
+deterministic: true
+allowed_seeds:
+- 0
+- 42
+- 123
+augmentation:
+  mosaic: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  degrees: 0.0
+  perspective: 0.0
+  translate: 0.1
+  scale: 0.5
+  fliplr: 0.5
+  flipud: 0.0
+  hsv_h: 0.0
+  hsv_s: 0.0
+  hsv_v: 0.0
+  erasing: 0.0
+paths:
+  student_data_yaml: /mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/prepared/llvip/infrared.data.yaml
+  privileged_data_yaml: /mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/prepared/llvip/visible.data.yaml
+  paired_train_mapping: /mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/prepared/llvip/mappings/infrared_to_visible_train.json
+  shuffled_train_mapping: /mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/prepared/llvip/mappings/infrared_to_visible_shuffled_train.json
+  preparation_receipt: /mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/prepared/llvip/prepare_receipt.json
+rebuild90:
+  status: PREPARED_NOT_ADMITTED
+  weight_identity: 90_native_rebuild_llvip_infrared_s42_E200_v1
+  recipe_identity: formal_native_RGBT-P3-CAUSAL-v1_rebuilt_on90
+  ordinary_pretrained_candidate_only: false
+  pretrained_90_vs_94_tensor_identity_verified: false
+  dataset_preparation_receipt_verified: false
+  transitive_no_new_hash_verified: false
+  execution_source_90_bound: false
+  training_started: false
+  seed: 42
+  arm: native
+  teacher_checkpoint: null
+  reference_checkpoint: null
+  output: /mnt/dataX/ydf/projects/RGBT_campaign_90/runs/native_rebuild_v1/llvip/90_native_rebuild_llvip_infrared_s42_E200_v1
+  expected_train_images: 9619
+  expected_dev_images: 2406
+  expected_dev_gt_objects: 7879
+  only_this_modality_images_enter_training: true
+  max_complete_job_seconds: 36000
+  native_args_time_must_remain_null: true
+  official_test_accessed: false
+  historical_config_source: E:\SHARE\光sar\03_现行工程\SpaceNet6_OTD_official_reproduction\configs\research\rgbt_llvip_infrared.yaml
+  historical_effective_args_source: E:\SHARE\光sar\08_实验日志\2026-09-07_probe_双数据集证据优先推进\llvip_full_eval\remote_completed_attempt2\T42_full_attempt1\original_args.yaml
+  expected_effective_args:
+    task: detect
+    mode: train
+    model: /mnt/dataX/ydf/projects/RGBT_campaign_90/weights/pretrained/yolo11n.pt
+    data: /mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/prepared/llvip/infrared.data.yaml
+    epochs: 200
+    time: null
+    patience: 0
+    batch: 32
+    imgsz: 640
+    save: true
+    save_period: -1
+    cache: false
+    device: '0'
+    workers: 8
+    project: /mnt/dataX/ydf/projects/RGBT_campaign_90/runs/native_rebuild_v1/llvip
+    name: 90_native_rebuild_llvip_infrared_s42_E200_v1
+    exist_ok: true
+    pretrained: true
+    cls_remap: true
+    optimizer: SGD
+    verbose: true
+    seed: 42
+    deterministic: true
+    single_cls: false
+    rect: false
+    cos_lr: false
+    close_mosaic: 0
+    resume: false
+    amp: true
+    fraction: 1.0
+    profile: false
+    freeze: null
+    multi_scale: 0.0
+    compile: false
+    channels_last: false
+    overlap_mask: true
+    mask_ratio: 4
+    dropout: 0.0
+    val: false
+    split: val
+    save_json: false
+    conf: null
+    iou: 0.7
+    max_det: 300
+    quantize: null
+    dnn: false
+    plots: false
+    end2end: null
+    source: null
+    vid_stride: 1
+    stream_buffer: false
+    visualize: false
+    augment: false
+    agnostic_nms: false
+    classes: null
+    retina_masks: false
+    embed: null
+    show: false
+    save_frames: false
+    save_txt: false
+    save_conf: false
+    save_crop: false
+    show_labels: true
+    show_conf: true
+    show_boxes: true
+    line_width: null
+    format: torchscript
+    keras: false
+    optimize: false
+    dynamic: false
+    simplify: true
+    opset: null
+    workspace: null
+    nms: false
+    lr0: 0.01
+    lrf: 0.01
+    momentum: 0.937
+    weight_decay: 0.0005
+    warmup_epochs: 3.0
+    warmup_momentum: 0.8
+    warmup_bias_lr: 0.1
+    distill_model: null
+    dis: 6.0
+    box: 7.5
+    cls: 0.5
+    cls_pw: 0.0
+    dfl: 1.5
+    pose: 12.0
+    kobj: 1.0
+    rle: 1.0
+    angle: 1.0
+    dlog: 1.0
+    dgrad: 0.5
+    dlam: 1.0
+    nbs: 64
+    hsv_h: 0.0
+    hsv_s: 0.0
+    hsv_v: 0.0
+    degrees: 0.0
+    translate: 0.1
+    scale: 0.5
+    shear: 0.0
+    perspective: 0.0
+    flipud: 0.0
+    fliplr: 0.5
+    bgr: 0.0
+    mosaic: 0.0
+    mixup: 0.0
+    cutmix: 0.0
+    copy_paste: 0.0
+    copy_paste_mode: flip
+    auto_augment: randaugment
+    erasing: 0.0
+    cfg: null
+    tracker: tracktrack.yaml
+    save_dir: /mnt/dataX/ydf/projects/RGBT_campaign_90/runs/native_rebuild_v1/llvip/90_native_rebuild_llvip_infrared_s42_E200_v1
+  note: Metadata contract for a future isolated admission wrapper; the old CLI does
+    not enforce rebuild90 status. Do not launch this template directly.
+  execution_python: /mnt/dataX/ydf/projects/RGBT_campaign_90/environments/rgbir90/bin/python
+  ordinary_pretrained_80class_cpu_load_passed_as_reported_by_root: true

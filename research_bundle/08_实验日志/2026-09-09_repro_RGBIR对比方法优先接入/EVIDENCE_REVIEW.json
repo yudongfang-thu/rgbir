@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-09",
+  "auditor": "/root/port90_protocol_assets",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "BOUNDED_CPU_EVIDENCE_SUPPORTED_WITH_ADAPTATION_AND_SCOPE_LIMITS",
+  "review_metadata": {
+    "reused_agent": true,
+    "fresh_context": false,
+    "cross_model_review": false,
+    "observable_model_identity": "not separately exposed by review tooling",
+    "prior_involvement": ["LLVIP source research", "90 data preparation script", "CFT forward static inspection"],
+    "independent_integrity_audit": false,
+    "parallel_drone_compatibility_review": "outside this review; not presumed complete",
+    "skill": "C:/Users/MSI-PC/.codex/skills/experiment-audit/SKILL.md",
+    "inspection_only": true,
+    "ssh_used": false,
+    "new_model_or_test_runs": false,
+    "new_hash_computed": false,
+    "hash_policy": "User explicitly prohibited new hashes; no rehash performed. Existing author Git references are cited without computing them."
+  },
+  "audited_input_hashes": [],
+  "declared_input_set": [
+    "run_cft_author_cpu_v2.py",
+    "cft_checkpoint_compat.py",
+    "cft_forward90/source_downloaded.json",
+    "cft_forward90/weight_downloaded.json",
+    "cft_forward90/cft_forward_attempt1/failure.json",
+    "cft_forward90/cft_forward_attempt2/receipt.json",
+    "cft_forward90/cft_forward_attempt2/020001_inference.json",
+    "cft_forward90/cft_forward_attempt2/100118_inference.json",
+    "cft_forward90/cft_forward_attempt2/180408_inference.json",
+    "cft_forward90/AUTHOR_ARCHIVE_RECEIPT.json",
+    "existing_assets/bckd_operator/CPU_RECEIPT_90_attempt1.json",
+    "existing_assets/bckd_operator/check_operator_cpu.py",
+    "existing_assets/bckd_operator/extracted_novel_kd_loss.py",
+    "existing_assets/bckd_operator/bcdl_independent.py",
+    "existing_assets/cmd90_port/cmd_cpu_receipt_attempt1.json",
+    "existing_assets/cmd90_port/cmd_tests_attempt1.log",
+    "existing_assets/cmd90_port/cmd_help_attempt1.log",
+    "existing_assets/cmd90_port/cmd_source_merged.json",
+    "existing_assets/cmd90_port/tests/test_rgbt_cmdistill_kd.py",
+    "existing_assets/cmd90_port/tests/test_train_rgbt_cmdistill.py",
+    "existing_assets/cmd90_port/tools/train_rgbt_cmdistill.py",
+    "existing_assets/cmd90_port/configs/research/cmdistill_corrected_90_llvip_seed42.template.yaml",
+    "existing_assets/cmd90_port/configs/research/cmdistill_corrected_90_drone_seed42.template.yaml"
+  ],
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "CFT consumes three real fit image pairs but no annotation-derived metric. BCDL and CMD checks use synthetic logits/maps or fake teachers, not detector ground-truth evaluation.",
+      "evidence": ["run_cft_author_cpu_v2.py:53", "existing_assets/bckd_operator/check_operator_cpu.py:58", "existing_assets/cmd90_port/tests/test_train_rgbt_cmdistill.py:39"]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "No AP, benchmark score or comparison normalization is computed. BCDL scope is per-anchor classification loss with removed MMCV decorators; full reduction is explicitly untested. Detection counts and one-shot CPU timings are execution outputs, not accuracy or throughput claims.",
+      "evidence": ["cft_forward90/cft_forward_attempt2/receipt.json#/ap_computed", "existing_assets/bckd_operator/CPU_RECEIPT_90_attempt1.json#/weighted_decorator_reduction_tested"]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "CFT attempt2 receipt and three inference records exist and agree on stems, output shapes and NMS row counts 2/1/2; raw NPZ files exist but were not unpacked. BCDL receipt reports 6 of 6 checks PASS. CMD receipt return codes are zero and original pytest log states 22 passed in 1.68s; help output is present. CFT attempt1 failure is preserved.",
+      "evidence": ["cft_forward90/cft_forward_attempt2/receipt.json#/items", "existing_assets/bckd_operator/CPU_RECEIPT_90_attempt1.json#/checks", "existing_assets/cmd90_port/cmd_tests_attempt1.log", "cft_forward90/cft_forward_attempt1/failure.json"]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "CFT completion is emitted after actual attempt_load, compatibility call, three model calls and NMS; BCDL receipt is generated from executed check functions; CMD records actual CLI and pytest commands. No function definition or source-copy status alone was accepted as execution.",
+      "evidence": ["run_cft_author_cpu_v2.py", "existing_assets/bckd_operator/check_operator_cpu.py", "existing_assets/cmd90_port/cmd_cpu_receipt_attempt1.json#/checks"]
+    },
+    "scope": {
+      "status": "warn",
+      "details": "CFT is adapted dual-modal author-checkpoint execution only. Historical training forward equivalence remains unproved. BCDL is a classification operator only. CMD teacher remains TO_BIND. No full training, new AP, RGB-only fusion comparison, multi-seed effect or full-paper acceptance follows.",
+      "evidence": ["cft_forward90/cft_forward_attempt2/receipt.json#/checkpoint_class_compatibility", "existing_assets/bckd_operator/CPU_RECEIPT_90_attempt1.json#/full_BCKD_tested", "existing_assets/cmd90_port/cmd_cpu_receipt_attempt1.json#/teacher_checkpoint"]
+    },
+    "eval_type": {
+      "status": "pass",
+      "details": "CFT: real-input mechanical execution without reference scoring, outside scientific GT evaluation. BCDL and CMD: synthetic_proxy numerical/interface checks only; the passing count is not a performance proxy.",
+      "classification": {"CFT": "mechanical_execution_no_reference_score", "BCDL": "synthetic_proxy", "CMD": "synthetic_proxy"},
+      "evidence": ["run_cft_author_cpu_v2.py", "existing_assets/bckd_operator/check_operator_cpu.py", "existing_assets/cmd90_port/tests/test_rgbt_cmdistill_kd.py"]
+    },
+    "source_archive_placement": {
+      "status": "warn",
+      "details": "cft_forward90/AUTHOR_ARCHIVE_RECEIPT.json describes M2D-LIF_master_author.zip from Zhao-Tian-yi/M2D-LIF. Excluded as CFT provenance. Original preserved; correct CFT source and weight receipts remain available.",
+      "evidence": ["cft_forward90/AUTHOR_ARCHIVE_RECEIPT.json#/archive", "cft_forward90/AUTHOR_ARCHIVE_RECEIPT.json#/source", "cft_forward90/source_downloaded.json"]
+    }
+  },
+  "claims": [
+    {"id": "CFT_ADAPTED_AUTHOR_WEIGHT_FORWARD", "impact": "supported", "claim": "Author CFT LLVIP checkpoint completed CPU forward and NMS on three frozen fit pairs after disclosed legacy class adaptation.", "evidence": ["cft_forward90/cft_forward_attempt2/receipt.json"], "rationale": "Completed 3 pairs, finite outputs, CUDA uninitialized, training not started, no AP; runtime adaptation and source revision recorded."},
+    {"id": "CFT_AUTHOR_EXACT_OR_NUMERIC_EQUIVALENCE", "impact": "unsupported", "claim": "Author-exact historical model behavior or paper metric reproduction.", "evidence": ["cft_checkpoint_compat.py", "cft_forward90/cft_forward_attempt2/receipt.json#/checkpoint_class_compatibility"], "rationale": "Parameter object preservation does not prove equivalence to unavailable historical training forward; no metrics evaluated."},
+    {"id": "CFT_FIT_TIMING", "impact": "needs_qualifier", "claim": "Recorded CPU forward and NMS timings of the three pairs.", "evidence": ["cft_forward90/cft_forward_attempt2/receipt.json#/items"], "rationale": "Single execution in adapted Torch2.10, CPU4 threads; no controlled repeated throughput benchmark."},
+    {"id": "BCDL_CLASSIFICATION_OPERATOR", "impact": "supported", "claim": "Extracted BCDL per-anchor classification loss and tested student gradients agree with the independently expressed operator on the recorded small CPU cases; 6 checks pass.", "evidence": ["existing_assets/bckd_operator/CPU_RECEIPT_90_attempt1.json"], "rationale": "Eight numeric cases and five further check groups are reported; decorators and detector head are explicitly excluded."},
+    {"id": "FULL_BCKD_REPRODUCTION", "impact": "unsupported", "claim": "Complete BCKD or dataset performance reproduction.", "evidence": ["existing_assets/bckd_operator/CPU_RECEIPT_90_attempt1.json"], "rationale": "No full reduction, head selection, detector training or dataset performance tested."},
+    {"id": "CMD_CPU_PORT", "impact": "supported", "claim": "CMD adapted source imports, CLI help runs, and the two original synthetic test files pass all 22 tests on 90 CPU.", "evidence": ["existing_assets/cmd90_port/cmd_cpu_receipt_attempt1.json", "existing_assets/cmd90_port/cmd_tests_attempt1.log"], "rationale": "Command return codes and log agree; new merged source path recorded."},
+    {"id": "CMD_REAL_TEACHER_TRAINING_ADMISSION", "impact": "unsupported", "claim": "CMD is ready for real paired training with a bound IR teacher.", "evidence": ["existing_assets/cmd90_port/cmd_cpu_receipt_attempt1.json#/teacher_checkpoint"], "rationale": "IR teacher is TO_BIND; CLI help and fake-teacher unit tests do not exercise real dataset training."},
+    {"id": "NEW_AP_FULL_TRAINING_OR_RGB_ONLY_GAIN", "impact": "unsupported", "claim": "New AP, complete training, RGB-only cross-modal gain, or whole-paper acceptance.", "evidence": ["cft_forward90/cft_forward_attempt2/receipt.json", "existing_assets/bckd_operator/CPU_RECEIPT_90_attempt1.json", "existing_assets/cmd90_port/cmd_cpu_receipt_attempt1.json"], "rationale": "No such runs or evaluations exist in the reviewed input set; CFT has both RGB and IR inference inputs."}
+  ],
+  "evidence_manifest": {
+    "run_ids": ["cft_forward_attempt1: FAILED", "cft_forward_attempt2: AUTHOR_CHECKPOINT_FORWARD_COMPLETED", "BCDL CPU_RECEIPT_90_attempt1: PASS", "CMD cmd_cpu_receipt_attempt1: PASS"],
+    "author_revisions": {"CFT": "fb591c9b163177c0e950db08e213e24ddc912d41", "BCKD": "121c9aa272c9195c0f05cd12727bfe57636a5005"},
+    "data_version": "Project LLVIP grouped_v1 frozen fit; no claim of historical author label-version identity",
+    "evaluator_version": "No AP evaluator used",
+    "inspection_commands": ["Read existing JSON/log/source text", "Enumerate existing artifact paths", "Compare saved CFT inference JSON detection row counts against receipt"],
+    "recomputation_commands": [],
+    "inaccessible_or_unreviewed_inputs": ["Remote checkpoint bytes and independent full-stream integrity", "Exact historical CFT checkpoint training source", "Raw NPZ contents beyond file existence", "New GPU execution", "Real CMD IR teacher checkpoint", "Full dataset training and full-dev evaluator", "Parallel Drone agent compatibility review verdict"]
+  }
+}

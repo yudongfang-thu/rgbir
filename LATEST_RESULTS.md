@@ -1,3 +1,5 @@
+> **2026-09-09 最新：**[90 实际复现接入与范围](REPRODUCTION_STATUS_20260909.md)：CFT 真实权重前向、BCDL 算子、CMD 22 tests 已执行；无新 AP。以下时间点为历史状态。
+
 # 最新结果与执行状态
 
 > **2026-09-07 17:06 follow-up:** The explicit post-hoc class adapter is independently accepted (17 tests and six actual endpoints). Original result files remain unchanged. C0 harm review remains REVIEW_REQUIRED with no missing items. C1 seeds were at epoch 5 as of 16:53; no complete C1 AP is available. [Evidence and review](research_bundle/08_实验日志/2026-09-07_train_IndependentKD实施/heartbeat_20260907_1653/README.md).

@@ -1,0 +1,192 @@
+{
+  "status": "PAYLOAD_PREPARED_NOT_DEPLOYED",
+  "server_target": "90",
+  "target_root": "/mnt/dataX/ydf/projects/RGBT_campaign_90",
+  "python_target": "/mnt/dataX/ydf/projects/RGBT_campaign_90/environments/rgbir90/bin/python",
+  "new_hashes_computed": false,
+  "remote_commands_executed": false,
+  "gpu_work_started": false,
+  "inherited_94_admission": false,
+  "changes": [
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\release_gpu5.tar.gz",
+      "destination": "provenance/release_gpu5.original.tar.gz",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\tools\\project_resource_guard.py",
+      "destination": "tools/project_resource_guard.py",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\tools\\write_jstars_run_receipt.py",
+      "destination": "tools/write_jstars_run_receipt.py",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\tools\\validate_jstars_data_contract.py",
+      "destination": "tools/validate_jstars_data_contract.py",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\configs\\research\\jstars_dataset_exposure_v1.json",
+      "destination": "configs/research/jstars_dataset_exposure_v1.json",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_C1训练路径提速\\fast_candidate\\batched_selection_v1.py",
+      "destination": "fast_candidate/batched_selection_v1.py",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_C1训练路径提速\\native_fast\\native_fast.py",
+      "destination": "native_fast/native_fast.py",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_C1训练路径提速\\benchmark_review\\cadence106.py",
+      "destination": "benchmark_review/cadence106.py",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_C1训练路径提速\\production_entry\\train_c1_fast.py",
+      "destination": "production_entry/train_c1_fast.py",
+      "operation": "copy"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_ops_C1训练路径提速\\production_entry\\dispatch_single_formal.py",
+      "destination": "dispatch_single_formal.py",
+      "operation": "copy"
+    },
+    {
+      "destination": "release_gpu5/resource_dispatch.py",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/evaluate_task_conditional.py",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/prepare_configs.py",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/resource_dispatch.py",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/legacy_oev1/evaluate_object_evidence.py",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/legacy_oev1/train_object_evidence.py",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/configs/drone_draft.yaml",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/configs/llvip_draft.yaml",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/legacy_oev1/config_drone.yaml",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "dispatch_single_formal.py",
+      "operation": "94-to-90-path-only"
+    },
+    {
+      "destination": "dispatch_single_formal.py",
+      "operation": "text-edit",
+      "anchor": "PY=str(REPO/'environments/sn6-int8-kd/bin/python')"
+    },
+    {
+      "destination": "dispatch_single_formal.py",
+      "operation": "text-edit",
+      "anchor": "REPO=Path('/mnt/dataX/ydf/projects/RGBT_campaign_90')"
+    },
+    {
+      "destination": "tools/project_resource_guard.py",
+      "operation": "text-edit",
+      "anchor": "REPO_ROOT = Path(__file__).resolve().parents[1]"
+    },
+    {
+      "destination": "tools/project_resource_guard.py",
+      "operation": "text-edit",
+      "anchor": "DEFAULT_LEASE_FILE = REPO_ROOT / \"runs\" / \".project_resource_leases.json\""
+    },
+    {
+      "destination": "release_gpu5/train_independent.py",
+      "operation": "text-edit",
+      "anchor": "def validate_execution(cfg, formal=False):\n"
+    },
+    {
+      "destination": "benchmark_review/cadence106.py",
+      "operation": "text-edit",
+      "anchor": "import argparse, functools, hashlib, importlib.util, json, math, os"
+    },
+    {
+      "destination": "benchmark_review/cadence106.py",
+      "operation": "text-edit",
+      "anchor": "if os.name!='posix' or not str(output).startswith('/mnt/dataset/yudongfang/'):"
+    },
+    {
+      "destination": "benchmark_review/cadence106.py",
+      "operation": "text-edit",
+      "anchor": "sha256=hashlib.sha256(raw).hexdigest()"
+    },
+    {
+      "destination": "benchmark_review/cadence106.py",
+      "operation": "text-edit",
+      "anchor": "weights_hashed=False"
+    },
+    {
+      "destination": "production_entry/train_c1_fast.py",
+      "operation": "90-only blocked template gate; byte-copy bindings replace new hashes; preserve trainer and original readiness validation"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/legacy_oev1/train_object_evidence.py",
+      "operation": "final-path-or-blocked-template-edit"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/legacy_oev1/train_object_evidence.py",
+      "operation": "final-path-or-blocked-template-edit"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/resource_dispatch.py",
+      "operation": "final-path-or-blocked-template-edit"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/resource_dispatch.py",
+      "operation": "final-path-or-blocked-template-edit"
+    },
+    {
+      "destination": "release_gpu5/verify_compatibility.py",
+      "operation": "final-path-or-blocked-template-edit"
+    },
+    {
+      "destination": "release_gpu5/verify_compatibility.py",
+      "operation": "final-path-or-blocked-template-edit"
+    },
+    {
+      "destination": "production_entry/train_c1_fast.py",
+      "operation": "final-path-or-blocked-template-edit"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/configs/drone_draft.yaml",
+      "operation": "mark-frozen-example-blocked"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/configs/llvip_draft.yaml",
+      "operation": "mark-frozen-example-blocked"
+    },
+    {
+      "destination": "release_gpu5/task_conditional_reference/legacy_oev1/config_drone.yaml",
+      "operation": "mark-frozen-example-blocked"
+    }
+  ],
+  "template_block_is_technical_not_user_confirmation": true
+}

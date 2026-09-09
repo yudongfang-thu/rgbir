@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-09",
+  "operation": "Open official weight download URL, inspect headers and read 128 bytes, then close response",
+  "author_repository": "https://github.com/DocF/multispectral-object-detection",
+  "author_weight_page": "https://drive.google.com/file/d/18yLDUOxNXQ17oypQ-fAV9OS9DESOZQtV/view?usp=sharing",
+  "download_url": "https://drive.usercontent.google.com/download?id=18yLDUOxNXQ17oypQ-fAV9OS9DESOZQtV&export=download&authuser=0&confirm=t",
+  "response_status": 200,
+  "content_type": "application/octet-stream",
+  "content_length": 413453231,
+  "content_disposition_filename": "yolov5l_transformerx3_llvip_s1024_bs32_e200",
+  "read_bytes": 128,
+  "prefix_contains": ["PK ZIP magic", "archive/data.pkl"],
+  "new_hashes": false,
+  "entire_weight_downloaded_by_this_check": false,
+  "model_loaded": false,
+  "claim_scope": "The official endpoint began returning model binary; not a complete transfer or inference verification"
+}

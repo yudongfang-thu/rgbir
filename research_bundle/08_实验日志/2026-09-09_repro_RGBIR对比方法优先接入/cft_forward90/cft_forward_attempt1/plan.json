@@ -1,0 +1,56 @@
+{
+  "status": "STARTED",
+  "task": "author_checkpoint_execution_only",
+  "reproduction_identity": "PROTOCOL-ADAPTED",
+  "dataset": "LLVIP",
+  "split": "fit",
+  "source_revision": "fb591c9b163177c0e950db08e213e24ddc912d41",
+  "checkpoint": "/mnt/dataX/ydf/projects/RGBT_campaign_90/external_reproductions/cft/author_llvip.pt",
+  "checkpoint_bytes": 413453231,
+  "selected": [
+    {
+      "stem": "020001",
+      "sequence_prefix": "02",
+      "visible": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/visible/train/020001.jpg",
+      "infrared": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/infrared/train/020001.jpg",
+      "annotation": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/Annotations/020001.xml"
+    },
+    {
+      "stem": "100118",
+      "sequence_prefix": "10",
+      "visible": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/visible/train/100118.jpg",
+      "infrared": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/infrared/train/100118.jpg",
+      "annotation": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/Annotations/100118.xml"
+    },
+    {
+      "stem": "180408",
+      "sequence_prefix": "18",
+      "visible": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/visible/train/180408.jpg",
+      "infrared": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/infrared/train/180408.jpg",
+      "annotation": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/raw/LLVIP_train_only/Annotations/180408.xml"
+    }
+  ],
+  "input_size": 1024,
+  "letterbox_auto": true,
+  "confidence": 0.25,
+  "nms_iou": 0.45,
+  "cpu_threads": 4,
+  "student_rgb_only": false,
+  "model_inputs": [
+    "RGB",
+    "IR"
+  ],
+  "test_accessed": false,
+  "dev_accessed": false,
+  "ap_computed": false,
+  "new_digest_calculated": false,
+  "torch_version": "2.10.0+cu128",
+  "runtime_compatibility": [
+    "TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1 for trusted author legacy module checkpoint"
+  ],
+  "limitations": [
+    "Author training population includes our dev; no generalization comparison",
+    "Three fit pairs validate execution, not paper metrics or throughput",
+    "Torch2.10 runtime differs from original environment"
+  ]
+}

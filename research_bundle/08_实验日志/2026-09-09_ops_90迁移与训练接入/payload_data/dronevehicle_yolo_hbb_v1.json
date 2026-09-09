@@ -1,0 +1,525 @@
+{
+  "version": "dronevehicle-yolo-hbb-v1",
+  "generated_at_utc": "2026-08-30T18:23:28.164053+00:00",
+  "source_root": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/DroneVehicle_clean",
+  "source_input_read_only": true,
+  "output_root": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1",
+  "receipt_path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1.json",
+  "visual_root": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals",
+  "source_image_size": {
+    "width": 840,
+    "height": 712
+  },
+  "crop": {
+    "x": [
+      100,
+      740
+    ],
+    "y": [
+      100,
+      612
+    ],
+    "output_size": [
+      640,
+      512
+    ]
+  },
+  "modalities": {
+    "train": {
+      "rgb": {
+        "image_directory": "trainimg",
+        "label_directory": "trainlabel"
+      },
+      "infrared": {
+        "image_directory": "trainimgr",
+        "label_directory": "trainlabelr"
+      }
+    },
+    "val": {
+      "rgb": {
+        "image_directory": "valimg",
+        "label_directory": "vallabel"
+      },
+      "infrared": {
+        "image_directory": "valimgr",
+        "label_directory": "vallabelr"
+      }
+    },
+    "test": {
+      "rgb": {
+        "image_directory": "testimg",
+        "label_directory": "testlabel"
+      },
+      "infrared": {
+        "image_directory": "testimgr",
+        "label_directory": "testlabelr"
+      }
+    }
+  },
+  "class_order": [
+    "car",
+    "freight car",
+    "truck",
+    "bus",
+    "van"
+  ],
+  "class_order_primary_code": "LADD_public/tools/prepare_dronevehicle_cclkd_hbb.py:CLASS_NAMES",
+  "class_aliases": {
+    "car": "car",
+    "freight car": "freight car",
+    "feright car": "freight car",
+    "feright": "freight car",
+    "truck": "truck",
+    "truvk": "truck",
+    "bus": "bus",
+    "van": "van"
+  },
+  "official_evaluation_semantics": {
+    "included_geometry": [
+      "polygon",
+      "bndbox"
+    ],
+    "ignored_geometry": [
+      "point"
+    ],
+    "ignored_class": "*",
+    "polygon_conversion": "clip polygon to crop rectangle, then take HBB envelope",
+    "bndbox_conversion": "intersect bndbox with crop rectangle"
+  },
+  "by_split_modality": {
+    "train/rgb": {
+      "source_image_files": 17990,
+      "source_xml_files": 17990,
+      "source_pair_stems": 17990,
+      "output_image_files": 17990,
+      "output_label_files": 17990,
+      "labels_written": 286792,
+      "source_objects": 286815,
+      "official_eval_candidates": 286793,
+      "source_geometry": {
+        "polygon": 265286,
+        "bndbox": 21507,
+        "point": 21,
+        "star": 1
+      },
+      "source_class_instances": {
+        "car": 246716,
+        "truck": 13686,
+        "freight car": 8716,
+        "bus": 10421,
+        "van": 7275
+      },
+      "written_class_instances": {
+        "car": 246699,
+        "truck": 13685,
+        "freight car": 8712,
+        "bus": 10421,
+        "van": 7275
+      },
+      "ignored": {
+        "point": 21,
+        "class_star": 1
+      },
+      "dropped": {
+        "zero_or_invalid_post_clip_geometry": 1
+      },
+      "alias_usage": {
+        "feright car": 3211,
+        "feright_car": 5504,
+        "feright": 1,
+        "truvk": 1
+      }
+    },
+    "train/infrared": {
+      "source_image_files": 17990,
+      "source_xml_files": 17990,
+      "source_pair_stems": 17990,
+      "output_image_files": 17990,
+      "output_label_files": 17990,
+      "labels_written": 316410,
+      "source_objects": 316434,
+      "official_eval_candidates": 316411,
+      "source_geometry": {
+        "polygon": 293494,
+        "bndbox": 22917,
+        "point": 22,
+        "star": 1
+      },
+      "source_class_instances": {
+        "car": 270368,
+        "truck": 15834,
+        "freight car": 11196,
+        "bus": 11334,
+        "van": 7701
+      },
+      "written_class_instances": {
+        "car": 270349,
+        "truck": 15833,
+        "freight car": 11193,
+        "bus": 11334,
+        "van": 7701
+      },
+      "ignored": {
+        "point": 22,
+        "class_star": 1
+      },
+      "dropped": {
+        "zero_or_invalid_post_clip_geometry": 1
+      },
+      "alias_usage": {
+        "feright car": 3776,
+        "feright_car": 7419,
+        "feright": 1
+      }
+    },
+    "val/rgb": {
+      "source_image_files": 1469,
+      "source_xml_files": 1469,
+      "source_pair_stems": 1469,
+      "output_image_files": 1469,
+      "output_label_files": 1469,
+      "labels_written": 22462,
+      "source_objects": 22463,
+      "official_eval_candidates": 22462,
+      "source_geometry": {
+        "polygon": 21198,
+        "bndbox": 1264,
+        "point": 1
+      },
+      "source_class_instances": {
+        "freight car": 710,
+        "car": 18966,
+        "bus": 751,
+        "truck": 1336,
+        "van": 700
+      },
+      "written_class_instances": {
+        "freight car": 710,
+        "car": 18965,
+        "bus": 751,
+        "truck": 1336,
+        "van": 700
+      },
+      "ignored": {
+        "point": 1
+      },
+      "dropped": {},
+      "alias_usage": {
+        "feright car": 195,
+        "feright_car": 515
+      }
+    },
+    "val/infrared": {
+      "source_image_files": 1469,
+      "source_xml_files": 1469,
+      "source_pair_stems": 1469,
+      "output_image_files": 1469,
+      "output_label_files": 1469,
+      "labels_written": 24490,
+      "source_objects": 24490,
+      "official_eval_candidates": 24490,
+      "source_geometry": {
+        "polygon": 23035,
+        "bndbox": 1455
+      },
+      "source_class_instances": {
+        "car": 20588,
+        "freight car": 918,
+        "bus": 789,
+        "truck": 1470,
+        "van": 725
+      },
+      "written_class_instances": {
+        "car": 20588,
+        "freight car": 918,
+        "bus": 789,
+        "truck": 1470,
+        "van": 725
+      },
+      "ignored": {},
+      "dropped": {},
+      "alias_usage": {
+        "feright car": 308,
+        "feright_car": 610
+      }
+    },
+    "test/rgb": {
+      "source_image_files": 8980,
+      "source_xml_files": 8980,
+      "source_pair_stems": 8980,
+      "output_image_files": 8980,
+      "output_label_files": 8980,
+      "labels_written": 143313,
+      "source_objects": 143330,
+      "official_eval_candidates": 143315,
+      "source_geometry": {
+        "polygon": 134915,
+        "bndbox": 8400,
+        "point": 15
+      },
+      "source_class_instances": {
+        "car": 124126,
+        "bus": 4162,
+        "freight car": 3979,
+        "truck": 7103,
+        "van": 3960
+      },
+      "written_class_instances": {
+        "car": 124112,
+        "bus": 4161,
+        "freight car": 3978,
+        "truck": 7102,
+        "van": 3960
+      },
+      "ignored": {
+        "point": 15
+      },
+      "dropped": {
+        "zero_or_invalid_post_clip_polygon": 1,
+        "zero_or_invalid_post_clip_geometry": 1
+      },
+      "alias_usage": {
+        "feright car": 1293,
+        "feright_car": 2686
+      }
+    },
+    "test/infrared": {
+      "source_image_files": 8980,
+      "source_xml_files": 8980,
+      "source_pair_stems": 8980,
+      "output_image_files": 8980,
+      "output_label_files": 8980,
+      "labels_written": 159614,
+      "source_objects": 159632,
+      "official_eval_candidates": 159616,
+      "source_geometry": {
+        "polygon": 149975,
+        "bndbox": 9641,
+        "point": 16
+      },
+      "source_class_instances": {
+        "car": 137162,
+        "bus": 4467,
+        "freight car": 5064,
+        "truck": 8657,
+        "van": 4282
+      },
+      "written_class_instances": {
+        "car": 137146,
+        "bus": 4467,
+        "freight car": 5062,
+        "truck": 8657,
+        "van": 4282
+      },
+      "ignored": {
+        "point": 16
+      },
+      "dropped": {
+        "zero_or_invalid_post_clip_geometry": 2
+      },
+      "alias_usage": {
+        "feright car": 1495,
+        "feright_car": 3569
+      }
+    }
+  },
+  "output_validation": {
+    "by_split_modality": {
+      "train/rgb": {
+        "image_files": 17990,
+        "label_files": 17990,
+        "decoded_640x512": 17990,
+        "bad_image_stems": [],
+        "label_rows": 286792,
+        "bad_label_stems": []
+      },
+      "train/infrared": {
+        "image_files": 17990,
+        "label_files": 17990,
+        "decoded_640x512": 17990,
+        "bad_image_stems": [],
+        "label_rows": 316410,
+        "bad_label_stems": []
+      },
+      "val/rgb": {
+        "image_files": 1469,
+        "label_files": 1469,
+        "decoded_640x512": 1469,
+        "bad_image_stems": [],
+        "label_rows": 22462,
+        "bad_label_stems": []
+      },
+      "val/infrared": {
+        "image_files": 1469,
+        "label_files": 1469,
+        "decoded_640x512": 1469,
+        "bad_image_stems": [],
+        "label_rows": 24490,
+        "bad_label_stems": []
+      },
+      "test/rgb": {
+        "image_files": 8980,
+        "label_files": 8980,
+        "decoded_640x512": 8980,
+        "bad_image_stems": [],
+        "label_rows": 143313,
+        "bad_label_stems": []
+      },
+      "test/infrared": {
+        "image_files": 8980,
+        "label_files": 8980,
+        "decoded_640x512": 8980,
+        "bad_image_stems": [],
+        "label_rows": 159614,
+        "bad_label_stems": []
+      }
+    }
+  },
+  "visuals": {
+    "version": "dronevehicle-yolo-hbb-v1_visuals",
+    "selection": "sorted stems sampled at evenly spaced deterministic indices",
+    "per_split_modality": 3,
+    "records": [
+      {
+        "split": "train",
+        "modality": "rgb",
+        "stem": "00001",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/train_rgb_00001.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train/00001.txt"
+      },
+      {
+        "split": "train",
+        "modality": "rgb",
+        "stem": "08995",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/train_rgb_08995.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train/08995.txt"
+      },
+      {
+        "split": "train",
+        "modality": "rgb",
+        "stem": "17990",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/train_rgb_17990.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/train/17990.txt"
+      },
+      {
+        "split": "train",
+        "modality": "infrared",
+        "stem": "00001",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/train_infrared_00001.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train/00001.txt"
+      },
+      {
+        "split": "train",
+        "modality": "infrared",
+        "stem": "08995",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/train_infrared_08995.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train/08995.txt"
+      },
+      {
+        "split": "train",
+        "modality": "infrared",
+        "stem": "17990",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/train_infrared_17990.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/train/17990.txt"
+      },
+      {
+        "split": "val",
+        "modality": "rgb",
+        "stem": "00001",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/val_rgb_00001.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00001.txt"
+      },
+      {
+        "split": "val",
+        "modality": "rgb",
+        "stem": "00735",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/val_rgb_00735.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/00735.txt"
+      },
+      {
+        "split": "val",
+        "modality": "rgb",
+        "stem": "01469",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/val_rgb_01469.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/val/01469.txt"
+      },
+      {
+        "split": "val",
+        "modality": "infrared",
+        "stem": "00001",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/val_infrared_00001.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00001.txt"
+      },
+      {
+        "split": "val",
+        "modality": "infrared",
+        "stem": "00735",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/val_infrared_00735.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/00735.txt"
+      },
+      {
+        "split": "val",
+        "modality": "infrared",
+        "stem": "01469",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/val_infrared_01469.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/val/01469.txt"
+      },
+      {
+        "split": "test",
+        "modality": "rgb",
+        "stem": "00001",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/test_rgb_00001.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/test/00001.txt"
+      },
+      {
+        "split": "test",
+        "modality": "rgb",
+        "stem": "04491",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/test_rgb_04491.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/test/04491.txt"
+      },
+      {
+        "split": "test",
+        "modality": "rgb",
+        "stem": "08980",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/test_rgb_08980.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb/labels/test/08980.txt"
+      },
+      {
+        "split": "test",
+        "modality": "infrared",
+        "stem": "00001",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/test_infrared_00001.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/test/00001.txt"
+      },
+      {
+        "split": "test",
+        "modality": "infrared",
+        "stem": "04491",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/test_infrared_04491.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/test/04491.txt"
+      },
+      {
+        "split": "test",
+        "modality": "infrared",
+        "stem": "08980",
+        "image": "/mnt/dataset/yudongfang/projects/RGBT_campaign/governance/dronevehicle_yolo_hbb_v1_visuals/test_infrared_08980.jpg",
+        "label": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared/labels/test/08980.txt"
+      }
+    ]
+  },
+  "train_source_groups": {
+    "rgb": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/rgb_train_source_groups.tsv",
+      "source_train_xml_files": 17990,
+      "rows_written": 17990,
+      "missing_folder_count": 0
+    },
+    "infrared": {
+      "path": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/processed/dronevehicle/yolo/hbb_v1/infrared_train_source_groups.tsv",
+      "source_train_xml_files": 17990,
+      "rows_written": 17990,
+      "missing_folder_count": 0
+    }
+  }
+}

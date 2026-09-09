@@ -1,0 +1,84 @@
+{
+  "version": "llvip_grouped_v1",
+  "generated_at": "2026-08-30T17:28:23.687277+00:00",
+  "source_root": "/mnt/dataset/yudongfang/projects/RGBT_campaign/data/raw/LLVIP",
+  "group_key": "first two filename digits",
+  "dev_prefixes": [
+    "01",
+    "04",
+    "07",
+    "12",
+    "25"
+  ],
+  "fit_prefixes": [
+    "02",
+    "03",
+    "05",
+    "06",
+    "08",
+    "09",
+    "10",
+    "11",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18"
+  ],
+  "official_test_prefixes": [
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "26"
+  ],
+  "counts": {
+    "fit": 9619,
+    "dev": 2406,
+    "test": 3463
+  },
+  "person_instances": {
+    "fit": 26256,
+    "dev": 7879,
+    "test": 8302
+  },
+  "prefix_pair_counts": {
+    "fit": {
+      "02": 500,
+      "03": 473,
+      "05": 428,
+      "06": 515,
+      "08": 1518,
+      "09": 1258,
+      "10": 1313,
+      "11": 468,
+      "13": 500,
+      "14": 558,
+      "15": 603,
+      "16": 567,
+      "17": 512,
+      "18": 406
+    },
+    "dev": {
+      "01": 597,
+      "04": 473,
+      "07": 452,
+      "12": 461,
+      "25": 423
+    },
+    "test": {
+      "19": 827,
+      "20": 319,
+      "21": 436,
+      "22": 381,
+      "23": 467,
+      "24": 500,
+      "26": 533
+    }
+  },
+  "selection_rationale": "Five complete training prefixes give 2,406 dev pairs (20.0% of the official training pairs) while spanning dark, mid, and bright visible intensity regimes observed in the deterministic CPU audit.",
+  "protocol": "Use fit for training and dev for method selection. The official test list is recorded for final frozen evaluation only."
+}

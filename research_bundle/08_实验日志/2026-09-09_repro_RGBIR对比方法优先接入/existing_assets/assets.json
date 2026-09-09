@@ -1,0 +1,423 @@
+{
+  "date": "2026-09-09",
+  "status": "PREPARED_NOT_ADMITTED",
+  "scope": "Bounded local asset inspection plus three author repository homepages; no model execution",
+  "auditor": "/root/baseline_feature_analysis",
+  "independent_review": "No independent-pass claim for this bounded inventory",
+  "recommended_minimum_method": "CMDistill-corrected PROTOCOL-ADAPTED",
+  "reason": "Existing YOLO11 trainer, declared PCCFD/SLRD/IBCLD, two dataset configs, 22 test functions and six historical E200 endpoints; not author-exact.",
+  "assets": [
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\tools\\train_rgbt_cmdistill.py",
+      "exists": true,
+      "bytes": 11193,
+      "mtime_ns": 1788512546144594300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\yolo_osssl\\rgbt_cmdistill_kd.py",
+      "exists": true,
+      "bytes": 10768,
+      "mtime_ns": 1788367490875008900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\yolo_osssl\\rgbt_hnewa_pairing.py",
+      "exists": true,
+      "bytes": 4578,
+      "mtime_ns": 1788192659997365700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\tools\\eval_rgbt_detector.py",
+      "exists": true,
+      "bytes": 6364,
+      "mtime_ns": 1788459401523863700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\configs\\research\\rgbt_cmdistill_protocol_drone.yaml",
+      "exists": true,
+      "bytes": 1446,
+      "mtime_ns": 1788539575191788700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\configs\\research\\rgbt_cmdistill_protocol_llvip.yaml",
+      "exists": true,
+      "bytes": 1423,
+      "mtime_ns": 1788539575191493900
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\tests\\test_rgbt_cmdistill_kd.py",
+      "exists": true,
+      "bytes": 9162,
+      "mtime_ns": 1788366545965370500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\tests\\test_train_rgbt_cmdistill.py",
+      "exists": true,
+      "bytes": 4738,
+      "mtime_ns": 1788512546146002000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\tools\\train_rgbt_cclkd.py",
+      "exists": true,
+      "bytes": 11678,
+      "mtime_ns": 1788459432048141000
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\yolo_osssl\\rgbt_cclkd_kd.py",
+      "exists": true,
+      "bytes": 15153,
+      "mtime_ns": 1788423717548738700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\configs\\research\\rgbt_cclkd_protocol_drone.yaml",
+      "exists": true,
+      "bytes": 1784,
+      "mtime_ns": 1788366594736573200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\03_现行工程\\SpaceNet6_OTD_official_reproduction\\configs\\research\\rgbt_cclkd_protocol_llvip.yaml",
+      "exists": true,
+      "bytes": 1841,
+      "mtime_ns": 1788366607503349400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\06_历史工程_只读\\LADD_public\\ladd\\code\\src\\teacher_student_decomposition_kd_hbb\\loss.py",
+      "exists": true,
+      "bytes": 87192,
+      "mtime_ns": 1782363449045165300
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\06_历史工程_只读\\LADD_public\\comparison\\fgd\\README.md",
+      "exists": true,
+      "bytes": 1914,
+      "mtime_ns": 1781884473344828400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\06_历史工程_只读\\LADD_public\\comparison\\ld\\README.md",
+      "exists": true,
+      "bytes": 1429,
+      "mtime_ns": 1781884473404376200
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\06_历史工程_只读\\LADD_public\\cclkd_reproduction\\code\\train_cclkd_online_hbb.py",
+      "exists": true,
+      "bytes": 53534,
+      "mtime_ns": 1781884472314078500
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\06_历史工程_只读\\LADD_public\\cclkd_reproduction\\yolov5_sanity\\code\\train_yolov5_cclkd_full.py",
+      "exists": true,
+      "bytes": 29761,
+      "mtime_ns": 1781884472988818400
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\EXTERNAL_BASELINE_PREPARATION.md",
+      "exists": true,
+      "bytes": 16647,
+      "mtime_ns": 1788762827439966100
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\external_baseline_proposals.json",
+      "exists": true,
+      "bytes": 5799,
+      "mtime_ns": 1788762897053179700
+    },
+    {
+      "path": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_train_IndependentKD实施\\external_baseline_availability.json",
+      "exists": true,
+      "bytes": 65507,
+      "mtime_ns": 1788762020258344700
+    }
+  ],
+  "historical_cmdistill_raw_records": [
+    {
+      "source_container": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_audit_项目与94最新全景\\historical_inventory\\remote_snapshot_20260908.json",
+      "remote_original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/dronevehicle_seed0_b32_e200/metrics_record.json",
+      "source_record_bytes": 620,
+      "metric_record": {
+        "arm": "cmdistill_corrected",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/dronevehicle_seed0_b32_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "dataset": "dronevehicle",
+        "evaluation_role": "val",
+        "metrics": {
+          "AP50": 0.762351108296042,
+          "AP75": 0.6315941136446324,
+          "mAP50_95": 0.5390028570727691
+        },
+        "modality": "rgb",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 0,
+        "split": "val",
+        "walltime_seconds": 8.057853202102706
+      },
+      "csv_training_rows": 200,
+      "csv_last_epoch": "200",
+      "csv_time_seconds": 28203.6,
+      "csv_AP_not_used": true
+    },
+    {
+      "source_container": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_audit_项目与94最新全景\\historical_inventory\\remote_snapshot_20260908.json",
+      "remote_original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/dronevehicle_seed42_b32_e200/metrics_record.json",
+      "source_record_bytes": 624,
+      "metric_record": {
+        "arm": "cmdistill_corrected",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/dronevehicle_seed42_b32_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "dataset": "dronevehicle",
+        "evaluation_role": "val",
+        "metrics": {
+          "AP50": 0.7516442157263761,
+          "AP75": 0.6249358429506559,
+          "mAP50_95": 0.5324484007601327
+        },
+        "modality": "rgb",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 42,
+        "split": "val",
+        "walltime_seconds": 29.311959337908775
+      },
+      "csv_training_rows": 200,
+      "csv_last_epoch": "200",
+      "csv_time_seconds": 28292.4,
+      "csv_AP_not_used": true
+    },
+    {
+      "source_container": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_audit_项目与94最新全景\\historical_inventory\\remote_snapshot_20260908.json",
+      "remote_original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/dronevehicle_seed123_b32_e200/metrics_record.json",
+      "source_record_bytes": 624,
+      "metric_record": {
+        "arm": "cmdistill_corrected",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/dronevehicle_seed123_b32_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/dronevehicle/rgb.data.yaml",
+        "dataset": "dronevehicle",
+        "evaluation_role": "val",
+        "metrics": {
+          "AP50": 0.762498578413969,
+          "AP75": 0.6333093569020699,
+          "mAP50_95": 0.5366916842580717
+        },
+        "modality": "rgb",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 123,
+        "split": "val",
+        "walltime_seconds": 8.121474203187972
+      },
+      "csv_training_rows": 200,
+      "csv_last_epoch": "200",
+      "csv_time_seconds": 20971.1,
+      "csv_AP_not_used": true
+    },
+    {
+      "source_container": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_audit_项目与94最新全景\\historical_inventory\\remote_snapshot_20260908.json",
+      "remote_original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/llvip_seed0_b32_e200/metrics_record.json",
+      "source_record_bytes": 608,
+      "metric_record": {
+        "arm": "cmdistill_corrected",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/llvip_seed0_b32_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+        "dataset": "llvip",
+        "evaluation_role": "dev",
+        "metrics": {
+          "AP50": 0.7366138310586897,
+          "AP75": 0.25034281296964894,
+          "mAP50_95": 0.3406027394793398
+        },
+        "modality": "visible",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 0,
+        "split": "val",
+        "walltime_seconds": 9.51300361705944
+      },
+      "csv_training_rows": 200,
+      "csv_last_epoch": "200",
+      "csv_time_seconds": 15163.5,
+      "csv_AP_not_used": true
+    },
+    {
+      "source_container": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_audit_项目与94最新全景\\historical_inventory\\remote_snapshot_20260908.json",
+      "remote_original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/llvip_seed42_b32_e200/metrics_record.json",
+      "source_record_bytes": 610,
+      "metric_record": {
+        "arm": "cmdistill_corrected",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/llvip_seed42_b32_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+        "dataset": "llvip",
+        "evaluation_role": "dev",
+        "metrics": {
+          "AP50": 0.7284313698607991,
+          "AP75": 0.2421456873848358,
+          "mAP50_95": 0.3344398765133997
+        },
+        "modality": "visible",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 42,
+        "split": "val",
+        "walltime_seconds": 20.47967964806594
+      },
+      "csv_training_rows": 200,
+      "csv_last_epoch": "200",
+      "csv_time_seconds": 15017.7,
+      "csv_AP_not_used": true
+    },
+    {
+      "source_container": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-08_audit_项目与94最新全景\\historical_inventory\\remote_snapshot_20260908.json",
+      "remote_original": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/llvip_seed123_b32_e200/metrics_record.json",
+      "source_record_bytes": 613,
+      "metric_record": {
+        "arm": "cmdistill_corrected",
+        "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cmdistill_adapted_v2/llvip_seed123_b32_e200/weights/last.pt",
+        "data_yaml": "/mnt/dataset/yudongfang/projects/RGBT_campaign/artifacts/rgbt_p3_causal_v1/prepared/llvip/visible.data.yaml",
+        "dataset": "llvip",
+        "evaluation_role": "dev",
+        "metrics": {
+          "AP50": 0.7310610987586692,
+          "AP75": 0.2353360397885925,
+          "mAP50_95": 0.33316848556538053
+        },
+        "modality": "visible",
+        "schema": "rgbt-detector-metrics-record-v1",
+        "seed": 123,
+        "split": "val",
+        "walltime_seconds": 9.627107684966177
+      },
+      "csv_training_rows": 200,
+      "csv_last_epoch": "200",
+      "csv_time_seconds": 11117.1,
+      "csv_AP_not_used": true
+    }
+  ],
+  "historical_cclkd_independent_evaluations": [
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_OEv1优先级与对比实验\\cclkd\\eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s0_full_attempt1\\evaluation_val.json",
+      "bytes": 885,
+      "status": "evaluation_completed",
+      "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+      "seed": 0,
+      "endpoint": "fixed_budget_last_ema",
+      "evaluated_images": 1469,
+      "metric_units": "fraction_0_to_1",
+      "mAP50_95": 0.5406600564966325,
+      "AP50": 0.7648561806758856,
+      "AP75": 0.6328183429745453,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed0_b32_e200/weights/last.pt"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_OEv1优先级与对比实验\\cclkd\\eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s42_full_attempt1\\evaluation_val.json",
+      "bytes": 892,
+      "status": "evaluation_completed",
+      "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+      "seed": 42,
+      "endpoint": "fixed_budget_last_ema",
+      "evaluated_images": 1469,
+      "metric_units": "fraction_0_to_1",
+      "mAP50_95": 0.5449329450152567,
+      "AP50": 0.7700321800542202,
+      "AP75": 0.6354910732782623,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed42_b32_e200/weights/last.pt"
+    },
+    {
+      "source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-06_ops_OEv1优先级与对比实验\\cclkd\\eval_raw\\runs\\oev1_comparators_20260906\\cclkd_partial_s123_full_attempt1\\evaluation_val.json",
+      "bytes": 892,
+      "status": "evaluation_completed",
+      "method_id": "CCLKD-ADAPTED-PARTIAL-LLD-CCL-HISTORICAL",
+      "seed": 123,
+      "endpoint": "fixed_budget_last_ema",
+      "evaluated_images": 1469,
+      "metric_units": "fraction_0_to_1",
+      "mAP50_95": 0.543325955606628,
+      "AP50": 0.7631210499190813,
+      "AP75": 0.6379373998696685,
+      "checkpoint": "/mnt/dataset/yudongfang/projects/RGBT_campaign/runs/rgbt_cclkd_adapted_v1/cclkd_drone_seed123_b32_e200/weights/last.pt"
+    }
+  ],
+  "prior_accepted_comparator_source": "E:\\SHARE\\光sar\\08_实验日志\\2026-09-07_audit_RGBIR实施起点\\comparator_analysis.json",
+  "prior_accepted_drone_summaries": {
+    "cmdistill": {
+      "stats_percent": {
+        "mAP50_95": {
+          "mean": 53.60476473636578,
+          "sample_sd": 0.3324351369754621,
+          "ddof": 1
+        },
+        "AP50": {
+          "mean": 75.8831300812129,
+          "sample_sd": 0.6224634999846108,
+          "ddof": 1
+        },
+        "AP75": {
+          "mean": 62.99464378324527,
+          "sample_sd": 0.4423240967906091,
+          "ddof": 1
+        }
+      },
+      "minus_historical_native": {
+        "rows": [
+          {
+            "seed": 0,
+            "delta_pp": -0.45736258408087593
+          },
+          {
+            "seed": 42,
+            "delta_pp": -0.5707160654046035
+          },
+          {
+            "seed": 123,
+            "delta_pp": -0.018264229069799853
+          }
+        ],
+        "stats": {
+          "mean": -0.3487809595184264,
+          "sample_sd": 0.291793136934181,
+          "ddof": 1
+        }
+      }
+    },
+    "historical_native": {
+      "stats_percent": {
+        "mAP50_95": {
+          "mean": 53.95354569588421,
+          "sample_sd": 0.35577814393552964,
+          "ddof": 1
+        },
+        "AP50": {
+          "mean": 76.1598940185955,
+          "sample_sd": 0.5273667186046077,
+          "ddof": 1
+        },
+        "AP75": {
+          "mean": 63.238059690220815,
+          "sample_sd": 0.6402009308945478,
+          "ddof": 1
+        }
+      }
+    }
+  },
+  "method_scope": {
+    "CMDistill": "Paper-reconstructed corrected/protocol-adapted; historical/current source identity is not assumed exact",
+    "CCLKD": "RGBIR history LLD+CCL partial; historical complete source missing; old LADD online code is a separate lineage",
+    "FGD": "Historical FGD-style excludes trainable Global context; current RGBIR full FGD only prepared",
+    "LD": "Historical LD-style uses teacher-quality VLR; current RGBIR author Main+VLR only prepared",
+    "BCKD": "Official repo public; current RGBIR only prepared; BCDL alone is partial"
+  },
+  "web_sources": [
+    {
+      "url": "https://github.com/TinyTigerPan/BCKD",
+      "observed": "Official repository homepage readable; MMDetection2.28.2 GFL configs"
+    },
+    {
+      "url": "https://github.com/yzd-v/FGD",
+      "observed": "Author repository homepage readable"
+    },
+    {
+      "url": "https://github.com/HikariTJU/LD",
+      "observed": "Author repository homepage readable"
+    }
+  ],
+  "negative_search_limit": "Exact CMDistill DOI+GitHub query returned no results; no verified CMDistill/CCLKD author repo bound in inspected assets. This does not prove no official code exists.",
+  "new_hash_computed": false,
+  "weights_loaded": false,
+  "gpu_used": false,
+  "ssh_used": false,
+  "AP_recomputed": false,
+  "historical_source_modified": false
+}

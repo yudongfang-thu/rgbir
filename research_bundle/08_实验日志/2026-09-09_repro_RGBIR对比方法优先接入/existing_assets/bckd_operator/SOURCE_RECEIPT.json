@@ -1,0 +1,41 @@
+{
+  "status": "OFFICIAL_SOURCE_FROZEN",
+  "repository": "TinyTigerPan/BCKD",
+  "resolved_ref": "main",
+  "commit": "121c9aa272c9195c0f05cd12727bfe57636a5005",
+  "ref_resolution": "git ls-remote https://github.com/TinyTigerPan/BCKD.git refs/heads/main",
+  "prior_metadata_attempt": {
+    "url": "https://api.github.com/repos/TinyTigerPan/BCKD/commits/main",
+    "status": "HTTP_403_RATE_LIMIT",
+    "no_source_written": true
+  },
+  "prior_raw_transport_attempt": "urllib connection reset before source write; curl transport used",
+  "downloaded_at_utc": "2026-09-09T02:00:43.749811+00:00",
+  "files": [
+    {
+      "repository_path": "mmdet/models/losses/kd_loss.py",
+      "url": "https://raw.githubusercontent.com/TinyTigerPan/BCKD/121c9aa272c9195c0f05cd12727bfe57636a5005/mmdet/models/losses/kd_loss.py",
+      "local_path": "official/mmdet/models/losses/kd_loss.py",
+      "bytes": 6461,
+      "download_write_readback_exact": true
+    },
+    {
+      "repository_path": "configs/bckd/bckd_r50_gflv1_r101_fpn_coco_1x.py",
+      "url": "https://raw.githubusercontent.com/TinyTigerPan/BCKD/121c9aa272c9195c0f05cd12727bfe57636a5005/configs/bckd/bckd_r50_gflv1_r101_fpn_coco_1x.py",
+      "local_path": "official/configs/bckd/bckd_r50_gflv1_r101_fpn_coco_1x.py",
+      "bytes": 1906,
+      "download_write_readback_exact": true
+    },
+    {
+      "repository_path": "mmdet/models/dense_heads/ld_head.py",
+      "url": "https://raw.githubusercontent.com/TinyTigerPan/BCKD/121c9aa272c9195c0f05cd12727bfe57636a5005/mmdet/models/dense_heads/ld_head.py",
+      "local_path": "official/mmdet/models/dense_heads/ld_head.py",
+      "bytes": 28225,
+      "download_write_readback_exact": true
+    }
+  ],
+  "new_hash_computed": false,
+  "git_identifier_is_preexisting": true,
+  "code_executed_during_download": false,
+  "weights_downloaded": false
+}

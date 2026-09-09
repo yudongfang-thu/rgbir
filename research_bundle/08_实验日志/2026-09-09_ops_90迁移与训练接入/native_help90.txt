@@ -1,0 +1,23 @@
+usage: train_rgbt_kd_detector.py [-h] --config CONFIG --arm
+                                 {native,p3,p3_same_modal,p3_shuffled,p3_random_dose}
+                                 [--privileged-teacher PRIVILEGED_TEACHER]
+                                 [--student-teacher STUDENT_TEACHER] --output
+                                 OUTPUT [--device DEVICE] [--seed SEED]
+                                 [--batch BATCH] [--max-steps MAX_STEPS]
+                                 [--validate-only]
+
+Train the frozen RGBT-P3-CAUSAL-v1 detector arms from ordinary YOLO11n
+weights.
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --arm {native,p3,p3_same_modal,p3_shuffled,p3_random_dose}
+  --privileged-teacher PRIVILEGED_TEACHER
+  --student-teacher STUDENT_TEACHER
+  --output OUTPUT
+  --device DEVICE
+  --seed SEED
+  --batch BATCH
+  --max-steps MAX_STEPS
+  --validate-only

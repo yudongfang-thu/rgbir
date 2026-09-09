@@ -1,0 +1,189 @@
+{
+  "checkpoint_keys": [
+    "epoch",
+    "best_fitness",
+    "training_results",
+    "model",
+    "ema",
+    "updates",
+    "optimizer",
+    "wandb_id"
+  ],
+  "epoch": -1,
+  "model_class": "models.yolo_test.Model",
+  "module_shapes": [
+    {
+      "name": "model.10",
+      "class": "GPT",
+      "attributes": [
+        "training",
+        "_parameters",
+        "_buffers",
+        "_non_persistent_buffers_set",
+        "_backward_hooks",
+        "_is_full_backward_hook",
+        "_forward_hooks",
+        "_forward_pre_hooks",
+        "_state_dict_hooks",
+        "_load_state_dict_pre_hooks",
+        "_modules",
+        "n_embd",
+        "vert_anchors",
+        "horz_anchors",
+        "i",
+        "f",
+        "type",
+        "np",
+        "_forward_pre_hooks_with_kwargs",
+        "_forward_hooks_with_kwargs",
+        "_forward_hooks_always_called",
+        "_state_dict_pre_hooks",
+        "_load_state_dict_post_hooks",
+        "_backward_pre_hooks"
+      ],
+      "modules": {
+        "trans_blocks": "Sequential",
+        "ln_f": "LayerNorm",
+        "drop": "Dropout",
+        "avgpool": "AdaptiveAvgPool2d"
+      },
+      "plain_values": {
+        "training": false,
+        "n_embd": 256,
+        "vert_anchors": 8,
+        "horz_anchors": 8,
+        "i": 10,
+        "type": "models.common.GPT",
+        "np": 6351360
+      }
+    },
+    {
+      "name": "model.10.trans_blocks.0",
+      "class": "TransformerBlock",
+      "attributes": [
+        "training",
+        "_parameters",
+        "_buffers",
+        "_non_persistent_buffers_set",
+        "_backward_hooks",
+        "_is_full_backward_hook",
+        "_forward_hooks",
+        "_forward_pre_hooks",
+        "_state_dict_hooks",
+        "_load_state_dict_pre_hooks",
+        "_modules",
+        "_forward_pre_hooks_with_kwargs",
+        "_forward_hooks_with_kwargs",
+        "_forward_hooks_always_called",
+        "_state_dict_pre_hooks",
+        "_load_state_dict_post_hooks",
+        "_backward_pre_hooks"
+      ],
+      "modules": {
+        "ln_input": "LayerNorm",
+        "ln_output": "LayerNorm",
+        "sa": "SelfAttention",
+        "mlp": "Sequential"
+      },
+      "plain_values": {
+        "training": false
+      }
+    },
+    {
+      "name": "model.10.trans_blocks.1",
+      "class": "TransformerBlock",
+      "attributes": [
+        "training",
+        "_parameters",
+        "_buffers",
+        "_non_persistent_buffers_set",
+        "_backward_hooks",
+        "_is_full_backward_hook",
+        "_forward_hooks",
+        "_forward_pre_hooks",
+        "_state_dict_hooks",
+        "_load_state_dict_pre_hooks",
+        "_modules",
+        "_forward_pre_hooks_with_kwargs",
+        "_forward_hooks_with_kwargs",
+        "_forward_hooks_always_called",
+        "_state_dict_pre_hooks",
+        "_load_state_dict_post_hooks",
+        "_backward_pre_hooks"
+      ],
+      "modules": {
+        "ln_input": "LayerNorm",
+        "ln_output": "LayerNorm",
+        "sa": "SelfAttention",
+        "mlp": "Sequential"
+      },
+      "plain_values": {
+        "training": false
+      }
+    },
+    {
+      "name": "model.10.trans_blocks.2",
+      "class": "TransformerBlock",
+      "attributes": [
+        "training",
+        "_parameters",
+        "_buffers",
+        "_non_persistent_buffers_set",
+        "_backward_hooks",
+        "_is_full_backward_hook",
+        "_forward_hooks",
+        "_forward_pre_hooks",
+        "_state_dict_hooks",
+        "_load_state_dict_pre_hooks",
+        "_modules",
+        "_forward_pre_hooks_with_kwargs",
+        "_forward_hooks_with_kwargs",
+        "_forward_hooks_always_called",
+        "_state_dict_pre_hooks",
+        "_load_state_dict_post_hooks",
+        "_backward_pre_hooks"
+      ],
+      "modules": {
+        "ln_input": "LayerNorm",
+        "ln_output": "LayerNorm",
+        "sa": "SelfAttention",
+        "mlp": "Sequential"
+      },
+      "plain_values": {
+        "training": false
+      }
+    },
+    {
+      "name": "model.10.trans_blocks.3",
+      "class": "TransformerBlock",
+      "attributes": [
+        "training",
+        "_parameters",
+        "_buffers",
+        "_non_persistent_buffers_set",
+        "_backward_hooks",
+        "_is_full_backward_hook",
+        "_forward_hooks",
+        "_forward_pre_hooks",
+        "_state_dict_hooks",
+        "_load_state_dict_pre_hooks",
+        "_modules",
+        "_forward_pre_hooks_with_kwargs",
+        "_forward_hooks_with_kwargs",
+        "_forward_hooks_always_called",
+        "_state_dict_pre_hooks",
+        "_load_state_dict_post_hooks",
+        "_backward_pre_hooks"
+      ],
+      "modules": {
+        "ln_input": "LayerNorm",
+        "ln_output": "LayerNorm",
+        "sa": "SelfAttention",
+        "mlp": "Sequential"
+      },
+      "plain_values": {
+        "training": false
+      }
+    }
+  ]
+}

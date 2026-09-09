@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "help",
+      "returncode": 0,
+      "elapsed_seconds": 1.7256607390008867,
+      "command": [
+        "/mnt/dataX/ydf/projects/RGBT_campaign_90/environments/rgbir90/bin/python",
+        "-B",
+        "tools/train_rgbt_cmdistill.py",
+        "--help"
+      ],
+      "log": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/reproduction_20260909_attempt1/cmd_help_attempt1.log"
+    },
+    {
+      "name": "tests",
+      "returncode": 0,
+      "elapsed_seconds": 2.533907346893102,
+      "command": [
+        "/mnt/dataX/ydf/projects/RGBT_campaign_90/environments/rgbir90/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_rgbt_cmdistill_kd.py",
+        "tests/test_train_rgbt_cmdistill.py"
+      ],
+      "log": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/reproduction_20260909_attempt1/cmd_tests_attempt1.log"
+    }
+  ],
+  "scope": "CPU import/help and synthetic original tests only; not actual dataset training",
+  "gpu_used": false,
+  "teacher_checkpoint": "TO_BIND",
+  "new_hash_calculated": false
+}

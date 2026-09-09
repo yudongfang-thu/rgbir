@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-08T18:28:28.765749+00:00",
+  "pid": 1930758,
+  "command": [
+    "setsid",
+    "nohup",
+    "environments/rgbir90/bin/python",
+    "-u",
+    "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/migration_20260909_attempt1/prepare_data90.py"
+  ],
+  "cpu_threads": 1,
+  "gpu_disabled": true,
+  "output": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1",
+  "log": "/mnt/dataX/ydf/projects/RGBT_campaign_90/artifacts/migration_20260909_attempt1/data_prepare_launch1.log"
+}

@@ -1,0 +1,182 @@
+{
+  "by_split_modality": {
+    "train/infrared": {
+      "alias_usage": {
+        "feright": 1,
+        "feright car": 3776,
+        "feright_car": 7419
+      },
+      "dropped": {
+        "zero_or_invalid_post_clip_geometry": 1
+      },
+      "ignored": {
+        "class_star": 1,
+        "point": 22
+      },
+      "labels_written": 316410,
+      "official_eval_candidates": 316411,
+      "source_class_instances": {
+        "bus": 11334,
+        "car": 270368,
+        "freight car": 11196,
+        "truck": 15834,
+        "van": 7701
+      },
+      "source_geometry": {
+        "bndbox": 22917,
+        "point": 22,
+        "polygon": 293494,
+        "star": 1
+      },
+      "source_objects": 316434,
+      "written_class_instances": {
+        "bus": 11334,
+        "car": 270349,
+        "freight car": 11193,
+        "truck": 15833,
+        "van": 7701
+      }
+    },
+    "train/rgb": {
+      "alias_usage": {
+        "feright": 1,
+        "feright car": 3211,
+        "feright_car": 5504,
+        "truvk": 1
+      },
+      "dropped": {
+        "zero_or_invalid_post_clip_geometry": 1
+      },
+      "ignored": {
+        "class_star": 1,
+        "point": 21
+      },
+      "labels_written": 286792,
+      "official_eval_candidates": 286793,
+      "source_class_instances": {
+        "bus": 10421,
+        "car": 246716,
+        "freight car": 8716,
+        "truck": 13686,
+        "van": 7275
+      },
+      "source_geometry": {
+        "bndbox": 21507,
+        "point": 21,
+        "polygon": 265286,
+        "star": 1
+      },
+      "source_objects": 286815,
+      "written_class_instances": {
+        "bus": 10421,
+        "car": 246699,
+        "freight car": 8712,
+        "truck": 13685,
+        "van": 7275
+      }
+    },
+    "val/infrared": {
+      "alias_usage": {
+        "feright car": 308,
+        "feright_car": 610
+      },
+      "dropped": {},
+      "ignored": {},
+      "labels_written": 24490,
+      "official_eval_candidates": 24490,
+      "source_class_instances": {
+        "bus": 789,
+        "car": 20588,
+        "freight car": 918,
+        "truck": 1470,
+        "van": 725
+      },
+      "source_geometry": {
+        "bndbox": 1455,
+        "polygon": 23035
+      },
+      "source_objects": 24490,
+      "written_class_instances": {
+        "bus": 789,
+        "car": 20588,
+        "freight car": 918,
+        "truck": 1470,
+        "van": 725
+      }
+    },
+    "val/rgb": {
+      "alias_usage": {
+        "feright car": 195,
+        "feright_car": 515
+      },
+      "dropped": {},
+      "ignored": {
+        "point": 1
+      },
+      "labels_written": 22462,
+      "official_eval_candidates": 22462,
+      "source_class_instances": {
+        "bus": 751,
+        "car": 18966,
+        "freight car": 710,
+        "truck": 1336,
+        "van": 700
+      },
+      "source_geometry": {
+        "bndbox": 1264,
+        "point": 1,
+        "polygon": 21198
+      },
+      "source_objects": 22463,
+      "written_class_instances": {
+        "bus": 751,
+        "car": 18965,
+        "freight car": 710,
+        "truck": 1336,
+        "van": 700
+      }
+    }
+  },
+  "byte_identity_with_94": "not asserted; original conversion functions and counter comparison only",
+  "historical_counters_exact": true,
+  "output": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/processed/dronevehicle/yolo/hbb_v1",
+  "source": "/mnt/dataset/DroneVehicle",
+  "source_groups": {
+    "infrared": {
+      "missing_folder_count": 0,
+      "path": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/processed/dronevehicle/yolo/hbb_v1/infrared_train_source_groups.tsv",
+      "rows_written": 17990,
+      "source_train_xml_files": 17990
+    },
+    "rgb": {
+      "missing_folder_count": 0,
+      "path": "/mnt/dataX/ydf/projects/RGBT_campaign_90/data_attempt1/processed/dronevehicle/yolo/hbb_v1/rgb_train_source_groups.tsv",
+      "rows_written": 17990,
+      "source_train_xml_files": 17990
+    }
+  },
+  "test_accessed": false,
+  "validation": {
+    "train/infrared": {
+      "boxes": 316410,
+      "images": 17990,
+      "labels": 17990
+    },
+    "train/rgb": {
+      "boxes": 286792,
+      "images": 17990,
+      "labels": 17990
+    },
+    "val/infrared": {
+      "boxes": 24490,
+      "images": 1469,
+      "labels": 1469
+    },
+    "val/rgb": {
+      "boxes": 22462,
+      "images": 1469,
+      "labels": 1469
+    }
+  },
+  "version": "dronevehicle-yolo-hbb-v1-train-val-restoration"
+}

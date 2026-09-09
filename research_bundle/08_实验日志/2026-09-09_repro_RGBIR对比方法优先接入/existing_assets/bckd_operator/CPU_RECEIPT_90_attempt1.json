@@ -1,0 +1,197 @@
+{
+  "status": "PASS_BCDL_CLASSIFICATION_OPERATOR_ONLY",
+  "scope": "BCKD_BCDL_PER_ANCHOR_CPU_ONLY",
+  "created_at_utc": "2026-09-09T02:04:40.716620+00:00",
+  "python": "/mnt/dataX/ydf/projects/RGBT_campaign_90/environments/rgbir90/bin/python",
+  "torch": "2.10.0+cu128",
+  "device": "cpu",
+  "author_repository": "TinyTigerPan/BCKD",
+  "author_commit": "121c9aa272c9195c0f05cd12727bfe57636a5005",
+  "extraction": {
+    "repository_file": "official/mmdet/models/losses/kd_loss.py",
+    "function_def_line": 13,
+    "function_end_line": 38,
+    "decorators_removed": [
+      "mmcv.jit(derivate=True, coderize=True)",
+      "weighted_loss"
+    ],
+    "function_body_AST_unchanged": true,
+    "class_forward_reads_T": false,
+    "class_forward_reads_threshold": false,
+    "mmcv_weighted_loss_and_head_execution_tested": false
+  },
+  "checks": [
+    {
+      "name": "author_vs_independent_loss_student_gradient_8_small_cases",
+      "status": "PASS",
+      "details": [
+        {
+          "n": 2,
+          "classes": 1,
+          "dtype": "torch.float64",
+          "atol": 1e-12,
+          "rtol": 1e-12,
+          "loss_max_abs": 1.3877787807814457e-17,
+          "student_gradient_max_abs": 5.551115123125783e-17,
+          "teacher_gradient_is_none": true,
+          "official_loss_sum": 0.4891217766116665,
+          "student_gradient_l2": 0.4653515072159305
+        },
+        {
+          "n": 2,
+          "classes": 1,
+          "dtype": "torch.float32",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "loss_max_abs": 2.9802322387695312e-08,
+          "student_gradient_max_abs": 0.0,
+          "teacher_gradient_is_none": true,
+          "official_loss_sum": 0.48912182450294495,
+          "student_gradient_l2": 0.46535155177116394
+        },
+        {
+          "n": 3,
+          "classes": 5,
+          "dtype": "torch.float64",
+          "atol": 1e-12,
+          "rtol": 1e-12,
+          "loss_max_abs": 1.1102230246251565e-16,
+          "student_gradient_max_abs": 5.551115123125783e-17,
+          "teacher_gradient_is_none": true,
+          "official_loss_sum": 2.0703627616963187,
+          "student_gradient_l2": 0.7136222332198436
+        },
+        {
+          "n": 3,
+          "classes": 5,
+          "dtype": "torch.float32",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "loss_max_abs": 1.1920928955078125e-07,
+          "student_gradient_max_abs": 2.9802322387695312e-08,
+          "teacher_gradient_is_none": true,
+          "official_loss_sum": 2.0703623294830322,
+          "student_gradient_l2": 0.7136222124099731
+        },
+        {
+          "n": 2,
+          "classes": 80,
+          "dtype": "torch.float64",
+          "atol": 1e-12,
+          "rtol": 1e-12,
+          "loss_max_abs": 0.0,
+          "student_gradient_max_abs": 2.220446049250313e-16,
+          "teacher_gradient_is_none": true,
+          "official_loss_sum": 99.92955617055773,
+          "student_gradient_l2": 5.702230811159082
+        },
+        {
+          "n": 2,
+          "classes": 80,
+          "dtype": "torch.float32",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "loss_max_abs": 7.62939453125e-06,
+          "student_gradient_max_abs": 1.1920928955078125e-07,
+          "teacher_gradient_is_none": true,
+          "official_loss_sum": 99.92955017089844,
+          "student_gradient_l2": 5.702230930328369
+        },
+        {
+          "n": 0,
+          "classes": 5,
+          "dtype": "torch.float64",
+          "atol": 1e-12,
+          "rtol": 1e-12,
+          "loss_max_abs": 0.0,
+          "student_gradient_max_abs": 0.0,
+          "teacher_gradient_is_none": true,
+          "official_loss_sum": 0.0,
+          "student_gradient_l2": 0.0
+        },
+        {
+          "n": 0,
+          "classes": 5,
+          "dtype": "torch.float32",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "loss_max_abs": 0.0,
+          "student_gradient_max_abs": 0.0,
+          "teacher_gradient_is_none": true,
+          "official_loss_sum": 0.0,
+          "student_gradient_l2": 0.0
+        }
+      ]
+    },
+    {
+      "name": "beta1_and_actual_temperature1",
+      "status": "PASS",
+      "details": {
+        "default_beta1_exact": true,
+        "beta2_changes_loss_max_abs": 0.9264926793252859,
+        "invented_temperature10_changes_loss_max_abs": 1.267574583124168,
+        "effective_classification_temperature": 1,
+        "class_T_attribute_unused": true
+      }
+    },
+    {
+      "name": "teacher_detached_student_nonzero",
+      "status": "PASS",
+      "details": {
+        "default_teacher_gradient_is_none": true,
+        "student_gradient_l2": 0.7136222332198436,
+        "explicit_detach_false_teacher_gradient_l2": 0.7633778829202317
+      }
+    },
+    {
+      "name": "student_difference_weight_must_retain_gradient",
+      "status": "PASS",
+      "details": {
+        "forward_values_bitwise_equal": true,
+        "student_gradient_max_abs_if_weight_detached": 0.19767335176866682,
+        "author_gradient_l2": 0.7136222332198436,
+        "wrong_gradient_l2": 0.3545552544815095
+      }
+    },
+    {
+      "name": "weighted_BCE_cannot_be_replaced_with_weighted_KL",
+      "status": "PASS",
+      "details": {
+        "BCE_per_anchor": [
+          0.623926885393402,
+          1.4064790287881526,
+          0.03995684751476418
+        ],
+        "weighted_KL_per_anchor": [
+          0.34347215818502946,
+          0.47680680159820155,
+          0.0013098038225910075
+        ],
+        "weighted_teacher_entropy_per_anchor": [
+          0.2804547272083726,
+          0.9296722271899509,
+          0.03864704369217317
+        ],
+        "student_gradient_max_abs_BCE_vs_KL": 0.13982204855269267,
+        "gradient_difference_equals_weighted_entropy_gradient": true
+      }
+    },
+    {
+      "name": "identical_logits_and_shape_guard",
+      "status": "PASS",
+      "details": {
+        "identical_logits_loss_and_student_gradient_exact_zero": true,
+        "shape_mismatch_rejected": true
+      }
+    }
+  ],
+  "passed_checks": 6,
+  "total_checks": 6,
+  "cuda_initialized": false,
+  "full_BCKD_tested": false,
+  "dataset_performance_tested": false,
+  "weighted_decorator_reduction_tested": false,
+  "head_selection_tested": false,
+  "new_hash_computed": false,
+  "global_packages_installed": false
+}
